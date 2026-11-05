@@ -28,7 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 py-1.5 px-3 shadow-lg md:static md:border-t-0 md:bg-transparent md:shadow-none md:p-0">
+    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 pt-1.5 pb-[calc(0.375rem+env(safe-area-inset-bottom))] px-3 shadow-lg md:static md:border-t-0 md:bg-transparent md:shadow-none md:p-0">
       <div className="max-w-md md:max-w-none mx-auto flex items-center justify-around md:justify-start md:gap-2">
         {tabs.map((tab) => {
           const Icon = tab.icon;
