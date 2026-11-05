@@ -1,0 +1,1225 @@
+LINGO WORLD
+PROMPT MESTRE — DESENVOLVIMENTO COMPLETO DA PLATAFORMA GLOBAL DE APRENDIZADO DE IDIOMAS
+1. MISSÃO E VISÃO DO PROJETO
+
+Atue como uma equipe multidisciplinar de excelência, composta por:
+
+Arquiteto de software sênior.
+Desenvolvedor full-stack.
+Especialista em inteligência artificial generativa.
+Engenheiro de agentes inteligentes.
+Especialista em reconhecimento de voz e síntese de fala.
+Especialista em linguística e ensino de idiomas.
+Especialista em pedagogia e psicologia da aprendizagem.
+Game designer especializado em gamificação.
+Designer UX/UI especializado em aplicativos educacionais.
+Especialista em arquitetura de bancos de dados.
+Especialista em segurança, privacidade e escalabilidade.
+Especialista em produtos digitais e modelos de negócio.
+
+Sua missão é projetar, desenvolver e implementar uma plataforma completa de aprendizado de idiomas chamada LINGO WORLD.
+
+Não quero apenas um protótipo, uma landing page ou uma demonstração visual.
+
+Quero um produto educacional funcional, com arquitetura profissional, banco de dados persistente, autenticação, conteúdo pedagógico estruturado, inteligência artificial integrada, sistema de aprendizagem adaptativa, gamificação, painel administrativo e infraestrutura preparada para crescimento comercial.
+
+O projeto deverá nascer com foco no ensino de INGLÊS, mas possuir arquitetura preparada para incorporar outros idiomas, especialmente MANDARIM, ESPANHOL, FRANCÊS E ALEMÃO.
+
+Nossa missão
+
+Democratizar o acesso ao aprendizado de idiomas, oferecendo uma experiência de alta qualidade, divertida, inteligente, personalizada e acessível a qualquer pessoa.
+
+O objetivo não é apenas fazer o usuário jogar, acumular pontos ou concluir fases.
+
+O verdadeiro objetivo é fazer com que ele APRENDA, EVOLUA E CONSIGA UTILIZAR O NOVO IDIOMA EM SITUAÇÕES REAIS.
+
+Público-alvo
+
+Pessoas entre 10 e 35 anos.
+
+A experiência deverá atender adolescentes, jovens e adultos, com linguagem, interface e atividades adequadas às diferentes faixas etárias.
+
+Implementar proteções especiais para menores de idade.
+
+2. CONCEITO DO PRODUTO E POSICIONAMENTO
+
+O LINGO WORLD deverá combinar o que há de melhor em diferentes categorias de produtos:
+
+A gamificação e progressão do Duolingo.
+O mapa de fases e a evolução do Candy Crush.
+A profundidade de conteúdo de uma escola de idiomas.
+A personalização de um professor particular.
+A capacidade de conversação de agentes avançados de IA.
+A dinâmica de jogos, desafios e histórias interativas.
+
+Não copie diretamente a identidade visual, os personagens ou os elementos protegidos de outros produtos.
+
+Crie uma identidade visual original, reconhecível e escalável.
+
+O usuário deverá sentir que está explorando um mundo, conquistando territórios e evoluindo enquanto aprende inglês.
+
+Identidade da marca
+
+Nome: LINGO WORLD.
+
+Conceito: Aprenda idiomas. Explore mundos. Conquiste sua fluência.
+
+A identidade visual deverá transmitir:
+
+Aventura.
+Descoberta.
+Evolução.
+Tecnologia.
+Diversão.
+Conquista.
+Inclusão.
+Conhecimento.
+
+Desenvolva um mascote original, que acompanhe o estudante, ofereça orientações, comemore conquistas e ajude a criar conexão emocional com a plataforma.
+
+3. FILOSOFIA DE ACESSIBILIDADE E MODELO DE NEGÓCIO
+
+Uma das principais decisões estratégicas do projeto é que o LINGO WORLD deverá nascer gratuito e entregar valor real antes de buscar monetização agressiva.
+
+Não queremos um aplicativo que ofereça apenas algumas aulas gratuitas e depois bloqueie o aprendizado.
+
+A plataforma deverá conquistar usuários pela qualidade, pela experiência e pelos resultados educacionais.
+
+O modelo será FREEMIUM, com publicidade discreta e recursos premium adicionais.
+
+3.1 Plano FREE — Gratuito
+
+O usuário deverá ter acesso a uma jornada educacional consistente.
+
+Incluir:
+
+Curso estruturado de inglês.
+Conteúdos dos níveis A1 a C2, disponibilizados progressivamente.
+Mapa de aprendizagem.
+Fases e desafios.
+Jogos educativos.
+Biblioteca didática.
+Exercícios.
+Revisões inteligentes.
+Acompanhamento do progresso.
+Avaliação das competências.
+LINGO BRAIN.
+Desafios personalizados.
+Professor de IA com disponibilidade limitada, mas efetivamente funcional.
+Recursos de conversação essenciais.
+Sistema de conquistas e recompensas.
+
+O acesso gratuito não deverá ser artificialmente prejudicado.
+
+O usuário gratuito deverá conseguir avançar e aprender inglês de verdade, inclusive em níveis avançados.
+
+3.2 Plano PLUS — Premium
+
+Oferecer recursos adicionais:
+
+Experiência sem anúncios.
+Maior disponibilidade de conversação por voz com IA.
+Conversas mais longas.
+Simulações avançadas.
+Análise aprofundada de pronúncia.
+Relatórios avançados.
+Trilhas adicionais.
+Recursos especiais de personalização.
+Experiências exclusivas de aprendizagem.
+Ferramentas avançadas de evolução.
+3.3 Plano FAMILY — Familiar
+
+Oferecer:
+
+Perfis individuais.
+Experiência sem anúncios.
+Acompanhamento da evolução dos membros.
+Metas individuais.
+Ferramentas de segurança e privacidade.
+Recursos adequados para famílias com menores.
+3.4 Publicidade
+
+A publicidade deverá ser uma fonte complementar de financiamento.
+
+Estabeleça uma política rígida:
+
+Não exibir anúncios durante aulas.
+Não interromper exercícios.
+Não interromper conversas com o professor de IA.
+Não exibir publicidade durante gravações de voz.
+Não interromper avaliações.
+Não exigir visualização de anúncios para avançar em fases.
+Não utilizar anúncios excessivos.
+Não prejudicar a concentração.
+
+Priorizar espaços discretos em áreas secundárias do aplicativo.
+
+Implementar limites de frequência, controles de publicidade e proteção adicional para menores.
+
+A plataforma deverá continuar funcionando mesmo quando não houver anúncios disponíveis.
+
+3.5 Sustentabilidade financeira
+
+Planejar custos de infraestrutura, IA, armazenamento, processamento de áudio, pagamentos e publicidade.
+
+Estabelecer limites técnicos de utilização de recursos computacionais para cada modalidade, preservando uma experiência gratuita útil.
+
+Criar indicadores de custo por usuário e margem por assinatura.
+
+Não definir preços arbitrários antes de estudar os custos reais de operação.
+
+4. IDENTIDADE VISUAL E EXPERIÊNCIA DO USUÁRIO
+
+Desenvolver uma interface moderna, intuitiva, dinâmica e visualmente atraente.
+
+Utilizar:
+
+Cores vibrantes e harmoniosas.
+Ilustrações originais.
+Personagens.
+Animações suaves.
+Ícones intuitivos.
+Cartões de atividades.
+Feedback visual.
+Elementos de progressão.
+Navegação simplificada.
+
+O design deverá ser mobile-first, responsivo e adaptável a celulares, tablets e computadores.
+
+Criar uma experiência que seja interessante para um usuário de 10 anos e, ao mesmo tempo, visualmente sofisticada para um adulto de 35 anos.
+
+Evitar infantilização excessiva.
+
+Criar diferentes níveis de apresentação visual e comunicação conforme a idade e as preferências do estudante.
+
+5. CADASTRO, PERFIL E PERSONALIZAÇÃO INICIAL
+
+Desenvolver:
+
+Cadastro por e-mail.
+Login seguro.
+Recuperação de senha.
+Autenticação social quando disponível.
+Perfil individual.
+Seleção de idioma.
+Objetivos pessoais.
+Definição de tempo diário de estudo.
+Configurações de notificações.
+Preferências de aprendizagem.
+Configurações de privacidade.
+
+Na primeira utilização, aplicar um teste de nivelamento.
+
+O teste deverá avaliar:
+
+Vocabulário.
+Gramática.
+Leitura.
+Compreensão auditiva.
+Construção de frases.
+Conhecimentos básicos de conversação.
+
+Classificar o estudante utilizando o CEFR:
+
+A1 — Iniciante.
+A2 — Básico.
+B1 — Intermediário.
+B2 — Intermediário superior.
+C1 — Avançado.
+C2 — Domínio avançado.
+
+Não atribuir níveis sem evidências suficientes.
+
+O sistema deverá permitir começar do zero, mesmo quando o usuário possuir algum conhecimento prévio.
+
+6. MAPA DINÂMICO DE APRENDIZAGEM
+
+Esta será uma das principais características visuais e funcionais do aplicativo.
+
+Desenvolver um mapa interativo inspirado na lógica de progressão dos jogos de fases.
+
+O usuário deverá explorar mundos, territórios e níveis.
+
+Criar caminhos conectados, fases desbloqueáveis, animações, recompensas e desafios especiais.
+
+Estrutura inicial do curso
+MUNDO 1 — PRIMEIROS PASSOS
+Alfabeto.
+Sons e pronúncia.
+Cumprimentos.
+Apresentações.
+Números.
+Cores.
+Vocabulário básico.
+Primeiras frases.
+MUNDO 2 — CONSTRUINDO FRASES
+Pronomes.
+Verbos fundamentais.
+Artigos.
+Substantivos.
+Adjetivos.
+Estrutura de frases.
+Perguntas e respostas.
+Verbo TO BE.
+MUNDO 3 — VIDA COTIDIANA
+Família.
+Casa.
+Alimentação.
+Rotina.
+Compras.
+Lugares.
+Horários.
+Atividades cotidianas.
+MUNDO 4 — COMUNICAÇÃO
+Conversação.
+Listening.
+Situações sociais.
+Diálogos.
+Perguntas espontâneas.
+Respostas contextualizadas.
+Expressões frequentes.
+MUNDO 5 — INGLÊS INTERMEDIÁRIO
+Tempos verbais.
+Verbos irregulares.
+Phrasal verbs.
+Expressões idiomáticas.
+Construção de textos.
+Interpretação.
+Conversação ampliada.
+MUNDO 6 — INGLÊS AVANÇADO
+Conversação complexa.
+Inglês profissional.
+Argumentação.
+Inglês acadêmico.
+Expressões idiomáticas.
+Diferentes sotaques.
+Compreensão de conteúdos complexos.
+MUNDO 7 — UNIVERSO DA FLUÊNCIA
+Conversas espontâneas.
+Debates.
+Apresentações.
+Simulações profissionais.
+Interpretação avançada.
+Produção escrita complexa.
+Comunicação em situações reais.
+
+Cada mundo deverá conter diversas fases.
+
+Cada fase deverá possuir:
+
+Objetivo pedagógico.
+Conteúdo explicativo.
+Exercícios.
+Áudios.
+Avaliações.
+Pontuação.
+Recompensas.
+Critérios de aprovação.
+Registro de domínio da competência.
+
+Implementar desbloqueio progressivo.
+
+Criar estrelas, medalhas, chefões, baús, desafios especiais, missões e recompensas.
+
+O aluno poderá revisar fases anteriores sem perder o progresso.
+
+O desbloqueio deverá considerar o conhecimento demonstrado, e não apenas a conclusão mecânica de tarefas.
+
+7. MOTOR PEDAGÓGICO E ESTRUTURA DO CURSO
+
+Criar um sistema de ensino progressivo baseado em princípios pedagógicos consistentes.
+
+O curso deverá desenvolver as competências fundamentais:
+
+Listening — compreensão auditiva.
+Speaking — expressão oral.
+Reading — leitura.
+Writing — escrita.
+Grammar — gramática.
+Vocabulary — vocabulário.
+Pronunciation — pronúncia.
+
+Cada aula deverá combinar diferentes métodos de aprendizagem:
+
+Explicações objetivas.
+Exemplos contextualizados.
+Exercícios de múltipla escolha.
+Associação de palavras.
+Completar frases.
+Ordenação de palavras.
+Interpretação de textos.
+Exercícios auditivos.
+Pronúncia.
+Construção de diálogos.
+Tradução contextual.
+Produção escrita.
+Simulações práticas.
+
+Implementar repetição espaçada para consolidar conhecimentos.
+
+Identificar erros recorrentes e desenvolver atividades específicas.
+
+Evitar repetição mecânica excessiva.
+
+Ensinar os conteúdos de diferentes maneiras quando o estudante demonstrar dificuldade.
+
+A avaliação deverá considerar retenção, compreensão e capacidade de utilizar o conhecimento.
+
+O aplicativo não deverá confundir quantidade de fases concluídas com aprendizagem efetiva.
+
+8. LINGO BRAIN — SISTEMA CENTRAL DE INTELIGÊNCIA PEDAGÓGICA ADAPTATIVA
+
+Este módulo deverá ser o coração tecnológico e educacional do LINGO WORLD.
+
+Não criar apenas um painel de estatísticas.
+
+Desenvolver um motor de inteligência pedagógica capaz de acompanhar continuamente o desenvolvimento do aluno.
+
+O LINGO BRAIN deverá agir como um professor experiente que conhece o estudante, identifica dificuldades e decide como ajudá-lo a aprender.
+
+8.1 Monitoramento contínuo
+
+Analisar:
+
+Respostas corretas e incorretas.
+Frequência de erros.
+Tipos de erros.
+Tempo de resposta.
+Número de tentativas.
+Conteúdos esquecidos.
+Retenção de vocabulário.
+Desempenho em leitura.
+Compreensão auditiva.
+Construção de frases.
+Conversação.
+Pronúncia.
+Evolução ao longo do tempo.
+8.2 Diagnóstico por competência
+
+Manter indicadores individuais para:
+
+Listening.
+Speaking.
+Reading.
+Writing.
+Grammar.
+Vocabulary.
+Pronunciation.
+
+Não utilizar apenas uma nota geral.
+
+Identificar competências dominadas, em desenvolvimento e que precisam de reforço.
+
+Diferenciar um erro pontual de uma dificuldade recorrente.
+
+Utilizar avaliações periódicas para verificar se o aluno realmente consolidou o conteúdo.
+
+8.3 Intervenção personalizada
+
+Quando identificar uma dificuldade:
+
+Identificar a competência afetada.
+Investigar os tipos de erros.
+Verificar o histórico de aprendizagem.
+Identificar possíveis causas pedagógicas.
+Recomendar conteúdos de reforço.
+Criar exercícios direcionados.
+Ajustar a dificuldade.
+Avaliar novamente.
+Verificar a retenção.
+Atualizar o plano de aprendizagem.
+
+Exemplo:
+
+Se o aluno apresentar dificuldade com verbos irregulares no passado, o sistema deverá preparar exercícios de construção de frases, compreensão auditiva, leitura contextualizada e conversação.
+
+Não deverá simplesmente repetir a mesma pergunta.
+
+Deverá ensinar o mesmo conteúdo utilizando abordagens diferentes.
+
+8.4 Desafios gerados por IA
+
+Criar um gerador de atividades pedagógicas personalizadas.
+
+A inteligência artificial deverá criar:
+
+Missões individuais.
+Jogos direcionados.
+Exercícios de recuperação.
+Desafios de pronúncia.
+Diálogos contextualizados.
+Simulações.
+Testes adaptativos.
+Histórias interativas.
+Revisões inteligentes.
+
+Cada atividade deverá possuir objetivos pedagógicos, nível de dificuldade e critérios de avaliação.
+
+O conteúdo deverá respeitar o CEFR, a faixa etária e a sequência curricular.
+
+As atividades geradas deverão passar por validações pedagógicas e técnicas antes de serem utilizadas.
+
+Evitar perguntas ambíguas, incorretas ou sem relação com o objetivo de aprendizagem.
+
+8.5 Reavaliação inteligente
+
+Após cada atividade personalizada, verificar se houve evolução.
+
+Se o aluno continuar apresentando dificuldade, mudar a abordagem pedagógica.
+
+Se demonstrar domínio, reduzir a frequência das revisões e permitir avançar.
+
+Não manter o estudante preso indefinidamente em conteúdos já dominados.
+
+9. LINGO PATH — PLANEJADOR INDIVIDUAL DE APRENDIZAGEM
+
+Criar um módulo integrado ao LINGO BRAIN chamado LINGO PATH.
+
+Sua responsabilidade será determinar o melhor caminho de aprendizagem para cada estudante.
+
+Deverá responder continuamente:
+
+O que o aluno precisa aprender agora?
+O que já domina?
+O que precisa revisar?
+Quais dificuldades devem ser priorizadas?
+Qual atividade será mais adequada?
+Quando poderá avançar?
+Quanto tempo deverá dedicar a cada competência?
+
+O LINGO PATH deverá combinar:
+
+Currículo estruturado.
+Histórico de aprendizagem.
+Resultados das avaliações.
+Conhecimentos dominados.
+Dificuldades atuais.
+Objetivos individuais.
+Tempo disponível.
+Necessidade de revisão.
+
+Equilibrar conteúdos novos, desafios, revisão e prática.
+
+O sistema deverá respeitar a sequência pedagógica sem impedir experiências livres de aprendizagem.
+
+10. PROFESSOR PARTICULAR COM INTELIGÊNCIA ARTIFICIAL
+
+Criar um agente inteligente especializado no ensino da língua inglesa.
+
+Este deverá ser um dos principais diferenciais do produto.
+
+O professor deverá funcionar 24 horas por dia, conforme os limites de utilização de cada plano.
+
+Ele deverá possuir:
+
+Conversação por voz.
+Conversação por texto.
+Reconhecimento de fala.
+Síntese de voz.
+Análise de pronúncia.
+Correção gramatical.
+Explicação contextual.
+Simulação de situações reais.
+Personalização de dificuldade.
+Memória pedagógica.
+Integração com LINGO BRAIN.
+Integração com LINGO PATH.
+10.1 Modos de conversação
+
+Criar:
+
+Conversa livre.
+Inglês para viagens.
+Inglês para restaurantes.
+Inglês para entrevistas.
+Inglês profissional.
+Inglês acadêmico.
+Conversas cotidianas.
+Simulação de situações reais.
+Conversação para iniciantes.
+Desafios avançados.
+
+O estudante deverá escolher uma situação ou conversar livremente.
+
+O professor deverá adaptar vocabulário, velocidade e complexidade ao nível do usuário.
+
+10.2 Correção de frases
+
+Exemplo:
+
+Aluno: "I have 20 years."
+
+Professor:
+
+"Good try! In English, we say 'I am 20 years old'. We use the verb TO BE when talking about age. Let's try again!"
+
+O professor deverá:
+
+Identificar o erro.
+Apresentar a frase correta.
+Explicar a regra.
+Apresentar exemplos.
+Solicitar nova tentativa.
+Registrar a dificuldade quando relevante.
+10.3 Análise de pronúncia
+
+Implementar análise de:
+
+Sons.
+Ritmo.
+Entonação.
+Clareza.
+Inteligibilidade.
+Pronúncia de palavras específicas.
+
+Sempre que tecnicamente possível, apresentar:
+
+Reprodução do áudio correto.
+Reprodução da fala do aluno.
+Identificação de trechos que precisam melhorar.
+Orientações articulatórias.
+Nova tentativa.
+
+Não confundir sotaque com erro.
+
+Não exigir pronúncia nativa.
+
+Não afirmar que uma avaliação de pronúncia foi realizada quando não houve processamento real do áudio.
+
+10.4 Memória pedagógica e empatia
+
+O professor deverá conhecer o histórico educacional do estudante.
+
+Registrar:
+
+Conteúdos já estudados.
+Dificuldades anteriores.
+Erros recorrentes.
+Competências dominadas.
+Preferências de aprendizagem.
+Objetivos.
+Evolução.
+Estratégias que funcionaram.
+
+O professor deverá ter personalidade amigável, paciente, motivadora e respeitosa.
+
+Exemplos de comportamento:
+
+Quando o aluno começar:
+
+"Olá! Vamos aprender inglês juntos? Podemos começar com algumas frases simples e avançar no seu ritmo."
+
+Quando apresentar dificuldade:
+
+"Não se preocupe! Errar faz parte do aprendizado. Vou explicar de outra maneira e vamos tentar novamente."
+
+Quando evoluir:
+
+"Excelente! Você teve dificuldade com esse assunto anteriormente e agora conseguiu resolver sozinho. Isso é progresso!"
+
+Quando perceber frustração:
+
+"Podemos ir com mais calma. Que tal tentarmos um exercício diferente?"
+
+O professor deverá oferecer apoio sem constranger, infantilizar ou pressionar.
+
+A memória deverá respeitar as configurações de privacidade e os controles do usuário.
+
+11. SISTEMA DE DESAFIOS PERSONALIZADOS
+
+Criar um módulo de missões especiais geradas pelo LINGO BRAIN.
+
+Exemplo:
+
+MISSÃO: OPERAÇÃO PASSADO PERFEITO.
+
+O sistema identifica dificuldade com verbos irregulares.
+
+Cria uma sequência personalizada:
+
+Cinco exercícios de construção de frases.
+Três desafios de compreensão auditiva.
+Uma conversa com o professor de IA.
+Um desafio final de aplicação prática.
+
+Recompensa: XP e reconhecimento de evolução.
+
+Dois alunos que estejam na mesma fase poderão receber desafios diferentes.
+
+Um poderá trabalhar pronúncia, outro gramática e outro compreensão auditiva.
+
+A personalização deverá ocorrer com base nas evidências de aprendizagem, não em suposições.
+
+12. BIBLIOTECA DIDÁTICA
+
+Criar uma área completa de consulta e aprendizagem.
+
+Categorias:
+
+Gramática.
+Vocabulário.
+Verbos.
+Tempos verbais.
+Pronúncia.
+Fonética.
+Phrasal verbs.
+Expressões idiomáticas.
+Listening.
+Reading.
+Writing.
+Inglês para viagens.
+Inglês profissional.
+Inglês acadêmico.
+
+Cada conteúdo deverá possuir:
+
+Explicação.
+Exemplos.
+Áudios.
+Ilustrações.
+Exercícios.
+Avaliação.
+Relação com outras aulas.
+
+Criar busca inteligente por palavras e expressões.
+
+O aluno deverá poder selecionar uma palavra desconhecida e consultar tradução, pronúncia, significado, exemplos e uso contextual.
+
+Integrar o dicionário ao professor de IA.
+
+13. HISTÓRIAS INTERATIVAS
+
+Desenvolver histórias nas quais o aluno seja o protagonista.
+
+Criar personagens que conversem em inglês.
+
+O aluno deverá tomar decisões, responder perguntas, resolver situações e utilizar o idioma para avançar.
+
+As histórias deverão ter níveis diferentes de dificuldade.
+
+Exemplos:
+
+Viagem internacional.
+Primeiro dia em uma escola estrangeira.
+Conhecendo novas pessoas.
+Trabalhando em uma empresa internacional.
+Resolvendo situações em um aeroporto.
+Explorando uma cidade.
+Participando de uma entrevista.
+
+A IA poderá gerar novas situações, respeitando coerência narrativa, nível pedagógico e adequação etária.
+
+14. GAMIFICAÇÃO E ENGAJAMENTO
+
+Implementar:
+
+XP por atividades.
+Moedas virtuais.
+Estrelas.
+Medalhas.
+Conquistas.
+Sequências diárias.
+Desafios semanais.
+Missões especiais.
+Rankings.
+Ligas.
+Competições entre amigos.
+Recompensas.
+Personagens personalizáveis.
+Loja de itens virtuais.
+Eventos sazonais.
+
+Criar desafios curtos que incentivem o estudo diário.
+
+O sistema deverá incentivar consistência sem punir excessivamente quem perder um dia.
+
+Não utilizar mecânicas que induzam compulsão, pressão excessiva ou exploração de vulnerabilidades, especialmente entre menores.
+
+15. ARENA DE DESAFIOS E FUNCIONALIDADES SOCIAIS
+
+Permitir:
+
+Adicionar amigos.
+Participar de desafios.
+Comparar evolução.
+Realizar competições de vocabulário.
+Participar de desafios de listening.
+Resolver exercícios de gramática.
+Participar de desafios de conversação.
+
+Criar rankings e ligas.
+
+Implementar controles de privacidade, moderação e segurança.
+
+Não permitir conversas irrestritas entre adultos desconhecidos e menores.
+
+As funcionalidades sociais deverão respeitar a faixa etária e as configurações da conta.
+
+16. PAINEL DE EVOLUÇÃO DO ESTUDANTE
+
+Criar um dashboard completo com:
+
+Tempo total de estudo.
+Vocabulário aprendido.
+Fases concluídas.
+Taxa de acertos.
+Evolução gramatical.
+Desempenho em listening.
+Desempenho em speaking.
+Evolução da pronúncia.
+Desempenho em reading.
+Desempenho em writing.
+Pontos fortes.
+Dificuldades recorrentes.
+Metas futuras.
+Histórico de desafios personalizados.
+
+Criar gráficos e relatórios visuais.
+
+Mostrar ao aluno o que melhorou e quais competências precisam de atenção.
+
+Apresentar recomendações objetivas e motivadoras.
+
+Evitar indicadores que deem falsa impressão de fluência.
+
+17. SISTEMA DE CONSISTÊNCIA E MEMÓRIA
+
+Implementar:
+
+Metas diárias.
+Lembretes inteligentes.
+Sequências de estudo.
+Revisões programadas.
+Repetição espaçada.
+Recuperação de conteúdos esquecidos.
+Sugestões de retomada após períodos de inatividade.
+
+O sistema deverá considerar o histórico de retenção para decidir quando revisar uma palavra, regra ou estrutura gramatical.
+
+Não exigir que o estudante permaneça conectado para ser considerado ativo.
+
+O objetivo é otimizar a aprendizagem, não maximizar o tempo de tela.
+
+18. MODO OFFLINE
+
+Permitir baixar:
+
+Aulas.
+Exercícios.
+Conteúdos didáticos.
+Áudios disponíveis.
+Vocabulários.
+Atividades compatíveis.
+
+O aluno deverá conseguir estudar sem conexão.
+
+Sincronizar o progresso quando a internet estiver disponível.
+
+Informar claramente quais recursos dependem de conexão, especialmente conversação com IA e análise de voz.
+
+19. CERTIFICADOS E RECONHECIMENTO
+
+Criar certificados internos de conclusão de níveis e etapas.
+
+Os certificados deverão apresentar:
+
+Nome do estudante.
+Curso.
+Nível.
+Conteúdos concluídos.
+Data.
+Resultados da avaliação.
+Identificador de validação.
+
+Não apresentar certificados internos como equivalentes a certificações oficiais internacionais.
+
+20. ESTRUTURA MULTILÍNGUE E EXPANSÃO
+
+A arquitetura deverá ser independente de idioma.
+
+O inglês será o primeiro curso.
+
+A plataforma deverá permitir adicionar novos idiomas sem reconstruir o sistema.
+
+Preparar:
+
+Mandarim.
+Espanhol.
+Francês.
+Alemão.
+Português para estrangeiros.
+Outros idiomas futuramente.
+
+Cada idioma deverá possuir currículo, sequência pedagógica, vocabulário, gramática, pronúncia, áudios, exercícios, avaliações e professor especializado.
+
+Mandarim
+
+Preparar recursos específicos:
+
+Pinyin.
+Tons.
+Caracteres chineses.
+Reconhecimento de pronúncia.
+Exercícios de escrita.
+Vocabulário.
+Estruturas gramaticais.
+Contexto cultural.
+
+Não misturar a lógica específica de cada idioma à estrutura central do aplicativo.
+
+21. PAINEL ADMINISTRATIVO
+
+Desenvolver painel exclusivo para administradores.
+
+Permitir:
+
+Criar e editar cursos.
+Criar mundos.
+Criar fases.
+Cadastrar aulas.
+Criar exercícios.
+Inserir áudios.
+Gerenciar usuários.
+Gerenciar assinaturas.
+Acompanhar indicadores.
+Visualizar desempenho.
+Revisar conteúdos gerados por IA.
+Gerenciar recompensas.
+Configurar publicidade.
+Gerenciar idiomas.
+Gerenciar permissões.
+Monitorar custos de IA.
+
+Criar ferramentas para revisão pedagógica e publicação controlada de conteúdos.
+
+O painel deverá permitir atualizar o currículo sem precisar publicar uma nova versão do aplicativo.
+
+22. SEGURANÇA, PRIVACIDADE E PROTEÇÃO DE MENORES
+
+Implementar:
+
+Autenticação segura.
+Controle de acesso.
+Proteção de dados.
+Criptografia adequada.
+Políticas de privacidade.
+Consentimento quando necessário.
+Controles parentais.
+Moderação de conteúdo.
+Proteção das gravações de voz.
+Controle de retenção de dados.
+Exclusão de conta.
+Gerenciamento de permissões.
+
+Considerar a LGPD e demais normas aplicáveis aos mercados em que o produto operar.
+
+Proteger especialmente os usuários menores de idade.
+
+Não utilizar dados pessoais ou conversas de menores para publicidade comportamental.
+
+Não expor informações privadas dos estudantes.
+
+23. ARQUITETURA TECNOLÓGICA
+
+Escolher uma arquitetura moderna, escalável, segura e de fácil manutenção.
+
+Avaliar tecnologias como:
+
+React Native ou Flutter para aplicativo mobile.
+Next.js para aplicação web e painel administrativo.
+PostgreSQL para banco de dados.
+Supabase ou infraestrutura equivalente para backend e autenticação.
+Armazenamento seguro de arquivos e áudios.
+APIs de modelos de linguagem.
+APIs de reconhecimento de voz.
+APIs de síntese de voz.
+Serviços de notificações.
+Serviços de pagamentos.
+Infraestrutura de monitoramento.
+
+A escolha deverá considerar custos, qualidade, escalabilidade e facilidade de manutenção.
+
+Criar arquitetura modular.
+
+Separar os serviços de:
+
+Usuários.
+Cursos.
+Idiomas.
+Aulas.
+Exercícios.
+Avaliações.
+Gamificação.
+Conversação por IA.
+Reconhecimento de voz.
+Síntese de fala.
+Memória pedagógica.
+LINGO BRAIN.
+LINGO PATH.
+Assinaturas.
+Publicidade.
+Relatórios.
+Administração.
+
+Implementar versionamento de APIs, logs, monitoramento, tratamento de erros e testes automatizados.
+
+Nunca expor chaves de API no aplicativo cliente.
+
+Criar mecanismos de controle de custos e limites de utilização.
+
+24. BANCO DE DADOS E PERSISTÊNCIA
+
+Projetar um banco de dados consistente e escalável.
+
+Prever entidades e relacionamentos para:
+
+Usuários.
+Perfis.
+Idiomas.
+Cursos.
+Níveis.
+Mundos.
+Fases.
+Aulas.
+Conteúdos.
+Exercícios.
+Respostas.
+Avaliações.
+Competências.
+Histórico de aprendizagem.
+Erros recorrentes.
+Revisões.
+Desafios personalizados.
+Conversas com IA.
+Registros de áudio.
+Pronúncia.
+Conquistas.
+XP.
+Moedas.
+Rankings.
+Assinaturas.
+Configurações.
+Preferências.
+Consentimentos.
+Relatórios.
+
+Garantir persistência real dos dados.
+
+O progresso não poderá desaparecer ao sair do aplicativo.
+
+Implementar backup, sincronização e estratégias de recuperação.
+
+25. MONETIZAÇÃO, PAGAMENTOS E CONTROLE FINANCEIRO
+
+Preparar integração com provedores de pagamento adequados às plataformas de distribuição.
+
+Permitir:
+
+Assinaturas recorrentes.
+Gerenciamento de planos.
+Cancelamento.
+Renovação.
+Histórico de pagamentos.
+Controle de benefícios.
+Gestão de assinaturas familiares.
+
+Não bloquear o desenvolvimento inicial caso credenciais externas ainda não estejam configuradas.
+
+Criar uma arquitetura que permita habilitar pagamentos posteriormente.
+
+Desenvolver dashboard financeiro para acompanhar:
+
+Usuários ativos.
+Usuários gratuitos.
+Assinantes.
+Conversão.
+Retenção.
+Receita recorrente.
+Receita publicitária.
+Custo de infraestrutura.
+Custo de IA.
+Margem operacional.
+Custo médio por estudante.
+
+A sustentabilidade financeira deverá ser considerada desde a arquitetura inicial.
+
+26. EXPERIÊNCIA DE NAVEGAÇÃO
+
+Criar cinco áreas principais na navegação:
+
+MAPA — jornada, mundos, fases e missões.
+ESTUDAR — aulas, biblioteca e exercícios.
+PROFESSOR IA — conversação e prática.
+DESAFIOS — jogos, arena e competições.
+PERFIL — progresso, conquistas e configurações.
+
+A navegação deverá ser intuitiva, com poucos passos para acessar os recursos principais.
+
+Criar onboarding simples e progressivo.
+
+Não sobrecarregar a tela inicial com informações.
+
+27. INDICADORES DE SUCESSO DO PRODUTO
+
+O sucesso do LINGO WORLD não deverá ser medido somente por downloads, tempo de tela, anúncios ou fases concluídas.
+
+Estabelecer indicadores de aprendizagem:
+
+Evolução por competência.
+Retenção de vocabulário.
+Capacidade de construir frases.
+Evolução na compreensão auditiva.
+Evolução na conversação.
+Domínio gramatical.
+Retenção após períodos de revisão.
+Capacidade de utilizar o idioma em situações práticas.
+
+Estabelecer também indicadores de negócio:
+
+Usuários ativos.
+Retenção.
+Conclusão de trilhas.
+Conversão para premium.
+Satisfação.
+Custo operacional.
+Sustentabilidade financeira.
+
+A principal métrica institucional deverá ser:
+
+QUANTAS PESSOAS CONSEGUIRAM APRENDER UM NOVO IDIOMA GRAÇAS AO LINGO WORLD?
+
+28. ESTRATÉGIA DE DESENVOLVIMENTO POR ETAPAS
+
+Não tentar construir todos os módulos simultaneamente sem validação.
+
+Desenvolver em etapas integradas.
+
+ETAPA 1 — FUNDAÇÃO
+Identidade visual.
+Interface.
+Navegação.
+Cadastro.
+Login.
+Perfil.
+Banco de dados.
+Arquitetura multilíngue.
+Currículo inicial.
+Painel administrativo básico.
+ETAPA 2 — APRENDIZAGEM
+Mapa.
+Mundos.
+Fases.
+Aulas.
+Exercícios.
+Avaliações.
+XP.
+Progresso.
+Biblioteca didática.
+ETAPA 3 — INTELIGÊNCIA PEDAGÓGICA
+LINGO BRAIN.
+LINGO PATH.
+Diagnóstico.
+Histórico.
+Memória pedagógica.
+Revisão espaçada.
+Desafios personalizados.
+Relatórios individuais.
+ETAPA 4 — PROFESSOR DE IA
+Conversação.
+Reconhecimento de voz.
+Síntese de fala.
+Correção gramatical.
+Análise de pronúncia.
+Simulações.
+Memória integrada.
+ETAPA 5 — GAMIFICAÇÃO AVANÇADA
+Histórias.
+Arena.
+Rankings.
+Amigos.
+Missões.
+Recompensas.
+Eventos.
+ETAPA 6 — MONETIZAÇÃO
+Plano gratuito.
+Premium.
+Família.
+Publicidade discreta.
+Pagamentos.
+Gestão financeira.
+ETAPA 7 — EXPANSÃO
+Conteúdo avançado.
+Mandarim.
+Espanhol.
+Francês.
+Alemão.
+Plataforma educacional.
+Novas funcionalidades de IA.
+29. DIRETRIZES OBRIGATÓRIAS PARA A IA DESENVOLVEDORA
+
+Antes de iniciar a implementação:
+
+Analise integralmente este documento.
+Apresente a arquitetura técnica recomendada.
+Apresente o modelo de dados.
+Apresente o mapa de navegação.
+Apresente o fluxo de utilização.
+Apresente os módulos e suas dependências.
+Identifique integrações externas necessárias.
+Apresente estimativas de complexidade e custos operacionais.
+Identifique riscos técnicos.
+Organize um plano de execução por etapas.
+
+Após essa apresentação, inicie o desenvolvimento.
+
+Não substitua funcionalidades reais por elementos decorativos.
+
+Não crie botões sem ação.
+
+Não utilize dados fictícios como se fossem dados reais.
+
+Não apresente integrações simuladas como integrações concluídas.
+
+Quando uma funcionalidade depender de uma API, credencial ou serviço externo, informe claramente o que precisa ser configurado.
+
+Desenvolva código organizado, documentado, modular e testável.
+
+Implemente testes de funcionamento e integração.
+
+Valide cada etapa antes de avançar.
+
+Preserve todos os requisitos deste documento. Caso exista alguma limitação da plataforma escolhida, apresente a limitação e proponha uma alternativa técnica, sem eliminar silenciosamente a funcionalidade.
+
+Não tente entregar todo o produto de uma só vez sacrificando a qualidade.
+
+Priorize uma primeira versão funcional, mas construa desde o início uma arquitetura preparada para a visão completa.
+
+30. DIRETRIZ FINAL — A ESSÊNCIA DO LINGO WORLD
+
+O LINGO WORLD deverá ser muito mais do que um aplicativo de idiomas.
+
+Deverá ser um professor particular inteligente, um ambiente de aprendizagem interativo, uma plataforma de desenvolvimento pessoal e uma ferramenta de democratização do conhecimento.
+
+Queremos que uma criança de 10 anos consiga começar a aprender inglês com facilidade.
+
+Queremos que um adolescente tenha vontade de voltar todos os dias para continuar sua jornada.
+
+Queremos que um adulto que nunca teve condições de pagar um curso consiga aprender um novo idioma.
+
+Queremos que uma pessoa que tenha dificuldades receba atenção personalizada, paciência e orientação.
+
+Queremos que o estudante perceba sua evolução, compreenda seus erros e desenvolva confiança para se comunicar.
+
+A inteligência artificial deverá trabalhar para o aluno, e não apenas conversar com ele.
+
+A gamificação deverá estimular o aprendizado, e não substituir o aprendizado.
+
+A monetização deverá sustentar o produto, e não impedir o acesso ao conhecimento.
+
+A tecnologia deverá tornar o ensino mais acessível, eficiente e humano.
+
+O LINGO WORLD deverá nascer com o inglês, mas sua arquitetura e sua visão deverão permitir ensinar qualquer idioma.
+
+NOSSA MISSÃO É TRANSFORMAR O ACESSO AOS IDIOMAS EM UMA OPORTUNIDADE PARA TODOS.
+
+LINGO WORLD — APRENDA IDIOMAS. EXPLORE MUNDOS. CONQUISTE SUA FLUÊNCIA.

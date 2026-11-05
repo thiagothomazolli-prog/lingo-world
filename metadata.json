@@ -1,0 +1,6 @@
+{
+  "name": "Lingo World - Plataforma Global de Idiomas",
+  "description": "Aprenda idiomas. Explore mundos. Conquiste sua fluência com mapa de fases, professor de IA, Lingo Brain adaptativo e gamificação.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
