@@ -215,11 +215,21 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
       {step === 'theory' && (
         <main className="flex-1 overflow-y-auto px-4 py-6 max-w-xl w-full mx-auto flex flex-col justify-between">
           <div className="space-y-6">
-            <div className="flex items-center gap-4 bg-indigo-50/90 p-4 rounded-3xl border-2 border-indigo-100">
-              <MascotLingo mood="explaining" size="sm" />
+            <div className={`flex items-center gap-4 p-4 rounded-3xl border-2 ${
+              phase.type === 'boss'
+                ? 'bg-rose-50 border-rose-200 shadow-sm'
+                : phase.type === 'chest'
+                ? 'bg-amber-50 border-amber-200 shadow-sm'
+                : 'bg-indigo-50/90 border-indigo-100'
+            }`}>
+              <MascotLingo mood={phase.type === 'boss' ? 'cheering' : 'explaining'} size="sm" />
               <div>
-                <span className="text-[11px] font-black text-indigo-600 uppercase tracking-wider block">Objetivo Pedagógico</span>
-                <p className="text-sm font-bold text-indigo-950 mt-0.5">{phase.pedagogicalObjective}</p>
+                <span className={`text-[11px] font-black uppercase tracking-wider block ${
+                  phase.type === 'boss' ? 'text-rose-600' : phase.type === 'chest' ? 'text-amber-700' : 'text-indigo-600'
+                }`}>
+                  {phase.type === 'boss' ? '👑 Batalha do Guardião (Boss Final)' : phase.type === 'chest' ? '🎁 Baú da Sabedoria' : 'Objetivo Pedagógico'}
+                </span>
+                <p className="text-sm font-bold text-slate-900 mt-0.5">{phase.pedagogicalObjective}</p>
               </div>
             </div>
 
@@ -252,9 +262,15 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
           <div className="pt-6">
             <button
               onClick={handleStartExercise}
-              className="w-full py-4 bg-emerald-500 hover:bg-emerald-600 border-b-4 border-b-emerald-700 active:border-b-0 active:translate-y-1 text-white font-black text-base uppercase tracking-wider rounded-2xl shadow-lg transition-transform flex items-center justify-center gap-2 cursor-pointer"
+              className={`w-full py-4 text-white font-black text-base uppercase tracking-wider rounded-2xl shadow-lg transition-transform flex items-center justify-center gap-2 cursor-pointer ${
+                phase.type === 'boss'
+                  ? 'bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-700 hover:to-amber-700 border-b-4 border-b-rose-900 active:border-b-0 active:translate-y-1'
+                  : phase.type === 'chest'
+                  ? 'bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-amber-950 border-b-4 border-b-amber-700 active:border-b-0 active:translate-y-1'
+                  : 'bg-emerald-500 hover:bg-emerald-600 border-b-4 border-b-emerald-700 active:border-b-0 active:translate-y-1'
+              }`}
             >
-              <span>Começar Lição ({phase.exercises.length} tarefas)</span>
+              <span>{phase.type === 'boss' ? `Enfrentar o Guardião (${phase.exercises.length} desafios)` : phase.type === 'chest' ? `Abrir Baú (${phase.exercises.length} tarefas)` : `Começar Lição (${phase.exercises.length} tarefas)`}</span>
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>

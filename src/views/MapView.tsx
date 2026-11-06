@@ -181,7 +181,17 @@ export const MapView: React.FC<MapViewProps> = ({
                         className={`flex flex-col items-center transition-all ${offsetClass}`}
                       >
                         {/* Node Button */}
-                        <div className="relative group">
+                        <div className="relative group flex flex-col items-center">
+                          {phase.type === 'boss' && (
+                            <div className="mb-2 px-3 py-0.5 bg-gradient-to-r from-rose-600 to-amber-500 text-white text-[10px] font-black tracking-wider uppercase rounded-full shadow-md flex items-center gap-1">
+                              <span>👑 BOSS FINAL</span>
+                            </div>
+                          )}
+                          {phase.type === 'chest' && (
+                            <div className="mb-2 px-2.5 py-0.5 bg-amber-400 text-amber-950 text-[10px] font-black tracking-wider uppercase rounded-full shadow-xs flex items-center gap-1">
+                              <span>🎁 BAÚ BÔNUS</span>
+                            </div>
+                          )}
                           <button
                             disabled={!unlocked}
                             onClick={() => {
