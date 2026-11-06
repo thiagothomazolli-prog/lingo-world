@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Lock, Check, Gift, Swords, ShieldAlert, Sparkles, ChevronRight } from 'lucide-react';
+import { Star, Lock, Check, Gift, Swords, ShieldAlert, Sparkles, ChevronRight, Trophy } from 'lucide-react';
 import { World, Phase, UserProfile } from '../types';
 import { WORLDS_DATA } from '../data/courseData';
 import { MascotLingo } from '../components/MascotLingo';

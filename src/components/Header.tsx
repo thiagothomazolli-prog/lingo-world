@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, Gem, Zap, Shield, Crown, Sparkles, BookOpen, Gamepad2, Trophy, Target, ShoppingBag } from 'lucide-react';
+import { Flame, Gem, Zap, Shield, Crown, Sparkles, BookOpen, Trophy, Target, ShoppingBag } from 'lucide-react';
 import { UserProfile, LanguageCode } from '../types';
 
 interface HeaderProps {
@@ -37,7 +37,7 @@ export const Header: React.FC<HeaderProps> = ({
               LW
             </div>
             <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 text-[10px] font-mono font-black rounded-md shadow-2xs">
-              v1.3.0
+              v1.3.1
             </span>
             <div className="hidden sm:block">
               <span className="font-extrabold text-slate-900 tracking-tight text-lg">LINGO<span className="text-indigo-600">WORLD</span></span>
@@ -219,16 +219,6 @@ export const Header: React.FC<HeaderProps> = ({
               <span>Loja</span>
             </button>
           )}
-
-          {/* 3D Action Game Button */}
-          <button
-            onClick={onOpen3DGame}
-            title="Jogar Lingo Runner 3D"
-            className="flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-indigo-600 to-sky-500 hover:from-indigo-700 hover:to-sky-600 text-white text-xs font-black rounded-full shadow-xs transition-transform active:scale-95 cursor-pointer"
-          >
-            <Gamepad2 className="w-3.5 h-3.5" />
-            <span>Jogo 3D</span>
-          </button>
 
           {/* AI Studio Multi-modal Labs Button */}
           {onOpenAiStudio && (
