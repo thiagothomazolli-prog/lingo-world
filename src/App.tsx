@@ -14,7 +14,6 @@ import { LeaderboardModal } from './components/LeaderboardModal';
 import { DailyMissionsModal } from './components/DailyMissionsModal';
 import { ShopModal } from './components/ShopModal';
 
-const LingoGameView = React.lazy(() => import('./game/LingoGameView').then(m => ({ default: m.LingoGameView })));
 const AdminModal = React.lazy(() => import('./components/AdminModal').then(m => ({ default: m.AdminModal })));
 const AiStudioHubModal = React.lazy(() => import('./components/AiStudioHubModal').then(m => ({ default: m.AiStudioHubModal })));
 const CertificateModal = React.lazy(() => import('./components/CertificateModal').then(m => ({ default: m.CertificateModal })));
@@ -68,7 +67,6 @@ export default function App() {
   const [showAiStudioModal, setShowAiStudioModal] = useState(false);
   const [showShopModal, setShowShopModal] = useState(false);
   const [showDiscreteAd, setShowDiscreteAd] = useState(true);
-  const [show3DGame, setShow3DGame] = useState(false);
   const [streakAwardNotification, setStreakAwardNotification] = useState<{
     streak: number;
     bonusGems: number;
@@ -347,19 +345,6 @@ export default function App() {
     }
   }, [streakAwardNotification]);
 
-  if (show3DGame) {
-    return (
-      <React.Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-slate-900 text-white font-black text-sm">Carregando Jogo 3D...</div>}>
-        <LingoGameView
-          onClose={() => setShow3DGame(false)}
-          onAwardGameRewards={(xp, gems) => {
-            handleAwardXp(xp, gems);
-          }}
-        />
-      </React.Suspense>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-slate-100/60 font-sans text-slate-800 flex flex-col selection:bg-indigo-500 selection:text-white">
       {/* Top Header */}
@@ -368,7 +353,6 @@ export default function App() {
         onOpenUpgradeModal={() => setShowUpgradeModal(true)}
         onOpenCefrTest={() => setShowCefrModal(true)}
         onOpenAdmin={() => setShowAdminModal(true)}
-        onOpen3DGame={() => setShow3DGame(true)}
         onOpenLeaderboard={() => setShowLeaderboardModal(true)}
         onOpenMissions={() => setShowMissionsModal(true)}
         onOpenAiStudio={() => setShowAiStudioModal(true)}
@@ -454,7 +438,6 @@ export default function App() {
             onNavigateToCategory={handleNavigateFromMission}
             onSelectPhase={(phase) => setSelectedPhase(phase)}
             onOpenCefrTest={() => setShowCefrModal(true)}
-            onOpen3DGame={() => setShow3DGame(true)}
             onOpenLeaderboard={() => setShowLeaderboardModal(true)}
             onOpenAiStudio={() => setShowAiStudioModal(true)}
             onOpenShop={() => setShowShopModal(true)}
@@ -479,7 +462,6 @@ export default function App() {
           <ChallengesView
             user={user}
             onAwardXp={handleAwardXp}
-            onOpen3DGame={() => setShow3DGame(true)}
             onOpenLeaderboard={() => setShowLeaderboardModal(true)}
             onRecordMissionActivity={(cat) => handleRecordMissionActivity(cat, 1)}
           />

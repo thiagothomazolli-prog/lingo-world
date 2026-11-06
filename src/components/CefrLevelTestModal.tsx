@@ -3,6 +3,7 @@ import { X, Award, CheckCircle2, AlertCircle, ArrowRight, Volume2, Sparkles, Tro
 import { CefrLevel } from '../types';
 import { MascotLingo } from './MascotLingo';
 import { speakText } from '../utils/storage';
+import { sfx } from '../utils/soundEffects';
 import confetti from 'canvas-confetti';
 
 interface CefrLevelTestModalProps {
@@ -166,6 +167,7 @@ export const CefrLevelTestModal: React.FC<CefrLevelTestModalProps> = ({
 
   const handleSelectOption = (opt: string) => {
     if (hasAnswered) return;
+    sfx.playTap();
     setSelectedOption(opt);
   };
 
@@ -176,18 +178,23 @@ export const CefrLevelTestModal: React.FC<CefrLevelTestModalProps> = ({
     setHasAnswered(true);
 
     if (correct) {
+      sfx.playCorrect();
       setCorrectAnswersCount((prev) => prev + 1);
+    } else {
+      sfx.playIncorrect();
     }
   };
 
   const handleNext = () => {
     if (currentIndex < PROGRESSIVE_QUESTIONS.length - 1) {
+      sfx.playTap();
       setCurrentIndex((prev) => prev + 1);
       setSelectedOption(null);
       setHasAnswered(false);
       setIsCorrect(false);
     } else {
       setIsFinished(true);
+      sfx.playSuccessFanfare();
       confetti({
         particleCount: 100,
         spread: 80,

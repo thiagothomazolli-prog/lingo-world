@@ -1,5 +1,6 @@
 import React from 'react';
 import { Map, BookOpen, Bot, Swords, User } from 'lucide-react';
+import { sfx } from '../utils/soundEffects';
 
 export type NavTab = 'map' | 'study' | 'tutor' | 'challenges' | 'profile';
 
@@ -37,7 +38,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           return (
             <button
               key={tab.id}
-              onClick={() => onSelectTab(tab.id)}
+              onClick={() => {
+                sfx.playTap();
+                onSelectTab(tab.id);
+              }}
               className={`relative flex flex-col md:flex-row items-center justify-center md:gap-2 px-3 py-1.5 md:py-2 md:px-4 rounded-xl text-xs font-bold transition-all ${
                 isActive
                   ? tab.isSpecial

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Star, Lock, Check, Gift, Swords, ShieldAlert, Sparkles, ChevronRight, Gamepad2, Trophy, ShoppingBag } from 'lucide-react';
+import { Star, Lock, Check, Gift, Swords, ShieldAlert, Sparkles, ChevronRight } from 'lucide-react';
 import { World, Phase, UserProfile } from '../types';
 import { WORLDS_DATA } from '../data/courseData';
 import { MascotLingo } from '../components/MascotLingo';
 import { DailyMissionsCard } from '../components/DailyMissionsCard';
 import { DailyMission, DailyMissionsState } from '../types';
+import { sfx } from '../utils/soundEffects';
 
 interface MapViewProps {
   user: UserProfile;
@@ -14,7 +15,6 @@ interface MapViewProps {
   onNavigateToCategory?: (category: DailyMission['category']) => void;
   onSelectPhase: (phase: Phase) => void;
   onOpenCefrTest: () => void;
-  onOpen3DGame: () => void;
   onOpenLeaderboard: () => void;
   onOpenAiStudio?: () => void;
   onOpenShop?: () => void;
@@ -28,7 +28,6 @@ export const MapView: React.FC<MapViewProps> = ({
   onNavigateToCategory,
   onSelectPhase,
   onOpenCefrTest,
-  onOpen3DGame,
   onOpenLeaderboard,
   onOpenAiStudio,
   onOpenShop,
@@ -77,46 +76,15 @@ export const MapView: React.FC<MapViewProps> = ({
               Olá, {user.name}! Vamos explorar o Mundo?
             </h1>
             <p className="text-sm sm:text-base text-indigo-100 font-medium">
-              Conquiste territórios, enfrente os Guardiões de cada fase e pratique situações reais com o Professor IA.
+              Avance pelas unidades de aprendizado, domine novas estruturas e pratique conversas reais.
             </p>
-            <div className="pt-1 flex flex-wrap items-center justify-center md:justify-start gap-3">
-              <button
-                onClick={onOpen3DGame}
-                className="px-5 py-2.5 bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-500 hover:to-orange-500 text-slate-950 font-black text-xs rounded-xl shadow-lg transition-transform active:scale-95 cursor-pointer flex items-center gap-2"
-              >
-                <Gamepad2 className="w-4 h-4" />
-                <span>Explorador Cósmico 3D (Jogar)</span>
-              </button>
-              <button
-                onClick={onOpenLeaderboard}
-                className="px-4 py-2.5 bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-600 hover:to-yellow-500 text-slate-950 font-black text-xs rounded-xl shadow-lg transition-transform active:scale-95 cursor-pointer flex items-center gap-2"
-              >
-                <Trophy className="w-4 h-4 fill-slate-950 text-slate-950" />
-                <span>Ranking Top 5 (XP)</span>
-              </button>
-              {onOpenShop && (
-                <button
-                  onClick={onOpenShop}
-                  className="px-4 py-2.5 bg-gradient-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 text-slate-950 font-black text-xs rounded-xl shadow-lg transition-transform active:scale-95 cursor-pointer flex items-center gap-2"
-                >
-                  <ShoppingBag className="w-4 h-4 text-slate-950" />
-                  <span>Loja de Gemas ({user.gems} 💎)</span>
-                </button>
-              )}
-              {onOpenAiStudio && (
-                <button
-                  onClick={onOpenAiStudio}
-                  className="px-4 py-2.5 bg-gradient-to-r from-fuchsia-500 to-purple-600 hover:from-fuchsia-600 hover:to-purple-700 text-white font-black text-xs rounded-xl shadow-lg transition-transform active:scale-95 cursor-pointer flex items-center gap-2 ring-1 ring-white/30"
-                >
-                  <Sparkles className="w-4 h-4 text-amber-300" />
-                  <span>IA Studio Labs (Multimodal)</span>
-                </button>
-              )}
+            <div className="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-3">
               <button
                 onClick={onOpenCefrTest}
-                className="px-4 py-2.5 bg-white/15 hover:bg-white/25 text-white font-extrabold text-xs rounded-xl backdrop-blur-xs transition-all active:scale-95 cursor-pointer"
+                className="px-5 py-2.5 bg-white text-indigo-900 font-black text-xs rounded-xl shadow-md transition-transform active:scale-95 cursor-pointer flex items-center gap-2"
               >
-                Refazer Nivelamento
+                <Sparkles className="w-4 h-4 text-indigo-600" />
+                <span>Teste de Nivelamento CEFR</span>
               </button>
             </div>
           </div>
@@ -216,7 +184,10 @@ export const MapView: React.FC<MapViewProps> = ({
                         <div className="relative group">
                           <button
                             disabled={!unlocked}
-                            onClick={() => onSelectPhase(phase)}
+                            onClick={() => {
+                              sfx.playTap();
+                              onSelectPhase(phase);
+                            }}
                             className={`w-18 h-18 sm:w-20 sm:h-20 rounded-full flex flex-col items-center justify-center font-black text-lg transition-transform active:translate-y-1.5 cursor-pointer select-none ${
                               isCompleted
                                 ? 'bg-emerald-500 border-b-[6px] border-emerald-700 text-white shadow-sm'

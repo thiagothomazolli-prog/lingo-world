@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Swords, Trophy, Sparkles, Brain, Target, Play, CheckCircle2, XCircle, ArrowRight, Zap, RefreshCw, Flame, Gamepad2 } from 'lucide-react';
+import { Swords, Trophy, Sparkles, Brain, Target, Play, CheckCircle2, XCircle, ArrowRight, Zap, RefreshCw, Flame } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { UserProfile, ArenaCompetitor } from '../types';
 import { MascotLingo } from '../components/MascotLingo';
 import { speakText } from '../utils/storage';
 import { API_BASE_URL } from '../config';
+import { sfx } from '../utils/soundEffects';
 
 interface ChallengesViewProps {
   user: UserProfile;
   onAwardXp: (xp: number, gems: number) => void;
-  onOpen3DGame: () => void;
   onOpenLeaderboard?: () => void;
   onRecordMissionActivity?: (category: 'speed_round') => void;
 }
@@ -25,7 +25,6 @@ const LEAGUE_RANKING: ArenaCompetitor[] = [
 export const ChallengesView: React.FC<ChallengesViewProps> = ({
   user,
   onAwardXp,
-  onOpen3DGame,
   onOpenLeaderboard,
   onRecordMissionActivity,
 }) => {
@@ -111,17 +110,22 @@ export const ChallengesView: React.FC<ChallengesViewProps> = ({
     const isCorrect = selectedAnswer === currentQ.correctAnswer;
     setHasCheckedAnswer(true);
     if (isCorrect) {
+      sfx.playCorrect();
       setMissionScore((prev) => prev + 1);
+    } else {
+      sfx.playIncorrect();
     }
   };
 
   const handleNextMissionStep = () => {
+    sfx.playTap();
     if (missionStepIndex < activeMission.exercises.length - 1) {
       setMissionStepIndex((prev) => prev + 1);
       setSelectedAnswer(null);
       setHasCheckedAnswer(false);
     } else {
       setMissionCompleted(true);
+      sfx.playSuccessFanfare();
       onAwardXp(activeMission.rewardXp, activeMission.rewardGems);
       if (onRecordMissionActivity) {
         onRecordMissionActivity('speed_round');
@@ -132,12 +136,16 @@ export const ChallengesView: React.FC<ChallengesViewProps> = ({
 
   const handleArenaAnswer = (choice: string) => {
     if (choice === ARENA_QUESTIONS[arenaIndex].a) {
+      sfx.playCorrect();
       setArenaScore((prev) => prev + 1);
+    } else {
+      sfx.playIncorrect();
     }
     if (arenaIndex < ARENA_QUESTIONS.length - 1) {
       setArenaIndex((prev) => prev + 1);
     } else {
       setArenaFinished(true);
+      sfx.playSuccessFanfare();
       onAwardXp(50, 15);
       if (onRecordMissionActivity) {
         onRecordMissionActivity('speed_round');
@@ -343,27 +351,6 @@ export const ChallengesView: React.FC<ChallengesViewProps> = ({
       {/* 2. Arena & Leaderboards */}
       {activeSubTab === 'arena' && (
         <div className="space-y-6">
-          {/* 3D Action Game Feature Banner */}
-          <div className="p-6 bg-gradient-to-r from-indigo-900 via-indigo-800 to-sky-900 text-white rounded-3xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-indigo-700/50">
-            <div className="space-y-2 text-center md:text-left">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/10 rounded-full text-xs font-bold text-sky-300">
-                <Gamepad2 className="w-3.5 h-3.5" />
-                <span>Experiência 3D Interativa • Three.js</span>
-              </div>
-              <h4 className="text-xl sm:text-2xl font-black">Lingo Runner 3D: Rodovia Cósmica</h4>
-              <p className="text-xs sm:text-sm text-indigo-200 max-w-lg">
-                Pilote o Lingo com controles em tempo real (WASD / Espaço), desvie de asteroides e atravesse os portais corretos de vocabulário em 60fps!
-              </p>
-            </div>
-            <button
-              onClick={onOpen3DGame}
-              className="px-6 py-3.5 bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-500 hover:to-orange-500 text-slate-950 font-black text-sm rounded-2xl shadow-xl transition-transform active:scale-95 cursor-pointer flex items-center gap-2 shrink-0"
-            >
-              <Play className="w-5 h-5 fill-slate-950" />
-              <span>Jogar em Tela Cheia 3D</span>
-            </button>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Quick Quiz Game */}
           <div className="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">

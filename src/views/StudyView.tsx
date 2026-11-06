@@ -4,6 +4,7 @@ import { DIDACTIC_LIBRARY, INTERACTIVE_STORIES } from '../data/courseData';
 import { Flashcard, InteractiveStory, StoryNode, UserProfile } from '../types';
 import { speakText, updateCardSpacedRepetition } from '../utils/storage';
 import { MascotLingo } from '../components/MascotLingo';
+import { sfx } from '../utils/soundEffects';
 
 interface StudyViewProps {
   user: UserProfile;
@@ -58,7 +59,10 @@ export const StudyView: React.FC<StudyViewProps> = ({
     setReviewedCount((prev) => prev + 1);
 
     if (known) {
+      sfx.playCorrect();
       onAwardXp(10, 2);
+    } else {
+      sfx.playIncorrect();
     }
     if (onRecordMissionActivity) {
       onRecordMissionActivity('flashcards');
@@ -67,6 +71,7 @@ export const StudyView: React.FC<StudyViewProps> = ({
 
   // Interactive Story Handlers
   const handleStartStory = (story: InteractiveStory) => {
+    sfx.playTap();
     setActiveStory(story);
     setCurrentStoryNodeId(story.initialNodeId);
     setStoryChoicesHistory([]);
@@ -74,9 +79,11 @@ export const StudyView: React.FC<StudyViewProps> = ({
   };
 
   const handleChooseStoryOption = (nextNodeId: string, choiceText: string) => {
+    sfx.playTap();
     setStoryChoicesHistory((prev) => [...prev, choiceText]);
     if (activeStory?.nodes[nextNodeId]?.isEnding) {
       setIsStoryComplete(true);
+      sfx.playSuccessFanfare();
       onAwardXp(activeStory.xpReward, 20);
       if (onRecordMissionActivity) {
         onRecordMissionActivity('story');
@@ -186,7 +193,10 @@ export const StudyView: React.FC<StudyViewProps> = ({
             <div className="space-y-4">
               {/* Flashcard Box */}
               <div
-                onClick={() => setIsFlipped(!isFlipped)}
+                onClick={() => {
+                  sfx.playTap();
+                  setIsFlipped(!isFlipped);
+                }}
                 className="w-full min-h-[260px] p-6 bg-white border-2 border-indigo-200 hover:border-indigo-400 rounded-3xl shadow-lg flex flex-col items-center justify-between cursor-pointer transition-all transform hover:-translate-y-1 relative select-none"
               >
                 <div className="w-full flex items-center justify-between text-xs text-slate-400 font-bold">

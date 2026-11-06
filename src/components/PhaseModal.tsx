@@ -4,6 +4,7 @@ import { X, Volume2, Mic, MicOff, CheckCircle2, AlertCircle, Sparkles, Star, Arr
 import { Phase, Exercise, UserProfile } from '../types';
 import { speakText } from '../utils/storage';
 import { MascotLingo } from './MascotLingo';
+import { sfx } from '../utils/soundEffects';
 
 interface PhaseModalProps {
   phase: Phase;
@@ -107,6 +108,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
   const handleWordClick = (word: string) => {
     if (hasAnswered) return;
+    sfx.playTap();
     if (selectedWords.includes(word)) {
       setSelectedWords((prev) => prev.filter((w) => w !== word));
     } else {
@@ -134,9 +136,11 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     setHasAnswered(true);
 
     if (!correct) {
+      sfx.playIncorrect();
       setMistakesCount((prev) => prev + 1);
       setFeedbackMessage(currentExercise.explanation);
     } else {
+      sfx.playCorrect();
       setFeedbackMessage('Exato! ' + currentExercise.explanation);
       if (currentExercise.audioPhrase && user.soundEnabled) {
         speakText(currentExercise.audioPhrase, 'en-US', user.speechSpeed);
@@ -152,10 +156,12 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   };
 
   const handleNextExercise = () => {
+    sfx.playTap();
     if (currentExerciseIndex < phase.exercises.length - 1) {
       setCurrentExerciseIndex((prev) => prev + 1);
     } else {
       setStep('complete');
+      sfx.playSuccessFanfare();
       confetti({
         particleCount: 90,
         spread: 75,
@@ -324,7 +330,10 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                       <button
                         key={i}
                         disabled={hasAnswered}
-                        onClick={() => setSelectedOption(opt)}
+                        onClick={() => {
+                          sfx.playTap();
+                          setSelectedOption(opt);
+                        }}
                         className={`w-full p-4 rounded-2xl text-left font-bold text-sm sm:text-base transition-transform active:translate-y-1 flex items-center justify-between cursor-pointer ${btnStyle}`}
                       >
                         <span>{opt}</span>
