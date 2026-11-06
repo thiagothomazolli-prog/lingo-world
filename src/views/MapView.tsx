@@ -217,16 +217,16 @@ export const MapView: React.FC<MapViewProps> = ({
                           <button
                             disabled={!unlocked}
                             onClick={() => onSelectPhase(phase)}
-                            className={`w-16 h-16 sm:w-20 sm:h-20 rounded-3xl flex flex-col items-center justify-center font-extrabold text-base sm:text-lg transition-all duration-300 shadow-xl cursor-pointer select-none active:scale-95 ${
+                            className={`w-18 h-18 sm:w-20 sm:h-20 rounded-full flex flex-col items-center justify-center font-black text-lg transition-transform active:translate-y-1.5 cursor-pointer select-none ${
                               isCompleted
-                                ? 'bg-gradient-to-tr from-emerald-500 to-teal-400 text-white ring-4 ring-emerald-200/60 hover:scale-105'
+                                ? 'bg-emerald-500 border-b-[6px] border-emerald-700 text-white shadow-sm'
                                 : unlocked
                                 ? phase.type === 'boss'
-                                  ? 'bg-gradient-to-tr from-rose-500 to-red-600 text-white ring-4 ring-rose-200 animate-bounce hover:scale-105'
+                                  ? 'bg-rose-500 border-b-[6px] border-rose-700 text-white ring-4 ring-rose-200 shadow-md'
                                   : phase.type === 'chest'
-                                  ? 'bg-gradient-to-tr from-amber-400 to-orange-500 text-white ring-4 ring-amber-200 hover:scale-105'
-                                  : 'bg-gradient-to-tr from-indigo-600 to-sky-500 text-white ring-4 ring-indigo-200 hover:scale-105 animate-pulse'
-                                : 'bg-slate-200 text-slate-400 border-2 border-slate-300 opacity-80 cursor-not-allowed'
+                                  ? 'bg-amber-400 border-b-[6px] border-amber-600 text-amber-950 shadow-md'
+                                  : 'bg-indigo-600 border-b-[6px] border-indigo-800 text-white ring-4 ring-indigo-200 shadow-md'
+                                : 'bg-slate-200 border-b-[4px] border-slate-300 text-slate-400 cursor-not-allowed opacity-75'
                             }`}
                           >
                             {isCompleted ? (

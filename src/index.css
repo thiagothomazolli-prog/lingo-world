@@ -32,6 +32,12 @@ html, body {
   flex-direction: column;
 }
 
+/* ⚡ 0ms Tap Lag Elimination for Mobile Android */
+button, a, input, select, textarea, [role="button"], [tabindex] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Allow text input selection */
 input, textarea {
   -webkit-user-select: text;
@@ -49,4 +55,36 @@ input, textarea {
 }
 ::-webkit-scrollbar-track {
   background: transparent;
+}
+
+/* 🎮 Duolingo 3D Button Shadows */
+.duo-btn-green {
+  background-color: #22c55e;
+  border-bottom: 4px solid #15803d;
+  color: #ffffff;
+}
+.duo-btn-green:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.duo-btn-blue {
+  background-color: #3b82f6;
+  border-bottom: 4px solid #1d4ed8;
+  color: #ffffff;
+}
+.duo-btn-blue:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.duo-btn-white {
+  background-color: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-bottom: 4px solid #cbd5e1;
+  color: #334155;
+}
+.duo-btn-white:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
 }

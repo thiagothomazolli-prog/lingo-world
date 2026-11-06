@@ -10,13 +10,14 @@ import { ProfileView } from './views/ProfileView';
 import { PhaseModal } from './components/PhaseModal';
 import { CefrLevelTestModal } from './components/CefrLevelTestModal';
 import { PlanUpgradeModal } from './components/PlanUpgradeModal';
-import { CertificateModal } from './components/CertificateModal';
-import { AdminModal } from './components/AdminModal';
 import { LeaderboardModal } from './components/LeaderboardModal';
 import { DailyMissionsModal } from './components/DailyMissionsModal';
-import { LingoGameView } from './game/LingoGameView';
-import { AiStudioHubModal } from './components/AiStudioHubModal';
 import { ShopModal } from './components/ShopModal';
+
+const LingoGameView = React.lazy(() => import('./game/LingoGameView').then(m => ({ default: m.LingoGameView })));
+const AdminModal = React.lazy(() => import('./components/AdminModal').then(m => ({ default: m.AdminModal })));
+const AiStudioHubModal = React.lazy(() => import('./components/AiStudioHubModal').then(m => ({ default: m.AiStudioHubModal })));
+const CertificateModal = React.lazy(() => import('./components/CertificateModal').then(m => ({ default: m.CertificateModal })));
 
 import {
   UserProfile,
@@ -348,12 +349,14 @@ export default function App() {
 
   if (show3DGame) {
     return (
-      <LingoGameView
-        onClose={() => setShow3DGame(false)}
-        onAwardGameRewards={(xp, gems) => {
-          handleAwardXp(xp, gems);
-        }}
-      />
+      <React.Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-slate-900 text-white font-black text-sm">Carregando Jogo 3D...</div>}>
+        <LingoGameView
+          onClose={() => setShow3DGame(false)}
+          onAwardGameRewards={(xp, gems) => {
+            handleAwardXp(xp, gems);
+          }}
+        />
+      </React.Suspense>
     );
   }
 
@@ -552,18 +555,22 @@ export default function App() {
       )}
 
       {showCertificateModal && (
-        <CertificateModal
-          user={user}
-          onClose={() => setShowCertificateModal(false)}
-        />
+        <React.Suspense fallback={null}>
+          <CertificateModal
+            user={user}
+            onClose={() => setShowCertificateModal(false)}
+          />
+        </React.Suspense>
       )}
 
       {showAdminModal && (
-        <AdminModal
-          user={user}
-          onClose={() => setShowAdminModal(false)}
-          onResetUserProgress={handleResetUserProgress}
-        />
+        <React.Suspense fallback={null}>
+          <AdminModal
+            user={user}
+            onClose={() => setShowAdminModal(false)}
+            onResetUserProgress={handleResetUserProgress}
+          />
+        </React.Suspense>
       )}
 
       {showLeaderboardModal && (
@@ -590,10 +597,12 @@ export default function App() {
       )}
 
       {showAiStudioModal && (
-        <AiStudioHubModal
-          isOpen={showAiStudioModal}
-          onClose={() => setShowAiStudioModal(false)}
-        />
+        <React.Suspense fallback={null}>
+          <AiStudioHubModal
+            isOpen={showAiStudioModal}
+            onClose={() => setShowAiStudioModal(false)}
+          />
+        </React.Suspense>
       )}
 
       {showShopModal && (

@@ -38,6 +38,9 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-sky-500 flex items-center justify-center text-white font-black text-lg shadow-sm tracking-tighter">
               LW
             </div>
+            <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 text-[10px] font-mono font-black rounded-md shadow-2xs">
+              v1.2.0
+            </span>
             <div className="hidden sm:block">
               <span className="font-extrabold text-slate-900 tracking-tight text-lg">LINGO<span className="text-indigo-600">WORLD</span></span>
               <span className="block text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Aprenda • Explore • Conquiste</span>

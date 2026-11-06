@@ -27,7 +27,7 @@ export const MascotLingo: React.FC<MascotLingoProps> = ({
   return (
     <div className={`relative inline-flex flex-col items-center select-none ${className}`}>
       {message && (
-        <div className="mb-2 max-w-xs px-3.5 py-2 bg-white text-slate-800 text-xs sm:text-sm font-semibold rounded-2xl shadow-lg border border-indigo-100 relative animate-bounce duration-1000">
+        <div className="mb-2 max-w-xs px-3.5 py-2 bg-white text-slate-800 text-xs sm:text-sm font-semibold rounded-2xl shadow-md border border-indigo-100 relative">
           <span>{message}</span>
           <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white border-r border-b border-indigo-100 rotate-45" />
         </div>
