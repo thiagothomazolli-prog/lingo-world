@@ -1,5 +1,11 @@
 import { World, CefrLevel, InteractiveStory } from '../types';
 import { WORLD_1_PHASES } from './world1Phases';
+import { WORLD_2_PHASES } from './world2Phases';
+import { WORLD_3_PHASES } from './world3Phases';
+import { WORLD_4_PHASES } from './world4Phases';
+import { WORLD_5_PHASES } from './world5Phases';
+import { WORLD_6_PHASES } from './world6Phases';
+import { WORLD_7_PHASES } from './world7Phases';
 
 export const WORLDS_DATA: World[] = [
   {
@@ -20,134 +26,7 @@ export const WORLDS_DATA: World[] = [
     gradientTo: 'to-indigo-600',
     description: 'Domine o verbo TO BE, pronomes, artigos, substantivos e a estrutura de perguntas.',
     levelBadge: 'A1+ / A2',
-    phases: [
-      {
-        id: 'w2-p1',
-        worldId: 2,
-        phaseNumber: 1,
-        title: 'O Poderoso Verbo TO BE',
-        subtitle: 'I am, You are, He/She/It is',
-        pedagogicalObjective: 'Compreender ser e estar no presente e evitar erros comuns com idade.',
-        type: 'lesson',
-        icon: 'zap',
-        cefrLevel: 'A1',
-        theorySummary: [
-          'I am (Eu sou / estou), You are (Você é / está), He/She/It is (Ele/Ela é / está).',
-          'We are (Nós somos / estamos), They are (Eles são / estão).',
-          'ATENÇÃO: Em inglês, IDADE usa TO BE: "I am 20 years old" (NUNCA "I have 20 years").'
-        ],
-        xpReward: 40,
-        gemsReward: 15,
-        exercises: [
-          {
-            id: 'w2-p1-e1',
-            type: 'multiple-choice',
-            prompt: 'Como se diz "Ela tem 25 anos de idade"?',
-            contextSentence: 'She ______ 25 years old.',
-            options: ['is', 'has', 'have', 'are'],
-            correctAnswer: 'is',
-            explanation: 'Usamos o verbo TO BE (is) para terceira pessoa e idade: "She is 25 years old".',
-            skillCategory: 'grammar'
-          },
-          {
-            id: 'w2-p1-e2',
-            type: 'word-order',
-            prompt: 'Ordene a pergunta correta:',
-            contextSentence: 'Are you ready for the adventure?',
-            audioPhrase: 'Are you ready for the adventure?',
-            options: ['the', 'ready', 'Are', 'adventure?', 'you', 'for'],
-            correctAnswer: 'Are you ready for the adventure?',
-            explanation: 'Em perguntas com TO BE, invertemos o verbo e o sujeito: "Are you ready...?"',
-            skillCategory: 'grammar'
-          },
-          {
-            id: 'w2-p1-e3',
-            type: 'fill-blank',
-            prompt: 'Complete com a forma correta do verbo:',
-            contextSentence: 'We ______ very excited to learn English!',
-            contextSentencePt: 'Nós estamos muito animados para aprender inglês!',
-            audioPhrase: 'We are very excited to learn English!',
-            options: ['are', 'is', 'am', 'be'],
-            correctAnswer: 'are',
-            explanation: 'Para o pronome "We", a forma do presente é "are".',
-            skillCategory: 'vocabulary'
-          }
-        ]
-      },
-      {
-        id: 'w2-p2',
-        worldId: 2,
-        phaseNumber: 2,
-        title: 'Perguntas com Wh- Words',
-        subtitle: 'What, Where, When, Who & Why',
-        pedagogicalObjective: 'Formular perguntas abertas no dia a dia com segurança.',
-        type: 'lesson',
-        icon: 'help-circle',
-        cefrLevel: 'A2',
-        theorySummary: [
-          'What = O que / Qual | Where = Onde | When = Quando',
-          'Who = Quem | Why = Por que (resposta com Because)',
-          'Estrutura: Wh-word + verbo auxiliar/to be + sujeito + complemento?'
-        ],
-        xpReward: 45,
-        gemsReward: 15,
-        exercises: [
-          {
-            id: 'w2-p2-e1',
-            type: 'multiple-choice',
-            prompt: 'Qual pergunta busca a localização de alguém?',
-            options: [
-              'Where is the library?',
-              'What is your favorite book?',
-              'When does the class start?',
-              'Why are you happy?'
-            ],
-            correctAnswer: 'Where is the library?',
-            explanation: '"Where" é a palavra interrogativa usada exclusivamente para lugares e localizações.',
-            skillCategory: 'reading'
-          },
-          {
-            id: 'w2-p2-e2',
-            type: 'speaking-repeat',
-            prompt: 'Diga a pergunta com entonação natural:',
-            audioPhrase: 'What do you want to learn today?',
-            contextSentence: 'What do you want to learn today?',
-            contextSentencePt: 'O que você quer aprender hoje?',
-            correctAnswer: 'What do you want to learn today?',
-            explanation: 'Dê ritmo conectando "What do you" -> /wʌt də juː/.',
-            phoneticHint: '/wʌt duː juː wɒnt tuː lɜːn təˈdeɪ/',
-            skillCategory: 'pronunciation'
-          }
-        ]
-      },
-      {
-        id: 'w2-p3',
-        worldId: 2,
-        phaseNumber: 3,
-        title: 'Desafio Boss: Torre Gramatical',
-        subtitle: 'Batalha de Estrutura de Frases',
-        pedagogicalObjective: 'Vencer o guardião demonstrando domínio total de pronomes e perguntas.',
-        type: 'boss',
-        icon: 'swords',
-        cefrLevel: 'A2',
-        theorySummary: ['Prepare-se: Frases rápidas e sem margem para equívocos!'],
-        xpReward: 90,
-        gemsReward: 45,
-        exercises: [
-          {
-            id: 'w2-p3-e1',
-            type: 'word-order',
-            prompt: 'Construa a frase completa:',
-            contextSentence: 'Why are they working on the project now?',
-            audioPhrase: 'Why are they working on the project now?',
-            options: ['they', 'project', 'are', 'Why', 'working', 'now?', 'on', 'the'],
-            correctAnswer: 'Why are they working on the project now?',
-            explanation: 'Why + are + they + working + on the project + now? Estrutura impecável.',
-            skillCategory: 'grammar'
-          }
-        ]
-      }
-    ]
+    phases: WORLD_2_PHASES,
   },
   {
     id: 3,
@@ -155,81 +34,9 @@ export const WORLDS_DATA: World[] = [
     themeColor: 'amber',
     gradientFrom: 'from-amber-500',
     gradientTo: 'to-orange-600',
-    description: 'Rotina, família, alimentação, compras, lugares da cidade e horários.',
-    levelBadge: 'A2 - Básico Consolidado',
-    phases: [
-      {
-        id: 'w3-p1',
-        worldId: 3,
-        phaseNumber: 1,
-        title: 'Rotina & Hábitos',
-        subtitle: 'Simple Present & Daily Routines',
-        pedagogicalObjective: 'Descrever o que faz todos os dias, horários e rotinas.',
-        type: 'lesson',
-        icon: 'calendar',
-        cefrLevel: 'A2',
-        theorySummary: [
-          'No Simple Present: "I wake up at 7 AM", "I drink coffee".',
-          'Com He/She/It adicionamos -s ou -es: "He works", "She goes to school".'
-        ],
-        xpReward: 45,
-        gemsReward: 15,
-        exercises: [
-          {
-            id: 'w3-p1-e1',
-            type: 'multiple-choice',
-            prompt: 'Complete com a conjugação correta de "study":',
-            contextSentence: 'Lucas ______ English for 30 minutes every morning.',
-            options: ['studies', 'study', 'studyed', 'studying'],
-            correctAnswer: 'studies',
-            explanation: 'Verbos que terminam em consoante + Y mudam para -IES na terceira pessoa (Lucas = He).',
-            skillCategory: 'grammar'
-          },
-          {
-            id: 'w3-p1-e2',
-            type: 'fill-blank',
-            prompt: 'Preposição correta para horários exatos:',
-            contextSentence: 'Our flight departs ______ 8:30 PM.',
-            contextSentencePt: 'Nosso voo parte às 20h30.',
-            options: ['at', 'in', 'on', 'by'],
-            correctAnswer: 'at',
-            explanation: 'Usamos "AT" para horas específicas ("at 8:30 PM", "at noon").',
-            skillCategory: 'vocabulary'
-          }
-        ]
-      },
-      {
-        id: 'w3-p2',
-        worldId: 3,
-        phaseNumber: 2,
-        title: 'No Restaurante & Pedidos',
-        subtitle: 'Can I have...? Would you like...?',
-        pedagogicalObjective: 'Pedir comida e bebidas com elegância e vocabulário culinário.',
-        type: 'lesson',
-        icon: 'coffee',
-        cefrLevel: 'A2',
-        theorySummary: [
-          '"Could I have the menu, please?"',
-          '"I would like a glass of water." (ou a contração "I\'d like...")',
-          '"How much is this?" e "Can we get the check, please?"'
-        ],
-        xpReward: 50,
-        gemsReward: 20,
-        exercises: [
-          {
-            id: 'w3-p2-e1',
-            type: 'word-order',
-            prompt: 'Monte a forma polida de pedir a conta:',
-            contextSentence: 'Could we have the check, please?',
-            audioPhrase: 'Could we have the check, please?',
-            options: ['the', 'have', 'Could', 'please?', 'check,', 'we'],
-            correctAnswer: 'Could we have the check, please?',
-            explanation: '"Could we have..." é a expressão padrão em restaurantes no inglês americano e britânico.',
-            skillCategory: 'speaking'
-          }
-        ]
-      }
-    ]
+    description: 'Família, casa, alimentação, rotina diária, compras, lugares e horários.',
+    levelBadge: 'A2 - Básico II',
+    phases: WORLD_3_PHASES,
   },
   {
     id: 4,
@@ -237,44 +44,9 @@ export const WORLDS_DATA: World[] = [
     themeColor: 'purple',
     gradientFrom: 'from-purple-500',
     gradientTo: 'to-pink-600',
-    description: 'Diálogos reais, escuta ativa, perguntas espontâneas e expressões sociais comuns.',
+    description: 'Conversação ativa, listening aprimorado, situações sociais e diálogos reais.',
     levelBadge: 'B1 - Intermediário I',
-    phases: [
-      {
-        id: 'w4-p1',
-        worldId: 4,
-        phaseNumber: 1,
-        title: 'Small Talk & Conexões',
-        subtitle: 'Conversas espontâneas e clima',
-        pedagogicalObjective: 'Iniciar e manter conversas descontraídas com falantes nativos.',
-        type: 'lesson',
-        icon: 'message-circle',
-        cefrLevel: 'B1',
-        theorySummary: [
-          'Small talk é a chave para socializar no exterior.',
-          'Comentários sobre clima, fim de semana e interesses mútuos.',
-          'Perguntas de acompanhamento: "Really? How did that go?"'
-        ],
-        xpReward: 50,
-        gemsReward: 20,
-        exercises: [
-          {
-            id: 'w4-p1-e1',
-            type: 'multiple-choice',
-            prompt: 'Alguém diz "I just moved to this city!". Como você responde com simpatia?',
-            options: [
-              'Welcome! How are you finding it so far?',
-              'No problem at all.',
-              'I am hungry now.',
-              'Yesterday was Friday.'
-            ],
-            correctAnswer: 'Welcome! How are you finding it so far?',
-            explanation: '"How are you finding it?" significa "O que você está achando até agora?", demonstrando interesse genuíno.',
-            skillCategory: 'speaking'
-          }
-        ]
-      }
-    ]
+    phases: WORLD_4_PHASES,
   },
   {
     id: 5,
@@ -282,53 +54,9 @@ export const WORLDS_DATA: World[] = [
     themeColor: 'rose',
     gradientFrom: 'from-rose-500',
     gradientTo: 'to-red-600',
-    description: 'Past Simple, Present Perfect, verbos irregulares e os famosos Phrasal Verbs.',
-    levelBadge: 'B1+ / B2',
-    phases: [
-      {
-        id: 'w5-p1',
-        worldId: 5,
-        phaseNumber: 1,
-        title: 'Verbos Irregulares no Passado',
-        subtitle: 'Went, Saw, Bought, Found & Thought',
-        pedagogicalObjective: 'Dominar os 30 verbos irregulares mais frequentes sem hesitação.',
-        type: 'lesson',
-        icon: 'history',
-        cefrLevel: 'B1',
-        theorySummary: [
-          'Verbos irregulares não recebem "-ed". Ex: go -> went, make -> made, think -> thought.',
-          'Em frases negativas e perguntas no passado, usamos "DID" e o verbo volta ao infinitivo: "Did you go?", "I didn\'t see".'
-        ],
-        xpReward: 60,
-        gemsReward: 25,
-        exercises: [
-          {
-            id: 'w5-p1-e1',
-            type: 'multiple-choice',
-            prompt: 'Qual a frase correta no passado?',
-            options: [
-              'She bought a wonderful house last year.',
-              'She buyed a wonderful house last year.',
-              'She did bought a wonderful house last year.',
-              'She was buy a house last year.'
-            ],
-            correctAnswer: 'She bought a wonderful house last year.',
-            explanation: 'O passado de buy é BOUGHT. "Buyed" é um erro comum de hiper-regularização.',
-            skillCategory: 'grammar'
-          },
-          {
-            id: 'w5-p1-e2',
-            type: 'fill-blank',
-            prompt: 'Complete a negativa com o verbo no infinitivo:',
-            contextSentence: 'I did not ______ him at the conference.',
-            options: ['see', 'saw', 'seen', 'seeing'],
-            correctAnswer: 'see',
-            explanation: 'Após o auxiliar "did not", o verbo principal permanece na sua forma base (see).',
-            skillCategory: 'grammar'
-          }
-        ]
-      }
-    ]
+    description: 'Tempos verbais complexos, phrasal verbs, expressões e argumentação.',
+    levelBadge: 'B2 - Intermediário II',
+    phases: WORLD_5_PHASES,
   },
   {
     id: 6,
@@ -336,43 +64,9 @@ export const WORLDS_DATA: World[] = [
     themeColor: 'violet',
     gradientFrom: 'from-violet-600',
     gradientTo: 'to-purple-800',
-    description: 'Inglês profissional, argumentação, nuances culturais e compreensão de sotaques.',
-    levelBadge: 'B2 / C1',
-    phases: [
-      {
-        id: 'w6-p1',
-        worldId: 6,
-        phaseNumber: 1,
-        title: 'Comunicação Corporativa & Negociação',
-        subtitle: 'Meetings, Feedback & Presentations',
-        pedagogicalObjective: 'Apresentar ideias de negócios e negociar com diplomacia.',
-        type: 'lesson',
-        icon: 'briefcase',
-        cefrLevel: 'C1',
-        theorySummary: [
-          'Uso de hedging em inglês profissional: "It seems to me that...", "We might want to consider...".',
-          'Vocabulário de liderança: milestone, bottleneck, leverage, actionable insights.'
-        ],
-        xpReward: 70,
-        gemsReward: 30,
-        exercises: [
-          {
-            id: 'w6-p1-e1',
-            type: 'multiple-choice',
-            prompt: 'Qual frase expressa desacordo diplomático em uma reunião de negócios?',
-            options: [
-              'I see your point, however, we should also examine the market risk.',
-              'You are completely wrong about this data.',
-              'I don’t care about this proposal.',
-              'Whatever you say is fine with me.'
-            ],
-            correctAnswer: 'I see your point, however, we should also examine the market risk.',
-            explanation: '"I see your point, however..." valida o interlocutor antes de introduzir um contraponto crítico.',
-            skillCategory: 'reading'
-          }
-        ]
-      }
-    ]
+    description: 'Conversação complexa, inglês profissional, sotaques globais e debates.',
+    levelBadge: 'C1 - Avançado',
+    phases: WORLD_6_PHASES,
   },
   {
     id: 7,
@@ -380,40 +74,10 @@ export const WORLDS_DATA: World[] = [
     themeColor: 'cyan',
     gradientFrom: 'from-cyan-500',
     gradientTo: 'to-blue-700',
-    description: 'Debates dinâmicos, simulações complexas e total autonomia comunicativa.',
-    levelBadge: 'C1 / C2 - Fluência Plena',
-    phases: [
-      {
-        id: 'w7-p1',
-        worldId: 7,
-        phaseNumber: 1,
-        title: 'Pensamento Crítico & Espontaneidade',
-        subtitle: 'Expressing nuance and high-level ideas',
-        pedagogicalObjective: 'Sustentar debates articulados com precisão vocabular e retórica.',
-        type: 'boss',
-        icon: 'award',
-        cefrLevel: 'C2',
-        theorySummary: [
-          'Fluência não é falar rápido, é transmitir ideias complexas sem barreira linguística.',
-          'Uso de conectivos sofisticados: "Notwithstanding", "Consequently", "In light of recent developments".'
-        ],
-        xpReward: 120,
-        gemsReward: 60,
-        exercises: [
-          {
-            id: 'w7-p1-e1',
-            type: 'multiple-choice',
-            prompt: 'Escolha a palavra que melhor expressa "apesar de" em contexto acadêmico:',
-            contextSentence: '______ several setbacks, the research team achieved breakthrough results.',
-            options: ['Notwithstanding', 'Although', 'Despite of', 'Even'],
-            correctAnswer: 'Notwithstanding',
-            explanation: '"Notwithstanding" funciona como preposição formal indicando "não obstante / apesar de". "Despite of" é incorreto (o correto seria "despite").',
-            skillCategory: 'reading'
-          }
-        ]
-      }
-    ]
-  }
+    description: 'Espontaneidade nativa, discursos, metáforas e comunicação em qualquer cenário.',
+    levelBadge: 'C2 - Maestria',
+    phases: WORLD_7_PHASES,
+  },
 ];
 
 export const DIDACTIC_LIBRARY = [

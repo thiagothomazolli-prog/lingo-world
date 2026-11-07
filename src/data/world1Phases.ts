@@ -33,6 +33,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p1-e2',
         type: 'word-order',
+        visualEmoji: '🐱',
         prompt: 'Ordene as letras para soletrar a palavra "CAT" (gato):',
         options: ['T', 'C', 'A'],
         correctAnswer: 'C A T',
@@ -354,6 +355,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p6-e1',
         type: 'multiple-choice',
+        visualEmoji: '🚗',
         prompt: 'Qual é a tradução correta de "Um carro vermelho"?',
         options: ['A red car', 'A car red', 'The reds car', 'A car of red'],
         correctAnswer: 'A red car',
@@ -419,6 +421,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p7-e1',
         type: 'multiple-choice',
+        visualEmoji: '✏️',
         prompt: 'Qual objeto você utiliza para escrever com grafite e pode apagar?',
         options: ['Pencil', 'Pen', 'Book', 'Desk'],
         correctAnswer: 'Pencil',
@@ -428,6 +431,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p7-e2',
         type: 'word-order',
+        visualEmoji: '📚',
         prompt: 'Ordene a frase indicando o livro de inglês:',
         options: ['English', 'is', 'book.', 'This', 'my'],
         correctAnswer: 'This is my English book.',
@@ -873,6 +877,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p14-e1',
         type: 'multiple-choice',
+        visualEmoji: '🍎',
         prompt: 'Qual palavra deve ser precedida pelo artigo "AN"?',
         options: ['Apple', 'Book', 'Computer', 'Dog'],
         correctAnswer: 'Apple',
@@ -938,6 +943,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p15-e1',
         type: 'multiple-choice',
+        visualEmoji: '👨‍👩‍👧',
         prompt: 'O que significa a palavra "Parents" em inglês?',
         options: ['Pais (pai e mãe)', 'Parentes em geral', 'Primos', 'Padrinhos'],
         correctAnswer: 'Pais (pai e mãe)',
@@ -1004,6 +1010,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p16-e1',
         type: 'multiple-choice',
+        visualEmoji: '🌎',
         prompt: 'Como responder à pergunta "Where are you from?"?',
         options: ['I am from Brazil.', 'I have from Brazil.', 'I live in nationality.', 'My from is Brazil.'],
         correctAnswer: 'I am from Brazil.',
@@ -1068,6 +1075,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p17-e1',
         type: 'multiple-choice',
+        visualEmoji: '🐦',
         prompt: 'Qual destes animais tem penas e asas?',
         options: ['Bird', 'Dog', 'Cat', 'Fish'],
         correctAnswer: 'Bird',
@@ -1077,6 +1085,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p17-e2',
         type: 'word-order',
+        visualEmoji: '🐕',
         prompt: 'Ordene a frase descritiva do animal de estimação:',
         options: ['brown', 'I', 'dog.', 'have', 'a'],
         correctAnswer: 'I have a brown dog.',
@@ -1321,6 +1330,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p21-e1',
         type: 'multiple-choice',
+        visualEmoji: '☕',
         prompt: 'Qual verbo completa a frase: "I ____ coffee with milk in the morning"?',
         options: ['drink', 'eat', 'sleep', 'read'],
         correctAnswer: 'drink',
@@ -1330,6 +1340,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p21-e2',
         type: 'word-order',
+        visualEmoji: '🍞',
         prompt: 'Monte a frase sobre o café da manhã:',
         options: ['eat', 'and', 'bread', 'cheese.', 'I'],
         correctAnswer: 'I eat bread and cheese.',
@@ -1399,6 +1410,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p22-e3',
         type: 'fill-blank',
+        visualEmoji: '📅',
         prompt: 'Qual é o primeiro dia do fim de semana?',
         contextSentence: 'The weekend begins on ____.',
         options: ['Saturday', 'Monday', 'Thursday', 'Tuesday'],
@@ -1447,6 +1459,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p23-e1',
         type: 'multiple-choice',
+        visualEmoji: '⏰',
         prompt: 'Como se pergunta "Que horas são?" em inglês?',
         options: ['What time is it?', 'Which hour is it?', 'How many hours?', 'What clock is now?'],
         correctAnswer: 'What time is it?',
@@ -1581,6 +1594,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p25-e2',
         type: 'word-order',
+        visualEmoji: '🛏️',
         prompt: 'Ordene a frase de localização:',
         options: ['cat', 'The', 'under', 'is', 'the', 'bed.'],
         correctAnswer: 'The cat is under the bed.',
@@ -1705,6 +1719,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p27-e1',
         type: 'multiple-choice',
+        visualEmoji: '🍳',
         prompt: 'Em qual cômodo preparamos o café da manhã e guardamos a comida?',
         options: ['Kitchen', 'Bedroom', 'Bathroom', 'Garden'],
         correctAnswer: 'Kitchen',
@@ -1770,6 +1785,7 @@ export const WORLD_1_PHASES: Phase[] = [
       {
         id: 'w1-p28-e1',
         type: 'multiple-choice',
+        visualEmoji: '👟',
         prompt: 'Qual item de vestuário você calça nos pés?',
         options: ['Shoes', 'Shirt', 'Jacket', 'Pants'],
         correctAnswer: 'Shoes',
@@ -1986,3 +2002,4 @@ export const WORLD_1_PHASES: Phase[] = [
     ]
   }
 ];
+

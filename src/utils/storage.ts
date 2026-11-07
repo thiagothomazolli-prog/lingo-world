@@ -86,29 +86,73 @@ export function saveFlashcards(cards: Flashcard[]): void {
   }
 }
 
-// Speech Synthesis Helper
+// Clean spoken text for phonetic questions, letters and English words
+export function cleanSpokenText(text: string): string {
+  if (!text) return '';
+  // Check for letter pronunciations
+  if (/êi|ei|\/eɪ\//i.test(text)) return 'A';
+  if (/bi|\/biː\//i.test(text)) return 'B';
+  if (/si|\/siː\//i.test(text)) return 'C';
+  if (/di|\/diː\//i.test(text)) return 'D';
+  if (/som de "i"|í|\/iː\//i.test(text)) return 'E';
+  if (/ef|\/ɛf\//i.test(text)) return 'F';
+  if (/dji|dgee|\/dʒiː\//i.test(text)) return 'G';
+  if (/eitch|\/eɪtʃ\//i.test(text)) return 'H';
+  if (/ai|\/aɪ\//i.test(text)) return 'I';
+  if (/ou|\/oʊ\//i.test(text)) return 'O';
+  if (/ju|\/juː\//i.test(text)) return 'U';
+
+  // Strip phonetic brackets, e.g. "Cat (/kæt/)" -> "Cat"
+  let clean = text.replace(/\/[^/]+\//g, '').replace(/\([^)]+\)/g, '').trim();
+  return clean || text;
+}
+
+// Speech Synthesis Helper with Android WebView optimizations
 export function speakText(text: string, lang = 'en-US', rate = 0.95): void {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    console.warn('Speech synthesis not supported in this browser.');
-    return;
+  if (typeof window === 'undefined') return;
+
+  try {
+    const textToSpeak = cleanSpokenText(text);
+    if (!textToSpeak) return;
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.resume();
+
+      const utterance = new SpeechSynthesisUtterance(textToSpeak);
+      utterance.lang = lang;
+      utterance.rate = rate;
+      utterance.pitch = 1.0;
+
+      // Select natural English voice if available
+      const voices = window.speechSynthesis.getVoices();
+      if (voices && voices.length > 0) {
+        const naturalVoice = voices.find(
+          (v) =>
+            v.lang.startsWith(lang.slice(0, 2)) &&
+            (v.name.includes('Natural') ||
+              v.name.includes('Google') ||
+              v.name.includes('US') ||
+              v.name.includes('Samantha') ||
+              v.name.includes('English'))
+        );
+        if (naturalVoice) {
+          utterance.voice = naturalVoice;
+        }
+      }
+
+      window.speechSynthesis.cancel();
+      setTimeout(() => {
+        try {
+          window.speechSynthesis.resume();
+          window.speechSynthesis.speak(utterance);
+        } catch (e) {
+          console.warn('SpeechSynthesis error:', e);
+        }
+      }, 35);
+    }
+  } catch (err) {
+    console.warn('Speech synthesis error:', err);
   }
-
-  // Cancel any ongoing speech
-  window.speechSynthesis.cancel();
-
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = lang;
-  utterance.rate = rate;
-  utterance.pitch = 1.0;
-
-  // Prefer natural English voices if available
-  const voices = window.speechSynthesis.getVoices();
-  const naturalVoice = voices.find(v => v.lang.startsWith(lang.slice(0, 2)) && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Samantha')));
-  if (naturalVoice) {
-    utterance.voice = naturalVoice;
-  }
-
-  window.speechSynthesis.speak(utterance);
 }
 
 // Spaced Repetition (SM-2 variant update)

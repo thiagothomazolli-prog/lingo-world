@@ -113,6 +113,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
       setSelectedWords((prev) => prev.filter((w) => w !== word));
     } else {
       setSelectedWords((prev) => [...prev, word]);
+      speakText(word, 'en-US', user.speechSpeed);
     }
   };
 
@@ -296,30 +297,81 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               {currentExercise.prompt}
             </h2>
 
-            {/* Context sentence box with speech bubble */}
-            {(currentExercise.contextSentence || currentExercise.audioPhrase) && (
-              <div className="p-4 bg-slate-50 border-2 border-slate-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
-                <div className="space-y-1">
-                  <p className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
-                    {currentExercise.contextSentence || currentExercise.audioPhrase}
-                  </p>
-                  {currentExercise.contextSentencePt && (
-                    <p className="text-xs font-semibold text-slate-500">
-                      {currentExercise.contextSentencePt}
-                    </p>
-                  )}
+            {/* Visual Associative Learning Card (quando houver emoji / representação visual) */}
+            {currentExercise.visualEmoji && (
+              <div className="flex items-center justify-center py-2">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-indigo-50 to-amber-50 border-2 border-indigo-200/80 shadow-md flex items-center justify-center text-5xl sm:text-6xl select-none">
+                  {currentExercise.visualEmoji}
                 </div>
+              </div>
+            )}
 
-                {currentExercise.audioPhrase && (
-                  <button
-                    onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed)}
-                    className="p-3 bg-white hover:bg-indigo-50 border-2 border-indigo-200 rounded-xl text-indigo-600 active:scale-95 transition-transform shrink-0 shadow-xs"
-                    title="Ouvir frase"
-                  >
-                    <Volume2 className="w-5 h-5" />
-                  </button>
+            {/* Listening Audio Box (TEXTO OCULTO ANTES DE RESPONDER!) */}
+            {currentExercise.type === 'listening' ? (
+              <div className="space-y-3">
+                {!hasAnswered ? (
+                  <div className="p-5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-3xl flex flex-col items-center justify-center gap-3 text-center shadow-xs">
+                    <span className="text-xs font-bold text-indigo-700">🎧 Ouça com atenção e selecione a frase correta:</span>
+                    <div className="flex items-center gap-3">
+                      <button
+                        type="button"
+                        onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed)}
+                        className="px-6 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-sm rounded-2xl shadow-md transition-transform active:scale-95 flex items-center gap-2 cursor-pointer"
+                        title="Ouvir áudio em velocidade normal"
+                      >
+                        <Volume2 className="w-5 h-5" />
+                        <span>Tocar Áudio</span>
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', 0.65)}
+                        className="px-4 py-3.5 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-2xl shadow-xs transition-transform active:scale-95 flex items-center gap-1.5 cursor-pointer"
+                        title="Ouvir áudio mais lento"
+                      >
+                        <span>🐢 0.65x</span>
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="p-4 bg-emerald-50 border-2 border-emerald-300 rounded-2xl space-y-1 shadow-xs">
+                    <span className="text-[10px] font-black uppercase tracking-wider text-emerald-700 block">Transcrição Revelada:</span>
+                    <p className="text-base sm:text-lg font-black text-slate-900 leading-snug">
+                      {currentExercise.audioPhrase}
+                    </p>
+                    {currentExercise.contextSentencePt && (
+                      <p className="text-xs font-semibold text-slate-600">
+                        {currentExercise.contextSentencePt}
+                      </p>
+                    )}
+                  </div>
                 )}
               </div>
+            ) : (
+              (currentExercise.contextSentence || currentExercise.audioPhrase) && (
+                <div className="p-4 bg-slate-50 border-2 border-slate-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
+                  <div className="space-y-1">
+                    <p className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                      {currentExercise.contextSentence || currentExercise.audioPhrase}
+                    </p>
+                    {currentExercise.contextSentencePt && (
+                      <p className="text-xs font-semibold text-slate-500">
+                        {currentExercise.contextSentencePt}
+                      </p>
+                    )}
+                  </div>
+
+                  {currentExercise.audioPhrase && (
+                    <button
+                      onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed)}
+                      className="p-3 bg-white hover:bg-indigo-50 border-2 border-indigo-200 rounded-xl text-indigo-600 active:scale-95 transition-transform shrink-0 shadow-xs cursor-pointer"
+                      title="Ouvir frase"
+                    >
+                      <Volume2 className="w-5 h-5" />
+                    </button>
+                  )}
+                </div>
+              )
             )}
 
             {/* 1. Multiple Choice & Listening Options */}
@@ -349,10 +401,24 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         onClick={() => {
                           sfx.playTap();
                           setSelectedOption(opt);
+                          speakText(opt, 'en-US', user.speechSpeed);
                         }}
                         className={`w-full p-4 rounded-2xl text-left font-bold text-sm sm:text-base transition-transform active:translate-y-1 flex items-center justify-between cursor-pointer ${btnStyle}`}
                       >
-                        <span>{opt}</span>
+                        <div className="flex items-center gap-3">
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              speakText(opt, 'en-US', user.speechSpeed);
+                            }}
+                            className="p-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-600 cursor-pointer shrink-0"
+                            title="Ouvir pronúncia desta opção"
+                          >
+                            <Volume2 className="w-4 h-4" />
+                          </button>
+                          <span>{opt}</span>
+                        </div>
                         <span className="w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center text-xs font-bold shrink-0 ml-2">
                           {String.fromCharCode(65 + i)}
                         </span>
@@ -417,7 +483,11 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                       <button
                         key={idx}
                         disabled={hasAnswered}
-                        onClick={() => setFillBlankInput(opt)}
+                        onClick={() => {
+                          sfx.playTap();
+                          setFillBlankInput(opt);
+                          speakText(opt, 'en-US', user.speechSpeed);
+                        }}
                         className={`p-4 rounded-2xl text-center font-bold text-base border-2 border-b-4 transition-transform active:translate-y-1 cursor-pointer ${
                           isSelected
                             ? 'bg-sky-50 border-sky-500 border-b-sky-600 text-sky-950 font-black'

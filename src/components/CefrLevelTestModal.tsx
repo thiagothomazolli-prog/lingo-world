@@ -169,6 +169,7 @@ export const CefrLevelTestModal: React.FC<CefrLevelTestModalProps> = ({
     if (hasAnswered) return;
     sfx.playTap();
     setSelectedOption(opt);
+    speakText(opt, 'en-US');
   };
 
   const handleVerify = () => {
@@ -322,7 +323,20 @@ export const CefrLevelTestModal: React.FC<CefrLevelTestModalProps> = ({
                     onClick={() => handleSelectOption(opt)}
                     className={`w-full p-4 rounded-2xl text-left font-bold text-sm sm:text-base transition-transform active:translate-y-1 flex items-center justify-between cursor-pointer ${btnStyle}`}
                   >
-                    <span>{opt}</span>
+                    <div className="flex items-center gap-3">
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          speakText(opt, 'en-US');
+                        }}
+                        className="p-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-600 cursor-pointer shrink-0"
+                        title="Ouvir pronúncia desta opção"
+                      >
+                        <Volume2 className="w-4 h-4" />
+                      </button>
+                      <span>{opt}</span>
+                    </div>
                     <span className="w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center text-xs font-bold shrink-0 ml-2">
                       {String.fromCharCode(65 + i)}
                     </span>

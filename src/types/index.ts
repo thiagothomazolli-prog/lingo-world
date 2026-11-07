@@ -51,6 +51,8 @@ export interface Exercise {
   contextSentence?: string;
   contextSentencePt?: string;
   audioPhrase?: string;
+  visualEmoji?: string;
+  visualImageUrl?: string;
   options?: string[];
   correctAnswer: string;
   explanation: string;
