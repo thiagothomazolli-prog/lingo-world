@@ -27,3 +27,4 @@ for (let i = 1; i < phaseBlocks.length; i++) {
 
 console.log(`Found ${phases.length} phases in World 1:`);
 phases.forEach(p => console.log(`P${p.num} [${p.type}]: ${p.title} - ${p.subtitle}`));
+

@@ -170,3 +170,4 @@ buildWorldFromTitles(6, 'C1', 'scripts/w6_titles.json');
 buildWorldFromTitles(7, 'C2', 'scripts/w7_titles.json');
 
 console.log('All worlds generated successfully!');
+

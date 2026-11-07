@@ -95,3 +95,4 @@ const generateW1 = () => {
 };
 
 console.log('Tested phase 1-3 generator');
+

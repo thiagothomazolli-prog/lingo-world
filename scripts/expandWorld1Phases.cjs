@@ -65,3 +65,4 @@ const additionalExercisesW1 = {
 };
 
 console.log('Script loaded. Total defined phases in sample:', Object.keys(additionalExercisesW1).length);
+

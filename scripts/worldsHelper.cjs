@@ -48,3 +48,4 @@ export const WORLD_${worldId}_PHASES: Phase[] = ${JSON.stringify(formattedPhases
 
 // Module loaded
 module.exports = { createExercises, writeWorldFile };
+

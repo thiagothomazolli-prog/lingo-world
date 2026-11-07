@@ -260,3 +260,4 @@ const world1PhasesData = [
 ];
 
 console.log('Script template ready.');
+

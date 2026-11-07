@@ -122,8 +122,10 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
     let correct = false;
 
-    if (currentExercise.type === 'multiple-choice' || currentExercise.type === 'listening' || currentExercise.type === 'translate') {
-      correct = selectedOption === currentExercise.correctAnswer;
+    if (currentExercise.visualOptions && currentExercise.visualOptions.length > 0) {
+      correct = selectedOption?.trim().toLowerCase() === currentExercise.correctAnswer.trim().toLowerCase();
+    } else if (currentExercise.type === 'multiple-choice' || currentExercise.type === 'listening' || currentExercise.type === 'translate' || currentExercise.type === 'image-choice') {
+      correct = selectedOption?.trim().toLowerCase() === currentExercise.correctAnswer.trim().toLowerCase();
     } else if (currentExercise.type === 'word-order') {
       const userSentence = selectedWords.join(' ');
       correct = userSentence.trim().toLowerCase() === currentExercise.correctAnswer.trim().toLowerCase();
@@ -142,7 +144,11 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
       setFeedbackMessage(currentExercise.explanation);
     } else {
       sfx.playCorrect();
-      setFeedbackMessage('Exato! ' + currentExercise.explanation);
+      const correctVisual = currentExercise.visualOptions?.find(
+        (v) => v.text.toLowerCase() === currentExercise.correctAnswer.toLowerCase()
+      );
+      const visualSummary = correctVisual ? `${correctVisual.emoji || ''} ${correctVisual.label || correctVisual.text} = ${correctVisual.translationPt}` : '';
+      setFeedbackMessage(visualSummary ? `${visualSummary} • ${currentExercise.explanation}` : 'Exato! ' + currentExercise.explanation);
       if (currentExercise.audioPhrase && user.soundEnabled) {
         speakText(currentExercise.audioPhrase, 'en-US', user.speechSpeed);
       }
@@ -374,8 +380,86 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               )
             )}
 
-            {/* 1. Multiple Choice & Listening Options */}
-            {(currentExercise.type === 'multiple-choice' || currentExercise.type === 'listening' || currentExercise.type === 'translate') &&
+            {/* 1. Interactive Visual Option Cards (quando visualOptions estiver presente) */}
+            {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
+              <div className="grid grid-cols-2 gap-3.5 pt-2">
+                {currentExercise.visualOptions.map((opt, i) => {
+                  const isSelected = selectedOption?.toLowerCase() === opt.text.toLowerCase();
+                  let cardStyle = 'bg-white border-2 border-slate-200 border-b-4 hover:border-slate-300 text-slate-800 shadow-xs hover:shadow-sm';
+
+                  if (isSelected) {
+                    cardStyle = 'bg-sky-50 border-2 border-sky-500 border-b-4 border-b-sky-600 text-sky-950 shadow-md ring-2 ring-sky-300/50 scale-[1.02]';
+                  }
+
+                  if (hasAnswered) {
+                    if (opt.text.toLowerCase() === currentExercise.correctAnswer.toLowerCase()) {
+                      cardStyle = 'bg-emerald-50 border-2 border-emerald-500 border-b-4 border-b-emerald-600 text-emerald-950 shadow-md ring-2 ring-emerald-300/50';
+                    } else if (isSelected && !isCorrect) {
+                      cardStyle = 'bg-rose-50 border-2 border-rose-400 border-b-4 border-b-rose-600 text-rose-950';
+                    } else {
+                      cardStyle = 'bg-slate-50/70 border-2 border-slate-200 border-b-4 text-slate-400 opacity-60';
+                    }
+                  }
+
+                  return (
+                    <button
+                      key={i}
+                      disabled={hasAnswered}
+                      onClick={() => {
+                        sfx.playTap();
+                        setSelectedOption(opt.text);
+                        speakText(opt.label || opt.text, 'en-US', user.speechSpeed);
+                      }}
+                      className={`relative p-4 rounded-3xl flex flex-col items-center justify-center gap-2 transition-all active:translate-y-1 cursor-pointer min-h-[140px] sm:min-h-[155px] ${cardStyle}`}
+                    >
+                      {/* Audio replay button */}
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          speakText(opt.label || opt.text, 'en-US', user.speechSpeed);
+                        }}
+                        className="absolute top-2.5 right-2.5 p-1.5 rounded-full bg-slate-100/90 hover:bg-indigo-100 text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer"
+                        title="Ouvir pronúncia"
+                      >
+                        <Volume2 className="w-3.5 h-3.5" />
+                      </button>
+
+                      {/* Status indicator on answer */}
+                      {hasAnswered && opt.text.toLowerCase() === currentExercise.correctAnswer.toLowerCase() && (
+                        <CheckCircle2 className="w-5 h-5 text-emerald-600 absolute top-2.5 left-2.5" />
+                      )}
+                      {hasAnswered && isSelected && !isCorrect && (
+                        <AlertCircle className="w-5 h-5 text-rose-600 absolute top-2.5 left-2.5" />
+                      )}
+
+                      {/* Visual Emoji / Image */}
+                      {opt.emoji && (
+                        <span className="text-5xl sm:text-6xl my-1 select-none filter drop-shadow-xs transition-transform hover:scale-110">
+                          {opt.emoji}
+                        </span>
+                      )}
+
+                      {/* English Word Label */}
+                      <span className="text-base sm:text-lg font-black tracking-tight text-center">
+                        {opt.label || opt.text}
+                      </span>
+
+                      {/* Portuguese Translation (Revealed when answered!) */}
+                      {hasAnswered && opt.translationPt && (
+                        <span className={`px-2.5 py-1 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider animate-in fade-in zoom-in-95 duration-200 ${
+                          opt.text.toLowerCase() === currentExercise.correctAnswer.toLowerCase()
+                            ? 'bg-emerald-200/90 text-emerald-950 border border-emerald-400/80 shadow-xs'
+                            : 'bg-slate-200/80 text-slate-700 border border-slate-300'
+                        }`}>
+                          = {opt.translationPt}
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+            ) : (currentExercise.type === 'multiple-choice' || currentExercise.type === 'listening' || currentExercise.type === 'translate' || currentExercise.type === 'image-choice') &&
               currentExercise.options && (
                 <div className="space-y-3 pt-2">
                   {currentExercise.options.map((opt, i) => {

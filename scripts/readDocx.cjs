@@ -20,3 +20,4 @@ with zipfile.ZipFile(docx_path) as z:
 } catch (e) {
   console.error(e);
 }
+

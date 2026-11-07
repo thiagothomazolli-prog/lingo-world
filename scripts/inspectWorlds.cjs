@@ -6,3 +6,4 @@ for (let w = 1; w <= 7; w++) {
   const exerciseMatches = content.match(/"id":\s*"w\d+-p\d+-e\d+"|id:\s*'w\d+-p\d+-e\d+'/g) || [];
   console.log(`World ${w}: ${phaseMatches.length} phases, ${exerciseMatches.length} exercises (avg ${(exerciseMatches.length / (phaseMatches.length || 1)).toFixed(1)}/phase)`);
 }
+

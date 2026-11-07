@@ -9,3 +9,4 @@ for (let w = 2; w <= 7; w++) {
     console.log(`P${match[1]}: ${match[2]} (${match[3]})`);
   }
 }
+

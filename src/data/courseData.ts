@@ -1,4 +1,5 @@
 import { World, CefrLevel, InteractiveStory } from '../types';
+import { WORLD_0_PHASES } from './world0Phases';
 import { WORLD_1_PHASES } from './world1Phases';
 import { WORLD_2_PHASES } from './world2Phases';
 import { WORLD_3_PHASES } from './world3Phases';
@@ -8,6 +9,16 @@ import { WORLD_6_PHASES } from './world6Phases';
 import { WORLD_7_PHASES } from './world7Phases';
 
 export const WORLDS_DATA: World[] = [
+  {
+    id: 0,
+    title: 'Módulo 0: Vocabulário Visual & Fundamentos',
+    themeColor: 'amber',
+    gradientFrom: 'from-amber-500',
+    gradientTo: 'to-orange-500',
+    description: 'Aprenda vocabulário essencial associando imagens vivas, pronúncia nativa e tradução imediata.',
+    levelBadge: 'Starter • Imagens & Vocabulário',
+    phases: WORLD_0_PHASES,
+  },
   {
     id: 1,
     title: 'Mundo 1: Primeiros Passos',

@@ -11,3 +11,4 @@ for (let w = 5; w <= 7; w++) {
   fs.writeFileSync(`scripts/w${w}_titles.json`, JSON.stringify(list, null, 2), 'utf8');
   console.log(`World ${w}: extracted ${list.length} phases`);
 }
+

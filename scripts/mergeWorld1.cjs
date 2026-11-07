@@ -50,3 +50,4 @@ export const WORLD_1_PHASES: Phase[] = ${JSON.stringify(phases, null, 2)};
 
 fs.writeFileSync('src/data/world1Phases.ts', outputTs, 'utf8');
 console.log('Successfully wrote expanded src/data/world1Phases.ts!');
+

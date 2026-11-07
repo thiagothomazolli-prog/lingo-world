@@ -591,3 +591,4 @@ const remainingW3 = [
 
 const allW3 = [...w3Phases, ...remainingW3];
 writeWorldFile(3, 'A2', allW3);
+

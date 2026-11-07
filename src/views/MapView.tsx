@@ -34,8 +34,8 @@ export const MapView: React.FC<MapViewProps> = ({
 }) => {
   // Check if a phase is unlocked
   const isPhaseUnlocked = (phase: Phase): boolean => {
-    // First phase of World 1 is always unlocked
-    if (phase.worldId === 1 && phase.phaseNumber === 1) return true;
+    // First phase of World 0 and World 1 is always unlocked for smooth start
+    if ((phase.worldId === 0 || phase.worldId === 1) && phase.phaseNumber === 1) return true;
 
     // If already completed
     if (user.completedPhaseIds.includes(phase.id)) return true;
@@ -51,7 +51,7 @@ export const MapView: React.FC<MapViewProps> = ({
     }
 
     // First phase of world N is unlocked if previous world's last phase is completed
-    if (phase.worldId > 1 && phaseIndex === 0) {
+    if (phase.worldId > 0 && phaseIndex === 0) {
       const prevWorld = WORLDS_DATA.find((w) => w.id === phase.worldId - 1);
       if (prevWorld && prevWorld.phases.length > 0) {
         const lastPhaseOfPrev = prevWorld.phases[prevWorld.phases.length - 1];
@@ -149,8 +149,15 @@ export const MapView: React.FC<MapViewProps> = ({
                     <span className="px-2.5 py-0.5 bg-black/20 text-white font-mono text-xs font-bold rounded-lg uppercase tracking-wider">
                       {world.levelBadge}
                     </span>
-                    <span className="text-xs font-semibold text-white/80">Mundo {world.id} de 7</span>
+                    <span className="text-xs font-semibold text-white/80">
+                      {world.id === 0 ? 'Módulo Preparatório Visual' : `Mundo ${world.id} de 7`}
+                    </span>
                   </div>
+                  {world.id === 0 && (
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-300 text-amber-950 font-black text-xs rounded-full shadow-xs mt-2">
+                      <span>⭐ Ponto de Partida: Vocabulário Visual Ilustrado com Imagens</span>
+                    </div>
+                  )}
                   <h2 className="text-xl sm:text-2xl font-black tracking-tight mt-1">{world.title}</h2>
                   <p className="text-xs sm:text-sm text-white/90 mt-0.5">{world.description}</p>
                 </div>

@@ -44,9 +44,17 @@ export interface UserProfile {
   speechSpeed: number; // 0.8 to 1.2
 }
 
+export interface VisualOption {
+  text: string;
+  emoji?: string;
+  imageUrl?: string;
+  label?: string;
+  translationPt?: string;
+}
+
 export interface Exercise {
   id: string;
-  type: 'multiple-choice' | 'fill-blank' | 'word-order' | 'listening' | 'speaking-repeat' | 'translate';
+  type: 'multiple-choice' | 'fill-blank' | 'word-order' | 'listening' | 'speaking-repeat' | 'translate' | 'image-choice';
   prompt: string;
   contextSentence?: string;
   contextSentencePt?: string;
@@ -54,6 +62,7 @@ export interface Exercise {
   visualEmoji?: string;
   visualImageUrl?: string;
   options?: string[];
+  visualOptions?: VisualOption[];
   correctAnswer: string;
   explanation: string;
   phoneticHint?: string;
