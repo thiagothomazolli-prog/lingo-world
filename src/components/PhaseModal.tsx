@@ -479,6 +479,20 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                 <div className="grid grid-cols-2 gap-3">
                   {currentExercise.options.map((opt, idx) => {
                     const isSelected = fillBlankInput === opt;
+                    let btnStyle = 'bg-white border-2 border-slate-200 border-b-4 text-slate-800';
+
+                    if (isSelected) {
+                      btnStyle = 'bg-sky-50 border-2 border-sky-500 border-b-4 border-b-sky-600 text-sky-950 font-black';
+                    }
+
+                    if (hasAnswered) {
+                      if (opt === currentExercise.correctAnswer) {
+                        btnStyle = 'bg-emerald-50 border-2 border-emerald-500 border-b-4 border-b-emerald-600 text-emerald-950 font-black';
+                      } else if (isSelected && !isCorrect) {
+                        btnStyle = 'bg-rose-50 border-2 border-rose-400 border-b-4 border-b-rose-600 text-rose-950';
+                      }
+                    }
+
                     return (
                       <button
                         key={idx}
@@ -488,13 +502,9 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                           setFillBlankInput(opt);
                           speakText(opt, 'en-US', user.speechSpeed);
                         }}
-                        className={`p-4 rounded-2xl text-center font-bold text-base border-2 border-b-4 transition-transform active:translate-y-1 cursor-pointer ${
-                          isSelected
-                            ? 'bg-sky-50 border-sky-500 border-b-sky-600 text-sky-950 font-black'
-                            : 'bg-white border-slate-200 text-slate-800'
-                        }`}
+                        className={`p-4 rounded-2xl text-center font-bold text-base transition-transform active:translate-y-1 cursor-pointer flex items-center justify-center gap-2 ${btnStyle}`}
                       >
-                        {opt}
+                        <span>{opt}</span>
                       </button>
                     );
                   })}
