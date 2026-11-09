@@ -772,17 +772,17 @@ const phases = THEMES.map((theme) => {
     }));
 
     // Varied engaging pedagogical prompts
-    let prompt = `Toque na imagem correspondente para: **${item.text}** ${item.emoji}`;
+    let prompt = `Qual imagem representa "${item.text}"?`;
     let category = 'vocabulary';
 
     if (idx % 3 === 0) {
-      prompt = `Qual imagem representa a palavra: **"${item.text}"**?`;
+      prompt = `Qual imagem representa "${item.text}"?`;
       category = 'vocabulary';
     } else if (idx % 3 === 1) {
-      prompt = `Como se diz **"${item.pt}"** em inglês? Toque na imagem:`;
+      prompt = `Qual imagem representa "${item.pt}" em inglês?`;
       category = 'reading';
     } else {
-      prompt = `🎧 Ouça e selecione a imagem correspondente a **"${item.text}"**:`;
+      prompt = `🎧 Ouça a pronúncia e selecione a imagem correspondente:`;
       category = 'listening';
     }
 
@@ -795,7 +795,7 @@ const phases = THEMES.map((theme) => {
       visualOptions: visualOptions,
       options: visualOptions.map(v => v.text),
       correctAnswer: item.text,
-      explanation: `${item.emoji} **${item.text}** significa **${item.pt}** em inglês! Exemplo prático: "${item.sentence}"`,
+      explanation: `Exemplo prático: "${item.sentence}"`,
       phoneticHint: item.phonetic,
       skillCategory: category
     };

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import { X, Volume2, Mic, MicOff, CheckCircle2, AlertCircle, Sparkles, Star, ArrowRight, Lightbulb, Play } from 'lucide-react';
 import { Phase, Exercise, UserProfile } from '../types';
-import { speakText } from '../utils/storage';
+import { speakText, getExerciseVoiceGender } from '../utils/storage';
 import { MascotLingo } from './MascotLingo';
 import { sfx } from '../utils/soundEffects';
 
@@ -35,11 +35,17 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
   const currentExercise: Exercise | undefined = phase.exercises[currentExerciseIndex];
   const progressPercent = ((currentExerciseIndex + (hasAnswered ? 1 : 0)) / phase.exercises.length) * 100;
+  const exerciseVoiceGender: 'male' | 'female' = currentExercise
+    ? getExerciseVoiceGender(currentExercise.id, currentExerciseIndex)
+    : 'female';
 
   // Auto speak on exercise start if enabled
   useEffect(() => {
-    if (step === 'exercise' && currentExercise?.audioPhrase && user.autoSpeak) {
-      speakText(currentExercise.audioPhrase, 'en-US', user.speechSpeed);
+    if (step === 'exercise' && currentExercise) {
+      const phraseToSpeak = currentExercise.audioPhrase || currentExercise.correctAnswer;
+      if (phraseToSpeak && user.autoSpeak !== false) {
+        speakText(phraseToSpeak, 'en-US', user.speechSpeed, exerciseVoiceGender);
+      }
     }
     setSelectedOption(null);
     setSelectedWords([]);
@@ -113,7 +119,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
       setSelectedWords((prev) => prev.filter((w) => w !== word));
     } else {
       setSelectedWords((prev) => [...prev, word]);
-      speakText(word, 'en-US', user.speechSpeed);
+      speakText(word, 'en-US', user.speechSpeed, exerciseVoiceGender);
     }
   };
 
@@ -138,19 +144,33 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     setIsCorrect(correct);
     setHasAnswered(true);
 
+    const hasVisualCards = Boolean(currentExercise.visualOptions && currentExercise.visualOptions.length > 0);
+    const cleanExplanation = (currentExercise.explanation || '').replace(/\*\*+/g, '');
+
     if (!correct) {
       sfx.playIncorrect();
       setMistakesCount((prev) => prev + 1);
-      setFeedbackMessage(currentExercise.explanation);
+      if (hasVisualCards) {
+        const wrongVisual = currentExercise.visualOptions?.find(
+          (v) => v.text.trim().toLowerCase() === selectedOption?.trim().toLowerCase()
+        );
+        if (wrongVisual) {
+          speakText(wrongVisual.label || wrongVisual.text, 'en-US', user.speechSpeed, exerciseVoiceGender);
+          setFeedbackMessage(
+            `Você selecionou ${wrongVisual.label || wrongVisual.text} (${wrongVisual.translationPt || ''}).`
+          );
+        } else {
+          setFeedbackMessage('Não foi dessa vez. Tente novamente!');
+        }
+      } else {
+        setFeedbackMessage(cleanExplanation);
+      }
     } else {
       sfx.playCorrect();
-      const correctVisual = currentExercise.visualOptions?.find(
-        (v) => v.text.toLowerCase() === currentExercise.correctAnswer.toLowerCase()
-      );
-      const visualSummary = correctVisual ? `${correctVisual.emoji || ''} ${correctVisual.label || correctVisual.text} = ${correctVisual.translationPt}` : '';
-      setFeedbackMessage(visualSummary ? `${visualSummary} • ${currentExercise.explanation}` : 'Exato! ' + currentExercise.explanation);
-      if (currentExercise.audioPhrase && user.soundEnabled) {
-        speakText(currentExercise.audioPhrase, 'en-US', user.speechSpeed);
+      setFeedbackMessage(cleanExplanation);
+      const phraseToSpeak = currentExercise.audioPhrase || currentExercise.correctAnswer;
+      if (phraseToSpeak) {
+        speakText(phraseToSpeak, 'en-US', user.speechSpeed, exerciseVoiceGender);
       }
       if (onRecordMissionActivity) {
         if (currentExercise.type === 'speaking-repeat' || currentExercise.skillCategory === 'pronunciation') {
@@ -300,11 +320,11 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
             {/* Exercise Prompt */}
             <h2 className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight leading-snug">
-              {currentExercise.prompt}
+              {currentExercise.prompt.replace(/\*\*+/g, '')}
             </h2>
 
-            {/* Visual Associative Learning Card (quando houver emoji / representação visual) */}
-            {currentExercise.visualEmoji && (
+            {/* Visual Associative Learning Card (apenas quando NÃO for exercício de cartões visuais) */}
+            {currentExercise.visualEmoji && (!currentExercise.visualOptions || currentExercise.visualOptions.length === 0) && (
               <div className="flex items-center justify-center py-2">
                 <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-indigo-50 to-amber-50 border-2 border-indigo-200/80 shadow-md flex items-center justify-center text-5xl sm:text-6xl select-none">
                   {currentExercise.visualEmoji}
@@ -312,8 +332,43 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               </div>
             )}
 
-            {/* Listening Audio Box (TEXTO OCULTO ANTES DE RESPONDER!) */}
-            {currentExercise.type === 'listening' ? (
+            {/* Audio Speaker Bar */}
+            {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
+              <div className="p-3.5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
+                <button
+                  type="button"
+                  onClick={() =>
+                    speakText(
+                      currentExercise.audioPhrase || currentExercise.correctAnswer,
+                      'en-US',
+                      user.speechSpeed,
+                      exerciseVoiceGender
+                    )
+                  }
+                  className="flex-1 py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-sm rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2.5 cursor-pointer"
+                  title="Ouvir palavra em inglês"
+                >
+                  <Volume2 className="w-5 h-5 shrink-0" />
+                  <span>Ouvir Pronúncia ({exerciseVoiceGender === 'male' ? '👨 Homem' : '👩 Mulher'})</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() =>
+                    speakText(
+                      currentExercise.audioPhrase || currentExercise.correctAnswer,
+                      'en-US',
+                      0.65,
+                      exerciseVoiceGender
+                    )
+                  }
+                  className="py-3 px-3.5 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-xl shadow-xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
+                  title="Ouvir devagar"
+                >
+                  <span>🐢 0.65x</span>
+                </button>
+              </div>
+            ) : currentExercise.type === 'listening' ? (
               <div className="space-y-3">
                 {!hasAnswered ? (
                   <div className="p-5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-3xl flex flex-col items-center justify-center gap-3 text-center shadow-xs">
@@ -321,7 +376,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                     <div className="flex items-center gap-3">
                       <button
                         type="button"
-                        onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed)}
+                        onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed, exerciseVoiceGender)}
                         className="px-6 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-sm rounded-2xl shadow-md transition-transform active:scale-95 flex items-center gap-2 cursor-pointer"
                         title="Ouvir áudio em velocidade normal"
                       >
@@ -331,7 +386,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
                       <button
                         type="button"
-                        onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', 0.65)}
+                        onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', 0.65, exerciseVoiceGender)}
                         className="px-4 py-3.5 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-2xl shadow-xs transition-transform active:scale-95 flex items-center gap-1.5 cursor-pointer"
                         title="Ouvir áudio mais lento"
                       >
@@ -369,7 +424,8 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
                   {currentExercise.audioPhrase && (
                     <button
-                      onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed)}
+                      type="button"
+                      onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed, exerciseVoiceGender)}
                       className="p-3 bg-white hover:bg-indigo-50 border-2 border-indigo-200 rounded-xl text-indigo-600 active:scale-95 transition-transform shrink-0 shadow-xs cursor-pointer"
                       title="Ouvir frase"
                     >
@@ -382,51 +438,65 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
             {/* 1. Interactive Visual Option Cards (quando visualOptions estiver presente) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
-              <div className="grid grid-cols-2 gap-3.5 pt-2">
+              <div className="grid grid-cols-2 gap-3.5 pt-1">
                 {currentExercise.visualOptions.map((opt, i) => {
-                  const isSelected = selectedOption?.toLowerCase() === opt.text.toLowerCase();
+                  const isSelected = selectedOption?.trim().toLowerCase() === opt.text.trim().toLowerCase();
+                  // Mostra o nome APENAS após confirmar, e SOMENTE no card que o usuário selecionou (se acertou, o que acertou; se errou, apenas o que errou)
+                  const shouldRevealLabel = hasAnswered && isSelected;
+
                   let cardStyle = 'bg-white border-2 border-slate-200 border-b-4 hover:border-slate-300 text-slate-800 shadow-xs hover:shadow-sm';
 
-                  if (isSelected) {
+                  if (isSelected && !hasAnswered) {
                     cardStyle = 'bg-sky-50 border-2 border-sky-500 border-b-4 border-b-sky-600 text-sky-950 shadow-md ring-2 ring-sky-300/50 scale-[1.02]';
                   }
 
                   if (hasAnswered) {
-                    if (opt.text.toLowerCase() === currentExercise.correctAnswer.toLowerCase()) {
-                      cardStyle = 'bg-emerald-50 border-2 border-emerald-500 border-b-4 border-b-emerald-600 text-emerald-950 shadow-md ring-2 ring-emerald-300/50';
+                    if (isSelected && isCorrect) {
+                      cardStyle = 'bg-emerald-50 border-2 border-emerald-500 border-b-4 border-b-emerald-600 text-emerald-950 shadow-md ring-2 ring-emerald-300/60 scale-[1.03]';
                     } else if (isSelected && !isCorrect) {
-                      cardStyle = 'bg-rose-50 border-2 border-rose-400 border-b-4 border-b-rose-600 text-rose-950';
+                      cardStyle = 'bg-rose-50 border-2 border-rose-400 border-b-4 border-b-rose-600 text-rose-950 shadow-md ring-2 ring-rose-300/50';
                     } else {
-                      cardStyle = 'bg-slate-50/70 border-2 border-slate-200 border-b-4 text-slate-400 opacity-60';
+                      cardStyle = 'bg-slate-50/70 border-2 border-slate-200 border-b-4 text-slate-400 opacity-50';
                     }
                   }
 
                   return (
-                    <button
+                    <div
                       key={i}
-                      disabled={hasAnswered}
+                      role="button"
+                      tabIndex={hasAnswered ? -1 : 0}
                       onClick={() => {
+                        if (hasAnswered) {
+                          speakText(opt.label || opt.text, 'en-US', user.speechSpeed, exerciseVoiceGender);
+                          return;
+                        }
                         sfx.playTap();
                         setSelectedOption(opt.text);
-                        speakText(opt.label || opt.text, 'en-US', user.speechSpeed);
                       }}
-                      className={`relative p-4 rounded-3xl flex flex-col items-center justify-center gap-2 transition-all active:translate-y-1 cursor-pointer min-h-[140px] sm:min-h-[155px] ${cardStyle}`}
+                      onKeyDown={(e) => {
+                        if (!hasAnswered && (e.key === 'Enter' || e.key === ' ')) {
+                          e.preventDefault();
+                          sfx.playTap();
+                          setSelectedOption(opt.text);
+                        }
+                      }}
+                      className={`relative p-4 rounded-3xl flex flex-col items-center justify-center gap-1.5 transition-all active:translate-y-0.5 cursor-pointer min-h-[140px] sm:min-h-[155px] ${cardStyle}`}
                     >
-                      {/* Audio replay button */}
+                      {/* Audio speaker button on card */}
                       <button
                         type="button"
                         onClick={(e) => {
                           e.stopPropagation();
-                          speakText(opt.label || opt.text, 'en-US', user.speechSpeed);
+                          speakText(opt.label || opt.text, 'en-US', user.speechSpeed, exerciseVoiceGender);
                         }}
-                        className="absolute top-2.5 right-2.5 p-1.5 rounded-full bg-slate-100/90 hover:bg-indigo-100 text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer"
+                        className="absolute top-2.5 right-2.5 p-2 rounded-full bg-indigo-50 hover:bg-indigo-100 text-indigo-600 border border-indigo-200/80 shadow-2xs active:scale-90 transition-all cursor-pointer z-10"
                         title="Ouvir pronúncia"
                       >
-                        <Volume2 className="w-3.5 h-3.5" />
+                        <Volume2 className="w-4 h-4" />
                       </button>
 
-                      {/* Status indicator on answer */}
-                      {hasAnswered && opt.text.toLowerCase() === currentExercise.correctAnswer.toLowerCase() && (
+                      {/* Status indicator on answer (apenas no card selecionado) */}
+                      {hasAnswered && isSelected && isCorrect && (
                         <CheckCircle2 className="w-5 h-5 text-emerald-600 absolute top-2.5 left-2.5" />
                       )}
                       {hasAnswered && isSelected && !isCorrect && (
@@ -435,27 +505,29 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
                       {/* Visual Emoji / Image */}
                       {opt.emoji && (
-                        <span className="text-5xl sm:text-6xl my-1 select-none filter drop-shadow-xs transition-transform hover:scale-110">
+                        <span className="text-5xl sm:text-6xl my-1 select-none filter drop-shadow-xs transition-transform">
                           {opt.emoji}
                         </span>
                       )}
 
-                      {/* English Word Label */}
-                      <span className="text-base sm:text-lg font-black tracking-tight text-center">
-                        {opt.label || opt.text}
-                      </span>
-
-                      {/* Portuguese Translation (Revealed when answered!) */}
-                      {hasAnswered && opt.translationPt && (
-                        <span className={`px-2.5 py-1 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider animate-in fade-in zoom-in-95 duration-200 ${
-                          opt.text.toLowerCase() === currentExercise.correctAnswer.toLowerCase()
-                            ? 'bg-emerald-200/90 text-emerald-950 border border-emerald-400/80 shadow-xs'
-                            : 'bg-slate-200/80 text-slate-700 border border-slate-300'
-                        }`}>
-                          = {opt.translationPt}
-                        </span>
+                      {/* Nome em inglês e significado em português (letra menor logo abaixo, sem "="), revelados apenas ao confirmar */}
+                      {shouldRevealLabel && (
+                        <div className="flex flex-col items-center justify-center text-center mt-1 animate-in fade-in zoom-in-95 duration-200">
+                          <span className={`text-base sm:text-lg font-black tracking-tight leading-tight ${
+                            isCorrect ? 'text-emerald-950' : 'text-rose-950'
+                          }`}>
+                            {opt.label || opt.text}
+                          </span>
+                          {opt.translationPt && (
+                            <span className={`text-xs sm:text-sm font-semibold leading-tight mt-0.5 ${
+                              isCorrect ? 'text-emerald-700' : 'text-rose-700'
+                            }`}>
+                              {opt.translationPt}
+                            </span>
+                          )}
+                        </div>
                       )}
-                    </button>
+                    </div>
                   );
                 })}
               </div>
@@ -479,13 +551,15 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                     }
 
                     return (
-                      <button
+                      <div
                         key={i}
-                        disabled={hasAnswered}
+                        role="button"
+                        tabIndex={hasAnswered ? -1 : 0}
                         onClick={() => {
+                          if (hasAnswered) return;
                           sfx.playTap();
                           setSelectedOption(opt);
-                          speakText(opt, 'en-US', user.speechSpeed);
+                          speakText(opt, 'en-US', user.speechSpeed, exerciseVoiceGender);
                         }}
                         className={`w-full p-4 rounded-2xl text-left font-bold text-sm sm:text-base transition-transform active:translate-y-1 flex items-center justify-between cursor-pointer ${btnStyle}`}
                       >
@@ -494,7 +568,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                             type="button"
                             onClick={(e) => {
                               e.stopPropagation();
-                              speakText(opt, 'en-US', user.speechSpeed);
+                              speakText(opt, 'en-US', user.speechSpeed, exerciseVoiceGender);
                             }}
                             className="p-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-600 cursor-pointer shrink-0"
                             title="Ouvir pronúncia desta opção"
@@ -506,7 +580,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         <span className="w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center text-xs font-bold shrink-0 ml-2">
                           {String.fromCharCode(65 + i)}
                         </span>
-                      </button>
+                      </div>
                     );
                   })}
                 </div>
@@ -584,7 +658,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         onClick={() => {
                           sfx.playTap();
                           setFillBlankInput(opt);
-                          speakText(opt, 'en-US', user.speechSpeed);
+                          speakText(opt, 'en-US', user.speechSpeed, exerciseVoiceGender);
                         }}
                         className={`p-4 rounded-2xl text-center font-bold text-base transition-transform active:translate-y-1 cursor-pointer flex items-center justify-center gap-2 ${btnStyle}`}
                       >

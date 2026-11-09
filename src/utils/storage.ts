@@ -103,53 +103,140 @@ export function cleanSpokenText(text: string): string {
   if (/ju|\/juː\//i.test(text)) return 'U';
 
   // Strip phonetic brackets, e.g. "Cat (/kæt/)" -> "Cat"
-  let clean = text.replace(/\/[^/]+\//g, '').replace(/\([^)]+\)/g, '').trim();
+  let clean = text
+    .replace(/\*\*+/g, '')
+    .replace(/\/[^/]+\//g, '')
+    .replace(/\([^)]+\)/g, '')
+    .trim();
   return clean || text;
 }
 
-// Speech Synthesis Helper with Android WebView optimizations
-export function speakText(text: string, lang = 'en-US', rate = 0.95): void {
+// Deterministic varied voice gender ('male' | 'female') per exercise
+export function getExerciseVoiceGender(exerciseId: string, exerciseIndex: number): 'male' | 'female' {
+  let hash = exerciseIndex * 7;
+  for (let i = 0; i < exerciseId.length; i++) {
+    hash = (hash * 31 + exerciseId.charCodeAt(i)) >>> 0;
+  }
+  const pattern: Array<'male' | 'female'> = ['female', 'male', 'male', 'female', 'male', 'female', 'female', 'male'];
+  return pattern[(hash + exerciseIndex) % pattern.length];
+}
+
+let cachedVoices: SpeechSynthesisVoice[] = [];
+if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+  try {
+    cachedVoices = window.speechSynthesis.getVoices() || [];
+    window.speechSynthesis.onvoiceschanged = () => {
+      try {
+        cachedVoices = window.speechSynthesis.getVoices() || [];
+      } catch {
+        // ignore
+      }
+    };
+  } catch {
+    // ignore
+  }
+}
+
+let activeAudioElement: HTMLAudioElement | null = null;
+
+function playAudioFallback(textToSpeak: string, lang: string, rate: number, gender: 'male' | 'female'): void {
+  try {
+    if (activeAudioElement) {
+      activeAudioElement.pause();
+      activeAudioElement = null;
+    }
+    const langCode = lang.toLowerCase().startsWith('pt') ? 'pt-BR' : gender === 'male' ? 'en-GB' : 'en-US';
+    const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=${encodeURIComponent(langCode)}&q=${encodeURIComponent(textToSpeak)}`;
+    const audio = new Audio(url);
+    audio.playbackRate = Math.max(0.5, Math.min(1.5, rate));
+    activeAudioElement = audio;
+    audio.play().catch((err) => {
+      console.warn('Audio fallback play failed:', err);
+    });
+  } catch (err) {
+    console.warn('Audio fallback error:', err);
+  }
+}
+
+// Speech Synthesis Helper with Native Android TTS Bridge + Web Speech + Cloud Audio Fallback
+export function speakText(
+  text: string,
+  lang = 'en-US',
+  rate = 0.95,
+  gender?: 'male' | 'female'
+): void {
   if (typeof window === 'undefined') return;
 
   try {
     const textToSpeak = cleanSpokenText(text);
     if (!textToSpeak) return;
 
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.resume();
+    const voiceGender: 'male' | 'female' =
+      gender || (textToSpeak.length % 2 === 0 ? 'female' : 'male');
 
-      const utterance = new SpeechSynthesisUtterance(textToSpeak);
-      utterance.lang = lang;
-      utterance.rate = rate;
-      utterance.pitch = 1.0;
-
-      // Select natural English voice if available
-      const voices = window.speechSynthesis.getVoices();
-      if (voices && voices.length > 0) {
-        const naturalVoice = voices.find(
-          (v) =>
-            v.lang.startsWith(lang.slice(0, 2)) &&
-            (v.name.includes('Natural') ||
-              v.name.includes('Google') ||
-              v.name.includes('US') ||
-              v.name.includes('Samantha') ||
-              v.name.includes('English'))
-        );
-        if (naturalVoice) {
-          utterance.voice = naturalVoice;
+    // 1. Priority 1: Native Android TTS Bridge (MainActivity.java)
+    const androidTTS = (window as any).AndroidTTS;
+    if (androidTTS && typeof androidTTS.speak === 'function') {
+      try {
+        const spokenByAndroid = androidTTS.speak(textToSpeak, lang, rate, voiceGender);
+        if (spokenByAndroid) {
+          return;
         }
+      } catch (e) {
+        console.warn('AndroidTTS error, falling back:', e);
       }
-
-      window.speechSynthesis.cancel();
-      setTimeout(() => {
-        try {
-          window.speechSynthesis.resume();
-          window.speechSynthesis.speak(utterance);
-        } catch (e) {
-          console.warn('SpeechSynthesis error:', e);
-        }
-      }, 35);
     }
+
+    // 2. Priority 2: Browser Web Speech API (synchronous to preserve user gesture!)
+    if ('speechSynthesis' in window) {
+      const voices =
+        cachedVoices.length > 0 ? cachedVoices : window.speechSynthesis.getVoices() || [];
+
+      if (voices.length > 0) {
+        const langPrefix = lang.slice(0, 2).toLowerCase();
+        const langVoices = voices.filter((v) => v.lang.toLowerCase().startsWith(langPrefix));
+        const pool = langVoices.length > 0 ? langVoices : voices;
+
+        const isMale = voiceGender === 'male';
+        const maleKeywords = ['male', 'david', 'mark', 'guy', 'daniel', 'james', 'alex', 'christopher', 'eric', 'roger', 'steffan'];
+        const femaleKeywords = ['female', 'zira', 'samantha', 'victoria', 'aria', 'jenny', 'michelle', 'ana', 'clara', 'susan', 'karen'];
+
+        let selectedVoice = pool.find((v) => {
+          const n = v.name.toLowerCase();
+          if (isMale) {
+            return maleKeywords.some((k) => n.includes(k)) && !n.includes('female');
+          } else {
+            return femaleKeywords.some((k) => n.includes(k));
+          }
+        });
+
+        if (!selectedVoice && pool.length >= 2) {
+          selectedVoice = pool[isMale ? 0 : 1];
+        } else if (!selectedVoice && pool.length === 1) {
+          selectedVoice = pool[0];
+        }
+
+        const utterance = new SpeechSynthesisUtterance(textToSpeak);
+        utterance.lang = lang;
+        utterance.rate = Math.max(0.5, Math.min(1.5, rate));
+        utterance.pitch = isMale ? 0.82 : 1.15;
+        if (selectedVoice) {
+          utterance.voice = selectedVoice;
+        }
+
+        utterance.onerror = () => {
+          playAudioFallback(textToSpeak, lang, rate, voiceGender);
+        };
+
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.resume();
+        window.speechSynthesis.speak(utterance);
+        return;
+      }
+    }
+
+    // 3. Priority 3: HTML5 Audio Stream Fallback if no local TTS voices exist
+    playAudioFallback(textToSpeak, lang, rate, voiceGender);
   } catch (err) {
     console.warn('Speech synthesis error:', err);
   }

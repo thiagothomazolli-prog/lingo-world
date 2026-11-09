@@ -22,16 +22,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Apple\"**?",
+        "prompt": "Qual imagem representa \"Apple\"?",
         "audioPhrase": "Apple",
         "visualEmoji": "🍎",
         "visualOptions": [
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
           {
             "text": "Grape",
             "emoji": "🍇",
@@ -49,37 +43,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍌",
             "label": "Banana",
             "translationPt": "Banana"
+          },
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
           }
         ],
         "options": [
-          "Apple",
           "Grape",
           "Orange",
-          "Banana"
+          "Banana",
+          "Apple"
         ],
         "correctAnswer": "Apple",
-        "explanation": "🍎 **Apple** significa **Maçã** em inglês! Exemplo prático: \"I eat a fresh red apple every morning.\"",
+        "explanation": "Exemplo prático: \"I eat a fresh red apple every morning.\"",
         "phoneticHint": "/ˈæp.əl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Banana\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Banana\" em inglês?",
         "audioPhrase": "Banana",
         "visualEmoji": "🍌",
         "visualOptions": [
-          {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva"
-          },
           {
             "text": "Banana",
             "emoji": "🍌",
             "label": "Banana",
             "translationPt": "Banana"
+          },
+          {
+            "text": "Grape",
+            "emoji": "🍇",
+            "label": "Grape",
+            "translationPt": "Uva"
           },
           {
             "text": "Apple",
@@ -95,20 +95,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Grape",
           "Banana",
+          "Grape",
           "Apple",
           "Orange"
         ],
         "correctAnswer": "Banana",
-        "explanation": "🍌 **Banana** significa **Banana** em inglês! Exemplo prático: \"Monkeys love sweet yellow bananas.\"",
+        "explanation": "Exemplo prático: \"Monkeys love sweet yellow bananas.\"",
         "phoneticHint": "/bəˈnæn.ə/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p1-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Orange\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Orange",
         "visualEmoji": "🍊",
         "visualOptions": [
@@ -144,22 +144,22 @@ export const WORLD_0_PHASES: Phase[] = [
           "Grape"
         ],
         "correctAnswer": "Orange",
-        "explanation": "🍊 **Orange** significa **Laranja** em inglês! Exemplo prático: \"Orange juice is very rich in Vitamin C.\"",
+        "explanation": "Exemplo prático: \"Orange juice is very rich in Vitamin C.\"",
         "phoneticHint": "/ˈɒr.ɪndʒ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Grape\"**?",
+        "prompt": "Qual imagem representa \"Grape\"?",
         "audioPhrase": "Grape",
         "visualEmoji": "🍇",
         "visualOptions": [
           {
-            "text": "Orange",
-            "emoji": "🍊",
-            "label": "Orange",
-            "translationPt": "Laranja"
+            "text": "Grape",
+            "emoji": "🍇",
+            "label": "Grape",
+            "translationPt": "Uva"
           },
           {
             "text": "Apple",
@@ -168,10 +168,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã"
           },
           {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva"
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja"
           },
           {
             "text": "Banana",
@@ -181,34 +181,34 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Orange",
-          "Apple",
           "Grape",
+          "Apple",
+          "Orange",
           "Banana"
         ],
         "correctAnswer": "Grape",
-        "explanation": "🍇 **Grape** significa **Uva** em inglês! Exemplo prático: \"Purple grapes are sweet and refreshing.\"",
+        "explanation": "Exemplo prático: \"Purple grapes are sweet and refreshing.\"",
         "phoneticHint": "/ɡreɪp/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Morango\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Morango\" em inglês?",
         "audioPhrase": "Strawberry",
         "visualEmoji": "🍓",
         "visualOptions": [
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
           {
             "text": "Banana",
             "emoji": "🍌",
             "label": "Banana",
             "translationPt": "Banana"
+          },
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
           },
           {
             "text": "Strawberry",
@@ -224,20 +224,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Apple",
           "Banana",
+          "Apple",
           "Strawberry",
           "Orange"
         ],
         "correctAnswer": "Strawberry",
-        "explanation": "🍓 **Strawberry** significa **Morango** em inglês! Exemplo prático: \"Strawberry ice cream is delicious.\"",
+        "explanation": "Exemplo prático: \"Strawberry ice cream is delicious.\"",
         "phoneticHint": "/ˈstrɔː.bər.i/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p1-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Pineapple\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pineapple",
         "visualEmoji": "🍍",
         "visualOptions": [
@@ -248,6 +248,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Abacaxi"
           },
           {
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
+          },
+          {
             "text": "Apple",
             "emoji": "🍎",
             "label": "Apple",
@@ -258,32 +264,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍊",
             "label": "Orange",
             "translationPt": "Laranja"
-          },
-          {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana"
           }
         ],
         "options": [
           "Pineapple",
+          "Banana",
           "Apple",
-          "Orange",
-          "Banana"
+          "Orange"
         ],
         "correctAnswer": "Pineapple",
-        "explanation": "🍍 **Pineapple** significa **Abacaxi** em inglês! Exemplo prático: \"Pineapple is a tropical and juicy fruit.\"",
+        "explanation": "Exemplo prático: \"Pineapple is a tropical and juicy fruit.\"",
         "phoneticHint": "/ˈpaɪnˌæp.əl/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Lemon\"**?",
+        "prompt": "Qual imagem representa \"Lemon\"?",
         "audioPhrase": "Lemon",
         "visualEmoji": "🍋",
         "visualOptions": [
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
+          {
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
+          },
           {
             "text": "Lemon",
             "emoji": "🍋",
@@ -291,18 +303,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Limão"
           },
           {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
-          {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana"
-          },
-          {
             "text": "Orange",
             "emoji": "🍊",
             "label": "Orange",
@@ -310,20 +310,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Lemon",
           "Apple",
           "Banana",
+          "Lemon",
           "Orange"
         ],
         "correctAnswer": "Lemon",
-        "explanation": "🍋 **Lemon** significa **Limão** em inglês! Exemplo prático: \"Lemon has a sour and fresh flavor.\"",
+        "explanation": "Exemplo prático: \"Lemon has a sour and fresh flavor.\"",
         "phoneticHint": "/ˈlem.ən/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Melancia\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Melancia\" em inglês?",
         "audioPhrase": "Watermelon",
         "visualEmoji": "🍉",
         "visualOptions": [
@@ -359,17 +359,23 @@ export const WORLD_0_PHASES: Phase[] = [
           "Apple"
         ],
         "correctAnswer": "Watermelon",
-        "explanation": "🍉 **Watermelon** significa **Melancia** em inglês! Exemplo prático: \"Watermelon is great on hot summer days.\"",
+        "explanation": "Exemplo prático: \"Watermelon is great on hot summer days.\"",
         "phoneticHint": "/ˈwɔː.təˌmel.ən/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p1-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Peach\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Peach",
         "visualEmoji": "🍑",
         "visualOptions": [
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
           {
             "text": "Peach",
             "emoji": "🍑",
@@ -377,48 +383,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pêssego"
           },
           {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
           },
           {
             "text": "Orange",
             "emoji": "🍊",
             "label": "Orange",
             "translationPt": "Laranja"
-          },
-          {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana"
           }
         ],
         "options": [
-          "Peach",
           "Apple",
-          "Orange",
-          "Banana"
+          "Peach",
+          "Banana",
+          "Orange"
         ],
         "correctAnswer": "Peach",
-        "explanation": "🍑 **Peach** significa **Pêssego** em inglês! Exemplo prático: \"A ripe peach is soft and fragrant.\"",
+        "explanation": "Exemplo prático: \"A ripe peach is soft and fragrant.\"",
         "phoneticHint": "/piːtʃ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Mango\"**?",
+        "prompt": "Qual imagem representa \"Mango\"?",
         "audioPhrase": "Mango",
         "visualEmoji": "🥭",
         "visualOptions": [
-          {
-            "text": "Orange",
-            "emoji": "🍊",
-            "label": "Orange",
-            "translationPt": "Laranja"
-          },
           {
             "text": "Banana",
             "emoji": "🍌",
@@ -430,6 +424,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍎",
             "label": "Apple",
             "translationPt": "Maçã"
+          },
+          {
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja"
           },
           {
             "text": "Mango",
@@ -439,13 +439,13 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Orange",
           "Banana",
           "Apple",
+          "Orange",
           "Mango"
         ],
         "correctAnswer": "Mango",
-        "explanation": "🥭 **Mango** significa **Manga** em inglês! Exemplo prático: \"Mango is popular in tropical countries.\"",
+        "explanation": "Exemplo prático: \"Mango is popular in tropical countries.\"",
         "phoneticHint": "/ˈmæŋ.ɡoʊ/",
         "skillCategory": "vocabulary"
       }
@@ -472,16 +472,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Dog\"**?",
+        "prompt": "Qual imagem representa \"Dog\"?",
         "audioPhrase": "Dog",
         "visualEmoji": "🐶",
         "visualOptions": [
-          {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
           {
             "text": "Fish",
             "emoji": "🐟",
@@ -499,23 +493,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐦",
             "label": "Bird",
             "translationPt": "Pássaro"
+          },
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           }
         ],
         "options": [
-          "Dog",
           "Fish",
           "Cat",
-          "Bird"
+          "Bird",
+          "Dog"
         ],
         "correctAnswer": "Dog",
-        "explanation": "🐶 **Dog** significa **Cachorro** em inglês! Exemplo prático: \"The loyal dog wags its tail.\"",
+        "explanation": "Exemplo prático: \"The loyal dog wags its tail.\"",
         "phoneticHint": "/dɒɡ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Gato\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Gato\" em inglês?",
         "audioPhrase": "Cat",
         "visualEmoji": "🐱",
         "visualOptions": [
@@ -526,16 +526,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachorro"
           },
           {
-            "text": "Cat",
-            "emoji": "🐱",
-            "label": "Cat",
-            "translationPt": "Gato"
-          },
-          {
             "text": "Fish",
             "emoji": "🐟",
             "label": "Fish",
             "translationPt": "Peixe"
+          },
+          {
+            "text": "Cat",
+            "emoji": "🐱",
+            "label": "Cat",
+            "translationPt": "Gato"
           },
           {
             "text": "Bird",
@@ -546,19 +546,19 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Dog",
-          "Cat",
           "Fish",
+          "Cat",
           "Bird"
         ],
         "correctAnswer": "Cat",
-        "explanation": "🐱 **Cat** significa **Gato** em inglês! Exemplo prático: \"The soft cat sleeps on the sofa.\"",
+        "explanation": "Exemplo prático: \"The soft cat sleeps on the sofa.\"",
         "phoneticHint": "/kæt/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p2-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Bird\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bird",
         "visualEmoji": "🐦",
         "visualOptions": [
@@ -594,17 +594,23 @@ export const WORLD_0_PHASES: Phase[] = [
           "Bird"
         ],
         "correctAnswer": "Bird",
-        "explanation": "🐦 **Bird** significa **Pássaro** em inglês! Exemplo prático: \"A colorful bird sings in the tree.\"",
+        "explanation": "Exemplo prático: \"A colorful bird sings in the tree.\"",
         "phoneticHint": "/bɜːd/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Fish\"**?",
+        "prompt": "Qual imagem representa \"Fish\"?",
         "audioPhrase": "Fish",
         "visualEmoji": "🐟",
         "visualOptions": [
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
+          },
           {
             "text": "Bird",
             "emoji": "🐦",
@@ -618,12 +624,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Peixe"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
-          {
             "text": "Cat",
             "emoji": "🐱",
             "label": "Cat",
@@ -631,28 +631,28 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Dog",
           "Bird",
           "Fish",
-          "Dog",
           "Cat"
         ],
         "correctAnswer": "Fish",
-        "explanation": "🐟 **Fish** significa **Peixe** em inglês! Exemplo prático: \"A gold fish swims in clean water.\"",
+        "explanation": "Exemplo prático: \"A gold fish swims in clean water.\"",
         "phoneticHint": "/fɪʃ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Coelho\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Coelho\" em inglês?",
         "audioPhrase": "Rabbit",
         "visualEmoji": "🐰",
         "visualOptions": [
           {
-            "text": "Cat",
-            "emoji": "🐱",
-            "label": "Cat",
-            "translationPt": "Gato"
+            "text": "Rabbit",
+            "emoji": "🐰",
+            "label": "Rabbit",
+            "translationPt": "Coelho"
           },
           {
             "text": "Bird",
@@ -661,10 +661,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pássaro"
           },
           {
-            "text": "Rabbit",
-            "emoji": "🐰",
-            "label": "Rabbit",
-            "translationPt": "Coelho"
+            "text": "Cat",
+            "emoji": "🐱",
+            "label": "Cat",
+            "translationPt": "Gato"
           },
           {
             "text": "Dog",
@@ -674,20 +674,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Cat",
-          "Bird",
           "Rabbit",
+          "Bird",
+          "Cat",
           "Dog"
         ],
         "correctAnswer": "Rabbit",
-        "explanation": "🐰 **Rabbit** significa **Coelho** em inglês! Exemplo prático: \"The white rabbit hops around the garden.\"",
+        "explanation": "Exemplo prático: \"The white rabbit hops around the garden.\"",
         "phoneticHint": "/ˈræb.ɪt/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p2-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Hamster\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Hamster",
         "visualEmoji": "🐹",
         "visualOptions": [
@@ -704,36 +704,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Gato"
           },
           {
-            "text": "Bird",
-            "emoji": "🐦",
-            "label": "Bird",
-            "translationPt": "Pássaro"
-          },
-          {
             "text": "Hamster",
             "emoji": "🐹",
             "label": "Hamster",
             "translationPt": "Hamster"
+          },
+          {
+            "text": "Bird",
+            "emoji": "🐦",
+            "label": "Bird",
+            "translationPt": "Pássaro"
           }
         ],
         "options": [
           "Dog",
           "Cat",
-          "Bird",
-          "Hamster"
+          "Hamster",
+          "Bird"
         ],
         "correctAnswer": "Hamster",
-        "explanation": "🐹 **Hamster** significa **Hamster** em inglês! Exemplo prático: \"The little hamster runs on its wheel.\"",
+        "explanation": "Exemplo prático: \"The little hamster runs on its wheel.\"",
         "phoneticHint": "/ˈhæm.stər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Turtle\"**?",
+        "prompt": "Qual imagem representa \"Turtle\"?",
         "audioPhrase": "Turtle",
         "visualEmoji": "🐢",
         "visualOptions": [
+          {
+            "text": "Cat",
+            "emoji": "🐱",
+            "label": "Cat",
+            "translationPt": "Gato"
+          },
           {
             "text": "Turtle",
             "emoji": "🐢",
@@ -747,12 +753,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachorro"
           },
           {
-            "text": "Cat",
-            "emoji": "🐱",
-            "label": "Cat",
-            "translationPt": "Gato"
-          },
-          {
             "text": "Bird",
             "emoji": "🐦",
             "label": "Bird",
@@ -760,23 +760,35 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Cat",
           "Turtle",
           "Dog",
-          "Cat",
           "Bird"
         ],
         "correctAnswer": "Turtle",
-        "explanation": "🐢 **Turtle** significa **Tartaruga** em inglês! Exemplo prático: \"The green turtle walks very slowly.\"",
+        "explanation": "Exemplo prático: \"The green turtle walks very slowly.\"",
         "phoneticHint": "/ˈtɜː.təl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Papagaio\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Papagaio\" em inglês?",
         "audioPhrase": "Parrot",
         "visualEmoji": "🦜",
         "visualOptions": [
+          {
+            "text": "Bird",
+            "emoji": "🐦",
+            "label": "Bird",
+            "translationPt": "Pássaro"
+          },
+          {
+            "text": "Parrot",
+            "emoji": "🦜",
+            "label": "Parrot",
+            "translationPt": "Papagaio"
+          },
           {
             "text": "Dog",
             "emoji": "🐶",
@@ -784,42 +796,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachorro"
           },
           {
-            "text": "Bird",
-            "emoji": "🐦",
-            "label": "Bird",
-            "translationPt": "Pássaro"
-          },
-          {
             "text": "Cat",
             "emoji": "🐱",
             "label": "Cat",
             "translationPt": "Gato"
-          },
-          {
-            "text": "Parrot",
-            "emoji": "🦜",
-            "label": "Parrot",
-            "translationPt": "Papagaio"
           }
         ],
         "options": [
-          "Dog",
           "Bird",
-          "Cat",
-          "Parrot"
+          "Parrot",
+          "Dog",
+          "Cat"
         ],
         "correctAnswer": "Parrot",
-        "explanation": "🦜 **Parrot** significa **Papagaio** em inglês! Exemplo prático: \"The green parrot repeats human words.\"",
+        "explanation": "Exemplo prático: \"The green parrot repeats human words.\"",
         "phoneticHint": "/ˈpær.ət/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p2-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Puppy\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Puppy",
         "visualEmoji": "🐕",
         "visualOptions": [
+          {
+            "text": "Cat",
+            "emoji": "🐱",
+            "label": "Cat",
+            "translationPt": "Gato"
+          },
           {
             "text": "Puppy",
             "emoji": "🐕",
@@ -833,12 +839,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pássaro"
           },
           {
-            "text": "Cat",
-            "emoji": "🐱",
-            "label": "Cat",
-            "translationPt": "Gato"
-          },
-          {
             "text": "Dog",
             "emoji": "🐶",
             "label": "Dog",
@@ -846,28 +846,28 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Cat",
           "Puppy",
           "Bird",
-          "Cat",
           "Dog"
         ],
         "correctAnswer": "Puppy",
-        "explanation": "🐕 **Puppy** significa **Filhote de cão** em inglês! Exemplo prático: \"The playful puppy loves to fetch the ball.\"",
+        "explanation": "Exemplo prático: \"The playful puppy loves to fetch the ball.\"",
         "phoneticHint": "/ˈpʌp.i/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Kitten\"**?",
+        "prompt": "Qual imagem representa \"Kitten\"?",
         "audioPhrase": "Kitten",
         "visualEmoji": "🐈",
         "visualOptions": [
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
+            "text": "Kitten",
+            "emoji": "🐈",
+            "label": "Kitten",
+            "translationPt": "Gatinho filhote"
           },
           {
             "text": "Bird",
@@ -876,10 +876,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pássaro"
           },
           {
-            "text": "Kitten",
-            "emoji": "🐈",
-            "label": "Kitten",
-            "translationPt": "Gatinho filhote"
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Cat",
@@ -889,13 +889,13 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Dog",
-          "Bird",
           "Kitten",
+          "Bird",
+          "Dog",
           "Cat"
         ],
         "correctAnswer": "Kitten",
-        "explanation": "🐈 **Kitten** significa **Gatinho filhote** em inglês! Exemplo prático: \"The tiny kitten drinks warm milk.\"",
+        "explanation": "Exemplo prático: \"The tiny kitten drinks warm milk.\"",
         "phoneticHint": "/ˈkɪt.ən/",
         "skillCategory": "vocabulary"
       }
@@ -922,9 +922,138 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Bed\"**?",
+        "prompt": "Qual imagem representa \"Bed\"?",
         "audioPhrase": "Bed",
         "visualEmoji": "🛏️",
+        "visualOptions": [
+          {
+            "text": "Door",
+            "emoji": "🚪",
+            "label": "Door",
+            "translationPt": "Porta"
+          },
+          {
+            "text": "Chair",
+            "emoji": "🪑",
+            "label": "Chair",
+            "translationPt": "Cadeira"
+          },
+          {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
+          },
+          {
+            "text": "Table",
+            "emoji": "🪵",
+            "label": "Table",
+            "translationPt": "Mesa"
+          }
+        ],
+        "options": [
+          "Door",
+          "Chair",
+          "Bed",
+          "Table"
+        ],
+        "correctAnswer": "Bed",
+        "explanation": "Exemplo prático: \"I sleep comfortably in my bed.\"",
+        "phoneticHint": "/bed/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p3-e2",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Cadeira\" em inglês?",
+        "audioPhrase": "Chair",
+        "visualEmoji": "🪑",
+        "visualOptions": [
+          {
+            "text": "Door",
+            "emoji": "🚪",
+            "label": "Door",
+            "translationPt": "Porta"
+          },
+          {
+            "text": "Chair",
+            "emoji": "🪑",
+            "label": "Chair",
+            "translationPt": "Cadeira"
+          },
+          {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
+          },
+          {
+            "text": "Table",
+            "emoji": "🪵",
+            "label": "Table",
+            "translationPt": "Mesa"
+          }
+        ],
+        "options": [
+          "Door",
+          "Chair",
+          "Bed",
+          "Table"
+        ],
+        "correctAnswer": "Chair",
+        "explanation": "Exemplo prático: \"Please sit down on this wooden chair.\"",
+        "phoneticHint": "/tʃeər/",
+        "skillCategory": "reading"
+      },
+      {
+        "id": "w0-p3-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Table",
+        "visualEmoji": "🪵",
+        "visualOptions": [
+          {
+            "text": "Table",
+            "emoji": "🪵",
+            "label": "Table",
+            "translationPt": "Mesa"
+          },
+          {
+            "text": "Door",
+            "emoji": "🚪",
+            "label": "Door",
+            "translationPt": "Porta"
+          },
+          {
+            "text": "Chair",
+            "emoji": "🪑",
+            "label": "Chair",
+            "translationPt": "Cadeira"
+          },
+          {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
+          }
+        ],
+        "options": [
+          "Table",
+          "Door",
+          "Chair",
+          "Bed"
+        ],
+        "correctAnswer": "Table",
+        "explanation": "Exemplo prático: \"Dinner is served on the dining table.\"",
+        "phoneticHint": "/ˈteɪ.bəl/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p3-e4",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Door\"?",
+        "audioPhrase": "Door",
+        "visualEmoji": "🚪",
         "visualOptions": [
           {
             "text": "Table",
@@ -957,144 +1086,15 @@ export const WORLD_0_PHASES: Phase[] = [
           "Chair",
           "Door"
         ],
-        "correctAnswer": "Bed",
-        "explanation": "🛏️ **Bed** significa **Cama** em inglês! Exemplo prático: \"I sleep comfortably in my bed.\"",
-        "phoneticHint": "/bed/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p3-e2",
-        "type": "image-choice",
-        "prompt": "Como se diz **\"Cadeira\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Chair",
-        "visualEmoji": "🪑",
-        "visualOptions": [
-          {
-            "text": "Door",
-            "emoji": "🚪",
-            "label": "Door",
-            "translationPt": "Porta"
-          },
-          {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
-          },
-          {
-            "text": "Table",
-            "emoji": "🪵",
-            "label": "Table",
-            "translationPt": "Mesa"
-          },
-          {
-            "text": "Chair",
-            "emoji": "🪑",
-            "label": "Chair",
-            "translationPt": "Cadeira"
-          }
-        ],
-        "options": [
-          "Door",
-          "Bed",
-          "Table",
-          "Chair"
-        ],
-        "correctAnswer": "Chair",
-        "explanation": "🪑 **Chair** significa **Cadeira** em inglês! Exemplo prático: \"Please sit down on this wooden chair.\"",
-        "phoneticHint": "/tʃeər/",
-        "skillCategory": "reading"
-      },
-      {
-        "id": "w0-p3-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Table\"**:",
-        "audioPhrase": "Table",
-        "visualEmoji": "🪵",
-        "visualOptions": [
-          {
-            "text": "Chair",
-            "emoji": "🪑",
-            "label": "Chair",
-            "translationPt": "Cadeira"
-          },
-          {
-            "text": "Door",
-            "emoji": "🚪",
-            "label": "Door",
-            "translationPt": "Porta"
-          },
-          {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
-          },
-          {
-            "text": "Table",
-            "emoji": "🪵",
-            "label": "Table",
-            "translationPt": "Mesa"
-          }
-        ],
-        "options": [
-          "Chair",
-          "Door",
-          "Bed",
-          "Table"
-        ],
-        "correctAnswer": "Table",
-        "explanation": "🪵 **Table** significa **Mesa** em inglês! Exemplo prático: \"Dinner is served on the dining table.\"",
-        "phoneticHint": "/ˈteɪ.bəl/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p3-e4",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Door\"**?",
-        "audioPhrase": "Door",
-        "visualEmoji": "🚪",
-        "visualOptions": [
-          {
-            "text": "Table",
-            "emoji": "🪵",
-            "label": "Table",
-            "translationPt": "Mesa"
-          },
-          {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
-          },
-          {
-            "text": "Door",
-            "emoji": "🚪",
-            "label": "Door",
-            "translationPt": "Porta"
-          },
-          {
-            "text": "Chair",
-            "emoji": "🪑",
-            "label": "Chair",
-            "translationPt": "Cadeira"
-          }
-        ],
-        "options": [
-          "Table",
-          "Bed",
-          "Door",
-          "Chair"
-        ],
         "correctAnswer": "Door",
-        "explanation": "🚪 **Door** significa **Porta** em inglês! Exemplo prático: \"Please close the front door.\"",
+        "explanation": "Exemplo prático: \"Please close the front door.\"",
         "phoneticHint": "/dɔːr/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Janela\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Janela\" em inglês?",
         "audioPhrase": "Window",
         "visualEmoji": "🪟",
         "visualOptions": [
@@ -1105,10 +1105,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Janela"
           },
           {
-            "text": "Table",
-            "emoji": "🪵",
-            "label": "Table",
-            "translationPt": "Mesa"
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
           },
           {
             "text": "Chair",
@@ -1117,36 +1117,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cadeira"
           },
           {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
+            "text": "Table",
+            "emoji": "🪵",
+            "label": "Table",
+            "translationPt": "Mesa"
           }
         ],
         "options": [
           "Window",
-          "Table",
+          "Bed",
           "Chair",
-          "Bed"
+          "Table"
         ],
         "correctAnswer": "Window",
-        "explanation": "🪟 **Window** significa **Janela** em inglês! Exemplo prático: \"Open the window to let fresh air in.\"",
+        "explanation": "Exemplo prático: \"Open the window to let fresh air in.\"",
         "phoneticHint": "/ˈwɪn.doʊ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p3-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Lamp\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lamp",
         "visualEmoji": "💡",
         "visualOptions": [
-          {
-            "text": "Table",
-            "emoji": "🪵",
-            "label": "Table",
-            "translationPt": "Mesa"
-          },
           {
             "text": "Chair",
             "emoji": "🪑",
@@ -1164,32 +1158,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💡",
             "label": "Lamp",
             "translationPt": "Lâmpada / Abajur"
+          },
+          {
+            "text": "Table",
+            "emoji": "🪵",
+            "label": "Table",
+            "translationPt": "Mesa"
           }
         ],
         "options": [
-          "Table",
           "Chair",
           "Bed",
-          "Lamp"
+          "Lamp",
+          "Table"
         ],
         "correctAnswer": "Lamp",
-        "explanation": "💡 **Lamp** significa **Lâmpada / Abajur** em inglês! Exemplo prático: \"Turn on the reading lamp beside the bed.\"",
+        "explanation": "Exemplo prático: \"Turn on the reading lamp beside the bed.\"",
         "phoneticHint": "/læmp/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Clock\"**?",
+        "prompt": "Qual imagem representa \"Clock\"?",
         "audioPhrase": "Clock",
         "visualEmoji": "⏰",
         "visualOptions": [
-          {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
-          },
           {
             "text": "Clock",
             "emoji": "⏰",
@@ -1203,6 +1197,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mesa"
           },
           {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
+          },
+          {
             "text": "Chair",
             "emoji": "🪑",
             "label": "Chair",
@@ -1210,28 +1210,28 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Bed",
           "Clock",
           "Table",
+          "Bed",
           "Chair"
         ],
         "correctAnswer": "Clock",
-        "explanation": "⏰ **Clock** significa **Relógio de parede** em inglês! Exemplo prático: \"The alarm clock rings at seven o’clock.\"",
+        "explanation": "Exemplo prático: \"The alarm clock rings at seven o’clock.\"",
         "phoneticHint": "/klɒk/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Travesseiro\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Travesseiro\" em inglês?",
         "audioPhrase": "Pillow",
         "visualEmoji": "🛋️",
         "visualOptions": [
           {
-            "text": "Chair",
-            "emoji": "🪑",
-            "label": "Chair",
-            "translationPt": "Cadeira"
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
           },
           {
             "text": "Pillow",
@@ -1240,48 +1240,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Travesseiro"
           },
           {
+            "text": "Chair",
+            "emoji": "🪑",
+            "label": "Chair",
+            "translationPt": "Cadeira"
+          },
+          {
             "text": "Table",
             "emoji": "🪵",
             "label": "Table",
             "translationPt": "Mesa"
-          },
-          {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
           }
         ],
         "options": [
-          "Chair",
+          "Bed",
           "Pillow",
-          "Table",
-          "Bed"
+          "Chair",
+          "Table"
         ],
         "correctAnswer": "Pillow",
-        "explanation": "🛋️ **Pillow** significa **Travesseiro** em inglês! Exemplo prático: \"A soft pillow helps you sleep well.\"",
+        "explanation": "Exemplo prático: \"A soft pillow helps you sleep well.\"",
         "phoneticHint": "/ˈpɪl.oʊ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p3-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Mirror\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Mirror",
         "visualEmoji": "🪞",
         "visualOptions": [
-          {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
-          },
-          {
-            "text": "Table",
-            "emoji": "🪵",
-            "label": "Table",
-            "translationPt": "Mesa"
-          },
           {
             "text": "Mirror",
             "emoji": "🪞",
@@ -1289,41 +1277,53 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Espelho"
           },
           {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
+          },
+          {
             "text": "Chair",
             "emoji": "🪑",
             "label": "Chair",
             "translationPt": "Cadeira"
-          }
-        ],
-        "options": [
-          "Bed",
-          "Table",
-          "Mirror",
-          "Chair"
-        ],
-        "correctAnswer": "Mirror",
-        "explanation": "🪞 **Mirror** significa **Espelho** em inglês! Exemplo prático: \"She looks at herself in the bathroom mirror.\"",
-        "phoneticHint": "/ˈmɪr.ər/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p3-e10",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Key\"**?",
-        "audioPhrase": "Key",
-        "visualEmoji": "🔑",
-        "visualOptions": [
-          {
-            "text": "Key",
-            "emoji": "🔑",
-            "label": "Key",
-            "translationPt": "Chave"
           },
           {
             "text": "Table",
             "emoji": "🪵",
             "label": "Table",
             "translationPt": "Mesa"
+          }
+        ],
+        "options": [
+          "Mirror",
+          "Bed",
+          "Chair",
+          "Table"
+        ],
+        "correctAnswer": "Mirror",
+        "explanation": "Exemplo prático: \"She looks at herself in the bathroom mirror.\"",
+        "phoneticHint": "/ˈmɪr.ər/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p3-e10",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Key\"?",
+        "audioPhrase": "Key",
+        "visualEmoji": "🔑",
+        "visualOptions": [
+          {
+            "text": "Table",
+            "emoji": "🪵",
+            "label": "Table",
+            "translationPt": "Mesa"
+          },
+          {
+            "text": "Key",
+            "emoji": "🔑",
+            "label": "Key",
+            "translationPt": "Chave"
           },
           {
             "text": "Bed",
@@ -1339,13 +1339,13 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Key",
           "Table",
+          "Key",
           "Bed",
           "Chair"
         ],
         "correctAnswer": "Key",
-        "explanation": "🔑 **Key** significa **Chave** em inglês! Exemplo prático: \"Never lose your house key.\"",
+        "explanation": "Exemplo prático: \"Never lose your house key.\"",
         "phoneticHint": "/kiː/",
         "skillCategory": "vocabulary"
       }
@@ -1372,22 +1372,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Water\"**?",
+        "prompt": "Qual imagem representa \"Water\"?",
         "audioPhrase": "Water",
         "visualEmoji": "💧",
         "visualOptions": [
-          {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
-          },
-          {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite"
-          },
           {
             "text": "Coffee",
             "emoji": "☕",
@@ -1399,26 +1387,50 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍵",
             "label": "Tea",
             "translationPt": "Chá"
+          },
+          {
+            "text": "Milk",
+            "emoji": "🥛",
+            "label": "Milk",
+            "translationPt": "Leite"
+          },
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
           }
         ],
         "options": [
-          "Water",
-          "Milk",
           "Coffee",
-          "Tea"
+          "Tea",
+          "Milk",
+          "Water"
         ],
         "correctAnswer": "Water",
-        "explanation": "💧 **Water** significa **Água** em inglês! Exemplo prático: \"Drinking pure water keeps you hydrated.\"",
+        "explanation": "Exemplo prático: \"Drinking pure water keeps you hydrated.\"",
         "phoneticHint": "/ˈwɔː.tər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Leite\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Leite\" em inglês?",
         "audioPhrase": "Milk",
         "visualEmoji": "🥛",
         "visualOptions": [
+          {
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café"
+          },
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
+          },
           {
             "text": "Tea",
             "emoji": "🍵",
@@ -1430,35 +1442,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥛",
             "label": "Milk",
             "translationPt": "Leite"
-          },
-          {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
-          },
-          {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café"
           }
         ],
         "options": [
-          "Tea",
-          "Milk",
+          "Coffee",
           "Water",
-          "Coffee"
+          "Tea",
+          "Milk"
         ],
         "correctAnswer": "Milk",
-        "explanation": "🥛 **Milk** significa **Leite** em inglês! Exemplo prático: \"He drinks a glass of cold milk.\"",
+        "explanation": "Exemplo prático: \"He drinks a glass of cold milk.\"",
         "phoneticHint": "/mɪlk/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p4-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Coffee\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Coffee",
         "visualEmoji": "☕",
         "visualOptions": [
@@ -1469,6 +1469,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chá"
           },
           {
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café"
+          },
+          {
             "text": "Water",
             "emoji": "💧",
             "label": "Water",
@@ -1479,43 +1485,31 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥛",
             "label": "Milk",
             "translationPt": "Leite"
-          },
-          {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café"
           }
         ],
         "options": [
           "Tea",
+          "Coffee",
           "Water",
-          "Milk",
-          "Coffee"
+          "Milk"
         ],
         "correctAnswer": "Coffee",
-        "explanation": "☕ **Coffee** significa **Café** em inglês! Exemplo prático: \"Hot black coffee wakes me up.\"",
+        "explanation": "Exemplo prático: \"Hot black coffee wakes me up.\"",
         "phoneticHint": "/ˈkɒf.i/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Tea\"**?",
+        "prompt": "Qual imagem representa \"Tea\"?",
         "audioPhrase": "Tea",
         "visualEmoji": "🍵",
         "visualOptions": [
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
-          },
-          {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café"
+            "text": "Milk",
+            "emoji": "🥛",
+            "label": "Milk",
+            "translationPt": "Leite"
           },
           {
             "text": "Tea",
@@ -1524,27 +1518,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chá"
           },
           {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite"
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
+          },
+          {
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café"
           }
         ],
         "options": [
-          "Water",
-          "Coffee",
+          "Milk",
           "Tea",
-          "Milk"
+          "Water",
+          "Coffee"
         ],
         "correctAnswer": "Tea",
-        "explanation": "🍵 **Tea** significa **Chá** em inglês! Exemplo prático: \"Green tea is very good for your health.\"",
+        "explanation": "Exemplo prático: \"Green tea is very good for your health.\"",
         "phoneticHint": "/tiː/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Suco\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Suco\" em inglês?",
         "audioPhrase": "Juice",
         "visualEmoji": "🧃",
         "visualOptions": [
@@ -1555,6 +1555,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Suco"
           },
           {
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café"
+          },
+          {
             "text": "Milk",
             "emoji": "🥛",
             "label": "Milk",
@@ -1565,29 +1571,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💧",
             "label": "Water",
             "translationPt": "Água"
-          },
-          {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café"
           }
         ],
         "options": [
           "Juice",
+          "Coffee",
           "Milk",
-          "Water",
-          "Coffee"
+          "Water"
         ],
         "correctAnswer": "Juice",
-        "explanation": "🧃 **Juice** significa **Suco** em inglês! Exemplo prático: \"Fresh apple juice tastes sweet.\"",
+        "explanation": "Exemplo prático: \"Fresh apple juice tastes sweet.\"",
         "phoneticHint": "/dʒuːs/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p4-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Soda\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Soda",
         "visualEmoji": "🥤",
         "visualOptions": [
@@ -1598,10 +1598,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Refrigerante"
           },
           {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite"
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café"
           },
           {
             "text": "Water",
@@ -1610,36 +1610,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Água"
           },
           {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café"
+            "text": "Milk",
+            "emoji": "🥛",
+            "label": "Milk",
+            "translationPt": "Leite"
           }
         ],
         "options": [
           "Soda",
-          "Milk",
+          "Coffee",
           "Water",
-          "Coffee"
+          "Milk"
         ],
         "correctAnswer": "Soda",
-        "explanation": "🥤 **Soda** significa **Refrigerante** em inglês! Exemplo prático: \"Cold soda with ice on a sunny day.\"",
+        "explanation": "Exemplo prático: \"Cold soda with ice on a sunny day.\"",
         "phoneticHint": "/ˈsoʊ.də/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Hot Chocolate\"**?",
+        "prompt": "Qual imagem representa \"Hot Chocolate\"?",
         "audioPhrase": "Hot Chocolate",
         "visualEmoji": "🍫",
         "visualOptions": [
-          {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café"
-          },
           {
             "text": "Hot Chocolate",
             "emoji": "🍫",
@@ -1653,6 +1647,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Leite"
           },
           {
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café"
+          },
+          {
             "text": "Water",
             "emoji": "💧",
             "label": "Water",
@@ -1660,23 +1660,29 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Coffee",
           "Hot Chocolate",
           "Milk",
+          "Coffee",
           "Water"
         ],
         "correctAnswer": "Hot Chocolate",
-        "explanation": "🍫 **Hot Chocolate** significa **Chocolate Quente** em inglês! Exemplo prático: \"Hot chocolate warms you up during winter.\"",
+        "explanation": "Exemplo prático: \"Hot chocolate warms you up during winter.\"",
         "phoneticHint": "/hɒt ˈtʃɒk.lət/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Limonada\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Limonada\" em inglês?",
         "audioPhrase": "Lemonade",
         "visualEmoji": "🍋",
         "visualOptions": [
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
+          },
           {
             "text": "Coffee",
             "emoji": "☕",
@@ -1694,6 +1700,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍋",
             "label": "Lemonade",
             "translationPt": "Limonada"
+          }
+        ],
+        "options": [
+          "Water",
+          "Coffee",
+          "Milk",
+          "Lemonade"
+        ],
+        "correctAnswer": "Lemonade",
+        "explanation": "Exemplo prático: \"Fresh lemonade with mint leaves.\"",
+        "phoneticHint": "/ˌlem.əˈneɪd/",
+        "skillCategory": "reading"
+      },
+      {
+        "id": "w0-p4-e9",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Smoothie",
+        "visualEmoji": "🍧",
+        "visualOptions": [
+          {
+            "text": "Milk",
+            "emoji": "🥛",
+            "label": "Milk",
+            "translationPt": "Leite"
+          },
+          {
+            "text": "Smoothie",
+            "emoji": "🍧",
+            "label": "Smoothie",
+            "translationPt": "Vitamina de frutas"
+          },
+          {
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café"
           },
           {
             "text": "Water",
@@ -1703,22 +1746,22 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Coffee",
           "Milk",
-          "Lemonade",
+          "Smoothie",
+          "Coffee",
           "Water"
         ],
-        "correctAnswer": "Lemonade",
-        "explanation": "🍋 **Lemonade** significa **Limonada** em inglês! Exemplo prático: \"Fresh lemonade with mint leaves.\"",
-        "phoneticHint": "/ˌlem.əˈneɪd/",
-        "skillCategory": "reading"
+        "correctAnswer": "Smoothie",
+        "explanation": "Exemplo prático: \"A strawberry and banana smoothie.\"",
+        "phoneticHint": "/ˈsmuː.ði/",
+        "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-e9",
+        "id": "w0-p4-e10",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Smoothie\"**:",
-        "audioPhrase": "Smoothie",
-        "visualEmoji": "🍧",
+        "prompt": "Qual imagem representa \"Coconut Water\"?",
+        "audioPhrase": "Coconut Water",
+        "visualEmoji": "🥥",
         "visualOptions": [
           {
             "text": "Water",
@@ -1731,43 +1774,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "☕",
             "label": "Coffee",
             "translationPt": "Café"
-          },
-          {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite"
-          },
-          {
-            "text": "Smoothie",
-            "emoji": "🍧",
-            "label": "Smoothie",
-            "translationPt": "Vitamina de frutas"
-          }
-        ],
-        "options": [
-          "Water",
-          "Coffee",
-          "Milk",
-          "Smoothie"
-        ],
-        "correctAnswer": "Smoothie",
-        "explanation": "🍧 **Smoothie** significa **Vitamina de frutas** em inglês! Exemplo prático: \"A strawberry and banana smoothie.\"",
-        "phoneticHint": "/ˈsmuː.ði/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p4-e10",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Coconut Water\"**?",
-        "audioPhrase": "Coconut Water",
-        "visualEmoji": "🥥",
-        "visualOptions": [
-          {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
           },
           {
             "text": "Coconut Water",
@@ -1780,22 +1786,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥛",
             "label": "Milk",
             "translationPt": "Leite"
-          },
-          {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café"
           }
         ],
         "options": [
           "Water",
+          "Coffee",
           "Coconut Water",
-          "Milk",
-          "Coffee"
+          "Milk"
         ],
         "correctAnswer": "Coconut Water",
-        "explanation": "🥥 **Coconut Water** significa **Água de Coco** em inglês! Exemplo prático: \"Cold coconut water on the beach.\"",
+        "explanation": "Exemplo prático: \"Cold coconut water on the beach.\"",
         "phoneticHint": "/ˈkoʊ.kə.nʌt ˈwɔː.tər/",
         "skillCategory": "vocabulary"
       }
@@ -1822,21 +1822,21 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Red\"**?",
+        "prompt": "Qual imagem representa \"Red\"?",
         "audioPhrase": "Red",
         "visualEmoji": "🔴",
         "visualOptions": [
-          {
-            "text": "Yellow",
-            "emoji": "🟡",
-            "label": "Yellow",
-            "translationPt": "Amarelo"
-          },
           {
             "text": "Red",
             "emoji": "🔴",
             "label": "Red",
             "translationPt": "Vermelho"
+          },
+          {
+            "text": "Green",
+            "emoji": "🟢",
+            "label": "Green",
+            "translationPt": "Verde"
           },
           {
             "text": "Blue",
@@ -1845,27 +1845,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Azul"
           },
           {
-            "text": "Green",
-            "emoji": "🟢",
-            "label": "Green",
-            "translationPt": "Verde"
+            "text": "Yellow",
+            "emoji": "🟡",
+            "label": "Yellow",
+            "translationPt": "Amarelo"
           }
         ],
         "options": [
-          "Yellow",
           "Red",
+          "Green",
           "Blue",
-          "Green"
+          "Yellow"
         ],
         "correctAnswer": "Red",
-        "explanation": "🔴 **Red** significa **Vermelho** em inglês! Exemplo prático: \"The red car stops at the light.\"",
+        "explanation": "Exemplo prático: \"The red car stops at the light.\"",
         "phoneticHint": "/red/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Azul\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Azul\" em inglês?",
         "audioPhrase": "Blue",
         "visualEmoji": "🔵",
         "visualOptions": [
@@ -1876,10 +1876,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Amarelo"
           },
           {
-            "text": "Green",
-            "emoji": "🟢",
-            "label": "Green",
-            "translationPt": "Verde"
+            "text": "Blue",
+            "emoji": "🔵",
+            "label": "Blue",
+            "translationPt": "Azul"
           },
           {
             "text": "Red",
@@ -1888,30 +1888,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vermelho"
           },
           {
-            "text": "Blue",
-            "emoji": "🔵",
-            "label": "Blue",
-            "translationPt": "Azul"
+            "text": "Green",
+            "emoji": "🟢",
+            "label": "Green",
+            "translationPt": "Verde"
           }
         ],
         "options": [
           "Yellow",
-          "Green",
+          "Blue",
           "Red",
-          "Blue"
+          "Green"
         ],
         "correctAnswer": "Blue",
-        "explanation": "🔵 **Blue** significa **Azul** em inglês! Exemplo prático: \"The blue sky is clear and bright.\"",
+        "explanation": "Exemplo prático: \"The blue sky is clear and bright.\"",
         "phoneticHint": "/bluː/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p5-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Green\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Green",
         "visualEmoji": "🟢",
         "visualOptions": [
+          {
+            "text": "Blue",
+            "emoji": "🔵",
+            "label": "Blue",
+            "translationPt": "Azul"
+          },
           {
             "text": "Green",
             "emoji": "🟢",
@@ -1929,29 +1935,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🟡",
             "label": "Yellow",
             "translationPt": "Amarelo"
-          },
-          {
-            "text": "Blue",
-            "emoji": "🔵",
-            "label": "Blue",
-            "translationPt": "Azul"
           }
         ],
         "options": [
+          "Blue",
           "Green",
           "Red",
-          "Yellow",
-          "Blue"
+          "Yellow"
         ],
         "correctAnswer": "Green",
-        "explanation": "🟢 **Green** significa **Verde** em inglês! Exemplo prático: \"The green grass grows in the yard.\"",
+        "explanation": "Exemplo prático: \"The green grass grows in the yard.\"",
         "phoneticHint": "/ɡriːn/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Yellow\"**?",
+        "prompt": "Qual imagem representa \"Yellow\"?",
         "audioPhrase": "Yellow",
         "visualEmoji": "🟡",
         "visualOptions": [
@@ -1962,12 +1962,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Azul"
           },
           {
-            "text": "Green",
-            "emoji": "🟢",
-            "label": "Green",
-            "translationPt": "Verde"
-          },
-          {
             "text": "Yellow",
             "emoji": "🟡",
             "label": "Yellow",
@@ -1978,31 +1972,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🔴",
             "label": "Red",
             "translationPt": "Vermelho"
+          },
+          {
+            "text": "Green",
+            "emoji": "🟢",
+            "label": "Green",
+            "translationPt": "Verde"
           }
         ],
         "options": [
           "Blue",
-          "Green",
           "Yellow",
-          "Red"
+          "Red",
+          "Green"
         ],
         "correctAnswer": "Yellow",
-        "explanation": "🟡 **Yellow** significa **Amarelo** em inglês! Exemplo prático: \"The bright yellow sun gives warmth.\"",
+        "explanation": "Exemplo prático: \"The bright yellow sun gives warmth.\"",
         "phoneticHint": "/ˈjel.oʊ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Preto\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Preto\" em inglês?",
         "audioPhrase": "Black",
         "visualEmoji": "⚫",
         "visualOptions": [
           {
-            "text": "Black",
-            "emoji": "⚫",
-            "label": "Black",
-            "translationPt": "Preto"
+            "text": "Red",
+            "emoji": "🔴",
+            "label": "Red",
+            "translationPt": "Vermelho"
           },
           {
             "text": "Green",
@@ -2011,36 +2011,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Verde"
           },
           {
-            "text": "Red",
-            "emoji": "🔴",
-            "label": "Red",
-            "translationPt": "Vermelho"
-          },
-          {
             "text": "Blue",
             "emoji": "🔵",
             "label": "Blue",
             "translationPt": "Azul"
+          },
+          {
+            "text": "Black",
+            "emoji": "⚫",
+            "label": "Black",
+            "translationPt": "Preto"
           }
         ],
         "options": [
-          "Black",
-          "Green",
           "Red",
-          "Blue"
+          "Green",
+          "Blue",
+          "Black"
         ],
         "correctAnswer": "Black",
-        "explanation": "⚫ **Black** significa **Preto** em inglês! Exemplo prático: \"The elegant black suit fits perfectly.\"",
+        "explanation": "Exemplo prático: \"The elegant black suit fits perfectly.\"",
         "phoneticHint": "/blæk/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p5-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"White\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "White",
         "visualEmoji": "⚪",
         "visualOptions": [
+          {
+            "text": "Red",
+            "emoji": "🔴",
+            "label": "Red",
+            "translationPt": "Vermelho"
+          },
           {
             "text": "White",
             "emoji": "⚪",
@@ -2048,39 +2054,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Branco"
           },
           {
-            "text": "Green",
-            "emoji": "🟢",
-            "label": "Green",
-            "translationPt": "Verde"
-          },
-          {
             "text": "Blue",
             "emoji": "🔵",
             "label": "Blue",
             "translationPt": "Azul"
           },
           {
-            "text": "Red",
-            "emoji": "🔴",
-            "label": "Red",
-            "translationPt": "Vermelho"
+            "text": "Green",
+            "emoji": "🟢",
+            "label": "Green",
+            "translationPt": "Verde"
           }
         ],
         "options": [
+          "Red",
           "White",
-          "Green",
           "Blue",
-          "Red"
+          "Green"
         ],
         "correctAnswer": "White",
-        "explanation": "⚪ **White** significa **Branco** em inglês! Exemplo prático: \"White snow covers the rooftops.\"",
+        "explanation": "Exemplo prático: \"White snow covers the rooftops.\"",
         "phoneticHint": "/waɪt/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Orange\"**?",
+        "prompt": "Qual imagem representa \"Orange\"?",
         "audioPhrase": "Orange",
         "visualEmoji": "🟠",
         "visualOptions": [
@@ -2116,28 +2116,22 @@ export const WORLD_0_PHASES: Phase[] = [
           "Green"
         ],
         "correctAnswer": "Orange",
-        "explanation": "🟠 **Orange** significa **Laranja (cor)** em inglês! Exemplo prático: \"An orange leaf falls in autumn.\"",
+        "explanation": "Exemplo prático: \"An orange leaf falls in autumn.\"",
         "phoneticHint": "/ˈɒr.ɪndʒ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Roxo\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Roxo\" em inglês?",
         "audioPhrase": "Purple",
         "visualEmoji": "🟣",
         "visualOptions": [
           {
-            "text": "Green",
-            "emoji": "🟢",
-            "label": "Green",
-            "translationPt": "Verde"
-          },
-          {
-            "text": "Red",
-            "emoji": "🔴",
-            "label": "Red",
-            "translationPt": "Vermelho"
+            "text": "Blue",
+            "emoji": "🔵",
+            "label": "Blue",
+            "translationPt": "Azul"
           },
           {
             "text": "Purple",
@@ -2146,42 +2140,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Roxo"
           },
           {
-            "text": "Blue",
-            "emoji": "🔵",
-            "label": "Blue",
-            "translationPt": "Azul"
+            "text": "Green",
+            "emoji": "🟢",
+            "label": "Green",
+            "translationPt": "Verde"
+          },
+          {
+            "text": "Red",
+            "emoji": "🔴",
+            "label": "Red",
+            "translationPt": "Vermelho"
           }
         ],
         "options": [
-          "Green",
-          "Red",
+          "Blue",
           "Purple",
-          "Blue"
+          "Green",
+          "Red"
         ],
         "correctAnswer": "Purple",
-        "explanation": "🟣 **Purple** significa **Roxo** em inglês! Exemplo prático: \"A beautiful purple flower blooms.\"",
+        "explanation": "Exemplo prático: \"A beautiful purple flower blooms.\"",
         "phoneticHint": "/ˈpɜː.pəl/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p5-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Pink\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pink",
         "visualEmoji": "🌸",
         "visualOptions": [
-          {
-            "text": "Red",
-            "emoji": "🔴",
-            "label": "Red",
-            "translationPt": "Vermelho"
-          },
-          {
-            "text": "Blue",
-            "emoji": "🔵",
-            "label": "Blue",
-            "translationPt": "Azul"
-          },
           {
             "text": "Pink",
             "emoji": "🌸",
@@ -2189,42 +2177,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rosa"
           },
           {
+            "text": "Blue",
+            "emoji": "🔵",
+            "label": "Blue",
+            "translationPt": "Azul"
+          },
+          {
             "text": "Green",
             "emoji": "🟢",
             "label": "Green",
             "translationPt": "Verde"
+          },
+          {
+            "text": "Red",
+            "emoji": "🔴",
+            "label": "Red",
+            "translationPt": "Vermelho"
           }
         ],
         "options": [
-          "Red",
-          "Blue",
           "Pink",
-          "Green"
+          "Blue",
+          "Green",
+          "Red"
         ],
         "correctAnswer": "Pink",
-        "explanation": "🌸 **Pink** significa **Rosa** em inglês! Exemplo prático: \"The baby wears a soft pink hat.\"",
+        "explanation": "Exemplo prático: \"The baby wears a soft pink hat.\"",
         "phoneticHint": "/pɪŋk/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Brown\"**?",
+        "prompt": "Qual imagem representa \"Brown\"?",
         "audioPhrase": "Brown",
         "visualEmoji": "🟤",
         "visualOptions": [
-          {
-            "text": "Brown",
-            "emoji": "🟤",
-            "label": "Brown",
-            "translationPt": "Marrom"
-          },
-          {
-            "text": "Blue",
-            "emoji": "🔵",
-            "label": "Blue",
-            "translationPt": "Azul"
-          },
           {
             "text": "Red",
             "emoji": "🔴",
@@ -2232,20 +2220,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vermelho"
           },
           {
+            "text": "Brown",
+            "emoji": "🟤",
+            "label": "Brown",
+            "translationPt": "Marrom"
+          },
+          {
             "text": "Green",
             "emoji": "🟢",
             "label": "Green",
             "translationPt": "Verde"
+          },
+          {
+            "text": "Blue",
+            "emoji": "🔵",
+            "label": "Blue",
+            "translationPt": "Azul"
           }
         ],
         "options": [
-          "Brown",
-          "Blue",
           "Red",
-          "Green"
+          "Brown",
+          "Green",
+          "Blue"
         ],
         "correctAnswer": "Brown",
-        "explanation": "🟤 **Brown** significa **Marrom** em inglês! Exemplo prático: \"A cozy brown coat for winter.\"",
+        "explanation": "Exemplo prático: \"A cozy brown coat for winter.\"",
         "phoneticHint": "/braʊn/",
         "skillCategory": "vocabulary"
       }
@@ -2272,15 +2272,15 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Car\"**?",
+        "prompt": "Qual imagem representa \"Car\"?",
         "audioPhrase": "Car",
         "visualEmoji": "🚗",
         "visualOptions": [
           {
-            "text": "Bus",
-            "emoji": "🚌",
-            "label": "Bus",
-            "translationPt": "Ônibus"
+            "text": "Airplane",
+            "emoji": "✈️",
+            "label": "Airplane",
+            "translationPt": "Avião"
           },
           {
             "text": "Car",
@@ -2289,36 +2289,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carro"
           },
           {
-            "text": "Airplane",
-            "emoji": "✈️",
-            "label": "Airplane",
-            "translationPt": "Avião"
-          },
-          {
             "text": "Bicycle",
             "emoji": "🚲",
             "label": "Bicycle / Bike",
             "translationPt": "Bicicleta"
+          },
+          {
+            "text": "Bus",
+            "emoji": "🚌",
+            "label": "Bus",
+            "translationPt": "Ônibus"
           }
         ],
         "options": [
-          "Bus",
-          "Car",
           "Airplane",
-          "Bicycle"
+          "Car",
+          "Bicycle",
+          "Bus"
         ],
         "correctAnswer": "Car",
-        "explanation": "🚗 **Car** significa **Carro** em inglês! Exemplo prático: \"My electric car is quiet and fast.\"",
+        "explanation": "Exemplo prático: \"My electric car is quiet and fast.\"",
         "phoneticHint": "/kɑːr/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Ônibus\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Ônibus\" em inglês?",
         "audioPhrase": "Bus",
         "visualEmoji": "🚌",
         "visualOptions": [
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
+          },
           {
             "text": "Bus",
             "emoji": "🚌",
@@ -2336,43 +2342,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚲",
             "label": "Bicycle / Bike",
             "translationPt": "Bicicleta"
-          },
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
           }
         ],
         "options": [
+          "Car",
           "Bus",
           "Airplane",
-          "Bicycle",
-          "Car"
+          "Bicycle"
         ],
         "correctAnswer": "Bus",
-        "explanation": "🚌 **Bus** significa **Ônibus** em inglês! Exemplo prático: \"The yellow school bus arrives on time.\"",
+        "explanation": "Exemplo prático: \"The yellow school bus arrives on time.\"",
         "phoneticHint": "/bʌs/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p6-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Bicycle\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bicycle",
         "visualEmoji": "🚲",
         "visualOptions": [
-          {
-            "text": "Bus",
-            "emoji": "🚌",
-            "label": "Bus",
-            "translationPt": "Ônibus"
-          },
           {
             "text": "Bicycle",
             "emoji": "🚲",
             "label": "Bicycle / Bike",
             "translationPt": "Bicicleta"
+          },
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
           },
           {
             "text": "Airplane",
@@ -2381,36 +2381,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Avião"
           },
           {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
+            "text": "Bus",
+            "emoji": "🚌",
+            "label": "Bus",
+            "translationPt": "Ônibus"
           }
         ],
         "options": [
-          "Bus",
           "Bicycle",
+          "Car",
           "Airplane",
-          "Car"
+          "Bus"
         ],
         "correctAnswer": "Bicycle",
-        "explanation": "🚲 **Bicycle** significa **Bicicleta** em inglês! Exemplo prático: \"Riding a bicycle is great exercise.\"",
+        "explanation": "Exemplo prático: \"Riding a bicycle is great exercise.\"",
         "phoneticHint": "/ˈbaɪ.sɪ.kəl/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Airplane\"**?",
+        "prompt": "Qual imagem representa \"Airplane\"?",
         "audioPhrase": "Airplane",
         "visualEmoji": "✈️",
         "visualOptions": [
-          {
-            "text": "Airplane",
-            "emoji": "✈️",
-            "label": "Airplane",
-            "translationPt": "Avião"
-          },
           {
             "text": "Bicycle",
             "emoji": "🚲",
@@ -2424,6 +2418,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carro"
           },
           {
+            "text": "Airplane",
+            "emoji": "✈️",
+            "label": "Airplane",
+            "translationPt": "Avião"
+          },
+          {
             "text": "Bus",
             "emoji": "🚌",
             "label": "Bus",
@@ -2431,20 +2431,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Airplane",
           "Bicycle",
           "Car",
+          "Airplane",
           "Bus"
         ],
         "correctAnswer": "Airplane",
-        "explanation": "✈️ **Airplane** significa **Avião** em inglês! Exemplo prático: \"The airplane flies high above the clouds.\"",
+        "explanation": "Exemplo prático: \"The airplane flies high above the clouds.\"",
         "phoneticHint": "/ˈeər.pleɪn/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Trem\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Trem\" em inglês?",
         "audioPhrase": "Train",
         "visualEmoji": "🚆",
         "visualOptions": [
@@ -2455,6 +2455,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Trem"
           },
           {
+            "text": "Bicycle",
+            "emoji": "🚲",
+            "label": "Bicycle / Bike",
+            "translationPt": "Bicicleta"
+          },
+          {
             "text": "Car",
             "emoji": "🚗",
             "label": "Car",
@@ -2465,29 +2471,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚌",
             "label": "Bus",
             "translationPt": "Ônibus"
-          },
-          {
-            "text": "Bicycle",
-            "emoji": "🚲",
-            "label": "Bicycle / Bike",
-            "translationPt": "Bicicleta"
           }
         ],
         "options": [
           "Train",
+          "Bicycle",
           "Car",
-          "Bus",
-          "Bicycle"
+          "Bus"
         ],
         "correctAnswer": "Train",
-        "explanation": "🚆 **Train** significa **Trem** em inglês! Exemplo prático: \"The high-speed train connects the cities.\"",
+        "explanation": "Exemplo prático: \"The high-speed train connects the cities.\"",
         "phoneticHint": "/treɪn/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p6-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Boat\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Boat",
         "visualEmoji": "⛵",
         "visualOptions": [
@@ -2504,33 +2504,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bicicleta"
           },
           {
-            "text": "Boat",
-            "emoji": "⛵",
-            "label": "Boat",
-            "translationPt": "Barco"
-          },
-          {
             "text": "Bus",
             "emoji": "🚌",
             "label": "Bus",
             "translationPt": "Ônibus"
+          },
+          {
+            "text": "Boat",
+            "emoji": "⛵",
+            "label": "Boat",
+            "translationPt": "Barco"
           }
         ],
         "options": [
           "Car",
           "Bicycle",
-          "Boat",
-          "Bus"
+          "Bus",
+          "Boat"
         ],
         "correctAnswer": "Boat",
-        "explanation": "⛵ **Boat** significa **Barco** em inglês! Exemplo prático: \"The small boat sails smoothly on the lake.\"",
+        "explanation": "Exemplo prático: \"The small boat sails smoothly on the lake.\"",
         "phoneticHint": "/boʊt/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Motorcycle\"**?",
+        "prompt": "Qual imagem representa \"Motorcycle\"?",
         "audioPhrase": "Motorcycle",
         "visualEmoji": "🏍️",
         "visualOptions": [
@@ -2541,16 +2541,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bicicleta"
           },
           {
-            "text": "Motorcycle",
-            "emoji": "🏍️",
-            "label": "Motorcycle",
-            "translationPt": "Motocicleta"
-          },
-          {
             "text": "Car",
             "emoji": "🚗",
             "label": "Car",
             "translationPt": "Carro"
+          },
+          {
+            "text": "Motorcycle",
+            "emoji": "🏍️",
+            "label": "Motorcycle",
+            "translationPt": "Motocicleta"
           },
           {
             "text": "Bus",
@@ -2561,34 +2561,22 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Bicycle",
-          "Motorcycle",
           "Car",
+          "Motorcycle",
           "Bus"
         ],
         "correctAnswer": "Motorcycle",
-        "explanation": "🏍️ **Motorcycle** significa **Motocicleta** em inglês! Exemplo prático: \"He rides a modern motorcycle to work.\"",
+        "explanation": "Exemplo prático: \"He rides a modern motorcycle to work.\"",
         "phoneticHint": "/ˈmoʊ.tərˌsaɪ.kəl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Helicóptero\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Helicóptero\" em inglês?",
         "audioPhrase": "Helicopter",
         "visualEmoji": "🚁",
         "visualOptions": [
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
-          },
-          {
-            "text": "Bicycle",
-            "emoji": "🚲",
-            "label": "Bicycle / Bike",
-            "translationPt": "Bicicleta"
-          },
           {
             "text": "Helicopter",
             "emoji": "🚁",
@@ -2596,30 +2584,11 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Helicóptero"
           },
           {
-            "text": "Bus",
-            "emoji": "🚌",
-            "label": "Bus",
-            "translationPt": "Ônibus"
-          }
-        ],
-        "options": [
-          "Car",
-          "Bicycle",
-          "Helicopter",
-          "Bus"
-        ],
-        "correctAnswer": "Helicopter",
-        "explanation": "🚁 **Helicopter** significa **Helicóptero** em inglês! Exemplo prático: \"A rescue helicopter lands on the roof.\"",
-        "phoneticHint": "/ˈhel.ɪˌkɒp.tər/",
-        "skillCategory": "reading"
-      },
-      {
-        "id": "w0-p6-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Taxi\"**:",
-        "audioPhrase": "Taxi",
-        "visualEmoji": "🚕",
-        "visualOptions": [
+            "text": "Bicycle",
+            "emoji": "🚲",
+            "label": "Bicycle / Bike",
+            "translationPt": "Bicicleta"
+          },
           {
             "text": "Car",
             "emoji": "🚗",
@@ -2631,7 +2600,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚌",
             "label": "Bus",
             "translationPt": "Ônibus"
-          },
+          }
+        ],
+        "options": [
+          "Helicopter",
+          "Bicycle",
+          "Car",
+          "Bus"
+        ],
+        "correctAnswer": "Helicopter",
+        "explanation": "Exemplo prático: \"A rescue helicopter lands on the roof.\"",
+        "phoneticHint": "/ˈhel.ɪˌkɒp.tər/",
+        "skillCategory": "reading"
+      },
+      {
+        "id": "w0-p6-e9",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Taxi",
+        "visualEmoji": "🚕",
+        "visualOptions": [
           {
             "text": "Taxi",
             "emoji": "🚕",
@@ -2639,41 +2627,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Táxi"
           },
           {
+            "text": "Bus",
+            "emoji": "🚌",
+            "label": "Bus",
+            "translationPt": "Ônibus"
+          },
+          {
             "text": "Bicycle",
             "emoji": "🚲",
             "label": "Bicycle / Bike",
             "translationPt": "Bicicleta"
+          },
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
           }
         ],
         "options": [
-          "Car",
-          "Bus",
           "Taxi",
-          "Bicycle"
+          "Bus",
+          "Bicycle",
+          "Car"
         ],
         "correctAnswer": "Taxi",
-        "explanation": "🚕 **Taxi** significa **Táxi** em inglês! Exemplo prático: \"Call a yellow taxi to go to the airport.\"",
+        "explanation": "Exemplo prático: \"Call a yellow taxi to go to the airport.\"",
         "phoneticHint": "/ˈtæk.si/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Truck\"**?",
+        "prompt": "Qual imagem representa \"Truck\"?",
         "audioPhrase": "Truck",
         "visualEmoji": "🚚",
         "visualOptions": [
           {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
-          },
-          {
-            "text": "Bus",
-            "emoji": "🚌",
-            "label": "Bus",
-            "translationPt": "Ônibus"
+            "text": "Bicycle",
+            "emoji": "🚲",
+            "label": "Bicycle / Bike",
+            "translationPt": "Bicicleta"
           },
           {
             "text": "Truck",
@@ -2682,20 +2676,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caminhão"
           },
           {
-            "text": "Bicycle",
-            "emoji": "🚲",
-            "label": "Bicycle / Bike",
-            "translationPt": "Bicicleta"
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
+          },
+          {
+            "text": "Bus",
+            "emoji": "🚌",
+            "label": "Bus",
+            "translationPt": "Ônibus"
           }
         ],
         "options": [
-          "Car",
-          "Bus",
+          "Bicycle",
           "Truck",
-          "Bicycle"
+          "Car",
+          "Bus"
         ],
         "correctAnswer": "Truck",
-        "explanation": "🚚 **Truck** significa **Caminhão** em inglês! Exemplo prático: \"The heavy delivery truck transports goods.\"",
+        "explanation": "Exemplo prático: \"The heavy delivery truck transports goods.\"",
         "phoneticHint": "/trʌk/",
         "skillCategory": "vocabulary"
       }
@@ -2722,15 +2722,15 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Shirt\"**?",
+        "prompt": "Qual imagem representa \"Shirt\"?",
         "audioPhrase": "Shirt",
         "visualEmoji": "👕",
         "visualOptions": [
           {
-            "text": "Shoes",
-            "emoji": "👟",
-            "label": "Shoes",
-            "translationPt": "Sapatos / Tênis"
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calças"
           },
           {
             "text": "Shirt",
@@ -2739,33 +2739,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camisa / Camiseta"
           },
           {
+            "text": "Shoes",
+            "emoji": "👟",
+            "label": "Shoes",
+            "translationPt": "Sapatos / Tênis"
+          },
+          {
             "text": "Hat",
             "emoji": "🧢",
             "label": "Hat / Cap",
             "translationPt": "Chapéu / Boné"
-          },
-          {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calças"
           }
         ],
         "options": [
-          "Shoes",
+          "Pants",
           "Shirt",
-          "Hat",
-          "Pants"
+          "Shoes",
+          "Hat"
         ],
         "correctAnswer": "Shirt",
-        "explanation": "👕 **Shirt** significa **Camisa / Camiseta** em inglês! Exemplo prático: \"He wears a clean white shirt.\"",
+        "explanation": "Exemplo prático: \"He wears a clean white shirt.\"",
         "phoneticHint": "/ʃɜːt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Calças\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Calças\" em inglês?",
         "audioPhrase": "Pants",
         "visualEmoji": "👖",
         "visualOptions": [
@@ -2782,33 +2782,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Calças"
           },
           {
-            "text": "Hat",
-            "emoji": "🧢",
-            "label": "Hat / Cap",
-            "translationPt": "Chapéu / Boné"
-          },
-          {
             "text": "Shirt",
             "emoji": "👕",
             "label": "Shirt",
             "translationPt": "Camisa / Camiseta"
+          },
+          {
+            "text": "Hat",
+            "emoji": "🧢",
+            "label": "Hat / Cap",
+            "translationPt": "Chapéu / Boné"
           }
         ],
         "options": [
           "Shoes",
           "Pants",
-          "Hat",
-          "Shirt"
+          "Shirt",
+          "Hat"
         ],
         "correctAnswer": "Pants",
-        "explanation": "👖 **Pants** significa **Calças** em inglês! Exemplo prático: \"Blue denim pants are comfortable.\"",
+        "explanation": "Exemplo prático: \"Blue denim pants are comfortable.\"",
         "phoneticHint": "/pænts/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p7-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Shoes\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Shoes",
         "visualEmoji": "👟",
         "visualOptions": [
@@ -2819,12 +2819,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sapatos / Tênis"
           },
           {
-            "text": "Hat",
-            "emoji": "🧢",
-            "label": "Hat / Cap",
-            "translationPt": "Chapéu / Boné"
-          },
-          {
             "text": "Pants",
             "emoji": "👖",
             "label": "Pants",
@@ -2835,32 +2829,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👕",
             "label": "Shirt",
             "translationPt": "Camisa / Camiseta"
+          },
+          {
+            "text": "Hat",
+            "emoji": "🧢",
+            "label": "Hat / Cap",
+            "translationPt": "Chapéu / Boné"
           }
         ],
         "options": [
           "Shoes",
-          "Hat",
           "Pants",
-          "Shirt"
+          "Shirt",
+          "Hat"
         ],
         "correctAnswer": "Shoes",
-        "explanation": "👟 **Shoes** significa **Sapatos / Tênis** em inglês! Exemplo prático: \"Running shoes protect your feet.\"",
+        "explanation": "Exemplo prático: \"Running shoes protect your feet.\"",
         "phoneticHint": "/ʃuːz/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Hat\"**?",
+        "prompt": "Qual imagem representa \"Hat\"?",
         "audioPhrase": "Hat",
         "visualEmoji": "🧢",
         "visualOptions": [
-          {
-            "text": "Shirt",
-            "emoji": "👕",
-            "label": "Shirt",
-            "translationPt": "Camisa / Camiseta"
-          },
           {
             "text": "Hat",
             "emoji": "🧢",
@@ -2868,42 +2862,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chapéu / Boné"
           },
           {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calças"
+            "text": "Shirt",
+            "emoji": "👕",
+            "label": "Shirt",
+            "translationPt": "Camisa / Camiseta"
           },
           {
             "text": "Shoes",
             "emoji": "👟",
             "label": "Shoes",
             "translationPt": "Sapatos / Tênis"
+          },
+          {
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calças"
           }
         ],
         "options": [
-          "Shirt",
           "Hat",
-          "Pants",
-          "Shoes"
+          "Shirt",
+          "Shoes",
+          "Pants"
         ],
         "correctAnswer": "Hat",
-        "explanation": "🧢 **Hat** significa **Chapéu / Boné** em inglês! Exemplo prático: \"Wear a hat to shield your eyes from the sun.\"",
+        "explanation": "Exemplo prático: \"Wear a hat to shield your eyes from the sun.\"",
         "phoneticHint": "/hæt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Vestido\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Vestido\" em inglês?",
         "audioPhrase": "Dress",
         "visualEmoji": "👗",
         "visualOptions": [
-          {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calças"
-          },
           {
             "text": "Dress",
             "emoji": "👗",
@@ -2917,6 +2911,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camisa / Camiseta"
           },
           {
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calças"
+          },
+          {
             "text": "Shoes",
             "emoji": "👟",
             "label": "Shoes",
@@ -2924,23 +2924,29 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Pants",
           "Dress",
           "Shirt",
+          "Pants",
           "Shoes"
         ],
         "correctAnswer": "Dress",
-        "explanation": "👗 **Dress** significa **Vestido** em inglês! Exemplo prático: \"She bought an elegant red dress for the party.\"",
+        "explanation": "Exemplo prático: \"She bought an elegant red dress for the party.\"",
         "phoneticHint": "/dres/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p7-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Jacket\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Jacket",
         "visualEmoji": "🧥",
         "visualOptions": [
+          {
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calças"
+          },
           {
             "text": "Jacket",
             "emoji": "🧥",
@@ -2948,48 +2954,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Jaqueta / Casaco"
           },
           {
-            "text": "Shirt",
-            "emoji": "👕",
-            "label": "Shirt",
-            "translationPt": "Camisa / Camiseta"
-          },
-          {
             "text": "Shoes",
             "emoji": "👟",
             "label": "Shoes",
             "translationPt": "Sapatos / Tênis"
           },
           {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calças"
+            "text": "Shirt",
+            "emoji": "👕",
+            "label": "Shirt",
+            "translationPt": "Camisa / Camiseta"
           }
         ],
         "options": [
+          "Pants",
           "Jacket",
-          "Shirt",
           "Shoes",
-          "Pants"
+          "Shirt"
         ],
         "correctAnswer": "Jacket",
-        "explanation": "🧥 **Jacket** significa **Jaqueta / Casaco** em inglês! Exemplo prático: \"Put on a warm jacket because it is cold.\"",
+        "explanation": "Exemplo prático: \"Put on a warm jacket because it is cold.\"",
         "phoneticHint": "/ˈdʒæk.ɪt/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Socks\"**?",
+        "prompt": "Qual imagem representa \"Socks\"?",
         "audioPhrase": "Socks",
         "visualEmoji": "🧦",
         "visualOptions": [
-          {
-            "text": "Shirt",
-            "emoji": "👕",
-            "label": "Shirt",
-            "translationPt": "Camisa / Camiseta"
-          },
           {
             "text": "Socks",
             "emoji": "🧦",
@@ -2997,47 +2991,53 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Meias"
           },
           {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calças"
-          },
-          {
             "text": "Shoes",
             "emoji": "👟",
             "label": "Shoes",
             "translationPt": "Sapatos / Tênis"
-          }
-        ],
-        "options": [
-          "Shirt",
-          "Socks",
-          "Pants",
-          "Shoes"
-        ],
-        "correctAnswer": "Socks",
-        "explanation": "🧦 **Socks** significa **Meias** em inglês! Exemplo prático: \"Warm woolen socks keep your feet cozy.\"",
-        "phoneticHint": "/sɒks/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p7-e8",
-        "type": "image-choice",
-        "prompt": "Como se diz **\"Óculos\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Glasses",
-        "visualEmoji": "👓",
-        "visualOptions": [
-          {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calças"
           },
           {
             "text": "Shirt",
             "emoji": "👕",
             "label": "Shirt",
             "translationPt": "Camisa / Camiseta"
+          },
+          {
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calças"
+          }
+        ],
+        "options": [
+          "Socks",
+          "Shoes",
+          "Shirt",
+          "Pants"
+        ],
+        "correctAnswer": "Socks",
+        "explanation": "Exemplo prático: \"Warm woolen socks keep your feet cozy.\"",
+        "phoneticHint": "/sɒks/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p7-e8",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Óculos\" em inglês?",
+        "audioPhrase": "Glasses",
+        "visualEmoji": "👓",
+        "visualOptions": [
+          {
+            "text": "Shoes",
+            "emoji": "👟",
+            "label": "Shoes",
+            "translationPt": "Sapatos / Tênis"
+          },
+          {
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calças"
           },
           {
             "text": "Glasses",
@@ -3046,41 +3046,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Óculos"
           },
           {
-            "text": "Shoes",
-            "emoji": "👟",
-            "label": "Shoes",
-            "translationPt": "Sapatos / Tênis"
+            "text": "Shirt",
+            "emoji": "👕",
+            "label": "Shirt",
+            "translationPt": "Camisa / Camiseta"
           }
         ],
         "options": [
+          "Shoes",
           "Pants",
-          "Shirt",
           "Glasses",
-          "Shoes"
+          "Shirt"
         ],
         "correctAnswer": "Glasses",
-        "explanation": "👓 **Glasses** significa **Óculos** em inglês! Exemplo prático: \"Reading glasses help you see fine text.\"",
+        "explanation": "Exemplo prático: \"Reading glasses help you see fine text.\"",
         "phoneticHint": "/ˈɡlæs.ɪz/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p7-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Watch\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Watch",
         "visualEmoji": "⌚",
         "visualOptions": [
-          {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calças"
-          },
           {
             "text": "Shoes",
             "emoji": "👟",
             "label": "Shoes",
             "translationPt": "Sapatos / Tênis"
+          },
+          {
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calças"
           },
           {
             "text": "Shirt",
@@ -3096,23 +3096,29 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Pants",
           "Shoes",
+          "Pants",
           "Shirt",
           "Watch"
         ],
         "correctAnswer": "Watch",
-        "explanation": "⌚ **Watch** significa **Relógio de pulso** em inglês! Exemplo prático: \"Check your watch so you are not late.\"",
+        "explanation": "Exemplo prático: \"Check your watch so you are not late.\"",
         "phoneticHint": "/wɒtʃ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Backpack\"**?",
+        "prompt": "Qual imagem representa \"Backpack\"?",
         "audioPhrase": "Backpack",
         "visualEmoji": "🎒",
         "visualOptions": [
+          {
+            "text": "Backpack",
+            "emoji": "🎒",
+            "label": "Backpack",
+            "translationPt": "Mochila"
+          },
           {
             "text": "Shoes",
             "emoji": "👟",
@@ -3126,12 +3132,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Calças"
           },
           {
-            "text": "Backpack",
-            "emoji": "🎒",
-            "label": "Backpack",
-            "translationPt": "Mochila"
-          },
-          {
             "text": "Shirt",
             "emoji": "👕",
             "label": "Shirt",
@@ -3139,13 +3139,13 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Backpack",
           "Shoes",
           "Pants",
-          "Backpack",
           "Shirt"
         ],
         "correctAnswer": "Backpack",
-        "explanation": "🎒 **Backpack** significa **Mochila** em inglês! Exemplo prático: \"Students carry books in their backpack.\"",
+        "explanation": "Exemplo prático: \"Students carry books in their backpack.\"",
         "phoneticHint": "/ˈbæk.pæk/",
         "skillCategory": "vocabulary"
       }
@@ -3172,22 +3172,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Eye\"**?",
+        "prompt": "Qual imagem representa \"Eye\"?",
         "audioPhrase": "Eye",
         "visualEmoji": "👁️",
         "visualOptions": [
-          {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão"
-          },
-          {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
-          },
           {
             "text": "Eye",
             "emoji": "👁️",
@@ -3195,115 +3183,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Olho"
           },
           {
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão"
+          },
+          {
             "text": "Ear",
             "emoji": "👂",
             "label": "Ear",
             "translationPt": "Orelha / Ouvido"
+          },
+          {
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
           }
         ],
         "options": [
-          "Hand",
-          "Foot",
           "Eye",
-          "Ear"
+          "Hand",
+          "Ear",
+          "Foot"
         ],
         "correctAnswer": "Eye",
-        "explanation": "👁️ **Eye** significa **Olho** em inglês! Exemplo prático: \"Open your eyes to see the sunshine.\"",
+        "explanation": "Exemplo prático: \"Open your eyes to see the sunshine.\"",
         "phoneticHint": "/aɪ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Mão\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Mão\" em inglês?",
         "audioPhrase": "Hand",
         "visualEmoji": "✋",
-        "visualOptions": [
-          {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
-          },
-          {
-            "text": "Eye",
-            "emoji": "👁️",
-            "label": "Eye",
-            "translationPt": "Olho"
-          },
-          {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão"
-          },
-          {
-            "text": "Ear",
-            "emoji": "👂",
-            "label": "Ear",
-            "translationPt": "Orelha / Ouvido"
-          }
-        ],
-        "options": [
-          "Foot",
-          "Eye",
-          "Hand",
-          "Ear"
-        ],
-        "correctAnswer": "Hand",
-        "explanation": "✋ **Hand** significa **Mão** em inglês! Exemplo prático: \"Wash your hands before eating.\"",
-        "phoneticHint": "/hænd/",
-        "skillCategory": "reading"
-      },
-      {
-        "id": "w0-p8-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Foot\"**:",
-        "audioPhrase": "Foot",
-        "visualEmoji": "🦶",
-        "visualOptions": [
-          {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão"
-          },
-          {
-            "text": "Eye",
-            "emoji": "👁️",
-            "label": "Eye",
-            "translationPt": "Olho"
-          },
-          {
-            "text": "Ear",
-            "emoji": "👂",
-            "label": "Ear",
-            "translationPt": "Orelha / Ouvido"
-          },
-          {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
-          }
-        ],
-        "options": [
-          "Hand",
-          "Eye",
-          "Ear",
-          "Foot"
-        ],
-        "correctAnswer": "Foot",
-        "explanation": "🦶 **Foot** significa **Pé** em inglês! Exemplo prático: \"He kicked the ball with his right foot.\"",
-        "phoneticHint": "/fʊt/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p8-e4",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Ear\"**?",
-        "audioPhrase": "Ear",
-        "visualEmoji": "👂",
         "visualOptions": [
           {
             "text": "Eye",
@@ -3336,15 +3250,101 @@ export const WORLD_0_PHASES: Phase[] = [
           "Foot",
           "Hand"
         ],
+        "correctAnswer": "Hand",
+        "explanation": "Exemplo prático: \"Wash your hands before eating.\"",
+        "phoneticHint": "/hænd/",
+        "skillCategory": "reading"
+      },
+      {
+        "id": "w0-p8-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Foot",
+        "visualEmoji": "🦶",
+        "visualOptions": [
+          {
+            "text": "Eye",
+            "emoji": "👁️",
+            "label": "Eye",
+            "translationPt": "Olho"
+          },
+          {
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão"
+          },
+          {
+            "text": "Ear",
+            "emoji": "👂",
+            "label": "Ear",
+            "translationPt": "Orelha / Ouvido"
+          },
+          {
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
+          }
+        ],
+        "options": [
+          "Eye",
+          "Hand",
+          "Ear",
+          "Foot"
+        ],
+        "correctAnswer": "Foot",
+        "explanation": "Exemplo prático: \"He kicked the ball with his right foot.\"",
+        "phoneticHint": "/fʊt/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p8-e4",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Ear\"?",
+        "audioPhrase": "Ear",
+        "visualEmoji": "👂",
+        "visualOptions": [
+          {
+            "text": "Ear",
+            "emoji": "👂",
+            "label": "Ear",
+            "translationPt": "Orelha / Ouvido"
+          },
+          {
+            "text": "Eye",
+            "emoji": "👁️",
+            "label": "Eye",
+            "translationPt": "Olho"
+          },
+          {
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão"
+          },
+          {
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
+          }
+        ],
+        "options": [
+          "Ear",
+          "Eye",
+          "Hand",
+          "Foot"
+        ],
         "correctAnswer": "Ear",
-        "explanation": "👂 **Ear** significa **Orelha / Ouvido** em inglês! Exemplo prático: \"Humans listen with two ears.\"",
+        "explanation": "Exemplo prático: \"Humans listen with two ears.\"",
         "phoneticHint": "/ɪər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Nariz\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Nariz\" em inglês?",
         "audioPhrase": "Nose",
         "visualEmoji": "👃",
         "visualOptions": [
@@ -3355,10 +3355,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mão"
           },
           {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
+            "text": "Nose",
+            "emoji": "👃",
+            "label": "Nose",
+            "translationPt": "Nariz"
           },
           {
             "text": "Eye",
@@ -3367,30 +3367,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Olho"
           },
           {
-            "text": "Nose",
-            "emoji": "👃",
-            "label": "Nose",
-            "translationPt": "Nariz"
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
           }
         ],
         "options": [
           "Hand",
-          "Foot",
+          "Nose",
           "Eye",
-          "Nose"
+          "Foot"
         ],
         "correctAnswer": "Nose",
-        "explanation": "👃 **Nose** significa **Nariz** em inglês! Exemplo prático: \"Smell the fresh scent with your nose.\"",
+        "explanation": "Exemplo prático: \"Smell the fresh scent with your nose.\"",
         "phoneticHint": "/noʊz/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p8-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Mouth\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Mouth",
         "visualEmoji": "👄",
         "visualOptions": [
+          {
+            "text": "Eye",
+            "emoji": "👁️",
+            "label": "Eye",
+            "translationPt": "Olho"
+          },
           {
             "text": "Hand",
             "emoji": "✋",
@@ -3398,11 +3404,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mão"
           },
           {
+            "text": "Mouth",
+            "emoji": "👄",
+            "label": "Mouth",
+            "translationPt": "Boca"
+          },
+          {
             "text": "Foot",
             "emoji": "🦶",
             "label": "Foot",
             "translationPt": "Pé"
-          },
+          }
+        ],
+        "options": [
+          "Eye",
+          "Hand",
+          "Mouth",
+          "Foot"
+        ],
+        "correctAnswer": "Mouth",
+        "explanation": "Exemplo prático: \"Smile and open your mouth to speak.\"",
+        "phoneticHint": "/maʊθ/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p8-e7",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Head\"?",
+        "audioPhrase": "Head",
+        "visualEmoji": "👤",
+        "visualOptions": [
           {
             "text": "Eye",
             "emoji": "👁️",
@@ -3410,30 +3441,11 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Olho"
           },
           {
-            "text": "Mouth",
-            "emoji": "👄",
-            "label": "Mouth",
-            "translationPt": "Boca"
-          }
-        ],
-        "options": [
-          "Hand",
-          "Foot",
-          "Eye",
-          "Mouth"
-        ],
-        "correctAnswer": "Mouth",
-        "explanation": "👄 **Mouth** significa **Boca** em inglês! Exemplo prático: \"Smile and open your mouth to speak.\"",
-        "phoneticHint": "/maʊθ/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p8-e7",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Head\"**?",
-        "audioPhrase": "Head",
-        "visualEmoji": "👤",
-        "visualOptions": [
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
+          },
           {
             "text": "Head",
             "emoji": "👤",
@@ -3441,18 +3453,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cabeça"
           },
           {
-            "text": "Eye",
-            "emoji": "👁️",
-            "label": "Eye",
-            "translationPt": "Olho"
-          },
-          {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
-          },
-          {
             "text": "Hand",
             "emoji": "✋",
             "label": "Hand",
@@ -3460,29 +3460,23 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Head",
           "Eye",
           "Foot",
+          "Head",
           "Hand"
         ],
         "correctAnswer": "Head",
-        "explanation": "👤 **Head** significa **Cabeça** em inglês! Exemplo prático: \"Nod your head if you understand.\"",
+        "explanation": "Exemplo prático: \"Nod your head if you understand.\"",
         "phoneticHint": "/hed/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Braço\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Braço\" em inglês?",
         "audioPhrase": "Arm",
         "visualEmoji": "💪",
         "visualOptions": [
-          {
-            "text": "Eye",
-            "emoji": "👁️",
-            "label": "Eye",
-            "translationPt": "Olho"
-          },
           {
             "text": "Arm",
             "emoji": "💪",
@@ -3490,36 +3484,11 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Braço"
           },
           {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão"
-          },
-          {
             "text": "Foot",
             "emoji": "🦶",
             "label": "Foot",
             "translationPt": "Pé"
-          }
-        ],
-        "options": [
-          "Eye",
-          "Arm",
-          "Hand",
-          "Foot"
-        ],
-        "correctAnswer": "Arm",
-        "explanation": "💪 **Arm** significa **Braço** em inglês! Exemplo prático: \"Strong arms help lift heavy weights.\"",
-        "phoneticHint": "/ɑːm/",
-        "skillCategory": "reading"
-      },
-      {
-        "id": "w0-p8-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Leg\"**:",
-        "audioPhrase": "Leg",
-        "visualEmoji": "🦵",
-        "visualOptions": [
+          },
           {
             "text": "Eye",
             "emoji": "👁️",
@@ -3527,11 +3496,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Olho"
           },
           {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
-          },
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão"
+          }
+        ],
+        "options": [
+          "Arm",
+          "Foot",
+          "Eye",
+          "Hand"
+        ],
+        "correctAnswer": "Arm",
+        "explanation": "Exemplo prático: \"Strong arms help lift heavy weights.\"",
+        "phoneticHint": "/ɑːm/",
+        "skillCategory": "reading"
+      },
+      {
+        "id": "w0-p8-e9",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Leg",
+        "visualEmoji": "🦵",
+        "visualOptions": [
           {
             "text": "Leg",
             "emoji": "🦵",
@@ -3539,6 +3527,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Perna"
           },
           {
+            "text": "Eye",
+            "emoji": "👁️",
+            "label": "Eye",
+            "translationPt": "Olho"
+          },
+          {
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
+          },
+          {
             "text": "Hand",
             "emoji": "✋",
             "label": "Hand",
@@ -3546,23 +3546,29 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Leg",
           "Eye",
           "Foot",
-          "Leg",
           "Hand"
         ],
         "correctAnswer": "Leg",
-        "explanation": "🦵 **Leg** significa **Perna** em inglês! Exemplo prático: \"Walking every day strengthens your legs.\"",
+        "explanation": "Exemplo prático: \"Walking every day strengthens your legs.\"",
         "phoneticHint": "/leɡ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Heart\"**?",
+        "prompt": "Qual imagem representa \"Heart\"?",
         "audioPhrase": "Heart",
         "visualEmoji": "❤️",
         "visualOptions": [
+          {
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
+          },
           {
             "text": "Eye",
             "emoji": "👁️",
@@ -3570,32 +3576,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Olho"
           },
           {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração"
-          },
-          {
             "text": "Hand",
             "emoji": "✋",
             "label": "Hand",
             "translationPt": "Mão"
           },
           {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
+            "text": "Heart",
+            "emoji": "❤️",
+            "label": "Heart",
+            "translationPt": "Coração"
           }
         ],
         "options": [
+          "Foot",
           "Eye",
-          "Heart",
           "Hand",
-          "Foot"
+          "Heart"
         ],
         "correctAnswer": "Heart",
-        "explanation": "❤️ **Heart** significa **Coração** em inglês! Exemplo prático: \"A healthy heart beats steadily.\"",
+        "explanation": "Exemplo prático: \"A healthy heart beats steadily.\"",
         "phoneticHint": "/hɑːt/",
         "skillCategory": "vocabulary"
       }
@@ -3622,7 +3622,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Cow\"**?",
+        "prompt": "Qual imagem representa \"Cow\"?",
         "audioPhrase": "Cow",
         "visualEmoji": "🐮",
         "visualOptions": [
@@ -3633,10 +3633,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vaca"
           },
           {
-            "text": "Horse",
-            "emoji": "🐴",
-            "label": "Horse",
-            "translationPt": "Cavalo"
+            "text": "Sheep",
+            "emoji": "🐑",
+            "label": "Sheep",
+            "translationPt": "Ovelha"
           },
           {
             "text": "Pig",
@@ -3645,27 +3645,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Porco"
           },
           {
-            "text": "Sheep",
-            "emoji": "🐑",
-            "label": "Sheep",
-            "translationPt": "Ovelha"
+            "text": "Horse",
+            "emoji": "🐴",
+            "label": "Horse",
+            "translationPt": "Cavalo"
           }
         ],
         "options": [
           "Cow",
-          "Horse",
+          "Sheep",
           "Pig",
-          "Sheep"
+          "Horse"
         ],
         "correctAnswer": "Cow",
-        "explanation": "🐮 **Cow** significa **Vaca** em inglês! Exemplo prático: \"The gentle cow gives fresh milk.\"",
+        "explanation": "Exemplo prático: \"The gentle cow gives fresh milk.\"",
         "phoneticHint": "/kaʊ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Cavalo\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Cavalo\" em inglês?",
         "audioPhrase": "Horse",
         "visualEmoji": "🐴",
         "visualOptions": [
@@ -3676,6 +3676,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vaca"
           },
           {
+            "text": "Sheep",
+            "emoji": "🐑",
+            "label": "Sheep",
+            "translationPt": "Ovelha"
+          },
+          {
             "text": "Horse",
             "emoji": "🐴",
             "label": "Horse",
@@ -3686,29 +3692,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐷",
             "label": "Pig",
             "translationPt": "Porco"
-          },
-          {
-            "text": "Sheep",
-            "emoji": "🐑",
-            "label": "Sheep",
-            "translationPt": "Ovelha"
           }
         ],
         "options": [
           "Cow",
+          "Sheep",
           "Horse",
-          "Pig",
-          "Sheep"
+          "Pig"
         ],
         "correctAnswer": "Horse",
-        "explanation": "🐴 **Horse** significa **Cavalo** em inglês! Exemplo prático: \"The brown horse runs across the field.\"",
+        "explanation": "Exemplo prático: \"The brown horse runs across the field.\"",
         "phoneticHint": "/hɔːs/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p9-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Pig\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pig",
         "visualEmoji": "🐷",
         "visualOptions": [
@@ -3719,10 +3719,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Porco"
           },
           {
-            "text": "Cow",
-            "emoji": "🐮",
-            "label": "Cow",
-            "translationPt": "Vaca"
+            "text": "Horse",
+            "emoji": "🐴",
+            "label": "Horse",
+            "translationPt": "Cavalo"
           },
           {
             "text": "Sheep",
@@ -3731,41 +3731,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ovelha"
           },
           {
-            "text": "Horse",
-            "emoji": "🐴",
-            "label": "Horse",
-            "translationPt": "Cavalo"
+            "text": "Cow",
+            "emoji": "🐮",
+            "label": "Cow",
+            "translationPt": "Vaca"
           }
         ],
         "options": [
           "Pig",
-          "Cow",
+          "Horse",
           "Sheep",
-          "Horse"
+          "Cow"
         ],
         "correctAnswer": "Pig",
-        "explanation": "🐷 **Pig** significa **Porco** em inglês! Exemplo prático: \"The pink pig rests in the shade.\"",
+        "explanation": "Exemplo prático: \"The pink pig rests in the shade.\"",
         "phoneticHint": "/pɪɡ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Sheep\"**?",
+        "prompt": "Qual imagem representa \"Sheep\"?",
         "audioPhrase": "Sheep",
         "visualEmoji": "🐑",
         "visualOptions": [
-          {
-            "text": "Horse",
-            "emoji": "🐴",
-            "label": "Horse",
-            "translationPt": "Cavalo"
-          },
           {
             "text": "Sheep",
             "emoji": "🐑",
             "label": "Sheep",
             "translationPt": "Ovelha"
+          },
+          {
+            "text": "Pig",
+            "emoji": "🐷",
+            "label": "Pig",
+            "translationPt": "Porco"
           },
           {
             "text": "Cow",
@@ -3774,27 +3774,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vaca"
           },
           {
-            "text": "Pig",
-            "emoji": "🐷",
-            "label": "Pig",
-            "translationPt": "Porco"
+            "text": "Horse",
+            "emoji": "🐴",
+            "label": "Horse",
+            "translationPt": "Cavalo"
           }
         ],
         "options": [
-          "Horse",
           "Sheep",
+          "Pig",
           "Cow",
-          "Pig"
+          "Horse"
         ],
         "correctAnswer": "Sheep",
-        "explanation": "🐑 **Sheep** significa **Ovelha** em inglês! Exemplo prático: \"Fluffy white sheep produce warm wool.\"",
+        "explanation": "Exemplo prático: \"Fluffy white sheep produce warm wool.\"",
         "phoneticHint": "/ʃiːp/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Galinha\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Galinha\" em inglês?",
         "audioPhrase": "Chicken",
         "visualEmoji": "🐔",
         "visualOptions": [
@@ -3805,6 +3805,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vaca"
           },
           {
+            "text": "Chicken",
+            "emoji": "🐔",
+            "label": "Chicken",
+            "translationPt": "Galinha"
+          },
+          {
             "text": "Pig",
             "emoji": "🐷",
             "label": "Pig",
@@ -3815,38 +3821,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐴",
             "label": "Horse",
             "translationPt": "Cavalo"
-          },
-          {
-            "text": "Chicken",
-            "emoji": "🐔",
-            "label": "Chicken",
-            "translationPt": "Galinha"
           }
         ],
         "options": [
           "Cow",
+          "Chicken",
           "Pig",
-          "Horse",
-          "Chicken"
+          "Horse"
         ],
         "correctAnswer": "Chicken",
-        "explanation": "🐔 **Chicken** significa **Galinha** em inglês! Exemplo prático: \"The farm chicken lays eggs in the morning.\"",
+        "explanation": "Exemplo prático: \"The farm chicken lays eggs in the morning.\"",
         "phoneticHint": "/ˈtʃɪk.ɪn/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p9-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Lion\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lion",
         "visualEmoji": "🦁",
         "visualOptions": [
-          {
-            "text": "Horse",
-            "emoji": "🐴",
-            "label": "Horse",
-            "translationPt": "Cavalo"
-          },
           {
             "text": "Cow",
             "emoji": "🐮",
@@ -3864,31 +3858,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐷",
             "label": "Pig",
             "translationPt": "Porco"
+          },
+          {
+            "text": "Horse",
+            "emoji": "🐴",
+            "label": "Horse",
+            "translationPt": "Cavalo"
           }
         ],
         "options": [
-          "Horse",
           "Cow",
           "Lion",
-          "Pig"
+          "Pig",
+          "Horse"
         ],
         "correctAnswer": "Lion",
-        "explanation": "🦁 **Lion** significa **Leão** em inglês! Exemplo prático: \"The brave lion roars across the savanna.\"",
+        "explanation": "Exemplo prático: \"The brave lion roars across the savanna.\"",
         "phoneticHint": "/ˈlaɪ.ən/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Elephant\"**?",
+        "prompt": "Qual imagem representa \"Elephant\"?",
         "audioPhrase": "Elephant",
         "visualEmoji": "🐘",
         "visualOptions": [
           {
-            "text": "Horse",
-            "emoji": "🐴",
-            "label": "Horse",
-            "translationPt": "Cavalo"
+            "text": "Cow",
+            "emoji": "🐮",
+            "label": "Cow",
+            "translationPt": "Vaca"
           },
           {
             "text": "Elephant",
@@ -3897,10 +3897,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Elefante"
           },
           {
-            "text": "Cow",
-            "emoji": "🐮",
-            "label": "Cow",
-            "translationPt": "Vaca"
+            "text": "Horse",
+            "emoji": "🐴",
+            "label": "Horse",
+            "translationPt": "Cavalo"
           },
           {
             "text": "Pig",
@@ -3910,34 +3910,34 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Horse",
-          "Elephant",
           "Cow",
+          "Elephant",
+          "Horse",
           "Pig"
         ],
         "correctAnswer": "Elephant",
-        "explanation": "🐘 **Elephant** significa **Elefante** em inglês! Exemplo prático: \"The giant elephant has large ears.\"",
+        "explanation": "Exemplo prático: \"The giant elephant has large ears.\"",
         "phoneticHint": "/ˈel.ɪ.fənt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Macaco\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Macaco\" em inglês?",
         "audioPhrase": "Monkey",
         "visualEmoji": "🐵",
         "visualOptions": [
-          {
-            "text": "Cow",
-            "emoji": "🐮",
-            "label": "Cow",
-            "translationPt": "Vaca"
-          },
           {
             "text": "Pig",
             "emoji": "🐷",
             "label": "Pig",
             "translationPt": "Porco"
+          },
+          {
+            "text": "Monkey",
+            "emoji": "🐵",
+            "label": "Monkey",
+            "translationPt": "Macaco"
           },
           {
             "text": "Horse",
@@ -3946,35 +3946,35 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cavalo"
           },
           {
-            "text": "Monkey",
-            "emoji": "🐵",
-            "label": "Monkey",
-            "translationPt": "Macaco"
+            "text": "Cow",
+            "emoji": "🐮",
+            "label": "Cow",
+            "translationPt": "Vaca"
           }
         ],
         "options": [
-          "Cow",
           "Pig",
+          "Monkey",
           "Horse",
-          "Monkey"
+          "Cow"
         ],
         "correctAnswer": "Monkey",
-        "explanation": "🐵 **Monkey** significa **Macaco** em inglês! Exemplo prático: \"The clever monkey swings between branches.\"",
+        "explanation": "Exemplo prático: \"The clever monkey swings between branches.\"",
         "phoneticHint": "/ˈmʌŋ.ki/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p9-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Giraffe\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Giraffe",
         "visualEmoji": "🦒",
         "visualOptions": [
           {
-            "text": "Pig",
-            "emoji": "🐷",
-            "label": "Pig",
-            "translationPt": "Porco"
+            "text": "Cow",
+            "emoji": "🐮",
+            "label": "Cow",
+            "translationPt": "Vaca"
           },
           {
             "text": "Giraffe",
@@ -3983,10 +3983,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Girafa"
           },
           {
-            "text": "Cow",
-            "emoji": "🐮",
-            "label": "Cow",
-            "translationPt": "Vaca"
+            "text": "Pig",
+            "emoji": "🐷",
+            "label": "Pig",
+            "translationPt": "Porco"
           },
           {
             "text": "Horse",
@@ -3996,20 +3996,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Pig",
-          "Giraffe",
           "Cow",
+          "Giraffe",
+          "Pig",
           "Horse"
         ],
         "correctAnswer": "Giraffe",
-        "explanation": "🦒 **Giraffe** significa **Girafa** em inglês! Exemplo prático: \"The tall giraffe eats leaves high in the trees.\"",
+        "explanation": "Exemplo prático: \"The tall giraffe eats leaves high in the trees.\"",
         "phoneticHint": "/dʒɪˈrɑːf/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Bear\"**?",
+        "prompt": "Qual imagem representa \"Bear\"?",
         "audioPhrase": "Bear",
         "visualEmoji": "🐻",
         "visualOptions": [
@@ -4020,10 +4020,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Urso"
           },
           {
-            "text": "Pig",
-            "emoji": "🐷",
-            "label": "Pig",
-            "translationPt": "Porco"
+            "text": "Horse",
+            "emoji": "🐴",
+            "label": "Horse",
+            "translationPt": "Cavalo"
           },
           {
             "text": "Cow",
@@ -4032,20 +4032,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vaca"
           },
           {
-            "text": "Horse",
-            "emoji": "🐴",
-            "label": "Horse",
-            "translationPt": "Cavalo"
+            "text": "Pig",
+            "emoji": "🐷",
+            "label": "Pig",
+            "translationPt": "Porco"
           }
         ],
         "options": [
           "Bear",
-          "Pig",
+          "Horse",
           "Cow",
-          "Horse"
+          "Pig"
         ],
         "correctAnswer": "Bear",
-        "explanation": "🐻 **Bear** significa **Urso** em inglês! Exemplo prático: \"The furry brown bear loves honey and fish.\"",
+        "explanation": "Exemplo prático: \"The furry brown bear loves honey and fish.\"",
         "phoneticHint": "/beər/",
         "skillCategory": "vocabulary"
       }
@@ -4072,21 +4072,21 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Apple\"**?",
+        "prompt": "Qual imagem representa \"Apple\"?",
         "audioPhrase": "Apple",
         "visualEmoji": "🍎",
         "visualOptions": [
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
           {
             "text": "Water",
             "emoji": "💧",
             "label": "Water",
             "translationPt": "Água"
+          },
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Car",
@@ -4095,35 +4095,35 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carro"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
           }
         ],
         "options": [
-          "Apple",
           "Water",
+          "Dog",
           "Car",
-          "Dog"
+          "Apple"
         ],
         "correctAnswer": "Apple",
-        "explanation": "🍎 **Apple** significa **Maçã** em inglês! Exemplo prático: \"A delicious red apple.\"",
+        "explanation": "Exemplo prático: \"A delicious red apple.\"",
         "phoneticHint": "/ˈæp.əl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Cachorro\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Cachorro\" em inglês?",
         "audioPhrase": "Dog",
         "visualEmoji": "🐶",
         "visualOptions": [
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
           },
           {
             "text": "Apple",
@@ -4132,33 +4132,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã"
           },
           {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
+          },
+          {
             "text": "Dog",
             "emoji": "🐶",
             "label": "Dog",
             "translationPt": "Cachorro"
-          },
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
           }
         ],
         "options": [
-          "Water",
+          "Car",
           "Apple",
-          "Dog",
-          "Car"
+          "Water",
+          "Dog"
         ],
         "correctAnswer": "Dog",
-        "explanation": "🐶 **Dog** significa **Cachorro** em inglês! Exemplo prático: \"A faithful dog.\"",
+        "explanation": "Exemplo prático: \"A faithful dog.\"",
         "phoneticHint": "/dɒɡ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p10-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Water\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Water",
         "visualEmoji": "💧",
         "visualOptions": [
@@ -4169,16 +4169,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Água"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
-          {
             "text": "Apple",
             "emoji": "🍎",
             "label": "Apple",
             "translationPt": "Maçã"
+          },
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Car",
@@ -4189,28 +4189,22 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Water",
-          "Dog",
           "Apple",
+          "Dog",
           "Car"
         ],
         "correctAnswer": "Water",
-        "explanation": "💧 **Water** significa **Água** em inglês! Exemplo prático: \"Fresh cold water.\"",
+        "explanation": "Exemplo prático: \"Fresh cold water.\"",
         "phoneticHint": "/ˈwɔː.tər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Car\"**?",
+        "prompt": "Qual imagem representa \"Car\"?",
         "audioPhrase": "Car",
         "visualEmoji": "🚗",
         "visualOptions": [
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
           {
             "text": "Car",
             "emoji": "🚗",
@@ -4218,6 +4212,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carro"
           },
           {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
+          {
             "text": "Dog",
             "emoji": "🐶",
             "label": "Dog",
@@ -4231,35 +4231,23 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Apple",
           "Car",
+          "Apple",
           "Dog",
           "Water"
         ],
         "correctAnswer": "Car",
-        "explanation": "🚗 **Car** significa **Carro** em inglês! Exemplo prático: \"A modern electric car.\"",
+        "explanation": "Exemplo prático: \"A modern electric car.\"",
         "phoneticHint": "/kɑːr/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Azul\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Azul\" em inglês?",
         "audioPhrase": "Blue",
         "visualEmoji": "🔵",
         "visualOptions": [
-          {
-            "text": "Blue",
-            "emoji": "🔵",
-            "label": "Blue",
-            "translationPt": "Azul"
-          },
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
           {
             "text": "Water",
             "emoji": "💧",
@@ -4271,31 +4259,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐶",
             "label": "Dog",
             "translationPt": "Cachorro"
+          },
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
+          {
+            "text": "Blue",
+            "emoji": "🔵",
+            "label": "Blue",
+            "translationPt": "Azul"
           }
         ],
         "options": [
-          "Blue",
-          "Apple",
           "Water",
-          "Dog"
+          "Dog",
+          "Apple",
+          "Blue"
         ],
         "correctAnswer": "Blue",
-        "explanation": "🔵 **Blue** significa **Azul** em inglês! Exemplo prático: \"A bright blue sphere.\"",
+        "explanation": "Exemplo prático: \"A bright blue sphere.\"",
         "phoneticHint": "/bluː/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p10-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Shirt\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Shirt",
         "visualEmoji": "👕",
         "visualOptions": [
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
           },
           {
             "text": "Apple",
@@ -4304,10 +4304,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã"
           },
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Shirt",
@@ -4317,29 +4317,23 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Dog",
-          "Apple",
           "Water",
+          "Apple",
+          "Dog",
           "Shirt"
         ],
         "correctAnswer": "Shirt",
-        "explanation": "👕 **Shirt** significa **Camiseta** em inglês! Exemplo prático: \"A clean cotton shirt.\"",
+        "explanation": "Exemplo prático: \"A clean cotton shirt.\"",
         "phoneticHint": "/ʃɜːt/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Hand\"**?",
+        "prompt": "Qual imagem representa \"Hand\"?",
         "audioPhrase": "Hand",
         "visualEmoji": "✋",
         "visualOptions": [
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
           {
             "text": "Water",
             "emoji": "💧",
@@ -4353,6 +4347,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mão"
           },
           {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
+          {
             "text": "Dog",
             "emoji": "🐶",
             "label": "Dog",
@@ -4360,28 +4360,28 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Apple",
           "Water",
           "Hand",
+          "Apple",
           "Dog"
         ],
         "correctAnswer": "Hand",
-        "explanation": "✋ **Hand** significa **Mão** em inglês! Exemplo prático: \"Raise your open hand.\"",
+        "explanation": "Exemplo prático: \"Raise your open hand.\"",
         "phoneticHint": "/hænd/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Cama\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Cama\" em inglês?",
         "audioPhrase": "Bed",
         "visualEmoji": "🛏️",
         "visualOptions": [
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Bed",
@@ -4396,30 +4396,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
           }
         ],
         "options": [
-          "Water",
+          "Dog",
           "Bed",
           "Apple",
-          "Dog"
+          "Water"
         ],
         "correctAnswer": "Bed",
-        "explanation": "🛏️ **Bed** significa **Cama** em inglês! Exemplo prático: \"A cozy warm bed.\"",
+        "explanation": "Exemplo prático: \"A cozy warm bed.\"",
         "phoneticHint": "/bed/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p10-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Lion\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lion",
         "visualEmoji": "🦁",
         "visualOptions": [
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
+          },
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
           {
             "text": "Water",
             "emoji": "💧",
@@ -4431,43 +4443,31 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦁",
             "label": "Lion",
             "translationPt": "Leão"
-          },
-          {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
           }
         ],
         "options": [
-          "Water",
-          "Lion",
           "Dog",
-          "Apple"
+          "Apple",
+          "Water",
+          "Lion"
         ],
         "correctAnswer": "Lion",
-        "explanation": "🦁 **Lion** significa **Leão** em inglês! Exemplo prático: \"The king of the jungle.\"",
+        "explanation": "Exemplo prático: \"The king of the jungle.\"",
         "phoneticHint": "/ˈlaɪ.ən/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Banana\"**?",
+        "prompt": "Qual imagem representa \"Banana\"?",
         "audioPhrase": "Banana",
         "visualEmoji": "🍌",
         "visualOptions": [
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
           },
           {
             "text": "Apple",
@@ -4482,27 +4482,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachorro"
           },
           {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana"
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
           }
         ],
         "options": [
-          "Water",
+          "Banana",
           "Apple",
           "Dog",
-          "Banana"
+          "Water"
         ],
         "correctAnswer": "Banana",
-        "explanation": "🍌 **Banana** significa **Banana** em inglês! Exemplo prático: \"A sweet yellow banana.\"",
+        "explanation": "Exemplo prático: \"A sweet yellow banana.\"",
         "phoneticHint": "/bəˈnæn.ə/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e11",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Bicicleta\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Bicicleta\" em inglês?",
         "audioPhrase": "Bicycle",
         "visualEmoji": "🚲",
         "visualOptions": [
@@ -4538,7 +4538,7 @@ export const WORLD_0_PHASES: Phase[] = [
           "Apple"
         ],
         "correctAnswer": "Bicycle",
-        "explanation": "🚲 **Bicycle** significa **Bicicleta** em inglês! Exemplo prático: \"Ride a bicycle in the park.\"",
+        "explanation": "Exemplo prático: \"Ride a bicycle in the park.\"",
         "phoneticHint": "/ˈbaɪ.sɪ.kəl/",
         "skillCategory": "reading"
       }
@@ -4565,7 +4565,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Bread\"**?",
+        "prompt": "Qual imagem representa \"Bread\"?",
         "audioPhrase": "Bread",
         "visualEmoji": "🍞",
         "visualOptions": [
@@ -4601,28 +4601,28 @@ export const WORLD_0_PHASES: Phase[] = [
           "Egg"
         ],
         "correctAnswer": "Bread",
-        "explanation": "🍞 **Bread** significa **Pão** em inglês! Exemplo prático: \"Freshly baked bread smells wonderful.\"",
+        "explanation": "Exemplo prático: \"Freshly baked bread smells wonderful.\"",
         "phoneticHint": "/bred/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Ovo\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Ovo\" em inglês?",
         "audioPhrase": "Egg",
         "visualEmoji": "🥚",
         "visualOptions": [
-          {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo"
-          },
           {
             "text": "Bread",
             "emoji": "🍞",
             "label": "Bread",
             "translationPt": "Pão"
+          },
+          {
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo"
           },
           {
             "text": "Butter",
@@ -4631,72 +4631,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Manteiga"
           },
           {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo"
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo"
           }
         ],
         "options": [
-          "Cheese",
           "Bread",
+          "Egg",
           "Butter",
-          "Egg"
+          "Cheese"
         ],
         "correctAnswer": "Egg",
-        "explanation": "🥚 **Egg** significa **Ovo** em inglês! Exemplo prático: \"Fried eggs with toast for breakfast.\"",
+        "explanation": "Exemplo prático: \"Fried eggs with toast for breakfast.\"",
         "phoneticHint": "/eɡ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p11-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Cheese\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cheese",
         "visualEmoji": "🧀",
-        "visualOptions": [
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
-          },
-          {
-            "text": "Butter",
-            "emoji": "🧈",
-            "label": "Butter",
-            "translationPt": "Manteiga"
-          },
-          {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo"
-          },
-          {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo"
-          }
-        ],
-        "options": [
-          "Bread",
-          "Butter",
-          "Cheese",
-          "Egg"
-        ],
-        "correctAnswer": "Cheese",
-        "explanation": "🧀 **Cheese** significa **Queijo** em inglês! Exemplo prático: \"Melted yellow cheese on a sandwich.\"",
-        "phoneticHint": "/tʃiːz/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p11-e4",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Butter\"**?",
-        "audioPhrase": "Butter",
-        "visualEmoji": "🧈",
         "visualOptions": [
           {
             "text": "Egg",
@@ -4729,18 +4686,73 @@ export const WORLD_0_PHASES: Phase[] = [
           "Bread",
           "Butter"
         ],
+        "correctAnswer": "Cheese",
+        "explanation": "Exemplo prático: \"Melted yellow cheese on a sandwich.\"",
+        "phoneticHint": "/tʃiːz/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p11-e4",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Butter\"?",
+        "audioPhrase": "Butter",
+        "visualEmoji": "🧈",
+        "visualOptions": [
+          {
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo"
+          },
+          {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
+          {
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo"
+          },
+          {
+            "text": "Butter",
+            "emoji": "🧈",
+            "label": "Butter",
+            "translationPt": "Manteiga"
+          }
+        ],
+        "options": [
+          "Egg",
+          "Bread",
+          "Cheese",
+          "Butter"
+        ],
         "correctAnswer": "Butter",
-        "explanation": "🧈 **Butter** significa **Manteiga** em inglês! Exemplo prático: \"Spread creamy butter on warm toast.\"",
+        "explanation": "Exemplo prático: \"Spread creamy butter on warm toast.\"",
         "phoneticHint": "/ˈbʌt.ər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Sanduíche\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Sanduíche\" em inglês?",
         "audioPhrase": "Sandwich",
         "visualEmoji": "🥪",
         "visualOptions": [
+          {
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo"
+          },
+          {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
           {
             "text": "Sandwich",
             "emoji": "🥪",
@@ -4752,44 +4764,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥚",
             "label": "Egg",
             "translationPt": "Ovo"
-          },
-          {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo"
-          },
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
           }
         ],
         "options": [
-          "Sandwich",
-          "Egg",
           "Cheese",
-          "Bread"
+          "Bread",
+          "Sandwich",
+          "Egg"
         ],
         "correctAnswer": "Sandwich",
-        "explanation": "🥪 **Sandwich** significa **Sanduíche** em inglês! Exemplo prático: \"A healthy club sandwich with lettuce.\"",
+        "explanation": "Exemplo prático: \"A healthy club sandwich with lettuce.\"",
         "phoneticHint": "/ˈsæn.wɪdʒ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p11-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Pizza\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pizza",
         "visualEmoji": "🍕",
         "visualOptions": [
-          {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo"
-          },
           {
             "text": "Pizza",
             "emoji": "🍕",
@@ -4797,33 +4791,39 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pizza"
           },
           {
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo"
+          },
+          {
             "text": "Bread",
             "emoji": "🍞",
             "label": "Bread",
             "translationPt": "Pão"
           },
           {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo"
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo"
           }
         ],
         "options": [
-          "Egg",
           "Pizza",
+          "Cheese",
           "Bread",
-          "Cheese"
+          "Egg"
         ],
         "correctAnswer": "Pizza",
-        "explanation": "🍕 **Pizza** significa **Pizza** em inglês! Exemplo prático: \"A hot slice of cheese pizza.\"",
+        "explanation": "Exemplo prático: \"A hot slice of cheese pizza.\"",
         "phoneticHint": "/ˈpiːt.sə/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Burger\"**?",
+        "prompt": "Qual imagem representa \"Burger\"?",
         "audioPhrase": "Burger",
         "visualEmoji": "🍔",
         "visualOptions": [
@@ -4859,17 +4859,23 @@ export const WORLD_0_PHASES: Phase[] = [
           "Bread"
         ],
         "correctAnswer": "Burger",
-        "explanation": "🍔 **Burger** significa **Hambúrguer** em inglês! Exemplo prático: \"A juicy burger with tomato.\"",
+        "explanation": "Exemplo prático: \"A juicy burger with tomato.\"",
         "phoneticHint": "/ˈbɜː.ɡər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Arroz\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Arroz\" em inglês?",
         "audioPhrase": "Rice",
         "visualEmoji": "🍚",
         "visualOptions": [
+          {
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo"
+          },
           {
             "text": "Bread",
             "emoji": "🍞",
@@ -4883,12 +4889,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Arroz"
           },
           {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo"
-          },
-          {
             "text": "Egg",
             "emoji": "🥚",
             "label": "Egg",
@@ -4896,29 +4896,23 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Cheese",
           "Bread",
           "Rice",
-          "Cheese",
           "Egg"
         ],
         "correctAnswer": "Rice",
-        "explanation": "🍚 **Rice** significa **Arroz** em inglês! Exemplo prático: \"Steamed white rice accompanies dinner.\"",
+        "explanation": "Exemplo prático: \"Steamed white rice accompanies dinner.\"",
         "phoneticHint": "/raɪs/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p11-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Pasta\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pasta",
         "visualEmoji": "🍝",
         "visualOptions": [
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
-          },
           {
             "text": "Pasta",
             "emoji": "🍝",
@@ -4926,41 +4920,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Massa / Macarrão"
           },
           {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo"
-          },
-          {
             "text": "Egg",
             "emoji": "🥚",
             "label": "Egg",
             "translationPt": "Ovo"
+          },
+          {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
+          {
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo"
           }
         ],
         "options": [
-          "Bread",
           "Pasta",
-          "Cheese",
-          "Egg"
+          "Egg",
+          "Bread",
+          "Cheese"
         ],
         "correctAnswer": "Pasta",
-        "explanation": "🍝 **Pasta** significa **Massa / Macarrão** em inglês! Exemplo prático: \"Italian pasta with homemade tomato sauce.\"",
+        "explanation": "Exemplo prático: \"Italian pasta with homemade tomato sauce.\"",
         "phoneticHint": "/ˈpæs.tə/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Soup\"**?",
+        "prompt": "Qual imagem representa \"Soup\"?",
         "audioPhrase": "Soup",
         "visualEmoji": "🍲",
         "visualOptions": [
           {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo"
           },
           {
             "text": "Soup",
@@ -4969,26 +4969,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sopa"
           },
           {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
+          {
             "text": "Cheese",
             "emoji": "🧀",
             "label": "Cheese",
             "translationPt": "Queijo"
-          },
-          {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo"
           }
         ],
         "options": [
-          "Bread",
+          "Egg",
           "Soup",
-          "Cheese",
-          "Egg"
+          "Bread",
+          "Cheese"
         ],
         "correctAnswer": "Soup",
-        "explanation": "🍲 **Soup** significa **Sopa** em inglês! Exemplo prático: \"A warm bowl of vegetable soup.\"",
+        "explanation": "Exemplo prático: \"A warm bowl of vegetable soup.\"",
         "phoneticHint": "/suːp/",
         "skillCategory": "vocabulary"
       }
@@ -5015,10 +5015,16 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Phone\"**?",
+        "prompt": "Qual imagem representa \"Phone\"?",
         "audioPhrase": "Phone",
         "visualEmoji": "📱",
         "visualOptions": [
+          {
+            "text": "Television",
+            "emoji": "📺",
+            "label": "Television / TV",
+            "translationPt": "Televisão"
+          },
           {
             "text": "Headphones",
             "emoji": "🎧",
@@ -5036,29 +5042,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💻",
             "label": "Computer / Laptop",
             "translationPt": "Computador / Notebook"
-          },
-          {
-            "text": "Television",
-            "emoji": "📺",
-            "label": "Television / TV",
-            "translationPt": "Televisão"
           }
         ],
         "options": [
+          "Television",
           "Headphones",
           "Phone",
-          "Computer",
-          "Television"
+          "Computer"
         ],
         "correctAnswer": "Phone",
-        "explanation": "📱 **Phone** significa **Celular / Telefone** em inglês! Exemplo prático: \"I check text messages on my phone.\"",
+        "explanation": "Exemplo prático: \"I check text messages on my phone.\"",
         "phoneticHint": "/foʊn/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Computador / Notebook\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Computador / Notebook\" em inglês?",
         "audioPhrase": "Computer",
         "visualEmoji": "💻",
         "visualOptions": [
@@ -5069,10 +5069,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Computador / Notebook"
           },
           {
-            "text": "Television",
-            "emoji": "📺",
-            "label": "Television / TV",
-            "translationPt": "Televisão"
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Celular / Telefone"
           },
           {
             "text": "Headphones",
@@ -5081,30 +5081,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Fones de ouvido"
           },
           {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Celular / Telefone"
+            "text": "Television",
+            "emoji": "📺",
+            "label": "Television / TV",
+            "translationPt": "Televisão"
           }
         ],
         "options": [
           "Computer",
-          "Television",
+          "Phone",
           "Headphones",
-          "Phone"
+          "Television"
         ],
         "correctAnswer": "Computer",
-        "explanation": "💻 **Computer** significa **Computador / Notebook** em inglês! Exemplo prático: \"She studies English on her computer.\"",
+        "explanation": "Exemplo prático: \"She studies English on her computer.\"",
         "phoneticHint": "/kəmˈpjuː.tər/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p12-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Headphones\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Headphones",
         "visualEmoji": "🎧",
         "visualOptions": [
+          {
+            "text": "Computer",
+            "emoji": "💻",
+            "label": "Computer / Laptop",
+            "translationPt": "Computador / Notebook"
+          },
           {
             "text": "Phone",
             "emoji": "📱",
@@ -5122,44 +5128,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🎧",
             "label": "Headphones",
             "translationPt": "Fones de ouvido"
-          },
-          {
-            "text": "Computer",
-            "emoji": "💻",
-            "label": "Computer / Laptop",
-            "translationPt": "Computador / Notebook"
           }
         ],
         "options": [
+          "Computer",
           "Phone",
           "Television",
-          "Headphones",
-          "Computer"
+          "Headphones"
         ],
         "correctAnswer": "Headphones",
-        "explanation": "🎧 **Headphones** significa **Fones de ouvido** em inglês! Exemplo prático: \"Wireless headphones provide clear audio.\"",
+        "explanation": "Exemplo prático: \"Wireless headphones provide clear audio.\"",
         "phoneticHint": "/ˈhed.foʊnz/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Television\"**?",
+        "prompt": "Qual imagem representa \"Television\"?",
         "audioPhrase": "Television",
         "visualEmoji": "📺",
         "visualOptions": [
-          {
-            "text": "Television",
-            "emoji": "📺",
-            "label": "Television / TV",
-            "translationPt": "Televisão"
-          },
-          {
-            "text": "Computer",
-            "emoji": "💻",
-            "label": "Computer / Laptop",
-            "translationPt": "Computador / Notebook"
-          },
           {
             "text": "Headphones",
             "emoji": "🎧",
@@ -5171,26 +5159,44 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📱",
             "label": "Phone",
             "translationPt": "Celular / Telefone"
+          },
+          {
+            "text": "Television",
+            "emoji": "📺",
+            "label": "Television / TV",
+            "translationPt": "Televisão"
+          },
+          {
+            "text": "Computer",
+            "emoji": "💻",
+            "label": "Computer / Laptop",
+            "translationPt": "Computador / Notebook"
           }
         ],
         "options": [
-          "Television",
-          "Computer",
           "Headphones",
-          "Phone"
+          "Phone",
+          "Television",
+          "Computer"
         ],
         "correctAnswer": "Television",
-        "explanation": "📺 **Television** significa **Televisão** em inglês! Exemplo prático: \"Watch educational shows on television.\"",
+        "explanation": "Exemplo prático: \"Watch educational shows on television.\"",
         "phoneticHint": "/ˈtel.ɪˌvɪʒ.ən/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Câmera fotográfica\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Câmera fotográfica\" em inglês?",
         "audioPhrase": "Camera",
         "visualEmoji": "📷",
         "visualOptions": [
+          {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fones de ouvido"
+          },
           {
             "text": "Phone",
             "emoji": "📱",
@@ -5208,44 +5214,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💻",
             "label": "Computer / Laptop",
             "translationPt": "Computador / Notebook"
-          },
-          {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fones de ouvido"
           }
         ],
         "options": [
+          "Headphones",
           "Phone",
           "Camera",
-          "Computer",
-          "Headphones"
+          "Computer"
         ],
         "correctAnswer": "Camera",
-        "explanation": "📷 **Camera** significa **Câmera fotográfica** em inglês! Exemplo prático: \"Take memorable pictures with this camera.\"",
+        "explanation": "Exemplo prático: \"Take memorable pictures with this camera.\"",
         "phoneticHint": "/ˈkæm.rə/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p12-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Battery\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Battery",
         "visualEmoji": "🔋",
         "visualOptions": [
-          {
-            "text": "Computer",
-            "emoji": "💻",
-            "label": "Computer / Laptop",
-            "translationPt": "Computador / Notebook"
-          },
-          {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Celular / Telefone"
-          },
           {
             "text": "Battery",
             "emoji": "🔋",
@@ -5253,47 +5241,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bateria"
           },
           {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fones de ouvido"
-          }
-        ],
-        "options": [
-          "Computer",
-          "Phone",
-          "Battery",
-          "Headphones"
-        ],
-        "correctAnswer": "Battery",
-        "explanation": "🔋 **Battery** significa **Bateria** em inglês! Exemplo prático: \"Recharge the battery when it gets low.\"",
-        "phoneticHint": "/ˈbæt.ər.i/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p12-e7",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Mouse\"**?",
-        "audioPhrase": "Mouse",
-        "visualEmoji": "🖱️",
-        "visualOptions": [
-          {
-            "text": "Mouse",
-            "emoji": "🖱️",
-            "label": "Computer Mouse",
-            "translationPt": "Mouse de computador"
-          },
-          {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fones de ouvido"
-          },
-          {
             "text": "Phone",
             "emoji": "📱",
             "label": "Phone",
             "translationPt": "Celular / Telefone"
+          },
+          {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fones de ouvido"
           },
           {
             "text": "Computer",
@@ -5303,22 +5260,22 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Mouse",
-          "Headphones",
+          "Battery",
           "Phone",
+          "Headphones",
           "Computer"
         ],
-        "correctAnswer": "Mouse",
-        "explanation": "🖱️ **Mouse** significa **Mouse de computador** em inglês! Exemplo prático: \"Click on the link using your mouse.\"",
-        "phoneticHint": "/maʊs/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Battery",
+        "explanation": "Exemplo prático: \"Recharge the battery when it gets low.\"",
+        "phoneticHint": "/ˈbæt.ər.i/",
+        "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-e8",
+        "id": "w0-p12-e7",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Teclado\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Keyboard",
-        "visualEmoji": "⌨️",
+        "prompt": "Qual imagem representa \"Mouse\"?",
+        "audioPhrase": "Mouse",
+        "visualEmoji": "🖱️",
         "visualOptions": [
           {
             "text": "Headphones",
@@ -5332,6 +5289,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "label": "Phone",
             "translationPt": "Celular / Telefone"
           },
+          {
+            "text": "Mouse",
+            "emoji": "🖱️",
+            "label": "Computer Mouse",
+            "translationPt": "Mouse de computador"
+          },
+          {
+            "text": "Computer",
+            "emoji": "💻",
+            "label": "Computer / Laptop",
+            "translationPt": "Computador / Notebook"
+          }
+        ],
+        "options": [
+          "Headphones",
+          "Phone",
+          "Mouse",
+          "Computer"
+        ],
+        "correctAnswer": "Mouse",
+        "explanation": "Exemplo prático: \"Click on the link using your mouse.\"",
+        "phoneticHint": "/maʊs/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p12-e8",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Teclado\" em inglês?",
+        "audioPhrase": "Keyboard",
+        "visualEmoji": "⌨️",
+        "visualOptions": [
           {
             "text": "Keyboard",
             "emoji": "⌨️",
@@ -5343,32 +5331,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💻",
             "label": "Computer / Laptop",
             "translationPt": "Computador / Notebook"
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Celular / Telefone"
+          },
+          {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fones de ouvido"
           }
         ],
         "options": [
-          "Headphones",
-          "Phone",
           "Keyboard",
-          "Computer"
+          "Computer",
+          "Phone",
+          "Headphones"
         ],
         "correctAnswer": "Keyboard",
-        "explanation": "⌨️ **Keyboard** significa **Teclado** em inglês! Exemplo prático: \"Type the sentences on the keyboard.\"",
+        "explanation": "Exemplo prático: \"Type the sentences on the keyboard.\"",
         "phoneticHint": "/ˈkiː.bɔːd/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p12-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Tablet\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tablet",
         "visualEmoji": "📟",
         "visualOptions": [
-          {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fones de ouvido"
-          },
           {
             "text": "Tablet",
             "emoji": "📟",
@@ -5386,38 +5380,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📱",
             "label": "Phone",
             "translationPt": "Celular / Telefone"
+          },
+          {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fones de ouvido"
           }
         ],
         "options": [
-          "Headphones",
           "Tablet",
           "Computer",
-          "Phone"
+          "Phone",
+          "Headphones"
         ],
         "correctAnswer": "Tablet",
-        "explanation": "📟 **Tablet** significa **Tablet** em inglês! Exemplo prático: \"Children read e-books on the tablet.\"",
+        "explanation": "Exemplo prático: \"Children read e-books on the tablet.\"",
         "phoneticHint": "/ˈtæb.lət/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Radio\"**?",
+        "prompt": "Qual imagem representa \"Radio\"?",
         "audioPhrase": "Radio",
         "visualEmoji": "📻",
         "visualOptions": [
-          {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Celular / Telefone"
-          },
-          {
-            "text": "Radio",
-            "emoji": "📻",
-            "label": "Radio",
-            "translationPt": "Rádio"
-          },
           {
             "text": "Computer",
             "emoji": "💻",
@@ -5429,16 +5417,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🎧",
             "label": "Headphones",
             "translationPt": "Fones de ouvido"
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Celular / Telefone"
+          },
+          {
+            "text": "Radio",
+            "emoji": "📻",
+            "label": "Radio",
+            "translationPt": "Rádio"
           }
         ],
         "options": [
-          "Phone",
-          "Radio",
           "Computer",
-          "Headphones"
+          "Headphones",
+          "Phone",
+          "Radio"
         ],
         "correctAnswer": "Radio",
-        "explanation": "📻 **Radio** significa **Rádio** em inglês! Exemplo prático: \"Listen to English podcasts on the radio.\"",
+        "explanation": "Exemplo prático: \"Listen to English podcasts on the radio.\"",
         "phoneticHint": "/ˈreɪ.di.oʊ/",
         "skillCategory": "vocabulary"
       }
@@ -5465,7 +5465,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"School\"**?",
+        "prompt": "Qual imagem representa \"School\"?",
         "audioPhrase": "School",
         "visualEmoji": "🏫",
         "visualOptions": [
@@ -5476,12 +5476,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escola"
           },
           {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital"
-          },
-          {
             "text": "Supermarket",
             "emoji": "🛒",
             "label": "Supermarket",
@@ -5492,37 +5486,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌳",
             "label": "Park",
             "translationPt": "Parque / Praça"
+          },
+          {
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Hospital"
           }
         ],
         "options": [
           "School",
-          "Hospital",
           "Supermarket",
-          "Park"
+          "Park",
+          "Hospital"
         ],
         "correctAnswer": "School",
-        "explanation": "🏫 **School** significa **Escola** em inglês! Exemplo prático: \"Students learn languages at school.\"",
+        "explanation": "Exemplo prático: \"Students learn languages at school.\"",
         "phoneticHint": "/skuːl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Hospital\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Hospital\" em inglês?",
         "audioPhrase": "Hospital",
         "visualEmoji": "🏥",
         "visualOptions": [
-          {
-            "text": "School",
-            "emoji": "🏫",
-            "label": "School",
-            "translationPt": "Escola"
-          },
           {
             "text": "Park",
             "emoji": "🌳",
             "label": "Park",
             "translationPt": "Parque / Praça"
+          },
+          {
+            "text": "Supermarket",
+            "emoji": "🛒",
+            "label": "Supermarket",
+            "translationPt": "Supermercado"
           },
           {
             "text": "Hospital",
@@ -5531,41 +5531,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Hospital"
           },
           {
-            "text": "Supermarket",
-            "emoji": "🛒",
-            "label": "Supermarket",
-            "translationPt": "Supermercado"
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola"
           }
         ],
         "options": [
-          "School",
           "Park",
+          "Supermarket",
           "Hospital",
-          "Supermarket"
+          "School"
         ],
         "correctAnswer": "Hospital",
-        "explanation": "🏥 **Hospital** significa **Hospital** em inglês! Exemplo prático: \"Doctors and nurses care for patients at the hospital.\"",
+        "explanation": "Exemplo prático: \"Doctors and nurses care for patients at the hospital.\"",
         "phoneticHint": "/ˈhɒs.pɪ.təl/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p13-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Park\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Park",
         "visualEmoji": "🌳",
         "visualOptions": [
-          {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
-          },
           {
             "text": "School",
             "emoji": "🏫",
             "label": "School",
             "translationPt": "Escola"
+          },
+          {
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
           },
           {
             "text": "Supermarket",
@@ -5581,34 +5581,34 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Park",
           "School",
+          "Park",
           "Supermarket",
           "Hospital"
         ],
         "correctAnswer": "Park",
-        "explanation": "🌳 **Park** significa **Parque / Praça** em inglês! Exemplo prático: \"Families have picnics in the green park.\"",
+        "explanation": "Exemplo prático: \"Families have picnics in the green park.\"",
         "phoneticHint": "/pɑːk/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Supermarket\"**?",
+        "prompt": "Qual imagem representa \"Supermarket\"?",
         "audioPhrase": "Supermarket",
         "visualEmoji": "🛒",
         "visualOptions": [
-          {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital"
-          },
           {
             "text": "Supermarket",
             "emoji": "🛒",
             "label": "Supermarket",
             "translationPt": "Supermercado"
+          },
+          {
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Hospital"
           },
           {
             "text": "Park",
@@ -5624,34 +5624,28 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Hospital",
           "Supermarket",
+          "Hospital",
           "Park",
           "School"
         ],
         "correctAnswer": "Supermarket",
-        "explanation": "🛒 **Supermarket** significa **Supermercado** em inglês! Exemplo prático: \"Buy fresh food at the local supermarket.\"",
+        "explanation": "Exemplo prático: \"Buy fresh food at the local supermarket.\"",
         "phoneticHint": "/ˈsuː.pəˌmɑː.kɪt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Restaurante\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Restaurante\" em inglês?",
         "audioPhrase": "Restaurant",
         "visualEmoji": "🍽️",
         "visualOptions": [
           {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital"
-          },
-          {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola"
           },
           {
             "text": "Restaurant",
@@ -5660,36 +5654,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Restaurante"
           },
           {
-            "text": "School",
-            "emoji": "🏫",
-            "label": "School",
-            "translationPt": "Escola"
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
+          },
+          {
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Hospital"
           }
         ],
         "options": [
-          "Hospital",
-          "Park",
+          "School",
           "Restaurant",
-          "School"
+          "Park",
+          "Hospital"
         ],
         "correctAnswer": "Restaurant",
-        "explanation": "🍽️ **Restaurant** significa **Restaurante** em inglês! Exemplo prático: \"We have dinner at our favorite restaurant.\"",
+        "explanation": "Exemplo prático: \"We have dinner at our favorite restaurant.\"",
         "phoneticHint": "/ˈres.trɒnt/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p13-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Bank\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bank",
         "visualEmoji": "🏦",
         "visualOptions": [
-          {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
-          },
           {
             "text": "School",
             "emoji": "🏫",
@@ -5707,26 +5701,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏥",
             "label": "Hospital",
             "translationPt": "Hospital"
+          },
+          {
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
           }
         ],
         "options": [
-          "Park",
           "School",
           "Bank",
-          "Hospital"
+          "Hospital",
+          "Park"
         ],
         "correctAnswer": "Bank",
-        "explanation": "🏦 **Bank** significa **Banco** em inglês! Exemplo prático: \"Deposit money safely at the city bank.\"",
+        "explanation": "Exemplo prático: \"Deposit money safely at the city bank.\"",
         "phoneticHint": "/bæŋk/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Airport\"**?",
+        "prompt": "Qual imagem representa \"Airport\"?",
         "audioPhrase": "Airport",
         "visualEmoji": "🛫",
         "visualOptions": [
+          {
+            "text": "Airport",
+            "emoji": "🛫",
+            "label": "Airport",
+            "translationPt": "Aeroporto"
+          },
           {
             "text": "Hospital",
             "emoji": "🏥",
@@ -5744,38 +5750,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌳",
             "label": "Park",
             "translationPt": "Parque / Praça"
-          },
-          {
-            "text": "Airport",
-            "emoji": "🛫",
-            "label": "Airport",
-            "translationPt": "Aeroporto"
           }
         ],
         "options": [
+          "Airport",
           "Hospital",
           "School",
-          "Park",
-          "Airport"
+          "Park"
         ],
         "correctAnswer": "Airport",
-        "explanation": "🛫 **Airport** significa **Aeroporto** em inglês! Exemplo prático: \"Depart on international flights from the airport.\"",
+        "explanation": "Exemplo prático: \"Depart on international flights from the airport.\"",
         "phoneticHint": "/ˈeə.pɔːt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Hotel\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Hotel\" em inglês?",
         "audioPhrase": "Hotel",
         "visualEmoji": "🏨",
         "visualOptions": [
-          {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
-          },
           {
             "text": "School",
             "emoji": "🏫",
@@ -5783,33 +5777,39 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escola"
           },
           {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital"
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
           },
           {
             "text": "Hotel",
             "emoji": "🏨",
             "label": "Hotel",
             "translationPt": "Hotel"
+          },
+          {
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Hospital"
           }
         ],
         "options": [
-          "Park",
           "School",
-          "Hospital",
-          "Hotel"
+          "Park",
+          "Hotel",
+          "Hospital"
         ],
         "correctAnswer": "Hotel",
-        "explanation": "🏨 **Hotel** significa **Hotel** em inglês! Exemplo prático: \"Stay at a comfortable downtown hotel.\"",
+        "explanation": "Exemplo prático: \"Stay at a comfortable downtown hotel.\"",
         "phoneticHint": "/hoʊˈtel/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p13-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Library\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Library",
         "visualEmoji": "📚",
         "visualOptions": [
@@ -5820,16 +5820,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escola"
           },
           {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
-          },
-          {
             "text": "Library",
             "emoji": "📚",
             "label": "Library",
             "translationPt": "Biblioteca"
+          },
+          {
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
           },
           {
             "text": "Hospital",
@@ -5840,34 +5840,22 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "School",
-          "Park",
           "Library",
+          "Park",
           "Hospital"
         ],
         "correctAnswer": "Library",
-        "explanation": "📚 **Library** significa **Biblioteca** em inglês! Exemplo prático: \"Read quiet books in the public library.\"",
+        "explanation": "Exemplo prático: \"Read quiet books in the public library.\"",
         "phoneticHint": "/ˈlaɪ.brər.i/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Bakery\"**?",
+        "prompt": "Qual imagem representa \"Bakery\"?",
         "audioPhrase": "Bakery",
         "visualEmoji": "🥖",
         "visualOptions": [
-          {
-            "text": "Bakery",
-            "emoji": "🥖",
-            "label": "Bakery",
-            "translationPt": "Padaria"
-          },
-          {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
-          },
           {
             "text": "School",
             "emoji": "🏫",
@@ -5875,20 +5863,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escola"
           },
           {
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
+          },
+          {
             "text": "Hospital",
             "emoji": "🏥",
             "label": "Hospital",
             "translationPt": "Hospital"
+          },
+          {
+            "text": "Bakery",
+            "emoji": "🥖",
+            "label": "Bakery",
+            "translationPt": "Padaria"
           }
         ],
         "options": [
-          "Bakery",
-          "Park",
           "School",
-          "Hospital"
+          "Park",
+          "Hospital",
+          "Bakery"
         ],
         "correctAnswer": "Bakery",
-        "explanation": "🥖 **Bakery** significa **Padaria** em inglês! Exemplo prático: \"Buy warm bread every morning at the bakery.\"",
+        "explanation": "Exemplo prático: \"Buy warm bread every morning at the bakery.\"",
         "phoneticHint": "/ˈbeɪ.kər.i/",
         "skillCategory": "vocabulary"
       }
@@ -5915,22 +5915,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Sun\"**?",
+        "prompt": "Qual imagem representa \"Sun\"?",
         "audioPhrase": "Sun",
         "visualEmoji": "☀️",
         "visualOptions": [
-          {
-            "text": "Flower",
-            "emoji": "🌸",
-            "label": "Flower",
-            "translationPt": "Flor"
-          },
-          {
-            "text": "Tree",
-            "emoji": "🌲",
-            "label": "Tree",
-            "translationPt": "Árvore"
-          },
           {
             "text": "Moon",
             "emoji": "🌙",
@@ -5942,31 +5930,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "☀️",
             "label": "Sun",
             "translationPt": "Sol"
+          },
+          {
+            "text": "Flower",
+            "emoji": "🌸",
+            "label": "Flower",
+            "translationPt": "Flor"
+          },
+          {
+            "text": "Tree",
+            "emoji": "🌲",
+            "label": "Tree",
+            "translationPt": "Árvore"
           }
         ],
         "options": [
-          "Flower",
-          "Tree",
           "Moon",
-          "Sun"
+          "Sun",
+          "Flower",
+          "Tree"
         ],
         "correctAnswer": "Sun",
-        "explanation": "☀️ **Sun** significa **Sol** em inglês! Exemplo prático: \"The morning sun brings light and energy.\"",
+        "explanation": "Exemplo prático: \"The morning sun brings light and energy.\"",
         "phoneticHint": "/sʌn/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Lua\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Lua\" em inglês?",
         "audioPhrase": "Moon",
         "visualEmoji": "🌙",
         "visualOptions": [
           {
-            "text": "Tree",
-            "emoji": "🌲",
-            "label": "Tree",
-            "translationPt": "Árvore"
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua"
           },
           {
             "text": "Sun",
@@ -5981,27 +5981,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Flor"
           },
           {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua"
+            "text": "Tree",
+            "emoji": "🌲",
+            "label": "Tree",
+            "translationPt": "Árvore"
           }
         ],
         "options": [
-          "Tree",
+          "Moon",
           "Sun",
           "Flower",
-          "Moon"
+          "Tree"
         ],
         "correctAnswer": "Moon",
-        "explanation": "🌙 **Moon** significa **Lua** em inglês! Exemplo prático: \"The crescent moon shines at night.\"",
+        "explanation": "Exemplo prático: \"The crescent moon shines at night.\"",
         "phoneticHint": "/muːn/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p14-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Tree\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tree",
         "visualEmoji": "🌲",
         "visualOptions": [
@@ -6012,16 +6012,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Flor"
           },
           {
-            "text": "Sun",
-            "emoji": "☀️",
-            "label": "Sun",
-            "translationPt": "Sol"
-          },
-          {
             "text": "Moon",
             "emoji": "🌙",
             "label": "Moon",
             "translationPt": "Lua"
+          },
+          {
+            "text": "Sun",
+            "emoji": "☀️",
+            "label": "Sun",
+            "translationPt": "Sol"
           },
           {
             "text": "Tree",
@@ -6032,19 +6032,19 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Flower",
-          "Sun",
           "Moon",
+          "Sun",
           "Tree"
         ],
         "correctAnswer": "Tree",
-        "explanation": "🌲 **Tree** significa **Árvore** em inglês! Exemplo prático: \"Tall green trees grow in the forest.\"",
+        "explanation": "Exemplo prático: \"Tall green trees grow in the forest.\"",
         "phoneticHint": "/triː/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Flower\"**?",
+        "prompt": "Qual imagem representa \"Flower\"?",
         "audioPhrase": "Flower",
         "visualEmoji": "🌸",
         "visualOptions": [
@@ -6055,10 +6055,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Árvore"
           },
           {
-            "text": "Flower",
-            "emoji": "🌸",
-            "label": "Flower",
-            "translationPt": "Flor"
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua"
           },
           {
             "text": "Sun",
@@ -6067,30 +6067,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sol"
           },
           {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua"
+            "text": "Flower",
+            "emoji": "🌸",
+            "label": "Flower",
+            "translationPt": "Flor"
           }
         ],
         "options": [
           "Tree",
-          "Flower",
+          "Moon",
           "Sun",
-          "Moon"
+          "Flower"
         ],
         "correctAnswer": "Flower",
-        "explanation": "🌸 **Flower** significa **Flor** em inglês! Exemplo prático: \"A beautiful pink flower blooms in spring.\"",
+        "explanation": "Exemplo prático: \"A beautiful pink flower blooms in spring.\"",
         "phoneticHint": "/ˈflaʊ.ər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Montanha\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Montanha\" em inglês?",
         "audioPhrase": "Mountain",
         "visualEmoji": "⛰️",
         "visualOptions": [
+          {
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua"
+          },
+          {
+            "text": "Tree",
+            "emoji": "🌲",
+            "label": "Tree",
+            "translationPt": "Árvore"
+          },
           {
             "text": "Mountain",
             "emoji": "⛰️",
@@ -6098,18 +6110,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Montanha"
           },
           {
-            "text": "Tree",
-            "emoji": "🌲",
-            "label": "Tree",
-            "translationPt": "Árvore"
-          },
-          {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua"
-          },
-          {
             "text": "Sun",
             "emoji": "☀️",
             "label": "Sun",
@@ -6117,29 +6117,23 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Mountain",
-          "Tree",
           "Moon",
+          "Tree",
+          "Mountain",
           "Sun"
         ],
         "correctAnswer": "Mountain",
-        "explanation": "⛰️ **Mountain** significa **Montanha** em inglês! Exemplo prático: \"Snow covers the peaks of the high mountain.\"",
+        "explanation": "Exemplo prático: \"Snow covers the peaks of the high mountain.\"",
         "phoneticHint": "/ˈmaʊn.tɪn/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p14-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"River\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "River",
         "visualEmoji": "🌊",
         "visualOptions": [
-          {
-            "text": "Tree",
-            "emoji": "🌲",
-            "label": "Tree",
-            "translationPt": "Árvore"
-          },
           {
             "text": "River",
             "emoji": "🌊",
@@ -6157,23 +6151,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌙",
             "label": "Moon",
             "translationPt": "Lua"
+          },
+          {
+            "text": "Tree",
+            "emoji": "🌲",
+            "label": "Tree",
+            "translationPt": "Árvore"
           }
         ],
         "options": [
-          "Tree",
           "River",
           "Sun",
-          "Moon"
+          "Moon",
+          "Tree"
         ],
         "correctAnswer": "River",
-        "explanation": "🌊 **River** significa **Rio** em inglês! Exemplo prático: \"Clean freshwater flows down the winding river.\"",
+        "explanation": "Exemplo prático: \"Clean freshwater flows down the winding river.\"",
         "phoneticHint": "/ˈrɪv.ər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Forest\"**?",
+        "prompt": "Qual imagem representa \"Forest\"?",
         "audioPhrase": "Forest",
         "visualEmoji": "🌳",
         "visualOptions": [
@@ -6184,11 +6184,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sol"
           },
           {
+            "text": "Tree",
+            "emoji": "🌲",
+            "label": "Tree",
+            "translationPt": "Árvore"
+          },
+          {
             "text": "Forest",
             "emoji": "🌳",
             "label": "Forest",
             "translationPt": "Floresta / Bosque"
           },
+          {
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua"
+          }
+        ],
+        "options": [
+          "Sun",
+          "Tree",
+          "Forest",
+          "Moon"
+        ],
+        "correctAnswer": "Forest",
+        "explanation": "Exemplo prático: \"Wild animals live peacefully in the dense forest.\"",
+        "phoneticHint": "/ˈfɒr.ɪst/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p14-e8",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Praia\" em inglês?",
+        "audioPhrase": "Beach",
+        "visualEmoji": "🏖️",
+        "visualOptions": [
           {
             "text": "Tree",
             "emoji": "🌲",
@@ -6200,31 +6231,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌙",
             "label": "Moon",
             "translationPt": "Lua"
-          }
-        ],
-        "options": [
-          "Sun",
-          "Forest",
-          "Tree",
-          "Moon"
-        ],
-        "correctAnswer": "Forest",
-        "explanation": "🌳 **Forest** significa **Floresta / Bosque** em inglês! Exemplo prático: \"Wild animals live peacefully in the dense forest.\"",
-        "phoneticHint": "/ˈfɒr.ɪst/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p14-e8",
-        "type": "image-choice",
-        "prompt": "Como se diz **\"Praia\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Beach",
-        "visualEmoji": "🏖️",
-        "visualOptions": [
-          {
-            "text": "Tree",
-            "emoji": "🌲",
-            "label": "Tree",
-            "translationPt": "Árvore"
           },
           {
             "text": "Beach",
@@ -6237,44 +6243,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "☀️",
             "label": "Sun",
             "translationPt": "Sol"
-          },
-          {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua"
           }
         ],
         "options": [
           "Tree",
+          "Moon",
           "Beach",
-          "Sun",
-          "Moon"
+          "Sun"
         ],
         "correctAnswer": "Beach",
-        "explanation": "🏖️ **Beach** significa **Praia** em inglês! Exemplo prático: \"Walk barefoot on the sunny sandy beach.\"",
+        "explanation": "Exemplo prático: \"Walk barefoot on the sunny sandy beach.\"",
         "phoneticHint": "/biːtʃ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p14-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Fire\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fire",
         "visualEmoji": "🔥",
         "visualOptions": [
-          {
-            "text": "Sun",
-            "emoji": "☀️",
-            "label": "Sun",
-            "translationPt": "Sol"
-          },
-          {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua"
-          },
           {
             "text": "Fire",
             "emoji": "🔥",
@@ -6282,30 +6270,11 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Fogo"
           },
           {
-            "text": "Tree",
-            "emoji": "🌲",
-            "label": "Tree",
-            "translationPt": "Árvore"
-          }
-        ],
-        "options": [
-          "Sun",
-          "Moon",
-          "Fire",
-          "Tree"
-        ],
-        "correctAnswer": "Fire",
-        "explanation": "🔥 **Fire** significa **Fogo** em inglês! Exemplo prático: \"A warm camp fire keeps travelers warm.\"",
-        "phoneticHint": "/faɪər/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p14-e10",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Island\"**?",
-        "audioPhrase": "Island",
-        "visualEmoji": "🏝️",
-        "visualOptions": [
+            "text": "Sun",
+            "emoji": "☀️",
+            "label": "Sun",
+            "translationPt": "Sol"
+          },
           {
             "text": "Tree",
             "emoji": "🌲",
@@ -6317,6 +6286,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌙",
             "label": "Moon",
             "translationPt": "Lua"
+          }
+        ],
+        "options": [
+          "Fire",
+          "Sun",
+          "Tree",
+          "Moon"
+        ],
+        "correctAnswer": "Fire",
+        "explanation": "Exemplo prático: \"A warm camp fire keeps travelers warm.\"",
+        "phoneticHint": "/faɪər/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p14-e10",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Island\"?",
+        "audioPhrase": "Island",
+        "visualEmoji": "🏝️",
+        "visualOptions": [
+          {
+            "text": "Island",
+            "emoji": "🏝️",
+            "label": "Island",
+            "translationPt": "Ilha"
+          },
+          {
+            "text": "Tree",
+            "emoji": "🌲",
+            "label": "Tree",
+            "translationPt": "Árvore"
           },
           {
             "text": "Sun",
@@ -6325,20 +6325,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sol"
           },
           {
-            "text": "Island",
-            "emoji": "🏝️",
-            "label": "Island",
-            "translationPt": "Ilha"
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua"
           }
         ],
         "options": [
+          "Island",
           "Tree",
-          "Moon",
           "Sun",
-          "Island"
+          "Moon"
         ],
         "correctAnswer": "Island",
-        "explanation": "🏝️ **Island** significa **Ilha** em inglês! Exemplo prático: \"An island surrounded by tropical blue water.\"",
+        "explanation": "Exemplo prático: \"An island surrounded by tropical blue water.\"",
         "phoneticHint": "/ˈaɪ.lənd/",
         "skillCategory": "vocabulary"
       }
@@ -6365,22 +6365,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Rain\"**?",
+        "prompt": "Qual imagem representa \"Rain\"?",
         "audioPhrase": "Rain",
         "visualEmoji": "🌧️",
         "visualOptions": [
-          {
-            "text": "Rain",
-            "emoji": "🌧️",
-            "label": "Rain",
-            "translationPt": "Chuva"
-          },
-          {
-            "text": "Snow",
-            "emoji": "❄️",
-            "label": "Snow",
-            "translationPt": "Neve"
-          },
           {
             "text": "Wind",
             "emoji": "💨",
@@ -6392,31 +6380,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "☁️",
             "label": "Cloud",
             "translationPt": "Nuvem"
+          },
+          {
+            "text": "Snow",
+            "emoji": "❄️",
+            "label": "Snow",
+            "translationPt": "Neve"
+          },
+          {
+            "text": "Rain",
+            "emoji": "🌧️",
+            "label": "Rain",
+            "translationPt": "Chuva"
           }
         ],
         "options": [
-          "Rain",
-          "Snow",
           "Wind",
-          "Cloud"
+          "Cloud",
+          "Snow",
+          "Rain"
         ],
         "correctAnswer": "Rain",
-        "explanation": "🌧️ **Rain** significa **Chuva** em inglês! Exemplo prático: \"Gentle rain waters the thirsty crops.\"",
+        "explanation": "Exemplo prático: \"Gentle rain waters the thirsty crops.\"",
         "phoneticHint": "/reɪn/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Neve\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Neve\" em inglês?",
         "audioPhrase": "Snow",
         "visualEmoji": "❄️",
         "visualOptions": [
           {
-            "text": "Rain",
-            "emoji": "🌧️",
-            "label": "Rain",
-            "translationPt": "Chuva"
+            "text": "Wind",
+            "emoji": "💨",
+            "label": "Wind",
+            "translationPt": "Vento"
           },
           {
             "text": "Cloud",
@@ -6425,47 +6425,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Nuvem"
           },
           {
+            "text": "Rain",
+            "emoji": "🌧️",
+            "label": "Rain",
+            "translationPt": "Chuva"
+          },
+          {
             "text": "Snow",
             "emoji": "❄️",
             "label": "Snow",
             "translationPt": "Neve"
-          },
-          {
-            "text": "Wind",
-            "emoji": "💨",
-            "label": "Wind",
-            "translationPt": "Vento"
           }
         ],
         "options": [
-          "Rain",
+          "Wind",
           "Cloud",
-          "Snow",
-          "Wind"
+          "Rain",
+          "Snow"
         ],
         "correctAnswer": "Snow",
-        "explanation": "❄️ **Snow** significa **Neve** em inglês! Exemplo prático: \"White snow falls silently in winter.\"",
+        "explanation": "Exemplo prático: \"White snow falls silently in winter.\"",
         "phoneticHint": "/snoʊ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p15-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Cloud\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cloud",
         "visualEmoji": "☁️",
         "visualOptions": [
+          {
+            "text": "Rain",
+            "emoji": "🌧️",
+            "label": "Rain",
+            "translationPt": "Chuva"
+          },
           {
             "text": "Cloud",
             "emoji": "☁️",
             "label": "Cloud",
             "translationPt": "Nuvem"
-          },
-          {
-            "text": "Snow",
-            "emoji": "❄️",
-            "label": "Snow",
-            "translationPt": "Neve"
           },
           {
             "text": "Wind",
@@ -6474,27 +6474,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vento"
           },
           {
-            "text": "Rain",
-            "emoji": "🌧️",
-            "label": "Rain",
-            "translationPt": "Chuva"
+            "text": "Snow",
+            "emoji": "❄️",
+            "label": "Snow",
+            "translationPt": "Neve"
           }
         ],
         "options": [
+          "Rain",
           "Cloud",
-          "Snow",
           "Wind",
-          "Rain"
+          "Snow"
         ],
         "correctAnswer": "Cloud",
-        "explanation": "☁️ **Cloud** significa **Nuvem** em inglês! Exemplo prático: \"Fluffy white clouds drift across the blue sky.\"",
+        "explanation": "Exemplo prático: \"Fluffy white clouds drift across the blue sky.\"",
         "phoneticHint": "/klaʊd/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Wind\"**?",
+        "prompt": "Qual imagem representa \"Wind\"?",
         "audioPhrase": "Wind",
         "visualEmoji": "💨",
         "visualOptions": [
@@ -6505,10 +6505,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Nuvem"
           },
           {
-            "text": "Wind",
-            "emoji": "💨",
-            "label": "Wind",
-            "translationPt": "Vento"
+            "text": "Snow",
+            "emoji": "❄️",
+            "label": "Snow",
+            "translationPt": "Neve"
           },
           {
             "text": "Rain",
@@ -6517,30 +6517,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chuva"
           },
           {
-            "text": "Snow",
-            "emoji": "❄️",
-            "label": "Snow",
-            "translationPt": "Neve"
+            "text": "Wind",
+            "emoji": "💨",
+            "label": "Wind",
+            "translationPt": "Vento"
           }
         ],
         "options": [
           "Cloud",
-          "Wind",
+          "Snow",
           "Rain",
-          "Snow"
+          "Wind"
         ],
         "correctAnswer": "Wind",
-        "explanation": "💨 **Wind** significa **Vento** em inglês! Exemplo prático: \"A cool summer wind rustles the leaves.\"",
+        "explanation": "Exemplo prático: \"A cool summer wind rustles the leaves.\"",
         "phoneticHint": "/wɪnd/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Arco-íris\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Arco-íris\" em inglês?",
         "audioPhrase": "Rainbow",
         "visualEmoji": "🌈",
         "visualOptions": [
+          {
+            "text": "Rain",
+            "emoji": "🌧️",
+            "label": "Rain",
+            "translationPt": "Chuva"
+          },
           {
             "text": "Rainbow",
             "emoji": "🌈",
@@ -6554,12 +6560,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Nuvem"
           },
           {
-            "text": "Rain",
-            "emoji": "🌧️",
-            "label": "Rain",
-            "translationPt": "Chuva"
-          },
-          {
             "text": "Snow",
             "emoji": "❄️",
             "label": "Snow",
@@ -6567,28 +6567,28 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Rain",
           "Rainbow",
           "Cloud",
-          "Rain",
           "Snow"
         ],
         "correctAnswer": "Rainbow",
-        "explanation": "🌈 **Rainbow** significa **Arco-íris** em inglês! Exemplo prático: \"A colorful rainbow appears after the storm.\"",
+        "explanation": "Exemplo prático: \"A colorful rainbow appears after the storm.\"",
         "phoneticHint": "/ˈreɪn.boʊ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p15-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Lightning\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lightning",
         "visualEmoji": "⚡",
         "visualOptions": [
           {
-            "text": "Cloud",
-            "emoji": "☁️",
-            "label": "Cloud",
-            "translationPt": "Nuvem"
+            "text": "Lightning",
+            "emoji": "⚡",
+            "label": "Lightning",
+            "translationPt": "Relâmpago / Raio"
           },
           {
             "text": "Rain",
@@ -6603,42 +6603,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Neve"
           },
           {
-            "text": "Lightning",
-            "emoji": "⚡",
-            "label": "Lightning",
-            "translationPt": "Relâmpago / Raio"
+            "text": "Cloud",
+            "emoji": "☁️",
+            "label": "Cloud",
+            "translationPt": "Nuvem"
           }
         ],
         "options": [
-          "Cloud",
+          "Lightning",
           "Rain",
           "Snow",
-          "Lightning"
+          "Cloud"
         ],
         "correctAnswer": "Lightning",
-        "explanation": "⚡ **Lightning** significa **Relâmpago / Raio** em inglês! Exemplo prático: \"Bright lightning flashes across the dark sky.\"",
+        "explanation": "Exemplo prático: \"Bright lightning flashes across the dark sky.\"",
         "phoneticHint": "/ˈlaɪt.nɪŋ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Fog\"**?",
+        "prompt": "Qual imagem representa \"Fog\"?",
         "audioPhrase": "Fog",
         "visualEmoji": "🌫️",
         "visualOptions": [
-          {
-            "text": "Cloud",
-            "emoji": "☁️",
-            "label": "Cloud",
-            "translationPt": "Nuvem"
-          },
-          {
-            "text": "Rain",
-            "emoji": "🌧️",
-            "label": "Rain",
-            "translationPt": "Chuva"
-          },
           {
             "text": "Fog",
             "emoji": "🌫️",
@@ -6646,35 +6634,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Neblina / Nevoeiro"
           },
           {
+            "text": "Cloud",
+            "emoji": "☁️",
+            "label": "Cloud",
+            "translationPt": "Nuvem"
+          },
+          {
             "text": "Snow",
             "emoji": "❄️",
             "label": "Snow",
             "translationPt": "Neve"
+          },
+          {
+            "text": "Rain",
+            "emoji": "🌧️",
+            "label": "Rain",
+            "translationPt": "Chuva"
           }
         ],
         "options": [
-          "Cloud",
-          "Rain",
           "Fog",
-          "Snow"
+          "Cloud",
+          "Snow",
+          "Rain"
         ],
         "correctAnswer": "Fog",
-        "explanation": "🌫️ **Fog** significa **Neblina / Nevoeiro** em inglês! Exemplo prático: \"Thick morning fog reduces visibility.\"",
+        "explanation": "Exemplo prático: \"Thick morning fog reduces visibility.\"",
         "phoneticHint": "/fɒɡ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Guarda-chuva\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Guarda-chuva\" em inglês?",
         "audioPhrase": "Umbrella",
         "visualEmoji": "☂️",
         "visualOptions": [
           {
-            "text": "Umbrella",
-            "emoji": "☂️",
-            "label": "Umbrella",
-            "translationPt": "Guarda-chuva"
+            "text": "Snow",
+            "emoji": "❄️",
+            "label": "Snow",
+            "translationPt": "Neve"
           },
           {
             "text": "Cloud",
@@ -6689,36 +6689,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chuva"
           },
           {
-            "text": "Snow",
-            "emoji": "❄️",
-            "label": "Snow",
-            "translationPt": "Neve"
+            "text": "Umbrella",
+            "emoji": "☂️",
+            "label": "Umbrella",
+            "translationPt": "Guarda-chuva"
           }
         ],
         "options": [
-          "Umbrella",
+          "Snow",
           "Cloud",
           "Rain",
-          "Snow"
+          "Umbrella"
         ],
         "correctAnswer": "Umbrella",
-        "explanation": "☂️ **Umbrella** significa **Guarda-chuva** em inglês! Exemplo prático: \"Carry an umbrella when it looks like rain.\"",
+        "explanation": "Exemplo prático: \"Carry an umbrella when it looks like rain.\"",
         "phoneticHint": "/ʌmˈbrel.ə/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p15-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Sun\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sun",
         "visualEmoji": "☀️",
         "visualOptions": [
-          {
-            "text": "Cloud",
-            "emoji": "☁️",
-            "label": "Cloud",
-            "translationPt": "Nuvem"
-          },
           {
             "text": "Rain",
             "emoji": "🌧️",
@@ -6726,47 +6720,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chuva"
           },
           {
-            "text": "Sun",
-            "emoji": "☀️",
-            "label": "Sunny Day",
-            "translationPt": "Dia ensolarado"
+            "text": "Cloud",
+            "emoji": "☁️",
+            "label": "Cloud",
+            "translationPt": "Nuvem"
           },
           {
             "text": "Snow",
             "emoji": "❄️",
             "label": "Snow",
             "translationPt": "Neve"
+          },
+          {
+            "text": "Sun",
+            "emoji": "☀️",
+            "label": "Sunny Day",
+            "translationPt": "Dia ensolarado"
           }
         ],
         "options": [
-          "Cloud",
           "Rain",
-          "Sun",
-          "Snow"
+          "Cloud",
+          "Snow",
+          "Sun"
         ],
         "correctAnswer": "Sun",
-        "explanation": "☀️ **Sun** significa **Dia ensolarado** em inglês! Exemplo prático: \"A warm sunny day for outdoor activities.\"",
+        "explanation": "Exemplo prático: \"A warm sunny day for outdoor activities.\"",
         "phoneticHint": "/ˈsʌn.i/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Thermometer\"**?",
+        "prompt": "Qual imagem representa \"Thermometer\"?",
         "audioPhrase": "Thermometer",
         "visualEmoji": "🌡️",
         "visualOptions": [
           {
-            "text": "Cloud",
-            "emoji": "☁️",
-            "label": "Cloud",
-            "translationPt": "Nuvem"
-          },
-          {
-            "text": "Rain",
-            "emoji": "🌧️",
-            "label": "Rain",
-            "translationPt": "Chuva"
+            "text": "Snow",
+            "emoji": "❄️",
+            "label": "Snow",
+            "translationPt": "Neve"
           },
           {
             "text": "Thermometer",
@@ -6775,20 +6769,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Termômetro (Temperatura)"
           },
           {
-            "text": "Snow",
-            "emoji": "❄️",
-            "label": "Snow",
-            "translationPt": "Neve"
+            "text": "Rain",
+            "emoji": "🌧️",
+            "label": "Rain",
+            "translationPt": "Chuva"
+          },
+          {
+            "text": "Cloud",
+            "emoji": "☁️",
+            "label": "Cloud",
+            "translationPt": "Nuvem"
           }
         ],
         "options": [
-          "Cloud",
-          "Rain",
+          "Snow",
           "Thermometer",
-          "Snow"
+          "Rain",
+          "Cloud"
         ],
         "correctAnswer": "Thermometer",
-        "explanation": "🌡️ **Thermometer** significa **Termômetro (Temperatura)** em inglês! Exemplo prático: \"The thermometer shows high temperatures.\"",
+        "explanation": "Exemplo prático: \"The thermometer shows high temperatures.\"",
         "phoneticHint": "/θəˈmɒm.ɪ.tər/",
         "skillCategory": "vocabulary"
       }
@@ -6815,21 +6815,15 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Run\"**?",
+        "prompt": "Qual imagem representa \"Run\"?",
         "audioPhrase": "Run",
         "visualEmoji": "🏃",
         "visualOptions": [
           {
-            "text": "Drink",
-            "emoji": "🥤",
-            "label": "Drink",
-            "translationPt": "Beber"
-          },
-          {
-            "text": "Run",
-            "emoji": "🏃",
-            "label": "Run",
-            "translationPt": "Correr"
+            "text": "Eat",
+            "emoji": "🍽️",
+            "label": "Eat",
+            "translationPt": "Comer"
           },
           {
             "text": "Walk",
@@ -6838,29 +6832,78 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caminhar"
           },
           {
-            "text": "Eat",
-            "emoji": "🍽️",
-            "label": "Eat",
-            "translationPt": "Comer"
+            "text": "Run",
+            "emoji": "🏃",
+            "label": "Run",
+            "translationPt": "Correr"
+          },
+          {
+            "text": "Drink",
+            "emoji": "🥤",
+            "label": "Drink",
+            "translationPt": "Beber"
           }
         ],
         "options": [
-          "Drink",
-          "Run",
+          "Eat",
           "Walk",
-          "Eat"
+          "Run",
+          "Drink"
         ],
         "correctAnswer": "Run",
-        "explanation": "🏃 **Run** significa **Correr** em inglês! Exemplo prático: \"Athletes run fast in the stadium.\"",
+        "explanation": "Exemplo prático: \"Athletes run fast in the stadium.\"",
         "phoneticHint": "/rʌn/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Caminhar\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Caminhar\" em inglês?",
         "audioPhrase": "Walk",
         "visualEmoji": "🚶",
+        "visualOptions": [
+          {
+            "text": "Walk",
+            "emoji": "🚶",
+            "label": "Walk",
+            "translationPt": "Caminhar"
+          },
+          {
+            "text": "Run",
+            "emoji": "🏃",
+            "label": "Run",
+            "translationPt": "Correr"
+          },
+          {
+            "text": "Drink",
+            "emoji": "🥤",
+            "label": "Drink",
+            "translationPt": "Beber"
+          },
+          {
+            "text": "Eat",
+            "emoji": "🍽️",
+            "label": "Eat",
+            "translationPt": "Comer"
+          }
+        ],
+        "options": [
+          "Walk",
+          "Run",
+          "Drink",
+          "Eat"
+        ],
+        "correctAnswer": "Walk",
+        "explanation": "Exemplo prático: \"Take a relaxed walk through the botanical garden.\"",
+        "phoneticHint": "/wɔːk/",
+        "skillCategory": "reading"
+      },
+      {
+        "id": "w0-p16-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Eat",
+        "visualEmoji": "🍽️",
         "visualOptions": [
           {
             "text": "Run",
@@ -6893,66 +6936,23 @@ export const WORLD_0_PHASES: Phase[] = [
           "Drink",
           "Eat"
         ],
-        "correctAnswer": "Walk",
-        "explanation": "🚶 **Walk** significa **Caminhar** em inglês! Exemplo prático: \"Take a relaxed walk through the botanical garden.\"",
-        "phoneticHint": "/wɔːk/",
-        "skillCategory": "reading"
-      },
-      {
-        "id": "w0-p16-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Eat\"**:",
-        "audioPhrase": "Eat",
-        "visualEmoji": "🍽️",
-        "visualOptions": [
-          {
-            "text": "Eat",
-            "emoji": "🍽️",
-            "label": "Eat",
-            "translationPt": "Comer"
-          },
-          {
-            "text": "Run",
-            "emoji": "🏃",
-            "label": "Run",
-            "translationPt": "Correr"
-          },
-          {
-            "text": "Drink",
-            "emoji": "🥤",
-            "label": "Drink",
-            "translationPt": "Beber"
-          },
-          {
-            "text": "Walk",
-            "emoji": "🚶",
-            "label": "Walk",
-            "translationPt": "Caminhar"
-          }
-        ],
-        "options": [
-          "Eat",
-          "Run",
-          "Drink",
-          "Walk"
-        ],
         "correctAnswer": "Eat",
-        "explanation": "🍽️ **Eat** significa **Comer** em inglês! Exemplo prático: \"We eat wholesome meals with family.\"",
+        "explanation": "Exemplo prático: \"We eat wholesome meals with family.\"",
         "phoneticHint": "/iːt/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Drink\"**?",
+        "prompt": "Qual imagem representa \"Drink\"?",
         "audioPhrase": "Drink",
         "visualEmoji": "🥤",
         "visualOptions": [
           {
-            "text": "Drink",
-            "emoji": "🥤",
-            "label": "Drink",
-            "translationPt": "Beber"
+            "text": "Run",
+            "emoji": "🏃",
+            "label": "Run",
+            "translationPt": "Correr"
           },
           {
             "text": "Eat",
@@ -6961,10 +6961,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Comer"
           },
           {
-            "text": "Run",
-            "emoji": "🏃",
-            "label": "Run",
-            "translationPt": "Correr"
+            "text": "Drink",
+            "emoji": "🥤",
+            "label": "Drink",
+            "translationPt": "Beber"
           },
           {
             "text": "Walk",
@@ -6974,20 +6974,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Drink",
-          "Eat",
           "Run",
+          "Eat",
+          "Drink",
           "Walk"
         ],
         "correctAnswer": "Drink",
-        "explanation": "🥤 **Drink** significa **Beber** em inglês! Exemplo prático: \"Remember to drink water throughout the day.\"",
+        "explanation": "Exemplo prático: \"Remember to drink water throughout the day.\"",
         "phoneticHint": "/drɪŋk/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Dormir\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Dormir\" em inglês?",
         "audioPhrase": "Sleep",
         "visualEmoji": "😴",
         "visualOptions": [
@@ -6998,16 +6998,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caminhar"
           },
           {
-            "text": "Eat",
-            "emoji": "🍽️",
-            "label": "Eat",
-            "translationPt": "Comer"
-          },
-          {
             "text": "Sleep",
             "emoji": "😴",
             "label": "Sleep",
             "translationPt": "Dormir"
+          },
+          {
+            "text": "Eat",
+            "emoji": "🍽️",
+            "label": "Eat",
+            "translationPt": "Comer"
           },
           {
             "text": "Run",
@@ -7018,28 +7018,65 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Walk",
-          "Eat",
           "Sleep",
+          "Eat",
           "Run"
         ],
         "correctAnswer": "Sleep",
-        "explanation": "😴 **Sleep** significa **Dormir** em inglês! Exemplo prático: \"Get eight hours of restful sleep.\"",
+        "explanation": "Exemplo prático: \"Get eight hours of restful sleep.\"",
         "phoneticHint": "/sliːp/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p16-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Read\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Read",
         "visualEmoji": "📖",
         "visualOptions": [
+          {
+            "text": "Walk",
+            "emoji": "🚶",
+            "label": "Walk",
+            "translationPt": "Caminhar"
+          },
+          {
+            "text": "Read",
+            "emoji": "📖",
+            "label": "Read",
+            "translationPt": "Ler"
+          },
           {
             "text": "Run",
             "emoji": "🏃",
             "label": "Run",
             "translationPt": "Correr"
           },
+          {
+            "text": "Eat",
+            "emoji": "🍽️",
+            "label": "Eat",
+            "translationPt": "Comer"
+          }
+        ],
+        "options": [
+          "Walk",
+          "Read",
+          "Run",
+          "Eat"
+        ],
+        "correctAnswer": "Read",
+        "explanation": "Exemplo prático: \"I read inspiring stories before bedtime.\"",
+        "phoneticHint": "/riːd/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p16-e7",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Write\"?",
+        "audioPhrase": "Write",
+        "visualEmoji": "✍️",
+        "visualOptions": [
           {
             "text": "Walk",
             "emoji": "🚶",
@@ -7051,37 +7088,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍽️",
             "label": "Eat",
             "translationPt": "Comer"
-          },
-          {
-            "text": "Read",
-            "emoji": "📖",
-            "label": "Read",
-            "translationPt": "Ler"
-          }
-        ],
-        "options": [
-          "Run",
-          "Walk",
-          "Eat",
-          "Read"
-        ],
-        "correctAnswer": "Read",
-        "explanation": "📖 **Read** significa **Ler** em inglês! Exemplo prático: \"I read inspiring stories before bedtime.\"",
-        "phoneticHint": "/riːd/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p16-e7",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Write\"**?",
-        "audioPhrase": "Write",
-        "visualEmoji": "✍️",
-        "visualOptions": [
-          {
-            "text": "Run",
-            "emoji": "🏃",
-            "label": "Run",
-            "translationPt": "Correr"
           },
           {
             "text": "Write",
@@ -7090,42 +7096,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escrever"
           },
           {
-            "text": "Eat",
-            "emoji": "🍽️",
-            "label": "Eat",
-            "translationPt": "Comer"
-          },
-          {
-            "text": "Walk",
-            "emoji": "🚶",
-            "label": "Walk",
-            "translationPt": "Caminhar"
+            "text": "Run",
+            "emoji": "🏃",
+            "label": "Run",
+            "translationPt": "Correr"
           }
         ],
         "options": [
-          "Run",
-          "Write",
+          "Walk",
           "Eat",
-          "Walk"
+          "Write",
+          "Run"
         ],
         "correctAnswer": "Write",
-        "explanation": "✍️ **Write** significa **Escrever** em inglês! Exemplo prático: \"Write new English words in your notebook.\"",
+        "explanation": "Exemplo prático: \"Write new English words in your notebook.\"",
         "phoneticHint": "/raɪt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Nadar\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Nadar\" em inglês?",
         "audioPhrase": "Swim",
         "visualEmoji": "🏊",
         "visualOptions": [
-          {
-            "text": "Walk",
-            "emoji": "🚶",
-            "label": "Walk",
-            "translationPt": "Caminhar"
-          },
           {
             "text": "Swim",
             "emoji": "🏊",
@@ -7143,23 +7137,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍽️",
             "label": "Eat",
             "translationPt": "Comer"
+          },
+          {
+            "text": "Walk",
+            "emoji": "🚶",
+            "label": "Walk",
+            "translationPt": "Caminhar"
           }
         ],
         "options": [
-          "Walk",
           "Swim",
           "Run",
-          "Eat"
+          "Eat",
+          "Walk"
         ],
         "correctAnswer": "Swim",
-        "explanation": "🏊 **Swim** significa **Nadar** em inglês! Exemplo prático: \"Learn how to swim in the pool.\"",
+        "explanation": "Exemplo prático: \"Learn how to swim in the pool.\"",
         "phoneticHint": "/swɪm/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p16-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Sing\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sing",
         "visualEmoji": "🎤",
         "visualOptions": [
@@ -7170,10 +7170,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Correr"
           },
           {
-            "text": "Sing",
-            "emoji": "🎤",
-            "label": "Sing",
-            "translationPt": "Cantar"
+            "text": "Eat",
+            "emoji": "🍽️",
+            "label": "Eat",
+            "translationPt": "Comer"
           },
           {
             "text": "Walk",
@@ -7182,36 +7182,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caminhar"
           },
           {
-            "text": "Eat",
-            "emoji": "🍽️",
-            "label": "Eat",
-            "translationPt": "Comer"
+            "text": "Sing",
+            "emoji": "🎤",
+            "label": "Sing",
+            "translationPt": "Cantar"
           }
         ],
         "options": [
           "Run",
-          "Sing",
+          "Eat",
           "Walk",
-          "Eat"
+          "Sing"
         ],
         "correctAnswer": "Sing",
-        "explanation": "🎤 **Sing** significa **Cantar** em inglês! Exemplo prático: \"Sing cheerful songs with friends.\"",
+        "explanation": "Exemplo prático: \"Sing cheerful songs with friends.\"",
         "phoneticHint": "/sɪŋ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Dance\"**?",
+        "prompt": "Qual imagem representa \"Dance\"?",
         "audioPhrase": "Dance",
         "visualEmoji": "💃",
         "visualOptions": [
-          {
-            "text": "Run",
-            "emoji": "🏃",
-            "label": "Run",
-            "translationPt": "Correr"
-          },
           {
             "text": "Dance",
             "emoji": "💃",
@@ -7225,6 +7219,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caminhar"
           },
           {
+            "text": "Run",
+            "emoji": "🏃",
+            "label": "Run",
+            "translationPt": "Correr"
+          },
+          {
             "text": "Eat",
             "emoji": "🍽️",
             "label": "Eat",
@@ -7232,13 +7232,13 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Run",
           "Dance",
           "Walk",
+          "Run",
           "Eat"
         ],
         "correctAnswer": "Dance",
-        "explanation": "💃 **Dance** significa **Dançar** em inglês! Exemplo prático: \"People dance to upbeat music.\"",
+        "explanation": "Exemplo prático: \"People dance to upbeat music.\"",
         "phoneticHint": "/dɑːns/",
         "skillCategory": "vocabulary"
       }
@@ -7265,15 +7265,15 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p17-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Happy\"**?",
+        "prompt": "Qual imagem representa \"Happy\"?",
         "audioPhrase": "Happy",
         "visualEmoji": "😊",
         "visualOptions": [
           {
-            "text": "Sad",
-            "emoji": "😢",
-            "label": "Sad",
-            "translationPt": "Triste"
+            "text": "Angry",
+            "emoji": "😠",
+            "label": "Angry",
+            "translationPt": "Bravo / Irritado"
           },
           {
             "text": "Surprised",
@@ -7282,47 +7282,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Surpreso / Admirado"
           },
           {
+            "text": "Sad",
+            "emoji": "😢",
+            "label": "Sad",
+            "translationPt": "Triste"
+          },
+          {
             "text": "Happy",
             "emoji": "😊",
             "label": "Happy",
             "translationPt": "Feliz"
-          },
-          {
-            "text": "Angry",
-            "emoji": "😠",
-            "label": "Angry",
-            "translationPt": "Bravo / Irritado"
           }
         ],
         "options": [
-          "Sad",
+          "Angry",
           "Surprised",
-          "Happy",
-          "Angry"
+          "Sad",
+          "Happy"
         ],
         "correctAnswer": "Happy",
-        "explanation": "😊 **Happy** significa **Feliz** em inglês! Exemplo prático: \"A warm smile shows that you are happy.\"",
+        "explanation": "Exemplo prático: \"A warm smile shows that you are happy.\"",
         "phoneticHint": "/ˈhæp.i/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p17-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Triste\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Triste\" em inglês?",
         "audioPhrase": "Sad",
         "visualEmoji": "😢",
         "visualOptions": [
-          {
-            "text": "Sad",
-            "emoji": "😢",
-            "label": "Sad",
-            "translationPt": "Triste"
-          },
           {
             "text": "Surprised",
             "emoji": "😮",
             "label": "Surprised",
             "translationPt": "Surpreso / Admirado"
+          },
+          {
+            "text": "Sad",
+            "emoji": "😢",
+            "label": "Sad",
+            "translationPt": "Triste"
           },
           {
             "text": "Happy",
@@ -7338,20 +7338,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Sad",
           "Surprised",
+          "Sad",
           "Happy",
           "Angry"
         ],
         "correctAnswer": "Sad",
-        "explanation": "😢 **Sad** significa **Triste** em inglês! Exemplo prático: \"A hug helps when someone feels sad.\"",
+        "explanation": "Exemplo prático: \"A hug helps when someone feels sad.\"",
         "phoneticHint": "/sæd/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p17-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Angry\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Angry",
         "visualEmoji": "😠",
         "visualOptions": [
@@ -7362,16 +7362,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bravo / Irritado"
           },
           {
-            "text": "Happy",
-            "emoji": "😊",
-            "label": "Happy",
-            "translationPt": "Feliz"
-          },
-          {
             "text": "Sad",
             "emoji": "😢",
             "label": "Sad",
             "translationPt": "Triste"
+          },
+          {
+            "text": "Happy",
+            "emoji": "😊",
+            "label": "Happy",
+            "translationPt": "Feliz"
           },
           {
             "text": "Surprised",
@@ -7382,28 +7382,22 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Angry",
-          "Happy",
           "Sad",
+          "Happy",
           "Surprised"
         ],
         "correctAnswer": "Angry",
-        "explanation": "😠 **Angry** significa **Bravo / Irritado** em inglês! Exemplo prático: \"Take deep breaths when you feel angry.\"",
+        "explanation": "Exemplo prático: \"Take deep breaths when you feel angry.\"",
         "phoneticHint": "/ˈæŋ.ɡri/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p17-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Surprised\"**?",
+        "prompt": "Qual imagem representa \"Surprised\"?",
         "audioPhrase": "Surprised",
         "visualEmoji": "😮",
         "visualOptions": [
-          {
-            "text": "Sad",
-            "emoji": "😢",
-            "label": "Sad",
-            "translationPt": "Triste"
-          },
           {
             "text": "Angry",
             "emoji": "😠",
@@ -7421,38 +7415,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "😊",
             "label": "Happy",
             "translationPt": "Feliz"
+          },
+          {
+            "text": "Sad",
+            "emoji": "😢",
+            "label": "Sad",
+            "translationPt": "Triste"
           }
         ],
         "options": [
-          "Sad",
           "Angry",
           "Surprised",
-          "Happy"
+          "Happy",
+          "Sad"
         ],
         "correctAnswer": "Surprised",
-        "explanation": "😮 **Surprised** significa **Surpreso / Admirado** em inglês! Exemplo prático: \"She was pleasantly surprised by the gift.\"",
+        "explanation": "Exemplo prático: \"She was pleasantly surprised by the gift.\"",
         "phoneticHint": "/səˈpraɪzd/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p17-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Cansado\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Cansado\" em inglês?",
         "audioPhrase": "Tired",
         "visualEmoji": "🥱",
         "visualOptions": [
-          {
-            "text": "Happy",
-            "emoji": "😊",
-            "label": "Happy",
-            "translationPt": "Feliz"
-          },
-          {
-            "text": "Angry",
-            "emoji": "😠",
-            "label": "Angry",
-            "translationPt": "Bravo / Irritado"
-          },
           {
             "text": "Tired",
             "emoji": "🥱",
@@ -7460,6 +7448,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cansado"
           },
           {
+            "text": "Happy",
+            "emoji": "😊",
+            "label": "Happy",
+            "translationPt": "Feliz"
+          },
+          {
+            "text": "Angry",
+            "emoji": "😠",
+            "label": "Angry",
+            "translationPt": "Bravo / Irritado"
+          },
+          {
             "text": "Sad",
             "emoji": "😢",
             "label": "Sad",
@@ -7467,28 +7467,34 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Tired",
           "Happy",
           "Angry",
-          "Tired",
           "Sad"
         ],
         "correctAnswer": "Tired",
-        "explanation": "🥱 **Tired** significa **Cansado** em inglês! Exemplo prático: \"After a long workday, he feels tired.\"",
+        "explanation": "Exemplo prático: \"After a long workday, he feels tired.\"",
         "phoneticHint": "/taɪəd/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p17-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Confused\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Confused",
         "visualEmoji": "🤔",
         "visualOptions": [
           {
-            "text": "Happy",
-            "emoji": "😊",
-            "label": "Happy",
-            "translationPt": "Feliz"
+            "text": "Sad",
+            "emoji": "😢",
+            "label": "Sad",
+            "translationPt": "Triste"
+          },
+          {
+            "text": "Angry",
+            "emoji": "😠",
+            "label": "Angry",
+            "translationPt": "Bravo / Irritado"
           },
           {
             "text": "Confused",
@@ -7497,48 +7503,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Confuso"
           },
           {
-            "text": "Sad",
-            "emoji": "😢",
-            "label": "Sad",
-            "translationPt": "Triste"
-          },
-          {
-            "text": "Angry",
-            "emoji": "😠",
-            "label": "Angry",
-            "translationPt": "Bravo / Irritado"
+            "text": "Happy",
+            "emoji": "😊",
+            "label": "Happy",
+            "translationPt": "Feliz"
           }
         ],
         "options": [
-          "Happy",
-          "Confused",
           "Sad",
-          "Angry"
+          "Angry",
+          "Confused",
+          "Happy"
         ],
         "correctAnswer": "Confused",
-        "explanation": "🤔 **Confused** significa **Confuso** em inglês! Exemplo prático: \"Ask questions if you feel confused.\"",
+        "explanation": "Exemplo prático: \"Ask questions if you feel confused.\"",
         "phoneticHint": "/kənˈfjuːzd/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p17-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Scared\"**?",
+        "prompt": "Qual imagem representa \"Scared\"?",
         "audioPhrase": "Scared",
         "visualEmoji": "😨",
         "visualOptions": [
-          {
-            "text": "Sad",
-            "emoji": "😢",
-            "label": "Sad",
-            "translationPt": "Triste"
-          },
-          {
-            "text": "Angry",
-            "emoji": "😠",
-            "label": "Angry",
-            "translationPt": "Bravo / Irritado"
-          },
           {
             "text": "Scared",
             "emoji": "😨",
@@ -7550,37 +7538,49 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "😊",
             "label": "Happy",
             "translationPt": "Feliz"
-          }
-        ],
-        "options": [
-          "Sad",
-          "Angry",
-          "Scared",
-          "Happy"
-        ],
-        "correctAnswer": "Scared",
-        "explanation": "😨 **Scared** significa **Com medo / Assustado** em inglês! Exemplo prático: \"Thunder sometimes makes children scared.\"",
-        "phoneticHint": "/skeəd/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p17-e8",
-        "type": "image-choice",
-        "prompt": "Como se diz **\"Animado / Empolgado\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Excited",
-        "visualEmoji": "🤩",
-        "visualOptions": [
-          {
-            "text": "Sad",
-            "emoji": "😢",
-            "label": "Sad",
-            "translationPt": "Triste"
           },
           {
             "text": "Angry",
             "emoji": "😠",
             "label": "Angry",
             "translationPt": "Bravo / Irritado"
+          },
+          {
+            "text": "Sad",
+            "emoji": "😢",
+            "label": "Sad",
+            "translationPt": "Triste"
+          }
+        ],
+        "options": [
+          "Scared",
+          "Happy",
+          "Angry",
+          "Sad"
+        ],
+        "correctAnswer": "Scared",
+        "explanation": "Exemplo prático: \"Thunder sometimes makes children scared.\"",
+        "phoneticHint": "/skeəd/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p17-e8",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Animado / Empolgado\" em inglês?",
+        "audioPhrase": "Excited",
+        "visualEmoji": "🤩",
+        "visualOptions": [
+          {
+            "text": "Angry",
+            "emoji": "😠",
+            "label": "Angry",
+            "translationPt": "Bravo / Irritado"
+          },
+          {
+            "text": "Sad",
+            "emoji": "😢",
+            "label": "Sad",
+            "translationPt": "Triste"
           },
           {
             "text": "Happy",
@@ -7596,23 +7596,29 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Sad",
           "Angry",
+          "Sad",
           "Happy",
           "Excited"
         ],
         "correctAnswer": "Excited",
-        "explanation": "🤩 **Excited** significa **Animado / Empolgado** em inglês! Exemplo prático: \"We are excited about the upcoming holiday.\"",
+        "explanation": "Exemplo prático: \"We are excited about the upcoming holiday.\"",
         "phoneticHint": "/ɪkˈsaɪ.tɪd/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p17-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Calm\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Calm",
         "visualEmoji": "😌",
         "visualOptions": [
+          {
+            "text": "Sad",
+            "emoji": "😢",
+            "label": "Sad",
+            "translationPt": "Triste"
+          },
           {
             "text": "Calm",
             "emoji": "😌",
@@ -7630,38 +7636,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "😊",
             "label": "Happy",
             "translationPt": "Feliz"
-          },
-          {
-            "text": "Sad",
-            "emoji": "😢",
-            "label": "Sad",
-            "translationPt": "Triste"
           }
         ],
         "options": [
+          "Sad",
           "Calm",
           "Angry",
-          "Happy",
-          "Sad"
+          "Happy"
         ],
         "correctAnswer": "Calm",
-        "explanation": "😌 **Calm** significa **Calmo / Tranquilo** em inglês! Exemplo prático: \"Meditation keeps your mind peaceful and calm.\"",
+        "explanation": "Exemplo prático: \"Meditation keeps your mind peaceful and calm.\"",
         "phoneticHint": "/kɑːm/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p17-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Cool\"**?",
+        "prompt": "Qual imagem representa \"Cool\"?",
         "audioPhrase": "Cool",
         "visualEmoji": "😎",
         "visualOptions": [
-          {
-            "text": "Angry",
-            "emoji": "😠",
-            "label": "Angry",
-            "translationPt": "Bravo / Irritado"
-          },
           {
             "text": "Happy",
             "emoji": "😊",
@@ -7679,16 +7673,22 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "😢",
             "label": "Sad",
             "translationPt": "Triste"
+          },
+          {
+            "text": "Angry",
+            "emoji": "😠",
+            "label": "Angry",
+            "translationPt": "Bravo / Irritado"
           }
         ],
         "options": [
-          "Angry",
           "Happy",
           "Cool",
-          "Sad"
+          "Sad",
+          "Angry"
         ],
         "correctAnswer": "Cool",
-        "explanation": "😎 **Cool** significa **Descolado / Legal** em inglês! Exemplo prático: \"Wearing sunglasses looks very cool.\"",
+        "explanation": "Exemplo prático: \"Wearing sunglasses looks very cool.\"",
         "phoneticHint": "/kuːl/",
         "skillCategory": "vocabulary"
       }
@@ -7715,21 +7715,21 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p18-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Book\"**?",
+        "prompt": "Qual imagem representa \"Book\"?",
         "audioPhrase": "Book",
         "visualEmoji": "📚",
         "visualOptions": [
-          {
-            "text": "Pencil",
-            "emoji": "✏️",
-            "label": "Pencil",
-            "translationPt": "Lápis"
-          },
           {
             "text": "Notebook",
             "emoji": "📓",
             "label": "Notebook",
             "translationPt": "Caderno de anotações"
+          },
+          {
+            "text": "Pencil",
+            "emoji": "✏️",
+            "label": "Pencil",
+            "translationPt": "Lápis"
           },
           {
             "text": "Book",
@@ -7745,24 +7745,30 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Pencil",
           "Notebook",
+          "Pencil",
           "Book",
           "Pen"
         ],
         "correctAnswer": "Book",
-        "explanation": "📚 **Book** significa **Livro** em inglês! Exemplo prático: \"Reading a good book enriches your vocabulary.\"",
+        "explanation": "Exemplo prático: \"Reading a good book enriches your vocabulary.\"",
         "phoneticHint": "/bʊk/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p18-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Caderno de anotações\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Caderno de anotações\" em inglês?",
         "audioPhrase": "Notebook",
         "visualEmoji": "📓",
         "visualOptions": [
           {
+            "text": "Pencil",
+            "emoji": "✏️",
+            "label": "Pencil",
+            "translationPt": "Lápis"
+          },
+          {
             "text": "Book",
             "emoji": "📚",
             "label": "Book",
@@ -7773,55 +7779,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🖊️",
             "label": "Pen",
             "translationPt": "Caneta"
-          },
-          {
-            "text": "Notebook",
-            "emoji": "📓",
-            "label": "Notebook",
-            "translationPt": "Caderno de anotações"
-          },
-          {
-            "text": "Pencil",
-            "emoji": "✏️",
-            "label": "Pencil",
-            "translationPt": "Lápis"
-          }
-        ],
-        "options": [
-          "Book",
-          "Pen",
-          "Notebook",
-          "Pencil"
-        ],
-        "correctAnswer": "Notebook",
-        "explanation": "📓 **Notebook** significa **Caderno de anotações** em inglês! Exemplo prático: \"Write lecture notes inside your notebook.\"",
-        "phoneticHint": "/ˈnoʊt.bʊk/",
-        "skillCategory": "reading"
-      },
-      {
-        "id": "w0-p18-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Pen\"**:",
-        "audioPhrase": "Pen",
-        "visualEmoji": "🖊️",
-        "visualOptions": [
-          {
-            "text": "Pencil",
-            "emoji": "✏️",
-            "label": "Pencil",
-            "translationPt": "Lápis"
-          },
-          {
-            "text": "Pen",
-            "emoji": "🖊️",
-            "label": "Pen",
-            "translationPt": "Caneta"
-          },
-          {
-            "text": "Book",
-            "emoji": "📚",
-            "label": "Book",
-            "translationPt": "Livro"
           },
           {
             "text": "Notebook",
@@ -7832,33 +7789,27 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Pencil",
-          "Pen",
           "Book",
+          "Pen",
           "Notebook"
         ],
-        "correctAnswer": "Pen",
-        "explanation": "🖊️ **Pen** significa **Caneta** em inglês! Exemplo prático: \"Sign the contract using blue ink with a pen.\"",
-        "phoneticHint": "/pen/",
-        "skillCategory": "listening"
+        "correctAnswer": "Notebook",
+        "explanation": "Exemplo prático: \"Write lecture notes inside your notebook.\"",
+        "phoneticHint": "/ˈnoʊt.bʊk/",
+        "skillCategory": "reading"
       },
       {
-        "id": "w0-p18-e4",
+        "id": "w0-p18-e3",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Pencil\"**?",
-        "audioPhrase": "Pencil",
-        "visualEmoji": "✏️",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Pen",
+        "visualEmoji": "🖊️",
         "visualOptions": [
           {
             "text": "Book",
             "emoji": "📚",
             "label": "Book",
             "translationPt": "Livro"
-          },
-          {
-            "text": "Notebook",
-            "emoji": "📓",
-            "label": "Notebook",
-            "translationPt": "Caderno de anotações"
           },
           {
             "text": "Pen",
@@ -7871,32 +7822,75 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "✏️",
             "label": "Pencil",
             "translationPt": "Lápis"
+          },
+          {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno de anotações"
           }
         ],
         "options": [
           "Book",
-          "Notebook",
           "Pen",
-          "Pencil"
+          "Pencil",
+          "Notebook"
+        ],
+        "correctAnswer": "Pen",
+        "explanation": "Exemplo prático: \"Sign the contract using blue ink with a pen.\"",
+        "phoneticHint": "/pen/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p18-e4",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Pencil\"?",
+        "audioPhrase": "Pencil",
+        "visualEmoji": "✏️",
+        "visualOptions": [
+          {
+            "text": "Pen",
+            "emoji": "🖊️",
+            "label": "Pen",
+            "translationPt": "Caneta"
+          },
+          {
+            "text": "Book",
+            "emoji": "📚",
+            "label": "Book",
+            "translationPt": "Livro"
+          },
+          {
+            "text": "Pencil",
+            "emoji": "✏️",
+            "label": "Pencil",
+            "translationPt": "Lápis"
+          },
+          {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno de anotações"
+          }
+        ],
+        "options": [
+          "Pen",
+          "Book",
+          "Pencil",
+          "Notebook"
         ],
         "correctAnswer": "Pencil",
-        "explanation": "✏️ **Pencil** significa **Lápis** em inglês! Exemplo prático: \"Sketch drawing lines with a sharp pencil.\"",
+        "explanation": "Exemplo prático: \"Sketch drawing lines with a sharp pencil.\"",
         "phoneticHint": "/ˈpen.səl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p18-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Borracha escolar\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Borracha escolar\" em inglês?",
         "audioPhrase": "Eraser",
         "visualEmoji": "🧼",
         "visualOptions": [
-          {
-            "text": "Eraser",
-            "emoji": "🧼",
-            "label": "Eraser",
-            "translationPt": "Borracha escolar"
-          },
           {
             "text": "Notebook",
             "emoji": "📓",
@@ -7914,38 +7908,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🖊️",
             "label": "Pen",
             "translationPt": "Caneta"
+          },
+          {
+            "text": "Eraser",
+            "emoji": "🧼",
+            "label": "Eraser",
+            "translationPt": "Borracha escolar"
           }
         ],
         "options": [
-          "Eraser",
           "Notebook",
           "Book",
-          "Pen"
+          "Pen",
+          "Eraser"
         ],
         "correctAnswer": "Eraser",
-        "explanation": "🧼 **Eraser** significa **Borracha escolar** em inglês! Exemplo prático: \"Erase mistakes cleanly with an eraser.\"",
+        "explanation": "Exemplo prático: \"Erase mistakes cleanly with an eraser.\"",
         "phoneticHint": "/ɪˈreɪ.zər/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p18-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Ruler\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ruler",
         "visualEmoji": "📏",
         "visualOptions": [
-          {
-            "text": "Pen",
-            "emoji": "🖊️",
-            "label": "Pen",
-            "translationPt": "Caneta"
-          },
-          {
-            "text": "Book",
-            "emoji": "📚",
-            "label": "Book",
-            "translationPt": "Livro"
-          },
           {
             "text": "Notebook",
             "emoji": "📓",
@@ -7957,23 +7945,35 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📏",
             "label": "Ruler",
             "translationPt": "Régua"
+          },
+          {
+            "text": "Pen",
+            "emoji": "🖊️",
+            "label": "Pen",
+            "translationPt": "Caneta"
+          },
+          {
+            "text": "Book",
+            "emoji": "📚",
+            "label": "Book",
+            "translationPt": "Livro"
           }
         ],
         "options": [
-          "Pen",
-          "Book",
           "Notebook",
-          "Ruler"
+          "Ruler",
+          "Pen",
+          "Book"
         ],
         "correctAnswer": "Ruler",
-        "explanation": "📏 **Ruler** significa **Régua** em inglês! Exemplo prático: \"Measure length accurately with a clear ruler.\"",
+        "explanation": "Exemplo prático: \"Measure length accurately with a clear ruler.\"",
         "phoneticHint": "/ˈruː.lər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p18-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Scissors\"**?",
+        "prompt": "Qual imagem representa \"Scissors\"?",
         "audioPhrase": "Scissors",
         "visualEmoji": "✂️",
         "visualOptions": [
@@ -7984,16 +7984,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tesoura"
           },
           {
-            "text": "Book",
-            "emoji": "📚",
-            "label": "Book",
-            "translationPt": "Livro"
-          },
-          {
             "text": "Pen",
             "emoji": "🖊️",
             "label": "Pen",
             "translationPt": "Caneta"
+          },
+          {
+            "text": "Book",
+            "emoji": "📚",
+            "label": "Book",
+            "translationPt": "Livro"
           },
           {
             "text": "Notebook",
@@ -8004,27 +8004,27 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Scissors",
-          "Book",
           "Pen",
+          "Book",
           "Notebook"
         ],
         "correctAnswer": "Scissors",
-        "explanation": "✂️ **Scissors** significa **Tesoura** em inglês! Exemplo prático: \"Cut paper shapes using safety scissors.\"",
+        "explanation": "Exemplo prático: \"Cut paper shapes using safety scissors.\"",
         "phoneticHint": "/ˈsɪz.əz/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p18-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Cola escolar\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Cola escolar\" em inglês?",
         "audioPhrase": "Glue",
         "visualEmoji": "🧴",
         "visualOptions": [
           {
-            "text": "Glue",
-            "emoji": "🧴",
-            "label": "Glue",
-            "translationPt": "Cola escolar"
+            "text": "Book",
+            "emoji": "📚",
+            "label": "Book",
+            "translationPt": "Livro"
           },
           {
             "text": "Pen",
@@ -8039,27 +8039,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caderno de anotações"
           },
           {
-            "text": "Book",
-            "emoji": "📚",
-            "label": "Book",
-            "translationPt": "Livro"
+            "text": "Glue",
+            "emoji": "🧴",
+            "label": "Glue",
+            "translationPt": "Cola escolar"
           }
         ],
         "options": [
-          "Glue",
+          "Book",
           "Pen",
           "Notebook",
-          "Book"
+          "Glue"
         ],
         "correctAnswer": "Glue",
-        "explanation": "🧴 **Glue** significa **Cola escolar** em inglês! Exemplo prático: \"Paste the collage together with stick glue.\"",
+        "explanation": "Exemplo prático: \"Paste the collage together with stick glue.\"",
         "phoneticHint": "/ɡluː/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p18-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Desk\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Desk",
         "visualEmoji": "🧑‍💻",
         "visualOptions": [
@@ -8070,6 +8070,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carteira / Mesa de estudos"
           },
           {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno de anotações"
+          },
+          {
             "text": "Pen",
             "emoji": "🖊️",
             "label": "Pen",
@@ -8080,44 +8086,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📚",
             "label": "Book",
             "translationPt": "Livro"
-          },
-          {
-            "text": "Notebook",
-            "emoji": "📓",
-            "label": "Notebook",
-            "translationPt": "Caderno de anotações"
           }
         ],
         "options": [
           "Desk",
+          "Notebook",
           "Pen",
-          "Book",
-          "Notebook"
+          "Book"
         ],
         "correctAnswer": "Desk",
-        "explanation": "🧑‍💻 **Desk** significa **Carteira / Mesa de estudos** em inglês! Exemplo prático: \"Sit at your study desk to complete homework.\"",
+        "explanation": "Exemplo prático: \"Sit at your study desk to complete homework.\"",
         "phoneticHint": "/desk/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p18-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Calculator\"**?",
+        "prompt": "Qual imagem representa \"Calculator\"?",
         "audioPhrase": "Calculator",
         "visualEmoji": "🔢",
         "visualOptions": [
-          {
-            "text": "Notebook",
-            "emoji": "📓",
-            "label": "Notebook",
-            "translationPt": "Caderno de anotações"
-          },
-          {
-            "text": "Calculator",
-            "emoji": "🔢",
-            "label": "Calculator",
-            "translationPt": "Calculadora"
-          },
           {
             "text": "Pen",
             "emoji": "🖊️",
@@ -8125,20 +8113,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caneta"
           },
           {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno de anotações"
+          },
+          {
             "text": "Book",
             "emoji": "📚",
             "label": "Book",
             "translationPt": "Livro"
+          },
+          {
+            "text": "Calculator",
+            "emoji": "🔢",
+            "label": "Calculator",
+            "translationPt": "Calculadora"
           }
         ],
         "options": [
-          "Notebook",
-          "Calculator",
           "Pen",
-          "Book"
+          "Notebook",
+          "Book",
+          "Calculator"
         ],
         "correctAnswer": "Calculator",
-        "explanation": "🔢 **Calculator** significa **Calculadora** em inglês! Exemplo prático: \"Solve math equations using a digital calculator.\"",
+        "explanation": "Exemplo prático: \"Solve math equations using a digital calculator.\"",
         "phoneticHint": "/ˈkæl.kjə.leɪ.tər/",
         "skillCategory": "vocabulary"
       }
@@ -8165,7 +8165,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p19-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Baby\"**?",
+        "prompt": "Qual imagem representa \"Baby\"?",
         "audioPhrase": "Baby",
         "visualEmoji": "👶",
         "visualOptions": [
@@ -8201,14 +8201,14 @@ export const WORLD_0_PHASES: Phase[] = [
           "Man"
         ],
         "correctAnswer": "Baby",
-        "explanation": "👶 **Baby** significa **Bebê** em inglês! Exemplo prático: \"The newborn baby smiles gently.\"",
+        "explanation": "Exemplo prático: \"The newborn baby smiles gently.\"",
         "phoneticHint": "/ˈbeɪ.bi/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p19-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Menino / Garoto\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Menino / Garoto\" em inglês?",
         "audioPhrase": "Boy",
         "visualEmoji": "👦",
         "visualOptions": [
@@ -8244,14 +8244,14 @@ export const WORLD_0_PHASES: Phase[] = [
           "Girl"
         ],
         "correctAnswer": "Boy",
-        "explanation": "👦 **Boy** significa **Menino / Garoto** em inglês! Exemplo prático: \"The active boy kicks the football.\"",
+        "explanation": "Exemplo prático: \"The active boy kicks the football.\"",
         "phoneticHint": "/bɔɪ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p19-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Girl\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Girl",
         "visualEmoji": "👧",
         "visualOptions": [
@@ -8262,10 +8262,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Menina / Garota"
           },
           {
-            "text": "Baby",
-            "emoji": "👶",
-            "label": "Baby",
-            "translationPt": "Bebê"
+            "text": "Man",
+            "emoji": "👨",
+            "label": "Man",
+            "translationPt": "Homem"
           },
           {
             "text": "Boy",
@@ -8274,29 +8274,72 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Menino / Garoto"
           },
           {
-            "text": "Man",
-            "emoji": "👨",
-            "label": "Man",
-            "translationPt": "Homem"
+            "text": "Baby",
+            "emoji": "👶",
+            "label": "Baby",
+            "translationPt": "Bebê"
           }
         ],
         "options": [
           "Girl",
-          "Baby",
+          "Man",
           "Boy",
-          "Man"
+          "Baby"
         ],
         "correctAnswer": "Girl",
-        "explanation": "👧 **Girl** significa **Menina / Garota** em inglês! Exemplo prático: \"The creative girl paints a portrait.\"",
+        "explanation": "Exemplo prático: \"The creative girl paints a portrait.\"",
         "phoneticHint": "/ɡɜːl/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p19-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Man\"**?",
+        "prompt": "Qual imagem representa \"Man\"?",
         "audioPhrase": "Man",
         "visualEmoji": "👨",
+        "visualOptions": [
+          {
+            "text": "Boy",
+            "emoji": "👦",
+            "label": "Boy",
+            "translationPt": "Menino / Garoto"
+          },
+          {
+            "text": "Girl",
+            "emoji": "👧",
+            "label": "Girl",
+            "translationPt": "Menina / Garota"
+          },
+          {
+            "text": "Man",
+            "emoji": "👨",
+            "label": "Man",
+            "translationPt": "Homem"
+          },
+          {
+            "text": "Baby",
+            "emoji": "👶",
+            "label": "Baby",
+            "translationPt": "Bebê"
+          }
+        ],
+        "options": [
+          "Boy",
+          "Girl",
+          "Man",
+          "Baby"
+        ],
+        "correctAnswer": "Man",
+        "explanation": "Exemplo prático: \"The kind man helps his neighbors.\"",
+        "phoneticHint": "/mæn/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p19-e5",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Mulher\" em inglês?",
+        "audioPhrase": "Woman",
+        "visualEmoji": "👩",
         "visualOptions": [
           {
             "text": "Girl",
@@ -8310,37 +8353,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "label": "Baby",
             "translationPt": "Bebê"
           },
-          {
-            "text": "Boy",
-            "emoji": "👦",
-            "label": "Boy",
-            "translationPt": "Menino / Garoto"
-          },
-          {
-            "text": "Man",
-            "emoji": "👨",
-            "label": "Man",
-            "translationPt": "Homem"
-          }
-        ],
-        "options": [
-          "Girl",
-          "Baby",
-          "Boy",
-          "Man"
-        ],
-        "correctAnswer": "Man",
-        "explanation": "👨 **Man** significa **Homem** em inglês! Exemplo prático: \"The kind man helps his neighbors.\"",
-        "phoneticHint": "/mæn/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p19-e5",
-        "type": "image-choice",
-        "prompt": "Como se diz **\"Mulher\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Woman",
-        "visualEmoji": "👩",
-        "visualOptions": [
           {
             "text": "Woman",
             "emoji": "👩",
@@ -8348,18 +8360,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mulher"
           },
           {
-            "text": "Girl",
-            "emoji": "👧",
-            "label": "Girl",
-            "translationPt": "Menina / Garota"
-          },
-          {
-            "text": "Baby",
-            "emoji": "👶",
-            "label": "Baby",
-            "translationPt": "Bebê"
-          },
-          {
             "text": "Boy",
             "emoji": "👦",
             "label": "Boy",
@@ -8367,34 +8367,34 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Woman",
           "Girl",
           "Baby",
+          "Woman",
           "Boy"
         ],
         "correctAnswer": "Woman",
-        "explanation": "👩 **Woman** significa **Mulher** em inglês! Exemplo prático: \"The professional woman leads the meeting.\"",
+        "explanation": "Exemplo prático: \"The professional woman leads the meeting.\"",
         "phoneticHint": "/ˈwʊm.ən/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p19-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Mother\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Mother",
         "visualEmoji": "👩‍👧",
         "visualOptions": [
-          {
-            "text": "Mother",
-            "emoji": "👩‍👧",
-            "label": "Mother / Mom",
-            "translationPt": "Mãe"
-          },
           {
             "text": "Boy",
             "emoji": "👦",
             "label": "Boy",
             "translationPt": "Menino / Garoto"
+          },
+          {
+            "text": "Baby",
+            "emoji": "👶",
+            "label": "Baby",
+            "translationPt": "Bebê"
           },
           {
             "text": "Girl",
@@ -8403,30 +8403,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Menina / Garota"
           },
           {
-            "text": "Baby",
-            "emoji": "👶",
-            "label": "Baby",
-            "translationPt": "Bebê"
+            "text": "Mother",
+            "emoji": "👩‍👧",
+            "label": "Mother / Mom",
+            "translationPt": "Mãe"
           }
         ],
         "options": [
-          "Mother",
           "Boy",
+          "Baby",
           "Girl",
-          "Baby"
+          "Mother"
         ],
         "correctAnswer": "Mother",
-        "explanation": "👩‍👧 **Mother** significa **Mãe** em inglês! Exemplo prático: \"A mother hugs her child with love.\"",
+        "explanation": "Exemplo prático: \"A mother hugs her child with love.\"",
         "phoneticHint": "/ˈmʌð.ər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p19-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Father\"**?",
+        "prompt": "Qual imagem representa \"Father\"?",
         "audioPhrase": "Father",
         "visualEmoji": "👨‍👦",
         "visualOptions": [
+          {
+            "text": "Baby",
+            "emoji": "👶",
+            "label": "Baby",
+            "translationPt": "Bebê"
+          },
           {
             "text": "Father",
             "emoji": "👨‍👦",
@@ -8434,48 +8440,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pai"
           },
           {
-            "text": "Baby",
-            "emoji": "👶",
-            "label": "Baby",
-            "translationPt": "Bebê"
+            "text": "Girl",
+            "emoji": "👧",
+            "label": "Girl",
+            "translationPt": "Menina / Garota"
           },
           {
             "text": "Boy",
             "emoji": "👦",
             "label": "Boy",
             "translationPt": "Menino / Garoto"
-          },
-          {
-            "text": "Girl",
-            "emoji": "👧",
-            "label": "Girl",
-            "translationPt": "Menina / Garota"
           }
         ],
         "options": [
-          "Father",
           "Baby",
-          "Boy",
-          "Girl"
+          "Father",
+          "Girl",
+          "Boy"
         ],
         "correctAnswer": "Father",
-        "explanation": "👨‍👦 **Father** significa **Pai** em inglês! Exemplo prático: \"A father teaches his son to ride a bike.\"",
+        "explanation": "Exemplo prático: \"A father teaches his son to ride a bike.\"",
         "phoneticHint": "/ˈfɑː.ðər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p19-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Amigo(a)\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Amigo(a)\" em inglês?",
         "audioPhrase": "Friend",
         "visualEmoji": "🤝",
         "visualOptions": [
-          {
-            "text": "Baby",
-            "emoji": "👶",
-            "label": "Baby",
-            "translationPt": "Bebê"
-          },
           {
             "text": "Friend",
             "emoji": "🤝",
@@ -8483,41 +8477,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Amigo(a)"
           },
           {
+            "text": "Girl",
+            "emoji": "👧",
+            "label": "Girl",
+            "translationPt": "Menina / Garota"
+          },
+          {
             "text": "Boy",
             "emoji": "👦",
             "label": "Boy",
             "translationPt": "Menino / Garoto"
           },
           {
-            "text": "Girl",
-            "emoji": "👧",
-            "label": "Girl",
-            "translationPt": "Menina / Garota"
+            "text": "Baby",
+            "emoji": "👶",
+            "label": "Baby",
+            "translationPt": "Bebê"
           }
         ],
         "options": [
-          "Baby",
           "Friend",
+          "Girl",
           "Boy",
-          "Girl"
+          "Baby"
         ],
         "correctAnswer": "Friend",
-        "explanation": "🤝 **Friend** significa **Amigo(a)** em inglês! Exemplo prático: \"A true friend is always supportive.\"",
+        "explanation": "Exemplo prático: \"A true friend is always supportive.\"",
         "phoneticHint": "/frend/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p19-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Grandfather\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Grandfather",
         "visualEmoji": "👴",
         "visualOptions": [
           {
-            "text": "Baby",
-            "emoji": "👶",
-            "label": "Baby",
-            "translationPt": "Bebê"
+            "text": "Girl",
+            "emoji": "👧",
+            "label": "Girl",
+            "translationPt": "Menina / Garota"
           },
           {
             "text": "Grandfather",
@@ -8526,10 +8526,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Avô"
           },
           {
-            "text": "Girl",
-            "emoji": "👧",
-            "label": "Girl",
-            "translationPt": "Menina / Garota"
+            "text": "Baby",
+            "emoji": "👶",
+            "label": "Baby",
+            "translationPt": "Bebê"
           },
           {
             "text": "Boy",
@@ -8539,20 +8539,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Baby",
-          "Grandfather",
           "Girl",
+          "Grandfather",
+          "Baby",
           "Boy"
         ],
         "correctAnswer": "Grandfather",
-        "explanation": "👴 **Grandfather** significa **Avô** em inglês! Exemplo prático: \"Grandfather tells entertaining historical stories.\"",
+        "explanation": "Exemplo prático: \"Grandfather tells entertaining historical stories.\"",
         "phoneticHint": "/ˈɡræn.fɑː.ðər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p19-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Grandmother\"**?",
+        "prompt": "Qual imagem representa \"Grandmother\"?",
         "audioPhrase": "Grandmother",
         "visualEmoji": "👵",
         "visualOptions": [
@@ -8569,26 +8569,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Menino / Garoto"
           },
           {
-            "text": "Baby",
-            "emoji": "👶",
-            "label": "Baby",
-            "translationPt": "Bebê"
-          },
-          {
             "text": "Grandmother",
             "emoji": "👵",
             "label": "Grandmother / Grandma",
             "translationPt": "Avó"
+          },
+          {
+            "text": "Baby",
+            "emoji": "👶",
+            "label": "Baby",
+            "translationPt": "Bebê"
           }
         ],
         "options": [
           "Girl",
           "Boy",
-          "Baby",
-          "Grandmother"
+          "Grandmother",
+          "Baby"
         ],
         "correctAnswer": "Grandmother",
-        "explanation": "👵 **Grandmother** significa **Avó** em inglês! Exemplo prático: \"Grandmother bakes delicious cinnamon cookies.\"",
+        "explanation": "Exemplo prático: \"Grandmother bakes delicious cinnamon cookies.\"",
         "phoneticHint": "/ˈɡræn.mʌð.ər/",
         "skillCategory": "vocabulary"
       }
@@ -8615,21 +8615,21 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p20-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Bread\"**?",
+        "prompt": "Qual imagem representa \"Bread\"?",
         "audioPhrase": "Bread",
         "visualEmoji": "🍞",
         "visualOptions": [
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
-          },
           {
             "text": "School",
             "emoji": "🏫",
             "label": "School",
             "translationPt": "Escola"
+          },
+          {
+            "text": "Sun",
+            "emoji": "☀️",
+            "label": "Sun",
+            "translationPt": "Sol brilhante"
           },
           {
             "text": "Phone",
@@ -8638,42 +8638,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Telefone celular"
           },
           {
-            "text": "Sun",
-            "emoji": "☀️",
-            "label": "Sun",
-            "translationPt": "Sol brilhante"
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
           }
         ],
         "options": [
-          "Bread",
           "School",
+          "Sun",
           "Phone",
-          "Sun"
+          "Bread"
         ],
         "correctAnswer": "Bread",
-        "explanation": "🍞 **Bread** significa **Pão** em inglês! Exemplo prático: \"Warm sliced bread.\"",
+        "explanation": "Exemplo prático: \"Warm sliced bread.\"",
         "phoneticHint": "/bred/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p20-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Telefone celular\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Telefone celular\" em inglês?",
         "audioPhrase": "Phone",
         "visualEmoji": "📱",
         "visualOptions": [
-          {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Telefone celular"
-          },
-          {
-            "text": "Sun",
-            "emoji": "☀️",
-            "label": "Sun",
-            "translationPt": "Sol brilhante"
-          },
           {
             "text": "Bread",
             "emoji": "🍞",
@@ -8681,27 +8669,39 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pão"
           },
           {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Telefone celular"
+          },
+          {
             "text": "School",
             "emoji": "🏫",
             "label": "School",
             "translationPt": "Escola"
+          },
+          {
+            "text": "Sun",
+            "emoji": "☀️",
+            "label": "Sun",
+            "translationPt": "Sol brilhante"
           }
         ],
         "options": [
-          "Phone",
-          "Sun",
           "Bread",
-          "School"
+          "Phone",
+          "School",
+          "Sun"
         ],
         "correctAnswer": "Phone",
-        "explanation": "📱 **Phone** significa **Telefone celular** em inglês! Exemplo prático: \"A smart mobile phone.\"",
+        "explanation": "Exemplo prático: \"A smart mobile phone.\"",
         "phoneticHint": "/foʊn/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p20-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"School\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "School",
         "visualEmoji": "🏫",
         "visualOptions": [
@@ -8737,14 +8737,14 @@ export const WORLD_0_PHASES: Phase[] = [
           "Sun"
         ],
         "correctAnswer": "School",
-        "explanation": "🏫 **School** significa **Escola** em inglês! Exemplo prático: \"A place of knowledge.\"",
+        "explanation": "Exemplo prático: \"A place of knowledge.\"",
         "phoneticHint": "/skuːl/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p20-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Sun\"**?",
+        "prompt": "Qual imagem representa \"Sun\"?",
         "audioPhrase": "Sun",
         "visualEmoji": "☀️",
         "visualOptions": [
@@ -8755,6 +8755,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sol brilhante"
           },
           {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
+          {
             "text": "Phone",
             "emoji": "📱",
             "label": "Phone",
@@ -8765,31 +8771,68 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏫",
             "label": "School",
             "translationPt": "Escola"
-          },
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
           }
         ],
         "options": [
           "Sun",
+          "Bread",
           "Phone",
-          "School",
-          "Bread"
+          "School"
         ],
         "correctAnswer": "Sun",
-        "explanation": "☀️ **Sun** significa **Sol brilhante** em inglês! Exemplo prático: \"The radiant center of our solar system.\"",
+        "explanation": "Exemplo prático: \"The radiant center of our solar system.\"",
         "phoneticHint": "/sʌn/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p20-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Chuva\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Chuva\" em inglês?",
         "audioPhrase": "Rain",
         "visualEmoji": "🌧️",
+        "visualOptions": [
+          {
+            "text": "Rain",
+            "emoji": "🌧️",
+            "label": "Rain",
+            "translationPt": "Chuva"
+          },
+          {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
+          {
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola"
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Telefone celular"
+          }
+        ],
+        "options": [
+          "Rain",
+          "Bread",
+          "School",
+          "Phone"
+        ],
+        "correctAnswer": "Rain",
+        "explanation": "Exemplo prático: \"Refreshing raindrops falling.\"",
+        "phoneticHint": "/reɪn/",
+        "skillCategory": "reading"
+      },
+      {
+        "id": "w0-p20-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Run",
+        "visualEmoji": "🏃",
         "visualOptions": [
           {
             "text": "School",
@@ -8798,47 +8841,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escola"
           },
           {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
-          },
-          {
             "text": "Phone",
             "emoji": "📱",
             "label": "Phone",
             "translationPt": "Telefone celular"
-          },
-          {
-            "text": "Rain",
-            "emoji": "🌧️",
-            "label": "Rain",
-            "translationPt": "Chuva"
-          }
-        ],
-        "options": [
-          "School",
-          "Bread",
-          "Phone",
-          "Rain"
-        ],
-        "correctAnswer": "Rain",
-        "explanation": "🌧️ **Rain** significa **Chuva** em inglês! Exemplo prático: \"Refreshing raindrops falling.\"",
-        "phoneticHint": "/reɪn/",
-        "skillCategory": "reading"
-      },
-      {
-        "id": "w0-p20-e6",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Run\"**:",
-        "audioPhrase": "Run",
-        "visualEmoji": "🏃",
-        "visualOptions": [
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
           },
           {
             "text": "Run",
@@ -8847,42 +8853,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Correr"
           },
           {
-            "text": "School",
-            "emoji": "🏫",
-            "label": "School",
-            "translationPt": "Escola"
-          },
-          {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Telefone celular"
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
           }
         ],
         "options": [
-          "Bread",
-          "Run",
           "School",
-          "Phone"
+          "Phone",
+          "Run",
+          "Bread"
         ],
         "correctAnswer": "Run",
-        "explanation": "🏃 **Run** significa **Correr** em inglês! Exemplo prático: \"Move swiftly on foot.\"",
+        "explanation": "Exemplo prático: \"Move swiftly on foot.\"",
         "phoneticHint": "/rʌn/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p20-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Happy\"**?",
+        "prompt": "Qual imagem representa \"Happy\"?",
         "audioPhrase": "Happy",
         "visualEmoji": "😊",
         "visualOptions": [
-          {
-            "text": "Happy",
-            "emoji": "😊",
-            "label": "Happy",
-            "translationPt": "Feliz / Contente"
-          },
           {
             "text": "Bread",
             "emoji": "🍞",
@@ -8890,6 +8884,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pão"
           },
           {
+            "text": "Happy",
+            "emoji": "😊",
+            "label": "Happy",
+            "translationPt": "Feliz / Contente"
+          },
+          {
             "text": "School",
             "emoji": "🏫",
             "label": "School",
@@ -8903,28 +8903,34 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Happy",
           "Bread",
+          "Happy",
           "School",
           "Phone"
         ],
         "correctAnswer": "Happy",
-        "explanation": "😊 **Happy** significa **Feliz / Contente** em inglês! Exemplo prático: \"Full of positive joy.\"",
+        "explanation": "Exemplo prático: \"Full of positive joy.\"",
         "phoneticHint": "/ˈhæp.i/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p20-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Livro didático\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Livro didático\" em inglês?",
         "audioPhrase": "Book",
         "visualEmoji": "📚",
         "visualOptions": [
           {
-            "text": "School",
-            "emoji": "🏫",
-            "label": "School",
-            "translationPt": "Escola"
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Telefone celular"
           },
           {
             "text": "Book",
@@ -8933,33 +8939,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Livro didático"
           },
           {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
-          },
-          {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Telefone celular"
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola"
           }
         ],
         "options": [
-          "School",
-          "Book",
           "Bread",
-          "Phone"
+          "Phone",
+          "Book",
+          "School"
         ],
         "correctAnswer": "Book",
-        "explanation": "📚 **Book** significa **Livro didático** em inglês! Exemplo prático: \"A wealth of written wisdom.\"",
+        "explanation": "Exemplo prático: \"A wealth of written wisdom.\"",
         "phoneticHint": "/bʊk/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p20-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Friend\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Friend",
         "visualEmoji": "🤝",
         "visualOptions": [
@@ -8968,12 +8968,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📱",
             "label": "Phone",
             "translationPt": "Telefone celular"
-          },
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
           },
           {
             "text": "School",
@@ -8986,32 +8980,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🤝",
             "label": "Friend",
             "translationPt": "Amigo"
+          },
+          {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
           }
         ],
         "options": [
           "Phone",
-          "Bread",
           "School",
-          "Friend"
+          "Friend",
+          "Bread"
         ],
         "correctAnswer": "Friend",
-        "explanation": "🤝 **Friend** significa **Amigo** em inglês! Exemplo prático: \"A trustworthy companion.\"",
+        "explanation": "Exemplo prático: \"A trustworthy companion.\"",
         "phoneticHint": "/frend/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p20-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Computer\"**?",
+        "prompt": "Qual imagem representa \"Computer\"?",
         "audioPhrase": "Computer",
         "visualEmoji": "💻",
         "visualOptions": [
-          {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Telefone celular"
-          },
           {
             "text": "Computer",
             "emoji": "💻",
@@ -9029,32 +9023,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍞",
             "label": "Bread",
             "translationPt": "Pão"
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Telefone celular"
           }
         ],
         "options": [
-          "Phone",
           "Computer",
           "School",
-          "Bread"
+          "Bread",
+          "Phone"
         ],
         "correctAnswer": "Computer",
-        "explanation": "💻 **Computer** significa **Computador** em inglês! Exemplo prático: \"A fast computing machine.\"",
+        "explanation": "Exemplo prático: \"A fast computing machine.\"",
         "phoneticHint": "/kəmˈpjuː.tər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p20-e11",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Mãe\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Mãe\" em inglês?",
         "audioPhrase": "Mother",
         "visualEmoji": "👩‍👧",
         "visualOptions": [
-          {
-            "text": "School",
-            "emoji": "🏫",
-            "label": "School",
-            "translationPt": "Escola"
-          },
           {
             "text": "Phone",
             "emoji": "📱",
@@ -9062,26 +9056,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Telefone celular"
           },
           {
-            "text": "Mother",
-            "emoji": "👩‍👧",
-            "label": "Mother",
-            "translationPt": "Mãe"
-          },
-          {
             "text": "Bread",
             "emoji": "🍞",
             "label": "Bread",
             "translationPt": "Pão"
+          },
+          {
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola"
+          },
+          {
+            "text": "Mother",
+            "emoji": "👩‍👧",
+            "label": "Mother",
+            "translationPt": "Mãe"
           }
         ],
         "options": [
-          "School",
           "Phone",
-          "Mother",
-          "Bread"
+          "Bread",
+          "School",
+          "Mother"
         ],
         "correctAnswer": "Mother",
-        "explanation": "👩‍👧 **Mother** significa **Mãe** em inglês! Exemplo prático: \"The loving heart of the home.\"",
+        "explanation": "Exemplo prático: \"The loving heart of the home.\"",
         "phoneticHint": "/ˈmʌð.ər/",
         "skillCategory": "reading"
       }
@@ -9108,16 +9108,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p21-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Soccer\"**?",
+        "prompt": "Qual imagem representa \"Soccer\"?",
         "audioPhrase": "Soccer",
         "visualEmoji": "⚽",
         "visualOptions": [
-          {
-            "text": "Volleyball",
-            "emoji": "🏐",
-            "label": "Volleyball",
-            "translationPt": "Vôlei"
-          },
           {
             "text": "Basketball",
             "emoji": "🏀",
@@ -9135,23 +9129,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⚽",
             "label": "Soccer / Football",
             "translationPt": "Futebol"
+          },
+          {
+            "text": "Volleyball",
+            "emoji": "🏐",
+            "label": "Volleyball",
+            "translationPt": "Vôlei"
           }
         ],
         "options": [
-          "Volleyball",
           "Basketball",
           "Tennis",
-          "Soccer"
+          "Soccer",
+          "Volleyball"
         ],
         "correctAnswer": "Soccer",
-        "explanation": "⚽ **Soccer** significa **Futebol** em inglês! Exemplo prático: \"Kids play soccer on Saturday afternoon.\"",
+        "explanation": "Exemplo prático: \"Kids play soccer on Saturday afternoon.\"",
         "phoneticHint": "/ˈsɒk.ər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p21-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Basquete\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Basquete\" em inglês?",
         "audioPhrase": "Basketball",
         "visualEmoji": "🏀",
         "visualOptions": [
@@ -9162,12 +9162,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vôlei"
           },
           {
-            "text": "Tennis",
-            "emoji": "🎾",
-            "label": "Tennis",
-            "translationPt": "Tênis"
-          },
-          {
             "text": "Basketball",
             "emoji": "🏀",
             "label": "Basketball",
@@ -9178,32 +9172,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⚽",
             "label": "Soccer / Football",
             "translationPt": "Futebol"
+          },
+          {
+            "text": "Tennis",
+            "emoji": "🎾",
+            "label": "Tennis",
+            "translationPt": "Tênis"
           }
         ],
         "options": [
           "Volleyball",
-          "Tennis",
           "Basketball",
-          "Soccer"
+          "Soccer",
+          "Tennis"
         ],
         "correctAnswer": "Basketball",
-        "explanation": "🏀 **Basketball** significa **Basquete** em inglês! Exemplo prático: \"Shoot the basketball into the high hoop.\"",
+        "explanation": "Exemplo prático: \"Shoot the basketball into the high hoop.\"",
         "phoneticHint": "/ˈbɑː.skɪt.bɔːl/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p21-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Tennis\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tennis",
         "visualEmoji": "🎾",
         "visualOptions": [
-          {
-            "text": "Tennis",
-            "emoji": "🎾",
-            "label": "Tennis",
-            "translationPt": "Tênis"
-          },
           {
             "text": "Soccer",
             "emoji": "⚽",
@@ -9211,41 +9205,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Futebol"
           },
           {
-            "text": "Volleyball",
-            "emoji": "🏐",
-            "label": "Volleyball",
-            "translationPt": "Vôlei"
+            "text": "Tennis",
+            "emoji": "🎾",
+            "label": "Tennis",
+            "translationPt": "Tênis"
           },
           {
             "text": "Basketball",
             "emoji": "🏀",
             "label": "Basketball",
             "translationPt": "Basquete"
+          },
+          {
+            "text": "Volleyball",
+            "emoji": "🏐",
+            "label": "Volleyball",
+            "translationPt": "Vôlei"
           }
         ],
         "options": [
-          "Tennis",
           "Soccer",
-          "Volleyball",
-          "Basketball"
+          "Tennis",
+          "Basketball",
+          "Volleyball"
         ],
         "correctAnswer": "Tennis",
-        "explanation": "🎾 **Tennis** significa **Tênis** em inglês! Exemplo prático: \"Hit the tennis ball over the net with a racket.\"",
+        "explanation": "Exemplo prático: \"Hit the tennis ball over the net with a racket.\"",
         "phoneticHint": "/ˈten.ɪs/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p21-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Volleyball\"**?",
+        "prompt": "Qual imagem representa \"Volleyball\"?",
         "audioPhrase": "Volleyball",
         "visualEmoji": "🏐",
         "visualOptions": [
           {
-            "text": "Tennis",
-            "emoji": "🎾",
-            "label": "Tennis",
-            "translationPt": "Tênis"
+            "text": "Basketball",
+            "emoji": "🏀",
+            "label": "Basketball",
+            "translationPt": "Basquete"
           },
           {
             "text": "Volleyball",
@@ -9254,41 +9254,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vôlei"
           },
           {
+            "text": "Tennis",
+            "emoji": "🎾",
+            "label": "Tennis",
+            "translationPt": "Tênis"
+          },
+          {
             "text": "Soccer",
             "emoji": "⚽",
             "label": "Soccer / Football",
             "translationPt": "Futebol"
-          },
-          {
-            "text": "Basketball",
-            "emoji": "🏀",
-            "label": "Basketball",
-            "translationPt": "Basquete"
           }
         ],
         "options": [
-          "Tennis",
+          "Basketball",
           "Volleyball",
-          "Soccer",
-          "Basketball"
+          "Tennis",
+          "Soccer"
         ],
         "correctAnswer": "Volleyball",
-        "explanation": "🏐 **Volleyball** significa **Vôlei** em inglês! Exemplo prático: \"Beach volleyball is fun in the summer.\"",
+        "explanation": "Exemplo prático: \"Beach volleyball is fun in the summer.\"",
         "phoneticHint": "/ˈvɒl.i.bɔːl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p21-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Natação\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Natação\" em inglês?",
         "audioPhrase": "Swimming",
         "visualEmoji": "🏊",
         "visualOptions": [
           {
-            "text": "Swimming",
-            "emoji": "🏊",
-            "label": "Swimming",
-            "translationPt": "Natação"
+            "text": "Basketball",
+            "emoji": "🏀",
+            "label": "Basketball",
+            "translationPt": "Basquete"
           },
           {
             "text": "Soccer",
@@ -9303,27 +9303,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tênis"
           },
           {
-            "text": "Basketball",
-            "emoji": "🏀",
-            "label": "Basketball",
-            "translationPt": "Basquete"
+            "text": "Swimming",
+            "emoji": "🏊",
+            "label": "Swimming",
+            "translationPt": "Natação"
           }
         ],
         "options": [
-          "Swimming",
+          "Basketball",
           "Soccer",
           "Tennis",
-          "Basketball"
+          "Swimming"
         ],
         "correctAnswer": "Swimming",
-        "explanation": "🏊 **Swimming** significa **Natação** em inglês! Exemplo prático: \"Swimming provides a complete full-body workout.\"",
+        "explanation": "Exemplo prático: \"Swimming provides a complete full-body workout.\"",
         "phoneticHint": "/ˈswɪm.ɪŋ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p21-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Cycling\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cycling",
         "visualEmoji": "🚴",
         "visualOptions": [
@@ -9340,36 +9340,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ciclismo"
           },
           {
-            "text": "Soccer",
-            "emoji": "⚽",
-            "label": "Soccer / Football",
-            "translationPt": "Futebol"
-          },
-          {
             "text": "Basketball",
             "emoji": "🏀",
             "label": "Basketball",
             "translationPt": "Basquete"
+          },
+          {
+            "text": "Soccer",
+            "emoji": "⚽",
+            "label": "Soccer / Football",
+            "translationPt": "Futebol"
           }
         ],
         "options": [
           "Tennis",
           "Cycling",
-          "Soccer",
-          "Basketball"
+          "Basketball",
+          "Soccer"
         ],
         "correctAnswer": "Cycling",
-        "explanation": "🚴 **Cycling** significa **Ciclismo** em inglês! Exemplo prático: \"Cycling along the coast is scenic and refreshing.\"",
+        "explanation": "Exemplo prático: \"Cycling along the coast is scenic and refreshing.\"",
         "phoneticHint": "/ˈsaɪ.klɪŋ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p21-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Baseball\"**?",
+        "prompt": "Qual imagem representa \"Baseball\"?",
         "audioPhrase": "Baseball",
         "visualEmoji": "⚾",
         "visualOptions": [
+          {
+            "text": "Basketball",
+            "emoji": "🏀",
+            "label": "Basketball",
+            "translationPt": "Basquete"
+          },
           {
             "text": "Baseball",
             "emoji": "⚾",
@@ -9377,47 +9383,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Beisebol"
           },
           {
-            "text": "Tennis",
-            "emoji": "🎾",
-            "label": "Tennis",
-            "translationPt": "Tênis"
-          },
-          {
             "text": "Soccer",
             "emoji": "⚽",
             "label": "Soccer / Football",
             "translationPt": "Futebol"
           },
           {
-            "text": "Basketball",
-            "emoji": "🏀",
-            "label": "Basketball",
-            "translationPt": "Basquete"
+            "text": "Tennis",
+            "emoji": "🎾",
+            "label": "Tennis",
+            "translationPt": "Tênis"
           }
         ],
         "options": [
+          "Basketball",
           "Baseball",
-          "Tennis",
           "Soccer",
-          "Basketball"
+          "Tennis"
         ],
         "correctAnswer": "Baseball",
-        "explanation": "⚾ **Baseball** significa **Beisebol** em inglês! Exemplo prático: \"Strike the baseball with the wooden bat.\"",
+        "explanation": "Exemplo prático: \"Strike the baseball with the wooden bat.\"",
         "phoneticHint": "/ˈbeɪs.bɔːl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p21-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Skate\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Skate\" em inglês?",
         "audioPhrase": "Skateboarding",
         "visualEmoji": "🛹",
         "visualOptions": [
           {
-            "text": "Skateboarding",
-            "emoji": "🛹",
-            "label": "Skateboarding",
-            "translationPt": "Skate"
+            "text": "Soccer",
+            "emoji": "⚽",
+            "label": "Soccer / Football",
+            "translationPt": "Futebol"
           },
           {
             "text": "Tennis",
@@ -9426,41 +9426,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tênis"
           },
           {
-            "text": "Soccer",
-            "emoji": "⚽",
-            "label": "Soccer / Football",
-            "translationPt": "Futebol"
-          },
-          {
             "text": "Basketball",
             "emoji": "🏀",
             "label": "Basketball",
             "translationPt": "Basquete"
+          },
+          {
+            "text": "Skateboarding",
+            "emoji": "🛹",
+            "label": "Skateboarding",
+            "translationPt": "Skate"
           }
         ],
         "options": [
-          "Skateboarding",
-          "Tennis",
           "Soccer",
-          "Basketball"
+          "Tennis",
+          "Basketball",
+          "Skateboarding"
         ],
         "correctAnswer": "Skateboarding",
-        "explanation": "🛹 **Skateboarding** significa **Skate** em inglês! Exemplo prático: \"Youth practice kickflips at the skate park.\"",
+        "explanation": "Exemplo prático: \"Youth practice kickflips at the skate park.\"",
         "phoneticHint": "/ˈskeɪtˌbɔː.dɪŋ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p21-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Boxing\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Boxing",
         "visualEmoji": "🥊",
         "visualOptions": [
           {
-            "text": "Tennis",
-            "emoji": "🎾",
-            "label": "Tennis",
-            "translationPt": "Tênis"
+            "text": "Basketball",
+            "emoji": "🏀",
+            "label": "Basketball",
+            "translationPt": "Basquete"
           },
           {
             "text": "Soccer",
@@ -9469,48 +9469,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Futebol"
           },
           {
-            "text": "Basketball",
-            "emoji": "🏀",
-            "label": "Basketball",
-            "translationPt": "Basquete"
-          },
-          {
             "text": "Boxing",
             "emoji": "🥊",
             "label": "Boxing",
             "translationPt": "Boxe"
-          }
-        ],
-        "options": [
-          "Tennis",
-          "Soccer",
-          "Basketball",
-          "Boxing"
-        ],
-        "correctAnswer": "Boxing",
-        "explanation": "🥊 **Boxing** significa **Boxe** em inglês! Exemplo prático: \"Wear padded gloves during boxing training.\"",
-        "phoneticHint": "/ˈbɒk.sɪŋ/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p21-e10",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Running\"**?",
-        "audioPhrase": "Running",
-        "visualEmoji": "👟",
-        "visualOptions": [
-          {
-            "text": "Basketball",
-            "emoji": "🏀",
-            "label": "Basketball",
-            "translationPt": "Basquete"
           },
           {
             "text": "Tennis",
             "emoji": "🎾",
             "label": "Tennis",
             "translationPt": "Tênis"
-          },
+          }
+        ],
+        "options": [
+          "Basketball",
+          "Soccer",
+          "Boxing",
+          "Tennis"
+        ],
+        "correctAnswer": "Boxing",
+        "explanation": "Exemplo prático: \"Wear padded gloves during boxing training.\"",
+        "phoneticHint": "/ˈbɒk.sɪŋ/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p21-e10",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Running\"?",
+        "audioPhrase": "Running",
+        "visualEmoji": "👟",
+        "visualOptions": [
           {
             "text": "Running",
             "emoji": "👟",
@@ -9518,6 +9506,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Corrida"
           },
           {
+            "text": "Tennis",
+            "emoji": "🎾",
+            "label": "Tennis",
+            "translationPt": "Tênis"
+          },
+          {
+            "text": "Basketball",
+            "emoji": "🏀",
+            "label": "Basketball",
+            "translationPt": "Basquete"
+          },
+          {
             "text": "Soccer",
             "emoji": "⚽",
             "label": "Soccer / Football",
@@ -9525,13 +9525,13 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Basketball",
-          "Tennis",
           "Running",
+          "Tennis",
+          "Basketball",
           "Soccer"
         ],
         "correctAnswer": "Running",
-        "explanation": "👟 **Running** significa **Corrida** em inglês! Exemplo prático: \"Morning running builds cardiovascular endurance.\"",
+        "explanation": "Exemplo prático: \"Morning running builds cardiovascular endurance.\"",
         "phoneticHint": "/ˈrʌn.ɪŋ/",
         "skillCategory": "vocabulary"
       }
@@ -9558,22 +9558,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p22-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Fork\"**?",
+        "prompt": "Qual imagem representa \"Fork\"?",
         "audioPhrase": "Fork",
         "visualEmoji": "🍴",
         "visualOptions": [
-          {
-            "text": "Plate",
-            "emoji": "🍽️",
-            "label": "Plate",
-            "translationPt": "Prato"
-          },
-          {
-            "text": "Spoon",
-            "emoji": "🥄",
-            "label": "Spoon",
-            "translationPt": "Colher"
-          },
           {
             "text": "Fork",
             "emoji": "🍴",
@@ -9585,32 +9573,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🔪",
             "label": "Knife",
             "translationPt": "Faca"
+          },
+          {
+            "text": "Spoon",
+            "emoji": "🥄",
+            "label": "Spoon",
+            "translationPt": "Colher"
+          },
+          {
+            "text": "Plate",
+            "emoji": "🍽️",
+            "label": "Plate",
+            "translationPt": "Prato"
           }
         ],
         "options": [
-          "Plate",
-          "Spoon",
           "Fork",
-          "Knife"
+          "Knife",
+          "Spoon",
+          "Plate"
         ],
         "correctAnswer": "Fork",
-        "explanation": "🍴 **Fork** significa **Garfo** em inglês! Exemplo prático: \"Hold the fork in your left hand.\"",
+        "explanation": "Exemplo prático: \"Hold the fork in your left hand.\"",
         "phoneticHint": "/fɔːk/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p22-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Colher\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Colher\" em inglês?",
         "audioPhrase": "Spoon",
         "visualEmoji": "🥄",
         "visualOptions": [
-          {
-            "text": "Knife",
-            "emoji": "🔪",
-            "label": "Knife",
-            "translationPt": "Faca"
-          },
           {
             "text": "Spoon",
             "emoji": "🥄",
@@ -9628,37 +9622,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍴",
             "label": "Fork",
             "translationPt": "Garfo"
+          },
+          {
+            "text": "Knife",
+            "emoji": "🔪",
+            "label": "Knife",
+            "translationPt": "Faca"
           }
         ],
         "options": [
-          "Knife",
           "Spoon",
           "Plate",
-          "Fork"
+          "Fork",
+          "Knife"
         ],
         "correctAnswer": "Spoon",
-        "explanation": "🥄 **Spoon** significa **Colher** em inglês! Exemplo prático: \"Eat hearty hot soup with a spoon.\"",
+        "explanation": "Exemplo prático: \"Eat hearty hot soup with a spoon.\"",
         "phoneticHint": "/spuːn/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p22-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Knife\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Knife",
         "visualEmoji": "🔪",
         "visualOptions": [
+          {
+            "text": "Spoon",
+            "emoji": "🥄",
+            "label": "Spoon",
+            "translationPt": "Colher"
+          },
           {
             "text": "Fork",
             "emoji": "🍴",
             "label": "Fork",
             "translationPt": "Garfo"
-          },
-          {
-            "text": "Knife",
-            "emoji": "🔪",
-            "label": "Knife",
-            "translationPt": "Faca"
           },
           {
             "text": "Plate",
@@ -9667,27 +9667,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Prato"
           },
           {
-            "text": "Spoon",
-            "emoji": "🥄",
-            "label": "Spoon",
-            "translationPt": "Colher"
+            "text": "Knife",
+            "emoji": "🔪",
+            "label": "Knife",
+            "translationPt": "Faca"
           }
         ],
         "options": [
+          "Spoon",
           "Fork",
-          "Knife",
           "Plate",
-          "Spoon"
+          "Knife"
         ],
         "correctAnswer": "Knife",
-        "explanation": "🔪 **Knife** significa **Faca** em inglês! Exemplo prático: \"Cut tender meat carefully with a sharp knife.\"",
+        "explanation": "Exemplo prático: \"Cut tender meat carefully with a sharp knife.\"",
         "phoneticHint": "/naɪf/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p22-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Plate\"**?",
+        "prompt": "Qual imagem representa \"Plate\"?",
         "audioPhrase": "Plate",
         "visualEmoji": "🍽️",
         "visualOptions": [
@@ -9723,17 +9723,29 @@ export const WORLD_0_PHASES: Phase[] = [
           "Knife"
         ],
         "correctAnswer": "Plate",
-        "explanation": "🍽️ **Plate** significa **Prato** em inglês! Exemplo prático: \"Place delicious food on the ceramic plate.\"",
+        "explanation": "Exemplo prático: \"Place delicious food on the ceramic plate.\"",
         "phoneticHint": "/pleɪt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p22-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Copo / Xícara\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Copo / Xícara\" em inglês?",
         "audioPhrase": "Cup",
         "visualEmoji": "🥛",
         "visualOptions": [
+          {
+            "text": "Spoon",
+            "emoji": "🥄",
+            "label": "Spoon",
+            "translationPt": "Colher"
+          },
+          {
+            "text": "Knife",
+            "emoji": "🔪",
+            "label": "Knife",
+            "translationPt": "Faca"
+          },
           {
             "text": "Cup",
             "emoji": "🥛",
@@ -9741,53 +9753,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Copo / Xícara"
           },
           {
-            "text": "Spoon",
-            "emoji": "🥄",
-            "label": "Spoon",
-            "translationPt": "Colher"
-          },
-          {
             "text": "Fork",
             "emoji": "🍴",
             "label": "Fork",
             "translationPt": "Garfo"
-          },
-          {
-            "text": "Knife",
-            "emoji": "🔪",
-            "label": "Knife",
-            "translationPt": "Faca"
           }
         ],
         "options": [
-          "Cup",
           "Spoon",
-          "Fork",
-          "Knife"
+          "Knife",
+          "Cup",
+          "Fork"
         ],
         "correctAnswer": "Cup",
-        "explanation": "🥛 **Cup** significa **Copo / Xícara** em inglês! Exemplo prático: \"Pour fresh juice into a tall glass cup.\"",
+        "explanation": "Exemplo prático: \"Pour fresh juice into a tall glass cup.\"",
         "phoneticHint": "/kʌp/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p22-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Bowl\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bowl",
         "visualEmoji": "🥣",
         "visualOptions": [
-          {
-            "text": "Fork",
-            "emoji": "🍴",
-            "label": "Fork",
-            "translationPt": "Garfo"
-          },
           {
             "text": "Spoon",
             "emoji": "🥄",
             "label": "Spoon",
             "translationPt": "Colher"
+          },
+          {
+            "text": "Knife",
+            "emoji": "🔪",
+            "label": "Knife",
+            "translationPt": "Faca"
           },
           {
             "text": "Bowl",
@@ -9796,35 +9796,35 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tigela / Cumbuca"
           },
           {
-            "text": "Knife",
-            "emoji": "🔪",
-            "label": "Knife",
-            "translationPt": "Faca"
+            "text": "Fork",
+            "emoji": "🍴",
+            "label": "Fork",
+            "translationPt": "Garfo"
           }
         ],
         "options": [
-          "Fork",
           "Spoon",
+          "Knife",
           "Bowl",
-          "Knife"
+          "Fork"
         ],
         "correctAnswer": "Bowl",
-        "explanation": "🥣 **Bowl** significa **Tigela / Cumbuca** em inglês! Exemplo prático: \"Serve breakfast cereal inside a bowl.\"",
+        "explanation": "Exemplo prático: \"Serve breakfast cereal inside a bowl.\"",
         "phoneticHint": "/boʊl/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p22-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Pan\"**?",
+        "prompt": "Qual imagem representa \"Pan\"?",
         "audioPhrase": "Pan",
         "visualEmoji": "🍳",
         "visualOptions": [
           {
-            "text": "Pan",
-            "emoji": "🍳",
-            "label": "Pan / Frying Pan",
-            "translationPt": "Frigideira"
+            "text": "Knife",
+            "emoji": "🔪",
+            "label": "Knife",
+            "translationPt": "Faca"
           },
           {
             "text": "Fork",
@@ -9833,42 +9833,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Garfo"
           },
           {
+            "text": "Pan",
+            "emoji": "🍳",
+            "label": "Pan / Frying Pan",
+            "translationPt": "Frigideira"
+          },
+          {
             "text": "Spoon",
             "emoji": "🥄",
             "label": "Spoon",
             "translationPt": "Colher"
-          },
-          {
-            "text": "Knife",
-            "emoji": "🔪",
-            "label": "Knife",
-            "translationPt": "Faca"
           }
         ],
         "options": [
-          "Pan",
+          "Knife",
           "Fork",
-          "Spoon",
-          "Knife"
+          "Pan",
+          "Spoon"
         ],
         "correctAnswer": "Pan",
-        "explanation": "🍳 **Pan** significa **Frigideira** em inglês! Exemplo prático: \"Fry sunny-side eggs on the non-stick pan.\"",
+        "explanation": "Exemplo prático: \"Fry sunny-side eggs on the non-stick pan.\"",
         "phoneticHint": "/pæn/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p22-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Panela\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Panela\" em inglês?",
         "audioPhrase": "Pot",
         "visualEmoji": "🍲",
         "visualOptions": [
-          {
-            "text": "Spoon",
-            "emoji": "🥄",
-            "label": "Spoon",
-            "translationPt": "Colher"
-          },
           {
             "text": "Pot",
             "emoji": "🍲",
@@ -9886,31 +9880,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍴",
             "label": "Fork",
             "translationPt": "Garfo"
+          },
+          {
+            "text": "Spoon",
+            "emoji": "🥄",
+            "label": "Spoon",
+            "translationPt": "Colher"
           }
         ],
         "options": [
-          "Spoon",
           "Pot",
           "Knife",
-          "Fork"
+          "Fork",
+          "Spoon"
         ],
         "correctAnswer": "Pot",
-        "explanation": "🍲 **Pot** significa **Panela** em inglês! Exemplo prático: \"Boil pasta water inside a stainless pot.\"",
+        "explanation": "Exemplo prático: \"Boil pasta water inside a stainless pot.\"",
         "phoneticHint": "/pɒt/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p22-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Bottle\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bottle",
         "visualEmoji": "🍾",
         "visualOptions": [
           {
-            "text": "Fork",
-            "emoji": "🍴",
-            "label": "Fork",
-            "translationPt": "Garfo"
+            "text": "Spoon",
+            "emoji": "🥄",
+            "label": "Spoon",
+            "translationPt": "Colher"
           },
           {
             "text": "Bottle",
@@ -9919,36 +9919,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Garrafa"
           },
           {
-            "text": "Spoon",
-            "emoji": "🥄",
-            "label": "Spoon",
-            "translationPt": "Colher"
-          },
-          {
             "text": "Knife",
             "emoji": "🔪",
             "label": "Knife",
             "translationPt": "Faca"
+          },
+          {
+            "text": "Fork",
+            "emoji": "🍴",
+            "label": "Fork",
+            "translationPt": "Garfo"
           }
         ],
         "options": [
-          "Fork",
-          "Bottle",
           "Spoon",
-          "Knife"
+          "Bottle",
+          "Knife",
+          "Fork"
         ],
         "correctAnswer": "Bottle",
-        "explanation": "🍾 **Bottle** significa **Garrafa** em inglês! Exemplo prático: \"Carry a reusable water bottle everywhere.\"",
+        "explanation": "Exemplo prático: \"Carry a reusable water bottle everywhere.\"",
         "phoneticHint": "/ˈbɒt.əl/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p22-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Teapot\"**?",
+        "prompt": "Qual imagem representa \"Teapot\"?",
         "audioPhrase": "Teapot",
         "visualEmoji": "🫖",
         "visualOptions": [
+          {
+            "text": "Knife",
+            "emoji": "🔪",
+            "label": "Knife",
+            "translationPt": "Faca"
+          },
           {
             "text": "Fork",
             "emoji": "🍴",
@@ -9956,32 +9962,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Garfo"
           },
           {
-            "text": "Knife",
-            "emoji": "🔪",
-            "label": "Knife",
-            "translationPt": "Faca"
+            "text": "Spoon",
+            "emoji": "🥄",
+            "label": "Spoon",
+            "translationPt": "Colher"
           },
           {
             "text": "Teapot",
             "emoji": "🫖",
             "label": "Teapot",
             "translationPt": "Bule de chá"
-          },
-          {
-            "text": "Spoon",
-            "emoji": "🥄",
-            "label": "Spoon",
-            "translationPt": "Colher"
           }
         ],
         "options": [
-          "Fork",
           "Knife",
-          "Teapot",
-          "Spoon"
+          "Fork",
+          "Spoon",
+          "Teapot"
         ],
         "correctAnswer": "Teapot",
-        "explanation": "🫖 **Teapot** significa **Bule de chá** em inglês! Exemplo prático: \"Brew herbal green tea in the ceramic teapot.\"",
+        "explanation": "Exemplo prático: \"Brew herbal green tea in the ceramic teapot.\"",
         "phoneticHint": "/ˈtiː.pɒt/",
         "skillCategory": "vocabulary"
       }
@@ -10008,21 +10008,21 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p23-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Soap\"**?",
+        "prompt": "Qual imagem representa \"Soap\"?",
         "audioPhrase": "Soap",
         "visualEmoji": "🧼",
         "visualOptions": [
-          {
-            "text": "Toothpaste",
-            "emoji": "🧴",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
-          },
           {
             "text": "Towel",
             "emoji": "🧖",
             "label": "Towel",
             "translationPt": "Toalha de banho"
+          },
+          {
+            "text": "Toothbrush",
+            "emoji": "🪥",
+            "label": "Toothbrush",
+            "translationPt": "Escova de dentes"
           },
           {
             "text": "Soap",
@@ -10031,42 +10031,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sabonete"
           },
           {
-            "text": "Toothbrush",
-            "emoji": "🪥",
-            "label": "Toothbrush",
-            "translationPt": "Escova de dentes"
+            "text": "Toothpaste",
+            "emoji": "🧴",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
           }
         ],
         "options": [
-          "Toothpaste",
           "Towel",
+          "Toothbrush",
           "Soap",
-          "Toothbrush"
+          "Toothpaste"
         ],
         "correctAnswer": "Soap",
-        "explanation": "🧼 **Soap** significa **Sabonete** em inglês! Exemplo prático: \"Lather your hands with lavender scented soap.\"",
+        "explanation": "Exemplo prático: \"Lather your hands with lavender scented soap.\"",
         "phoneticHint": "/soʊp/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p23-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Escova de dentes\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Escova de dentes\" em inglês?",
         "audioPhrase": "Toothbrush",
         "visualEmoji": "🪥",
         "visualOptions": [
-          {
-            "text": "Soap",
-            "emoji": "🧼",
-            "label": "Soap",
-            "translationPt": "Sabonete"
-          },
-          {
-            "text": "Toothpaste",
-            "emoji": "🧴",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
-          },
           {
             "text": "Towel",
             "emoji": "🧖",
@@ -10074,30 +10062,48 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Toalha de banho"
           },
           {
+            "text": "Soap",
+            "emoji": "🧼",
+            "label": "Soap",
+            "translationPt": "Sabonete"
+          },
+          {
             "text": "Toothbrush",
             "emoji": "🪥",
             "label": "Toothbrush",
             "translationPt": "Escova de dentes"
+          },
+          {
+            "text": "Toothpaste",
+            "emoji": "🧴",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
           }
         ],
         "options": [
-          "Soap",
-          "Toothpaste",
           "Towel",
-          "Toothbrush"
+          "Soap",
+          "Toothbrush",
+          "Toothpaste"
         ],
         "correctAnswer": "Toothbrush",
-        "explanation": "🪥 **Toothbrush** significa **Escova de dentes** em inglês! Exemplo prático: \"Dentists advise changing your toothbrush regularly.\"",
+        "explanation": "Exemplo prático: \"Dentists advise changing your toothbrush regularly.\"",
         "phoneticHint": "/ˈtuːθ.brʌʃ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p23-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Toothpaste\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Toothpaste",
         "visualEmoji": "🧴",
         "visualOptions": [
+          {
+            "text": "Toothbrush",
+            "emoji": "🪥",
+            "label": "Toothbrush",
+            "translationPt": "Escova de dentes"
+          },
           {
             "text": "Toothpaste",
             "emoji": "🧴",
@@ -10115,43 +10121,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧖",
             "label": "Towel",
             "translationPt": "Toalha de banho"
-          },
-          {
-            "text": "Toothbrush",
-            "emoji": "🪥",
-            "label": "Toothbrush",
-            "translationPt": "Escova de dentes"
           }
         ],
         "options": [
+          "Toothbrush",
           "Toothpaste",
           "Soap",
-          "Towel",
-          "Toothbrush"
+          "Towel"
         ],
         "correctAnswer": "Toothpaste",
-        "explanation": "🧴 **Toothpaste** significa **Pasta de dente** em inglês! Exemplo prático: \"Squeeze mint toothpaste onto the bristles.\"",
+        "explanation": "Exemplo prático: \"Squeeze mint toothpaste onto the bristles.\"",
         "phoneticHint": "/ˈtuːθ.peɪst/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p23-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Towel\"**?",
+        "prompt": "Qual imagem representa \"Towel\"?",
         "audioPhrase": "Towel",
         "visualEmoji": "🧖",
         "visualOptions": [
-          {
-            "text": "Toothpaste",
-            "emoji": "🧴",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
-          },
           {
             "text": "Toothbrush",
             "emoji": "🪥",
             "label": "Toothbrush",
             "translationPt": "Escova de dentes"
+          },
+          {
+            "text": "Toothpaste",
+            "emoji": "🧴",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
           },
           {
             "text": "Towel",
@@ -10167,20 +10167,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Toothpaste",
           "Toothbrush",
+          "Toothpaste",
           "Towel",
           "Soap"
         ],
         "correctAnswer": "Towel",
-        "explanation": "🧖 **Towel** significa **Toalha de banho** em inglês! Exemplo prático: \"Dry your face with a fluffy cotton towel.\"",
+        "explanation": "Exemplo prático: \"Dry your face with a fluffy cotton towel.\"",
         "phoneticHint": "/ˈtaʊ.əl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p23-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Chuveiro / Banho\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Chuveiro / Banho\" em inglês?",
         "audioPhrase": "Shower",
         "visualEmoji": "🚿",
         "visualOptions": [
@@ -10216,17 +10216,29 @@ export const WORLD_0_PHASES: Phase[] = [
           "Toothpaste"
         ],
         "correctAnswer": "Shower",
-        "explanation": "🚿 **Shower** significa **Chuveiro / Banho** em inglês! Exemplo prático: \"A warm shower relaxes tired muscles.\"",
+        "explanation": "Exemplo prático: \"A warm shower relaxes tired muscles.\"",
         "phoneticHint": "/ˈʃaʊ.ər/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p23-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Comb\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Comb",
         "visualEmoji": "🪮",
         "visualOptions": [
+          {
+            "text": "Toothpaste",
+            "emoji": "🧴",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
+          },
+          {
+            "text": "Comb",
+            "emoji": "🪮",
+            "label": "Comb / Hairbrush",
+            "translationPt": "Pente de cabelo"
+          },
           {
             "text": "Soap",
             "emoji": "🧼",
@@ -10238,50 +10250,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪥",
             "label": "Toothbrush",
             "translationPt": "Escova de dentes"
-          },
-          {
-            "text": "Comb",
-            "emoji": "🪮",
-            "label": "Comb / Hairbrush",
-            "translationPt": "Pente de cabelo"
-          },
-          {
-            "text": "Toothpaste",
-            "emoji": "🧴",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
           }
         ],
         "options": [
-          "Soap",
-          "Toothbrush",
+          "Toothpaste",
           "Comb",
-          "Toothpaste"
+          "Soap",
+          "Toothbrush"
         ],
         "correctAnswer": "Comb",
-        "explanation": "🪮 **Comb** significa **Pente de cabelo** em inglês! Exemplo prático: \"Untangle hair neatly using a wide-tooth comb.\"",
+        "explanation": "Exemplo prático: \"Untangle hair neatly using a wide-tooth comb.\"",
         "phoneticHint": "/koʊm/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p23-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Shampoo\"**?",
+        "prompt": "Qual imagem representa \"Shampoo\"?",
         "audioPhrase": "Shampoo",
         "visualEmoji": "🧴",
         "visualOptions": [
-          {
-            "text": "Toothpaste",
-            "emoji": "🧴",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
-          },
-          {
-            "text": "Soap",
-            "emoji": "🧼",
-            "label": "Soap",
-            "translationPt": "Sabonete"
-          },
           {
             "text": "Toothbrush",
             "emoji": "🪥",
@@ -10293,26 +10281,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧴",
             "label": "Shampoo",
             "translationPt": "Xampu"
-          }
-        ],
-        "options": [
-          "Toothpaste",
-          "Soap",
-          "Toothbrush",
-          "Shampoo"
-        ],
-        "correctAnswer": "Shampoo",
-        "explanation": "🧴 **Shampoo** significa **Xampu** em inglês! Exemplo prático: \"Wash your scalp thoroughly with gentle shampoo.\"",
-        "phoneticHint": "/ʃæmˈpuː/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p23-e8",
-        "type": "image-choice",
-        "prompt": "Como se diz **\"Espelho do banheiro\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Mirror",
-        "visualEmoji": "🪞",
-        "visualOptions": [
+          },
           {
             "text": "Toothpaste",
             "emoji": "🧴",
@@ -10324,12 +10293,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧼",
             "label": "Soap",
             "translationPt": "Sabonete"
+          }
+        ],
+        "options": [
+          "Toothbrush",
+          "Shampoo",
+          "Toothpaste",
+          "Soap"
+        ],
+        "correctAnswer": "Shampoo",
+        "explanation": "Exemplo prático: \"Wash your scalp thoroughly with gentle shampoo.\"",
+        "phoneticHint": "/ʃæmˈpuː/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p23-e8",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Espelho do banheiro\" em inglês?",
+        "audioPhrase": "Mirror",
+        "visualEmoji": "🪞",
+        "visualOptions": [
+          {
+            "text": "Soap",
+            "emoji": "🧼",
+            "label": "Soap",
+            "translationPt": "Sabonete"
           },
           {
             "text": "Toothbrush",
             "emoji": "🪥",
             "label": "Toothbrush",
             "translationPt": "Escova de dentes"
+          },
+          {
+            "text": "Toothpaste",
+            "emoji": "🧴",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
           },
           {
             "text": "Mirror",
@@ -10339,78 +10339,66 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Toothpaste",
           "Soap",
           "Toothbrush",
+          "Toothpaste",
           "Mirror"
         ],
         "correctAnswer": "Mirror",
-        "explanation": "🪞 **Mirror** significa **Espelho do banheiro** em inglês! Exemplo prático: \"Look in the mirror while styling your hair.\"",
+        "explanation": "Exemplo prático: \"Look in the mirror while styling your hair.\"",
         "phoneticHint": "/ˈmɪr.ər/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p23-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Sponge\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sponge",
         "visualEmoji": "🧽",
         "visualOptions": [
           {
-            "text": "Toothpaste",
-            "emoji": "🧴",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
+            "text": "Sponge",
+            "emoji": "🧽",
+            "label": "Sponge",
+            "translationPt": "Esponja de banho"
           },
           {
             "text": "Soap",
             "emoji": "🧼",
             "label": "Soap",
             "translationPt": "Sabonete"
+          },
+          {
+            "text": "Toothpaste",
+            "emoji": "🧴",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
           },
           {
             "text": "Toothbrush",
             "emoji": "🪥",
             "label": "Toothbrush",
             "translationPt": "Escova de dentes"
-          },
-          {
-            "text": "Sponge",
-            "emoji": "🧽",
-            "label": "Sponge",
-            "translationPt": "Esponja de banho"
           }
         ],
         "options": [
-          "Toothpaste",
+          "Sponge",
           "Soap",
-          "Toothbrush",
-          "Sponge"
+          "Toothpaste",
+          "Toothbrush"
         ],
         "correctAnswer": "Sponge",
-        "explanation": "🧽 **Sponge** significa **Esponja de banho** em inglês! Exemplo prático: \"Create abundant foam using a bath sponge.\"",
+        "explanation": "Exemplo prático: \"Create abundant foam using a bath sponge.\"",
         "phoneticHint": "/spʌndʒ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p23-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Faucet\"**?",
+        "prompt": "Qual imagem representa \"Faucet\"?",
         "audioPhrase": "Faucet",
         "visualEmoji": "🚰",
         "visualOptions": [
-          {
-            "text": "Soap",
-            "emoji": "🧼",
-            "label": "Soap",
-            "translationPt": "Sabonete"
-          },
-          {
-            "text": "Toothpaste",
-            "emoji": "🧴",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
-          },
           {
             "text": "Faucet",
             "emoji": "🚰",
@@ -10418,6 +10406,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Torneira"
           },
           {
+            "text": "Toothpaste",
+            "emoji": "🧴",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
+          },
+          {
+            "text": "Soap",
+            "emoji": "🧼",
+            "label": "Soap",
+            "translationPt": "Sabonete"
+          },
+          {
             "text": "Toothbrush",
             "emoji": "🪥",
             "label": "Toothbrush",
@@ -10425,13 +10425,13 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Soap",
-          "Toothpaste",
           "Faucet",
+          "Toothpaste",
+          "Soap",
           "Toothbrush"
         ],
         "correctAnswer": "Faucet",
-        "explanation": "🚰 **Faucet** significa **Torneira** em inglês! Exemplo prático: \"Turn off the bathroom faucet to save water.\"",
+        "explanation": "Exemplo prático: \"Turn off the bathroom faucet to save water.\"",
         "phoneticHint": "/ˈfɔː.sɪt/",
         "skillCategory": "vocabulary"
       }
@@ -10458,16 +10458,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p24-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Guitar\"**?",
+        "prompt": "Qual imagem representa \"Guitar\"?",
         "audioPhrase": "Guitar",
         "visualEmoji": "🎸",
         "visualOptions": [
-          {
-            "text": "Guitar",
-            "emoji": "🎸",
-            "label": "Guitar",
-            "translationPt": "Violão / Guitarra"
-          },
           {
             "text": "Drums",
             "emoji": "🥁",
@@ -10485,37 +10479,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🎹",
             "label": "Piano",
             "translationPt": "Piano"
+          },
+          {
+            "text": "Guitar",
+            "emoji": "🎸",
+            "label": "Guitar",
+            "translationPt": "Violão / Guitarra"
           }
         ],
         "options": [
-          "Guitar",
           "Drums",
           "Violin",
-          "Piano"
+          "Piano",
+          "Guitar"
         ],
         "correctAnswer": "Guitar",
-        "explanation": "🎸 **Guitar** significa **Violão / Guitarra** em inglês! Exemplo prático: \"Strum acoustic chords on the classical guitar.\"",
+        "explanation": "Exemplo prático: \"Strum acoustic chords on the classical guitar.\"",
         "phoneticHint": "/ɡɪˈtɑːr/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p24-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Piano\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Piano\" em inglês?",
         "audioPhrase": "Piano",
         "visualEmoji": "🎹",
         "visualOptions": [
-          {
-            "text": "Guitar",
-            "emoji": "🎸",
-            "label": "Guitar",
-            "translationPt": "Violão / Guitarra"
-          },
           {
             "text": "Piano",
             "emoji": "🎹",
             "label": "Piano",
             "translationPt": "Piano"
+          },
+          {
+            "text": "Guitar",
+            "emoji": "🎸",
+            "label": "Guitar",
+            "translationPt": "Violão / Guitarra"
           },
           {
             "text": "Drums",
@@ -10531,35 +10531,23 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Guitar",
           "Piano",
+          "Guitar",
           "Drums",
           "Violin"
         ],
         "correctAnswer": "Piano",
-        "explanation": "🎹 **Piano** significa **Piano** em inglês! Exemplo prático: \"Press the black and white keys of the piano.\"",
+        "explanation": "Exemplo prático: \"Press the black and white keys of the piano.\"",
         "phoneticHint": "/piˈæn.oʊ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p24-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Drums\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Drums",
         "visualEmoji": "🥁",
         "visualOptions": [
-          {
-            "text": "Drums",
-            "emoji": "🥁",
-            "label": "Drums",
-            "translationPt": "Bateria"
-          },
-          {
-            "text": "Guitar",
-            "emoji": "🎸",
-            "label": "Guitar",
-            "translationPt": "Violão / Guitarra"
-          },
           {
             "text": "Piano",
             "emoji": "🎹",
@@ -10571,32 +10559,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🎻",
             "label": "Violin",
             "translationPt": "Violino"
+          },
+          {
+            "text": "Guitar",
+            "emoji": "🎸",
+            "label": "Guitar",
+            "translationPt": "Violão / Guitarra"
+          },
+          {
+            "text": "Drums",
+            "emoji": "🥁",
+            "label": "Drums",
+            "translationPt": "Bateria"
           }
         ],
         "options": [
-          "Drums",
-          "Guitar",
           "Piano",
-          "Violin"
+          "Violin",
+          "Guitar",
+          "Drums"
         ],
         "correctAnswer": "Drums",
-        "explanation": "🥁 **Drums** significa **Bateria** em inglês! Exemplo prático: \"Keep the energetic beat with dynamic drums.\"",
+        "explanation": "Exemplo prático: \"Keep the energetic beat with dynamic drums.\"",
         "phoneticHint": "/drʌmz/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p24-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Violin\"**?",
+        "prompt": "Qual imagem representa \"Violin\"?",
         "audioPhrase": "Violin",
         "visualEmoji": "🎻",
         "visualOptions": [
-          {
-            "text": "Violin",
-            "emoji": "🎻",
-            "label": "Violin",
-            "translationPt": "Violino"
-          },
           {
             "text": "Drums",
             "emoji": "🥁",
@@ -10604,33 +10598,39 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bateria"
           },
           {
-            "text": "Piano",
-            "emoji": "🎹",
-            "label": "Piano",
-            "translationPt": "Piano"
+            "text": "Violin",
+            "emoji": "🎻",
+            "label": "Violin",
+            "translationPt": "Violino"
           },
           {
             "text": "Guitar",
             "emoji": "🎸",
             "label": "Guitar",
             "translationPt": "Violão / Guitarra"
+          },
+          {
+            "text": "Piano",
+            "emoji": "🎹",
+            "label": "Piano",
+            "translationPt": "Piano"
           }
         ],
         "options": [
-          "Violin",
           "Drums",
-          "Piano",
-          "Guitar"
+          "Violin",
+          "Guitar",
+          "Piano"
         ],
         "correctAnswer": "Violin",
-        "explanation": "🎻 **Violin** significa **Violino** em inglês! Exemplo prático: \"The symphony orchestra features brilliant violins.\"",
+        "explanation": "Exemplo prático: \"The symphony orchestra features brilliant violins.\"",
         "phoneticHint": "/ˌvaɪəˈlɪn/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p24-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Trompete\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Trompete\" em inglês?",
         "audioPhrase": "Trumpet",
         "visualEmoji": "🎺",
         "visualOptions": [
@@ -10666,29 +10666,17 @@ export const WORLD_0_PHASES: Phase[] = [
           "Piano"
         ],
         "correctAnswer": "Trumpet",
-        "explanation": "🎺 **Trumpet** significa **Trompete** em inglês! Exemplo prático: \"A brass trumpet plays loud fanfare notes.\"",
+        "explanation": "Exemplo prático: \"A brass trumpet plays loud fanfare notes.\"",
         "phoneticHint": "/ˈtrʌm.pɪt/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p24-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Flute\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Flute",
         "visualEmoji": "🪈",
         "visualOptions": [
-          {
-            "text": "Guitar",
-            "emoji": "🎸",
-            "label": "Guitar",
-            "translationPt": "Violão / Guitarra"
-          },
-          {
-            "text": "Drums",
-            "emoji": "🥁",
-            "label": "Drums",
-            "translationPt": "Bateria"
-          },
           {
             "text": "Flute",
             "emoji": "🪈",
@@ -10696,73 +10684,48 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Flauta"
           },
           {
-            "text": "Piano",
-            "emoji": "🎹",
-            "label": "Piano",
-            "translationPt": "Piano"
-          }
-        ],
-        "options": [
-          "Guitar",
-          "Drums",
-          "Flute",
-          "Piano"
-        ],
-        "correctAnswer": "Flute",
-        "explanation": "🪈 **Flute** significa **Flauta** em inglês! Exemplo prático: \"The wooden flute produces sweet gentle melodies.\"",
-        "phoneticHint": "/fluːt/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p24-e7",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Saxophone\"**?",
-        "audioPhrase": "Saxophone",
-        "visualEmoji": "🎷",
-        "visualOptions": [
-          {
-            "text": "Saxophone",
-            "emoji": "🎷",
-            "label": "Saxophone",
-            "translationPt": "Saxofone"
-          },
-          {
             "text": "Drums",
             "emoji": "🥁",
             "label": "Drums",
             "translationPt": "Bateria"
-          },
-          {
-            "text": "Piano",
-            "emoji": "🎹",
-            "label": "Piano",
-            "translationPt": "Piano"
           },
           {
             "text": "Guitar",
             "emoji": "🎸",
             "label": "Guitar",
             "translationPt": "Violão / Guitarra"
+          },
+          {
+            "text": "Piano",
+            "emoji": "🎹",
+            "label": "Piano",
+            "translationPt": "Piano"
           }
         ],
         "options": [
-          "Saxophone",
+          "Flute",
           "Drums",
-          "Piano",
-          "Guitar"
+          "Guitar",
+          "Piano"
         ],
-        "correctAnswer": "Saxophone",
-        "explanation": "🎷 **Saxophone** significa **Saxofone** em inglês! Exemplo prático: \"Jazz musicians express emotion through the saxophone.\"",
-        "phoneticHint": "/ˈsæk.sə.foʊn/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Flute",
+        "explanation": "Exemplo prático: \"The wooden flute produces sweet gentle melodies.\"",
+        "phoneticHint": "/fluːt/",
+        "skillCategory": "listening"
       },
       {
-        "id": "w0-p24-e8",
+        "id": "w0-p24-e7",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Microfone\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Microphone",
-        "visualEmoji": "🎤",
+        "prompt": "Qual imagem representa \"Saxophone\"?",
+        "audioPhrase": "Saxophone",
+        "visualEmoji": "🎷",
         "visualOptions": [
+          {
+            "text": "Guitar",
+            "emoji": "🎸",
+            "label": "Guitar",
+            "translationPt": "Violão / Guitarra"
+          },
           {
             "text": "Piano",
             "emoji": "🎹",
@@ -10775,6 +10738,31 @@ export const WORLD_0_PHASES: Phase[] = [
             "label": "Drums",
             "translationPt": "Bateria"
           },
+          {
+            "text": "Saxophone",
+            "emoji": "🎷",
+            "label": "Saxophone",
+            "translationPt": "Saxofone"
+          }
+        ],
+        "options": [
+          "Guitar",
+          "Piano",
+          "Drums",
+          "Saxophone"
+        ],
+        "correctAnswer": "Saxophone",
+        "explanation": "Exemplo prático: \"Jazz musicians express emotion through the saxophone.\"",
+        "phoneticHint": "/ˈsæk.sə.foʊn/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p24-e8",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Microfone\" em inglês?",
+        "audioPhrase": "Microphone",
+        "visualEmoji": "🎤",
+        "visualOptions": [
           {
             "text": "Microphone",
             "emoji": "🎤",
@@ -10782,31 +10770,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Microfone"
           },
           {
-            "text": "Guitar",
-            "emoji": "🎸",
-            "label": "Guitar",
-            "translationPt": "Violão / Guitarra"
-          }
-        ],
-        "options": [
-          "Piano",
-          "Drums",
-          "Microphone",
-          "Guitar"
-        ],
-        "correctAnswer": "Microphone",
-        "explanation": "🎤 **Microphone** significa **Microfone** em inglês! Exemplo prático: \"Sing your favorite English song into the microphone.\"",
-        "phoneticHint": "/ˈmaɪ.krə.foʊn/",
-        "skillCategory": "reading"
-      },
-      {
-        "id": "w0-p24-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Bell\"**:",
-        "audioPhrase": "Bell",
-        "visualEmoji": "🔔",
-        "visualOptions": [
-          {
             "text": "Piano",
             "emoji": "🎹",
             "label": "Piano",
@@ -10818,6 +10781,31 @@ export const WORLD_0_PHASES: Phase[] = [
             "label": "Guitar",
             "translationPt": "Violão / Guitarra"
           },
+          {
+            "text": "Drums",
+            "emoji": "🥁",
+            "label": "Drums",
+            "translationPt": "Bateria"
+          }
+        ],
+        "options": [
+          "Microphone",
+          "Piano",
+          "Guitar",
+          "Drums"
+        ],
+        "correctAnswer": "Microphone",
+        "explanation": "Exemplo prático: \"Sing your favorite English song into the microphone.\"",
+        "phoneticHint": "/ˈmaɪ.krə.foʊn/",
+        "skillCategory": "reading"
+      },
+      {
+        "id": "w0-p24-e9",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Bell",
+        "visualEmoji": "🔔",
+        "visualOptions": [
           {
             "text": "Bell",
             "emoji": "🔔",
@@ -10829,26 +10817,44 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥁",
             "label": "Drums",
             "translationPt": "Bateria"
+          },
+          {
+            "text": "Piano",
+            "emoji": "🎹",
+            "label": "Piano",
+            "translationPt": "Piano"
+          },
+          {
+            "text": "Guitar",
+            "emoji": "🎸",
+            "label": "Guitar",
+            "translationPt": "Violão / Guitarra"
           }
         ],
         "options": [
-          "Piano",
-          "Guitar",
           "Bell",
-          "Drums"
+          "Drums",
+          "Piano",
+          "Guitar"
         ],
         "correctAnswer": "Bell",
-        "explanation": "🔔 **Bell** significa **Sino / Campainha** em inglês! Exemplo prático: \"The church bell rings at noon.\"",
+        "explanation": "Exemplo prático: \"The church bell rings at noon.\"",
         "phoneticHint": "/bel/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p24-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Headphones\"**?",
+        "prompt": "Qual imagem representa \"Headphones\"?",
         "audioPhrase": "Headphones",
         "visualEmoji": "🎧",
         "visualOptions": [
+          {
+            "text": "Piano",
+            "emoji": "🎹",
+            "label": "Piano",
+            "translationPt": "Piano"
+          },
           {
             "text": "Headphones",
             "emoji": "🎧",
@@ -10862,12 +10868,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bateria"
           },
           {
-            "text": "Piano",
-            "emoji": "🎹",
-            "label": "Piano",
-            "translationPt": "Piano"
-          },
-          {
             "text": "Guitar",
             "emoji": "🎸",
             "label": "Guitar",
@@ -10875,13 +10875,13 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Piano",
           "Headphones",
           "Drums",
-          "Piano",
           "Guitar"
         ],
         "correctAnswer": "Headphones",
-        "explanation": "🎧 **Headphones** significa **Fones de estúdio** em inglês! Exemplo prático: \"Producers listen to music mixes through headphones.\"",
+        "explanation": "Exemplo prático: \"Producers listen to music mixes through headphones.\"",
         "phoneticHint": "/ˈhed.foʊnz/",
         "skillCategory": "vocabulary"
       }
@@ -10908,21 +10908,21 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p25-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Doctor\"**?",
+        "prompt": "Qual imagem representa \"Doctor\"?",
         "audioPhrase": "Doctor",
         "visualEmoji": "👨‍⚕️",
         "visualOptions": [
-          {
-            "text": "Doctor",
-            "emoji": "👨‍⚕️",
-            "label": "Doctor",
-            "translationPt": "Médico(a)"
-          },
           {
             "text": "Teacher",
             "emoji": "👨‍🏫",
             "label": "Teacher",
             "translationPt": "Professor(a)"
+          },
+          {
+            "text": "Doctor",
+            "emoji": "👨‍⚕️",
+            "label": "Doctor",
+            "translationPt": "Médico(a)"
           },
           {
             "text": "Police Officer",
@@ -10938,34 +10938,28 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Doctor",
           "Teacher",
+          "Doctor",
           "Police Officer",
           "Chef"
         ],
         "correctAnswer": "Doctor",
-        "explanation": "👨‍⚕️ **Doctor** significa **Médico(a)** em inglês! Exemplo prático: \"The caring doctor examines the patient.\"",
+        "explanation": "Exemplo prático: \"The caring doctor examines the patient.\"",
         "phoneticHint": "/ˈdɒk.tər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p25-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Professor(a)\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Professor(a)\" em inglês?",
         "audioPhrase": "Teacher",
         "visualEmoji": "👨‍🏫",
         "visualOptions": [
           {
-            "text": "Police Officer",
-            "emoji": "👮",
-            "label": "Police Officer",
-            "translationPt": "Policial"
-          },
-          {
-            "text": "Doctor",
-            "emoji": "👨‍⚕️",
-            "label": "Doctor",
-            "translationPt": "Médico(a)"
+            "text": "Teacher",
+            "emoji": "👨‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor(a)"
           },
           {
             "text": "Chef",
@@ -10974,42 +10968,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cozinheiro(a) / Chef"
           },
           {
-            "text": "Teacher",
-            "emoji": "👨‍🏫",
-            "label": "Teacher",
-            "translationPt": "Professor(a)"
+            "text": "Doctor",
+            "emoji": "👨‍⚕️",
+            "label": "Doctor",
+            "translationPt": "Médico(a)"
+          },
+          {
+            "text": "Police Officer",
+            "emoji": "👮",
+            "label": "Police Officer",
+            "translationPt": "Policial"
           }
         ],
         "options": [
-          "Police Officer",
-          "Doctor",
+          "Teacher",
           "Chef",
-          "Teacher"
+          "Doctor",
+          "Police Officer"
         ],
         "correctAnswer": "Teacher",
-        "explanation": "👨‍🏫 **Teacher** significa **Professor(a)** em inglês! Exemplo prático: \"The dedicated teacher explains English grammar.\"",
+        "explanation": "Exemplo prático: \"The dedicated teacher explains English grammar.\"",
         "phoneticHint": "/ˈtiː.tʃər/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p25-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Chef\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Chef",
         "visualEmoji": "👨‍🍳",
         "visualOptions": [
-          {
-            "text": "Chef",
-            "emoji": "👨‍🍳",
-            "label": "Chef / Cook",
-            "translationPt": "Cozinheiro(a) / Chef"
-          },
-          {
-            "text": "Teacher",
-            "emoji": "👨‍🏫",
-            "label": "Teacher",
-            "translationPt": "Professor(a)"
-          },
           {
             "text": "Doctor",
             "emoji": "👨‍⚕️",
@@ -11021,37 +11009,49 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👮",
             "label": "Police Officer",
             "translationPt": "Policial"
+          },
+          {
+            "text": "Chef",
+            "emoji": "👨‍🍳",
+            "label": "Chef / Cook",
+            "translationPt": "Cozinheiro(a) / Chef"
+          },
+          {
+            "text": "Teacher",
+            "emoji": "👨‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor(a)"
           }
         ],
         "options": [
-          "Chef",
-          "Teacher",
           "Doctor",
-          "Police Officer"
+          "Police Officer",
+          "Chef",
+          "Teacher"
         ],
         "correctAnswer": "Chef",
-        "explanation": "👨‍🍳 **Chef** significa **Cozinheiro(a) / Chef** em inglês! Exemplo prático: \"The master chef prepares delicious gourmet dishes.\"",
+        "explanation": "Exemplo prático: \"The master chef prepares delicious gourmet dishes.\"",
         "phoneticHint": "/ʃef/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p25-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Police Officer\"**?",
+        "prompt": "Qual imagem representa \"Police Officer\"?",
         "audioPhrase": "Police Officer",
         "visualEmoji": "👮",
         "visualOptions": [
-          {
-            "text": "Police Officer",
-            "emoji": "👮",
-            "label": "Police Officer",
-            "translationPt": "Policial"
-          },
           {
             "text": "Chef",
             "emoji": "👨‍🍳",
             "label": "Chef / Cook",
             "translationPt": "Cozinheiro(a) / Chef"
+          },
+          {
+            "text": "Police Officer",
+            "emoji": "👮",
+            "label": "Police Officer",
+            "translationPt": "Policial"
           },
           {
             "text": "Doctor",
@@ -11067,23 +11067,29 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Police Officer",
           "Chef",
+          "Police Officer",
           "Doctor",
           "Teacher"
         ],
         "correctAnswer": "Police Officer",
-        "explanation": "👮 **Police Officer** significa **Policial** em inglês! Exemplo prático: \"Police officers ensure safety in the neighborhood.\"",
+        "explanation": "Exemplo prático: \"Police officers ensure safety in the neighborhood.\"",
         "phoneticHint": "/pəˈliːs ˈɒf.ɪ.sər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p25-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Bombeiro(a)\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Bombeiro(a)\" em inglês?",
         "audioPhrase": "Firefighter",
         "visualEmoji": "👨‍🚒",
         "visualOptions": [
+          {
+            "text": "Chef",
+            "emoji": "👨‍🍳",
+            "label": "Chef / Cook",
+            "translationPt": "Cozinheiro(a) / Chef"
+          },
           {
             "text": "Firefighter",
             "emoji": "👨‍🚒",
@@ -11101,43 +11107,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👨‍🏫",
             "label": "Teacher",
             "translationPt": "Professor(a)"
-          },
-          {
-            "text": "Chef",
-            "emoji": "👨‍🍳",
-            "label": "Chef / Cook",
-            "translationPt": "Cozinheiro(a) / Chef"
           }
         ],
         "options": [
+          "Chef",
           "Firefighter",
           "Doctor",
-          "Teacher",
-          "Chef"
+          "Teacher"
         ],
         "correctAnswer": "Firefighter",
-        "explanation": "👨‍🚒 **Firefighter** significa **Bombeiro(a)** em inglês! Exemplo prático: \"Brave firefighters extinguish blazing fires.\"",
+        "explanation": "Exemplo prático: \"Brave firefighters extinguish blazing fires.\"",
         "phoneticHint": "/ˈfaɪəˌfaɪ.tər/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p25-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Pilot\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pilot",
         "visualEmoji": "👨‍✈️",
         "visualOptions": [
-          {
-            "text": "Chef",
-            "emoji": "👨‍🍳",
-            "label": "Chef / Cook",
-            "translationPt": "Cozinheiro(a) / Chef"
-          },
           {
             "text": "Doctor",
             "emoji": "👨‍⚕️",
             "label": "Doctor",
             "translationPt": "Médico(a)"
+          },
+          {
+            "text": "Chef",
+            "emoji": "👨‍🍳",
+            "label": "Chef / Cook",
+            "translationPt": "Cozinheiro(a) / Chef"
           },
           {
             "text": "Pilot",
@@ -11153,34 +11153,34 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Chef",
           "Doctor",
+          "Chef",
           "Pilot",
           "Teacher"
         ],
         "correctAnswer": "Pilot",
-        "explanation": "👨‍✈️ **Pilot** significa **Piloto de avião** em inglês! Exemplo prático: \"The commercial pilot navigates across oceans.\"",
+        "explanation": "Exemplo prático: \"The commercial pilot navigates across oceans.\"",
         "phoneticHint": "/ˈpaɪ.lət/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p25-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Artist\"**?",
+        "prompt": "Qual imagem representa \"Artist\"?",
         "audioPhrase": "Artist",
         "visualEmoji": "🎨",
         "visualOptions": [
+          {
+            "text": "Teacher",
+            "emoji": "👨‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor(a)"
+          },
           {
             "text": "Doctor",
             "emoji": "👨‍⚕️",
             "label": "Doctor",
             "translationPt": "Médico(a)"
-          },
-          {
-            "text": "Chef",
-            "emoji": "👨‍🍳",
-            "label": "Chef / Cook",
-            "translationPt": "Cozinheiro(a) / Chef"
           },
           {
             "text": "Artist",
@@ -11189,36 +11189,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Artista / Pintor(a)"
           },
           {
-            "text": "Teacher",
-            "emoji": "👨‍🏫",
-            "label": "Teacher",
-            "translationPt": "Professor(a)"
+            "text": "Chef",
+            "emoji": "👨‍🍳",
+            "label": "Chef / Cook",
+            "translationPt": "Cozinheiro(a) / Chef"
           }
         ],
         "options": [
+          "Teacher",
           "Doctor",
-          "Chef",
           "Artist",
-          "Teacher"
+          "Chef"
         ],
         "correctAnswer": "Artist",
-        "explanation": "🎨 **Artist** significa **Artista / Pintor(a)** em inglês! Exemplo prático: \"The talented artist paints vibrant oil canvases.\"",
+        "explanation": "Exemplo prático: \"The talented artist paints vibrant oil canvases.\"",
         "phoneticHint": "/ˈɑː.tɪst/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p25-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Agricultor(a) / Fazendeiro\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Agricultor(a) / Fazendeiro\" em inglês?",
         "audioPhrase": "Farmer",
         "visualEmoji": "👨‍🌾",
         "visualOptions": [
-          {
-            "text": "Chef",
-            "emoji": "👨‍🍳",
-            "label": "Chef / Cook",
-            "translationPt": "Cozinheiro(a) / Chef"
-          },
           {
             "text": "Teacher",
             "emoji": "👨‍🏫",
@@ -11236,43 +11230,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👨‍🌾",
             "label": "Farmer",
             "translationPt": "Agricultor(a) / Fazendeiro"
-          }
-        ],
-        "options": [
-          "Chef",
-          "Teacher",
-          "Doctor",
-          "Farmer"
-        ],
-        "correctAnswer": "Farmer",
-        "explanation": "👨‍🌾 **Farmer** significa **Agricultor(a) / Fazendeiro** em inglês! Exemplo prático: \"The hardworking farmer harvests organic vegetables.\"",
-        "phoneticHint": "/ˈfɑː.mər/",
-        "skillCategory": "reading"
-      },
-      {
-        "id": "w0-p25-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Singer\"**:",
-        "audioPhrase": "Singer",
-        "visualEmoji": "🧑‍🎤",
-        "visualOptions": [
-          {
-            "text": "Doctor",
-            "emoji": "👨‍⚕️",
-            "label": "Doctor",
-            "translationPt": "Médico(a)"
-          },
-          {
-            "text": "Singer",
-            "emoji": "🧑‍🎤",
-            "label": "Singer",
-            "translationPt": "Cantor(a)"
-          },
-          {
-            "text": "Teacher",
-            "emoji": "👨‍🏫",
-            "label": "Teacher",
-            "translationPt": "Professor(a)"
           },
           {
             "text": "Chef",
@@ -11282,20 +11239,63 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Doctor",
-          "Singer",
           "Teacher",
+          "Doctor",
+          "Farmer",
           "Chef"
         ],
+        "correctAnswer": "Farmer",
+        "explanation": "Exemplo prático: \"The hardworking farmer harvests organic vegetables.\"",
+        "phoneticHint": "/ˈfɑː.mər/",
+        "skillCategory": "reading"
+      },
+      {
+        "id": "w0-p25-e9",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Singer",
+        "visualEmoji": "🧑‍🎤",
+        "visualOptions": [
+          {
+            "text": "Singer",
+            "emoji": "🧑‍🎤",
+            "label": "Singer",
+            "translationPt": "Cantor(a)"
+          },
+          {
+            "text": "Chef",
+            "emoji": "👨‍🍳",
+            "label": "Chef / Cook",
+            "translationPt": "Cozinheiro(a) / Chef"
+          },
+          {
+            "text": "Doctor",
+            "emoji": "👨‍⚕️",
+            "label": "Doctor",
+            "translationPt": "Médico(a)"
+          },
+          {
+            "text": "Teacher",
+            "emoji": "👨‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor(a)"
+          }
+        ],
+        "options": [
+          "Singer",
+          "Chef",
+          "Doctor",
+          "Teacher"
+        ],
         "correctAnswer": "Singer",
-        "explanation": "🧑‍🎤 **Singer** significa **Cantor(a)** em inglês! Exemplo prático: \"The musical singer performs at large concert halls.\"",
+        "explanation": "Exemplo prático: \"The musical singer performs at large concert halls.\"",
         "phoneticHint": "/ˈsɪŋ.ər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p25-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Builder\"**?",
+        "prompt": "Qual imagem representa \"Builder\"?",
         "audioPhrase": "Builder",
         "visualEmoji": "👷",
         "visualOptions": [
@@ -11306,16 +11306,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Médico(a)"
           },
           {
-            "text": "Teacher",
-            "emoji": "👨‍🏫",
-            "label": "Teacher",
-            "translationPt": "Professor(a)"
-          },
-          {
             "text": "Builder",
             "emoji": "👷",
             "label": "Builder / Engineer",
             "translationPt": "Construtor(a) / Engenheiro"
+          },
+          {
+            "text": "Teacher",
+            "emoji": "👨‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor(a)"
           },
           {
             "text": "Chef",
@@ -11326,12 +11326,12 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Doctor",
-          "Teacher",
           "Builder",
+          "Teacher",
           "Chef"
         ],
         "correctAnswer": "Builder",
-        "explanation": "👷 **Builder** significa **Construtor(a) / Engenheiro** em inglês! Exemplo prático: \"Builders construct sturdy modern homes.\"",
+        "explanation": "Exemplo prático: \"Builders construct sturdy modern homes.\"",
         "phoneticHint": "/ˈbɪl.dər/",
         "skillCategory": "vocabulary"
       }
@@ -11358,16 +11358,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p26-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Carrot\"**?",
+        "prompt": "Qual imagem representa \"Carrot\"?",
         "audioPhrase": "Carrot",
         "visualEmoji": "🥕",
         "visualOptions": [
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
-          },
           {
             "text": "Broccoli",
             "emoji": "🥦",
@@ -11381,6 +11375,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cenoura"
           },
           {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
+          },
+          {
             "text": "Potato",
             "emoji": "🥔",
             "label": "Potato",
@@ -11388,34 +11388,34 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Tomato",
           "Broccoli",
           "Carrot",
+          "Tomato",
           "Potato"
         ],
         "correctAnswer": "Carrot",
-        "explanation": "🥕 **Carrot** significa **Cenoura** em inglês! Exemplo prático: \"Crunchy raw carrots are healthy snacks.\"",
+        "explanation": "Exemplo prático: \"Crunchy raw carrots are healthy snacks.\"",
         "phoneticHint": "/ˈkær.ət/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p26-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Tomate\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Tomate\" em inglês?",
         "audioPhrase": "Tomato",
         "visualEmoji": "🍅",
         "visualOptions": [
+          {
+            "text": "Carrot",
+            "emoji": "🥕",
+            "label": "Carrot",
+            "translationPt": "Cenoura"
+          },
           {
             "text": "Broccoli",
             "emoji": "🥦",
             "label": "Broccoli",
             "translationPt": "Brócolis"
-          },
-          {
-            "text": "Potato",
-            "emoji": "🥔",
-            "label": "Potato",
-            "translationPt": "Batata"
           },
           {
             "text": "Tomato",
@@ -11424,30 +11424,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tomate"
           },
           {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura"
+            "text": "Potato",
+            "emoji": "🥔",
+            "label": "Potato",
+            "translationPt": "Batata"
           }
         ],
         "options": [
+          "Carrot",
           "Broccoli",
-          "Potato",
           "Tomato",
-          "Carrot"
+          "Potato"
         ],
         "correctAnswer": "Tomato",
-        "explanation": "🍅 **Tomato** significa **Tomate** em inglês! Exemplo prático: \"Ripe red tomatoes make fantastic salad.\"",
+        "explanation": "Exemplo prático: \"Ripe red tomatoes make fantastic salad.\"",
         "phoneticHint": "/təˈmɑː.toʊ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p26-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Potato\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Potato",
         "visualEmoji": "🥔",
         "visualOptions": [
+          {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
+          },
           {
             "text": "Potato",
             "emoji": "🥔",
@@ -11465,43 +11471,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥦",
             "label": "Broccoli",
             "translationPt": "Brócolis"
-          },
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
           }
         ],
         "options": [
+          "Tomato",
           "Potato",
           "Carrot",
-          "Broccoli",
-          "Tomato"
+          "Broccoli"
         ],
         "correctAnswer": "Potato",
-        "explanation": "🥔 **Potato** significa **Batata** em inglês! Exemplo prático: \"Mashed potatoes are a popular side dish.\"",
+        "explanation": "Exemplo prático: \"Mashed potatoes are a popular side dish.\"",
         "phoneticHint": "/pəˈteɪ.toʊ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p26-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Broccoli\"**?",
+        "prompt": "Qual imagem representa \"Broccoli\"?",
         "audioPhrase": "Broccoli",
         "visualEmoji": "🥦",
         "visualOptions": [
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
-          },
           {
             "text": "Broccoli",
             "emoji": "🥦",
             "label": "Broccoli",
             "translationPt": "Brócolis"
+          },
+          {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
           },
           {
             "text": "Potato",
@@ -11517,23 +11517,35 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Tomato",
           "Broccoli",
+          "Tomato",
           "Potato",
           "Carrot"
         ],
         "correctAnswer": "Broccoli",
-        "explanation": "🥦 **Broccoli** significa **Brócolis** em inglês! Exemplo prático: \"Steamed green broccoli is packed with vitamins.\"",
+        "explanation": "Exemplo prático: \"Steamed green broccoli is packed with vitamins.\"",
         "phoneticHint": "/ˈbrɒk.əl.i/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p26-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Milho\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Milho\" em inglês?",
         "audioPhrase": "Corn",
         "visualEmoji": "🌽",
         "visualOptions": [
+          {
+            "text": "Potato",
+            "emoji": "🥔",
+            "label": "Potato",
+            "translationPt": "Batata"
+          },
+          {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
+          },
           {
             "text": "Carrot",
             "emoji": "🥕",
@@ -11545,38 +11557,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌽",
             "label": "Corn",
             "translationPt": "Milho"
-          },
-          {
-            "text": "Potato",
-            "emoji": "🥔",
-            "label": "Potato",
-            "translationPt": "Batata"
-          },
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
           }
         ],
         "options": [
-          "Carrot",
-          "Corn",
           "Potato",
-          "Tomato"
+          "Tomato",
+          "Carrot",
+          "Corn"
         ],
         "correctAnswer": "Corn",
-        "explanation": "🌽 **Corn** significa **Milho** em inglês! Exemplo prático: \"Sweet yellow corn boiled on the cob.\"",
+        "explanation": "Exemplo prático: \"Sweet yellow corn boiled on the cob.\"",
         "phoneticHint": "/kɔːn/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p26-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Onion\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Onion",
         "visualEmoji": "🧅",
         "visualOptions": [
+          {
+            "text": "Potato",
+            "emoji": "🥔",
+            "label": "Potato",
+            "translationPt": "Batata"
+          },
           {
             "text": "Onion",
             "emoji": "🧅",
@@ -11584,48 +11590,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cebola"
           },
           {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
-          },
-          {
-            "text": "Potato",
-            "emoji": "🥔",
-            "label": "Potato",
-            "translationPt": "Batata"
-          },
-          {
             "text": "Carrot",
             "emoji": "🥕",
             "label": "Carrot",
             "translationPt": "Cenoura"
+          },
+          {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
           }
         ],
         "options": [
-          "Onion",
-          "Tomato",
           "Potato",
-          "Carrot"
+          "Onion",
+          "Carrot",
+          "Tomato"
         ],
         "correctAnswer": "Onion",
-        "explanation": "🧅 **Onion** significa **Cebola** em inglês! Exemplo prático: \"Chopped onions add aroma to dishes.\"",
+        "explanation": "Exemplo prático: \"Chopped onions add aroma to dishes.\"",
         "phoneticHint": "/ˈʌn.jən/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p26-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Garlic\"**?",
+        "prompt": "Qual imagem representa \"Garlic\"?",
         "audioPhrase": "Garlic",
         "visualEmoji": "🧄",
         "visualOptions": [
-          {
-            "text": "Potato",
-            "emoji": "🥔",
-            "label": "Potato",
-            "translationPt": "Batata"
-          },
           {
             "text": "Carrot",
             "emoji": "🥕",
@@ -11643,31 +11637,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍅",
             "label": "Tomato",
             "translationPt": "Tomate"
+          },
+          {
+            "text": "Potato",
+            "emoji": "🥔",
+            "label": "Potato",
+            "translationPt": "Batata"
           }
         ],
         "options": [
-          "Potato",
           "Carrot",
           "Garlic",
-          "Tomato"
+          "Tomato",
+          "Potato"
         ],
         "correctAnswer": "Garlic",
-        "explanation": "🧄 **Garlic** significa **Alho** em inglês! Exemplo prático: \"A clove of crushed garlic enhances flavor.\"",
+        "explanation": "Exemplo prático: \"A clove of crushed garlic enhances flavor.\"",
         "phoneticHint": "/ˈɡɑː.lɪk/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p26-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Pimenta\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Pimenta\" em inglês?",
         "audioPhrase": "Pepper",
         "visualEmoji": "🌶️",
         "visualOptions": [
           {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura"
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
           },
           {
             "text": "Pepper",
@@ -11676,41 +11676,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pimenta"
           },
           {
+            "text": "Carrot",
+            "emoji": "🥕",
+            "label": "Carrot",
+            "translationPt": "Cenoura"
+          },
+          {
             "text": "Potato",
             "emoji": "🥔",
             "label": "Potato",
             "translationPt": "Batata"
-          },
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
           }
         ],
         "options": [
-          "Carrot",
+          "Tomato",
           "Pepper",
-          "Potato",
-          "Tomato"
+          "Carrot",
+          "Potato"
         ],
         "correctAnswer": "Pepper",
-        "explanation": "🌶️ **Pepper** significa **Pimenta** em inglês! Exemplo prático: \"Spicy chili pepper adds heat to recipes.\"",
+        "explanation": "Exemplo prático: \"Spicy chili pepper adds heat to recipes.\"",
         "phoneticHint": "/ˈpep.ər/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p26-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Cucumber\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cucumber",
         "visualEmoji": "🥒",
         "visualOptions": [
           {
-            "text": "Potato",
-            "emoji": "🥔",
-            "label": "Potato",
-            "translationPt": "Batata"
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
           },
           {
             "text": "Cucumber",
@@ -11718,6 +11718,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "label": "Cucumber",
             "translationPt": "Pepino"
           },
+          {
+            "text": "Potato",
+            "emoji": "🥔",
+            "label": "Potato",
+            "translationPt": "Batata"
+          },
+          {
+            "text": "Carrot",
+            "emoji": "🥕",
+            "label": "Carrot",
+            "translationPt": "Cenoura"
+          }
+        ],
+        "options": [
+          "Tomato",
+          "Cucumber",
+          "Potato",
+          "Carrot"
+        ],
+        "correctAnswer": "Cucumber",
+        "explanation": "Exemplo prático: \"Cool cucumber slices are very refreshing.\"",
+        "phoneticHint": "/ˈkjuː.kʌm.bər/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p26-e10",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Mushroom\"?",
+        "audioPhrase": "Mushroom",
+        "visualEmoji": "🍄",
+        "visualOptions": [
           {
             "text": "Tomato",
             "emoji": "🍅",
@@ -11729,31 +11760,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥕",
             "label": "Carrot",
             "translationPt": "Cenoura"
-          }
-        ],
-        "options": [
-          "Potato",
-          "Cucumber",
-          "Tomato",
-          "Carrot"
-        ],
-        "correctAnswer": "Cucumber",
-        "explanation": "🥒 **Cucumber** significa **Pepino** em inglês! Exemplo prático: \"Cool cucumber slices are very refreshing.\"",
-        "phoneticHint": "/ˈkjuː.kʌm.bər/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p26-e10",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Mushroom\"**?",
-        "audioPhrase": "Mushroom",
-        "visualEmoji": "🍄",
-        "visualOptions": [
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
           },
           {
             "text": "Mushroom",
@@ -11766,22 +11772,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥔",
             "label": "Potato",
             "translationPt": "Batata"
-          },
-          {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura"
           }
         ],
         "options": [
           "Tomato",
+          "Carrot",
           "Mushroom",
-          "Potato",
-          "Carrot"
+          "Potato"
         ],
         "correctAnswer": "Mushroom",
-        "explanation": "🍄 **Mushroom** significa **Cogumelo** em inglês! Exemplo prático: \"Sautéed mushrooms complement grilled dishes.\"",
+        "explanation": "Exemplo prático: \"Sautéed mushrooms complement grilled dishes.\"",
         "phoneticHint": "/ˈmʌʃ.ruːm/",
         "skillCategory": "vocabulary"
       }
@@ -11808,16 +11808,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p27-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Cake\"**?",
+        "prompt": "Qual imagem representa \"Cake\"?",
         "audioPhrase": "Cake",
         "visualEmoji": "🍰",
         "visualOptions": [
-          {
-            "text": "Donut",
-            "emoji": "🍩",
-            "label": "Donut",
-            "translationPt": "Rosquinha / Donut"
-          },
           {
             "text": "Chocolate",
             "emoji": "🍫",
@@ -11825,33 +11819,39 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chocolate"
           },
           {
-            "text": "Ice Cream",
-            "emoji": "🍦",
-            "label": "Ice Cream",
-            "translationPt": "Sorvete"
-          },
-          {
             "text": "Cake",
             "emoji": "🍰",
             "label": "Cake",
             "translationPt": "Bolo / Torta"
+          },
+          {
+            "text": "Donut",
+            "emoji": "🍩",
+            "label": "Donut",
+            "translationPt": "Rosquinha / Donut"
+          },
+          {
+            "text": "Ice Cream",
+            "emoji": "🍦",
+            "label": "Ice Cream",
+            "translationPt": "Sorvete"
           }
         ],
         "options": [
-          "Donut",
           "Chocolate",
-          "Ice Cream",
-          "Cake"
+          "Cake",
+          "Donut",
+          "Ice Cream"
         ],
         "correctAnswer": "Cake",
-        "explanation": "🍰 **Cake** significa **Bolo / Torta** em inglês! Exemplo prático: \"A slice of vanilla birthday cake.\"",
+        "explanation": "Exemplo prático: \"A slice of vanilla birthday cake.\"",
         "phoneticHint": "/keɪk/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p27-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Sorvete\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Sorvete\" em inglês?",
         "audioPhrase": "Ice Cream",
         "visualEmoji": "🍦",
         "visualOptions": [
@@ -11862,16 +11862,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bolo / Torta"
           },
           {
-            "text": "Chocolate",
-            "emoji": "🍫",
-            "label": "Chocolate",
-            "translationPt": "Chocolate"
-          },
-          {
             "text": "Ice Cream",
             "emoji": "🍦",
             "label": "Ice Cream",
             "translationPt": "Sorvete"
+          },
+          {
+            "text": "Chocolate",
+            "emoji": "🍫",
+            "label": "Chocolate",
+            "translationPt": "Chocolate"
           },
           {
             "text": "Donut",
@@ -11882,28 +11882,22 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Cake",
-          "Chocolate",
           "Ice Cream",
+          "Chocolate",
           "Donut"
         ],
         "correctAnswer": "Ice Cream",
-        "explanation": "🍦 **Ice Cream** significa **Sorvete** em inglês! Exemplo prático: \"A double scoop of chocolate ice cream.\"",
+        "explanation": "Exemplo prático: \"A double scoop of chocolate ice cream.\"",
         "phoneticHint": "/ˈaɪs ˌkriːm/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p27-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Donut\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Donut",
         "visualEmoji": "🍩",
         "visualOptions": [
-          {
-            "text": "Donut",
-            "emoji": "🍩",
-            "label": "Donut",
-            "translationPt": "Rosquinha / Donut"
-          },
           {
             "text": "Cake",
             "emoji": "🍰",
@@ -11911,48 +11905,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bolo / Torta"
           },
           {
-            "text": "Ice Cream",
-            "emoji": "🍦",
-            "label": "Ice Cream",
-            "translationPt": "Sorvete"
-          },
-          {
             "text": "Chocolate",
             "emoji": "🍫",
             "label": "Chocolate",
             "translationPt": "Chocolate"
+          },
+          {
+            "text": "Donut",
+            "emoji": "🍩",
+            "label": "Donut",
+            "translationPt": "Rosquinha / Donut"
+          },
+          {
+            "text": "Ice Cream",
+            "emoji": "🍦",
+            "label": "Ice Cream",
+            "translationPt": "Sorvete"
           }
         ],
         "options": [
-          "Donut",
           "Cake",
-          "Ice Cream",
-          "Chocolate"
+          "Chocolate",
+          "Donut",
+          "Ice Cream"
         ],
         "correctAnswer": "Donut",
-        "explanation": "🍩 **Donut** significa **Rosquinha / Donut** em inglês! Exemplo prático: \"Glazed donuts with colorful sprinkles.\"",
+        "explanation": "Exemplo prático: \"Glazed donuts with colorful sprinkles.\"",
         "phoneticHint": "/ˈdoʊ.nʌt/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p27-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Chocolate\"**?",
+        "prompt": "Qual imagem representa \"Chocolate\"?",
         "audioPhrase": "Chocolate",
         "visualEmoji": "🍫",
         "visualOptions": [
-          {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo / Torta"
-          },
-          {
-            "text": "Donut",
-            "emoji": "🍩",
-            "label": "Donut",
-            "translationPt": "Rosquinha / Donut"
-          },
           {
             "text": "Ice Cream",
             "emoji": "🍦",
@@ -11960,35 +11948,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sorvete"
           },
           {
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo / Torta"
+          },
+          {
             "text": "Chocolate",
             "emoji": "🍫",
             "label": "Chocolate",
             "translationPt": "Chocolate"
+          },
+          {
+            "text": "Donut",
+            "emoji": "🍩",
+            "label": "Donut",
+            "translationPt": "Rosquinha / Donut"
           }
         ],
         "options": [
-          "Cake",
-          "Donut",
           "Ice Cream",
-          "Chocolate"
+          "Cake",
+          "Chocolate",
+          "Donut"
         ],
         "correctAnswer": "Chocolate",
-        "explanation": "🍫 **Chocolate** significa **Chocolate** em inglês! Exemplo prático: \"Dark chocolate melts smoothly on the tongue.\"",
+        "explanation": "Exemplo prático: \"Dark chocolate melts smoothly on the tongue.\"",
         "phoneticHint": "/ˈtʃɒk.lət/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p27-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Bala / Doce\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Bala / Doce\" em inglês?",
         "audioPhrase": "Candy",
         "visualEmoji": "🍬",
         "visualOptions": [
           {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo / Torta"
+            "text": "Donut",
+            "emoji": "🍩",
+            "label": "Donut",
+            "translationPt": "Rosquinha / Donut"
           },
           {
             "text": "Candy",
@@ -11997,41 +11997,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bala / Doce"
           },
           {
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo / Torta"
+          },
+          {
             "text": "Ice Cream",
             "emoji": "🍦",
             "label": "Ice Cream",
             "translationPt": "Sorvete"
-          },
-          {
-            "text": "Donut",
-            "emoji": "🍩",
-            "label": "Donut",
-            "translationPt": "Rosquinha / Donut"
           }
         ],
         "options": [
-          "Cake",
+          "Donut",
           "Candy",
-          "Ice Cream",
-          "Donut"
+          "Cake",
+          "Ice Cream"
         ],
         "correctAnswer": "Candy",
-        "explanation": "🍬 **Candy** significa **Bala / Doce** em inglês! Exemplo prático: \"Fruity wrapped candy in assorted flavors.\"",
+        "explanation": "Exemplo prático: \"Fruity wrapped candy in assorted flavors.\"",
         "phoneticHint": "/ˈkæn.di/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p27-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Lollipop\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lollipop",
         "visualEmoji": "🍭",
         "visualOptions": [
           {
-            "text": "Ice Cream",
-            "emoji": "🍦",
-            "label": "Ice Cream",
-            "translationPt": "Sorvete"
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo / Torta"
           },
           {
             "text": "Lollipop",
@@ -12046,27 +12046,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rosquinha / Donut"
           },
           {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo / Torta"
+            "text": "Ice Cream",
+            "emoji": "🍦",
+            "label": "Ice Cream",
+            "translationPt": "Sorvete"
           }
         ],
         "options": [
-          "Ice Cream",
+          "Cake",
           "Lollipop",
           "Donut",
-          "Cake"
+          "Ice Cream"
         ],
         "correctAnswer": "Lollipop",
-        "explanation": "🍭 **Lollipop** significa **Pirulito** em inglês! Exemplo prático: \"A swirl cherry lollipop on a plastic stick.\"",
+        "explanation": "Exemplo prático: \"A swirl cherry lollipop on a plastic stick.\"",
         "phoneticHint": "/ˈlɒl.i.pɒp/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p27-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Pie\"**?",
+        "prompt": "Qual imagem representa \"Pie\"?",
         "audioPhrase": "Pie",
         "visualEmoji": "🥧",
         "visualOptions": [
@@ -12102,23 +12102,17 @@ export const WORLD_0_PHASES: Phase[] = [
           "Ice Cream"
         ],
         "correctAnswer": "Pie",
-        "explanation": "🥧 **Pie** significa **Torta doce** em inglês! Exemplo prático: \"Warm American apple pie with cinnamon.\"",
+        "explanation": "Exemplo prático: \"Warm American apple pie with cinnamon.\"",
         "phoneticHint": "/paɪ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p27-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Cupcake / Bolinho\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Cupcake / Bolinho\" em inglês?",
         "audioPhrase": "Cupcake",
         "visualEmoji": "🧁",
         "visualOptions": [
-          {
-            "text": "Donut",
-            "emoji": "🍩",
-            "label": "Donut",
-            "translationPt": "Rosquinha / Donut"
-          },
           {
             "text": "Ice Cream",
             "emoji": "🍦",
@@ -12136,32 +12130,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧁",
             "label": "Cupcake",
             "translationPt": "Cupcake / Bolinho"
+          },
+          {
+            "text": "Donut",
+            "emoji": "🍩",
+            "label": "Donut",
+            "translationPt": "Rosquinha / Donut"
           }
         ],
         "options": [
-          "Donut",
           "Ice Cream",
           "Cake",
-          "Cupcake"
+          "Cupcake",
+          "Donut"
         ],
         "correctAnswer": "Cupcake",
-        "explanation": "🧁 **Cupcake** significa **Cupcake / Bolinho** em inglês! Exemplo prático: \"Mini cupcakes topped with strawberry frosting.\"",
+        "explanation": "Exemplo prático: \"Mini cupcakes topped with strawberry frosting.\"",
         "phoneticHint": "/ˈkʌp.keɪk/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p27-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Honey\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Honey",
         "visualEmoji": "🍯",
         "visualOptions": [
-          {
-            "text": "Ice Cream",
-            "emoji": "🍦",
-            "label": "Ice Cream",
-            "translationPt": "Sorvete"
-          },
           {
             "text": "Donut",
             "emoji": "🍩",
@@ -12169,42 +12163,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rosquinha / Donut"
           },
           {
-            "text": "Honey",
-            "emoji": "🍯",
-            "label": "Honey",
-            "translationPt": "Mel de abelha"
+            "text": "Ice Cream",
+            "emoji": "🍦",
+            "label": "Ice Cream",
+            "translationPt": "Sorvete"
           },
           {
             "text": "Cake",
             "emoji": "🍰",
             "label": "Cake",
             "translationPt": "Bolo / Torta"
+          },
+          {
+            "text": "Honey",
+            "emoji": "🍯",
+            "label": "Honey",
+            "translationPt": "Mel de abelha"
           }
         ],
         "options": [
-          "Ice Cream",
           "Donut",
-          "Honey",
-          "Cake"
+          "Ice Cream",
+          "Cake",
+          "Honey"
         ],
         "correctAnswer": "Honey",
-        "explanation": "🍯 **Honey** significa **Mel de abelha** em inglês! Exemplo prático: \"Pure golden honey drizzled over pancakes.\"",
+        "explanation": "Exemplo prático: \"Pure golden honey drizzled over pancakes.\"",
         "phoneticHint": "/ˈhʌn.i/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p27-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Pudding\"**?",
+        "prompt": "Qual imagem representa \"Pudding\"?",
         "audioPhrase": "Pudding",
         "visualEmoji": "🍮",
         "visualOptions": [
-          {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo / Torta"
-          },
           {
             "text": "Pudding",
             "emoji": "🍮",
@@ -12222,16 +12216,22 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍩",
             "label": "Donut",
             "translationPt": "Rosquinha / Donut"
+          },
+          {
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo / Torta"
           }
         ],
         "options": [
-          "Cake",
           "Pudding",
           "Ice Cream",
-          "Donut"
+          "Donut",
+          "Cake"
         ],
         "correctAnswer": "Pudding",
-        "explanation": "🍮 **Pudding** significa **Pudim** em inglês! Exemplo prático: \"Creamy caramel pudding served chilled.\"",
+        "explanation": "Exemplo prático: \"Creamy caramel pudding served chilled.\"",
         "phoneticHint": "/ˈpʊd.ɪŋ/",
         "skillCategory": "vocabulary"
       }
@@ -12258,15 +12258,15 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p28-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Star\"**?",
+        "prompt": "Qual imagem representa \"Star\"?",
         "audioPhrase": "Star",
         "visualEmoji": "⭐",
         "visualOptions": [
           {
-            "text": "Planet",
-            "emoji": "🪐",
-            "label": "Planet (Saturn)",
-            "translationPt": "Planeta com anéis"
+            "text": "Star",
+            "emoji": "⭐",
+            "label": "Star",
+            "translationPt": "Estrela"
           },
           {
             "text": "Rocket",
@@ -12275,10 +12275,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Foguete espacial"
           },
           {
-            "text": "Star",
-            "emoji": "⭐",
-            "label": "Star",
-            "translationPt": "Estrela"
+            "text": "Planet",
+            "emoji": "🪐",
+            "label": "Planet (Saturn)",
+            "translationPt": "Planeta com anéis"
           },
           {
             "text": "Earth",
@@ -12288,28 +12288,28 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Planet",
-          "Rocket",
           "Star",
+          "Rocket",
+          "Planet",
           "Earth"
         ],
         "correctAnswer": "Star",
-        "explanation": "⭐ **Star** significa **Estrela** em inglês! Exemplo prático: \"Distant stars twinkle brightly in the night sky.\"",
+        "explanation": "Exemplo prático: \"Distant stars twinkle brightly in the night sky.\"",
         "phoneticHint": "/stɑːr/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p28-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Planeta com anéis\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Planeta com anéis\" em inglês?",
         "audioPhrase": "Planet",
         "visualEmoji": "🪐",
         "visualOptions": [
           {
-            "text": "Earth",
-            "emoji": "🌍",
-            "label": "Earth",
-            "translationPt": "Planeta Terra"
+            "text": "Planet",
+            "emoji": "🪐",
+            "label": "Planet (Saturn)",
+            "translationPt": "Planeta com anéis"
           },
           {
             "text": "Star",
@@ -12324,42 +12324,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Foguete espacial"
           },
           {
-            "text": "Planet",
-            "emoji": "🪐",
-            "label": "Planet (Saturn)",
-            "translationPt": "Planeta com anéis"
+            "text": "Earth",
+            "emoji": "🌍",
+            "label": "Earth",
+            "translationPt": "Planeta Terra"
           }
         ],
         "options": [
-          "Earth",
+          "Planet",
           "Star",
           "Rocket",
-          "Planet"
+          "Earth"
         ],
         "correctAnswer": "Planet",
-        "explanation": "🪐 **Planet** significa **Planeta com anéis** em inglês! Exemplo prático: \"Saturn is a magnificent ringed planet.\"",
+        "explanation": "Exemplo prático: \"Saturn is a magnificent ringed planet.\"",
         "phoneticHint": "/ˈplæn.ɪt/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p28-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Earth\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Earth",
         "visualEmoji": "🌍",
         "visualOptions": [
-          {
-            "text": "Planet",
-            "emoji": "🪐",
-            "label": "Planet (Saturn)",
-            "translationPt": "Planeta com anéis"
-          },
-          {
-            "text": "Rocket",
-            "emoji": "🚀",
-            "label": "Rocket",
-            "translationPt": "Foguete espacial"
-          },
           {
             "text": "Earth",
             "emoji": "🌍",
@@ -12371,23 +12359,35 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⭐",
             "label": "Star",
             "translationPt": "Estrela"
+          },
+          {
+            "text": "Planet",
+            "emoji": "🪐",
+            "label": "Planet (Saturn)",
+            "translationPt": "Planeta com anéis"
+          },
+          {
+            "text": "Rocket",
+            "emoji": "🚀",
+            "label": "Rocket",
+            "translationPt": "Foguete espacial"
           }
         ],
         "options": [
-          "Planet",
-          "Rocket",
           "Earth",
-          "Star"
+          "Star",
+          "Planet",
+          "Rocket"
         ],
         "correctAnswer": "Earth",
-        "explanation": "🌍 **Earth** significa **Planeta Terra** em inglês! Exemplo prático: \"Planet Earth is our blue and green home.\"",
+        "explanation": "Exemplo prático: \"Planet Earth is our blue and green home.\"",
         "phoneticHint": "/ɜːθ/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p28-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Rocket\"**?",
+        "prompt": "Qual imagem representa \"Rocket\"?",
         "audioPhrase": "Rocket",
         "visualEmoji": "🚀",
         "visualOptions": [
@@ -12398,16 +12398,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Foguete espacial"
           },
           {
-            "text": "Earth",
-            "emoji": "🌍",
-            "label": "Earth",
-            "translationPt": "Planeta Terra"
-          },
-          {
             "text": "Star",
             "emoji": "⭐",
             "label": "Star",
             "translationPt": "Estrela"
+          },
+          {
+            "text": "Earth",
+            "emoji": "🌍",
+            "label": "Earth",
+            "translationPt": "Planeta Terra"
           },
           {
             "text": "Planet",
@@ -12418,19 +12418,19 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Rocket",
-          "Earth",
           "Star",
+          "Earth",
           "Planet"
         ],
         "correctAnswer": "Rocket",
-        "explanation": "🚀 **Rocket** significa **Foguete espacial** em inglês! Exemplo prático: \"The powerful rocket launches toward orbit.\"",
+        "explanation": "Exemplo prático: \"The powerful rocket launches toward orbit.\"",
         "phoneticHint": "/ˈrɒk.ɪt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p28-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Astronauta\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Astronauta\" em inglês?",
         "audioPhrase": "Astronaut",
         "visualEmoji": "👨‍🚀",
         "visualOptions": [
@@ -12441,18 +12441,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Estrela"
           },
           {
-            "text": "Planet",
-            "emoji": "🪐",
-            "label": "Planet (Saturn)",
-            "translationPt": "Planeta com anéis"
-          },
-          {
             "text": "Astronaut",
             "emoji": "👨‍🚀",
             "label": "Astronaut",
             "translationPt": "Astronauta"
           },
           {
+            "text": "Planet",
+            "emoji": "🪐",
+            "label": "Planet (Saturn)",
+            "translationPt": "Planeta com anéis"
+          },
+          {
             "text": "Earth",
             "emoji": "🌍",
             "label": "Earth",
@@ -12461,28 +12461,22 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Star",
-          "Planet",
           "Astronaut",
+          "Planet",
           "Earth"
         ],
         "correctAnswer": "Astronaut",
-        "explanation": "👨‍🚀 **Astronaut** significa **Astronauta** em inglês! Exemplo prático: \"Astronauts float weightlessly in space.\"",
+        "explanation": "Exemplo prático: \"Astronauts float weightlessly in space.\"",
         "phoneticHint": "/ˈæs.trə.nɔːt/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p28-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Sun\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sun",
         "visualEmoji": "☀️",
         "visualOptions": [
-          {
-            "text": "Earth",
-            "emoji": "🌍",
-            "label": "Earth",
-            "translationPt": "Planeta Terra"
-          },
           {
             "text": "Star",
             "emoji": "⭐",
@@ -12490,48 +12484,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Estrela"
           },
           {
-            "text": "Planet",
-            "emoji": "🪐",
-            "label": "Planet (Saturn)",
-            "translationPt": "Planeta com anéis"
+            "text": "Earth",
+            "emoji": "🌍",
+            "label": "Earth",
+            "translationPt": "Planeta Terra"
           },
           {
             "text": "Sun",
             "emoji": "☀️",
             "label": "Sun",
             "translationPt": "Sol / Estrela central"
-          }
-        ],
-        "options": [
-          "Earth",
-          "Star",
-          "Planet",
-          "Sun"
-        ],
-        "correctAnswer": "Sun",
-        "explanation": "☀️ **Sun** significa **Sol / Estrela central** em inglês! Exemplo prático: \"The sun provides gravity and light to planets.\"",
-        "phoneticHint": "/sʌn/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p28-e7",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Moon\"**?",
-        "audioPhrase": "Moon",
-        "visualEmoji": "🌙",
-        "visualOptions": [
-          {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua"
           },
           {
             "text": "Planet",
             "emoji": "🪐",
             "label": "Planet (Saturn)",
             "translationPt": "Planeta com anéis"
-          },
+          }
+        ],
+        "options": [
+          "Star",
+          "Earth",
+          "Sun",
+          "Planet"
+        ],
+        "correctAnswer": "Sun",
+        "explanation": "Exemplo prático: \"The sun provides gravity and light to planets.\"",
+        "phoneticHint": "/sʌn/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p28-e7",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Moon\"?",
+        "audioPhrase": "Moon",
+        "visualEmoji": "🌙",
+        "visualOptions": [
           {
             "text": "Earth",
             "emoji": "🌍",
@@ -12543,31 +12531,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⭐",
             "label": "Star",
             "translationPt": "Estrela"
+          },
+          {
+            "text": "Planet",
+            "emoji": "🪐",
+            "label": "Planet (Saturn)",
+            "translationPt": "Planeta com anéis"
+          },
+          {
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua"
           }
         ],
         "options": [
-          "Moon",
-          "Planet",
           "Earth",
-          "Star"
+          "Star",
+          "Planet",
+          "Moon"
         ],
         "correctAnswer": "Moon",
-        "explanation": "🌙 **Moon** significa **Lua** em inglês! Exemplo prático: \"The moon orbits the Earth every month.\"",
+        "explanation": "Exemplo prático: \"The moon orbits the Earth every month.\"",
         "phoneticHint": "/muːn/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p28-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Cometa\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Cometa\" em inglês?",
         "audioPhrase": "Comet",
         "visualEmoji": "☄️",
         "visualOptions": [
           {
-            "text": "Star",
-            "emoji": "⭐",
-            "label": "Star",
-            "translationPt": "Estrela"
+            "text": "Earth",
+            "emoji": "🌍",
+            "label": "Earth",
+            "translationPt": "Planeta Terra"
           },
           {
             "text": "Planet",
@@ -12582,30 +12582,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cometa"
           },
           {
-            "text": "Earth",
-            "emoji": "🌍",
-            "label": "Earth",
-            "translationPt": "Planeta Terra"
+            "text": "Star",
+            "emoji": "⭐",
+            "label": "Star",
+            "translationPt": "Estrela"
           }
         ],
         "options": [
-          "Star",
+          "Earth",
           "Planet",
           "Comet",
-          "Earth"
+          "Star"
         ],
         "correctAnswer": "Comet",
-        "explanation": "☄️ **Comet** significa **Cometa** em inglês! Exemplo prático: \"A glowing comet with an icy tail.\"",
+        "explanation": "Exemplo prático: \"A glowing comet with an icy tail.\"",
         "phoneticHint": "/ˈkɒm.ɪt/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p28-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Telescope\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Telescope",
         "visualEmoji": "🔭",
         "visualOptions": [
+          {
+            "text": "Star",
+            "emoji": "⭐",
+            "label": "Star",
+            "translationPt": "Estrela"
+          },
           {
             "text": "Telescope",
             "emoji": "🔭",
@@ -12613,48 +12619,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Telescópio"
           },
           {
-            "text": "Planet",
-            "emoji": "🪐",
-            "label": "Planet (Saturn)",
-            "translationPt": "Planeta com anéis"
-          },
-          {
-            "text": "Star",
-            "emoji": "⭐",
-            "label": "Star",
-            "translationPt": "Estrela"
-          },
-          {
             "text": "Earth",
             "emoji": "🌍",
             "label": "Earth",
             "translationPt": "Planeta Terra"
+          },
+          {
+            "text": "Planet",
+            "emoji": "🪐",
+            "label": "Planet (Saturn)",
+            "translationPt": "Planeta com anéis"
           }
         ],
         "options": [
-          "Telescope",
-          "Planet",
           "Star",
-          "Earth"
+          "Telescope",
+          "Earth",
+          "Planet"
         ],
         "correctAnswer": "Telescope",
-        "explanation": "🔭 **Telescope** significa **Telescópio** em inglês! Exemplo prático: \"Observe distant galaxies through an optical telescope.\"",
+        "explanation": "Exemplo prático: \"Observe distant galaxies through an optical telescope.\"",
         "phoneticHint": "/ˈtel.ɪ.skoʊp/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p28-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Satellite\"**?",
+        "prompt": "Qual imagem representa \"Satellite\"?",
         "audioPhrase": "Satellite",
         "visualEmoji": "🛰️",
         "visualOptions": [
-          {
-            "text": "Star",
-            "emoji": "⭐",
-            "label": "Star",
-            "translationPt": "Estrela"
-          },
           {
             "text": "Satellite",
             "emoji": "🛰️",
@@ -12662,6 +12656,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Satélite"
           },
           {
+            "text": "Star",
+            "emoji": "⭐",
+            "label": "Star",
+            "translationPt": "Estrela"
+          },
+          {
             "text": "Earth",
             "emoji": "🌍",
             "label": "Earth",
@@ -12675,13 +12675,13 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Star",
           "Satellite",
+          "Star",
           "Earth",
           "Planet"
         ],
         "correctAnswer": "Satellite",
-        "explanation": "🛰️ **Satellite** significa **Satélite** em inglês! Exemplo prático: \"Communications satellites orbit high in space.\"",
+        "explanation": "Exemplo prático: \"Communications satellites orbit high in space.\"",
         "phoneticHint": "/ˈsæt.əl.aɪt/",
         "skillCategory": "vocabulary"
       }
@@ -12708,22 +12708,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p29-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Apple\"**?",
+        "prompt": "Qual imagem representa \"Apple\"?",
         "audioPhrase": "Apple",
         "visualEmoji": "🍎",
         "visualOptions": [
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
-          },
-          {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
-          },
           {
             "text": "Dog",
             "emoji": "🐶",
@@ -12735,32 +12723,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍎",
             "label": "Apple",
             "translationPt": "Maçã"
+          },
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
+          },
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
           }
         ],
         "options": [
-          "Car",
-          "Water",
           "Dog",
-          "Apple"
+          "Apple",
+          "Water",
+          "Car"
         ],
         "correctAnswer": "Apple",
-        "explanation": "🍎 **Apple** significa **Maçã** em inglês! Exemplo prático: \"A crunchy red apple.\"",
+        "explanation": "Exemplo prático: \"A crunchy red apple.\"",
         "phoneticHint": "/ˈæp.əl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p29-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Cachorro\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Cachorro\" em inglês?",
         "audioPhrase": "Dog",
         "visualEmoji": "🐶",
         "visualOptions": [
-          {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
-          },
           {
             "text": "Dog",
             "emoji": "🐶",
@@ -12778,23 +12772,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚗",
             "label": "Car",
             "translationPt": "Carro"
+          },
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
           }
         ],
         "options": [
-          "Water",
           "Dog",
           "Apple",
-          "Car"
+          "Car",
+          "Water"
         ],
         "correctAnswer": "Dog",
-        "explanation": "🐶 **Dog** significa **Cachorro** em inglês! Exemplo prático: \"A friendly dog.\"",
+        "explanation": "Exemplo prático: \"A friendly dog.\"",
         "phoneticHint": "/dɒɡ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p29-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Car\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Car",
         "visualEmoji": "🚗",
         "visualOptions": [
@@ -12805,6 +12805,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachorro"
           },
           {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
+          },
+          {
             "text": "Water",
             "emoji": "💧",
             "label": "Water",
@@ -12815,32 +12821,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍎",
             "label": "Apple",
             "translationPt": "Maçã"
-          },
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
           }
         ],
         "options": [
           "Dog",
+          "Car",
           "Water",
-          "Apple",
-          "Car"
+          "Apple"
         ],
         "correctAnswer": "Car",
-        "explanation": "🚗 **Car** significa **Carro** em inglês! Exemplo prático: \"A fast motor car.\"",
+        "explanation": "Exemplo prático: \"A fast motor car.\"",
         "phoneticHint": "/kɑːr/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p29-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Water\"**?",
+        "prompt": "Qual imagem representa \"Water\"?",
         "audioPhrase": "Water",
         "visualEmoji": "💧",
         "visualOptions": [
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
+          },
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
+          },
           {
             "text": "Apple",
             "emoji": "🍎",
@@ -12852,38 +12864,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐶",
             "label": "Dog",
             "translationPt": "Cachorro"
-          },
-          {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
-          },
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
           }
         ],
         "options": [
-          "Apple",
-          "Dog",
+          "Car",
           "Water",
-          "Car"
+          "Apple",
+          "Dog"
         ],
         "correctAnswer": "Water",
-        "explanation": "💧 **Water** significa **Água** em inglês! Exemplo prático: \"Pure drinking water.\"",
+        "explanation": "Exemplo prático: \"Pure drinking water.\"",
         "phoneticHint": "/ˈwɔː.tər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p29-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Livro\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Livro\" em inglês?",
         "audioPhrase": "Book",
         "visualEmoji": "📚",
         "visualOptions": [
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
+          },
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
+          },
           {
             "text": "Book",
             "emoji": "📚",
@@ -12891,18 +12903,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Livro"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
-          },
-          {
             "text": "Apple",
             "emoji": "🍎",
             "label": "Apple",
@@ -12910,34 +12910,28 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Book",
           "Dog",
           "Car",
+          "Book",
           "Apple"
         ],
         "correctAnswer": "Book",
-        "explanation": "📚 **Book** significa **Livro** em inglês! Exemplo prático: \"An educational book.\"",
+        "explanation": "Exemplo prático: \"An educational book.\"",
         "phoneticHint": "/bʊk/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p29-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Bed\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bed",
         "visualEmoji": "🛏️",
         "visualOptions": [
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
           },
           {
             "text": "Bed",
@@ -12946,42 +12940,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cama"
           },
           {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
-          }
-        ],
-        "options": [
-          "Dog",
-          "Apple",
-          "Bed",
-          "Car"
-        ],
-        "correctAnswer": "Bed",
-        "explanation": "🛏️ **Bed** significa **Cama** em inglês! Exemplo prático: \"A comfortable bed.\"",
-        "phoneticHint": "/bed/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p29-e7",
-        "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Phone\"**?",
-        "audioPhrase": "Phone",
-        "visualEmoji": "📱",
-        "visualOptions": [
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Apple",
             "emoji": "🍎",
             "label": "Apple",
             "translationPt": "Maçã"
-          },
+          }
+        ],
+        "options": [
+          "Car",
+          "Bed",
+          "Dog",
+          "Apple"
+        ],
+        "correctAnswer": "Bed",
+        "explanation": "Exemplo prático: \"A comfortable bed.\"",
+        "phoneticHint": "/bed/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p29-e7",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Phone\"?",
+        "audioPhrase": "Phone",
+        "visualEmoji": "📱",
+        "visualOptions": [
           {
             "text": "Phone",
             "emoji": "📱",
@@ -12993,37 +12981,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐶",
             "label": "Dog",
             "translationPt": "Cachorro"
-          }
-        ],
-        "options": [
-          "Car",
-          "Apple",
-          "Phone",
-          "Dog"
-        ],
-        "correctAnswer": "Phone",
-        "explanation": "📱 **Phone** significa **Telefone** em inglês! Exemplo prático: \"A smart touch phone.\"",
-        "phoneticHint": "/foʊn/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p29-e8",
-        "type": "image-choice",
-        "prompt": "Como se diz **\"Sol\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Sun",
-        "visualEmoji": "☀️",
-        "visualOptions": [
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
-          {
-            "text": "Sun",
-            "emoji": "☀️",
-            "label": "Sun",
-            "translationPt": "Sol"
           },
           {
             "text": "Car",
@@ -13032,30 +12989,79 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carro"
           },
           {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          }
+        ],
+        "options": [
+          "Phone",
+          "Dog",
+          "Car",
+          "Apple"
+        ],
+        "correctAnswer": "Phone",
+        "explanation": "Exemplo prático: \"A smart touch phone.\"",
+        "phoneticHint": "/foʊn/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p29-e8",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Sol\" em inglês?",
+        "audioPhrase": "Sun",
+        "visualEmoji": "☀️",
+        "visualOptions": [
+          {
+            "text": "Sun",
+            "emoji": "☀️",
+            "label": "Sun",
+            "translationPt": "Sol"
+          },
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
+          {
             "text": "Dog",
             "emoji": "🐶",
             "label": "Dog",
             "translationPt": "Cachorro"
+          },
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
           }
         ],
         "options": [
-          "Apple",
           "Sun",
-          "Car",
-          "Dog"
+          "Apple",
+          "Dog",
+          "Car"
         ],
         "correctAnswer": "Sun",
-        "explanation": "☀️ **Sun** significa **Sol** em inglês! Exemplo prático: \"The radiant sun.\"",
+        "explanation": "Exemplo prático: \"The radiant sun.\"",
         "phoneticHint": "/sʌn/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p29-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Run\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Run",
         "visualEmoji": "🏃",
         "visualOptions": [
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
+          },
           {
             "text": "Apple",
             "emoji": "🍎",
@@ -13073,44 +13079,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏃",
             "label": "Run",
             "translationPt": "Correr"
-          },
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
           }
         ],
         "options": [
+          "Car",
           "Apple",
           "Dog",
-          "Run",
-          "Car"
+          "Run"
         ],
         "correctAnswer": "Run",
-        "explanation": "🏃 **Run** significa **Correr** em inglês! Exemplo prático: \"To run with energy.\"",
+        "explanation": "Exemplo prático: \"To run with energy.\"",
         "phoneticHint": "/rʌn/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p29-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Doctor\"**?",
+        "prompt": "Qual imagem representa \"Doctor\"?",
         "audioPhrase": "Doctor",
         "visualEmoji": "👨‍⚕️",
         "visualOptions": [
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
-          {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
           {
             "text": "Doctor",
             "emoji": "👨‍⚕️",
@@ -13118,37 +13106,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Médico"
           },
           {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
-          }
-        ],
-        "options": [
-          "Apple",
-          "Dog",
-          "Doctor",
-          "Car"
-        ],
-        "correctAnswer": "Doctor",
-        "explanation": "👨‍⚕️ **Doctor** significa **Médico** em inglês! Exemplo prático: \"A helpful doctor.\"",
-        "phoneticHint": "/ˈdɒk.tər/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p29-e11",
-        "type": "image-choice",
-        "prompt": "Como se diz **\"Estrela\"** em inglês? Toque na imagem:",
-        "audioPhrase": "Star",
-        "visualEmoji": "⭐",
-        "visualOptions": [
-          {
-            "text": "Star",
-            "emoji": "⭐",
-            "label": "Star",
-            "translationPt": "Estrela"
-          },
-          {
             "text": "Apple",
             "emoji": "🍎",
             "label": "Apple",
@@ -13168,20 +13125,63 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Star",
+          "Doctor",
           "Apple",
           "Car",
           "Dog"
         ],
+        "correctAnswer": "Doctor",
+        "explanation": "Exemplo prático: \"A helpful doctor.\"",
+        "phoneticHint": "/ˈdɒk.tər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p29-e11",
+        "type": "image-choice",
+        "prompt": "Qual imagem representa \"Estrela\" em inglês?",
+        "audioPhrase": "Star",
+        "visualEmoji": "⭐",
+        "visualOptions": [
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
+          },
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
+          },
+          {
+            "text": "Star",
+            "emoji": "⭐",
+            "label": "Star",
+            "translationPt": "Estrela"
+          }
+        ],
+        "options": [
+          "Apple",
+          "Car",
+          "Dog",
+          "Star"
+        ],
         "correctAnswer": "Star",
-        "explanation": "⭐ **Star** significa **Estrela** em inglês! Exemplo prático: \"A brilliant star.\"",
+        "explanation": "Exemplo prático: \"A brilliant star.\"",
         "phoneticHint": "/stɑːr/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p29-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Happy\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Happy",
         "visualEmoji": "😊",
         "visualOptions": [
@@ -13192,12 +13192,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Feliz"
           },
           {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
-          },
-          {
             "text": "Dog",
             "emoji": "🐶",
             "label": "Dog",
@@ -13208,32 +13202,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍎",
             "label": "Apple",
             "translationPt": "Maçã"
+          },
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
           }
         ],
         "options": [
           "Happy",
-          "Car",
           "Dog",
-          "Apple"
+          "Apple",
+          "Car"
         ],
         "correctAnswer": "Happy",
-        "explanation": "😊 **Happy** significa **Feliz** em inglês! Exemplo prático: \"Feeling joyful and happy.\"",
+        "explanation": "Exemplo prático: \"Feeling joyful and happy.\"",
         "phoneticHint": "/ˈhæp.i/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p29-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Pizza\"**?",
+        "prompt": "Qual imagem representa \"Pizza\"?",
         "audioPhrase": "Pizza",
         "visualEmoji": "🍕",
         "visualOptions": [
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
           {
             "text": "Car",
             "emoji": "🚗",
@@ -13251,16 +13245,22 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐶",
             "label": "Dog",
             "translationPt": "Cachorro"
+          },
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
           }
         ],
         "options": [
-          "Apple",
           "Car",
           "Pizza",
-          "Dog"
+          "Dog",
+          "Apple"
         ],
         "correctAnswer": "Pizza",
-        "explanation": "🍕 **Pizza** significa **Pizza** em inglês! Exemplo prático: \"A tasty pizza slice.\"",
+        "explanation": "Exemplo prático: \"A tasty pizza slice.\"",
         "phoneticHint": "/ˈpiːt.sə/",
         "skillCategory": "vocabulary"
       }
@@ -13287,7 +13287,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p30-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Apple\"**?",
+        "prompt": "Qual imagem representa \"Apple\"?",
         "audioPhrase": "Apple",
         "visualEmoji": "🍎",
         "visualOptions": [
@@ -13298,12 +13298,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã"
           },
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
-          },
-          {
             "text": "Dog",
             "emoji": "🐶",
             "label": "Dog",
@@ -13314,23 +13308,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐱",
             "label": "Cat",
             "translationPt": "Gato"
+          },
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
           }
         ],
         "options": [
           "Apple",
-          "Water",
           "Dog",
-          "Cat"
+          "Cat",
+          "Water"
         ],
         "correctAnswer": "Apple",
-        "explanation": "🍎 **Apple** significa **Maçã** em inglês! Exemplo prático: \"A red apple symbol of knowledge.\"",
+        "explanation": "Exemplo prático: \"A red apple symbol of knowledge.\"",
         "phoneticHint": "/ˈæp.əl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p30-e2",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Cachorro\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Cachorro\" em inglês?",
         "audioPhrase": "Dog",
         "visualEmoji": "🐶",
         "visualOptions": [
@@ -13341,10 +13341,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
+            "text": "Cat",
+            "emoji": "🐱",
+            "label": "Cat",
+            "translationPt": "Gato"
           },
           {
             "text": "Water",
@@ -13353,27 +13353,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Água"
           },
           {
-            "text": "Cat",
-            "emoji": "🐱",
-            "label": "Cat",
-            "translationPt": "Gato"
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           }
         ],
         "options": [
           "Apple",
-          "Dog",
+          "Cat",
           "Water",
-          "Cat"
+          "Dog"
         ],
         "correctAnswer": "Dog",
-        "explanation": "🐶 **Dog** significa **Cachorro** em inglês! Exemplo prático: \"Man’s best friend, the dog.\"",
+        "explanation": "Exemplo prático: \"Man’s best friend, the dog.\"",
         "phoneticHint": "/dɒɡ/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p30-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Cat\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cat",
         "visualEmoji": "🐱",
         "visualOptions": [
@@ -13409,28 +13409,28 @@ export const WORLD_0_PHASES: Phase[] = [
           "Dog"
         ],
         "correctAnswer": "Cat",
-        "explanation": "🐱 **Cat** significa **Gato** em inglês! Exemplo prático: \"A curious and agile cat.\"",
+        "explanation": "Exemplo prático: \"A curious and agile cat.\"",
         "phoneticHint": "/kæt/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p30-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Water\"**?",
+        "prompt": "Qual imagem representa \"Water\"?",
         "audioPhrase": "Water",
         "visualEmoji": "💧",
         "visualOptions": [
-          {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
           {
             "text": "Cat",
             "emoji": "🐱",
             "label": "Cat",
             "translationPt": "Gato"
+          },
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
           },
           {
             "text": "Water",
@@ -13439,27 +13439,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Água"
           },
           {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           }
         ],
         "options": [
-          "Dog",
           "Cat",
+          "Apple",
           "Water",
-          "Apple"
+          "Dog"
         ],
         "correctAnswer": "Water",
-        "explanation": "💧 **Water** significa **Água** em inglês! Exemplo prático: \"Life-giving pure water.\"",
+        "explanation": "Exemplo prático: \"Life-giving pure water.\"",
         "phoneticHint": "/ˈwɔː.tər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p30-e5",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Carro\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Carro\" em inglês?",
         "audioPhrase": "Car",
         "visualEmoji": "🚗",
         "visualOptions": [
@@ -13470,6 +13470,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carro"
           },
           {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
+          {
             "text": "Cat",
             "emoji": "🐱",
             "label": "Cat",
@@ -13480,37 +13486,31 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐶",
             "label": "Dog",
             "translationPt": "Cachorro"
-          },
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
           }
         ],
         "options": [
           "Car",
+          "Apple",
           "Cat",
-          "Dog",
-          "Apple"
+          "Dog"
         ],
         "correctAnswer": "Car",
-        "explanation": "🚗 **Car** significa **Carro** em inglês! Exemplo prático: \"An automobile vehicle.\"",
+        "explanation": "Exemplo prático: \"An automobile vehicle.\"",
         "phoneticHint": "/kɑːr/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p30-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Blue\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Blue",
         "visualEmoji": "🔵",
         "visualOptions": [
           {
-            "text": "Cat",
-            "emoji": "🐱",
-            "label": "Cat",
-            "translationPt": "Gato"
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Blue",
@@ -13525,27 +13525,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
+            "text": "Cat",
+            "emoji": "🐱",
+            "label": "Cat",
+            "translationPt": "Gato"
           }
         ],
         "options": [
-          "Cat",
+          "Dog",
           "Blue",
           "Apple",
-          "Dog"
+          "Cat"
         ],
         "correctAnswer": "Blue",
-        "explanation": "🔵 **Blue** significa **Azul** em inglês! Exemplo prático: \"The color of ocean and sky.\"",
+        "explanation": "Exemplo prático: \"The color of ocean and sky.\"",
         "phoneticHint": "/bluː/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p30-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"House\"**?",
+        "prompt": "Qual imagem representa \"House\"?",
         "audioPhrase": "House",
         "visualEmoji": "🏠",
         "visualOptions": [
@@ -13562,42 +13562,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
-          {
             "text": "Cat",
             "emoji": "🐱",
             "label": "Cat",
             "translationPt": "Gato"
+          },
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           }
         ],
         "options": [
           "House",
           "Apple",
-          "Dog",
-          "Cat"
+          "Cat",
+          "Dog"
         ],
         "correctAnswer": "House",
-        "explanation": "🏠 **House** significa **Casa** em inglês! Exemplo prático: \"A welcoming family home.\"",
+        "explanation": "Exemplo prático: \"A welcoming family home.\"",
         "phoneticHint": "/haʊs/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p30-e8",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Pão\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Pão\" em inglês?",
         "audioPhrase": "Bread",
         "visualEmoji": "🍞",
         "visualOptions": [
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
           {
             "text": "Bread",
             "emoji": "🍞",
@@ -13611,6 +13605,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Gato"
           },
           {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
+          {
             "text": "Dog",
             "emoji": "🐶",
             "label": "Dog",
@@ -13618,20 +13618,20 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Apple",
           "Bread",
           "Cat",
+          "Apple",
           "Dog"
         ],
         "correctAnswer": "Bread",
-        "explanation": "🍞 **Bread** significa **Pão** em inglês! Exemplo prático: \"Fresh loaf of bread.\"",
+        "explanation": "Exemplo prático: \"Fresh loaf of bread.\"",
         "phoneticHint": "/bred/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p30-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Computer\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Computer",
         "visualEmoji": "💻",
         "visualOptions": [
@@ -13642,6 +13642,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Computador"
           },
           {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
+          },
+          {
             "text": "Apple",
             "emoji": "🍎",
             "label": "Apple",
@@ -13652,29 +13658,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐱",
             "label": "Cat",
             "translationPt": "Gato"
-          },
-          {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
           }
         ],
         "options": [
           "Computer",
+          "Dog",
           "Apple",
-          "Cat",
-          "Dog"
+          "Cat"
         ],
         "correctAnswer": "Computer",
-        "explanation": "💻 **Computer** significa **Computador** em inglês! Exemplo prático: \"A digital computing device.\"",
+        "explanation": "Exemplo prático: \"A digital computing device.\"",
         "phoneticHint": "/kəmˈpjuː.tər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p30-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Tree\"**?",
+        "prompt": "Qual imagem representa \"Tree\"?",
         "audioPhrase": "Tree",
         "visualEmoji": "🌲",
         "visualOptions": [
@@ -13685,16 +13685,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachorro"
           },
           {
-            "text": "Tree",
-            "emoji": "🌲",
-            "label": "Tree",
-            "translationPt": "Árvore"
-          },
-          {
             "text": "Cat",
             "emoji": "🐱",
             "label": "Cat",
             "translationPt": "Gato"
+          },
+          {
+            "text": "Tree",
+            "emoji": "🌲",
+            "label": "Tree",
+            "translationPt": "Árvore"
           },
           {
             "text": "Apple",
@@ -13705,22 +13705,28 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Dog",
-          "Tree",
           "Cat",
+          "Tree",
           "Apple"
         ],
         "correctAnswer": "Tree",
-        "explanation": "🌲 **Tree** significa **Árvore** em inglês! Exemplo prático: \"A strong evergreen tree.\"",
+        "explanation": "Exemplo prático: \"A strong evergreen tree.\"",
         "phoneticHint": "/triː/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p30-e11",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Sol\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Sol\" em inglês?",
         "audioPhrase": "Sun",
         "visualEmoji": "☀️",
         "visualOptions": [
+          {
+            "text": "Cat",
+            "emoji": "🐱",
+            "label": "Cat",
+            "translationPt": "Gato"
+          },
           {
             "text": "Dog",
             "emoji": "🐶",
@@ -13728,42 +13734,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachorro"
           },
           {
-            "text": "Sun",
-            "emoji": "☀️",
-            "label": "Sun",
-            "translationPt": "Sol"
-          },
-          {
-            "text": "Cat",
-            "emoji": "🐱",
-            "label": "Cat",
-            "translationPt": "Gato"
-          },
-          {
             "text": "Apple",
             "emoji": "🍎",
             "label": "Apple",
             "translationPt": "Maçã"
+          },
+          {
+            "text": "Sun",
+            "emoji": "☀️",
+            "label": "Sun",
+            "translationPt": "Sol"
           }
         ],
         "options": [
-          "Dog",
-          "Sun",
           "Cat",
-          "Apple"
+          "Dog",
+          "Apple",
+          "Sun"
         ],
         "correctAnswer": "Sun",
-        "explanation": "☀️ **Sun** significa **Sol** em inglês! Exemplo prático: \"The daylight sun.\"",
+        "explanation": "Exemplo prático: \"The daylight sun.\"",
         "phoneticHint": "/sʌn/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p30-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Happy\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Happy",
         "visualEmoji": "😊",
         "visualOptions": [
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
+          },
           {
             "text": "Apple",
             "emoji": "🍎",
@@ -13781,32 +13787,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐱",
             "label": "Cat",
             "translationPt": "Gato"
-          },
-          {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
           }
         ],
         "options": [
+          "Dog",
           "Apple",
           "Happy",
-          "Cat",
-          "Dog"
+          "Cat"
         ],
         "correctAnswer": "Happy",
-        "explanation": "😊 **Happy** significa **Feliz** em inglês! Exemplo prático: \"Smiling and truly happy.\"",
+        "explanation": "Exemplo prático: \"Smiling and truly happy.\"",
         "phoneticHint": "/ˈhæp.i/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p30-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Book\"**?",
+        "prompt": "Qual imagem representa \"Book\"?",
         "audioPhrase": "Book",
         "visualEmoji": "📚",
         "visualOptions": [
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
+          },
           {
             "text": "Book",
             "emoji": "📚",
@@ -13814,12 +13820,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Livro"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
-          {
             "text": "Apple",
             "emoji": "🍎",
             "label": "Apple",
@@ -13833,35 +13833,23 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Book",
           "Dog",
+          "Book",
           "Apple",
           "Cat"
         ],
         "correctAnswer": "Book",
-        "explanation": "📚 **Book** significa **Livro** em inglês! Exemplo prático: \"A gateway of imagination.\"",
+        "explanation": "Exemplo prático: \"A gateway of imagination.\"",
         "phoneticHint": "/bʊk/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p30-e14",
         "type": "image-choice",
-        "prompt": "Como se diz **\"Médico\"** em inglês? Toque na imagem:",
+        "prompt": "Qual imagem representa \"Médico\" em inglês?",
         "audioPhrase": "Doctor",
         "visualEmoji": "👨‍⚕️",
         "visualOptions": [
-          {
-            "text": "Cat",
-            "emoji": "🐱",
-            "label": "Cat",
-            "translationPt": "Gato"
-          },
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
-          },
           {
             "text": "Dog",
             "emoji": "🐶",
@@ -13873,26 +13861,44 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👨‍⚕️",
             "label": "Doctor",
             "translationPt": "Médico"
+          },
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
+          },
+          {
+            "text": "Cat",
+            "emoji": "🐱",
+            "label": "Cat",
+            "translationPt": "Gato"
           }
         ],
         "options": [
-          "Cat",
-          "Apple",
           "Dog",
-          "Doctor"
+          "Doctor",
+          "Apple",
+          "Cat"
         ],
         "correctAnswer": "Doctor",
-        "explanation": "👨‍⚕️ **Doctor** significa **Médico** em inglês! Exemplo prático: \"A certified medical doctor.\"",
+        "explanation": "Exemplo prático: \"A certified medical doctor.\"",
         "phoneticHint": "/ˈdɒk.tər/",
         "skillCategory": "reading"
       },
       {
         "id": "w0-p30-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça e selecione a imagem correspondente a **\"Soccer\"**:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Soccer",
         "visualEmoji": "⚽",
         "visualOptions": [
+          {
+            "text": "Cat",
+            "emoji": "🐱",
+            "label": "Cat",
+            "translationPt": "Gato"
+          },
           {
             "text": "Soccer",
             "emoji": "⚽",
@@ -13900,53 +13906,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Futebol"
           },
           {
-            "text": "Cat",
-            "emoji": "🐱",
-            "label": "Cat",
-            "translationPt": "Gato"
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Apple",
             "emoji": "🍎",
             "label": "Apple",
             "translationPt": "Maçã"
-          },
-          {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
           }
         ],
         "options": [
-          "Soccer",
           "Cat",
-          "Apple",
-          "Dog"
+          "Soccer",
+          "Dog",
+          "Apple"
         ],
         "correctAnswer": "Soccer",
-        "explanation": "⚽ **Soccer** significa **Futebol** em inglês! Exemplo prático: \"The world’s favorite sport.\"",
+        "explanation": "Exemplo prático: \"The world’s favorite sport.\"",
         "phoneticHint": "/ˈsɒk.ər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p30-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa a palavra: **\"Rocket\"**?",
+        "prompt": "Qual imagem representa \"Rocket\"?",
         "audioPhrase": "Rocket",
         "visualEmoji": "🚀",
         "visualOptions": [
-          {
-            "text": "Rocket",
-            "emoji": "🚀",
-            "label": "Rocket",
-            "translationPt": "Foguete"
-          },
           {
             "text": "Cat",
             "emoji": "🐱",
             "label": "Cat",
             "translationPt": "Gato"
+          },
+          {
+            "text": "Dog",
+            "emoji": "🐶",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Apple",
@@ -13955,20 +13955,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã"
           },
           {
-            "text": "Dog",
-            "emoji": "🐶",
-            "label": "Dog",
-            "translationPt": "Cachorro"
+            "text": "Rocket",
+            "emoji": "🚀",
+            "label": "Rocket",
+            "translationPt": "Foguete"
           }
         ],
         "options": [
-          "Rocket",
           "Cat",
+          "Dog",
           "Apple",
-          "Dog"
+          "Rocket"
         ],
         "correctAnswer": "Rocket",
-        "explanation": "🚀 **Rocket** significa **Foguete** em inglês! Exemplo prático: \"A rocket reaching the stars.\"",
+        "explanation": "Exemplo prático: \"A rocket reaching the stars.\"",
         "phoneticHint": "/ˈrɒk.ɪt/",
         "skillCategory": "vocabulary"
       }
