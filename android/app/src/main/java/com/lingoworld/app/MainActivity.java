@@ -3,6 +3,7 @@ package com.lingoworld.app;
 import android.media.AudioAttributes;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
 import android.speech.tts.Voice;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
@@ -11,6 +12,8 @@ import android.webkit.WebView;
 import com.getcapacitor.BridgeActivity;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
@@ -39,9 +42,14 @@ public class MainActivity extends BridgeActivity implements TextToSpeech.OnInitL
         super.onCreate(savedInstanceState);
 
         try {
-            tts = new TextToSpeech(this, this);
+            // Prefer Google Speech Services (Neural/WaveNet US voices) over robotic OEM engines
+            tts = new TextToSpeech(this, this, "com.google.android.tts");
         } catch (Exception e) {
-            e.printStackTrace();
+            try {
+                tts = new TextToSpeech(this, this);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
         }
 
         if (getBridge() != null && getBridge().getWebView() != null) {
@@ -50,6 +58,18 @@ public class MainActivity extends BridgeActivity implements TextToSpeech.OnInitL
             settings.setMediaPlaybackRequiresUserGesture(false);
             webView.addJavascriptInterface(new AndroidTTSBridge(), "AndroidTTS");
         }
+    }
+
+    private void notifyWebSpeakingState(final boolean speaking) {
+        runOnUiThread(() -> {
+            try {
+                if (getBridge() != null && getBridge().getWebView() != null) {
+                    String js = "window.dispatchEvent(new CustomEvent('lingo-tts-state', { detail: { speaking: " + speaking + " } }));";
+                    getBridge().getWebView().evaluateJavascript(js, null);
+                }
+            } catch (Exception ignored) {
+            }
+        });
     }
 
     @Override
@@ -62,6 +82,25 @@ public class MainActivity extends BridgeActivity implements TextToSpeech.OnInitL
                         .build();
                 tts.setAudioAttributes(attrs);
                 tts.setLanguage(Locale.US);
+                tts.setPitch(1.0f);
+
+                tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+                    @Override
+                    public void onStart(String utteranceId) {
+                        notifyWebSpeakingState(true);
+                    }
+
+                    @Override
+                    public void onDone(String utteranceId) {
+                        notifyWebSpeakingState(false);
+                    }
+
+                    @Override
+                    public void onError(String utteranceId) {
+                        notifyWebSpeakingState(false);
+                    }
+                });
+
                 ttsReady = true;
 
                 if (pendingSpeech != null) {
@@ -71,7 +110,54 @@ public class MainActivity extends BridgeActivity implements TextToSpeech.OnInitL
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        } else {
+            // Fallback to default TTS engine if com.google.android.tts was not available
+            try {
+                tts = new TextToSpeech(this, status2 -> {
+                    if (status2 == TextToSpeech.SUCCESS && tts != null) {
+                        tts.setLanguage(Locale.US);
+                        tts.setPitch(1.0f);
+                        ttsReady = true;
+                        if (pendingSpeech != null) {
+                            speakInternal(pendingSpeech.text, pendingSpeech.lang, pendingSpeech.rate, pendingSpeech.gender);
+                            pendingSpeech = null;
+                        }
+                    }
+                });
+            } catch (Exception ignored) {
+            }
         }
+    }
+
+    private int scoreUsVoice(Voice v, boolean wantMale) {
+        String name = v.getName().toLowerCase();
+        int score = v.getQuality(); // QUALITY_VERY_HIGH = 500, QUALITY_HIGH = 400, QUALITY_NORMAL = 300
+
+        // Prefer Neural / WaveNet network voices first when available, then high-quality local US voices
+        if (name.contains("network") || name.contains("wavenet") || name.contains("neural")) {
+            score += 150;
+        }
+
+        // Google US English voice identifiers:
+        // Male US voices: iom, tpd
+        // Female US voices: sfg, tpf, iob, iog
+        boolean isKnownMale = name.contains("-iom") || name.contains("-tpd")
+                || (name.contains("male") && !name.contains("female"))
+                || name.contains("david") || name.contains("guy") || name.contains("christopher") || name.contains("eric");
+        boolean isKnownFemale = name.contains("-sfg") || name.contains("-tpf") || name.contains("-iob") || name.contains("-iog")
+                || name.contains("female") || name.contains("samantha") || name.contains("zira") || name.contains("jenny") || name.contains("aria");
+
+        if (wantMale && isKnownMale) {
+            score += 300;
+        } else if (!wantMale && isKnownFemale) {
+            score += 300;
+        } else if (wantMale && isKnownFemale) {
+            score -= 200;
+        } else if (!wantMale && isKnownMale) {
+            score -= 200;
+        }
+
+        return score;
     }
 
     private boolean speakInternal(String text, String lang, float rate, String gender) {
@@ -85,70 +171,54 @@ public class MainActivity extends BridgeActivity implements TextToSpeech.OnInitL
 
         try {
             boolean isMale = "male".equalsIgnoreCase(gender);
-            Locale targetLocale = (lang != null && lang.toLowerCase().startsWith("pt"))
-                    ? new Locale("pt", "BR")
-                    : Locale.US;
-
+            // Strictly American English (en-US) as requested
+            Locale targetLocale = Locale.US;
             tts.setLanguage(targetLocale);
 
-            // Try to pick a matching Male or Female English voice if available on the device
             try {
                 Set<Voice> voices = tts.getVoices();
                 if (voices != null && !voices.isEmpty()) {
-                    List<Voice> maleVoices = new ArrayList<>();
-                    List<Voice> femaleVoices = new ArrayList<>();
-                    List<Voice> allMatchingLang = new ArrayList<>();
+                    List<Voice> usVoices = new ArrayList<>();
 
-                    String targetLangPrefix = targetLocale.getLanguage().toLowerCase();
                     for (Voice v : voices) {
-                        if (v.getLocale() != null && v.getLocale().getLanguage().toLowerCase().equals(targetLangPrefix)) {
-                            if (v.isNetworkConnectionRequired()) continue;
-                            allMatchingLang.add(v);
-                            String name = v.getName().toLowerCase();
-                            if (name.contains("male") && !name.contains("female")
-                                    || name.contains("-iom")
-                                    || name.contains("-tpd")
-                                    || name.contains("-gbd")
-                                    || name.contains("-rjs")
-                                    || name.contains("david")
-                                    || name.contains("guy")
-                                    || name.contains("daniel")
-                                    || name.contains("mark")) {
-                                maleVoices.add(v);
-                            } else if (name.contains("female")
-                                    || name.contains("-sfg")
-                                    || name.contains("-tpf")
-                                    || name.contains("-iob")
-                                    || name.contains("-gba")
-                                    || name.contains("samantha")
-                                    || name.contains("zira")
-                                    || name.contains("jenny")) {
-                                femaleVoices.add(v);
-                            }
+                        Locale loc = v.getLocale();
+                        if (loc != null
+                                && "en".equalsIgnoreCase(loc.getLanguage())
+                                && ("US".equalsIgnoreCase(loc.getCountry()) || "USA".equalsIgnoreCase(loc.getCountry()) || v.getName().toLowerCase().startsWith("en-us"))) {
+                            usVoices.add(v);
                         }
                     }
 
-                    if (isMale && !maleVoices.isEmpty()) {
-                        tts.setVoice(maleVoices.get(0));
-                    } else if (!isMale && !femaleVoices.isEmpty()) {
-                        tts.setVoice(femaleVoices.get(0));
-                    } else if (allMatchingLang.size() >= 2) {
-                        tts.setVoice(allMatchingLang.get(isMale ? 0 : 1));
+                    if (!usVoices.isEmpty()) {
+                        Collections.sort(usVoices, new Comparator<Voice>() {
+                            @Override
+                            public int compare(Voice a, Voice b) {
+                                return Integer.compare(scoreUsVoice(b, isMale), scoreUsVoice(a, isMale));
+                            }
+                        });
+                        tts.setVoice(usVoices.get(0));
                     }
                 }
             } catch (Exception ignored) {
             }
 
-            // Set distinct natural pitch for male vs female voices
-            float pitch = isMale ? 0.82f : 1.15f;
-            float safeRate = Math.max(0.5f, Math.min(1.5f, rate));
-
-            tts.setPitch(pitch);
+            // NEVER warp pitch away from 1.0f so voice stays 100% human and natural (never robotic!)
+            tts.setPitch(1.0f);
+            float safeRate = (rate < 0.75f) ? 0.72f : 0.96f;
             tts.setSpeechRate(safeRate);
 
-            int result = tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "utt_" + System.currentTimeMillis());
-            return result == TextToSpeech.SUCCESS;
+            Bundle params = new Bundle();
+            params.putFloat(TextToSpeech.Engine.KEY_PARAM_VOLUME, 1.0f);
+
+            notifyWebSpeakingState(true);
+            int result = tts.speak(text, TextToSpeech.QUEUE_FLUSH, params, "utt_" + System.currentTimeMillis());
+            if (result != TextToSpeech.SUCCESS) {
+                notifyWebSpeakingState(false);
+                return false;
+            }
+            return true;
         } catch (Exception e) {
+            notifyWebSpeakingState(false);
             e.printStackTrace();
             return false;
         }

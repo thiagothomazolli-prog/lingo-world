@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import { X, Volume2, Mic, MicOff, CheckCircle2, AlertCircle, Sparkles, Star, ArrowRight, Lightbulb, Play } from 'lucide-react';
 import { Phase, Exercise, UserProfile } from '../types';
-import { speakText, getExerciseVoiceGender } from '../utils/storage';
+import { speakText, getExerciseVoiceGender, preloadExerciseAudio } from '../utils/storage';
 import { MascotLingo } from './MascotLingo';
 import { sfx } from '../utils/soundEffects';
 
@@ -30,6 +30,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   const [isCorrect, setIsCorrect] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState('');
   const [isListening, setIsListening] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
   const [spokenResult, setSpokenResult] = useState('');
   const [mistakesCount, setMistakesCount] = useState(0);
 
@@ -39,10 +40,29 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     ? getExerciseVoiceGender(currentExercise.id, currentExerciseIndex)
     : 'female';
 
-  // Auto speak on exercise start if enabled
+  // Listen to global TTS speaking state for the live audio line graph
+  useEffect(() => {
+    const handleTtsState = (e: Event) => {
+      const customEvent = e as CustomEvent<{ speaking: boolean }>;
+      setIsSpeaking(Boolean(customEvent.detail?.speaking));
+    };
+    window.addEventListener('lingo-tts-state', handleTtsState);
+    return () => {
+      window.removeEventListener('lingo-tts-state', handleTtsState);
+    };
+  }, []);
+
+  // Preload & Auto speak on exercise start if enabled
   useEffect(() => {
     if (step === 'exercise' && currentExercise) {
       const phraseToSpeak = currentExercise.audioPhrase || currentExercise.correctAnswer;
+      const phrasesToPreload: string[] = [];
+      if (phraseToSpeak) phrasesToPreload.push(phraseToSpeak);
+      if (currentExercise.visualOptions) {
+        currentExercise.visualOptions.forEach((v) => phrasesToPreload.push(v.label || v.text));
+      }
+      preloadExerciseAudio(phrasesToPreload, exerciseVoiceGender);
+
       if (phraseToSpeak && user.autoSpeak !== false) {
         speakText(phraseToSpeak, 'en-US', user.speechSpeed, exerciseVoiceGender);
       }
@@ -332,9 +352,9 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               </div>
             )}
 
-            {/* Audio Speaker Bar */}
+            {/* Audio Speaker Bar (apenas alto-falante + gráfico de linha do áudio ao falar) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
-              <div className="p-3.5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
+              <div className="p-3.5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-center gap-4 shadow-xs min-h-[64px]">
                 <button
                   type="button"
                   onClick={() =>
@@ -345,54 +365,107 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                       exerciseVoiceGender
                     )
                   }
-                  className="flex-1 py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-sm rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2.5 cursor-pointer"
-                  title="Ouvir palavra em inglês"
+                  className={`w-12 h-12 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-md transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
+                    isSpeaking ? 'ring-4 ring-indigo-300 scale-105' : ''
+                  }`}
+                  title="Ouvir"
                 >
-                  <Volume2 className="w-5 h-5 shrink-0" />
-                  <span>Ouvir Pronúncia ({exerciseVoiceGender === 'male' ? '👨 Homem' : '👩 Mulher'})</span>
+                  <Volume2 className={`w-6 h-6 ${isSpeaking ? 'animate-pulse' : ''}`} />
                 </button>
 
-                <button
-                  type="button"
-                  onClick={() =>
-                    speakText(
-                      currentExercise.audioPhrase || currentExercise.correctAnswer,
-                      'en-US',
-                      0.65,
-                      exerciseVoiceGender
-                    )
-                  }
-                  className="py-3 px-3.5 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-xl shadow-xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
-                  title="Ouvir devagar"
-                >
-                  <span>🐢 0.65x</span>
-                </button>
+                {isSpeaking && (
+                  <div className="flex-1 max-w-[220px] h-10 flex items-center justify-center animate-in fade-in duration-150">
+                    <svg
+                      viewBox="0 0 200 40"
+                      className="w-full h-full overflow-visible"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M 0 20 Q 12 4, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20"
+                        stroke="#4f46e5"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        className="animate-pulse"
+                      >
+                        <animate
+                          attributeName="d"
+                          dur="0.45s"
+                          repeatCount="indefinite"
+                          values="
+                            M 0 20 Q 12 3, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
+                            M 0 20 Q 12 37, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
+                            M 0 20 Q 12 10, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
+                            M 0 20 Q 12 3, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20
+                          "
+                        />
+                      </path>
+                      <path
+                        d="M 0 20 Q 16 32, 32 20 T 64 20 T 96 20 T 128 20 T 160 20 T 200 20"
+                        stroke="#0ea5e9"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        opacity="0.65"
+                      >
+                        <animate
+                          attributeName="d"
+                          dur="0.35s"
+                          repeatCount="indefinite"
+                          values="
+                            M 0 20 Q 16 34, 32 20 T 64 20 T 96 20 T 128 20 T 160 20 T 200 20;
+                            M 0 20 Q 16 6, 32 20 T 64 20 T 96 20 T 128 20 T 160 20 T 200 20;
+                            M 0 20 Q 16 34, 32 20 T 64 20 T 96 20 T 128 20 T 160 20 T 200 20
+                          "
+                        />
+                      </path>
+                    </svg>
+                  </div>
+                )}
               </div>
             ) : currentExercise.type === 'listening' ? (
               <div className="space-y-3">
                 {!hasAnswered ? (
-                  <div className="p-5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-3xl flex flex-col items-center justify-center gap-3 text-center shadow-xs">
-                    <span className="text-xs font-bold text-indigo-700">🎧 Ouça com atenção e selecione a frase correta:</span>
-                    <div className="flex items-center gap-3">
-                      <button
-                        type="button"
-                        onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed, exerciseVoiceGender)}
-                        className="px-6 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-sm rounded-2xl shadow-md transition-transform active:scale-95 flex items-center gap-2 cursor-pointer"
-                        title="Ouvir áudio em velocidade normal"
-                      >
-                        <Volume2 className="w-5 h-5" />
-                        <span>Tocar Áudio</span>
-                      </button>
+                  <div className="p-4 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-3xl flex items-center justify-center gap-4 shadow-xs min-h-[68px]">
+                    <button
+                      type="button"
+                      onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed, exerciseVoiceGender)}
+                      className={`w-12 h-12 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-md transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
+                        isSpeaking ? 'ring-4 ring-indigo-300 scale-105' : ''
+                      }`}
+                      title="Ouvir"
+                    >
+                      <Volume2 className={`w-6 h-6 ${isSpeaking ? 'animate-pulse' : ''}`} />
+                    </button>
 
-                      <button
-                        type="button"
-                        onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', 0.65, exerciseVoiceGender)}
-                        className="px-4 py-3.5 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-2xl shadow-xs transition-transform active:scale-95 flex items-center gap-1.5 cursor-pointer"
-                        title="Ouvir áudio mais lento"
-                      >
-                        <span>🐢 0.65x</span>
-                      </button>
-                    </div>
+                    {isSpeaking && (
+                      <div className="flex-1 max-w-[220px] h-10 flex items-center justify-center animate-in fade-in duration-150">
+                        <svg
+                          viewBox="0 0 200 40"
+                          className="w-full h-full overflow-visible"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M 0 20 Q 12 4, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20"
+                            stroke="#4f46e5"
+                            strokeWidth="3"
+                            strokeLinecap="round"
+                          >
+                            <animate
+                              attributeName="d"
+                              dur="0.45s"
+                              repeatCount="indefinite"
+                              values="
+                                M 0 20 Q 12 3, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
+                                M 0 20 Q 12 37, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
+                                M 0 20 Q 12 10, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
+                                M 0 20 Q 12 3, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20
+                              "
+                            />
+                          </path>
+                        </svg>
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <div className="p-4 bg-emerald-50 border-2 border-emerald-300 rounded-2xl space-y-1 shadow-xs">
