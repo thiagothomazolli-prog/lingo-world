@@ -5,6 +5,7 @@ import { Phase, Exercise, UserProfile } from '../types';
 import { speakText, stopSpeaking, getExerciseVoiceGender, preloadExerciseAudio } from '../utils/storage';
 import { MascotLingo } from './MascotLingo';
 import { sfx } from '../utils/soundEffects';
+import { VocabIllustration } from '../utils/vocabIllustrations';
 
 const BASE_RECORDER_BARS = [
   22, 35, 55, 40, 78, 92, 64, 45, 85, 96, 60, 38, 72, 88,
@@ -70,6 +71,8 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   onRecordMissionActivity,
 }) => {
   const [step, setStep] = useState<'theory' | 'exercise' | 'complete'>('theory');
+  const [exerciseQueue, setExerciseQueue] = useState<Exercise[]>(() => [...phase.exercises]);
+  const [masteredIds, setMasteredIds] = useState<string[]>([]);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [selectedWords, setSelectedWords] = useState<string[]>([]);
@@ -82,8 +85,9 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   const [spokenResult, setSpokenResult] = useState('');
   const [mistakesCount, setMistakesCount] = useState(0);
 
-  const currentExercise: Exercise | undefined = phase.exercises[currentExerciseIndex];
-  const progressPercent = ((currentExerciseIndex + (hasAnswered ? 1 : 0)) / phase.exercises.length) * 100;
+  const currentExercise: Exercise | undefined = exerciseQueue[currentExerciseIndex];
+  const isReviewStage = currentExerciseIndex >= phase.exercises.length;
+  const progressPercent = Math.min(100, (masteredIds.length / Math.max(1, phase.exercises.length)) * 100);
   const exerciseVoiceGender: 'male' | 'female' = currentExercise
     ? getExerciseVoiceGender(currentExercise.id, currentExerciseIndex)
     : 'female';
@@ -219,22 +223,42 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     if (!correct) {
       sfx.playIncorrect();
       setMistakesCount((prev) => prev + 1);
+      // Re-enfileira o exercício errado para o final do módulo (com cartões reembaralhados) até acertar 100%
+      setExerciseQueue((prev) => {
+        const reshuffledVisual = currentExercise.visualOptions
+          ? [...currentExercise.visualOptions].sort(() => 0.5 - Math.random())
+          : undefined;
+        const reshuffledOptions = reshuffledVisual
+          ? reshuffledVisual.map((v) => v.text)
+          : currentExercise.options && currentExercise.type !== 'word-order'
+          ? [...currentExercise.options].sort(() => 0.5 - Math.random())
+          : currentExercise.options;
+        return [
+          ...prev,
+          {
+            ...currentExercise,
+            visualOptions: reshuffledVisual,
+            options: reshuffledOptions,
+          },
+        ];
+      });
       if (hasVisualCards) {
         const wrongVisual = currentExercise.visualOptions?.find(
           (v) => v.text.trim().toLowerCase() === selectedOption?.trim().toLowerCase()
         );
         if (wrongVisual) {
           setFeedbackMessage(
-            `Você selecionou ${wrongVisual.label || wrongVisual.text} (${wrongVisual.translationPt || ''}).`
+            `Você selecionou ${wrongVisual.label || wrongVisual.text} (${wrongVisual.translationPt || ''}). Você poderá corrigir esta palavra no final do exercício!`
           );
         } else {
-          setFeedbackMessage('Não foi dessa vez. Tente novamente!');
+          setFeedbackMessage('Não foi dessa vez. Você revisará este item no final do exercício!');
         }
       } else {
         setFeedbackMessage(cleanExplanation);
       }
     } else {
       sfx.playCorrect();
+      setMasteredIds((prev) => (prev.includes(currentExercise.id) ? prev : [...prev, currentExercise.id]));
       setFeedbackMessage(cleanExplanation);
       if (onRecordMissionActivity) {
         if (currentExercise.type === 'speaking-repeat' || currentExercise.skillCategory === 'pronunciation') {
@@ -248,7 +272,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
   const handleNextExercise = () => {
     sfx.playTap();
-    if (currentExerciseIndex < phase.exercises.length - 1) {
+    if (currentExerciseIndex < exerciseQueue.length - 1) {
       setCurrentExerciseIndex((prev) => prev + 1);
     } else {
       setStep('complete');
@@ -374,8 +398,10 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
           <div className="space-y-5">
             {/* Exercise Skill Badge */}
             <div className="flex items-center justify-between">
-              <span className="text-xs font-black uppercase tracking-wider text-slate-400">
-                Tarefa {currentExerciseIndex + 1} de {phase.exercises.length}
+              <span className={`text-xs font-black uppercase tracking-wider ${isReviewStage ? 'text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full' : 'text-slate-400'}`}>
+                {isReviewStage
+                  ? `🔄 Correção de Erros • Dominados ${masteredIds.length}/${phase.exercises.length}`
+                  : `Item ${currentExerciseIndex + 1} de ${phase.exercises.length}`}
               </span>
               <span className="px-2.5 py-0.5 bg-indigo-100 text-indigo-800 text-[11px] font-black rounded-full uppercase">
                 {currentExercise.skillCategory}
@@ -554,12 +580,10 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         <AlertCircle className="w-5 h-5 text-rose-600 absolute top-2.5 left-2.5" />
                       )}
 
-                      {/* Visual Emoji / Image */}
-                      {opt.emoji && (
-                        <span className="text-5xl sm:text-6xl my-1 select-none filter drop-shadow-xs transition-transform">
-                          {opt.emoji}
-                        </span>
-                      )}
+                      {/* Ilustração vetorial rica / Imagem realista representativa do item */}
+                      <div className="my-1 transition-transform">
+                        <VocabIllustration word={opt.text} emoji={opt.emoji} />
+                      </div>
 
                       {/* Nome em inglês e significado em português (letra menor logo abaixo, sem "="), revelados apenas ao confirmar */}
                       {shouldRevealLabel && (

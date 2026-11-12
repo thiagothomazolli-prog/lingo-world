@@ -89,26 +89,28 @@ export function saveFlashcards(cards: Flashcard[]): void {
 // Clean spoken text for phonetic questions, letters and English words
 export function cleanSpokenText(text: string): string {
   if (!text) return '';
-  // Check for letter pronunciations
-  if (/êi|ei|\/eɪ\//i.test(text)) return 'A';
-  if (/bi|\/biː\//i.test(text)) return 'B';
-  if (/si|\/siː\//i.test(text)) return 'C';
-  if (/di|\/diː\//i.test(text)) return 'D';
-  if (/som de "i"|í|\/iː\//i.test(text)) return 'E';
-  if (/ef|\/ɛf\//i.test(text)) return 'F';
-  if (/dji|dgee|\/dʒiː\//i.test(text)) return 'G';
-  if (/eitch|\/eɪtʃ\//i.test(text)) return 'H';
-  if (/ai|\/aɪ\//i.test(text)) return 'I';
-  if (/ou|\/oʊ\//i.test(text)) return 'O';
-  if (/ju|\/juː\//i.test(text)) return 'U';
+  const trimmed = text.trim();
 
-  // Strip phonetic brackets, e.g. "Cat (/kæt/)" -> "Cat"
-  let clean = text
+  // Only map explicit phonetic alphabet option strings (which contain IPA slashes like /eɪ/ or explicit Portuguese descriptions)
+  if (trimmed.includes('/eɪ/')) return 'A';
+  if (trimmed.includes('/biː/')) return 'B';
+  if (trimmed.includes('/siː/')) return 'C';
+  if (trimmed.includes('/diː/')) return 'D';
+  if (trimmed.includes('/iː/') || /^som de "i"/i.test(trimmed)) return 'E';
+  if (trimmed.includes('/ɛf/')) return 'F';
+  if (trimmed.includes('/dʒiː/')) return 'G';
+  if (trimmed.includes('/eɪtʃ/')) return 'H';
+  if (trimmed.includes('/aɪ/')) return 'I';
+  if (trimmed.includes('/oʊ/')) return 'O';
+  if (trimmed.includes('/juː/')) return 'U';
+
+  // Strip phonetic brackets, e.g. "Cat (/kæt/)" -> "Cat", and if multiple synonyms are separated by " / ", speak the primary word
+  let clean = trimmed
     .replace(/\*\*+/g, '')
-    .replace(/\/[^/]+\//g, '')
-    .replace(/\([^)]+\)/g, '')
+    .replace(/\([^)]*\)/g, '')
+    .split(/\s*\/\s*/)[0]
     .trim();
-  return clean || text;
+  return clean || trimmed;
 }
 
 // Deterministic varied voice gender ('male' | 'female') per exercise
