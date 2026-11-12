@@ -144,11 +144,19 @@ let speakingSafetyTimeout: ReturnType<typeof setTimeout> | null = null;
 let currentSpeechSessionId = 0;
 const preloadedAudioCache = new Map<string, string>();
 
+function notifyAudioExecuted(): void {
+  if (typeof window === 'undefined') return;
+  window.dispatchEvent(new CustomEvent('lingo-tts-played'));
+}
+
 function setSpeakingState(speaking: boolean): void {
   if (typeof window === 'undefined') return;
   if (speakingSafetyTimeout) {
     clearTimeout(speakingSafetyTimeout);
     speakingSafetyTimeout = null;
+  }
+  if (speaking) {
+    notifyAudioExecuted();
   }
   window.dispatchEvent(new CustomEvent('lingo-tts-state', { detail: { speaking } }));
   if (speaking) {
@@ -191,37 +199,39 @@ export function stopSpeaking(): void {
 
 function getHumanUsAudioUrls(textToSpeak: string, gender: 'male' | 'female'): string[] {
   const encoded = encodeURIComponent(textToSpeak);
-  // type=2 on dictvoice is strictly American English (en-US) studio pronunciation
+  // type=2 on dictvoice is strictly American English (en-US) studio pronunciation (never blocked by Referer)
   const youdaoUsUrl = `https://dict.youdao.com/dictvoice?audio=${encoded}&type=2`;
   // tl=en-US on Google TTS is strictly American English (en-US) Neural voice
   const googleUsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-US&q=${encoded}`;
 
-  return gender === 'male' ? [youdaoUsUrl, googleUsUrl] : [googleUsUrl, youdaoUsUrl];
+  return gender === 'male' ? [youdaoUsUrl, googleUsUrl] : [youdaoUsUrl, googleUsUrl];
 }
 
-// Preload American English human audio for instant 0ms playback on click
+// Preload American English human audio for the main phrase only (avoiding concurrent request bursts)
 export function preloadExerciseAudio(phrases: string[], gender: 'male' | 'female' = 'female'): void {
   if (typeof window === 'undefined') return;
-  phrases.forEach((raw) => {
-    const clean = cleanSpokenText(raw);
-    if (!clean) return;
-    const key = `${clean.toLowerCase()}__${gender}`;
-    if (preloadedAudioCache.has(key)) return;
-    const urls = getHumanUsAudioUrls(clean, gender);
-    preloadedAudioCache.set(key, urls[0]);
-    try {
-      const audio = new Audio();
-      audio.preload = 'auto';
-      audio.src = urls[0];
-      audio.load();
-    } catch {
-      // ignore preload errors
-    }
-  });
+  const primary = phrases[0];
+  if (!primary) return;
+  const clean = cleanSpokenText(primary);
+  if (!clean) return;
+  const key = `${clean.toLowerCase()}__${gender}`;
+  if (preloadedAudioCache.has(key)) return;
+  const urls = getHumanUsAudioUrls(clean, gender);
+  preloadedAudioCache.set(key, urls[0]);
+  try {
+    const audio = new Audio();
+    (audio as any).referrerPolicy = 'no-referrer';
+    audio.preload = 'auto';
+    audio.src = urls[0];
+    audio.load();
+  } catch {
+    // ignore preload errors
+  }
 }
 
 function speakOfflineFallback(textToSpeak: string, rate: number, gender: 'male' | 'female'): void {
   const safeRate = rate < 0.75 ? 0.72 : 0.96;
+  notifyAudioExecuted();
 
   // 1. Native Android TTS (configured strictly for Locale.US and pitch 1.0f)
   const androidTTS = (window as any).AndroidTTS;
@@ -319,14 +329,26 @@ export function speakText(
       }
 
       let fallbackTriggered = false;
+      let startTimeout: ReturnType<typeof setTimeout> | null = null;
+
+      const clearStartTimer = () => {
+        if (startTimeout) {
+          clearTimeout(startTimeout);
+          startTimeout = null;
+        }
+      };
+
       const triggerNext = () => {
+        clearStartTimer();
         if (fallbackTriggered || sessionId !== currentSpeechSessionId) return;
         fallbackTriggered = true;
         tryPlayUrl(urlIndex + 1);
       };
 
       try {
-        const audio = new Audio(urls[urlIndex]);
+        const audio = new Audio();
+        (audio as any).referrerPolicy = 'no-referrer';
+        audio.src = urls[urlIndex];
         audio.volume = 1.0;
         audio.playbackRate = playbackRate;
         if ('preservesPitch' in audio) {
@@ -334,13 +356,29 @@ export function speakText(
         }
         activeAudioElement = audio;
 
+        // If stream does not start within 1400ms, immediately fall back to next source / AndroidTTS
+        startTimeout = setTimeout(() => {
+          try {
+            audio.onplaying = null;
+            audio.onended = null;
+            audio.onerror = null;
+            audio.pause();
+          } catch {
+            // ignore
+          }
+          triggerNext();
+        }, 1400);
+
         audio.onplaying = () => {
+          clearStartTimer();
           if (sessionId === currentSpeechSessionId) {
             setSpeakingState(true);
           }
         };
         audio.onended = () => {
+          clearStartTimer();
           if (sessionId === currentSpeechSessionId) {
+            notifyAudioExecuted();
             setSpeakingState(false);
           }
         };
@@ -348,7 +386,6 @@ export function speakText(
           triggerNext();
         };
 
-        setSpeakingState(true);
         const playPromise = audio.play();
         if (playPromise !== undefined) {
           playPromise.catch(() => {
@@ -362,6 +399,7 @@ export function speakText(
 
     tryPlayUrl(0);
   } catch (err) {
+    notifyAudioExecuted();
     setSpeakingState(false);
     console.warn('Speech synthesis error:', err);
   }

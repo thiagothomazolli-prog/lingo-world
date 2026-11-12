@@ -22,7 +22,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Apple\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Apple",
         "visualEmoji": "🍎",
         "visualOptions": [
@@ -65,7 +65,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Banana\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Banana",
         "visualEmoji": "🍌",
         "visualOptions": [
@@ -103,12 +103,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Banana",
         "explanation": "Exemplo prático: \"Bananas are rich in potassium.\"",
         "phoneticHint": "/bəˈnæn.ə/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Orange",
         "visualEmoji": "🍊",
         "visualOptions": [
@@ -146,12 +146,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Orange",
         "explanation": "Exemplo prático: \"Fresh orange juice has lots of vitamin C.\"",
         "phoneticHint": "/ˈɔːr.ɪndʒ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Strawberry\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Strawberry",
         "visualEmoji": "🍓",
         "visualOptions": [
@@ -194,7 +194,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Uva\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Grape",
         "visualEmoji": "🍇",
         "visualOptions": [
@@ -232,12 +232,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Grape",
         "explanation": "Exemplo prático: \"Purple grapes grow on vines.\"",
         "phoneticHint": "/ɡreɪp/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Watermelon",
         "visualEmoji": "🍉",
         "visualOptions": [
@@ -275,12 +275,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Watermelon",
         "explanation": "Exemplo prático: \"Cold watermelon is great in the summer.\"",
         "phoneticHint": "/ˈwɔː.tərˌmel.ən/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lemon\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lemon",
         "visualEmoji": "🍋",
         "visualOptions": [
@@ -323,7 +323,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Abacaxi\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Pineapple",
         "visualEmoji": "🍍",
         "visualOptions": [
@@ -361,12 +361,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pineapple",
         "explanation": "Exemplo prático: \"Pineapple is a juicy tropical fruit.\"",
         "phoneticHint": "/ˈpaɪnˌæp.əl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Mango",
         "visualEmoji": "🥭",
         "visualOptions": [
@@ -404,12 +404,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Mango",
         "explanation": "Exemplo prático: \"This ripe mango is very sweet.\"",
         "phoneticHint": "/ˈmæŋ.ɡoʊ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Peach\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Peach",
         "visualEmoji": "🍑",
         "visualOptions": [
@@ -452,7 +452,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pera\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Pear",
         "visualEmoji": "🍐",
         "visualOptions": [
@@ -490,12 +490,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pear",
         "explanation": "Exemplo prático: \"The green pear is sweet and soft.\"",
         "phoneticHint": "/per/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Cherry",
         "visualEmoji": "🍒",
         "visualOptions": [
@@ -533,12 +533,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cherry",
         "explanation": "Exemplo prático: \"He put a red cherry on top of the cake.\"",
         "phoneticHint": "/ˈtʃer.i/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Avocado\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Avocado",
         "visualEmoji": "🥑",
         "visualOptions": [
@@ -581,7 +581,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Coco\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Coconut",
         "visualEmoji": "🥥",
         "visualOptions": [
@@ -619,12 +619,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Coconut",
         "explanation": "Exemplo prático: \"We drank fresh coconut water at the beach.\"",
         "phoneticHint": "/ˈkoʊ.kə.nʌt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Kiwi",
         "visualEmoji": "🥝",
         "visualOptions": [
@@ -662,12 +662,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Kiwi",
         "explanation": "Exemplo prático: \"Kiwi has bright green flesh inside.\"",
         "phoneticHint": "/ˈkiː.wiː/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Blueberry\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Blueberry",
         "visualEmoji": "🫐",
         "visualOptions": [
@@ -710,7 +710,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Melão\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Melon",
         "visualEmoji": "🍈",
         "visualOptions": [
@@ -748,12 +748,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Melon",
         "explanation": "Exemplo prático: \"Sweet melon is a light dessert.\"",
         "phoneticHint": "/ˈmel.ən/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Papaya",
         "visualEmoji": "🧡",
         "visualOptions": [
@@ -791,12 +791,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Papaya",
         "explanation": "Exemplo prático: \"Papaya is very popular for breakfast.\"",
         "phoneticHint": "/pəˈpaɪ.ə/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Plum\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Plum",
         "visualEmoji": "🟣",
         "visualOptions": [
@@ -839,7 +839,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Framboesa\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Raspberry",
         "visualEmoji": "❤️",
         "visualOptions": [
@@ -877,12 +877,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Raspberry",
         "explanation": "Exemplo prático: \"Raspberry jam tastes wonderful on bread.\"",
         "phoneticHint": "/ˈræzˌber.i/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Blackberry",
         "visualEmoji": "⚫",
         "visualOptions": [
@@ -920,12 +920,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Blackberry",
         "explanation": "Exemplo prático: \"Wild blackberries grow on bushes.\"",
         "phoneticHint": "/ˈblækˌber.i/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Tangerine\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tangerine",
         "visualEmoji": "🟠",
         "visualOptions": [
@@ -968,7 +968,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Limão taiti\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Lime",
         "visualEmoji": "🟢",
         "visualOptions": [
@@ -1006,12 +1006,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Lime",
         "explanation": "Exemplo prático: \"Squeeze fresh lime over the fish.\"",
         "phoneticHint": "/laɪm/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Pomegranate",
         "visualEmoji": "🔴",
         "visualOptions": [
@@ -1049,12 +1049,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pomegranate",
         "explanation": "Exemplo prático: \"Pomegranate is full of ruby red seeds.\"",
         "phoneticHint": "/ˈpɑː.mɪˌɡræn.ɪt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Apricot\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Apricot",
         "visualEmoji": "🟡",
         "visualOptions": [
@@ -1097,7 +1097,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Figo\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Fig",
         "visualEmoji": "🟤",
         "visualOptions": [
@@ -1135,12 +1135,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fig",
         "explanation": "Exemplo prático: \"Fresh figs are sweet and soft.\"",
         "phoneticHint": "/fɪɡ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Guava",
         "visualEmoji": "🩷",
         "visualOptions": [
@@ -1178,12 +1178,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Guava",
         "explanation": "Exemplo prático: \"Guava juice is very aromatic.\"",
         "phoneticHint": "/ˈɡwɑː.və/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p1-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Passion Fruit\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Passion Fruit",
         "visualEmoji": "💛",
         "visualOptions": [
@@ -1226,7 +1226,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pitaia\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Dragon Fruit",
         "visualEmoji": "🐉",
         "visualOptions": [
@@ -1264,12 +1264,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Dragon Fruit",
         "explanation": "Exemplo prático: \"Dragon fruit has a vibrant pink skin.\"",
         "phoneticHint": "/ˈdræɡ.ən fruːt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p1-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Starfruit",
         "visualEmoji": "⭐",
         "visualOptions": [
@@ -1307,7 +1307,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Starfruit",
         "explanation": "Exemplo prático: \"Slices of starfruit look like bright stars.\"",
         "phoneticHint": "/ˈstɑːr.fruːt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -1332,7 +1332,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Potato\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Potato",
         "visualEmoji": "🥔",
         "visualOptions": [
@@ -1375,7 +1375,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Tomate\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Tomato",
         "visualEmoji": "🍅",
         "visualOptions": [
@@ -1413,12 +1413,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Tomato",
         "explanation": "Exemplo prático: \"Fresh red tomatoes go in the salad.\"",
         "phoneticHint": "/təˈmeɪ.toʊ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Carrot",
         "visualEmoji": "🥕",
         "visualOptions": [
@@ -1456,12 +1456,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Carrot",
         "explanation": "Exemplo prático: \"Rabbits love crunchy orange carrots.\"",
         "phoneticHint": "/ˈkær.ət/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Onion\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Onion",
         "visualEmoji": "🧅",
         "visualOptions": [
@@ -1504,7 +1504,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Alho\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Garlic",
         "visualEmoji": "🧄",
         "visualOptions": [
@@ -1542,12 +1542,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Garlic",
         "explanation": "Exemplo prático: \"Garlic smells strong when roasted.\"",
         "phoneticHint": "/ˈɡɑːr.lɪk/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Lettuce",
         "visualEmoji": "🥬",
         "visualOptions": [
@@ -1585,12 +1585,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Lettuce",
         "explanation": "Exemplo prático: \"Wash the green lettuce leaves well.\"",
         "phoneticHint": "/ˈlet.ɪs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Corn\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Corn",
         "visualEmoji": "🌽",
         "visualOptions": [
@@ -1633,7 +1633,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Brócolis\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Broccoli",
         "visualEmoji": "🥦",
         "visualOptions": [
@@ -1671,12 +1671,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Broccoli",
         "explanation": "Exemplo prático: \"Steamed broccoli is very nutritious.\"",
         "phoneticHint": "/ˈbrɑː.kəl.i/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Cucumber",
         "visualEmoji": "🥒",
         "visualOptions": [
@@ -1714,12 +1714,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cucumber",
         "explanation": "Exemplo prático: \"Cucumber slices are cool and crisp.\"",
         "phoneticHint": "/ˈkjuː.kʌm.bər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pepper\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pepper",
         "visualEmoji": "🫑",
         "visualOptions": [
@@ -1762,7 +1762,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pimenta\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Chili",
         "visualEmoji": "🌶️",
         "visualOptions": [
@@ -1800,12 +1800,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Chili",
         "explanation": "Exemplo prático: \"That red chili pepper is very spicy.\"",
         "phoneticHint": "/ˈtʃɪl.i/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Mushroom",
         "visualEmoji": "🍄",
         "visualOptions": [
@@ -1843,12 +1843,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Mushroom",
         "explanation": "Exemplo prático: \"Mushrooms grow in damp forests.\"",
         "phoneticHint": "/ˈmʌʃ.ruːm/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Eggplant\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Eggplant",
         "visualEmoji": "🍆",
         "visualOptions": [
@@ -1891,7 +1891,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ervilha\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Peas",
         "visualEmoji": "🫛",
         "visualOptions": [
@@ -1929,12 +1929,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Peas",
         "explanation": "Exemplo prático: \"Green peas are small and round.\"",
         "phoneticHint": "/piːz/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Beans",
         "visualEmoji": "🫘",
         "visualOptions": [
@@ -1972,12 +1972,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Beans",
         "explanation": "Exemplo prático: \"Rice and beans are a daily meal.\"",
         "phoneticHint": "/biːnz/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pumpkin\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pumpkin",
         "visualEmoji": "🎃",
         "visualOptions": [
@@ -2020,7 +2020,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Batata-doce\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Sweet Potato",
         "visualEmoji": "🍠",
         "visualOptions": [
@@ -2058,12 +2058,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Sweet Potato",
         "explanation": "Exemplo prático: \"Roasted sweet potato is naturally sweet.\"",
         "phoneticHint": "/ˌswiːt pəˈteɪ.toʊ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Peanut",
         "visualEmoji": "🥜",
         "visualOptions": [
@@ -2101,12 +2101,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Peanut",
         "explanation": "Exemplo prático: \"Peanuts are a crunchy snack.\"",
         "phoneticHint": "/ˈpiː.nʌt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Chestnut\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Chestnut",
         "visualEmoji": "🌰",
         "visualOptions": [
@@ -2149,7 +2149,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Espinafre\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Spinach",
         "visualEmoji": "🌿",
         "visualOptions": [
@@ -2187,12 +2187,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Spinach",
         "explanation": "Exemplo prático: \"Spinach is rich in iron.\"",
         "phoneticHint": "/ˈspɪn.ɪtʃ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Cabbage",
         "visualEmoji": "🟢",
         "visualOptions": [
@@ -2230,12 +2230,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cabbage",
         "explanation": "Exemplo prático: \"Shredded cabbage makes great coleslaw.\"",
         "phoneticHint": "/ˈkæb.ɪdʒ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cauliflower\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cauliflower",
         "visualEmoji": "⚪",
         "visualOptions": [
@@ -2278,7 +2278,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Abobrinha\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Zucchini",
         "visualEmoji": "🟩",
         "visualOptions": [
@@ -2316,12 +2316,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Zucchini",
         "explanation": "Exemplo prático: \"Sliced zucchini cooks very quickly.\"",
         "phoneticHint": "/zuːˈkiː.ni/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Beetroot",
         "visualEmoji": "🟣",
         "visualOptions": [
@@ -2359,12 +2359,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Beetroot",
         "explanation": "Exemplo prático: \"Beetroot has a deep purple color.\"",
         "phoneticHint": "/ˈbiːt.ruːt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Radish\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Radish",
         "visualEmoji": "🔴",
         "visualOptions": [
@@ -2407,7 +2407,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Aipo / Salsão\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Celery",
         "visualEmoji": "🎋",
         "visualOptions": [
@@ -2445,12 +2445,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Celery",
         "explanation": "Exemplo prático: \"Celery stalks are crisp and light.\"",
         "phoneticHint": "/ˈsel.ər.i/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Asparagus",
         "visualEmoji": "🌱",
         "visualOptions": [
@@ -2488,12 +2488,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Asparagus",
         "explanation": "Exemplo prático: \"Grilled asparagus is a gourmet side dish.\"",
         "phoneticHint": "/əˈspær.ə.ɡəs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p2-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Artichoke\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Artichoke",
         "visualEmoji": "💚",
         "visualOptions": [
@@ -2536,7 +2536,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Alho-poró\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Leek",
         "visualEmoji": "🎍",
         "visualOptions": [
@@ -2574,12 +2574,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Leek",
         "explanation": "Exemplo prático: \"Leek and potato soup is a classic.\"",
         "phoneticHint": "/liːk/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p2-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Turnip",
         "visualEmoji": "⚪",
         "visualOptions": [
@@ -2617,7 +2617,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Turnip",
         "explanation": "Exemplo prático: \"Turnips are root vegetables grown in cool weather.\"",
         "phoneticHint": "/ˈtɜːr.nɪp/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -2642,7 +2642,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bread\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bread",
         "visualEmoji": "🍞",
         "visualOptions": [
@@ -2685,7 +2685,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Arroz\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Rice",
         "visualEmoji": "🍚",
         "visualOptions": [
@@ -2723,12 +2723,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Rice",
         "explanation": "Exemplo prático: \"White rice is served with dinner.\"",
         "phoneticHint": "/raɪs/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Egg",
         "visualEmoji": "🥚",
         "visualOptions": [
@@ -2766,12 +2766,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Egg",
         "explanation": "Exemplo prático: \"I eat a boiled egg for breakfast.\"",
         "phoneticHint": "/eɡ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cheese\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cheese",
         "visualEmoji": "🧀",
         "visualOptions": [
@@ -2814,8 +2814,8 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Frango\" em inglês?",
-        "audioPhrase": "Chicken",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
+        "audioPhrase": "Roast Chicken",
         "visualEmoji": "🍗",
         "visualOptions": [
           {
@@ -2831,10 +2831,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Croissant"
           },
           {
-            "text": "Chicken",
+            "text": "Roast Chicken",
             "emoji": "🍗",
-            "label": "Chicken",
-            "translationPt": "Frango"
+            "label": "Roast Chicken",
+            "translationPt": "Frango assado"
           },
           {
             "text": "Fondue",
@@ -2846,18 +2846,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "options": [
           "French Fries",
           "Croissant",
-          "Chicken",
+          "Roast Chicken",
           "Fondue"
         ],
-        "correctAnswer": "Chicken",
+        "correctAnswer": "Roast Chicken",
         "explanation": "Exemplo prático: \"Roast chicken is a family favorite.\"",
-        "phoneticHint": "/ˈtʃɪk.ɪn/",
-        "skillCategory": "reading"
+        "phoneticHint": "/ˈroʊst ˈtʃɪk.ɪn/",
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Meat",
         "visualEmoji": "🥩",
         "visualOptions": [
@@ -2895,12 +2895,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Meat",
         "explanation": "Exemplo prático: \"He cooked the meat on the grill.\"",
         "phoneticHint": "/miːt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Soup\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Soup",
         "visualEmoji": "🍲",
         "visualOptions": [
@@ -2943,7 +2943,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Salada\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Salad",
         "visualEmoji": "🥗",
         "visualOptions": [
@@ -2981,12 +2981,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Salad",
         "explanation": "Exemplo prático: \"A fresh green salad before the main course.\"",
         "phoneticHint": "/ˈsæl.əd/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Pizza",
         "visualEmoji": "🍕",
         "visualOptions": [
@@ -3003,10 +3003,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pizza"
           },
           {
-            "text": "Chicken",
+            "text": "Roast Chicken",
             "emoji": "🍗",
-            "label": "Chicken",
-            "translationPt": "Frango"
+            "label": "Roast Chicken",
+            "translationPt": "Frango assado"
           },
           {
             "text": "Pretzel",
@@ -3018,18 +3018,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "options": [
           "Dumpling",
           "Pizza",
-          "Chicken",
+          "Roast Chicken",
           "Pretzel"
         ],
         "correctAnswer": "Pizza",
         "explanation": "Exemplo prático: \"We shared a large cheese pizza.\"",
         "phoneticHint": "/ˈpiːt.sə/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Sandwich\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sandwich",
         "visualEmoji": "🥪",
         "visualOptions": [
@@ -3072,7 +3072,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Hambúrguer\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Hamburger",
         "visualEmoji": "🍔",
         "visualOptions": [
@@ -3110,12 +3110,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Hamburger",
         "explanation": "Exemplo prático: \"A juicy hamburger with lettuce and tomato.\"",
         "phoneticHint": "/ˈhæmˌbɜːr.ɡər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "French Fries",
         "visualEmoji": "🍟",
         "visualOptions": [
@@ -3153,12 +3153,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "French Fries",
         "explanation": "Exemplo prático: \"Crispy golden French fries.\"",
         "phoneticHint": "/ˈfrentʃ fraɪz/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pasta\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pasta",
         "visualEmoji": "🍝",
         "visualOptions": [
@@ -3201,7 +3201,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Manteiga\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Butter",
         "visualEmoji": "🧈",
         "visualOptions": [
@@ -3239,12 +3239,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Butter",
         "explanation": "Exemplo prático: \"Spread a little butter on the warm bread.\"",
         "phoneticHint": "/ˈbʌt.ər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bacon",
         "visualEmoji": "🥓",
         "visualOptions": [
@@ -3282,12 +3282,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bacon",
         "explanation": "Exemplo prático: \"Crispy bacon and eggs in the morning.\"",
         "phoneticHint": "/ˈbeɪ.kən/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Sausage\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sausage",
         "visualEmoji": "🌭",
         "visualOptions": [
@@ -3330,7 +3330,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Camarão\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Shrimp",
         "visualEmoji": "🍤",
         "visualOptions": [
@@ -3353,27 +3353,27 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sopa"
           },
           {
-            "text": "Chicken",
+            "text": "Roast Chicken",
             "emoji": "🍗",
-            "label": "Chicken",
-            "translationPt": "Frango"
+            "label": "Roast Chicken",
+            "translationPt": "Frango assado"
           }
         ],
         "options": [
           "Rice",
           "Shrimp",
           "Soup",
-          "Chicken"
+          "Roast Chicken"
         ],
         "correctAnswer": "Shrimp",
         "explanation": "Exemplo prático: \"Fried shrimp with lemon.\"",
         "phoneticHint": "/ʃrɪmp/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Sushi",
         "visualEmoji": "🍣",
         "visualOptions": [
@@ -3411,12 +3411,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Sushi",
         "explanation": "Exemplo prático: \"Fresh salmon sushi from Japan.\"",
         "phoneticHint": "/ˈsuː.ʃi/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pancake\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pancake",
         "visualEmoji": "🥞",
         "visualOptions": [
@@ -3459,7 +3459,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Waffle\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Waffle",
         "visualEmoji": "🧇",
         "visualOptions": [
@@ -3497,12 +3497,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Waffle",
         "explanation": "Exemplo prático: \"A crispy Belgian waffle for breakfast.\"",
         "phoneticHint": "/ˈwɑː.fəl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Croissant",
         "visualEmoji": "🥐",
         "visualOptions": [
@@ -3540,12 +3540,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Croissant",
         "explanation": "Exemplo prático: \"A flaky butter croissant from the bakery.\"",
         "phoneticHint": "/krwɑːˈsɑːnt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Baguette\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Baguette",
         "visualEmoji": "🥖",
         "visualOptions": [
@@ -3588,7 +3588,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bagel (pão em anel)\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Bagel",
         "visualEmoji": "🥯",
         "visualOptions": [
@@ -3599,10 +3599,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Arroz"
           },
           {
-            "text": "Omelet",
-            "emoji": "🍳",
-            "label": "Omelet",
-            "translationPt": "Omelete"
+            "text": "Roast Chicken",
+            "emoji": "🍗",
+            "label": "Roast Chicken",
+            "translationPt": "Frango assado"
           },
           {
             "text": "Pancake",
@@ -3619,19 +3619,19 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Rice",
-          "Omelet",
+          "Roast Chicken",
           "Pancake",
           "Bagel"
         ],
         "correctAnswer": "Bagel",
         "explanation": "Exemplo prático: \"A toasted bagel with cream cheese.\"",
         "phoneticHint": "/ˈbeɪ.ɡəl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Pretzel",
         "visualEmoji": "🥨",
         "visualOptions": [
@@ -3669,12 +3669,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pretzel",
         "explanation": "Exemplo prático: \"A salted twisted pretzel.\"",
         "phoneticHint": "/ˈpret.səl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Taco\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Taco",
         "visualEmoji": "🌮",
         "visualOptions": [
@@ -3717,7 +3717,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Burrito\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Burrito",
         "visualEmoji": "🌯",
         "visualOptions": [
@@ -3740,47 +3740,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Baguete"
           },
           {
-            "text": "Chicken",
-            "emoji": "🍗",
-            "label": "Chicken",
-            "translationPt": "Frango"
+            "text": "Salad",
+            "emoji": "🥗",
+            "label": "Salad",
+            "translationPt": "Salada"
           }
         ],
         "options": [
           "Burrito",
           "Cheese",
           "Baguette",
-          "Chicken"
+          "Salad"
         ],
         "correctAnswer": "Burrito",
         "explanation": "Exemplo prático: \"A warm flour tortilla burrito.\"",
         "phoneticHint": "/bəˈriː.toʊ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Dumpling",
         "visualEmoji": "🥟",
         "visualOptions": [
           {
-            "text": "Salad",
-            "emoji": "🥗",
-            "label": "Salad",
-            "translationPt": "Salada"
+            "text": "Sandwich",
+            "emoji": "🥪",
+            "label": "Sandwich",
+            "translationPt": "Sanduíche"
+          },
+          {
+            "text": "Pizza",
+            "emoji": "🍕",
+            "label": "Pizza",
+            "translationPt": "Pizza"
           },
           {
             "text": "Sushi",
             "emoji": "🍣",
             "label": "Sushi",
             "translationPt": "Sushi"
-          },
-          {
-            "text": "Sandwich",
-            "emoji": "🥪",
-            "label": "Sandwich",
-            "translationPt": "Sanduíche"
           },
           {
             "text": "Dumpling",
@@ -3790,34 +3790,34 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Salad",
-          "Sushi",
           "Sandwich",
+          "Pizza",
+          "Sushi",
           "Dumpling"
         ],
         "correctAnswer": "Dumpling",
         "explanation": "Exemplo prático: \"Steamed dumplings filled with vegetables.\"",
         "phoneticHint": "/ˈdʌm.plɪŋ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p3-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Omelet\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Omelet",
         "visualEmoji": "🍳",
         "visualOptions": [
-          {
-            "text": "Pasta",
-            "emoji": "🍝",
-            "label": "Pasta",
-            "translationPt": "Macarrão / Massa"
-          },
           {
             "text": "Pancake",
             "emoji": "🥞",
             "label": "Pancake",
             "translationPt": "Panqueca"
+          },
+          {
+            "text": "Pretzel",
+            "emoji": "🥨",
+            "label": "Pretzel",
+            "translationPt": "Pretzel"
           },
           {
             "text": "Omelet",
@@ -3826,17 +3826,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Omelete"
           },
           {
-            "text": "Pizza",
-            "emoji": "🍕",
-            "label": "Pizza",
-            "translationPt": "Pizza"
+            "text": "Pasta",
+            "emoji": "🍝",
+            "label": "Pasta",
+            "translationPt": "Macarrão / Massa"
           }
         ],
         "options": [
-          "Pasta",
           "Pancake",
+          "Pretzel",
           "Omelet",
-          "Pizza"
+          "Pasta"
         ],
         "correctAnswer": "Omelet",
         "explanation": "Exemplo prático: \"A cheese and herb omelet.\"",
@@ -3846,15 +3846,15 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Fondue\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Fondue",
         "visualEmoji": "🫕",
         "visualOptions": [
           {
-            "text": "Pretzel",
-            "emoji": "🥨",
-            "label": "Pretzel",
-            "translationPt": "Pretzel"
+            "text": "Meat",
+            "emoji": "🥩",
+            "label": "Meat",
+            "translationPt": "Carne / Bife"
           },
           {
             "text": "Fondue",
@@ -3876,7 +3876,7 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Pretzel",
+          "Meat",
           "Fondue",
           "Bagel",
           "Croissant"
@@ -3884,12 +3884,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fondue",
         "explanation": "Exemplo prático: \"Melted cheese fondue in a warm pot.\"",
         "phoneticHint": "/fɑːnˈduː/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p3-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Oyster",
         "visualEmoji": "🦪",
         "visualOptions": [
@@ -3906,28 +3906,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Burrito"
           },
           {
-            "text": "Meat",
-            "emoji": "🥩",
-            "label": "Meat",
-            "translationPt": "Carne / Bife"
-          },
-          {
             "text": "Hamburger",
             "emoji": "🍔",
             "label": "Hamburger",
             "translationPt": "Hambúrguer"
+          },
+          {
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo"
           }
         ],
         "options": [
           "Oyster",
           "Burrito",
-          "Meat",
-          "Hamburger"
+          "Hamburger",
+          "Egg"
         ],
         "correctAnswer": "Oyster",
         "explanation": "Exemplo prático: \"Fresh ocean oysters on ice.\"",
         "phoneticHint": "/ˈɔɪ.stər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -3952,7 +3952,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Water\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Water",
         "visualEmoji": "💧",
         "visualOptions": [
@@ -3995,7 +3995,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Leite\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Milk",
         "visualEmoji": "🥛",
         "visualOptions": [
@@ -4033,12 +4033,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Milk",
         "explanation": "Exemplo prático: \"A glass of cold milk.\"",
         "phoneticHint": "/mɪlk/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Coffee",
         "visualEmoji": "☕",
         "visualOptions": [
@@ -4076,12 +4076,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Coffee",
         "explanation": "Exemplo prático: \"A cup of hot black coffee.\"",
         "phoneticHint": "/ˈkɔː.fi/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Tea\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tea",
         "visualEmoji": "🍵",
         "visualOptions": [
@@ -4124,7 +4124,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Suco\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Juice",
         "visualEmoji": "🧃",
         "visualOptions": [
@@ -4162,12 +4162,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Juice",
         "explanation": "Exemplo prático: \"Natural apple juice with no sugar.\"",
         "phoneticHint": "/dʒuːs/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Soda",
         "visualEmoji": "🥤",
         "visualOptions": [
@@ -4205,12 +4205,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Soda",
         "explanation": "Exemplo prático: \"Cold soda with ice cubes.\"",
         "phoneticHint": "/ˈsoʊ.də/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cake\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cake",
         "visualEmoji": "🍰",
         "visualOptions": [
@@ -4253,7 +4253,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Chocolate\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Chocolate",
         "visualEmoji": "🍫",
         "visualOptions": [
@@ -4291,12 +4291,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Chocolate",
         "explanation": "Exemplo prático: \"Dark chocolate is delicious.\"",
         "phoneticHint": "/ˈtʃɑːk.lət/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Ice Cream",
         "visualEmoji": "🍨",
         "visualOptions": [
@@ -4334,12 +4334,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Ice Cream",
         "explanation": "Exemplo prático: \"Vanilla ice cream in a bowl.\"",
         "phoneticHint": "/ˈaɪs kriːm/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cookie\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cookie",
         "visualEmoji": "🍪",
         "visualOptions": [
@@ -4382,7 +4382,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bala / Doce\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Candy",
         "visualEmoji": "🍬",
         "visualOptions": [
@@ -4420,12 +4420,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Candy",
         "explanation": "Exemplo prático: \"Sweet fruit candy.\"",
         "phoneticHint": "/ˈkæn.di/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Honey",
         "visualEmoji": "🍯",
         "visualOptions": [
@@ -4463,12 +4463,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Honey",
         "explanation": "Exemplo prático: \"Golden bee honey in a jar.\"",
         "phoneticHint": "/ˈhʌn.i/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Sugar\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sugar",
         "visualEmoji": "🧂",
         "visualOptions": [
@@ -4511,7 +4511,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Torta\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Pie",
         "visualEmoji": "🥧",
         "visualOptions": [
@@ -4549,12 +4549,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pie",
         "explanation": "Exemplo prático: \"Warm homemade apple pie.\"",
         "phoneticHint": "/paɪ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Donut",
         "visualEmoji": "🍩",
         "visualOptions": [
@@ -4592,12 +4592,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Donut",
         "explanation": "Exemplo prático: \"A glazed donut with sprinkles.\"",
         "phoneticHint": "/ˈdoʊ.nʌt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lollipop\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lollipop",
         "visualEmoji": "🍭",
         "visualOptions": [
@@ -4640,7 +4640,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pipoca\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Popcorn",
         "visualEmoji": "🍿",
         "visualOptions": [
@@ -4678,12 +4678,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Popcorn",
         "explanation": "Exemplo prático: \"Salty popcorn at the movie theater.\"",
         "phoneticHint": "/ˈpɑːp.kɔːrn/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Cupcake",
         "visualEmoji": "🧁",
         "visualOptions": [
@@ -4721,12 +4721,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cupcake",
         "explanation": "Exemplo prático: \"A vanilla cupcake with pink frosting.\"",
         "phoneticHint": "/ˈkʌp.keɪk/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pudding\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pudding",
         "visualEmoji": "🍮",
         "visualOptions": [
@@ -4769,7 +4769,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Vitamina / Raspadinha\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Smoothie",
         "visualEmoji": "🍧",
         "visualOptions": [
@@ -4807,12 +4807,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Smoothie",
         "explanation": "Exemplo prático: \"A cold berry smoothie.\"",
         "phoneticHint": "/ˈsmuː.ði/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Lemonade",
         "visualEmoji": "🍋",
         "visualOptions": [
@@ -4850,12 +4850,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Lemonade",
         "explanation": "Exemplo prático: \"Cold lemonade on a sunny afternoon.\"",
         "phoneticHint": "/ˌlem.əˈneɪd/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Milkshake\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Milkshake",
         "visualEmoji": "🥤",
         "visualOptions": [
@@ -4898,7 +4898,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cubo de gelo\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Ice Cube",
         "visualEmoji": "🧊",
         "visualOptions": [
@@ -4936,12 +4936,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Ice Cube",
         "explanation": "Exemplo prático: \"Put two ice cubes in the glass.\"",
         "phoneticHint": "/ˈaɪs kjuːb/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Teapot",
         "visualEmoji": "🫖",
         "visualOptions": [
@@ -4979,12 +4979,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Teapot",
         "explanation": "Exemplo prático: \"Pour hot water from the teapot.\"",
         "phoneticHint": "/ˈtiː.pɑːt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Baby Bottle\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Baby Bottle",
         "visualEmoji": "🍼",
         "visualOptions": [
@@ -5027,7 +5027,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Chimarrão / Mate\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Mate Tea",
         "visualEmoji": "🧉",
         "visualOptions": [
@@ -5065,12 +5065,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Mate Tea",
         "explanation": "Exemplo prático: \"Traditional herbal mate tea.\"",
         "phoneticHint": "/ˈmɑː.teɪ tiː/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bubble Tea",
         "visualEmoji": "🧋",
         "visualOptions": [
@@ -5108,12 +5108,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bubble Tea",
         "explanation": "Exemplo prático: \"Sweet bubble tea with tapioca pearls.\"",
         "phoneticHint": "/ˈbʌb.əl tiː/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p4-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Fortune Cookie\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fortune Cookie",
         "visualEmoji": "🥠",
         "visualOptions": [
@@ -5156,7 +5156,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bolo lunar\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Mooncake",
         "visualEmoji": "🥮",
         "visualOptions": [
@@ -5194,12 +5194,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Mooncake",
         "explanation": "Exemplo prático: \"Traditional festival mooncake.\"",
         "phoneticHint": "/ˈmuːn.keɪk/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p4-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Dango",
         "visualEmoji": "🍡",
         "visualOptions": [
@@ -5237,7 +5237,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Dango",
         "explanation": "Exemplo prático: \"Sweet rice dumplings on a skewer.\"",
         "phoneticHint": "/ˈdɑːŋ.ɡoʊ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -5262,7 +5262,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Dog\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Dog",
         "visualEmoji": "🐕",
         "visualOptions": [
@@ -5305,7 +5305,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Gato\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Cat",
         "visualEmoji": "🐈",
         "visualOptions": [
@@ -5343,12 +5343,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cat",
         "explanation": "Exemplo prático: \"The agile cat walks along the wall.\"",
         "phoneticHint": "/kæt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Horse",
         "visualEmoji": "🐎",
         "visualOptions": [
@@ -5386,12 +5386,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Horse",
         "explanation": "Exemplo prático: \"The brown horse gallops across the field.\"",
         "phoneticHint": "/hɔːrs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cow\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cow",
         "visualEmoji": "🐄",
         "visualOptions": [
@@ -5434,7 +5434,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Porco\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Pig",
         "visualEmoji": "🐖",
         "visualOptions": [
@@ -5472,12 +5472,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pig",
         "explanation": "Exemplo prático: \"The pink pig rests on the farm.\"",
         "phoneticHint": "/pɪɡ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Sheep",
         "visualEmoji": "🐑",
         "visualOptions": [
@@ -5515,12 +5515,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Sheep",
         "explanation": "Exemplo prático: \"Sheep give us warm wool.\"",
         "phoneticHint": "/ʃiːp/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Chicken\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Chicken",
         "visualEmoji": "🐓",
         "visualOptions": [
@@ -5563,7 +5563,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pato\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Duck",
         "visualEmoji": "🦆",
         "visualOptions": [
@@ -5601,12 +5601,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Duck",
         "explanation": "Exemplo prático: \"The duck swims peacefully on the lake.\"",
         "phoneticHint": "/dʌk/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Rabbit",
         "visualEmoji": "🐇",
         "visualOptions": [
@@ -5644,12 +5644,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Rabbit",
         "explanation": "Exemplo prático: \"The white rabbit has long ears.\"",
         "phoneticHint": "/ˈræb.ɪt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bird\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bird",
         "visualEmoji": "🐦",
         "visualOptions": [
@@ -5692,7 +5692,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Peixe\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Fish",
         "visualEmoji": "🐟",
         "visualOptions": [
@@ -5730,12 +5730,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fish",
         "explanation": "Exemplo prático: \"The fish swims in clear water.\"",
         "phoneticHint": "/fɪʃ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Mouse",
         "visualEmoji": "🐁",
         "visualOptions": [
@@ -5773,12 +5773,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Mouse",
         "explanation": "Exemplo prático: \"The small mouse runs very fast.\"",
         "phoneticHint": "/maʊs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Goat\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Goat",
         "visualEmoji": "🐐",
         "visualOptions": [
@@ -5821,7 +5821,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Burro / Jegue\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Donkey",
         "visualEmoji": "🫏",
         "visualOptions": [
@@ -5859,12 +5859,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Donkey",
         "explanation": "Exemplo prático: \"The strong donkey carries heavy loads.\"",
         "phoneticHint": "/ˈdɑːŋ.ki/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Turkey",
         "visualEmoji": "🦃",
         "visualOptions": [
@@ -5902,12 +5902,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Turkey",
         "explanation": "Exemplo prático: \"The wild turkey has large tail feathers.\"",
         "phoneticHint": "/ˈtɜːr.ki/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Goose\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Goose",
         "visualEmoji": "🪿",
         "visualOptions": [
@@ -5950,7 +5950,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Hamster\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Hamster",
         "visualEmoji": "🐹",
         "visualOptions": [
@@ -5988,12 +5988,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Hamster",
         "explanation": "Exemplo prático: \"The golden hamster stores seeds in its cheeks.\"",
         "phoneticHint": "/ˈhæm.stər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Parrot",
         "visualEmoji": "🦜",
         "visualOptions": [
@@ -6031,12 +6031,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Parrot",
         "explanation": "Exemplo prático: \"The colorful parrot can mimic human speech.\"",
         "phoneticHint": "/ˈpær.ət/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Turtle\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Turtle",
         "visualEmoji": "🐢",
         "visualOptions": [
@@ -6079,7 +6079,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Touro\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Bull",
         "visualEmoji": "🐂",
         "visualOptions": [
@@ -6117,12 +6117,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bull",
         "explanation": "Exemplo prático: \"The muscular bull has strong horns.\"",
         "phoneticHint": "/bʊl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Rooster",
         "visualEmoji": "🐓",
         "visualOptions": [
@@ -6160,12 +6160,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Rooster",
         "explanation": "Exemplo prático: \"The rooster crows at sunrise.\"",
         "phoneticHint": "/ˈruː.stər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Camel\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Camel",
         "visualEmoji": "🐪",
         "visualOptions": [
@@ -6208,7 +6208,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lhama\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Llama",
         "visualEmoji": "🦙",
         "visualOptions": [
@@ -6246,12 +6246,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Llama",
         "explanation": "Exemplo prático: \"Llamas live high in the Andes mountains.\"",
         "phoneticHint": "/ˈlɑː.mə/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Swan",
         "visualEmoji": "🦢",
         "visualOptions": [
@@ -6289,12 +6289,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Swan",
         "explanation": "Exemplo prático: \"The graceful white swan glides on the water.\"",
         "phoneticHint": "/swɑːn/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Peacock\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Peacock",
         "visualEmoji": "🦚",
         "visualOptions": [
@@ -6337,7 +6337,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pomba\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Dove",
         "visualEmoji": "🕊️",
         "visualOptions": [
@@ -6375,12 +6375,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Dove",
         "explanation": "Exemplo prático: \"The white dove is a symbol of peace.\"",
         "phoneticHint": "/dʌv/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Water Buffalo",
         "visualEmoji": "🐃",
         "visualOptions": [
@@ -6418,12 +6418,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Water Buffalo",
         "explanation": "Exemplo prático: \"Water buffaloes cool off in the mud.\"",
         "phoneticHint": "/ˈwɔː.tər ˈbʌf.ə.loʊ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p5-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ram\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ram",
         "visualEmoji": "🐏",
         "visualOptions": [
@@ -6466,7 +6466,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p5-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ouriço\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Hedgehog",
         "visualEmoji": "🦔",
         "visualOptions": [
@@ -6504,12 +6504,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Hedgehog",
         "explanation": "Exemplo prático: \"The little hedgehog is covered in spines.\"",
         "phoneticHint": "/ˈhedʒ.hɔːɡ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p5-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bison",
         "visualEmoji": "🦬",
         "visualOptions": [
@@ -6547,7 +6547,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bison",
         "explanation": "Exemplo prático: \"Wild bison roam the northern plains.\"",
         "phoneticHint": "/ˈbaɪ.sən/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -6572,7 +6572,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lion\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lion",
         "visualEmoji": "🦁",
         "visualOptions": [
@@ -6615,7 +6615,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Tigre\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Tiger",
         "visualEmoji": "🐅",
         "visualOptions": [
@@ -6653,12 +6653,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Tiger",
         "explanation": "Exemplo prático: \"The striped tiger hunts in the jungle.\"",
         "phoneticHint": "/ˈtaɪ.ɡər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Elephant",
         "visualEmoji": "🐘",
         "visualOptions": [
@@ -6696,12 +6696,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Elephant",
         "explanation": "Exemplo prático: \"The elephant has a long trunk and big ears.\"",
         "phoneticHint": "/ˈel.ɪ.fənt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bear\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bear",
         "visualEmoji": "🐻",
         "visualOptions": [
@@ -6744,7 +6744,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Macaco\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Monkey",
         "visualEmoji": "🐒",
         "visualOptions": [
@@ -6782,12 +6782,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Monkey",
         "explanation": "Exemplo prático: \"The agile monkey climbs tall trees.\"",
         "phoneticHint": "/ˈmʌŋ.ki/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Giraffe",
         "visualEmoji": "🦒",
         "visualOptions": [
@@ -6825,12 +6825,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Giraffe",
         "explanation": "Exemplo prático: \"The giraffe has a very long neck.\"",
         "phoneticHint": "/dʒɪˈræf/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Zebra\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Zebra",
         "visualEmoji": "🦓",
         "visualOptions": [
@@ -6873,7 +6873,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lobo\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Wolf",
         "visualEmoji": "🐺",
         "visualOptions": [
@@ -6911,12 +6911,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Wolf",
         "explanation": "Exemplo prático: \"The gray wolf howls at the full moon.\"",
         "phoneticHint": "/wʊlf/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Fox",
         "visualEmoji": "🦊",
         "visualOptions": [
@@ -6954,12 +6954,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fox",
         "explanation": "Exemplo prático: \"The clever red fox has a bushy tail.\"",
         "phoneticHint": "/fɑːks/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Deer\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Deer",
         "visualEmoji": "🦌",
         "visualOptions": [
@@ -7002,7 +7002,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Urso Panda\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Panda",
         "visualEmoji": "🐼",
         "visualOptions": [
@@ -7040,12 +7040,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Panda",
         "explanation": "Exemplo prático: \"Giant pandas eat bamboo all day.\"",
         "phoneticHint": "/ˈpæn.də/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Koala",
         "visualEmoji": "🐨",
         "visualOptions": [
@@ -7083,12 +7083,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Koala",
         "explanation": "Exemplo prático: \"The koala sleeps in eucalyptus trees.\"",
         "phoneticHint": "/koʊˈɑː.lə/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Kangaroo\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Kangaroo",
         "visualEmoji": "🦘",
         "visualOptions": [
@@ -7131,7 +7131,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Gorila\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Gorilla",
         "visualEmoji": "🦍",
         "visualOptions": [
@@ -7169,12 +7169,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Gorilla",
         "explanation": "Exemplo prático: \"The strong gorilla lives in the tropical forest.\"",
         "phoneticHint": "/ɡəˈrɪl.ə/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Hippopotamus",
         "visualEmoji": "🦛",
         "visualOptions": [
@@ -7212,12 +7212,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Hippopotamus",
         "explanation": "Exemplo prático: \"The hippopotamus spends hours in the river.\"",
         "phoneticHint": "/ˌhɪp.əˈpɑː.tə.məs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Rhinoceros\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Rhinoceros",
         "visualEmoji": "🦏",
         "visualOptions": [
@@ -7260,7 +7260,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Leopardo\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Leopard",
         "visualEmoji": "🐆",
         "visualOptions": [
@@ -7298,12 +7298,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Leopard",
         "explanation": "Exemplo prático: \"The spotted leopard runs at tremendous speed.\"",
         "phoneticHint": "/ˈlep.ərd/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Squirrel",
         "visualEmoji": "🐿️",
         "visualOptions": [
@@ -7341,12 +7341,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Squirrel",
         "explanation": "Exemplo prático: \"The squirrel gathers acorns for winter.\"",
         "phoneticHint": "/ˈskwɜːr.əl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bat\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bat",
         "visualEmoji": "🦇",
         "visualOptions": [
@@ -7389,7 +7389,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Guaxinim\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Raccoon",
         "visualEmoji": "🦝",
         "visualOptions": [
@@ -7427,12 +7427,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Raccoon",
         "explanation": "Exemplo prático: \"The raccoon has a dark mask around its eyes.\"",
         "phoneticHint": "/ræˈkuːn/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Sloth",
         "visualEmoji": "🦥",
         "visualOptions": [
@@ -7470,12 +7470,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Sloth",
         "explanation": "Exemplo prático: \"The sloth moves very slowly in the trees.\"",
         "phoneticHint": "/slɔːθ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Otter\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Otter",
         "visualEmoji": "🦦",
         "visualOptions": [
@@ -7518,7 +7518,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Castor\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Beaver",
         "visualEmoji": "🦫",
         "visualOptions": [
@@ -7556,12 +7556,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Beaver",
         "explanation": "Exemplo prático: \"Beavers build wooden dams across streams.\"",
         "phoneticHint": "/ˈbiː.vər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Skunk",
         "visualEmoji": "🦨",
         "visualOptions": [
@@ -7599,12 +7599,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Skunk",
         "explanation": "Exemplo prático: \"A skunk has a black coat with a white stripe.\"",
         "phoneticHint": "/skʌŋk/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Badger\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Badger",
         "visualEmoji": "🦡",
         "visualOptions": [
@@ -7647,7 +7647,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Orangotango\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Orangutan",
         "visualEmoji": "🦧",
         "visualOptions": [
@@ -7685,12 +7685,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Orangutan",
         "explanation": "Exemplo prático: \"Orangutans have long reddish-brown hair.\"",
         "phoneticHint": "/əˈræŋ.ə.tæn/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Boar",
         "visualEmoji": "🐗",
         "visualOptions": [
@@ -7728,12 +7728,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Boar",
         "explanation": "Exemplo prático: \"The wild boar searches for roots in the woods.\"",
         "phoneticHint": "/bɔːr/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Chipmunk\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Chipmunk",
         "visualEmoji": "🐿️",
         "visualOptions": [
@@ -7776,7 +7776,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p6-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Mamute\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Mammoth",
         "visualEmoji": "🦣",
         "visualOptions": [
@@ -7814,12 +7814,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Mammoth",
         "explanation": "Exemplo prático: \"Woolly mammoths lived during the Ice Age.\"",
         "phoneticHint": "/ˈmæm.əθ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p6-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Moose",
         "visualEmoji": "🫎",
         "visualOptions": [
@@ -7857,7 +7857,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Moose",
         "explanation": "Exemplo prático: \"The giant moose has wide antlers.\"",
         "phoneticHint": "/muːs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -7882,7 +7882,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Shark\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Shark",
         "visualEmoji": "🦈",
         "visualOptions": [
@@ -7925,7 +7925,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Baleia\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Whale",
         "visualEmoji": "🐋",
         "visualOptions": [
@@ -7963,12 +7963,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Whale",
         "explanation": "Exemplo prático: \"The blue whale is the largest animal on Earth.\"",
         "phoneticHint": "/weɪl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Dolphin",
         "visualEmoji": "🐬",
         "visualOptions": [
@@ -8006,12 +8006,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Dolphin",
         "explanation": "Exemplo prático: \"Intelligent dolphins leap out of the waves.\"",
         "phoneticHint": "/ˈdɑːl.fɪn/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Snake\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Snake",
         "visualEmoji": "🐍",
         "visualOptions": [
@@ -8054,7 +8054,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Sapo / Rã\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Frog",
         "visualEmoji": "🐸",
         "visualOptions": [
@@ -8092,12 +8092,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Frog",
         "explanation": "Exemplo prático: \"The green frog jumps onto a lily pad.\"",
         "phoneticHint": "/frɔːɡ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Eagle",
         "visualEmoji": "🦅",
         "visualOptions": [
@@ -8135,12 +8135,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Eagle",
         "explanation": "Exemplo prático: \"The eagle soars high above the mountains.\"",
         "phoneticHint": "/ˈiː.ɡəl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Owl\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Owl",
         "visualEmoji": "🦉",
         "visualOptions": [
@@ -8183,7 +8183,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pinguim\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Penguin",
         "visualEmoji": "🐧",
         "visualOptions": [
@@ -8221,12 +8221,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Penguin",
         "explanation": "Exemplo prático: \"Penguins live on the icy coast of Antarctica.\"",
         "phoneticHint": "/ˈpeŋ.ɡwɪn/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Octopus",
         "visualEmoji": "🐙",
         "visualOptions": [
@@ -8264,12 +8264,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Octopus",
         "explanation": "Exemplo prático: \"An octopus has eight flexible arms.\"",
         "phoneticHint": "/ˈɑːk.tə.pəs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Crab\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Crab",
         "visualEmoji": "🦀",
         "visualOptions": [
@@ -8312,7 +8312,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Borboleta\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Butterfly",
         "visualEmoji": "🦋",
         "visualOptions": [
@@ -8350,12 +8350,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Butterfly",
         "explanation": "Exemplo prático: \"A colorful butterfly lands on the flower.\"",
         "phoneticHint": "/ˈbʌt.ər.flaɪ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bee",
         "visualEmoji": "🐝",
         "visualOptions": [
@@ -8393,12 +8393,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bee",
         "explanation": "Exemplo prático: \"Busy bees make sweet golden honey.\"",
         "phoneticHint": "/biː/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ant\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ant",
         "visualEmoji": "🐜",
         "visualOptions": [
@@ -8441,7 +8441,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Aranha\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Spider",
         "visualEmoji": "🕷️",
         "visualOptions": [
@@ -8479,12 +8479,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Spider",
         "explanation": "Exemplo prático: \"The spider spins a delicate silk web.\"",
         "phoneticHint": "/ˈspaɪ.dər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Crocodile",
         "visualEmoji": "🐊",
         "visualOptions": [
@@ -8522,12 +8522,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Crocodile",
         "explanation": "Exemplo prático: \"The crocodile waits near the riverbank.\"",
         "phoneticHint": "/ˈkrɑː.kə.daɪl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lizard\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lizard",
         "visualEmoji": "🦎",
         "visualOptions": [
@@ -8570,7 +8570,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Caracol\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Snail",
         "visualEmoji": "🐌",
         "visualOptions": [
@@ -8608,12 +8608,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Snail",
         "explanation": "Exemplo prático: \"The garden snail moves very slowly.\"",
         "phoneticHint": "/sneɪl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Ladybug",
         "visualEmoji": "🐞",
         "visualOptions": [
@@ -8651,12 +8651,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Ladybug",
         "explanation": "Exemplo prático: \"A red ladybug with black spots.\"",
         "phoneticHint": "/ˈleɪ.di.bʌɡ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Flamingo\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Flamingo",
         "visualEmoji": "🦩",
         "visualOptions": [
@@ -8699,7 +8699,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Foca\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Seal",
         "visualEmoji": "🦭",
         "visualOptions": [
@@ -8737,12 +8737,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Seal",
         "explanation": "Exemplo prático: \"The seal claps its flippers on the ice.\"",
         "phoneticHint": "/siːl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Jellyfish",
         "visualEmoji": "🪼",
         "visualOptions": [
@@ -8780,12 +8780,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Jellyfish",
         "explanation": "Exemplo prático: \"Glowing jellyfish float with the ocean current.\"",
         "phoneticHint": "/ˈdʒel.i.fɪʃ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lobster\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lobster",
         "visualEmoji": "🦞",
         "visualOptions": [
@@ -8828,7 +8828,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lula\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Squid",
         "visualEmoji": "🦑",
         "visualOptions": [
@@ -8866,12 +8866,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Squid",
         "explanation": "Exemplo prático: \"The giant squid lives in deep waters.\"",
         "phoneticHint": "/skwɪd/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Blowfish",
         "visualEmoji": "🐡",
         "visualOptions": [
@@ -8909,12 +8909,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Blowfish",
         "explanation": "Exemplo prático: \"The blowfish puffs up like a spiky ball.\"",
         "phoneticHint": "/ˈbloʊ.fɪʃ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Tropical Fish\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tropical Fish",
         "visualEmoji": "🐠",
         "visualOptions": [
@@ -8957,7 +8957,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Coral\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Coral",
         "visualEmoji": "🪸",
         "visualOptions": [
@@ -8995,12 +8995,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Coral",
         "explanation": "Exemplo prático: \"Colorful coral reefs protect marine life.\"",
         "phoneticHint": "/ˈkɔːr.əl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Scorpion",
         "visualEmoji": "🦂",
         "visualOptions": [
@@ -9038,12 +9038,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Scorpion",
         "explanation": "Exemplo prático: \"A desert scorpion curls its tail.\"",
         "phoneticHint": "/ˈskɔːr.pi.ən/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Mosquito\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Mosquito",
         "visualEmoji": "🦟",
         "visualOptions": [
@@ -9086,7 +9086,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p7-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Grilo\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Cricket",
         "visualEmoji": "🦗",
         "visualOptions": [
@@ -9124,12 +9124,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cricket",
         "explanation": "Exemplo prático: \"Crickets chirp on warm summer nights.\"",
         "phoneticHint": "/ˈkrɪk.ɪt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Beetle",
         "visualEmoji": "🪲",
         "visualOptions": [
@@ -9167,7 +9167,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Beetle",
         "explanation": "Exemplo prático: \"The shiny green beetle crawls on a leaf.\"",
         "phoneticHint": "/ˈbiː.təl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -9192,7 +9192,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Tree\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tree",
         "visualEmoji": "🌳",
         "visualOptions": [
@@ -9235,7 +9235,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Flor\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Flower",
         "visualEmoji": "🌸",
         "visualOptions": [
@@ -9273,12 +9273,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Flower",
         "explanation": "Exemplo prático: \"The pink flower blooms in spring.\"",
         "phoneticHint": "/ˈflaʊ.ər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Sun",
         "visualEmoji": "☀️",
         "visualOptions": [
@@ -9316,12 +9316,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Sun",
         "explanation": "Exemplo prático: \"The bright sun shines in the sky.\"",
         "phoneticHint": "/sʌn/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Moon\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Moon",
         "visualEmoji": "🌙",
         "visualOptions": [
@@ -9364,7 +9364,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Estrela\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Star",
         "visualEmoji": "⭐",
         "visualOptions": [
@@ -9402,12 +9402,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Star",
         "explanation": "Exemplo prático: \"Thousands of stars twinkle in the dark sky.\"",
         "phoneticHint": "/stɑːr/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Cloud",
         "visualEmoji": "☁️",
         "visualOptions": [
@@ -9445,12 +9445,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cloud",
         "explanation": "Exemplo prático: \"White fluffy clouds float overhead.\"",
         "phoneticHint": "/klaʊd/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Rain\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Rain",
         "visualEmoji": "🌧️",
         "visualOptions": [
@@ -9493,7 +9493,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Neve\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Snow",
         "visualEmoji": "❄️",
         "visualOptions": [
@@ -9531,12 +9531,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Snow",
         "explanation": "Exemplo prático: \"Soft white snow covers the ground.\"",
         "phoneticHint": "/snoʊ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Fire",
         "visualEmoji": "🔥",
         "visualOptions": [
@@ -9574,12 +9574,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fire",
         "explanation": "Exemplo prático: \"The warm campfire crackles at night.\"",
         "phoneticHint": "/ˈfaɪ.ər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Mountain\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Mountain",
         "visualEmoji": "⛰️",
         "visualOptions": [
@@ -9622,7 +9622,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Praia\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Beach",
         "visualEmoji": "🏖️",
         "visualOptions": [
@@ -9660,12 +9660,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Beach",
         "explanation": "Exemplo prático: \"We walked barefoot on the sandy beach.\"",
         "phoneticHint": "/biːtʃ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Ocean Wave",
         "visualEmoji": "🌊",
         "visualOptions": [
@@ -9703,12 +9703,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Ocean Wave",
         "explanation": "Exemplo prático: \"Surfers ride the high ocean waves.\"",
         "phoneticHint": "/ˈoʊ.ʃən weɪv/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Rainbow\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Rainbow",
         "visualEmoji": "🌈",
         "visualOptions": [
@@ -9751,7 +9751,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Vento\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Wind",
         "visualEmoji": "💨",
         "visualOptions": [
@@ -9789,12 +9789,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Wind",
         "explanation": "Exemplo prático: \"The autumn wind blows the leaves.\"",
         "phoneticHint": "/wɪnd/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Lightning",
         "visualEmoji": "⚡",
         "visualOptions": [
@@ -9832,12 +9832,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Lightning",
         "explanation": "Exemplo prático: \"A flash of lightning lit up the storm.\"",
         "phoneticHint": "/ˈlaɪt.nɪŋ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Rose\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Rose",
         "visualEmoji": "🌹",
         "visualOptions": [
@@ -9880,7 +9880,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Girassol\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Sunflower",
         "visualEmoji": "🌻",
         "visualOptions": [
@@ -9918,12 +9918,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Sunflower",
         "explanation": "Exemplo prático: \"Sunflowers turn toward the sun.\"",
         "phoneticHint": "/ˈsʌnˌflaʊ.ər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Palm Tree",
         "visualEmoji": "🌴",
         "visualOptions": [
@@ -9961,12 +9961,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Palm Tree",
         "explanation": "Exemplo prático: \"Palm trees sway in the tropical breeze.\"",
         "phoneticHint": "/ˈpɑːm triː/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pine Tree\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pine Tree",
         "visualEmoji": "🌲",
         "visualOptions": [
@@ -10009,7 +10009,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cacto\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Cactus",
         "visualEmoji": "🌵",
         "visualOptions": [
@@ -10047,12 +10047,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cactus",
         "explanation": "Exemplo prático: \"A cactus stores water in the dry desert.\"",
         "phoneticHint": "/ˈkæk.təs/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Leaf",
         "visualEmoji": "🍃",
         "visualOptions": [
@@ -10090,12 +10090,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Leaf",
         "explanation": "Exemplo prático: \"A green leaf fell from the branch.\"",
         "phoneticHint": "/liːf/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Maple Leaf\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Maple Leaf",
         "visualEmoji": "🍁",
         "visualOptions": [
@@ -10138,7 +10138,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ilha\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Island",
         "visualEmoji": "🏝️",
         "visualOptions": [
@@ -10176,12 +10176,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Island",
         "explanation": "Exemplo prático: \"A peaceful tropical island surrounded by sea.\"",
         "phoneticHint": "/ˈaɪ.lənd/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Volcano",
         "visualEmoji": "🌋",
         "visualOptions": [
@@ -10219,12 +10219,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Volcano",
         "explanation": "Exemplo prático: \"Smoke rises from the active volcano.\"",
         "phoneticHint": "/vɑːlˈkeɪ.noʊ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Desert\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Desert",
         "visualEmoji": "🏜️",
         "visualOptions": [
@@ -10267,7 +10267,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Tornado / Furacão\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Tornado",
         "visualEmoji": "🌪️",
         "visualOptions": [
@@ -10305,12 +10305,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Tornado",
         "explanation": "Exemplo prático: \"A strong tornado spins across the plain.\"",
         "phoneticHint": "/tɔːrˈneɪ.doʊ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Fog",
         "visualEmoji": "🌫️",
         "visualOptions": [
@@ -10348,12 +10348,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fog",
         "explanation": "Exemplo prático: \"Thick morning fog covered the bridge.\"",
         "phoneticHint": "/fɔːɡ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p8-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Comet\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Comet",
         "visualEmoji": "☄️",
         "visualOptions": [
@@ -10396,7 +10396,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Planeta\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Planet",
         "visualEmoji": "🪐",
         "visualOptions": [
@@ -10434,12 +10434,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Planet",
         "explanation": "Exemplo prático: \"Saturn is a planet with beautiful rings.\"",
         "phoneticHint": "/ˈplæn.ɪt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p8-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Earth",
         "visualEmoji": "🌍",
         "visualOptions": [
@@ -10477,7 +10477,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Earth",
         "explanation": "Exemplo prático: \"Earth is our home in the solar system.\"",
         "phoneticHint": "/ɜːrθ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -10502,7 +10502,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bed\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bed",
         "visualEmoji": "🛏️",
         "visualOptions": [
@@ -10545,7 +10545,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cadeira\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Chair",
         "visualEmoji": "🪑",
         "visualOptions": [
@@ -10583,12 +10583,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Chair",
         "explanation": "Exemplo prático: \"Please sit down on this wooden chair.\"",
         "phoneticHint": "/tʃer/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Table",
         "visualEmoji": "🪑",
         "visualOptions": [
@@ -10626,12 +10626,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Table",
         "explanation": "Exemplo prático: \"Dinner is ready on the dining table.\"",
         "phoneticHint": "/ˈteɪ.bəl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Door\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Door",
         "visualEmoji": "🚪",
         "visualOptions": [
@@ -10674,7 +10674,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Janela\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Window",
         "visualEmoji": "🪟",
         "visualOptions": [
@@ -10712,12 +10712,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Window",
         "explanation": "Exemplo prático: \"Open the window to let the sunlight in.\"",
         "phoneticHint": "/ˈwɪn.doʊ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Sofa",
         "visualEmoji": "🛋️",
         "visualOptions": [
@@ -10755,12 +10755,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Sofa",
         "explanation": "Exemplo prático: \"The family sits together on the living room sofa.\"",
         "phoneticHint": "/ˈsoʊ.fə/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pillow\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pillow",
         "visualEmoji": "⬜",
         "visualOptions": [
@@ -10803,7 +10803,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cobertor\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Blanket",
         "visualEmoji": "🛌",
         "visualOptions": [
@@ -10841,12 +10841,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Blanket",
         "explanation": "Exemplo prático: \"A warm wool blanket for cold nights.\"",
         "phoneticHint": "/ˈblæŋ.kɪt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Lamp",
         "visualEmoji": "💡",
         "visualOptions": [
@@ -10884,12 +10884,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Lamp",
         "explanation": "Exemplo prático: \"Turn on the reading lamp by the desk.\"",
         "phoneticHint": "/læmp/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Mirror\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Mirror",
         "visualEmoji": "🪞",
         "visualOptions": [
@@ -10932,7 +10932,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Relógio / Despertador\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Clock",
         "visualEmoji": "⏰",
         "visualOptions": [
@@ -10970,12 +10970,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Clock",
         "explanation": "Exemplo prático: \"The alarm clock rings at seven in the morning.\"",
         "phoneticHint": "/klɑːk/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Key",
         "visualEmoji": "🔑",
         "visualOptions": [
@@ -11013,12 +11013,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Key",
         "explanation": "Exemplo prático: \"Keep your house key in your pocket.\"",
         "phoneticHint": "/kiː/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Wardrobe\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Wardrobe",
         "visualEmoji": "🚪",
         "visualOptions": [
@@ -11061,7 +11061,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Estante de livros\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Bookshelf",
         "visualEmoji": "📚",
         "visualOptions": [
@@ -11099,12 +11099,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bookshelf",
         "explanation": "Exemplo prático: \"The bookshelf is organized by topic.\"",
         "phoneticHint": "/ˈbʊk.ʃelf/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Rug",
         "visualEmoji": "🟥",
         "visualOptions": [
@@ -11142,12 +11142,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Rug",
         "explanation": "Exemplo prático: \"A soft woven rug on the living room floor.\"",
         "phoneticHint": "/rʌɡ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Curtain\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Curtain",
         "visualEmoji": "🪟",
         "visualOptions": [
@@ -11190,7 +11190,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Quadro / Porta-retrato\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Picture Frame",
         "visualEmoji": "🖼️",
         "visualOptions": [
@@ -11228,12 +11228,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Picture Frame",
         "explanation": "Exemplo prático: \"A colorful painting hangs in a picture frame.\"",
         "phoneticHint": "/ˈpɪk.tʃər freɪm/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Candle",
         "visualEmoji": "🕯️",
         "visualOptions": [
@@ -11271,12 +11271,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Candle",
         "explanation": "Exemplo prático: \"A scented candle burns on the table.\"",
         "phoneticHint": "/ˈkæn.dəl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Plant Pot\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Plant Pot",
         "visualEmoji": "🪴",
         "visualOptions": [
@@ -11319,7 +11319,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cadeado / Fechadura\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Lock",
         "visualEmoji": "🔒",
         "visualOptions": [
@@ -11357,12 +11357,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Lock",
         "explanation": "Exemplo prático: \"Make sure the gate lock is closed.\"",
         "phoneticHint": "/lɑːk/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bell",
         "visualEmoji": "🔔",
         "visualOptions": [
@@ -11400,12 +11400,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bell",
         "explanation": "Exemplo prático: \"Ring the front door bell.\"",
         "phoneticHint": "/bel/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Flashlight\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Flashlight",
         "visualEmoji": "🔦",
         "visualOptions": [
@@ -11448,7 +11448,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pilha / Bateria\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Battery",
         "visualEmoji": "🔋",
         "visualOptions": [
@@ -11486,12 +11486,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Battery",
         "explanation": "Exemplo prático: \"The remote control needs a new battery.\"",
         "phoneticHint": "/ˈbæt.ər.i/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Electric Plug",
         "visualEmoji": "🔌",
         "visualOptions": [
@@ -11529,12 +11529,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Electric Plug",
         "explanation": "Exemplo prático: \"Insert the electric plug into the wall socket.\"",
         "phoneticHint": "/ɪˈlek.trɪk plʌɡ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Trash Can\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Trash Can",
         "visualEmoji": "🗑️",
         "visualOptions": [
@@ -11577,7 +11577,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Caixa\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Box",
         "visualEmoji": "📦",
         "visualOptions": [
@@ -11615,12 +11615,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Box",
         "explanation": "Exemplo prático: \"Pack the old toys into a cardboard box.\"",
         "phoneticHint": "/bɑːks/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Basket",
         "visualEmoji": "🧺",
         "visualOptions": [
@@ -11658,12 +11658,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Basket",
         "explanation": "Exemplo prático: \"Put the clean laundry in the wicker basket.\"",
         "phoneticHint": "/ˈbæs.kɪt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p9-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ladder\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ladder",
         "visualEmoji": "🪜",
         "visualOptions": [
@@ -11706,7 +11706,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p9-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Extintor de incêndio\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Fire Extinguisher",
         "visualEmoji": "🧯",
         "visualOptions": [
@@ -11744,12 +11744,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fire Extinguisher",
         "explanation": "Exemplo prático: \"A red fire extinguisher hangs in the hallway.\"",
         "phoneticHint": "/ˈfaɪ.ər ɪkˌstɪŋ.ɡwɪ.ʃər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p9-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Hourglass",
         "visualEmoji": "⏳",
         "visualOptions": [
@@ -11787,7 +11787,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Hourglass",
         "explanation": "Exemplo prático: \"Sand flows slowly through the glass hourglass.\"",
         "phoneticHint": "/ˈaʊr.ɡlæs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -11812,7 +11812,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Plate\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Plate",
         "visualEmoji": "🍽️",
         "visualOptions": [
@@ -11855,7 +11855,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Xícara\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Cup",
         "visualEmoji": "☕",
         "visualOptions": [
@@ -11893,12 +11893,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cup",
         "explanation": "Exemplo prático: \"A porcelain cup of hot coffee.\"",
         "phoneticHint": "/kʌp/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Glass",
         "visualEmoji": "🥛",
         "visualOptions": [
@@ -11936,12 +11936,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Glass",
         "explanation": "Exemplo prático: \"Pour cold water into the tall glass.\"",
         "phoneticHint": "/ɡlæs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Fork\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fork",
         "visualEmoji": "🍴",
         "visualOptions": [
@@ -11984,7 +11984,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Faca\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Knife",
         "visualEmoji": "🔪",
         "visualOptions": [
@@ -12022,12 +12022,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Knife",
         "explanation": "Exemplo prático: \"The chef uses a sharp kitchen knife.\"",
         "phoneticHint": "/naɪf/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Spoon",
         "visualEmoji": "🥄",
         "visualOptions": [
@@ -12065,12 +12065,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Spoon",
         "explanation": "Exemplo prático: \"Stir the soup with a silver spoon.\"",
         "phoneticHint": "/spuːn/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Fridge\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fridge",
         "visualEmoji": "🧊",
         "visualOptions": [
@@ -12113,7 +12113,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Fogão\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Stove",
         "visualEmoji": "🔥",
         "visualOptions": [
@@ -12151,12 +12151,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Stove",
         "explanation": "Exemplo prático: \"Boil the water on the kitchen stove.\"",
         "phoneticHint": "/stoʊv/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Microwave",
         "visualEmoji": "⏲️",
         "visualOptions": [
@@ -12194,12 +12194,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Microwave",
         "explanation": "Exemplo prático: \"Heat the lunch for one minute in the microwave.\"",
         "phoneticHint": "/ˈmaɪ.krə.weɪv/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Frying Pan\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Frying Pan",
         "visualEmoji": "🍳",
         "visualOptions": [
@@ -12242,7 +12242,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Panela\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Cooking Pot",
         "visualEmoji": "🍲",
         "visualOptions": [
@@ -12280,12 +12280,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cooking Pot",
         "explanation": "Exemplo prático: \"Simmer the beans in a large cooking pot.\"",
         "phoneticHint": "/ˈkʊk.ɪŋ pɑːt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bowl",
         "visualEmoji": "🥣",
         "visualOptions": [
@@ -12323,12 +12323,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bowl",
         "explanation": "Exemplo prático: \"A ceramic bowl of morning cereal.\"",
         "phoneticHint": "/boʊl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bottle\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bottle",
         "visualEmoji": "🍾",
         "visualOptions": [
@@ -12371,7 +12371,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Máquina de lavar\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Washing Machine",
         "visualEmoji": "🫧",
         "visualOptions": [
@@ -12409,12 +12409,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Washing Machine",
         "explanation": "Exemplo prático: \"Put the dirty clothes in the washing machine.\"",
         "phoneticHint": "/ˈwɑː.ʃɪŋ məˌʃiːn/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Chopsticks",
         "visualEmoji": "🥢",
         "visualOptions": [
@@ -12452,12 +12452,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Chopsticks",
         "explanation": "Exemplo prático: \"They eat sushi using wooden chopsticks.\"",
         "phoneticHint": "/ˈtʃɑːp.stɪks/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Salt Shaker\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Salt Shaker",
         "visualEmoji": "🧂",
         "visualOptions": [
@@ -12500,7 +12500,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pote de vidro\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Jar",
         "visualEmoji": "🫙",
         "visualOptions": [
@@ -12538,12 +12538,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Jar",
         "explanation": "Exemplo prático: \"Store homemade jam in a glass jar.\"",
         "phoneticHint": "/dʒɑːr/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Tin Can",
         "visualEmoji": "🥫",
         "visualOptions": [
@@ -12581,12 +12581,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Tin Can",
         "explanation": "Exemplo prático: \"Open a tin can of tomato sauce.\"",
         "phoneticHint": "/ˈtɪn kæn/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cooler\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cooler",
         "visualEmoji": "🧊",
         "visualOptions": [
@@ -12629,7 +12629,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Canudo\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Drinking Straw",
         "visualEmoji": "🥤",
         "visualOptions": [
@@ -12667,12 +12667,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Drinking Straw",
         "explanation": "Exemplo prático: \"Sip the juice through a paper drinking straw.\"",
         "phoneticHint": "/ˈdrɪŋ.kɪŋ strɔː/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Spout Kettle",
         "visualEmoji": "🫖",
         "visualOptions": [
@@ -12710,12 +12710,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Spout Kettle",
         "explanation": "Exemplo prático: \"The kettle whistles when the water boils.\"",
         "phoneticHint": "/ˈspaʊt ˈket.əl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cutting Board\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cutting Board",
         "visualEmoji": "🪵",
         "visualOptions": [
@@ -12758,7 +12758,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Balança\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Scale",
         "visualEmoji": "⚖️",
         "visualOptions": [
@@ -12796,12 +12796,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Scale",
         "explanation": "Exemplo prático: \"Weigh the flour on the kitchen scale.\"",
         "phoneticHint": "/skeɪl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Funnel",
         "visualEmoji": "🔻",
         "visualOptions": [
@@ -12839,12 +12839,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Funnel",
         "explanation": "Exemplo prático: \"Use a funnel to pour oil into the bottle.\"",
         "phoneticHint": "/ˈfʌn.əl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Sponge\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sponge",
         "visualEmoji": "🧽",
         "visualOptions": [
@@ -12887,7 +12887,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Vassoura\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Broom",
         "visualEmoji": "🧹",
         "visualOptions": [
@@ -12925,12 +12925,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Broom",
         "explanation": "Exemplo prático: \"Sweep the kitchen floor with a broom.\"",
         "phoneticHint": "/bruːm/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bucket",
         "visualEmoji": "🪣",
         "visualOptions": [
@@ -12968,12 +12968,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bucket",
         "explanation": "Exemplo prático: \"Fill the plastic bucket with warm water.\"",
         "phoneticHint": "/ˈbʌk.ɪt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Plunger\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Plunger",
         "visualEmoji": "🪠",
         "visualOptions": [
@@ -13016,7 +13016,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p10-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ratoeira\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Mousetrap",
         "visualEmoji": "🪤",
         "visualOptions": [
@@ -13054,12 +13054,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Mousetrap",
         "explanation": "Exemplo prático: \"Set a mousetrap in the old barn.\"",
         "phoneticHint": "/ˈmaʊs.træp/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Amphora",
         "visualEmoji": "🏺",
         "visualOptions": [
@@ -13097,7 +13097,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Amphora",
         "explanation": "Exemplo prático: \"Ancient olive oil was kept in a clay amphora.\"",
         "phoneticHint": "/ˈæm.fər.ə/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -13122,7 +13122,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Book\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Book",
         "visualEmoji": "📘",
         "visualOptions": [
@@ -13165,7 +13165,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Caneta\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Pen",
         "visualEmoji": "🖊️",
         "visualOptions": [
@@ -13203,12 +13203,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pen",
         "explanation": "Exemplo prático: \"Sign the document with a blue ink pen.\"",
         "phoneticHint": "/pen/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Pencil",
         "visualEmoji": "✏️",
         "visualOptions": [
@@ -13246,12 +13246,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pencil",
         "explanation": "Exemplo prático: \"Draw a sketch with a wooden pencil.\"",
         "phoneticHint": "/ˈpen.səl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Notebook\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Notebook",
         "visualEmoji": "📓",
         "visualOptions": [
@@ -13294,7 +13294,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Mochila\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Backpack",
         "visualEmoji": "🎒",
         "visualOptions": [
@@ -13332,12 +13332,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Backpack",
         "explanation": "Exemplo prático: \"Carry your school books in a backpack.\"",
         "phoneticHint": "/ˈbæk.pæk/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Scissors",
         "visualEmoji": "✂️",
         "visualOptions": [
@@ -13375,12 +13375,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Scissors",
         "explanation": "Exemplo prático: \"Cut the paper along the line with scissors.\"",
         "phoneticHint": "/ˈsɪz.ərz/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Soap\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Soap",
         "visualEmoji": "🧼",
         "visualOptions": [
@@ -13423,7 +13423,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Escova de dentes\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Toothbrush",
         "visualEmoji": "🪥",
         "visualOptions": [
@@ -13461,12 +13461,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Toothbrush",
         "explanation": "Exemplo prático: \"Brush your teeth with a soft toothbrush.\"",
         "phoneticHint": "/ˈtuːθ.brʌʃ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Shower",
         "visualEmoji": "🚿",
         "visualOptions": [
@@ -13504,12 +13504,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Shower",
         "explanation": "Exemplo prático: \"Take a refreshing warm shower.\"",
         "phoneticHint": "/ˈʃaʊ.ər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bathtub\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bathtub",
         "visualEmoji": "🛁",
         "visualOptions": [
@@ -13552,7 +13552,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Vaso sanitário\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Toilet",
         "visualEmoji": "🚽",
         "visualOptions": [
@@ -13590,12 +13590,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Toilet",
         "explanation": "Exemplo prático: \"Clean the bathroom toilet regularly.\"",
         "phoneticHint": "/ˈtɔɪ.lət/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Toilet Paper",
         "visualEmoji": "🧻",
         "visualOptions": [
@@ -13633,12 +13633,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Toilet Paper",
         "explanation": "Exemplo prático: \"Put a new roll of toilet paper in the holder.\"",
         "phoneticHint": "/ˈtɔɪ.lət ˈpeɪ.pər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lotion\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lotion",
         "visualEmoji": "🧴",
         "visualOptions": [
@@ -13681,7 +13681,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lâmina de barbear\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Razor",
         "visualEmoji": "🪒",
         "visualOptions": [
@@ -13719,12 +13719,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Razor",
         "explanation": "Exemplo prático: \"Shave carefully with a clean safety razor.\"",
         "phoneticHint": "/ˈreɪ.zər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Lipstick",
         "visualEmoji": "💄",
         "visualOptions": [
@@ -13762,12 +13762,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Lipstick",
         "explanation": "Exemplo prático: \"She wore bright red lipstick to the party.\"",
         "phoneticHint": "/ˈlɪp.stɪk/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ruler\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ruler",
         "visualEmoji": "📏",
         "visualOptions": [
@@ -13810,7 +13810,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Clipe de papel\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Paperclip",
         "visualEmoji": "📎",
         "visualOptions": [
@@ -13848,12 +13848,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Paperclip",
         "explanation": "Exemplo prático: \"Hold the pages together with a metal paperclip.\"",
         "phoneticHint": "/ˈpeɪ.pər.klɪp/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Pushpin",
         "visualEmoji": "📌",
         "visualOptions": [
@@ -13891,12 +13891,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pushpin",
         "explanation": "Exemplo prático: \"Pin the note to the board with a red pushpin.\"",
         "phoneticHint": "/ˈpʊʃ.pɪn/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Envelope\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Envelope",
         "visualEmoji": "✉️",
         "visualOptions": [
@@ -13939,7 +13939,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Calendário\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Calendar",
         "visualEmoji": "📅",
         "visualOptions": [
@@ -13977,12 +13977,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Calendar",
         "explanation": "Exemplo prático: \"Circle the date on the wall calendar.\"",
         "phoneticHint": "/ˈkæl.ən.dər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Newspaper",
         "visualEmoji": "📰",
         "visualOptions": [
@@ -14020,12 +14020,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Newspaper",
         "explanation": "Exemplo prático: \"He reads the morning newspaper with coffee.\"",
         "phoneticHint": "/ˈnuːzˌpeɪ.pər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Folder\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Folder",
         "visualEmoji": "📁",
         "visualOptions": [
@@ -14068,7 +14068,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Prancheta\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Clipboard",
         "visualEmoji": "📋",
         "visualOptions": [
@@ -14106,12 +14106,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Clipboard",
         "explanation": "Exemplo prático: \"The coach holds a checklist on a clipboard.\"",
         "phoneticHint": "/ˈklɪp.bɔːrd/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Paintbrush",
         "visualEmoji": "🖌️",
         "visualOptions": [
@@ -14149,12 +14149,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Paintbrush",
         "explanation": "Exemplo prático: \"Dip the paintbrush into the blue paint.\"",
         "phoneticHint": "/ˈpeɪnt.brʌʃ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Crayon\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Crayon",
         "visualEmoji": "🖍️",
         "visualOptions": [
@@ -14197,7 +14197,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lupa\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Magnifying Glass",
         "visualEmoji": "🔍",
         "visualOptions": [
@@ -14235,12 +14235,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Magnifying Glass",
         "explanation": "Exemplo prático: \"Examine the tiny stamp with a magnifying glass.\"",
         "phoneticHint": "/ˈmæɡ.nə.faɪ.ɪŋ ɡlæs/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Pill",
         "visualEmoji": "💊",
         "visualOptions": [
@@ -14278,12 +14278,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pill",
         "explanation": "Exemplo prático: \"Take the vitamin pill with a glass of water.\"",
         "phoneticHint": "/pɪl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p11-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bandage\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bandage",
         "visualEmoji": "🩹",
         "visualOptions": [
@@ -14326,7 +14326,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p11-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Seringa / Vacina\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Syringe",
         "visualEmoji": "💉",
         "visualOptions": [
@@ -14364,12 +14364,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Syringe",
         "explanation": "Exemplo prático: \"The nurse prepared the vaccine syringe.\"",
         "phoneticHint": "/səˈrɪndʒ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p11-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Stethoscope",
         "visualEmoji": "🩺",
         "visualOptions": [
@@ -14407,7 +14407,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Stethoscope",
         "explanation": "Exemplo prático: \"The doctor listens to your heart with a stethoscope.\"",
         "phoneticHint": "/ˈsteθ.ə.skoʊp/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -14432,7 +14432,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Phone\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Phone",
         "visualEmoji": "📱",
         "visualOptions": [
@@ -14475,7 +14475,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Computador / Notebook\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Computer",
         "visualEmoji": "💻",
         "visualOptions": [
@@ -14513,12 +14513,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Computer",
         "explanation": "Exemplo prático: \"She works from home on her laptop computer.\"",
         "phoneticHint": "/kəmˈpjuː.tər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Television",
         "visualEmoji": "📺",
         "visualOptions": [
@@ -14556,12 +14556,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Television",
         "explanation": "Exemplo prático: \"We watched a movie on the living room television.\"",
         "phoneticHint": "/ˈtel.ə.vɪʒ.ən/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Camera\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Camera",
         "visualEmoji": "📷",
         "visualOptions": [
@@ -14604,7 +14604,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Fones de ouvido\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Headphones",
         "visualEmoji": "🎧",
         "visualOptions": [
@@ -14642,12 +14642,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Headphones",
         "explanation": "Exemplo prático: \"Put on your headphones to listen to the English audio.\"",
         "phoneticHint": "/ˈhed.foʊnz/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Microphone",
         "visualEmoji": "🎤",
         "visualOptions": [
@@ -14685,12 +14685,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Microphone",
         "explanation": "Exemplo prático: \"Speak clearly into the studio microphone.\"",
         "phoneticHint": "/ˈmaɪ.krə.foʊn/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Keyboard\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Keyboard",
         "visualEmoji": "⌨️",
         "visualOptions": [
@@ -14733,7 +14733,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Mouse de computador\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Computer Mouse",
         "visualEmoji": "🖱️",
         "visualOptions": [
@@ -14771,12 +14771,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Computer Mouse",
         "explanation": "Exemplo prático: \"Click the icon using the wireless computer mouse.\"",
         "phoneticHint": "/kəmˈpjuː.tər maʊs/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Printer",
         "visualEmoji": "🖨️",
         "visualOptions": [
@@ -14814,12 +14814,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Printer",
         "explanation": "Exemplo prático: \"Print two copies of the ticket on the printer.\"",
         "phoneticHint": "/ˈprɪn.tər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Radio\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Radio",
         "visualEmoji": "📻",
         "visualOptions": [
@@ -14862,7 +14862,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Martelo\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Hammer",
         "visualEmoji": "🔨",
         "visualOptions": [
@@ -14900,12 +14900,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Hammer",
         "explanation": "Exemplo prático: \"Use a hammer to drive the nail into the wood.\"",
         "phoneticHint": "/ˈhæm.ər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Wrench",
         "visualEmoji": "🔧",
         "visualOptions": [
@@ -14943,12 +14943,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Wrench",
         "explanation": "Exemplo prático: \"Tighten the metal bolt with a wrench.\"",
         "phoneticHint": "/rentʃ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Screwdriver\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Screwdriver",
         "visualEmoji": "🪛",
         "visualOptions": [
@@ -14991,7 +14991,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Serrote / Serra\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Saw",
         "visualEmoji": "🪚",
         "visualOptions": [
@@ -15029,12 +15029,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Saw",
         "explanation": "Exemplo prático: \"Cut the wooden plank with a hand saw.\"",
         "phoneticHint": "/sɔː/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Axe",
         "visualEmoji": "🪓",
         "visualOptions": [
@@ -15072,12 +15072,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Axe",
         "explanation": "Exemplo prático: \"Split firewood logs with a sharp axe.\"",
         "phoneticHint": "/æks/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pickaxe\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pickaxe",
         "visualEmoji": "⛏️",
         "visualOptions": [
@@ -15120,7 +15120,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Porca e parafuso\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Nut and Bolt",
         "visualEmoji": "🔩",
         "visualOptions": [
@@ -15158,12 +15158,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Nut and Bolt",
         "explanation": "Exemplo prático: \"Fasten the steel plate with a nut and bolt.\"",
         "phoneticHint": "/ˈnʌt ənd boʊlt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Gear",
         "visualEmoji": "⚙️",
         "visualOptions": [
@@ -15201,12 +15201,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Gear",
         "explanation": "Exemplo prático: \"The metal gears turn inside the machine.\"",
         "phoneticHint": "/ɡɪr/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Chain\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Chain",
         "visualEmoji": "⛓️",
         "visualOptions": [
@@ -15249,7 +15249,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Gancho\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Hook",
         "visualEmoji": "🪝",
         "visualOptions": [
@@ -15287,12 +15287,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Hook",
         "explanation": "Exemplo prático: \"Hang your wet coat on the wall hook.\"",
         "phoneticHint": "/hʊk/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Magnet",
         "visualEmoji": "🧲",
         "visualOptions": [
@@ -15330,12 +15330,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Magnet",
         "explanation": "Exemplo prático: \"A horseshoe magnet attracts iron nails.\"",
         "phoneticHint": "/ˈmæɡ.nət/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Telescope\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Telescope",
         "visualEmoji": "🔭",
         "visualOptions": [
@@ -15378,7 +15378,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Microscópio\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Microscope",
         "visualEmoji": "🔬",
         "visualOptions": [
@@ -15416,12 +15416,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Microscope",
         "explanation": "Exemplo prático: \"Scientists study tiny cells under a microscope.\"",
         "phoneticHint": "/ˈmaɪ.krə.skoʊp/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Guitar",
         "visualEmoji": "🎸",
         "visualOptions": [
@@ -15459,12 +15459,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Guitar",
         "explanation": "Exemplo prático: \"He plays acoustic guitar around the campfire.\"",
         "phoneticHint": "/ɡɪˈtɑːr/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Piano\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Piano",
         "visualEmoji": "🎹",
         "visualOptions": [
@@ -15507,7 +15507,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Tambor / Bateria\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Drum",
         "visualEmoji": "🥁",
         "visualOptions": [
@@ -15545,12 +15545,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Drum",
         "explanation": "Exemplo prático: \"Keep the rhythm on the snare drum.\"",
         "phoneticHint": "/drʌm/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Violin",
         "visualEmoji": "🎻",
         "visualOptions": [
@@ -15588,12 +15588,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Violin",
         "explanation": "Exemplo prático: \"The violinist played a beautiful melody on the violin.\"",
         "phoneticHint": "/ˌvaɪ.əˈlɪn/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p12-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Trumpet\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Trumpet",
         "visualEmoji": "🎺",
         "visualOptions": [
@@ -15636,7 +15636,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p12-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Saxofone\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Saxophone",
         "visualEmoji": "🎷",
         "visualOptions": [
@@ -15674,12 +15674,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Saxophone",
         "explanation": "Exemplo prático: \"A smooth solo on the golden saxophone.\"",
         "phoneticHint": "/ˈsæk.sə.foʊn/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p12-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Accordion",
         "visualEmoji": "🪗",
         "visualOptions": [
@@ -15717,7 +15717,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Accordion",
         "explanation": "Exemplo prático: \"Traditional folk music played on an accordion.\"",
         "phoneticHint": "/əˈkɔːr.di.ən/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -15742,7 +15742,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"House\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "House",
         "visualEmoji": "🏠",
         "visualOptions": [
@@ -15785,7 +15785,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Escola\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "School",
         "visualEmoji": "🏫",
         "visualOptions": [
@@ -15823,12 +15823,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "School",
         "explanation": "Exemplo prático: \"Children walk to school every morning.\"",
         "phoneticHint": "/skuːl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Hospital",
         "visualEmoji": "🏥",
         "visualOptions": [
@@ -15866,12 +15866,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Hospital",
         "explanation": "Exemplo prático: \"Doctors and nurses work at the city hospital.\"",
         "phoneticHint": "/ˈhɑː.spɪ.təl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Supermarket\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Supermarket",
         "visualEmoji": "🏪",
         "visualOptions": [
@@ -15914,7 +15914,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Padaria\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Bakery",
         "visualEmoji": "🏪",
         "visualOptions": [
@@ -15952,12 +15952,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bakery",
         "explanation": "Exemplo prático: \"The neighborhood bakery sells warm bread and cakes.\"",
         "phoneticHint": "/ˈbeɪ.kər.i/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bookstore",
         "visualEmoji": "🏪",
         "visualOptions": [
@@ -15995,12 +15995,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bookstore",
         "explanation": "Exemplo prático: \"I bought an English dictionary at the bookstore.\"",
         "phoneticHint": "/ˈbʊk.stɔːr/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pharmacy\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pharmacy",
         "visualEmoji": "🏪",
         "visualOptions": [
@@ -16043,7 +16043,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Restaurante\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Restaurant",
         "visualEmoji": "🏪",
         "visualOptions": [
@@ -16081,12 +16081,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Restaurant",
         "explanation": "Exemplo prático: \"We had dinner at an Italian restaurant.\"",
         "phoneticHint": "/ˈres.trɑːnt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bank",
         "visualEmoji": "🏦",
         "visualOptions": [
@@ -16124,12 +16124,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bank",
         "explanation": "Exemplo prático: \"Deposit the money at the downtown bank.\"",
         "phoneticHint": "/bæŋk/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Hotel\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Hotel",
         "visualEmoji": "🏨",
         "visualOptions": [
@@ -16172,7 +16172,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Biblioteca\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Library",
         "visualEmoji": "🏛️",
         "visualOptions": [
@@ -16210,12 +16210,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Library",
         "explanation": "Exemplo prático: \"Students study quietly in the public library.\"",
         "phoneticHint": "/ˈlaɪ.brer.i/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Coffee Shop",
         "visualEmoji": "☕",
         "visualOptions": [
@@ -16253,12 +16253,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Coffee Shop",
         "explanation": "Exemplo prático: \"Let us meet for espresso at the coffee shop.\"",
         "phoneticHint": "/ˈkɔː.fi ʃɑːp/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Post Office\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Post Office",
         "visualEmoji": "🏣",
         "visualOptions": [
@@ -16301,7 +16301,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Delegacia de polícia\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Police Station",
         "visualEmoji": "🚓",
         "visualOptions": [
@@ -16339,12 +16339,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Police Station",
         "explanation": "Exemplo prático: \"Report the lost wallet at the police station.\"",
         "phoneticHint": "/pəˈliːs ˌsteɪ.ʃən/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Fire Station",
         "visualEmoji": "🚒",
         "visualOptions": [
@@ -16382,12 +16382,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fire Station",
         "explanation": "Exemplo prático: \"Red fire trucks are parked inside the fire station.\"",
         "phoneticHint": "/ˈfaɪ.ər ˌsteɪ.ʃən/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cinema\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cinema",
         "visualEmoji": "🎬",
         "visualOptions": [
@@ -16430,7 +16430,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Academia\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Gym",
         "visualEmoji": "🏋️",
         "visualOptions": [
@@ -16468,12 +16468,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Gym",
         "explanation": "Exemplo prático: \"She exercises at the fitness gym three times a week.\"",
         "phoneticHint": "/dʒɪm/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Butcher Shop",
         "visualEmoji": "🥩",
         "visualOptions": [
@@ -16511,12 +16511,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Butcher Shop",
         "explanation": "Exemplo prático: \"Buy fresh steaks at the local butcher shop.\"",
         "phoneticHint": "/ˈbʊtʃ.ər ʃɑːp/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Flower Shop\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Flower Shop",
         "visualEmoji": "💐",
         "visualOptions": [
@@ -16559,7 +16559,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Loja de roupas\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Clothing Store",
         "visualEmoji": "👕",
         "visualOptions": [
@@ -16597,12 +16597,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Clothing Store",
         "explanation": "Exemplo prático: \"She tried on a winter coat at the clothing store.\"",
         "phoneticHint": "/ˈkloʊ.ðɪŋ stɔːr/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Shoe Store",
         "visualEmoji": "👟",
         "visualOptions": [
@@ -16640,12 +16640,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Shoe Store",
         "explanation": "Exemplo prático: \"He bought running sneakers at the shoe store.\"",
         "phoneticHint": "/ˈʃuː stɔːr/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Barber Shop\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Barber Shop",
         "visualEmoji": "💈",
         "visualOptions": [
@@ -16688,7 +16688,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Pet shop / Loja de animais\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Pet Shop",
         "visualEmoji": "🐾",
         "visualOptions": [
@@ -16726,12 +16726,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pet Shop",
         "explanation": "Exemplo prático: \"Buy dog food and a collar at the pet shop.\"",
         "phoneticHint": "/ˈpet ʃɑːp/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Toy Store",
         "visualEmoji": "🧸",
         "visualOptions": [
@@ -16769,12 +16769,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Toy Store",
         "explanation": "Exemplo prático: \"The children loved the colorful display at the toy store.\"",
         "phoneticHint": "/ˈtɔɪ stɔːr/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Hardware Store\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Hardware Store",
         "visualEmoji": "🧰",
         "visualOptions": [
@@ -16817,7 +16817,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Joalheria\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Jewelry Store",
         "visualEmoji": "💎",
         "visualOptions": [
@@ -16855,12 +16855,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Jewelry Store",
         "explanation": "Exemplo prático: \"Gold rings sparkle in the window of the jewelry store.\"",
         "phoneticHint": "/ˈdʒuː.əl.ri stɔːr/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Laundromat",
         "visualEmoji": "🫧",
         "visualOptions": [
@@ -16898,12 +16898,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Laundromat",
         "explanation": "Exemplo prático: \"Wash and dry your clothes at the self-service laundromat.\"",
         "phoneticHint": "/ˈlɔːn.drə.mæt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p13-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Factory\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Factory",
         "visualEmoji": "🏭",
         "visualOptions": [
@@ -16946,7 +16946,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p13-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Castelo\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Castle",
         "visualEmoji": "🏰",
         "visualOptions": [
@@ -16984,12 +16984,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Castle",
         "explanation": "Exemplo prático: \"The medieval stone castle stands on the hill.\"",
         "phoneticHint": "/ˈkæs.əl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p13-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Lighthouse",
         "visualEmoji": "🗼",
         "visualOptions": [
@@ -17027,7 +17027,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Lighthouse",
         "explanation": "Exemplo prático: \"The coastal tower guides ships safely at night.\"",
         "phoneticHint": "/ˈlaɪt.haʊs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -17052,7 +17052,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Car\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Car",
         "visualEmoji": "🚗",
         "visualOptions": [
@@ -17095,7 +17095,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ônibus\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Bus",
         "visualEmoji": "🚌",
         "visualOptions": [
@@ -17133,12 +17133,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bus",
         "explanation": "Exemplo prático: \"Take the city bus to downtown.\"",
         "phoneticHint": "/bʌs/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Bicycle",
         "visualEmoji": "🚲",
         "visualOptions": [
@@ -17176,12 +17176,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Bicycle",
         "explanation": "Exemplo prático: \"Riding a bicycle is great exercise.\"",
         "phoneticHint": "/ˈbaɪ.sɪ.kəl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Train\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Train",
         "visualEmoji": "🚆",
         "visualOptions": [
@@ -17224,7 +17224,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Avião\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Airplane",
         "visualEmoji": "✈️",
         "visualOptions": [
@@ -17262,12 +17262,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Airplane",
         "explanation": "Exemplo prático: \"The commercial airplane flies above the clouds.\"",
         "phoneticHint": "/ˈer.pleɪn/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Boat",
         "visualEmoji": "⛵",
         "visualOptions": [
@@ -17305,12 +17305,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Boat",
         "explanation": "Exemplo prático: \"A white sailboat glides across the bay.\"",
         "phoneticHint": "/boʊt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Ship\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ship",
         "visualEmoji": "🚢",
         "visualOptions": [
@@ -17353,7 +17353,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Motocicleta / Moto\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Motorcycle",
         "visualEmoji": "🏍️",
         "visualOptions": [
@@ -17391,12 +17391,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Motorcycle",
         "explanation": "Exemplo prático: \"Always wear a helmet when riding a motorcycle.\"",
         "phoneticHint": "/ˈmoʊ.tərˌsaɪ.kəl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Truck",
         "visualEmoji": "🚚",
         "visualOptions": [
@@ -17434,12 +17434,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Truck",
         "explanation": "Exemplo prático: \"The delivery truck carries fresh goods.\"",
         "phoneticHint": "/trʌk/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Taxi\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Taxi",
         "visualEmoji": "🚕",
         "visualOptions": [
@@ -17482,7 +17482,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Metrô\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Subway",
         "visualEmoji": "🚇",
         "visualOptions": [
@@ -17520,12 +17520,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Subway",
         "explanation": "Exemplo prático: \"The underground subway is fast during rush hour.\"",
         "phoneticHint": "/ˈsʌb.weɪ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Ambulance",
         "visualEmoji": "🚑",
         "visualOptions": [
@@ -17563,12 +17563,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Ambulance",
         "explanation": "Exemplo prático: \"Make way for the emergency ambulance.\"",
         "phoneticHint": "/ˈæm.bjə.ləns/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Fire Truck\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fire Truck",
         "visualEmoji": "🚒",
         "visualOptions": [
@@ -17611,7 +17611,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Viatura de polícia\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Police Car",
         "visualEmoji": "🚓",
         "visualOptions": [
@@ -17649,12 +17649,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Police Car",
         "explanation": "Exemplo prático: \"The police car patrols the neighborhood.\"",
         "phoneticHint": "/pəˈliːs kɑːr/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Helicopter",
         "visualEmoji": "🚁",
         "visualOptions": [
@@ -17692,12 +17692,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Helicopter",
         "explanation": "Exemplo prático: \"The rescue helicopter hovered over the water.\"",
         "phoneticHint": "/ˈhel.ɪˌkɑːp.tər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Tractor\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tractor",
         "visualEmoji": "🚜",
         "visualOptions": [
@@ -17740,7 +17740,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Patinete\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Scooter",
         "visualEmoji": "🛴",
         "visualOptions": [
@@ -17778,12 +17778,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Scooter",
         "explanation": "Exemplo prático: \"Kids ride kick scooters in the park.\"",
         "phoneticHint": "/ˈskuː.tər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Motor Scooter",
         "visualEmoji": "🛵",
         "visualOptions": [
@@ -17821,12 +17821,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Motor Scooter",
         "explanation": "Exemplo prático: \"A compact motor scooter is easy to park.\"",
         "phoneticHint": "/ˈmoʊ.tər ˈskuː.tər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Skateboard\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Skateboard",
         "visualEmoji": "🛹",
         "visualOptions": [
@@ -17869,7 +17869,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Patins\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Roller Skate",
         "visualEmoji": "🛼",
         "visualOptions": [
@@ -17907,12 +17907,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Roller Skate",
         "explanation": "Exemplo prático: \"She glides smoothly on four-wheel roller skates.\"",
         "phoneticHint": "/ˈroʊ.lər skeɪt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Canoe",
         "visualEmoji": "🛶",
         "visualOptions": [
@@ -17950,12 +17950,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Canoe",
         "explanation": "Exemplo prático: \"Paddle the wooden canoe down the calm river.\"",
         "phoneticHint": "/kəˈnuː/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Speedboat\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Speedboat",
         "visualEmoji": "🚤",
         "visualOptions": [
@@ -17998,7 +17998,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Foguete espacial\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Rocket",
         "visualEmoji": "🚀",
         "visualOptions": [
@@ -18036,12 +18036,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Rocket",
         "explanation": "Exemplo prático: \"The space rocket launched into orbit.\"",
         "phoneticHint": "/ˈrɑː.kɪt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Parachute",
         "visualEmoji": "🪂",
         "visualOptions": [
@@ -18079,12 +18079,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Parachute",
         "explanation": "Exemplo prático: \"The skydiver opened a colorful parachute.\"",
         "phoneticHint": "/ˈpær.ə.ʃuːt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cable Car\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cable Car",
         "visualEmoji": "🚡",
         "visualOptions": [
@@ -18127,7 +18127,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Semáforo / Sinal\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Traffic Light",
         "visualEmoji": "🚦",
         "visualOptions": [
@@ -18165,12 +18165,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Traffic Light",
         "explanation": "Exemplo prático: \"Stop the vehicle when the traffic light turns red.\"",
         "phoneticHint": "/ˈtræf.ɪk laɪt/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Fuel Pump",
         "visualEmoji": "⛽",
         "visualOptions": [
@@ -18208,12 +18208,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fuel Pump",
         "explanation": "Exemplo prático: \"Fill up the tank at the gas station fuel pump.\"",
         "phoneticHint": "/ˈfjuː.əl pʌmp/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p14-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Anchor\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Anchor",
         "visualEmoji": "⚓",
         "visualOptions": [
@@ -18256,7 +18256,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p14-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Mala de viagem\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Suitcase",
         "visualEmoji": "🧳",
         "visualOptions": [
@@ -18294,12 +18294,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Suitcase",
         "explanation": "Exemplo prático: \"Pack your clothes neatly in a rolling suitcase.\"",
         "phoneticHint": "/ˈsuːt.keɪs/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Compass",
         "visualEmoji": "🧭",
         "visualOptions": [
@@ -18337,7 +18337,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Compass",
         "explanation": "Exemplo prático: \"The magnetic compass needle always points north.\"",
         "phoneticHint": "/ˈkʌm.pəs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -18362,7 +18362,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Shirt\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Shirt",
         "visualEmoji": "👕",
         "visualOptions": [
@@ -18405,7 +18405,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Calça\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Pants",
         "visualEmoji": "👖",
         "visualOptions": [
@@ -18443,12 +18443,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Pants",
         "explanation": "Exemplo prático: \"Blue denim pants are comfortable for work.\"",
         "phoneticHint": "/pænts/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Shoes",
         "visualEmoji": "👞",
         "visualOptions": [
@@ -18486,12 +18486,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Shoes",
         "explanation": "Exemplo prático: \"Polish your leather dress shoes.\"",
         "phoneticHint": "/ʃuːz/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Sneakers\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sneakers",
         "visualEmoji": "👟",
         "visualOptions": [
@@ -18534,7 +18534,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Vestido\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Dress",
         "visualEmoji": "👗",
         "visualOptions": [
@@ -18572,12 +18572,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Dress",
         "explanation": "Exemplo prático: \"She bought a summer dress for the party.\"",
         "phoneticHint": "/dres/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Coat",
         "visualEmoji": "🧥",
         "visualOptions": [
@@ -18615,12 +18615,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Coat",
         "explanation": "Exemplo prático: \"Put on a heavy winter coat before going out in the snow.\"",
         "phoneticHint": "/koʊt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Hat\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Hat",
         "visualEmoji": "👒",
         "visualOptions": [
@@ -18663,7 +18663,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Boné\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Cap",
         "visualEmoji": "🧢",
         "visualOptions": [
@@ -18701,12 +18701,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Cap",
         "explanation": "Exemplo prático: \"He wears a blue baseball cap.\"",
         "phoneticHint": "/kæp/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Socks",
         "visualEmoji": "🧦",
         "visualOptions": [
@@ -18744,12 +18744,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Socks",
         "explanation": "Exemplo prático: \"Warm wool socks keep your feet cozy.\"",
         "phoneticHint": "/sɑːks/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Glasses\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Glasses",
         "visualEmoji": "👓",
         "visualOptions": [
@@ -18792,7 +18792,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Óculos de sol\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Sunglasses",
         "visualEmoji": "🕶️",
         "visualOptions": [
@@ -18830,12 +18830,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Sunglasses",
         "explanation": "Exemplo prático: \"Wear dark sunglasses on a bright beach day.\"",
         "phoneticHint": "/ˈsʌnˌɡlæs.ɪz/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Watch",
         "visualEmoji": "⌚",
         "visualOptions": [
@@ -18873,12 +18873,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Watch",
         "explanation": "Exemplo prático: \"He checked the time on his wristwatch.\"",
         "phoneticHint": "/wɑːtʃ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Umbrella\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Umbrella",
         "visualEmoji": "☂️",
         "visualOptions": [
@@ -18921,7 +18921,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Luvas\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Gloves",
         "visualEmoji": "🧤",
         "visualOptions": [
@@ -18959,12 +18959,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Gloves",
         "explanation": "Exemplo prático: \"Wear knitted gloves in freezing weather.\"",
         "phoneticHint": "/ɡlʌvz/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Scarf",
         "visualEmoji": "🧣",
         "visualOptions": [
@@ -19002,12 +19002,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Scarf",
         "explanation": "Exemplo prático: \"Wrap a warm red scarf around your neck.\"",
         "phoneticHint": "/skɑːrf/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Necktie\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Necktie",
         "visualEmoji": "👔",
         "visualOptions": [
@@ -19050,7 +19050,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Botas\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Boots",
         "visualEmoji": "🥾",
         "visualOptions": [
@@ -19088,12 +19088,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Boots",
         "explanation": "Exemplo prático: \"Sturdy hiking boots are essential on mountain trails.\"",
         "phoneticHint": "/buːts/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "High Heels",
         "visualEmoji": "👠",
         "visualOptions": [
@@ -19131,12 +19131,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "High Heels",
         "explanation": "Exemplo prático: \"She wore elegant red high heels.\"",
         "phoneticHint": "/ˌhaɪ ˈhiːlz/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Sandals\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sandals",
         "visualEmoji": "🩴",
         "visualOptions": [
@@ -19179,7 +19179,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Shorts / Bermudas\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Shorts",
         "visualEmoji": "🩳",
         "visualOptions": [
@@ -19217,12 +19217,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Shorts",
         "explanation": "Exemplo prático: \"Light athletic shorts are great for running.\"",
         "phoneticHint": "/ʃɔːrts/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Swimsuit",
         "visualEmoji": "🩱",
         "visualOptions": [
@@ -19260,12 +19260,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Swimsuit",
         "explanation": "Exemplo prático: \"Pack your swimsuit for the trip to the lake.\"",
         "phoneticHint": "/ˈswɪm.suːt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Handbag\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Handbag",
         "visualEmoji": "👜",
         "visualOptions": [
@@ -19308,7 +19308,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Carteira / Bolsinha\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Purse",
         "visualEmoji": "👛",
         "visualOptions": [
@@ -19346,12 +19346,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Purse",
         "explanation": "Exemplo prático: \"Keep your coins inside a small clasp purse.\"",
         "phoneticHint": "/pɜːrs/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Ring",
         "visualEmoji": "💍",
         "visualOptions": [
@@ -19389,12 +19389,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Ring",
         "explanation": "Exemplo prático: \"A gold wedding ring with a diamond.\"",
         "phoneticHint": "/rɪŋ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Crown\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Crown",
         "visualEmoji": "👑",
         "visualOptions": [
@@ -19437,7 +19437,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Capacete de segurança\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Helmet",
         "visualEmoji": "⛑️",
         "visualOptions": [
@@ -19475,12 +19475,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Helmet",
         "explanation": "Exemplo prático: \"Rescue workers wear protective helmets.\"",
         "phoneticHint": "/ˈhel.mət/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Safety Vest",
         "visualEmoji": "🦺",
         "visualOptions": [
@@ -19518,12 +19518,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Safety Vest",
         "explanation": "Exemplo prático: \"Construction workers wear a bright orange safety vest.\"",
         "phoneticHint": "/ˈseɪf.ti vest/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Lab Coat\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lab Coat",
         "visualEmoji": "🥼",
         "visualOptions": [
@@ -19566,7 +19566,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p15-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Quimono\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Kimono",
         "visualEmoji": "👘",
         "visualOptions": [
@@ -19604,12 +19604,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Kimono",
         "explanation": "Exemplo prático: \"A traditional silk kimono from Japan.\"",
         "phoneticHint": "/kɪˈmoʊ.noʊ/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Ballet Shoes",
         "visualEmoji": "🩰",
         "visualOptions": [
@@ -19647,7 +19647,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Ballet Shoes",
         "explanation": "Exemplo prático: \"The dancer tied the ribbons of her pink ballet shoes.\"",
         "phoneticHint": "/bæˈleɪ ʃuːz/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -19672,7 +19672,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e1",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Doctor\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Doctor",
         "visualEmoji": "👨‍⚕️",
         "visualOptions": [
@@ -19715,7 +19715,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e2",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Professor / Professora\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Teacher",
         "visualEmoji": "👩‍🏫",
         "visualOptions": [
@@ -19753,12 +19753,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Teacher",
         "explanation": "Exemplo prático: \"Our English teacher explains every word clearly.\"",
         "phoneticHint": "/ˈtiː.tʃər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Chef",
         "visualEmoji": "👨‍🍳",
         "visualOptions": [
@@ -19796,12 +19796,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Chef",
         "explanation": "Exemplo prático: \"The chef prepares fresh meals in the restaurant.\"",
         "phoneticHint": "/ʃef/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e4",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Police Officer\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Police Officer",
         "visualEmoji": "👮",
         "visualOptions": [
@@ -19844,7 +19844,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e5",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bombeiro\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Firefighter",
         "visualEmoji": "🧑‍🚒",
         "visualOptions": [
@@ -19882,12 +19882,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Firefighter",
         "explanation": "Exemplo prático: \"Brave firefighters put out the fire.\"",
         "phoneticHint": "/ˈfaɪ.ərˌfaɪ.tər/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e6",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Farmer",
         "visualEmoji": "🧑‍🌾",
         "visualOptions": [
@@ -19925,12 +19925,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Farmer",
         "explanation": "Exemplo prático: \"The farmer harvests fresh vegetables.\"",
         "phoneticHint": "/ˈfɑːr.mər/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e7",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Eye\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Eye",
         "visualEmoji": "👁️",
         "visualOptions": [
@@ -19973,7 +19973,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e8",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Orelha / Ouvido\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Ear",
         "visualEmoji": "👂",
         "visualOptions": [
@@ -20011,12 +20011,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Ear",
         "explanation": "Exemplo prático: \"Listen carefully with your ear.\"",
         "phoneticHint": "/ɪr/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e9",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Nose",
         "visualEmoji": "👃",
         "visualOptions": [
@@ -20054,12 +20054,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Nose",
         "explanation": "Exemplo prático: \"Breathe fresh air through your nose.\"",
         "phoneticHint": "/noʊz/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e10",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Mouth\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Mouth",
         "visualEmoji": "👄",
         "visualOptions": [
@@ -20102,7 +20102,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e11",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Mão\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Hand",
         "visualEmoji": "✋",
         "visualOptions": [
@@ -20140,12 +20140,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Hand",
         "explanation": "Exemplo prático: \"Raise your hand if you have a question.\"",
         "phoneticHint": "/hænd/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e12",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Foot",
         "visualEmoji": "🦶",
         "visualOptions": [
@@ -20183,12 +20183,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Foot",
         "explanation": "Exemplo prático: \"Kick the ball with your right foot.\"",
         "phoneticHint": "/fʊt/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e13",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Heart\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Heart",
         "visualEmoji": "🫀",
         "visualOptions": [
@@ -20231,7 +20231,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e14",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Cérebro\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Brain",
         "visualEmoji": "🧠",
         "visualOptions": [
@@ -20269,12 +20269,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Brain",
         "explanation": "Exemplo prático: \"Learning a new language exercises your brain.\"",
         "phoneticHint": "/breɪn/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e15",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Tooth",
         "visualEmoji": "🦷",
         "visualOptions": [
@@ -20312,12 +20312,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Tooth",
         "explanation": "Exemplo prático: \"Brush every tooth after meals.\"",
         "phoneticHint": "/tuːθ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e16",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Bone\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bone",
         "visualEmoji": "🦴",
         "visualOptions": [
@@ -20360,7 +20360,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e17",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Músculo / Força\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Muscle",
         "visualEmoji": "💪",
         "visualOptions": [
@@ -20398,12 +20398,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Muscle",
         "explanation": "Exemplo prático: \"Regular exercise builds strong muscles.\"",
         "phoneticHint": "/ˈmʌs.əl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e18",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Lungs",
         "visualEmoji": "🫁",
         "visualOptions": [
@@ -20441,12 +20441,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Lungs",
         "explanation": "Exemplo prático: \"Take a deep breath to fill your lungs with oxygen.\"",
         "phoneticHint": "/lʌŋz/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e19",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Soccer Ball\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Soccer Ball",
         "visualEmoji": "⚽",
         "visualOptions": [
@@ -20489,7 +20489,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e20",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Basquete / Bola de basquete\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Basketball",
         "visualEmoji": "🏀",
         "visualOptions": [
@@ -20527,12 +20527,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Basketball",
         "explanation": "Exemplo prático: \"Shoot the orange basketball through the hoop.\"",
         "phoneticHint": "/ˈbæs.kɪt.bɔːl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e21",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Tennis",
         "visualEmoji": "🎾",
         "visualOptions": [
@@ -20570,12 +20570,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Tennis",
         "explanation": "Exemplo prático: \"Hit the yellow tennis ball over the net.\"",
         "phoneticHint": "/ˈten.ɪs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e22",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Volleyball\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Volleyball",
         "visualEmoji": "🏐",
         "visualOptions": [
@@ -20618,7 +20618,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e23",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Beisebol\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Baseball",
         "visualEmoji": "⚾",
         "visualOptions": [
@@ -20656,12 +20656,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Baseball",
         "explanation": "Exemplo prático: \"Catch the baseball with a leather glove.\"",
         "phoneticHint": "/ˈbeɪs.bɔːl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e24",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "American Football",
         "visualEmoji": "🏈",
         "visualOptions": [
@@ -20699,12 +20699,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "American Football",
         "explanation": "Exemplo prático: \"Throw an oval American football pass.\"",
         "phoneticHint": "/əˈmer.ɪ.kən ˈfʊt.bɔːl/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e25",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Trophy\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Trophy",
         "visualEmoji": "🏆",
         "visualOptions": [
@@ -20747,7 +20747,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e26",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Medalha de ouro\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Gold Medal",
         "visualEmoji": "🥇",
         "visualOptions": [
@@ -20785,12 +20785,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Gold Medal",
         "explanation": "Exemplo prático: \"The athlete won a gold medal at the Olympics.\"",
         "phoneticHint": "/ˈɡoʊld ˈmed.əl/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e27",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Boxing Glove",
         "visualEmoji": "🥊",
         "visualOptions": [
@@ -20828,12 +20828,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Boxing Glove",
         "explanation": "Exemplo prático: \"The fighter trains with red boxing gloves.\"",
         "phoneticHint": "/ˈbɑːk.sɪŋ ɡlʌv/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p16-e28",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Archery Bow\"?",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Archery Bow",
         "visualEmoji": "🏹",
         "visualOptions": [
@@ -20876,7 +20876,7 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-e29",
         "type": "image-choice",
-        "prompt": "Qual imagem representa \"Vara de pescar\" em inglês?",
+        "prompt": "🎧 Escute a palavra em inglês e toque na foto correta:",
         "audioPhrase": "Fishing Rod",
         "visualEmoji": "🎣",
         "visualOptions": [
@@ -20914,12 +20914,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Fishing Rod",
         "explanation": "Exemplo prático: \"Cast the line into the lake with a fishing rod.\"",
         "phoneticHint": "/ˈfɪʃ.ɪŋ rɑːd/",
-        "skillCategory": "reading"
+        "skillCategory": "listening"
       },
       {
         "id": "w0-p16-e30",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Chess Pawn",
         "visualEmoji": "♟️",
         "visualOptions": [
@@ -20957,7 +20957,7 @@ export const WORLD_0_PHASES: Phase[] = [
         "correctAnswer": "Chess Pawn",
         "explanation": "Exemplo prático: \"Move the chess pawn forward on the board.\"",
         "phoneticHint": "/ˈtʃes pɔːn/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       }
     ]
   }

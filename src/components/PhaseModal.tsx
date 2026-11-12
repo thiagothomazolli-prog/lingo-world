@@ -1,11 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import confetti from 'canvas-confetti';
-import { X, Volume2, Mic, MicOff, CheckCircle2, AlertCircle, Sparkles, Star, ArrowRight, Lightbulb, Play } from 'lucide-react';
+import { X, Volume2, Mic, MicOff, CheckCircle2, AlertCircle, Star, ArrowRight, Lightbulb, Eye, Lock } from 'lucide-react';
 import { Phase, Exercise, UserProfile } from '../types';
 import { speakText, stopSpeaking, getExerciseVoiceGender, preloadExerciseAudio } from '../utils/storage';
 import { MascotLingo } from './MascotLingo';
 import { sfx } from '../utils/soundEffects';
-import { VocabIllustration } from '../utils/vocabIllustrations';
+import { VocabIllustration, preloadVocabImages, getRealVocabPhotoUrl } from '../utils/vocabIllustrations';
+
+function getSpokenPhraseForExercise(ex: Exercise): string {
+  if (ex.audioPhrase && ex.audioPhrase.trim()) return ex.audioPhrase.trim();
+  if (ex.contextSentence && ex.contextSentence.trim()) return ex.contextSentence.trim();
+  const ans = (ex.correctAnswer || '').trim();
+  // If correctAnswer is a Portuguese phonetic description (e.g. "Som de \"I\" (í)" or "êi (/eɪ/)")
+  if (/som de\s+/i.test(ans) || /\(\/[^)]+\/\)/.test(ans) || /^[a-zà-ú]+\s*\(/i.test(ans)) {
+    const quotedMatch = ex.prompt.match(/"([A-Za-z][A-Za-z\s'-]*)"/);
+    if (quotedMatch && quotedMatch[1]) {
+      return quotedMatch[1].trim();
+    }
+  }
+  // If word-order spelling like "C A T", speak the word or letters cleanly
+  if (/^[A-Z](\s+[A-Z])+$/.test(ans)) {
+    const quotedWord = ex.prompt.match(/"([A-Za-z]{2,})"/);
+    if (quotedWord && quotedWord[1]) return quotedWord[1];
+  }
+  return ans;
+}
 
 const BASE_RECORDER_BARS = [
   22, 35, 55, 40, 78, 92, 64, 45, 85, 96, 60, 38, 72, 88,
@@ -84,6 +103,9 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [spokenResult, setSpokenResult] = useState('');
   const [mistakesCount, setMistakesCount] = useState(0);
+  const [hasPlayedAudioOnce, setHasPlayedAudioOnce] = useState(false);
+  const [showWrittenWord, setShowWrittenWord] = useState(false);
+  const lastAutoSpokenIndexRef = useRef<number>(-1);
 
   const currentExercise: Exercise | undefined = exerciseQueue[currentExerciseIndex];
   const isReviewStage = currentExerciseIndex >= phase.exercises.length;
@@ -92,33 +114,87 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     ? getExerciseVoiceGender(currentExercise.id, currentExerciseIndex)
     : 'female';
 
-  // Listen to global TTS speaking state for the live audio line graph
+  // Preload first 3 exercises' audio and real photos as soon as the modal opens (during theory screen)
+  useEffect(() => {
+    const initialSlice = exerciseQueue.slice(0, 3);
+    const wordsToPreload: string[] = [];
+    initialSlice.forEach((ex, idx) => {
+      const gender = getExerciseVoiceGender(ex.id, idx);
+      const spoken = getSpokenPhraseForExercise(ex);
+      if (spoken) preloadExerciseAudio([spoken], gender);
+      if (ex.visualOptions) {
+        ex.visualOptions.forEach((v) => wordsToPreload.push(v.text));
+      } else if (spoken) {
+        wordsToPreload.push(spoken);
+      }
+    });
+    if (wordsToPreload.length > 0) {
+      preloadVocabImages(wordsToPreload);
+    }
+  }, []);
+
+  // Listen to global TTS speaking state & execution events
   useEffect(() => {
     const handleTtsState = (e: Event) => {
       const customEvent = e as CustomEvent<{ speaking: boolean }>;
-      setIsSpeaking(Boolean(customEvent.detail?.speaking));
+      const speakingNow = Boolean(customEvent.detail?.speaking);
+      setIsSpeaking(speakingNow);
+      if (speakingNow) {
+        setHasPlayedAudioOnce(true);
+      }
+    };
+    const handleTtsPlayed = () => {
+      setHasPlayedAudioOnce(true);
     };
     window.addEventListener('lingo-tts-state', handleTtsState);
+    window.addEventListener('lingo-tts-played', handleTtsPlayed);
     return () => {
       window.removeEventListener('lingo-tts-state', handleTtsState);
+      window.removeEventListener('lingo-tts-played', handleTtsPlayed);
     };
   }, []);
 
-  // Preload & Auto speak on exercise start if enabled
+  // Preload upcoming images & auto-speak on exercise start
   useEffect(() => {
     if (step === 'exercise' && currentExercise) {
-      const phraseToSpeak = currentExercise.audioPhrase || currentExercise.correctAnswer;
-      const phrasesToPreload: string[] = [];
-      if (phraseToSpeak) phrasesToPreload.push(phraseToSpeak);
-      if (currentExercise.visualOptions) {
-        currentExercise.visualOptions.forEach((v) => phrasesToPreload.push(v.label || v.text));
+      const phraseToSpeak = getSpokenPhraseForExercise(currentExercise);
+      if (phraseToSpeak) {
+        preloadExerciseAudio([phraseToSpeak], exerciseVoiceGender);
       }
-      preloadExerciseAudio(phrasesToPreload, exerciseVoiceGender);
 
-      if (phraseToSpeak && user.autoSpeak !== false) {
+      // Preload real photos for current and next 2 exercises
+      const upcomingWords: string[] = [];
+      for (let offset = 0; offset <= 2; offset++) {
+        const ex = exerciseQueue[currentExerciseIndex + offset];
+        if (!ex) continue;
+        if (ex.visualOptions) {
+          ex.visualOptions.forEach((v) => upcomingWords.push(v.text));
+        } else {
+          upcomingWords.push(getSpokenPhraseForExercise(ex));
+        }
+      }
+      if (upcomingWords.length > 0) {
+        preloadVocabImages(upcomingWords);
+      }
+
+      // If not already triggered synchronously by button click, trigger now
+      if (phraseToSpeak && user.autoSpeak !== false && lastAutoSpokenIndexRef.current !== currentExerciseIndex) {
+        lastAutoSpokenIndexRef.current = currentExerciseIndex;
         speakText(phraseToSpeak, 'en-US', user.speechSpeed, exerciseVoiceGender);
       }
+
+      // Unlock the "Ver palavra em inglês" button after the first audio execution completes (or after 950ms safety timer)
+      const unlockTimer = setTimeout(() => {
+        setHasPlayedAudioOnce(true);
+      }, 950);
+
+      return () => clearTimeout(unlockTimer);
     }
+  }, [currentExerciseIndex, step]);
+
+  const handleStartExercise = () => {
+    setHasPlayedAudioOnce(false);
+    setShowWrittenWord(false);
     setSelectedOption(null);
     setSelectedWords([]);
     setFillBlankInput('');
@@ -126,10 +202,18 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     setIsCorrect(false);
     setFeedbackMessage('');
     setSpokenResult('');
-  }, [currentExerciseIndex, step]);
-
-  const handleStartExercise = () => {
     setStep('exercise');
+
+    // Speak synchronously inside the user gesture so Exercise 1 always plays immediately
+    const firstEx = exerciseQueue[0];
+    if (firstEx && user.autoSpeak !== false) {
+      const phrase = getSpokenPhraseForExercise(firstEx);
+      const gender = getExerciseVoiceGender(firstEx.id, 0);
+      if (phrase) {
+        lastAutoSpokenIndexRef.current = 0;
+        speakText(phrase, 'en-US', user.speechSpeed, gender);
+      }
+    }
   };
 
   const handleToggleMic = () => {
@@ -273,7 +357,28 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   const handleNextExercise = () => {
     sfx.playTap();
     if (currentExerciseIndex < exerciseQueue.length - 1) {
-      setCurrentExerciseIndex((prev) => prev + 1);
+      const nextIndex = currentExerciseIndex + 1;
+      setHasPlayedAudioOnce(false);
+      setShowWrittenWord(false);
+      setSelectedOption(null);
+      setSelectedWords([]);
+      setFillBlankInput('');
+      setHasAnswered(false);
+      setIsCorrect(false);
+      setFeedbackMessage('');
+      setSpokenResult('');
+      setCurrentExerciseIndex(nextIndex);
+
+      // Speak synchronously inside the user gesture so every transition plays reliably
+      const nextEx = exerciseQueue[nextIndex];
+      if (nextEx && user.autoSpeak !== false) {
+        const phrase = getSpokenPhraseForExercise(nextEx);
+        const gender = getExerciseVoiceGender(nextEx.id, nextIndex);
+        if (phrase) {
+          lastAutoSpokenIndexRef.current = nextIndex;
+          speakText(phrase, 'en-US', user.speechSpeed, gender);
+        }
+      }
     } else {
       setStep('complete');
       sfx.playSuccessFanfare();
@@ -413,53 +518,111 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               {currentExercise.prompt.replace(/\*\*+/g, '')}
             </h2>
 
-            {/* Visual Associative Learning Card (apenas quando NÃO for exercício de cartões visuais) */}
+            {/* Visual Associative Learning Card (quando NÃO for exercício de cartões visuais) */}
             {currentExercise.visualEmoji && (!currentExercise.visualOptions || currentExercise.visualOptions.length === 0) && (
               <div className="flex items-center justify-center py-2">
-                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-indigo-50 to-amber-50 border-2 border-indigo-200/80 shadow-md flex items-center justify-center text-5xl sm:text-6xl select-none">
-                  {currentExercise.visualEmoji}
-                </div>
+                {getRealVocabPhotoUrl(getSpokenPhraseForExercise(currentExercise)) ? (
+                  <VocabIllustration
+                    word={getSpokenPhraseForExercise(currentExercise)}
+                    emoji={currentExercise.visualEmoji}
+                  />
+                ) : (
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-indigo-50 to-amber-50 border-2 border-indigo-200/80 shadow-md flex items-center justify-center text-5xl sm:text-6xl select-none">
+                    {currentExercise.visualEmoji}
+                  </div>
+                )}
               </div>
             )}
 
             {/* Audio Speaker Bar (Alto-falante + Gráfico estilo Gravador de Áudio do Android + Botão de velocidade 0.65x) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
-              <div className="p-3 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
-                <button
-                  type="button"
-                  onClick={() =>
-                    speakText(
-                      currentExercise.audioPhrase || currentExercise.correctAnswer,
-                      'en-US',
-                      user.speechSpeed,
-                      exerciseVoiceGender
-                    )
-                  }
-                  className={`w-11 h-11 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
-                    isSpeaking ? 'ring-3 ring-indigo-300' : ''
-                  }`}
-                  title="Ouvir novamente"
-                >
-                  <Volume2 className="w-5 h-5" />
-                </button>
+              <div className="space-y-2.5">
+                <div className="p-3 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setHasPlayedAudioOnce(true);
+                      speakText(
+                        getSpokenPhraseForExercise(currentExercise),
+                        'en-US',
+                        user.speechSpeed,
+                        exerciseVoiceGender
+                      );
+                    }}
+                    className={`w-11 h-11 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
+                      isSpeaking ? 'ring-3 ring-indigo-300' : ''
+                    }`}
+                    title="Ouvir novamente"
+                  >
+                    <Volume2 className="w-5 h-5" />
+                  </button>
 
-                <AndroidRecorderWaveform isSpeaking={isSpeaking} />
+                  <AndroidRecorderWaveform isSpeaking={isSpeaking} />
 
-                <button
-                  type="button"
-                  onClick={() =>
-                    speakText(
-                      currentExercise.audioPhrase || currentExercise.correctAnswer,
-                      'en-US',
-                      0.65,
-                      exerciseVoiceGender
-                    )
-                  }
-                  className="py-2.5 px-3 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
-                  title="Ouvir mais lento (0.65x)"
-                >
-                  <span>🐢 0.65x</span>
-                </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setHasPlayedAudioOnce(true);
+                      speakText(
+                        getSpokenPhraseForExercise(currentExercise),
+                        'en-US',
+                        0.65,
+                        exerciseVoiceGender
+                      );
+                    }}
+                    className="py-2.5 px-3 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
+                    title="Ouvir mais lento (0.65x)"
+                  >
+                    <span>🐢 0.65x</span>
+                  </button>
+                </div>
+
+                {/* Botão para ver a palavra em inglês em caso de dúvida da pronúncia (habilitado somente após a 1ª execução do áudio) */}
+                {!showWrittenWord ? (
+                  <button
+                    type="button"
+                    disabled={!hasPlayedAudioOnce}
+                    onClick={() => {
+                      if (!hasPlayedAudioOnce) return;
+                      sfx.playTap();
+                      setShowWrittenWord(true);
+                    }}
+                    className={`w-full py-2.5 px-3.5 rounded-xl border-2 text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 transition-all ${
+                      hasPlayedAudioOnce
+                        ? 'bg-white hover:bg-indigo-50/80 text-indigo-700 border-indigo-200 shadow-2xs active:scale-[0.99] cursor-pointer'
+                        : 'bg-slate-100 text-slate-400 border-slate-200/80 opacity-75 cursor-not-allowed'
+                    }`}
+                  >
+                    {hasPlayedAudioOnce ? (
+                      <>
+                        <Eye className="w-4 h-4 text-indigo-600 shrink-0" />
+                        <span>Dúvida na pronúncia? Ver palavra em inglês</span>
+                      </>
+                    ) : (
+                      <>
+                        <Lock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                        <span>Ouça o áudio primeiro para ver a palavra em inglês</span>
+                      </>
+                    )}
+                  </button>
+                ) : (
+                  <div className="py-2.5 px-4 rounded-xl bg-indigo-50/90 border-2 border-indigo-200 flex items-center justify-between gap-2 animate-in fade-in duration-150">
+                    <div className="flex items-center gap-2">
+                      <Eye className="w-4 h-4 text-indigo-600 shrink-0" />
+                      <span className="text-xs font-bold text-indigo-700">Palavra em inglês:</span>
+                    </div>
+                    <div className="flex items-center gap-2 flex-wrap justify-end">
+                      <span className="text-base sm:text-lg font-black text-indigo-950 tracking-tight">
+                        {currentExercise.correctAnswer}
+                      </span>
+                      {currentExercise.phoneticHint && (
+                        <span className="text-xs font-semibold text-indigo-600 bg-white px-2 py-0.5 rounded-md border border-indigo-100">
+                          {currentExercise.phoneticHint}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
             ) : currentExercise.type === 'listening' ? (
               <div className="space-y-3">
@@ -467,7 +630,10 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                   <div className="p-3.5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
                     <button
                       type="button"
-                      onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed, exerciseVoiceGender)}
+                      onClick={() => {
+                        setHasPlayedAudioOnce(true);
+                        speakText(getSpokenPhraseForExercise(currentExercise), 'en-US', user.speechSpeed, exerciseVoiceGender);
+                      }}
                       className={`w-11 h-11 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
                         isSpeaking ? 'ring-3 ring-indigo-300' : ''
                       }`}
@@ -480,7 +646,10 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
                     <button
                       type="button"
-                      onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', 0.65, exerciseVoiceGender)}
+                      onClick={() => {
+                        setHasPlayedAudioOnce(true);
+                        speakText(getSpokenPhraseForExercise(currentExercise), 'en-US', 0.65, exerciseVoiceGender);
+                      }}
                       className="py-2.5 px-3 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
                       title="Ouvir mais lento (0.65x)"
                     >
@@ -502,11 +671,11 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                 )}
               </div>
             ) : (
-              (currentExercise.contextSentence || currentExercise.audioPhrase) && (
-                <div className="p-4 bg-slate-50 border-2 border-slate-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
-                  <div className="space-y-1">
+              <div className="space-y-2.5">
+                {currentExercise.contextSentence && (
+                  <div className="p-3.5 bg-slate-50 border-2 border-slate-200 rounded-2xl space-y-1 shadow-xs">
                     <p className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
-                      {currentExercise.contextSentence || currentExercise.audioPhrase}
+                      {currentExercise.contextSentence}
                     </p>
                     {currentExercise.contextSentencePt && (
                       <p className="text-xs font-semibold text-slate-500">
@@ -514,19 +683,47 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                       </p>
                     )}
                   </div>
+                )}
+                <div className="p-3 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setHasPlayedAudioOnce(true);
+                      speakText(
+                        getSpokenPhraseForExercise(currentExercise),
+                        'en-US',
+                        user.speechSpeed,
+                        exerciseVoiceGender
+                      );
+                    }}
+                    className={`w-11 h-11 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
+                      isSpeaking ? 'ring-3 ring-indigo-300' : ''
+                    }`}
+                    title="Ouvir novamente"
+                  >
+                    <Volume2 className="w-5 h-5" />
+                  </button>
 
-                  {currentExercise.audioPhrase && (
-                    <button
-                      type="button"
-                      onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed, exerciseVoiceGender)}
-                      className="p-3 bg-white hover:bg-indigo-50 border-2 border-indigo-200 rounded-xl text-indigo-600 active:scale-95 transition-transform shrink-0 shadow-xs cursor-pointer"
-                      title="Ouvir frase"
-                    >
-                      <Volume2 className="w-5 h-5" />
-                    </button>
-                  )}
+                  <AndroidRecorderWaveform isSpeaking={isSpeaking} />
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setHasPlayedAudioOnce(true);
+                      speakText(
+                        getSpokenPhraseForExercise(currentExercise),
+                        'en-US',
+                        0.65,
+                        exerciseVoiceGender
+                      );
+                    }}
+                    className="py-2.5 px-3 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
+                    title="Ouvir mais lento (0.65x)"
+                  >
+                    <span>🐢 0.65x</span>
+                  </button>
                 </div>
-              )
+              </div>
             )}
 
             {/* 1. Interactive Visual Option Cards (quando visualOptions estiver presente) */}

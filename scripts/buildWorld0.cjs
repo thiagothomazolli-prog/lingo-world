@@ -120,7 +120,7 @@ const THEMES = [
       v('Rice', '🍚', 'Arroz', '/raɪs/', 'White rice is served with dinner.'),
       v('Egg', '🥚', 'Ovo', '/eɡ/', 'I eat a boiled egg for breakfast.'),
       v('Cheese', '🧀', 'Queijo', '/tʃiːz/', 'Melted cheese tastes great on toast.'),
-      v('Chicken', '🍗', 'Frango', '/ˈtʃɪk.ɪn/', 'Roast chicken is a family favorite.'),
+      v('Roast Chicken', '🍗', 'Frango assado', '/ˈroʊst ˈtʃɪk.ɪn/', 'Roast chicken is a family favorite.'),
       v('Meat', '🥩', 'Carne / Bife', '/miːt/', 'He cooked the meat on the grill.'),
       v('Soup', '🍲', 'Sopa', '/suːp/', 'Hot soup is comforting on a cold night.'),
       v('Salad', '🥗', 'Salada', '/ˈsæl.əd/', 'A fresh green salad before the main course.'),
@@ -823,18 +823,18 @@ function buildExercisesWithCooldown(theme) {
       translationPt: opt.pt,
     }));
 
-    let prompt = `Qual imagem representa "${target.text}"?`;
+    let prompt = '🎧 Ouça a pronúncia e selecione a imagem correspondente:';
     let category = 'vocabulary';
 
     if (idx % 3 === 0) {
-      prompt = `Qual imagem representa "${target.text}"?`;
+      prompt = '🎧 Ouça a pronúncia e selecione a imagem correspondente:';
       category = 'vocabulary';
     } else if (idx % 3 === 1) {
-      prompt = `Qual imagem representa "${target.pt}" em inglês?`;
-      category = 'reading';
-    } else {
-      prompt = `🎧 Ouça a pronúncia e selecione a imagem correspondente:`;
+      prompt = '🎧 Escute a palavra em inglês e toque na foto correta:';
       category = 'listening';
+    } else {
+      prompt = '🎧 Identifique pelo som qual é o item correto:';
+      category = 'vocabulary';
     }
 
     exercises.push({
