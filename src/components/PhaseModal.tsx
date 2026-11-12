@@ -737,16 +737,16 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                   let cardStyle = 'bg-white border-2 border-slate-200 border-b-4 hover:border-slate-300 text-slate-800 shadow-xs hover:shadow-sm';
 
                   if (isSelected && !hasAnswered) {
-                    cardStyle = 'bg-sky-50 border-2 border-sky-500 border-b-4 border-b-sky-600 text-sky-950 shadow-md ring-2 ring-sky-300/50 scale-[1.02]';
+                    cardStyle = 'bg-white border-2 border-sky-500 border-b-4 border-b-sky-600 text-sky-950 shadow-md ring-2 ring-sky-300/60 scale-[1.02]';
                   }
 
                   if (hasAnswered) {
                     if (isSelected && isCorrect) {
-                      cardStyle = 'bg-emerald-50 border-2 border-emerald-500 border-b-4 border-b-emerald-600 text-emerald-950 shadow-md ring-2 ring-emerald-300/60 scale-[1.03]';
+                      cardStyle = 'bg-white border-2 border-emerald-500 border-b-4 border-b-emerald-600 text-emerald-950 shadow-md ring-2 ring-emerald-300/70 scale-[1.03]';
                     } else if (isSelected && !isCorrect) {
-                      cardStyle = 'bg-rose-50 border-2 border-rose-400 border-b-4 border-b-rose-600 text-rose-950 shadow-md ring-2 ring-rose-300/50';
+                      cardStyle = 'bg-white border-2 border-rose-400 border-b-4 border-b-rose-600 text-rose-950 shadow-md ring-2 ring-rose-300/60';
                     } else {
-                      cardStyle = 'bg-slate-50/70 border-2 border-slate-200 border-b-4 text-slate-400 opacity-50';
+                      cardStyle = 'bg-white border-2 border-slate-200 border-b-4 text-slate-400 opacity-50';
                     }
                   }
 
@@ -767,7 +767,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                           setSelectedOption(opt.text);
                         }
                       }}
-                      className={`relative p-4 rounded-3xl flex flex-col items-center justify-center gap-1.5 transition-all active:translate-y-0.5 cursor-pointer min-h-[140px] sm:min-h-[155px] ${cardStyle}`}
+                      className={`relative p-3 rounded-3xl flex flex-col items-center justify-center gap-1.5 transition-all active:translate-y-0.5 cursor-pointer min-h-[160px] sm:min-h-[185px] ${cardStyle}`}
                     >
                       {/* Status indicator on answer (apenas no card selecionado) */}
                       {hasAnswered && isSelected && isCorrect && (

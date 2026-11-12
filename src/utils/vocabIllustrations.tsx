@@ -11,7 +11,7 @@ function norm(word: string): string {
   return word.toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
-// Build a normalized lookup table once so any casing/spacing matches its real photo
+// Build a normalized lookup table once so any casing/spacing matches its studio photo
 const NORMALIZED_PHOTO_MAP: Record<string, string> = {};
 for (const [k, url] of Object.entries(REAL_VOCAB_IMAGES)) {
   NORMALIZED_PHOTO_MAP[norm(k)] = url;
@@ -45,32 +45,47 @@ export function preloadVocabImages(words: string[]): void {
 }
 
 export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoji }) => {
-  const photoUrl = getRealVocabPhotoUrl(word);
+  const primaryUrl = getRealVocabPhotoUrl(word);
+  const backupUrl = word
+    ? `https://tse2.mm.bing.net/th?q=${encodeURIComponent(word + ' single isolated on white background photo')}&w=500&h=500&c=7&rs=1&p=0`
+    : undefined;
+
+  const [useBackup, setUseBackup] = useState(false);
   const [imgError, setImgError] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
 
   useEffect(() => {
+    setUseBackup(false);
     setImgError(false);
     setImgLoaded(false);
-  }, [photoUrl, word]);
+  }, [primaryUrl, word]);
 
-  if (photoUrl && !imgError) {
+  const activeUrl = useBackup ? backupUrl : primaryUrl || backupUrl;
+
+  if (activeUrl && !imgError) {
     return (
-      <div className="relative w-28 h-24 sm:w-36 sm:h-28 rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-xs flex items-center justify-center select-none">
+      <div className="relative w-34 h-32 sm:w-44 sm:h-40 rounded-2xl overflow-hidden bg-white flex items-center justify-center select-none p-1">
         {!imgLoaded && (
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-100 via-slate-200/70 to-slate-100 animate-pulse flex items-center justify-center">
-            <span className="text-2xl opacity-40">{emoji || '🖼️'}</span>
+          <div className="absolute inset-0 bg-white animate-pulse flex items-center justify-center">
+            <span className="text-3xl opacity-25">{emoji || '🖼️'}</span>
           </div>
         )}
         <img
-          src={photoUrl}
+          src={activeUrl}
           alt=""
           loading="eager"
           decoding="async"
           referrerPolicy="no-referrer"
           onLoad={() => setImgLoaded(true)}
-          onError={() => setImgError(true)}
-          className={`w-full h-full object-cover transition-opacity duration-150 ${
+          onError={() => {
+            if (!useBackup && backupUrl && activeUrl !== backupUrl) {
+              setUseBackup(true);
+              setImgLoaded(false);
+            } else {
+              setImgError(true);
+            }
+          }}
+          className={`w-full h-full object-contain transition-opacity duration-150 ${
             imgLoaded ? 'opacity-100' : 'opacity-0'
           }`}
         />
@@ -79,8 +94,8 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
   }
 
   return (
-    <div className="relative w-28 h-24 sm:w-36 sm:h-28 rounded-2xl bg-gradient-to-br from-white via-slate-50 to-indigo-50/70 border border-slate-200/80 shadow-inner flex items-center justify-center select-none">
-      <span className="text-5xl sm:text-6xl filter drop-shadow-md leading-none">
+    <div className="relative w-34 h-32 sm:w-44 sm:h-40 rounded-2xl bg-white flex items-center justify-center select-none">
+      <span className="text-5xl sm:text-6xl filter drop-shadow-sm leading-none">
         {emoji || '✨'}
       </span>
     </div>

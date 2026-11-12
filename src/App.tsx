@@ -451,6 +451,12 @@ export default function App() {
             onUpdateFlashcards={setFlashcards}
             onAwardXp={handleAwardXp}
             onRecordMissionActivity={(cat) => handleRecordMissionActivity(cat, 1)}
+            missionsState={missionsState}
+            onClaimMissionReward={handleClaimMissionReward}
+            onClaimAllBonus={handleClaimAllDailyBonus}
+            onNavigateToCategory={handleNavigateFromMission}
+            onOpenCefrTest={() => setShowCefrModal(true)}
+            onOpenLeaderboard={() => setShowLeaderboardModal(true)}
           />
         )}
 

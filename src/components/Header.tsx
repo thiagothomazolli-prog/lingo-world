@@ -37,7 +37,7 @@ export const Header: React.FC<HeaderProps> = ({
               LW
             </div>
             <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 text-[10px] font-mono font-black rounded-md shadow-2xs">
-              v1.12.0
+              v1.13.0
             </span>
             <div className="hidden sm:block">
               <span className="font-extrabold text-slate-900 tracking-tight text-lg">LINGO<span className="text-indigo-600">WORLD</span></span>
@@ -147,99 +147,6 @@ export const Header: React.FC<HeaderProps> = ({
             <span>{user.xp}</span>
             <span className="hidden md:inline text-[11px] font-medium text-indigo-600">XP</span>
           </div>
-
-          {/* Plan badge & Upgrade button */}
-          {user.plan === 'free' ? (
-            <button
-              onClick={onOpenUpgradeModal}
-              className="flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs rounded-full shadow-xs transition-transform active:scale-95"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Plus</span>
-            </button>
-          ) : (
-            <span className="flex items-center gap-1 px-2.5 py-1 bg-linear-to-r from-purple-600 to-indigo-600 text-white font-extrabold text-xs rounded-full shadow-xs">
-              <Crown className="w-3.5 h-3.5" />
-              <span className="capitalize">{user.plan}</span>
-            </span>
-          )}
-
-          {/* Level Test Button */}
-          <button
-            onClick={onOpenCefrTest}
-            title="Fazer Teste de Nivelamento CEFR"
-            className="hidden lg:flex items-center gap-1 px-2.5 py-1 text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 text-xs font-semibold rounded-lg border border-slate-200 transition-colors"
-          >
-            <BookOpen className="w-3.5 h-3.5" />
-            <span>Nivelamento</span>
-          </button>
-
-          {/* Daily Missions Button */}
-          {onOpenMissions && (
-            <button
-              onClick={onOpenMissions}
-              title="Missões Diárias (3 tarefas com XP e Gemas a cada 24h)"
-              className="relative flex items-center gap-1.5 px-3 py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-extrabold text-xs rounded-full border border-slate-200 transition-transform active:scale-95 cursor-pointer shadow-2xs"
-            >
-              <Target className="w-3.5 h-3.5 text-amber-600" />
-              <span>Missões</span>
-              {unclaimedMissionsCount > 0 ? (
-                <span className="flex items-center justify-center w-4 h-4 bg-amber-500 text-slate-950 font-black text-[9px] rounded-full animate-bounce">
-                  {unclaimedMissionsCount}
-                </span>
-              ) : (
-                <span className="hidden md:inline-block px-1.5 py-0.2 bg-slate-200 text-slate-600 rounded-full text-[9px] font-bold">
-                  24h
-                </span>
-              )}
-            </button>
-          )}
-
-          {/* Ranking Top 5 Button */}
-          <button
-            onClick={onOpenLeaderboard}
-            title="Ver Ranking Top 5 (Líderes de XP)"
-            className="flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-xs rounded-full shadow-xs transition-transform active:scale-95 cursor-pointer"
-          >
-            <Trophy className="w-3.5 h-3.5 fill-amber-200 text-white" />
-            <span>Ranking</span>
-            <span className="hidden sm:inline-block px-1.5 py-0.2 bg-white/25 rounded-full text-[9px] font-black uppercase">
-              Top 5
-            </span>
-          </button>
-
-          {/* Shop Modal Button */}
-          {onOpenShop && (
-            <button
-              onClick={onOpenShop}
-              title="Abrir Loja de Gemas: adquira Congelador de Ofensiva e Skins de Avatar"
-              className="flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white text-xs font-black rounded-full shadow-xs transition-transform active:scale-95 cursor-pointer"
-            >
-              <ShoppingBag className="w-3.5 h-3.5" />
-              <span>Loja</span>
-            </button>
-          )}
-
-          {/* AI Studio Multi-modal Labs Button */}
-          {onOpenAiStudio && (
-            <button
-              onClick={onOpenAiStudio}
-              title="Abrir AI Studio Labs (Música Lyria, Vídeos Omni, Imagens, Voz Live e Ciência)"
-              className="flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-fuchsia-600 via-purple-600 to-indigo-600 hover:from-fuchsia-700 hover:to-indigo-700 text-white text-xs font-black rounded-full shadow-sm transition-transform active:scale-95 cursor-pointer ring-1 ring-white/20"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-spin" />
-              <span>IA Studio</span>
-            </button>
-          )}
-
-          {/* Admin Portal Button */}
-          <button
-            onClick={onOpenAdmin}
-            title="Painel Administrativo & Métricas de Negócio"
-            className="flex items-center gap-1 p-1.5 text-slate-500 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors border border-transparent hover:border-indigo-100"
-          >
-            <Shield className="w-4 h-4" />
-          </button>
         </div>
       </div>
     </header>

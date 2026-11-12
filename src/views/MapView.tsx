@@ -63,76 +63,20 @@ export const MapView: React.FC<MapViewProps> = ({
   };
 
   return (
-    <div className="space-y-8 pb-16">
-      {/* Welcome Banner with Mascot */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-700 via-indigo-600 to-sky-600 text-white p-6 sm:p-8 shadow-xl">
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="space-y-3 text-center md:text-left max-w-xl">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/15 backdrop-blur-md rounded-full text-xs font-bold tracking-wide">
-              <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-              <span>Jornada de Fluência em Inglês • Nível Atual: {user.cefrLevel}</span>
-            </div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight">
-              Olá, {user.name}! Vamos explorar o Mundo?
-            </h1>
-            <p className="text-sm sm:text-base text-indigo-100 font-medium">
-              Avance pelas unidades de aprendizado, domine novas estruturas e pratique conversas reais.
-            </p>
-            <div className="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-3">
-              <button
-                onClick={onOpenCefrTest}
-                className="px-5 py-2.5 bg-white text-indigo-900 font-black text-xs rounded-xl shadow-md transition-transform active:scale-95 cursor-pointer flex items-center gap-2"
-              >
-                <Sparkles className="w-4 h-4 text-indigo-600" />
-                <span>Teste de Nivelamento CEFR</span>
-              </button>
-            </div>
-          </div>
-
-          <div className="shrink-0 flex items-center justify-center">
-            <MascotLingo mood="happy" size="lg" message="Vamos conquistar a próxima estrela!" />
-          </div>
+    <div className="space-y-6 pb-16">
+      {/* Clean & Compact Welcome Header */}
+      <div className="rounded-2xl bg-white border border-slate-200/90 px-4 py-3.5 shadow-2xs flex items-center justify-between gap-3">
+        <div>
+          <h1 className="text-base sm:text-lg font-black text-slate-900 tracking-tight">
+            Olá, {user.name}! Escolha sua lição:
+          </h1>
+          <p className="text-xs text-slate-500 font-medium">
+            Toque em uma fase desbloqueada para começar a praticar.
+          </p>
         </div>
-
-        {/* Decorative background shapes */}
-        <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-white/5 rounded-full blur-2xl pointer-events-none" />
-        <div className="absolute -left-10 -top-10 w-64 h-64 bg-sky-400/10 rounded-full blur-2xl pointer-events-none" />
-      </div>
-
-      {/* 24h Daily Missions Section */}
-      <DailyMissionsCard
-        missionsState={missionsState}
-        onClaimReward={onClaimMissionReward}
-        onClaimAllBonus={onClaimAllBonus}
-        onNavigateToCategory={onNavigateToCategory}
-      />
-
-      {/* Quick Leaderboard Access Bar */}
-      <div className="p-4 bg-white border border-slate-200/90 rounded-3xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-3 text-center sm:text-left">
-          <div className="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-600 shadow-xs shrink-0">
-            <Trophy className="w-6 h-6 fill-amber-500 text-amber-500" />
-          </div>
-          <div>
-            <div className="flex items-center justify-center sm:justify-start gap-2">
-              <span className="font-black text-sm text-slate-900">Ranking Top 5 de XP</span>
-              <span className="px-2 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-black rounded-md uppercase">
-                Liga Ouro Ativa
-              </span>
-            </div>
-            <p className="text-xs text-slate-500 mt-0.5">
-              Você acumulou <strong className="text-indigo-600 font-mono">{user.xp} XP</strong>. Veja quem lidera o pódio de fluência e suba na classificação!
-            </p>
-          </div>
-        </div>
-
-        <button
-          onClick={onOpenLeaderboard}
-          className="w-full sm:w-auto px-5 py-2.5 bg-gradient-to-r from-indigo-600 to-sky-600 hover:from-indigo-700 hover:to-sky-700 text-white font-extrabold text-xs rounded-xl shadow-sm transition-transform active:scale-95 cursor-pointer flex items-center justify-center gap-2 shrink-0"
-        >
-          <span>Abrir Ranking Oficial</span>
-          <ChevronRight className="w-4 h-4" />
-        </button>
+        <span className="px-2.5 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200/80 rounded-xl text-xs font-black shrink-0">
+          Nível {user.cefrLevel}
+        </span>
       </div>
 
       {/* World Map Progression */}

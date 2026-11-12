@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { BookOpen, Volume2, Search, ArrowRight, RotateCw, CheckCircle2, XCircle, Sparkles, MessageSquare } from 'lucide-react';
+import { BookOpen, Volume2, Search, ArrowRight, RotateCw, CheckCircle2, XCircle, Sparkles, MessageSquare, Trophy, ChevronRight } from 'lucide-react';
 import { DIDACTIC_LIBRARY, INTERACTIVE_STORIES } from '../data/courseData';
-import { Flashcard, InteractiveStory, StoryNode, UserProfile } from '../types';
+import { Flashcard, InteractiveStory, StoryNode, UserProfile, DailyMission, DailyMissionsState } from '../types';
 import { speakText, updateCardSpacedRepetition } from '../utils/storage';
 import { MascotLingo } from '../components/MascotLingo';
+import { DailyMissionsCard } from '../components/DailyMissionsCard';
 import { sfx } from '../utils/soundEffects';
 
 interface StudyViewProps {
@@ -12,6 +13,12 @@ interface StudyViewProps {
   onUpdateFlashcards: (updated: Flashcard[]) => void;
   onAwardXp: (xp: number, gems: number) => void;
   onRecordMissionActivity?: (category: 'flashcards' | 'story' | 'grammar') => void;
+  missionsState?: DailyMissionsState;
+  onClaimMissionReward?: (missionId: string) => void;
+  onClaimAllBonus?: () => void;
+  onNavigateToCategory?: (category: DailyMission['category']) => void;
+  onOpenCefrTest?: () => void;
+  onOpenLeaderboard?: () => void;
 }
 
 export const StudyView: React.FC<StudyViewProps> = ({
@@ -20,8 +27,14 @@ export const StudyView: React.FC<StudyViewProps> = ({
   onUpdateFlashcards,
   onAwardXp,
   onRecordMissionActivity,
+  missionsState,
+  onClaimMissionReward,
+  onClaimAllBonus,
+  onNavigateToCategory,
+  onOpenCefrTest,
+  onOpenLeaderboard,
 }) => {
-  const [subTab, setSubTab] = useState<'library' | 'flashcards' | 'stories'>('library');
+  const [subTab, setSubTab] = useState<'missions' | 'library' | 'flashcards' | 'stories'>('missions');
   const [searchQuery, setSearchQuery] = useState('');
 
   // Flashcards state
@@ -98,32 +111,108 @@ export const StudyView: React.FC<StudyViewProps> = ({
   return (
     <div className="space-y-6 pb-16">
       {/* Sub Tabs Selector */}
-      <div className="flex items-center gap-2 p-1 bg-slate-100 rounded-2xl max-w-md mx-auto text-xs font-bold">
+      <div className="flex flex-wrap items-center gap-1.5 p-1 bg-slate-100 rounded-2xl max-w-xl mx-auto text-xs font-bold">
+        <button
+          onClick={() => setSubTab('missions')}
+          className={`flex-1 py-2 px-2 rounded-xl transition-all cursor-pointer ${
+            subTab === 'missions' ? 'bg-white shadow-xs text-indigo-700 font-extrabold' : 'text-slate-600'
+          }`}
+        >
+          Missões & Nível
+        </button>
         <button
           onClick={() => setSubTab('library')}
-          className={`flex-1 py-2 rounded-xl transition-all cursor-pointer ${
+          className={`flex-1 py-2 px-2 rounded-xl transition-all cursor-pointer ${
             subTab === 'library' ? 'bg-white shadow-xs text-indigo-700 font-extrabold' : 'text-slate-600'
           }`}
         >
-          Biblioteca Didática
+          Biblioteca
         </button>
         <button
           onClick={() => setSubTab('flashcards')}
-          className={`flex-1 py-2 rounded-xl transition-all cursor-pointer ${
+          className={`flex-1 py-2 px-2 rounded-xl transition-all cursor-pointer ${
             subTab === 'flashcards' ? 'bg-white shadow-xs text-indigo-700 font-extrabold' : 'text-slate-600'
           }`}
         >
-          Revisão Inteligente
+          Revisão
         </button>
         <button
           onClick={() => setSubTab('stories')}
-          className={`flex-1 py-2 rounded-xl transition-all cursor-pointer ${
+          className={`flex-1 py-2 px-2 rounded-xl transition-all cursor-pointer ${
             subTab === 'stories' ? 'bg-white shadow-xs text-indigo-700 font-extrabold' : 'text-slate-600'
           }`}
         >
           Histórias
         </button>
       </div>
+
+      {/* 0. Missões Diárias, Baú de Ouro, Teste de Nivelamento & Ranking */}
+      {subTab === 'missions' && (
+        <div className="space-y-6">
+          {/* Teste de Nivelamento CEFR Card */}
+          <div className="p-5 bg-gradient-to-r from-indigo-700 via-indigo-600 to-sky-600 text-white rounded-3xl shadow-md flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="space-y-1 text-center sm:text-left">
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-white/15 rounded-full text-[11px] font-bold">
+                <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                <span>Nível Atual: {user.cefrLevel}</span>
+              </div>
+              <h3 className="text-lg sm:text-xl font-black tracking-tight">Teste de Nivelamento CEFR</h3>
+              <p className="text-xs sm:text-sm text-indigo-100">
+                Descubra seu nível oficial de inglês (A1 a C2) com questões adaptativas.
+              </p>
+            </div>
+            {onOpenCefrTest && (
+              <button
+                onClick={onOpenCefrTest}
+                className="w-full sm:w-auto px-5 py-2.5 bg-white text-indigo-900 font-black text-xs rounded-xl shadow-md transition-transform active:scale-95 cursor-pointer flex items-center justify-center gap-2 shrink-0"
+              >
+                <Sparkles className="w-4 h-4 text-indigo-600" />
+                <span>Fazer Teste de Nivelamento</span>
+              </button>
+            )}
+          </div>
+
+          {/* Missões Diárias (Conquiste 1 Fase no Mapa, Baú de Ouro, etc.) */}
+          {missionsState && onClaimMissionReward && onClaimAllBonus && (
+            <DailyMissionsCard
+              missionsState={missionsState}
+              onClaimReward={onClaimMissionReward}
+              onClaimAllBonus={onClaimAllBonus}
+              onNavigateToCategory={onNavigateToCategory}
+            />
+          )}
+
+          {/* Ranking Top 5 de XP */}
+          {onOpenLeaderboard && (
+            <div className="p-4 bg-white border border-slate-200/90 rounded-3xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-3 text-center sm:text-left">
+                <div className="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-600 shadow-xs shrink-0">
+                  <Trophy className="w-6 h-6 fill-amber-500 text-amber-500" />
+                </div>
+                <div>
+                  <div className="flex items-center justify-center sm:justify-start gap-2">
+                    <span className="font-black text-sm text-slate-900">Ranking Top 5 de XP</span>
+                    <span className="px-2 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-black rounded-md uppercase">
+                      Liga Ouro Ativa
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-500 mt-0.5">
+                    Você acumulou <strong className="text-indigo-600 font-mono">{user.xp} XP</strong>. Veja quem lidera o pódio de fluência!
+                  </p>
+                </div>
+              </div>
+
+              <button
+                onClick={onOpenLeaderboard}
+                className="w-full sm:w-auto px-5 py-2.5 bg-gradient-to-r from-indigo-600 to-sky-600 hover:from-indigo-700 hover:to-sky-700 text-white font-extrabold text-xs rounded-xl shadow-sm transition-transform active:scale-95 cursor-pointer flex items-center justify-center gap-2 shrink-0"
+              >
+                <span>Abrir Ranking Oficial</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* 1. Biblioteca Didática */}
       {subTab === 'library' && (
