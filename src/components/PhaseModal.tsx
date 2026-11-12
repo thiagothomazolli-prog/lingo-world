@@ -2,9 +2,57 @@ import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import { X, Volume2, Mic, MicOff, CheckCircle2, AlertCircle, Sparkles, Star, ArrowRight, Lightbulb, Play } from 'lucide-react';
 import { Phase, Exercise, UserProfile } from '../types';
-import { speakText, getExerciseVoiceGender, preloadExerciseAudio } from '../utils/storage';
+import { speakText, stopSpeaking, getExerciseVoiceGender, preloadExerciseAudio } from '../utils/storage';
 import { MascotLingo } from './MascotLingo';
 import { sfx } from '../utils/soundEffects';
+
+const BASE_RECORDER_BARS = [
+  22, 35, 55, 40, 78, 92, 64, 45, 85, 96, 60, 38, 72, 88,
+  50, 94, 68, 42, 80, 62, 34, 76, 90, 52, 66, 44, 30, 20,
+];
+
+const AndroidRecorderWaveform: React.FC<{ isSpeaking: boolean }> = ({ isSpeaking }) => {
+  const [tick, setTick] = useState(0);
+
+  useEffect(() => {
+    if (!isSpeaking) {
+      setTick(0);
+      return;
+    }
+    const interval = setInterval(() => {
+      setTick((t) => t + 1);
+    }, 80);
+    return () => clearInterval(interval);
+  }, [isSpeaking]);
+
+  return (
+    <div className="flex-1 flex items-center justify-center gap-[3px] sm:gap-1 h-9 px-2 select-none overflow-hidden">
+      {BASE_RECORDER_BARS.map((base, idx) => {
+        let heightPercent = 18;
+        if (isSpeaking) {
+          const wave = Math.sin((tick * 0.85) + idx * 0.65) * 0.42 + 0.58;
+          heightPercent = Math.max(16, Math.min(100, Math.round(base * wave)));
+        } else {
+          heightPercent = Math.max(14, Math.round(base * 0.35));
+        }
+
+        return (
+          <span
+            key={idx}
+            style={{ height: `${heightPercent}%` }}
+            className={`w-[3px] sm:w-1 rounded-full transition-all duration-75 ${
+              isSpeaking
+                ? idx % 3 === 0
+                  ? 'bg-indigo-600'
+                  : 'bg-sky-500'
+                : 'bg-indigo-300/75'
+            }`}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
 interface PhaseModalProps {
   phase: Phase;
@@ -139,7 +187,6 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
       setSelectedWords((prev) => prev.filter((w) => w !== word));
     } else {
       setSelectedWords((prev) => [...prev, word]);
-      speakText(word, 'en-US', user.speechSpeed, exerciseVoiceGender);
     }
   };
 
@@ -161,6 +208,8 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
       correct = true;
     }
 
+    // Não repetir a voz ao confirmar: parar qualquer fala em andamento e tocar apenas o som confortável de acerto/erro
+    stopSpeaking();
     setIsCorrect(correct);
     setHasAnswered(true);
 
@@ -175,7 +224,6 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
           (v) => v.text.trim().toLowerCase() === selectedOption?.trim().toLowerCase()
         );
         if (wrongVisual) {
-          speakText(wrongVisual.label || wrongVisual.text, 'en-US', user.speechSpeed, exerciseVoiceGender);
           setFeedbackMessage(
             `Você selecionou ${wrongVisual.label || wrongVisual.text} (${wrongVisual.translationPt || ''}).`
           );
@@ -188,10 +236,6 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     } else {
       sfx.playCorrect();
       setFeedbackMessage(cleanExplanation);
-      const phraseToSpeak = currentExercise.audioPhrase || currentExercise.correctAnswer;
-      if (phraseToSpeak) {
-        speakText(phraseToSpeak, 'en-US', user.speechSpeed, exerciseVoiceGender);
-      }
       if (onRecordMissionActivity) {
         if (currentExercise.type === 'speaking-repeat' || currentExercise.skillCategory === 'pronunciation') {
           onRecordMissionActivity('pronunciation');
@@ -352,9 +396,9 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               </div>
             )}
 
-            {/* Audio Speaker Bar (apenas alto-falante + gráfico de linha do áudio ao falar) */}
+            {/* Audio Speaker Bar (Alto-falante + Gráfico estilo Gravador de Áudio do Android + Botão de velocidade 0.65x) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
-              <div className="p-3.5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-center gap-4 shadow-xs min-h-[64px]">
+              <div className="p-3 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
                 <button
                   type="button"
                   onClick={() =>
@@ -365,107 +409,57 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                       exerciseVoiceGender
                     )
                   }
-                  className={`w-12 h-12 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-md transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
-                    isSpeaking ? 'ring-4 ring-indigo-300 scale-105' : ''
+                  className={`w-11 h-11 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
+                    isSpeaking ? 'ring-3 ring-indigo-300' : ''
                   }`}
-                  title="Ouvir"
+                  title="Ouvir novamente"
                 >
-                  <Volume2 className={`w-6 h-6 ${isSpeaking ? 'animate-pulse' : ''}`} />
+                  <Volume2 className="w-5 h-5" />
                 </button>
 
-                {isSpeaking && (
-                  <div className="flex-1 max-w-[220px] h-10 flex items-center justify-center animate-in fade-in duration-150">
-                    <svg
-                      viewBox="0 0 200 40"
-                      className="w-full h-full overflow-visible"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M 0 20 Q 12 4, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20"
-                        stroke="#4f46e5"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        className="animate-pulse"
-                      >
-                        <animate
-                          attributeName="d"
-                          dur="0.45s"
-                          repeatCount="indefinite"
-                          values="
-                            M 0 20 Q 12 3, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
-                            M 0 20 Q 12 37, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
-                            M 0 20 Q 12 10, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
-                            M 0 20 Q 12 3, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20
-                          "
-                        />
-                      </path>
-                      <path
-                        d="M 0 20 Q 16 32, 32 20 T 64 20 T 96 20 T 128 20 T 160 20 T 200 20"
-                        stroke="#0ea5e9"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        opacity="0.65"
-                      >
-                        <animate
-                          attributeName="d"
-                          dur="0.35s"
-                          repeatCount="indefinite"
-                          values="
-                            M 0 20 Q 16 34, 32 20 T 64 20 T 96 20 T 128 20 T 160 20 T 200 20;
-                            M 0 20 Q 16 6, 32 20 T 64 20 T 96 20 T 128 20 T 160 20 T 200 20;
-                            M 0 20 Q 16 34, 32 20 T 64 20 T 96 20 T 128 20 T 160 20 T 200 20
-                          "
-                        />
-                      </path>
-                    </svg>
-                  </div>
-                )}
+                <AndroidRecorderWaveform isSpeaking={isSpeaking} />
+
+                <button
+                  type="button"
+                  onClick={() =>
+                    speakText(
+                      currentExercise.audioPhrase || currentExercise.correctAnswer,
+                      'en-US',
+                      0.65,
+                      exerciseVoiceGender
+                    )
+                  }
+                  className="py-2.5 px-3 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
+                  title="Ouvir mais lento (0.65x)"
+                >
+                  <span>🐢 0.65x</span>
+                </button>
               </div>
             ) : currentExercise.type === 'listening' ? (
               <div className="space-y-3">
                 {!hasAnswered ? (
-                  <div className="p-4 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-3xl flex items-center justify-center gap-4 shadow-xs min-h-[68px]">
+                  <div className="p-3.5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
                     <button
                       type="button"
                       onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', user.speechSpeed, exerciseVoiceGender)}
-                      className={`w-12 h-12 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-md transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
-                        isSpeaking ? 'ring-4 ring-indigo-300 scale-105' : ''
+                      className={`w-11 h-11 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
+                        isSpeaking ? 'ring-3 ring-indigo-300' : ''
                       }`}
-                      title="Ouvir"
+                      title="Ouvir novamente"
                     >
-                      <Volume2 className={`w-6 h-6 ${isSpeaking ? 'animate-pulse' : ''}`} />
+                      <Volume2 className="w-5 h-5" />
                     </button>
 
-                    {isSpeaking && (
-                      <div className="flex-1 max-w-[220px] h-10 flex items-center justify-center animate-in fade-in duration-150">
-                        <svg
-                          viewBox="0 0 200 40"
-                          className="w-full h-full overflow-visible"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M 0 20 Q 12 4, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20"
-                            stroke="#4f46e5"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                          >
-                            <animate
-                              attributeName="d"
-                              dur="0.45s"
-                              repeatCount="indefinite"
-                              values="
-                                M 0 20 Q 12 3, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
-                                M 0 20 Q 12 37, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
-                                M 0 20 Q 12 10, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20;
-                                M 0 20 Q 12 3, 25 20 T 50 20 T 75 20 T 100 20 T 125 20 T 150 20 T 175 20 T 200 20
-                              "
-                            />
-                          </path>
-                        </svg>
-                      </div>
-                    )}
+                    <AndroidRecorderWaveform isSpeaking={isSpeaking} />
+
+                    <button
+                      type="button"
+                      onClick={() => speakText(currentExercise.audioPhrase!, 'en-US', 0.65, exerciseVoiceGender)}
+                      className="py-2.5 px-3 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
+                      title="Ouvir mais lento (0.65x)"
+                    >
+                      <span>🐢 0.65x</span>
+                    </button>
                   </div>
                 ) : (
                   <div className="p-4 bg-emerald-50 border-2 border-emerald-300 rounded-2xl space-y-1 shadow-xs">
@@ -539,10 +533,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                       role="button"
                       tabIndex={hasAnswered ? -1 : 0}
                       onClick={() => {
-                        if (hasAnswered) {
-                          speakText(opt.label || opt.text, 'en-US', user.speechSpeed, exerciseVoiceGender);
-                          return;
-                        }
+                        if (hasAnswered) return;
                         sfx.playTap();
                         setSelectedOption(opt.text);
                       }}
@@ -555,19 +546,6 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                       }}
                       className={`relative p-4 rounded-3xl flex flex-col items-center justify-center gap-1.5 transition-all active:translate-y-0.5 cursor-pointer min-h-[140px] sm:min-h-[155px] ${cardStyle}`}
                     >
-                      {/* Audio speaker button on card */}
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          speakText(opt.label || opt.text, 'en-US', user.speechSpeed, exerciseVoiceGender);
-                        }}
-                        className="absolute top-2.5 right-2.5 p-2 rounded-full bg-indigo-50 hover:bg-indigo-100 text-indigo-600 border border-indigo-200/80 shadow-2xs active:scale-90 transition-all cursor-pointer z-10"
-                        title="Ouvir pronúncia"
-                      >
-                        <Volume2 className="w-4 h-4" />
-                      </button>
-
                       {/* Status indicator on answer (apenas no card selecionado) */}
                       {hasAnswered && isSelected && isCorrect && (
                         <CheckCircle2 className="w-5 h-5 text-emerald-600 absolute top-2.5 left-2.5" />
@@ -632,7 +610,6 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                           if (hasAnswered) return;
                           sfx.playTap();
                           setSelectedOption(opt);
-                          speakText(opt, 'en-US', user.speechSpeed, exerciseVoiceGender);
                         }}
                         className={`w-full p-4 rounded-2xl text-left font-bold text-sm sm:text-base transition-transform active:translate-y-1 flex items-center justify-between cursor-pointer ${btnStyle}`}
                       >
@@ -731,7 +708,6 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         onClick={() => {
                           sfx.playTap();
                           setFillBlankInput(opt);
-                          speakText(opt, 'en-US', user.speechSpeed, exerciseVoiceGender);
                         }}
                         className={`p-4 rounded-2xl text-center font-bold text-base transition-transform active:translate-y-1 cursor-pointer flex items-center justify-center gap-2 ${btnStyle}`}
                       >

@@ -231,6 +231,18 @@ public class MainActivity extends BridgeActivity implements TextToSpeech.OnInitL
         }
 
         @JavascriptInterface
+        public void stop() {
+            try {
+                pendingSpeech = null;
+                if (tts != null) {
+                    tts.stop();
+                }
+                notifyWebSpeakingState(false);
+            } catch (Exception ignored) {
+            }
+        }
+
+        @JavascriptInterface
         public boolean isReady() {
             return ttsReady;
         }

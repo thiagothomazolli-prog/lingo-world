@@ -1,4 +1,4 @@
-// 🔊 Procedural Web Audio Engine (100% Native, Zero MP3 latency, Works Offline & In Mobile APK)
+// 🔊 Warm Acoustic Web Audio Engine (Soft Marimba/Chime Tones, Zero Harshness)
 
 class SoundEffectsEngine {
   private ctx: AudioContext | null = null;
@@ -28,122 +28,99 @@ class SoundEffectsEngine {
     return this.isMuted;
   }
 
-  // 🟢 1. Som de Acerto (Duolingo Style: Acorde Maior Brilhante e Satisfatório)
+  private playWarmTone(freq: number, startOffset: number, duration: number, peakVolume: number) {
+    if (!this.ctx) return;
+    const now = this.ctx.currentTime;
+    const startTime = now + startOffset;
+
+    // Fundamental pure sine wave (warm acoustic body)
+    const osc = this.ctx.createOscillator();
+    const gain = this.ctx.createGain();
+    const filter = this.ctx.createBiquadFilter();
+
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(freq, startTime);
+
+    filter.type = 'lowpass';
+    filter.frequency.setValueAtTime(1800, startTime);
+
+    // Smooth 14ms attack to eliminate any robotic click/pop, followed by natural wooden decay
+    gain.gain.setValueAtTime(0.0001, startTime);
+    gain.gain.linearRampToValueAtTime(peakVolume, startTime + 0.014);
+    gain.gain.exponentialRampToValueAtTime(0.0008, startTime + duration);
+
+    osc.connect(filter);
+    filter.connect(gain);
+    gain.connect(this.ctx.destination);
+
+    osc.start(startTime);
+    osc.stop(startTime + duration + 0.02);
+
+    // Subtle soft harmonic overtone for wooden marimba warmth
+    const overtone = this.ctx.createOscillator();
+    const overtoneGain = this.ctx.createGain();
+    overtone.type = 'sine';
+    overtone.frequency.setValueAtTime(freq * 2, startTime);
+
+    overtoneGain.gain.setValueAtTime(0.0001, startTime);
+    overtoneGain.gain.linearRampToValueAtTime(peakVolume * 0.12, startTime + 0.01);
+    overtoneGain.gain.exponentialRampToValueAtTime(0.0001, startTime + Math.min(0.09, duration * 0.5));
+
+    overtone.connect(filter);
+    overtone.start(startTime);
+    overtone.stop(startTime + Math.min(0.1, duration * 0.5) + 0.01);
+  }
+
+  // 🟢 1. Som de Acerto (Confortável, orgânico e estimulante — dois tons suaves de marimba/chime)
   public playCorrect() {
     try {
       if (this.isMuted) return;
       this.initContext();
       if (!this.ctx) return;
 
-      const now = this.ctx.currentTime;
-      const notes = [
-        { freq: 587.33, start: 0.00, dur: 0.18, vol: 0.28 },
-        { freq: 880.00, start: 0.08, dur: 0.22, vol: 0.32 },
-        { freq: 1174.66, start: 0.16, dur: 0.35, vol: 0.36 },
-      ];
-
-      notes.forEach((note) => {
-        const osc = this.ctx!.createOscillator();
-        const gain = this.ctx!.createGain();
-        const startTime = now + note.start;
-
-        osc.type = 'triangle';
-        osc.frequency.setValueAtTime(note.freq, startTime);
-
-        gain.gain.setValueAtTime(note.vol, startTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, startTime + note.dur);
-
-        osc.connect(gain);
-        gain.connect(this.ctx!.destination);
-
-        osc.start(startTime);
-        osc.stop(startTime + note.dur + 0.02);
-      });
+      // Intervalo acolhedor e suave (F5 -> C6 suave / E5 -> A5)
+      this.playWarmTone(587.33, 0.0, 0.16, 0.14);   // D5
+      this.playWarmTone(880.0, 0.085, 0.32, 0.16);  // A5
     } catch {
       // Audio playback failsafe
     }
   }
 
-  // 🔴 2. Som de Erro (Grave, gentil e educativo - estilo Duolingo "boop")
+  // 🔴 2. Som de Erro (Suave, acolhedor e sem estridência)
   public playIncorrect() {
     try {
       if (this.isMuted) return;
       this.initContext();
       if (!this.ctx) return;
 
-      const now = this.ctx.currentTime;
-      const notes = [
-        { freq: 240, start: 0.00, dur: 0.15, vol: 0.30 },
-        { freq: 160, start: 0.12, dur: 0.25, vol: 0.35 },
-      ];
-
-      notes.forEach((note) => {
-        const osc = this.ctx!.createOscillator();
-        const gain = this.ctx!.createGain();
-        const startTime = now + note.start;
-
-        osc.type = 'sawtooth';
-        const filter = this.ctx!.createBiquadFilter();
-        filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(450, startTime);
-
-        osc.frequency.setValueAtTime(note.freq, startTime);
-        osc.frequency.exponentialRampToValueAtTime(note.freq * 0.8, startTime + note.dur);
-
-        gain.gain.setValueAtTime(note.vol, startTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, startTime + note.dur);
-
-        osc.connect(filter);
-        filter.connect(gain);
-        gain.connect(this.ctx!.destination);
-
-        osc.start(startTime);
-        osc.stop(startTime + note.dur + 0.02);
-      });
+      this.playWarmTone(349.23, 0.0, 0.15, 0.12);   // F4
+      this.playWarmTone(293.66, 0.10, 0.26, 0.13);  // D4
     } catch {
       // Audio playback failsafe
     }
   }
 
-  // 🏆 3. Fanfarra de Sucesso (Conclusão de Fase ou Teste com Estrelas)
+  // 🏆 3. Fanfarra de Sucesso (Conclusão de Fase com acordes suaves e confortáveis)
   public playSuccessFanfare() {
     try {
       if (this.isMuted) return;
       this.initContext();
       if (!this.ctx) return;
 
-      const now = this.ctx.currentTime;
-      const fanfare = [
-        { freq: 523.25, start: 0.00, dur: 0.14, vol: 0.25 },
-        { freq: 659.25, start: 0.10, dur: 0.14, vol: 0.28 },
-        { freq: 783.99, start: 0.20, dur: 0.16, vol: 0.30 },
-        { freq: 1046.50, start: 0.32, dur: 0.40, vol: 0.35 },
-        { freq: 1318.51, start: 0.45, dur: 0.60, vol: 0.38 },
+      const notes = [
+        { freq: 523.25, start: 0.0, dur: 0.16, vol: 0.13 },
+        { freq: 659.25, start: 0.10, dur: 0.16, vol: 0.14 },
+        { freq: 783.99, start: 0.20, dur: 0.18, vol: 0.15 },
+        { freq: 1046.5, start: 0.31, dur: 0.48, vol: 0.17 },
       ];
 
-      fanfare.forEach((n) => {
-        const osc = this.ctx!.createOscillator();
-        const gain = this.ctx!.createGain();
-        const startTime = now + n.start;
-
-        osc.type = 'triangle';
-        osc.frequency.setValueAtTime(n.freq, startTime);
-
-        gain.gain.setValueAtTime(n.vol, startTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, startTime + n.dur);
-
-        osc.connect(gain);
-        gain.connect(this.ctx!.destination);
-
-        osc.start(startTime);
-        osc.stop(startTime + n.dur + 0.02);
-      });
+      notes.forEach((n) => this.playWarmTone(n.freq, n.start, n.dur, n.vol));
     } catch {
       // Audio playback failsafe
     }
   }
 
-  // 🔘 4. Toque Tátil nos Botões e Opções (Pop suave imediato)
+  // 🔘 4. Toque Tátil nos Botões e Opções (Toque de madeira super discreto)
   public playTap() {
     try {
       if (this.isMuted) return;
@@ -155,17 +132,18 @@ class SoundEffectsEngine {
       const gain = this.ctx.createGain();
 
       osc.type = 'sine';
-      osc.frequency.setValueAtTime(600, now);
-      osc.frequency.exponentialRampToValueAtTime(300, now + 0.04);
+      osc.frequency.setValueAtTime(420, now);
+      osc.frequency.exponentialRampToValueAtTime(240, now + 0.03);
 
-      gain.gain.setValueAtTime(0.12, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+      gain.gain.setValueAtTime(0.001, now);
+      gain.gain.linearRampToValueAtTime(0.06, now + 0.005);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.032);
 
       osc.connect(gain);
       gain.connect(this.ctx.destination);
 
       osc.start(now);
-      osc.stop(now + 0.045);
+      osc.stop(now + 0.035);
     } catch {
       // Audio playback failsafe
     }
@@ -178,24 +156,9 @@ class SoundEffectsEngine {
       this.initContext();
       if (!this.ctx) return;
 
-      const now = this.ctx.currentTime;
-      [659.25, 987.77, 1318.51].forEach((freq, idx) => {
-        const osc = this.ctx!.createOscillator();
-        const gain = this.ctx!.createGain();
-        const startTime = now + idx * 0.07;
-
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(freq, startTime);
-
-        gain.gain.setValueAtTime(0.20, startTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, startTime + 0.22);
-
-        osc.connect(gain);
-        gain.connect(this.ctx!.destination);
-
-        osc.start(startTime);
-        osc.stop(startTime + 0.23);
-      });
+      this.playWarmTone(587.33, 0.0, 0.16, 0.12);
+      this.playWarmTone(740.0, 0.08, 0.18, 0.13);
+      this.playWarmTone(880.0, 0.16, 0.28, 0.15);
     } catch {
       // Audio playback failsafe
     }

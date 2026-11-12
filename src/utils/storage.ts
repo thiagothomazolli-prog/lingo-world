@@ -139,6 +139,7 @@ if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
 
 let activeAudioElement: HTMLAudioElement | null = null;
 let speakingSafetyTimeout: ReturnType<typeof setTimeout> | null = null;
+let currentSpeechSessionId = 0;
 const preloadedAudioCache = new Map<string, string>();
 
 function setSpeakingState(speaking: boolean): void {
@@ -151,8 +152,39 @@ function setSpeakingState(speaking: boolean): void {
   if (speaking) {
     speakingSafetyTimeout = setTimeout(() => {
       window.dispatchEvent(new CustomEvent('lingo-tts-state', { detail: { speaking: false } }));
-    }, 6000);
+    }, 5000);
   }
+}
+
+export function stopSpeaking(): void {
+  currentSpeechSessionId++;
+  if (activeAudioElement) {
+    try {
+      activeAudioElement.onplaying = null;
+      activeAudioElement.onended = null;
+      activeAudioElement.onerror = null;
+      activeAudioElement.pause();
+    } catch {
+      // ignore
+    }
+    activeAudioElement = null;
+  }
+  const androidTTS = (window as any).AndroidTTS;
+  if (androidTTS && typeof androidTTS.stop === 'function') {
+    try {
+      androidTTS.stop();
+    } catch {
+      // ignore
+    }
+  }
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    try {
+      window.speechSynthesis.cancel();
+    } catch {
+      // ignore
+    }
+  }
+  setSpeakingState(false);
 }
 
 function getHumanUsAudioUrls(textToSpeak: string, gender: 'male' | 'female'): string[] {
@@ -253,7 +285,7 @@ function speakOfflineFallback(textToSpeak: string, rate: number, gender: 'male' 
   }
 }
 
-// Primary Speech Function: Prioritizes Natural Human American English (en-US) Audio
+// Primary Speech Function: Prioritizes Natural Human American English (en-US) Audio (Single-instance, non-overlapping)
 export function speakText(
   text: string,
   lang = 'en-US',
@@ -266,35 +298,30 @@ export function speakText(
     const textToSpeak = cleanSpokenText(text);
     if (!textToSpeak) return;
 
+    // Cleanly stop any ongoing speech without triggering error handlers
+    stopSpeaking();
+    const sessionId = ++currentSpeechSessionId;
+
     const voiceGender: 'male' | 'female' =
       gender || (textToSpeak.length % 2 === 0 ? 'female' : 'male');
 
-    if (activeAudioElement) {
-      try {
-        activeAudioElement.pause();
-        activeAudioElement.src = '';
-      } catch {
-        // ignore
-      }
-      activeAudioElement = null;
-    }
-
-    if ('speechSynthesis' in window) {
-      try {
-        window.speechSynthesis.cancel();
-      } catch {
-        // ignore
-      }
-    }
-
     const urls = getHumanUsAudioUrls(textToSpeak, voiceGender);
-    const playbackRate = rate < 0.75 ? 0.72 : 1.0;
+    const playbackRate = rate < 0.75 ? 0.68 : 1.0;
 
     const tryPlayUrl = (urlIndex: number) => {
+      if (sessionId !== currentSpeechSessionId) return;
+
       if (urlIndex >= urls.length) {
         speakOfflineFallback(textToSpeak, rate, voiceGender);
         return;
       }
+
+      let fallbackTriggered = false;
+      const triggerNext = () => {
+        if (fallbackTriggered || sessionId !== currentSpeechSessionId) return;
+        fallbackTriggered = true;
+        tryPlayUrl(urlIndex + 1);
+      };
 
       try {
         const audio = new Audio(urls[urlIndex]);
@@ -305,21 +332,29 @@ export function speakText(
         }
         activeAudioElement = audio;
 
-        audio.onplaying = () => setSpeakingState(true);
-        audio.onended = () => setSpeakingState(false);
+        audio.onplaying = () => {
+          if (sessionId === currentSpeechSessionId) {
+            setSpeakingState(true);
+          }
+        };
+        audio.onended = () => {
+          if (sessionId === currentSpeechSessionId) {
+            setSpeakingState(false);
+          }
+        };
         audio.onerror = () => {
-          tryPlayUrl(urlIndex + 1);
+          triggerNext();
         };
 
         setSpeakingState(true);
         const playPromise = audio.play();
         if (playPromise !== undefined) {
           playPromise.catch(() => {
-            tryPlayUrl(urlIndex + 1);
+            triggerNext();
           });
         }
       } catch {
-        tryPlayUrl(urlIndex + 1);
+        triggerNext();
       }
     };
 
