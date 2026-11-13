@@ -126,23 +126,39 @@ export const MapView: React.FC<MapViewProps> = ({
                         ? '-translate-x-12 sm:-translate-x-16'
                         : 'translate-x-12 sm:translate-x-16';
 
+                    const isRoundStart = world.id === 0 && (phase.phaseNumber - 1) % 5 === 0;
+                    const roundNum = Math.floor((phase.phaseNumber - 1) / 5) + 1;
+                    const roundLabels: Record<number, string> = {
+                      1: 'Rodada 1/4 • Essenciais do Dia a Dia (Alimentos → Animais → Casa → Roupas → Prática)',
+                      2: 'Rodada 2/4 • Muito Comuns no Cotidiano (Feira → Zoológico → Cozinha → Transportes → Prática)',
+                      3: 'Rodada 3/4 • Conhecidos pelo Público Geral (Refeições → Marinhos/Aves → Escola → Cidade → Prática)',
+                      4: 'Rodada 4/4 • Expansão & Domínio (Doces/Bebidas → Exóticos → Ferramentas → Corpo/Natureza → Prática)',
+                    };
+
                     return (
-                      <div
-                        key={phase.id}
-                        className={`flex flex-col items-center transition-all ${offsetClass}`}
-                      >
-                        {/* Node Button */}
-                        <div className="relative group flex flex-col items-center">
-                          {phase.type === 'boss' && (
-                            <div className="mb-2 px-3 py-0.5 bg-gradient-to-r from-rose-600 to-amber-500 text-white text-[10px] font-black tracking-wider uppercase rounded-full shadow-md flex items-center gap-1">
-                              <span>👑 BOSS FINAL</span>
-                            </div>
-                          )}
-                          {phase.type === 'chest' && (
-                            <div className="mb-2 px-2.5 py-0.5 bg-amber-400 text-amber-950 text-[10px] font-black tracking-wider uppercase rounded-full shadow-xs flex items-center gap-1">
-                              <span>🎁 BAÚ BÔNUS</span>
-                            </div>
-                          )}
+                      <React.Fragment key={phase.id}>
+                        {isRoundStart && (
+                          <div className="w-full py-2 px-3.5 rounded-2xl bg-amber-50 border-2 border-amber-200/90 text-center shadow-2xs">
+                            <span className="text-[11px] sm:text-xs font-black text-amber-900 tracking-tight block">
+                              🔄 {roundLabels[roundNum]}
+                            </span>
+                          </div>
+                        )}
+                        <div
+                          className={`flex flex-col items-center transition-all ${offsetClass}`}
+                        >
+                          {/* Node Button */}
+                          <div className="relative group flex flex-col items-center">
+                            {phase.type === 'boss' && (
+                              <div className="mb-2 px-3 py-0.5 bg-gradient-to-r from-rose-600 to-amber-500 text-white text-[10px] font-black tracking-wider uppercase rounded-full shadow-md flex items-center gap-1">
+                                <span>{world.id === 0 ? `🎯 PRÁTICA FINAL • RODADA 4` : '👑 BOSS FINAL'}</span>
+                              </div>
+                            )}
+                            {phase.type === 'chest' && (
+                              <div className="mb-2 px-2.5 py-0.5 bg-amber-400 text-amber-950 text-[10px] font-black tracking-wider uppercase rounded-full shadow-xs flex items-center gap-1">
+                                <span>{world.id === 0 ? `🎯 PRÁTICA • RODADA ${phase.phaseNumber / 5}` : '🎁 BAÚ BÔNUS'}</span>
+                              </div>
+                            )}
                           <button
                             disabled={!unlocked}
                             onClick={() => {
@@ -201,6 +217,7 @@ export const MapView: React.FC<MapViewProps> = ({
                           </span>
                         </div>
                       </div>
+                      </React.Fragment>
                     );
                   })}
                 </div>

@@ -5,8 +5,8 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const token = process.env.GITHUB_TOKEN;
 const repo = 'thiagothomazolli-prog/lingo-world';
-const tag = 'v1.13.0';
-const releaseName = 'Lingo World v1.13.0 - Imagens Grandes Isoladas em Fundo Branco, Ordem Brasileira e Tela Inicial Clean';
+const tag = 'v1.14.0';
+const releaseName = 'Lingo World v1.14.0 - Imagens Sem Cortes e Sem Tarja, Frutas Inteiras/Cortadas, Rodadas Intercaladas e Prática de Palavras';
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -22,9 +22,9 @@ async function getLatestCompletedRun() {
       }
     });
     const data = await res.json();
-    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.13.0'));
+    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.14.0'));
     if (!latestRun) {
-      console.log('Waiting for v1.13.0 workflow run to appear...');
+      console.log('Waiting for v1.14.0 workflow run to appear...');
       await sleep(5000);
       continue;
     }
@@ -98,7 +98,7 @@ async function run() {
   const rootDir = path.resolve(__dirname, '..');
   const zipPath = path.join(rootDir, 'app-debug.zip');
   const extractDir = path.join(rootDir, 'extracted_apk');
-  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.13.0.apk');
+  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.14.0.apk');
 
   fs.writeFileSync(zipPath, buffer);
   console.log('Downloaded app-debug.zip, size:', buffer.length);
@@ -118,17 +118,22 @@ async function run() {
 
   fs.copyFileSync(path.join(extractDir, apkName), apkOutPath);
   const apkStats = fs.statSync(apkOutPath);
-  console.log(`Found APK: LingoWorld-v1.13.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`Found APK: LingoWorld-v1.14.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
 
   console.log('4. Creating GitHub Release', tag);
-  const body = `## 🚀 Lingo World v1.13.0 — Imagens Grandes Isoladas em Fundo Branco, Ordem de Familiaridade Brasileira e Tela Inicial Clean
+  const body = `## 🚀 Lingo World v1.14.0 — Imagens Sem Cortes e Sem Tarja, Frutas Inteiras/Cortadas, Módulos Intercalados em Rodadas e Prática de Palavras
 
 ### ✨ Principais Melhorias desta Versão:
-- **Imagens Grandes, Nítidas e Isoladas em Fundo Branco (Estilo Estúdio):** Todos os 480 itens agora utilizam fotografias de estúdio com o único objeto isolado em fundo branco puro (\`object-contain\` em cartões amplos), sem folhas soltas, árvores, colagens ou elementos desconexos.
-- **Ordem Pensada para o Contexto Brasileiro:**
-  - **Frutas & Alimentos:** Começa pelas frutas e comidas mais comuns na rotina brasileira (Maçã, Banana, Laranja, Morango, Uva, Melancia, Abacaxi, Manga, Mamão, Limão, Mexerica, Goiaba, Maracujá, Melão, Abacate, Coco, Mandioca, Quiabo, Chuchu, Pão de Queijo, Arroz, Feijão), deixando itens menos frequentes apenas para o final do 4º módulo.
-  - **Animais:** Módulo 1 traz exclusivamente **Pets, Quintal e Fazenda** (Cachorro, Gato, Pássaro, Peixe, Coelho, Tartaruga, Papagaio, Hamster, Cavalo, Vaca, Porco, Galinha, Galo, Pintinho, Pato, Ovelha...); Módulo 2 traz os **Animais de Zoológico & Safári** (Leão, Tigre, Elefante, Girafa, Macaco, Zebra, Urso, Panda, Jacaré, Onça, Tucano, Arara...); Módulo 3 traz os **Marinhos, Aves e Fauna Brasileira conhecidos pelo público** (Tubarão, Baleia, Golfinho, Polvo, Águia, Coruja, Beija-flor, Capivara, Bicho-preguiça, Tamanduá, Tatu...); e somente o Módulo 4 traz os menos comuns (removido *Texugo/Badger* e outros animais obscuros).
-- **Tela Inicial Clean:** *Teste de Nivelamento CEFR*, *Missões Diárias* (*Conquiste 1 Fase no Mapa*, *Baú de Ouro*) e *Ranking Top 5* foram transferidos para a aba **Estudar**, deixando a página inicial totalmente limpa e focada nas lições.`;
+- **Imagens Sem Cortes e Sem Tarja Inferior:**
+  - Removido o recorte quadrado automático (\`c=7\`) que cortava as laterais ou o topo dos itens; agora todas as 480 fotos preservam sua proporção original inteira em containers amplos (\`w-full object-contain\`).
+  - Removidos termos de bancos de imagens que geravam tarja inferior e adicionada limpeza automática de qualquer tarja na borda inferior via Canvas sem cortar o objeto.
+- **Frutas Inteiras vs. Cortadas ao Meio (Zero Frutas Picadas em Cubos):**
+  - Frutas mais reconhecidas **inteiras** (*Maçã, Banana, Morango, Uva, Abacaxi, Manga, Pera, Pêssego, Mexerica, Ameixa, Cereja, Caju, Jabuticaba, Caqui, Amora, Jaca, Framboesa, Mirtilo*, além de todos os legumes e verduras) aparecem inteiras e com seu formato característico, nunca picadas.
+  - Frutas mais reconhecidas **abertas ao meio** (*Mamão, Melancia, Maracujá, Goiaba, Abacate, Coco, Kiwi, Laranja, Limão, Melão, Carambola, Romã, Pitaya, Figo*) exibem a fruta com seu interior característico visível.
+- **Módulos Intercalados em 4 Rodadas (Sem Cansaço):**
+  - Em vez de 4 módulos seguidos do mesmo tema, o curso agora intercala **1 módulo de cada categoria por Rodada**: **Alimentos → Animais → Casa & Objetos → Cidade & Cotidiano**, repetindo esse ciclo nas Rodadas 1, 2, 3 e 4.
+- **Exercício de Prática com Palavras Simples ao Final de Cada Rodada:**
+  - Ao final das Rodadas 1, 2, 3 e 4 (Fases 5, 10, 15 e 20), há um módulo especial de **Prática da Rodada: Palavras & Associações Simples** usando combinações curtas e fáceis de associar com o vocabulário recém-aprendido (*"Red apple"*, *"Yellow banana"*, *"Happy dog"*, *"Wooden chair"*, *"Blue shirt"*, *"New sneakers"*, etc.).`;
 
   const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases`, {
     method: 'POST',
@@ -154,9 +159,9 @@ async function run() {
   }
   console.log('Release created:', releaseData.id, releaseData.html_url);
 
-  console.log('5. Uploading LingoWorld-v1.13.0.apk to release...');
+  console.log('5. Uploading LingoWorld-v1.14.0.apk to release...');
   const apkBuffer = fs.readFileSync(apkOutPath);
-  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.13.0.apk`;
+  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.14.0.apk`;
 
   const uploadRes = await fetch(uploadUrl, {
     method: 'POST',
@@ -172,7 +177,7 @@ async function run() {
   const assetData = await uploadRes.json();
   console.log('Asset uploaded successfully!', assetData.browser_download_url);
   console.log('\n=======================================');
-  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.13.0.apk`);
+  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.14.0.apk`);
   console.log('=======================================\n');
 }
 
