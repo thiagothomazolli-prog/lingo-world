@@ -5,8 +5,8 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const token = process.env.GITHUB_TOKEN;
 const repo = 'thiagothomazolli-prog/lingo-world';
-const tag = 'v1.14.0';
-const releaseName = 'Lingo World v1.14.0 - Imagens Sem Cortes e Sem Tarja, Frutas Inteiras/Cortadas, Rodadas Intercaladas e Prática de Palavras';
+const tag = 'v1.14.1';
+const releaseName = 'Lingo World v1.14.1 - Todas as Fases Desbloqueadas para Teste + Rodadas Intercaladas e Imagens Sem Cortes';
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -22,9 +22,9 @@ async function getLatestCompletedRun() {
       }
     });
     const data = await res.json();
-    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.14.0'));
+    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.14.1'));
     if (!latestRun) {
-      console.log('Waiting for v1.14.0 workflow run to appear...');
+      console.log('Waiting for v1.14.1 workflow run to appear...');
       await sleep(5000);
       continue;
     }
@@ -98,7 +98,7 @@ async function run() {
   const rootDir = path.resolve(__dirname, '..');
   const zipPath = path.join(rootDir, 'app-debug.zip');
   const extractDir = path.join(rootDir, 'extracted_apk');
-  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.14.0.apk');
+  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.14.1.apk');
 
   fs.writeFileSync(zipPath, buffer);
   console.log('Downloaded app-debug.zip, size:', buffer.length);
@@ -118,22 +118,16 @@ async function run() {
 
   fs.copyFileSync(path.join(extractDir, apkName), apkOutPath);
   const apkStats = fs.statSync(apkOutPath);
-  console.log(`Found APK: LingoWorld-v1.14.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`Found APK: LingoWorld-v1.14.1.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
 
   console.log('4. Creating GitHub Release', tag);
-  const body = `## 🚀 Lingo World v1.14.0 — Imagens Sem Cortes e Sem Tarja, Frutas Inteiras/Cortadas, Módulos Intercalados em Rodadas e Prática de Palavras
+  const body = `## 🚀 Lingo World v1.14.1 — Todas as Fases Abertas para Teste + Rodadas Intercaladas e Imagens Sem Cortes
 
 ### ✨ Principais Melhorias desta Versão:
-- **Imagens Sem Cortes e Sem Tarja Inferior:**
-  - Removido o recorte quadrado automático (\`c=7\`) que cortava as laterais ou o topo dos itens; agora todas as 480 fotos preservam sua proporção original inteira em containers amplos (\`w-full object-contain\`).
-  - Removidos termos de bancos de imagens que geravam tarja inferior e adicionada limpeza automática de qualquer tarja na borda inferior via Canvas sem cortar o objeto.
-- **Frutas Inteiras vs. Cortadas ao Meio (Zero Frutas Picadas em Cubos):**
-  - Frutas mais reconhecidas **inteiras** (*Maçã, Banana, Morango, Uva, Abacaxi, Manga, Pera, Pêssego, Mexerica, Ameixa, Cereja, Caju, Jabuticaba, Caqui, Amora, Jaca, Framboesa, Mirtilo*, além de todos os legumes e verduras) aparecem inteiras e com seu formato característico, nunca picadas.
-  - Frutas mais reconhecidas **abertas ao meio** (*Mamão, Melancia, Maracujá, Goiaba, Abacate, Coco, Kiwi, Laranja, Limão, Melão, Carambola, Romã, Pitaya, Figo*) exibem a fruta com seu interior característico visível.
-- **Módulos Intercalados em 4 Rodadas (Sem Cansaço):**
-  - Em vez de 4 módulos seguidos do mesmo tema, o curso agora intercala **1 módulo de cada categoria por Rodada**: **Alimentos → Animais → Casa & Objetos → Cidade & Cotidiano**, repetindo esse ciclo nas Rodadas 1, 2, 3 e 4.
-- **Exercício de Prática com Palavras Simples ao Final de Cada Rodada:**
-  - Ao final das Rodadas 1, 2, 3 e 4 (Fases 5, 10, 15 e 20), há um módulo especial de **Prática da Rodada: Palavras & Associações Simples** usando combinações curtas e fáceis de associar com o vocabulário recém-aprendido (*"Red apple"*, *"Yellow banana"*, *"Happy dog"*, *"Wooden chair"*, *"Blue shirt"*, *"New sneakers"*, etc.).`;
+- **🔓 Todas as Fases Desbloqueadas para Teste:** Todas as 20 fases das 4 Rodadas do Módulo 0 (além de todos os Mundos 1 a 7) estão 100% abertas no mapa para você clicar e testar livremente qualquer lição ou prática de rodada sem precisar concluir as anteriores primeiro.
+- **Imagens Sem Cortes e Sem Tarja Inferior:** Proporção original inteira (\`w-full object-contain\`) sem recorte quadrado (\`c=7\`) e remoção automática de qualquer tarja na borda inferior.
+- **Frutas Inteiras vs. Cortadas ao Meio (Zero Frutas Picadas em Cubos):** Frutas mais conhecidas inteiras aparecem inteiras; frutas mais conhecidas abertas ao meio mostram seu interior característico.
+- **Módulos Intercalados em 4 Rodadas + Prática de Palavras Simples ao Final de Cada Rodada:** Ciclo intercalado (*Alimentos → Animais → Casa & Objetos → Cidade & Cotidiano → Prática de Palavras da Rodada*).`;
 
   const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases`, {
     method: 'POST',
@@ -159,9 +153,9 @@ async function run() {
   }
   console.log('Release created:', releaseData.id, releaseData.html_url);
 
-  console.log('5. Uploading LingoWorld-v1.14.0.apk to release...');
+  console.log('5. Uploading LingoWorld-v1.14.1.apk to release...');
   const apkBuffer = fs.readFileSync(apkOutPath);
-  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.14.0.apk`;
+  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.14.1.apk`;
 
   const uploadRes = await fetch(uploadUrl, {
     method: 'POST',
@@ -177,7 +171,7 @@ async function run() {
   const assetData = await uploadRes.json();
   console.log('Asset uploaded successfully!', assetData.browser_download_url);
   console.log('\n=======================================');
-  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.14.0.apk`);
+  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.14.1.apk`);
   console.log('=======================================\n');
 }
 

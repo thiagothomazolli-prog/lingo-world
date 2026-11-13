@@ -32,34 +32,9 @@ export const MapView: React.FC<MapViewProps> = ({
   onOpenAiStudio,
   onOpenShop,
 }) => {
-  // Check if a phase is unlocked
-  const isPhaseUnlocked = (phase: Phase): boolean => {
-    // First phase of World 0 and World 1 is always unlocked for smooth start
-    if ((phase.worldId === 0 || phase.worldId === 1) && phase.phaseNumber === 1) return true;
-
-    // If already completed
-    if (user.completedPhaseIds.includes(phase.id)) return true;
-
-    // Check if previous phase in same world is completed
-    const currentWorld = WORLDS_DATA.find((w) => w.id === phase.worldId);
-    if (!currentWorld) return false;
-
-    const phaseIndex = currentWorld.phases.findIndex((p) => p.id === phase.id);
-    if (phaseIndex > 0) {
-      const prevPhase = currentWorld.phases[phaseIndex - 1];
-      return user.completedPhaseIds.includes(prevPhase.id);
-    }
-
-    // First phase of world N is unlocked if previous world's last phase is completed
-    if (phase.worldId > 0 && phaseIndex === 0) {
-      const prevWorld = WORLDS_DATA.find((w) => w.id === phase.worldId - 1);
-      if (prevWorld && prevWorld.phases.length > 0) {
-        const lastPhaseOfPrev = prevWorld.phases[prevWorld.phases.length - 1];
-        return user.completedPhaseIds.includes(lastPhaseOfPrev.id);
-      }
-    }
-
-    return false;
+  // Check if a phase is unlocked (Versão de teste: todas as fases abertas para livre navegação e teste)
+  const isPhaseUnlocked = (_phase: Phase): boolean => {
+    return true;
   };
 
   return (
