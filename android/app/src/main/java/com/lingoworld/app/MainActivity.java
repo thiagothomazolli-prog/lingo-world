@@ -170,42 +170,74 @@ public class MainActivity extends BridgeActivity implements TextToSpeech.OnInitL
         }
 
         try {
-            boolean isMale = "male".equalsIgnoreCase(gender);
-            // Strictly American English (en-US) as requested
-            Locale targetLocale = Locale.US;
-            tts.setLanguage(targetLocale);
+            boolean isPortuguese = lang != null && lang.toLowerCase().startsWith("pt");
+            boolean isMale = !isPortuguese && "male".equalsIgnoreCase(gender);
 
-            try {
-                Set<Voice> voices = tts.getVoices();
-                if (voices != null && !voices.isEmpty()) {
-                    List<Voice> usVoices = new ArrayList<>();
-
-                    for (Voice v : voices) {
-                        Locale loc = v.getLocale();
-                        if (loc != null
-                                && "en".equalsIgnoreCase(loc.getLanguage())
-                                && ("US".equalsIgnoreCase(loc.getCountry()) || "USA".equalsIgnoreCase(loc.getCountry()) || v.getName().toLowerCase().startsWith("en-us"))) {
-                            usVoices.add(v);
+            if (isPortuguese) {
+                Locale ptBr = new Locale("pt", "BR");
+                tts.setLanguage(ptBr);
+                try {
+                    Set<Voice> voices = tts.getVoices();
+                    if (voices != null && !voices.isEmpty()) {
+                        List<Voice> ptVoices = new ArrayList<>();
+                        for (Voice v : voices) {
+                            Locale loc = v.getLocale();
+                            if (loc != null && "pt".equalsIgnoreCase(loc.getLanguage())) {
+                                ptVoices.add(v);
+                            }
+                        }
+                        if (!ptVoices.isEmpty()) {
+                            Collections.sort(ptVoices, new Comparator<Voice>() {
+                                @Override
+                                public int compare(Voice a, Voice b) {
+                                    return Integer.compare(scoreUsVoice(b, false), scoreUsVoice(a, false));
+                                }
+                            });
+                            tts.setVoice(ptVoices.get(0));
                         }
                     }
-
-                    if (!usVoices.isEmpty()) {
-                        Collections.sort(usVoices, new Comparator<Voice>() {
-                            @Override
-                            public int compare(Voice a, Voice b) {
-                                return Integer.compare(scoreUsVoice(b, isMale), scoreUsVoice(a, isMale));
-                            }
-                        });
-                        tts.setVoice(usVoices.get(0));
-                    }
+                } catch (Exception ignored) {
                 }
-            } catch (Exception ignored) {
-            }
+                // Voz meiga, calma e acolhedora de professora / mãe bondosa
+                tts.setPitch(1.03f);
+                tts.setSpeechRate(0.90f);
+            } else {
+                // Strictly American English (en-US) as requested
+                Locale targetLocale = Locale.US;
+                tts.setLanguage(targetLocale);
 
-            // NEVER warp pitch away from 1.0f so voice stays 100% human and natural (never robotic!)
-            tts.setPitch(1.0f);
-            float safeRate = (rate < 0.75f) ? 0.72f : 0.96f;
-            tts.setSpeechRate(safeRate);
+                try {
+                    Set<Voice> voices = tts.getVoices();
+                    if (voices != null && !voices.isEmpty()) {
+                        List<Voice> usVoices = new ArrayList<>();
+
+                        for (Voice v : voices) {
+                            Locale loc = v.getLocale();
+                            if (loc != null
+                                    && "en".equalsIgnoreCase(loc.getLanguage())
+                                    && ("US".equalsIgnoreCase(loc.getCountry()) || "USA".equalsIgnoreCase(loc.getCountry()) || v.getName().toLowerCase().startsWith("en-us"))) {
+                                usVoices.add(v);
+                            }
+                        }
+
+                        if (!usVoices.isEmpty()) {
+                            Collections.sort(usVoices, new Comparator<Voice>() {
+                                @Override
+                                public int compare(Voice a, Voice b) {
+                                    return Integer.compare(scoreUsVoice(b, isMale), scoreUsVoice(a, isMale));
+                                }
+                            });
+                            tts.setVoice(usVoices.get(0));
+                        }
+                    }
+                } catch (Exception ignored) {
+                }
+
+                // NEVER warp pitch away from 1.0f so voice stays 100% human and natural (never robotic!)
+                tts.setPitch(1.0f);
+                float safeRate = (rate < 0.75f) ? 0.72f : 0.96f;
+                tts.setSpeechRate(safeRate);
+            }
 
             Bundle params = new Bundle();
             params.putFloat(TextToSpeech.Engine.KEY_PARAM_VOLUME, 1.0f);

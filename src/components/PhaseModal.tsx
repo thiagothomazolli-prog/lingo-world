@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import confetti from 'canvas-confetti';
 import { X, Volume2, Mic, MicOff, CheckCircle2, AlertCircle, Star, ArrowRight, Lightbulb, Eye, Lock } from 'lucide-react';
-import { Phase, Exercise, UserProfile } from '../types';
-import { speakText, stopSpeaking, getExerciseVoiceGender, preloadExerciseAudio } from '../utils/storage';
+import { Phase, Exercise, UserProfile, AssociativePair } from '../types';
+import { speakText, speakTeacherExplanationPt, stopSpeaking, getExerciseVoiceGender, preloadExerciseAudio } from '../utils/storage';
 import { MascotLingo } from './MascotLingo';
 import { sfx } from '../utils/soundEffects';
 import { VocabIllustration, preloadVocabImages, getRealVocabPhotoUrl } from '../utils/vocabIllustrations';
@@ -203,6 +203,13 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   const [wrongExamItems, setWrongExamItems] = useState<WrongExamItem[]>([]);
   const [hasPlayedAudioOnce, setHasPlayedAudioOnce] = useState(false);
   const [showWrittenWord, setShowWrittenWord] = useState(false);
+  const [selectedLeftPairId, setSelectedLeftPairId] = useState<string | null>(null);
+  const [selectedRightPairId, setSelectedRightPairId] = useState<string | null>(null);
+  const [matchedPairIds, setMatchedPairIds] = useState<string[]>([]);
+  const [wrongPairFlash, setWrongPairFlash] = useState<{ left: string; right: string } | null>(null);
+  const [pairMatchTip, setPairMatchTip] = useState<string>('');
+  const [pairExerciseHadMistake, setPairExerciseHadMistake] = useState(false);
+  const [shuffledRightPairs, setShuffledRightPairs] = useState<AssociativePair[]>([]);
   const lastAutoSpokenIndexRef = useRef<number>(-1);
 
   const currentExercise: Exercise | undefined = exerciseQueue[currentExerciseIndex];
@@ -252,11 +259,35 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     };
   }, []);
 
+  const preparePairMatchForExercise = (ex?: Exercise) => {
+    setSelectedLeftPairId(null);
+    setSelectedRightPairId(null);
+    setMatchedPairIds([]);
+    setWrongPairFlash(null);
+    setPairMatchTip('');
+    setPairExerciseHadMistake(false);
+
+    if (ex?.type === 'pair-match' && ex.pairs && ex.pairs.length > 0) {
+      let shuffled = fisherYatesShuffle(ex.pairs);
+      // Guarantee right column is not identical in order to left column
+      if (shuffled.length > 1 && shuffled.every((p, idx) => p.id === ex.pairs![idx].id)) {
+        const tmp = shuffled[0];
+        shuffled[0] = shuffled[1];
+        shuffled[1] = tmp;
+      }
+      setShuffledRightPairs(shuffled);
+    } else {
+      setShuffledRightPairs([]);
+    }
+  };
+
   // Preload upcoming images & auto-speak on exercise start
   useEffect(() => {
     if (step === 'exercise' && currentExercise) {
+      preparePairMatchForExercise(currentExercise);
+
       const phraseToSpeak = getSpokenPhraseForExercise(currentExercise);
-      if (phraseToSpeak) {
+      if (phraseToSpeak && currentExercise.type !== 'pair-match') {
         preloadExerciseAudio([phraseToSpeak], exerciseVoiceGender);
       }
 
@@ -267,7 +298,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
         if (!ex) continue;
         if (ex.visualOptions) {
           ex.visualOptions.forEach((v) => upcomingWords.push(v.text));
-        } else {
+        } else if (ex.type !== 'pair-match') {
           upcomingWords.push(getSpokenPhraseForExercise(ex));
         }
       }
@@ -276,9 +307,13 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
       }
 
       // If not already triggered synchronously by button click, trigger now
-      if (phraseToSpeak && user.autoSpeak !== false && lastAutoSpokenIndexRef.current !== currentExerciseIndex) {
+      if (user.autoSpeak !== false && lastAutoSpokenIndexRef.current !== currentExerciseIndex) {
         lastAutoSpokenIndexRef.current = currentExerciseIndex;
-        speakText(phraseToSpeak, 'en-US', user.speechSpeed, exerciseVoiceGender);
+        if (currentExercise.type === 'pair-match' && (currentExercise.teacherAudioPt || currentExercise.conceptHeader)) {
+          speakTeacherExplanationPt(currentExercise.teacherAudioPt || currentExercise.conceptHeader || '');
+        } else if (phraseToSpeak) {
+          speakText(phraseToSpeak, 'en-US', user.speechSpeed, exerciseVoiceGender);
+        }
       }
 
       // Unlock the "Ver palavra em inglês" button after the first audio execution completes (or after 950ms safety timer)
@@ -291,6 +326,8 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   }, [currentExerciseIndex, step]);
 
   const handleStartExercise = () => {
+    const firstEx = exerciseQueue[0];
+    preparePairMatchForExercise(firstEx);
     setHasPlayedAudioOnce(false);
     setShowWrittenWord(false);
     setSelectedOption(null);
@@ -303,13 +340,16 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     setStep('exercise');
 
     // Speak synchronously inside the user gesture so Exercise 1 always plays immediately
-    const firstEx = exerciseQueue[0];
     if (firstEx && user.autoSpeak !== false) {
-      const phrase = getSpokenPhraseForExercise(firstEx);
-      const gender = getExerciseVoiceGender(firstEx.id, 0);
-      if (phrase) {
-        lastAutoSpokenIndexRef.current = 0;
-        speakText(phrase, 'en-US', user.speechSpeed, gender);
+      lastAutoSpokenIndexRef.current = 0;
+      if (firstEx.type === 'pair-match' && (firstEx.teacherAudioPt || firstEx.conceptHeader)) {
+        speakTeacherExplanationPt(firstEx.teacherAudioPt || firstEx.conceptHeader || '');
+      } else {
+        const phrase = getSpokenPhraseForExercise(firstEx);
+        const gender = getExerciseVoiceGender(firstEx.id, 0);
+        if (phrase) {
+          speakText(phrase, 'en-US', user.speechSpeed, gender);
+        }
       }
     }
   };
@@ -452,10 +492,89 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     }
   };
 
+  const handleSelectPair = (side: 'left' | 'right', pair: AssociativePair) => {
+    if (!currentExercise || currentExercise.type !== 'pair-match' || !currentExercise.pairs) return;
+    if (matchedPairIds.includes(pair.id)) return;
+
+    if (side === 'left') {
+      speakText(pair.en, 'en-US', user.speechSpeed, 'female');
+    } else {
+      sfx.playTap();
+    }
+
+    const nextLeft = side === 'left' ? pair.id : selectedLeftPairId;
+    const nextRight = side === 'right' ? pair.id : selectedRightPairId;
+
+    if (side === 'left') setSelectedLeftPairId(pair.id);
+    else setSelectedRightPairId(pair.id);
+
+    if (nextLeft && nextRight) {
+      if (nextLeft === nextRight) {
+        // Par correto!
+        sfx.playCorrect();
+        const matchedObj = currentExercise.pairs.find((p) => p.id === nextLeft);
+        const updatedMatched = [...matchedPairIds, nextLeft];
+        setMatchedPairIds(updatedMatched);
+        setSelectedLeftPairId(null);
+        setSelectedRightPairId(null);
+        setWrongPairFlash(null);
+        if (matchedObj?.tipPt) {
+          setPairMatchTip(matchedObj.tipPt);
+        }
+
+        if (updatedMatched.length === currentExercise.pairs.length) {
+          setIsCorrect(!pairExerciseHadMistake);
+          setHasAnswered(true);
+          if (!pairExerciseHadMistake) {
+            setMasteredIds((prev) => (prev.includes(currentExercise.id) ? prev : [...prev, currentExercise.id]));
+          }
+          setFeedbackMessage(currentExercise.explanation || 'Parabéns! Você conectou todos os pares corretamente!');
+        }
+      } else {
+        // Par incorreto
+        sfx.playIncorrect();
+        const leftObj = currentExercise.pairs.find((p) => p.id === nextLeft);
+        const rightObj = currentExercise.pairs.find((p) => p.id === nextRight);
+        setWrongPairFlash({ left: nextLeft, right: nextRight });
+        setPairMatchTip(
+          leftObj
+            ? `💡 Dica carinhosa da Professora: "${leftObj.en}" significa "${leftObj.pt}". Tente conectar com o par certinho!`
+            : 'Tente novamente com calma!'
+        );
+
+        if (!pairExerciseHadMistake) {
+          setPairExerciseHadMistake(true);
+          setMistakesCount((prev) => prev + 1);
+          if (leftObj) {
+            setWrongExamItems((prev) => [
+              ...prev,
+              {
+                questionNumber: currentExerciseIndex + 1,
+                word: leftObj.en,
+                translationPt: leftObj.pt,
+                selectedWrong: rightObj ? rightObj.pt : 'Par incorreto',
+                emoji: leftObj.emoji || '🔗',
+                phoneticHint: leftObj.phonetic,
+              },
+            ]);
+          }
+        }
+
+        setTimeout(() => {
+          setSelectedLeftPairId(null);
+          setSelectedRightPairId(null);
+          setWrongPairFlash(null);
+        }, 700);
+      }
+    }
+  };
+
   const handleRestartExam = () => {
     sfx.playTap();
     stopSpeaking();
     const freshQueue = randomizeExerciseQueue(phase.exercises);
+    const firstEx = freshQueue[0];
+    preparePairMatchForExercise(firstEx);
     setExerciseQueue(freshQueue);
     setMasteredIds([]);
     setMistakesCount(0);
@@ -472,13 +591,16 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     setSpokenResult('');
     setStep('exercise');
 
-    const firstEx = freshQueue[0];
     if (firstEx && user.autoSpeak !== false) {
-      const phrase = getSpokenPhraseForExercise(firstEx);
-      const gender = getExerciseVoiceGender(firstEx.id, 0);
-      if (phrase) {
-        lastAutoSpokenIndexRef.current = 0;
-        speakText(phrase, 'en-US', user.speechSpeed, gender);
+      lastAutoSpokenIndexRef.current = 0;
+      if (firstEx.type === 'pair-match' && (firstEx.teacherAudioPt || firstEx.conceptHeader)) {
+        speakTeacherExplanationPt(firstEx.teacherAudioPt || firstEx.conceptHeader || '');
+      } else {
+        const phrase = getSpokenPhraseForExercise(firstEx);
+        const gender = getExerciseVoiceGender(firstEx.id, 0);
+        if (phrase) {
+          speakText(phrase, 'en-US', user.speechSpeed, gender);
+        }
       }
     }
   };
@@ -487,6 +609,8 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     sfx.playTap();
     if (currentExerciseIndex < exerciseQueue.length - 1) {
       const nextIndex = currentExerciseIndex + 1;
+      const nextEx = exerciseQueue[nextIndex];
+      preparePairMatchForExercise(nextEx);
       setHasPlayedAudioOnce(false);
       setShowWrittenWord(false);
       setSelectedOption(null);
@@ -499,13 +623,16 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
       setCurrentExerciseIndex(nextIndex);
 
       // Speak synchronously inside the user gesture so every transition plays reliably
-      const nextEx = exerciseQueue[nextIndex];
       if (nextEx && user.autoSpeak !== false) {
-        const phrase = getSpokenPhraseForExercise(nextEx);
-        const gender = getExerciseVoiceGender(nextEx.id, nextIndex);
-        if (phrase) {
-          lastAutoSpokenIndexRef.current = nextIndex;
-          speakText(phrase, 'en-US', user.speechSpeed, gender);
+        lastAutoSpokenIndexRef.current = nextIndex;
+        if (nextEx.type === 'pair-match' && (nextEx.teacherAudioPt || nextEx.conceptHeader)) {
+          speakTeacherExplanationPt(nextEx.teacherAudioPt || nextEx.conceptHeader || '');
+        } else {
+          const phrase = getSpokenPhraseForExercise(nextEx);
+          const gender = getExerciseVoiceGender(nextEx.id, nextIndex);
+          if (phrase) {
+            speakText(phrase, 'en-US', user.speechSpeed, gender);
+          }
         }
       }
     } else {
@@ -531,6 +658,9 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
   const isCheckDisabled = () => {
     if (!currentExercise) return true;
+    if (currentExercise.type === 'pair-match') {
+      return !currentExercise.pairs || matchedPairIds.length < currentExercise.pairs.length;
+    }
     if (currentExercise.type === 'word-order') return selectedWords.length === 0;
     if (currentExercise.type === 'fill-blank') return !fillBlankInput.trim();
     if (currentExercise.type === 'speaking-repeat') return false;
@@ -648,6 +778,41 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                 {currentExercise.skillCategory}
               </span>
             </div>
+
+            {/* Cabeçalho Explicativo da Professora Meiga (conceito resumido e fácil para uma criança de 5 anos) */}
+            {currentExercise.conceptHeader && (
+              <div className="p-3.5 rounded-2xl bg-gradient-to-r from-amber-50 via-rose-50/70 to-indigo-50 border-2 border-amber-200/90 shadow-xs space-y-2">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2 min-w-0">
+                    <span className="text-xl shrink-0">👩‍🏫</span>
+                    <div className="min-w-0">
+                      <span className="text-[10px] font-black uppercase tracking-wider text-amber-800 block">
+                        Explicação Carinhosa da Professora
+                      </span>
+                      {currentExercise.conceptTitle && (
+                        <span className="text-xs sm:text-sm font-black text-indigo-950 block truncate">
+                          {currentExercise.conceptTitle}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      speakTeacherExplanationPt(currentExercise.teacherAudioPt || currentExercise.conceptHeader || '')
+                    }
+                    className="px-3 py-1.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white font-black text-xs shadow-2xs flex items-center gap-1.5 shrink-0 cursor-pointer active:scale-95 transition-transform"
+                    title="Ouvir a explicação com a voz meiga da professora"
+                  >
+                    <Volume2 className="w-4 h-4" />
+                    <span>Ouvir Professora</span>
+                  </button>
+                </div>
+                <p className="text-xs sm:text-sm font-semibold text-slate-700 leading-relaxed">
+                  {currentExercise.conceptHeader}
+                </p>
+              </div>
+            )}
 
             {/* Exercise Prompt */}
             <h2 className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight leading-snug">
@@ -856,7 +1021,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                   </div>
                 )}
               </div>
-            ) : (
+            ) : currentExercise.type === 'pair-match' ? null : (
               <div className="space-y-2.5">
                 {currentExercise.contextSentence && (
                   <div className="p-3.5 bg-slate-50 border-2 border-slate-200 rounded-2xl space-y-1 shadow-xs">
@@ -1184,6 +1349,124 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                 {spokenResult && (
                   <div className="p-3 bg-indigo-50 border border-indigo-200 rounded-xl text-xs font-bold text-indigo-900">
                     Ouvido: "{spokenResult}"
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* 5. Exercício Associativo de Pares (Pronomes & Associações) */}
+            {currentExercise.type === 'pair-match' && currentExercise.pairs && (
+              <div className="space-y-3 pt-1">
+                <div className="flex items-center justify-between text-[11px] font-black uppercase tracking-wider text-slate-500 px-1">
+                  <span>🇺🇸 Toque no Inglês (🔊)</span>
+                  <span>
+                    Conectados: {matchedPairIds.length}/{currentExercise.pairs.length}
+                  </span>
+                  <span>🇧🇷 Toque no Par Certo</span>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  {/* Coluna da Esquerda: Inglês (com som ao tocar) */}
+                  <div className="space-y-2.5">
+                    {currentExercise.pairs.map((pair) => {
+                      const isMatched = matchedPairIds.includes(pair.id);
+                      const isSelected = selectedLeftPairId === pair.id;
+                      const isWrong = wrongPairFlash?.left === pair.id;
+
+                      let style =
+                        'bg-white border-2 border-slate-200 border-b-4 text-slate-900 hover:border-indigo-300';
+                      if (isMatched) {
+                        style =
+                          'bg-emerald-50 border-2 border-emerald-500 border-b-4 border-b-emerald-600 text-emerald-950 opacity-85';
+                      } else if (isWrong) {
+                        style =
+                          'bg-rose-50 border-2 border-rose-500 border-b-4 border-b-rose-600 text-rose-950 animate-pulse';
+                      } else if (isSelected) {
+                        style =
+                          'bg-indigo-50 border-2 border-indigo-600 border-b-4 border-b-indigo-700 text-indigo-950 ring-2 ring-indigo-300 scale-[1.02]';
+                      }
+
+                      return (
+                        <button
+                          key={`left-${pair.id}`}
+                          type="button"
+                          disabled={isMatched}
+                          onClick={() => handleSelectPair('left', pair)}
+                          className={`w-full min-h-[68px] p-3 rounded-2xl flex items-center justify-between gap-2 text-left transition-all cursor-pointer ${style}`}
+                        >
+                          <div className="min-w-0">
+                            <div className="flex items-center gap-1.5">
+                              {pair.emoji && <span className="text-lg shrink-0">{pair.emoji}</span>}
+                              <span className="text-base sm:text-lg font-black tracking-tight leading-tight">
+                                {pair.en}
+                              </span>
+                            </div>
+                            {pair.phonetic && (
+                              <span className="text-[11px] font-semibold text-indigo-600 block mt-0.5">
+                                {pair.phonetic}
+                              </span>
+                            )}
+                          </div>
+                          {isMatched ? (
+                            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
+                          ) : (
+                            <Volume2 className="w-4 h-4 text-indigo-500 shrink-0" />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Coluna da Direita: Significado / Associação em Português (embaralhada) */}
+                  <div className="space-y-2.5">
+                    {shuffledRightPairs.map((pair) => {
+                      const isMatched = matchedPairIds.includes(pair.id);
+                      const isSelected = selectedRightPairId === pair.id;
+                      const isWrong = wrongPairFlash?.right === pair.id;
+
+                      let style =
+                        'bg-white border-2 border-slate-200 border-b-4 text-slate-800 hover:border-amber-300';
+                      if (isMatched) {
+                        style =
+                          'bg-emerald-50 border-2 border-emerald-500 border-b-4 border-b-emerald-600 text-emerald-950 opacity-85';
+                      } else if (isWrong) {
+                        style =
+                          'bg-rose-50 border-2 border-rose-500 border-b-4 border-b-rose-600 text-rose-950 animate-pulse';
+                      } else if (isSelected) {
+                        style =
+                          'bg-amber-50 border-2 border-amber-500 border-b-4 border-b-amber-600 text-amber-950 ring-2 ring-amber-300 scale-[1.02]';
+                      }
+
+                      return (
+                        <button
+                          key={`right-${pair.id}`}
+                          type="button"
+                          disabled={isMatched}
+                          onClick={() => handleSelectPair('right', pair)}
+                          className={`w-full min-h-[68px] p-3 rounded-2xl flex items-center justify-between gap-2 text-left transition-all cursor-pointer ${style}`}
+                        >
+                          <span className="text-xs sm:text-sm font-extrabold leading-snug">
+                            {pair.pt}
+                          </span>
+                          {isMatched && <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Reforço Pedagógico Carinhoso da Professora a cada par conectado */}
+                {pairMatchTip && (
+                  <div className="p-3 rounded-2xl bg-indigo-50/90 border border-indigo-200 flex items-center justify-between gap-2 text-xs font-bold text-indigo-950 animate-in fade-in duration-150">
+                    <span>💝 {pairMatchTip}</span>
+                    <button
+                      type="button"
+                      onClick={() => speakTeacherExplanationPt(pairMatchTip)}
+                      className="p-1.5 rounded-lg bg-white text-indigo-600 hover:bg-indigo-100 shrink-0 cursor-pointer"
+                      title="Ouvir reforço da professora"
+                    >
+                      <Volume2 className="w-4 h-4" />
+                    </button>
                   </div>
                 )}
               </div>

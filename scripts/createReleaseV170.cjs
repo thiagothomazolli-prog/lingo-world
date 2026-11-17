@@ -5,8 +5,8 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const token = process.env.GITHUB_TOKEN;
 const repo = 'thiagothomazolli-prog/lingo-world';
-const tag = 'v1.16.0';
-const releaseName = 'Lingo World v1.16.0 - Imersão Completa por Ambientes (Casa, Rua, Escola, Mercado, Igreja) e Prova Escolar (Mínimo 70 Pontos)';
+const tag = 'v1.17.0';
+const releaseName = 'Lingo World v1.17.0 - Pronomes Associativos (Pessoais a Relativos), Explicação p/ 5 Anos e Voz Meiga da Professora';
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -22,9 +22,9 @@ async function getLatestCompletedRun() {
       }
     });
     const data = await res.json();
-    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.16.0'));
+    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.17.0'));
     if (!latestRun) {
-      console.log('Waiting for v1.16.0 workflow run to appear...');
+      console.log('Waiting for v1.17.0 workflow run to appear...');
       await sleep(5000);
       continue;
     }
@@ -98,7 +98,7 @@ async function run() {
   const rootDir = path.resolve(__dirname, '..');
   const zipPath = path.join(rootDir, 'app-debug.zip');
   const extractDir = path.join(rootDir, 'extracted_apk');
-  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.16.0.apk');
+  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.17.0.apk');
 
   fs.writeFileSync(zipPath, buffer);
   console.log('Downloaded app-debug.zip, size:', buffer.length);
@@ -118,30 +118,26 @@ async function run() {
 
   fs.copyFileSync(path.join(extractDir, apkName), apkOutPath);
   const apkStats = fs.statSync(apkOutPath);
-  console.log(`Found APK: LingoWorld-v1.16.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`Found APK: LingoWorld-v1.17.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
 
   console.log('4. Creating GitHub Release', tag);
-  const body = `## 🚀 Lingo World v1.16.0 — Imersão Completa por Ambientes (Da Entrada da Casa à Rua, Escola, Supermercado, Igreja e Cidade) + Prova Escolar com Nota Mínima 70
+  const body = `## 🚀 Lingo World v1.17.0 — Pronomes Associativos (Pessoais a Relativos), Explicação p/ Criança de 5 Anos e Voz Meiga da Professora
 
 ### ✨ Principais Melhorias desta Versão:
-- **🏠 Parte 1 — Explorando a Residência Completa (Ambientes 1 a 7, Cômodo por Cômodo):**
-  1. **Entrada da Casa, Calçada & Porta:** Calçada, portão, muro de tijolos, cerca, caixa de correio, campainha, interfone, jardim, vaso, capacho, degraus, porta de entrada, madeira, maçaneta, fechadura, metal, chave, chaveiro, cadeado, dobradiça, parede, tinta na parede, rolo de pintura, janela, vidro, telhado, telha, luminária externa, garagem e casa.
-  2. **Sala de Estar, TV, Internet & Iluminação:** Sofá, almofadas, poltrona, rack de TV, televisão, controle remoto, modem/roteador de internet, porta-retrato, videogame, controle de videogame, caixa de som, mesa de centro, tapete, cortina, persiana, notebook, tomada, plugue, interruptor, lâmpada no teto, lustre/plafon, abajur, ventilador, ventilador de teto, ar-condicionado, piso cerâmico, estante, relógio de parede, vaso e telefone.
-  3. **Cozinha I — Armários, Pia, Ilha, Fogão & Eletros:** Armário, porta do armário, gaveta, geladeira, freezer, mesa, cadeira, pia da cozinha, torneira, pedra/bancada de granito, ilha, banqueta, fogão, coifa, depurador de ar, luminária pendente, micro-ondas, forno elétrico, torradeira, cafeteira, liquidificador, batedeira, Air Fryer, sanduicheira, purificador de água, chaleira, balança, esponja, avental e lixeira.
-  4. **Cozinha II — Panelas, Talheres, Utensílios & Dentro da Geladeira:** Panela, frigideira, panela de pressão, assadeira, garfo, faca, colher, concha, espátula, ralador, peneira, tábua de corte, rolo de massa, prato, tigela, copo, xícara, pote, saleiro, guardanapo e no interior da geladeira: garrafa de água, leite, manteiga, queijo, iogurte, ovos, suco, presunto, alface e maçã.
-  5. **Quarto de Dormir & Guarda-Roupa:** Cama, colchão, travesseiro, cobertor, criado-mudo, guarda-roupa, cabide, espelho e todas as roupas, calçados e acessórios.
-  6. **Banheiro & Higiene Pessoal:** Vaso sanitário, papel higiênico, pia do banheiro, chuveiro, banheira, toalha, sabonete em barra/líquido, shampoo, escova e pasta de dentes, fio dental, pente, escova de cabelo, secador, barbeador e partes do corpo.
-  7. **Área de Serviço, Lavanderia, Quintal & Ferramentas:** Máquina de lavar, cesto de roupa, sabão líquido, pregador, ferro e tábua de passar, vassoura, pá de lixo, esfregão, balde, aspirador de pó, mangueira, regador, escada, martelo, chave de fenda, chave inglesa, alicate, serrote, trena, furadeira e pets no quintal.
-- **🌆 Parte 2 — Explorando o Cotidiano ao Redor (Ambientes 8 a 12):**
-  8. **Na Rua, Calçada, Trânsito & Vizinhança**
-  9. **Na Escola, Sala de Aula & Material Escolar**
-  10. **No Supermercado, Hortifrúti, Padaria & Caixa**
-  11. **Na Igreja, Música, Comunidade & Celebração**
-  12. **Restaurante, Hospital, Farmácia, Banco, Segurança & Viagem**
-- **🎓 Sistema de Prova Escolar (Nota Mínima 70 Pontos):**
-  - Ao concluir o ambiente, o aluno recebe seu **Boletim da Prova (0 a 100 pontos)**.
-  - Só avança para o próximo cômodo/ambiente se atingir **70 pontos ou mais**.
-  - Se tirar menos de 70 pontos, vê a **lista completa com foto, inglês, português e áudio de todos os exercícios que errou** e deve clicar em **"Refazer Toda a Prova Agora"** para tentar novamente!`;
+- **👩‍🏫 Cabeçalho Explicativo com Voz Meiga da Professora:**
+  - Cada exercício traz no topo uma explicação curta, carinhosa e fácil de entender até para uma criança de 5 anos.
+  - Botão **🔊 Ouvir Professora** (e reprodução automática nos exercícios de pronomes) com voz feminina meiga, calma e acolhedora em português brasileiro (\`pt-BR\`), explicando o conceito como uma mãe bondosa antes da prática.
+- **🤝 Exercícios Associativos de Pares para as 8 Famílias de Pronomes (Inseridos Entre os Exercícios):**
+  - O usuário toca no pronome em inglês na esquerda (ouvindo a pronúncia nativa americana) e conecta ao seu par correspondente em português na direita, recebendo um reforço carinhoso da professora a cada par conectado!
+  - Segue rigorosamente a sequência pedagógica solicitada:
+    1. **Pronomes Pessoais:** *I, You, He, She, It, We, They*
+    2. **Pronomes de Tratamento:** *Mr., Mrs., Miss, Sir, Ma'am*
+    3. **Pronomes Possessivos:** *My, Your, His, Her, Our, Their*
+    4. **Pronomes Demonstrativos:** *This, That, These, Those*
+    5. **Pronomes Reflexivos:** *Myself, Yourself, Himself, Herself*
+    6. **Pronomes Interrogativos:** *Who?, What?, Where?, When?*
+    7. **Pronomes Indefinidos:** *Someone, Something, Everyone, Nothing*
+    8. **Pronomes Relativos:** *Who, Which, That, Whose*`;
 
   const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases`, {
     method: 'POST',
@@ -167,9 +163,9 @@ async function run() {
   }
   console.log('Release created:', releaseData.id, releaseData.html_url);
 
-  console.log('5. Uploading LingoWorld-v1.16.0.apk to release...');
+  console.log('5. Uploading LingoWorld-v1.17.0.apk to release...');
   const apkBuffer = fs.readFileSync(apkOutPath);
-  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.16.0.apk`;
+  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.17.0.apk`;
 
   const uploadRes = await fetch(uploadUrl, {
     method: 'POST',
@@ -185,7 +181,7 @@ async function run() {
   const assetData = await uploadRes.json();
   console.log('Asset uploaded successfully!', assetData.browser_download_url);
   console.log('\n=======================================');
-  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.16.0.apk`);
+  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.17.0.apk`);
   console.log('=======================================\n');
 }
 

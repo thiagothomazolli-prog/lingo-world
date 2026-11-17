@@ -571,7 +571,140 @@ function deterministicShuffle(array, seed) {
   return arr;
 }
 
-// Build exercises for a 30-item environment module with 4-exercise image cooldown and evenly distributed correct slots
+// ============================================================================
+// 8 FAMÍLIAS DE PRONOMES EM ORDEM PEDAGÓGICA (INSERIDAS ENTRE OS EXERCÍCIOS)
+// 1. Pessoais -> 2. Tratamento -> 3. Possessivos -> 4. Demonstrativos ->
+// 5. Reflexivos -> 6. Interrogativos -> 7. Indefinidos -> 8. Relativos
+// Explicação resumida para uma criança de 5 anos + voz meiga de professora + pares associativos
+// ============================================================================
+const PRONOUN_EXERCISES_IN_ORDER = [
+  {
+    conceptTitle: '1º • Pronomes Pessoais (Personal Pronouns)',
+    conceptHeader:
+      'Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo "I" (Eu). Quando aponto para você, digo "You" (Você). Para um menino, digo "He" (Ele); para uma menina, digo "She" (Ela); e para um objeto ou bichinho, digo "It"!',
+    teacherAudioPt:
+      'Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!',
+    prompt: '🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:',
+    explanation: 'Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).',
+    pairs: [
+      { id: 'p1', en: 'I', emoji: '🙋', phonetic: '/aɪ/', pt: 'Eu (falando de mim mesmo)', tipPt: 'Muito bem, meu bem! "I" significa "Eu"!' },
+      { id: 'p2', en: 'You', emoji: '👉', phonetic: '/juː/', pt: 'Você / Vocês (com quem falo)', tipPt: 'Isso mesmo! "You" significa "Você"!' },
+      { id: 'p3', en: 'He', emoji: '👦', phonetic: '/hiː/', pt: 'Ele (para menino ou homem)', tipPt: 'Perfeito! "He" usamos para "Ele" (papai, irmão, amigo).' },
+      { id: 'p4', en: 'She', emoji: '👧', phonetic: '/ʃiː/', pt: 'Ela (para menina ou mulher)', tipPt: 'Lindo! "She" usamos para "Ela" (mamãe, irmã, professora).' },
+    ],
+  },
+  {
+    conceptTitle: '2º • Pronomes de Tratamento (Forms of Address)',
+    conceptHeader:
+      'São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos "Mr." (Senhor), "Mrs." (Senhora), "Miss" (Senhorita / Professora) e "Sir / Ma\'am"!',
+    teacherAudioPt:
+      'Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!',
+    prompt: '🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:',
+    explanation: 'Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.',
+    pairs: [
+      { id: 't1', en: 'Mr.', emoji: '👨', phonetic: '/ˈmɪs.tər/', pt: 'Senhor (antes do nome de um homem)', tipPt: 'Muito educado! "Mr." significa "Senhor"!' },
+      { id: 't2', en: 'Mrs.', emoji: '👩', phonetic: '/ˈmɪs.ɪz/', pt: 'Senhora (antes do nome de mulher casada)', tipPt: 'Perfeito! "Mrs." significa "Senhora"!' },
+      { id: 't3', en: 'Miss', emoji: '👩‍🏫', phonetic: '/mɪs/', pt: 'Senhorita (jovem ou professora)', tipPt: 'Isso! As crianças chamam a professora de "Miss"!' },
+      { id: 't4', en: 'Sir', emoji: '🎩', phonetic: '/sɜːr/', pt: 'Senhor (tratamento direto de respeito)', tipPt: 'Lindo! "Yes, Sir!" significa "Sim, Senhor!"' },
+    ],
+  },
+  {
+    conceptTitle: '3º • Pronomes Possessivos (Possessive Pronouns)',
+    conceptHeader:
+      'Mostram de quem é cada coisinha! Se a chave é minha, digo "My" (Meu/Minha). Se é sua, digo "Your" (Seu/Sua). Se é de um menino, "His" (Dele); se é de uma menina, "Her" (Dela); e se é da nossa família, "Our" (Nosso/Nossa)!',
+    teacherAudioPt:
+      'Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!',
+    prompt: '🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):',
+    explanation: 'Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).',
+    pairs: [
+      { id: 'pos1', en: 'My', emoji: '💖', phonetic: '/maɪ/', pt: 'Meu / Minha (ex: My house = Minha casa)', tipPt: 'Isso mesmo! "My" mostra que pertence a você!' },
+      { id: 'pos2', en: 'Your', emoji: '🎁', phonetic: '/jʊr/', pt: 'Seu / Sua (ex: Your key = Sua chave)', tipPt: 'Muito bem! "Your" significa "Seu" ou "Sua"!' },
+      { id: 'pos3', en: 'His', emoji: '👦', phonetic: '/hɪz/', pt: 'Dele (pertence a um menino ou homem)', tipPt: 'Perfeito! "His car" é "O carro dele"!' },
+      { id: 'pos4', en: 'Our', emoji: '🏡', phonetic: '/aʊər/', pt: 'Nosso / Nossa (pertence a nós juntos)', tipPt: 'Que orgulho! "Our family" é "Nossa família"!' },
+    ],
+  },
+  {
+    conceptTitle: '4º • Pronomes Demonstrativos (Demonstrative Pronouns)',
+    conceptHeader:
+      'Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos "This" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos "That" (Aquele/Aquela). Para várias coisas pertinho, "These"; e várias lá longe, "Those"!',
+    teacherAudioPt:
+      'Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!',
+    prompt: '🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):',
+    explanation: 'This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.',
+    pairs: [
+      { id: 'dem1', en: 'This', emoji: '🤏', phonetic: '/ðɪs/', pt: 'Este / Esta / Isto (1 coisa PERTINHO)', tipPt: 'Exato! "This" é para 1 coisa bem pertinho da sua mão!' },
+      { id: 'dem2', en: 'That', emoji: '👉', phonetic: '/ðæt/', pt: 'Aquele / Aquela / Aquilo (1 coisa LONGE)', tipPt: 'Muito bem! "That" é para 1 coisa lá longe!' },
+      { id: 'dem3', en: 'These', emoji: '🤲', phonetic: '/ðiːz/', pt: 'Estes / Estas (várias coisas PERTINHO)', tipPt: 'Perfeito! "These" é o plural pertinho de nós!' },
+      { id: 'dem4', en: 'Those', emoji: '🔭', phonetic: '/ðoʊz/', pt: 'Aqueles / Aquelas (várias coisas LONGE)', tipPt: 'Parabéns! "Those" é o plural para o que está lá longe!' },
+    ],
+  },
+  {
+    conceptTitle: '5º • Pronomes Reflexivos (Reflexive Pronouns)',
+    conceptHeader:
+      'Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos "-self": "Myself" (Eu mesmo), "Yourself" (Você mesmo), "Himself" (Ele mesmo) e "Herself" (Ela mesma)!',
+    teacherAudioPt:
+      'Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!',
+    prompt: '🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:',
+    explanation: 'Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.',
+    pairs: [
+      { id: 'ref1', en: 'Myself', emoji: '🪞', phonetic: '/maɪˈself/', pt: 'Eu mesmo(a) / A mim mesmo', tipPt: 'Isso! "By myself" = "Por mim mesmo / Sozinho"!' },
+      { id: 'ref2', en: 'Yourself', emoji: '🫵', phonetic: '/jʊrˈself/', pt: 'Você mesmo(a) / A si mesmo', tipPt: 'Muito bem! "Yourself" refere-se a "Você mesmo"!' },
+      { id: 'ref3', en: 'Himself', emoji: '👦', phonetic: '/hɪmˈself/', pt: 'Ele mesmo (para menino ou homem)', tipPt: 'Perfeito! "Himself" significa "Ele mesmo"!' },
+      { id: 'ref4', en: 'Herself', emoji: '👧', phonetic: '/hɜːrˈself/', pt: 'Ela mesma (para menina ou mulher)', tipPt: 'Lindo! "Herself" significa "Ela mesma"!' },
+    ],
+  },
+  {
+    conceptTitle: '6º • Pronomes Interrogativos (Interrogative Pronouns)',
+    conceptHeader:
+      'São as palavrinhas de detetive para fazer perguntas! "Who?" pergunta Quem (pessoa), "What?" pergunta O quê (coisa), "Where?" pergunta Onde (lugar) e "When?" pergunta Quando (tempo/hora)!',
+    teacherAudioPt:
+      'Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!',
+    prompt: '🤝 Conecte cada Pronome Interrogativo à pergunta correta:',
+    explanation: 'Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).',
+    pairs: [
+      { id: 'int1', en: 'Who?', emoji: '🕵️', phonetic: '/huː/', pt: 'Quem? (pergunta sobre pessoas)', tipPt: 'Exato! "Who is there?" = "Quem está aí?"' },
+      { id: 'int2', en: 'What?', emoji: '❓', phonetic: '/wɑːt/', pt: 'O quê? / Qual? (pergunta sobre coisas)', tipPt: 'Muito bem! "What is this?" = "O que é isto?"' },
+      { id: 'int3', en: 'Where?', emoji: '📍', phonetic: '/wer/', pt: 'Onde? (pergunta sobre o lugar)', tipPt: 'Perfeito! "Where is the key?" = "Onde está a chave?"' },
+      { id: 'int4', en: 'When?', emoji: '⏰', phonetic: '/wen/', pt: 'Quando? (pergunta sobre tempo/dia)', tipPt: 'Maravilha! "When" pergunta "Quando?"' },
+    ],
+  },
+  {
+    conceptTitle: '7º • Pronomes Indefinidos (Indefinite Pronouns)',
+    conceptHeader:
+      'Usamos quando não dizemos o nome exato de quem ou do que é: "Someone" é Alguém (1 pessoa), "Something" é Alguma coisa, "Everyone" é Todo mundo, e "Nothing" é Nadinha (Nada)!',
+    teacherAudioPt:
+      'Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!',
+    prompt: '🤝 Associe cada Pronome Indefinido ao seu significado:',
+    explanation: 'Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.',
+    pairs: [
+      { id: 'ind1', en: 'Someone', emoji: '🔔', phonetic: '/ˈsʌm.wʌn/', pt: 'Alguém (uma pessoa)', tipPt: 'Isso! "Someone" significa "Alguém"!' },
+      { id: 'ind2', en: 'Something', emoji: '🎁', phonetic: '/ˈsʌm.θɪŋ/', pt: 'Algo / Alguma coisa', tipPt: 'Muito bem! "Something" é "Alguma coisa"!' },
+      { id: 'ind3', en: 'Everyone', emoji: '👨‍👩‍👧‍👦', phonetic: '/ˈev.ri.wʌn/', pt: 'Todo mundo / Todas as pessoas', tipPt: 'Perfeito! "Everyone" significa "Todo mundo"!' },
+      { id: 'ind4', en: 'Nothing', emoji: '🫙', phonetic: '/ˈnʌθ.ɪŋ/', pt: 'Nada (nenhuma coisa)', tipPt: 'Lindo! "Nothing" significa "Nada"!' },
+    ],
+  },
+  {
+    conceptTitle: '8º • Pronomes Relativos (Relative Pronouns)',
+    conceptHeader:
+      'São pontezinhas que juntam duas ideias na mesma frase! "Who" significa "que/quem" para ligar pessoas; "Which" significa "que/o qual" para ligar coisas ou animais; "That" é a pontezinha curinga para tudo; e "Whose" indica "de quem / cujo"!',
+    teacherAudioPt:
+      'Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!',
+    prompt: '🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:',
+    explanation: 'Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).',
+    pairs: [
+      { id: 'rel1', en: 'Who', emoji: '👩‍⚕️', phonetic: '/huː/', pt: 'Que / Quem (ponte usada para PESSOAS)', tipPt: 'Perfeito! "The doctor who helps" = "O médico que ajuda"!' },
+      { id: 'rel2', en: 'Which', emoji: '🔑', phonetic: '/wɪtʃ/', pt: 'Que / O qual (ponte para COISAS ou ANIMAIS)', tipPt: 'Isso! "The key which opens" = "A chave que abre"!' },
+      { id: 'rel3', en: 'That', emoji: '🌉', phonetic: '/ðæt/', pt: 'Que (ponte curinga para PESSOAS ou COISAS)', tipPt: 'Muito bem! "That" conecta tanto pessoas quanto objetos!' },
+      { id: 'rel4', en: 'Whose', emoji: '🏠', phonetic: '/huːz/', pt: 'Cujo(a) / De quem (ponte que indica POSSE)', tipPt: 'Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!' },
+    ],
+  },
+];
+
+// Build exercises for a 30-item environment module with:
+// 1. 4-exercise image cooldown and evenly distributed correct slots
+// 2. Child-friendly 5-year-old concept header + sweet motherly teacher voice on every exercise
+// 3. The 8 Pronoun Families (Personal, Treatment, Possessive, Demonstrative, Reflexive, Interrogative, Indefinite, Relative)
+//    inserted in exact order between the vocabulary exercises!
 function buildExercisesWithCooldown(theme, phaseNumber) {
   const items = theme.items;
   const n = items.length; // 30
@@ -582,6 +715,7 @@ function buildExercisesWithCooldown(theme, phaseNumber) {
   items.forEach((it) => usageCount.set(it.text, 0));
 
   const exercises = [];
+  let pronounOrderIndex = 0;
 
   for (let idx = 0; idx < n; idx++) {
     const target = items[idx];
@@ -652,8 +786,11 @@ function buildExercisesWithCooldown(theme, phaseNumber) {
     }
 
     exercises.push({
-      id: `${phaseId}-e${idx + 1}`,
+      id: `${phaseId}-e${exercises.length + 1}`,
       type: 'image-choice',
+      conceptTitle: `${theme.title.split('•')[1]?.trim() || theme.title} • Item ${idx + 1} de ${n}`,
+      conceptHeader: `Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.`,
+      teacherAudioPt: `Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!`,
       prompt,
       audioPhrase: target.text,
       visualEmoji: target.emoji,
@@ -664,6 +801,29 @@ function buildExercisesWithCooldown(theme, phaseNumber) {
       phoneticHint: target.phonetic,
       skillCategory: category,
     });
+
+    // A cada 3 ou 4 itens visuais, insere um Exercício Associativo de Pronomes seguindo a ordem exata:
+    // 1. Pessoais -> 2. Tratamento -> 3. Possessivos -> 4. Demonstrativos -> 5. Reflexivos -> 6. Interrogativos -> 7. Indefinidos -> 8. Relativos
+    const insertPositions = [2, 6, 10, 14, 18, 22, 26, 29];
+    if (insertPositions.includes(idx) && pronounOrderIndex < PRONOUN_EXERCISES_IN_ORDER.length) {
+      const pron = PRONOUN_EXERCISES_IN_ORDER[pronounOrderIndex];
+      pronounOrderIndex++;
+      exercises.push({
+        id: `${phaseId}-pron-${pronounOrderIndex}`,
+        type: 'pair-match',
+        conceptTitle: pron.conceptTitle,
+        conceptHeader: pron.conceptHeader,
+        teacherAudioPt: pron.teacherAudioPt,
+        prompt: pron.prompt,
+        pairs: pron.pairs.map((p) => ({
+          ...p,
+          id: `${phaseId}-p${pronounOrderIndex}-${p.id}`,
+        })),
+        correctAnswer: 'ALL_PAIRS_MATCHED',
+        explanation: pron.explanation,
+        skillCategory: 'grammar',
+      });
+    }
   }
 
   return exercises;

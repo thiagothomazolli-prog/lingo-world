@@ -405,6 +405,140 @@ export function speakText(
   }
 }
 
+// Sweet, calm, motherly Brazilian Portuguese (pt-BR) Teacher voice for explaining concepts gently
+export function speakTeacherExplanationPt(text: string): void {
+  if (typeof window === 'undefined') return;
+  const cleanText = text.replace(/\*\*+/g, '').replace(/[•✨💝👩‍🏫🎯]/g, '').trim();
+  if (!cleanText) return;
+
+  stopSpeaking();
+  const sessionId = ++currentSpeechSessionId;
+
+  const fallbackPtSpeech = () => {
+    if (sessionId !== currentSpeechSessionId) return;
+    notifyAudioExecuted();
+
+    const androidTTS = (window as any).AndroidTTS;
+    if (androidTTS && typeof androidTTS.speak === 'function') {
+      try {
+        const ok = androidTTS.speak(cleanText, 'pt-BR', 0.90, 'female');
+        if (ok) return;
+      } catch {
+        // ignore
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      try {
+        const voices = cachedVoices.length > 0 ? cachedVoices : window.speechSynthesis.getVoices() || [];
+        const ptVoices = voices.filter((v) => /^pt/i.test(v.lang.trim()));
+        const femaleKeywords = ['francisca', 'thalita', 'maria', 'luciana', 'helonka', 'fernanda', 'google', 'natural', 'female'];
+        const chosen =
+          ptVoices.find((v) => femaleKeywords.some((k) => v.name.toLowerCase().includes(k))) || ptVoices[0];
+
+        const utt = new SpeechSynthesisUtterance(cleanText);
+        utt.lang = 'pt-BR';
+        utt.rate = 0.90;
+        utt.pitch = 1.03;
+        utt.volume = 1.0;
+        if (chosen) utt.voice = chosen;
+
+        utt.onstart = () => setSpeakingState(true);
+        utt.onend = () => setSpeakingState(false);
+        utt.onerror = () => setSpeakingState(false);
+
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.resume();
+        setSpeakingState(true);
+        window.speechSynthesis.speak(utt);
+      } catch {
+        setSpeakingState(false);
+      }
+    }
+  };
+
+  // Split into sentence chunks <= 170 chars so Google Neural pt-BR female voice plays the full explanation smoothly
+  const sentences = cleanText.match(/[^.!?]+[.!?]*/g) || [cleanText];
+  const chunks: string[] = [];
+  let current = '';
+  for (const s of sentences) {
+    const trimmed = s.trim();
+    if (!trimmed) continue;
+    if ((current + ' ' + trimmed).trim().length <= 170) {
+      current = (current + ' ' + trimmed).trim();
+    } else {
+      if (current) chunks.push(current);
+      if (trimmed.length <= 170) {
+        current = trimmed;
+      } else {
+        chunks.push(trimmed.slice(0, 170));
+        current = trimmed.slice(170);
+      }
+    }
+  }
+  if (current) chunks.push(current);
+
+  const playChunk = (idx: number) => {
+    if (sessionId !== currentSpeechSessionId) return;
+    if (idx >= chunks.length) {
+      notifyAudioExecuted();
+      setSpeakingState(false);
+      return;
+    }
+
+    const encoded = encodeURIComponent(chunks[idx]);
+    const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=pt-BR&q=${encoded}`;
+    try {
+      const audio = new Audio();
+      (audio as any).referrerPolicy = 'no-referrer';
+      audio.src = url;
+      audio.volume = 1.0;
+      audio.playbackRate = 0.93; // Calm, unhurried, warm motherly pace
+      if ('preservesPitch' in audio) {
+        (audio as any).preservesPitch = true;
+      }
+      activeAudioElement = audio;
+
+      const timer = setTimeout(() => {
+        try {
+          audio.onended = null;
+          audio.onerror = null;
+          audio.pause();
+        } catch {
+          // ignore
+        }
+        if (idx === 0) fallbackPtSpeech();
+      }, 1600);
+
+      audio.onplaying = () => {
+        clearTimeout(timer);
+        if (sessionId === currentSpeechSessionId) setSpeakingState(true);
+      };
+      audio.onended = () => {
+        clearTimeout(timer);
+        playChunk(idx + 1);
+      };
+      audio.onerror = () => {
+        clearTimeout(timer);
+        if (idx === 0) fallbackPtSpeech();
+        else setSpeakingState(false);
+      };
+
+      const p = audio.play();
+      if (p !== undefined) {
+        p.catch(() => {
+          clearTimeout(timer);
+          if (idx === 0) fallbackPtSpeech();
+        });
+      }
+    } catch {
+      fallbackPtSpeech();
+    }
+  };
+
+  playChunk(0);
+}
+
 // Spaced Repetition (SM-2 variant update)
 export function updateCardSpacedRepetition(card: Flashcard, known: boolean): Flashcard {
   const newBox = known ? Math.min(5, card.box + 1) : 1;

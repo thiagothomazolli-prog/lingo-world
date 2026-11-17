@@ -52,10 +52,23 @@ export interface VisualOption {
   translationPt?: string;
 }
 
+export interface AssociativePair {
+  id: string;
+  en: string;
+  pt: string;
+  emoji?: string;
+  phonetic?: string;
+  tipPt?: string;
+}
+
 export interface Exercise {
   id: string;
-  type: 'multiple-choice' | 'fill-blank' | 'word-order' | 'listening' | 'speaking-repeat' | 'translate' | 'image-choice';
+  type: 'multiple-choice' | 'fill-blank' | 'word-order' | 'listening' | 'speaking-repeat' | 'translate' | 'image-choice' | 'pair-match';
   prompt: string;
+  conceptTitle?: string;
+  conceptHeader?: string;
+  teacherAudioPt?: string;
+  pairs?: AssociativePair[];
   contextSentence?: string;
   contextSentencePt?: string;
   audioPhrase?: string;
