@@ -155,6 +155,28 @@ export const CefrLevelTestModal: React.FC<CefrLevelTestModalProps> = ({
   onClose,
   onApplyLevel,
 }) => {
+  const [shuffledQuestions] = useState<Question[]>(() => {
+    let prevCorrectIdx = 0;
+    return PROGRESSIVE_QUESTIONS.map((q) => {
+      const opts = [...q.options];
+      for (let i = opts.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const tmp = opts[i];
+        opts[i] = opts[j];
+        opts[j] = tmp;
+      }
+      let cIdx = opts.findIndex((o) => o === q.correctAnswer);
+      if (cIdx !== -1 && cIdx === prevCorrectIdx) {
+        const swapWith = (cIdx + 1 + Math.floor(Math.random() * (opts.length - 1))) % opts.length;
+        const tmp = opts[cIdx];
+        opts[cIdx] = opts[swapWith];
+        opts[swapWith] = tmp;
+        cIdx = swapWith;
+      }
+      if (cIdx !== -1) prevCorrectIdx = cIdx;
+      return { ...q, options: opts };
+    });
+  });
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [hasAnswered, setHasAnswered] = useState(false);
@@ -162,8 +184,8 @@ export const CefrLevelTestModal: React.FC<CefrLevelTestModalProps> = ({
   const [correctAnswersCount, setCorrectAnswersCount] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
-  const currentQ = PROGRESSIVE_QUESTIONS[currentIndex];
-  const progressPercent = ((currentIndex + (hasAnswered ? 1 : 0)) / PROGRESSIVE_QUESTIONS.length) * 100;
+  const currentQ = shuffledQuestions[currentIndex];
+  const progressPercent = ((currentIndex + (hasAnswered ? 1 : 0)) / shuffledQuestions.length) * 100;
 
   const handleSelectOption = (opt: string) => {
     if (hasAnswered) return;

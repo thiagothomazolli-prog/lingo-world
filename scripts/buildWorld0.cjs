@@ -715,6 +715,7 @@ const CITY_4 = {
 // ============================================================================
 function buildPracticePhase(phaseNumber, roundNumber, isFinalBoss, pairs) {
   const phaseId = `w0-p${phaseNumber}`;
+  const slotPattern = [1, 3, 0, 2, 2, 1, 3, 0, 3, 1, 2, 0];
   const exercises = pairs.map((p, idx) => {
     const id = `${phaseId}-e${idx + 1}`;
     if (p.mode === 'word-order') {
@@ -731,13 +732,19 @@ function buildPracticePhase(phaseNumber, roundNumber, isFinalBoss, pairs) {
         skillCategory: 'vocabulary',
       };
     }
+    const distractors = p.options.filter((o) => o !== p.correct);
+    const shuffledDistractors = deterministicShuffle(distractors, roundNumber * 100 + idx * 17 + 11);
+    const targetSlot = slotPattern[(idx + roundNumber) % slotPattern.length] % p.options.length;
+    const variedOptions = [...shuffledDistractors];
+    variedOptions.splice(targetSlot, 0, p.correct);
+
     return {
       id,
       type: 'multiple-choice',
       visualEmoji: p.emoji,
       prompt: p.prompt || `O que significa "${p.en}" em português?`,
       audioPhrase: p.en,
-      options: p.options,
+      options: variedOptions,
       correctAnswer: p.correct,
       explanation: `"${p.en}" = "${p.pt}". Associação simples e direta!`,
       phoneticHint: p.phonetic,
@@ -826,13 +833,13 @@ const PRACTICE_ROUND_4 = [
   { mode: 'mc', emoji: '👨‍⚕️', en: 'Family doctor', pt: 'Médico da família', phonetic: '/ˈfæm.əl.i ˈdɑːk.tər/', options: ['Médico da família', 'Chef de cozinha', 'Bombeiro corajoso', 'Piloto de avião'], correct: 'Médico da família' },
 ];
 
-// Deterministic seeded shuffle helper so builds are stable and varied
+// Deterministic seeded shuffle helper using upper bits so modulo 4 / modulo 2 never repeats
 function deterministicShuffle(array, seed) {
   const arr = [...array];
-  let s = seed;
+  let s = (seed * 2654435761) >>> 0;
   for (let i = arr.length - 1; i > 0; i--) {
-    s = (s * 1664525 + 1013904223) >>> 0;
-    const j = s % (i + 1);
+    s = (Math.imul(s, 1664525) + 1013904223) >>> 0;
+    const j = (s >>> 16) % (i + 1);
     const tmp = arr[i];
     arr[i] = arr[j];
     arr[j] = tmp;
@@ -896,7 +903,11 @@ function buildExercisesWithCooldown(theme, phaseNumber) {
       usageCount.set(d.text, (usageCount.get(d.text) || 0) + 1);
     });
 
-    const optionsList = deterministicShuffle([target, ...distractors], phaseNumber * 100 + idx + 7);
+    const shuffledDistractors = deterministicShuffle(distractors, phaseNumber * 131 + idx * 29 + 7);
+    const visualSlotPattern = [1, 3, 2, 0, 2, 1, 3, 0, 3, 2, 0, 1];
+    const targetSlot = visualSlotPattern[(idx + phaseNumber) % visualSlotPattern.length] % 4;
+    const optionsList = [...shuffledDistractors];
+    optionsList.splice(targetSlot, 0, target);
 
     const visualOptions = optionsList.map((opt) => ({
       text: opt.text,

@@ -27,16 +27,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍎",
         "visualOptions": [
           {
+            "text": "Lemon",
+            "emoji": "🍋",
+            "label": "Lemon",
+            "translationPt": "Limão siciliano"
+          },
+          {
             "text": "Lime",
             "emoji": "🟢",
             "label": "Lime",
             "translationPt": "Limão verde (Taiti)"
-          },
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
           },
           {
             "text": "Blackberry",
@@ -45,17 +45,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Amora"
           },
           {
-            "text": "Lemon",
-            "emoji": "🍋",
-            "label": "Lemon",
-            "translationPt": "Limão siciliano"
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
           }
         ],
         "options": [
+          "Lemon",
           "Lime",
-          "Apple",
           "Blackberry",
-          "Lemon"
+          "Apple"
         ],
         "correctAnswer": "Apple",
         "explanation": "Exemplo prático: \"I eat a fresh red apple every morning.\"",
@@ -70,18 +70,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍌",
         "visualOptions": [
           {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana"
-          },
-          {
-            "text": "Kiwi",
-            "emoji": "🥝",
-            "label": "Kiwi",
-            "translationPt": "Kiwi"
-          },
-          {
             "text": "Tangerine",
             "emoji": "🍊",
             "label": "Tangerine",
@@ -92,13 +80,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🟤",
             "label": "Fig",
             "translationPt": "Figo"
+          },
+          {
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
+          },
+          {
+            "text": "Kiwi",
+            "emoji": "🥝",
+            "label": "Kiwi",
+            "translationPt": "Kiwi"
           }
         ],
         "options": [
-          "Banana",
-          "Kiwi",
           "Tangerine",
-          "Fig"
+          "Fig",
+          "Banana",
+          "Kiwi"
         ],
         "correctAnswer": "Banana",
         "explanation": "Exemplo prático: \"Bananas are rich in potassium.\"",
@@ -113,10 +113,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍊",
         "visualOptions": [
           {
-            "text": "Jabuticaba",
-            "emoji": "⚫",
-            "label": "Jabuticaba",
-            "translationPt": "Jabuticaba"
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja"
           },
           {
             "text": "Guava",
@@ -131,17 +131,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Jaca"
           },
           {
-            "text": "Orange",
-            "emoji": "🍊",
-            "label": "Orange",
-            "translationPt": "Laranja"
+            "text": "Jabuticaba",
+            "emoji": "⚫",
+            "label": "Jabuticaba",
+            "translationPt": "Jabuticaba"
           }
         ],
         "options": [
-          "Jabuticaba",
+          "Orange",
           "Guava",
           "Jackfruit",
-          "Orange"
+          "Jabuticaba"
         ],
         "correctAnswer": "Orange",
         "explanation": "Exemplo prático: \"Fresh orange juice has lots of vitamin C.\"",
@@ -199,10 +199,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍇",
         "visualOptions": [
           {
-            "text": "Cashew",
-            "emoji": "🧡",
-            "label": "Cashew",
-            "translationPt": "Caju"
+            "text": "Cherry",
+            "emoji": "🍒",
+            "label": "Cherry",
+            "translationPt": "Cereja"
           },
           {
             "text": "Grape",
@@ -211,23 +211,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Uva"
           },
           {
+            "text": "Cashew",
+            "emoji": "🧡",
+            "label": "Cashew",
+            "translationPt": "Caju"
+          },
+          {
             "text": "Coconut",
             "emoji": "🥥",
             "label": "Coconut",
             "translationPt": "Coco"
-          },
-          {
-            "text": "Cherry",
-            "emoji": "🍒",
-            "label": "Cherry",
-            "translationPt": "Cereja"
           }
         ],
         "options": [
-          "Cashew",
+          "Cherry",
           "Grape",
-          "Coconut",
-          "Cherry"
+          "Cashew",
+          "Coconut"
         ],
         "correctAnswer": "Grape",
         "explanation": "Exemplo prático: \"Purple grapes grow on vines.\"",
@@ -241,12 +241,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Watermelon",
         "visualEmoji": "🍉",
         "visualOptions": [
-          {
-            "text": "Watermelon",
-            "emoji": "🍉",
-            "label": "Watermelon",
-            "translationPt": "Melancia"
-          },
           {
             "text": "Pear",
             "emoji": "🍐",
@@ -264,13 +258,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🟣",
             "label": "Plum",
             "translationPt": "Ameixa"
+          },
+          {
+            "text": "Watermelon",
+            "emoji": "🍉",
+            "label": "Watermelon",
+            "translationPt": "Melancia"
           }
         ],
         "options": [
-          "Watermelon",
           "Pear",
           "Peach",
-          "Plum"
+          "Plum",
+          "Watermelon"
         ],
         "correctAnswer": "Watermelon",
         "explanation": "Exemplo prático: \"Cold watermelon is great in the summer.\"",
@@ -285,10 +285,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍍",
         "visualOptions": [
           {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana"
+            "text": "Pineapple",
+            "emoji": "🍍",
+            "label": "Pineapple",
+            "translationPt": "Abacaxi"
           },
           {
             "text": "Orange",
@@ -297,23 +297,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Laranja"
           },
           {
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
+          },
+          {
             "text": "Persimmon",
             "emoji": "🟠",
             "label": "Persimmon",
             "translationPt": "Caqui"
-          },
-          {
-            "text": "Pineapple",
-            "emoji": "🍍",
-            "label": "Pineapple",
-            "translationPt": "Abacaxi"
           }
         ],
         "options": [
-          "Banana",
+          "Pineapple",
           "Orange",
-          "Persimmon",
-          "Pineapple"
+          "Banana",
+          "Persimmon"
         ],
         "correctAnswer": "Pineapple",
         "explanation": "Exemplo prático: \"Pineapple is a juicy tropical fruit.\"",
@@ -328,16 +328,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥭",
         "visualOptions": [
           {
-            "text": "Mango",
-            "emoji": "🥭",
-            "label": "Mango",
-            "translationPt": "Manga"
-          },
-          {
             "text": "Avocado",
             "emoji": "🥑",
             "label": "Avocado",
             "translationPt": "Abacate"
+          },
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã"
           },
           {
             "text": "Acai",
@@ -346,17 +346,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Açaí"
           },
           {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã"
+            "text": "Mango",
+            "emoji": "🥭",
+            "label": "Mango",
+            "translationPt": "Manga"
           }
         ],
         "options": [
-          "Mango",
           "Avocado",
+          "Apple",
           "Acai",
-          "Apple"
+          "Mango"
         ],
         "correctAnswer": "Mango",
         "explanation": "Exemplo prático: \"This ripe mango is very sweet.\"",
@@ -377,6 +377,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Melão"
           },
           {
+            "text": "Grape",
+            "emoji": "🍇",
+            "label": "Grape",
+            "translationPt": "Uva"
+          },
+          {
             "text": "Papaya",
             "emoji": "🧡",
             "label": "Papaya",
@@ -387,19 +393,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍓",
             "label": "Strawberry",
             "translationPt": "Morango"
-          },
-          {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva"
           }
         ],
         "options": [
           "Melon",
+          "Grape",
           "Papaya",
-          "Strawberry",
-          "Grape"
+          "Strawberry"
         ],
         "correctAnswer": "Papaya",
         "explanation": "Exemplo prático: \"Papaya is very popular for breakfast in Brazil.\"",
@@ -414,10 +414,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍋",
         "visualOptions": [
           {
-            "text": "Starfruit",
-            "emoji": "⭐",
-            "label": "Starfruit",
-            "translationPt": "Carambola"
+            "text": "Lemon",
+            "emoji": "🍋",
+            "label": "Lemon",
+            "translationPt": "Limão siciliano"
           },
           {
             "text": "Watermelon",
@@ -426,10 +426,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Melancia"
           },
           {
-            "text": "Lemon",
-            "emoji": "🍋",
-            "label": "Lemon",
-            "translationPt": "Limão siciliano"
+            "text": "Starfruit",
+            "emoji": "⭐",
+            "label": "Starfruit",
+            "translationPt": "Carambola"
           },
           {
             "text": "Passion Fruit",
@@ -439,9 +439,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Starfruit",
-          "Watermelon",
           "Lemon",
+          "Watermelon",
+          "Starfruit",
           "Passion Fruit"
         ],
         "correctAnswer": "Lemon",
@@ -457,16 +457,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🟢",
         "visualOptions": [
           {
-            "text": "Orange",
-            "emoji": "🍊",
-            "label": "Orange",
-            "translationPt": "Laranja"
-          },
-          {
             "text": "Fig",
             "emoji": "🟤",
             "label": "Fig",
             "translationPt": "Figo"
+          },
+          {
+            "text": "Lime",
+            "emoji": "🟢",
+            "label": "Lime",
+            "translationPt": "Limão verde (Taiti)"
           },
           {
             "text": "Pineapple",
@@ -475,17 +475,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Abacaxi"
           },
           {
-            "text": "Lime",
-            "emoji": "🟢",
-            "label": "Lime",
-            "translationPt": "Limão verde (Taiti)"
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja"
           }
         ],
         "options": [
-          "Orange",
           "Fig",
+          "Lime",
           "Pineapple",
-          "Lime"
+          "Orange"
         ],
         "correctAnswer": "Lime",
         "explanation": "Exemplo prático: \"Squeeze fresh green lime over the food.\"",
@@ -499,6 +499,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Tangerine",
         "visualEmoji": "🍊",
         "visualOptions": [
+          {
+            "text": "Mango",
+            "emoji": "🥭",
+            "label": "Mango",
+            "translationPt": "Manga"
+          },
           {
             "text": "Tangerine",
             "emoji": "🍊",
@@ -516,19 +522,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍌",
             "label": "Banana",
             "translationPt": "Banana"
-          },
-          {
-            "text": "Mango",
-            "emoji": "🥭",
-            "label": "Mango",
-            "translationPt": "Manga"
           }
         ],
         "options": [
+          "Mango",
           "Tangerine",
           "Blackberry",
-          "Banana",
-          "Mango"
+          "Banana"
         ],
         "correctAnswer": "Tangerine",
         "explanation": "Exemplo prático: \"Tangerines are easy to peel.\"",
@@ -549,12 +549,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Kiwi"
           },
           {
-            "text": "Guava",
-            "emoji": "🩷",
-            "label": "Guava",
-            "translationPt": "Goiaba"
-          },
-          {
             "text": "Cherry",
             "emoji": "🍒",
             "label": "Cherry",
@@ -565,13 +559,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥥",
             "label": "Coconut",
             "translationPt": "Coco"
+          },
+          {
+            "text": "Guava",
+            "emoji": "🩷",
+            "label": "Guava",
+            "translationPt": "Goiaba"
           }
         ],
         "options": [
           "Kiwi",
-          "Guava",
           "Cherry",
-          "Coconut"
+          "Coconut",
+          "Guava"
         ],
         "correctAnswer": "Guava",
         "explanation": "Exemplo prático: \"Red guava is very common in Brazil.\"",
@@ -586,10 +586,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💛",
         "visualOptions": [
           {
-            "text": "Acai",
-            "emoji": "🟣",
-            "label": "Acai",
-            "translationPt": "Açaí"
+            "text": "Watermelon",
+            "emoji": "🍉",
+            "label": "Watermelon",
+            "translationPt": "Melancia"
           },
           {
             "text": "Apple",
@@ -604,17 +604,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maracujá"
           },
           {
-            "text": "Watermelon",
-            "emoji": "🍉",
-            "label": "Watermelon",
-            "translationPt": "Melancia"
+            "text": "Acai",
+            "emoji": "🟣",
+            "label": "Acai",
+            "translationPt": "Açaí"
           }
         ],
         "options": [
-          "Acai",
+          "Watermelon",
           "Apple",
           "Passion Fruit",
-          "Watermelon"
+          "Acai"
         ],
         "correctAnswer": "Passion Fruit",
         "explanation": "Exemplo prático: \"Passion fruit juice is very relaxing.\"",
@@ -628,6 +628,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Melon",
         "visualEmoji": "🍈",
         "visualOptions": [
+          {
+            "text": "Melon",
+            "emoji": "🍈",
+            "label": "Melon",
+            "translationPt": "Melão"
+          },
           {
             "text": "Papaya",
             "emoji": "🧡",
@@ -645,19 +651,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍍",
             "label": "Pineapple",
             "translationPt": "Abacaxi"
-          },
-          {
-            "text": "Melon",
-            "emoji": "🍈",
-            "label": "Melon",
-            "translationPt": "Melão"
           }
         ],
         "options": [
+          "Melon",
           "Papaya",
           "Peach",
-          "Pineapple",
-          "Melon"
+          "Pineapple"
         ],
         "correctAnswer": "Melon",
         "explanation": "Exemplo prático: \"Sweet yellow melon is refreshing.\"",
@@ -672,12 +672,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥑",
         "visualOptions": [
           {
-            "text": "Avocado",
-            "emoji": "🥑",
-            "label": "Avocado",
-            "translationPt": "Abacate"
-          },
-          {
             "text": "Plum",
             "emoji": "🟣",
             "label": "Plum",
@@ -690,6 +684,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Morango"
           },
           {
+            "text": "Avocado",
+            "emoji": "🥑",
+            "label": "Avocado",
+            "translationPt": "Abacate"
+          },
+          {
             "text": "Cashew",
             "emoji": "🧡",
             "label": "Cashew",
@@ -697,9 +697,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Avocado",
           "Plum",
           "Strawberry",
+          "Avocado",
           "Cashew"
         ],
         "correctAnswer": "Avocado",
@@ -715,16 +715,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥥",
         "visualOptions": [
           {
-            "text": "Lemon",
-            "emoji": "🍋",
-            "label": "Lemon",
-            "translationPt": "Limão siciliano"
-          },
-          {
-            "text": "Persimmon",
-            "emoji": "🟠",
-            "label": "Persimmon",
-            "translationPt": "Caqui"
+            "text": "Lime",
+            "emoji": "🟢",
+            "label": "Lime",
+            "translationPt": "Limão verde (Taiti)"
           },
           {
             "text": "Coconut",
@@ -733,17 +727,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Coco"
           },
           {
-            "text": "Lime",
-            "emoji": "🟢",
-            "label": "Lime",
-            "translationPt": "Limão verde (Taiti)"
+            "text": "Persimmon",
+            "emoji": "🟠",
+            "label": "Persimmon",
+            "translationPt": "Caqui"
+          },
+          {
+            "text": "Lemon",
+            "emoji": "🍋",
+            "label": "Lemon",
+            "translationPt": "Limão siciliano"
           }
         ],
         "options": [
-          "Lemon",
-          "Persimmon",
+          "Lime",
           "Coconut",
-          "Lime"
+          "Persimmon",
+          "Lemon"
         ],
         "correctAnswer": "Coconut",
         "explanation": "Exemplo prático: \"We drank fresh coconut water at the beach.\"",
@@ -757,12 +757,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Pear",
         "visualEmoji": "🍐",
         "visualOptions": [
-          {
-            "text": "Pear",
-            "emoji": "🍐",
-            "label": "Pear",
-            "translationPt": "Pera"
-          },
           {
             "text": "Jabuticaba",
             "emoji": "⚫",
@@ -780,13 +774,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🟢",
             "label": "Jackfruit",
             "translationPt": "Jaca"
+          },
+          {
+            "text": "Pear",
+            "emoji": "🍐",
+            "label": "Pear",
+            "translationPt": "Pera"
           }
         ],
         "options": [
-          "Pear",
           "Jabuticaba",
           "Mango",
-          "Jackfruit"
+          "Jackfruit",
+          "Pear"
         ],
         "correctAnswer": "Pear",
         "explanation": "Exemplo prático: \"The green pear is sweet and soft.\"",
@@ -801,16 +801,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍑",
         "visualOptions": [
           {
+            "text": "Peach",
+            "emoji": "🍑",
+            "label": "Peach",
+            "translationPt": "Pêssego"
+          },
+          {
             "text": "Tangerine",
             "emoji": "🍊",
             "label": "Tangerine",
             "translationPt": "Tangerina / Mexerica"
-          },
-          {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva"
           },
           {
             "text": "Melon",
@@ -819,17 +819,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Melão"
           },
           {
-            "text": "Peach",
-            "emoji": "🍑",
-            "label": "Peach",
-            "translationPt": "Pêssego"
+            "text": "Grape",
+            "emoji": "🍇",
+            "label": "Grape",
+            "translationPt": "Uva"
           }
         ],
         "options": [
+          "Peach",
           "Tangerine",
-          "Grape",
           "Melon",
-          "Peach"
+          "Grape"
         ],
         "correctAnswer": "Peach",
         "explanation": "Exemplo prático: \"A ripe peach has soft skin.\"",
@@ -843,6 +843,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Kiwi",
         "visualEmoji": "🥝",
         "visualOptions": [
+          {
+            "text": "Guava",
+            "emoji": "🩷",
+            "label": "Guava",
+            "translationPt": "Goiaba"
+          },
           {
             "text": "Avocado",
             "emoji": "🥑",
@@ -860,19 +866,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥝",
             "label": "Kiwi",
             "translationPt": "Kiwi"
-          },
-          {
-            "text": "Guava",
-            "emoji": "🩷",
-            "label": "Guava",
-            "translationPt": "Goiaba"
           }
         ],
         "options": [
+          "Guava",
           "Avocado",
           "Apple",
-          "Kiwi",
-          "Guava"
+          "Kiwi"
         ],
         "correctAnswer": "Kiwi",
         "explanation": "Exemplo prático: \"Kiwi has bright green flesh inside.\"",
@@ -887,16 +887,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🟣",
         "visualOptions": [
           {
-            "text": "Pineapple",
-            "emoji": "🍍",
-            "label": "Pineapple",
-            "translationPt": "Abacaxi"
-          },
-          {
-            "text": "Plum",
-            "emoji": "🟣",
-            "label": "Plum",
-            "translationPt": "Ameixa"
+            "text": "Starfruit",
+            "emoji": "⭐",
+            "label": "Starfruit",
+            "translationPt": "Carambola"
           },
           {
             "text": "Strawberry",
@@ -905,17 +899,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Morango"
           },
           {
-            "text": "Starfruit",
-            "emoji": "⭐",
-            "label": "Starfruit",
-            "translationPt": "Carambola"
+            "text": "Plum",
+            "emoji": "🟣",
+            "label": "Plum",
+            "translationPt": "Ameixa"
+          },
+          {
+            "text": "Pineapple",
+            "emoji": "🍍",
+            "label": "Pineapple",
+            "translationPt": "Abacaxi"
           }
         ],
         "options": [
-          "Pineapple",
-          "Plum",
+          "Starfruit",
           "Strawberry",
-          "Starfruit"
+          "Plum",
+          "Pineapple"
         ],
         "correctAnswer": "Plum",
         "explanation": "Exemplo prático: \"She picked a ripe purple plum.\"",
@@ -979,10 +979,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Laranja"
           },
           {
-            "text": "Lemon",
-            "emoji": "🍋",
-            "label": "Lemon",
-            "translationPt": "Limão siciliano"
+            "text": "Cashew",
+            "emoji": "🧡",
+            "label": "Cashew",
+            "translationPt": "Caju"
           },
           {
             "text": "Lime",
@@ -991,17 +991,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Limão verde (Taiti)"
           },
           {
-            "text": "Cashew",
-            "emoji": "🧡",
-            "label": "Cashew",
-            "translationPt": "Caju"
+            "text": "Lemon",
+            "emoji": "🍋",
+            "label": "Lemon",
+            "translationPt": "Limão siciliano"
           }
         ],
         "options": [
           "Orange",
-          "Lemon",
+          "Cashew",
           "Lime",
-          "Cashew"
+          "Lemon"
         ],
         "correctAnswer": "Cashew",
         "explanation": "Exemplo prático: \"Cashew fruit is native to Brazil.\"",
@@ -1015,12 +1015,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Acai",
         "visualEmoji": "🟣",
         "visualOptions": [
-          {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana"
-          },
           {
             "text": "Blackberry",
             "emoji": "⚫",
@@ -1038,13 +1032,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥝",
             "label": "Kiwi",
             "translationPt": "Kiwi"
+          },
+          {
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
           }
         ],
         "options": [
-          "Banana",
           "Blackberry",
           "Acai",
-          "Kiwi"
+          "Kiwi",
+          "Banana"
         ],
         "correctAnswer": "Acai",
         "explanation": "Exemplo prático: \"Cold acai bowl is a Brazilian favorite.\"",
@@ -1065,12 +1065,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mamão"
           },
           {
-            "text": "Jabuticaba",
-            "emoji": "⚫",
-            "label": "Jabuticaba",
-            "translationPt": "Jabuticaba"
-          },
-          {
             "text": "Watermelon",
             "emoji": "🍉",
             "label": "Watermelon",
@@ -1081,13 +1075,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍊",
             "label": "Tangerine",
             "translationPt": "Tangerina / Mexerica"
+          },
+          {
+            "text": "Jabuticaba",
+            "emoji": "⚫",
+            "label": "Jabuticaba",
+            "translationPt": "Jabuticaba"
           }
         ],
         "options": [
           "Papaya",
-          "Jabuticaba",
           "Watermelon",
-          "Tangerine"
+          "Tangerine",
+          "Jabuticaba"
         ],
         "correctAnswer": "Jabuticaba",
         "explanation": "Exemplo prático: \"Jabuticaba is a sweet dark Brazilian fruit.\"",
@@ -1102,6 +1102,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🟠",
         "visualOptions": [
           {
+            "text": "Avocado",
+            "emoji": "🥑",
+            "label": "Avocado",
+            "translationPt": "Abacate"
+          },
+          {
+            "text": "Guava",
+            "emoji": "🩷",
+            "label": "Guava",
+            "translationPt": "Goiaba"
+          },
+          {
             "text": "Persimmon",
             "emoji": "🟠",
             "label": "Persimmon",
@@ -1112,25 +1124,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍇",
             "label": "Grape",
             "translationPt": "Uva"
-          },
-          {
-            "text": "Guava",
-            "emoji": "🩷",
-            "label": "Guava",
-            "translationPt": "Goiaba"
-          },
-          {
-            "text": "Avocado",
-            "emoji": "🥑",
-            "label": "Avocado",
-            "translationPt": "Abacate"
           }
         ],
         "options": [
-          "Persimmon",
-          "Grape",
+          "Avocado",
           "Guava",
-          "Avocado"
+          "Persimmon",
+          "Grape"
         ],
         "correctAnswer": "Persimmon",
         "explanation": "Exemplo prático: \"Ripe persimmon is very sweet.\"",
@@ -1145,6 +1145,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⭐",
         "visualOptions": [
           {
+            "text": "Starfruit",
+            "emoji": "⭐",
+            "label": "Starfruit",
+            "translationPt": "Carambola"
+          },
+          {
+            "text": "Peach",
+            "emoji": "🍑",
+            "label": "Peach",
+            "translationPt": "Pêssego"
+          },
+          {
             "text": "Passion Fruit",
             "emoji": "💛",
             "label": "Passion Fruit",
@@ -1155,25 +1167,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍐",
             "label": "Pear",
             "translationPt": "Pera"
-          },
-          {
-            "text": "Peach",
-            "emoji": "🍑",
-            "label": "Peach",
-            "translationPt": "Pêssego"
-          },
-          {
-            "text": "Starfruit",
-            "emoji": "⭐",
-            "label": "Starfruit",
-            "translationPt": "Carambola"
           }
         ],
         "options": [
-          "Passion Fruit",
-          "Pear",
+          "Starfruit",
           "Peach",
-          "Starfruit"
+          "Passion Fruit",
+          "Pear"
         ],
         "correctAnswer": "Starfruit",
         "explanation": "Exemplo prático: \"Slices of starfruit look like bright stars.\"",
@@ -1188,12 +1188,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⚫",
         "visualOptions": [
           {
-            "text": "Blackberry",
-            "emoji": "⚫",
-            "label": "Blackberry",
-            "translationPt": "Amora"
-          },
-          {
             "text": "Cashew",
             "emoji": "🧡",
             "label": "Cashew",
@@ -1206,6 +1200,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ameixa"
           },
           {
+            "text": "Blackberry",
+            "emoji": "⚫",
+            "label": "Blackberry",
+            "translationPt": "Amora"
+          },
+          {
             "text": "Cherry",
             "emoji": "🍒",
             "label": "Cherry",
@@ -1213,9 +1213,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Blackberry",
           "Cashew",
           "Plum",
+          "Blackberry",
           "Cherry"
         ],
         "correctAnswer": "Blackberry",
@@ -1231,10 +1231,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🟢",
         "visualOptions": [
           {
-            "text": "Mango",
-            "emoji": "🥭",
-            "label": "Mango",
-            "translationPt": "Manga"
+            "text": "Jabuticaba",
+            "emoji": "⚫",
+            "label": "Jabuticaba",
+            "translationPt": "Jabuticaba"
           },
           {
             "text": "Jackfruit",
@@ -1243,23 +1243,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Jaca"
           },
           {
-            "text": "Jabuticaba",
-            "emoji": "⚫",
-            "label": "Jabuticaba",
-            "translationPt": "Jabuticaba"
-          },
-          {
             "text": "Melon",
             "emoji": "🍈",
             "label": "Melon",
             "translationPt": "Melão"
+          },
+          {
+            "text": "Mango",
+            "emoji": "🥭",
+            "label": "Mango",
+            "translationPt": "Manga"
           }
         ],
         "options": [
-          "Mango",
-          "Jackfruit",
           "Jabuticaba",
-          "Melon"
+          "Jackfruit",
+          "Melon",
+          "Mango"
         ],
         "correctAnswer": "Jackfruit",
         "explanation": "Exemplo prático: \"Jackfruit is a very large tropical fruit.\"",
@@ -1273,6 +1273,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Fig",
         "visualEmoji": "🟤",
         "visualOptions": [
+          {
+            "text": "Kiwi",
+            "emoji": "🥝",
+            "label": "Kiwi",
+            "translationPt": "Kiwi"
+          },
           {
             "text": "Acai",
             "emoji": "🟣",
@@ -1290,19 +1296,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🟤",
             "label": "Fig",
             "translationPt": "Figo"
-          },
-          {
-            "text": "Kiwi",
-            "emoji": "🥝",
-            "label": "Kiwi",
-            "translationPt": "Kiwi"
           }
         ],
         "options": [
+          "Kiwi",
           "Acai",
           "Persimmon",
-          "Fig",
-          "Kiwi"
+          "Fig"
         ],
         "correctAnswer": "Fig",
         "explanation": "Exemplo prático: \"Fresh figs are sweet and soft.\"",
@@ -1343,16 +1343,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Touro / Boi"
           },
           {
-            "text": "Dog",
-            "emoji": "🐕",
-            "label": "Dog",
-            "translationPt": "Cachorro"
-          },
-          {
             "text": "Hamster",
             "emoji": "🐹",
             "label": "Hamster",
             "translationPt": "Hamster"
+          },
+          {
+            "text": "Dog",
+            "emoji": "🐕",
+            "label": "Dog",
+            "translationPt": "Cachorro"
           },
           {
             "text": "Horse",
@@ -1363,8 +1363,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Bull",
-          "Dog",
           "Hamster",
+          "Dog",
           "Horse"
         ],
         "correctAnswer": "Dog",
@@ -1392,23 +1392,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tartaruga / Jabuti"
           },
           {
-            "text": "Turkey",
-            "emoji": "🦃",
-            "label": "Turkey",
-            "translationPt": "Peru"
-          },
-          {
             "text": "Butterfly",
             "emoji": "🦋",
             "label": "Butterfly",
             "translationPt": "Borboleta"
+          },
+          {
+            "text": "Turkey",
+            "emoji": "🦃",
+            "label": "Turkey",
+            "translationPt": "Peru"
           }
         ],
         "options": [
           "Cat",
           "Turtle",
-          "Turkey",
-          "Butterfly"
+          "Butterfly",
+          "Turkey"
         ],
         "correctAnswer": "Cat",
         "explanation": "Exemplo prático: \"The cute cat walks quietly.\"",
@@ -1423,10 +1423,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐦",
         "visualOptions": [
           {
-            "text": "Guinea Pig",
-            "emoji": "🐹",
-            "label": "Guinea Pig",
-            "translationPt": "Porquinho-da-índia"
+            "text": "Goose",
+            "emoji": "🪿",
+            "label": "Goose",
+            "translationPt": "Ganso"
           },
           {
             "text": "Goat",
@@ -1435,23 +1435,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cabra / Bode"
           },
           {
-            "text": "Goose",
-            "emoji": "🪿",
-            "label": "Goose",
-            "translationPt": "Ganso"
-          },
-          {
             "text": "Bird",
             "emoji": "🐦",
             "label": "Bird",
             "translationPt": "Pássaro / Passarinho"
+          },
+          {
+            "text": "Guinea Pig",
+            "emoji": "🐹",
+            "label": "Guinea Pig",
+            "translationPt": "Porquinho-da-índia"
           }
         ],
         "options": [
-          "Guinea Pig",
-          "Goat",
           "Goose",
-          "Bird"
+          "Goat",
+          "Bird",
+          "Guinea Pig"
         ],
         "correctAnswer": "Bird",
         "explanation": "Exemplo prático: \"The little bird sings in the morning.\"",
@@ -1466,16 +1466,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐟",
         "visualOptions": [
           {
-            "text": "Fish",
-            "emoji": "🐟",
-            "label": "Fish",
-            "translationPt": "Peixe"
-          },
-          {
             "text": "Spider",
             "emoji": "🕷️",
             "label": "Spider",
             "translationPt": "Aranha"
+          },
+          {
+            "text": "Fish",
+            "emoji": "🐟",
+            "label": "Fish",
+            "translationPt": "Peixe"
           },
           {
             "text": "Pig",
@@ -1491,8 +1491,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Fish",
           "Spider",
+          "Fish",
           "Pig",
           "Sheep"
         ],
@@ -1509,18 +1509,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐇",
         "visualOptions": [
           {
-            "text": "Frog",
-            "emoji": "🐸",
-            "label": "Frog",
-            "translationPt": "Sapo / Rã"
-          },
-          {
-            "text": "Rabbit",
-            "emoji": "🐇",
-            "label": "Rabbit",
-            "translationPt": "Coelho"
-          },
-          {
             "text": "Chicken",
             "emoji": "🐔",
             "label": "Chicken",
@@ -1531,13 +1519,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐄",
             "label": "Cow",
             "translationPt": "Vaca"
+          },
+          {
+            "text": "Frog",
+            "emoji": "🐸",
+            "label": "Frog",
+            "translationPt": "Sapo / Rã"
+          },
+          {
+            "text": "Rabbit",
+            "emoji": "🐇",
+            "label": "Rabbit",
+            "translationPt": "Coelho"
           }
         ],
         "options": [
-          "Frog",
-          "Rabbit",
           "Chicken",
-          "Cow"
+          "Cow",
+          "Frog",
+          "Rabbit"
         ],
         "correctAnswer": "Rabbit",
         "explanation": "Exemplo prático: \"The white rabbit has long ears.\"",
@@ -1552,18 +1552,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐢",
         "visualOptions": [
           {
-            "text": "Ladybug",
-            "emoji": "🐞",
-            "label": "Ladybug",
-            "translationPt": "Joaninha"
-          },
-          {
-            "text": "Rooster",
-            "emoji": "🐓",
-            "label": "Rooster",
-            "translationPt": "Galo"
-          },
-          {
             "text": "Turtle",
             "emoji": "🐢",
             "label": "Turtle",
@@ -1574,13 +1562,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐈",
             "label": "Cat",
             "translationPt": "Gato"
+          },
+          {
+            "text": "Ladybug",
+            "emoji": "🐞",
+            "label": "Ladybug",
+            "translationPt": "Joaninha"
+          },
+          {
+            "text": "Rooster",
+            "emoji": "🐓",
+            "label": "Rooster",
+            "translationPt": "Galo"
           }
         ],
         "options": [
-          "Ladybug",
-          "Rooster",
           "Turtle",
-          "Cat"
+          "Cat",
+          "Ladybug",
+          "Rooster"
         ],
         "correctAnswer": "Turtle",
         "explanation": "Exemplo prático: \"The turtle walks slowly with its shell.\"",
@@ -1638,18 +1638,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐹",
         "visualOptions": [
           {
-            "text": "Hamster",
-            "emoji": "🐹",
-            "label": "Hamster",
-            "translationPt": "Hamster"
-          },
-          {
-            "text": "Pigeon",
-            "emoji": "🐦",
-            "label": "Pigeon",
-            "translationPt": "Pombo"
-          },
-          {
             "text": "Fish",
             "emoji": "🐟",
             "label": "Fish",
@@ -1660,13 +1648,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐜",
             "label": "Ant",
             "translationPt": "Formiga"
+          },
+          {
+            "text": "Hamster",
+            "emoji": "🐹",
+            "label": "Hamster",
+            "translationPt": "Hamster"
+          },
+          {
+            "text": "Pigeon",
+            "emoji": "🐦",
+            "label": "Pigeon",
+            "translationPt": "Pombo"
           }
         ],
         "options": [
-          "Hamster",
-          "Pigeon",
           "Fish",
-          "Ant"
+          "Ant",
+          "Hamster",
+          "Pigeon"
         ],
         "correctAnswer": "Hamster",
         "explanation": "Exemplo prático: \"The small golden hamster eats seeds.\"",
@@ -1681,35 +1681,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐹",
         "visualOptions": [
           {
-            "text": "Mouse",
-            "emoji": "🐁",
-            "label": "Mouse",
-            "translationPt": "Rato / Camundongo"
-          },
-          {
-            "text": "Duck",
-            "emoji": "🦆",
-            "label": "Duck",
-            "translationPt": "Pato"
-          },
-          {
             "text": "Guinea Pig",
             "emoji": "🐹",
             "label": "Guinea Pig",
             "translationPt": "Porquinho-da-índia"
           },
           {
+            "text": "Mouse",
+            "emoji": "🐁",
+            "label": "Mouse",
+            "translationPt": "Rato / Camundongo"
+          },
+          {
             "text": "Dog",
             "emoji": "🐕",
             "label": "Dog",
             "translationPt": "Cachorro"
+          },
+          {
+            "text": "Duck",
+            "emoji": "🦆",
+            "label": "Duck",
+            "translationPt": "Pato"
           }
         ],
         "options": [
-          "Mouse",
-          "Duck",
           "Guinea Pig",
-          "Dog"
+          "Mouse",
+          "Dog",
+          "Duck"
         ],
         "correctAnswer": "Guinea Pig",
         "explanation": "Exemplo prático: \"The guinea pig is a gentle pet.\"",
@@ -1724,16 +1724,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐎",
         "visualOptions": [
           {
-            "text": "Horse",
-            "emoji": "🐎",
-            "label": "Horse",
-            "translationPt": "Cavalo"
-          },
-          {
             "text": "Rabbit",
             "emoji": "🐇",
             "label": "Rabbit",
             "translationPt": "Coelho"
+          },
+          {
+            "text": "Horse",
+            "emoji": "🐎",
+            "label": "Horse",
+            "translationPt": "Cavalo"
           },
           {
             "text": "Donkey",
@@ -1749,8 +1749,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Horse",
           "Rabbit",
+          "Horse",
           "Donkey",
           "Sheep"
         ],
@@ -1767,35 +1767,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐄",
         "visualOptions": [
           {
-            "text": "Parrot",
-            "emoji": "🦜",
-            "label": "Parrot",
-            "translationPt": "Papagaio"
-          },
-          {
             "text": "Frog",
             "emoji": "🐸",
             "label": "Frog",
             "translationPt": "Sapo / Rã"
           },
           {
-            "text": "Ladybug",
-            "emoji": "🐞",
-            "label": "Ladybug",
-            "translationPt": "Joaninha"
-          },
-          {
             "text": "Cow",
             "emoji": "🐄",
             "label": "Cow",
             "translationPt": "Vaca"
+          },
+          {
+            "text": "Parrot",
+            "emoji": "🦜",
+            "label": "Parrot",
+            "translationPt": "Papagaio"
+          },
+          {
+            "text": "Ladybug",
+            "emoji": "🐞",
+            "label": "Ladybug",
+            "translationPt": "Joaninha"
           }
         ],
         "options": [
-          "Parrot",
           "Frog",
-          "Ladybug",
-          "Cow"
+          "Cow",
+          "Parrot",
+          "Ladybug"
         ],
         "correctAnswer": "Cow",
         "explanation": "Exemplo prático: \"The dairy cow gives us fresh milk.\"",
@@ -1810,10 +1810,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐖",
         "visualOptions": [
           {
-            "text": "Pig",
-            "emoji": "🐖",
-            "label": "Pig",
-            "translationPt": "Porco"
+            "text": "Bird",
+            "emoji": "🐦",
+            "label": "Bird",
+            "translationPt": "Pássaro / Passarinho"
           },
           {
             "text": "Butterfly",
@@ -1828,17 +1828,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Touro / Boi"
           },
           {
-            "text": "Bird",
-            "emoji": "🐦",
-            "label": "Bird",
-            "translationPt": "Pássaro / Passarinho"
+            "text": "Pig",
+            "emoji": "🐖",
+            "label": "Pig",
+            "translationPt": "Porco"
           }
         ],
         "options": [
-          "Pig",
+          "Bird",
           "Butterfly",
           "Bull",
-          "Bird"
+          "Pig"
         ],
         "correctAnswer": "Pig",
         "explanation": "Exemplo prático: \"The pink pig lives on the farm.\"",
@@ -1902,10 +1902,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Galo"
           },
           {
-            "text": "Donkey",
-            "emoji": "🫏",
-            "label": "Donkey",
-            "translationPt": "Burro / Jegue"
+            "text": "Ant",
+            "emoji": "🐜",
+            "label": "Ant",
+            "translationPt": "Formiga"
           },
           {
             "text": "Dog",
@@ -1914,17 +1914,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachorro"
           },
           {
-            "text": "Ant",
-            "emoji": "🐜",
-            "label": "Ant",
-            "translationPt": "Formiga"
+            "text": "Donkey",
+            "emoji": "🫏",
+            "label": "Donkey",
+            "translationPt": "Burro / Jegue"
           }
         ],
         "options": [
           "Rooster",
-          "Donkey",
+          "Ant",
           "Dog",
-          "Ant"
+          "Donkey"
         ],
         "correctAnswer": "Rooster",
         "explanation": "Exemplo prático: \"The rooster crows early in the morning.\"",
@@ -1951,23 +1951,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rato / Camundongo"
           },
           {
-            "text": "Pigeon",
-            "emoji": "🐦",
-            "label": "Pigeon",
-            "translationPt": "Pombo"
-          },
-          {
             "text": "Chick",
             "emoji": "🐥",
             "label": "Chick",
             "translationPt": "Pintinho"
+          },
+          {
+            "text": "Pigeon",
+            "emoji": "🐦",
+            "label": "Pigeon",
+            "translationPt": "Pombo"
           }
         ],
         "options": [
           "Parrot",
           "Mouse",
-          "Pigeon",
-          "Chick"
+          "Chick",
+          "Pigeon"
         ],
         "correctAnswer": "Chick",
         "explanation": "Exemplo prático: \"The little yellow chick follows the hen.\"",
@@ -1982,12 +1982,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦆",
         "visualOptions": [
           {
-            "text": "Cow",
-            "emoji": "🐄",
-            "label": "Cow",
-            "translationPt": "Vaca"
-          },
-          {
             "text": "Spider",
             "emoji": "🕷️",
             "label": "Spider",
@@ -2000,6 +1994,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pato"
           },
           {
+            "text": "Cow",
+            "emoji": "🐄",
+            "label": "Cow",
+            "translationPt": "Vaca"
+          },
+          {
             "text": "Cat",
             "emoji": "🐈",
             "label": "Cat",
@@ -2007,9 +2007,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Cow",
           "Spider",
           "Duck",
+          "Cow",
           "Cat"
         ],
         "correctAnswer": "Duck",
@@ -2025,16 +2025,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐑",
         "visualOptions": [
           {
+            "text": "Chicken",
+            "emoji": "🐔",
+            "label": "Chicken",
+            "translationPt": "Galinha"
+          },
+          {
             "text": "Pig",
             "emoji": "🐖",
             "label": "Pig",
             "translationPt": "Porco"
-          },
-          {
-            "text": "Sheep",
-            "emoji": "🐑",
-            "label": "Sheep",
-            "translationPt": "Ovelha"
           },
           {
             "text": "Rabbit",
@@ -2043,17 +2043,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Coelho"
           },
           {
-            "text": "Chicken",
-            "emoji": "🐔",
-            "label": "Chicken",
-            "translationPt": "Galinha"
+            "text": "Sheep",
+            "emoji": "🐑",
+            "label": "Sheep",
+            "translationPt": "Ovelha"
           }
         ],
         "options": [
+          "Chicken",
           "Pig",
-          "Sheep",
           "Rabbit",
-          "Chicken"
+          "Sheep"
         ],
         "correctAnswer": "Sheep",
         "explanation": "Exemplo prático: \"White sheep have soft wool.\"",
@@ -2074,12 +2074,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cabra / Bode"
           },
           {
-            "text": "Rooster",
-            "emoji": "🐓",
-            "label": "Rooster",
-            "translationPt": "Galo"
-          },
-          {
             "text": "Guinea Pig",
             "emoji": "🐹",
             "label": "Guinea Pig",
@@ -2090,13 +2084,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪿",
             "label": "Goose",
             "translationPt": "Ganso"
+          },
+          {
+            "text": "Rooster",
+            "emoji": "🐓",
+            "label": "Rooster",
+            "translationPt": "Galo"
           }
         ],
         "options": [
           "Goat",
-          "Rooster",
           "Guinea Pig",
-          "Goose"
+          "Goose",
+          "Rooster"
         ],
         "correctAnswer": "Goat",
         "explanation": "Exemplo prático: \"The goat climbs rocks on the farm.\"",
@@ -2111,10 +2111,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🫏",
         "visualOptions": [
           {
-            "text": "Turtle",
-            "emoji": "🐢",
-            "label": "Turtle",
-            "translationPt": "Tartaruga / Jabuti"
+            "text": "Chick",
+            "emoji": "🐥",
+            "label": "Chick",
+            "translationPt": "Pintinho"
           },
           {
             "text": "Horse",
@@ -2123,10 +2123,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cavalo"
           },
           {
-            "text": "Chick",
-            "emoji": "🐥",
-            "label": "Chick",
-            "translationPt": "Pintinho"
+            "text": "Turtle",
+            "emoji": "🐢",
+            "label": "Turtle",
+            "translationPt": "Tartaruga / Jabuti"
           },
           {
             "text": "Donkey",
@@ -2136,9 +2136,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Turtle",
-          "Horse",
           "Chick",
+          "Horse",
+          "Turtle",
           "Donkey"
         ],
         "correctAnswer": "Donkey",
@@ -2154,35 +2154,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐂",
         "visualOptions": [
           {
-            "text": "Bull",
-            "emoji": "🐂",
-            "label": "Bull",
-            "translationPt": "Touro / Boi"
-          },
-          {
             "text": "Dog",
             "emoji": "🐕",
             "label": "Dog",
             "translationPt": "Cachorro"
           },
           {
-            "text": "Ant",
-            "emoji": "🐜",
-            "label": "Ant",
-            "translationPt": "Formiga"
-          },
-          {
             "text": "Duck",
             "emoji": "🦆",
             "label": "Duck",
             "translationPt": "Pato"
+          },
+          {
+            "text": "Bull",
+            "emoji": "🐂",
+            "label": "Bull",
+            "translationPt": "Touro / Boi"
+          },
+          {
+            "text": "Ant",
+            "emoji": "🐜",
+            "label": "Ant",
+            "translationPt": "Formiga"
           }
         ],
         "options": [
-          "Bull",
           "Dog",
-          "Ant",
-          "Duck"
+          "Duck",
+          "Bull",
+          "Ant"
         ],
         "correctAnswer": "Bull",
         "explanation": "Exemplo prático: \"The strong bull has two horns.\"",
@@ -2197,35 +2197,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦃",
         "visualOptions": [
           {
-            "text": "Sheep",
-            "emoji": "🐑",
-            "label": "Sheep",
-            "translationPt": "Ovelha"
-          },
-          {
             "text": "Turkey",
             "emoji": "🦃",
             "label": "Turkey",
             "translationPt": "Peru"
           },
           {
-            "text": "Parrot",
-            "emoji": "🦜",
-            "label": "Parrot",
-            "translationPt": "Papagaio"
-          },
-          {
             "text": "Spider",
             "emoji": "🕷️",
             "label": "Spider",
             "translationPt": "Aranha"
+          },
+          {
+            "text": "Sheep",
+            "emoji": "🐑",
+            "label": "Sheep",
+            "translationPt": "Ovelha"
+          },
+          {
+            "text": "Parrot",
+            "emoji": "🦜",
+            "label": "Parrot",
+            "translationPt": "Papagaio"
           }
         ],
         "options": [
-          "Sheep",
           "Turkey",
-          "Parrot",
-          "Spider"
+          "Spider",
+          "Sheep",
+          "Parrot"
         ],
         "correctAnswer": "Turkey",
         "explanation": "Exemplo prático: \"The turkey opens its fan tail.\"",
@@ -2240,12 +2240,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪿",
         "visualOptions": [
           {
-            "text": "Fish",
-            "emoji": "🐟",
-            "label": "Fish",
-            "translationPt": "Peixe"
-          },
-          {
             "text": "Goat",
             "emoji": "🐐",
             "label": "Goat",
@@ -2258,6 +2252,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ganso"
           },
           {
+            "text": "Fish",
+            "emoji": "🐟",
+            "label": "Fish",
+            "translationPt": "Peixe"
+          },
+          {
             "text": "Cat",
             "emoji": "🐈",
             "label": "Cat",
@@ -2265,9 +2265,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Fish",
           "Goat",
           "Goose",
+          "Fish",
           "Cat"
         ],
         "correctAnswer": "Goose",
@@ -2289,10 +2289,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Coelho"
           },
           {
-            "text": "Rooster",
-            "emoji": "🐓",
-            "label": "Rooster",
-            "translationPt": "Galo"
+            "text": "Mouse",
+            "emoji": "🐁",
+            "label": "Mouse",
+            "translationPt": "Rato / Camundongo"
           },
           {
             "text": "Ladybug",
@@ -2301,17 +2301,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Joaninha"
           },
           {
-            "text": "Mouse",
-            "emoji": "🐁",
-            "label": "Mouse",
-            "translationPt": "Rato / Camundongo"
+            "text": "Rooster",
+            "emoji": "🐓",
+            "label": "Rooster",
+            "translationPt": "Galo"
           }
         ],
         "options": [
           "Rabbit",
-          "Rooster",
+          "Mouse",
           "Ladybug",
-          "Mouse"
+          "Rooster"
         ],
         "correctAnswer": "Mouse",
         "explanation": "Exemplo prático: \"The small mouse loves cheese.\"",
@@ -2326,16 +2326,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐦",
         "visualOptions": [
           {
-            "text": "Pigeon",
-            "emoji": "🐦",
-            "label": "Pigeon",
-            "translationPt": "Pombo"
-          },
-          {
             "text": "Horse",
             "emoji": "🐎",
             "label": "Horse",
             "translationPt": "Cavalo"
+          },
+          {
+            "text": "Hamster",
+            "emoji": "🐹",
+            "label": "Hamster",
+            "translationPt": "Hamster"
           },
           {
             "text": "Bird",
@@ -2344,17 +2344,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pássaro / Passarinho"
           },
           {
-            "text": "Hamster",
-            "emoji": "🐹",
-            "label": "Hamster",
-            "translationPt": "Hamster"
+            "text": "Pigeon",
+            "emoji": "🐦",
+            "label": "Pigeon",
+            "translationPt": "Pombo"
           }
         ],
         "options": [
-          "Pigeon",
           "Horse",
+          "Hamster",
           "Bird",
-          "Hamster"
+          "Pigeon"
         ],
         "correctAnswer": "Pigeon",
         "explanation": "Exemplo prático: \"Pigeons walk in the city square.\"",
@@ -2375,16 +2375,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Peru"
           },
           {
-            "text": "Frog",
-            "emoji": "🐸",
-            "label": "Frog",
-            "translationPt": "Sapo / Rã"
-          },
-          {
             "text": "Bull",
             "emoji": "🐂",
             "label": "Bull",
             "translationPt": "Touro / Boi"
+          },
+          {
+            "text": "Frog",
+            "emoji": "🐸",
+            "label": "Frog",
+            "translationPt": "Sapo / Rã"
           },
           {
             "text": "Turtle",
@@ -2395,8 +2395,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Turkey",
-          "Frog",
           "Bull",
+          "Frog",
           "Turtle"
         ],
         "correctAnswer": "Frog",
@@ -2412,10 +2412,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦋",
         "visualOptions": [
           {
-            "text": "Goat",
-            "emoji": "🐐",
-            "label": "Goat",
-            "translationPt": "Cabra / Bode"
+            "text": "Butterfly",
+            "emoji": "🦋",
+            "label": "Butterfly",
+            "translationPt": "Borboleta"
           },
           {
             "text": "Guinea Pig",
@@ -2424,23 +2424,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Porquinho-da-índia"
           },
           {
-            "text": "Butterfly",
-            "emoji": "🦋",
-            "label": "Butterfly",
-            "translationPt": "Borboleta"
-          },
-          {
             "text": "Goose",
             "emoji": "🪿",
             "label": "Goose",
             "translationPt": "Ganso"
+          },
+          {
+            "text": "Goat",
+            "emoji": "🐐",
+            "label": "Goat",
+            "translationPt": "Cabra / Bode"
           }
         ],
         "options": [
-          "Goat",
-          "Guinea Pig",
           "Butterfly",
-          "Goose"
+          "Guinea Pig",
+          "Goose",
+          "Goat"
         ],
         "correctAnswer": "Butterfly",
         "explanation": "Exemplo prático: \"A colorful butterfly lands on a flower.\"",
@@ -2454,12 +2454,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Bee",
         "visualEmoji": "🐝",
         "visualOptions": [
-          {
-            "text": "Mouse",
-            "emoji": "🐁",
-            "label": "Mouse",
-            "translationPt": "Rato / Camundongo"
-          },
           {
             "text": "Duck",
             "emoji": "🦆",
@@ -2477,13 +2471,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐝",
             "label": "Bee",
             "translationPt": "Abelha"
+          },
+          {
+            "text": "Mouse",
+            "emoji": "🐁",
+            "label": "Mouse",
+            "translationPt": "Rato / Camundongo"
           }
         ],
         "options": [
-          "Mouse",
           "Duck",
           "Pig",
-          "Bee"
+          "Bee",
+          "Mouse"
         ],
         "correctAnswer": "Bee",
         "explanation": "Exemplo prático: \"Honeybees make golden honey.\"",
@@ -2498,6 +2498,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐜",
         "visualOptions": [
           {
+            "text": "Chicken",
+            "emoji": "🐔",
+            "label": "Chicken",
+            "translationPt": "Galinha"
+          },
+          {
             "text": "Ant",
             "emoji": "🐜",
             "label": "Ant",
@@ -2510,12 +2516,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pintinho"
           },
           {
-            "text": "Chicken",
-            "emoji": "🐔",
-            "label": "Chicken",
-            "translationPt": "Galinha"
-          },
-          {
             "text": "Cow",
             "emoji": "🐄",
             "label": "Cow",
@@ -2523,9 +2523,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Chicken",
           "Ant",
           "Chick",
-          "Chicken",
           "Cow"
         ],
         "correctAnswer": "Ant",
@@ -2541,35 +2541,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐞",
         "visualOptions": [
           {
-            "text": "Frog",
-            "emoji": "🐸",
-            "label": "Frog",
-            "translationPt": "Sapo / Rã"
-          },
-          {
             "text": "Donkey",
             "emoji": "🫏",
             "label": "Donkey",
             "translationPt": "Burro / Jegue"
           },
           {
-            "text": "Ladybug",
-            "emoji": "🐞",
-            "label": "Ladybug",
-            "translationPt": "Joaninha"
-          },
-          {
             "text": "Pigeon",
             "emoji": "🐦",
             "label": "Pigeon",
             "translationPt": "Pombo"
+          },
+          {
+            "text": "Frog",
+            "emoji": "🐸",
+            "label": "Frog",
+            "translationPt": "Sapo / Rã"
+          },
+          {
+            "text": "Ladybug",
+            "emoji": "🐞",
+            "label": "Ladybug",
+            "translationPt": "Joaninha"
           }
         ],
         "options": [
-          "Frog",
           "Donkey",
-          "Ladybug",
-          "Pigeon"
+          "Pigeon",
+          "Frog",
+          "Ladybug"
         ],
         "correctAnswer": "Ladybug",
         "explanation": "Exemplo prático: \"A red ladybug with black spots.\"",
@@ -2596,23 +2596,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Peru"
           },
           {
-            "text": "Butterfly",
-            "emoji": "🦋",
-            "label": "Butterfly",
-            "translationPt": "Borboleta"
-          },
-          {
             "text": "Hamster",
             "emoji": "🐹",
             "label": "Hamster",
             "translationPt": "Hamster"
+          },
+          {
+            "text": "Butterfly",
+            "emoji": "🦋",
+            "label": "Butterfly",
+            "translationPt": "Borboleta"
           }
         ],
         "options": [
           "Spider",
           "Turkey",
-          "Butterfly",
-          "Hamster"
+          "Hamster",
+          "Butterfly"
         ],
         "correctAnswer": "Spider",
         "explanation": "Exemplo prático: \"The spider builds a web in the garden.\"",
@@ -2647,35 +2647,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛏️",
         "visualOptions": [
           {
-            "text": "Blanket",
-            "emoji": "🛌",
-            "label": "Blanket",
-            "translationPt": "Cobertor / Edredom"
-          },
-          {
             "text": "Bed",
             "emoji": "🛏️",
             "label": "Bed",
             "translationPt": "Cama"
           },
           {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura"
-          },
-          {
             "text": "Bookshelf",
             "emoji": "📚",
             "label": "Bookshelf",
             "translationPt": "Estante de livros"
+          },
+          {
+            "text": "Blanket",
+            "emoji": "🛌",
+            "label": "Blanket",
+            "translationPt": "Cobertor / Edredom"
+          },
+          {
+            "text": "Broom",
+            "emoji": "🧹",
+            "label": "Broom",
+            "translationPt": "Vassoura"
           }
         ],
         "options": [
-          "Blanket",
           "Bed",
-          "Broom",
-          "Bookshelf"
+          "Bookshelf",
+          "Blanket",
+          "Broom"
         ],
         "correctAnswer": "Bed",
         "explanation": "Exemplo prático: \"I sleep in a comfortable bed.\"",
@@ -2690,16 +2690,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪑",
         "visualOptions": [
           {
-            "text": "Towel",
-            "emoji": "🧺",
-            "label": "Towel",
-            "translationPt": "Toalha de banho"
-          },
-          {
             "text": "Television",
             "emoji": "📺",
             "label": "Television",
             "translationPt": "Televisão (TV)"
+          },
+          {
+            "text": "Toothbrush",
+            "emoji": "🪥",
+            "label": "Toothbrush",
+            "translationPt": "Escova de dentes"
           },
           {
             "text": "Chair",
@@ -2708,17 +2708,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cadeira"
           },
           {
-            "text": "Toothbrush",
-            "emoji": "🪥",
-            "label": "Toothbrush",
-            "translationPt": "Escova de dentes"
+            "text": "Towel",
+            "emoji": "🧺",
+            "label": "Towel",
+            "translationPt": "Toalha de banho"
           }
         ],
         "options": [
-          "Towel",
           "Television",
+          "Toothbrush",
           "Chair",
-          "Toothbrush"
+          "Towel"
         ],
         "correctAnswer": "Chair",
         "explanation": "Exemplo prático: \"Please sit down on this wooden chair.\"",
@@ -2739,6 +2739,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ar-condicionado"
           },
           {
+            "text": "Table",
+            "emoji": "🪑",
+            "label": "Table",
+            "translationPt": "Mesa"
+          },
+          {
             "text": "Window",
             "emoji": "🪟",
             "label": "Window",
@@ -2749,19 +2755,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚪",
             "label": "Door",
             "translationPt": "Porta"
-          },
-          {
-            "text": "Table",
-            "emoji": "🪑",
-            "label": "Table",
-            "translationPt": "Mesa"
           }
         ],
         "options": [
           "Air Conditioner",
+          "Table",
           "Window",
-          "Door",
-          "Table"
+          "Door"
         ],
         "correctAnswer": "Table",
         "explanation": "Exemplo prático: \"Dinner is served on the wooden table.\"",
@@ -2776,16 +2776,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛋️",
         "visualOptions": [
           {
-            "text": "Sofa",
-            "emoji": "🛋️",
-            "label": "Sofa",
-            "translationPt": "Sofá"
-          },
-          {
             "text": "Plant Pot",
             "emoji": "🪴",
             "label": "Plant Pot",
             "translationPt": "Vaso de planta"
+          },
+          {
+            "text": "Shower",
+            "emoji": "🚿",
+            "label": "Shower",
+            "translationPt": "Chuveiro"
           },
           {
             "text": "Soap",
@@ -2794,17 +2794,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sabonete"
           },
           {
-            "text": "Shower",
-            "emoji": "🚿",
-            "label": "Shower",
-            "translationPt": "Chuveiro"
+            "text": "Sofa",
+            "emoji": "🛋️",
+            "label": "Sofa",
+            "translationPt": "Sofá"
           }
         ],
         "options": [
-          "Sofa",
           "Plant Pot",
+          "Shower",
           "Soap",
-          "Shower"
+          "Sofa"
         ],
         "correctAnswer": "Sofa",
         "explanation": "Exemplo prático: \"The family sits together on the living room sofa.\"",
@@ -2819,10 +2819,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⬜",
         "visualOptions": [
           {
-            "text": "Fan",
-            "emoji": "🌀",
-            "label": "Fan",
-            "translationPt": "Ventilador"
+            "text": "Pillow",
+            "emoji": "⬜",
+            "label": "Pillow",
+            "translationPt": "Travesseiro"
           },
           {
             "text": "Curtain",
@@ -2831,23 +2831,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cortina"
           },
           {
-            "text": "Pillow",
-            "emoji": "⬜",
-            "label": "Pillow",
-            "translationPt": "Travesseiro"
-          },
-          {
             "text": "Clock",
             "emoji": "⏰",
             "label": "Clock",
             "translationPt": "Relógio / Despertador"
+          },
+          {
+            "text": "Fan",
+            "emoji": "🌀",
+            "label": "Fan",
+            "translationPt": "Ventilador"
           }
         ],
         "options": [
-          "Fan",
-          "Curtain",
           "Pillow",
-          "Clock"
+          "Curtain",
+          "Clock",
+          "Fan"
         ],
         "correctAnswer": "Pillow",
         "explanation": "Exemplo prático: \"I rest my head on a soft white pillow.\"",
@@ -2862,10 +2862,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛌",
         "visualOptions": [
           {
-            "text": "Blanket",
-            "emoji": "🛌",
-            "label": "Blanket",
-            "translationPt": "Cobertor / Edredom"
+            "text": "Chair",
+            "emoji": "🪑",
+            "label": "Chair",
+            "translationPt": "Cadeira"
           },
           {
             "text": "Lamp",
@@ -2880,17 +2880,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tapete"
           },
           {
-            "text": "Chair",
-            "emoji": "🪑",
-            "label": "Chair",
-            "translationPt": "Cadeira"
+            "text": "Blanket",
+            "emoji": "🛌",
+            "label": "Blanket",
+            "translationPt": "Cobertor / Edredom"
           }
         ],
         "options": [
-          "Blanket",
+          "Chair",
           "Lamp",
           "Rug",
-          "Chair"
+          "Blanket"
         ],
         "correctAnswer": "Blanket",
         "explanation": "Exemplo prático: \"A warm folded blanket for cold nights.\"",
@@ -2905,10 +2905,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚪",
         "visualOptions": [
           {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
+            "text": "Bucket",
+            "emoji": "🪣",
+            "label": "Bucket",
+            "translationPt": "Balde"
           },
           {
             "text": "Mirror",
@@ -2917,23 +2917,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Espelho"
           },
           {
-            "text": "Bucket",
-            "emoji": "🪣",
-            "label": "Bucket",
-            "translationPt": "Balde"
-          },
-          {
             "text": "Door",
             "emoji": "🚪",
             "label": "Door",
             "translationPt": "Porta"
+          },
+          {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
           }
         ],
         "options": [
-          "Bed",
-          "Mirror",
           "Bucket",
-          "Door"
+          "Mirror",
+          "Door",
+          "Bed"
         ],
         "correctAnswer": "Door",
         "explanation": "Exemplo prático: \"Please close the wooden door.\"",
@@ -2948,18 +2948,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪟",
         "visualOptions": [
           {
-            "text": "Table",
-            "emoji": "🪑",
-            "label": "Table",
-            "translationPt": "Mesa"
-          },
-          {
-            "text": "Toothpaste",
-            "emoji": "🪥",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
-          },
-          {
             "text": "Window",
             "emoji": "🪟",
             "label": "Window",
@@ -2970,13 +2958,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚪",
             "label": "Wardrobe",
             "translationPt": "Guarda-roupa"
+          },
+          {
+            "text": "Table",
+            "emoji": "🪑",
+            "label": "Table",
+            "translationPt": "Mesa"
+          },
+          {
+            "text": "Toothpaste",
+            "emoji": "🪥",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
           }
         ],
         "options": [
-          "Table",
-          "Toothpaste",
           "Window",
-          "Wardrobe"
+          "Wardrobe",
+          "Table",
+          "Toothpaste"
         ],
         "correctAnswer": "Window",
         "explanation": "Exemplo prático: \"Open the house window to let fresh air in.\"",
@@ -2991,10 +2991,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🔑",
         "visualOptions": [
           {
-            "text": "Trash Can",
-            "emoji": "🗑️",
-            "label": "Trash Can",
-            "translationPt": "Lixeira"
+            "text": "Toilet",
+            "emoji": "🚽",
+            "label": "Toilet",
+            "translationPt": "Vaso sanitário"
           },
           {
             "text": "Key",
@@ -3003,23 +3003,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chave"
           },
           {
-            "text": "Toilet",
-            "emoji": "🚽",
-            "label": "Toilet",
-            "translationPt": "Vaso sanitário"
-          },
-          {
             "text": "Toilet Paper",
             "emoji": "🧻",
             "label": "Toilet Paper",
             "translationPt": "Papel higiênico"
+          },
+          {
+            "text": "Trash Can",
+            "emoji": "🗑️",
+            "label": "Trash Can",
+            "translationPt": "Lixeira"
           }
         ],
         "options": [
-          "Trash Can",
-          "Key",
           "Toilet",
-          "Toilet Paper"
+          "Key",
+          "Toilet Paper",
+          "Trash Can"
         ],
         "correctAnswer": "Key",
         "explanation": "Exemplo prático: \"Keep your house key in your pocket.\"",
@@ -3034,6 +3034,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "📺",
         "visualOptions": [
           {
+            "text": "Pillow",
+            "emoji": "⬜",
+            "label": "Pillow",
+            "translationPt": "Travesseiro"
+          },
+          {
             "text": "Television",
             "emoji": "📺",
             "label": "Television",
@@ -3046,12 +3052,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sofá"
           },
           {
-            "text": "Pillow",
-            "emoji": "⬜",
-            "label": "Pillow",
-            "translationPt": "Travesseiro"
-          },
-          {
             "text": "Shower",
             "emoji": "🚿",
             "label": "Shower",
@@ -3059,9 +3059,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Pillow",
           "Television",
           "Sofa",
-          "Pillow",
           "Shower"
         ],
         "correctAnswer": "Television",
@@ -3077,6 +3077,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💡",
         "visualOptions": [
           {
+            "text": "Chair",
+            "emoji": "🪑",
+            "label": "Chair",
+            "translationPt": "Cadeira"
+          },
+          {
             "text": "Fan",
             "emoji": "🌀",
             "label": "Fan",
@@ -3089,12 +3095,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cortina"
           },
           {
-            "text": "Chair",
-            "emoji": "🪑",
-            "label": "Chair",
-            "translationPt": "Cadeira"
-          },
-          {
             "text": "Lamp",
             "emoji": "💡",
             "label": "Lamp",
@@ -3102,9 +3102,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Chair",
           "Fan",
           "Curtain",
-          "Chair",
           "Lamp"
         ],
         "correctAnswer": "Lamp",
@@ -3120,16 +3120,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪞",
         "visualOptions": [
           {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
+          },
+          {
             "text": "Blanket",
             "emoji": "🛌",
             "label": "Blanket",
             "translationPt": "Cobertor / Edredom"
-          },
-          {
-            "text": "Bookshelf",
-            "emoji": "📚",
-            "label": "Bookshelf",
-            "translationPt": "Estante de livros"
           },
           {
             "text": "Mirror",
@@ -3138,17 +3138,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Espelho"
           },
           {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
+            "text": "Bookshelf",
+            "emoji": "📚",
+            "label": "Bookshelf",
+            "translationPt": "Estante de livros"
           }
         ],
         "options": [
+          "Bed",
           "Blanket",
-          "Bookshelf",
           "Mirror",
-          "Bed"
+          "Bookshelf"
         ],
         "correctAnswer": "Mirror",
         "explanation": "Exemplo prático: \"She looked in the framed mirror.\"",
@@ -3163,16 +3163,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⏰",
         "visualOptions": [
           {
-            "text": "Bucket",
-            "emoji": "🪣",
-            "label": "Bucket",
-            "translationPt": "Balde"
-          },
-          {
             "text": "Clock",
             "emoji": "⏰",
             "label": "Clock",
             "translationPt": "Relógio / Despertador"
+          },
+          {
+            "text": "Bucket",
+            "emoji": "🪣",
+            "label": "Bucket",
+            "translationPt": "Balde"
           },
           {
             "text": "Key",
@@ -3188,8 +3188,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Bucket",
           "Clock",
+          "Bucket",
           "Key",
           "Broom"
         ],
@@ -3206,10 +3206,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚪",
         "visualOptions": [
           {
-            "text": "Wardrobe",
-            "emoji": "🚪",
-            "label": "Wardrobe",
-            "translationPt": "Guarda-roupa"
+            "text": "Window",
+            "emoji": "🪟",
+            "label": "Window",
+            "translationPt": "Janela"
           },
           {
             "text": "Door",
@@ -3218,23 +3218,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Porta"
           },
           {
+            "text": "Wardrobe",
+            "emoji": "🚪",
+            "label": "Wardrobe",
+            "translationPt": "Guarda-roupa"
+          },
+          {
             "text": "Air Conditioner",
             "emoji": "❄️",
             "label": "Air Conditioner",
             "translationPt": "Ar-condicionado"
-          },
-          {
-            "text": "Window",
-            "emoji": "🪟",
-            "label": "Window",
-            "translationPt": "Janela"
           }
         ],
         "options": [
-          "Wardrobe",
+          "Window",
           "Door",
-          "Air Conditioner",
-          "Window"
+          "Wardrobe",
+          "Air Conditioner"
         ],
         "correctAnswer": "Wardrobe",
         "explanation": "Exemplo prático: \"Hang your clothes inside the wooden wardrobe.\"",
@@ -3255,10 +3255,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Travesseiro"
           },
           {
-            "text": "Plant Pot",
-            "emoji": "🪴",
-            "label": "Plant Pot",
-            "translationPt": "Vaso de planta"
+            "text": "Rug",
+            "emoji": "🟥",
+            "label": "Rug",
+            "translationPt": "Tapete"
           },
           {
             "text": "Table",
@@ -3267,17 +3267,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mesa"
           },
           {
-            "text": "Rug",
-            "emoji": "🟥",
-            "label": "Rug",
-            "translationPt": "Tapete"
+            "text": "Plant Pot",
+            "emoji": "🪴",
+            "label": "Plant Pot",
+            "translationPt": "Vaso de planta"
           }
         ],
         "options": [
           "Pillow",
-          "Plant Pot",
+          "Rug",
           "Table",
-          "Rug"
+          "Plant Pot"
         ],
         "correctAnswer": "Rug",
         "explanation": "Exemplo prático: \"A soft woven rug on the floor.\"",
@@ -3292,18 +3292,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪟",
         "visualOptions": [
           {
-            "text": "Curtain",
-            "emoji": "🪟",
-            "label": "Curtain",
-            "translationPt": "Cortina"
-          },
-          {
-            "text": "Soap",
-            "emoji": "🧼",
-            "label": "Soap",
-            "translationPt": "Sabonete"
-          },
-          {
             "text": "Mirror",
             "emoji": "🪞",
             "label": "Mirror",
@@ -3314,13 +3302,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🛋️",
             "label": "Sofa",
             "translationPt": "Sofá"
+          },
+          {
+            "text": "Soap",
+            "emoji": "🧼",
+            "label": "Soap",
+            "translationPt": "Sabonete"
+          },
+          {
+            "text": "Curtain",
+            "emoji": "🪟",
+            "label": "Curtain",
+            "translationPt": "Cortina"
           }
         ],
         "options": [
-          "Curtain",
-          "Soap",
           "Mirror",
-          "Sofa"
+          "Sofa",
+          "Soap",
+          "Curtain"
         ],
         "correctAnswer": "Curtain",
         "explanation": "Exemplo prático: \"Close the window curtains at night.\"",
@@ -3335,16 +3335,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "📚",
         "visualOptions": [
           {
-            "text": "Lamp",
-            "emoji": "💡",
-            "label": "Lamp",
-            "translationPt": "Abajur / Luminária"
-          },
-          {
             "text": "Bookshelf",
             "emoji": "📚",
             "label": "Bookshelf",
             "translationPt": "Estante de livros"
+          },
+          {
+            "text": "Clock",
+            "emoji": "⏰",
+            "label": "Clock",
+            "translationPt": "Relógio / Despertador"
           },
           {
             "text": "Television",
@@ -3353,17 +3353,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Televisão (TV)"
           },
           {
-            "text": "Clock",
-            "emoji": "⏰",
-            "label": "Clock",
-            "translationPt": "Relógio / Despertador"
+            "text": "Lamp",
+            "emoji": "💡",
+            "label": "Lamp",
+            "translationPt": "Abajur / Luminária"
           }
         ],
         "options": [
-          "Lamp",
           "Bookshelf",
+          "Clock",
           "Television",
-          "Clock"
+          "Lamp"
         ],
         "correctAnswer": "Bookshelf",
         "explanation": "Exemplo prático: \"The wooden bookshelf holds many books.\"",
@@ -3377,6 +3377,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Fan",
         "visualEmoji": "🌀",
         "visualOptions": [
+          {
+            "text": "Toothpaste",
+            "emoji": "🪥",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
+          },
           {
             "text": "Toothbrush",
             "emoji": "🪥",
@@ -3394,19 +3400,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌀",
             "label": "Fan",
             "translationPt": "Ventilador"
-          },
-          {
-            "text": "Toothpaste",
-            "emoji": "🪥",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
           }
         ],
         "options": [
+          "Toothpaste",
           "Toothbrush",
           "Wardrobe",
-          "Fan",
-          "Toothpaste"
+          "Fan"
         ],
         "correctAnswer": "Fan",
         "explanation": "Exemplo prático: \"Turn on the electric fan on hot days.\"",
@@ -3421,35 +3421,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "❄️",
         "visualOptions": [
           {
-            "text": "Toilet Paper",
-            "emoji": "🧻",
-            "label": "Toilet Paper",
-            "translationPt": "Papel higiênico"
-          },
-          {
             "text": "Trash Can",
             "emoji": "🗑️",
             "label": "Trash Can",
             "translationPt": "Lixeira"
           },
           {
-            "text": "Toilet",
-            "emoji": "🚽",
-            "label": "Toilet",
-            "translationPt": "Vaso sanitário"
+            "text": "Toilet Paper",
+            "emoji": "🧻",
+            "label": "Toilet Paper",
+            "translationPt": "Papel higiênico"
           },
           {
             "text": "Air Conditioner",
             "emoji": "❄️",
             "label": "Air Conditioner",
             "translationPt": "Ar-condicionado"
+          },
+          {
+            "text": "Toilet",
+            "emoji": "🚽",
+            "label": "Toilet",
+            "translationPt": "Vaso sanitário"
           }
         ],
         "options": [
-          "Toilet Paper",
           "Trash Can",
-          "Toilet",
-          "Air Conditioner"
+          "Toilet Paper",
+          "Air Conditioner",
+          "Toilet"
         ],
         "correctAnswer": "Air Conditioner",
         "explanation": "Exemplo prático: \"The wall air conditioner cools the bedroom.\"",
@@ -3470,16 +3470,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chuveiro"
           },
           {
-            "text": "Door",
-            "emoji": "🚪",
-            "label": "Door",
-            "translationPt": "Porta"
-          },
-          {
             "text": "Rug",
             "emoji": "🟥",
             "label": "Rug",
             "translationPt": "Tapete"
+          },
+          {
+            "text": "Door",
+            "emoji": "🚪",
+            "label": "Door",
+            "translationPt": "Porta"
           },
           {
             "text": "Key",
@@ -3490,8 +3490,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Shower",
-          "Door",
           "Rug",
+          "Door",
           "Key"
         ],
         "correctAnswer": "Shower",
@@ -3513,12 +3513,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sofá"
           },
           {
-            "text": "Plant Pot",
-            "emoji": "🪴",
-            "label": "Plant Pot",
-            "translationPt": "Vaso de planta"
-          },
-          {
             "text": "Towel",
             "emoji": "🧺",
             "label": "Towel",
@@ -3529,13 +3523,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⬜",
             "label": "Pillow",
             "translationPt": "Travesseiro"
+          },
+          {
+            "text": "Plant Pot",
+            "emoji": "🪴",
+            "label": "Plant Pot",
+            "translationPt": "Vaso de planta"
           }
         ],
         "options": [
           "Sofa",
-          "Plant Pot",
           "Towel",
-          "Pillow"
+          "Pillow",
+          "Plant Pot"
         ],
         "correctAnswer": "Towel",
         "explanation": "Exemplo prático: \"Dry your hands with a clean cotton towel.\"",
@@ -3550,12 +3550,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧼",
         "visualOptions": [
           {
-            "text": "Chair",
-            "emoji": "🪑",
-            "label": "Chair",
-            "translationPt": "Cadeira"
-          },
-          {
             "text": "Fan",
             "emoji": "🌀",
             "label": "Fan",
@@ -3568,6 +3562,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sabonete"
           },
           {
+            "text": "Chair",
+            "emoji": "🪑",
+            "label": "Chair",
+            "translationPt": "Cadeira"
+          },
+          {
             "text": "Clock",
             "emoji": "⏰",
             "label": "Clock",
@@ -3575,9 +3575,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Chair",
           "Fan",
           "Soap",
+          "Chair",
           "Clock"
         ],
         "correctAnswer": "Soap",
@@ -3599,16 +3599,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cortina"
           },
           {
-            "text": "Mirror",
-            "emoji": "🪞",
-            "label": "Mirror",
-            "translationPt": "Espelho"
-          },
-          {
             "text": "Lamp",
             "emoji": "💡",
             "label": "Lamp",
             "translationPt": "Abajur / Luminária"
+          },
+          {
+            "text": "Mirror",
+            "emoji": "🪞",
+            "label": "Mirror",
+            "translationPt": "Espelho"
           },
           {
             "text": "Toothbrush",
@@ -3619,8 +3619,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Curtain",
-          "Mirror",
           "Lamp",
+          "Mirror",
           "Toothbrush"
         ],
         "correctAnswer": "Toothbrush",
@@ -3636,18 +3636,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪥",
         "visualOptions": [
           {
-            "text": "Toothpaste",
-            "emoji": "🪥",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente"
-          },
-          {
-            "text": "Blanket",
-            "emoji": "🛌",
-            "label": "Blanket",
-            "translationPt": "Cobertor / Edredom"
-          },
-          {
             "text": "Bed",
             "emoji": "🛏️",
             "label": "Bed",
@@ -3658,13 +3646,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🔑",
             "label": "Key",
             "translationPt": "Chave"
+          },
+          {
+            "text": "Toothpaste",
+            "emoji": "🪥",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente"
+          },
+          {
+            "text": "Blanket",
+            "emoji": "🛌",
+            "label": "Blanket",
+            "translationPt": "Cobertor / Edredom"
           }
         ],
         "options": [
-          "Toothpaste",
-          "Blanket",
           "Bed",
-          "Key"
+          "Key",
+          "Toothpaste",
+          "Blanket"
         ],
         "correctAnswer": "Toothpaste",
         "explanation": "Exemplo prático: \"Put toothpaste on your toothbrush.\"",
@@ -3679,6 +3679,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚽",
         "visualOptions": [
           {
+            "text": "Toilet",
+            "emoji": "🚽",
+            "label": "Toilet",
+            "translationPt": "Vaso sanitário"
+          },
+          {
             "text": "Towel",
             "emoji": "🧺",
             "label": "Towel",
@@ -3691,12 +3697,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Guarda-roupa"
           },
           {
-            "text": "Toilet",
-            "emoji": "🚽",
-            "label": "Toilet",
-            "translationPt": "Vaso sanitário"
-          },
-          {
             "text": "Window",
             "emoji": "🪟",
             "label": "Window",
@@ -3704,9 +3704,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Toilet",
           "Towel",
           "Wardrobe",
-          "Toilet",
           "Window"
         ],
         "correctAnswer": "Toilet",
@@ -3722,6 +3722,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧻",
         "visualOptions": [
           {
+            "text": "Television",
+            "emoji": "📺",
+            "label": "Television",
+            "translationPt": "Televisão (TV)"
+          },
+          {
+            "text": "Air Conditioner",
+            "emoji": "❄️",
+            "label": "Air Conditioner",
+            "translationPt": "Ar-condicionado"
+          },
+          {
             "text": "Toilet Paper",
             "emoji": "🧻",
             "label": "Toilet Paper",
@@ -3732,25 +3744,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪑",
             "label": "Table",
             "translationPt": "Mesa"
-          },
-          {
-            "text": "Air Conditioner",
-            "emoji": "❄️",
-            "label": "Air Conditioner",
-            "translationPt": "Ar-condicionado"
-          },
-          {
-            "text": "Television",
-            "emoji": "📺",
-            "label": "Television",
-            "translationPt": "Televisão (TV)"
           }
         ],
         "options": [
-          "Toilet Paper",
-          "Table",
+          "Television",
           "Air Conditioner",
-          "Television"
+          "Toilet Paper",
+          "Table"
         ],
         "correctAnswer": "Toilet Paper",
         "explanation": "Exemplo prático: \"A white roll of soft toilet paper.\"",
@@ -3765,35 +3765,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🗑️",
         "visualOptions": [
           {
-            "text": "Shower",
-            "emoji": "🚿",
-            "label": "Shower",
-            "translationPt": "Chuveiro"
-          },
-          {
             "text": "Toothbrush",
             "emoji": "🪥",
             "label": "Toothbrush",
             "translationPt": "Escova de dentes"
           },
           {
-            "text": "Soap",
-            "emoji": "🧼",
-            "label": "Soap",
-            "translationPt": "Sabonete"
-          },
-          {
             "text": "Trash Can",
             "emoji": "🗑️",
             "label": "Trash Can",
             "translationPt": "Lixeira"
+          },
+          {
+            "text": "Shower",
+            "emoji": "🚿",
+            "label": "Shower",
+            "translationPt": "Chuveiro"
+          },
+          {
+            "text": "Soap",
+            "emoji": "🧼",
+            "label": "Soap",
+            "translationPt": "Sabonete"
           }
         ],
         "options": [
-          "Shower",
           "Toothbrush",
-          "Soap",
-          "Trash Can"
+          "Trash Can",
+          "Shower",
+          "Soap"
         ],
         "correctAnswer": "Trash Can",
         "explanation": "Exemplo prático: \"Throw the wrapper into the trash can.\"",
@@ -3808,35 +3808,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧹",
         "visualOptions": [
           {
-            "text": "Bookshelf",
-            "emoji": "📚",
-            "label": "Bookshelf",
-            "translationPt": "Estante de livros"
-          },
-          {
             "text": "Rug",
             "emoji": "🟥",
             "label": "Rug",
             "translationPt": "Tapete"
           },
           {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura"
+            "text": "Bookshelf",
+            "emoji": "📚",
+            "label": "Bookshelf",
+            "translationPt": "Estante de livros"
           },
           {
             "text": "Toothpaste",
             "emoji": "🪥",
             "label": "Toothpaste",
             "translationPt": "Pasta de dente"
+          },
+          {
+            "text": "Broom",
+            "emoji": "🧹",
+            "label": "Broom",
+            "translationPt": "Vassoura"
           }
         ],
         "options": [
-          "Bookshelf",
           "Rug",
-          "Broom",
-          "Toothpaste"
+          "Bookshelf",
+          "Toothpaste",
+          "Broom"
         ],
         "correctAnswer": "Broom",
         "explanation": "Exemplo prático: \"Sweep the floor with a broom.\"",
@@ -3851,12 +3851,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪣",
         "visualOptions": [
           {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
-          },
-          {
             "text": "Bucket",
             "emoji": "🪣",
             "label": "Bucket",
@@ -3869,6 +3863,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Toalha de banho"
           },
           {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
+          },
+          {
             "text": "Toilet",
             "emoji": "🚽",
             "label": "Toilet",
@@ -3876,9 +3876,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Bed",
           "Bucket",
           "Towel",
+          "Bed",
           "Toilet"
         ],
         "correctAnswer": "Bucket",
@@ -3894,18 +3894,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪴",
         "visualOptions": [
           {
-            "text": "Plant Pot",
-            "emoji": "🪴",
-            "label": "Plant Pot",
-            "translationPt": "Vaso de planta"
-          },
-          {
-            "text": "Toilet Paper",
-            "emoji": "🧻",
-            "label": "Toilet Paper",
-            "translationPt": "Papel higiênico"
-          },
-          {
             "text": "Key",
             "emoji": "🔑",
             "label": "Key",
@@ -3916,13 +3904,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🛌",
             "label": "Blanket",
             "translationPt": "Cobertor / Edredom"
+          },
+          {
+            "text": "Toilet Paper",
+            "emoji": "🧻",
+            "label": "Toilet Paper",
+            "translationPt": "Papel higiênico"
+          },
+          {
+            "text": "Plant Pot",
+            "emoji": "🪴",
+            "label": "Plant Pot",
+            "translationPt": "Vaso de planta"
           }
         ],
         "options": [
-          "Plant Pot",
-          "Toilet Paper",
           "Key",
-          "Blanket"
+          "Blanket",
+          "Toilet Paper",
+          "Plant Pot"
         ],
         "correctAnswer": "Plant Pot",
         "explanation": "Exemplo prático: \"A green indoor plant in a ceramic pot.\"",
@@ -3963,10 +3963,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sapato de salto alto"
           },
           {
-            "text": "Handbag",
-            "emoji": "👜",
-            "label": "Handbag",
-            "translationPt": "Bolsa feminina"
+            "text": "Hat",
+            "emoji": "👒",
+            "label": "Hat",
+            "translationPt": "Chapéu"
           },
           {
             "text": "Shirt",
@@ -3975,17 +3975,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camisa / Camiseta"
           },
           {
-            "text": "Hat",
-            "emoji": "👒",
-            "label": "Hat",
-            "translationPt": "Chapéu"
+            "text": "Handbag",
+            "emoji": "👜",
+            "label": "Handbag",
+            "translationPt": "Bolsa feminina"
           }
         ],
         "options": [
           "High Heels",
-          "Handbag",
+          "Hat",
           "Shirt",
-          "Hat"
+          "Handbag"
         ],
         "correctAnswer": "Shirt",
         "explanation": "Exemplo prático: \"He wears a clean cotton shirt.\"",
@@ -4000,35 +4000,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👖",
         "visualOptions": [
           {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calça"
-          },
-          {
-            "text": "Necklace",
-            "emoji": "📿",
-            "label": "Necklace",
-            "translationPt": "Colar / Correntinha"
-          },
-          {
             "text": "Necktie",
             "emoji": "👔",
             "label": "Necktie",
             "translationPt": "Gravata"
           },
           {
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calça"
+          },
+          {
             "text": "Boots",
             "emoji": "🥾",
             "label": "Boots",
             "translationPt": "Botas"
+          },
+          {
+            "text": "Necklace",
+            "emoji": "📿",
+            "label": "Necklace",
+            "translationPt": "Colar / Correntinha"
           }
         ],
         "options": [
-          "Pants",
-          "Necklace",
           "Necktie",
-          "Boots"
+          "Pants",
+          "Boots",
+          "Necklace"
         ],
         "correctAnswer": "Pants",
         "explanation": "Exemplo prático: \"Comfortable pants for work or school.\"",
@@ -4043,16 +4043,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👖",
         "visualOptions": [
           {
-            "text": "Jacket",
-            "emoji": "🧥",
-            "label": "Jacket",
-            "translationPt": "Jaqueta / Blusa de frio"
-          },
-          {
             "text": "Gloves",
             "emoji": "🧤",
             "label": "Gloves",
             "translationPt": "Luvas"
+          },
+          {
+            "text": "Jacket",
+            "emoji": "🧥",
+            "label": "Jacket",
+            "translationPt": "Jaqueta / Blusa de frio"
           },
           {
             "text": "Glasses",
@@ -4068,8 +4068,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Jacket",
           "Gloves",
+          "Jacket",
           "Glasses",
           "Jeans"
         ],
@@ -4086,18 +4086,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🩳",
         "visualOptions": [
           {
-            "text": "Socks",
-            "emoji": "🧦",
-            "label": "Socks",
-            "translationPt": "Meias"
-          },
-          {
-            "text": "Shoes",
-            "emoji": "👞",
-            "label": "Shoes",
-            "translationPt": "Sapatos"
-          },
-          {
             "text": "Shorts",
             "emoji": "🩳",
             "label": "Shorts",
@@ -4108,13 +4096,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧶",
             "label": "Sweater",
             "translationPt": "Suéter / Moletom"
+          },
+          {
+            "text": "Shoes",
+            "emoji": "👞",
+            "label": "Shoes",
+            "translationPt": "Sapatos"
+          },
+          {
+            "text": "Socks",
+            "emoji": "🧦",
+            "label": "Socks",
+            "translationPt": "Meias"
           }
         ],
         "options": [
-          "Socks",
-          "Shoes",
           "Shorts",
-          "Sweater"
+          "Sweater",
+          "Shoes",
+          "Socks"
         ],
         "correctAnswer": "Shorts",
         "explanation": "Exemplo prático: \"Wear light shorts on a hot Brazilian summer day.\"",
@@ -4135,10 +4135,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tênis"
           },
           {
-            "text": "Dress",
-            "emoji": "👗",
-            "label": "Dress",
-            "translationPt": "Vestido"
+            "text": "Shirt",
+            "emoji": "👕",
+            "label": "Shirt",
+            "translationPt": "Camisa / Camiseta"
           },
           {
             "text": "Cap",
@@ -4147,17 +4147,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Boné"
           },
           {
-            "text": "Shirt",
-            "emoji": "👕",
-            "label": "Shirt",
-            "translationPt": "Camisa / Camiseta"
+            "text": "Dress",
+            "emoji": "👗",
+            "label": "Dress",
+            "translationPt": "Vestido"
           }
         ],
         "options": [
           "Sneakers",
-          "Dress",
+          "Shirt",
           "Cap",
-          "Shirt"
+          "Dress"
         ],
         "correctAnswer": "Dress",
         "explanation": "Exemplo prático: \"She wore a colorful summer dress.\"",
@@ -4172,10 +4172,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👗",
         "visualOptions": [
           {
-            "text": "Skirt",
-            "emoji": "👗",
-            "label": "Skirt",
-            "translationPt": "Saia"
+            "text": "Sandals",
+            "emoji": "🩴",
+            "label": "Sandals",
+            "translationPt": "Chinelo / Sandália"
           },
           {
             "text": "Umbrella",
@@ -4184,23 +4184,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Guarda-chuva"
           },
           {
+            "text": "Skirt",
+            "emoji": "👗",
+            "label": "Skirt",
+            "translationPt": "Saia"
+          },
+          {
             "text": "Ring",
             "emoji": "💍",
             "label": "Ring",
             "translationPt": "Anel / Aliança"
-          },
-          {
-            "text": "Sandals",
-            "emoji": "🩴",
-            "label": "Sandals",
-            "translationPt": "Chinelo / Sandália"
           }
         ],
         "options": [
-          "Skirt",
+          "Sandals",
           "Umbrella",
-          "Ring",
-          "Sandals"
+          "Skirt",
+          "Ring"
         ],
         "correctAnswer": "Skirt",
         "explanation": "Exemplo prático: \"A pleated fabric skirt.\"",
@@ -4215,10 +4215,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧥",
         "visualOptions": [
           {
-            "text": "Belt",
-            "emoji": "ベルト",
-            "label": "Belt",
-            "translationPt": "Cinto"
+            "text": "Jacket",
+            "emoji": "🧥",
+            "label": "Jacket",
+            "translationPt": "Jaqueta / Blusa de frio"
           },
           {
             "text": "Sunglasses",
@@ -4233,17 +4233,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachecol"
           },
           {
-            "text": "Jacket",
-            "emoji": "🧥",
-            "label": "Jacket",
-            "translationPt": "Jaqueta / Blusa de frio"
+            "text": "Belt",
+            "emoji": "ベルト",
+            "label": "Belt",
+            "translationPt": "Cinto"
           }
         ],
         "options": [
-          "Belt",
+          "Jacket",
           "Sunglasses",
           "Scarf",
-          "Jacket"
+          "Belt"
         ],
         "correctAnswer": "Jacket",
         "explanation": "Exemplo prático: \"Put on a zipper jacket in the evening.\"",
@@ -4258,6 +4258,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧥",
         "visualOptions": [
           {
+            "text": "Shorts",
+            "emoji": "🩳",
+            "label": "Shorts",
+            "translationPt": "Shorts / Bermuda"
+          },
+          {
             "text": "Coat",
             "emoji": "🧥",
             "label": "Coat",
@@ -4270,12 +4276,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carteira de bolso"
           },
           {
-            "text": "Shorts",
-            "emoji": "🩳",
-            "label": "Shorts",
-            "translationPt": "Shorts / Bermuda"
-          },
-          {
             "text": "Watch",
             "emoji": "⌚",
             "label": "Watch",
@@ -4283,9 +4283,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Shorts",
           "Coat",
           "Wallet",
-          "Shorts",
           "Watch"
         ],
         "correctAnswer": "Coat",
@@ -4301,10 +4301,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧶",
         "visualOptions": [
           {
-            "text": "Jeans",
-            "emoji": "👖",
-            "label": "Jeans",
-            "translationPt": "Calça jeans"
+            "text": "Dress",
+            "emoji": "👗",
+            "label": "Dress",
+            "translationPt": "Vestido"
           },
           {
             "text": "Sweater",
@@ -4319,17 +4319,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Calça"
           },
           {
-            "text": "Dress",
-            "emoji": "👗",
-            "label": "Dress",
-            "translationPt": "Vestido"
+            "text": "Jeans",
+            "emoji": "👖",
+            "label": "Jeans",
+            "translationPt": "Calça jeans"
           }
         ],
         "options": [
-          "Jeans",
+          "Dress",
           "Sweater",
           "Pants",
-          "Dress"
+          "Jeans"
         ],
         "correctAnswer": "Sweater",
         "explanation": "Exemplo prático: \"A soft knitted sweater keeps you warm.\"",
@@ -4344,10 +4344,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛌",
         "visualOptions": [
           {
-            "text": "Pajamas",
-            "emoji": "🛌",
-            "label": "Pajamas",
-            "translationPt": "Pijama"
+            "text": "Shirt",
+            "emoji": "👕",
+            "label": "Shirt",
+            "translationPt": "Camisa / Camiseta"
           },
           {
             "text": "Skirt",
@@ -4356,23 +4356,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Saia"
           },
           {
-            "text": "Shirt",
-            "emoji": "👕",
-            "label": "Shirt",
-            "translationPt": "Camisa / Camiseta"
-          },
-          {
             "text": "Sandals",
             "emoji": "🩴",
             "label": "Sandals",
             "translationPt": "Chinelo / Sandália"
+          },
+          {
+            "text": "Pajamas",
+            "emoji": "🛌",
+            "label": "Pajamas",
+            "translationPt": "Pijama"
           }
         ],
         "options": [
-          "Pajamas",
-          "Skirt",
           "Shirt",
-          "Sandals"
+          "Skirt",
+          "Sandals",
+          "Pajamas"
         ],
         "correctAnswer": "Pajamas",
         "explanation": "Exemplo prático: \"Put on comfortable pajamas before going to sleep.\"",
@@ -4399,23 +4399,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Óculos de sol"
           },
           {
-            "text": "Scarf",
-            "emoji": "🧣",
-            "label": "Scarf",
-            "translationPt": "Cachecol"
-          },
-          {
             "text": "Socks",
             "emoji": "🧦",
             "label": "Socks",
             "translationPt": "Meias"
+          },
+          {
+            "text": "Scarf",
+            "emoji": "🧣",
+            "label": "Scarf",
+            "translationPt": "Cachecol"
           }
         ],
         "options": [
           "Cap",
           "Sunglasses",
-          "Scarf",
-          "Socks"
+          "Socks",
+          "Scarf"
         ],
         "correctAnswer": "Socks",
         "explanation": "Exemplo prático: \"Put on a pair of cotton socks.\"",
@@ -4436,6 +4436,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sapatos"
           },
           {
+            "text": "Coat",
+            "emoji": "🧥",
+            "label": "Coat",
+            "translationPt": "Casaco / Sobretudo"
+          },
+          {
             "text": "Belt",
             "emoji": "ベルト",
             "label": "Belt",
@@ -4446,19 +4452,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "☂️",
             "label": "Umbrella",
             "translationPt": "Guarda-chuva"
-          },
-          {
-            "text": "Coat",
-            "emoji": "🧥",
-            "label": "Coat",
-            "translationPt": "Casaco / Sobretudo"
           }
         ],
         "options": [
           "Shoes",
+          "Coat",
           "Belt",
-          "Umbrella",
-          "Coat"
+          "Umbrella"
         ],
         "correctAnswer": "Shoes",
         "explanation": "Exemplo prático: \"Clean leather dress shoes.\"",
@@ -4473,6 +4473,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👟",
         "visualOptions": [
           {
+            "text": "Hat",
+            "emoji": "👒",
+            "label": "Hat",
+            "translationPt": "Chapéu"
+          },
+          {
             "text": "Necktie",
             "emoji": "👔",
             "label": "Necktie",
@@ -4485,12 +4491,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tênis"
           },
           {
-            "text": "Hat",
-            "emoji": "👒",
-            "label": "Hat",
-            "translationPt": "Chapéu"
-          },
-          {
             "text": "Necklace",
             "emoji": "📿",
             "label": "Necklace",
@@ -4498,9 +4498,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Hat",
           "Necktie",
           "Sneakers",
-          "Hat",
           "Necklace"
         ],
         "correctAnswer": "Sneakers",
@@ -4515,12 +4515,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Sandals",
         "visualEmoji": "🩴",
         "visualOptions": [
-          {
-            "text": "Dress",
-            "emoji": "👗",
-            "label": "Dress",
-            "translationPt": "Vestido"
-          },
           {
             "text": "Pajamas",
             "emoji": "🛌",
@@ -4538,13 +4532,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⌚",
             "label": "Watch",
             "translationPt": "Relógio de pulso"
+          },
+          {
+            "text": "Dress",
+            "emoji": "👗",
+            "label": "Dress",
+            "translationPt": "Vestido"
           }
         ],
         "options": [
-          "Dress",
           "Pajamas",
           "Sandals",
-          "Watch"
+          "Watch",
+          "Dress"
         ],
         "correctAnswer": "Sandals",
         "explanation": "Exemplo prático: \"Rubber flip-flop sandals are an everyday classic in Brazil.\"",
@@ -4559,10 +4559,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥾",
         "visualOptions": [
           {
-            "text": "Jeans",
+            "text": "Pants",
             "emoji": "👖",
-            "label": "Jeans",
-            "translationPt": "Calça jeans"
+            "label": "Pants",
+            "translationPt": "Calça"
           },
           {
             "text": "Jacket",
@@ -4571,10 +4571,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Jaqueta / Blusa de frio"
           },
           {
-            "text": "Pants",
+            "text": "Jeans",
             "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calça"
+            "label": "Jeans",
+            "translationPt": "Calça jeans"
           },
           {
             "text": "Boots",
@@ -4584,9 +4584,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Jeans",
-          "Jacket",
           "Pants",
+          "Jacket",
+          "Jeans",
           "Boots"
         ],
         "correctAnswer": "Boots",
@@ -4614,23 +4614,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Saia"
           },
           {
-            "text": "Shorts",
-            "emoji": "🩳",
-            "label": "Shorts",
-            "translationPt": "Shorts / Bermuda"
-          },
-          {
             "text": "Coat",
             "emoji": "🧥",
             "label": "Coat",
             "translationPt": "Casaco / Sobretudo"
+          },
+          {
+            "text": "Shorts",
+            "emoji": "🩳",
+            "label": "Shorts",
+            "translationPt": "Shorts / Bermuda"
           }
         ],
         "options": [
           "High Heels",
           "Skirt",
-          "Shorts",
-          "Coat"
+          "Coat",
+          "Shorts"
         ],
         "correctAnswer": "High Heels",
         "explanation": "Exemplo prático: \"She wore red high heels to the party.\"",
@@ -4645,35 +4645,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧢",
         "visualOptions": [
           {
-            "text": "Ring",
-            "emoji": "💍",
-            "label": "Ring",
-            "translationPt": "Anel / Aliança"
-          },
-          {
             "text": "Socks",
             "emoji": "🧦",
             "label": "Socks",
             "translationPt": "Meias"
           },
           {
-            "text": "Cap",
-            "emoji": "🧢",
-            "label": "Cap",
-            "translationPt": "Boné"
+            "text": "Ring",
+            "emoji": "💍",
+            "label": "Ring",
+            "translationPt": "Anel / Aliança"
           },
           {
             "text": "Sweater",
             "emoji": "🧶",
             "label": "Sweater",
             "translationPt": "Suéter / Moletom"
+          },
+          {
+            "text": "Cap",
+            "emoji": "🧢",
+            "label": "Cap",
+            "translationPt": "Boné"
           }
         ],
         "options": [
-          "Ring",
           "Socks",
-          "Cap",
-          "Sweater"
+          "Ring",
+          "Sweater",
+          "Cap"
         ],
         "correctAnswer": "Cap",
         "explanation": "Exemplo prático: \"Wear a baseball cap in the sun.\"",
@@ -4688,10 +4688,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👒",
         "visualOptions": [
           {
-            "text": "Hat",
-            "emoji": "👒",
-            "label": "Hat",
-            "translationPt": "Chapéu"
+            "text": "Pajamas",
+            "emoji": "🛌",
+            "label": "Pajamas",
+            "translationPt": "Pijama"
           },
           {
             "text": "Sneakers",
@@ -4700,23 +4700,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tênis"
           },
           {
+            "text": "Hat",
+            "emoji": "👒",
+            "label": "Hat",
+            "translationPt": "Chapéu"
+          },
+          {
             "text": "Shoes",
             "emoji": "👞",
             "label": "Shoes",
             "translationPt": "Sapatos"
-          },
-          {
-            "text": "Pajamas",
-            "emoji": "🛌",
-            "label": "Pajamas",
-            "translationPt": "Pijama"
           }
         ],
         "options": [
-          "Hat",
+          "Pajamas",
           "Sneakers",
-          "Shoes",
-          "Pajamas"
+          "Hat",
+          "Shoes"
         ],
         "correctAnswer": "Hat",
         "explanation": "Exemplo prático: \"A straw sun hat for the beach.\"",
@@ -4731,16 +4731,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👓",
         "visualOptions": [
           {
-            "text": "Handbag",
-            "emoji": "👜",
-            "label": "Handbag",
-            "translationPt": "Bolsa feminina"
-          },
-          {
-            "text": "Gloves",
-            "emoji": "🧤",
-            "label": "Gloves",
-            "translationPt": "Luvas"
+            "text": "Glasses",
+            "emoji": "👓",
+            "label": "Glasses",
+            "translationPt": "Óculos de grau"
           },
           {
             "text": "Boots",
@@ -4749,17 +4743,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Botas"
           },
           {
-            "text": "Glasses",
-            "emoji": "👓",
-            "label": "Glasses",
-            "translationPt": "Óculos de grau"
+            "text": "Gloves",
+            "emoji": "🧤",
+            "label": "Gloves",
+            "translationPt": "Luvas"
+          },
+          {
+            "text": "Handbag",
+            "emoji": "👜",
+            "label": "Handbag",
+            "translationPt": "Bolsa feminina"
           }
         ],
         "options": [
-          "Handbag",
-          "Gloves",
+          "Glasses",
           "Boots",
-          "Glasses"
+          "Gloves",
+          "Handbag"
         ],
         "correctAnswer": "Glasses",
         "explanation": "Exemplo prático: \"He wears prescription glasses to read.\"",
@@ -4780,16 +4780,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sapato de salto alto"
           },
           {
-            "text": "Dress",
-            "emoji": "👗",
-            "label": "Dress",
-            "translationPt": "Vestido"
-          },
-          {
             "text": "Sunglasses",
             "emoji": "🕶️",
             "label": "Sunglasses",
             "translationPt": "Óculos de sol"
+          },
+          {
+            "text": "Dress",
+            "emoji": "👗",
+            "label": "Dress",
+            "translationPt": "Vestido"
           },
           {
             "text": "Wallet",
@@ -4800,8 +4800,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "High Heels",
-          "Dress",
           "Sunglasses",
+          "Dress",
           "Wallet"
         ],
         "correctAnswer": "Sunglasses",
@@ -4816,12 +4816,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Watch",
         "visualEmoji": "⌚",
         "visualOptions": [
-          {
-            "text": "Shirt",
-            "emoji": "👕",
-            "label": "Shirt",
-            "translationPt": "Camisa / Camiseta"
-          },
           {
             "text": "Skirt",
             "emoji": "👗",
@@ -4839,13 +4833,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🩳",
             "label": "Shorts",
             "translationPt": "Shorts / Bermuda"
+          },
+          {
+            "text": "Shirt",
+            "emoji": "👕",
+            "label": "Shirt",
+            "translationPt": "Camisa / Camiseta"
           }
         ],
         "options": [
-          "Shirt",
           "Skirt",
           "Watch",
-          "Shorts"
+          "Shorts",
+          "Shirt"
         ],
         "correctAnswer": "Watch",
         "explanation": "Exemplo prático: \"Check the time on your wristwatch.\"",
@@ -4860,10 +4860,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "☂️",
         "visualOptions": [
           {
-            "text": "Umbrella",
-            "emoji": "☂️",
-            "label": "Umbrella",
-            "translationPt": "Guarda-chuva"
+            "text": "Coat",
+            "emoji": "🧥",
+            "label": "Coat",
+            "translationPt": "Casaco / Sobretudo"
           },
           {
             "text": "Cap",
@@ -4872,23 +4872,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Boné"
           },
           {
-            "text": "Coat",
-            "emoji": "🧥",
-            "label": "Coat",
-            "translationPt": "Casaco / Sobretudo"
-          },
-          {
             "text": "Sweater",
             "emoji": "🧶",
             "label": "Sweater",
             "translationPt": "Suéter / Moletom"
+          },
+          {
+            "text": "Umbrella",
+            "emoji": "☂️",
+            "label": "Umbrella",
+            "translationPt": "Guarda-chuva"
           }
         ],
         "options": [
-          "Umbrella",
-          "Cap",
           "Coat",
-          "Sweater"
+          "Cap",
+          "Sweater",
+          "Umbrella"
         ],
         "correctAnswer": "Umbrella",
         "explanation": "Exemplo prático: \"Open your umbrella when it starts to rain.\"",
@@ -4903,35 +4903,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "ベルト",
         "visualOptions": [
           {
-            "text": "Glasses",
-            "emoji": "👓",
-            "label": "Glasses",
-            "translationPt": "Óculos de grau"
-          },
-          {
-            "text": "Socks",
-            "emoji": "🧦",
-            "label": "Socks",
-            "translationPt": "Meias"
-          },
-          {
             "text": "Ring",
             "emoji": "💍",
             "label": "Ring",
             "translationPt": "Anel / Aliança"
           },
           {
+            "text": "Glasses",
+            "emoji": "👓",
+            "label": "Glasses",
+            "translationPt": "Óculos de grau"
+          },
+          {
             "text": "Belt",
             "emoji": "ベルト",
             "label": "Belt",
             "translationPt": "Cinto"
+          },
+          {
+            "text": "Socks",
+            "emoji": "🧦",
+            "label": "Socks",
+            "translationPt": "Meias"
           }
         ],
         "options": [
-          "Glasses",
-          "Socks",
           "Ring",
-          "Belt"
+          "Glasses",
+          "Belt",
+          "Socks"
         ],
         "correctAnswer": "Belt",
         "explanation": "Exemplo prático: \"Fasten the leather belt around your waist.\"",
@@ -4946,18 +4946,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👔",
         "visualOptions": [
           {
-            "text": "Hat",
-            "emoji": "👒",
-            "label": "Hat",
-            "translationPt": "Chapéu"
-          },
-          {
-            "text": "Boots",
-            "emoji": "🥾",
-            "label": "Boots",
-            "translationPt": "Botas"
-          },
-          {
             "text": "Necktie",
             "emoji": "👔",
             "label": "Necktie",
@@ -4968,13 +4956,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👠",
             "label": "High Heels",
             "translationPt": "Sapato de salto alto"
+          },
+          {
+            "text": "Hat",
+            "emoji": "👒",
+            "label": "Hat",
+            "translationPt": "Chapéu"
+          },
+          {
+            "text": "Boots",
+            "emoji": "🥾",
+            "label": "Boots",
+            "translationPt": "Botas"
           }
         ],
         "options": [
-          "Hat",
-          "Boots",
           "Necktie",
-          "High Heels"
+          "High Heels",
+          "Hat",
+          "Boots"
         ],
         "correctAnswer": "Necktie",
         "explanation": "Exemplo prático: \"He wore a silk necktie with his suit.\"",
@@ -4989,6 +4989,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧣",
         "visualOptions": [
           {
+            "text": "Watch",
+            "emoji": "⌚",
+            "label": "Watch",
+            "translationPt": "Relógio de pulso"
+          },
+          {
             "text": "Shoes",
             "emoji": "👞",
             "label": "Shoes",
@@ -5001,12 +5007,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachecol"
           },
           {
-            "text": "Watch",
-            "emoji": "⌚",
-            "label": "Watch",
-            "translationPt": "Relógio de pulso"
-          },
-          {
             "text": "Necklace",
             "emoji": "📿",
             "label": "Necklace",
@@ -5014,9 +5014,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Watch",
           "Shoes",
           "Scarf",
-          "Watch",
           "Necklace"
         ],
         "correctAnswer": "Scarf",
@@ -5032,6 +5032,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧤",
         "visualOptions": [
           {
+            "text": "Jacket",
+            "emoji": "🧥",
+            "label": "Jacket",
+            "translationPt": "Jaqueta / Blusa de frio"
+          },
+          {
             "text": "Gloves",
             "emoji": "🧤",
             "label": "Gloves",
@@ -5044,12 +5050,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Calça jeans"
           },
           {
-            "text": "Jacket",
-            "emoji": "🧥",
-            "label": "Jacket",
-            "translationPt": "Jaqueta / Blusa de frio"
-          },
-          {
             "text": "Umbrella",
             "emoji": "☂️",
             "label": "Umbrella",
@@ -5057,9 +5057,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Jacket",
           "Gloves",
           "Jeans",
-          "Jacket",
           "Umbrella"
         ],
         "correctAnswer": "Gloves",
@@ -5075,6 +5075,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👜",
         "visualOptions": [
           {
+            "text": "Sunglasses",
+            "emoji": "🕶️",
+            "label": "Sunglasses",
+            "translationPt": "Óculos de sol"
+          },
+          {
             "text": "Sneakers",
             "emoji": "👟",
             "label": "Sneakers",
@@ -5087,12 +5093,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chinelo / Sandália"
           },
           {
-            "text": "Sunglasses",
-            "emoji": "🕶️",
-            "label": "Sunglasses",
-            "translationPt": "Óculos de sol"
-          },
-          {
             "text": "Handbag",
             "emoji": "👜",
             "label": "Handbag",
@@ -5100,9 +5100,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Sunglasses",
           "Sneakers",
           "Sandals",
-          "Sunglasses",
           "Handbag"
         ],
         "correctAnswer": "Handbag",
@@ -5124,10 +5124,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carteira de bolso"
           },
           {
-            "text": "Pajamas",
-            "emoji": "🛌",
-            "label": "Pajamas",
-            "translationPt": "Pijama"
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calça"
           },
           {
             "text": "Glasses",
@@ -5136,17 +5136,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Óculos de grau"
           },
           {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calça"
+            "text": "Pajamas",
+            "emoji": "🛌",
+            "label": "Pajamas",
+            "translationPt": "Pijama"
           }
         ],
         "options": [
           "Wallet",
-          "Pajamas",
+          "Pants",
           "Glasses",
-          "Pants"
+          "Pajamas"
         ],
         "correctAnswer": "Wallet",
         "explanation": "Exemplo prático: \"Keep your money and cards inside a leather wallet.\"",
@@ -5161,35 +5161,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💍",
         "visualOptions": [
           {
-            "text": "Belt",
-            "emoji": "ベルト",
-            "label": "Belt",
-            "translationPt": "Cinto"
-          },
-          {
-            "text": "Ring",
-            "emoji": "💍",
-            "label": "Ring",
-            "translationPt": "Anel / Aliança"
-          },
-          {
             "text": "Necktie",
             "emoji": "👔",
             "label": "Necktie",
             "translationPt": "Gravata"
           },
           {
+            "text": "Belt",
+            "emoji": "ベルト",
+            "label": "Belt",
+            "translationPt": "Cinto"
+          },
+          {
             "text": "Scarf",
             "emoji": "🧣",
             "label": "Scarf",
             "translationPt": "Cachecol"
+          },
+          {
+            "text": "Ring",
+            "emoji": "💍",
+            "label": "Ring",
+            "translationPt": "Anel / Aliança"
           }
         ],
         "options": [
-          "Belt",
-          "Ring",
           "Necktie",
-          "Scarf"
+          "Belt",
+          "Scarf",
+          "Ring"
         ],
         "correctAnswer": "Ring",
         "explanation": "Exemplo prático: \"A shiny gold ring on the finger.\"",
@@ -5210,10 +5210,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sapato de salto alto"
           },
           {
-            "text": "Gloves",
-            "emoji": "🧤",
-            "label": "Gloves",
-            "translationPt": "Luvas"
+            "text": "Hat",
+            "emoji": "👒",
+            "label": "Hat",
+            "translationPt": "Chapéu"
           },
           {
             "text": "Necklace",
@@ -5222,17 +5222,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Colar / Correntinha"
           },
           {
-            "text": "Hat",
-            "emoji": "👒",
-            "label": "Hat",
-            "translationPt": "Chapéu"
+            "text": "Gloves",
+            "emoji": "🧤",
+            "label": "Gloves",
+            "translationPt": "Luvas"
           }
         ],
         "options": [
           "High Heels",
-          "Gloves",
+          "Hat",
           "Necklace",
-          "Hat"
+          "Gloves"
         ],
         "correctAnswer": "Necklace",
         "explanation": "Exemplo prático: \"A delicate gold necklace.\"",
@@ -5266,10 +5266,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Red apple\" em português?",
         "audioPhrase": "Red apple",
         "options": [
-          "Maçã vermelha",
-          "Banana amarela",
+          "Uva roxa",
           "Pera verde",
-          "Uva roxa"
+          "Banana amarela",
+          "Maçã vermelha"
         ],
         "correctAnswer": "Maçã vermelha",
         "explanation": "\"Red apple\" = \"Maçã vermelha\". Associação simples e direta!",
@@ -5299,10 +5299,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Sweet orange\" em português?",
         "audioPhrase": "Sweet orange",
         "options": [
-          "Laranja doce",
           "Limão azedo",
-          "Melancia grande",
-          "Coco verde"
+          "Coco verde",
+          "Laranja doce",
+          "Melancia grande"
         ],
         "correctAnswer": "Laranja doce",
         "explanation": "\"Sweet orange\" = \"Laranja doce\". Associação simples e direta!",
@@ -5316,9 +5316,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Happy dog\" em português?",
         "audioPhrase": "Happy dog",
         "options": [
-          "Cachorro feliz",
           "Gato pequeno",
           "Cavalo forte",
+          "Cachorro feliz",
           "Pato branco"
         ],
         "correctAnswer": "Cachorro feliz",
@@ -5349,10 +5349,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Big horse\" em português?",
         "audioPhrase": "Big horse",
         "options": [
-          "Cavalo grande",
-          "Vaca leiteira",
+          "Pássaro azul",
           "Coelho rápido",
-          "Pássaro azul"
+          "Vaca leiteira",
+          "Cavalo grande"
         ],
         "correctAnswer": "Cavalo grande",
         "explanation": "\"Big horse\" = \"Cavalo grande\". Associação simples e direta!",
@@ -5368,8 +5368,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "options": [
           "Minha cama",
           "Minha cadeira",
-          "Minha mesa",
-          "Minha porta"
+          "Minha porta",
+          "Minha mesa"
         ],
         "correctAnswer": "Minha cama",
         "explanation": "\"My bed\" = \"Minha cama\". Associação simples e direta!",
@@ -5399,8 +5399,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"House key\" em português?",
         "audioPhrase": "House key",
         "options": [
-          "Chave de casa",
           "Porta de madeira",
+          "Chave de casa",
           "Janela aberta",
           "Travesseiro macio"
         ],
@@ -5416,10 +5416,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Blue shirt\" em português?",
         "audioPhrase": "Blue shirt",
         "options": [
-          "Camisa azul",
-          "Calça preta",
+          "Boné novo",
           "Vestido vermelho",
-          "Boné novo"
+          "Camisa azul",
+          "Calça preta"
         ],
         "correctAnswer": "Camisa azul",
         "explanation": "\"Blue shirt\" = \"Camisa azul\". Associação simples e direta!",
@@ -5449,10 +5449,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Big umbrella\" em português?",
         "audioPhrase": "Big umbrella",
         "options": [
-          "Guarda-chuva grande",
           "Óculos de sol",
-          "Relógio de pulso",
-          "Bolsa pequena"
+          "Guarda-chuva grande",
+          "Bolsa pequena",
+          "Relógio de pulso"
         ],
         "correctAnswer": "Guarda-chuva grande",
         "explanation": "\"Big umbrella\" = \"Guarda-chuva grande\". Associação simples e direta!",
@@ -5493,10 +5493,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Palmito"
           },
           {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
+            "text": "Eggplant",
+            "emoji": "🍆",
+            "label": "Eggplant",
+            "translationPt": "Berinjela"
           },
           {
             "text": "Broccoli",
@@ -5505,17 +5505,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Brócolis"
           },
           {
-            "text": "Eggplant",
-            "emoji": "🍆",
-            "label": "Eggplant",
-            "translationPt": "Berinjela"
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
           }
         ],
         "options": [
           "Heart of Palm",
-          "Tomato",
+          "Eggplant",
           "Broccoli",
-          "Eggplant"
+          "Tomato"
         ],
         "correctAnswer": "Tomato",
         "explanation": "Exemplo prático: \"Fresh red tomatoes go in the salad.\"",
@@ -5530,18 +5530,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥔",
         "visualOptions": [
           {
-            "text": "Bell Pepper",
-            "emoji": "🫑",
-            "label": "Bell Pepper",
-            "translationPt": "Pimentão"
-          },
-          {
-            "text": "Beetroot",
-            "emoji": "🟣",
-            "label": "Beetroot",
-            "translationPt": "Beterraba"
-          },
-          {
             "text": "Potato",
             "emoji": "🥔",
             "label": "Potato",
@@ -5552,13 +5540,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🔴",
             "label": "Radish",
             "translationPt": "Rabanete"
+          },
+          {
+            "text": "Beetroot",
+            "emoji": "🟣",
+            "label": "Beetroot",
+            "translationPt": "Beterraba"
+          },
+          {
+            "text": "Bell Pepper",
+            "emoji": "🫑",
+            "label": "Bell Pepper",
+            "translationPt": "Pimentão"
           }
         ],
         "options": [
-          "Bell Pepper",
-          "Beetroot",
           "Potato",
-          "Radish"
+          "Radish",
+          "Beetroot",
+          "Bell Pepper"
         ],
         "correctAnswer": "Potato",
         "explanation": "Exemplo prático: \"Potatoes are used in many recipes.\"",
@@ -5579,16 +5579,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Abobrinha"
           },
           {
-            "text": "Okra",
-            "emoji": "🟢",
-            "label": "Okra",
-            "translationPt": "Quiabo"
-          },
-          {
             "text": "Ginger",
             "emoji": "🫚",
             "label": "Ginger",
             "translationPt": "Gengibre"
+          },
+          {
+            "text": "Okra",
+            "emoji": "🟢",
+            "label": "Okra",
+            "translationPt": "Quiabo"
           },
           {
             "text": "Carrot",
@@ -5599,8 +5599,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Zucchini",
-          "Okra",
           "Ginger",
+          "Okra",
           "Carrot"
         ],
         "correctAnswer": "Carrot",
@@ -5616,10 +5616,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧅",
         "visualOptions": [
           {
-            "text": "Onion",
-            "emoji": "🧅",
-            "label": "Onion",
-            "translationPt": "Cebola"
+            "text": "Sweet Potato",
+            "emoji": "🍠",
+            "label": "Sweet Potato",
+            "translationPt": "Batata-doce"
           },
           {
             "text": "Spring Onion",
@@ -5628,23 +5628,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cebolinha verde"
           },
           {
+            "text": "Onion",
+            "emoji": "🧅",
+            "label": "Onion",
+            "translationPt": "Cebola"
+          },
+          {
             "text": "Spinach",
             "emoji": "🌿",
             "label": "Spinach",
             "translationPt": "Espinafre"
-          },
-          {
-            "text": "Sweet Potato",
-            "emoji": "🍠",
-            "label": "Sweet Potato",
-            "translationPt": "Batata-doce"
           }
         ],
         "options": [
-          "Onion",
+          "Sweet Potato",
           "Spring Onion",
-          "Spinach",
-          "Sweet Potato"
+          "Onion",
+          "Spinach"
         ],
         "correctAnswer": "Onion",
         "explanation": "Exemplo prático: \"Chopped onion adds flavor to the meal.\"",
@@ -5659,10 +5659,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧄",
         "visualOptions": [
           {
-            "text": "Cabbage",
-            "emoji": "🥬",
-            "label": "Cabbage",
-            "translationPt": "Repolho"
+            "text": "Garlic",
+            "emoji": "🧄",
+            "label": "Garlic",
+            "translationPt": "Alho"
           },
           {
             "text": "Chili Pepper",
@@ -5671,10 +5671,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pimenta vermelha"
           },
           {
-            "text": "Garlic",
-            "emoji": "🧄",
-            "label": "Garlic",
-            "translationPt": "Alho"
+            "text": "Cabbage",
+            "emoji": "🥬",
+            "label": "Cabbage",
+            "translationPt": "Repolho"
           },
           {
             "text": "Cauliflower",
@@ -5684,9 +5684,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Cabbage",
-          "Chili Pepper",
           "Garlic",
+          "Chili Pepper",
+          "Cabbage",
           "Cauliflower"
         ],
         "correctAnswer": "Garlic",
@@ -5702,16 +5702,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥬",
         "visualOptions": [
           {
+            "text": "Chayote",
+            "emoji": "🍐",
+            "label": "Chayote",
+            "translationPt": "Chuchu"
+          },
+          {
             "text": "Lettuce",
             "emoji": "🥬",
             "label": "Lettuce",
             "translationPt": "Alface"
-          },
-          {
-            "text": "Cassava",
-            "emoji": "🥔",
-            "label": "Cassava",
-            "translationPt": "Mandioca / Aipim"
           },
           {
             "text": "Olive",
@@ -5720,17 +5720,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Azeitona"
           },
           {
-            "text": "Chayote",
-            "emoji": "🍐",
-            "label": "Chayote",
-            "translationPt": "Chuchu"
+            "text": "Cassava",
+            "emoji": "🥔",
+            "label": "Cassava",
+            "translationPt": "Mandioca / Aipim"
           }
         ],
         "options": [
+          "Chayote",
           "Lettuce",
-          "Cassava",
           "Olive",
-          "Chayote"
+          "Cassava"
         ],
         "correctAnswer": "Lettuce",
         "explanation": "Exemplo prático: \"Wash the green lettuce leaves well.\"",
@@ -5745,16 +5745,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌽",
         "visualOptions": [
           {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura"
-          },
-          {
             "text": "Pumpkin",
             "emoji": "🎃",
             "label": "Pumpkin",
             "translationPt": "Abóbora"
+          },
+          {
+            "text": "Corn",
+            "emoji": "🌽",
+            "label": "Corn",
+            "translationPt": "Milho"
           },
           {
             "text": "Potato",
@@ -5763,17 +5763,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Batata"
           },
           {
-            "text": "Corn",
-            "emoji": "🌽",
-            "label": "Corn",
-            "translationPt": "Milho"
+            "text": "Carrot",
+            "emoji": "🥕",
+            "label": "Carrot",
+            "translationPt": "Cenoura"
           }
         ],
         "options": [
-          "Carrot",
           "Pumpkin",
+          "Corn",
           "Potato",
-          "Corn"
+          "Carrot"
         ],
         "correctAnswer": "Corn",
         "explanation": "Exemplo prático: \"Sweet yellow corn on the cob.\"",
@@ -5788,10 +5788,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥒",
         "visualOptions": [
           {
-            "text": "Onion",
-            "emoji": "🧅",
-            "label": "Onion",
-            "translationPt": "Cebola"
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
           },
           {
             "text": "Peas",
@@ -5800,23 +5800,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ervilha"
           },
           {
+            "text": "Onion",
+            "emoji": "🧅",
+            "label": "Onion",
+            "translationPt": "Cebola"
+          },
+          {
             "text": "Cucumber",
             "emoji": "🥒",
             "label": "Cucumber",
             "translationPt": "Pepino"
-          },
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
           }
         ],
         "options": [
-          "Onion",
+          "Tomato",
           "Peas",
-          "Cucumber",
-          "Tomato"
+          "Onion",
+          "Cucumber"
         ],
         "correctAnswer": "Cucumber",
         "explanation": "Exemplo prático: \"Cucumber slices are cool and crisp.\"",
@@ -5831,10 +5831,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥦",
         "visualOptions": [
           {
-            "text": "Mushroom",
-            "emoji": "🍄",
-            "label": "Mushroom",
-            "translationPt": "Cogumelo / Champignon"
+            "text": "Garlic",
+            "emoji": "🧄",
+            "label": "Garlic",
+            "translationPt": "Alho"
           },
           {
             "text": "Peanut",
@@ -5849,17 +5849,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Brócolis"
           },
           {
-            "text": "Garlic",
-            "emoji": "🧄",
-            "label": "Garlic",
-            "translationPt": "Alho"
+            "text": "Mushroom",
+            "emoji": "🍄",
+            "label": "Mushroom",
+            "translationPt": "Cogumelo / Champignon"
           }
         ],
         "options": [
-          "Mushroom",
+          "Garlic",
           "Peanut",
           "Broccoli",
-          "Garlic"
+          "Mushroom"
         ],
         "correctAnswer": "Broccoli",
         "explanation": "Exemplo prático: \"Steamed broccoli is very nutritious.\"",
@@ -5880,16 +5880,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Repolho"
           },
           {
-            "text": "Spinach",
-            "emoji": "🌿",
-            "label": "Spinach",
-            "translationPt": "Espinafre"
-          },
-          {
             "text": "Lettuce",
             "emoji": "🥬",
             "label": "Lettuce",
             "translationPt": "Alface"
+          },
+          {
+            "text": "Spinach",
+            "emoji": "🌿",
+            "label": "Spinach",
+            "translationPt": "Espinafre"
           },
           {
             "text": "Spring Onion",
@@ -5900,8 +5900,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Cabbage",
-          "Spinach",
           "Lettuce",
+          "Spinach",
           "Spring Onion"
         ],
         "correctAnswer": "Cabbage",
@@ -5916,12 +5916,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Cauliflower",
         "visualEmoji": "⚪",
         "visualOptions": [
-          {
-            "text": "Corn",
-            "emoji": "🌽",
-            "label": "Corn",
-            "translationPt": "Milho"
-          },
           {
             "text": "Olive",
             "emoji": "🫒",
@@ -5939,13 +5933,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⚪",
             "label": "Cauliflower",
             "translationPt": "Couve-flor"
+          },
+          {
+            "text": "Corn",
+            "emoji": "🌽",
+            "label": "Corn",
+            "translationPt": "Milho"
           }
         ],
         "options": [
-          "Corn",
           "Olive",
           "Okra",
-          "Cauliflower"
+          "Cauliflower",
+          "Corn"
         ],
         "correctAnswer": "Cauliflower",
         "explanation": "Exemplo prático: \"Cauliflower looks like a white flower.\"",
@@ -5966,12 +5966,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pimentão"
           },
           {
-            "text": "Radish",
-            "emoji": "🔴",
-            "label": "Radish",
-            "translationPt": "Rabanete"
-          },
-          {
             "text": "Pumpkin",
             "emoji": "🎃",
             "label": "Pumpkin",
@@ -5982,13 +5976,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥒",
             "label": "Cucumber",
             "translationPt": "Pepino"
+          },
+          {
+            "text": "Radish",
+            "emoji": "🔴",
+            "label": "Radish",
+            "translationPt": "Rabanete"
           }
         ],
         "options": [
           "Bell Pepper",
-          "Radish",
           "Pumpkin",
-          "Cucumber"
+          "Cucumber",
+          "Radish"
         ],
         "correctAnswer": "Pumpkin",
         "explanation": "Exemplo prático: \"Orange pumpkin soup is warm and creamy.\"",
@@ -6003,6 +6003,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍠",
         "visualOptions": [
           {
+            "text": "Broccoli",
+            "emoji": "🥦",
+            "label": "Broccoli",
+            "translationPt": "Brócolis"
+          },
+          {
+            "text": "Heart of Palm",
+            "emoji": "⚪",
+            "label": "Heart of Palm",
+            "translationPt": "Palmito"
+          },
+          {
             "text": "Onion",
             "emoji": "🧅",
             "label": "Onion",
@@ -6013,25 +6025,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍠",
             "label": "Sweet Potato",
             "translationPt": "Batata-doce"
-          },
-          {
-            "text": "Heart of Palm",
-            "emoji": "⚪",
-            "label": "Heart of Palm",
-            "translationPt": "Palmito"
-          },
-          {
-            "text": "Broccoli",
-            "emoji": "🥦",
-            "label": "Broccoli",
-            "translationPt": "Brócolis"
           }
         ],
         "options": [
-          "Onion",
-          "Sweet Potato",
+          "Broccoli",
           "Heart of Palm",
-          "Broccoli"
+          "Onion",
+          "Sweet Potato"
         ],
         "correctAnswer": "Sweet Potato",
         "explanation": "Exemplo prático: \"Roasted sweet potato is healthy.\"",
@@ -6089,6 +6089,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥒",
         "visualOptions": [
           {
+            "text": "Peanut",
+            "emoji": "🥜",
+            "label": "Peanut",
+            "translationPt": "Amendoim"
+          },
+          {
             "text": "Potato",
             "emoji": "🥔",
             "label": "Potato",
@@ -6101,12 +6107,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ervilha"
           },
           {
-            "text": "Peanut",
-            "emoji": "🥜",
-            "label": "Peanut",
-            "translationPt": "Amendoim"
-          },
-          {
             "text": "Zucchini",
             "emoji": "🥒",
             "label": "Zucchini",
@@ -6114,9 +6114,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Peanut",
           "Potato",
           "Peas",
-          "Peanut",
           "Zucchini"
         ],
         "correctAnswer": "Zucchini",
@@ -6132,18 +6132,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍆",
         "visualOptions": [
           {
-            "text": "Eggplant",
-            "emoji": "🍆",
-            "label": "Eggplant",
-            "translationPt": "Berinjela"
-          },
-          {
-            "text": "Cucumber",
-            "emoji": "🥒",
-            "label": "Cucumber",
-            "translationPt": "Pepino"
-          },
-          {
             "text": "Cabbage",
             "emoji": "🥬",
             "label": "Cabbage",
@@ -6154,13 +6142,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌽",
             "label": "Corn",
             "translationPt": "Milho"
+          },
+          {
+            "text": "Eggplant",
+            "emoji": "🍆",
+            "label": "Eggplant",
+            "translationPt": "Berinjela"
+          },
+          {
+            "text": "Cucumber",
+            "emoji": "🥒",
+            "label": "Cucumber",
+            "translationPt": "Pepino"
           }
         ],
         "options": [
-          "Eggplant",
-          "Cucumber",
           "Cabbage",
-          "Corn"
+          "Corn",
+          "Eggplant",
+          "Cucumber"
         ],
         "correctAnswer": "Eggplant",
         "explanation": "Exemplo prático: \"Purple eggplant is delicious when baked.\"",
@@ -6175,16 +6175,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🫑",
         "visualOptions": [
           {
-            "text": "Cauliflower",
-            "emoji": "⚪",
-            "label": "Cauliflower",
-            "translationPt": "Couve-flor"
-          },
-          {
             "text": "Bell Pepper",
             "emoji": "🫑",
             "label": "Bell Pepper",
             "translationPt": "Pimentão"
+          },
+          {
+            "text": "Cauliflower",
+            "emoji": "⚪",
+            "label": "Cauliflower",
+            "translationPt": "Couve-flor"
           },
           {
             "text": "Chayote",
@@ -6200,8 +6200,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Cauliflower",
           "Bell Pepper",
+          "Cauliflower",
           "Chayote",
           "Cassava"
         ],
@@ -6217,12 +6217,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Chili Pepper",
         "visualEmoji": "🌶️",
         "visualOptions": [
-          {
-            "text": "Sweet Potato",
-            "emoji": "🍠",
-            "label": "Sweet Potato",
-            "translationPt": "Batata-doce"
-          },
           {
             "text": "Beetroot",
             "emoji": "🟣",
@@ -6240,13 +6234,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🎃",
             "label": "Pumpkin",
             "translationPt": "Abóbora"
+          },
+          {
+            "text": "Sweet Potato",
+            "emoji": "🍠",
+            "label": "Sweet Potato",
+            "translationPt": "Batata-doce"
           }
         ],
         "options": [
-          "Sweet Potato",
           "Beetroot",
           "Chili Pepper",
-          "Pumpkin"
+          "Pumpkin",
+          "Sweet Potato"
         ],
         "correctAnswer": "Chili Pepper",
         "explanation": "Exemplo prático: \"That red chili pepper is very spicy.\"",
@@ -6261,16 +6261,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🫛",
         "visualOptions": [
           {
-            "text": "Ginger",
-            "emoji": "🫚",
-            "label": "Ginger",
-            "translationPt": "Gengibre"
-          },
-          {
             "text": "Zucchini",
             "emoji": "🥒",
             "label": "Zucchini",
             "translationPt": "Abobrinha"
+          },
+          {
+            "text": "Peas",
+            "emoji": "🫛",
+            "label": "Peas",
+            "translationPt": "Ervilha"
           },
           {
             "text": "Garlic",
@@ -6279,17 +6279,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Alho"
           },
           {
-            "text": "Peas",
-            "emoji": "🫛",
-            "label": "Peas",
-            "translationPt": "Ervilha"
+            "text": "Ginger",
+            "emoji": "🫚",
+            "label": "Ginger",
+            "translationPt": "Gengibre"
           }
         ],
         "options": [
-          "Ginger",
           "Zucchini",
+          "Peas",
           "Garlic",
-          "Peas"
+          "Ginger"
         ],
         "correctAnswer": "Peas",
         "explanation": "Exemplo prático: \"Green peas are small and round.\"",
@@ -6304,10 +6304,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌿",
         "visualOptions": [
           {
-            "text": "Spinach",
-            "emoji": "🌿",
-            "label": "Spinach",
-            "translationPt": "Espinafre"
+            "text": "Heart of Palm",
+            "emoji": "⚪",
+            "label": "Heart of Palm",
+            "translationPt": "Palmito"
           },
           {
             "text": "Tomato",
@@ -6316,23 +6316,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tomate"
           },
           {
-            "text": "Heart of Palm",
-            "emoji": "⚪",
-            "label": "Heart of Palm",
-            "translationPt": "Palmito"
-          },
-          {
             "text": "Eggplant",
             "emoji": "🍆",
             "label": "Eggplant",
             "translationPt": "Berinjela"
+          },
+          {
+            "text": "Spinach",
+            "emoji": "🌿",
+            "label": "Spinach",
+            "translationPt": "Espinafre"
           }
         ],
         "options": [
-          "Spinach",
-          "Tomato",
           "Heart of Palm",
-          "Eggplant"
+          "Tomato",
+          "Eggplant",
+          "Spinach"
         ],
         "correctAnswer": "Spinach",
         "explanation": "Exemplo prático: \"Fresh spinach leaves are rich in iron.\"",
@@ -6347,18 +6347,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍄",
         "visualOptions": [
           {
-            "text": "Spring Onion",
-            "emoji": "🌱",
-            "label": "Spring Onion",
-            "translationPt": "Cebolinha verde"
-          },
-          {
-            "text": "Mushroom",
-            "emoji": "🍄",
-            "label": "Mushroom",
-            "translationPt": "Cogumelo / Champignon"
-          },
-          {
             "text": "Peanut",
             "emoji": "🥜",
             "label": "Peanut",
@@ -6369,13 +6357,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥔",
             "label": "Potato",
             "translationPt": "Batata"
+          },
+          {
+            "text": "Mushroom",
+            "emoji": "🍄",
+            "label": "Mushroom",
+            "translationPt": "Cogumelo / Champignon"
+          },
+          {
+            "text": "Spring Onion",
+            "emoji": "🌱",
+            "label": "Spring Onion",
+            "translationPt": "Cebolinha verde"
           }
         ],
         "options": [
-          "Spring Onion",
-          "Mushroom",
           "Peanut",
-          "Potato"
+          "Potato",
+          "Mushroom",
+          "Spring Onion"
         ],
         "correctAnswer": "Mushroom",
         "explanation": "Exemplo prático: \"White mushrooms are great in pasta.\"",
@@ -6390,35 +6390,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥔",
         "visualOptions": [
           {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura"
-          },
-          {
-            "text": "Chili Pepper",
-            "emoji": "🌶️",
-            "label": "Chili Pepper",
-            "translationPt": "Pimenta vermelha"
-          },
-          {
             "text": "Cassava",
             "emoji": "🥔",
             "label": "Cassava",
             "translationPt": "Mandioca / Aipim"
           },
           {
+            "text": "Carrot",
+            "emoji": "🥕",
+            "label": "Carrot",
+            "translationPt": "Cenoura"
+          },
+          {
             "text": "Corn",
             "emoji": "🌽",
             "label": "Corn",
             "translationPt": "Milho"
+          },
+          {
+            "text": "Chili Pepper",
+            "emoji": "🌶️",
+            "label": "Chili Pepper",
+            "translationPt": "Pimenta vermelha"
           }
         ],
         "options": [
-          "Carrot",
-          "Chili Pepper",
           "Cassava",
-          "Corn"
+          "Carrot",
+          "Corn",
+          "Chili Pepper"
         ],
         "correctAnswer": "Cassava",
         "explanation": "Exemplo prático: \"Fried cassava is very popular in Brazil.\"",
@@ -6445,23 +6445,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Azeitona"
           },
           {
-            "text": "Radish",
-            "emoji": "🔴",
-            "label": "Radish",
-            "translationPt": "Rabanete"
-          },
-          {
             "text": "Okra",
             "emoji": "🟢",
             "label": "Okra",
             "translationPt": "Quiabo"
+          },
+          {
+            "text": "Radish",
+            "emoji": "🔴",
+            "label": "Radish",
+            "translationPt": "Rabanete"
           }
         ],
         "options": [
           "Onion",
           "Olive",
-          "Radish",
-          "Okra"
+          "Okra",
+          "Radish"
         ],
         "correctAnswer": "Okra",
         "explanation": "Exemplo prático: \"Okra is a traditional vegetable in Brazilian cooking.\"",
@@ -6476,16 +6476,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍐",
         "visualOptions": [
           {
+            "text": "Eggplant",
+            "emoji": "🍆",
+            "label": "Eggplant",
+            "translationPt": "Berinjela"
+          },
+          {
             "text": "Chayote",
             "emoji": "🍐",
             "label": "Chayote",
             "translationPt": "Chuchu"
-          },
-          {
-            "text": "Beetroot",
-            "emoji": "🟣",
-            "label": "Beetroot",
-            "translationPt": "Beterraba"
           },
           {
             "text": "Broccoli",
@@ -6494,17 +6494,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Brócolis"
           },
           {
-            "text": "Eggplant",
-            "emoji": "🍆",
-            "label": "Eggplant",
-            "translationPt": "Berinjela"
+            "text": "Beetroot",
+            "emoji": "🟣",
+            "label": "Beetroot",
+            "translationPt": "Beterraba"
           }
         ],
         "options": [
+          "Eggplant",
           "Chayote",
-          "Beetroot",
           "Broccoli",
-          "Eggplant"
+          "Beetroot"
         ],
         "correctAnswer": "Chayote",
         "explanation": "Exemplo prático: \"Light green chayote is mild and healthy.\"",
@@ -6518,6 +6518,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Heart of Palm",
         "visualEmoji": "⚪",
         "visualOptions": [
+          {
+            "text": "Bell Pepper",
+            "emoji": "🫑",
+            "label": "Bell Pepper",
+            "translationPt": "Pimentão"
+          },
           {
             "text": "Mushroom",
             "emoji": "🍄",
@@ -6535,19 +6541,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⚪",
             "label": "Heart of Palm",
             "translationPt": "Palmito"
-          },
-          {
-            "text": "Bell Pepper",
-            "emoji": "🫑",
-            "label": "Bell Pepper",
-            "translationPt": "Pimentão"
           }
         ],
         "options": [
+          "Bell Pepper",
           "Mushroom",
           "Lettuce",
-          "Heart of Palm",
-          "Bell Pepper"
+          "Heart of Palm"
         ],
         "correctAnswer": "Heart of Palm",
         "explanation": "Exemplo prático: \"Heart of palm is great in salads and pies.\"",
@@ -6648,16 +6648,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🫚",
         "visualOptions": [
           {
+            "text": "Cabbage",
+            "emoji": "🥬",
+            "label": "Cabbage",
+            "translationPt": "Repolho"
+          },
+          {
             "text": "Cauliflower",
             "emoji": "⚪",
             "label": "Cauliflower",
             "translationPt": "Couve-flor"
-          },
-          {
-            "text": "Chili Pepper",
-            "emoji": "🌶️",
-            "label": "Chili Pepper",
-            "translationPt": "Pimenta vermelha"
           },
           {
             "text": "Ginger",
@@ -6666,17 +6666,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Gengibre"
           },
           {
-            "text": "Cabbage",
-            "emoji": "🥬",
-            "label": "Cabbage",
-            "translationPt": "Repolho"
+            "text": "Chili Pepper",
+            "emoji": "🌶️",
+            "label": "Chili Pepper",
+            "translationPt": "Pimenta vermelha"
           }
         ],
         "options": [
+          "Cabbage",
           "Cauliflower",
-          "Chili Pepper",
           "Ginger",
-          "Cabbage"
+          "Chili Pepper"
         ],
         "correctAnswer": "Ginger",
         "explanation": "Exemplo prático: \"Fresh ginger root is aromatic.\"",
@@ -6691,16 +6691,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🔴",
         "visualOptions": [
           {
-            "text": "Chayote",
-            "emoji": "🍐",
-            "label": "Chayote",
-            "translationPt": "Chuchu"
-          },
-          {
             "text": "Radish",
             "emoji": "🔴",
             "label": "Radish",
             "translationPt": "Rabanete"
+          },
+          {
+            "text": "Chayote",
+            "emoji": "🍐",
+            "label": "Chayote",
+            "translationPt": "Chuchu"
           },
           {
             "text": "Okra",
@@ -6716,8 +6716,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Chayote",
           "Radish",
+          "Chayote",
           "Okra",
           "Cassava"
         ],
@@ -6734,35 +6734,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌱",
         "visualOptions": [
           {
-            "text": "Spring Onion",
-            "emoji": "🌱",
-            "label": "Spring Onion",
-            "translationPt": "Cebolinha verde"
-          },
-          {
             "text": "Peas",
             "emoji": "🫛",
             "label": "Peas",
             "translationPt": "Ervilha"
           },
           {
-            "text": "Mushroom",
-            "emoji": "🍄",
-            "label": "Mushroom",
-            "translationPt": "Cogumelo / Champignon"
+            "text": "Spring Onion",
+            "emoji": "🌱",
+            "label": "Spring Onion",
+            "translationPt": "Cebolinha verde"
           },
           {
             "text": "Heart of Palm",
             "emoji": "⚪",
             "label": "Heart of Palm",
             "translationPt": "Palmito"
+          },
+          {
+            "text": "Mushroom",
+            "emoji": "🍄",
+            "label": "Mushroom",
+            "translationPt": "Cogumelo / Champignon"
           }
         ],
         "options": [
-          "Spring Onion",
           "Peas",
-          "Mushroom",
-          "Heart of Palm"
+          "Spring Onion",
+          "Heart of Palm",
+          "Mushroom"
         ],
         "correctAnswer": "Spring Onion",
         "explanation": "Exemplo prático: \"Chopped spring onion finishes the dish.\"",
@@ -6797,35 +6797,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦁",
         "visualOptions": [
           {
-            "text": "Hippopotamus",
-            "emoji": "🦛",
-            "label": "Hippopotamus",
-            "translationPt": "Hipopótamo"
-          },
-          {
-            "text": "Rhinoceros",
-            "emoji": "🦏",
-            "label": "Rhinoceros",
-            "translationPt": "Rinoceronte"
-          },
-          {
             "text": "Lion",
             "emoji": "🦁",
             "label": "Lion",
             "translationPt": "Leão"
           },
           {
+            "text": "Hippopotamus",
+            "emoji": "🦛",
+            "label": "Hippopotamus",
+            "translationPt": "Hipopótamo"
+          },
+          {
             "text": "Bear",
             "emoji": "🐻",
             "label": "Bear",
             "translationPt": "Urso"
+          },
+          {
+            "text": "Rhinoceros",
+            "emoji": "🦏",
+            "label": "Rhinoceros",
+            "translationPt": "Rinoceronte"
           }
         ],
         "options": [
-          "Hippopotamus",
-          "Rhinoceros",
           "Lion",
-          "Bear"
+          "Hippopotamus",
+          "Bear",
+          "Rhinoceros"
         ],
         "correctAnswer": "Lion",
         "explanation": "Exemplo prático: \"The lion has a large golden mane.\"",
@@ -6840,16 +6840,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐅",
         "visualOptions": [
           {
-            "text": "Tiger",
-            "emoji": "🐅",
-            "label": "Tiger",
-            "translationPt": "Tigre"
-          },
-          {
-            "text": "Kangaroo",
-            "emoji": "🦘",
-            "label": "Kangaroo",
-            "translationPt": "Canguru"
+            "text": "Koala",
+            "emoji": "🐨",
+            "label": "Koala",
+            "translationPt": "Coala"
           },
           {
             "text": "Toucan",
@@ -6858,17 +6852,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tucano"
           },
           {
-            "text": "Koala",
-            "emoji": "🐨",
-            "label": "Koala",
-            "translationPt": "Coala"
+            "text": "Kangaroo",
+            "emoji": "🦘",
+            "label": "Kangaroo",
+            "translationPt": "Canguru"
+          },
+          {
+            "text": "Tiger",
+            "emoji": "🐅",
+            "label": "Tiger",
+            "translationPt": "Tigre"
           }
         ],
         "options": [
-          "Tiger",
-          "Kangaroo",
+          "Koala",
           "Toucan",
-          "Koala"
+          "Kangaroo",
+          "Tiger"
         ],
         "correctAnswer": "Tiger",
         "explanation": "Exemplo prático: \"The orange tiger has black stripes.\"",
@@ -6889,12 +6889,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Onça-pintada"
           },
           {
-            "text": "Deer",
-            "emoji": "🦌",
-            "label": "Deer",
-            "translationPt": "Cervo / Veado"
-          },
-          {
             "text": "Gorilla",
             "emoji": "🦍",
             "label": "Gorilla",
@@ -6905,13 +6899,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐘",
             "label": "Elephant",
             "translationPt": "Elefante"
+          },
+          {
+            "text": "Deer",
+            "emoji": "🦌",
+            "label": "Deer",
+            "translationPt": "Cervo / Veado"
           }
         ],
         "options": [
           "Jaguar",
-          "Deer",
           "Gorilla",
-          "Elephant"
+          "Elephant",
+          "Deer"
         ],
         "correctAnswer": "Elephant",
         "explanation": "Exemplo prático: \"The elephant has a long trunk and big ears.\"",
@@ -6926,18 +6926,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦒",
         "visualOptions": [
           {
-            "text": "Panda",
-            "emoji": "🐼",
-            "label": "Panda",
-            "translationPt": "Urso Panda"
-          },
-          {
-            "text": "Polar Bear",
-            "emoji": "🐻‍❄️",
-            "label": "Polar Bear",
-            "translationPt": "Urso Polar"
-          },
-          {
             "text": "Giraffe",
             "emoji": "🦒",
             "label": "Giraffe",
@@ -6948,13 +6936,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐍",
             "label": "Snake",
             "translationPt": "Cobra / Serpente"
+          },
+          {
+            "text": "Polar Bear",
+            "emoji": "🐻‍❄️",
+            "label": "Polar Bear",
+            "translationPt": "Urso Polar"
+          },
+          {
+            "text": "Panda",
+            "emoji": "🐼",
+            "label": "Panda",
+            "translationPt": "Urso Panda"
           }
         ],
         "options": [
-          "Panda",
-          "Polar Bear",
           "Giraffe",
-          "Snake"
+          "Snake",
+          "Polar Bear",
+          "Panda"
         ],
         "correctAnswer": "Giraffe",
         "explanation": "Exemplo prático: \"The tall giraffe eats leaves from high trees.\"",
@@ -6969,10 +6969,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐒",
         "visualOptions": [
           {
-            "text": "Crocodile",
-            "emoji": "🐊",
-            "label": "Crocodile",
-            "translationPt": "Crocodilo"
+            "text": "Flamingo",
+            "emoji": "🦩",
+            "label": "Flamingo",
+            "translationPt": "Flamingo"
           },
           {
             "text": "Monkey",
@@ -6987,17 +6987,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Raposa"
           },
           {
-            "text": "Flamingo",
-            "emoji": "🦩",
-            "label": "Flamingo",
-            "translationPt": "Flamingo"
+            "text": "Crocodile",
+            "emoji": "🐊",
+            "label": "Crocodile",
+            "translationPt": "Crocodilo"
           }
         ],
         "options": [
-          "Crocodile",
+          "Flamingo",
           "Monkey",
           "Fox",
-          "Flamingo"
+          "Crocodile"
         ],
         "correctAnswer": "Monkey",
         "explanation": "Exemplo prático: \"The playful monkey loves bananas.\"",
@@ -7011,6 +7011,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Zebra",
         "visualEmoji": "🦓",
         "visualOptions": [
+          {
+            "text": "Chimpanzee",
+            "emoji": "🐒",
+            "label": "Chimpanzee",
+            "translationPt": "Chimpanzé"
+          },
           {
             "text": "Zebra",
             "emoji": "🦓",
@@ -7028,19 +7034,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐆",
             "label": "Leopard",
             "translationPt": "Leopardo"
-          },
-          {
-            "text": "Chimpanzee",
-            "emoji": "🐒",
-            "label": "Chimpanzee",
-            "translationPt": "Chimpanzé"
           }
         ],
         "options": [
+          "Chimpanzee",
           "Zebra",
           "Lion",
-          "Leopard",
-          "Chimpanzee"
+          "Leopard"
         ],
         "correctAnswer": "Zebra",
         "explanation": "Exemplo prático: \"The zebra has black and white stripes.\"",
@@ -7055,10 +7055,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐻",
         "visualOptions": [
           {
-            "text": "Elephant",
-            "emoji": "🐘",
-            "label": "Elephant",
-            "translationPt": "Elefante"
+            "text": "Cheetah",
+            "emoji": "🐆",
+            "label": "Cheetah",
+            "translationPt": "Guepardo"
           },
           {
             "text": "Camel",
@@ -7067,10 +7067,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camelo"
           },
           {
-            "text": "Cheetah",
-            "emoji": "🐆",
-            "label": "Cheetah",
-            "translationPt": "Guepardo"
+            "text": "Elephant",
+            "emoji": "🐘",
+            "label": "Elephant",
+            "translationPt": "Elefante"
           },
           {
             "text": "Bear",
@@ -7080,9 +7080,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Elephant",
-          "Camel",
           "Cheetah",
+          "Camel",
+          "Elephant",
           "Bear"
         ],
         "correctAnswer": "Bear",
@@ -7098,16 +7098,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐼",
         "visualOptions": [
           {
-            "text": "Wolf",
-            "emoji": "🐺",
-            "label": "Wolf",
-            "translationPt": "Lobo"
-          },
-          {
             "text": "Tiger",
             "emoji": "🐅",
             "label": "Tiger",
             "translationPt": "Tigre"
+          },
+          {
+            "text": "Alligator",
+            "emoji": "🐊",
+            "label": "Alligator",
+            "translationPt": "Jacaré"
           },
           {
             "text": "Panda",
@@ -7116,17 +7116,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Urso Panda"
           },
           {
-            "text": "Alligator",
-            "emoji": "🐊",
-            "label": "Alligator",
-            "translationPt": "Jacaré"
+            "text": "Wolf",
+            "emoji": "🐺",
+            "label": "Wolf",
+            "translationPt": "Lobo"
           }
         ],
         "options": [
-          "Wolf",
           "Tiger",
+          "Alligator",
           "Panda",
-          "Alligator"
+          "Wolf"
         ],
         "correctAnswer": "Panda",
         "explanation": "Exemplo prático: \"The giant panda eats green bamboo.\"",
@@ -7141,35 +7141,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐻‍❄️",
         "visualOptions": [
           {
-            "text": "Giraffe",
-            "emoji": "🦒",
-            "label": "Giraffe",
-            "translationPt": "Girafa"
-          },
-          {
             "text": "Polar Bear",
             "emoji": "🐻‍❄️",
             "label": "Polar Bear",
             "translationPt": "Urso Polar"
           },
           {
-            "text": "Monkey",
-            "emoji": "🐒",
-            "label": "Monkey",
-            "translationPt": "Macaco"
-          },
-          {
             "text": "Macaw",
             "emoji": "🦜",
             "label": "Macaw",
             "translationPt": "Arara"
+          },
+          {
+            "text": "Giraffe",
+            "emoji": "🦒",
+            "label": "Giraffe",
+            "translationPt": "Girafa"
+          },
+          {
+            "text": "Monkey",
+            "emoji": "🐒",
+            "label": "Monkey",
+            "translationPt": "Macaco"
           }
         ],
         "options": [
-          "Giraffe",
           "Polar Bear",
-          "Monkey",
-          "Macaw"
+          "Macaw",
+          "Giraffe",
+          "Monkey"
         ],
         "correctAnswer": "Polar Bear",
         "explanation": "Exemplo prático: \"The white polar bear lives on the ice.\"",
@@ -7184,6 +7184,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦛",
         "visualOptions": [
           {
+            "text": "Zebra",
+            "emoji": "🦓",
+            "label": "Zebra",
+            "translationPt": "Zebra"
+          },
+          {
+            "text": "Peacock",
+            "emoji": "🦚",
+            "label": "Peacock",
+            "translationPt": "Pavão"
+          },
+          {
             "text": "Hippopotamus",
             "emoji": "🦛",
             "label": "Hippopotamus",
@@ -7194,25 +7206,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐧",
             "label": "Penguin",
             "translationPt": "Pinguim"
-          },
-          {
-            "text": "Peacock",
-            "emoji": "🦚",
-            "label": "Peacock",
-            "translationPt": "Pavão"
-          },
-          {
-            "text": "Zebra",
-            "emoji": "🦓",
-            "label": "Zebra",
-            "translationPt": "Zebra"
           }
         ],
         "options": [
-          "Hippopotamus",
-          "Penguin",
+          "Zebra",
           "Peacock",
-          "Zebra"
+          "Hippopotamus",
+          "Penguin"
         ],
         "correctAnswer": "Hippopotamus",
         "explanation": "Exemplo prático: \"The heavy hippopotamus loves the water.\"",
@@ -7227,18 +7227,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦏",
         "visualOptions": [
           {
-            "text": "Lion",
-            "emoji": "🦁",
-            "label": "Lion",
-            "translationPt": "Leão"
-          },
-          {
-            "text": "Leopard",
-            "emoji": "🐆",
-            "label": "Leopard",
-            "translationPt": "Leopardo"
-          },
-          {
             "text": "Fox",
             "emoji": "🦊",
             "label": "Fox",
@@ -7249,13 +7237,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦏",
             "label": "Rhinoceros",
             "translationPt": "Rinoceronte"
+          },
+          {
+            "text": "Leopard",
+            "emoji": "🐆",
+            "label": "Leopard",
+            "translationPt": "Leopardo"
+          },
+          {
+            "text": "Lion",
+            "emoji": "🦁",
+            "label": "Lion",
+            "translationPt": "Leão"
           }
         ],
         "options": [
-          "Lion",
-          "Leopard",
           "Fox",
-          "Rhinoceros"
+          "Rhinoceros",
+          "Leopard",
+          "Lion"
         ],
         "correctAnswer": "Rhinoceros",
         "explanation": "Exemplo prático: \"The rhinoceros has a horn on its nose.\"",
@@ -7270,16 +7270,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐊",
         "visualOptions": [
           {
-            "text": "Alligator",
-            "emoji": "🐊",
-            "label": "Alligator",
-            "translationPt": "Jacaré"
-          },
-          {
             "text": "Flamingo",
             "emoji": "🦩",
             "label": "Flamingo",
             "translationPt": "Flamingo"
+          },
+          {
+            "text": "Bear",
+            "emoji": "🐻",
+            "label": "Bear",
+            "translationPt": "Urso"
           },
           {
             "text": "Chimpanzee",
@@ -7288,17 +7288,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chimpanzé"
           },
           {
-            "text": "Bear",
-            "emoji": "🐻",
-            "label": "Bear",
-            "translationPt": "Urso"
+            "text": "Alligator",
+            "emoji": "🐊",
+            "label": "Alligator",
+            "translationPt": "Jacaré"
           }
         ],
         "options": [
-          "Alligator",
           "Flamingo",
+          "Bear",
           "Chimpanzee",
-          "Bear"
+          "Alligator"
         ],
         "correctAnswer": "Alligator",
         "explanation": "Exemplo prático: \"The alligator lives in Brazilian rivers and pantanal.\"",
@@ -7313,35 +7313,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐊",
         "visualOptions": [
           {
-            "text": "Kangaroo",
-            "emoji": "🦘",
-            "label": "Kangaroo",
-            "translationPt": "Canguru"
-          },
-          {
             "text": "Crocodile",
             "emoji": "🐊",
             "label": "Crocodile",
             "translationPt": "Crocodilo"
           },
           {
-            "text": "Elephant",
-            "emoji": "🐘",
-            "label": "Elephant",
-            "translationPt": "Elefante"
+            "text": "Kangaroo",
+            "emoji": "🦘",
+            "label": "Kangaroo",
+            "translationPt": "Canguru"
           },
           {
             "text": "Koala",
             "emoji": "🐨",
             "label": "Koala",
             "translationPt": "Coala"
+          },
+          {
+            "text": "Elephant",
+            "emoji": "🐘",
+            "label": "Elephant",
+            "translationPt": "Elefante"
           }
         ],
         "options": [
-          "Kangaroo",
           "Crocodile",
-          "Elephant",
-          "Koala"
+          "Kangaroo",
+          "Koala",
+          "Elephant"
         ],
         "correctAnswer": "Crocodile",
         "explanation": "Exemplo prático: \"The large crocodile has sharp teeth.\"",
@@ -7356,35 +7356,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐍",
         "visualOptions": [
           {
-            "text": "Zebra",
-            "emoji": "🦓",
-            "label": "Zebra",
-            "translationPt": "Zebra"
-          },
-          {
             "text": "Deer",
             "emoji": "🦌",
             "label": "Deer",
             "translationPt": "Cervo / Veado"
           },
           {
-            "text": "Snake",
-            "emoji": "🐍",
-            "label": "Snake",
-            "translationPt": "Cobra / Serpente"
+            "text": "Zebra",
+            "emoji": "🦓",
+            "label": "Zebra",
+            "translationPt": "Zebra"
           },
           {
             "text": "Wolf",
             "emoji": "🐺",
             "label": "Wolf",
             "translationPt": "Lobo"
+          },
+          {
+            "text": "Snake",
+            "emoji": "🐍",
+            "label": "Snake",
+            "translationPt": "Cobra / Serpente"
           }
         ],
         "options": [
-          "Zebra",
           "Deer",
-          "Snake",
-          "Wolf"
+          "Zebra",
+          "Wolf",
+          "Snake"
         ],
         "correctAnswer": "Snake",
         "explanation": "Exemplo prático: \"The snake slithers across the ground.\"",
@@ -7405,12 +7405,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Urso Polar"
           },
           {
-            "text": "Penguin",
-            "emoji": "🐧",
-            "label": "Penguin",
-            "translationPt": "Pinguim"
-          },
-          {
             "text": "Panda",
             "emoji": "🐼",
             "label": "Panda",
@@ -7421,13 +7415,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦍",
             "label": "Gorilla",
             "translationPt": "Gorila"
+          },
+          {
+            "text": "Penguin",
+            "emoji": "🐧",
+            "label": "Penguin",
+            "translationPt": "Pinguim"
           }
         ],
         "options": [
           "Polar Bear",
-          "Penguin",
           "Panda",
-          "Gorilla"
+          "Gorilla",
+          "Penguin"
         ],
         "correctAnswer": "Gorilla",
         "explanation": "Exemplo prático: \"The strong gorilla beats its chest.\"",
@@ -7448,12 +7448,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chimpanzé"
           },
           {
-            "text": "Monkey",
-            "emoji": "🐒",
-            "label": "Monkey",
-            "translationPt": "Macaco"
-          },
-          {
             "text": "Peacock",
             "emoji": "🦚",
             "label": "Peacock",
@@ -7464,13 +7458,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐆",
             "label": "Cheetah",
             "translationPt": "Guepardo"
+          },
+          {
+            "text": "Monkey",
+            "emoji": "🐒",
+            "label": "Monkey",
+            "translationPt": "Macaco"
           }
         ],
         "options": [
           "Chimpanzee",
-          "Monkey",
           "Peacock",
-          "Cheetah"
+          "Cheetah",
+          "Monkey"
         ],
         "correctAnswer": "Chimpanzee",
         "explanation": "Exemplo prático: \"Chimpanzees are very intelligent primates.\"",
@@ -7491,16 +7491,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rinoceronte"
           },
           {
-            "text": "Macaw",
-            "emoji": "🦜",
-            "label": "Macaw",
-            "translationPt": "Arara"
-          },
-          {
             "text": "Kangaroo",
             "emoji": "🦘",
             "label": "Kangaroo",
             "translationPt": "Canguru"
+          },
+          {
+            "text": "Macaw",
+            "emoji": "🦜",
+            "label": "Macaw",
+            "translationPt": "Arara"
           },
           {
             "text": "Crocodile",
@@ -7511,8 +7511,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Rhinoceros",
-          "Macaw",
           "Kangaroo",
+          "Macaw",
           "Crocodile"
         ],
         "correctAnswer": "Kangaroo",
@@ -7528,16 +7528,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐨",
         "visualOptions": [
           {
+            "text": "Giraffe",
+            "emoji": "🦒",
+            "label": "Giraffe",
+            "translationPt": "Girafa"
+          },
+          {
             "text": "Koala",
             "emoji": "🐨",
             "label": "Koala",
             "translationPt": "Coala"
-          },
-          {
-            "text": "Jaguar",
-            "emoji": "🐆",
-            "label": "Jaguar",
-            "translationPt": "Onça-pintada"
           },
           {
             "text": "Snake",
@@ -7546,17 +7546,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cobra / Serpente"
           },
           {
-            "text": "Giraffe",
-            "emoji": "🦒",
-            "label": "Giraffe",
-            "translationPt": "Girafa"
+            "text": "Jaguar",
+            "emoji": "🐆",
+            "label": "Jaguar",
+            "translationPt": "Onça-pintada"
           }
         ],
         "options": [
+          "Giraffe",
           "Koala",
-          "Jaguar",
           "Snake",
-          "Giraffe"
+          "Jaguar"
         ],
         "correctAnswer": "Koala",
         "explanation": "Exemplo prático: \"The gray koala holds onto a branch.\"",
@@ -7571,12 +7571,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐪",
         "visualOptions": [
           {
-            "text": "Toucan",
-            "emoji": "🦜",
-            "label": "Toucan",
-            "translationPt": "Tucano"
-          },
-          {
             "text": "Hippopotamus",
             "emoji": "🦛",
             "label": "Hippopotamus",
@@ -7589,6 +7583,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tigre"
           },
           {
+            "text": "Toucan",
+            "emoji": "🦜",
+            "label": "Toucan",
+            "translationPt": "Tucano"
+          },
+          {
             "text": "Camel",
             "emoji": "🐪",
             "label": "Camel",
@@ -7596,9 +7596,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Toucan",
           "Hippopotamus",
           "Tiger",
+          "Toucan",
           "Camel"
         ],
         "correctAnswer": "Camel",
@@ -7614,12 +7614,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐺",
         "visualOptions": [
           {
-            "text": "Wolf",
-            "emoji": "🐺",
-            "label": "Wolf",
-            "translationPt": "Lobo"
-          },
-          {
             "text": "Zebra",
             "emoji": "🦓",
             "label": "Zebra",
@@ -7632,6 +7626,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Jacaré"
           },
           {
+            "text": "Wolf",
+            "emoji": "🐺",
+            "label": "Wolf",
+            "translationPt": "Lobo"
+          },
+          {
             "text": "Gorilla",
             "emoji": "🦍",
             "label": "Gorilla",
@@ -7639,9 +7639,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Wolf",
           "Zebra",
           "Alligator",
+          "Wolf",
           "Gorilla"
         ],
         "correctAnswer": "Wolf",
@@ -7657,10 +7657,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦊",
         "visualOptions": [
           {
-            "text": "Panda",
-            "emoji": "🐼",
-            "label": "Panda",
-            "translationPt": "Urso Panda"
+            "text": "Fox",
+            "emoji": "🦊",
+            "label": "Fox",
+            "translationPt": "Raposa"
           },
           {
             "text": "Penguin",
@@ -7669,23 +7669,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pinguim"
           },
           {
-            "text": "Fox",
-            "emoji": "🦊",
-            "label": "Fox",
-            "translationPt": "Raposa"
-          },
-          {
             "text": "Polar Bear",
             "emoji": "🐻‍❄️",
             "label": "Polar Bear",
             "translationPt": "Urso Polar"
+          },
+          {
+            "text": "Panda",
+            "emoji": "🐼",
+            "label": "Panda",
+            "translationPt": "Urso Panda"
           }
         ],
         "options": [
-          "Panda",
-          "Penguin",
           "Fox",
-          "Polar Bear"
+          "Penguin",
+          "Polar Bear",
+          "Panda"
         ],
         "correctAnswer": "Fox",
         "explanation": "Exemplo prático: \"The red fox has a fluffy tail.\"",
@@ -7700,35 +7700,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦌",
         "visualOptions": [
           {
-            "text": "Deer",
-            "emoji": "🦌",
-            "label": "Deer",
-            "translationPt": "Cervo / Veado"
-          },
-          {
             "text": "Crocodile",
             "emoji": "🐊",
             "label": "Crocodile",
             "translationPt": "Crocodilo"
           },
           {
-            "text": "Flamingo",
-            "emoji": "🦩",
-            "label": "Flamingo",
-            "translationPt": "Flamingo"
-          },
-          {
             "text": "Chimpanzee",
             "emoji": "🐒",
             "label": "Chimpanzee",
             "translationPt": "Chimpanzé"
+          },
+          {
+            "text": "Deer",
+            "emoji": "🦌",
+            "label": "Deer",
+            "translationPt": "Cervo / Veado"
+          },
+          {
+            "text": "Flamingo",
+            "emoji": "🦩",
+            "label": "Flamingo",
+            "translationPt": "Flamingo"
           }
         ],
         "options": [
-          "Deer",
           "Crocodile",
-          "Flamingo",
-          "Chimpanzee"
+          "Chimpanzee",
+          "Deer",
+          "Flamingo"
         ],
         "correctAnswer": "Deer",
         "explanation": "Exemplo prático: \"The forest deer has branching antlers.\"",
@@ -7743,16 +7743,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐆",
         "visualOptions": [
           {
-            "text": "Camel",
-            "emoji": "🐪",
-            "label": "Camel",
-            "translationPt": "Camelo"
-          },
-          {
             "text": "Lion",
             "emoji": "🦁",
             "label": "Lion",
             "translationPt": "Leão"
+          },
+          {
+            "text": "Jaguar",
+            "emoji": "🐆",
+            "label": "Jaguar",
+            "translationPt": "Onça-pintada"
           },
           {
             "text": "Rhinoceros",
@@ -7761,17 +7761,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rinoceronte"
           },
           {
-            "text": "Jaguar",
-            "emoji": "🐆",
-            "label": "Jaguar",
-            "translationPt": "Onça-pintada"
+            "text": "Camel",
+            "emoji": "🐪",
+            "label": "Camel",
+            "translationPt": "Camelo"
           }
         ],
         "options": [
-          "Camel",
           "Lion",
+          "Jaguar",
           "Rhinoceros",
-          "Jaguar"
+          "Camel"
         ],
         "correctAnswer": "Jaguar",
         "explanation": "Exemplo prático: \"The jaguar is the largest cat in Brazil.\"",
@@ -7786,35 +7786,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐆",
         "visualOptions": [
           {
-            "text": "Koala",
-            "emoji": "🐨",
-            "label": "Koala",
-            "translationPt": "Coala"
-          },
-          {
             "text": "Hippopotamus",
             "emoji": "🦛",
             "label": "Hippopotamus",
             "translationPt": "Hipopótamo"
           },
           {
-            "text": "Leopard",
-            "emoji": "🐆",
-            "label": "Leopard",
-            "translationPt": "Leopardo"
+            "text": "Koala",
+            "emoji": "🐨",
+            "label": "Koala",
+            "translationPt": "Coala"
           },
           {
             "text": "Kangaroo",
             "emoji": "🦘",
             "label": "Kangaroo",
             "translationPt": "Canguru"
+          },
+          {
+            "text": "Leopard",
+            "emoji": "🐆",
+            "label": "Leopard",
+            "translationPt": "Leopardo"
           }
         ],
         "options": [
-          "Koala",
           "Hippopotamus",
-          "Leopard",
-          "Kangaroo"
+          "Koala",
+          "Kangaroo",
+          "Leopard"
         ],
         "correctAnswer": "Leopard",
         "explanation": "Exemplo prático: \"The leopard climbs trees with ease.\"",
@@ -7829,16 +7829,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐆",
         "visualOptions": [
           {
-            "text": "Toucan",
-            "emoji": "🦜",
-            "label": "Toucan",
-            "translationPt": "Tucano"
-          },
-          {
             "text": "Cheetah",
             "emoji": "🐆",
             "label": "Cheetah",
             "translationPt": "Guepardo"
+          },
+          {
+            "text": "Tiger",
+            "emoji": "🐅",
+            "label": "Tiger",
+            "translationPt": "Tigre"
           },
           {
             "text": "Wolf",
@@ -7847,17 +7847,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Lobo"
           },
           {
-            "text": "Tiger",
-            "emoji": "🐅",
-            "label": "Tiger",
-            "translationPt": "Tigre"
+            "text": "Toucan",
+            "emoji": "🦜",
+            "label": "Toucan",
+            "translationPt": "Tucano"
           }
         ],
         "options": [
-          "Toucan",
           "Cheetah",
+          "Tiger",
           "Wolf",
-          "Tiger"
+          "Toucan"
         ],
         "correctAnswer": "Cheetah",
         "explanation": "Exemplo prático: \"The cheetah is the fastest land animal.\"",
@@ -7871,12 +7871,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Penguin",
         "visualEmoji": "🐧",
         "visualOptions": [
-          {
-            "text": "Penguin",
-            "emoji": "🐧",
-            "label": "Penguin",
-            "translationPt": "Pinguim"
-          },
           {
             "text": "Giraffe",
             "emoji": "🦒",
@@ -7894,13 +7888,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦌",
             "label": "Deer",
             "translationPt": "Cervo / Veado"
+          },
+          {
+            "text": "Penguin",
+            "emoji": "🐧",
+            "label": "Penguin",
+            "translationPt": "Pinguim"
           }
         ],
         "options": [
-          "Penguin",
           "Giraffe",
           "Gorilla",
-          "Deer"
+          "Deer",
+          "Penguin"
         ],
         "correctAnswer": "Penguin",
         "explanation": "Exemplo prático: \"Penguins walk on the snow and swim well.\"",
@@ -7927,23 +7927,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Macaco"
           },
           {
-            "text": "Jaguar",
-            "emoji": "🐆",
-            "label": "Jaguar",
-            "translationPt": "Onça-pintada"
-          },
-          {
             "text": "Flamingo",
             "emoji": "🦩",
             "label": "Flamingo",
             "translationPt": "Flamingo"
+          },
+          {
+            "text": "Jaguar",
+            "emoji": "🐆",
+            "label": "Jaguar",
+            "translationPt": "Onça-pintada"
           }
         ],
         "options": [
           "Snake",
           "Monkey",
-          "Jaguar",
-          "Flamingo"
+          "Flamingo",
+          "Jaguar"
         ],
         "correctAnswer": "Flamingo",
         "explanation": "Exemplo prático: \"The pink flamingo has long thin legs.\"",
@@ -7970,23 +7970,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Raposa"
           },
           {
-            "text": "Camel",
-            "emoji": "🐪",
-            "label": "Camel",
-            "translationPt": "Camelo"
-          },
-          {
             "text": "Leopard",
             "emoji": "🐆",
             "label": "Leopard",
             "translationPt": "Leopardo"
+          },
+          {
+            "text": "Camel",
+            "emoji": "🐪",
+            "label": "Camel",
+            "translationPt": "Camelo"
           }
         ],
         "options": [
           "Peacock",
           "Fox",
-          "Camel",
-          "Leopard"
+          "Leopard",
+          "Camel"
         ],
         "correctAnswer": "Peacock",
         "explanation": "Exemplo prático: \"The peacock has colorful tail feathers.\"",
@@ -8001,10 +8001,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦜",
         "visualOptions": [
           {
-            "text": "Bear",
-            "emoji": "🐻",
-            "label": "Bear",
-            "translationPt": "Urso"
+            "text": "Alligator",
+            "emoji": "🐊",
+            "label": "Alligator",
+            "translationPt": "Jacaré"
           },
           {
             "text": "Toucan",
@@ -8013,10 +8013,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tucano"
           },
           {
-            "text": "Alligator",
-            "emoji": "🐊",
-            "label": "Alligator",
-            "translationPt": "Jacaré"
+            "text": "Bear",
+            "emoji": "🐻",
+            "label": "Bear",
+            "translationPt": "Urso"
           },
           {
             "text": "Cheetah",
@@ -8026,9 +8026,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Bear",
-          "Toucan",
           "Alligator",
+          "Toucan",
+          "Bear",
           "Cheetah"
         ],
         "correctAnswer": "Toucan",
@@ -8044,35 +8044,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦜",
         "visualOptions": [
           {
-            "text": "Macaw",
-            "emoji": "🦜",
-            "label": "Macaw",
-            "translationPt": "Arara"
-          },
-          {
             "text": "Elephant",
             "emoji": "🐘",
             "label": "Elephant",
             "translationPt": "Elefante"
           },
           {
-            "text": "Kangaroo",
-            "emoji": "🦘",
-            "label": "Kangaroo",
-            "translationPt": "Canguru"
+            "text": "Macaw",
+            "emoji": "🦜",
+            "label": "Macaw",
+            "translationPt": "Arara"
           },
           {
             "text": "Koala",
             "emoji": "🐨",
             "label": "Koala",
             "translationPt": "Coala"
+          },
+          {
+            "text": "Kangaroo",
+            "emoji": "🦘",
+            "label": "Kangaroo",
+            "translationPt": "Canguru"
           }
         ],
         "options": [
-          "Macaw",
           "Elephant",
-          "Kangaroo",
-          "Koala"
+          "Macaw",
+          "Koala",
+          "Kangaroo"
         ],
         "correctAnswer": "Macaw",
         "explanation": "Exemplo prático: \"Blue and red macaws fly across the Brazilian sky.\"",
@@ -8106,6 +8106,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍽️",
         "visualOptions": [
           {
+            "text": "Bottle",
+            "emoji": "🍾",
+            "label": "Bottle",
+            "translationPt": "Garrafa"
+          },
+          {
+            "text": "Bowl",
+            "emoji": "🥣",
+            "label": "Bowl",
+            "translationPt": "Tigela / Cumbuca"
+          },
+          {
             "text": "Blender",
             "emoji": "🌪️",
             "label": "Blender",
@@ -8116,25 +8128,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍽️",
             "label": "Plate",
             "translationPt": "Prato"
-          },
-          {
-            "text": "Bowl",
-            "emoji": "🥣",
-            "label": "Bowl",
-            "translationPt": "Tigela / Cumbuca"
-          },
-          {
-            "text": "Bottle",
-            "emoji": "🍾",
-            "label": "Bottle",
-            "translationPt": "Garrafa"
           }
         ],
         "options": [
-          "Blender",
-          "Plate",
+          "Bottle",
           "Bowl",
-          "Bottle"
+          "Blender",
+          "Plate"
         ],
         "correctAnswer": "Plate",
         "explanation": "Exemplo prático: \"Put the food on a clean white plate.\"",
@@ -8149,18 +8149,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "☕",
         "visualOptions": [
           {
-            "text": "Cup",
-            "emoji": "☕",
-            "label": "Cup",
-            "translationPt": "Xícara"
-          },
-          {
-            "text": "Toaster",
-            "emoji": "🍞",
-            "label": "Toaster",
-            "translationPt": "Torradeira"
-          },
-          {
             "text": "Tin Can",
             "emoji": "🥫",
             "label": "Tin Can",
@@ -8171,13 +8159,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍽️",
             "label": "Tray",
             "translationPt": "Bandeja"
+          },
+          {
+            "text": "Cup",
+            "emoji": "☕",
+            "label": "Cup",
+            "translationPt": "Xícara"
+          },
+          {
+            "text": "Toaster",
+            "emoji": "🍞",
+            "label": "Toaster",
+            "translationPt": "Torradeira"
           }
         ],
         "options": [
-          "Cup",
-          "Toaster",
           "Tin Can",
-          "Tray"
+          "Tray",
+          "Cup",
+          "Toaster"
         ],
         "correctAnswer": "Cup",
         "explanation": "Exemplo prático: \"A porcelain cup with a handle.\"",
@@ -8191,6 +8191,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Glass",
         "visualEmoji": "🥛",
         "visualOptions": [
+          {
+            "text": "Glass",
+            "emoji": "🥛",
+            "label": "Glass",
+            "translationPt": "Copo de vidro"
+          },
           {
             "text": "Jar",
             "emoji": "🫙",
@@ -8208,19 +8214,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🎽",
             "label": "Apron",
             "translationPt": "Avental de cozinha"
-          },
-          {
-            "text": "Glass",
-            "emoji": "🥛",
-            "label": "Glass",
-            "translationPt": "Copo de vidro"
           }
         ],
         "options": [
+          "Glass",
           "Jar",
           "Drinking Straw",
-          "Apron",
-          "Glass"
+          "Apron"
         ],
         "correctAnswer": "Glass",
         "explanation": "Exemplo prático: \"Pour cold water into the drinking glass.\"",
@@ -8235,16 +8235,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍴",
         "visualOptions": [
           {
+            "text": "Stove",
+            "emoji": "🔥",
+            "label": "Stove",
+            "translationPt": "Fogão"
+          },
+          {
             "text": "Fork",
             "emoji": "🍴",
             "label": "Fork",
             "translationPt": "Garfo"
-          },
-          {
-            "text": "Sponge",
-            "emoji": "🧽",
-            "label": "Sponge",
-            "translationPt": "Esponja de lavar louça"
           },
           {
             "text": "Salt Shaker",
@@ -8253,17 +8253,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Saleiro"
           },
           {
-            "text": "Stove",
-            "emoji": "🔥",
-            "label": "Stove",
-            "translationPt": "Fogão"
+            "text": "Sponge",
+            "emoji": "🧽",
+            "label": "Sponge",
+            "translationPt": "Esponja de lavar louça"
           }
         ],
         "options": [
+          "Stove",
           "Fork",
-          "Sponge",
           "Salt Shaker",
-          "Stove"
+          "Sponge"
         ],
         "correctAnswer": "Fork",
         "explanation": "Exemplo prático: \"Use a metal fork to eat your meal.\"",
@@ -8278,10 +8278,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🔪",
         "visualOptions": [
           {
-            "text": "Fridge",
-            "emoji": "🧊",
-            "label": "Fridge",
-            "translationPt": "Geladeira"
+            "text": "Frying Pan",
+            "emoji": "🍳",
+            "label": "Frying Pan",
+            "translationPt": "Frigideira"
           },
           {
             "text": "Knife",
@@ -8290,23 +8290,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Faca"
           },
           {
+            "text": "Fridge",
+            "emoji": "🧊",
+            "label": "Fridge",
+            "translationPt": "Geladeira"
+          },
+          {
             "text": "Coffee Maker",
             "emoji": "☕",
             "label": "Coffee Maker",
             "translationPt": "Cafeteira"
-          },
-          {
-            "text": "Frying Pan",
-            "emoji": "🍳",
-            "label": "Frying Pan",
-            "translationPt": "Frigideira"
           }
         ],
         "options": [
-          "Fridge",
+          "Frying Pan",
           "Knife",
-          "Coffee Maker",
-          "Frying Pan"
+          "Fridge",
+          "Coffee Maker"
         ],
         "correctAnswer": "Knife",
         "explanation": "Exemplo prático: \"The chef uses a sharp kitchen knife.\"",
@@ -8321,35 +8321,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥄",
         "visualOptions": [
           {
-            "text": "Cooking Pot",
-            "emoji": "🍲",
-            "label": "Cooking Pot",
-            "translationPt": "Panela"
-          },
-          {
             "text": "Cup",
             "emoji": "☕",
             "label": "Cup",
             "translationPt": "Xícara"
           },
           {
-            "text": "Spoon",
-            "emoji": "🥄",
-            "label": "Spoon",
-            "translationPt": "Colher"
-          },
-          {
             "text": "Cutting Board",
             "emoji": "🪵",
             "label": "Cutting Board",
             "translationPt": "Tábua de corte"
+          },
+          {
+            "text": "Cooking Pot",
+            "emoji": "🍲",
+            "label": "Cooking Pot",
+            "translationPt": "Panela"
+          },
+          {
+            "text": "Spoon",
+            "emoji": "🥄",
+            "label": "Spoon",
+            "translationPt": "Colher"
           }
         ],
         "options": [
-          "Cooking Pot",
           "Cup",
-          "Spoon",
-          "Cutting Board"
+          "Cutting Board",
+          "Cooking Pot",
+          "Spoon"
         ],
         "correctAnswer": "Spoon",
         "explanation": "Exemplo prático: \"Stir the soup with a metal spoon.\"",
@@ -8370,12 +8370,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chaleira"
           },
           {
-            "text": "Kitchen Scale",
-            "emoji": "⚖️",
-            "label": "Kitchen Scale",
-            "translationPt": "Balança de cozinha"
-          },
-          {
             "text": "Clothes Iron",
             "emoji": "💨",
             "label": "Clothes Iron",
@@ -8386,13 +8380,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥣",
             "label": "Bowl",
             "translationPt": "Tigela / Cumbuca"
+          },
+          {
+            "text": "Kitchen Scale",
+            "emoji": "⚖️",
+            "label": "Kitchen Scale",
+            "translationPt": "Balança de cozinha"
           }
         ],
         "options": [
           "Kettle",
-          "Kitchen Scale",
           "Clothes Iron",
-          "Bowl"
+          "Bowl",
+          "Kitchen Scale"
         ],
         "correctAnswer": "Bowl",
         "explanation": "Exemplo prático: \"A round ceramic bowl for cereal or soup.\"",
@@ -8413,12 +8413,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Garrafa"
           },
           {
-            "text": "Fork",
-            "emoji": "🍴",
-            "label": "Fork",
-            "translationPt": "Garfo"
-          },
-          {
             "text": "Plate",
             "emoji": "🍽️",
             "label": "Plate",
@@ -8429,13 +8423,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🫧",
             "label": "Washing Machine",
             "translationPt": "Máquina de lavar roupa"
+          },
+          {
+            "text": "Fork",
+            "emoji": "🍴",
+            "label": "Fork",
+            "translationPt": "Garfo"
           }
         ],
         "options": [
           "Bottle",
-          "Fork",
           "Plate",
-          "Washing Machine"
+          "Washing Machine",
+          "Fork"
         ],
         "correctAnswer": "Bottle",
         "explanation": "Exemplo prático: \"Fill the reusable water bottle.\"",
@@ -8450,16 +8450,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧻",
         "visualOptions": [
           {
-            "text": "Glass",
-            "emoji": "🥛",
-            "label": "Glass",
-            "translationPt": "Copo de vidro"
-          },
-          {
-            "text": "Napkin",
-            "emoji": "🧻",
-            "label": "Napkin",
-            "translationPt": "Guardanapo"
+            "text": "Knife",
+            "emoji": "🔪",
+            "label": "Knife",
+            "translationPt": "Faca"
           },
           {
             "text": "Pressure Cooker",
@@ -8468,17 +8462,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Panela de pressão"
           },
           {
-            "text": "Knife",
-            "emoji": "🔪",
-            "label": "Knife",
-            "translationPt": "Faca"
+            "text": "Napkin",
+            "emoji": "🧻",
+            "label": "Napkin",
+            "translationPt": "Guardanapo"
+          },
+          {
+            "text": "Glass",
+            "emoji": "🥛",
+            "label": "Glass",
+            "translationPt": "Copo de vidro"
           }
         ],
         "options": [
-          "Glass",
-          "Napkin",
+          "Knife",
           "Pressure Cooker",
-          "Knife"
+          "Napkin",
+          "Glass"
         ],
         "correctAnswer": "Napkin",
         "explanation": "Exemplo prático: \"Wipe your mouth with a paper napkin.\"",
@@ -8492,12 +8492,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Fridge",
         "visualEmoji": "🧊",
         "visualOptions": [
-          {
-            "text": "Sponge",
-            "emoji": "🧽",
-            "label": "Sponge",
-            "translationPt": "Esponja de lavar louça"
-          },
           {
             "text": "Spoon",
             "emoji": "🥄",
@@ -8515,13 +8509,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧂",
             "label": "Salt Shaker",
             "translationPt": "Saleiro"
+          },
+          {
+            "text": "Sponge",
+            "emoji": "🧽",
+            "label": "Sponge",
+            "translationPt": "Esponja de lavar louça"
           }
         ],
         "options": [
-          "Sponge",
           "Spoon",
           "Fridge",
-          "Salt Shaker"
+          "Salt Shaker",
+          "Sponge"
         ],
         "correctAnswer": "Fridge",
         "explanation": "Exemplo prático: \"Keep milk and fruit cold inside the fridge.\"",
@@ -8585,12 +8585,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Micro-ondas"
           },
           {
-            "text": "Fork",
-            "emoji": "🍴",
-            "label": "Fork",
-            "translationPt": "Garfo"
-          },
-          {
             "text": "Bottle",
             "emoji": "🍾",
             "label": "Bottle",
@@ -8601,13 +8595,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥣",
             "label": "Bowl",
             "translationPt": "Tigela / Cumbuca"
+          },
+          {
+            "text": "Fork",
+            "emoji": "🍴",
+            "label": "Fork",
+            "translationPt": "Garfo"
           }
         ],
         "options": [
           "Microwave",
-          "Fork",
           "Bottle",
-          "Bowl"
+          "Bowl",
+          "Fork"
         ],
         "correctAnswer": "Microwave",
         "explanation": "Exemplo prático: \"Heat the food in the microwave oven.\"",
@@ -8622,35 +8622,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌪️",
         "visualOptions": [
           {
-            "text": "Napkin",
-            "emoji": "🧻",
-            "label": "Napkin",
-            "translationPt": "Guardanapo"
-          },
-          {
             "text": "Kettle",
             "emoji": "🫖",
             "label": "Kettle",
             "translationPt": "Chaleira"
           },
           {
-            "text": "Blender",
-            "emoji": "🌪️",
-            "label": "Blender",
-            "translationPt": "Liquidificador"
-          },
-          {
             "text": "Knife",
             "emoji": "🔪",
             "label": "Knife",
             "translationPt": "Faca"
+          },
+          {
+            "text": "Napkin",
+            "emoji": "🧻",
+            "label": "Napkin",
+            "translationPt": "Guardanapo"
+          },
+          {
+            "text": "Blender",
+            "emoji": "🌪️",
+            "label": "Blender",
+            "translationPt": "Liquidificador"
           }
         ],
         "options": [
-          "Napkin",
           "Kettle",
-          "Blender",
-          "Knife"
+          "Knife",
+          "Napkin",
+          "Blender"
         ],
         "correctAnswer": "Blender",
         "explanation": "Exemplo prático: \"Make fresh fruit juice in the electric blender.\"",
@@ -8665,12 +8665,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍞",
         "visualOptions": [
           {
-            "text": "Toaster",
-            "emoji": "🍞",
-            "label": "Toaster",
-            "translationPt": "Torradeira"
-          },
-          {
             "text": "Apron",
             "emoji": "🎽",
             "label": "Apron",
@@ -8683,6 +8677,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Canudo"
           },
           {
+            "text": "Toaster",
+            "emoji": "🍞",
+            "label": "Toaster",
+            "translationPt": "Torradeira"
+          },
+          {
             "text": "Washing Machine",
             "emoji": "🫧",
             "label": "Washing Machine",
@@ -8690,9 +8690,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Toaster",
           "Apron",
           "Drinking Straw",
+          "Toaster",
           "Washing Machine"
         ],
         "correctAnswer": "Toaster",
@@ -8708,6 +8708,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "☕",
         "visualOptions": [
           {
+            "text": "Coffee Maker",
+            "emoji": "☕",
+            "label": "Coffee Maker",
+            "translationPt": "Cafeteira"
+          },
+          {
+            "text": "Jar",
+            "emoji": "🫙",
+            "label": "Jar",
+            "translationPt": "Pote de vidro"
+          },
+          {
             "text": "Plate",
             "emoji": "🍽️",
             "label": "Plate",
@@ -8718,25 +8730,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥛",
             "label": "Glass",
             "translationPt": "Copo de vidro"
-          },
-          {
-            "text": "Jar",
-            "emoji": "🫙",
-            "label": "Jar",
-            "translationPt": "Pote de vidro"
-          },
-          {
-            "text": "Coffee Maker",
-            "emoji": "☕",
-            "label": "Coffee Maker",
-            "translationPt": "Cafeteira"
           }
         ],
         "options": [
-          "Plate",
-          "Glass",
+          "Coffee Maker",
           "Jar",
-          "Coffee Maker"
+          "Plate",
+          "Glass"
         ],
         "correctAnswer": "Coffee Maker",
         "explanation": "Exemplo prático: \"Brew morning coffee in the coffee maker.\"",
@@ -8751,6 +8751,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍳",
         "visualOptions": [
           {
+            "text": "Microwave",
+            "emoji": "⏲️",
+            "label": "Microwave",
+            "translationPt": "Micro-ondas"
+          },
+          {
+            "text": "Frying Pan",
+            "emoji": "🍳",
+            "label": "Frying Pan",
+            "translationPt": "Frigideira"
+          },
+          {
             "text": "Fridge",
             "emoji": "🧊",
             "label": "Fridge",
@@ -8761,25 +8773,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💨",
             "label": "Clothes Iron",
             "translationPt": "Ferro de passar roupa"
-          },
-          {
-            "text": "Frying Pan",
-            "emoji": "🍳",
-            "label": "Frying Pan",
-            "translationPt": "Frigideira"
-          },
-          {
-            "text": "Microwave",
-            "emoji": "⏲️",
-            "label": "Microwave",
-            "translationPt": "Micro-ondas"
           }
         ],
         "options": [
-          "Fridge",
-          "Clothes Iron",
+          "Microwave",
           "Frying Pan",
-          "Microwave"
+          "Fridge",
+          "Clothes Iron"
         ],
         "correctAnswer": "Frying Pan",
         "explanation": "Exemplo prático: \"Fry the egg in a non-stick frying pan.\"",
@@ -8794,10 +8794,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍲",
         "visualOptions": [
           {
-            "text": "Tin Can",
-            "emoji": "🥫",
-            "label": "Tin Can",
-            "translationPt": "Lata de conserva"
+            "text": "Spoon",
+            "emoji": "🥄",
+            "label": "Spoon",
+            "translationPt": "Colher"
           },
           {
             "text": "Cooking Pot",
@@ -8806,10 +8806,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Panela"
           },
           {
-            "text": "Spoon",
-            "emoji": "🥄",
-            "label": "Spoon",
-            "translationPt": "Colher"
+            "text": "Tin Can",
+            "emoji": "🥫",
+            "label": "Tin Can",
+            "translationPt": "Lata de conserva"
           },
           {
             "text": "Stove",
@@ -8819,9 +8819,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Tin Can",
-          "Cooking Pot",
           "Spoon",
+          "Cooking Pot",
+          "Tin Can",
           "Stove"
         ],
         "correctAnswer": "Cooking Pot",
@@ -8837,16 +8837,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍲",
         "visualOptions": [
           {
-            "text": "Pressure Cooker",
-            "emoji": "🍲",
-            "label": "Pressure Cooker",
-            "translationPt": "Panela de pressão"
-          },
-          {
-            "text": "Toaster",
-            "emoji": "🍞",
-            "label": "Toaster",
-            "translationPt": "Torradeira"
+            "text": "Tray",
+            "emoji": "🍽️",
+            "label": "Tray",
+            "translationPt": "Bandeja"
           },
           {
             "text": "Blender",
@@ -8855,17 +8849,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Liquidificador"
           },
           {
-            "text": "Tray",
-            "emoji": "🍽️",
-            "label": "Tray",
-            "translationPt": "Bandeja"
+            "text": "Toaster",
+            "emoji": "🍞",
+            "label": "Toaster",
+            "translationPt": "Torradeira"
+          },
+          {
+            "text": "Pressure Cooker",
+            "emoji": "🍲",
+            "label": "Pressure Cooker",
+            "translationPt": "Panela de pressão"
           }
         ],
         "options": [
-          "Pressure Cooker",
-          "Toaster",
+          "Tray",
           "Blender",
-          "Tray"
+          "Toaster",
+          "Pressure Cooker"
         ],
         "correctAnswer": "Pressure Cooker",
         "explanation": "Exemplo prático: \"Cook beans quickly in the pressure cooker.\"",
@@ -8892,23 +8892,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Faca"
           },
           {
-            "text": "Kitchen Scale",
-            "emoji": "⚖️",
-            "label": "Kitchen Scale",
-            "translationPt": "Balança de cozinha"
-          },
-          {
             "text": "Cutting Board",
             "emoji": "🪵",
             "label": "Cutting Board",
             "translationPt": "Tábua de corte"
+          },
+          {
+            "text": "Kitchen Scale",
+            "emoji": "⚖️",
+            "label": "Kitchen Scale",
+            "translationPt": "Balança de cozinha"
           }
         ],
         "options": [
           "Napkin",
           "Knife",
-          "Kitchen Scale",
-          "Cutting Board"
+          "Cutting Board",
+          "Kitchen Scale"
         ],
         "correctAnswer": "Cutting Board",
         "explanation": "Exemplo prático: \"Chop vegetables on a wooden cutting board.\"",
@@ -8923,18 +8923,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧽",
         "visualOptions": [
           {
-            "text": "Glass",
-            "emoji": "🥛",
-            "label": "Glass",
-            "translationPt": "Copo de vidro"
-          },
-          {
-            "text": "Drinking Straw",
-            "emoji": "🥤",
-            "label": "Drinking Straw",
-            "translationPt": "Canudo"
-          },
-          {
             "text": "Sponge",
             "emoji": "🧽",
             "label": "Sponge",
@@ -8945,13 +8933,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⏲️",
             "label": "Microwave",
             "translationPt": "Micro-ondas"
+          },
+          {
+            "text": "Drinking Straw",
+            "emoji": "🥤",
+            "label": "Drinking Straw",
+            "translationPt": "Canudo"
+          },
+          {
+            "text": "Glass",
+            "emoji": "🥛",
+            "label": "Glass",
+            "translationPt": "Copo de vidro"
           }
         ],
         "options": [
-          "Glass",
-          "Drinking Straw",
           "Sponge",
-          "Microwave"
+          "Microwave",
+          "Drinking Straw",
+          "Glass"
         ],
         "correctAnswer": "Sponge",
         "explanation": "Exemplo prático: \"Wash the plates with a yellow and green sponge.\"",
@@ -8972,16 +8972,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Fogão"
           },
           {
-            "text": "Washing Machine",
-            "emoji": "🫧",
-            "label": "Washing Machine",
-            "translationPt": "Máquina de lavar roupa"
-          },
-          {
             "text": "Cooking Pot",
             "emoji": "🍲",
             "label": "Cooking Pot",
             "translationPt": "Panela"
+          },
+          {
+            "text": "Washing Machine",
+            "emoji": "🫧",
+            "label": "Washing Machine",
+            "translationPt": "Máquina de lavar roupa"
           },
           {
             "text": "Spoon",
@@ -8992,8 +8992,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Stove",
-          "Washing Machine",
           "Cooking Pot",
+          "Washing Machine",
           "Spoon"
         ],
         "correctAnswer": "Washing Machine",
@@ -9009,35 +9009,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💨",
         "visualOptions": [
           {
-            "text": "Clothes Iron",
-            "emoji": "💨",
-            "label": "Clothes Iron",
-            "translationPt": "Ferro de passar roupa"
-          },
-          {
-            "text": "Pressure Cooker",
-            "emoji": "🍲",
-            "label": "Pressure Cooker",
-            "translationPt": "Panela de pressão"
-          },
-          {
             "text": "Fork",
             "emoji": "🍴",
             "label": "Fork",
             "translationPt": "Garfo"
           },
           {
+            "text": "Clothes Iron",
+            "emoji": "💨",
+            "label": "Clothes Iron",
+            "translationPt": "Ferro de passar roupa"
+          },
+          {
             "text": "Fridge",
             "emoji": "🧊",
             "label": "Fridge",
             "translationPt": "Geladeira"
+          },
+          {
+            "text": "Pressure Cooker",
+            "emoji": "🍲",
+            "label": "Pressure Cooker",
+            "translationPt": "Panela de pressão"
           }
         ],
         "options": [
-          "Clothes Iron",
-          "Pressure Cooker",
           "Fork",
-          "Fridge"
+          "Clothes Iron",
+          "Fridge",
+          "Pressure Cooker"
         ],
         "correctAnswer": "Clothes Iron",
         "explanation": "Exemplo prático: \"Press the shirt with a warm clothes iron.\"",
@@ -9052,10 +9052,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🫖",
         "visualOptions": [
           {
-            "text": "Cutting Board",
-            "emoji": "🪵",
-            "label": "Cutting Board",
-            "translationPt": "Tábua de corte"
+            "text": "Cup",
+            "emoji": "☕",
+            "label": "Cup",
+            "translationPt": "Xícara"
           },
           {
             "text": "Frying Pan",
@@ -9064,10 +9064,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Frigideira"
           },
           {
-            "text": "Cup",
-            "emoji": "☕",
-            "label": "Cup",
-            "translationPt": "Xícara"
+            "text": "Cutting Board",
+            "emoji": "🪵",
+            "label": "Cutting Board",
+            "translationPt": "Tábua de corte"
           },
           {
             "text": "Kettle",
@@ -9077,9 +9077,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Cutting Board",
-          "Frying Pan",
           "Cup",
+          "Frying Pan",
+          "Cutting Board",
           "Kettle"
         ],
         "correctAnswer": "Kettle",
@@ -9138,6 +9138,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧂",
         "visualOptions": [
           {
+            "text": "Toaster",
+            "emoji": "🍞",
+            "label": "Toaster",
+            "translationPt": "Torradeira"
+          },
+          {
+            "text": "Napkin",
+            "emoji": "🧻",
+            "label": "Napkin",
+            "translationPt": "Guardanapo"
+          },
+          {
             "text": "Washing Machine",
             "emoji": "🫧",
             "label": "Washing Machine",
@@ -9148,25 +9160,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧂",
             "label": "Salt Shaker",
             "translationPt": "Saleiro"
-          },
-          {
-            "text": "Napkin",
-            "emoji": "🧻",
-            "label": "Napkin",
-            "translationPt": "Guardanapo"
-          },
-          {
-            "text": "Toaster",
-            "emoji": "🍞",
-            "label": "Toaster",
-            "translationPt": "Torradeira"
           }
         ],
         "options": [
-          "Washing Machine",
-          "Salt Shaker",
+          "Toaster",
           "Napkin",
-          "Toaster"
+          "Washing Machine",
+          "Salt Shaker"
         ],
         "correctAnswer": "Salt Shaker",
         "explanation": "Exemplo prático: \"Add a pinch of salt from the salt shaker.\"",
@@ -9181,16 +9181,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥫",
         "visualOptions": [
           {
-            "text": "Coffee Maker",
-            "emoji": "☕",
-            "label": "Coffee Maker",
-            "translationPt": "Cafeteira"
-          },
-          {
             "text": "Blender",
             "emoji": "🌪️",
             "label": "Blender",
             "translationPt": "Liquidificador"
+          },
+          {
+            "text": "Coffee Maker",
+            "emoji": "☕",
+            "label": "Coffee Maker",
+            "translationPt": "Cafeteira"
           },
           {
             "text": "Tin Can",
@@ -9206,8 +9206,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Coffee Maker",
           "Blender",
+          "Coffee Maker",
           "Tin Can",
           "Cooking Pot"
         ],
@@ -9224,6 +9224,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥤",
         "visualOptions": [
           {
+            "text": "Drinking Straw",
+            "emoji": "🥤",
+            "label": "Drinking Straw",
+            "translationPt": "Canudo"
+          },
+          {
+            "text": "Sponge",
+            "emoji": "🧽",
+            "label": "Sponge",
+            "translationPt": "Esponja de lavar louça"
+          },
+          {
             "text": "Plate",
             "emoji": "🍽️",
             "label": "Plate",
@@ -9234,25 +9246,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍲",
             "label": "Pressure Cooker",
             "translationPt": "Panela de pressão"
-          },
-          {
-            "text": "Sponge",
-            "emoji": "🧽",
-            "label": "Sponge",
-            "translationPt": "Esponja de lavar louça"
-          },
-          {
-            "text": "Drinking Straw",
-            "emoji": "🥤",
-            "label": "Drinking Straw",
-            "translationPt": "Canudo"
           }
         ],
         "options": [
-          "Plate",
-          "Pressure Cooker",
+          "Drinking Straw",
           "Sponge",
-          "Drinking Straw"
+          "Plate",
+          "Pressure Cooker"
         ],
         "correctAnswer": "Drinking Straw",
         "explanation": "Exemplo prático: \"Drink the cold juice with a drinking straw.\"",
@@ -9267,35 +9267,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍽️",
         "visualOptions": [
           {
-            "text": "Tray",
-            "emoji": "🍽️",
-            "label": "Tray",
-            "translationPt": "Bandeja"
-          },
-          {
-            "text": "Microwave",
-            "emoji": "⏲️",
-            "label": "Microwave",
-            "translationPt": "Micro-ondas"
-          },
-          {
             "text": "Clothes Iron",
             "emoji": "💨",
             "label": "Clothes Iron",
             "translationPt": "Ferro de passar roupa"
           },
           {
+            "text": "Tray",
+            "emoji": "🍽️",
+            "label": "Tray",
+            "translationPt": "Bandeja"
+          },
+          {
             "text": "Cutting Board",
             "emoji": "🪵",
             "label": "Cutting Board",
             "translationPt": "Tábua de corte"
+          },
+          {
+            "text": "Microwave",
+            "emoji": "⏲️",
+            "label": "Microwave",
+            "translationPt": "Micro-ondas"
           }
         ],
         "options": [
-          "Tray",
-          "Microwave",
           "Clothes Iron",
-          "Cutting Board"
+          "Tray",
+          "Cutting Board",
+          "Microwave"
         ],
         "correctAnswer": "Tray",
         "explanation": "Exemplo prático: \"Carry the cups on a serving tray.\"",
@@ -9322,23 +9322,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Avental de cozinha"
           },
           {
-            "text": "Kettle",
-            "emoji": "🫖",
-            "label": "Kettle",
-            "translationPt": "Chaleira"
-          },
-          {
             "text": "Jar",
             "emoji": "🫙",
             "label": "Jar",
             "translationPt": "Pote de vidro"
+          },
+          {
+            "text": "Kettle",
+            "emoji": "🫖",
+            "label": "Kettle",
+            "translationPt": "Chaleira"
           }
         ],
         "options": [
           "Salt Shaker",
           "Apron",
-          "Kettle",
-          "Jar"
+          "Jar",
+          "Kettle"
         ],
         "correctAnswer": "Apron",
         "explanation": "Exemplo prático: \"Wear a kitchen apron while cooking.\"",
@@ -9353,35 +9353,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⚖️",
         "visualOptions": [
           {
-            "text": "Napkin",
-            "emoji": "🧻",
-            "label": "Napkin",
-            "translationPt": "Guardanapo"
-          },
-          {
             "text": "Tin Can",
             "emoji": "🥫",
             "label": "Tin Can",
             "translationPt": "Lata de conserva"
           },
           {
-            "text": "Kitchen Scale",
-            "emoji": "⚖️",
-            "label": "Kitchen Scale",
-            "translationPt": "Balança de cozinha"
-          },
-          {
             "text": "Knife",
             "emoji": "🔪",
             "label": "Knife",
             "translationPt": "Faca"
+          },
+          {
+            "text": "Napkin",
+            "emoji": "🧻",
+            "label": "Napkin",
+            "translationPt": "Guardanapo"
+          },
+          {
+            "text": "Kitchen Scale",
+            "emoji": "⚖️",
+            "label": "Kitchen Scale",
+            "translationPt": "Balança de cozinha"
           }
         ],
         "options": [
-          "Napkin",
           "Tin Can",
-          "Kitchen Scale",
-          "Knife"
+          "Knife",
+          "Napkin",
+          "Kitchen Scale"
         ],
         "correctAnswer": "Kitchen Scale",
         "explanation": "Exemplo prático: \"Weigh the ingredients on the digital kitchen scale.\"",
@@ -9415,6 +9415,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚗",
         "visualOptions": [
           {
+            "text": "Helmet",
+            "emoji": "⛑️",
+            "label": "Helmet",
+            "translationPt": "Capacete"
+          },
+          {
             "text": "Helicopter",
             "emoji": "🚁",
             "label": "Helicopter",
@@ -9431,19 +9437,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⛵",
             "label": "Boat",
             "translationPt": "Barco / Veleiro"
-          },
-          {
-            "text": "Helmet",
-            "emoji": "⛑️",
-            "label": "Helmet",
-            "translationPt": "Capacete"
           }
         ],
         "options": [
+          "Helmet",
           "Helicopter",
           "Car",
-          "Boat",
-          "Helmet"
+          "Boat"
         ],
         "correctAnswer": "Car",
         "explanation": "Exemplo prático: \"Drive the red car carefully on the street.\"",
@@ -9458,18 +9458,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚌",
         "visualOptions": [
           {
-            "text": "Train",
-            "emoji": "🚆",
-            "label": "Train",
-            "translationPt": "Trem"
-          },
-          {
-            "text": "Taxi",
-            "emoji": "🚕",
-            "label": "Taxi",
-            "translationPt": "Táxi"
-          },
-          {
             "text": "Bus",
             "emoji": "🚌",
             "label": "Bus",
@@ -9480,13 +9468,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚜",
             "label": "Tractor",
             "translationPt": "Trator"
+          },
+          {
+            "text": "Train",
+            "emoji": "🚆",
+            "label": "Train",
+            "translationPt": "Trem"
+          },
+          {
+            "text": "Taxi",
+            "emoji": "🚕",
+            "label": "Taxi",
+            "translationPt": "Táxi"
           }
         ],
         "options": [
-          "Train",
-          "Taxi",
           "Bus",
-          "Tractor"
+          "Tractor",
+          "Train",
+          "Taxi"
         ],
         "correctAnswer": "Bus",
         "explanation": "Exemplo prático: \"Take the passenger bus to work.\"",
@@ -9501,18 +9501,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏍️",
         "visualOptions": [
           {
-            "text": "Ambulance",
-            "emoji": "🚑",
-            "label": "Ambulance",
-            "translationPt": "Ambulância"
-          },
-          {
-            "text": "Anchor",
-            "emoji": "⚓",
-            "label": "Anchor",
-            "translationPt": "Âncora de navio"
-          },
-          {
             "text": "Airplane",
             "emoji": "✈️",
             "label": "Airplane",
@@ -9523,13 +9511,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏍️",
             "label": "Motorcycle",
             "translationPt": "Moto / Motocicleta"
+          },
+          {
+            "text": "Ambulance",
+            "emoji": "🚑",
+            "label": "Ambulance",
+            "translationPt": "Ambulância"
+          },
+          {
+            "text": "Anchor",
+            "emoji": "⚓",
+            "label": "Anchor",
+            "translationPt": "Âncora de navio"
           }
         ],
         "options": [
-          "Ambulance",
-          "Anchor",
           "Airplane",
-          "Motorcycle"
+          "Motorcycle",
+          "Ambulance",
+          "Anchor"
         ],
         "correctAnswer": "Motorcycle",
         "explanation": "Exemplo prático: \"Always wear a helmet when riding a motorcycle.\"",
@@ -9544,35 +9544,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚲",
         "visualOptions": [
           {
-            "text": "Bicycle",
-            "emoji": "🚲",
-            "label": "Bicycle",
-            "translationPt": "Bicicleta"
-          },
-          {
             "text": "Ship",
             "emoji": "🚢",
             "label": "Ship",
             "translationPt": "Navio"
           },
           {
-            "text": "Subway",
-            "emoji": "🚇",
-            "label": "Subway",
-            "translationPt": "Metrô"
+            "text": "Bicycle",
+            "emoji": "🚲",
+            "label": "Bicycle",
+            "translationPt": "Bicicleta"
           },
           {
             "text": "Van",
             "emoji": "🚐",
             "label": "Van",
             "translationPt": "Van / Perua"
+          },
+          {
+            "text": "Subway",
+            "emoji": "🚇",
+            "label": "Subway",
+            "translationPt": "Metrô"
           }
         ],
         "options": [
-          "Bicycle",
           "Ship",
-          "Subway",
-          "Van"
+          "Bicycle",
+          "Van",
+          "Subway"
         ],
         "correctAnswer": "Bicycle",
         "explanation": "Exemplo prático: \"Riding a bicycle in the park is great exercise.\"",
@@ -9586,6 +9586,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Truck",
         "visualEmoji": "🚚",
         "visualOptions": [
+          {
+            "text": "Fuel Pump",
+            "emoji": "⛽",
+            "label": "Fuel Pump",
+            "translationPt": "Bomba de combustível"
+          },
           {
             "text": "Fire Truck",
             "emoji": "🚒",
@@ -9603,19 +9609,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚚",
             "label": "Truck",
             "translationPt": "Caminhão"
-          },
-          {
-            "text": "Fuel Pump",
-            "emoji": "⛽",
-            "label": "Fuel Pump",
-            "translationPt": "Bomba de combustível"
           }
         ],
         "options": [
+          "Fuel Pump",
           "Fire Truck",
           "Car",
-          "Truck",
-          "Fuel Pump"
+          "Truck"
         ],
         "correctAnswer": "Truck",
         "explanation": "Exemplo prático: \"The cargo truck transports food across Brazil.\"",
@@ -9630,16 +9630,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚕",
         "visualOptions": [
           {
-            "text": "Rocket",
-            "emoji": "🚀",
-            "label": "Rocket",
-            "translationPt": "Foguete espacial"
-          },
-          {
             "text": "Roller Skate",
             "emoji": "🛼",
             "label": "Roller Skate",
             "translationPt": "Patins"
+          },
+          {
+            "text": "Compass",
+            "emoji": "🧭",
+            "label": "Compass",
+            "translationPt": "Bússola"
           },
           {
             "text": "Taxi",
@@ -9648,17 +9648,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Táxi"
           },
           {
-            "text": "Compass",
-            "emoji": "🧭",
-            "label": "Compass",
-            "translationPt": "Bússola"
+            "text": "Rocket",
+            "emoji": "🚀",
+            "label": "Rocket",
+            "translationPt": "Foguete espacial"
           }
         ],
         "options": [
-          "Rocket",
           "Roller Skate",
+          "Compass",
           "Taxi",
-          "Compass"
+          "Rocket"
         ],
         "correctAnswer": "Taxi",
         "explanation": "Exemplo prático: \"Take a taxi to the airport.\"",
@@ -9673,16 +9673,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "✈️",
         "visualOptions": [
           {
+            "text": "Airplane",
+            "emoji": "✈️",
+            "label": "Airplane",
+            "translationPt": "Avião"
+          },
+          {
             "text": "Scooter",
             "emoji": "🛴",
             "label": "Scooter",
             "translationPt": "Patinete"
-          },
-          {
-            "text": "Skateboard",
-            "emoji": "🛹",
-            "label": "Skateboard",
-            "translationPt": "Skate"
           },
           {
             "text": "Bus",
@@ -9691,17 +9691,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ônibus"
           },
           {
-            "text": "Airplane",
-            "emoji": "✈️",
-            "label": "Airplane",
-            "translationPt": "Avião"
+            "text": "Skateboard",
+            "emoji": "🛹",
+            "label": "Skateboard",
+            "translationPt": "Skate"
           }
         ],
         "options": [
+          "Airplane",
           "Scooter",
-          "Skateboard",
           "Bus",
-          "Airplane"
+          "Skateboard"
         ],
         "correctAnswer": "Airplane",
         "explanation": "Exemplo prático: \"The passenger airplane flies above the clouds.\"",
@@ -9716,35 +9716,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚁",
         "visualOptions": [
           {
-            "text": "Helicopter",
-            "emoji": "🚁",
-            "label": "Helicopter",
-            "translationPt": "Helicóptero"
-          },
-          {
             "text": "Bicycle",
             "emoji": "🚲",
             "label": "Bicycle",
             "translationPt": "Bicicleta"
           },
           {
-            "text": "Tire",
-            "emoji": "🛞",
-            "label": "Tire",
-            "translationPt": "Pneu / Roda"
-          },
-          {
             "text": "Traffic Light",
             "emoji": "🚦",
             "label": "Traffic Light",
             "translationPt": "Semáforo / Sinal de trânsito"
+          },
+          {
+            "text": "Helicopter",
+            "emoji": "🚁",
+            "label": "Helicopter",
+            "translationPt": "Helicóptero"
+          },
+          {
+            "text": "Tire",
+            "emoji": "🛞",
+            "label": "Tire",
+            "translationPt": "Pneu / Roda"
           }
         ],
         "options": [
-          "Helicopter",
           "Bicycle",
-          "Tire",
-          "Traffic Light"
+          "Traffic Light",
+          "Helicopter",
+          "Tire"
         ],
         "correctAnswer": "Helicopter",
         "explanation": "Exemplo prático: \"The helicopter flies over the city.\"",
@@ -9758,12 +9758,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Train",
         "visualEmoji": "🚆",
         "visualOptions": [
-          {
-            "text": "Motorcycle",
-            "emoji": "🏍️",
-            "label": "Motorcycle",
-            "translationPt": "Moto / Motocicleta"
-          },
           {
             "text": "Steering Wheel",
             "emoji": "🛞",
@@ -9781,13 +9775,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚚",
             "label": "Truck",
             "translationPt": "Caminhão"
+          },
+          {
+            "text": "Motorcycle",
+            "emoji": "🏍️",
+            "label": "Motorcycle",
+            "translationPt": "Moto / Motocicleta"
           }
         ],
         "options": [
-          "Motorcycle",
           "Steering Wheel",
           "Train",
-          "Truck"
+          "Truck",
+          "Motorcycle"
         ],
         "correctAnswer": "Train",
         "explanation": "Exemplo prático: \"The passenger train travels on steel rails.\"",
@@ -9802,18 +9802,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚇",
         "visualOptions": [
           {
-            "text": "Subway",
-            "emoji": "🚇",
-            "label": "Subway",
-            "translationPt": "Metrô"
-          },
-          {
-            "text": "Police Car",
-            "emoji": "🚓",
-            "label": "Police Car",
-            "translationPt": "Viatura de polícia"
-          },
-          {
             "text": "Suitcase",
             "emoji": "🧳",
             "label": "Suitcase",
@@ -9824,13 +9812,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪂",
             "label": "Parachute",
             "translationPt": "Paraquedas"
+          },
+          {
+            "text": "Police Car",
+            "emoji": "🚓",
+            "label": "Police Car",
+            "translationPt": "Viatura de polícia"
+          },
+          {
+            "text": "Subway",
+            "emoji": "🚇",
+            "label": "Subway",
+            "translationPt": "Metrô"
           }
         ],
         "options": [
-          "Subway",
-          "Police Car",
           "Suitcase",
-          "Parachute"
+          "Parachute",
+          "Police Car",
+          "Subway"
         ],
         "correctAnswer": "Subway",
         "explanation": "Exemplo prático: \"The underground subway train is fast.\"",
@@ -9845,16 +9845,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⛵",
         "visualOptions": [
           {
-            "text": "Fire Truck",
-            "emoji": "🚒",
-            "label": "Fire Truck",
-            "translationPt": "Caminhão de bombeiros"
-          },
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
+            "text": "Boat",
+            "emoji": "⛵",
+            "label": "Boat",
+            "translationPt": "Barco / Veleiro"
           },
           {
             "text": "Fuel Pump",
@@ -9863,17 +9857,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bomba de combustível"
           },
           {
-            "text": "Boat",
-            "emoji": "⛵",
-            "label": "Boat",
-            "translationPt": "Barco / Veleiro"
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
+          },
+          {
+            "text": "Fire Truck",
+            "emoji": "🚒",
+            "label": "Fire Truck",
+            "translationPt": "Caminhão de bombeiros"
           }
         ],
         "options": [
-          "Fire Truck",
-          "Car",
+          "Boat",
           "Fuel Pump",
-          "Boat"
+          "Car",
+          "Fire Truck"
         ],
         "correctAnswer": "Boat",
         "explanation": "Exemplo prático: \"A small boat floats on the water.\"",
@@ -9888,35 +9888,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚢",
         "visualOptions": [
           {
-            "text": "Bicycle",
-            "emoji": "🚲",
-            "label": "Bicycle",
-            "translationPt": "Bicicleta"
-          },
-          {
             "text": "Roller Skate",
             "emoji": "🛼",
             "label": "Roller Skate",
             "translationPt": "Patins"
           },
           {
-            "text": "Ship",
-            "emoji": "🚢",
-            "label": "Ship",
-            "translationPt": "Navio"
+            "text": "Bicycle",
+            "emoji": "🚲",
+            "label": "Bicycle",
+            "translationPt": "Bicicleta"
           },
           {
             "text": "Bus",
             "emoji": "🚌",
             "label": "Bus",
             "translationPt": "Ônibus"
+          },
+          {
+            "text": "Ship",
+            "emoji": "🚢",
+            "label": "Ship",
+            "translationPt": "Navio"
           }
         ],
         "options": [
-          "Bicycle",
           "Roller Skate",
-          "Ship",
-          "Bus"
+          "Bicycle",
+          "Bus",
+          "Ship"
         ],
         "correctAnswer": "Ship",
         "explanation": "Exemplo prático: \"The large cruise ship crosses the ocean.\"",
@@ -9937,6 +9937,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Foguete espacial"
           },
           {
+            "text": "Helmet",
+            "emoji": "⛑️",
+            "label": "Helmet",
+            "translationPt": "Capacete"
+          },
+          {
             "text": "Ambulance",
             "emoji": "🚑",
             "label": "Ambulance",
@@ -9947,19 +9953,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚁",
             "label": "Helicopter",
             "translationPt": "Helicóptero"
-          },
-          {
-            "text": "Helmet",
-            "emoji": "⛑️",
-            "label": "Helmet",
-            "translationPt": "Capacete"
           }
         ],
         "options": [
           "Rocket",
+          "Helmet",
           "Ambulance",
-          "Helicopter",
-          "Helmet"
+          "Helicopter"
         ],
         "correctAnswer": "Ambulance",
         "explanation": "Exemplo prático: \"Make way for the emergency hospital ambulance.\"",
@@ -9980,16 +9980,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Viatura de polícia"
           },
           {
-            "text": "Airplane",
-            "emoji": "✈️",
-            "label": "Airplane",
-            "translationPt": "Avião"
-          },
-          {
             "text": "Anchor",
             "emoji": "⚓",
             "label": "Anchor",
             "translationPt": "Âncora de navio"
+          },
+          {
+            "text": "Airplane",
+            "emoji": "✈️",
+            "label": "Airplane",
+            "translationPt": "Avião"
           },
           {
             "text": "Truck",
@@ -10000,8 +10000,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Police Car",
-          "Airplane",
           "Anchor",
+          "Airplane",
           "Truck"
         ],
         "correctAnswer": "Police Car",
@@ -10017,16 +10017,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚒",
         "visualOptions": [
           {
-            "text": "Parachute",
-            "emoji": "🪂",
-            "label": "Parachute",
-            "translationPt": "Paraquedas"
-          },
-          {
             "text": "Motorcycle",
             "emoji": "🏍️",
             "label": "Motorcycle",
             "translationPt": "Moto / Motocicleta"
+          },
+          {
+            "text": "Fire Truck",
+            "emoji": "🚒",
+            "label": "Fire Truck",
+            "translationPt": "Caminhão de bombeiros"
           },
           {
             "text": "Taxi",
@@ -10035,17 +10035,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Táxi"
           },
           {
-            "text": "Fire Truck",
-            "emoji": "🚒",
-            "label": "Fire Truck",
-            "translationPt": "Caminhão de bombeiros"
+            "text": "Parachute",
+            "emoji": "🪂",
+            "label": "Parachute",
+            "translationPt": "Paraquedas"
           }
         ],
         "options": [
-          "Parachute",
           "Motorcycle",
+          "Fire Truck",
           "Taxi",
-          "Fire Truck"
+          "Parachute"
         ],
         "correctAnswer": "Fire Truck",
         "explanation": "Exemplo prático: \"The red fire truck carries a tall ladder.\"",
@@ -10059,6 +10059,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Tractor",
         "visualEmoji": "🚜",
         "visualOptions": [
+          {
+            "text": "Compass",
+            "emoji": "🧭",
+            "label": "Compass",
+            "translationPt": "Bússola"
+          },
           {
             "text": "Tractor",
             "emoji": "🚜",
@@ -10076,19 +10082,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚢",
             "label": "Ship",
             "translationPt": "Navio"
-          },
-          {
-            "text": "Compass",
-            "emoji": "🧭",
-            "label": "Compass",
-            "translationPt": "Bússola"
           }
         ],
         "options": [
+          "Compass",
           "Tractor",
           "Subway",
-          "Ship",
-          "Compass"
+          "Ship"
         ],
         "correctAnswer": "Tractor",
         "explanation": "Exemplo prático: \"The farm tractor pulls heavy equipment.\"",
@@ -10103,16 +10103,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚐",
         "visualOptions": [
           {
+            "text": "Suitcase",
+            "emoji": "🧳",
+            "label": "Suitcase",
+            "translationPt": "Mala de viagem"
+          },
+          {
             "text": "Steering Wheel",
             "emoji": "🛞",
             "label": "Steering Wheel",
             "translationPt": "Volante de carro"
-          },
-          {
-            "text": "Van",
-            "emoji": "🚐",
-            "label": "Van",
-            "translationPt": "Van / Perua"
           },
           {
             "text": "Ambulance",
@@ -10121,17 +10121,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ambulância"
           },
           {
-            "text": "Suitcase",
-            "emoji": "🧳",
-            "label": "Suitcase",
-            "translationPt": "Mala de viagem"
+            "text": "Van",
+            "emoji": "🚐",
+            "label": "Van",
+            "translationPt": "Van / Perua"
           }
         ],
         "options": [
+          "Suitcase",
           "Steering Wheel",
-          "Van",
           "Ambulance",
-          "Suitcase"
+          "Van"
         ],
         "correctAnswer": "Van",
         "explanation": "Exemplo prático: \"The passenger van carries the group to school.\"",
@@ -10146,10 +10146,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛴",
         "visualOptions": [
           {
-            "text": "Scooter",
-            "emoji": "🛴",
-            "label": "Scooter",
-            "translationPt": "Patinete"
+            "text": "Police Car",
+            "emoji": "🚓",
+            "label": "Police Car",
+            "translationPt": "Viatura de polícia"
           },
           {
             "text": "Boat",
@@ -10158,10 +10158,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Barco / Veleiro"
           },
           {
-            "text": "Police Car",
-            "emoji": "🚓",
-            "label": "Police Car",
-            "translationPt": "Viatura de polícia"
+            "text": "Scooter",
+            "emoji": "🛴",
+            "label": "Scooter",
+            "translationPt": "Patinete"
           },
           {
             "text": "Train",
@@ -10171,9 +10171,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Scooter",
-          "Boat",
           "Police Car",
+          "Boat",
+          "Scooter",
           "Train"
         ],
         "correctAnswer": "Scooter",
@@ -10189,16 +10189,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛹",
         "visualOptions": [
           {
+            "text": "Skateboard",
+            "emoji": "🛹",
+            "label": "Skateboard",
+            "translationPt": "Skate"
+          },
+          {
             "text": "Tire",
             "emoji": "🛞",
             "label": "Tire",
             "translationPt": "Pneu / Roda"
-          },
-          {
-            "text": "Truck",
-            "emoji": "🚚",
-            "label": "Truck",
-            "translationPt": "Caminhão"
           },
           {
             "text": "Taxi",
@@ -10207,17 +10207,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Táxi"
           },
           {
-            "text": "Skateboard",
-            "emoji": "🛹",
-            "label": "Skateboard",
-            "translationPt": "Skate"
+            "text": "Truck",
+            "emoji": "🚚",
+            "label": "Truck",
+            "translationPt": "Caminhão"
           }
         ],
         "options": [
+          "Skateboard",
           "Tire",
-          "Truck",
           "Taxi",
-          "Skateboard"
+          "Truck"
         ],
         "correctAnswer": "Skateboard",
         "explanation": "Exemplo prático: \"He practices tricks on his four-wheel skateboard.\"",
@@ -10232,6 +10232,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛼",
         "visualOptions": [
           {
+            "text": "Tractor",
+            "emoji": "🚜",
+            "label": "Tractor",
+            "translationPt": "Trator"
+          },
+          {
+            "text": "Anchor",
+            "emoji": "⚓",
+            "label": "Anchor",
+            "translationPt": "Âncora de navio"
+          },
+          {
             "text": "Roller Skate",
             "emoji": "🛼",
             "label": "Roller Skate",
@@ -10242,25 +10254,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "✈️",
             "label": "Airplane",
             "translationPt": "Avião"
-          },
-          {
-            "text": "Anchor",
-            "emoji": "⚓",
-            "label": "Anchor",
-            "translationPt": "Âncora de navio"
-          },
-          {
-            "text": "Tractor",
-            "emoji": "🚜",
-            "label": "Tractor",
-            "translationPt": "Trator"
           }
         ],
         "options": [
-          "Roller Skate",
-          "Airplane",
+          "Tractor",
           "Anchor",
-          "Tractor"
+          "Roller Skate",
+          "Airplane"
         ],
         "correctAnswer": "Roller Skate",
         "explanation": "Exemplo prático: \"She glides smoothly on roller skates.\"",
@@ -10275,10 +10275,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⛑️",
         "visualOptions": [
           {
-            "text": "Van",
-            "emoji": "🚐",
-            "label": "Van",
-            "translationPt": "Van / Perua"
+            "text": "Ship",
+            "emoji": "🚢",
+            "label": "Ship",
+            "translationPt": "Navio"
           },
           {
             "text": "Helmet",
@@ -10287,10 +10287,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Capacete"
           },
           {
-            "text": "Ship",
-            "emoji": "🚢",
-            "label": "Ship",
-            "translationPt": "Navio"
+            "text": "Van",
+            "emoji": "🚐",
+            "label": "Van",
+            "translationPt": "Van / Perua"
           },
           {
             "text": "Subway",
@@ -10300,9 +10300,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Van",
-          "Helmet",
           "Ship",
+          "Helmet",
+          "Van",
           "Subway"
         ],
         "correctAnswer": "Helmet",
@@ -10317,6 +10317,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Traffic Light",
         "visualEmoji": "🚦",
         "visualOptions": [
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro"
+          },
           {
             "text": "Fire Truck",
             "emoji": "🚒",
@@ -10334,19 +10340,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚦",
             "label": "Traffic Light",
             "translationPt": "Semáforo / Sinal de trânsito"
-          },
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro"
           }
         ],
         "options": [
+          "Car",
           "Fire Truck",
           "Scooter",
-          "Traffic Light",
-          "Car"
+          "Traffic Light"
         ],
         "correctAnswer": "Traffic Light",
         "explanation": "Exemplo prático: \"Stop the car when the traffic light is red.\"",
@@ -10361,10 +10361,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛞",
         "visualOptions": [
           {
-            "text": "Rocket",
-            "emoji": "🚀",
-            "label": "Rocket",
-            "translationPt": "Foguete espacial"
+            "text": "Tire",
+            "emoji": "🛞",
+            "label": "Tire",
+            "translationPt": "Pneu / Roda"
           },
           {
             "text": "Compass",
@@ -10373,23 +10373,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bússola"
           },
           {
+            "text": "Rocket",
+            "emoji": "🚀",
+            "label": "Rocket",
+            "translationPt": "Foguete espacial"
+          },
+          {
             "text": "Skateboard",
             "emoji": "🛹",
             "label": "Skateboard",
             "translationPt": "Skate"
-          },
-          {
-            "text": "Tire",
-            "emoji": "🛞",
-            "label": "Tire",
-            "translationPt": "Pneu / Roda"
           }
         ],
         "options": [
-          "Rocket",
+          "Tire",
           "Compass",
-          "Skateboard",
-          "Tire"
+          "Rocket",
+          "Skateboard"
         ],
         "correctAnswer": "Tire",
         "explanation": "Exemplo prático: \"Check the air pressure in the car tire.\"",
@@ -10404,10 +10404,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛞",
         "visualOptions": [
           {
-            "text": "Steering Wheel",
-            "emoji": "🛞",
-            "label": "Steering Wheel",
-            "translationPt": "Volante de carro"
+            "text": "Bus",
+            "emoji": "🚌",
+            "label": "Bus",
+            "translationPt": "Ônibus"
           },
           {
             "text": "Bicycle",
@@ -10416,23 +10416,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bicicleta"
           },
           {
-            "text": "Bus",
-            "emoji": "🚌",
-            "label": "Bus",
-            "translationPt": "Ônibus"
-          },
-          {
             "text": "Helicopter",
             "emoji": "🚁",
             "label": "Helicopter",
             "translationPt": "Helicóptero"
+          },
+          {
+            "text": "Steering Wheel",
+            "emoji": "🛞",
+            "label": "Steering Wheel",
+            "translationPt": "Volante de carro"
           }
         ],
         "options": [
-          "Steering Wheel",
-          "Bicycle",
           "Bus",
-          "Helicopter"
+          "Bicycle",
+          "Helicopter",
+          "Steering Wheel"
         ],
         "correctAnswer": "Steering Wheel",
         "explanation": "Exemplo prático: \"Keep both hands on the car steering wheel.\"",
@@ -10447,10 +10447,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⛽",
         "visualOptions": [
           {
-            "text": "Train",
-            "emoji": "🚆",
-            "label": "Train",
-            "translationPt": "Trem"
+            "text": "Tractor",
+            "emoji": "🚜",
+            "label": "Tractor",
+            "translationPt": "Trator"
           },
           {
             "text": "Helmet",
@@ -10465,17 +10465,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bomba de combustível"
           },
           {
-            "text": "Tractor",
-            "emoji": "🚜",
-            "label": "Tractor",
-            "translationPt": "Trator"
+            "text": "Train",
+            "emoji": "🚆",
+            "label": "Train",
+            "translationPt": "Trem"
           }
         ],
         "options": [
-          "Train",
+          "Tractor",
           "Helmet",
           "Fuel Pump",
-          "Tractor"
+          "Train"
         ],
         "correctAnswer": "Fuel Pump",
         "explanation": "Exemplo prático: \"Fill the car tank at the gas station fuel pump.\"",
@@ -10496,6 +10496,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mala de viagem"
           },
           {
+            "text": "Boat",
+            "emoji": "⛵",
+            "label": "Boat",
+            "translationPt": "Barco / Veleiro"
+          },
+          {
             "text": "Ambulance",
             "emoji": "🚑",
             "label": "Ambulance",
@@ -10506,19 +10512,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚦",
             "label": "Traffic Light",
             "translationPt": "Semáforo / Sinal de trânsito"
-          },
-          {
-            "text": "Boat",
-            "emoji": "⛵",
-            "label": "Boat",
-            "translationPt": "Barco / Veleiro"
           }
         ],
         "options": [
           "Suitcase",
+          "Boat",
           "Ambulance",
-          "Traffic Light",
-          "Boat"
+          "Traffic Light"
         ],
         "correctAnswer": "Suitcase",
         "explanation": "Exemplo prático: \"Pack your clothes in a rolling travel suitcase.\"",
@@ -10533,18 +10533,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚀",
         "visualOptions": [
           {
-            "text": "Van",
-            "emoji": "🚐",
-            "label": "Van",
-            "translationPt": "Van / Perua"
-          },
-          {
-            "text": "Skateboard",
-            "emoji": "🛹",
-            "label": "Skateboard",
-            "translationPt": "Skate"
-          },
-          {
             "text": "Scooter",
             "emoji": "🛴",
             "label": "Scooter",
@@ -10555,13 +10543,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚀",
             "label": "Rocket",
             "translationPt": "Foguete espacial"
+          },
+          {
+            "text": "Van",
+            "emoji": "🚐",
+            "label": "Van",
+            "translationPt": "Van / Perua"
+          },
+          {
+            "text": "Skateboard",
+            "emoji": "🛹",
+            "label": "Skateboard",
+            "translationPt": "Skate"
           }
         ],
         "options": [
-          "Van",
-          "Skateboard",
           "Scooter",
-          "Rocket"
+          "Rocket",
+          "Van",
+          "Skateboard"
         ],
         "correctAnswer": "Rocket",
         "explanation": "Exemplo prático: \"The space rocket blasts into orbit.\"",
@@ -10582,12 +10582,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Viatura de polícia"
           },
           {
-            "text": "Motorcycle",
-            "emoji": "🏍️",
-            "label": "Motorcycle",
-            "translationPt": "Moto / Motocicleta"
-          },
-          {
             "text": "Parachute",
             "emoji": "🪂",
             "label": "Parachute",
@@ -10598,13 +10592,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🛞",
             "label": "Steering Wheel",
             "translationPt": "Volante de carro"
+          },
+          {
+            "text": "Motorcycle",
+            "emoji": "🏍️",
+            "label": "Motorcycle",
+            "translationPt": "Moto / Motocicleta"
           }
         ],
         "options": [
           "Police Car",
-          "Motorcycle",
           "Parachute",
-          "Steering Wheel"
+          "Steering Wheel",
+          "Motorcycle"
         ],
         "correctAnswer": "Parachute",
         "explanation": "Exemplo prático: \"The colorful parachute opens in the sky.\"",
@@ -10625,6 +10625,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Patins"
           },
           {
+            "text": "Fuel Pump",
+            "emoji": "⛽",
+            "label": "Fuel Pump",
+            "translationPt": "Bomba de combustível"
+          },
+          {
             "text": "Tire",
             "emoji": "🛞",
             "label": "Tire",
@@ -10635,19 +10641,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⚓",
             "label": "Anchor",
             "translationPt": "Âncora de navio"
-          },
-          {
-            "text": "Fuel Pump",
-            "emoji": "⛽",
-            "label": "Fuel Pump",
-            "translationPt": "Bomba de combustível"
           }
         ],
         "options": [
           "Roller Skate",
+          "Fuel Pump",
           "Tire",
-          "Anchor",
-          "Fuel Pump"
+          "Anchor"
         ],
         "correctAnswer": "Anchor",
         "explanation": "Exemplo prático: \"The ship drops its heavy metal anchor.\"",
@@ -10662,10 +10662,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧭",
         "visualOptions": [
           {
-            "text": "Compass",
-            "emoji": "🧭",
-            "label": "Compass",
-            "translationPt": "Bússola"
+            "text": "Suitcase",
+            "emoji": "🧳",
+            "label": "Suitcase",
+            "translationPt": "Mala de viagem"
           },
           {
             "text": "Traffic Light",
@@ -10674,10 +10674,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Semáforo / Sinal de trânsito"
           },
           {
-            "text": "Suitcase",
-            "emoji": "🧳",
-            "label": "Suitcase",
-            "translationPt": "Mala de viagem"
+            "text": "Compass",
+            "emoji": "🧭",
+            "label": "Compass",
+            "translationPt": "Bússola"
           },
           {
             "text": "Helicopter",
@@ -10687,9 +10687,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Compass",
-          "Traffic Light",
           "Suitcase",
+          "Traffic Light",
+          "Compass",
           "Helicopter"
         ],
         "correctAnswer": "Compass",
@@ -10757,10 +10757,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Sweet corn\" em português?",
         "audioPhrase": "Sweet corn",
         "options": [
-          "Milho doce",
-          "Cebola branca",
+          "Abóbora grande",
           "Pepino verde",
-          "Abóbora grande"
+          "Milho doce",
+          "Cebola branca"
         ],
         "correctAnswer": "Milho doce",
         "explanation": "\"Sweet corn\" = \"Milho doce\". Associação simples e direta!",
@@ -10774,10 +10774,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Strong lion\" em português?",
         "audioPhrase": "Strong lion",
         "options": [
-          "Leão forte",
           "Tigre rápido",
-          "Elefante grande",
-          "Macaco esperto"
+          "Leão forte",
+          "Macaco esperto",
+          "Elefante grande"
         ],
         "correctAnswer": "Leão forte",
         "explanation": "\"Strong lion\" = \"Leão forte\". Associação simples e direta!",
@@ -10824,10 +10824,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Clean plate\" em português?",
         "audioPhrase": "Clean plate",
         "options": [
-          "Prato limpo",
           "Copo cheio",
           "Garfo de metal",
-          "Panela grande"
+          "Panela grande",
+          "Prato limpo"
         ],
         "correctAnswer": "Prato limpo",
         "explanation": "\"Clean plate\" = \"Prato limpo\". Associação simples e direta!",
@@ -10857,10 +10857,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Big fridge\" em português?",
         "audioPhrase": "Big fridge",
         "options": [
-          "Geladeira grande",
-          "Fogão novo",
+          "Liquidificador forte",
           "Micro-ondas rápido",
-          "Liquidificador forte"
+          "Geladeira grande",
+          "Fogão novo"
         ],
         "correctAnswer": "Geladeira grande",
         "explanation": "\"Big fridge\" = \"Geladeira grande\". Associação simples e direta!",
@@ -10875,9 +10875,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Red car",
         "options": [
           "Carro vermelho",
-          "Ônibus azul",
           "Bicicleta nova",
-          "Trem rápido"
+          "Trem rápido",
+          "Ônibus azul"
         ],
         "correctAnswer": "Carro vermelho",
         "explanation": "\"Red car\" = \"Carro vermelho\". Associação simples e direta!",
@@ -10907,10 +10907,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Fast airplane\" em português?",
         "audioPhrase": "Fast airplane",
         "options": [
-          "Avião rápido",
-          "Navio grande",
           "Moto preta",
-          "Caminhão pesado"
+          "Navio grande",
+          "Caminhão pesado",
+          "Avião rápido"
         ],
         "correctAnswer": "Avião rápido",
         "explanation": "\"Fast airplane\" = \"Avião rápido\". Associação simples e direta!",
@@ -10988,16 +10988,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍚",
         "visualOptions": [
           {
+            "text": "Bacon",
+            "emoji": "🥓",
+            "label": "Bacon",
+            "translationPt": "Bacon"
+          },
+          {
             "text": "Rice",
             "emoji": "🍚",
             "label": "Rice",
             "translationPt": "Arroz branco"
-          },
-          {
-            "text": "Toast",
-            "emoji": "🍞",
-            "label": "Toast",
-            "translationPt": "Torrada"
           },
           {
             "text": "Butter",
@@ -11006,17 +11006,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Manteiga"
           },
           {
-            "text": "Bacon",
-            "emoji": "🥓",
-            "label": "Bacon",
-            "translationPt": "Bacon"
+            "text": "Toast",
+            "emoji": "🍞",
+            "label": "Toast",
+            "translationPt": "Torrada"
           }
         ],
         "options": [
+          "Bacon",
           "Rice",
-          "Toast",
           "Butter",
-          "Bacon"
+          "Toast"
         ],
         "correctAnswer": "Rice",
         "explanation": "Exemplo prático: \"White rice is served every day in Brazil.\"",
@@ -11031,16 +11031,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🫘",
         "visualOptions": [
           {
-            "text": "Barbecue",
-            "emoji": "🍖",
-            "label": "Barbecue",
-            "translationPt": "Churrasco / Espetinho"
-          },
-          {
             "text": "Roast Chicken",
             "emoji": "🍗",
             "label": "Roast Chicken",
             "translationPt": "Frango assado"
+          },
+          {
+            "text": "Barbecue",
+            "emoji": "🍖",
+            "label": "Barbecue",
+            "translationPt": "Churrasco / Espetinho"
           },
           {
             "text": "Omelet",
@@ -11056,8 +11056,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Barbecue",
           "Roast Chicken",
+          "Barbecue",
           "Omelet",
           "Beans"
         ],
@@ -11074,12 +11074,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥚",
         "visualOptions": [
           {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo"
-          },
-          {
             "text": "Sandwich",
             "emoji": "🥪",
             "label": "Sandwich",
@@ -11092,6 +11086,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sopa"
           },
           {
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo"
+          },
+          {
             "text": "Steak",
             "emoji": "🥩",
             "label": "Steak",
@@ -11099,9 +11099,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Egg",
           "Sandwich",
           "Soup",
+          "Egg",
           "Steak"
         ],
         "correctAnswer": "Egg",
@@ -11116,12 +11116,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Cheese",
         "visualEmoji": "🧀",
         "visualOptions": [
-          {
-            "text": "Cheese Bread",
-            "emoji": "🧀",
-            "label": "Cheese Bread",
-            "translationPt": "Pão de queijo"
-          },
           {
             "text": "Cheese",
             "emoji": "🧀",
@@ -11139,13 +11133,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍟",
             "label": "French Fries",
             "translationPt": "Batata frita"
+          },
+          {
+            "text": "Cheese Bread",
+            "emoji": "🧀",
+            "label": "Cheese Bread",
+            "translationPt": "Pão de queijo"
           }
         ],
         "options": [
-          "Cheese Bread",
           "Cheese",
           "Fish Fillet",
-          "French Fries"
+          "French Fries",
+          "Cheese Bread"
         ],
         "correctAnswer": "Cheese",
         "explanation": "Exemplo prático: \"Yellow cheese tastes great on bread.\"",
@@ -11160,35 +11160,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧈",
         "visualOptions": [
           {
-            "text": "Butter",
-            "emoji": "🧈",
-            "label": "Butter",
-            "translationPt": "Manteiga"
-          },
-          {
             "text": "Rice",
             "emoji": "🍚",
             "label": "Rice",
             "translationPt": "Arroz branco"
           },
           {
-            "text": "Lasagna",
-            "emoji": "🍝",
-            "label": "Lasagna",
-            "translationPt": "Lasanha"
-          },
-          {
             "text": "Croissant",
             "emoji": "🥐",
             "label": "Croissant",
             "translationPt": "Croissant"
+          },
+          {
+            "text": "Butter",
+            "emoji": "🧈",
+            "label": "Butter",
+            "translationPt": "Manteiga"
+          },
+          {
+            "text": "Lasagna",
+            "emoji": "🍝",
+            "label": "Lasagna",
+            "translationPt": "Lasanha"
           }
         ],
         "options": [
-          "Butter",
           "Rice",
-          "Lasagna",
-          "Croissant"
+          "Croissant",
+          "Butter",
+          "Lasagna"
         ],
         "correctAnswer": "Butter",
         "explanation": "Exemplo prático: \"Spread butter on the warm toast.\"",
@@ -11203,35 +11203,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥩",
         "visualOptions": [
           {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
-          },
-          {
             "text": "Beans",
             "emoji": "🫘",
             "label": "Beans",
             "translationPt": "Feijão"
           },
           {
-            "text": "Salad",
-            "emoji": "🥗",
-            "label": "Salad",
-            "translationPt": "Salada"
-          },
-          {
             "text": "Ham",
             "emoji": "🥩",
             "label": "Ham",
             "translationPt": "Presunto"
+          },
+          {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
+          {
+            "text": "Salad",
+            "emoji": "🥗",
+            "label": "Salad",
+            "translationPt": "Salada"
           }
         ],
         "options": [
-          "Bread",
           "Beans",
-          "Salad",
-          "Ham"
+          "Ham",
+          "Bread",
+          "Salad"
         ],
         "correctAnswer": "Ham",
         "explanation": "Exemplo prático: \"A sandwich with cheese and ham.\"",
@@ -11246,16 +11246,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍗",
         "visualOptions": [
           {
-            "text": "Roast Chicken",
-            "emoji": "🍗",
-            "label": "Roast Chicken",
-            "translationPt": "Frango assado"
-          },
-          {
-            "text": "Sausage",
-            "emoji": "🌭",
-            "label": "Sausage",
-            "translationPt": "Linguiça / Salsicha"
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo"
           },
           {
             "text": "Shrimp",
@@ -11264,17 +11258,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camarão"
           },
           {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo"
+            "text": "Sausage",
+            "emoji": "🌭",
+            "label": "Sausage",
+            "translationPt": "Linguiça / Salsicha"
+          },
+          {
+            "text": "Roast Chicken",
+            "emoji": "🍗",
+            "label": "Roast Chicken",
+            "translationPt": "Frango assado"
           }
         ],
         "options": [
-          "Roast Chicken",
-          "Sausage",
+          "Egg",
           "Shrimp",
-          "Egg"
+          "Sausage",
+          "Roast Chicken"
         ],
         "correctAnswer": "Roast Chicken",
         "explanation": "Exemplo prático: \"Roast chicken is a Sunday lunch classic.\"",
@@ -11289,35 +11289,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥩",
         "visualOptions": [
           {
-            "text": "Mashed Potatoes",
-            "emoji": "🥔",
-            "label": "Mashed Potatoes",
-            "translationPt": "Purê de batata"
-          },
-          {
             "text": "Steak",
             "emoji": "🥩",
             "label": "Steak",
             "translationPt": "Bife / Carne grelhada"
           },
           {
-            "text": "Sushi",
-            "emoji": "🍣",
-            "label": "Sushi",
-            "translationPt": "Sushi"
+            "text": "Mashed Potatoes",
+            "emoji": "🥔",
+            "label": "Mashed Potatoes",
+            "translationPt": "Purê de batata"
           },
           {
             "text": "Cheese",
             "emoji": "🧀",
             "label": "Cheese",
             "translationPt": "Queijo"
+          },
+          {
+            "text": "Sushi",
+            "emoji": "🍣",
+            "label": "Sushi",
+            "translationPt": "Sushi"
           }
         ],
         "options": [
-          "Mashed Potatoes",
           "Steak",
-          "Sushi",
-          "Cheese"
+          "Mashed Potatoes",
+          "Cheese",
+          "Sushi"
         ],
         "correctAnswer": "Steak",
         "explanation": "Exemplo prático: \"He cooked a juicy beef steak on the grill.\"",
@@ -11332,10 +11332,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐟",
         "visualOptions": [
           {
-            "text": "Sandwich",
-            "emoji": "🥪",
-            "label": "Sandwich",
-            "translationPt": "Sanduíche natural"
+            "text": "Soup",
+            "emoji": "🍲",
+            "label": "Soup",
+            "translationPt": "Sopa"
           },
           {
             "text": "Pancake",
@@ -11344,23 +11344,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Panqueca"
           },
           {
+            "text": "Sandwich",
+            "emoji": "🥪",
+            "label": "Sandwich",
+            "translationPt": "Sanduíche natural"
+          },
+          {
             "text": "Fish Fillet",
             "emoji": "🐟",
             "label": "Fish Fillet",
             "translationPt": "Filé de peixe"
-          },
-          {
-            "text": "Soup",
-            "emoji": "🍲",
-            "label": "Soup",
-            "translationPt": "Sopa"
           }
         ],
         "options": [
-          "Sandwich",
+          "Soup",
           "Pancake",
-          "Fish Fillet",
-          "Soup"
+          "Sandwich",
+          "Fish Fillet"
         ],
         "correctAnswer": "Fish Fillet",
         "explanation": "Exemplo prático: \"Grilled fish fillet with lemon.\"",
@@ -11387,23 +11387,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pão de queijo"
           },
           {
-            "text": "Omelet",
-            "emoji": "🍳",
-            "label": "Omelet",
-            "translationPt": "Omelete"
-          },
-          {
             "text": "Pasta",
             "emoji": "🍝",
             "label": "Pasta",
             "translationPt": "Macarrão / Espaguete"
+          },
+          {
+            "text": "Omelet",
+            "emoji": "🍳",
+            "label": "Omelet",
+            "translationPt": "Omelete"
           }
         ],
         "options": [
           "Lasagna",
           "Cheese Bread",
-          "Omelet",
-          "Pasta"
+          "Pasta",
+          "Omelet"
         ],
         "correctAnswer": "Pasta",
         "explanation": "Exemplo prático: \"Italian spaghetti pasta with tomato sauce.\"",
@@ -11424,6 +11424,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pizza"
           },
           {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
+          {
             "text": "Butter",
             "emoji": "🧈",
             "label": "Butter",
@@ -11434,19 +11440,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🫘",
             "label": "Beans",
             "translationPt": "Feijão"
-          },
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
           }
         ],
         "options": [
           "Pizza",
+          "Bread",
           "Butter",
-          "Beans",
-          "Bread"
+          "Beans"
         ],
         "correctAnswer": "Pizza",
         "explanation": "Exemplo prático: \"We shared a delicious cheese pizza.\"",
@@ -11461,16 +11461,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍔",
         "visualOptions": [
           {
-            "text": "Ham",
-            "emoji": "🥩",
-            "label": "Ham",
-            "translationPt": "Presunto"
-          },
-          {
-            "text": "Bacon",
-            "emoji": "🥓",
-            "label": "Bacon",
-            "translationPt": "Bacon"
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo"
           },
           {
             "text": "Hamburger",
@@ -11479,17 +11473,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Hambúrguer"
           },
           {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo"
+            "text": "Bacon",
+            "emoji": "🥓",
+            "label": "Bacon",
+            "translationPt": "Bacon"
+          },
+          {
+            "text": "Ham",
+            "emoji": "🥩",
+            "label": "Ham",
+            "translationPt": "Presunto"
           }
         ],
         "options": [
-          "Ham",
-          "Bacon",
+          "Egg",
           "Hamburger",
-          "Egg"
+          "Bacon",
+          "Ham"
         ],
         "correctAnswer": "Hamburger",
         "explanation": "Exemplo prático: \"A juicy hamburger with cheese and lettuce.\"",
@@ -11504,35 +11504,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍟",
         "visualOptions": [
           {
-            "text": "French Fries",
-            "emoji": "🍟",
-            "label": "French Fries",
-            "translationPt": "Batata frita"
-          },
-          {
             "text": "Barbecue",
             "emoji": "🍖",
             "label": "Barbecue",
             "translationPt": "Churrasco / Espetinho"
           },
           {
-            "text": "Toast",
-            "emoji": "🍞",
-            "label": "Toast",
-            "translationPt": "Torrada"
+            "text": "French Fries",
+            "emoji": "🍟",
+            "label": "French Fries",
+            "translationPt": "Batata frita"
           },
           {
             "text": "Rice",
             "emoji": "🍚",
             "label": "Rice",
             "translationPt": "Arroz branco"
+          },
+          {
+            "text": "Toast",
+            "emoji": "🍞",
+            "label": "Toast",
+            "translationPt": "Torrada"
           }
         ],
         "options": [
-          "French Fries",
           "Barbecue",
-          "Toast",
-          "Rice"
+          "French Fries",
+          "Rice",
+          "Toast"
         ],
         "correctAnswer": "French Fries",
         "explanation": "Exemplo prático: \"Crispy golden French fries.\"",
@@ -11547,12 +11547,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌭",
         "visualOptions": [
           {
-            "text": "Pasta",
-            "emoji": "🍝",
-            "label": "Pasta",
-            "translationPt": "Macarrão / Espaguete"
-          },
-          {
             "text": "Mashed Potatoes",
             "emoji": "🥔",
             "label": "Mashed Potatoes",
@@ -11565,6 +11559,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Panqueca"
           },
           {
+            "text": "Pasta",
+            "emoji": "🍝",
+            "label": "Pasta",
+            "translationPt": "Macarrão / Espaguete"
+          },
+          {
             "text": "Hot Dog",
             "emoji": "🌭",
             "label": "Hot Dog",
@@ -11572,9 +11572,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Pasta",
           "Mashed Potatoes",
           "Pancake",
+          "Pasta",
           "Hot Dog"
         ],
         "correctAnswer": "Hot Dog",
@@ -11590,6 +11590,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥪",
         "visualOptions": [
           {
+            "text": "Pizza",
+            "emoji": "🍕",
+            "label": "Pizza",
+            "translationPt": "Pizza"
+          },
+          {
+            "text": "Fish Fillet",
+            "emoji": "🐟",
+            "label": "Fish Fillet",
+            "translationPt": "Filé de peixe"
+          },
+          {
             "text": "Sandwich",
             "emoji": "🥪",
             "label": "Sandwich",
@@ -11600,25 +11612,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧀",
             "label": "Cheese",
             "translationPt": "Queijo"
-          },
-          {
-            "text": "Fish Fillet",
-            "emoji": "🐟",
-            "label": "Fish Fillet",
-            "translationPt": "Filé de peixe"
-          },
-          {
-            "text": "Pizza",
-            "emoji": "🍕",
-            "label": "Pizza",
-            "translationPt": "Pizza"
           }
         ],
         "options": [
-          "Sandwich",
-          "Cheese",
+          "Pizza",
           "Fish Fillet",
-          "Pizza"
+          "Sandwich",
+          "Cheese"
         ],
         "correctAnswer": "Sandwich",
         "explanation": "Exemplo prático: \"She packed a sandwich for lunch.\"",
@@ -11633,18 +11633,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧀",
         "visualOptions": [
           {
-            "text": "Roast Chicken",
-            "emoji": "🍗",
-            "label": "Roast Chicken",
-            "translationPt": "Frango assado"
-          },
-          {
-            "text": "Steak",
-            "emoji": "🥩",
-            "label": "Steak",
-            "translationPt": "Bife / Carne grelhada"
-          },
-          {
             "text": "Cheese Bread",
             "emoji": "🧀",
             "label": "Cheese Bread",
@@ -11655,13 +11643,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥐",
             "label": "Croissant",
             "translationPt": "Croissant"
+          },
+          {
+            "text": "Steak",
+            "emoji": "🥩",
+            "label": "Steak",
+            "translationPt": "Bife / Carne grelhada"
+          },
+          {
+            "text": "Roast Chicken",
+            "emoji": "🍗",
+            "label": "Roast Chicken",
+            "translationPt": "Frango assado"
           }
         ],
         "options": [
-          "Roast Chicken",
-          "Steak",
           "Cheese Bread",
-          "Croissant"
+          "Croissant",
+          "Steak",
+          "Roast Chicken"
         ],
         "correctAnswer": "Cheese Bread",
         "explanation": "Exemplo prático: \"Warm Brazilian cheese bread is delicious.\"",
@@ -11676,10 +11676,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍲",
         "visualOptions": [
           {
-            "text": "Soup",
-            "emoji": "🍲",
-            "label": "Soup",
-            "translationPt": "Sopa"
+            "text": "French Fries",
+            "emoji": "🍟",
+            "label": "French Fries",
+            "translationPt": "Batata frita"
           },
           {
             "text": "Shrimp",
@@ -11688,10 +11688,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camarão"
           },
           {
-            "text": "French Fries",
-            "emoji": "🍟",
-            "label": "French Fries",
-            "translationPt": "Batata frita"
+            "text": "Soup",
+            "emoji": "🍲",
+            "label": "Soup",
+            "translationPt": "Sopa"
           },
           {
             "text": "Sushi",
@@ -11701,9 +11701,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Soup",
-          "Shrimp",
           "French Fries",
+          "Shrimp",
+          "Soup",
           "Sushi"
         ],
         "correctAnswer": "Soup",
@@ -11725,10 +11725,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Hambúrguer"
           },
           {
-            "text": "Pasta",
-            "emoji": "🍝",
-            "label": "Pasta",
-            "translationPt": "Macarrão / Espaguete"
+            "text": "Salad",
+            "emoji": "🥗",
+            "label": "Salad",
+            "translationPt": "Salada"
           },
           {
             "text": "Hot Dog",
@@ -11737,17 +11737,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachorro-quente"
           },
           {
-            "text": "Salad",
-            "emoji": "🥗",
-            "label": "Salad",
-            "translationPt": "Salada"
+            "text": "Pasta",
+            "emoji": "🍝",
+            "label": "Pasta",
+            "translationPt": "Macarrão / Espaguete"
           }
         ],
         "options": [
           "Hamburger",
-          "Pasta",
+          "Salad",
           "Hot Dog",
-          "Salad"
+          "Pasta"
         ],
         "correctAnswer": "Salad",
         "explanation": "Exemplo prático: \"A fresh green salad with tomatoes.\"",
@@ -11768,6 +11768,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Torrada"
           },
           {
+            "text": "Pizza",
+            "emoji": "🍕",
+            "label": "Pizza",
+            "translationPt": "Pizza"
+          },
+          {
             "text": "Ham",
             "emoji": "🥩",
             "label": "Ham",
@@ -11778,19 +11784,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌭",
             "label": "Sausage",
             "translationPt": "Linguiça / Salsicha"
-          },
-          {
-            "text": "Pizza",
-            "emoji": "🍕",
-            "label": "Pizza",
-            "translationPt": "Pizza"
           }
         ],
         "options": [
           "Toast",
+          "Pizza",
           "Ham",
-          "Sausage",
-          "Pizza"
+          "Sausage"
         ],
         "correctAnswer": "Sausage",
         "explanation": "Exemplo prático: \"Grilled sausage for the barbecue.\"",
@@ -11805,16 +11805,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥓",
         "visualOptions": [
           {
-            "text": "Mashed Potatoes",
-            "emoji": "🥔",
-            "label": "Mashed Potatoes",
-            "translationPt": "Purê de batata"
-          },
-          {
             "text": "Bacon",
             "emoji": "🥓",
             "label": "Bacon",
             "translationPt": "Bacon"
+          },
+          {
+            "text": "Mashed Potatoes",
+            "emoji": "🥔",
+            "label": "Mashed Potatoes",
+            "translationPt": "Purê de batata"
           },
           {
             "text": "Steak",
@@ -11830,8 +11830,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Mashed Potatoes",
           "Bacon",
+          "Mashed Potatoes",
           "Steak",
           "Sandwich"
         ],
@@ -11848,16 +11848,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍳",
         "visualOptions": [
           {
-            "text": "Omelet",
-            "emoji": "🍳",
-            "label": "Omelet",
-            "translationPt": "Omelete"
-          },
-          {
             "text": "Fish Fillet",
             "emoji": "🐟",
             "label": "Fish Fillet",
             "translationPt": "Filé de peixe"
+          },
+          {
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo"
           },
           {
             "text": "French Fries",
@@ -11866,17 +11866,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Batata frita"
           },
           {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo"
+            "text": "Omelet",
+            "emoji": "🍳",
+            "label": "Omelet",
+            "translationPt": "Omelete"
           }
         ],
         "options": [
-          "Omelet",
           "Fish Fillet",
+          "Cheese",
           "French Fries",
-          "Cheese"
+          "Omelet"
         ],
         "correctAnswer": "Omelet",
         "explanation": "Exemplo prático: \"A fluffy yellow egg omelet.\"",
@@ -11891,35 +11891,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥞",
         "visualOptions": [
           {
-            "text": "Salad",
-            "emoji": "🥗",
-            "label": "Salad",
-            "translationPt": "Salada"
-          },
-          {
-            "text": "Rice",
-            "emoji": "🍚",
-            "label": "Rice",
-            "translationPt": "Arroz branco"
-          },
-          {
             "text": "Roast Chicken",
             "emoji": "🍗",
             "label": "Roast Chicken",
             "translationPt": "Frango assado"
           },
           {
+            "text": "Salad",
+            "emoji": "🥗",
+            "label": "Salad",
+            "translationPt": "Salada"
+          },
+          {
             "text": "Pancake",
             "emoji": "🥞",
             "label": "Pancake",
             "translationPt": "Panqueca"
+          },
+          {
+            "text": "Rice",
+            "emoji": "🍚",
+            "label": "Rice",
+            "translationPt": "Arroz branco"
           }
         ],
         "options": [
-          "Salad",
-          "Rice",
           "Roast Chicken",
-          "Pancake"
+          "Salad",
+          "Pancake",
+          "Rice"
         ],
         "correctAnswer": "Pancake",
         "explanation": "Exemplo prático: \"Stack of pancakes with syrup.\"",
@@ -11977,10 +11977,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍖",
         "visualOptions": [
           {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo"
+            "text": "Beans",
+            "emoji": "🫘",
+            "label": "Beans",
+            "translationPt": "Feijão"
           },
           {
             "text": "Barbecue",
@@ -11989,23 +11989,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Churrasco / Espetinho"
           },
           {
-            "text": "Beans",
-            "emoji": "🫘",
-            "label": "Beans",
-            "translationPt": "Feijão"
-          },
-          {
             "text": "Bread",
             "emoji": "🍞",
             "label": "Bread",
             "translationPt": "Pão"
+          },
+          {
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo"
           }
         ],
         "options": [
-          "Egg",
-          "Barbecue",
           "Beans",
-          "Bread"
+          "Barbecue",
+          "Bread",
+          "Egg"
         ],
         "correctAnswer": "Barbecue",
         "explanation": "Exemplo prático: \"Brazilian barbecue meat on skewers.\"",
@@ -12020,6 +12020,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍤",
         "visualOptions": [
           {
+            "text": "Omelet",
+            "emoji": "🍳",
+            "label": "Omelet",
+            "translationPt": "Omelete"
+          },
+          {
+            "text": "Shrimp",
+            "emoji": "🍤",
+            "label": "Shrimp",
+            "translationPt": "Camarão"
+          },
+          {
             "text": "Bacon",
             "emoji": "🥓",
             "label": "Bacon",
@@ -12030,25 +12042,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧈",
             "label": "Butter",
             "translationPt": "Manteiga"
-          },
-          {
-            "text": "Shrimp",
-            "emoji": "🍤",
-            "label": "Shrimp",
-            "translationPt": "Camarão"
-          },
-          {
-            "text": "Omelet",
-            "emoji": "🍳",
-            "label": "Omelet",
-            "translationPt": "Omelete"
           }
         ],
         "options": [
-          "Bacon",
-          "Butter",
+          "Omelet",
           "Shrimp",
-          "Omelet"
+          "Bacon",
+          "Butter"
         ],
         "correctAnswer": "Shrimp",
         "explanation": "Exemplo prático: \"Cooked pink shrimp with lemon.\"",
@@ -12063,12 +12063,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍣",
         "visualOptions": [
           {
-            "text": "Soup",
-            "emoji": "🍲",
-            "label": "Soup",
-            "translationPt": "Sopa"
-          },
-          {
             "text": "Salad",
             "emoji": "🥗",
             "label": "Salad",
@@ -12081,6 +12075,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Macarrão / Espaguete"
           },
           {
+            "text": "Soup",
+            "emoji": "🍲",
+            "label": "Soup",
+            "translationPt": "Sopa"
+          },
+          {
             "text": "Sushi",
             "emoji": "🍣",
             "label": "Sushi",
@@ -12088,9 +12088,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Soup",
           "Salad",
           "Pasta",
+          "Soup",
           "Sushi"
         ],
         "correctAnswer": "Sushi",
@@ -12106,10 +12106,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥐",
         "visualOptions": [
           {
-            "text": "Croissant",
-            "emoji": "🥐",
-            "label": "Croissant",
-            "translationPt": "Croissant"
+            "text": "Sausage",
+            "emoji": "🌭",
+            "label": "Sausage",
+            "translationPt": "Linguiça / Salsicha"
           },
           {
             "text": "Cheese Bread",
@@ -12118,10 +12118,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pão de queijo"
           },
           {
-            "text": "Sausage",
-            "emoji": "🌭",
-            "label": "Sausage",
-            "translationPt": "Linguiça / Salsicha"
+            "text": "Croissant",
+            "emoji": "🥐",
+            "label": "Croissant",
+            "translationPt": "Croissant"
           },
           {
             "text": "Lasagna",
@@ -12131,9 +12131,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Croissant",
-          "Cheese Bread",
           "Sausage",
+          "Cheese Bread",
+          "Croissant",
           "Lasagna"
         ],
         "correctAnswer": "Croissant",
@@ -12149,35 +12149,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍞",
         "visualOptions": [
           {
-            "text": "Barbecue",
-            "emoji": "🍖",
-            "label": "Barbecue",
-            "translationPt": "Churrasco / Espetinho"
-          },
-          {
             "text": "Toast",
             "emoji": "🍞",
             "label": "Toast",
             "translationPt": "Torrada"
           },
           {
-            "text": "Pancake",
-            "emoji": "🥞",
-            "label": "Pancake",
-            "translationPt": "Panqueca"
+            "text": "Barbecue",
+            "emoji": "🍖",
+            "label": "Barbecue",
+            "translationPt": "Churrasco / Espetinho"
           },
           {
             "text": "Pizza",
             "emoji": "🍕",
             "label": "Pizza",
             "translationPt": "Pizza"
+          },
+          {
+            "text": "Pancake",
+            "emoji": "🥞",
+            "label": "Pancake",
+            "translationPt": "Panqueca"
           }
         ],
         "options": [
-          "Barbecue",
           "Toast",
-          "Pancake",
-          "Pizza"
+          "Barbecue",
+          "Pizza",
+          "Pancake"
         ],
         "correctAnswer": "Toast",
         "explanation": "Exemplo prático: \"Crispy toasted bread for breakfast.\"",
@@ -12297,6 +12297,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐋",
         "visualOptions": [
           {
+            "text": "Ostrich",
+            "emoji": "🐦",
+            "label": "Ostrich",
+            "translationPt": "Avestruz / Ema"
+          },
+          {
             "text": "Owl",
             "emoji": "🦉",
             "label": "Owl",
@@ -12313,19 +12319,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐋",
             "label": "Whale",
             "translationPt": "Baleia"
-          },
-          {
-            "text": "Ostrich",
-            "emoji": "🐦",
-            "label": "Ostrich",
-            "translationPt": "Avestruz / Ema"
           }
         ],
         "options": [
+          "Ostrich",
           "Owl",
           "Bat",
-          "Whale",
-          "Ostrich"
+          "Whale"
         ],
         "correctAnswer": "Whale",
         "explanation": "Exemplo prático: \"The whale is the biggest animal in the sea.\"",
@@ -12352,23 +12352,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tatu"
           },
           {
-            "text": "Jellyfish",
-            "emoji": "🪼",
-            "label": "Jellyfish",
-            "translationPt": "Água-viva"
-          },
-          {
             "text": "Dolphin",
             "emoji": "🐬",
             "label": "Dolphin",
             "translationPt": "Golfinho"
+          },
+          {
+            "text": "Jellyfish",
+            "emoji": "🪼",
+            "label": "Jellyfish",
+            "translationPt": "Água-viva"
           }
         ],
         "options": [
           "Anteater",
           "Armadillo",
-          "Jellyfish",
-          "Dolphin"
+          "Dolphin",
+          "Jellyfish"
         ],
         "correctAnswer": "Dolphin",
         "explanation": "Exemplo prático: \"Friendly dolphins jump out of the water.\"",
@@ -12432,6 +12432,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Iguana"
           },
           {
+            "text": "Clownfish",
+            "emoji": "🐠",
+            "label": "Clownfish",
+            "translationPt": "Peixe-palhaço"
+          },
+          {
             "text": "Crab",
             "emoji": "🦀",
             "label": "Crab",
@@ -12442,19 +12448,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐹",
             "label": "Capybara",
             "translationPt": "Capivara"
-          },
-          {
-            "text": "Clownfish",
-            "emoji": "🐠",
-            "label": "Clownfish",
-            "translationPt": "Peixe-palhaço"
           }
         ],
         "options": [
           "Iguana",
+          "Clownfish",
           "Crab",
-          "Capybara",
-          "Clownfish"
+          "Capybara"
         ],
         "correctAnswer": "Crab",
         "explanation": "Exemplo prático: \"The red crab walks on the beach sand.\"",
@@ -12475,12 +12475,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camaleão"
           },
           {
-            "text": "Lizard",
-            "emoji": "🦎",
-            "label": "Lizard",
-            "translationPt": "Lagarto / Lagartixa"
-          },
-          {
             "text": "Starfish",
             "emoji": "⭐",
             "label": "Starfish",
@@ -12491,13 +12485,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐛",
             "label": "Caterpillar",
             "translationPt": "Lagarta"
+          },
+          {
+            "text": "Lizard",
+            "emoji": "🦎",
+            "label": "Lizard",
+            "translationPt": "Lagarto / Lagartixa"
           }
         ],
         "options": [
           "Chameleon",
-          "Lizard",
           "Starfish",
-          "Caterpillar"
+          "Caterpillar",
+          "Lizard"
         ],
         "correctAnswer": "Starfish",
         "explanation": "Exemplo prático: \"A five-pointed starfish on the ocean floor.\"",
@@ -12518,16 +12518,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bicho-preguiça"
           },
           {
-            "text": "Squirrel",
-            "emoji": "🐿️",
-            "label": "Squirrel",
-            "translationPt": "Esquilo"
-          },
-          {
             "text": "Shark",
             "emoji": "🦈",
             "label": "Shark",
             "translationPt": "Tubarão"
+          },
+          {
+            "text": "Squirrel",
+            "emoji": "🐿️",
+            "label": "Squirrel",
+            "translationPt": "Esquilo"
           },
           {
             "text": "Seahorse",
@@ -12538,8 +12538,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Sloth",
-          "Squirrel",
           "Shark",
+          "Squirrel",
           "Seahorse"
         ],
         "correctAnswer": "Seahorse",
@@ -12561,6 +12561,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Água-viva"
           },
           {
+            "text": "Whale",
+            "emoji": "🐋",
+            "label": "Whale",
+            "translationPt": "Baleia"
+          },
+          {
             "text": "Octopus",
             "emoji": "🐙",
             "label": "Octopus",
@@ -12571,19 +12577,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐦",
             "label": "Woodpecker",
             "translationPt": "Pica-pau"
-          },
-          {
-            "text": "Whale",
-            "emoji": "🐋",
-            "label": "Whale",
-            "translationPt": "Baleia"
           }
         ],
         "options": [
           "Jellyfish",
+          "Whale",
           "Octopus",
-          "Woodpecker",
-          "Whale"
+          "Woodpecker"
         ],
         "correctAnswer": "Jellyfish",
         "explanation": "Exemplo prático: \"Jellyfish float gracefully in the sea.\"",
@@ -12604,6 +12604,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mosquito / Pernilongo"
           },
           {
+            "text": "Dolphin",
+            "emoji": "🐬",
+            "label": "Dolphin",
+            "translationPt": "Golfinho"
+          },
+          {
             "text": "Crab",
             "emoji": "🦀",
             "label": "Crab",
@@ -12614,19 +12620,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦭",
             "label": "Seal",
             "translationPt": "Foca"
-          },
-          {
-            "text": "Dolphin",
-            "emoji": "🐬",
-            "label": "Dolphin",
-            "translationPt": "Golfinho"
           }
         ],
         "options": [
           "Mosquito",
+          "Dolphin",
           "Crab",
-          "Seal",
-          "Dolphin"
+          "Seal"
         ],
         "correctAnswer": "Seal",
         "explanation": "Exemplo prático: \"The cute seal swims in cold water.\"",
@@ -12641,6 +12641,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐢",
         "visualOptions": [
           {
+            "text": "Swan",
+            "emoji": "🦢",
+            "label": "Swan",
+            "translationPt": "Cisne"
+          },
+          {
+            "text": "Starfish",
+            "emoji": "⭐",
+            "label": "Starfish",
+            "translationPt": "Estrela-do-mar"
+          },
+          {
             "text": "Sea Turtle",
             "emoji": "🐢",
             "label": "Sea Turtle",
@@ -12651,25 +12663,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐌",
             "label": "Snail",
             "translationPt": "Caracol / Caramujo"
-          },
-          {
-            "text": "Starfish",
-            "emoji": "⭐",
-            "label": "Starfish",
-            "translationPt": "Estrela-do-mar"
-          },
-          {
-            "text": "Swan",
-            "emoji": "🦢",
-            "label": "Swan",
-            "translationPt": "Cisne"
           }
         ],
         "options": [
-          "Sea Turtle",
-          "Snail",
+          "Swan",
           "Starfish",
-          "Swan"
+          "Sea Turtle",
+          "Snail"
         ],
         "correctAnswer": "Sea Turtle",
         "explanation": "Exemplo prático: \"The sea turtle swims across the ocean.\"",
@@ -12683,6 +12683,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Clownfish",
         "visualEmoji": "🐠",
         "visualOptions": [
+          {
+            "text": "Clownfish",
+            "emoji": "🐠",
+            "label": "Clownfish",
+            "translationPt": "Peixe-palhaço"
+          },
           {
             "text": "Seahorse",
             "emoji": "🐠",
@@ -12700,19 +12706,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐦",
             "label": "Ostrich",
             "translationPt": "Avestruz / Ema"
-          },
-          {
-            "text": "Clownfish",
-            "emoji": "🐠",
-            "label": "Clownfish",
-            "translationPt": "Peixe-palhaço"
           }
         ],
         "options": [
+          "Clownfish",
           "Seahorse",
           "Lizard",
-          "Ostrich",
-          "Clownfish"
+          "Ostrich"
         ],
         "correctAnswer": "Clownfish",
         "explanation": "Exemplo prático: \"The orange and white clownfish lives in coral reefs.\"",
@@ -12727,16 +12727,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦅",
         "visualOptions": [
           {
-            "text": "Octopus",
-            "emoji": "🐙",
-            "label": "Octopus",
-            "translationPt": "Polvo"
-          },
-          {
-            "text": "Iguana",
-            "emoji": "🦎",
-            "label": "Iguana",
-            "translationPt": "Iguana"
+            "text": "Bat",
+            "emoji": "🦇",
+            "label": "Bat",
+            "translationPt": "Morcego"
           },
           {
             "text": "Eagle",
@@ -12745,17 +12739,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Águia"
           },
           {
-            "text": "Bat",
-            "emoji": "🦇",
-            "label": "Bat",
-            "translationPt": "Morcego"
+            "text": "Iguana",
+            "emoji": "🦎",
+            "label": "Iguana",
+            "translationPt": "Iguana"
+          },
+          {
+            "text": "Octopus",
+            "emoji": "🐙",
+            "label": "Octopus",
+            "translationPt": "Polvo"
           }
         ],
         "options": [
-          "Octopus",
-          "Iguana",
+          "Bat",
           "Eagle",
-          "Bat"
+          "Iguana",
+          "Octopus"
         ],
         "correctAnswer": "Eagle",
         "explanation": "Exemplo prático: \"The eagle flies high in the sky.\"",
@@ -12770,10 +12770,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦉",
         "visualOptions": [
           {
-            "text": "Chameleon",
-            "emoji": "🦎",
-            "label": "Chameleon",
-            "translationPt": "Camaleão"
+            "text": "Capybara",
+            "emoji": "🐹",
+            "label": "Capybara",
+            "translationPt": "Capivara"
           },
           {
             "text": "Owl",
@@ -12782,23 +12782,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Coruja"
           },
           {
+            "text": "Chameleon",
+            "emoji": "🦎",
+            "label": "Chameleon",
+            "translationPt": "Camaleão"
+          },
+          {
             "text": "Crab",
             "emoji": "🦀",
             "label": "Crab",
             "translationPt": "Caranguejo / Siri"
-          },
-          {
-            "text": "Capybara",
-            "emoji": "🐹",
-            "label": "Capybara",
-            "translationPt": "Capivara"
           }
         ],
         "options": [
-          "Chameleon",
+          "Capybara",
           "Owl",
-          "Crab",
-          "Capybara"
+          "Chameleon",
+          "Crab"
         ],
         "correctAnswer": "Owl",
         "explanation": "Exemplo prático: \"The owl has big round eyes and stays awake at night.\"",
@@ -12813,10 +12813,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦅",
         "visualOptions": [
           {
-            "text": "Hawk",
-            "emoji": "🦅",
-            "label": "Hawk",
-            "translationPt": "Gavião / Falcão"
+            "text": "Armadillo",
+            "emoji": "🦔",
+            "label": "Armadillo",
+            "translationPt": "Tatu"
           },
           {
             "text": "Dolphin",
@@ -12831,17 +12831,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tamanduá"
           },
           {
-            "text": "Armadillo",
-            "emoji": "🦔",
-            "label": "Armadillo",
-            "translationPt": "Tatu"
+            "text": "Hawk",
+            "emoji": "🦅",
+            "label": "Hawk",
+            "translationPt": "Gavião / Falcão"
           }
         ],
         "options": [
-          "Hawk",
+          "Armadillo",
           "Dolphin",
           "Anteater",
-          "Armadillo"
+          "Hawk"
         ],
         "correctAnswer": "Hawk",
         "explanation": "Exemplo prático: \"The hawk has sharp eyesight.\"",
@@ -12855,12 +12855,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Swan",
         "visualEmoji": "🦢",
         "visualOptions": [
-          {
-            "text": "Mosquito",
-            "emoji": "🦟",
-            "label": "Mosquito",
-            "translationPt": "Mosquito / Pernilongo"
-          },
           {
             "text": "Whale",
             "emoji": "🐋",
@@ -12878,13 +12872,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦢",
             "label": "Swan",
             "translationPt": "Cisne"
+          },
+          {
+            "text": "Mosquito",
+            "emoji": "🦟",
+            "label": "Mosquito",
+            "translationPt": "Mosquito / Pernilongo"
           }
         ],
         "options": [
-          "Mosquito",
           "Whale",
           "Jellyfish",
-          "Swan"
+          "Swan",
+          "Mosquito"
         ],
         "correctAnswer": "Swan",
         "explanation": "Exemplo prático: \"The white swan glides on the lake.\"",
@@ -12899,35 +12899,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐦",
         "visualOptions": [
           {
-            "text": "Caterpillar",
-            "emoji": "🐛",
-            "label": "Caterpillar",
-            "translationPt": "Lagarta"
-          },
-          {
-            "text": "Shark",
-            "emoji": "🦈",
-            "label": "Shark",
-            "translationPt": "Tubarão"
-          },
-          {
             "text": "Hummingbird",
             "emoji": "🐦",
             "label": "Hummingbird",
             "translationPt": "Beija-flor"
           },
           {
+            "text": "Caterpillar",
+            "emoji": "🐛",
+            "label": "Caterpillar",
+            "translationPt": "Lagarta"
+          },
+          {
             "text": "Clownfish",
             "emoji": "🐠",
             "label": "Clownfish",
             "translationPt": "Peixe-palhaço"
+          },
+          {
+            "text": "Shark",
+            "emoji": "🦈",
+            "label": "Shark",
+            "translationPt": "Tubarão"
           }
         ],
         "options": [
-          "Caterpillar",
-          "Shark",
           "Hummingbird",
-          "Clownfish"
+          "Caterpillar",
+          "Clownfish",
+          "Shark"
         ],
         "correctAnswer": "Hummingbird",
         "explanation": "Exemplo prático: \"The tiny hummingbird hovers near flowers.\"",
@@ -12941,6 +12941,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Woodpecker",
         "visualEmoji": "🐦",
         "visualOptions": [
+          {
+            "text": "Starfish",
+            "emoji": "⭐",
+            "label": "Starfish",
+            "translationPt": "Estrela-do-mar"
+          },
           {
             "text": "Seahorse",
             "emoji": "🐠",
@@ -12958,19 +12964,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦉",
             "label": "Owl",
             "translationPt": "Coruja"
-          },
-          {
-            "text": "Starfish",
-            "emoji": "⭐",
-            "label": "Starfish",
-            "translationPt": "Estrela-do-mar"
           }
         ],
         "options": [
+          "Starfish",
           "Seahorse",
           "Woodpecker",
-          "Owl",
-          "Starfish"
+          "Owl"
         ],
         "correctAnswer": "Woodpecker",
         "explanation": "Exemplo prático: \"The woodpecker taps on tree trunks.\"",
@@ -12985,16 +12985,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐦",
         "visualOptions": [
           {
-            "text": "Ostrich",
-            "emoji": "🐦",
-            "label": "Ostrich",
-            "translationPt": "Avestruz / Ema"
-          },
-          {
             "text": "Eagle",
             "emoji": "🦅",
             "label": "Eagle",
             "translationPt": "Águia"
+          },
+          {
+            "text": "Ostrich",
+            "emoji": "🐦",
+            "label": "Ostrich",
+            "translationPt": "Avestruz / Ema"
           },
           {
             "text": "Seal",
@@ -13010,8 +13010,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Ostrich",
           "Eagle",
+          "Ostrich",
           "Seal",
           "Sea Turtle"
         ],
@@ -13083,23 +13083,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Golfinho"
           },
           {
-            "text": "Whale",
-            "emoji": "🐋",
-            "label": "Whale",
-            "translationPt": "Baleia"
-          },
-          {
             "text": "Hummingbird",
             "emoji": "🐦",
             "label": "Hummingbird",
             "translationPt": "Beija-flor"
+          },
+          {
+            "text": "Whale",
+            "emoji": "🐋",
+            "label": "Whale",
+            "translationPt": "Baleia"
           }
         ],
         "options": [
           "Sloth",
           "Dolphin",
-          "Whale",
-          "Hummingbird"
+          "Hummingbird",
+          "Whale"
         ],
         "correctAnswer": "Sloth",
         "explanation": "Exemplo prático: \"The sloth moves very slowly in the trees.\"",
@@ -13120,12 +13120,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pica-pau"
           },
           {
-            "text": "Anteater",
-            "emoji": "🐜",
-            "label": "Anteater",
-            "translationPt": "Tamanduá"
-          },
-          {
             "text": "Starfish",
             "emoji": "⭐",
             "label": "Starfish",
@@ -13136,13 +13130,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦈",
             "label": "Shark",
             "translationPt": "Tubarão"
+          },
+          {
+            "text": "Anteater",
+            "emoji": "🐜",
+            "label": "Anteater",
+            "translationPt": "Tamanduá"
           }
         ],
         "options": [
           "Woodpecker",
-          "Anteater",
           "Starfish",
-          "Shark"
+          "Shark",
+          "Anteater"
         ],
         "correctAnswer": "Anteater",
         "explanation": "Exemplo prático: \"The giant anteater has a long snout.\"",
@@ -13157,16 +13157,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦔",
         "visualOptions": [
           {
-            "text": "Crab",
-            "emoji": "🦀",
-            "label": "Crab",
-            "translationPt": "Caranguejo / Siri"
-          },
-          {
             "text": "Iguana",
             "emoji": "🦎",
             "label": "Iguana",
             "translationPt": "Iguana"
+          },
+          {
+            "text": "Clownfish",
+            "emoji": "🐠",
+            "label": "Clownfish",
+            "translationPt": "Peixe-palhaço"
           },
           {
             "text": "Armadillo",
@@ -13175,17 +13175,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tatu"
           },
           {
-            "text": "Clownfish",
-            "emoji": "🐠",
-            "label": "Clownfish",
-            "translationPt": "Peixe-palhaço"
+            "text": "Crab",
+            "emoji": "🦀",
+            "label": "Crab",
+            "translationPt": "Caranguejo / Siri"
           }
         ],
         "options": [
-          "Crab",
           "Iguana",
+          "Clownfish",
           "Armadillo",
-          "Clownfish"
+          "Crab"
         ],
         "correctAnswer": "Armadillo",
         "explanation": "Exemplo prático: \"The armadillo has a protective armor shell.\"",
@@ -13200,10 +13200,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦇",
         "visualOptions": [
           {
-            "text": "Owl",
-            "emoji": "🦉",
-            "label": "Owl",
-            "translationPt": "Coruja"
+            "text": "Bat",
+            "emoji": "🦇",
+            "label": "Bat",
+            "translationPt": "Morcego"
           },
           {
             "text": "Ostrich",
@@ -13218,17 +13218,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Polvo"
           },
           {
-            "text": "Bat",
-            "emoji": "🦇",
-            "label": "Bat",
-            "translationPt": "Morcego"
+            "text": "Owl",
+            "emoji": "🦉",
+            "label": "Owl",
+            "translationPt": "Coruja"
           }
         ],
         "options": [
-          "Owl",
+          "Bat",
           "Ostrich",
           "Octopus",
-          "Bat"
+          "Owl"
         ],
         "correctAnswer": "Bat",
         "explanation": "Exemplo prático: \"Bats fly at night and eat fruits or insects.\"",
@@ -13242,6 +13242,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Squirrel",
         "visualEmoji": "🐿️",
         "visualOptions": [
+          {
+            "text": "Sloth",
+            "emoji": "🦥",
+            "label": "Sloth",
+            "translationPt": "Bicho-preguiça"
+          },
           {
             "text": "Squirrel",
             "emoji": "🐿️",
@@ -13259,19 +13265,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦅",
             "label": "Hawk",
             "translationPt": "Gavião / Falcão"
-          },
-          {
-            "text": "Sloth",
-            "emoji": "🦥",
-            "label": "Sloth",
-            "translationPt": "Bicho-preguiça"
           }
         ],
         "options": [
+          "Sloth",
           "Squirrel",
           "Hummingbird",
-          "Hawk",
-          "Sloth"
+          "Hawk"
         ],
         "correctAnswer": "Squirrel",
         "explanation": "Exemplo prático: \"The squirrel holds a nut in its paws.\"",
@@ -13292,16 +13292,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pica-pau"
           },
           {
-            "text": "Capybara",
-            "emoji": "🐹",
-            "label": "Capybara",
-            "translationPt": "Capivara"
-          },
-          {
             "text": "Lizard",
             "emoji": "🦎",
             "label": "Lizard",
             "translationPt": "Lagarto / Lagartixa"
+          },
+          {
+            "text": "Capybara",
+            "emoji": "🐹",
+            "label": "Capybara",
+            "translationPt": "Capivara"
           },
           {
             "text": "Eagle",
@@ -13312,8 +13312,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Woodpecker",
-          "Capybara",
           "Lizard",
+          "Capybara",
           "Eagle"
         ],
         "correctAnswer": "Lizard",
@@ -13335,6 +13335,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tamanduá"
           },
           {
+            "text": "Armadillo",
+            "emoji": "🦔",
+            "label": "Armadillo",
+            "translationPt": "Tatu"
+          },
+          {
             "text": "Jellyfish",
             "emoji": "🪼",
             "label": "Jellyfish",
@@ -13345,19 +13351,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦎",
             "label": "Iguana",
             "translationPt": "Iguana"
-          },
-          {
-            "text": "Armadillo",
-            "emoji": "🦔",
-            "label": "Armadillo",
-            "translationPt": "Tatu"
           }
         ],
         "options": [
           "Anteater",
+          "Armadillo",
           "Jellyfish",
-          "Iguana",
-          "Armadillo"
+          "Iguana"
         ],
         "correctAnswer": "Iguana",
         "explanation": "Exemplo prático: \"Green iguanas love sunny trees.\"",
@@ -13384,23 +13384,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tartaruga-marinha"
           },
           {
-            "text": "Seahorse",
-            "emoji": "🐠",
-            "label": "Seahorse",
-            "translationPt": "Cavalo-marinho"
-          },
-          {
             "text": "Chameleon",
             "emoji": "🦎",
             "label": "Chameleon",
             "translationPt": "Camaleão"
+          },
+          {
+            "text": "Seahorse",
+            "emoji": "🐠",
+            "label": "Seahorse",
+            "translationPt": "Cavalo-marinho"
           }
         ],
         "options": [
           "Seal",
           "Sea Turtle",
-          "Seahorse",
-          "Chameleon"
+          "Chameleon",
+          "Seahorse"
         ],
         "correctAnswer": "Chameleon",
         "explanation": "Exemplo prático: \"The chameleon can change its skin color.\"",
@@ -13458,10 +13458,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐛",
         "visualOptions": [
           {
-            "text": "Bat",
-            "emoji": "🦇",
-            "label": "Bat",
-            "translationPt": "Morcego"
+            "text": "Lizard",
+            "emoji": "🦎",
+            "label": "Lizard",
+            "translationPt": "Lagarto / Lagartixa"
           },
           {
             "text": "Octopus",
@@ -13476,17 +13476,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Lagarta"
           },
           {
-            "text": "Lizard",
-            "emoji": "🦎",
-            "label": "Lizard",
-            "translationPt": "Lagarto / Lagartixa"
+            "text": "Bat",
+            "emoji": "🦇",
+            "label": "Bat",
+            "translationPt": "Morcego"
           }
         ],
         "options": [
-          "Bat",
+          "Lizard",
           "Octopus",
           "Caterpillar",
-          "Lizard"
+          "Bat"
         ],
         "correctAnswer": "Caterpillar",
         "explanation": "Exemplo prático: \"The green caterpillar will become a butterfly.\"",
@@ -13501,16 +13501,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦟",
         "visualOptions": [
           {
-            "text": "Mosquito",
-            "emoji": "🦟",
-            "label": "Mosquito",
-            "translationPt": "Mosquito / Pernilongo"
-          },
-          {
             "text": "Hummingbird",
             "emoji": "🐦",
             "label": "Hummingbird",
             "translationPt": "Beija-flor"
+          },
+          {
+            "text": "Mosquito",
+            "emoji": "🦟",
+            "label": "Mosquito",
+            "translationPt": "Mosquito / Pernilongo"
           },
           {
             "text": "Hawk",
@@ -13526,8 +13526,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Mosquito",
           "Hummingbird",
+          "Mosquito",
           "Hawk",
           "Eagle"
         ],
@@ -13574,23 +13574,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Borracha escolar"
           },
           {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Celular / Smartphone"
-          },
-          {
             "text": "Hair Dryer",
             "emoji": "💨",
             "label": "Hair Dryer",
             "translationPt": "Secador de cabelo"
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Celular / Smartphone"
           }
         ],
         "options": [
           "Hairbrush",
           "Eraser",
-          "Phone",
-          "Hair Dryer"
+          "Hair Dryer",
+          "Phone"
         ],
         "correctAnswer": "Phone",
         "explanation": "Exemplo prático: \"I use my smartphone to study English.\"",
@@ -13605,10 +13605,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💻",
         "visualOptions": [
           {
-            "text": "Computer",
-            "emoji": "💻",
-            "label": "Computer",
-            "translationPt": "Computador / Notebook"
+            "text": "Envelope",
+            "emoji": "✉️",
+            "label": "Envelope",
+            "translationPt": "Envelope"
           },
           {
             "text": "Keyboard",
@@ -13617,23 +13617,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Teclado de computador"
           },
           {
+            "text": "Computer",
+            "emoji": "💻",
+            "label": "Computer",
+            "translationPt": "Computador / Notebook"
+          },
+          {
             "text": "Notebook",
             "emoji": "📓",
             "label": "Notebook",
             "translationPt": "Caderno espiral"
-          },
-          {
-            "text": "Envelope",
-            "emoji": "✉️",
-            "label": "Envelope",
-            "translationPt": "Envelope"
           }
         ],
         "options": [
-          "Computer",
+          "Envelope",
           "Keyboard",
-          "Notebook",
-          "Envelope"
+          "Computer",
+          "Notebook"
         ],
         "correctAnswer": "Computer",
         "explanation": "Exemplo prático: \"She works on her laptop computer.\"",
@@ -13647,6 +13647,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Headphones",
         "visualEmoji": "🎧",
         "visualOptions": [
+          {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fone de ouvido"
+          },
           {
             "text": "Globe",
             "emoji": "🌍",
@@ -13664,19 +13670,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧴",
             "label": "Glue",
             "translationPt": "Cola escolar"
-          },
-          {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fone de ouvido"
           }
         ],
         "options": [
+          "Headphones",
           "Globe",
           "Book",
-          "Glue",
-          "Headphones"
+          "Glue"
         ],
         "correctAnswer": "Headphones",
         "explanation": "Exemplo prático: \"Put on your headphones to listen to the audio.\"",
@@ -13691,12 +13691,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🔌",
         "visualOptions": [
           {
-            "text": "Charger",
-            "emoji": "🔌",
-            "label": "Charger",
-            "translationPt": "Carregador de celular"
-          },
-          {
             "text": "Printer",
             "emoji": "🖨️",
             "label": "Printer",
@@ -13709,6 +13703,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tesoura"
           },
           {
+            "text": "Charger",
+            "emoji": "🔌",
+            "label": "Charger",
+            "translationPt": "Carregador de celular"
+          },
+          {
             "text": "Sharpener",
             "emoji": "✏️",
             "label": "Sharpener",
@@ -13716,9 +13716,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Charger",
           "Printer",
           "Scissors",
+          "Charger",
           "Sharpener"
         ],
         "correctAnswer": "Charger",
@@ -13740,12 +13740,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pasta de documentos"
           },
           {
-            "text": "Calendar",
-            "emoji": "📅",
-            "label": "Calendar",
-            "translationPt": "Calendário"
-          },
-          {
             "text": "Remote Control",
             "emoji": "🎛️",
             "label": "Remote Control",
@@ -13756,13 +13750,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🖍️",
             "label": "Crayon",
             "translationPt": "Giz de cera"
+          },
+          {
+            "text": "Calendar",
+            "emoji": "📅",
+            "label": "Calendar",
+            "translationPt": "Calendário"
           }
         ],
         "options": [
           "Folder",
-          "Calendar",
           "Remote Control",
-          "Crayon"
+          "Crayon",
+          "Calendar"
         ],
         "correctAnswer": "Remote Control",
         "explanation": "Exemplo prático: \"Use the remote control to turn on the TV.\"",
@@ -13777,16 +13777,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "📷",
         "visualOptions": [
           {
-            "text": "Camera",
-            "emoji": "📷",
-            "label": "Camera",
-            "translationPt": "Câmera fotográfica"
-          },
-          {
             "text": "Computer",
             "emoji": "💻",
             "label": "Computer",
             "translationPt": "Computador / Notebook"
+          },
+          {
+            "text": "Calculator",
+            "emoji": "🧮",
+            "label": "Calculator",
+            "translationPt": "Calculadora"
           },
           {
             "text": "Ruler",
@@ -13795,17 +13795,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Régua"
           },
           {
-            "text": "Calculator",
-            "emoji": "🧮",
-            "label": "Calculator",
-            "translationPt": "Calculadora"
+            "text": "Camera",
+            "emoji": "📷",
+            "label": "Camera",
+            "translationPt": "Câmera fotográfica"
           }
         ],
         "options": [
-          "Camera",
           "Computer",
+          "Calculator",
           "Ruler",
-          "Calculator"
+          "Camera"
         ],
         "correctAnswer": "Camera",
         "explanation": "Exemplo prático: \"Take a clear photo with the digital camera.\"",
@@ -13820,6 +13820,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⌨️",
         "visualOptions": [
           {
+            "text": "Keyboard",
+            "emoji": "⌨️",
+            "label": "Keyboard",
+            "translationPt": "Teclado de computador"
+          },
+          {
+            "text": "Backpack",
+            "emoji": "🎒",
+            "label": "Backpack",
+            "translationPt": "Mochila"
+          },
+          {
             "text": "Headphones",
             "emoji": "🎧",
             "label": "Headphones",
@@ -13830,25 +13842,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪮",
             "label": "Comb",
             "translationPt": "Pente de cabelo"
-          },
-          {
-            "text": "Backpack",
-            "emoji": "🎒",
-            "label": "Backpack",
-            "translationPt": "Mochila"
-          },
-          {
-            "text": "Keyboard",
-            "emoji": "⌨️",
-            "label": "Keyboard",
-            "translationPt": "Teclado de computador"
           }
         ],
         "options": [
-          "Headphones",
-          "Comb",
+          "Keyboard",
           "Backpack",
-          "Keyboard"
+          "Headphones",
+          "Comb"
         ],
         "correctAnswer": "Keyboard",
         "explanation": "Exemplo prático: \"Type the sentence on the computer keyboard.\"",
@@ -13862,6 +13862,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Computer Mouse",
         "visualEmoji": "🖱️",
         "visualOptions": [
+          {
+            "text": "Charger",
+            "emoji": "🔌",
+            "label": "Charger",
+            "translationPt": "Carregador de celular"
+          },
           {
             "text": "Phone",
             "emoji": "📱",
@@ -13879,19 +13885,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🖱️",
             "label": "Computer Mouse",
             "translationPt": "Mouse de computador"
-          },
-          {
-            "text": "Charger",
-            "emoji": "🔌",
-            "label": "Charger",
-            "translationPt": "Carregador de celular"
           }
         ],
         "options": [
+          "Charger",
           "Phone",
           "Pen",
-          "Computer Mouse",
-          "Charger"
+          "Computer Mouse"
         ],
         "correctAnswer": "Computer Mouse",
         "explanation": "Exemplo prático: \"Click the button using the wireless computer mouse.\"",
@@ -13906,16 +13906,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🖨️",
         "visualOptions": [
           {
-            "text": "Paintbrush",
-            "emoji": "🖌️",
-            "label": "Paintbrush",
-            "translationPt": "Pincel"
-          },
-          {
-            "text": "Printer",
-            "emoji": "🖨️",
-            "label": "Printer",
-            "translationPt": "Impressora"
+            "text": "Pencil",
+            "emoji": "✏️",
+            "label": "Pencil",
+            "translationPt": "Lápis"
           },
           {
             "text": "Remote Control",
@@ -13924,17 +13918,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Controle remoto"
           },
           {
-            "text": "Pencil",
-            "emoji": "✏️",
-            "label": "Pencil",
-            "translationPt": "Lápis"
+            "text": "Printer",
+            "emoji": "🖨️",
+            "label": "Printer",
+            "translationPt": "Impressora"
+          },
+          {
+            "text": "Paintbrush",
+            "emoji": "🖌️",
+            "label": "Paintbrush",
+            "translationPt": "Pincel"
           }
         ],
         "options": [
-          "Paintbrush",
-          "Printer",
+          "Pencil",
           "Remote Control",
-          "Pencil"
+          "Printer",
+          "Paintbrush"
         ],
         "correctAnswer": "Printer",
         "explanation": "Exemplo prático: \"Print the page on the office printer.\"",
@@ -13955,6 +13955,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Livro"
           },
           {
+            "text": "Sharpener",
+            "emoji": "✏️",
+            "label": "Sharpener",
+            "translationPt": "Apontador de lápis"
+          },
+          {
             "text": "Paperclip",
             "emoji": "📎",
             "label": "Paperclip",
@@ -13965,19 +13971,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📷",
             "label": "Camera",
             "translationPt": "Câmera fotográfica"
-          },
-          {
-            "text": "Sharpener",
-            "emoji": "✏️",
-            "label": "Sharpener",
-            "translationPt": "Apontador de lápis"
           }
         ],
         "options": [
           "Book",
+          "Sharpener",
           "Paperclip",
-          "Camera",
-          "Sharpener"
+          "Camera"
         ],
         "correctAnswer": "Book",
         "explanation": "Exemplo prático: \"Read a chapter of your book every night.\"",
@@ -13998,6 +13998,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pasta de documentos"
           },
           {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno espiral"
+          },
+          {
             "text": "Computer",
             "emoji": "💻",
             "label": "Computer",
@@ -14008,19 +14014,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🖍️",
             "label": "Crayon",
             "translationPt": "Giz de cera"
-          },
-          {
-            "text": "Notebook",
-            "emoji": "📓",
-            "label": "Notebook",
-            "translationPt": "Caderno espiral"
           }
         ],
         "options": [
           "Folder",
+          "Notebook",
           "Computer",
-          "Crayon",
-          "Notebook"
+          "Crayon"
         ],
         "correctAnswer": "Notebook",
         "explanation": "Exemplo prático: \"Write the new English words in your spiral notebook.\"",
@@ -14035,35 +14035,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🖊️",
         "visualOptions": [
           {
-            "text": "Pen",
-            "emoji": "🖊️",
-            "label": "Pen",
-            "translationPt": "Caneta"
-          },
-          {
-            "text": "Backpack",
-            "emoji": "🎒",
-            "label": "Backpack",
-            "translationPt": "Mochila"
-          },
-          {
             "text": "Ruler",
             "emoji": "📏",
             "label": "Ruler",
             "translationPt": "Régua"
           },
           {
+            "text": "Pen",
+            "emoji": "🖊️",
+            "label": "Pen",
+            "translationPt": "Caneta"
+          },
+          {
             "text": "Computer Mouse",
             "emoji": "🖱️",
             "label": "Computer Mouse",
             "translationPt": "Mouse de computador"
+          },
+          {
+            "text": "Backpack",
+            "emoji": "🎒",
+            "label": "Backpack",
+            "translationPt": "Mochila"
           }
         ],
         "options": [
-          "Pen",
-          "Backpack",
           "Ruler",
-          "Computer Mouse"
+          "Pen",
+          "Computer Mouse",
+          "Backpack"
         ],
         "correctAnswer": "Pen",
         "explanation": "Exemplo prático: \"Write your name with a blue ballpoint pen.\"",
@@ -14078,6 +14078,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "✏️",
         "visualOptions": [
           {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fone de ouvido"
+          },
+          {
+            "text": "Hairbrush",
+            "emoji": "🪮",
+            "label": "Hairbrush",
+            "translationPt": "Escova de cabelo"
+          },
+          {
             "text": "Keyboard",
             "emoji": "⌨️",
             "label": "Keyboard",
@@ -14088,25 +14100,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "✏️",
             "label": "Pencil",
             "translationPt": "Lápis"
-          },
-          {
-            "text": "Hairbrush",
-            "emoji": "🪮",
-            "label": "Hairbrush",
-            "translationPt": "Escova de cabelo"
-          },
-          {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fone de ouvido"
           }
         ],
         "options": [
-          "Keyboard",
-          "Pencil",
+          "Headphones",
           "Hairbrush",
-          "Headphones"
+          "Keyboard",
+          "Pencil"
         ],
         "correctAnswer": "Pencil",
         "explanation": "Exemplo prático: \"Draw a picture with a wooden pencil.\"",
@@ -14121,35 +14121,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⬜",
         "visualOptions": [
           {
-            "text": "Eraser",
-            "emoji": "⬜",
-            "label": "Eraser",
-            "translationPt": "Borracha escolar"
-          },
-          {
             "text": "Hair Dryer",
             "emoji": "💨",
             "label": "Hair Dryer",
             "translationPt": "Secador de cabelo"
           },
           {
-            "text": "Envelope",
-            "emoji": "✉️",
-            "label": "Envelope",
-            "translationPt": "Envelope"
-          },
-          {
             "text": "Book",
             "emoji": "📘",
             "label": "Book",
             "translationPt": "Livro"
+          },
+          {
+            "text": "Eraser",
+            "emoji": "⬜",
+            "label": "Eraser",
+            "translationPt": "Borracha escolar"
+          },
+          {
+            "text": "Envelope",
+            "emoji": "✉️",
+            "label": "Envelope",
+            "translationPt": "Envelope"
           }
         ],
         "options": [
-          "Eraser",
           "Hair Dryer",
-          "Envelope",
-          "Book"
+          "Book",
+          "Eraser",
+          "Envelope"
         ],
         "correctAnswer": "Eraser",
         "explanation": "Exemplo prático: \"Use a rubber eraser to fix the pencil mistake.\"",
@@ -14164,16 +14164,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "✏️",
         "visualOptions": [
           {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Celular / Smartphone"
-          },
-          {
-            "text": "Printer",
-            "emoji": "🖨️",
-            "label": "Printer",
-            "translationPt": "Impressora"
+            "text": "Sharpener",
+            "emoji": "✏️",
+            "label": "Sharpener",
+            "translationPt": "Apontador de lápis"
           },
           {
             "text": "Paintbrush",
@@ -14182,17 +14176,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pincel"
           },
           {
-            "text": "Sharpener",
-            "emoji": "✏️",
-            "label": "Sharpener",
-            "translationPt": "Apontador de lápis"
+            "text": "Printer",
+            "emoji": "🖨️",
+            "label": "Printer",
+            "translationPt": "Impressora"
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Celular / Smartphone"
           }
         ],
         "options": [
-          "Phone",
-          "Printer",
+          "Sharpener",
           "Paintbrush",
-          "Sharpener"
+          "Printer",
+          "Phone"
         ],
         "correctAnswer": "Sharpener",
         "explanation": "Exemplo prático: \"Sharpen the pencil point with a sharpener.\"",
@@ -14207,12 +14207,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "📏",
         "visualOptions": [
           {
-            "text": "Ruler",
-            "emoji": "📏",
-            "label": "Ruler",
-            "translationPt": "Régua"
-          },
-          {
             "text": "Camera",
             "emoji": "📷",
             "label": "Camera",
@@ -14225,6 +14219,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mouse de computador"
           },
           {
+            "text": "Ruler",
+            "emoji": "📏",
+            "label": "Ruler",
+            "translationPt": "Régua"
+          },
+          {
             "text": "Charger",
             "emoji": "🔌",
             "label": "Charger",
@@ -14232,9 +14232,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Ruler",
           "Camera",
           "Computer Mouse",
+          "Ruler",
           "Charger"
         ],
         "correctAnswer": "Ruler",
@@ -14250,10 +14250,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🎒",
         "visualOptions": [
           {
-            "text": "Remote Control",
-            "emoji": "🎛️",
-            "label": "Remote Control",
-            "translationPt": "Controle remoto"
+            "text": "Calculator",
+            "emoji": "🧮",
+            "label": "Calculator",
+            "translationPt": "Calculadora"
           },
           {
             "text": "Backpack",
@@ -14262,23 +14262,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mochila"
           },
           {
-            "text": "Calculator",
-            "emoji": "🧮",
-            "label": "Calculator",
-            "translationPt": "Calculadora"
-          },
-          {
             "text": "Calendar",
             "emoji": "📅",
             "label": "Calendar",
             "translationPt": "Calendário"
+          },
+          {
+            "text": "Remote Control",
+            "emoji": "🎛️",
+            "label": "Remote Control",
+            "translationPt": "Controle remoto"
           }
         ],
         "options": [
-          "Remote Control",
-          "Backpack",
           "Calculator",
-          "Calendar"
+          "Backpack",
+          "Calendar",
+          "Remote Control"
         ],
         "correctAnswer": "Backpack",
         "explanation": "Exemplo prático: \"Carry your books inside a school backpack.\"",
@@ -14293,35 +14293,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "✂️",
         "visualOptions": [
           {
-            "text": "Comb",
-            "emoji": "🪮",
-            "label": "Comb",
-            "translationPt": "Pente de cabelo"
-          },
-          {
             "text": "Eraser",
             "emoji": "⬜",
             "label": "Eraser",
             "translationPt": "Borracha escolar"
           },
           {
-            "text": "Scissors",
-            "emoji": "✂️",
-            "label": "Scissors",
-            "translationPt": "Tesoura"
+            "text": "Comb",
+            "emoji": "🪮",
+            "label": "Comb",
+            "translationPt": "Pente de cabelo"
           },
           {
             "text": "Pen",
             "emoji": "🖊️",
             "label": "Pen",
             "translationPt": "Caneta"
+          },
+          {
+            "text": "Scissors",
+            "emoji": "✂️",
+            "label": "Scissors",
+            "translationPt": "Tesoura"
           }
         ],
         "options": [
-          "Comb",
           "Eraser",
-          "Scissors",
-          "Pen"
+          "Comb",
+          "Pen",
+          "Scissors"
         ],
         "correctAnswer": "Scissors",
         "explanation": "Exemplo prático: \"Cut the paper carefully with scissors.\"",
@@ -14335,6 +14335,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Glue",
         "visualEmoji": "🧴",
         "visualOptions": [
+          {
+            "text": "Glue",
+            "emoji": "🧴",
+            "label": "Glue",
+            "translationPt": "Cola escolar"
+          },
           {
             "text": "Pencil",
             "emoji": "✏️",
@@ -14352,19 +14358,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📓",
             "label": "Notebook",
             "translationPt": "Caderno espiral"
-          },
-          {
-            "text": "Glue",
-            "emoji": "🧴",
-            "label": "Glue",
-            "translationPt": "Cola escolar"
           }
         ],
         "options": [
+          "Glue",
           "Pencil",
           "Paperclip",
-          "Notebook",
-          "Glue"
+          "Notebook"
         ],
         "correctAnswer": "Glue",
         "explanation": "Exemplo prático: \"Stick the paper with white school glue.\"",
@@ -14379,18 +14379,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🖍️",
         "visualOptions": [
           {
-            "text": "Crayon",
-            "emoji": "🖍️",
-            "label": "Crayon",
-            "translationPt": "Giz de cera"
-          },
-          {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fone de ouvido"
-          },
-          {
             "text": "Keyboard",
             "emoji": "⌨️",
             "label": "Keyboard",
@@ -14401,13 +14389,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌍",
             "label": "Globe",
             "translationPt": "Globo terrestre"
+          },
+          {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fone de ouvido"
+          },
+          {
+            "text": "Crayon",
+            "emoji": "🖍️",
+            "label": "Crayon",
+            "translationPt": "Giz de cera"
           }
         ],
         "options": [
-          "Crayon",
-          "Headphones",
           "Keyboard",
-          "Globe"
+          "Globe",
+          "Headphones",
+          "Crayon"
         ],
         "correctAnswer": "Crayon",
         "explanation": "Exemplo prático: \"Children color drawings with colorful wax crayons.\"",
@@ -14428,10 +14428,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Apontador de lápis"
           },
           {
-            "text": "Printer",
-            "emoji": "🖨️",
-            "label": "Printer",
-            "translationPt": "Impressora"
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Celular / Smartphone"
           },
           {
             "text": "Paintbrush",
@@ -14440,17 +14440,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pincel"
           },
           {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Celular / Smartphone"
+            "text": "Printer",
+            "emoji": "🖨️",
+            "label": "Printer",
+            "translationPt": "Impressora"
           }
         ],
         "options": [
           "Sharpener",
-          "Printer",
+          "Phone",
           "Paintbrush",
-          "Phone"
+          "Printer"
         ],
         "correctAnswer": "Paintbrush",
         "explanation": "Exemplo prático: \"Paint the canvas with an artist paintbrush.\"",
@@ -14508,35 +14508,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "📅",
         "visualOptions": [
           {
-            "text": "Glue",
-            "emoji": "🧴",
-            "label": "Glue",
-            "translationPt": "Cola escolar"
-          },
-          {
             "text": "Ruler",
             "emoji": "📏",
             "label": "Ruler",
             "translationPt": "Régua"
           },
           {
-            "text": "Remote Control",
-            "emoji": "🎛️",
-            "label": "Remote Control",
-            "translationPt": "Controle remoto"
-          },
-          {
             "text": "Calendar",
             "emoji": "📅",
             "label": "Calendar",
             "translationPt": "Calendário"
+          },
+          {
+            "text": "Glue",
+            "emoji": "🧴",
+            "label": "Glue",
+            "translationPt": "Cola escolar"
+          },
+          {
+            "text": "Remote Control",
+            "emoji": "🎛️",
+            "label": "Remote Control",
+            "translationPt": "Controle remoto"
           }
         ],
         "options": [
-          "Glue",
           "Ruler",
-          "Remote Control",
-          "Calendar"
+          "Calendar",
+          "Glue",
+          "Remote Control"
         ],
         "correctAnswer": "Calendar",
         "explanation": "Exemplo prático: \"Check the date on the desk calendar.\"",
@@ -14551,16 +14551,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "📁",
         "visualOptions": [
           {
-            "text": "Hair Dryer",
-            "emoji": "💨",
-            "label": "Hair Dryer",
-            "translationPt": "Secador de cabelo"
-          },
-          {
-            "text": "Eraser",
-            "emoji": "⬜",
-            "label": "Eraser",
-            "translationPt": "Borracha escolar"
+            "text": "Hairbrush",
+            "emoji": "🪮",
+            "label": "Hairbrush",
+            "translationPt": "Escova de cabelo"
           },
           {
             "text": "Folder",
@@ -14569,17 +14563,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pasta de documentos"
           },
           {
-            "text": "Hairbrush",
-            "emoji": "🪮",
-            "label": "Hairbrush",
-            "translationPt": "Escova de cabelo"
+            "text": "Eraser",
+            "emoji": "⬜",
+            "label": "Eraser",
+            "translationPt": "Borracha escolar"
+          },
+          {
+            "text": "Hair Dryer",
+            "emoji": "💨",
+            "label": "Hair Dryer",
+            "translationPt": "Secador de cabelo"
           }
         ],
         "options": [
-          "Hair Dryer",
-          "Eraser",
+          "Hairbrush",
           "Folder",
-          "Hairbrush"
+          "Eraser",
+          "Hair Dryer"
         ],
         "correctAnswer": "Folder",
         "explanation": "Exemplo prático: \"Keep your sheets organized in a folder.\"",
@@ -14606,23 +14606,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mochila"
           },
           {
-            "text": "Paperclip",
-            "emoji": "📎",
-            "label": "Paperclip",
-            "translationPt": "Clipe de papel"
-          },
-          {
             "text": "Book",
             "emoji": "📘",
             "label": "Book",
             "translationPt": "Livro"
+          },
+          {
+            "text": "Paperclip",
+            "emoji": "📎",
+            "label": "Paperclip",
+            "translationPt": "Clipe de papel"
           }
         ],
         "options": [
           "Notebook",
           "Backpack",
-          "Paperclip",
-          "Book"
+          "Book",
+          "Paperclip"
         ],
         "correctAnswer": "Paperclip",
         "explanation": "Exemplo prático: \"Hold the pages together with a metal paperclip.\"",
@@ -14637,35 +14637,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧮",
         "visualOptions": [
           {
-            "text": "Calculator",
-            "emoji": "🧮",
-            "label": "Calculator",
-            "translationPt": "Calculadora"
-          },
-          {
             "text": "Camera",
             "emoji": "📷",
             "label": "Camera",
             "translationPt": "Câmera fotográfica"
           },
           {
-            "text": "Envelope",
-            "emoji": "✉️",
-            "label": "Envelope",
-            "translationPt": "Envelope"
-          },
-          {
             "text": "Computer Mouse",
             "emoji": "🖱️",
             "label": "Computer Mouse",
             "translationPt": "Mouse de computador"
+          },
+          {
+            "text": "Calculator",
+            "emoji": "🧮",
+            "label": "Calculator",
+            "translationPt": "Calculadora"
+          },
+          {
+            "text": "Envelope",
+            "emoji": "✉️",
+            "label": "Envelope",
+            "translationPt": "Envelope"
           }
         ],
         "options": [
-          "Calculator",
           "Camera",
-          "Envelope",
-          "Computer Mouse"
+          "Computer Mouse",
+          "Calculator",
+          "Envelope"
         ],
         "correctAnswer": "Calculator",
         "explanation": "Exemplo prático: \"Add the numbers on a pocket calculator.\"",
@@ -14680,10 +14680,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌍",
         "visualOptions": [
           {
-            "text": "Scissors",
-            "emoji": "✂️",
-            "label": "Scissors",
-            "translationPt": "Tesoura"
+            "text": "Globe",
+            "emoji": "🌍",
+            "label": "Globe",
+            "translationPt": "Globo terrestre"
           },
           {
             "text": "Pencil",
@@ -14698,17 +14698,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caneta"
           },
           {
-            "text": "Globe",
-            "emoji": "🌍",
-            "label": "Globe",
-            "translationPt": "Globo terrestre"
+            "text": "Scissors",
+            "emoji": "✂️",
+            "label": "Scissors",
+            "translationPt": "Tesoura"
           }
         ],
         "options": [
-          "Scissors",
+          "Globe",
           "Pencil",
           "Pen",
-          "Globe"
+          "Scissors"
         ],
         "correctAnswer": "Globe",
         "explanation": "Exemplo prático: \"Find Brazil and the United States on the world globe.\"",
@@ -14723,16 +14723,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪮",
         "visualOptions": [
           {
-            "text": "Crayon",
-            "emoji": "🖍️",
-            "label": "Crayon",
-            "translationPt": "Giz de cera"
-          },
-          {
             "text": "Calendar",
             "emoji": "📅",
             "label": "Calendar",
             "translationPt": "Calendário"
+          },
+          {
+            "text": "Crayon",
+            "emoji": "🖍️",
+            "label": "Crayon",
+            "translationPt": "Giz de cera"
           },
           {
             "text": "Comb",
@@ -14748,8 +14748,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Crayon",
           "Calendar",
+          "Crayon",
           "Comb",
           "Folder"
         ],
@@ -14766,10 +14766,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪮",
         "visualOptions": [
           {
-            "text": "Glue",
-            "emoji": "🧴",
-            "label": "Glue",
-            "translationPt": "Cola escolar"
+            "text": "Paperclip",
+            "emoji": "📎",
+            "label": "Paperclip",
+            "translationPt": "Clipe de papel"
           },
           {
             "text": "Hairbrush",
@@ -14778,23 +14778,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escova de cabelo"
           },
           {
+            "text": "Glue",
+            "emoji": "🧴",
+            "label": "Glue",
+            "translationPt": "Cola escolar"
+          },
+          {
             "text": "Paintbrush",
             "emoji": "🖌️",
             "label": "Paintbrush",
             "translationPt": "Pincel"
-          },
-          {
-            "text": "Paperclip",
-            "emoji": "📎",
-            "label": "Paperclip",
-            "translationPt": "Clipe de papel"
           }
         ],
         "options": [
-          "Glue",
+          "Paperclip",
           "Hairbrush",
-          "Paintbrush",
-          "Paperclip"
+          "Glue",
+          "Paintbrush"
         ],
         "correctAnswer": "Hairbrush",
         "explanation": "Exemplo prático: \"Brush your hair in front of the mirror.\"",
@@ -14809,18 +14809,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💨",
         "visualOptions": [
           {
-            "text": "Hair Dryer",
-            "emoji": "💨",
-            "label": "Hair Dryer",
-            "translationPt": "Secador de cabelo"
-          },
-          {
-            "text": "Calculator",
-            "emoji": "🧮",
-            "label": "Calculator",
-            "translationPt": "Calculadora"
-          },
-          {
             "text": "Notebook",
             "emoji": "📓",
             "label": "Notebook",
@@ -14831,13 +14819,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⌨️",
             "label": "Keyboard",
             "translationPt": "Teclado de computador"
+          },
+          {
+            "text": "Calculator",
+            "emoji": "🧮",
+            "label": "Calculator",
+            "translationPt": "Calculadora"
+          },
+          {
+            "text": "Hair Dryer",
+            "emoji": "💨",
+            "label": "Hair Dryer",
+            "translationPt": "Secador de cabelo"
           }
         ],
         "options": [
-          "Hair Dryer",
-          "Calculator",
           "Notebook",
-          "Keyboard"
+          "Keyboard",
+          "Calculator",
+          "Hair Dryer"
         ],
         "correctAnswer": "Hair Dryer",
         "explanation": "Exemplo prático: \"Dry your wet hair with an electric hair dryer.\"",
@@ -14871,6 +14871,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏠",
         "visualOptions": [
           {
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Hospital"
+          },
+          {
             "text": "Bank",
             "emoji": "🏦",
             "label": "Bank",
@@ -14883,12 +14889,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Casa"
           },
           {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital"
-          },
-          {
             "text": "Hotel",
             "emoji": "🏨",
             "label": "Hotel",
@@ -14896,9 +14896,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Hospital",
           "Bank",
           "House",
-          "Hospital",
           "Hotel"
         ],
         "correctAnswer": "House",
@@ -14920,12 +14920,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escola"
           },
           {
-            "text": "Tree",
-            "emoji": "🌳",
-            "label": "Tree",
-            "translationPt": "Árvore"
-          },
-          {
             "text": "Bookstore",
             "emoji": "📚",
             "label": "Bookstore",
@@ -14936,13 +14930,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💈",
             "label": "Barber Shop",
             "translationPt": "Barbearia / Salão"
+          },
+          {
+            "text": "Tree",
+            "emoji": "🌳",
+            "label": "Tree",
+            "translationPt": "Árvore"
           }
         ],
         "options": [
           "School",
-          "Tree",
           "Bookstore",
-          "Barber Shop"
+          "Barber Shop",
+          "Tree"
         ],
         "correctAnswer": "School",
         "explanation": "Exemplo prático: \"Children study at school every day.\"",
@@ -14957,35 +14957,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛒",
         "visualOptions": [
           {
-            "text": "Gym",
-            "emoji": "🏋️",
-            "label": "Gym",
-            "translationPt": "Academia de ginástica"
-          },
-          {
             "text": "Bridge",
             "emoji": "🌉",
             "label": "Bridge",
             "translationPt": "Ponte"
           },
           {
-            "text": "Beach",
-            "emoji": "🏖️",
-            "label": "Beach",
-            "translationPt": "Praia"
+            "text": "Gym",
+            "emoji": "🏋️",
+            "label": "Gym",
+            "translationPt": "Academia de ginástica"
           },
           {
             "text": "Supermarket",
             "emoji": "🛒",
             "label": "Supermarket",
             "translationPt": "Supermercado"
+          },
+          {
+            "text": "Beach",
+            "emoji": "🏖️",
+            "label": "Beach",
+            "translationPt": "Praia"
           }
         ],
         "options": [
-          "Gym",
           "Bridge",
-          "Beach",
-          "Supermarket"
+          "Gym",
+          "Supermarket",
+          "Beach"
         ],
         "correctAnswer": "Supermarket",
         "explanation": "Exemplo prático: \"We buy groceries with a shopping cart at the supermarket.\"",
@@ -15000,12 +15000,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥐",
         "visualOptions": [
           {
-            "text": "Sunflower",
-            "emoji": "🌻",
-            "label": "Sunflower",
-            "translationPt": "Girassol"
-          },
-          {
             "text": "Sun",
             "emoji": "☀️",
             "label": "Sun",
@@ -15018,6 +15012,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Padaria"
           },
           {
+            "text": "Sunflower",
+            "emoji": "🌻",
+            "label": "Sunflower",
+            "translationPt": "Girassol"
+          },
+          {
             "text": "Swimming Pool",
             "emoji": "🏊",
             "label": "Swimming Pool",
@@ -15025,9 +15025,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Sunflower",
           "Sun",
           "Bakery",
+          "Sunflower",
           "Swimming Pool"
         ],
         "correctAnswer": "Bakery",
@@ -15043,16 +15043,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏥",
         "visualOptions": [
           {
+            "text": "Fire",
+            "emoji": "🔥",
+            "label": "Fire",
+            "translationPt": "Fogo / Fogueira"
+          },
+          {
             "text": "Cinema",
             "emoji": "🎬",
             "label": "Cinema",
             "translationPt": "Cinema"
-          },
-          {
-            "text": "Pharmacy",
-            "emoji": "🏥",
-            "label": "Pharmacy",
-            "translationPt": "Farmácia"
           },
           {
             "text": "Flower",
@@ -15061,17 +15061,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Flor"
           },
           {
-            "text": "Fire",
-            "emoji": "🔥",
-            "label": "Fire",
-            "translationPt": "Fogo / Fogueira"
+            "text": "Pharmacy",
+            "emoji": "🏥",
+            "label": "Pharmacy",
+            "translationPt": "Farmácia"
           }
         ],
         "options": [
+          "Fire",
           "Cinema",
-          "Pharmacy",
           "Flower",
-          "Fire"
+          "Pharmacy"
         ],
         "correctAnswer": "Pharmacy",
         "explanation": "Exemplo prático: \"Buy medicine at the neighborhood pharmacy.\"",
@@ -15092,12 +15092,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Hospital"
           },
           {
-            "text": "Rose",
-            "emoji": "🌹",
-            "label": "Rose",
-            "translationPt": "Rosa vermelha"
-          },
-          {
             "text": "Rainbow",
             "emoji": "🌈",
             "label": "Rainbow",
@@ -15108,13 +15102,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏛️",
             "label": "Library",
             "translationPt": "Biblioteca"
+          },
+          {
+            "text": "Rose",
+            "emoji": "🌹",
+            "label": "Rose",
+            "translationPt": "Rosa vermelha"
           }
         ],
         "options": [
           "Hospital",
-          "Rose",
           "Rainbow",
-          "Library"
+          "Library",
+          "Rose"
         ],
         "correctAnswer": "Hospital",
         "explanation": "Exemplo prático: \"Doctors and nurses care for patients at the hospital.\"",
@@ -15172,10 +15172,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏦",
         "visualOptions": [
           {
-            "text": "Bank",
-            "emoji": "🏦",
-            "label": "Bank",
-            "translationPt": "Banco / Caixa eletrônico"
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola"
           },
           {
             "text": "Cactus",
@@ -15184,10 +15184,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cacto"
           },
           {
-            "text": "School",
-            "emoji": "🏫",
-            "label": "School",
-            "translationPt": "Escola"
+            "text": "Bank",
+            "emoji": "🏦",
+            "label": "Bank",
+            "translationPt": "Banco / Caixa eletrônico"
           },
           {
             "text": "Bakery",
@@ -15197,9 +15197,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Bank",
-          "Cactus",
           "School",
+          "Cactus",
+          "Bank",
           "Bakery"
         ],
         "correctAnswer": "Bank",
@@ -15215,35 +15215,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏨",
         "visualOptions": [
           {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua"
-          },
-          {
             "text": "Hotel",
             "emoji": "🏨",
             "label": "Hotel",
             "translationPt": "Hotel"
           },
           {
-            "text": "Pharmacy",
-            "emoji": "🏥",
-            "label": "Pharmacy",
-            "translationPt": "Farmácia"
-          },
-          {
             "text": "Supermarket",
             "emoji": "🛒",
             "label": "Supermarket",
             "translationPt": "Supermercado"
+          },
+          {
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua"
+          },
+          {
+            "text": "Pharmacy",
+            "emoji": "🏥",
+            "label": "Pharmacy",
+            "translationPt": "Farmácia"
           }
         ],
         "options": [
-          "Moon",
           "Hotel",
-          "Pharmacy",
-          "Supermarket"
+          "Supermarket",
+          "Moon",
+          "Pharmacy"
         ],
         "correctAnswer": "Hotel",
         "explanation": "Exemplo prático: \"We stayed in a comfortable hotel room on vacation.\"",
@@ -15257,12 +15257,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Bookstore",
         "visualEmoji": "📚",
         "visualOptions": [
-          {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
-          },
           {
             "text": "Pet Shop",
             "emoji": "🐾",
@@ -15280,13 +15274,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏊",
             "label": "Swimming Pool",
             "translationPt": "Piscina"
+          },
+          {
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
           }
         ],
         "options": [
-          "Park",
           "Pet Shop",
           "Bookstore",
-          "Swimming Pool"
+          "Swimming Pool",
+          "Park"
         ],
         "correctAnswer": "Bookstore",
         "explanation": "Exemplo prático: \"She bought a new book at the bookstore.\"",
@@ -15301,18 +15301,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏛️",
         "visualOptions": [
           {
-            "text": "Leaf",
-            "emoji": "🍃",
-            "label": "Leaf",
-            "translationPt": "Folha de planta"
-          },
-          {
-            "text": "Flower",
-            "emoji": "🌸",
-            "label": "Flower",
-            "translationPt": "Flor"
-          },
-          {
             "text": "Restaurant",
             "emoji": "🍽️",
             "label": "Restaurant",
@@ -15323,13 +15311,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏛️",
             "label": "Library",
             "translationPt": "Biblioteca"
+          },
+          {
+            "text": "Leaf",
+            "emoji": "🍃",
+            "label": "Leaf",
+            "translationPt": "Folha de planta"
+          },
+          {
+            "text": "Flower",
+            "emoji": "🌸",
+            "label": "Flower",
+            "translationPt": "Flor"
           }
         ],
         "options": [
-          "Leaf",
-          "Flower",
           "Restaurant",
-          "Library"
+          "Library",
+          "Leaf",
+          "Flower"
         ],
         "correctAnswer": "Library",
         "explanation": "Exemplo prático: \"Read quietly in the public library.\"",
@@ -15344,16 +15344,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🎬",
         "visualOptions": [
           {
-            "text": "Cinema",
-            "emoji": "🎬",
-            "label": "Cinema",
-            "translationPt": "Cinema"
-          },
-          {
             "text": "Beach",
             "emoji": "🏖️",
             "label": "Beach",
             "translationPt": "Praia"
+          },
+          {
+            "text": "Bakery",
+            "emoji": "🥐",
+            "label": "Bakery",
+            "translationPt": "Padaria"
           },
           {
             "text": "Bank",
@@ -15362,17 +15362,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Banco / Caixa eletrônico"
           },
           {
-            "text": "Bakery",
-            "emoji": "🥐",
-            "label": "Bakery",
-            "translationPt": "Padaria"
+            "text": "Cinema",
+            "emoji": "🎬",
+            "label": "Cinema",
+            "translationPt": "Cinema"
           }
         ],
         "options": [
-          "Cinema",
           "Beach",
+          "Bakery",
           "Bank",
-          "Bakery"
+          "Cinema"
         ],
         "correctAnswer": "Cinema",
         "explanation": "Exemplo prático: \"Watch a movie on the big screen at the cinema.\"",
@@ -15387,10 +15387,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏋️",
         "visualOptions": [
           {
-            "text": "House",
-            "emoji": "🏠",
-            "label": "House",
-            "translationPt": "Casa"
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Hospital"
           },
           {
             "text": "Hotel",
@@ -15405,17 +15405,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Academia de ginástica"
           },
           {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital"
+            "text": "House",
+            "emoji": "🏠",
+            "label": "House",
+            "translationPt": "Casa"
           }
         ],
         "options": [
-          "House",
+          "Hospital",
           "Hotel",
           "Gym",
-          "Hospital"
+          "House"
         ],
         "correctAnswer": "Gym",
         "explanation": "Exemplo prático: \"Exercise with weights and treadmills at the gym.\"",
@@ -15430,10 +15430,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💈",
         "visualOptions": [
           {
-            "text": "Bookstore",
-            "emoji": "📚",
-            "label": "Bookstore",
-            "translationPt": "Livraria"
+            "text": "Barber Shop",
+            "emoji": "💈",
+            "label": "Barber Shop",
+            "translationPt": "Barbearia / Salão"
           },
           {
             "text": "Tree",
@@ -15442,23 +15442,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Árvore"
           },
           {
-            "text": "Barber Shop",
-            "emoji": "💈",
-            "label": "Barber Shop",
-            "translationPt": "Barbearia / Salão"
-          },
-          {
             "text": "Bridge",
             "emoji": "🌉",
             "label": "Bridge",
             "translationPt": "Ponte"
+          },
+          {
+            "text": "Bookstore",
+            "emoji": "📚",
+            "label": "Bookstore",
+            "translationPt": "Livraria"
           }
         ],
         "options": [
-          "Bookstore",
-          "Tree",
           "Barber Shop",
-          "Bridge"
+          "Tree",
+          "Bridge",
+          "Bookstore"
         ],
         "correctAnswer": "Barber Shop",
         "explanation": "Exemplo prático: \"Get a haircut at the barber shop.\"",
@@ -15485,23 +15485,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Restaurante"
           },
           {
-            "text": "Pharmacy",
-            "emoji": "🏥",
-            "label": "Pharmacy",
-            "translationPt": "Farmácia"
-          },
-          {
             "text": "Pet Shop",
             "emoji": "🐾",
             "label": "Pet Shop",
             "translationPt": "Pet shop"
+          },
+          {
+            "text": "Pharmacy",
+            "emoji": "🏥",
+            "label": "Pharmacy",
+            "translationPt": "Farmácia"
           }
         ],
         "options": [
           "Moon",
           "Restaurant",
-          "Pharmacy",
-          "Pet Shop"
+          "Pet Shop",
+          "Pharmacy"
         ],
         "correctAnswer": "Pet Shop",
         "explanation": "Exemplo prático: \"Buy pet food and toys at the pet shop.\"",
@@ -15516,35 +15516,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌳",
         "visualOptions": [
           {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
-          },
-          {
             "text": "Castle",
             "emoji": "🏰",
             "label": "Castle",
             "translationPt": "Castelo"
           },
           {
-            "text": "Cinema",
-            "emoji": "🎬",
-            "label": "Cinema",
-            "translationPt": "Cinema"
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
           },
           {
             "text": "Fire",
             "emoji": "🔥",
             "label": "Fire",
             "translationPt": "Fogo / Fogueira"
+          },
+          {
+            "text": "Cinema",
+            "emoji": "🎬",
+            "label": "Cinema",
+            "translationPt": "Cinema"
           }
         ],
         "options": [
-          "Park",
           "Castle",
-          "Cinema",
-          "Fire"
+          "Park",
+          "Fire",
+          "Cinema"
         ],
         "correctAnswer": "Park",
         "explanation": "Exemplo prático: \"Families walk and play in the green city park.\"",
@@ -15559,35 +15559,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏖️",
         "visualOptions": [
           {
-            "text": "Rose",
-            "emoji": "🌹",
-            "label": "Rose",
-            "translationPt": "Rosa vermelha"
-          },
-          {
             "text": "Library",
             "emoji": "🏛️",
             "label": "Library",
             "translationPt": "Biblioteca"
           },
           {
-            "text": "Beach",
-            "emoji": "🏖️",
-            "label": "Beach",
-            "translationPt": "Praia"
-          },
-          {
             "text": "Rainbow",
             "emoji": "🌈",
             "label": "Rainbow",
             "translationPt": "Arco-íris"
+          },
+          {
+            "text": "Rose",
+            "emoji": "🌹",
+            "label": "Rose",
+            "translationPt": "Rosa vermelha"
+          },
+          {
+            "text": "Beach",
+            "emoji": "🏖️",
+            "label": "Beach",
+            "translationPt": "Praia"
           }
         ],
         "options": [
-          "Rose",
           "Library",
-          "Beach",
-          "Rainbow"
+          "Rainbow",
+          "Rose",
+          "Beach"
         ],
         "correctAnswer": "Beach",
         "explanation": "Exemplo prático: \"We love going to the sunny beach on weekends.\"",
@@ -15608,16 +15608,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Piscina"
           },
           {
-            "text": "Cactus",
-            "emoji": "🌵",
-            "label": "Cactus",
-            "translationPt": "Cacto"
-          },
-          {
             "text": "Barber Shop",
             "emoji": "💈",
             "label": "Barber Shop",
             "translationPt": "Barbearia / Salão"
+          },
+          {
+            "text": "Cactus",
+            "emoji": "🌵",
+            "label": "Cactus",
+            "translationPt": "Cacto"
           },
           {
             "text": "School",
@@ -15628,8 +15628,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Swimming Pool",
-          "Cactus",
           "Barber Shop",
+          "Cactus",
           "School"
         ],
         "correctAnswer": "Swimming Pool",
@@ -15645,10 +15645,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌉",
         "visualOptions": [
           {
-            "text": "Supermarket",
-            "emoji": "🛒",
-            "label": "Supermarket",
-            "translationPt": "Supermercado"
+            "text": "Sunflower",
+            "emoji": "🌻",
+            "label": "Sunflower",
+            "translationPt": "Girassol"
           },
           {
             "text": "Sun",
@@ -15657,10 +15657,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sol"
           },
           {
-            "text": "Sunflower",
-            "emoji": "🌻",
-            "label": "Sunflower",
-            "translationPt": "Girassol"
+            "text": "Supermarket",
+            "emoji": "🛒",
+            "label": "Supermarket",
+            "translationPt": "Supermercado"
           },
           {
             "text": "Bridge",
@@ -15670,9 +15670,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Supermarket",
-          "Sun",
           "Sunflower",
+          "Sun",
+          "Supermarket",
           "Bridge"
         ],
         "correctAnswer": "Bridge",
@@ -15688,16 +15688,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏰",
         "visualOptions": [
           {
+            "text": "Gym",
+            "emoji": "🏋️",
+            "label": "Gym",
+            "translationPt": "Academia de ginástica"
+          },
+          {
             "text": "Pet Shop",
             "emoji": "🐾",
             "label": "Pet Shop",
             "translationPt": "Pet shop"
-          },
-          {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
           },
           {
             "text": "Castle",
@@ -15706,17 +15706,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Castelo"
           },
           {
-            "text": "Gym",
-            "emoji": "🏋️",
-            "label": "Gym",
-            "translationPt": "Academia de ginástica"
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
           }
         ],
         "options": [
+          "Gym",
           "Pet Shop",
-          "Park",
           "Castle",
-          "Gym"
+          "Park"
         ],
         "correctAnswer": "Castle",
         "explanation": "Exemplo prático: \"The stone castle has tall towers.\"",
@@ -15730,12 +15730,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Tree",
         "visualEmoji": "🌳",
         "visualOptions": [
-          {
-            "text": "House",
-            "emoji": "🏠",
-            "label": "House",
-            "translationPt": "Casa"
-          },
           {
             "text": "Tree",
             "emoji": "🌳",
@@ -15753,13 +15747,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌙",
             "label": "Moon",
             "translationPt": "Lua"
+          },
+          {
+            "text": "House",
+            "emoji": "🏠",
+            "label": "House",
+            "translationPt": "Casa"
           }
         ],
         "options": [
-          "House",
           "Tree",
           "Pharmacy",
-          "Moon"
+          "Moon",
+          "House"
         ],
         "correctAnswer": "Tree",
         "explanation": "Exemplo prático: \"A green tree provides cool shade.\"",
@@ -15774,6 +15774,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌸",
         "visualOptions": [
           {
+            "text": "Cinema",
+            "emoji": "🎬",
+            "label": "Cinema",
+            "translationPt": "Cinema"
+          },
+          {
             "text": "Flower",
             "emoji": "🌸",
             "label": "Flower",
@@ -15786,12 +15792,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Fogo / Fogueira"
           },
           {
-            "text": "Cinema",
-            "emoji": "🎬",
-            "label": "Cinema",
-            "translationPt": "Cinema"
-          },
-          {
             "text": "School",
             "emoji": "🏫",
             "label": "School",
@@ -15799,9 +15799,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Cinema",
           "Flower",
           "Fire",
-          "Cinema",
           "School"
         ],
         "correctAnswer": "Flower",
@@ -15817,18 +15817,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌹",
         "visualOptions": [
           {
-            "text": "Restaurant",
-            "emoji": "🍽️",
-            "label": "Restaurant",
-            "translationPt": "Restaurante"
-          },
-          {
-            "text": "Rainbow",
-            "emoji": "🌈",
-            "label": "Rainbow",
-            "translationPt": "Arco-íris"
-          },
-          {
             "text": "Library",
             "emoji": "🏛️",
             "label": "Library",
@@ -15839,13 +15827,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌹",
             "label": "Rose",
             "translationPt": "Rosa vermelha"
+          },
+          {
+            "text": "Restaurant",
+            "emoji": "🍽️",
+            "label": "Restaurant",
+            "translationPt": "Restaurante"
+          },
+          {
+            "text": "Rainbow",
+            "emoji": "🌈",
+            "label": "Rainbow",
+            "translationPt": "Arco-íris"
           }
         ],
         "options": [
-          "Restaurant",
-          "Rainbow",
           "Library",
-          "Rose"
+          "Rose",
+          "Restaurant",
+          "Rainbow"
         ],
         "correctAnswer": "Rose",
         "explanation": "Exemplo prático: \"He gave her a single red rose.\"",
@@ -15860,10 +15860,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌻",
         "visualOptions": [
           {
-            "text": "Sunflower",
-            "emoji": "🌻",
-            "label": "Sunflower",
-            "translationPt": "Girassol"
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Hospital"
           },
           {
             "text": "Hotel",
@@ -15878,17 +15878,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Padaria"
           },
           {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital"
+            "text": "Sunflower",
+            "emoji": "🌻",
+            "label": "Sunflower",
+            "translationPt": "Girassol"
           }
         ],
         "options": [
-          "Sunflower",
+          "Hospital",
           "Hotel",
           "Bakery",
-          "Hospital"
+          "Sunflower"
         ],
         "correctAnswer": "Sunflower",
         "explanation": "Exemplo prático: \"The yellow sunflower faces the sun.\"",
@@ -15909,16 +15909,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Livraria"
           },
           {
-            "text": "Cactus",
-            "emoji": "🌵",
-            "label": "Cactus",
-            "translationPt": "Cacto"
-          },
-          {
             "text": "Tree",
             "emoji": "🌳",
             "label": "Tree",
             "translationPt": "Árvore"
+          },
+          {
+            "text": "Cactus",
+            "emoji": "🌵",
+            "label": "Cactus",
+            "translationPt": "Cacto"
           },
           {
             "text": "Bank",
@@ -15929,8 +15929,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Bookstore",
-          "Cactus",
           "Tree",
+          "Cactus",
           "Bank"
         ],
         "correctAnswer": "Cactus",
@@ -15952,6 +15952,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Folha de planta"
           },
           {
+            "text": "Beach",
+            "emoji": "🏖️",
+            "label": "Beach",
+            "translationPt": "Praia"
+          },
+          {
             "text": "Gym",
             "emoji": "🏋️",
             "label": "Gym",
@@ -15962,19 +15968,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💈",
             "label": "Barber Shop",
             "translationPt": "Barbearia / Salão"
-          },
-          {
-            "text": "Beach",
-            "emoji": "🏖️",
-            "label": "Beach",
-            "translationPt": "Praia"
           }
         ],
         "options": [
           "Leaf",
+          "Beach",
           "Gym",
-          "Barber Shop",
-          "Beach"
+          "Barber Shop"
         ],
         "correctAnswer": "Leaf",
         "explanation": "Exemplo prático: \"A bright green tree leaf.\"",
@@ -15995,12 +15995,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Supermercado"
           },
           {
-            "text": "Swimming Pool",
-            "emoji": "🏊",
-            "label": "Swimming Pool",
-            "translationPt": "Piscina"
-          },
-          {
             "text": "Pet Shop",
             "emoji": "🐾",
             "label": "Pet Shop",
@@ -16011,13 +16005,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "☀️",
             "label": "Sun",
             "translationPt": "Sol"
+          },
+          {
+            "text": "Swimming Pool",
+            "emoji": "🏊",
+            "label": "Swimming Pool",
+            "translationPt": "Piscina"
           }
         ],
         "options": [
           "Supermarket",
-          "Swimming Pool",
           "Pet Shop",
-          "Sun"
+          "Sun",
+          "Swimming Pool"
         ],
         "correctAnswer": "Sun",
         "explanation": "Exemplo prático: \"The bright yellow sun shines in the blue sky.\"",
@@ -16032,6 +16032,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌙",
         "visualOptions": [
           {
+            "text": "Sunflower",
+            "emoji": "🌻",
+            "label": "Sunflower",
+            "translationPt": "Girassol"
+          },
+          {
             "text": "Moon",
             "emoji": "🌙",
             "label": "Moon",
@@ -16044,12 +16050,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Castelo"
           },
           {
-            "text": "Sunflower",
-            "emoji": "🌻",
-            "label": "Sunflower",
-            "translationPt": "Girassol"
-          },
-          {
             "text": "Flower",
             "emoji": "🌸",
             "label": "Flower",
@@ -16057,9 +16057,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Sunflower",
           "Moon",
           "Castle",
-          "Sunflower",
           "Flower"
         ],
         "correctAnswer": "Moon",
@@ -16075,6 +16075,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌈",
         "visualOptions": [
           {
+            "text": "Rose",
+            "emoji": "🌹",
+            "label": "Rose",
+            "translationPt": "Rosa vermelha"
+          },
+          {
+            "text": "Cactus",
+            "emoji": "🌵",
+            "label": "Cactus",
+            "translationPt": "Cacto"
+          },
+          {
             "text": "Bridge",
             "emoji": "🌉",
             "label": "Bridge",
@@ -16085,25 +16097,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌈",
             "label": "Rainbow",
             "translationPt": "Arco-íris"
-          },
-          {
-            "text": "Cactus",
-            "emoji": "🌵",
-            "label": "Cactus",
-            "translationPt": "Cacto"
-          },
-          {
-            "text": "Rose",
-            "emoji": "🌹",
-            "label": "Rose",
-            "translationPt": "Rosa vermelha"
           }
         ],
         "options": [
-          "Bridge",
-          "Rainbow",
+          "Rose",
           "Cactus",
-          "Rose"
+          "Bridge",
+          "Rainbow"
         ],
         "correctAnswer": "Rainbow",
         "explanation": "Exemplo prático: \"A colorful rainbow appeared after the rain.\"",
@@ -16118,18 +16118,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🔥",
         "visualOptions": [
           {
-            "text": "Park",
-            "emoji": "🌳",
-            "label": "Park",
-            "translationPt": "Parque / Praça"
-          },
-          {
-            "text": "Leaf",
-            "emoji": "🍃",
-            "label": "Leaf",
-            "translationPt": "Folha de planta"
-          },
-          {
             "text": "Fire",
             "emoji": "🔥",
             "label": "Fire",
@@ -16140,13 +16128,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏠",
             "label": "House",
             "translationPt": "Casa"
+          },
+          {
+            "text": "Park",
+            "emoji": "🌳",
+            "label": "Park",
+            "translationPt": "Parque / Praça"
+          },
+          {
+            "text": "Leaf",
+            "emoji": "🍃",
+            "label": "Leaf",
+            "translationPt": "Folha de planta"
           }
         ],
         "options": [
-          "Park",
-          "Leaf",
           "Fire",
-          "House"
+          "House",
+          "Park",
+          "Leaf"
         ],
         "correctAnswer": "Fire",
         "explanation": "Exemplo prático: \"Warm campfire flames.\"",
@@ -16180,9 +16180,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Warm bread\" em português?",
         "audioPhrase": "Warm bread",
         "options": [
-          "Pão quentinho",
           "Arroz branco",
           "Queijo amarelo",
+          "Pão quentinho",
           "Sopa quente"
         ],
         "correctAnswer": "Pão quentinho",
@@ -16213,10 +16213,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Green salad\" em português?",
         "audioPhrase": "Green salad",
         "options": [
+          "Macarrão quente",
           "Salada verde",
           "Batata frita",
-          "Frango assado",
-          "Macarrão quente"
+          "Frango assado"
         ],
         "correctAnswer": "Salada verde",
         "explanation": "\"Green salad\" = \"Salada verde\". Associação simples e direta!",
@@ -16230,10 +16230,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Big shark\" em português?",
         "audioPhrase": "Big shark",
         "options": [
-          "Tubarão grande",
+          "Tartaruga lenta",
           "Baleia azul",
           "Golfinho amigo",
-          "Tartaruga lenta"
+          "Tubarão grande"
         ],
         "correctAnswer": "Tubarão grande",
         "explanation": "\"Big shark\" = \"Tubarão grande\". Associação simples e direta!",
@@ -16263,10 +16263,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Fast eagle\" em português?",
         "audioPhrase": "Fast eagle",
         "options": [
-          "Águia rápida",
-          "Coruja noturna",
           "Cisne branco",
-          "Beija-flor pequeno"
+          "Beija-flor pequeno",
+          "Coruja noturna",
+          "Águia rápida"
         ],
         "correctAnswer": "Águia rápida",
         "explanation": "\"Fast eagle\" = \"Águia rápida\". Associação simples e direta!",
@@ -16280,10 +16280,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Good book\" em português?",
         "audioPhrase": "Good book",
         "options": [
-          "Bom livro",
-          "Caneta azul",
           "Caderno novo",
-          "Mochila escolar"
+          "Bom livro",
+          "Mochila escolar",
+          "Caneta azul"
         ],
         "correctAnswer": "Bom livro",
         "explanation": "\"Good book\" = \"Bom livro\". Associação simples e direta!",
@@ -16314,8 +16314,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "My phone",
         "options": [
           "Meu celular",
-          "Meu computador",
           "Minha câmera",
+          "Meu computador",
           "Meu teclado"
         ],
         "correctAnswer": "Meu celular",
@@ -16330,9 +16330,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"My house\" em português?",
         "audioPhrase": "My house",
         "options": [
+          "A padaria",
           "Minha casa",
           "Minha escola",
-          "A padaria",
           "O hospital"
         ],
         "correctAnswer": "Minha casa",
@@ -16364,9 +16364,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Bright sun",
         "options": [
           "Sol brilhante",
-          "Lua cheia",
           "Arco-íris colorido",
-          "Praia bonita"
+          "Praia bonita",
+          "Lua cheia"
         ],
         "correctAnswer": "Sol brilhante",
         "explanation": "\"Bright sun\" = \"Sol brilhante\". Associação simples e direta!",
@@ -16399,6 +16399,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💧",
         "visualOptions": [
           {
+            "text": "Raspberry",
+            "emoji": "❤️",
+            "label": "Raspberry",
+            "translationPt": "Framboesa"
+          },
+          {
             "text": "Honey",
             "emoji": "🍯",
             "label": "Honey",
@@ -16411,12 +16417,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Água"
           },
           {
-            "text": "Raspberry",
-            "emoji": "❤️",
-            "label": "Raspberry",
-            "translationPt": "Framboesa"
-          },
-          {
             "text": "Blueberry",
             "emoji": "🫐",
             "label": "Blueberry",
@@ -16424,9 +16424,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Raspberry",
           "Honey",
           "Water",
-          "Raspberry",
           "Blueberry"
         ],
         "correctAnswer": "Water",
@@ -16442,16 +16442,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥛",
         "visualOptions": [
           {
-            "text": "Lollipop",
-            "emoji": "🍭",
-            "label": "Lollipop",
-            "translationPt": "Pirulito"
-          },
-          {
-            "text": "Tea",
-            "emoji": "🍵",
-            "label": "Tea",
-            "translationPt": "Chá"
+            "text": "Ice Cream",
+            "emoji": "🍨",
+            "label": "Ice Cream",
+            "translationPt": "Sorvete"
           },
           {
             "text": "Milk",
@@ -16460,17 +16454,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Leite"
           },
           {
-            "text": "Ice Cream",
-            "emoji": "🍨",
-            "label": "Ice Cream",
-            "translationPt": "Sorvete"
+            "text": "Tea",
+            "emoji": "🍵",
+            "label": "Tea",
+            "translationPt": "Chá"
+          },
+          {
+            "text": "Lollipop",
+            "emoji": "🍭",
+            "label": "Lollipop",
+            "translationPt": "Pirulito"
           }
         ],
         "options": [
-          "Lollipop",
-          "Tea",
+          "Ice Cream",
           "Milk",
-          "Ice Cream"
+          "Tea",
+          "Lollipop"
         ],
         "correctAnswer": "Milk",
         "explanation": "Exemplo prático: \"A glass of cold white milk.\"",
@@ -16485,10 +16485,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "☕",
         "visualOptions": [
           {
-            "text": "Jelly",
-            "emoji": "🍮",
-            "label": "Jelly",
-            "translationPt": "Gelatina"
+            "text": "Jam",
+            "emoji": "🍓",
+            "label": "Jam",
+            "translationPt": "Geleia de frutas"
           },
           {
             "text": "Donut",
@@ -16497,10 +16497,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rosquinha / Donut"
           },
           {
-            "text": "Jam",
-            "emoji": "🍓",
-            "label": "Jam",
-            "translationPt": "Geleia de frutas"
+            "text": "Jelly",
+            "emoji": "🍮",
+            "label": "Jelly",
+            "translationPt": "Gelatina"
           },
           {
             "text": "Coffee",
@@ -16510,9 +16510,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Jelly",
-          "Donut",
           "Jam",
+          "Donut",
+          "Jelly",
           "Coffee"
         ],
         "correctAnswer": "Coffee",
@@ -16571,35 +16571,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥤",
         "visualOptions": [
           {
-            "text": "Cookie",
-            "emoji": "🍪",
-            "label": "Cookie",
-            "translationPt": "Biscoito / Cookie"
-          },
-          {
             "text": "Cupcake",
             "emoji": "🧁",
             "label": "Cupcake",
             "translationPt": "Cupcake / Bolinho"
           },
           {
-            "text": "Soda",
-            "emoji": "🥤",
-            "label": "Soda",
-            "translationPt": "Refrigerante"
+            "text": "Cookie",
+            "emoji": "🍪",
+            "label": "Cookie",
+            "translationPt": "Biscoito / Cookie"
           },
           {
             "text": "Candy",
             "emoji": "🍬",
             "label": "Candy",
             "translationPt": "Bala / Doce"
+          },
+          {
+            "text": "Soda",
+            "emoji": "🥤",
+            "label": "Soda",
+            "translationPt": "Refrigerante"
           }
         ],
         "options": [
-          "Cookie",
           "Cupcake",
-          "Soda",
-          "Candy"
+          "Cookie",
+          "Candy",
+          "Soda"
         ],
         "correctAnswer": "Soda",
         "explanation": "Exemplo prático: \"Cold cola soda with ice cubes.\"",
@@ -16614,10 +16614,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍵",
         "visualOptions": [
           {
-            "text": "Tea",
-            "emoji": "🍵",
-            "label": "Tea",
-            "translationPt": "Chá"
+            "text": "Yogurt",
+            "emoji": "🥣",
+            "label": "Yogurt",
+            "translationPt": "Iogurte"
           },
           {
             "text": "Chestnut",
@@ -16626,23 +16626,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Castanha / Noz"
           },
           {
+            "text": "Tea",
+            "emoji": "🍵",
+            "label": "Tea",
+            "translationPt": "Chá"
+          },
+          {
             "text": "Cereal",
             "emoji": "🥣",
             "label": "Cereal",
             "translationPt": "Cereal matinal"
-          },
-          {
-            "text": "Yogurt",
-            "emoji": "🥣",
-            "label": "Yogurt",
-            "translationPt": "Iogurte"
           }
         ],
         "options": [
-          "Tea",
+          "Yogurt",
           "Chestnut",
-          "Cereal",
-          "Yogurt"
+          "Tea",
+          "Cereal"
         ],
         "correctAnswer": "Tea",
         "explanation": "Exemplo prático: \"A cup of warm herbal tea.\"",
@@ -16657,10 +16657,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍰",
         "visualOptions": [
           {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café"
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo"
           },
           {
             "text": "Pomegranate",
@@ -16675,17 +16675,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Torta doce"
           },
           {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo"
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café"
           }
         ],
         "options": [
-          "Coffee",
+          "Cake",
           "Pomegranate",
           "Pie",
-          "Cake"
+          "Coffee"
         ],
         "correctAnswer": "Cake",
         "explanation": "Exemplo prático: \"A slice of chocolate birthday cake.\"",
@@ -16706,16 +16706,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Waffle"
           },
           {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite"
-          },
-          {
             "text": "Chocolate",
             "emoji": "🍫",
             "label": "Chocolate",
             "translationPt": "Chocolate"
+          },
+          {
+            "text": "Milk",
+            "emoji": "🥛",
+            "label": "Milk",
+            "translationPt": "Leite"
           },
           {
             "text": "Water",
@@ -16726,8 +16726,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Waffle",
-          "Milk",
           "Chocolate",
+          "Milk",
           "Water"
         ],
         "correctAnswer": "Chocolate",
@@ -16743,10 +16743,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍨",
         "visualOptions": [
           {
-            "text": "Dragon Fruit",
-            "emoji": "🐉",
-            "label": "Dragon Fruit",
-            "translationPt": "Pitaia"
+            "text": "Juice",
+            "emoji": "🧃",
+            "label": "Juice",
+            "translationPt": "Suco de laranja"
           },
           {
             "text": "Ice Cream",
@@ -16761,17 +16761,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Milk-shake"
           },
           {
-            "text": "Juice",
-            "emoji": "🧃",
-            "label": "Juice",
-            "translationPt": "Suco de laranja"
+            "text": "Dragon Fruit",
+            "emoji": "🐉",
+            "label": "Dragon Fruit",
+            "translationPt": "Pitaia"
           }
         ],
         "options": [
-          "Dragon Fruit",
+          "Juice",
           "Ice Cream",
           "Milkshake",
-          "Juice"
+          "Dragon Fruit"
         ],
         "correctAnswer": "Ice Cream",
         "explanation": "Exemplo prático: \"Scoops of ice cream in a cone.\"",
@@ -16786,16 +16786,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍧",
         "visualOptions": [
           {
-            "text": "Popsicle",
-            "emoji": "🍧",
-            "label": "Popsicle",
-            "translationPt": "Picolé"
-          },
-          {
-            "text": "Soda",
-            "emoji": "🥤",
-            "label": "Soda",
-            "translationPt": "Refrigerante"
+            "text": "Popcorn",
+            "emoji": "🍿",
+            "label": "Popcorn",
+            "translationPt": "Pipoca"
           },
           {
             "text": "Yogurt",
@@ -16804,17 +16798,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Iogurte"
           },
           {
-            "text": "Popcorn",
-            "emoji": "🍿",
-            "label": "Popcorn",
-            "translationPt": "Pipoca"
+            "text": "Soda",
+            "emoji": "🥤",
+            "label": "Soda",
+            "translationPt": "Refrigerante"
+          },
+          {
+            "text": "Popsicle",
+            "emoji": "🍧",
+            "label": "Popsicle",
+            "translationPt": "Picolé"
           }
         ],
         "options": [
-          "Popsicle",
-          "Soda",
+          "Popcorn",
           "Yogurt",
-          "Popcorn"
+          "Soda",
+          "Popsicle"
         ],
         "correctAnswer": "Popsicle",
         "explanation": "Exemplo prático: \"A fruit popsicle on a hot day.\"",
@@ -16829,35 +16829,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍪",
         "visualOptions": [
           {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo"
-          },
-          {
             "text": "Coffee",
             "emoji": "☕",
             "label": "Coffee",
             "translationPt": "Café"
           },
           {
-            "text": "Cupcake",
-            "emoji": "🧁",
-            "label": "Cupcake",
-            "translationPt": "Cupcake / Bolinho"
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo"
           },
           {
             "text": "Cookie",
             "emoji": "🍪",
             "label": "Cookie",
             "translationPt": "Biscoito / Cookie"
+          },
+          {
+            "text": "Cupcake",
+            "emoji": "🧁",
+            "label": "Cupcake",
+            "translationPt": "Cupcake / Bolinho"
           }
         ],
         "options": [
-          "Cake",
           "Coffee",
-          "Cupcake",
-          "Cookie"
+          "Cake",
+          "Cookie",
+          "Cupcake"
         ],
         "correctAnswer": "Cookie",
         "explanation": "Exemplo prático: \"Chocolate chip cookies are crunchy.\"",
@@ -16872,10 +16872,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍮",
         "visualOptions": [
           {
-            "text": "Blueberry",
-            "emoji": "🫐",
-            "label": "Blueberry",
-            "translationPt": "Mirtilo (Blueberry)"
+            "text": "Pudding",
+            "emoji": "🍮",
+            "label": "Pudding",
+            "translationPt": "Pudim de leite"
           },
           {
             "text": "Raspberry",
@@ -16884,23 +16884,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Framboesa"
           },
           {
-            "text": "Pudding",
-            "emoji": "🍮",
-            "label": "Pudding",
-            "translationPt": "Pudim de leite"
-          },
-          {
             "text": "Chocolate",
             "emoji": "🍫",
             "label": "Chocolate",
             "translationPt": "Chocolate"
+          },
+          {
+            "text": "Blueberry",
+            "emoji": "🫐",
+            "label": "Blueberry",
+            "translationPt": "Mirtilo (Blueberry)"
           }
         ],
         "options": [
-          "Blueberry",
-          "Raspberry",
           "Pudding",
-          "Chocolate"
+          "Raspberry",
+          "Chocolate",
+          "Blueberry"
         ],
         "correctAnswer": "Pudding",
         "explanation": "Exemplo prático: \"Caramel pudding is a classic Brazilian dessert.\"",
@@ -16915,18 +16915,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍬",
         "visualOptions": [
           {
-            "text": "Cereal",
-            "emoji": "🥣",
-            "label": "Cereal",
-            "translationPt": "Cereal matinal"
-          },
-          {
-            "text": "Candy",
-            "emoji": "🍬",
-            "label": "Candy",
-            "translationPt": "Bala / Doce"
-          },
-          {
             "text": "Honey",
             "emoji": "🍯",
             "label": "Honey",
@@ -16937,13 +16925,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍨",
             "label": "Ice Cream",
             "translationPt": "Sorvete"
+          },
+          {
+            "text": "Candy",
+            "emoji": "🍬",
+            "label": "Candy",
+            "translationPt": "Bala / Doce"
+          },
+          {
+            "text": "Cereal",
+            "emoji": "🥣",
+            "label": "Cereal",
+            "translationPt": "Cereal matinal"
           }
         ],
         "options": [
-          "Cereal",
-          "Candy",
           "Honey",
-          "Ice Cream"
+          "Ice Cream",
+          "Candy",
+          "Cereal"
         ],
         "correctAnswer": "Candy",
         "explanation": "Exemplo prático: \"Wrapped colorful fruit candy.\"",
@@ -16958,35 +16958,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍭",
         "visualOptions": [
           {
-            "text": "Lollipop",
-            "emoji": "🍭",
-            "label": "Lollipop",
-            "translationPt": "Pirulito"
-          },
-          {
             "text": "Dragon Fruit",
             "emoji": "🐉",
             "label": "Dragon Fruit",
             "translationPt": "Pitaia"
           },
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
+            "text": "Lollipop",
+            "emoji": "🍭",
+            "label": "Lollipop",
+            "translationPt": "Pirulito"
           },
           {
             "text": "Waffle",
             "emoji": "🧇",
             "label": "Waffle",
             "translationPt": "Waffle"
+          },
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
           }
         ],
         "options": [
-          "Lollipop",
           "Dragon Fruit",
-          "Water",
-          "Waffle"
+          "Lollipop",
+          "Waffle",
+          "Water"
         ],
         "correctAnswer": "Lollipop",
         "explanation": "Exemplo prático: \"A colorful round lollipop on a stick.\"",
@@ -17001,12 +17001,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍿",
         "visualOptions": [
           {
-            "text": "Popsicle",
-            "emoji": "🍧",
-            "label": "Popsicle",
-            "translationPt": "Picolé"
-          },
-          {
             "text": "Pomegranate",
             "emoji": "🔴",
             "label": "Pomegranate",
@@ -17019,6 +17013,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Leite"
           },
           {
+            "text": "Popsicle",
+            "emoji": "🍧",
+            "label": "Popsicle",
+            "translationPt": "Picolé"
+          },
+          {
             "text": "Popcorn",
             "emoji": "🍿",
             "label": "Popcorn",
@@ -17026,9 +17026,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Popsicle",
           "Pomegranate",
           "Milk",
+          "Popsicle",
           "Popcorn"
         ],
         "correctAnswer": "Popcorn",
@@ -17050,10 +17050,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rosquinha / Donut"
           },
           {
-            "text": "Chocolate",
-            "emoji": "🍫",
-            "label": "Chocolate",
-            "translationPt": "Chocolate"
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo"
           },
           {
             "text": "Cookie",
@@ -17062,17 +17062,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Biscoito / Cookie"
           },
           {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo"
+            "text": "Chocolate",
+            "emoji": "🍫",
+            "label": "Chocolate",
+            "translationPt": "Chocolate"
           }
         ],
         "options": [
           "Donut",
-          "Chocolate",
+          "Cake",
           "Cookie",
-          "Cake"
+          "Chocolate"
         ],
         "correctAnswer": "Donut",
         "explanation": "Exemplo prático: \"A pink glazed donut with sprinkles.\"",
@@ -17087,18 +17087,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥧",
         "visualOptions": [
           {
-            "text": "Candy",
-            "emoji": "🍬",
-            "label": "Candy",
-            "translationPt": "Bala / Doce"
-          },
-          {
-            "text": "Pie",
-            "emoji": "🥧",
-            "label": "Pie",
-            "translationPt": "Torta doce"
-          },
-          {
             "text": "Soda",
             "emoji": "🥤",
             "label": "Soda",
@@ -17109,13 +17097,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌰",
             "label": "Chestnut",
             "translationPt": "Castanha / Noz"
+          },
+          {
+            "text": "Candy",
+            "emoji": "🍬",
+            "label": "Candy",
+            "translationPt": "Bala / Doce"
+          },
+          {
+            "text": "Pie",
+            "emoji": "🥧",
+            "label": "Pie",
+            "translationPt": "Torta doce"
           }
         ],
         "options": [
-          "Candy",
-          "Pie",
           "Soda",
-          "Chestnut"
+          "Chestnut",
+          "Candy",
+          "Pie"
         ],
         "correctAnswer": "Pie",
         "explanation": "Exemplo prático: \"Warm homemade fruit pie.\"",
@@ -17130,10 +17130,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧁",
         "visualOptions": [
           {
-            "text": "Pudding",
-            "emoji": "🍮",
-            "label": "Pudding",
-            "translationPt": "Pudim de leite"
+            "text": "Milkshake",
+            "emoji": "🥤",
+            "label": "Milkshake",
+            "translationPt": "Milk-shake"
           },
           {
             "text": "Lollipop",
@@ -17148,17 +17148,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cupcake / Bolinho"
           },
           {
-            "text": "Milkshake",
-            "emoji": "🥤",
-            "label": "Milkshake",
-            "translationPt": "Milk-shake"
+            "text": "Pudding",
+            "emoji": "🍮",
+            "label": "Pudding",
+            "translationPt": "Pudim de leite"
           }
         ],
         "options": [
-          "Pudding",
+          "Milkshake",
           "Lollipop",
           "Cupcake",
-          "Milkshake"
+          "Pudding"
         ],
         "correctAnswer": "Cupcake",
         "explanation": "Exemplo prático: \"A cupcake with creamy frosting.\"",
@@ -17172,6 +17172,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Yogurt",
         "visualEmoji": "🥣",
         "visualOptions": [
+          {
+            "text": "Yogurt",
+            "emoji": "🥣",
+            "label": "Yogurt",
+            "translationPt": "Iogurte"
+          },
           {
             "text": "Juice",
             "emoji": "🧃",
@@ -17189,19 +17195,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍵",
             "label": "Tea",
             "translationPt": "Chá"
-          },
-          {
-            "text": "Yogurt",
-            "emoji": "🥣",
-            "label": "Yogurt",
-            "translationPt": "Iogurte"
           }
         ],
         "options": [
+          "Yogurt",
           "Juice",
           "Jelly",
-          "Tea",
-          "Yogurt"
+          "Tea"
         ],
         "correctAnswer": "Yogurt",
         "explanation": "Exemplo prático: \"Creamy strawberry yogurt in a spoon.\"",
@@ -17216,16 +17216,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍯",
         "visualOptions": [
           {
+            "text": "Donut",
+            "emoji": "🍩",
+            "label": "Donut",
+            "translationPt": "Rosquinha / Donut"
+          },
+          {
             "text": "Honey",
             "emoji": "🍯",
             "label": "Honey",
             "translationPt": "Mel"
-          },
-          {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água"
           },
           {
             "text": "Dragon Fruit",
@@ -17234,17 +17234,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pitaia"
           },
           {
-            "text": "Donut",
-            "emoji": "🍩",
-            "label": "Donut",
-            "translationPt": "Rosquinha / Donut"
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água"
           }
         ],
         "options": [
+          "Donut",
           "Honey",
-          "Water",
           "Dragon Fruit",
-          "Donut"
+          "Water"
         ],
         "correctAnswer": "Honey",
         "explanation": "Exemplo prático: \"Golden bee honey in a glass jar.\"",
@@ -17259,16 +17259,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🍓",
         "visualOptions": [
           {
-            "text": "Pie",
-            "emoji": "🥧",
-            "label": "Pie",
-            "translationPt": "Torta doce"
-          },
-          {
-            "text": "Popsicle",
-            "emoji": "🍧",
-            "label": "Popsicle",
-            "translationPt": "Picolé"
+            "text": "Soda",
+            "emoji": "🥤",
+            "label": "Soda",
+            "translationPt": "Refrigerante"
           },
           {
             "text": "Jam",
@@ -17277,17 +17271,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Geleia de frutas"
           },
           {
-            "text": "Soda",
-            "emoji": "🥤",
-            "label": "Soda",
-            "translationPt": "Refrigerante"
+            "text": "Popsicle",
+            "emoji": "🍧",
+            "label": "Popsicle",
+            "translationPt": "Picolé"
+          },
+          {
+            "text": "Pie",
+            "emoji": "🥧",
+            "label": "Pie",
+            "translationPt": "Torta doce"
           }
         ],
         "options": [
-          "Pie",
-          "Popsicle",
+          "Soda",
           "Jam",
-          "Soda"
+          "Popsicle",
+          "Pie"
         ],
         "correctAnswer": "Jam",
         "explanation": "Exemplo prático: \"Strawberry jam on morning toast.\"",
@@ -17301,12 +17301,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Milkshake",
         "visualEmoji": "🥤",
         "visualOptions": [
-          {
-            "text": "Milkshake",
-            "emoji": "🥤",
-            "label": "Milkshake",
-            "translationPt": "Milk-shake"
-          },
           {
             "text": "Coffee",
             "emoji": "☕",
@@ -17324,13 +17318,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍰",
             "label": "Cake",
             "translationPt": "Bolo"
+          },
+          {
+            "text": "Milkshake",
+            "emoji": "🥤",
+            "label": "Milkshake",
+            "translationPt": "Milk-shake"
           }
         ],
         "options": [
-          "Milkshake",
           "Coffee",
           "Ice Cream",
-          "Cake"
+          "Cake",
+          "Milkshake"
         ],
         "correctAnswer": "Milkshake",
         "explanation": "Exemplo prático: \"Cold chocolate milkshake with whipped cream.\"",
@@ -17345,35 +17345,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧇",
         "visualOptions": [
           {
-            "text": "Chocolate",
-            "emoji": "🍫",
-            "label": "Chocolate",
-            "translationPt": "Chocolate"
-          },
-          {
-            "text": "Cookie",
-            "emoji": "🍪",
-            "label": "Cookie",
-            "translationPt": "Biscoito / Cookie"
-          },
-          {
             "text": "Lollipop",
             "emoji": "🍭",
             "label": "Lollipop",
             "translationPt": "Pirulito"
           },
           {
+            "text": "Chocolate",
+            "emoji": "🍫",
+            "label": "Chocolate",
+            "translationPt": "Chocolate"
+          },
+          {
             "text": "Waffle",
             "emoji": "🧇",
             "label": "Waffle",
             "translationPt": "Waffle"
+          },
+          {
+            "text": "Cookie",
+            "emoji": "🍪",
+            "label": "Cookie",
+            "translationPt": "Biscoito / Cookie"
           }
         ],
         "options": [
-          "Chocolate",
-          "Cookie",
           "Lollipop",
-          "Waffle"
+          "Chocolate",
+          "Waffle",
+          "Cookie"
         ],
         "correctAnswer": "Waffle",
         "explanation": "Exemplo prático: \"Crispy golden waffle for breakfast.\"",
@@ -17394,10 +17394,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Gelatina"
           },
           {
-            "text": "Cupcake",
-            "emoji": "🧁",
-            "label": "Cupcake",
-            "translationPt": "Cupcake / Bolinho"
+            "text": "Honey",
+            "emoji": "🍯",
+            "label": "Honey",
+            "translationPt": "Mel"
           },
           {
             "text": "Candy",
@@ -17406,17 +17406,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bala / Doce"
           },
           {
-            "text": "Honey",
-            "emoji": "🍯",
-            "label": "Honey",
-            "translationPt": "Mel"
+            "text": "Cupcake",
+            "emoji": "🧁",
+            "label": "Cupcake",
+            "translationPt": "Cupcake / Bolinho"
           }
         ],
         "options": [
           "Jelly",
-          "Cupcake",
+          "Honey",
           "Candy",
-          "Honey"
+          "Cupcake"
         ],
         "correctAnswer": "Jelly",
         "explanation": "Exemplo prático: \"Red strawberry jelly dessert.\"",
@@ -17431,16 +17431,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥣",
         "visualOptions": [
           {
-            "text": "Jam",
-            "emoji": "🍓",
-            "label": "Jam",
-            "translationPt": "Geleia de frutas"
-          },
-          {
             "text": "Chestnut",
             "emoji": "🌰",
             "label": "Chestnut",
             "translationPt": "Castanha / Noz"
+          },
+          {
+            "text": "Jam",
+            "emoji": "🍓",
+            "label": "Jam",
+            "translationPt": "Geleia de frutas"
           },
           {
             "text": "Cereal",
@@ -17456,8 +17456,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Jam",
           "Chestnut",
+          "Jam",
           "Cereal",
           "Tea"
         ],
@@ -17474,6 +17474,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "❤️",
         "visualOptions": [
           {
+            "text": "Juice",
+            "emoji": "🧃",
+            "label": "Juice",
+            "translationPt": "Suco de laranja"
+          },
+          {
             "text": "Raspberry",
             "emoji": "❤️",
             "label": "Raspberry",
@@ -17486,12 +17492,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rosquinha / Donut"
           },
           {
-            "text": "Juice",
-            "emoji": "🧃",
-            "label": "Juice",
-            "translationPt": "Suco de laranja"
-          },
-          {
             "text": "Yogurt",
             "emoji": "🥣",
             "label": "Yogurt",
@@ -17499,9 +17499,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Juice",
           "Raspberry",
           "Donut",
-          "Juice",
           "Yogurt"
         ],
         "correctAnswer": "Raspberry",
@@ -17560,10 +17560,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🔴",
         "visualOptions": [
           {
-            "text": "Milkshake",
-            "emoji": "🥤",
-            "label": "Milkshake",
-            "translationPt": "Milk-shake"
+            "text": "Pomegranate",
+            "emoji": "🔴",
+            "label": "Pomegranate",
+            "translationPt": "Romã"
           },
           {
             "text": "Jelly",
@@ -17572,23 +17572,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Gelatina"
           },
           {
-            "text": "Pomegranate",
-            "emoji": "🔴",
-            "label": "Pomegranate",
-            "translationPt": "Romã"
-          },
-          {
             "text": "Milk",
             "emoji": "🥛",
             "label": "Milk",
             "translationPt": "Leite"
+          },
+          {
+            "text": "Milkshake",
+            "emoji": "🥤",
+            "label": "Milkshake",
+            "translationPt": "Milk-shake"
           }
         ],
         "options": [
-          "Milkshake",
-          "Jelly",
           "Pomegranate",
-          "Milk"
+          "Jelly",
+          "Milk",
+          "Milkshake"
         ],
         "correctAnswer": "Pomegranate",
         "explanation": "Exemplo prático: \"Pomegranate is full of red seeds.\"",
@@ -17609,12 +17609,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Waffle"
           },
           {
-            "text": "Dragon Fruit",
-            "emoji": "🐉",
-            "label": "Dragon Fruit",
-            "translationPt": "Pitaia"
-          },
-          {
             "text": "Cereal",
             "emoji": "🥣",
             "label": "Cereal",
@@ -17625,13 +17619,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍓",
             "label": "Jam",
             "translationPt": "Geleia de frutas"
+          },
+          {
+            "text": "Dragon Fruit",
+            "emoji": "🐉",
+            "label": "Dragon Fruit",
+            "translationPt": "Pitaia"
           }
         ],
         "options": [
           "Waffle",
-          "Dragon Fruit",
           "Cereal",
-          "Jam"
+          "Jam",
+          "Dragon Fruit"
         ],
         "correctAnswer": "Dragon Fruit",
         "explanation": "Exemplo prático: \"Dragon fruit has bright pink skin.\"",
@@ -17646,6 +17646,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌰",
         "visualOptions": [
           {
+            "text": "Lollipop",
+            "emoji": "🍭",
+            "label": "Lollipop",
+            "translationPt": "Pirulito"
+          },
+          {
+            "text": "Honey",
+            "emoji": "🍯",
+            "label": "Honey",
+            "translationPt": "Mel"
+          },
+          {
             "text": "Chestnut",
             "emoji": "🌰",
             "label": "Chestnut",
@@ -17656,25 +17668,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "❤️",
             "label": "Raspberry",
             "translationPt": "Framboesa"
-          },
-          {
-            "text": "Honey",
-            "emoji": "🍯",
-            "label": "Honey",
-            "translationPt": "Mel"
-          },
-          {
-            "text": "Lollipop",
-            "emoji": "🍭",
-            "label": "Lollipop",
-            "translationPt": "Pirulito"
           }
         ],
         "options": [
-          "Chestnut",
-          "Raspberry",
+          "Lollipop",
           "Honey",
-          "Lollipop"
+          "Chestnut",
+          "Raspberry"
         ],
         "correctAnswer": "Chestnut",
         "explanation": "Exemplo prático: \"Crunchy nuts and chestnuts.\"",
@@ -17708,12 +17708,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦞",
         "visualOptions": [
           {
-            "text": "Hyena",
-            "emoji": "🐕",
-            "label": "Hyena",
-            "translationPt": "Hiena"
-          },
-          {
             "text": "Blowfish",
             "emoji": "🐡",
             "label": "Blowfish",
@@ -17726,6 +17720,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Lagosta"
           },
           {
+            "text": "Hyena",
+            "emoji": "🐕",
+            "label": "Hyena",
+            "translationPt": "Hiena"
+          },
+          {
             "text": "Hedgehog",
             "emoji": "🦔",
             "label": "Hedgehog",
@@ -17733,9 +17733,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Hyena",
           "Blowfish",
           "Lobster",
+          "Hyena",
           "Hedgehog"
         ],
         "correctAnswer": "Lobster",
@@ -17750,12 +17750,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Squid",
         "visualEmoji": "🦑",
         "visualOptions": [
-          {
-            "text": "Squid",
-            "emoji": "🦑",
-            "label": "Squid",
-            "translationPt": "Lula"
-          },
           {
             "text": "Boar",
             "emoji": "🐗",
@@ -17773,13 +17767,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦫",
             "label": "Beaver",
             "translationPt": "Castor"
+          },
+          {
+            "text": "Squid",
+            "emoji": "🦑",
+            "label": "Squid",
+            "translationPt": "Lula"
           }
         ],
         "options": [
-          "Squid",
           "Boar",
           "Bison",
-          "Beaver"
+          "Beaver",
+          "Squid"
         ],
         "correctAnswer": "Squid",
         "explanation": "Exemplo prático: \"The squid swims fast in deep water.\"",
@@ -17793,6 +17793,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Stingray",
         "visualEmoji": "🐟",
         "visualOptions": [
+          {
+            "text": "Stingray",
+            "emoji": "🐟",
+            "label": "Stingray",
+            "translationPt": "Arraia"
+          },
           {
             "text": "Grasshopper",
             "emoji": "🦗",
@@ -17810,19 +17816,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "蜻",
             "label": "Dragonfly",
             "translationPt": "Libélula"
-          },
-          {
-            "text": "Stingray",
-            "emoji": "🐟",
-            "label": "Stingray",
-            "translationPt": "Arraia"
           }
         ],
         "options": [
+          "Stingray",
           "Grasshopper",
           "Walrus",
-          "Dragonfly",
-          "Stingray"
+          "Dragonfly"
         ],
         "correctAnswer": "Stingray",
         "explanation": "Exemplo prático: \"The flat stingray glides near the ocean floor.\"",
@@ -17837,35 +17837,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐋",
         "visualOptions": [
           {
-            "text": "Stork",
-            "emoji": "🐦",
-            "label": "Stork",
-            "translationPt": "Cegonha"
-          },
-          {
             "text": "Seagull",
             "emoji": "🐦",
             "label": "Seagull",
             "translationPt": "Gaivota"
           },
           {
-            "text": "Orca",
-            "emoji": "🐋",
-            "label": "Orca",
-            "translationPt": "Orca (Baleia-assassina)"
-          },
-          {
             "text": "Vulture",
             "emoji": "🦅",
             "label": "Vulture",
             "translationPt": "Urubu / Abutre"
+          },
+          {
+            "text": "Stork",
+            "emoji": "🐦",
+            "label": "Stork",
+            "translationPt": "Cegonha"
+          },
+          {
+            "text": "Orca",
+            "emoji": "🐋",
+            "label": "Orca",
+            "translationPt": "Orca (Baleia-assassina)"
           }
         ],
         "options": [
-          "Stork",
           "Seagull",
-          "Orca",
-          "Vulture"
+          "Vulture",
+          "Stork",
+          "Orca"
         ],
         "correctAnswer": "Orca",
         "explanation": "Exemplo prático: \"The black and white orca leaps from the sea.\"",
@@ -17886,16 +17886,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Gambá"
           },
           {
-            "text": "Piranha",
-            "emoji": "🐟",
-            "label": "Piranha",
-            "translationPt": "Piranha"
-          },
-          {
             "text": "Crow",
             "emoji": "🐦‍⬛",
             "label": "Crow",
             "translationPt": "Corvo"
+          },
+          {
+            "text": "Piranha",
+            "emoji": "🐟",
+            "label": "Piranha",
+            "translationPt": "Piranha"
           },
           {
             "text": "Canary",
@@ -17906,8 +17906,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Skunk",
-          "Piranha",
           "Crow",
+          "Piranha",
           "Canary"
         ],
         "correctAnswer": "Piranha",
@@ -17929,10 +17929,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Baiacu"
           },
           {
-            "text": "Raccoon",
-            "emoji": "🦝",
-            "label": "Raccoon",
-            "translationPt": "Guaxinim"
+            "text": "Otter",
+            "emoji": "🦦",
+            "label": "Otter",
+            "translationPt": "Lontra"
           },
           {
             "text": "Orangutan",
@@ -17941,17 +17941,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Orangotango"
           },
           {
-            "text": "Otter",
-            "emoji": "🦦",
-            "label": "Otter",
-            "translationPt": "Lontra"
+            "text": "Raccoon",
+            "emoji": "🦝",
+            "label": "Raccoon",
+            "translationPt": "Guaxinim"
           }
         ],
         "options": [
           "Blowfish",
-          "Raccoon",
+          "Otter",
           "Orangutan",
-          "Otter"
+          "Raccoon"
         ],
         "correctAnswer": "Blowfish",
         "explanation": "Exemplo prático: \"The blowfish puffs up like a round ball.\"",
@@ -17966,18 +17966,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦭",
         "visualOptions": [
           {
-            "text": "Beetle",
-            "emoji": "🪲",
-            "label": "Beetle",
-            "translationPt": "Besouro"
-          },
-          {
-            "text": "Lobster",
-            "emoji": "🦞",
-            "label": "Lobster",
-            "translationPt": "Lagosta"
-          },
-          {
             "text": "Llama",
             "emoji": "🦙",
             "label": "Llama",
@@ -17988,13 +17976,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦭",
             "label": "Walrus",
             "translationPt": "Morsa"
+          },
+          {
+            "text": "Lobster",
+            "emoji": "🦞",
+            "label": "Lobster",
+            "translationPt": "Lagosta"
+          },
+          {
+            "text": "Beetle",
+            "emoji": "🪲",
+            "label": "Beetle",
+            "translationPt": "Besouro"
           }
         ],
         "options": [
-          "Beetle",
-          "Lobster",
           "Llama",
-          "Walrus"
+          "Walrus",
+          "Lobster",
+          "Beetle"
         ],
         "correctAnswer": "Walrus",
         "explanation": "Exemplo prático: \"The arctic walrus has two long ivory tusks.\"",
@@ -18009,16 +18009,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐦",
         "visualOptions": [
           {
-            "text": "Pelican",
-            "emoji": "🐦",
-            "label": "Pelican",
-            "translationPt": "Pelicano"
-          },
-          {
             "text": "Squid",
             "emoji": "🦑",
             "label": "Squid",
             "translationPt": "Lula"
+          },
+          {
+            "text": "Pelican",
+            "emoji": "🐦",
+            "label": "Pelican",
+            "translationPt": "Pelicano"
           },
           {
             "text": "Stingray",
@@ -18034,8 +18034,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Pelican",
           "Squid",
+          "Pelican",
           "Stingray",
           "Orca"
         ],
@@ -18058,10 +18058,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Alce"
           },
           {
-            "text": "Stork",
-            "emoji": "🐦",
-            "label": "Stork",
-            "translationPt": "Cegonha"
+            "text": "Meerkat",
+            "emoji": "🐿️",
+            "label": "Meerkat",
+            "translationPt": "Suricato"
           },
           {
             "text": "Scorpion",
@@ -18070,17 +18070,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escorpião"
           },
           {
-            "text": "Meerkat",
-            "emoji": "🐿️",
-            "label": "Meerkat",
-            "translationPt": "Suricato"
+            "text": "Stork",
+            "emoji": "🐦",
+            "label": "Stork",
+            "translationPt": "Cegonha"
           }
         ],
         "options": [
           "Moose",
-          "Stork",
+          "Meerkat",
           "Scorpion",
-          "Meerkat"
+          "Stork"
         ],
         "correctAnswer": "Stork",
         "explanation": "Exemplo prático: \"The white stork builds big nests on roofs.\"",
@@ -18095,16 +18095,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐦",
         "visualOptions": [
           {
+            "text": "Skunk",
+            "emoji": "🦨",
+            "label": "Skunk",
+            "translationPt": "Gambá"
+          },
+          {
             "text": "Platypus",
             "emoji": "🦆",
             "label": "Platypus",
             "translationPt": "Ornitorrinco"
-          },
-          {
-            "text": "Piranha",
-            "emoji": "🐟",
-            "label": "Piranha",
-            "translationPt": "Piranha"
           },
           {
             "text": "Seagull",
@@ -18113,17 +18113,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Gaivota"
           },
           {
-            "text": "Skunk",
-            "emoji": "🦨",
-            "label": "Skunk",
-            "translationPt": "Gambá"
+            "text": "Piranha",
+            "emoji": "🐟",
+            "label": "Piranha",
+            "translationPt": "Piranha"
           }
         ],
         "options": [
+          "Skunk",
           "Platypus",
-          "Piranha",
           "Seagull",
-          "Skunk"
+          "Piranha"
         ],
         "correctAnswer": "Seagull",
         "explanation": "Exemplo prático: \"Seagulls fly over the beach.\"",
@@ -18138,10 +18138,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐦‍⬛",
         "visualOptions": [
           {
-            "text": "Orangutan",
-            "emoji": "🦧",
-            "label": "Orangutan",
-            "translationPt": "Orangotango"
+            "text": "Crow",
+            "emoji": "🐦‍⬛",
+            "label": "Crow",
+            "translationPt": "Corvo"
           },
           {
             "text": "Otter",
@@ -18150,23 +18150,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Lontra"
           },
           {
+            "text": "Orangutan",
+            "emoji": "🦧",
+            "label": "Orangutan",
+            "translationPt": "Orangotango"
+          },
+          {
             "text": "Lobster",
             "emoji": "🦞",
             "label": "Lobster",
             "translationPt": "Lagosta"
-          },
-          {
-            "text": "Crow",
-            "emoji": "🐦‍⬛",
-            "label": "Crow",
-            "translationPt": "Corvo"
           }
         ],
         "options": [
-          "Orangutan",
+          "Crow",
           "Otter",
-          "Lobster",
-          "Crow"
+          "Orangutan",
+          "Lobster"
         ],
         "correctAnswer": "Crow",
         "explanation": "Exemplo prático: \"The black crow is a very smart bird.\"",
@@ -18181,35 +18181,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦅",
         "visualOptions": [
           {
-            "text": "Vulture",
-            "emoji": "🦅",
-            "label": "Vulture",
-            "translationPt": "Urubu / Abutre"
-          },
-          {
             "text": "Blowfish",
             "emoji": "🐡",
             "label": "Blowfish",
             "translationPt": "Baiacu"
           },
           {
-            "text": "Bison",
-            "emoji": "🦬",
-            "label": "Bison",
-            "translationPt": "Búfalo / Bisão"
-          },
-          {
             "text": "Pelican",
             "emoji": "🐦",
             "label": "Pelican",
             "translationPt": "Pelicano"
+          },
+          {
+            "text": "Vulture",
+            "emoji": "🦅",
+            "label": "Vulture",
+            "translationPt": "Urubu / Abutre"
+          },
+          {
+            "text": "Bison",
+            "emoji": "🦬",
+            "label": "Bison",
+            "translationPt": "Búfalo / Bisão"
           }
         ],
         "options": [
-          "Vulture",
           "Blowfish",
-          "Bison",
-          "Pelican"
+          "Pelican",
+          "Vulture",
+          "Bison"
         ],
         "correctAnswer": "Vulture",
         "explanation": "Exemplo prático: \"Vultures soar high on warm air currents.\"",
@@ -18236,23 +18236,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Canário"
           },
           {
-            "text": "Beaver",
-            "emoji": "🦫",
-            "label": "Beaver",
-            "translationPt": "Castor"
-          },
-          {
             "text": "Boar",
             "emoji": "🐗",
             "label": "Boar",
             "translationPt": "Javali"
+          },
+          {
+            "text": "Beaver",
+            "emoji": "🦫",
+            "label": "Beaver",
+            "translationPt": "Castor"
           }
         ],
         "options": [
           "Hedgehog",
           "Canary",
-          "Beaver",
-          "Boar"
+          "Boar",
+          "Beaver"
         ],
         "correctAnswer": "Canary",
         "explanation": "Exemplo prático: \"The yellow canary sings a bright song.\"",
@@ -18267,10 +18267,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦙",
         "visualOptions": [
           {
-            "text": "Walrus",
-            "emoji": "🦭",
-            "label": "Walrus",
-            "translationPt": "Morsa"
+            "text": "Beetle",
+            "emoji": "🪲",
+            "label": "Beetle",
+            "translationPt": "Besouro"
           },
           {
             "text": "Dragonfly",
@@ -18279,23 +18279,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Libélula"
           },
           {
+            "text": "Walrus",
+            "emoji": "🦭",
+            "label": "Walrus",
+            "translationPt": "Morsa"
+          },
+          {
             "text": "Llama",
             "emoji": "🦙",
             "label": "Llama",
             "translationPt": "Lhama"
-          },
-          {
-            "text": "Beetle",
-            "emoji": "🪲",
-            "label": "Beetle",
-            "translationPt": "Besouro"
           }
         ],
         "options": [
-          "Walrus",
+          "Beetle",
           "Dragonfly",
-          "Llama",
-          "Beetle"
+          "Walrus",
+          "Llama"
         ],
         "correctAnswer": "Llama",
         "explanation": "Exemplo prático: \"Llamas live in the Andes mountains of South America.\"",
@@ -18310,16 +18310,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦧",
         "visualOptions": [
           {
+            "text": "Orangutan",
+            "emoji": "🦧",
+            "label": "Orangutan",
+            "translationPt": "Orangotango"
+          },
+          {
             "text": "Platypus",
             "emoji": "🦆",
             "label": "Platypus",
             "translationPt": "Ornitorrinco"
-          },
-          {
-            "text": "Moose",
-            "emoji": "🫎",
-            "label": "Moose",
-            "translationPt": "Alce"
           },
           {
             "text": "Piranha",
@@ -18328,17 +18328,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Piranha"
           },
           {
-            "text": "Orangutan",
-            "emoji": "🦧",
-            "label": "Orangutan",
-            "translationPt": "Orangotango"
+            "text": "Moose",
+            "emoji": "🫎",
+            "label": "Moose",
+            "translationPt": "Alce"
           }
         ],
         "options": [
+          "Orangutan",
           "Platypus",
-          "Moose",
           "Piranha",
-          "Orangutan"
+          "Moose"
         ],
         "correctAnswer": "Orangutan",
         "explanation": "Exemplo prático: \"The orangutan has long reddish hair.\"",
@@ -18353,10 +18353,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🐕",
         "visualOptions": [
           {
-            "text": "Hyena",
-            "emoji": "🐕",
-            "label": "Hyena",
-            "translationPt": "Hiena"
+            "text": "Crow",
+            "emoji": "🐦‍⬛",
+            "label": "Crow",
+            "translationPt": "Corvo"
           },
           {
             "text": "Squid",
@@ -18371,17 +18371,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Urubu / Abutre"
           },
           {
-            "text": "Crow",
-            "emoji": "🐦‍⬛",
-            "label": "Crow",
-            "translationPt": "Corvo"
+            "text": "Hyena",
+            "emoji": "🐕",
+            "label": "Hyena",
+            "translationPt": "Hiena"
           }
         ],
         "options": [
-          "Hyena",
+          "Crow",
           "Squid",
           "Vulture",
-          "Crow"
+          "Hyena"
         ],
         "correctAnswer": "Hyena",
         "explanation": "Exemplo prático: \"Spotted hyenas live in the African savanna.\"",
@@ -18396,16 +18396,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦬",
         "visualOptions": [
           {
-            "text": "Raccoon",
-            "emoji": "🦝",
-            "label": "Raccoon",
-            "translationPt": "Guaxinim"
-          },
-          {
             "text": "Canary",
             "emoji": "🐤",
             "label": "Canary",
             "translationPt": "Canário"
+          },
+          {
+            "text": "Orca",
+            "emoji": "🐋",
+            "label": "Orca",
+            "translationPt": "Orca (Baleia-assassina)"
           },
           {
             "text": "Bison",
@@ -18414,17 +18414,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Búfalo / Bisão"
           },
           {
-            "text": "Orca",
-            "emoji": "🐋",
-            "label": "Orca",
-            "translationPt": "Orca (Baleia-assassina)"
+            "text": "Raccoon",
+            "emoji": "🦝",
+            "label": "Raccoon",
+            "translationPt": "Guaxinim"
           }
         ],
         "options": [
-          "Raccoon",
           "Canary",
+          "Orca",
           "Bison",
-          "Orca"
+          "Raccoon"
         ],
         "correctAnswer": "Bison",
         "explanation": "Exemplo prático: \"The large bison has thick fur on its shoulders.\"",
@@ -18445,10 +18445,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Javali"
           },
           {
-            "text": "Stingray",
-            "emoji": "🐟",
-            "label": "Stingray",
-            "translationPt": "Arraia"
+            "text": "Stork",
+            "emoji": "🐦",
+            "label": "Stork",
+            "translationPt": "Cegonha"
           },
           {
             "text": "Llama",
@@ -18457,17 +18457,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Lhama"
           },
           {
-            "text": "Stork",
-            "emoji": "🐦",
-            "label": "Stork",
-            "translationPt": "Cegonha"
+            "text": "Stingray",
+            "emoji": "🐟",
+            "label": "Stingray",
+            "translationPt": "Arraia"
           }
         ],
         "options": [
           "Boar",
-          "Stingray",
+          "Stork",
           "Llama",
-          "Stork"
+          "Stingray"
         ],
         "correctAnswer": "Boar",
         "explanation": "Exemplo prático: \"The wild boar has curved tusks.\"",
@@ -18482,16 +18482,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🫎",
         "visualOptions": [
           {
-            "text": "Seagull",
-            "emoji": "🐦",
-            "label": "Seagull",
-            "translationPt": "Gaivota"
-          },
-          {
             "text": "Pelican",
             "emoji": "🐦",
             "label": "Pelican",
             "translationPt": "Pelicano"
+          },
+          {
+            "text": "Moose",
+            "emoji": "🫎",
+            "label": "Moose",
+            "translationPt": "Alce"
           },
           {
             "text": "Scorpion",
@@ -18500,17 +18500,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Escorpião"
           },
           {
-            "text": "Moose",
-            "emoji": "🫎",
-            "label": "Moose",
-            "translationPt": "Alce"
+            "text": "Seagull",
+            "emoji": "🐦",
+            "label": "Seagull",
+            "translationPt": "Gaivota"
           }
         ],
         "options": [
-          "Seagull",
           "Pelican",
+          "Moose",
           "Scorpion",
-          "Moose"
+          "Seagull"
         ],
         "correctAnswer": "Moose",
         "explanation": "Exemplo prático: \"The northern moose has huge flat antlers.\"",
@@ -18525,12 +18525,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦔",
         "visualOptions": [
           {
-            "text": "Hyena",
-            "emoji": "🐕",
-            "label": "Hyena",
-            "translationPt": "Hiena"
-          },
-          {
             "text": "Meerkat",
             "emoji": "🐿️",
             "label": "Meerkat",
@@ -18543,6 +18537,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Porco-espinho / Ouriço"
           },
           {
+            "text": "Hyena",
+            "emoji": "🐕",
+            "label": "Hyena",
+            "translationPt": "Hiena"
+          },
+          {
             "text": "Grasshopper",
             "emoji": "🦗",
             "label": "Grasshopper",
@@ -18550,9 +18550,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Hyena",
           "Meerkat",
           "Hedgehog",
+          "Hyena",
           "Grasshopper"
         ],
         "correctAnswer": "Hedgehog",
@@ -18568,16 +18568,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦝",
         "visualOptions": [
           {
+            "text": "Piranha",
+            "emoji": "🐟",
+            "label": "Piranha",
+            "translationPt": "Piranha"
+          },
+          {
             "text": "Platypus",
             "emoji": "🦆",
             "label": "Platypus",
             "translationPt": "Ornitorrinco"
-          },
-          {
-            "text": "Raccoon",
-            "emoji": "🦝",
-            "label": "Raccoon",
-            "translationPt": "Guaxinim"
           },
           {
             "text": "Squid",
@@ -18586,17 +18586,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Lula"
           },
           {
-            "text": "Piranha",
-            "emoji": "🐟",
-            "label": "Piranha",
-            "translationPt": "Piranha"
+            "text": "Raccoon",
+            "emoji": "🦝",
+            "label": "Raccoon",
+            "translationPt": "Guaxinim"
           }
         ],
         "options": [
+          "Piranha",
           "Platypus",
-          "Raccoon",
           "Squid",
-          "Piranha"
+          "Raccoon"
         ],
         "correctAnswer": "Raccoon",
         "explanation": "Exemplo prático: \"The raccoon looks like it is wearing a black mask.\"",
@@ -18611,10 +18611,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦦",
         "visualOptions": [
           {
-            "text": "Otter",
-            "emoji": "🦦",
-            "label": "Otter",
-            "translationPt": "Lontra"
+            "text": "Crow",
+            "emoji": "🐦‍⬛",
+            "label": "Crow",
+            "translationPt": "Corvo"
           },
           {
             "text": "Canary",
@@ -18623,10 +18623,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Canário"
           },
           {
-            "text": "Crow",
-            "emoji": "🐦‍⬛",
-            "label": "Crow",
-            "translationPt": "Corvo"
+            "text": "Otter",
+            "emoji": "🦦",
+            "label": "Otter",
+            "translationPt": "Lontra"
           },
           {
             "text": "Vulture",
@@ -18636,9 +18636,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Otter",
-          "Canary",
           "Crow",
+          "Canary",
+          "Otter",
           "Vulture"
         ],
         "correctAnswer": "Otter",
@@ -18654,10 +18654,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦫",
         "visualOptions": [
           {
-            "text": "Orca",
-            "emoji": "🐋",
-            "label": "Orca",
-            "translationPt": "Orca (Baleia-assassina)"
+            "text": "Beaver",
+            "emoji": "🦫",
+            "label": "Beaver",
+            "translationPt": "Castor"
           },
           {
             "text": "Lobster",
@@ -18672,17 +18672,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Orangotango"
           },
           {
-            "text": "Beaver",
-            "emoji": "🦫",
-            "label": "Beaver",
-            "translationPt": "Castor"
+            "text": "Orca",
+            "emoji": "🐋",
+            "label": "Orca",
+            "translationPt": "Orca (Baleia-assassina)"
           }
         ],
         "options": [
-          "Orca",
+          "Beaver",
           "Lobster",
           "Orangutan",
-          "Beaver"
+          "Orca"
         ],
         "correctAnswer": "Beaver",
         "explanation": "Exemplo prático: \"The beaver has strong teeth and a flat tail.\"",
@@ -18703,10 +18703,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Porco-espinho / Ouriço"
           },
           {
-            "text": "Blowfish",
-            "emoji": "🐡",
-            "label": "Blowfish",
-            "translationPt": "Baiacu"
+            "text": "Hyena",
+            "emoji": "🐕",
+            "label": "Hyena",
+            "translationPt": "Hiena"
           },
           {
             "text": "Skunk",
@@ -18715,17 +18715,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Gambá"
           },
           {
-            "text": "Hyena",
-            "emoji": "🐕",
-            "label": "Hyena",
-            "translationPt": "Hiena"
+            "text": "Blowfish",
+            "emoji": "🐡",
+            "label": "Blowfish",
+            "translationPt": "Baiacu"
           }
         ],
         "options": [
           "Hedgehog",
-          "Blowfish",
+          "Hyena",
           "Skunk",
-          "Hyena"
+          "Blowfish"
         ],
         "correctAnswer": "Skunk",
         "explanation": "Exemplo prático: \"The black skunk has a white stripe down its back.\"",
@@ -18783,12 +18783,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦆",
         "visualOptions": [
           {
-            "text": "Platypus",
-            "emoji": "🦆",
-            "label": "Platypus",
-            "translationPt": "Ornitorrinco"
-          },
-          {
             "text": "Beetle",
             "emoji": "🪲",
             "label": "Beetle",
@@ -18805,13 +18799,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦦",
             "label": "Otter",
             "translationPt": "Lontra"
+          },
+          {
+            "text": "Platypus",
+            "emoji": "🦆",
+            "label": "Platypus",
+            "translationPt": "Ornitorrinco"
           }
         ],
         "options": [
-          "Platypus",
           "Beetle",
           "Raccoon",
-          "Otter"
+          "Otter",
+          "Platypus"
         ],
         "correctAnswer": "Platypus",
         "explanation": "Exemplo prático: \"The Australian platypus has a duck bill and beaver tail.\"",
@@ -18826,6 +18826,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦂",
         "visualOptions": [
           {
+            "text": "Scorpion",
+            "emoji": "🦂",
+            "label": "Scorpion",
+            "translationPt": "Escorpião"
+          },
+          {
+            "text": "Seagull",
+            "emoji": "🐦",
+            "label": "Seagull",
+            "translationPt": "Gaivota"
+          },
+          {
             "text": "Stingray",
             "emoji": "🐟",
             "label": "Stingray",
@@ -18836,25 +18848,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐦",
             "label": "Stork",
             "translationPt": "Cegonha"
-          },
-          {
-            "text": "Seagull",
-            "emoji": "🐦",
-            "label": "Seagull",
-            "translationPt": "Gaivota"
-          },
-          {
-            "text": "Scorpion",
-            "emoji": "🦂",
-            "label": "Scorpion",
-            "translationPt": "Escorpião"
           }
         ],
         "options": [
-          "Stingray",
-          "Stork",
+          "Scorpion",
           "Seagull",
-          "Scorpion"
+          "Stingray",
+          "Stork"
         ],
         "correctAnswer": "Scorpion",
         "explanation": "Exemplo prático: \"The scorpion has pincers and a curved tail.\"",
@@ -18869,18 +18869,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦗",
         "visualOptions": [
           {
-            "text": "Grasshopper",
-            "emoji": "🦗",
-            "label": "Grasshopper",
-            "translationPt": "Gafanhoto / Grilo"
-          },
-          {
-            "text": "Skunk",
-            "emoji": "🦨",
-            "label": "Skunk",
-            "translationPt": "Gambá"
-          },
-          {
             "text": "Pelican",
             "emoji": "🐦",
             "label": "Pelican",
@@ -18891,13 +18879,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦙",
             "label": "Llama",
             "translationPt": "Lhama"
+          },
+          {
+            "text": "Skunk",
+            "emoji": "🦨",
+            "label": "Skunk",
+            "translationPt": "Gambá"
+          },
+          {
+            "text": "Grasshopper",
+            "emoji": "🦗",
+            "label": "Grasshopper",
+            "translationPt": "Gafanhoto / Grilo"
           }
         ],
         "options": [
-          "Grasshopper",
-          "Skunk",
           "Pelican",
-          "Llama"
+          "Llama",
+          "Skunk",
+          "Grasshopper"
         ],
         "correctAnswer": "Grasshopper",
         "explanation": "Exemplo prático: \"The green grasshopper jumps in the grass.\"",
@@ -18918,16 +18918,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Castor"
           },
           {
-            "text": "Dragonfly",
-            "emoji": "蜻",
-            "label": "Dragonfly",
-            "translationPt": "Libélula"
-          },
-          {
             "text": "Meerkat",
             "emoji": "🐿️",
             "label": "Meerkat",
             "translationPt": "Suricato"
+          },
+          {
+            "text": "Dragonfly",
+            "emoji": "蜻",
+            "label": "Dragonfly",
+            "translationPt": "Libélula"
           },
           {
             "text": "Moose",
@@ -18938,8 +18938,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Beaver",
-          "Dragonfly",
           "Meerkat",
+          "Dragonfly",
           "Moose"
         ],
         "correctAnswer": "Dragonfly",
@@ -18955,18 +18955,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪲",
         "visualOptions": [
           {
-            "text": "Hedgehog",
-            "emoji": "🦔",
-            "label": "Hedgehog",
-            "translationPt": "Porco-espinho / Ouriço"
-          },
-          {
-            "text": "Hyena",
-            "emoji": "🐕",
-            "label": "Hyena",
-            "translationPt": "Hiena"
-          },
-          {
             "text": "Beetle",
             "emoji": "🪲",
             "label": "Beetle",
@@ -18977,13 +18965,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐡",
             "label": "Blowfish",
             "translationPt": "Baiacu"
+          },
+          {
+            "text": "Hedgehog",
+            "emoji": "🦔",
+            "label": "Hedgehog",
+            "translationPt": "Porco-espinho / Ouriço"
+          },
+          {
+            "text": "Hyena",
+            "emoji": "🐕",
+            "label": "Hyena",
+            "translationPt": "Hiena"
           }
         ],
         "options": [
-          "Hedgehog",
-          "Hyena",
           "Beetle",
-          "Blowfish"
+          "Blowfish",
+          "Hedgehog",
+          "Hyena"
         ],
         "correctAnswer": "Beetle",
         "explanation": "Exemplo prático: \"The shiny beetle has a hard shell.\"",
@@ -19016,6 +19016,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🎸",
         "visualOptions": [
           {
+            "text": "Electric Plug",
+            "emoji": "🔌",
+            "label": "Electric Plug",
+            "translationPt": "Plugue de tomada"
+          },
+          {
+            "text": "Hammer",
+            "emoji": "🔨",
+            "label": "Hammer",
+            "translationPt": "Martelo"
+          },
+          {
             "text": "Battery",
             "emoji": "🔋",
             "label": "Battery",
@@ -19026,25 +19038,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🎸",
             "label": "Guitar",
             "translationPt": "Violão / Guitarra"
-          },
-          {
-            "text": "Hammer",
-            "emoji": "🔨",
-            "label": "Hammer",
-            "translationPt": "Martelo"
-          },
-          {
-            "text": "Electric Plug",
-            "emoji": "🔌",
-            "label": "Electric Plug",
-            "translationPt": "Plugue de tomada"
           }
         ],
         "options": [
-          "Battery",
-          "Guitar",
+          "Electric Plug",
           "Hammer",
-          "Electric Plug"
+          "Battery",
+          "Guitar"
         ],
         "correctAnswer": "Guitar",
         "explanation": "Exemplo prático: \"He plays acoustic guitar with his friends.\"",
@@ -19108,16 +19108,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Furadeira"
           },
           {
-            "text": "Accordion",
-            "emoji": "🪗",
-            "label": "Accordion",
-            "translationPt": "Sanfona / Acordeão"
-          },
-          {
             "text": "Wrench",
             "emoji": "🔧",
             "label": "Wrench",
             "translationPt": "Chave inglesa / Chave de boca"
+          },
+          {
+            "text": "Accordion",
+            "emoji": "🪗",
+            "label": "Accordion",
+            "translationPt": "Sanfona / Acordeão"
           },
           {
             "text": "Drum",
@@ -19128,8 +19128,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Drill",
-          "Accordion",
           "Wrench",
+          "Accordion",
           "Drum"
         ],
         "correctAnswer": "Drum",
@@ -19145,18 +19145,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🎻",
         "visualOptions": [
           {
-            "text": "Violin",
-            "emoji": "🎻",
-            "label": "Violin",
-            "translationPt": "Violino"
-          },
-          {
-            "text": "Saw",
-            "emoji": "🪚",
-            "label": "Saw",
-            "translationPt": "Serrote"
-          },
-          {
             "text": "Pliers",
             "emoji": "钳",
             "label": "Pliers",
@@ -19167,13 +19155,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪛",
             "label": "Screwdriver",
             "translationPt": "Chave de fenda"
+          },
+          {
+            "text": "Violin",
+            "emoji": "🎻",
+            "label": "Violin",
+            "translationPt": "Violino"
+          },
+          {
+            "text": "Saw",
+            "emoji": "🪚",
+            "label": "Saw",
+            "translationPt": "Serrote"
           }
         ],
         "options": [
-          "Violin",
-          "Saw",
           "Pliers",
-          "Screwdriver"
+          "Screwdriver",
+          "Violin",
+          "Saw"
         ],
         "correctAnswer": "Violin",
         "explanation": "Exemplo prático: \"The wooden violin has four strings and a bow.\"",
@@ -19188,12 +19188,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪈",
         "visualOptions": [
           {
-            "text": "Flashlight",
-            "emoji": "🔦",
-            "label": "Flashlight",
-            "translationPt": "Lanterna"
-          },
-          {
             "text": "Flute",
             "emoji": "🪈",
             "label": "Flute",
@@ -19206,6 +19200,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vela"
           },
           {
+            "text": "Flashlight",
+            "emoji": "🔦",
+            "label": "Flashlight",
+            "translationPt": "Lanterna"
+          },
+          {
             "text": "Chain",
             "emoji": "⛓️",
             "label": "Chain",
@@ -19213,9 +19213,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Flashlight",
           "Flute",
           "Candle",
+          "Flashlight",
           "Chain"
         ],
         "correctAnswer": "Flute",
@@ -19231,6 +19231,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🎺",
         "visualOptions": [
           {
+            "text": "Lock",
+            "emoji": "🔒",
+            "label": "Lock",
+            "translationPt": "Cadeado"
+          },
+          {
+            "text": "Trumpet",
+            "emoji": "🎺",
+            "label": "Trumpet",
+            "translationPt": "Trompete"
+          },
+          {
             "text": "Light Bulb",
             "emoji": "💡",
             "label": "Light Bulb",
@@ -19241,25 +19253,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📻",
             "label": "Radio",
             "translationPt": "Rádio"
-          },
-          {
-            "text": "Trumpet",
-            "emoji": "🎺",
-            "label": "Trumpet",
-            "translationPt": "Trompete"
-          },
-          {
-            "text": "Lock",
-            "emoji": "🔒",
-            "label": "Lock",
-            "translationPt": "Cadeado"
           }
         ],
         "options": [
-          "Light Bulb",
-          "Radio",
+          "Lock",
           "Trumpet",
-          "Lock"
+          "Light Bulb",
+          "Radio"
         ],
         "correctAnswer": "Trumpet",
         "explanation": "Exemplo prático: \"The brass trumpet shines on stage.\"",
@@ -19274,16 +19274,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🎷",
         "visualOptions": [
           {
-            "text": "Basket",
-            "emoji": "🧺",
-            "label": "Basket",
-            "translationPt": "Cesta / Cesto"
-          },
-          {
             "text": "Bandage",
             "emoji": "🩹",
             "label": "Bandage",
             "translationPt": "Curativo (Band-aid)"
+          },
+          {
+            "text": "Saxophone",
+            "emoji": "🎷",
+            "label": "Saxophone",
+            "translationPt": "Saxofone"
           },
           {
             "text": "Box",
@@ -19292,17 +19292,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caixa de papelão"
           },
           {
-            "text": "Saxophone",
-            "emoji": "🎷",
-            "label": "Saxophone",
-            "translationPt": "Saxofone"
+            "text": "Basket",
+            "emoji": "🧺",
+            "label": "Basket",
+            "translationPt": "Cesta / Cesto"
           }
         ],
         "options": [
-          "Basket",
           "Bandage",
+          "Saxophone",
           "Box",
-          "Saxophone"
+          "Basket"
         ],
         "correctAnswer": "Saxophone",
         "explanation": "Exemplo prático: \"He plays jazz on the golden saxophone.\"",
@@ -19317,10 +19317,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪗",
         "visualOptions": [
           {
-            "text": "Accordion",
-            "emoji": "🪗",
-            "label": "Accordion",
-            "translationPt": "Sanfona / Acordeão"
+            "text": "Violin",
+            "emoji": "🎻",
+            "label": "Violin",
+            "translationPt": "Violino"
           },
           {
             "text": "Piano",
@@ -19329,23 +19329,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Piano"
           },
           {
-            "text": "Violin",
-            "emoji": "🎻",
-            "label": "Violin",
-            "translationPt": "Violino"
-          },
-          {
             "text": "Ladder",
             "emoji": "🪜",
             "label": "Ladder",
             "translationPt": "Escada portátil"
+          },
+          {
+            "text": "Accordion",
+            "emoji": "🪗",
+            "label": "Accordion",
+            "translationPt": "Sanfona / Acordeão"
           }
         ],
         "options": [
-          "Accordion",
-          "Piano",
           "Violin",
-          "Ladder"
+          "Piano",
+          "Ladder",
+          "Accordion"
         ],
         "correctAnswer": "Accordion",
         "explanation": "Exemplo prático: \"The accordion is traditional in Brazilian forró.\"",
@@ -19360,16 +19360,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🎤",
         "visualOptions": [
           {
-            "text": "Guitar",
-            "emoji": "🎸",
-            "label": "Guitar",
-            "translationPt": "Violão / Guitarra"
-          },
-          {
             "text": "Flute",
             "emoji": "🪈",
             "label": "Flute",
             "translationPt": "Flauta"
+          },
+          {
+            "text": "Drum",
+            "emoji": "🥁",
+            "label": "Drum",
+            "translationPt": "Bateria / Tambor"
           },
           {
             "text": "Microphone",
@@ -19378,17 +19378,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Microfone"
           },
           {
-            "text": "Drum",
-            "emoji": "🥁",
-            "label": "Drum",
-            "translationPt": "Bateria / Tambor"
+            "text": "Guitar",
+            "emoji": "🎸",
+            "label": "Guitar",
+            "translationPt": "Violão / Guitarra"
           }
         ],
         "options": [
-          "Guitar",
           "Flute",
+          "Drum",
           "Microphone",
-          "Drum"
+          "Guitar"
         ],
         "correctAnswer": "Microphone",
         "explanation": "Exemplo prático: \"Sing clearly into the microphone.\"",
@@ -19415,23 +19415,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chave de fenda"
           },
           {
-            "text": "Pill",
-            "emoji": "💊",
-            "label": "Pill",
-            "translationPt": "Comprimido / Cápsula"
-          },
-          {
             "text": "Saw",
             "emoji": "🪚",
             "label": "Saw",
             "translationPt": "Serrote"
+          },
+          {
+            "text": "Pill",
+            "emoji": "💊",
+            "label": "Pill",
+            "translationPt": "Comprimido / Cápsula"
           }
         ],
         "options": [
           "Radio",
           "Screwdriver",
-          "Pill",
-          "Saw"
+          "Saw",
+          "Pill"
         ],
         "correctAnswer": "Radio",
         "explanation": "Exemplo prático: \"Listen to music and news on the portable radio.\"",
@@ -19452,12 +19452,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cadeado"
           },
           {
-            "text": "Chain",
-            "emoji": "⛓️",
-            "label": "Chain",
-            "translationPt": "Corrente de metal"
-          },
-          {
             "text": "Saxophone",
             "emoji": "🎷",
             "label": "Saxophone",
@@ -19468,13 +19462,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🔦",
             "label": "Flashlight",
             "translationPt": "Lanterna"
+          },
+          {
+            "text": "Chain",
+            "emoji": "⛓️",
+            "label": "Chain",
+            "translationPt": "Corrente de metal"
           }
         ],
         "options": [
           "Lock",
-          "Chain",
           "Saxophone",
-          "Flashlight"
+          "Flashlight",
+          "Chain"
         ],
         "correctAnswer": "Flashlight",
         "explanation": "Exemplo prático: \"Use a battery flashlight in the dark.\"",
@@ -19489,16 +19489,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🔋",
         "visualOptions": [
           {
-            "text": "Battery",
-            "emoji": "🔋",
-            "label": "Battery",
-            "translationPt": "Pilha / Bateria"
-          },
-          {
             "text": "Bandage",
             "emoji": "🩹",
             "label": "Bandage",
             "translationPt": "Curativo (Band-aid)"
+          },
+          {
+            "text": "Battery",
+            "emoji": "🔋",
+            "label": "Battery",
+            "translationPt": "Pilha / Bateria"
           },
           {
             "text": "Basket",
@@ -19514,8 +19514,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Battery",
           "Bandage",
+          "Battery",
           "Basket",
           "Box"
         ],
@@ -19538,6 +19538,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Microfone"
           },
           {
+            "text": "Hammer",
+            "emoji": "🔨",
+            "label": "Hammer",
+            "translationPt": "Martelo"
+          },
+          {
             "text": "Ladder",
             "emoji": "🪜",
             "label": "Ladder",
@@ -19548,19 +19554,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🔌",
             "label": "Electric Plug",
             "translationPt": "Plugue de tomada"
-          },
-          {
-            "text": "Hammer",
-            "emoji": "🔨",
-            "label": "Hammer",
-            "translationPt": "Martelo"
           }
         ],
         "options": [
           "Microphone",
+          "Hammer",
           "Ladder",
-          "Electric Plug",
-          "Hammer"
+          "Electric Plug"
         ],
         "correctAnswer": "Electric Plug",
         "explanation": "Exemplo prático: \"Connect the electric plug to the outlet.\"",
@@ -19581,10 +19581,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Lâmpada"
           },
           {
-            "text": "Drill",
-            "emoji": "🪛",
-            "label": "Drill",
-            "translationPt": "Furadeira"
+            "text": "Accordion",
+            "emoji": "🪗",
+            "label": "Accordion",
+            "translationPt": "Sanfona / Acordeão"
           },
           {
             "text": "Drum",
@@ -19593,17 +19593,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bateria / Tambor"
           },
           {
-            "text": "Accordion",
-            "emoji": "🪗",
-            "label": "Accordion",
-            "translationPt": "Sanfona / Acordeão"
+            "text": "Drill",
+            "emoji": "🪛",
+            "label": "Drill",
+            "translationPt": "Furadeira"
           }
         ],
         "options": [
           "Light Bulb",
-          "Drill",
+          "Accordion",
           "Drum",
-          "Accordion"
+          "Drill"
         ],
         "correctAnswer": "Light Bulb",
         "explanation": "Exemplo prático: \"Replace the burned-out light bulb.\"",
@@ -19624,16 +19624,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Piano"
           },
           {
-            "text": "Pill",
-            "emoji": "💊",
-            "label": "Pill",
-            "translationPt": "Comprimido / Cápsula"
-          },
-          {
             "text": "Pliers",
             "emoji": "钳",
             "label": "Pliers",
             "translationPt": "Alicate"
+          },
+          {
+            "text": "Pill",
+            "emoji": "💊",
+            "label": "Pill",
+            "translationPt": "Comprimido / Cápsula"
           },
           {
             "text": "Lock",
@@ -19644,8 +19644,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Piano",
-          "Pill",
           "Pliers",
+          "Pill",
           "Lock"
         ],
         "correctAnswer": "Lock",
@@ -19661,10 +19661,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "📦",
         "visualOptions": [
           {
-            "text": "Flashlight",
-            "emoji": "🔦",
-            "label": "Flashlight",
-            "translationPt": "Lanterna"
+            "text": "Flute",
+            "emoji": "🪈",
+            "label": "Flute",
+            "translationPt": "Flauta"
           },
           {
             "text": "Candle",
@@ -19679,17 +19679,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caixa de papelão"
           },
           {
-            "text": "Flute",
-            "emoji": "🪈",
-            "label": "Flute",
-            "translationPt": "Flauta"
+            "text": "Flashlight",
+            "emoji": "🔦",
+            "label": "Flashlight",
+            "translationPt": "Lanterna"
           }
         ],
         "options": [
-          "Flashlight",
+          "Flute",
           "Candle",
           "Box",
-          "Flute"
+          "Flashlight"
         ],
         "correctAnswer": "Box",
         "explanation": "Exemplo prático: \"Pack the items inside a cardboard box.\"",
@@ -19704,16 +19704,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧺",
         "visualOptions": [
           {
-            "text": "Saxophone",
-            "emoji": "🎷",
-            "label": "Saxophone",
-            "translationPt": "Saxofone"
-          },
-          {
             "text": "Basket",
             "emoji": "🧺",
             "label": "Basket",
             "translationPt": "Cesta / Cesto"
+          },
+          {
+            "text": "Saxophone",
+            "emoji": "🎷",
+            "label": "Saxophone",
+            "translationPt": "Saxofone"
           },
           {
             "text": "Radio",
@@ -19729,8 +19729,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Saxophone",
           "Basket",
+          "Saxophone",
           "Radio",
           "Violin"
         ],
@@ -19746,6 +19746,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Ladder",
         "visualEmoji": "🪜",
         "visualOptions": [
+          {
+            "text": "Light Bulb",
+            "emoji": "💡",
+            "label": "Light Bulb",
+            "translationPt": "Lâmpada"
+          },
           {
             "text": "Ladder",
             "emoji": "🪜",
@@ -19763,19 +19769,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🔋",
             "label": "Battery",
             "translationPt": "Pilha / Bateria"
-          },
-          {
-            "text": "Light Bulb",
-            "emoji": "💡",
-            "label": "Light Bulb",
-            "translationPt": "Lâmpada"
           }
         ],
         "options": [
+          "Light Bulb",
           "Ladder",
           "Electric Plug",
-          "Battery",
-          "Light Bulb"
+          "Battery"
         ],
         "correctAnswer": "Ladder",
         "explanation": "Exemplo prático: \"Use a folding step ladder to reach the top shelf.\"",
@@ -19790,18 +19790,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🔨",
         "visualOptions": [
           {
-            "text": "Trumpet",
-            "emoji": "🎺",
-            "label": "Trumpet",
-            "translationPt": "Trompete"
-          },
-          {
-            "text": "Tape Measure",
-            "emoji": "📏",
-            "label": "Tape Measure",
-            "translationPt": "Trena / Fita métrica"
-          },
-          {
             "text": "Thermometer",
             "emoji": "🌡️",
             "label": "Thermometer",
@@ -19812,13 +19800,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🔨",
             "label": "Hammer",
             "translationPt": "Martelo"
+          },
+          {
+            "text": "Tape Measure",
+            "emoji": "📏",
+            "label": "Tape Measure",
+            "translationPt": "Trena / Fita métrica"
+          },
+          {
+            "text": "Trumpet",
+            "emoji": "🎺",
+            "label": "Trumpet",
+            "translationPt": "Trompete"
           }
         ],
         "options": [
-          "Trumpet",
-          "Tape Measure",
           "Thermometer",
-          "Hammer"
+          "Hammer",
+          "Tape Measure",
+          "Trumpet"
         ],
         "correctAnswer": "Hammer",
         "explanation": "Exemplo prático: \"Hit the nail with a claw hammer.\"",
@@ -19833,18 +19833,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪛",
         "visualOptions": [
           {
-            "text": "Screwdriver",
-            "emoji": "🪛",
-            "label": "Screwdriver",
-            "translationPt": "Chave de fenda"
-          },
-          {
-            "text": "Microphone",
-            "emoji": "🎤",
-            "label": "Microphone",
-            "translationPt": "Microfone"
-          },
-          {
             "text": "Drum",
             "emoji": "🥁",
             "label": "Drum",
@@ -19855,13 +19843,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🎸",
             "label": "Guitar",
             "translationPt": "Violão / Guitarra"
+          },
+          {
+            "text": "Microphone",
+            "emoji": "🎤",
+            "label": "Microphone",
+            "translationPt": "Microfone"
+          },
+          {
+            "text": "Screwdriver",
+            "emoji": "🪛",
+            "label": "Screwdriver",
+            "translationPt": "Chave de fenda"
           }
         ],
         "options": [
-          "Screwdriver",
-          "Microphone",
           "Drum",
-          "Guitar"
+          "Guitar",
+          "Microphone",
+          "Screwdriver"
         ],
         "correctAnswer": "Screwdriver",
         "explanation": "Exemplo prático: \"Tighten the screw with a screwdriver.\"",
@@ -19876,16 +19876,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🔧",
         "visualOptions": [
           {
-            "text": "Saxophone",
-            "emoji": "🎷",
-            "label": "Saxophone",
-            "translationPt": "Saxofone"
-          },
-          {
-            "text": "Wrench",
-            "emoji": "🔧",
-            "label": "Wrench",
-            "translationPt": "Chave inglesa / Chave de boca"
+            "text": "Piano",
+            "emoji": "🎹",
+            "label": "Piano",
+            "translationPt": "Piano"
           },
           {
             "text": "Pill",
@@ -19894,17 +19888,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Comprimido / Cápsula"
           },
           {
-            "text": "Piano",
-            "emoji": "🎹",
-            "label": "Piano",
-            "translationPt": "Piano"
+            "text": "Wrench",
+            "emoji": "🔧",
+            "label": "Wrench",
+            "translationPt": "Chave inglesa / Chave de boca"
+          },
+          {
+            "text": "Saxophone",
+            "emoji": "🎷",
+            "label": "Saxophone",
+            "translationPt": "Saxofone"
           }
         ],
         "options": [
-          "Saxophone",
-          "Wrench",
+          "Piano",
           "Pill",
-          "Piano"
+          "Wrench",
+          "Saxophone"
         ],
         "correctAnswer": "Wrench",
         "explanation": "Exemplo prático: \"Turn the metal nut with a steel wrench.\"",
@@ -19962,10 +19962,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🪚",
         "visualOptions": [
           {
-            "text": "Radio",
-            "emoji": "📻",
-            "label": "Radio",
-            "translationPt": "Rádio"
+            "text": "Lock",
+            "emoji": "🔒",
+            "label": "Lock",
+            "translationPt": "Cadeado"
           },
           {
             "text": "Light Bulb",
@@ -19974,23 +19974,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Lâmpada"
           },
           {
-            "text": "Lock",
-            "emoji": "🔒",
-            "label": "Lock",
-            "translationPt": "Cadeado"
-          },
-          {
             "text": "Saw",
             "emoji": "🪚",
             "label": "Saw",
             "translationPt": "Serrote"
+          },
+          {
+            "text": "Radio",
+            "emoji": "📻",
+            "label": "Radio",
+            "translationPt": "Rádio"
           }
         ],
         "options": [
-          "Radio",
-          "Light Bulb",
           "Lock",
-          "Saw"
+          "Light Bulb",
+          "Saw",
+          "Radio"
         ],
         "correctAnswer": "Saw",
         "explanation": "Exemplo prático: \"Cut the wooden board with a hand saw.\"",
@@ -20005,35 +20005,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "📏",
         "visualOptions": [
           {
-            "text": "Tape Measure",
-            "emoji": "📏",
-            "label": "Tape Measure",
-            "translationPt": "Trena / Fita métrica"
-          },
-          {
             "text": "Electric Plug",
             "emoji": "🔌",
             "label": "Electric Plug",
             "translationPt": "Plugue de tomada"
           },
           {
-            "text": "Battery",
-            "emoji": "🔋",
-            "label": "Battery",
-            "translationPt": "Pilha / Bateria"
+            "text": "Tape Measure",
+            "emoji": "📏",
+            "label": "Tape Measure",
+            "translationPt": "Trena / Fita métrica"
           },
           {
             "text": "Hammer",
             "emoji": "🔨",
             "label": "Hammer",
             "translationPt": "Martelo"
+          },
+          {
+            "text": "Battery",
+            "emoji": "🔋",
+            "label": "Battery",
+            "translationPt": "Pilha / Bateria"
           }
         ],
         "options": [
-          "Tape Measure",
           "Electric Plug",
-          "Battery",
-          "Hammer"
+          "Tape Measure",
+          "Hammer",
+          "Battery"
         ],
         "correctAnswer": "Tape Measure",
         "explanation": "Exemplo prático: \"Measure the wall width with a tape measure.\"",
@@ -20054,10 +20054,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chave inglesa / Chave de boca"
           },
           {
-            "text": "Drill",
-            "emoji": "🪛",
-            "label": "Drill",
-            "translationPt": "Furadeira"
+            "text": "Trumpet",
+            "emoji": "🎺",
+            "label": "Trumpet",
+            "translationPt": "Trompete"
           },
           {
             "text": "Thermometer",
@@ -20066,17 +20066,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Termômetro"
           },
           {
-            "text": "Trumpet",
-            "emoji": "🎺",
-            "label": "Trumpet",
-            "translationPt": "Trompete"
+            "text": "Drill",
+            "emoji": "🪛",
+            "label": "Drill",
+            "translationPt": "Furadeira"
           }
         ],
         "options": [
           "Wrench",
-          "Drill",
+          "Trumpet",
           "Thermometer",
-          "Trumpet"
+          "Drill"
         ],
         "correctAnswer": "Drill",
         "explanation": "Exemplo prático: \"Make a hole in the wall with an electric drill.\"",
@@ -20091,10 +20091,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⛓️",
         "visualOptions": [
           {
-            "text": "Accordion",
-            "emoji": "🪗",
-            "label": "Accordion",
-            "translationPt": "Sanfona / Acordeão"
+            "text": "Chain",
+            "emoji": "⛓️",
+            "label": "Chain",
+            "translationPt": "Corrente de metal"
           },
           {
             "text": "Guitar",
@@ -20103,10 +20103,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Violão / Guitarra"
           },
           {
-            "text": "Chain",
-            "emoji": "⛓️",
-            "label": "Chain",
-            "translationPt": "Corrente de metal"
+            "text": "Accordion",
+            "emoji": "🪗",
+            "label": "Accordion",
+            "translationPt": "Sanfona / Acordeão"
           },
           {
             "text": "Box",
@@ -20116,9 +20116,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Accordion",
-          "Guitar",
           "Chain",
+          "Guitar",
+          "Accordion",
           "Box"
         ],
         "correctAnswer": "Chain",
@@ -20134,12 +20134,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🕯️",
         "visualOptions": [
           {
-            "text": "Screwdriver",
-            "emoji": "🪛",
-            "label": "Screwdriver",
-            "translationPt": "Chave de fenda"
-          },
-          {
             "text": "Saw",
             "emoji": "🪚",
             "label": "Saw",
@@ -20152,6 +20146,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Violino"
           },
           {
+            "text": "Screwdriver",
+            "emoji": "🪛",
+            "label": "Screwdriver",
+            "translationPt": "Chave de fenda"
+          },
+          {
             "text": "Candle",
             "emoji": "🕯️",
             "label": "Candle",
@@ -20159,9 +20159,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Screwdriver",
           "Saw",
           "Violin",
+          "Screwdriver",
           "Candle"
         ],
         "correctAnswer": "Candle",
@@ -20177,18 +20177,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🩹",
         "visualOptions": [
           {
-            "text": "Bandage",
-            "emoji": "🩹",
-            "label": "Bandage",
-            "translationPt": "Curativo (Band-aid)"
-          },
-          {
-            "text": "Microphone",
-            "emoji": "🎤",
-            "label": "Microphone",
-            "translationPt": "Microfone"
-          },
-          {
             "text": "Pliers",
             "emoji": "钳",
             "label": "Pliers",
@@ -20199,13 +20187,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪜",
             "label": "Ladder",
             "translationPt": "Escada portátil"
+          },
+          {
+            "text": "Bandage",
+            "emoji": "🩹",
+            "label": "Bandage",
+            "translationPt": "Curativo (Band-aid)"
+          },
+          {
+            "text": "Microphone",
+            "emoji": "🎤",
+            "label": "Microphone",
+            "translationPt": "Microfone"
           }
         ],
         "options": [
-          "Bandage",
-          "Microphone",
           "Pliers",
-          "Ladder"
+          "Ladder",
+          "Bandage",
+          "Microphone"
         ],
         "correctAnswer": "Bandage",
         "explanation": "Exemplo prático: \"Put an adhesive bandage on the small cut.\"",
@@ -20220,6 +20220,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💊",
         "visualOptions": [
           {
+            "text": "Pill",
+            "emoji": "💊",
+            "label": "Pill",
+            "translationPt": "Comprimido / Cápsula"
+          },
+          {
             "text": "Basket",
             "emoji": "🧺",
             "label": "Basket",
@@ -20232,12 +20238,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chave inglesa / Chave de boca"
           },
           {
-            "text": "Pill",
-            "emoji": "💊",
-            "label": "Pill",
-            "translationPt": "Comprimido / Cápsula"
-          },
-          {
             "text": "Drill",
             "emoji": "🪛",
             "label": "Drill",
@@ -20245,9 +20245,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Pill",
           "Basket",
           "Wrench",
-          "Pill",
           "Drill"
         ],
         "correctAnswer": "Pill",
@@ -20263,16 +20263,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌡️",
         "visualOptions": [
           {
+            "text": "Electric Plug",
+            "emoji": "🔌",
+            "label": "Electric Plug",
+            "translationPt": "Plugue de tomada"
+          },
+          {
             "text": "Thermometer",
             "emoji": "🌡️",
             "label": "Thermometer",
             "translationPt": "Termômetro"
-          },
-          {
-            "text": "Hammer",
-            "emoji": "🔨",
-            "label": "Hammer",
-            "translationPt": "Martelo"
           },
           {
             "text": "Tape Measure",
@@ -20281,17 +20281,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Trena / Fita métrica"
           },
           {
-            "text": "Electric Plug",
-            "emoji": "🔌",
-            "label": "Electric Plug",
-            "translationPt": "Plugue de tomada"
+            "text": "Hammer",
+            "emoji": "🔨",
+            "label": "Hammer",
+            "translationPt": "Martelo"
           }
         ],
         "options": [
+          "Electric Plug",
           "Thermometer",
-          "Hammer",
           "Tape Measure",
-          "Electric Plug"
+          "Hammer"
         ],
         "correctAnswer": "Thermometer",
         "explanation": "Exemplo prático: \"Check for a fever with a digital thermometer.\"",
@@ -20325,35 +20325,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "✋",
         "visualOptions": [
           {
-            "text": "Hair",
-            "emoji": "💇",
-            "label": "Hair",
-            "translationPt": "Cabelo"
-          },
-          {
             "text": "Hand",
             "emoji": "✋",
             "label": "Hand",
             "translationPt": "Mão"
           },
           {
-            "text": "Brain",
-            "emoji": "🧠",
-            "label": "Brain",
-            "translationPt": "Cérebro"
-          },
-          {
             "text": "Heart",
             "emoji": "❤️",
             "label": "Heart",
             "translationPt": "Coração"
+          },
+          {
+            "text": "Hair",
+            "emoji": "💇",
+            "label": "Hair",
+            "translationPt": "Cabelo"
+          },
+          {
+            "text": "Brain",
+            "emoji": "🧠",
+            "label": "Brain",
+            "translationPt": "Cérebro"
           }
         ],
         "options": [
-          "Hair",
           "Hand",
-          "Brain",
-          "Heart"
+          "Heart",
+          "Hair",
+          "Brain"
         ],
         "correctAnswer": "Hand",
         "explanation": "Exemplo prático: \"Raise your hand to ask a question.\"",
@@ -20368,35 +20368,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦶",
         "visualOptions": [
           {
-            "text": "Tennis Ball",
-            "emoji": "🎾",
-            "label": "Tennis Ball",
-            "translationPt": "Bola de tênis"
-          },
-          {
             "text": "Tooth",
             "emoji": "🦷",
             "label": "Tooth",
             "translationPt": "Dente"
           },
           {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
+            "text": "Tennis Ball",
+            "emoji": "🎾",
+            "label": "Tennis Ball",
+            "translationPt": "Bola de tênis"
           },
           {
             "text": "Trophy",
             "emoji": "🏆",
             "label": "Trophy",
             "translationPt": "Troféu de campeão"
+          },
+          {
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
           }
         ],
         "options": [
-          "Tennis Ball",
           "Tooth",
-          "Foot",
-          "Trophy"
+          "Tennis Ball",
+          "Trophy",
+          "Foot"
         ],
         "correctAnswer": "Foot",
         "explanation": "Exemplo prático: \"Kick the soccer ball with your foot.\"",
@@ -20417,12 +20417,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Dentista"
           },
           {
-            "text": "Arm",
-            "emoji": "💪",
-            "label": "Arm",
-            "translationPt": "Braço"
-          },
-          {
             "text": "Doctor",
             "emoji": "👨‍⚕️",
             "label": "Doctor",
@@ -20433,13 +20427,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👁️",
             "label": "Eye",
             "translationPt": "Olho"
+          },
+          {
+            "text": "Arm",
+            "emoji": "💪",
+            "label": "Arm",
+            "translationPt": "Braço"
           }
         ],
         "options": [
           "Dentist",
-          "Arm",
           "Doctor",
-          "Eye"
+          "Eye",
+          "Arm"
         ],
         "correctAnswer": "Eye",
         "explanation": "Exemplo prático: \"We see the world with our eyes.\"",
@@ -20460,12 +20460,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Orelha / Ouvido"
           },
           {
-            "text": "Police Officer",
-            "emoji": "👮",
-            "label": "Police Officer",
-            "translationPt": "Policial"
-          },
-          {
             "text": "Soccer Ball",
             "emoji": "⚽",
             "label": "Soccer Ball",
@@ -20476,13 +20470,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏐",
             "label": "Volleyball",
             "translationPt": "Bola de vôlei"
+          },
+          {
+            "text": "Police Officer",
+            "emoji": "👮",
+            "label": "Police Officer",
+            "translationPt": "Policial"
           }
         ],
         "options": [
           "Ear",
-          "Police Officer",
           "Soccer Ball",
-          "Volleyball"
+          "Volleyball",
+          "Police Officer"
         ],
         "correctAnswer": "Ear",
         "explanation": "Exemplo prático: \"We listen to music and speech with our ears.\"",
@@ -20503,16 +20503,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Dedo da mão"
           },
           {
-            "text": "Firefighter",
-            "emoji": "🧑‍🚒",
-            "label": "Firefighter",
-            "translationPt": "Bombeiro"
-          },
-          {
             "text": "Nose",
             "emoji": "👃",
             "label": "Nose",
             "translationPt": "Nariz"
+          },
+          {
+            "text": "Firefighter",
+            "emoji": "🧑‍🚒",
+            "label": "Firefighter",
+            "translationPt": "Bombeiro"
           },
           {
             "text": "Fishing Rod",
@@ -20523,8 +20523,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Finger",
-          "Firefighter",
           "Nose",
+          "Firefighter",
           "Fishing Rod"
         ],
         "correctAnswer": "Nose",
@@ -20540,35 +20540,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👄",
         "visualOptions": [
           {
-            "text": "Mouth",
-            "emoji": "👄",
-            "label": "Mouth",
-            "translationPt": "Boca"
-          },
-          {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
-          },
-          {
             "text": "Leg",
             "emoji": "🦵",
             "label": "Leg",
             "translationPt": "Perna"
           },
           {
+            "text": "Mouth",
+            "emoji": "👄",
+            "label": "Mouth",
+            "translationPt": "Boca"
+          },
+          {
             "text": "Chef",
             "emoji": "👨‍🍳",
             "label": "Chef",
             "translationPt": "Cozinheiro / Chef de cozinha"
+          },
+          {
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
           }
         ],
         "options": [
-          "Mouth",
-          "Foot",
           "Leg",
-          "Chef"
+          "Mouth",
+          "Chef",
+          "Foot"
         ],
         "correctAnswer": "Mouth",
         "explanation": "Exemplo prático: \"Open your mouth to pronounce the English vowel.\"",
@@ -20583,16 +20583,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦷",
         "visualOptions": [
           {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão"
-          },
-          {
             "text": "Bone",
             "emoji": "🦴",
             "label": "Bone",
             "translationPt": "Osso"
+          },
+          {
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão"
           },
           {
             "text": "Eye",
@@ -20608,8 +20608,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Hand",
           "Bone",
+          "Hand",
           "Eye",
           "Tooth"
         ],
@@ -20626,16 +20626,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💇",
         "visualOptions": [
           {
-            "text": "Nurse",
-            "emoji": "👩‍⚕️",
-            "label": "Nurse",
-            "translationPt": "Enfermeira / Enfermeiro"
-          },
-          {
             "text": "Ear",
             "emoji": "👂",
             "label": "Ear",
             "translationPt": "Orelha / Ouvido"
+          },
+          {
+            "text": "Nurse",
+            "emoji": "👩‍⚕️",
+            "label": "Nurse",
+            "translationPt": "Enfermeira / Enfermeiro"
           },
           {
             "text": "Hair",
@@ -20651,8 +20651,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Nurse",
           "Ear",
+          "Nurse",
           "Hair",
           "Teacher"
         ],
@@ -20669,35 +20669,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "☝️",
         "visualOptions": [
           {
-            "text": "Basketball",
-            "emoji": "🏀",
-            "label": "Basketball",
-            "translationPt": "Bola de basquete"
-          },
-          {
             "text": "Finger",
             "emoji": "☝️",
             "label": "Finger",
             "translationPt": "Dedo da mão"
           },
           {
-            "text": "Medal",
-            "emoji": "🥇",
-            "label": "Medal",
-            "translationPt": "Medalha de ouro"
+            "text": "Basketball",
+            "emoji": "🏀",
+            "label": "Basketball",
+            "translationPt": "Bola de basquete"
           },
           {
             "text": "Nose",
             "emoji": "👃",
             "label": "Nose",
             "translationPt": "Nariz"
+          },
+          {
+            "text": "Medal",
+            "emoji": "🥇",
+            "label": "Medal",
+            "translationPt": "Medalha de ouro"
           }
         ],
         "options": [
-          "Basketball",
           "Finger",
-          "Medal",
-          "Nose"
+          "Basketball",
+          "Nose",
+          "Medal"
         ],
         "correctAnswer": "Finger",
         "explanation": "Exemplo prático: \"Point at the picture with your index finger.\"",
@@ -20712,35 +20712,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💪",
         "visualOptions": [
           {
-            "text": "Arm",
-            "emoji": "💪",
-            "label": "Arm",
-            "translationPt": "Braço"
-          },
-          {
             "text": "Mouth",
             "emoji": "👄",
             "label": "Mouth",
             "translationPt": "Boca"
           },
           {
-            "text": "Pilot",
-            "emoji": "👨‍✈️",
-            "label": "Pilot",
-            "translationPt": "Piloto de avião"
-          },
-          {
             "text": "Boxing Glove",
             "emoji": "🥊",
             "label": "Boxing Glove",
             "translationPt": "Luva de boxe"
+          },
+          {
+            "text": "Arm",
+            "emoji": "💪",
+            "label": "Arm",
+            "translationPt": "Braço"
+          },
+          {
+            "text": "Pilot",
+            "emoji": "👨‍✈️",
+            "label": "Pilot",
+            "translationPt": "Piloto de avião"
           }
         ],
         "options": [
-          "Arm",
           "Mouth",
-          "Pilot",
-          "Boxing Glove"
+          "Boxing Glove",
+          "Arm",
+          "Pilot"
         ],
         "correctAnswer": "Arm",
         "explanation": "Exemplo prático: \"Stretch your arms before exercising.\"",
@@ -20755,18 +20755,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦵",
         "visualOptions": [
           {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
-          },
-          {
-            "text": "Firefighter",
-            "emoji": "🧑‍🚒",
-            "label": "Firefighter",
-            "translationPt": "Bombeiro"
-          },
-          {
             "text": "Fishing Rod",
             "emoji": "🎣",
             "label": "Fishing Rod",
@@ -20777,13 +20765,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🦵",
             "label": "Leg",
             "translationPt": "Perna"
+          },
+          {
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
+          },
+          {
+            "text": "Firefighter",
+            "emoji": "🧑‍🚒",
+            "label": "Firefighter",
+            "translationPt": "Bombeiro"
           }
         ],
         "options": [
-          "Foot",
-          "Firefighter",
           "Fishing Rod",
-          "Leg"
+          "Leg",
+          "Foot",
+          "Firefighter"
         ],
         "correctAnswer": "Leg",
         "explanation": "Exemplo prático: \"Run fast using your strong legs.\"",
@@ -20798,35 +20798,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "❤️",
         "visualOptions": [
           {
-            "text": "Volleyball",
-            "emoji": "🏐",
-            "label": "Volleyball",
-            "translationPt": "Bola de vôlei"
-          },
-          {
             "text": "Police Officer",
             "emoji": "👮",
             "label": "Police Officer",
             "translationPt": "Policial"
           },
           {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração"
+            "text": "Volleyball",
+            "emoji": "🏐",
+            "label": "Volleyball",
+            "translationPt": "Bola de vôlei"
           },
           {
             "text": "Chef",
             "emoji": "👨‍🍳",
             "label": "Chef",
             "translationPt": "Cozinheiro / Chef de cozinha"
+          },
+          {
+            "text": "Heart",
+            "emoji": "❤️",
+            "label": "Heart",
+            "translationPt": "Coração"
           }
         ],
         "options": [
-          "Volleyball",
           "Police Officer",
-          "Heart",
-          "Chef"
+          "Volleyball",
+          "Chef",
+          "Heart"
         ],
         "correctAnswer": "Heart",
         "explanation": "Exemplo prático: \"Your heart beats inside your chest.\"",
@@ -20841,16 +20841,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧠",
         "visualOptions": [
           {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão"
-          },
-          {
             "text": "Brain",
             "emoji": "🧠",
             "label": "Brain",
             "translationPt": "Cérebro"
+          },
+          {
+            "text": "Nurse",
+            "emoji": "👩‍⚕️",
+            "label": "Nurse",
+            "translationPt": "Enfermeira / Enfermeiro"
           },
           {
             "text": "Nose",
@@ -20859,17 +20859,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Nariz"
           },
           {
-            "text": "Nurse",
-            "emoji": "👩‍⚕️",
-            "label": "Nurse",
-            "translationPt": "Enfermeira / Enfermeiro"
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão"
           }
         ],
         "options": [
-          "Hand",
           "Brain",
+          "Nurse",
           "Nose",
-          "Nurse"
+          "Hand"
         ],
         "correctAnswer": "Brain",
         "explanation": "Exemplo prático: \"Learning English exercises your brain.\"",
@@ -20884,10 +20884,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦴",
         "visualOptions": [
           {
-            "text": "Bone",
-            "emoji": "🦴",
-            "label": "Bone",
-            "translationPt": "Osso"
+            "text": "Dentist",
+            "emoji": "🦷",
+            "label": "Dentist",
+            "translationPt": "Dentista"
           },
           {
             "text": "Doctor",
@@ -20896,23 +20896,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Médico / Médica"
           },
           {
-            "text": "Dentist",
-            "emoji": "🦷",
-            "label": "Dentist",
-            "translationPt": "Dentista"
-          },
-          {
             "text": "Arm",
             "emoji": "💪",
             "label": "Arm",
             "translationPt": "Braço"
+          },
+          {
+            "text": "Bone",
+            "emoji": "🦴",
+            "label": "Bone",
+            "translationPt": "Osso"
           }
         ],
         "options": [
-          "Bone",
-          "Doctor",
           "Dentist",
-          "Arm"
+          "Doctor",
+          "Arm",
+          "Bone"
         ],
         "correctAnswer": "Bone",
         "explanation": "Exemplo prático: \"Milk and calcium keep your bones strong.\"",
@@ -20939,23 +20939,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Boca"
           },
           {
-            "text": "Medal",
-            "emoji": "🥇",
-            "label": "Medal",
-            "translationPt": "Medalha de ouro"
-          },
-          {
             "text": "Soccer Ball",
             "emoji": "⚽",
             "label": "Soccer Ball",
             "translationPt": "Bola de futebol"
+          },
+          {
+            "text": "Medal",
+            "emoji": "🥇",
+            "label": "Medal",
+            "translationPt": "Medalha de ouro"
           }
         ],
         "options": [
           "Pilot",
           "Mouth",
-          "Medal",
-          "Soccer Ball"
+          "Soccer Ball",
+          "Medal"
         ],
         "correctAnswer": "Soccer Ball",
         "explanation": "Exemplo prático: \"Soccer is the most popular sport in Brazil.\"",
@@ -20976,10 +20976,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bola de basquete"
           },
           {
-            "text": "Tooth",
-            "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente"
+            "text": "Finger",
+            "emoji": "☝️",
+            "label": "Finger",
+            "translationPt": "Dedo da mão"
           },
           {
             "text": "Trophy",
@@ -20988,17 +20988,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Troféu de campeão"
           },
           {
-            "text": "Finger",
-            "emoji": "☝️",
-            "label": "Finger",
-            "translationPt": "Dedo da mão"
+            "text": "Tooth",
+            "emoji": "🦷",
+            "label": "Tooth",
+            "translationPt": "Dente"
           }
         ],
         "options": [
           "Basketball",
-          "Tooth",
+          "Finger",
           "Trophy",
-          "Finger"
+          "Tooth"
         ],
         "correctAnswer": "Basketball",
         "explanation": "Exemplo prático: \"Bounce the orange basketball on the court.\"",
@@ -21013,10 +21013,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏐",
         "visualOptions": [
           {
-            "text": "Leg",
-            "emoji": "🦵",
-            "label": "Leg",
-            "translationPt": "Perna"
+            "text": "Teacher",
+            "emoji": "👩‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor / Professora"
           },
           {
             "text": "Volleyball",
@@ -21025,23 +21025,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bola de vôlei"
           },
           {
+            "text": "Leg",
+            "emoji": "🦵",
+            "label": "Leg",
+            "translationPt": "Perna"
+          },
+          {
             "text": "Hair",
             "emoji": "💇",
             "label": "Hair",
             "translationPt": "Cabelo"
-          },
-          {
-            "text": "Teacher",
-            "emoji": "👩‍🏫",
-            "label": "Teacher",
-            "translationPt": "Professor / Professora"
           }
         ],
         "options": [
-          "Leg",
+          "Teacher",
           "Volleyball",
-          "Hair",
-          "Teacher"
+          "Leg",
+          "Hair"
         ],
         "correctAnswer": "Volleyball",
         "explanation": "Exemplo prático: \"Hit the volleyball over the net.\"",
@@ -21055,12 +21055,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Tennis Ball",
         "visualEmoji": "🎾",
         "visualOptions": [
-          {
-            "text": "Ear",
-            "emoji": "👂",
-            "label": "Ear",
-            "translationPt": "Orelha / Ouvido"
-          },
           {
             "text": "Eye",
             "emoji": "👁️",
@@ -21078,13 +21072,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧠",
             "label": "Brain",
             "translationPt": "Cérebro"
+          },
+          {
+            "text": "Ear",
+            "emoji": "👂",
+            "label": "Ear",
+            "translationPt": "Orelha / Ouvido"
           }
         ],
         "options": [
-          "Ear",
           "Eye",
           "Tennis Ball",
-          "Brain"
+          "Brain",
+          "Ear"
         ],
         "correctAnswer": "Tennis Ball",
         "explanation": "Exemplo prático: \"Hit the yellow tennis ball with a racket.\"",
@@ -21099,16 +21099,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥊",
         "visualOptions": [
           {
-            "text": "Bone",
-            "emoji": "🦴",
-            "label": "Bone",
-            "translationPt": "Osso"
-          },
-          {
             "text": "Soccer Ball",
             "emoji": "⚽",
             "label": "Soccer Ball",
             "translationPt": "Bola de futebol"
+          },
+          {
+            "text": "Bone",
+            "emoji": "🦴",
+            "label": "Bone",
+            "translationPt": "Osso"
           },
           {
             "text": "Heart",
@@ -21124,8 +21124,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Bone",
           "Soccer Ball",
+          "Bone",
           "Heart",
           "Boxing Glove"
         ],
@@ -21142,35 +21142,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🎣",
         "visualOptions": [
           {
-            "text": "Fishing Rod",
-            "emoji": "🎣",
-            "label": "Fishing Rod",
-            "translationPt": "Vara de pescar"
-          },
-          {
             "text": "Arm",
             "emoji": "💪",
             "label": "Arm",
             "translationPt": "Braço"
           },
           {
-            "text": "Dentist",
-            "emoji": "🦷",
-            "label": "Dentist",
-            "translationPt": "Dentista"
-          },
-          {
             "text": "Basketball",
             "emoji": "🏀",
             "label": "Basketball",
             "translationPt": "Bola de basquete"
+          },
+          {
+            "text": "Fishing Rod",
+            "emoji": "🎣",
+            "label": "Fishing Rod",
+            "translationPt": "Vara de pescar"
+          },
+          {
+            "text": "Dentist",
+            "emoji": "🦷",
+            "label": "Dentist",
+            "translationPt": "Dentista"
           }
         ],
         "options": [
-          "Fishing Rod",
           "Arm",
-          "Dentist",
-          "Basketball"
+          "Basketball",
+          "Fishing Rod",
+          "Dentist"
         ],
         "correctAnswer": "Fishing Rod",
         "explanation": "Exemplo prático: \"Catch a fish in the river with a fishing rod.\"",
@@ -21185,16 +21185,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥇",
         "visualOptions": [
           {
-            "text": "Police Officer",
-            "emoji": "👮",
-            "label": "Police Officer",
-            "translationPt": "Policial"
-          },
-          {
             "text": "Medal",
             "emoji": "🥇",
             "label": "Medal",
             "translationPt": "Medalha de ouro"
+          },
+          {
+            "text": "Pilot",
+            "emoji": "👨‍✈️",
+            "label": "Pilot",
+            "translationPt": "Piloto de avião"
           },
           {
             "text": "Mouth",
@@ -21203,17 +21203,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Boca"
           },
           {
-            "text": "Pilot",
-            "emoji": "👨‍✈️",
-            "label": "Pilot",
-            "translationPt": "Piloto de avião"
+            "text": "Police Officer",
+            "emoji": "👮",
+            "label": "Police Officer",
+            "translationPt": "Policial"
           }
         ],
         "options": [
-          "Police Officer",
           "Medal",
+          "Pilot",
           "Mouth",
-          "Pilot"
+          "Police Officer"
         ],
         "correctAnswer": "Medal",
         "explanation": "Exemplo prático: \"The champion athlete won a gold medal.\"",
@@ -21228,16 +21228,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏆",
         "visualOptions": [
           {
+            "text": "Finger",
+            "emoji": "☝️",
+            "label": "Finger",
+            "translationPt": "Dedo da mão"
+          },
+          {
             "text": "Foot",
             "emoji": "🦶",
             "label": "Foot",
             "translationPt": "Pé"
-          },
-          {
-            "text": "Tennis Ball",
-            "emoji": "🎾",
-            "label": "Tennis Ball",
-            "translationPt": "Bola de tênis"
           },
           {
             "text": "Trophy",
@@ -21246,17 +21246,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Troféu de campeão"
           },
           {
-            "text": "Finger",
-            "emoji": "☝️",
-            "label": "Finger",
-            "translationPt": "Dedo da mão"
+            "text": "Tennis Ball",
+            "emoji": "🎾",
+            "label": "Tennis Ball",
+            "translationPt": "Bola de tênis"
           }
         ],
         "options": [
+          "Finger",
           "Foot",
-          "Tennis Ball",
           "Trophy",
-          "Finger"
+          "Tennis Ball"
         ],
         "correctAnswer": "Trophy",
         "explanation": "Exemplo prático: \"The winning team lifted the golden trophy cup.\"",
@@ -21277,6 +21277,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Perna"
           },
           {
+            "text": "Doctor",
+            "emoji": "👨‍⚕️",
+            "label": "Doctor",
+            "translationPt": "Médico / Médica"
+          },
+          {
             "text": "Firefighter",
             "emoji": "🧑‍🚒",
             "label": "Firefighter",
@@ -21287,19 +21293,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥊",
             "label": "Boxing Glove",
             "translationPt": "Luva de boxe"
-          },
-          {
-            "text": "Doctor",
-            "emoji": "👨‍⚕️",
-            "label": "Doctor",
-            "translationPt": "Médico / Médica"
           }
         ],
         "options": [
           "Leg",
+          "Doctor",
           "Firefighter",
-          "Boxing Glove",
-          "Doctor"
+          "Boxing Glove"
         ],
         "correctAnswer": "Doctor",
         "explanation": "Exemplo prático: \"The doctor wears a white coat and a stethoscope.\"",
@@ -21314,18 +21314,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👩‍⚕️",
         "visualOptions": [
           {
-            "text": "Nurse",
-            "emoji": "👩‍⚕️",
-            "label": "Nurse",
-            "translationPt": "Enfermeira / Enfermeiro"
-          },
-          {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração"
-          },
-          {
             "text": "Hair",
             "emoji": "💇",
             "label": "Hair",
@@ -21336,13 +21324,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "✋",
             "label": "Hand",
             "translationPt": "Mão"
+          },
+          {
+            "text": "Heart",
+            "emoji": "❤️",
+            "label": "Heart",
+            "translationPt": "Coração"
+          },
+          {
+            "text": "Nurse",
+            "emoji": "👩‍⚕️",
+            "label": "Nurse",
+            "translationPt": "Enfermeira / Enfermeiro"
           }
         ],
         "options": [
-          "Nurse",
-          "Heart",
           "Hair",
-          "Hand"
+          "Hand",
+          "Heart",
+          "Nurse"
         ],
         "correctAnswer": "Nurse",
         "explanation": "Exemplo prático: \"The hospital nurse cares for the patients.\"",
@@ -21357,10 +21357,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🦷",
         "visualOptions": [
           {
-            "text": "Tooth",
+            "text": "Dentist",
             "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente"
+            "label": "Dentist",
+            "translationPt": "Dentista"
           },
           {
             "text": "Eye",
@@ -21369,23 +21369,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Olho"
           },
           {
-            "text": "Dentist",
-            "emoji": "🦷",
-            "label": "Dentist",
-            "translationPt": "Dentista"
-          },
-          {
             "text": "Nose",
             "emoji": "👃",
             "label": "Nose",
             "translationPt": "Nariz"
+          },
+          {
+            "text": "Tooth",
+            "emoji": "🦷",
+            "label": "Tooth",
+            "translationPt": "Dente"
           }
         ],
         "options": [
-          "Tooth",
-          "Eye",
           "Dentist",
-          "Nose"
+          "Eye",
+          "Nose",
+          "Tooth"
         ],
         "correctAnswer": "Dentist",
         "explanation": "Exemplo prático: \"Visit the dentist to keep your teeth healthy.\"",
@@ -21400,10 +21400,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👩‍🏫",
         "visualOptions": [
           {
-            "text": "Teacher",
-            "emoji": "👩‍🏫",
-            "label": "Teacher",
-            "translationPt": "Professor / Professora"
+            "text": "Tennis Ball",
+            "emoji": "🎾",
+            "label": "Tennis Ball",
+            "translationPt": "Bola de tênis"
           },
           {
             "text": "Trophy",
@@ -21412,23 +21412,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Troféu de campeão"
           },
           {
-            "text": "Tennis Ball",
-            "emoji": "🎾",
-            "label": "Tennis Ball",
-            "translationPt": "Bola de tênis"
-          },
-          {
             "text": "Ear",
             "emoji": "👂",
             "label": "Ear",
             "translationPt": "Orelha / Ouvido"
+          },
+          {
+            "text": "Teacher",
+            "emoji": "👩‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor / Professora"
           }
         ],
         "options": [
-          "Teacher",
-          "Trophy",
           "Tennis Ball",
-          "Ear"
+          "Trophy",
+          "Ear",
+          "Teacher"
         ],
         "correctAnswer": "Teacher",
         "explanation": "Exemplo prático: \"The English teacher writes on the board.\"",
@@ -21443,35 +21443,35 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👨‍🍳",
         "visualOptions": [
           {
-            "text": "Volleyball",
-            "emoji": "🏐",
-            "label": "Volleyball",
-            "translationPt": "Bola de vôlei"
-          },
-          {
             "text": "Medal",
             "emoji": "🥇",
             "label": "Medal",
             "translationPt": "Medalha de ouro"
           },
           {
-            "text": "Soccer Ball",
-            "emoji": "⚽",
-            "label": "Soccer Ball",
-            "translationPt": "Bola de futebol"
+            "text": "Volleyball",
+            "emoji": "🏐",
+            "label": "Volleyball",
+            "translationPt": "Bola de vôlei"
           },
           {
             "text": "Chef",
             "emoji": "👨‍🍳",
             "label": "Chef",
             "translationPt": "Cozinheiro / Chef de cozinha"
+          },
+          {
+            "text": "Soccer Ball",
+            "emoji": "⚽",
+            "label": "Soccer Ball",
+            "translationPt": "Bola de futebol"
           }
         ],
         "options": [
-          "Volleyball",
           "Medal",
-          "Soccer Ball",
-          "Chef"
+          "Volleyball",
+          "Chef",
+          "Soccer Ball"
         ],
         "correctAnswer": "Chef",
         "explanation": "Exemplo prático: \"The chef wears a white hat in the restaurant kitchen.\"",
@@ -21486,18 +21486,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👮",
         "visualOptions": [
           {
-            "text": "Doctor",
-            "emoji": "👨‍⚕️",
-            "label": "Doctor",
-            "translationPt": "Médico / Médica"
-          },
-          {
-            "text": "Nurse",
-            "emoji": "👩‍⚕️",
-            "label": "Nurse",
-            "translationPt": "Enfermeira / Enfermeiro"
-          },
-          {
             "text": "Police Officer",
             "emoji": "👮",
             "label": "Police Officer",
@@ -21508,13 +21496,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🎣",
             "label": "Fishing Rod",
             "translationPt": "Vara de pescar"
+          },
+          {
+            "text": "Doctor",
+            "emoji": "👨‍⚕️",
+            "label": "Doctor",
+            "translationPt": "Médico / Médica"
+          },
+          {
+            "text": "Nurse",
+            "emoji": "👩‍⚕️",
+            "label": "Nurse",
+            "translationPt": "Enfermeira / Enfermeiro"
           }
         ],
         "options": [
-          "Doctor",
-          "Nurse",
           "Police Officer",
-          "Fishing Rod"
+          "Fishing Rod",
+          "Doctor",
+          "Nurse"
         ],
         "correctAnswer": "Police Officer",
         "explanation": "Exemplo prático: \"The police officer helps people in the city.\"",
@@ -21529,10 +21529,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧑‍🚒",
         "visualOptions": [
           {
-            "text": "Basketball",
-            "emoji": "🏀",
-            "label": "Basketball",
-            "translationPt": "Bola de basquete"
+            "text": "Brain",
+            "emoji": "🧠",
+            "label": "Brain",
+            "translationPt": "Cérebro"
           },
           {
             "text": "Firefighter",
@@ -21541,10 +21541,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bombeiro"
           },
           {
-            "text": "Brain",
-            "emoji": "🧠",
-            "label": "Brain",
-            "translationPt": "Cérebro"
+            "text": "Basketball",
+            "emoji": "🏀",
+            "label": "Basketball",
+            "translationPt": "Bola de basquete"
           },
           {
             "text": "Bone",
@@ -21554,9 +21554,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Basketball",
-          "Firefighter",
           "Brain",
+          "Firefighter",
+          "Basketball",
           "Bone"
         ],
         "correctAnswer": "Firefighter",
@@ -21571,6 +21571,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Pilot",
         "visualEmoji": "👨‍✈️",
         "visualOptions": [
+          {
+            "text": "Nose",
+            "emoji": "👃",
+            "label": "Nose",
+            "translationPt": "Nariz"
+          },
           {
             "text": "Pilot",
             "emoji": "👨‍✈️",
@@ -21588,19 +21594,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👩‍🏫",
             "label": "Teacher",
             "translationPt": "Professor / Professora"
-          },
-          {
-            "text": "Nose",
-            "emoji": "👃",
-            "label": "Nose",
-            "translationPt": "Nariz"
           }
         ],
         "options": [
+          "Nose",
           "Pilot",
           "Boxing Glove",
-          "Teacher",
-          "Nose"
+          "Teacher"
         ],
         "correctAnswer": "Pilot",
         "explanation": "Exemplo prático: \"The airline pilot flies the commercial airplane.\"",
@@ -21634,10 +21634,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Cold water\" em português?",
         "audioPhrase": "Cold water",
         "options": [
-          "Água gelada",
-          "Café quente",
           "Leite fresco",
-          "Suco de laranja"
+          "Suco de laranja",
+          "Água gelada",
+          "Café quente"
         ],
         "correctAnswer": "Água gelada",
         "explanation": "\"Cold water\" = \"Água gelada\". Associação simples e direta!",
@@ -21667,10 +21667,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Sweet cake\" em português?",
         "audioPhrase": "Sweet cake",
         "options": [
-          "Bolo doce",
-          "Sorvete gelado",
           "Pipoca salgada",
-          "Pudim cremoso"
+          "Sorvete gelado",
+          "Pudim cremoso",
+          "Bolo doce"
         ],
         "correctAnswer": "Bolo doce",
         "explanation": "\"Sweet cake\" = \"Bolo doce\". Associação simples e direta!",
@@ -21685,8 +21685,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Red lobster",
         "options": [
           "Lagosta vermelha",
-          "Baleia orca",
           "Lhama branca",
+          "Baleia orca",
           "Gaivota voando"
         ],
         "correctAnswer": "Lagosta vermelha",
@@ -21717,10 +21717,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"White llama\" em português?",
         "audioPhrase": "White llama",
         "options": [
-          "Lhama branca",
-          "Alce grande",
           "Javali forte",
-          "Castor rápido"
+          "Lhama branca",
+          "Castor rápido",
+          "Alce grande"
         ],
         "correctAnswer": "Lhama branca",
         "explanation": "\"White llama\" = \"Lhama branca\". Associação simples e direta!",
@@ -21734,10 +21734,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"My guitar\" em português?",
         "audioPhrase": "My guitar",
         "options": [
-          "Meu violão",
+          "Minha flauta",
           "Meu piano",
-          "Meu tambor",
-          "Minha flauta"
+          "Meu violão",
+          "Meu tambor"
         ],
         "correctAnswer": "Meu violão",
         "explanation": "\"My guitar\" = \"Meu violão\". Associação simples e direta!",
@@ -21767,9 +21767,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Big box\" em português?",
         "audioPhrase": "Big box",
         "options": [
+          "Lanterna acesa",
           "Caixa grande",
           "Cadeado forte",
-          "Lanterna acesa",
           "Escada alta"
         ],
         "correctAnswer": "Caixa grande",
@@ -21784,10 +21784,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Soccer ball\" em português?",
         "audioPhrase": "Soccer ball",
         "options": [
-          "Bola de futebol",
-          "Bola de basquete",
           "Medalha de ouro",
-          "Troféu de campeão"
+          "Troféu de campeão",
+          "Bola de basquete",
+          "Bola de futebol"
         ],
         "correctAnswer": "Bola de futebol",
         "explanation": "\"Soccer ball\" = \"Bola de futebol\". Associação simples e direta!",
@@ -21817,10 +21817,10 @@ export const WORLD_0_PHASES: Phase[] = [
         "prompt": "O que significa \"Family doctor\" em português?",
         "audioPhrase": "Family doctor",
         "options": [
-          "Médico da família",
           "Chef de cozinha",
-          "Bombeiro corajoso",
-          "Piloto de avião"
+          "Piloto de avião",
+          "Médico da família",
+          "Bombeiro corajoso"
         ],
         "correctAnswer": "Médico da família",
         "explanation": "\"Family doctor\" = \"Médico da família\". Associação simples e direta!",

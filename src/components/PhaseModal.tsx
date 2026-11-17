@@ -74,6 +74,94 @@ const AndroidRecorderWaveform: React.FC<{ isSpeaking: boolean }> = ({ isSpeaking
   );
 };
 
+function fisherYatesShuffle<T>(items: T[]): T[] {
+  const arr = [...items];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
+  }
+  return arr;
+}
+
+function randomizeSingleExercise(ex: Exercise, avoidCorrectIndex?: number): { exercise: Exercise; correctIndex: number } {
+  const normAns = (ex.correctAnswer || '').trim().toLowerCase();
+
+  if (ex.visualOptions && ex.visualOptions.length > 1) {
+    let shuffledVisual = fisherYatesShuffle(ex.visualOptions);
+    let cIdx = shuffledVisual.findIndex((v) => v.text.trim().toLowerCase() === normAns);
+    if (cIdx !== -1 && avoidCorrectIndex !== undefined && cIdx === avoidCorrectIndex) {
+      const swapWith = (cIdx + 1 + Math.floor(Math.random() * (shuffledVisual.length - 1))) % shuffledVisual.length;
+      const tmp = shuffledVisual[cIdx];
+      shuffledVisual[cIdx] = shuffledVisual[swapWith];
+      shuffledVisual[swapWith] = tmp;
+      cIdx = swapWith;
+    }
+    return {
+      exercise: {
+        ...ex,
+        visualOptions: shuffledVisual,
+        options: shuffledVisual.map((v) => v.text),
+      },
+      correctIndex: cIdx,
+    };
+  }
+
+  if (ex.options && ex.options.length > 1 && ex.type !== 'word-order') {
+    let shuffledOpts = fisherYatesShuffle(ex.options);
+    let cIdx = shuffledOpts.findIndex((o) => o.trim().toLowerCase() === normAns);
+    if (cIdx !== -1 && avoidCorrectIndex !== undefined && cIdx === avoidCorrectIndex) {
+      const swapWith = (cIdx + 1 + Math.floor(Math.random() * (shuffledOpts.length - 1))) % shuffledOpts.length;
+      const tmp = shuffledOpts[cIdx];
+      shuffledOpts[cIdx] = shuffledOpts[swapWith];
+      shuffledOpts[swapWith] = tmp;
+      cIdx = swapWith;
+    }
+    return {
+      exercise: {
+        ...ex,
+        options: shuffledOpts,
+      },
+      correctIndex: cIdx,
+    };
+  }
+
+  if (ex.type === 'word-order' && ex.options && ex.options.length > 1) {
+    let shuffledBank = fisherYatesShuffle(ex.options);
+    const targetTokens = (ex.correctAnswer || '').trim().toLowerCase().split(/\s+/);
+    if (
+      targetTokens.length >= 2 &&
+      shuffledBank[0]?.trim().toLowerCase() === targetTokens[0] &&
+      shuffledBank[1]?.trim().toLowerCase() === targetTokens[1]
+    ) {
+      const tmp = shuffledBank[0];
+      shuffledBank[0] = shuffledBank[1];
+      shuffledBank[1] = tmp;
+    }
+    return {
+      exercise: {
+        ...ex,
+        options: shuffledBank,
+      },
+      correctIndex: -1,
+    };
+  }
+
+  return { exercise: { ...ex }, correctIndex: -1 };
+}
+
+function randomizeExerciseQueue(exercises: Exercise[]): Exercise[] {
+  let prevCorrectIdx = 0; // Start avoiding index 0 (Option A) on the first question so it doesn't feel biased toward A
+  return exercises.map((ex) => {
+    const { exercise, correctIndex } = randomizeSingleExercise(ex, prevCorrectIdx);
+    if (correctIndex !== -1) {
+      prevCorrectIdx = correctIndex;
+    }
+    return exercise;
+  });
+}
+
 interface PhaseModalProps {
   phase: Phase;
   user: UserProfile;
@@ -90,7 +178,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   onRecordMissionActivity,
 }) => {
   const [step, setStep] = useState<'theory' | 'exercise' | 'complete'>('theory');
-  const [exerciseQueue, setExerciseQueue] = useState<Exercise[]>(() => [...phase.exercises]);
+  const [exerciseQueue, setExerciseQueue] = useState<Exercise[]>(() => randomizeExerciseQueue(phase.exercises));
   const [masteredIds, setMasteredIds] = useState<string[]>([]);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -309,22 +397,8 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
       setMistakesCount((prev) => prev + 1);
       // Re-enfileira o exercício errado para o final do módulo (com cartões reembaralhados) até acertar 100%
       setExerciseQueue((prev) => {
-        const reshuffledVisual = currentExercise.visualOptions
-          ? [...currentExercise.visualOptions].sort(() => 0.5 - Math.random())
-          : undefined;
-        const reshuffledOptions = reshuffledVisual
-          ? reshuffledVisual.map((v) => v.text)
-          : currentExercise.options && currentExercise.type !== 'word-order'
-          ? [...currentExercise.options].sort(() => 0.5 - Math.random())
-          : currentExercise.options;
-        return [
-          ...prev,
-          {
-            ...currentExercise,
-            visualOptions: reshuffledVisual,
-            options: reshuffledOptions,
-          },
-        ];
+        const { exercise: reshuffledEx } = randomizeSingleExercise(currentExercise);
+        return [...prev, reshuffledEx];
       });
       if (hasVisualCards) {
         const wrongVisual = currentExercise.visualOptions?.find(

@@ -5,8 +5,8 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const token = process.env.GITHUB_TOKEN;
 const repo = 'thiagothomazolli-prog/lingo-world';
-const tag = 'v1.14.1';
-const releaseName = 'Lingo World v1.14.1 - Todas as Fases Desbloqueadas para Teste + Rodadas Intercaladas e Imagens Sem Cortes';
+const tag = 'v1.15.0';
+const releaseName = 'Lingo World v1.15.0 - Novo Ícone 3D Oficial, Respostas Sortidas (A/B/C/D) e Imagens 100% Fundo Branco Sem Tarja';
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -22,9 +22,9 @@ async function getLatestCompletedRun() {
       }
     });
     const data = await res.json();
-    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.14.1'));
+    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.15.0'));
     if (!latestRun) {
-      console.log('Waiting for v1.14.1 workflow run to appear...');
+      console.log('Waiting for v1.15.0 workflow run to appear...');
       await sleep(5000);
       continue;
     }
@@ -98,7 +98,7 @@ async function run() {
   const rootDir = path.resolve(__dirname, '..');
   const zipPath = path.join(rootDir, 'app-debug.zip');
   const extractDir = path.join(rootDir, 'extracted_apk');
-  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.14.1.apk');
+  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.15.0.apk');
 
   fs.writeFileSync(zipPath, buffer);
   console.log('Downloaded app-debug.zip, size:', buffer.length);
@@ -118,16 +118,16 @@ async function run() {
 
   fs.copyFileSync(path.join(extractDir, apkName), apkOutPath);
   const apkStats = fs.statSync(apkOutPath);
-  console.log(`Found APK: LingoWorld-v1.14.1.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`Found APK: LingoWorld-v1.15.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
 
   console.log('4. Creating GitHub Release', tag);
-  const body = `## 🚀 Lingo World v1.14.1 — Todas as Fases Abertas para Teste + Rodadas Intercaladas e Imagens Sem Cortes
+  const body = `## 🚀 Lingo World v1.15.0 — Novo Ícone 3D Oficial, Respostas Sortidas (A/B/C/D) e Imagens 100% Fundo Branco Sem Tarja
 
 ### ✨ Principais Melhorias desta Versão:
-- **🔓 Todas as Fases Desbloqueadas para Teste:** Todas as 20 fases das 4 Rodadas do Módulo 0 (além de todos os Mundos 1 a 7) estão 100% abertas no mapa para você clicar e testar livremente qualquer lição ou prática de rodada sem precisar concluir as anteriores primeiro.
-- **Imagens Sem Cortes e Sem Tarja Inferior:** Proporção original inteira (\`w-full object-contain\`) sem recorte quadrado (\`c=7\`) e remoção automática de qualquer tarja na borda inferior.
-- **Frutas Inteiras vs. Cortadas ao Meio (Zero Frutas Picadas em Cubos):** Frutas mais conhecidas inteiras aparecem inteiras; frutas mais conhecidas abertas ao meio mostram seu interior característico.
-- **Módulos Intercalados em 4 Rodadas + Prática de Palavras Simples ao Final de Cada Rodada:** Ciclo intercalado (*Alimentos → Animais → Casa & Objetos → Cidade & Cotidiano → Prática de Palavras da Rodada*).`;
+- **🎨 Novo Ícone 3D Oficial do Lingo World:** Adotado o mascote explorador 3D com fones de ouvido e globo terrestre como ícone oficial do aplicativo no Android (\`mipmap-*\`, adaptive icon com zona de segurança) e no cabeçalho do app.
+- **🎲 Respostas 100% Sortidas em Todos os Exercícios:** Corrigida a posição das alternativas tanto nos módulos visuais e nas Práticas das Rodadas quanto em todos os Mundos 1 a 7 e no Teste de Nivelamento — agora a resposta certa é embaralhada dinamicamente (Fisher-Yates) entre as opções **A, B, C e D** e entre os 4 cartões visuais, sem nunca ficar presa na letra A.
+- **🖼️ Todas as 480 Imagens Auditadas Pixel a Pixel (100% Fundo Branco e Sem Tarja):** Todas as 480 imagens foram verificadas via análise de pixels (\`System.Drawing.Bitmap\`) nos 4 cantos e nas 4 bordas, substituindo automaticamente qualquer imagem que tivesse fundo não branco ou tarja inferior, além de aplicar recorte de margem (\`clipPath\`) + \`mix-blend-multiply\` sobre fundo branco puro.
+- **🔓 Todas as Fases Desbloqueadas para Teste:** Todas as fases continuam abertas para livre navegação.`;
 
   const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases`, {
     method: 'POST',
@@ -153,9 +153,9 @@ async function run() {
   }
   console.log('Release created:', releaseData.id, releaseData.html_url);
 
-  console.log('5. Uploading LingoWorld-v1.14.1.apk to release...');
+  console.log('5. Uploading LingoWorld-v1.15.0.apk to release...');
   const apkBuffer = fs.readFileSync(apkOutPath);
-  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.14.1.apk`;
+  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.15.0.apk`;
 
   const uploadRes = await fetch(uploadUrl, {
     method: 'POST',
@@ -171,7 +171,7 @@ async function run() {
   const assetData = await uploadRes.json();
   console.log('Asset uploaded successfully!', assetData.browser_download_url);
   console.log('\n=======================================');
-  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.14.1.apk`);
+  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.15.0.apk`);
   console.log('=======================================\n');
 }
 
