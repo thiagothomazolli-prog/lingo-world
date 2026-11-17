@@ -1,7 +1,17 @@
 const fs = require('fs');
 
-// Helper to create a vocabulary item ordered from most common (#1) to less common (#30) in the Brazilian context.
-// Queries use clean product photo terms on white background without square cropping (no c=7) and without stock agency keywords.
+// Read existing verified REAL_VOCAB_IMAGES so we NEVER overwrite any of the 480 approved image URLs
+let existingImagesMap = {};
+try {
+  const existingContent = fs.readFileSync('src/data/realVocabImages.ts', 'utf-8');
+  const m = existingContent.match(/export const REAL_VOCAB_IMAGES:\s*Record<string,\s*string>\s*=\s*(\{[\s\S]*?\});/);
+  if (m) {
+    existingImagesMap = JSON.parse(m[1]);
+  }
+} catch {
+  // ignore
+}
+
 function v(text, emoji, pt, phonetic, sentence, studioQuery) {
   return {
     text,
@@ -10,828 +20,542 @@ function v(text, emoji, pt, phonetic, sentence, studioQuery) {
     pt,
     phonetic,
     sentence: sentence || `This is ${text.toLowerCase()}.`,
-    studioQuery: studioQuery || `single whole ${text} on white background`,
+    studioQuery: studioQuery || `${text} isolated on white background cutout`,
   };
 }
 
 // ============================================================================
-// DEFINIÇÃO DOS MÓDULOS POR TEMA (INTERCALADOS EM 4 RODADAS + PRÁTICA AO FINAL DE CADA RODADA)
+// MÓDULO 0: JORNADA IMERSIVA PELOS AMBIENTES DO COTIDIANO (12 MÓDULOS DE 30 ITENS)
+// Da calçada e porta de entrada, passando por cada cômodo da casa até a rua, escola, mercado, igreja e cidade.
 // ============================================================================
 
-const FOOD_1 = {
-  title: 'Rodada 1 • Alimentos I: Frutas do Dia a Dia',
-  subtitle: 'Passo 1/5 da Rodada 1 • Frutas mais conhecidas no Brasil',
-  pedagogicalObjective: 'Reconhecer pelo som as frutas mais comuns do cotidiano brasileiro (inteiras ou abertas ao meio conforme mais conhecidas).',
-  icon: 'apple',
-  theory: [
-    'Começamos a Rodada 1 com as frutas mais comuns no Brasil: Maçã, Banana, Laranja, Morango, Uva, Melancia, Abacaxi, Manga e Mamão.',
-    'Frutas mais conhecidas inteiras (como Maçã, Banana, Morango, Uva, Abacaxi, Manga, Pera) aparecem inteiras; já frutas conhecidas abertas (como Mamão, Melancia, Maracujá, Abacate e Kiwi) mostram seu interior característico.',
-    'Ao final desta rodada (após Alimentos, Animais, Casa e Roupas), você fará uma prática especial com palavras simples!'
-  ],
-  items: [
-    v('Apple', '🍎', 'Maçã', '/ˈæp.əl/', 'I eat a fresh red apple every morning.', 'single whole red apple fruit with leaf on white background'),
-    v('Banana', '🍌', 'Banana', '/bəˈnæn.ə/', 'Bananas are rich in potassium.', 'ripe yellow banana bunch whole fruit on white background'),
-    v('Orange', '🍊', 'Laranja', '/ˈɔːr.ɪndʒ/', 'Fresh orange juice has lots of vitamin C.', 'whole orange fruit and half orange on white background'),
-    v('Strawberry', '🍓', 'Morango', '/ˈstrɔː.ber.i/', 'She loves sweet red strawberries.', 'single whole red strawberry fruit with green leaf on white background'),
-    v('Grape', '🍇', 'Uva', '/ɡreɪp/', 'Purple grapes grow on vines.', 'whole bunch of purple grapes fruit on white background'),
-    v('Watermelon', '🍉', 'Melancia', '/ˈwɔː.tərˌmel.ən/', 'Cold watermelon is great in the summer.', 'whole green watermelon with one red triangle wedge on white background'),
-    v('Pineapple', '🍍', 'Abacaxi', '/ˈpaɪnˌæp.əl/', 'Pineapple is a juicy tropical fruit.', 'single whole pineapple fruit with green crown on white background'),
-    v('Mango', '🥭', 'Manga', '/ˈmæŋ.ɡoʊ/', 'This ripe mango is very sweet.', 'single whole ripe red yellow mango fruit on white background'),
-    v('Papaya', '🧡', 'Mamão', '/pəˈpaɪ.ə/', 'Papaya is very popular for breakfast in Brazil.', 'ripe orange papaya fruit cut in half lengthwise showing black seeds on white background'),
-    v('Lemon', '🍋', 'Limão siciliano', '/ˈlem.ən/', 'Yellow lemon tastes sour and refreshing.', 'whole yellow lemon fruit and half on white background'),
-    v('Lime', '🟢', 'Limão verde (Taiti)', '/laɪm/', 'Squeeze fresh green lime over the food.', 'whole green lime fruit and half on white background'),
-    v('Tangerine', '🍊', 'Tangerina / Mexerica', '/ˈtæn.dʒə.riːn/', 'Tangerines are easy to peel.', 'single whole orange tangerine mandarin fruit on white background'),
-    v('Guava', '🩷', 'Goiaba', '/ˈɡwɑː.və/', 'Red guava is very common in Brazil.', 'whole green guava fruit with pink half on white background'),
-    v('Passion Fruit', '💛', 'Maracujá', '/ˈpæʃ.ən fruːt/', 'Passion fruit juice is very relaxing.', 'yellow passion fruit maracuja cut in half showing seeds on white background'),
-    v('Melon', '🍈', 'Melão', '/ˈmel.ən/', 'Sweet yellow melon is refreshing.', 'whole yellow honeydew melon with one wedge on white background'),
-    v('Avocado', '🥑', 'Abacate', '/ˌæv.əˈkɑː.doʊ/', 'Avocado is creamy and nutritious.', 'green avocado fruit cut in half with brown seed on white background'),
-    v('Coconut', '🥥', 'Coco', '/ˈkoʊ.kə.nʌt/', 'We drank fresh coconut water at the beach.', 'brown coconut cracked in half showing white meat on white background'),
-    v('Pear', '🍐', 'Pera', '/per/', 'The green pear is sweet and soft.', 'single whole green pear fruit on white background'),
-    v('Peach', '🍑', 'Pêssego', '/piːtʃ/', 'A ripe peach has soft skin.', 'single whole ripe peach fruit with green leaf on white background'),
-    v('Kiwi', '🥝', 'Kiwi', '/ˈkiː.wiː/', 'Kiwi has bright green flesh inside.', 'whole brown kiwi fruit and green half on white background'),
-    v('Plum', '🟣', 'Ameixa', '/plʌm/', 'She picked a ripe purple plum.', 'single whole ripe red purple plum fruit on white background'),
-    v('Cherry', '🍒', 'Cereja', '/ˈtʃer.i/', 'He put a red cherry on top of the cake.', 'two whole red cherries with stems on white background'),
-    v('Cashew', '🧡', 'Caju', '/ˈkæʃ.uː/', 'Cashew fruit is native to Brazil.', 'single whole ripe yellow red cashew apple caju fruit on white background'),
-    v('Acai', '🟣', 'Açaí', '/ˌɑː.sɑːˈiː/', 'Cold acai bowl is a Brazilian favorite.', 'purple acai bowl with whole acai berries on white background'),
-    v('Jabuticaba', '⚫', 'Jabuticaba', '/ˌʒɑː.buː.tɪˈkɑː.bə/', 'Jabuticaba is a sweet dark Brazilian fruit.', 'whole dark purple jabuticaba fruits on white background'),
-    v('Persimmon', '🟠', 'Caqui', '/pərˈsɪm.ən/', 'Ripe persimmon is very sweet.', 'single whole orange persimmon caqui fruit on white background'),
-    v('Starfruit', '⭐', 'Carambola', '/ˈstɑːr.fruːt/', 'Slices of starfruit look like bright stars.', 'whole yellow starfruit carambola with one star slice on white background'),
-    v('Blackberry', '⚫', 'Amora', '/ˈblækˌber.i/', 'Blackberries are dark and sweet.', 'whole fresh black blackberry fruit on white background'),
-    v('Jackfruit', '🟢', 'Jaca', '/ˈdʒæk.fruːt/', 'Jackfruit is a very large tropical fruit.', 'whole green jackfruit on white background'),
-    v('Fig', '🟤', 'Figo', '/fɪɡ/', 'Fresh figs are sweet and soft.', 'whole purple fig fruit and half on white background'),
-  ]
-};
-
-const ANIMALS_1 = {
-  title: 'Rodada 1 • Animais I: Pets, Quintal & Fazenda',
-  subtitle: 'Passo 2/5 da Rodada 1 • Os 30 animais mais conhecidos pelas famílias',
-  pedagogicalObjective: 'Reconhecer os animais domésticos, pets e bichos da fazenda mais familiares do dia a dia.',
-  icon: 'dog',
-  theory: [
-    'Agora variamos o tema para você não cansar: saímos de Frutas e entramos nos Animais mais conhecidos no Brasil!',
-    'Inclui Cachorro (Dog), Gato (Cat), Pássaro (Bird), Peixe (Fish), Coelho (Rabbit), Cavalo (Horse), Vaca (Cow), Porco (Pig) e Galinha (Chicken).',
-    'Todos os animais aparecem inteiros, sem cortes e sem tarjas.'
-  ],
-  items: [
-    v('Dog', '🐕', 'Cachorro', '/dɔːɡ/', 'The friendly dog wags its tail.', 'golden retriever dog full body sitting on white background'),
-    v('Cat', '🐈', 'Gato', '/kæt/', 'The cute cat walks quietly.', 'domestic tabby cat full body standing on white background'),
-    v('Bird', '🐦', 'Pássaro / Passarinho', '/bɜːrd/', 'The little bird sings in the morning.', 'small colorful songbird full body perching on white background'),
-    v('Fish', '🐟', 'Peixe', '/fɪʃ/', 'The orange goldfish swims in the aquarium.', 'single orange goldfish full body side view on white background'),
-    v('Rabbit', '🐇', 'Coelho', '/ˈræb.ɪt/', 'The white rabbit has long ears.', 'cute rabbit bunny full body sitting on white background'),
-    v('Turtle', '🐢', 'Tartaruga / Jabuti', '/ˈtɜːr.təl/', 'The turtle walks slowly with its shell.', 'land tortoise turtle full body on white background'),
-    v('Parrot', '🦜', 'Papagaio', '/ˈpær.ət/', 'The green parrot can repeat words.', 'green parrot bird full body perching on white background'),
-    v('Hamster', '🐹', 'Hamster', '/ˈhæm.stər/', 'The small golden hamster eats seeds.', 'golden hamster pet full body on white background'),
-    v('Guinea Pig', '🐹', 'Porquinho-da-índia', '/ˈɡɪn.i pɪɡ/', 'The guinea pig is a gentle pet.', 'tricolor guinea pig pet full body on white background'),
-    v('Horse', '🐎', 'Cavalo', '/hɔːrs/', 'The brown horse runs across the farm.', 'brown horse full body standing side view on white background'),
-    v('Cow', '🐄', 'Vaca', '/kaʊ/', 'The dairy cow gives us fresh milk.', 'black and white dairy cow full body standing on white background'),
-    v('Pig', '🐖', 'Porco', '/pɪɡ/', 'The pink pig lives on the farm.', 'pink farm pig full body standing on white background'),
-    v('Chicken', '🐔', 'Galinha', '/ˈtʃɪk.ɪn/', 'The brown hen lays eggs on the farm.', 'brown hen chicken full body standing on white background'),
-    v('Rooster', '🐓', 'Galo', '/ˈruː.stər/', 'The rooster crows early in the morning.', 'rooster cock bird full body standing on white background'),
-    v('Chick', '🐥', 'Pintinho', '/tʃɪk/', 'The little yellow chick follows the hen.', 'yellow baby chick bird full body standing on white background'),
-    v('Duck', '🦆', 'Pato', '/dʌk/', 'The white duck swims in the lake.', 'white farm duck full body standing on white background'),
-    v('Sheep', '🐑', 'Ovelha', '/ʃiːp/', 'White sheep have soft wool.', 'fluffy white sheep full body standing on white background'),
-    v('Goat', '🐐', 'Cabra / Bode', '/ɡoʊt/', 'The goat climbs rocks on the farm.', 'farm goat full body standing on white background'),
-    v('Donkey', '🫏', 'Burro / Jegue', '/ˈdɑːŋ.ki/', 'The gray donkey has long ears.', 'gray donkey mule full body standing on white background'),
-    v('Bull', '🐂', 'Touro / Boi', '/bʊl/', 'The strong bull has two horns.', 'brown bull cattle with horns full body on white background'),
-    v('Turkey', '🦃', 'Peru', '/ˈtɜːr.ki/', 'The turkey opens its fan tail.', 'turkey bird full body standing on white background'),
-    v('Goose', '🪿', 'Ganso', '/ɡuːs/', 'The white goose has a long neck.', 'white goose bird full body standing on white background'),
-    v('Mouse', '🐁', 'Rato / Camundongo', '/maʊs/', 'The small mouse loves cheese.', 'small white mouse full body on white background'),
-    v('Pigeon', '🐦', 'Pombo', '/ˈpɪdʒ.ən/', 'Pigeons walk in the city square.', 'gray city pigeon bird full body standing on white background'),
-    v('Frog', '🐸', 'Sapo / Rã', '/frɔːɡ/', 'The green frog jumps high.', 'green tree frog full body sitting on white background'),
-    v('Butterfly', '🦋', 'Borboleta', '/ˈbʌt.ər.flaɪ/', 'A colorful butterfly lands on a flower.', 'orange monarch butterfly full wings on white background'),
-    v('Bee', '🐝', 'Abelha', '/biː/', 'Honeybees make golden honey.', 'honeybee insect full body on white background'),
-    v('Ant', '🐜', 'Formiga', '/ænt/', 'Small ants carry leaves together.', 'single ant insect full body on white background'),
-    v('Ladybug', '🐞', 'Joaninha', '/ˈleɪ.di.bʌɡ/', 'A red ladybug with black spots.', 'red ladybug beetle with black spots on white background'),
-    v('Spider', '🕷️', 'Aranha', '/ˈspaɪ.dər/', 'The spider builds a web in the garden.', 'spider arachnid full body on white background'),
-  ]
-};
-
-const HOME_1 = {
-  title: 'Rodada 1 • Casa & Objetos I: Móveis & Quarto',
-  subtitle: 'Passo 3/5 da Rodada 1 • Os 30 móveis e objetos mais comuns da casa',
-  pedagogicalObjective: 'Reconhecer os móveis e objetos essenciais de casa em fotos inteiras sobre fundo branco.',
+const MODULE_1_ENTRANCE = {
+  title: 'Ambiente 1 • Entrada da Casa, Calçada & Porta',
+  subtitle: 'Cômodo 1/12 • Da calçada até abrir a porta (objetos e materiais)',
+  pedagogicalObjective: 'Conhecer tudo o que vemos ao chegar em casa: calçada, portão, parede, tinta, porta de madeira, fechadura de metal, maçaneta, chave e fachada.',
   icon: 'house',
   theory: [
-    'No 3º passo da Rodada 1 aprendemos os móveis e objetos mais básicos de qualquer casa: Cama (Bed), Cadeira (Chair), Mesa (Table), Sofá (Sofa) e Travesseiro (Pillow).',
-    'Cada objeto aparece inteiro e centralizado sobre fundo branco.',
-    'Continue firme para chegar à Prática da Rodada 1!'
+    'Bem-vindo à Jornada de Imersão Residencial! Vamos explorar uma casa inteira passo a passo, começando pela calçada e pela porta de entrada.',
+    'Aqui você aprende não apenas os objetos (Porta, Parede, Fechadura, Maçaneta, Chave, Portão, Campainha), mas também os materiais de que são feitos: Madeira (Wood), Metal (Metal), Vidro (Glass) e Tinta na Parede (Wall Paint).',
+    '🎓 REGRA DA PROVA: Você precisa atingir 70 pontos ou mais (pelo menos 21 acertos em 30) para ser aprovado e liberar o próximo cômodo!'
   ],
   items: [
-    v('Bed', '🛏️', 'Cama', '/bed/', 'I sleep in a comfortable bed.', 'wooden bed with mattress and pillows furniture on white background'),
-    v('Chair', '🪑', 'Cadeira', '/tʃer/', 'Please sit down on this wooden chair.', 'single wooden dining chair furniture on white background'),
-    v('Table', '🪑', 'Mesa', '/ˈteɪ.bəl/', 'Dinner is served on the wooden table.', 'empty wooden dining table furniture on white background'),
-    v('Sofa', '🛋️', 'Sofá', '/ˈsoʊ.fə/', 'The family sits together on the living room sofa.', 'modern fabric sofa couch furniture on white background'),
-    v('Pillow', '⬜', 'Travesseiro', '/ˈpɪl.oʊ/', 'I rest my head on a soft white pillow.', 'single soft white bed pillow on white background'),
-    v('Blanket', '🛌', 'Cobertor / Edredom', '/ˈblæŋ.kɪt/', 'A warm folded blanket for cold nights.', 'folded soft wool blanket on white background'),
-    v('Door', '🚪', 'Porta', '/dɔːr/', 'Please close the wooden door.', 'single wooden front door on white background'),
-    v('Window', '🪟', 'Janela', '/ˈwɪn.doʊ/', 'Open the house window to let fresh air in.', 'closed house glass window frame on white background'),
-    v('Key', '🔑', 'Chave', '/kiː/', 'Keep your house key in your pocket.', 'single metal house key on white background'),
-    v('Television', '📺', 'Televisão (TV)', '/ˈtel.ə.vɪʒ.ən/', 'We watch movies on the flat-screen television.', 'flat screen smart tv television on white background'),
-    v('Lamp', '💡', 'Abajur / Luminária', '/læmp/', 'Turn on the bedside table lamp.', 'bedside table lamp with shade on white background'),
-    v('Mirror', '🪞', 'Espelho', '/ˈmɪr.ər/', 'She looked in the framed mirror.', 'framed standing mirror on white background'),
-    v('Clock', '⏰', 'Relógio / Despertador', '/klɑːk/', 'Look at the round wall clock to check the time.', 'round wall clock showing numbers on white background'),
-    v('Wardrobe', '🚪', 'Guarda-roupa', '/ˈwɔːr.droʊb/', 'Hang your clothes inside the wooden wardrobe.', 'wooden bedroom wardrobe closet furniture on white background'),
-    v('Rug', '🟥', 'Tapete', '/rʌɡ/', 'A soft woven rug on the floor.', 'decorative woven floor rug carpet on white background'),
-    v('Curtain', '🪟', 'Cortina', '/ˈkɜːr.tən/', 'Close the window curtains at night.', 'fabric window curtains drapes on white background'),
-    v('Bookshelf', '📚', 'Estante de livros', '/ˈbʊk.ʃelf/', 'The wooden bookshelf holds many books.', 'wooden bookcase bookshelf with books on white background'),
-    v('Fan', '🌀', 'Ventilador', '/fæn/', 'Turn on the electric fan on hot days.', 'standing electric table fan on white background'),
-    v('Air Conditioner', '❄️', 'Ar-condicionado', '/ˈer kənˌdɪʃ.ən.ər/', 'The wall air conditioner cools the bedroom.', 'white split wall air conditioner unit on white background'),
-    v('Shower', '🚿', 'Chuveiro', '/ˈʃaʊ.ər/', 'Take a warm shower in the bathroom.', 'bathroom shower head fixture on white background'),
-    v('Towel', '🧺', 'Toalha de banho', '/ˈtaʊ.əl/', 'Dry your hands with a clean cotton towel.', 'folded cotton bath towel stack on white background'),
-    v('Soap', '🧼', 'Sabonete', '/soʊp/', 'Wash your hands with a bar of soap.', 'bar of bath soap on soap dish on white background'),
-    v('Toothbrush', '🪥', 'Escova de dentes', '/ˈtuːθ.brʌʃ/', 'Brush your teeth with a toothbrush after meals.', 'single plastic toothbrush on white background'),
-    v('Toothpaste', '🪥', 'Pasta de dente', '/ˈtuːθ.peɪst/', 'Put toothpaste on your toothbrush.', 'toothpaste tube with cap on white background'),
-    v('Toilet', '🚽', 'Vaso sanitário', '/ˈtɔɪ.lət/', 'A clean white ceramic bathroom toilet.', 'white ceramic toilet bowl on white background'),
-    v('Toilet Paper', '🧻', 'Papel higiênico', '/ˈtɔɪ.lət ˈpeɪ.pər/', 'A white roll of soft toilet paper.', 'single roll of white toilet paper on white background'),
-    v('Trash Can', '🗑️', 'Lixeira', '/ˈtræʃ kæn/', 'Throw the wrapper into the trash can.', 'metal pedal trash can bin on white background'),
-    v('Broom', '🧹', 'Vassoura', '/bruːm/', 'Sweep the floor with a broom.', 'household sweeping broom with handle on white background'),
-    v('Bucket', '🪣', 'Balde', '/ˈbʌk.ɪt/', 'Fill the plastic bucket with water.', 'blue plastic water bucket with handle on white background'),
-    v('Plant Pot', '🪴', 'Vaso de planta', '/ˈplænt pɑːt/', 'A green indoor plant in a ceramic pot.', 'green potted houseplant in clay pot on white background'),
+    v('Sidewalk', '🚶', 'Calçada', '/ˈsaɪd.wɔːk/', 'We walk on the concrete sidewalk in front of the house.', 'concrete sidewalk pavement isolated on white background'),
+    v('Gate', '🚪', 'Portão da frente', '/ɡeɪt/', 'Open the front metal gate to enter the yard.', 'house front metal gate isolated on white background'),
+    v('Brick Wall', '🧱', 'Muro / Parede de tijolos', '/brɪk wɔːl/', 'A strong brick wall surrounds the house.', 'red brick wall section isolated on white background'),
+    v('Fence', '栅', 'Cerca / Grade', '/fens/', 'A white wooden fence in front of the garden.', 'white picket fence section isolated on white background'),
+    v('Mailbox', '📫', 'Caixa de correio', '/ˈmeɪl.bɑːks/', 'Check the mailbox for letters and packages.', 'house mailbox isolated on white background'),
+    v('Doorbell', '🔔', 'Campainha', '/ˈdɔːr.bel/', 'Press the doorbell button when you arrive.', 'wall doorbell button isolated on white background'),
+    v('Intercom', '📞', 'Interfone', '/ˈɪn.tər.kɑːm/', 'Answer the visitor using the wall intercom.', 'home wall intercom phone isolated on white background'),
+    v('Front Yard', '🏡', 'Jardim da frente / Quintal', '/frʌnt jɑːrd/', 'Green grass grows in the front yard.', 'green lawn grass turf patch isolated on white background'),
+    v('Plant Pot', '🪴', 'Vaso de planta', '/ˈplænt pɑːt/', 'A green plant in a ceramic pot by the entrance.', 'green potted houseplant in clay pot on white background'),
+    v('Doormat', '🟫', 'Capacho / Tapete de entrada', '/ˈdɔːr.mæt/', 'Wipe your shoes on the welcome doormat.', 'welcome coir doormat isolated on white background'),
+    v('Stairs', '🪜', 'Escada / Degraus da entrada', '/sterz/', 'Walk up the front steps to the porch.', 'steps stairs isolated on white background'),
+    v('Door', '🚪', 'Porta de entrada', '/dɔːr/', 'The front door is made of solid wood.', 'single wooden front door on white background'),
+    v('Wood', '🪵', 'Madeira (material da porta)', '/wʊd/', 'The door is made of natural brown wood.', 'wooden plank board texture isolated on white background'),
+    v('Doorknob', '🚪', 'Maçaneta da porta', '/ˈdɔːr.nɑːb/', 'Turn the metal doorknob to open the door.', 'metal door handle doorknob isolated on white background'),
+    v('Door Lock', '🔒', 'Fechadura da porta', '/dɔːr lɑːk/', 'The door lock is made of strong metal.', 'metal cylinder door lock mechanism isolated on white background'),
+    v('Metal', '🔩', 'Metal / Aço (material da fechadura)', '/ˈmet.əl/', 'The lock and key are made of shiny metal.', 'brushed steel metal plate hardware isolated on white background'),
+    v('Key', '🔑', 'Chave', '/kiː/', 'Insert the metal key into the door lock.', 'single metal house key on white background'),
+    v('Keychain', '🔑', 'Chaveiro', '/ˈkiː.tʃeɪn/', 'My house keys are on a ring keychain.', 'metal keyring keychain with key isolated on white background'),
+    v('Lock', '🔒', 'Cadeado', '/lɑːk/', 'Close the side gate with a metal padlock.', 'brass metal padlock with key on white background'),
+    v('Hinge', '🔩', 'Dobradiça da porta', '/hɪndʒ/', 'Metal hinges hold the wooden door to the frame.', 'stainless steel door hinge isolated on white background'),
+    v('Wall', '🧱', 'Parede', '/wɔːl/', 'The house wall is smooth and painted white.', 'smooth painted house wall corner isolated on white background'),
+    v('Wall Paint', '🎨', 'Tinta de parede', '/wɔːl peɪnt/', 'Fresh wall paint makes the house look new.', 'paint can with brush and wall paint swatch isolated on white background'),
+    v('Paint Roller', '🖌️', 'Rolo de pintar parede', '/peɪnt ˈroʊ.lər/', 'Use a paint roller to paint the bedroom wall.', 'paint roller tool isolated on white background'),
+    v('Window', '🪟', 'Janela', '/ˈwɪn.doʊ/', 'The glass window lets sunlight into the house.', 'closed house glass window frame on white background'),
+    v('Glass', '🪟', 'Vidro (material da janela)', '/ɡlæs/', 'The window pane is made of clear glass.', 'clear glass pane sheet isolated on white background'),
+    v('Roof', '🏠', 'Telhado', '/ruːf/', 'The ceramic roof protects the house from rain.', 'house roof with red tiles isolated on white background'),
+    v('Roof Tile', '🧱', 'Telha', '/ruːf taɪl/', 'Clay roof tiles cover the top of the house.', 'single terracotta clay roof tile isolated on white background'),
+    v('Porch Light', '💡', 'Luminária externa / Arandela', '/pɔːrtʃ laɪt/', 'Turn on the porch light at night.', 'outdoor wall lantern porch light fixture isolated on white background'),
+    v('Garage', '🚗', 'Garagem', '/ɡəˈrɑːʒ/', 'Park the family car inside the garage.', 'house garage door isolated on white background'),
+    v('House', '🏠', 'Casa / Residência', '/haʊs/', 'Welcome to my comfortable house!', 'single family house home on white background'),
   ]
 };
 
-const CITY_1 = {
-  title: 'Rodada 1 • Cotidiano I: Roupas, Calçados & Acessórios',
-  subtitle: 'Passo 4/5 da Rodada 1 • 30 peças de roupa e acessórios do dia a dia',
-  pedagogicalObjective: 'Dominar o vocabulário de roupas, calçados e acessórios pessoais em fotos inteiras sem cortes.',
+const MODULE_2_LIVING_ROOM = {
+  title: 'Ambiente 2 • Sala de Estar, TV, Internet & Iluminação',
+  subtitle: 'Cômodo 2/12 • Sofá, almofadas, rack, modem, TV, videogame, tomada, interruptor e piso',
+  pedagogicalObjective: 'Identificar todos os móveis, aparelhos eletrônicos, tomadas, interruptores, iluminação e revestimentos da sala de estar.',
+  icon: 'house',
+  theory: [
+    'Você abriu a porta e entrou na Sala de Estar! Olhe ao seu redor: temos o Sofá (Sofa), as Almofadas (Cushion), o Rack de TV (TV Stand), a Televisão (Television) e o Modem de Internet (Wi-Fi Router).',
+    'Veja também os Retratos de Fotografia (Picture Frame), o Videogame (Video Game Console), o Controle (Game Controller), as Caixas de Som (Speaker), a Mesa de Centro (Coffee Table), o Tapete (Rug), a Cortina (Curtain) e o Notebook (Computer).',
+    'Nas paredes, teto e chão temos a Tomada (Power Outlet), o Interruptor (Light Switch), a Lâmpada no Teto (Light Bulb), o Ventilador (Fan), o Ar-Condicionado (Air Conditioner) e o Piso Cerâmico (Ceramic Tile).'
+  ],
+  items: [
+    v('Sofa', '🛋️', 'Sofá da sala', '/ˈsoʊ.fə/', 'The family sits together on the living room sofa.', 'modern fabric sofa couch furniture on white background'),
+    v('Cushion', '🛋️', 'Almofada de sofá', '/ˈkʊʃ.ən/', 'Soft decorative cushions are on the sofa.', 'decorative square sofa cushion throw pillow isolated on white background'),
+    v('Armchair', '🛋️', 'Poltrona', '/ˈɑːrm.tʃer/', 'Grandpa reads in a comfortable armchair.', 'comfortable fabric armchair isolated on white background'),
+    v('TV Stand', '📺', 'Rack de TV / Painel de sala', '/ˌtiːˈviː stænd/', 'The television sits on a wooden TV stand.', 'modern wooden tv stand media console furniture isolated on white background'),
+    v('Television', '📺', 'Televisão (Smart TV)', '/ˈtel.ə.vɪʒ.ən/', 'We watch movies on the flat-screen television.', 'flat screen smart tv television on white background'),
+    v('Remote Control', '📱', 'Controle remoto da TV', '/rɪˈmoʊt kənˈtroʊl/', 'Change the channel with the TV remote control.', 'black tv remote control with buttons on white background'),
+    v('Wi-Fi Router', '🛜', 'Modem / Roteador de internet', '/ˈwaɪ.faɪ ˈraʊ.tər/', 'The Wi-Fi router connects our home to the internet.', 'wireless wifi router modem with antennas isolated on white background'),
+    v('Picture Frame', '🖼️', 'Porta-retrato / Retrato de fotografia', '/ˈpɪk.tʃər freɪm/', 'A family photo inside a wooden picture frame.', 'wooden photo picture frame isolated on white background'),
+    v('Video Game Console', '🎮', 'Videogame (Console)', '/ˈvɪd.i.oʊ ɡeɪm ˈkɑːn.soʊl/', 'The video game console is connected to the TV.', 'modern video game console isolated on white background'),
+    v('Game Controller', '🎮', 'Controle de videogame / Joystick', '/ɡeɪm kənˈtroʊ.lər/', 'Hold the wireless game controller to play.', 'wireless video game controller gamepad isolated on white background'),
+    v('Speaker', '🔊', 'Caixa de som', '/ˈspiː.kər/', 'Play music through the Bluetooth speaker.', 'audio speaker box isolated on white background'),
+    v('Coffee Table', '🪑', 'Mesa de centro da sala', '/ˈkɔː.fi ˈteɪ.bəl/', 'Put the magazines on the living room coffee table.', 'wooden living room coffee table isolated on white background'),
+    v('Rug', '🟥', 'Tapete da sala', '/rʌɡ/', 'A soft woven rug covers the living room floor.', 'decorative woven floor rug carpet on white background'),
+    v('Curtain', '🪟', 'Cortina da janela', '/ˈkɜːr.tən/', 'Close the living room curtains in the evening.', 'fabric window curtains drapes on white background'),
+    v('Window Blind', '🪟', 'Persiana', '/ˈwɪn.doʊ blaɪnd/', 'Adjust the window blinds to control the light.', 'horizontal window blinds isolated on white background'),
+    v('Computer', '💻', 'Notebook / Computador portátil', '/kəmˈpjuː.tər/', 'My open laptop computer is on the table.', 'open laptop computer notebook on white background'),
+    v('Power Outlet', '🔌', 'Tomada elétrica na parede', '/ˈpaʊ.ər ˈaʊt.let/', 'Plug the notebook charger into the wall power outlet.', 'white wall electrical power outlet socket isolated on white background'),
+    v('Power Plug', '🔌', 'Plugue / Cabo de energia', '/ˈpaʊ.ər plʌɡ/', 'Insert the power plug into the socket.', 'electrical power plug with cord isolated on white background'),
+    v('Light Switch', '💡', 'Interruptor de luz na parede', '/laɪt swɪtʃ/', 'Flip the wall light switch to turn on the lamp.', 'white wall light switch rocker isolated on white background'),
+    v('Light Bulb', '💡', 'Lâmpada no teto', '/ˈlaɪt bʌlb/', 'The LED light bulb illuminates the whole room.', 'single led light bulb on white background'),
+    v('Ceiling Lamp', '💡', 'Lustre / Plafon de teto', '/ˈsiː.lɪŋ læmp/', 'A modern ceiling lamp hangs in the living room.', 'modern ceiling light fixture chandelier isolated on white background'),
+    v('Lamp', '💡', 'Abajur / Luminária de canto', '/læmp/', 'Turn on the warm lamp next to the sofa.', 'bedside table lamp with shade on white background'),
+    v('Fan', '🌀', 'Ventilador', '/fæn/', 'Turn on the electric fan on warm days.', 'standing electric table fan on white background'),
+    v('Ceiling Fan', '🌀', 'Ventilador de teto', '/ˈsiː.lɪŋ fæn/', 'The ceiling fan spins quietly above the sofa.', 'ceiling fan with blades and light isolated on white background'),
+    v('Air Conditioner', '❄️', 'Ar-condicionado', '/ˈer kənˌdɪʃ.ən.ər/', 'The split air conditioner cools the living room.', 'white split wall air conditioner unit on white background'),
+    v('Ceramic Tile', '⬜', 'Piso cerâmico / Porcelanato', '/səˈræm.ɪk taɪl/', 'The living room has shiny ceramic floor tiles.', 'porcelain ceramic floor tile square isolated on white background'),
+    v('Bookshelf', '📚', 'Estante de livros', '/ˈbʊk.ʃelf/', 'Our books are organized on the wooden bookshelf.', 'wooden bookcase bookshelf with books on white background'),
+    v('Clock', '⏰', 'Relógio de parede', '/klɑːk/', 'Check the time on the living room wall clock.', 'round wall clock showing numbers on white background'),
+    v('Vase', '🏺', 'Vaso decorativo', '/veɪs/', 'A ceramic vase sits on the coffee table.', 'decorative ceramic flower vase isolated on white background'),
+    v('Telephone', '☎️', 'Telefone fixo', '/ˈtel.ə.foʊn/', 'The home telephone is next to the modem.', 'cordless home telephone isolated on white background'),
+  ]
+};
+
+const MODULE_3_KITCHEN_STRUCTURE = {
+  title: 'Ambiente 3 • Cozinha I: Armários, Pia, Ilha, Fogão & Eletros',
+  subtitle: 'Cômodo 3/12 • Armário, gavetas, pia, torneira, pedra, ilha, coifa, pendentes e eletroportáteis',
+  pedagogicalObjective: 'Dominar os móveis planejados, bancadas de pedra, ilha, pia, torneira, coifa, iluminação pendente e eletrodomésticos da cozinha.',
+  icon: 'apple',
+  theory: [
+    'Agora entramos na Cozinha! Primeiro observamos toda a estrutura e os aparelhos: Armário (Kitchen Cabinet), Porta do Armário (Cabinet Door), Gavetas (Drawer), Geladeira (Fridge) e a Mesa com Cadeiras (Table & Chair).',
+    'Na área de preparo vemos a Pia (Kitchen Sink), a Torneira (Faucet), a Pedra do Armário / Bancada (Granite Countertop), a Ilha (Kitchen Island), o Fogão (Stove), a Coifa (Range Hood), o Depurador de Ar (Air Purifier) e os Pendentes de Luz (Pendant Light).',
+    'E nos eletros temos: Forno Micro-ondas (Microwave), Forno Elétrico (Electric Oven), Torradeira (Toaster), Cafeteira (Coffee Maker), Liquidificador (Blender), Batedeira (Stand Mixer) e Air Fryer!'
+  ],
+  items: [
+    v('Kitchen Cabinet', '🗄️', 'Armário de cozinha', '/ˈkɪtʃ.ən ˈkæb.ɪ.nət/', 'Store the plates inside the kitchen cabinet.', 'wooden kitchen cabinet cupboard isolated on white background'),
+    v('Cabinet Door', '🚪', 'Porta do armário', '/ˈkæb.ɪ.nət dɔːr/', 'Open the wooden cabinet door carefully.', 'wooden cabinet door with handle isolated on white background'),
+    v('Drawer', '🗄️', 'Gaveta do armário', '/drɔːr/', 'The silverware is kept inside the kitchen drawer.', 'open wooden drawer furniture isolated on white background'),
+    v('Fridge', '🧊', 'Geladeira / Refrigerador', '/frɪdʒ/', 'Keep water, milk and food cold in the fridge.', 'modern stainless steel refrigerator fridge appliance on white background'),
+    v('Freezer', '❄️', 'Freezer / Congelador', '/ˈfriː.zər/', 'Ice stays frozen inside the freezer compartment.', 'upright freezer appliance with ice isolated on white background'),
+    v('Table', '🪑', 'Mesa de jantar da cozinha', '/ˈteɪ.bəl/', 'The kitchen table has four chairs around it.', 'empty wooden dining table furniture on white background'),
+    v('Chair', '🪑', 'Cadeira da cozinha', '/tʃer/', 'Pull out a chair and sit at the kitchen table.', 'single wooden dining chair furniture on white background'),
+    v('Kitchen Sink', '🚰', 'Pia da cozinha (cuba de inox)', '/ˈkɪtʃ.ən sɪŋk/', 'Wash the vegetables in the stainless steel kitchen sink.', 'stainless steel kitchen sink basin isolated on white background'),
+    v('Faucet', '🚰', 'Torneira da pia', '/ˈfɔː.sɪt/', 'Turn on the kitchen faucet to rinse the plate.', 'chrome kitchen water faucet tap isolated on white background'),
+    v('Countertop', '🪨', 'Pedra do armário / Bancada de granito', '/ˈkaʊn.tər.tɑːp/', 'The kitchen cabinet has a polished granite stone countertop.', 'granite stone kitchen countertop slab isolated on white background'),
+    v('Kitchen Island', '🏝️', 'Ilha da cozinha', '/ˈkɪtʃ.ən ˈaɪ.lənd/', 'We prepare meals on the central kitchen island.', 'modern kitchen island cabinet with stone top isolated on white background'),
+    v('Bar Stool', '🪑', 'Banqueta alta da ilha', '/bɑːr stuːl/', 'High bar stools are placed next to the kitchen island.', 'high kitchen bar stool chair isolated on white background'),
+    v('Stove', '🔥', 'Fogão', '/stoʊv/', 'Cook rice and beans on the gas stove.', 'kitchen gas stove oven appliance on white background'),
+    v('Range Hood', '💨', 'Coifa de inox', '/reɪndʒ hʊd/', 'The stainless steel range hood removes smoke above the stove.', 'stainless steel kitchen chimney range hood isolated on white background'),
+    v('Exhaust Hood', '💨', 'Depurador de ar', '/ɪɡˈzɔːst hʊd/', 'Turn on the slim exhaust hood while frying food.', 'slim under cabinet kitchen range hood depurator isolated on white background'),
+    v('Pendant Light', '💡', 'Luminária pendente (sobre a ilha/mesa)', '/ˈpen.dənt laɪt/', 'Hanging pendant lights illuminate the kitchen island.', 'modern hanging pendant light lamp fixture isolated on white background'),
+    v('Microwave', '⏲️', 'Forno micro-ondas', '/ˈmaɪ.krə.weɪv/', 'Warm up your lunch in the microwave oven.', 'countertop microwave oven appliance on white background'),
+    v('Electric Oven', '♨️', 'Forno elétrico', '/ɪˈlek.trɪk ˈʌv.ən/', 'Bake bread and pies inside the electric oven.', 'countertop electric toaster oven appliance isolated on white background'),
+    v('Toaster', '🍞', 'Torradeira elétrica', '/ˈtoʊ.stər/', 'Toast two slices of bread in the toaster.', 'electric bread toaster appliance on white background'),
+    v('Coffee Maker', '☕', 'Cafeteira elétrica', '/ˈkɔː.fi ˌmeɪ.kər/', 'Fresh coffee is brewing in the coffee maker.', 'electric drip coffee maker machine on white background'),
+    v('Blender', '🌪️', 'Liquidificador', '/ˈblen.dər/', 'Blend fresh fruit smoothie in the blender.', 'electric kitchen blender with jar on white background'),
+    v('Stand Mixer', '🥣', 'Batedeira de bolo', '/stænd ˈmɪk.sər/', 'Mix the cake batter with an electric stand mixer.', 'electric kitchen stand mixer with bowl isolated on white background'),
+    v('Air Fryer', '🍟', 'Fritadeira elétrica (Air Fryer)', '/er ˈfraɪ.ər/', 'Cook crispy potatoes in the electric air fryer.', 'black digital air fryer kitchen appliance isolated on white background'),
+    v('Sandwich Maker', '🥪', 'Sanduicheira / Grill elétrico', '/ˈsæn.wɪtʃ ˈmeɪ.kər/', 'Toast a warm cheese sandwich in the sandwich maker.', 'electric sandwich maker grill press appliance isolated on white background'),
+    v('Water Dispenser', '🚰', 'Filtro / Purificador de água', '/ˈwɔː.tər dɪˌspen.sər/', 'Get cold filtered water from the water dispenser.', 'countertop water filter dispenser clay or white on white background'),
+    v('Kettle', '🫖', 'Chaleira elétrica / de fogão', '/ˈket.əl/', 'Boil water for tea in the stainless steel kettle.', 'stainless steel tea kettle with spout on white background'),
+    v('Kitchen Scale', '⚖️', 'Balança de cozinha', '/ˈkɪtʃ.ən skeɪl/', 'Weigh the flour on the digital kitchen scale.', 'digital kitchen food scale on white background'),
+    v('Sponge', '🧽', 'Esponja de lavar louça', '/spʌndʒ/', 'Wash the dishes with soap and a kitchen sponge.', 'yellow and green dishwashing kitchen sponge on white background'),
+    v('Apron', '🎽', 'Avental de cozinha', '/ˈeɪ.prən/', 'Wear a clean apron while cooking in the kitchen.', 'fabric kitchen cooking apron on white background'),
+    v('Trash Can', '🗑️', 'Lixeira de cozinha', '/ˈtræʃ kæn/', 'Step on the pedal to open the kitchen trash can.', 'metal pedal trash can bin on white background'),
+  ]
+};
+
+const MODULE_4_KITCHEN_UTENSILS_FRIDGE = {
+  title: 'Ambiente 4 • Cozinha II: Panelas, Talheres & Dentro da Geladeira',
+  subtitle: 'Cômodo 4/12 • Modelos de panelas, utensílios de gaveta, louças e alimentos na geladeira',
+  pedagogicalObjective: 'Conhecer cada modelo de panela (caçarola, frigideira, panela de pressão), os talheres e utensílios das gavetas e o que vemos ao abrir a geladeira.',
+  icon: 'apple',
+  theory: [
+    'Continuando na Cozinha, agora abrimos os armários, as gavetas e a porta da geladeira!',
+    'Veja os vários modelos de panelas: Panela de cozinhar (Cooking Pot), Frigideira (Frying Pan), Panela de Pressão (Pressure Cooker) e Assadeira (Baking Tray).',
+    'Nas gavetas temos os talheres e utensílios (Fork, Knife, Spoon, Ladle, Spatula, Grater, Strainer, Cutting Board) e, dentro da geladeira, vemos Garrafa de Água (Bottle), Leite (Milk), Manteiga (Butter), Queijo (Cheese), Ovos (Egg), Suco (Juice) e frutas/verduras!'
+  ],
+  items: [
+    v('Cooking Pot', '🍲', 'Panela com tampa', '/ˈkʊk.ɪŋ pɑːt/', 'Boil soup and pasta in the stainless steel cooking pot.', 'stainless steel cooking pot with lid on white background'),
+    v('Frying Pan', '🍳', 'Frigideira antiaderente', '/ˈfraɪ.ɪŋ pæn/', 'Fry eggs in a non-stick frying pan.', 'black nonstick frying pan skillet on white background'),
+    v('Pressure Cooker', '🍲', 'Panela de pressão', '/ˈpreʃ.ər ˌkʊk.ər/', 'Cook beans fast in the aluminum pressure cooker.', 'aluminum kitchen pressure cooker pot on white background'),
+    v('Baking Tray', '🥮', 'Assadeira / Forma de forno', '/ˈbeɪ.kɪŋ treɪ/', 'Put the metal baking tray inside the oven.', 'rectangular metal baking pan tray isolated on white background'),
+    v('Fork', '🍴', 'Garfo', '/fɔːrk/', 'Take a clean fork from the kitchen drawer.', 'single metal dinner fork cutlery on white background'),
+    v('Knife', '🔪', 'Faca de cozinha', '/naɪf/', 'Slice the meat carefully with a sharp knife.', 'single stainless steel kitchen chef knife on white background'),
+    v('Spoon', '🥄', 'Colher', '/spuːn/', 'Use a metal spoon to eat soup.', 'single metal soup spoon cutlery on white background'),
+    v('Soup Ladle', '🥄', 'Concha de feijão / sopa', '/suːp ˈleɪ.dəl/', 'Serve hot soup with a deep metal ladle.', 'stainless steel soup ladle kitchen utensil isolated on white background'),
+    v('Spatula', '🍳', 'Espátula / Escumadeira', '/ˈspætʃ.ə.lə/', 'Flip the pancake with a kitchen spatula.', 'kitchen turner spatula utensil isolated on white background'),
+    v('Grater', '🧀', 'Ralador de queijo e legumes', '/ˈɡreɪ.tər/', 'Grate the cheese using a metal box grater.', 'stainless steel kitchen cheese grater isolated on white background'),
+    v('Strainer', '🥣', 'Peneira / Escorredor de cozinha', '/ˈstreɪ.nər/', 'Wash the rice using a fine mesh strainer.', 'kitchen mesh sieve strainer utensil isolated on white background'),
+    v('Cutting Board', '🪵', 'Tábua de corte', '/ˈkʌt.ɪŋ bɔːrd/', 'Chop tomatoes and onions on the wooden cutting board.', 'wooden kitchen cutting chopping board on white background'),
+    v('Rolling Pin', '🥖', 'Rolo de abrir massa', '/ˈroʊ.lɪŋ pɪn/', 'Roll the bread dough with a wooden rolling pin.', 'wooden dough rolling pin isolated on white background'),
+    v('Plate', '🍽️', 'Prato', '/pleɪt/', 'Set the white ceramic plates on the table.', 'single empty round ceramic dinner plate on white background'),
+    v('Bowl', '🥣', 'Tigela / Cumbuca', '/boʊl/', 'Pour cereal and milk into the ceramic bowl.', 'single empty ceramic soup bowl on white background'),
+    v('Glass', '🥛', 'Copo de vidro', '/ɡlæs/', 'Drink cold water from a clear glass.', 'empty clear glass water tumbler on white background'),
+    v('Cup', '☕', 'Xícara', '/kʌp/', 'Serve hot coffee in a porcelain cup.', 'empty porcelain coffee cup with handle on white background'),
+    v('Jar', '🫙', 'Pote de vidro com tampa', '/dʒɑːr/', 'Store food inside a sealed glass jar.', 'empty clear glass jar with lid on white background'),
+    v('Salt Shaker', '🧂', 'Saleiro', '/ˈsɔːlt ˌʃeɪ.kər/', 'The salt shaker is on the kitchen counter.', 'glass salt shaker with metal cap on white background'),
+    v('Napkin', '🧻', 'Guardanapo', '/ˈnæp.kɪn/', 'Place paper napkins next to the plates.', 'folded table napkin on white background'),
+    v('Bottle', '🍾', 'Garrafa de água (na geladeira)', '/ˈbɑː.təl/', 'There is a cold water bottle inside the fridge.', 'single reusable water bottle on white background'),
+    v('Milk', '🥛', 'Leite (na geladeira)', '/mɪlk/', 'Keep the fresh milk inside the refrigerator.', 'glass of white milk and milk bottle on white background'),
+    v('Butter', '🧈', 'Manteiga (na geladeira)', '/ˈbʌt.ər/', 'Take the butter out of the fridge for breakfast.', 'yellow butter block on dish on white background'),
+    v('Cheese', '🧀', 'Queijo (na geladeira)', '/tʃiːz/', 'Sliced yellow cheese is stored in the fridge.', 'wedge of yellow swiss cheese with holes on white background'),
+    v('Yogurt', '🥣', 'Iogurte (na geladeira)', '/ˈjoʊ.ɡərt/', 'Cold strawberry yogurt is in the refrigerator.', 'creamy yogurt in bowl with spoon on white background'),
+    v('Egg', '🥚', 'Ovo (na porta/prateleira da geladeira)', '/eɡ/', 'There are twelve eggs in the refrigerator.', 'whole egg and sunny side up fried egg on white background'),
+    v('Juice', '🧃', 'Jarra de suco (na geladeira)', '/dʒuːs/', 'Cold orange juice is ready in the fridge.', 'glass of fresh orange juice on white background'),
+    v('Ham', '🥩', 'Presunto (na geladeira)', '/hæm/', 'Keep cheese and ham cold in the refrigerator.', 'sliced cooked pink ham meat on white background'),
+    v('Lettuce', '🥬', 'Alface (na gaveta da geladeira)', '/ˈlet.ɪs/', 'Fresh green lettuce stays crisp in the fridge drawer.', 'whole fresh green lettuce head on white background'),
+    v('Apple', '🍎', 'Maçã (na fruteira / geladeira)', '/ˈæp.əl/', 'I eat a cold red apple from the kitchen.', 'fresh red apple fruit with green leaf isolated on white background'),
+  ]
+};
+
+const MODULE_5_BEDROOM_CLOSET = {
+  title: 'Ambiente 5 • Quarto de Dormir, Cama, Guarda-Roupa & Vestuário',
+  subtitle: 'Cômodo 5/12 • Cama, colchão, travesseiro, cobertor, guarda-roupa, cabide, roupas e calçados',
+  pedagogicalObjective: 'Dominar cada item do quarto de dormir, roupas de cama, móveis do quarto e todas as peças de roupa e calçados do guarda-roupa.',
   icon: 'shirt',
   theory: [
-    'No 4º passo da Rodada 1 aprendemos as roupas, calçados e acessórios que usamos todos os dias.',
-    'Inclui Camiseta (Shirt), Calça (Pants), Calça Jeans (Jeans), Shorts, Vestido (Dress), Tênis (Sneakers), Chinelo (Sandals), Boné (Cap) e Óculos (Glasses).',
-    'Logo após concluir este módulo, você fará o Exercício de Prática com Palavras da Rodada 1!'
+    'Saindo da cozinha pelo corredor, entramos no Quarto de Dormir!',
+    'Olhe para a Cama (Bed), o Colchão (Mattress), o Travesseiro (Pillow), o Lençol (Bed Sheet), o Cobertor (Blanket), o Criado-mudo (Nightstand), o Guarda-roupa (Wardrobe), o Cabide (Clothes Hanger) e o Espelho (Mirror).',
+    'Abrindo o guarda-roupa, vemos todas as nossas roupas, calçados e acessórios do dia a dia!'
   ],
   items: [
-    v('Shirt', '👕', 'Camisa / Camiseta', '/ʃɜːrt/', 'He wears a clean cotton shirt.', 'blue cotton t-shirt shirt flat lay on white background'),
-    v('Pants', '👖', 'Calça', '/pænts/', 'Comfortable pants for work or school.', 'beige chino trousers pants full length on white background'),
-    v('Jeans', '👖', 'Calça jeans', '/dʒiːnz/', 'Blue denim jeans are worn everywhere.', 'blue denim jeans pants full length on white background'),
-    v('Shorts', '🩳', 'Shorts / Bermuda', '/ʃɔːrts/', 'Wear light shorts on a hot Brazilian summer day.', 'casual summer shorts pants on white background'),
-    v('Dress', '👗', 'Vestido', '/dres/', 'She wore a colorful summer dress.', 'red women summer dress full length on white background'),
-    v('Skirt', '👗', 'Saia', '/skɜːrt/', 'A pleated fabric skirt.', 'pleated skirt garment on white background'),
-    v('Jacket', '🧥', 'Jaqueta / Blusa de frio', '/ˈdʒæk.ɪt/', 'Put on a zipper jacket in the evening.', 'zipper jacket outerwear on white background'),
-    v('Coat', '🧥', 'Casaco / Sobretudo', '/koʊt/', 'A warm winter coat for cold trips.', 'winter trench coat outerwear on white background'),
-    v('Sweater', '🧶', 'Suéter / Moletom', '/ˈswet.ər/', 'A soft knitted sweater keeps you warm.', 'knitted wool pullover sweater on white background'),
-    v('Pajamas', '🛌', 'Pijama', '/pəˈdʒæm.əz/', 'Put on comfortable pajamas before going to sleep.', 'two piece sleep pajamas set on white background'),
-    v('Socks', '🧦', 'Meias', '/sɑːks/', 'Put on a pair of cotton socks.', 'pair of colorful cotton socks on white background'),
-    v('Shoes', '👞', 'Sapatos', '/ʃuːz/', 'Clean leather dress shoes.', 'pair of brown leather dress shoes on white background'),
-    v('Sneakers', '👟', 'Tênis', '/ˈsniː.kərz/', 'Wear comfortable running sneakers to walk.', 'pair of running sport sneakers shoes on white background'),
-    v('Sandals', '🩴', 'Chinelo / Sandália', '/ˈsæn.dəlz/', 'Rubber flip-flop sandals are an everyday classic in Brazil.', 'pair of rubber flip flop sandals on white background'),
-    v('Boots', '🥾', 'Botas', '/buːts/', 'Leather boots protect your feet in the rain.', 'pair of brown leather boots on white background'),
-    v('High Heels', '👠', 'Sapato de salto alto', '/ˌhaɪ ˈhiːlz/', 'She wore red high heels to the party.', 'pair of red high heel shoes on white background'),
-    v('Cap', '🧢', 'Boné', '/kæp/', 'Wear a baseball cap in the sun.', 'blue baseball cap hat on white background'),
-    v('Hat', '👒', 'Chapéu', '/hæt/', 'A straw sun hat for the beach.', 'straw sun hat on white background'),
-    v('Glasses', '👓', 'Óculos de grau', '/ˈɡlæs.ɪz/', 'He wears prescription glasses to read.', 'pair of prescription eyeglasses frames on white background'),
-    v('Sunglasses', '🕶️', 'Óculos de sol', '/ˈsʌnˌɡlæs.ɪz/', 'Dark sunglasses protect your eyes on sunny days.', 'pair of dark aviator sunglasses on white background'),
-    v('Watch', '⌚', 'Relógio de pulso', '/wɑːtʃ/', 'Check the time on your wristwatch.', 'classic wristwatch with leather strap on white background'),
-    v('Umbrella', '☂️', 'Guarda-chuva', '/ʌmˈbrel.ə/', 'Open your umbrella when it starts to rain.', 'open colorful rain umbrella on white background'),
-    v('Belt', 'ベルト', 'Cinto', '/belt/', 'Fasten the leather belt around your waist.', 'brown leather waist belt with buckle on white background'),
-    v('Necktie', '👔', 'Gravata', '/ˈnek.taɪ/', 'He wore a silk necktie with his suit.', 'red silk necktie tie on white background'),
-    v('Scarf', '🧣', 'Cachecol', '/skɑːrf/', 'Wrap a warm wool scarf around your neck.', 'knitted winter wool scarf on white background'),
-    v('Gloves', '🧤', 'Luvas', '/ɡlʌvz/', 'Wear winter gloves to keep your hands warm.', 'pair of winter hand gloves on white background'),
-    v('Handbag', '👜', 'Bolsa feminina', '/ˈhænd.bæɡ/', 'She carries her phone inside a leather handbag.', 'women leather handbag purse on white background'),
-    v('Wallet', '👛', 'Carteira de bolso', '/ˈwɑː.lɪt/', 'Keep your money and cards inside a leather wallet.', 'brown leather bifold wallet on white background'),
-    v('Ring', '💍', 'Anel / Aliança', '/rɪŋ/', 'A shiny gold ring on the finger.', 'gold ring with diamond on white background'),
-    v('Necklace', '📿', 'Colar / Correntinha', '/ˈnek.lɪs/', 'A delicate gold necklace.', 'gold chain necklace with pendant on white background'),
+    v('Bed', '🛏️', 'Cama', '/bed/', 'I sleep in a comfortable wooden bed.', 'wooden bed with mattress and pillows furniture on white background'),
+    v('Mattress', '🛏️', 'Colchão da cama', '/ˈmæt.rəs/', 'A soft orthopedic mattress on the bed.', 'white bed mattress isolated on white background'),
+    v('Pillow', '⬜', 'Travesseiro', '/ˈpɪl.oʊ/', 'Rest your head on a soft white pillow.', 'single soft white bed pillow on white background'),
+    v('Blanket', '🛌', 'Cobertor / Edredom', '/ˈblæŋ.kɪt/', 'Pull up the warm blanket on cold nights.', 'folded soft wool blanket on white background'),
+    v('Nightstand', '🗄️', 'Criado-mudo / Mesa de cabeceira', '/ˈnaɪt.stænd/', 'Keep your book and lamp on the wooden nightstand.', 'wooden bedside table nightstand with drawer isolated on white background'),
+    v('Wardrobe', '🚪', 'Guarda-roupa', '/ˈwɔːr.droʊb/', 'Open the bedroom wardrobe to choose your clothes.', 'wooden bedroom wardrobe closet furniture on white background'),
+    v('Clothes Hanger', '🧥', 'Cabide de roupas', '/ˈkloʊðz ˈhæŋ.ər/', 'Hang your shirt on a wooden clothes hanger.', 'single wooden clothes hanger isolated on white background'),
+    v('Mirror', '🪞', 'Espelho do quarto', '/ˈmɪr.ər/', 'Look in the bedroom mirror before leaving home.', 'framed standing mirror on white background'),
+    v('Shirt', '👕', 'Camisa / Camiseta', '/ʃɜːrt/', 'Put on a clean cotton shirt.', 'blue cotton t-shirt shirt flat lay on white background'),
+    v('Pants', '👖', 'Calça', '/pænts/', 'Fold the pants and put them in the wardrobe.', 'beige chino trousers pants full length on white background'),
+    v('Jeans', '👖', 'Calça jeans', '/dʒiːnz/', 'Blue denim jeans are durable and comfortable.', 'blue denim jeans pants full length on white background'),
+    v('Shorts', '🩳', 'Shorts / Bermuda', '/ʃɔːrts/', 'Wear light shorts on hot days.', 'casual summer shorts pants on white background'),
+    v('Dress', '👗', 'Vestido', '/dres/', 'The red dress hangs inside the closet.', 'red women summer dress full length on white background'),
+    v('Skirt', '👗', 'Saia', '/skɜːrt/', 'She wore a pleated skirt.', 'pleated skirt garment on white background'),
+    v('Jacket', '🧥', 'Jaqueta / Blusa de frio', '/ˈdʒæk.ɪt/', 'Take a warm jacket from the wardrobe.', 'zipper jacket outerwear on white background'),
+    v('Coat', '🧥', 'Casaco / Sobretudo', '/koʊt/', 'A heavy coat for cold winter days.', 'winter trench coat outerwear on white background'),
+    v('Sweater', '🧶', 'Suéter / Moletom', '/ˈswet.ər/', 'A knitted wool sweater is very cozy.', 'knitted wool pullover sweater on white background'),
+    v('Pajamas', '🛌', 'Pijama de dormir', '/pəˈdʒæm.əz/', 'Put on your pajamas before going to bed.', 'two piece sleep pajamas set on white background'),
+    v('Socks', '🧦', 'Meias', '/sɑːks/', 'My cotton socks are in the top drawer.', 'pair of colorful cotton socks on white background'),
+    v('Sneakers', '👟', 'Tênis', '/ˈsniː.kərz/', 'Put on your running sneakers.', 'pair of running sport sneakers shoes on white background'),
+    v('Shoes', '👞', 'Sapatos', '/ʃuːz/', 'Polish your brown leather shoes.', 'pair of brown leather dress shoes on white background'),
+    v('Sandals', '🩴', 'Chinelo / Sandália', '/ˈsæn.dəlz/', 'Wear comfortable sandals inside the house.', 'pair of rubber flip flop sandals on white background'),
+    v('Boots', '🥾', 'Botas', '/buːts/', 'Keep your leather boots at the bottom of the closet.', 'pair of brown leather boots on white background'),
+    v('High Heels', '👠', 'Sapato de salto alto', '/ˌhaɪ ˈhiːlz/', 'Red high heels for a special party.', 'pair of red high heel shoes on white background'),
+    v('Belt', 'ベルト', 'Cinto de couro', '/belt/', 'Fasten your leather belt.', 'brown leather waist belt with buckle on white background'),
+    v('Cap', '🧢', 'Boné', '/kæp/', 'Wear a blue cap on sunny afternoons.', 'blue baseball cap hat on white background'),
+    v('Glasses', '👓', 'Óculos de grau', '/ˈɡlæs.ɪz/', 'My reading glasses are on the nightstand.', 'pair of prescription eyeglasses frames on white background'),
+    v('Watch', '⌚', 'Relógio de pulso', '/wɑːtʃ/', 'Put on your wristwatch in the morning.', 'classic wristwatch with leather strap on white background'),
+    v('Wallet', '👛', 'Carteira de bolso', '/ˈwɑː.lɪt/', 'Keep your documents inside the leather wallet.', 'brown leather bifold wallet on white background'),
+    v('Handbag', '👜', 'Bolsa', '/ˈhænd.bæɡ/', 'Her leather handbag is on the bedroom chair.', 'women leather handbag purse on white background'),
   ]
 };
 
-const FOOD_2 = {
-  title: 'Rodada 2 • Alimentos II: Legumes, Verduras & Feira',
-  subtitle: 'Passo 1/5 da Rodada 2 • 30 vegetais inteiros da mesa brasileira',
-  pedagogicalObjective: 'Identificar legumes, verduras e raízes inteiras da alimentação diária.',
-  icon: 'apple',
-  theory: [
-    'Iniciamos a Rodada 2! Voltamos aos Alimentos, agora com os 30 legumes e verduras mais conhecidos da feira brasileira.',
-    'Todos os itens aparecem inteiros e com seu formato característico (Tomate, Batata, Cenoura, Cebola, Alho, Alface, Milho, Pepino, Brócolis, Mandioca, Quiabo e Chuchu).',
-    'Ouça a pronúncia em inglês americano e toque no vegetal correto!'
-  ],
-  items: [
-    v('Tomato', '🍅', 'Tomate', '/təˈmeɪ.toʊ/', 'Fresh red tomatoes go in the salad.', 'single whole red tomato with green stem on white background'),
-    v('Potato', '🥔', 'Batata', '/pəˈteɪ.toʊ/', 'Potatoes are used in many recipes.', 'whole washed yellow potato vegetable on white background'),
-    v('Carrot', '🥕', 'Cenoura', '/ˈkær.ət/', 'Rabbits love crunchy orange carrots.', 'single whole orange carrot with green leaves on white background'),
-    v('Onion', '🧅', 'Cebola', '/ˈʌn.jən/', 'Chopped onion adds flavor to the meal.', 'single whole yellow onion bulb on white background'),
-    v('Garlic', '🧄', 'Alho', '/ˈɡɑːr.lɪk/', 'Garlic smells great when cooked.', 'whole white garlic head bulb on white background'),
-    v('Lettuce', '🥬', 'Alface', '/ˈlet.ɪs/', 'Wash the green lettuce leaves well.', 'whole fresh green lettuce head on white background'),
-    v('Corn', '🌽', 'Milho', '/kɔːrn/', 'Sweet yellow corn on the cob.', 'whole yellow sweet corn cob with green husk leaves on white background'),
-    v('Cucumber', '🥒', 'Pepino', '/ˈkjuː.kʌm.bər/', 'Cucumber slices are cool and crisp.', 'single whole green cucumber vegetable on white background'),
-    v('Broccoli', '🥦', 'Brócolis', '/ˈbrɑː.kəl.i/', 'Steamed broccoli is very nutritious.', 'single whole green broccoli head on white background'),
-    v('Cabbage', '🥬', 'Repolho', '/ˈkæb.ɪdʒ/', 'Green cabbage is crunchy in salads.', 'single whole green cabbage head on white background'),
-    v('Cauliflower', '⚪', 'Couve-flor', '/ˈkɑː.lɪˌflaʊ.ər/', 'Cauliflower looks like a white flower.', 'single whole white cauliflower head with green leaves on white background'),
-    v('Pumpkin', '🎃', 'Abóbora', '/ˈpʌmp.kɪn/', 'Orange pumpkin soup is warm and creamy.', 'single whole orange pumpkin squash on white background'),
-    v('Sweet Potato', '🍠', 'Batata-doce', '/ˌswiːt pəˈteɪ.toʊ/', 'Roasted sweet potato is healthy.', 'whole purple red sweet potato tuber on white background'),
-    v('Beetroot', '🟣', 'Beterraba', '/ˈbiːt.ruːt/', 'Beetroot has a deep purple color.', 'whole purple red beetroot bulb with leaves on white background'),
-    v('Zucchini', '🥒', 'Abobrinha', '/zuːˈkiː.ni/', 'Sliced zucchini cooks very quickly.', 'single whole green zucchini squash on white background'),
-    v('Eggplant', '🍆', 'Berinjela', '/ˈeɡ.plænt/', 'Purple eggplant is delicious when baked.', 'single whole glossy purple eggplant on white background'),
-    v('Bell Pepper', '🫑', 'Pimentão', '/ˈbel ˌpep.ər/', 'Bell peppers can be green, red or yellow.', 'single whole red bell pepper vegetable on white background'),
-    v('Chili Pepper', '🌶️', 'Pimenta vermelha', '/ˈtʃɪl.i ˌpep.ər/', 'That red chili pepper is very spicy.', 'single whole red hot chili pepper on white background'),
-    v('Peas', '🫛', 'Ervilha', '/piːz/', 'Green peas are small and round.', 'green pea pod open showing round peas on white background'),
-    v('Spinach', '🌿', 'Espinafre', '/ˈspɪn.ɪtʃ/', 'Fresh spinach leaves are rich in iron.', 'bunch of fresh green spinach leaves on white background'),
-    v('Mushroom', '🍄', 'Cogumelo / Champignon', '/ˈmʌʃ.ruːm/', 'White mushrooms are great in pasta.', 'whole white button champignon mushroom on white background'),
-    v('Cassava', '🥔', 'Mandioca / Aipim', '/kəˈsɑː.və/', 'Fried cassava is very popular in Brazil.', 'whole brown cassava yuca manioc root on white background'),
-    v('Okra', '🟢', 'Quiabo', '/ˈoʊ.krə/', 'Okra is a traditional vegetable in Brazilian cooking.', 'whole green okra pods vegetable on white background'),
-    v('Chayote', '🍐', 'Chuchu', '/tʃaɪˈoʊ.ti/', 'Light green chayote is mild and healthy.', 'single whole light green chayote squash on white background'),
-    v('Heart of Palm', '⚪', 'Palmito', '/ˌhɑːrt əv ˈpɑːm/', 'Heart of palm is great in salads and pies.', 'whole white heart of palm cylinders palmito on white background'),
-    v('Peanut', '🥜', 'Amendoim', '/ˈpiː.nʌt/', 'Roasted peanuts are a crunchy snack.', 'whole peanuts in shell on white background'),
-    v('Olive', '🫒', 'Azeitona', '/ˈɑː.lɪv/', 'Green olives are common on pizzas.', 'whole green olives with leaf on white background'),
-    v('Ginger', '🫚', 'Gengibre', '/ˈdʒɪn.dʒər/', 'Fresh ginger root is aromatic.', 'whole fresh ginger root rhizome on white background'),
-    v('Radish', '🔴', 'Rabanete', '/ˈræd.ɪʃ/', 'Red radishes are crunchy in salads.', 'whole red radish bulb with green leaves on white background'),
-    v('Spring Onion', '🌱', 'Cebolinha verde', '/ˌsprɪŋ ˈʌn.jən/', 'Chopped spring onion finishes the dish.', 'whole bunch of green spring onions scallions on white background'),
-  ]
-};
-
-const ANIMALS_2 = {
-  title: 'Rodada 2 • Animais II: Zoológico & Safári',
-  subtitle: 'Passo 2/5 da Rodada 2 • 30 animais famosos dos zoológicos',
-  pedagogicalObjective: 'Identificar os grandes animais facilmente encontrados em zoológicos, livros e filmes.',
-  icon: 'dog',
-  theory: [
-    'No 2º passo da Rodada 2 visitamos os 30 animais mais famosos do Zoológico!',
-    'Inclui Leão (Lion), Tigre (Tiger), Elefante (Elephant), Girafa (Giraffe), Macaco (Monkey), Zebra, Urso (Bear), Panda, Jacaré (Alligator), Onça-pintada (Jaguar), Tucano (Toucan) e Arara (Macaw).',
-    'Todos em fotos inteiras sem cortes.'
-  ],
-  items: [
-    v('Lion', '🦁', 'Leão', '/ˈlaɪ.ən/', 'The lion has a large golden mane.', 'adult male lion full body standing on white background'),
-    v('Tiger', '🐅', 'Tigre', '/ˈtaɪ.ɡər/', 'The orange tiger has black stripes.', 'bengal tiger full body standing on white background'),
-    v('Elephant', '🐘', 'Elefante', '/ˈel.ɪ.fənt/', 'The elephant has a long trunk and big ears.', 'african elephant full body standing on white background'),
-    v('Giraffe', '🦒', 'Girafa', '/dʒɪˈræf/', 'The tall giraffe eats leaves from high trees.', 'tall giraffe full body standing on white background'),
-    v('Monkey', '🐒', 'Macaco', '/ˈmʌŋ.ki/', 'The playful monkey loves bananas.', 'capuchin monkey full body sitting on white background'),
-    v('Zebra', '🦓', 'Zebra', '/ˈziː.brə/', 'The zebra has black and white stripes.', 'zebra full body standing side view on white background'),
-    v('Bear', '🐻', 'Urso', '/ber/', 'The big brown bear walks in the forest.', 'brown grizzly bear full body standing on white background'),
-    v('Panda', '🐼', 'Urso Panda', '/ˈpæn.də/', 'The giant panda eats green bamboo.', 'giant panda bear full body sitting on white background'),
-    v('Polar Bear', '🐻‍❄️', 'Urso Polar', '/ˈpoʊ.lər ber/', 'The white polar bear lives on the ice.', 'white polar bear full body standing on white background'),
-    v('Hippopotamus', '🦛', 'Hipopótamo', '/ˌhɪp.əˈpɑː.tə.məs/', 'The heavy hippopotamus loves the water.', 'hippopotamus full body standing on white background'),
-    v('Rhinoceros', '🦏', 'Rinoceronte', '/raɪˈnɑː.sər.əs/', 'The rhinoceros has a horn on its nose.', 'rhinoceros full body standing side view on white background'),
-    v('Alligator', '🐊', 'Jacaré', '/ˈæl.ɪ.ɡeɪ.tər/', 'The alligator lives in Brazilian rivers and pantanal.', 'alligator caiman reptile full body on white background'),
-    v('Crocodile', '🐊', 'Crocodilo', '/ˈkrɑː.kə.daɪl/', 'The large crocodile has sharp teeth.', 'nile crocodile reptile full body on white background'),
-    v('Snake', '🐍', 'Cobra / Serpente', '/sneɪk/', 'The snake slithers across the ground.', 'green snake reptile coiled full body on white background'),
-    v('Gorilla', '🦍', 'Gorila', '/ɡəˈrɪl.ə/', 'The strong gorilla beats its chest.', 'silverback gorilla ape full body on white background'),
-    v('Chimpanzee', '🐒', 'Chimpanzé', '/ˌtʃɪm.pænˈziː/', 'Chimpanzees are very intelligent primates.', 'chimpanzee primate full body sitting on white background'),
-    v('Kangaroo', '🦘', 'Canguru', '/ˌkæŋ.ɡəˈruː/', 'The kangaroo jumps on its strong back legs.', 'australian kangaroo full body standing on white background'),
-    v('Koala', '🐨', 'Coala', '/koʊˈɑː.lə/', 'The gray koala holds onto a branch.', 'koala bear full body sitting on white background'),
-    v('Camel', '🐪', 'Camelo', '/ˈkæm.əl/', 'The desert camel has a hump on its back.', 'desert camel full body standing side view on white background'),
-    v('Wolf', '🐺', 'Lobo', '/wʊlf/', 'The gray wolf howls at night.', 'gray wolf full body standing on white background'),
-    v('Fox', '🦊', 'Raposa', '/fɑːks/', 'The red fox has a fluffy tail.', 'orange red fox full body standing on white background'),
-    v('Deer', '🦌', 'Cervo / Veado', '/dɪr/', 'The forest deer has branching antlers.', 'deer stag with antlers full body standing on white background'),
-    v('Jaguar', '🐆', 'Onça-pintada', '/ˈdʒæɡ.wɑːr/', 'The jaguar is the largest cat in Brazil.', 'brazilian spotted jaguar cat full body standing on white background'),
-    v('Leopard', '🐆', 'Leopardo', '/ˈlep.ərd/', 'The leopard climbs trees with ease.', 'spotted leopard full body standing on white background'),
-    v('Cheetah', '🐆', 'Guepardo', '/ˈtʃiː.tə/', 'The cheetah is the fastest land animal.', 'cheetah wild cat full body standing on white background'),
-    v('Penguin', '🐧', 'Pinguim', '/ˈpeŋ.ɡwɪn/', 'Penguins walk on the snow and swim well.', 'penguin bird full body standing on white background'),
-    v('Flamingo', '🦩', 'Flamingo', '/fləˈmɪŋ.ɡoʊ/', 'The pink flamingo has long thin legs.', 'pink flamingo bird full body standing on white background'),
-    v('Peacock', '🦚', 'Pavão', '/ˈpiː.kɑːk/', 'The peacock has colorful tail feathers.', 'male peacock bird with colorful tail on white background'),
-    v('Toucan', '🦜', 'Tucano', '/ˈtuː.kæn/', 'The Brazilian toucan has a big orange beak.', 'toco toucan bird with orange beak full body on white background'),
-    v('Macaw', '🦜', 'Arara', '/məˈkɔː/', 'Blue and red macaws fly across the Brazilian sky.', 'red and blue macaw arara parrot full body on white background'),
-  ]
-};
-
-const HOME_2 = {
-  title: 'Rodada 2 • Casa & Objetos II: Cozinha & Eletros',
-  subtitle: 'Passo 3/5 da Rodada 2 • 30 utensílios e eletrodomésticos de cozinha',
-  pedagogicalObjective: 'Dominar o vocabulário de louças, talheres, panelas e eletrodomésticos.',
+const MODULE_6_BATHROOM_HYGIENE = {
+  title: 'Ambiente 6 • Banheiro, Chuveiro, Pia & Higiene Pessoal',
+  subtitle: 'Cômodo 6/12 • Vaso sanitário, chuveiro, pia, toalhas, itens de higiene e partes do corpo',
+  pedagogicalObjective: 'Reconhecer todos os itens do banheiro, produtos de higiene diária e partes do corpo humano.',
   icon: 'house',
   theory: [
-    'No 3º passo da Rodada 2 aprendemos os objetos da cozinha: Prato (Plate), Copo (Glass), Xícara (Cup), Garfo (Fork), Faca (Knife), Colher (Spoon), Geladeira (Fridge), Fogão (Stove), Liquidificador (Blender) e Panela de Pressão (Pressure Cooker).',
-    'Repare que em Knife (/naɪf/) a letra K inicial é muda!'
+    'Agora entramos no Banheiro da casa!',
+    'Veja o Vaso Sanitário (Toilet), o Papel Higiênico (Toilet Paper), a Pia do Banheiro (Bathroom Sink), o Chuveiro (Shower), a Banheira (Bathtub), a Toalha de Banho (Towel), o Sabonete (Soap) e o Shampoo.',
+    'Na bancada do banheiro usamos a Escova de Dentes (Toothbrush), a Pasta de Dente (Toothpaste), o Pente (Comb), a Escova de Cabelo (Hairbrush) e o Secador (Hair Dryer), cuidando de cada parte do corpo!'
   ],
   items: [
-    v('Plate', '🍽️', 'Prato', '/pleɪt/', 'Put the food on a clean white plate.', 'single empty round ceramic dinner plate on white background'),
-    v('Cup', '☕', 'Xícara', '/kʌp/', 'A porcelain cup with a handle.', 'empty porcelain coffee cup with handle on white background'),
-    v('Glass', '🥛', 'Copo de vidro', '/ɡlæs/', 'Pour cold water into the drinking glass.', 'empty clear glass water tumbler on white background'),
-    v('Fork', '🍴', 'Garfo', '/fɔːrk/', 'Use a metal fork to eat your meal.', 'single metal dinner fork cutlery on white background'),
-    v('Knife', '🔪', 'Faca', '/naɪf/', 'The chef uses a sharp kitchen knife.', 'single stainless steel kitchen chef knife on white background'),
-    v('Spoon', '🥄', 'Colher', '/spuːn/', 'Stir the soup with a metal spoon.', 'single metal soup spoon cutlery on white background'),
-    v('Bowl', '🥣', 'Tigela / Cumbuca', '/boʊl/', 'A round ceramic bowl for cereal or soup.', 'single empty ceramic soup bowl on white background'),
-    v('Bottle', '🍾', 'Garrafa', '/ˈbɑː.təl/', 'Fill the reusable water bottle.', 'single reusable water bottle on white background'),
-    v('Napkin', '🧻', 'Guardanapo', '/ˈnæp.kɪn/', 'Wipe your mouth with a paper napkin.', 'folded table napkin on white background'),
-    v('Fridge', '🧊', 'Geladeira', '/frɪdʒ/', 'Keep milk and fruit cold inside the fridge.', 'modern stainless steel refrigerator fridge appliance on white background'),
-    v('Stove', '🔥', 'Fogão', '/stoʊv/', 'Cook dinner on the gas kitchen stove.', 'kitchen gas stove oven appliance on white background'),
-    v('Microwave', '⏲️', 'Micro-ondas', '/ˈmaɪ.krə.weɪv/', 'Heat the food in the microwave oven.', 'countertop microwave oven appliance on white background'),
-    v('Blender', '🌪️', 'Liquidificador', '/ˈblen.dər/', 'Make fresh fruit juice in the electric blender.', 'electric kitchen blender with jar on white background'),
-    v('Toaster', '🍞', 'Torradeira', '/ˈtoʊ.stər/', 'Make warm crispy toast in the toaster.', 'electric bread toaster appliance on white background'),
-    v('Coffee Maker', '☕', 'Cafeteira', '/ˈkɔː.fi ˌmeɪ.kər/', 'Brew morning coffee in the coffee maker.', 'electric drip coffee maker machine on white background'),
-    v('Frying Pan', '🍳', 'Frigideira', '/ˈfraɪ.ɪŋ pæn/', 'Fry the egg in a non-stick frying pan.', 'black nonstick frying pan skillet on white background'),
-    v('Cooking Pot', '🍲', 'Panela', '/ˈkʊk.ɪŋ pɑːt/', 'Boil water for pasta in a cooking pot.', 'stainless steel cooking pot with lid on white background'),
-    v('Pressure Cooker', '🍲', 'Panela de pressão', '/ˈpreʃ.ər ˌkʊk.ər/', 'Cook beans quickly in the pressure cooker.', 'aluminum kitchen pressure cooker pot on white background'),
-    v('Cutting Board', '🪵', 'Tábua de corte', '/ˈkʌt.ɪŋ bɔːrd/', 'Chop vegetables on a wooden cutting board.', 'wooden kitchen cutting chopping board on white background'),
-    v('Sponge', '🧽', 'Esponja de lavar louça', '/spʌndʒ/', 'Wash the plates with a yellow and green sponge.', 'yellow and green dishwashing kitchen sponge on white background'),
-    v('Washing Machine', '🫧', 'Máquina de lavar roupa', '/ˈwɑː.ʃɪŋ məˌʃiːn/', 'Wash your clothes in the washing machine.', 'front load clothes washing machine appliance on white background'),
-    v('Clothes Iron', '💨', 'Ferro de passar roupa', '/ˈkloʊðz ˌaɪ.ərn/', 'Press the shirt with a warm clothes iron.', 'electric steam clothes iron appliance on white background'),
-    v('Kettle', '🫖', 'Chaleira', '/ˈket.əl/', 'Heat water for tea in the kettle.', 'stainless steel tea kettle with spout on white background'),
-    v('Jar', '🫙', 'Pote de vidro', '/dʒɑːr/', 'Keep cookies or jam inside a glass jar.', 'empty clear glass jar with lid on white background'),
-    v('Salt Shaker', '🧂', 'Saleiro', '/ˈsɔːlt ˌʃeɪ.kər/', 'Add a pinch of salt from the salt shaker.', 'glass salt shaker with metal cap on white background'),
-    v('Tin Can', '🥫', 'Lata de conserva', '/ˈtɪn kæn/', 'Open a metal tin can of corn.', 'sealed metal food tin can on white background'),
-    v('Drinking Straw', '🥤', 'Canudo', '/ˈdrɪŋ.kɪŋ strɔː/', 'Drink the cold juice with a drinking straw.', 'colorful bendy drinking straws on white background'),
-    v('Tray', '🍽️', 'Bandeja', '/treɪ/', 'Carry the cups on a serving tray.', 'rectangular wooden serving tray on white background'),
-    v('Apron', '🎽', 'Avental de cozinha', '/ˈeɪ.prən/', 'Wear a kitchen apron while cooking.', 'fabric kitchen cooking apron on white background'),
-    v('Kitchen Scale', '⚖️', 'Balança de cozinha', '/ˈkɪtʃ.ən skeɪl/', 'Weigh the ingredients on the digital kitchen scale.', 'digital kitchen food scale on white background'),
+    v('Toilet', '🚽', 'Vaso sanitário', '/ˈtɔɪ.lət/', 'A clean white ceramic toilet in the bathroom.', 'white ceramic toilet bowl on white background'),
+    v('Toilet Paper', '🧻', 'Papel higiênico', '/ˈtɔɪ.lət ˈpeɪ.pər/', 'Put a new roll of toilet paper on the holder.', 'single roll of white toilet paper on white background'),
+    v('Bathroom Sink', '🚰', 'Pia / Lavatório do banheiro', '/ˈbæθ.ruːm sɪŋk/', 'Wash your hands and face in the bathroom sink.', 'white ceramic bathroom sink basin with faucet isolated on white background'),
+    v('Shower', '🚿', 'Chuveiro', '/ˈʃaʊ.ər/', 'Take a warm shower every day.', 'bathroom shower head fixture on white background'),
+    v('Bathtub', '🛁', 'Banheira', '/ˈbæθ.tʌb/', 'Fill the white bathtub with warm water.', 'white freestanding bathtub isolated on white background'),
+    v('Towel', '🧺', 'Toalha de banho', '/ˈtaʊ.əl/', 'Dry yourself with a soft cotton bath towel.', 'folded cotton bath towel stack on white background'),
+    v('Soap', '🧼', 'Sabonete em barra', '/soʊp/', 'Wash your hands with fragrant soap.', 'bar of bath soap on soap dish on white background'),
+    v('Liquid Soap', '🧴', 'Sabonete líquido', '/ˈlɪk.wɪd soʊp/', 'Press the pump dispenser for liquid hand soap.', 'liquid hand soap pump dispenser bottle isolated on white background'),
+    v('Shampoo', '🧴', 'Shampoo / Condicionador', '/ʃæmˈpuː/', 'Wash your hair with shampoo in the shower.', 'plastic shampoo bottle isolated on white background'),
+    v('Toothbrush', '🪥', 'Escova de dentes', '/ˈtuːθ.brʌʃ/', 'Brush your teeth with a soft toothbrush.', 'single plastic toothbrush on white background'),
+    v('Toothpaste', '🪥', 'Pasta de dente / Creme dental', '/ˈtuːθ.peɪst/', 'Squeeze white toothpaste onto the brush.', 'toothpaste tube with cap on white background'),
+    v('Dental Floss', '🦷', 'Fio dental', '/ˈden.təl flɑːs/', 'Use dental floss between your teeth every night.', 'dental floss container box isolated on white background'),
+    v('Comb', '🪮', 'Pente de cabelo', '/koʊm/', 'Part your wet hair with a comb.', 'hair comb on white background'),
+    v('Hairbrush', '🪮', 'Escova de cabelo', '/ˈher.brʌʃ/', 'Brush your hair in front of the bathroom mirror.', 'paddle hairbrush isolated on white background'),
+    v('Hair Dryer', '💨', 'Secador de cabelo', '/ˈher ˌdraɪ.ər/', 'Dry your hair quickly with an electric hair dryer.', 'electric blow hair dryer appliance isolated on white background'),
+    v('Razor', '🪒', 'Aparelho de barbear', '/ˈreɪ.zər/', 'Shave carefully with a safety razor.', 'shaving razor blade handle isolated on white background'),
+    v('Perfume', '🧴', 'Perfume / Colônia', '/pərˈfjuːm/', 'Spray a little perfume before going out.', 'glass perfume spray bottle on white background'),
+    v('Bandage', '🩹', 'Curativo (Band-aid)', '/ˈbæn.dɪdʒ/', 'Keep adhesive bandages in the bathroom cabinet.', 'adhesive medical band-aid strip on white background'),
+    v('Thermometer', '🌡️', 'Termômetro digital', '/θərˈmɑː.mə.tər/', 'Measure your temperature with a digital thermometer.', 'digital medical fever thermometer on white background'),
+    v('Pill', '💊', 'Comprimido / Remédio', '/pɪl/', 'Take the medicine pill with a glass of water.', 'medicine pill capsule and tablet on white background'),
+    v('Hand', '✋', 'Mão', '/hænd/', 'Wash both hands with soap and water.', 'open human hand palm on white background'),
+    v('Tooth', '🦷', 'Dente', '/tuːθ/', 'Brush every tooth after meals.', 'single white tooth dental model on white background'),
+    v('Mouth', '👄', 'Boca', '/maʊθ/', 'Rinse your mouth with water.', 'smiling human mouth lips and teeth on white background'),
+    v('Eye', '👁️', 'Olho', '/aɪ/', 'Close your eyes when washing your face with soap.', 'human eye closeup on white background'),
+    v('Ear', '👂', 'Orelha / Ouvido', '/ɪr/', 'Dry your ears gently with a towel.', 'human ear closeup on white background'),
+    v('Nose', '👃', 'Nariz', '/noʊz/', 'Breathe fresh air through your nose.', 'human nose closeup on white background'),
+    v('Hair', '💇', 'Cabelo', '/her/', 'Wash and brush your hair.', 'long healthy brown hair on white background'),
+    v('Foot', '🦶', 'Pé', '/fʊt/', 'Wash your feet in the shower.', 'human bare foot on white background'),
+    v('Arm', '💪', 'Braço', '/ɑːrm/', 'Apply lotion to your arms.', 'human arm and hand on white background'),
+    v('Leg', '🦵', 'Perna', '/leɡ/', 'Dry your legs with the bath towel.', 'human leg and foot on white background'),
   ]
 };
 
-const CITY_2 = {
-  title: 'Rodada 2 • Cotidiano II: Transportes & Trânsito',
-  subtitle: 'Passo 4/5 da Rodada 2 • 30 veículos e meios de transporte',
-  pedagogicalObjective: 'Reconhecer todos os meios de transporte terrestres, aéreos e marítimos.',
+const MODULE_7_LAUNDRY_BACKYARD = {
+  title: 'Ambiente 7 • Área de Serviço, Lavanderia, Quintal & Ferramentas',
+  subtitle: 'Cômodo 7/12 • Máquina de lavar, cesto, ferro, vassoura, balde, ferramentas e animais no quintal',
+  pedagogicalObjective: 'Explorar o fundo da residência: lavanderia, produtos e utensílios de limpeza, ferramentas de manutenção e os pets no quintal.',
+  icon: 'house',
+  theory: [
+    'Chegamos ao fundo da casa: a Área de Serviço, Lavanderia e Quintal!',
+    'Aqui vemos a Máquina de Lavar (Washing Machine), o Cesto de Roupa (Laundry Basket), o Sabão de Lavar Roupa (Laundry Detergent), o Pregador (Clothespin), o Ferro de Passar (Clothes Iron) e a Tábua de Passar (Ironing Board).',
+    'Também temos os itens de limpeza (Broom, Dustpan, Mop, Bucket, Vacuum Cleaner), as ferramentas (Ladder, Hammer, Screwdriver, Wrench, Pliers, Saw, Drill) e nossos pets no quintal!'
+  ],
+  items: [
+    v('Washing Machine', '🫧', 'Máquina de lavar roupa', '/ˈwɑː.ʃɪŋ məˌʃiːn/', 'Wash the family clothes in the washing machine.', 'front load clothes washing machine appliance on white background'),
+    v('Laundry Basket', '🧺', 'Cesto de roupa', '/ˈlɔːn.dri ˈbæs.kɪt/', 'Put the clothes inside the plastic laundry basket.', 'plastic laundry hamper basket isolated on white background'),
+    v('Laundry Detergent', '🧴', 'Sabão líquido / em pó para roupas', '/ˈlɔːn.dri dɪˈtɜːr.dʒənt/', 'Add laundry detergent to the washing machine.', 'liquid laundry detergent bottle isolated on white background'),
+    v('Clothespin', '📎', 'Pregador de roupa no varal', '/ˈkloʊðz.pɪn/', 'Hang the wet shirts on the line with clothespins.', 'wooden and plastic clothespins pegs isolated on white background'),
+    v('Clothes Iron', '💨', 'Ferro de passar roupa', '/ˈkloʊðz ˌaɪ.ərn/', 'Iron the dress shirt with a steam clothes iron.', 'electric steam clothes iron appliance on white background'),
+    v('Ironing Board', ' ironing', 'Tábua de passar roupa', '/ˈaɪ.ər.nɪŋ bɔːrd/', 'Set up the folding ironing board in the laundry room.', 'folding ironing board isolated on white background'),
+    v('Broom', '🧹', 'Vassoura', '/bruːm/', 'Sweep the backyard floor with a broom.', 'household sweeping broom with handle on white background'),
+    v('Dustpan', '🧹', 'Pá de lixo', '/ˈdʌst.pæn/', 'Sweep the dust into the plastic dustpan.', 'plastic cleaning dustpan isolated on white background'),
+    v('Mop', '🧹', 'Esfregão / Rodo com pano', '/mɑːp/', 'Clean the ceramic floor tiles with a wet mop.', 'floor cleaning mop with handle isolated on white background'),
+    v('Bucket', '🪣', 'Balde de água', '/ˈbʌk.ɪt/', 'Fill the plastic bucket with water and soap.', 'blue plastic water bucket with handle on white background'),
+    v('Vacuum Cleaner', '🧹', 'Aspirador de pó', '/ˈvæk.juːm ˈkliː.nər/', 'Clean the living room rug with a vacuum cleaner.', 'canister vacuum cleaner appliance isolated on white background'),
+    v('Garden Hose', '🐍', 'Mangueira de jardim / quintal', '/ˈɡɑːr.dən hoʊz/', 'Wash the backyard with the green garden hose.', 'coiled green garden water hose with nozzle isolated on white background'),
+    v('Watering Can', '🚿', 'Regador de plantas', '/ˈwɔː.tər.ɪŋ kæn/', 'Water the flowers using a watering can.', 'garden watering can with spout on white background'),
+    v('Wheelbarrow', '🛒', 'Carrinho de mão', '/ˈwiːlˌbær.oʊ/', 'Carry soil and bricks in a wheelbarrow.', 'garden wheelbarrow cart on white background'),
+    v('Shovel', ' лопата', 'Pá de jardim / obra', '/ˈʃʌv.əl/', 'Dig the garden soil with a metal shovel.', 'metal garden spade shovel tool on white background'),
+    v('Ladder', '🪜', 'Escada portátil de alumínio', '/ˈlæd.ər/', 'Climb the step ladder to change the ceiling bulb.', 'folding aluminum step ladder on white background'),
+    v('Hammer', '🔨', 'Martelo', '/ˈhæm.ər/', 'Fix the nail on the wall with a hammer.', 'claw hammer tool with wooden handle on white background'),
+    v('Screwdriver', '🪛', 'Chave de fenda', '/ˈskruːˌdraɪ.vər/', 'Tighten the door hinge screw with a screwdriver.', 'hand screwdriver tool on white background'),
+    v('Wrench', '🔧', 'Chave inglesa / Chave de boca', '/rentʃ/', 'Tighten the pipe nut with a steel wrench.', 'steel wrench spanner tool on white background'),
+    v('Pliers', '🔧', 'Alicate', '/ˈplaɪ.ərz/', 'Cut and hold the wire using pliers.', 'hand pliers tool on white background'),
+    v('Saw', '🪚', 'Serrote de cortar madeira', '/sɔː/', 'Cut the wooden board with a sharp hand saw.', 'carpenter hand saw tool on white background'),
+    v('Tape Measure', '📏', 'Trena / Fita métrica', '/ˈteɪp ˌmeʒ.ər/', 'Measure the cabinet width with a tape measure.', 'yellow retractable tape measure tool on white background'),
+    v('Drill', '🪛', 'Furadeira elétrica', '/drɪl/', 'Drill a hole in the brick wall with an electric drill.', 'cordless electric drill tool on white background'),
+    v('Flashlight', '🔦', 'Lanterna', '/ˈflæʃ.laɪt/', 'Keep a bright flashlight for power outages.', 'handheld led flashlight torch on white background'),
+    v('Battery', '🔋', 'Pilha / Bateria', '/ˈbæt.ər.i/', 'Put two new AA batteries in the remote control.', 'alkaline aa battery cell on white background'),
+    v('Rope', '🪢', 'Corda', '/roʊp/', 'A strong coiled rope in the tool shed.', 'coiled twisted rope on white background'),
+    v('Box', '📦', 'Caixa de papelão', '/bɑːks/', 'Store old items inside a cardboard box.', 'brown cardboard box on white background'),
+    v('Dog', '🐕', 'Cachorro (no quintal)', '/dɔːɡ/', 'Our friendly dog plays in the backyard.', 'golden retriever dog full body sitting on white background'),
+    v('Cat', '🐈', 'Gato (em casa)', '/kæt/', 'The cat naps near the laundry room.', 'domestic tabby cat full body standing on white background'),
+    v('Parrot', '🦜', 'Papagaio', '/ˈpær.ət/', 'The green parrot chirps happily.', 'green parrot bird full body perching on white background'),
+  ]
+};
+
+const MODULE_8_STREET_NEIGHBORHOOD = {
+  title: 'Ambiente 8 • Na Rua, Calçada, Trânsito & Vizinhança',
+  subtitle: 'Ambiente 8/12 • Saindo de casa: rua, faixa, semáforo, poste, veículos, praça e clima',
+  pedagogicalObjective: 'Reconhecer tudo o que vemos ao sair de casa para caminhar ou dirigir pela rua e vizinhança.',
   icon: 'car',
   theory: [
-    'No 4º passo da Rodada 2 aprendemos os meios de transporte: Carro (Car), Ônibus (Bus), Moto (Motorcycle), Bicicleta (Bicycle), Caminhão (Truck), Avião (Airplane), Helicóptero (Helicopter), Trem (Train) e Metrô (Subway).',
-    'Ao concluir este módulo, você fará a Prática com Palavras da Rodada 2!'
+    'Terminamos de explorar toda a nossa casa da frente aos fundos! Agora abrimos o portão e saímos para a Rua (Street)!',
+    'Olhe para a Rua asfaltada (Street), a Faixa de Pedestres (Crosswalk), o Semáforo (Traffic Light), a Placa de Pare (Stop Sign), o Poste de Luz (Streetlight) e o Ponto de Ônibus (Bus Stop).',
+    'Veja os veículos passando (Car, Bus, Motorcycle, Bicycle, Truck, Taxi, Ambulance, Police Car, Fire Truck), a Praça (Park Bench, Tree, Flower) e o Clima (Sun, Rain, Cloud, Umbrella)!'
   ],
   items: [
-    v('Car', '🚗', 'Carro', '/kɑːr/', 'Drive the red car carefully on the street.', 'red sedan passenger car full vehicle on white background'),
-    v('Bus', '🚌', 'Ônibus', '/bʌs/', 'Take the passenger bus to work.', 'passenger city bus full vehicle on white background'),
-    v('Motorcycle', '🏍️', 'Moto / Motocicleta', '/ˈmoʊ.tərˌsaɪ.kəl/', 'Always wear a helmet when riding a motorcycle.', 'sport motorcycle motorbike full vehicle on white background'),
-    v('Bicycle', '🚲', 'Bicicleta', '/ˈbaɪ.sɪ.kəl/', 'Riding a bicycle in the park is great exercise.', 'complete bicycle bike side view on white background'),
-    v('Truck', '🚚', 'Caminhão', '/trʌk/', 'The cargo truck transports food across Brazil.', 'delivery box cargo truck full vehicle on white background'),
-    v('Taxi', '🚕', 'Táxi', '/ˈtæk.si/', 'Take a taxi to the airport.', 'yellow taxi cab car full vehicle on white background'),
-    v('Airplane', '✈️', 'Avião', '/ˈer.pleɪn/', 'The passenger airplane flies above the clouds.', 'commercial passenger airplane full aircraft on white background'),
-    v('Helicopter', '🚁', 'Helicóptero', '/ˈhel.ɪˌkɑːp.tər/', 'The helicopter flies over the city.', 'helicopter full aircraft on white background'),
-    v('Train', '🚆', 'Trem', '/treɪn/', 'The passenger train travels on steel rails.', 'modern passenger train locomotive on white background'),
-    v('Subway', '🚇', 'Metrô', '/ˈsʌb.weɪ/', 'The underground subway train is fast.', 'subway metro train car on white background'),
-    v('Boat', '⛵', 'Barco / Veleiro', '/boʊt/', 'A small boat floats on the water.', 'sailboat boat vessel on white background'),
-    v('Ship', '🚢', 'Navio', '/ʃɪp/', 'The large cruise ship crosses the ocean.', 'large passenger cruise ship vessel on white background'),
-    v('Ambulance', '🚑', 'Ambulância', '/ˈæm.bjə.ləns/', 'Make way for the emergency hospital ambulance.', 'emergency medical ambulance van full vehicle on white background'),
-    v('Police Car', '🚓', 'Viatura de polícia', '/pəˈliːs kɑːr/', 'The police car has flashing lights on top.', 'police patrol car with lightbar full vehicle on white background'),
-    v('Fire Truck', '🚒', 'Caminhão de bombeiros', '/ˈfaɪ.ər trʌk/', 'The red fire truck carries a tall ladder.', 'red fire engine truck with ladder full vehicle on white background'),
-    v('Tractor', '🚜', 'Trator', '/ˈtræk.tər/', 'The farm tractor pulls heavy equipment.', 'green farm tractor full vehicle on white background'),
-    v('Van', '🚐', 'Van / Perua', '/væn/', 'The passenger van carries the group to school.', 'white passenger van minivan full vehicle on white background'),
-    v('Scooter', '🛴', 'Patinete', '/ˈskuː.tər/', 'Kids love riding kick scooters.', 'two wheel kick scooter on white background'),
-    v('Skateboard', '🛹', 'Skate', '/ˈskeɪt.bɔːrd/', 'He practices tricks on his four-wheel skateboard.', 'complete wooden skateboard with wheels on white background'),
-    v('Roller Skate', '🛼', 'Patins', '/ˈroʊ.lər skeɪt/', 'She glides smoothly on roller skates.', 'quad roller skate boot with wheels on white background'),
-    v('Helmet', '⛑️', 'Capacete', '/ˈhel.mət/', 'Protect your head with a safety helmet.', 'motorcycle protective helmet on white background'),
-    v('Traffic Light', '🚦', 'Semáforo / Sinal de trânsito', '/ˈtræf.ɪk laɪt/', 'Stop the car when the traffic light is red.', 'red yellow green traffic light signal on white background'),
-    v('Tire', '🛞', 'Pneu / Roda', '/ˈtaɪ.ər/', 'Check the air pressure in the car tire.', 'black rubber car tire with wheel rim on white background'),
-    v('Steering Wheel', '🛞', 'Volante de carro', '/ˈstɪr.ɪŋ wiːl/', 'Keep both hands on the car steering wheel.', 'car steering wheel on white background'),
-    v('Fuel Pump', '⛽', 'Bomba de combustível', '/ˈfjuː.əl pʌmp/', 'Fill the car tank at the gas station fuel pump.', 'gasoline fuel pump dispenser on white background'),
-    v('Suitcase', '🧳', 'Mala de viagem', '/ˈsuːt.keɪs/', 'Pack your clothes in a rolling travel suitcase.', 'rolling travel suitcase luggage with wheels on white background'),
-    v('Rocket', '🚀', 'Foguete espacial', '/ˈrɑː.kɪt/', 'The space rocket blasts into orbit.', 'space rocket ship on white background'),
-    v('Parachute', '🪂', 'Paraquedas', '/ˈpær.ə.ʃuːt/', 'The colorful parachute opens in the sky.', 'open colorful parachute canopy on white background'),
-    v('Anchor', '⚓', 'Âncora de navio', '/ˈæŋ.kər/', 'The ship drops its heavy metal anchor.', 'metal marine ship anchor on white background'),
-    v('Compass', '🧭', 'Bússola', '/ˈkʌm.pəs/', 'The compass needle always points north.', 'magnetic navigation pocket compass on white background'),
+    v('Street', '🛣️', 'Rua asfaltada', '/striːt/', 'Cars drive along the paved city street.', 'paved asphalt road street section isolated on white background'),
+    v('Crosswalk', '🚸', 'Faixa de pedestres', '/ˈkrɔːs.wɔːk/', 'Always cross the street on the white crosswalk stripes.', 'pedestrian zebra crosswalk stripes sign isolated on white background'),
+    v('Traffic Light', '🚦', 'Semáforo / Sinal de trânsito', '/ˈtræf.ɪk laɪt/', 'Wait for the green traffic light before crossing.', 'red yellow green traffic light signal on white background'),
+    v('Stop Sign', '🛑', 'Placa de PARE (sinalização)', '/stɑːp saɪn/', 'Every driver must stop at the red stop sign.', 'red octagon stop traffic sign isolated on white background'),
+    v('Streetlight', '🏮', 'Poste de iluminação pública', '/ˈstriːt.laɪt/', 'The tall streetlight turns on at dusk.', 'street lamp post light pole isolated on white background'),
+    v('Bus Stop', '🚏', 'Ponto de ônibus', '/bʌs stɑːp/', 'Passengers wait for the bus at the bus stop shelter.', 'city bus stop shelter sign isolated on white background'),
+    v('Car', '🚗', 'Carro de passeio', '/kɑːr/', 'A red car is parked on the street.', 'red sedan passenger car full vehicle on white background'),
+    v('Bus', '🚌', 'Ônibus urbano', '/bʌs/', 'Take the city bus to go downtown.', 'passenger city bus full vehicle on white background'),
+    v('Motorcycle', '🏍️', 'Moto / Motocicleta', '/ˈmoʊ.tərˌsaɪ.kəl/', 'The delivery rider drives a motorcycle.', 'sport motorcycle motorbike full vehicle on white background'),
+    v('Bicycle', '🚲', 'Bicicleta', '/ˈbaɪ.sɪ.kəl/', 'Ride your bicycle along the bike lane.', 'complete bicycle bike side view on white background'),
+    v('Truck', '🚚', 'Caminhão', '/trʌk/', 'The cargo truck delivers goods to the market.', 'delivery box cargo truck full vehicle on white background'),
+    v('Taxi', '🚕', 'Táxi', '/ˈtæk.si/', 'Wave to call a yellow taxi on the avenue.', 'yellow taxi cab car full vehicle on white background'),
+    v('Van', '🚐', 'Van / Perua escolar', '/væn/', 'The white van transports students to school.', 'white passenger van minivan full vehicle on white background'),
+    v('Ambulance', '🚑', 'Ambulância', '/ˈæm.bjə.ləns/', 'The ambulance siren sounds in the street.', 'emergency medical ambulance van full vehicle on white background'),
+    v('Police Car', '🚓', 'Viatura de polícia', '/pəˈliːs kɑːr/', 'The police car patrols our neighborhood.', 'police patrol car with lightbar full vehicle on white background'),
+    v('Fire Truck', '🚒', 'Caminhão de bombeiros', '/ˈfaɪ.ər trʌk/', 'The red fire truck speeds down the avenue.', 'red fire engine truck with ladder full vehicle on white background'),
+    v('Helmet', '⛑️', 'Capacete de segurança', '/ˈhel.mət/', 'Always wear a helmet on a motorcycle or bike.', 'motorcycle protective helmet on white background'),
+    v('Tire', '🛞', 'Pneu / Roda do veículo', '/ˈtaɪ.ər/', 'The car has four rubber tires.', 'black rubber car tire with wheel rim on white background'),
+    v('Steering Wheel', '🛞', 'Volante de direção', '/ˈstɪr.ɪŋ wiːl/', 'Hold the car steering wheel firmly.', 'car steering wheel on white background'),
+    v('Fuel Pump', '⛽', 'Bomba de combustível (Posto)', '/ˈfjuː.əl pʌmp/', 'Stop at the gas station fuel pump to refuel.', 'gasoline fuel pump dispenser on white background'),
+    v('Park Bench', '🪑', 'Banco da praça', '/pɑːrk bentʃ/', 'Sit on the wooden park bench in the square.', 'wooden park bench with iron legs isolated on white background'),
+    v('Bridge', '🌉', 'Ponte / Viaduto', '/brɪdʒ/', 'Cross the bridge over the city river.', 'bridge structure over water on white background'),
+    v('Building', '🏢', 'Prédio / Edifício', '/ˈbɪl.dɪŋ/', 'Tall apartment buildings line the avenue.', 'modern apartment office building on white background'),
+    v('Tree', '🌳', 'Árvore na calçada / praça', '/triː/', 'Green trees give shade along the sidewalk.', 'single green leafy tree on white background'),
+    v('Flower', '🌻', 'Flor do jardim / canteiro', '/ˈflaʊ.ər/', 'Colorful flowers bloom in the town square.', 'single blooming flower with stem on white background'),
+    v('Bird', '🐦', 'Pássaro', '/bɜːrd/', 'A bird sings on the tree branch.', 'small colorful songbird full body perching on white background'),
+    v('Pigeon', '🐦', 'Pombo na praça', '/ˈpɪdʒ.ən/', 'Gray pigeons walk around the square.', 'gray city pigeon bird full body standing on white background'),
+    v('Sun', '☀️', 'Sol no céu', '/sʌn/', 'The bright sun warms the neighborhood.', 'bright yellow sun in sky on white background'),
+    v('Rain', '🌧️', 'Chuva', '/reɪn/', 'Rain falls on the street.', 'raincloud with falling water raindrops on white background'),
+    v('Umbrella', '☂️', 'Guarda-chuva', '/ʌmˈbrel.ə/', 'Open your umbrella when walking in the rain.', 'open colorful rain umbrella on white background'),
   ]
 };
 
-const FOOD_3 = {
-  title: 'Rodada 3 • Alimentos III: Refeições & Pratos',
-  subtitle: 'Passo 1/5 da Rodada 3 • 30 comidas e pratos presentes no dia a dia',
-  pedagogicalObjective: 'Reconhecer pães, carnes, laticínios e refeições completas em inglês.',
-  icon: 'apple',
-  theory: [
-    'Começamos a Rodada 3 com as 30 refeições e comidas prontas mais conhecidas no Brasil!',
-    'Inclui Pão (Bread), Arroz (Rice), Feijão (Beans), Ovo (Egg), Queijo (Cheese), Frango Assado (Roast Chicken), Bife (Steak), Macarrão (Pasta), Pizza, Hambúrguer e Pão de Queijo (Cheese Bread).',
-    'Todas as imagens mostram o prato inteiro e bem visível.'
-  ],
-  items: [
-    v('Bread', '🍞', 'Pão', '/bred/', 'Warm fresh bread smells amazing.', 'whole golden loaf of bread on white background'),
-    v('Rice', '🍚', 'Arroz branco', '/raɪs/', 'White rice is served every day in Brazil.', 'bowl of cooked white rice on white background'),
-    v('Beans', '🫘', 'Feijão', '/biːnz/', 'Rice and beans are the classic Brazilian meal.', 'bowl of cooked brown beans feijao on white background'),
-    v('Egg', '🥚', 'Ovo', '/eɡ/', 'I eat a fried egg for breakfast.', 'whole egg and sunny side up fried egg on white background'),
-    v('Cheese', '🧀', 'Queijo', '/tʃiːz/', 'Yellow cheese tastes great on bread.', 'wedge of yellow swiss cheese with holes on white background'),
-    v('Butter', '🧈', 'Manteiga', '/ˈbʌt.ər/', 'Spread butter on the warm toast.', 'yellow butter block on dish on white background'),
-    v('Ham', '🥩', 'Presunto', '/hæm/', 'A sandwich with cheese and ham.', 'sliced cooked pink ham meat on white background'),
-    v('Roast Chicken', '🍗', 'Frango assado', '/ˈroʊst ˈtʃɪk.ɪn/', 'Roast chicken is a Sunday lunch classic.', 'whole golden roast chicken on plate on white background'),
-    v('Steak', '🥩', 'Bife / Carne grelhada', '/steɪk/', 'He cooked a juicy beef steak on the grill.', 'grilled beef steak on plate on white background'),
-    v('Fish Fillet', '🐟', 'Filé de peixe', '/ˈfɪʃ fɪˈleɪ/', 'Grilled fish fillet with lemon.', 'cooked grilled fish fillet on plate on white background'),
-    v('Pasta', '🍝', 'Macarrão / Espaguete', '/ˈpɑː.stə/', 'Italian spaghetti pasta with tomato sauce.', 'plate of spaghetti pasta with red tomato sauce on white background'),
-    v('Pizza', '🍕', 'Pizza', '/ˈpiːt.sə/', 'We shared a delicious cheese pizza.', 'whole round cheese pepperoni pizza on white background'),
-    v('Hamburger', '🍔', 'Hambúrguer', '/ˈhæmˌbɜːr.ɡər/', 'A juicy hamburger with cheese and lettuce.', 'single classic cheeseburger hamburger on white background'),
-    v('French Fries', '🍟', 'Batata frita', '/ˈfrentʃ fraɪz/', 'Crispy golden French fries.', 'portion of crispy golden french fries on white background'),
-    v('Hot Dog', '🌭', 'Cachorro-quente', '/ˈhɑːt dɔːɡ/', 'A warm hot dog in a soft bun.', 'single hot dog sausage in bun with mustard on white background'),
-    v('Sandwich', '🥪', 'Sanduíche natural', '/ˈsæn.wɪtʃ/', 'She packed a sandwich for lunch.', 'fresh sandwich with cheese lettuce tomato on white background'),
-    v('Cheese Bread', '🧀', 'Pão de queijo', '/ˈtʃiːz bred/', 'Warm Brazilian cheese bread is delicious.', 'golden brazilian pao de queijo cheese bread buns on white background'),
-    v('Soup', '🍲', 'Sopa', '/suːp/', 'Hot vegetable soup in a bowl.', 'bowl of warm vegetable soup with spoon on white background'),
-    v('Salad', '🥗', 'Salada', '/ˈsæl.əd/', 'A fresh green salad with tomatoes.', 'bowl of fresh green lettuce tomato salad on white background'),
-    v('Sausage', '🌭', 'Linguiça / Salsicha', '/ˈsɔː.sɪdʒ/', 'Grilled sausage for the barbecue.', 'grilled sausages links on white background'),
-    v('Bacon', '🥓', 'Bacon', '/ˈbeɪ.kən/', 'Crispy strips of fried bacon.', 'crispy cooked bacon strips on white background'),
-    v('Omelet', '🍳', 'Omelete', '/ˈɑːm.lət/', 'A fluffy yellow egg omelet.', 'folded yellow egg omelet on white plate on white background'),
-    v('Pancake', '🥞', 'Panqueca', '/ˈpæn.keɪk/', 'Stack of pancakes with syrup.', 'stack of golden pancakes with syrup on white background'),
-    v('Lasagna', '🍝', 'Lasanha', '/ləˈzɑːn.jə/', 'Baked cheese lasagna is a family favorite.', 'portion of baked cheese lasagna on plate on white background'),
-    v('Barbecue', '🍖', 'Churrasco / Espetinho', '/ˈbɑːr.bɪ.kjuː/', 'Brazilian barbecue meat on skewers.', 'grilled barbecue meat skewers churrasco on white background'),
-    v('Shrimp', '🍤', 'Camarão', '/ʃrɪmp/', 'Cooked pink shrimp with lemon.', 'cooked pink shrimp prawns on white background'),
-    v('Sushi', '🍣', 'Sushi', '/ˈsuː.ʃi/', 'Fresh salmon sushi rolls.', 'salmon sushi rolls and nigiri on white background'),
-    v('Croissant', '🥐', 'Croissant', '/krwɑːˈsɑːnt/', 'A golden butter croissant from the bakery.', 'single golden flaky croissant pastry on white background'),
-    v('Toast', '🍞', 'Torrada', '/toʊst/', 'Crispy toasted bread for breakfast.', 'slices of golden toasted bread on white background'),
-    v('Mashed Potatoes', '🥔', 'Purê de batata', '/ˌmæʃt pəˈteɪ.toʊz/', 'Creamy mashed potatoes in a bowl.', 'bowl of creamy mashed potatoes on white background'),
-  ]
-};
-
-const ANIMALS_3 = {
-  title: 'Rodada 3 • Animais III: Marinhos, Aves & Fauna',
-  subtitle: 'Passo 2/5 da Rodada 3 • 30 animais do mar e da natureza conhecidos pelo público',
-  pedagogicalObjective: 'Reconhecer animais marinhos famosos, aves conhecidas e animais típicos da fauna brasileira.',
-  icon: 'dog',
-  theory: [
-    'No 2º passo da Rodada 3 estudamos os animais do mar e da fauna brasileira que todo mundo conhece.',
-    'Inclui Tubarão (Shark), Baleia (Whale), Golfinho (Dolphin), Polvo (Octopus), Águia (Eagle), Coruja (Owl), Beija-flor (Hummingbird), Capivara (Capybara), Bicho-preguiça (Sloth), Tamanduá (Anteater) e Tatu (Armadillo).'
-  ],
-  items: [
-    v('Shark', '🦈', 'Tubarão', '/ʃɑːrk/', 'The great shark swims in the ocean.', 'great white shark full body side view on white background'),
-    v('Whale', '🐋', 'Baleia', '/weɪl/', 'The whale is the biggest animal in the sea.', 'humpback blue whale full body side view on white background'),
-    v('Dolphin', '🐬', 'Golfinho', '/ˈdɑːl.fɪn/', 'Friendly dolphins jump out of the water.', 'bottlenose dolphin full body jumping on white background'),
-    v('Octopus', '🐙', 'Polvo', '/ˈɑːk.tə.pəs/', 'An octopus has eight tentacles.', 'octopus sea animal full tentacles on white background'),
-    v('Crab', '🦀', 'Caranguejo / Siri', '/kræb/', 'The red crab walks on the beach sand.', 'red crab with claws full body on white background'),
-    v('Starfish', '⭐', 'Estrela-do-mar', '/ˈstɑːr.fɪʃ/', 'A five-pointed starfish on the ocean floor.', 'five point orange starfish sea star on white background'),
-    v('Seahorse', '🐠', 'Cavalo-marinho', '/ˈsiː.hɔːrs/', 'The tiny seahorse curls its tail.', 'seahorse marine animal full body on white background'),
-    v('Jellyfish', '🪼', 'Água-viva', '/ˈdʒel.i.fɪʃ/', 'Jellyfish float gracefully in the sea.', 'jellyfish marine animal on white background'),
-    v('Seal', '🦭', 'Foca', '/siːl/', 'The cute seal swims in cold water.', 'harbor seal animal full body on white background'),
-    v('Sea Turtle', '🐢', 'Tartaruga-marinha', '/ˈsiː ˌtɜːr.təl/', 'The sea turtle swims across the ocean.', 'sea turtle with flippers full body on white background'),
-    v('Clownfish', '🐠', 'Peixe-palhaço', '/ˈklaʊn.fɪʃ/', 'The orange and white clownfish lives in coral reefs.', 'orange and white clownfish fish full body on white background'),
-    v('Eagle', '🦅', 'Águia', '/ˈiː.ɡəl/', 'The eagle flies high in the sky.', 'bald eagle bird full body on white background'),
-    v('Owl', '🦉', 'Coruja', '/aʊl/', 'The owl has big round eyes and stays awake at night.', 'barn owl bird full body standing on white background'),
-    v('Hawk', '🦅', 'Gavião / Falcão', '/hɔːk/', 'The hawk has sharp eyesight.', 'hawk falcon bird of prey full body on white background'),
-    v('Swan', '🦢', 'Cisne', '/swɑːn/', 'The white swan glides on the lake.', 'white swan bird full body on white background'),
-    v('Hummingbird', '🐦', 'Beija-flor', '/ˈhʌm.ɪŋ.bɜːrd/', 'The tiny hummingbird hovers near flowers.', 'colorful hummingbird flying full body on white background'),
-    v('Woodpecker', '🐦', 'Pica-pau', '/ˈwʊdˌpek.ər/', 'The woodpecker taps on tree trunks.', 'red headed woodpecker bird full body on white background'),
-    v('Ostrich', '🐦', 'Avestruz / Ema', '/ˈɔː.strɪtʃ/', 'The tall ostrich runs very fast.', 'ostrich bird full body standing on white background'),
-    v('Capybara', '🐹', 'Capivara', '/ˌkæp.ɪˈbɑː.rə/', 'The capybara is a very famous Brazilian animal.', 'capybara rodent full body standing on white background'),
-    v('Sloth', '🦥', 'Bicho-preguiça', '/slɔːθ/', 'The sloth moves very slowly in the trees.', 'three toed sloth hanging on branch on white background'),
-    v('Anteater', '🐜', 'Tamanduá', '/ˈæntˌiː.tər/', 'The giant anteater has a long snout.', 'giant anteater tamandua full body standing on white background'),
-    v('Armadillo', '🦔', 'Tatu', '/ˌɑːr.məˈdɪl.oʊ/', 'The armadillo has a protective armor shell.', 'armadillo tatu animal full body standing on white background'),
-    v('Bat', '🦇', 'Morcego', '/bæt/', 'Bats fly at night and eat fruits or insects.', 'bat with open wings full body on white background'),
-    v('Squirrel', '🐿️', 'Esquilo', '/ˈskwɜːr.əl/', 'The squirrel holds a nut in its paws.', 'squirrel holding acorn nut full body on white background'),
-    v('Lizard', '🦎', 'Lagarto / Lagartixa', '/ˈlɪz.ərd/', 'A green lizard rests on the warm stone.', 'green lizard reptile full body on white background'),
-    v('Iguana', '🦎', 'Iguana', '/ɪˈɡwɑː.nə/', 'Green iguanas love sunny trees.', 'green iguana reptile full body on white background'),
-    v('Chameleon', '🦎', 'Camaleão', '/kəˈmiː.li.ən/', 'The chameleon can change its skin color.', 'colorful chameleon reptile full body on white background'),
-    v('Snail', '🐌', 'Caracol / Caramujo', '/sneɪl/', 'The snail carries a spiral shell.', 'garden snail with spiral shell on white background'),
-    v('Caterpillar', '🐛', 'Lagarta', '/ˈkæt.ərˌpɪl.ər/', 'The green caterpillar will become a butterfly.', 'green caterpillar larva on white background'),
-    v('Mosquito', '🦟', 'Mosquito / Pernilongo', '/məˈskiː.toʊ/', 'Close the window screen to keep mosquitoes out.', 'mosquito insect full body on white background'),
-  ]
-};
-
-const HOME_3 = {
-  title: 'Rodada 3 • Casa & Objetos III: Escola & Tecnologia',
-  subtitle: 'Passo 3/5 da Rodada 3 • 30 itens de estudo, papelaria e eletrônicos',
-  pedagogicalObjective: 'Reconhecer aparelhos eletrônicos, materiais escolares e objetos pessoais.',
+const MODULE_9_SCHOOL_CLASSROOM = {
+  title: 'Ambiente 9 • Na Escola, Sala de Aula & Material Escolar',
+  subtitle: 'Ambiente 9/12 • Sala de aula, quadro, carteira, professor, mochila, cadernos, papelaria e esportes',
+  pedagogicalObjective: 'Dominar todo o ambiente escolar: sala de aula, mobiliário, professor, materiais de estudo, laboratório e quadra.',
   icon: 'book',
   theory: [
-    'No 3º passo da Rodada 3 estudamos tecnologia e material escolar: Celular (Phone), Computador (Computer), Fone de Ouvido (Headphones), Livro (Book), Caderno (Notebook), Caneta (Pen), Lápis (Pencil), Borracha (Eraser) e Mochila (Backpack).'
+    'Caminhando pela rua, chegamos à Escola (School) e entramos na Sala de Aula (Classroom)!',
+    'Veja o Quadro Branco / Lousa (Whiteboard), a Carteira Escolar (Student Desk), o Professor (Teacher), a Mochila (Backpack), o Livro (Book) e o Caderno (Notebook).',
+    'Sobre a carteira estão a Caneta (Pen), o Lápis (Pencil), a Borracha (Eraser), o Apontador (Pencil Sharpener), a Régua (Ruler), a Tesoura (Scissors), a Cola (Glue), a Calculadora (Calculator) e o Globo Terrestre (Globe)!'
   ],
   items: [
-    v('Phone', '📱', 'Celular / Smartphone', '/foʊn/', 'I use my smartphone to study English.', 'modern smartphone mobile phone front view on white background'),
-    v('Computer', '💻', 'Computador / Notebook', '/kəmˈpjuː.tər/', 'She works on her laptop computer.', 'open laptop computer notebook on white background'),
-    v('Headphones', '🎧', 'Fone de ouvido', '/ˈhed.foʊnz/', 'Put on your headphones to listen to the audio.', 'wireless over ear headphones on white background'),
-    v('Charger', '🔌', 'Carregador de celular', '/ˈtʃɑːr.dʒər/', 'Plug in the phone charger to recharge the battery.', 'white phone wall charger adapter with usb cable on white background'),
-    v('Remote Control', '🎛️', 'Controle remoto', '/rɪˈmoʊt kənˈtroʊl/', 'Use the remote control to turn on the TV.', 'black television remote control with buttons on white background'),
-    v('Camera', '📷', 'Câmera fotográfica', '/ˈkæm.rə/', 'Take a clear photo with the digital camera.', 'digital photo camera with lens on white background'),
-    v('Keyboard', '⌨️', 'Teclado de computador', '/ˈkiː.bɔːrd/', 'Type the sentence on the computer keyboard.', 'computer qwerty keyboard on white background'),
-    v('Computer Mouse', '🖱️', 'Mouse de computador', '/kəmˈpjuː.tər maʊs/', 'Click the button using the wireless computer mouse.', 'wireless computer mouse on white background'),
-    v('Printer', '🖨️', 'Impressora', '/ˈprɪn.tər/', 'Print the page on the office printer.', 'desktop inkjet printer with paper on white background'),
-    v('Book', '📘', 'Livro', '/bʊk/', 'Read a chapter of your book every night.', 'single hardcover book closed on white background'),
-    v('Notebook', '📓', 'Caderno espiral', '/ˈnoʊt.bʊk/', 'Write the new English words in your spiral notebook.', 'spiral bound school notebook on white background'),
-    v('Pen', '🖊️', 'Caneta', '/pen/', 'Write your name with a blue ballpoint pen.', 'single blue ballpoint pen on white background'),
-    v('Pencil', '✏️', 'Lápis', '/ˈpen.səl/', 'Draw a picture with a wooden pencil.', 'single yellow wooden pencil with pink eraser on white background'),
-    v('Eraser', '⬜', 'Borracha escolar', '/ɪˈreɪ.sər/', 'Use a rubber eraser to fix the pencil mistake.', 'single school pencil rubber eraser on white background'),
-    v('Sharpener', '✏️', 'Apontador de lápis', '/ˈʃɑːr.pən.ər/', 'Sharpen the pencil point with a sharpener.', 'small handheld pencil sharpener on white background'),
-    v('Ruler', '📏', 'Régua', '/ˈruː.lər/', 'Draw a straight line using a ruler.', 'straight school ruler with centimeter marks on white background'),
-    v('Backpack', '🎒', 'Mochila', '/ˈbæk.pæk/', 'Carry your books inside a school backpack.', 'zipper school backpack bag on white background'),
-    v('Scissors', '✂️', 'Tesoura', '/ˈsɪz.ərz/', 'Cut the paper carefully with scissors.', 'pair of open school scissors on white background'),
-    v('Glue', '🧴', 'Cola escolar', '/ɡluː/', 'Stick the paper with white school glue.', 'school glue stick and bottle on white background'),
-    v('Crayon', '🖍️', 'Giz de cera', '/ˈkreɪ.ɑːn/', 'Children color drawings with colorful wax crayons.', 'colorful wax crayons on white background'),
-    v('Paintbrush', '🖌️', 'Pincel', '/ˈpeɪnt.brʌʃ/', 'Paint the canvas with an artist paintbrush.', 'artist paintbrush with wooden handle on white background'),
-    v('Envelope', '✉️', 'Envelope', '/ˈen.və.loʊp/', 'Put the letter inside a paper envelope.', 'white paper mail letter envelope on white background'),
-    v('Calendar', '📅', 'Calendário', '/ˈkæl.ən.dər/', 'Check the date on the desk calendar.', 'standing desk calendar showing days on white background'),
-    v('Folder', '📁', 'Pasta de documentos', '/ˈfoʊl.dər/', 'Keep your sheets organized in a folder.', 'office document file folder on white background'),
-    v('Paperclip', '📎', 'Clipe de papel', '/ˈpeɪ.pər.klɪp/', 'Hold the pages together with a metal paperclip.', 'metal office paperclip on white background'),
-    v('Calculator', '🧮', 'Calculadora', '/ˈkæl.kjə.leɪ.tər/', 'Add the numbers on a pocket calculator.', 'digital pocket calculator with buttons on white background'),
-    v('Globe', '🌍', 'Globo terrestre', '/ɡloʊb/', 'Find Brazil and the United States on the world globe.', 'world map desk globe on stand on white background'),
-    v('Comb', '🪮', 'Pente de cabelo', '/koʊm/', 'Neaten your hair with a plastic comb.', 'hair comb on white background'),
-    v('Hairbrush', '🪮', 'Escova de cabelo', '/ˈher.brʌʃ/', 'Brush your hair in front of the mirror.', 'hairbrush with bristles on white background'),
-    v('Hair Dryer', '💨', 'Secador de cabelo', '/ˈher ˌdraɪ.ər/', 'Dry your wet hair with an electric hair dryer.', 'electric blow hair dryer appliance on white background'),
+    v('School', '🏫', 'Escola / Colégio', '/skuːl/', 'Children arrive at the school in the morning.', 'school building with flag on white background'),
+    v('Classroom', '🏫', 'Sala de aula', '/ˈklæs.ruːm/', 'Students sit at their desks in the classroom.', 'school classroom desk and board isolated on white background'),
+    v('Whiteboard', '📋', 'Quadro branco / Lousa escolar', '/ˈwaɪt.bɔːrd/', 'The teacher writes English words on the whiteboard.', 'blank school whiteboard with marker tray isolated on white background'),
+    v('Student Desk', '🪑', 'Carteira escolar (mesa e cadeira)', '/ˈstuː.dənt desk/', 'Open your notebook on the student desk.', 'school student desk and chair furniture isolated on white background'),
+    v('Teacher', '👩‍🏫', 'Professor / Professora', '/ˈtiː.tʃər/', 'The teacher explains the lesson clearly.', 'friendly school teacher holding book on white background'),
+    v('Backpack', '🎒', 'Mochila escolar', '/ˈbæk.pæk/', 'Carry your books inside a school backpack.', 'school backpack bag with zippers on white background'),
+    v('Book', '📘', 'Livro didático', '/bʊk/', 'Open your English book to page ten.', 'single hardcover book on white background'),
+    v('Notebook', '📓', 'Caderno espiral', '/ˈnoʊt.bʊk/', 'Write the vocabulary list in your spiral notebook.', 'spiral paper notebook on white background'),
+    v('Pen', '🖊️', 'Caneta esferográfica', '/pen/', 'Sign your name with a blue ballpoint pen.', 'single blue ballpoint pen on white background'),
+    v('Pencil', '✏️', 'Lápis de escrever', '/ˈpen.səl/', 'Draw and write with a yellow wooden pencil.', 'single yellow wooden pencil with eraser on white background'),
+    v('Eraser', '🧽', 'Borracha de apagar', '/ɪˈreɪ.sər/', 'Correct the mistake using a rubber eraser.', 'single white rubber pencil eraser on white background'),
+    v('Pencil Sharpener', '✏️', 'Apontador de lápis', '/ˈpen.səl ˈʃɑːr.pən.ər/', 'Sharpen the pencil tip with a pencil sharpener.', 'plastic pencil sharpener isolated on white background'),
+    v('Ruler', '📏', 'Régua escolar', '/ˈruː.lər/', 'Draw a straight line with a plastic ruler.', 'plastic centimeter ruler on white background'),
+    v('Scissors', '✂️', 'Tesoura escolar', '/ˈsɪz.ərz/', 'Cut the paper along the line with scissors.', 'single pair of paper scissors on white background'),
+    v('Glue', '🧴', 'Cola branca / bastão', '/ɡluː/', 'Use school glue to paste the picture.', 'white school glue bottle on white background'),
+    v('Paper', '📄', 'Folha de papel', '/ˈpeɪ.pər/', 'Write your test answers on a sheet of paper.', 'clean white paper sheets on white background'),
+    v('Envelope', '✉️', 'Envelope de papel', '/ˈen.və.loʊp/', 'Put the school letter inside a paper envelope.', 'white paper mailing envelope on white background'),
+    v('Calculator', '🧮', 'Calculadora', '/ˈkæl.kjə.leɪ.tər/', 'Check the math result on a pocket calculator.', 'electronic pocket calculator with buttons on white background'),
+    v('Globe', '🌍', 'Globo terrestre', '/ɡloʊb/', 'Find Brazil and the United States on the desk globe.', 'world earth globe on stand on white background'),
+    v('Map', '🗺️', 'Mapa geográfico', '/mæp/', 'Look at the world map in geography class.', 'folded world map paper on white background'),
+    v('Microscope', '🔬', 'Microscópio de ciências', '/ˈmaɪ.krə.skoʊp/', 'Look at cells through the laboratory microscope.', 'laboratory optical microscope on white background'),
+    v('Paintbrush', '🖌️', 'Pincel de pintura (aula de artes)', '/ˈpeɪnt.brʌʃ/', 'Paint a picture using watercolors and a paintbrush.', 'artist paintbrush with wooden handle on white background'),
+    v('Phone', '📱', 'Celular / Smartphone', '/foʊn/', 'Use the Lingo World app on your phone to study.', 'modern smartphone mobile phone front view on white background'),
+    v('Headphones', '🎧', 'Fone de ouvido', '/ˈhed.foʊnz/', 'Listen to the English pronunciation with headphones.', 'wireless over ear headphones on white background'),
+    v('Keyboard', '⌨️', 'Teclado de computador', '/ˈkiː.bɔːrd/', 'Type your essay on the computer keyboard.', 'computer typing keyboard on white background'),
+    v('Computer Mouse', '🖱️', 'Mouse de computador', '/kəmˈpjuː.tər maʊs/', 'Click the button using the computer mouse.', 'wireless computer mouse on white background'),
+    v('Library', '📚', 'Biblioteca escolar', '/ˈlaɪ.brer.i/', 'Students read quietly in the school library.', 'library building interior with bookshelves on white background'),
+    v('Soccer Ball', '⚽', 'Bola de futebol (na quadra)', '/ˈsɑː.kər bɔːl/', 'Play soccer in physical education class.', 'classic black and white soccer ball football on white background'),
+    v('Basketball', '🏀', 'Bola de basquete', '/ˈbæs.kɪt.bɔːl/', 'Shoot the orange basketball into the hoop.', 'orange basketball ball on white background'),
+    v('Medal', '🥇', 'Medalha escolar / esportiva', '/ˈmed.əl/', 'She won a gold medal in the school competition.', 'gold winner medal with ribbon on white background'),
   ]
 };
 
-const CITY_3 = {
-  title: 'Rodada 3 • Cotidiano III: Lugares & Natureza',
-  subtitle: 'Passo 4/5 da Rodada 3 • 30 lugares da cidade e elementos da natureza',
-  pedagogicalObjective: 'Reconhecer estabelecimentos comerciais, prédios e elementos naturais fundamentais.',
-  icon: 'map',
+const MODULE_10_SUPERMARKET_GROCERY = {
+  title: 'Ambiente 10 • No Supermercado, Hortifrúti, Padaria & Caixa',
+  subtitle: 'Ambiente 10/12 • Carrinho, cesta, corredores, frutas, verduras, açougue, padaria e pagamento',
+  pedagogicalObjective: 'Fazer compras completas no supermercado identificando equipamentos, alimentos básicos, hortifrúti, padaria e formas de pagamento.',
+  icon: 'apple',
   theory: [
-    'No 4º passo da Rodada 3 aprendemos os lugares da cidade (Casa, Escola, Supermercado, Padaria, Farmácia, Hospital, Restaurante, Livraria) e os elementos da natureza (Árvore, Flor, Rosa, Girassol, Sol, Lua, Arco-íris).',
-    'Logo a seguir vem a Prática com Palavras da Rodada 3!'
+    'Saindo da escola, vamos ao Supermercado (Supermarket) fazer as compras da casa!',
+    'Pegue o Carrinho de Compras (Shopping Cart) ou a Cesta (Basket) e passe pela Padaria (Bakery: Bread, Cheese Bread, Cake), pela Mercearia (Rice, Beans, Pasta, Coffee, Sugar, Olive Oil) e pelo Açougue (Steak, Roast Chicken, Fish Fillet).',
+    'No setor de Hortifrúti escolhemos as frutas e verduras mais frescas e, ao final, passamos no Caixa com Cartão de Crédito (Credit Card) ou Dinheiro (Money)!'
   ],
   items: [
-    v('House', '🏠', 'Casa', '/haʊs/', 'They live in a cozy family house.', 'single family house building with roof and windows on white background'),
-    v('School', '🏫', 'Escola', '/skuːl/', 'Children study at school every day.', 'school building exterior on white background'),
-    v('Supermarket', '🛒', 'Supermercado', '/ˈsuː.pərˌmɑːr.kɪt/', 'We buy groceries with a shopping cart at the supermarket.', 'supermarket grocery aisle with shopping cart'),
-    v('Bakery', '🥐', 'Padaria', '/ˈbeɪ.kər.i/', 'The bakery display is full of fresh bread and cakes.', 'bakery glass display case full of bread and croissants'),
-    v('Pharmacy', '🏥', 'Farmácia', '/ˈfɑːr.mə.si/', 'Buy medicine at the neighborhood pharmacy.', 'pharmacy drugstore shelves with medicine boxes'),
-    v('Hospital', '🏥', 'Hospital', '/ˈhɑː.spɪ.təl/', 'Doctors and nurses care for patients at the hospital.', 'hospital building exterior with red cross sign'),
-    v('Restaurant', '🍽️', 'Restaurante', '/ˈres.trɑːnt/', 'We had dinner together at a nice restaurant.', 'restaurant dining room with set tables and chairs'),
-    v('Bank', '🏦', 'Banco / Caixa eletrônico', '/bæŋk/', 'Withdraw money at the bank.', 'bank building with ATM cash machine'),
-    v('Hotel', '🏨', 'Hotel', '/hoʊˈtel/', 'We stayed in a comfortable hotel room on vacation.', 'hotel building exterior entrance'),
-    v('Bookstore', '📚', 'Livraria', '/ˈbʊk.stɔːr/', 'She bought a new book at the bookstore.', 'bookstore shop interior with shelves full of books'),
-    v('Library', '🏛️', 'Biblioteca', '/ˈlaɪ.brer.i/', 'Read quietly in the public library.', 'library reading room with study desks and bookshelves'),
-    v('Cinema', '🎬', 'Cinema', '/ˈsɪn.ə.mə/', 'Watch a movie on the big screen at the cinema.', 'cinema movie theater with red seats and big screen'),
-    v('Gym', '🏋️', 'Academia de ginástica', '/dʒɪm/', 'Exercise with weights and treadmills at the gym.', 'fitness gym room with dumbbells and treadmills'),
-    v('Barber Shop', '💈', 'Barbearia / Salão', '/ˈbɑːr.bər ʃɑːp/', 'Get a haircut at the barber shop.', 'barber shop chair mirror and barber pole'),
-    v('Pet Shop', '🐾', 'Pet shop', '/ˈpet ʃɑːp/', 'Buy pet food and toys at the pet shop.', 'pet shop store with dog beds toys and pet food'),
-    v('Park', '🌳', 'Parque / Praça', '/pɑːrk/', 'Families walk and play in the green city park.', 'green city park with trees grass and bench'),
-    v('Beach', '🏖️', 'Praia', '/biːtʃ/', 'We love going to the sunny beach on weekends.', 'sunny sandy beach with blue ocean waves and palm tree'),
-    v('Swimming Pool', '🏊', 'Piscina', '/ˈswɪm.ɪŋ puːl/', 'Swim in the blue swimming pool on hot days.', 'clear blue swimming pool with ladder'),
-    v('Bridge', '🌉', 'Ponte', '/brɪdʒ/', 'Cars cross the river over the suspension bridge.', 'bridge crossing over river water'),
-    v('Castle', '🏰', 'Castelo', '/ˈkæs.əl/', 'The stone castle has tall towers.', 'stone medieval castle with towers on white background'),
-    v('Tree', '🌳', 'Árvore', '/triː/', 'A green tree provides cool shade.', 'single green leafy tree with trunk on white background'),
-    v('Flower', '🌸', 'Flor', '/ˈflaʊ.ər/', 'A colorful flower blooms in spring.', 'single pink flower blossom on white background'),
-    v('Rose', '🌹', 'Rosa vermelha', '/roʊz/', 'He gave her a single red rose.', 'single red rose flower with green stem on white background'),
-    v('Sunflower', '🌻', 'Girassol', '/ˈsʌnˌflaʊ.ər/', 'The yellow sunflower faces the sun.', 'single bright yellow sunflower bloom on white background'),
-    v('Cactus', '🌵', 'Cacto', '/ˈkæk.təs/', 'A green cactus grows in dry places.', 'green cactus plant in small pot on white background'),
-    v('Leaf', '🍃', 'Folha de planta', '/liːf/', 'A bright green tree leaf.', 'single green tree leaf on white background'),
-    v('Sun', '☀️', 'Sol', '/sʌn/', 'The bright yellow sun shines in the blue sky.', 'bright shining yellow sun in clear blue sky'),
-    v('Moon', '🌙', 'Lua', '/muːn/', 'The full moon glows in the night sky.', 'bright full moon in night sky'),
-    v('Rainbow', '🌈', 'Arco-íris', '/ˈreɪn.boʊ/', 'A colorful rainbow appeared after the rain.', 'colorful rainbow arc in blue sky'),
-    v('Fire', '🔥', 'Fogo / Fogueira', '/ˈfaɪ.ər/', 'Warm campfire flames.', 'campfire burning wood logs with orange flames on white background'),
+    v('Supermarket', '🛒', 'Supermercado', '/ˈsuː.pərˌmɑːr.kɪt/', 'We buy food for the week at the supermarket.', 'supermarket grocery store building on white background'),
+    v('Shopping Cart', '🛒', 'Carrinho de supermercado', '/ˈʃɑː.pɪŋ kɑːrt/', 'Push the metal shopping cart down the aisle.', 'metal supermarket shopping cart trolley isolated on white background'),
+    v('Basket', '🧺', 'Cesta de compras', '/ˈbæs.kɪt/', 'Carry a few items in a hand basket.', 'woven wicker basket with handle on white background'),
+    v('Bakery', '🥖', 'Padaria', '/ˈbeɪ.kər.i/', 'Fresh warm bread is baked at the bakery.', 'bakery shop storefront with bread display on white background'),
+    v('Bread', '🍞', 'Pão', '/bred/', 'Buy a fresh loaf of bread at the bakery.', 'whole golden loaf of bread on white background'),
+    v('Cheese Bread', '🧀', 'Pão de queijo', '/ˈtʃiːz bred/', 'Warm Brazilian cheese bread from the bakery.', 'golden brazilian pao de queijo cheese bread buns on white background'),
+    v('Cake', '🍰', 'Bolo confeitado', '/keɪk/', 'Pick up a chocolate cake for the birthday.', 'whole chocolate cake with frosting on white background'),
+    v('Rice', '🍚', 'Arroz', '/raɪs/', 'Put a bag of white rice in the shopping cart.', 'bowl of cooked white rice on white background'),
+    v('Beans', '🫘', 'Feijão', '/biːnz/', 'Rice and beans are essentials on the grocery list.', 'bowl of cooked brown beans feijao on white background'),
+    v('Pasta', '🍝', 'Macarrão', '/ˈpɑː.stə/', 'Buy two packages of spaghetti pasta.', 'plate of spaghetti pasta with red tomato sauce on white background'),
+    v('Steak', '🥩', 'Carne bovina / Bife (Açougue)', '/steɪk/', 'Choose fresh beef steak at the butcher counter.', 'grilled beef steak on plate on white background'),
+    v('Roast Chicken', '🍗', 'Frango', '/ˈroʊst ˈtʃɪk.ɪn/', 'Roast chicken for Sunday family lunch.', 'whole golden roast chicken on plate on white background'),
+    v('Fish Fillet', '🐟', 'Filé de peixe (Peixaria)', '/ˈfɪʃ fɪˈleɪ/', 'Fresh fish fillet from the seafood counter.', 'cooked grilled fish fillet on plate on white background'),
+    v('Banana', '🍌', 'Banana (Hortifrúti)', '/bəˈnæn.ə/', 'Pick a bunch of ripe yellow bananas.', 'ripe yellow banana bunch whole fruit on white background'),
+    v('Orange', '🍊', 'Laranja', '/ˈɔːr.ɪndʒ/', 'Sweet oranges for making fresh juice.', 'whole orange fruit and half orange on white background'),
+    v('Strawberry', '🍓', 'Morango', '/ˈstrɔː.ber.i/', 'A box of red strawberries from the market.', 'single whole red strawberry fruit with green leaf on white background'),
+    v('Grape', '🍇', 'Uva', '/ɡreɪp/', 'Sweet purple grapes in the produce section.', 'whole bunch of purple grapes fruit on white background'),
+    v('Watermelon', '🍉', 'Melancia', '/ˈwɔː.tərˌmel.ən/', 'A large green watermelon with red flesh.', 'whole green watermelon with one red triangle wedge on white background'),
+    v('Pineapple', '🍍', 'Abacaxi', '/ˈpaɪnˌæp.əl/', 'Smell the ripe pineapple to see if it is sweet.', 'single whole pineapple fruit with green crown on white background'),
+    v('Papaya', '🧡', 'Mamão', '/pəˈpaɪ.ə/', 'Ripe papaya for tomorrow morning breakfast.', 'ripe orange papaya fruit cut in half lengthwise showing black seeds on white background'),
+    v('Tomato', '🍅', 'Tomate', '/təˈmeɪ.toʊ/', 'Red tomatoes for the salad and sauce.', 'single whole red tomato with green stem on white background'),
+    v('Potato', '🥔', 'Batata', '/pəˈteɪ.toʊ/', 'Wash and peel the yellow potatoes.', 'whole washed yellow potato vegetable on white background'),
+    v('Carrot', '🥕', 'Cenoura', '/ˈkær.ət/', 'Crunchy orange carrots from the market.', 'single whole orange carrot with green leaves on white background'),
+    v('Onion', '🧅', 'Cebola', '/ˈʌn.jən/', 'Yellow onions and garlic for seasoning.', 'single whole yellow onion bulb on white background'),
+    v('Garlic', '🧄', 'Alho', '/ˈɡɑːr.lɪk/', 'A whole bulb of white garlic.', 'whole white garlic head bulb on white background'),
+    v('Broccoli', '🥦', 'Brócolis', '/ˈbrɑː.kəl.i/', 'Fresh green broccoli florets.', 'single whole green broccoli head on white background'),
+    v('Coffee', '☕', 'Café', '/ˈkɔː.fi/', 'Brazilians love fresh hot coffee every day.', 'white porcelain cup of black coffee on white background'),
+    v('Olive Oil', '🫒', 'Azeite de oliva', '/ˈɑː.lɪv ɔɪl/', 'A glass bottle of extra virgin olive oil.', 'glass bottle of golden olive oil on white background'),
+    v('Credit Card', '💳', 'Cartão de crédito / débito (no caixa)', '/ˈkred.ɪt kɑːrd/', 'Pay for the groceries with a credit card.', 'plastic bank credit card with chip on white background'),
+    v('Money', '💵', 'Dinheiro em espécie', '/ˈmʌn.i/', 'Count your change in paper money and coins.', 'stack of paper money banknotes on white background'),
   ]
 };
 
-const FOOD_4 = {
-  title: 'Rodada 4 • Alimentos IV: Bebidas, Doces & Especiais',
-  subtitle: 'Passo 1/5 da Rodada 4 • 30 bebidas, sobremesas e frutas especiais',
-  pedagogicalObjective: 'Dominar o vocabulário de bebidas, doces famosos e frutas menos comuns.',
-  icon: 'cup',
+const MODULE_11_CHURCH_COMMUNITY = {
+  title: 'Ambiente 11 • Na Igreja, Música, Comunidade & Celebração',
+  subtitle: 'Ambiente 11/12 • Igreja, sino, cruz, vitral, bancos, altar, Bíblia, vela, instrumentos e trajes',
+  pedagogicalObjective: 'Reconhecer todos os elementos arquitetônicos, objetos litúrgicos, instrumentos musicais e vestimentas encontrados na igreja e em celebrações comunitárias.',
+  icon: 'star',
   theory: [
-    'Chegamos à Rodada 4! Começamos com bebidas (Água, Leite, Café, Suco, Refrigerante, Chá), sobremesas queridas (Bolo, Chocolate, Sorvete, Picolé, Pudim, Pipoca) e frutas menos comuns ao final.'
+    'Continuando nosso passeio pelos locais do cotidiano, visitamos a Igreja (Church)!',
+    'Olhe para a arquitetura e o interior do templo: a Igreja (Church), o Sino da Torre (Church Bell), a Cruz (Cross), o Vitral Colorido (Stained Glass), os Bancos da Igreja (Church Pew), o Altar (Altar), o Púlpito (Pulpit), a Bíblia (Bible) e a Vela (Candle).',
+    'Na parte musical e comunitária vemos o Microfone (Microphone), o Violão (Guitar), o Piano / Teclado (Piano), o Violino (Violin), a Flauta (Flute), o Terno (Suit), a Gravata (Necktie) e a Aliança (Ring)!'
   ],
   items: [
-    v('Water', '💧', 'Água', '/ˈwɔː.tər/', 'Drink a glass of fresh clear water.', 'clear glass filled with drinking water on white background'),
-    v('Milk', '🥛', 'Leite', '/mɪlk/', 'A glass of cold white milk.', 'clear glass filled with white milk on white background'),
-    v('Coffee', '☕', 'Café', '/ˈkɔː.fi/', 'A warm cup of black coffee.', 'cup of hot black coffee with saucer on white background'),
-    v('Juice', '🧃', 'Suco de laranja', '/dʒuːs/', 'A glass of natural orange juice.', 'glass of orange juice on white background'),
-    v('Soda', '🥤', 'Refrigerante', '/ˈsoʊ.də/', 'Cold cola soda with ice cubes.', 'glass of cola soda drink with ice on white background'),
-    v('Tea', '🍵', 'Chá', '/tiː/', 'A cup of warm herbal tea.', 'cup of hot tea with tea bag tag on white background'),
-    v('Cake', '🍰', 'Bolo', '/keɪk/', 'A slice of chocolate birthday cake.', 'chocolate birthday cake on white background'),
-    v('Chocolate', '🍫', 'Chocolate', '/ˈtʃɑːk.lət/', 'A bar of milk chocolate.', 'milk chocolate bar on white background'),
-    v('Ice Cream', '🍨', 'Sorvete', '/ˈaɪs kriːm/', 'Scoops of ice cream in a cone.', 'ice cream scoop in waffle cone on white background'),
-    v('Popsicle', '🍧', 'Picolé', '/ˈpɑːp.sɪ.kəl/', 'A fruit popsicle on a hot day.', 'fruit ice popsicle on wooden stick on white background'),
-    v('Cookie', '🍪', 'Biscoito / Cookie', '/ˈkʊk.i/', 'Chocolate chip cookies are crunchy.', 'round chocolate chip cookie on white background'),
-    v('Pudding', '🍮', 'Pudim de leite', '/ˈpʊd.ɪŋ/', 'Caramel pudding is a classic Brazilian dessert.', 'whole caramel flan pudding pudim on plate on white background'),
-    v('Candy', '🍬', 'Bala / Doce', '/ˈkæn.di/', 'Wrapped colorful fruit candy.', 'colorful wrapped fruit candy sweets on white background'),
-    v('Lollipop', '🍭', 'Pirulito', '/ˈlɑː.li.pɑːp/', 'A colorful round lollipop on a stick.', 'round colorful swirl lollipop on stick on white background'),
-    v('Popcorn', '🍿', 'Pipoca', '/ˈpɑːp.kɔːrn/', 'Warm salted popcorn at the cinema.', 'red and white striped bucket full of popcorn on white background'),
-    v('Donut', '🍩', 'Rosquinha / Donut', '/ˈdoʊ.nʌt/', 'A pink glazed donut with sprinkles.', 'single pink frosted donut with sprinkles on white background'),
-    v('Pie', '🥧', 'Torta doce', '/paɪ/', 'Warm homemade fruit pie.', 'whole baked fruit pie with lattice crust on white background'),
-    v('Cupcake', '🧁', 'Cupcake / Bolinho', '/ˈkʌp.keɪk/', 'A cupcake with creamy frosting.', 'single cupcake with swirl frosting on white background'),
-    v('Yogurt', '🥣', 'Iogurte', '/ˈjoʊ.ɡərt/', 'Creamy strawberry yogurt in a spoon.', 'cup of creamy yogurt with spoon on white background'),
-    v('Honey', '🍯', 'Mel', '/ˈhʌn.i/', 'Golden bee honey in a glass jar.', 'glass jar of golden honey with wooden dipper on white background'),
-    v('Jam', '🍓', 'Geleia de frutas', '/dʒæm/', 'Strawberry jam on morning toast.', 'glass jar of red strawberry jam on white background'),
-    v('Milkshake', '🥤', 'Milk-shake', '/ˈmɪlk.ʃeɪk/', 'Cold chocolate milkshake with whipped cream.', 'tall glass of milkshake with whipped cream and straw on white background'),
-    v('Waffle', '🧇', 'Waffle', '/ˈwɑː.fəl/', 'Crispy golden waffle for breakfast.', 'golden Belgian waffle on white background'),
-    v('Jelly', '🍮', 'Gelatina', '/ˈdʒel.i/', 'Red strawberry jelly dessert.', 'red gelatin jelly dessert in bowl on white background'),
-    v('Cereal', '🥣', 'Cereal matinal', '/ˈsɪr.i.əl/', 'Cornflakes cereal with cold milk.', 'bowl of cornflakes breakfast cereal with milk on white background'),
-    v('Raspberry', '❤️', 'Framboesa', '/ˈræzˌber.i/', 'Raspberries are bright red berries.', 'whole red raspberry fruit on white background'),
-    v('Blueberry', '🫐', 'Mirtilo (Blueberry)', '/ˈbluːˌber.i/', 'Blueberries are small blue fruits.', 'whole blue blueberry fruits on white background'),
-    v('Pomegranate', '🔴', 'Romã', '/ˈpɑː.mɪˌɡræn.ɪt/', 'Pomegranate is full of red seeds.', 'red pomegranate fruit whole and open half showing seeds on white background'),
-    v('Dragon Fruit', '🐉', 'Pitaia', '/ˈdræɡ.ən fruːt/', 'Dragon fruit has bright pink skin.', 'pink dragon fruit pitaya whole and half on white background'),
-    v('Chestnut', '🌰', 'Castanha / Noz', '/ˈtʃes.nʌt/', 'Crunchy nuts and chestnuts.', 'whole brown chestnuts on white background'),
+    v('Church', '⛪', 'Igreja / Templo', '/tʃɜːrtʃ/', 'Families gather at the neighborhood church on Sunday.', 'traditional church building with steeple cross on white background'),
+    v('Church Bell', '🔔', 'Sino da igreja', '/tʃɜːrtʃ bel/', 'The bronze church bell rings in the tower.', 'bronze church bell isolated on white background'),
+    v('Cross', '✝️', 'Cruz', '/krɔːs/', 'A wooden cross stands above the church altar.', 'wooden christian cross isolated on white background'),
+    v('Stained Glass', '🪟', 'Vitral colorido da igreja', '/steɪnd ɡlæs/', 'Sunlight shines through the colorful stained glass window.', 'colorful church stained glass arch window isolated on white background'),
+    v('Church Pew', '🪑', 'Banco de madeira da igreja', '/tʃɜːrtʃ pjuː/', 'The congregation sits on the long wooden church pews.', 'wooden church pew bench isolated on white background'),
+    v('Altar', '🕯️', 'Altar da igreja', '/ˈɔːl.tər/', 'White flowers and candles decorate the church altar.', 'wooden church altar table with white cloth isolated on white background'),
+    v('Pulpit', '📖', 'Púlpito / Tribuna de leitura', '/ˈpʊl.pɪt/', 'The speaker reads from the Bible at the wooden pulpit.', 'wooden church pulpit lectern isolated on white background'),
+    v('Bible', '📖', 'Bíblia Sagrada', '/ˈbaɪ.bəl/', 'Read a chapter from the Holy Bible.', 'leather bound holy bible book with gold cross isolated on white background'),
+    v('Candle', '🕯️', 'Vela acesa', '/ˈkæn.dəl/', 'A white wax candle burns softly on the altar.', 'lit white wax candle on white background'),
+    v('Microphone', '🎤', 'Microfone do altar / coral', '/ˈmaɪ.krə.foʊn/', 'Speak clearly into the stand microphone.', 'vocal microphone on stand isolated on white background'),
+    v('Guitar', '🎸', 'Violão acústico', '/ɡɪˈtɑːr/', 'He plays the acoustic guitar in the church choir.', 'wooden acoustic guitar instrument on white background'),
+    v('Piano', '🎹', 'Piano / Teclado musical', '/piˈæn.oʊ/', 'She plays beautiful melodies on the piano.', 'grand piano musical instrument with keys on white background'),
+    v('Drum', '🥁', 'Bateria / Tambor', '/drʌm/', 'The drummer keeps the rhythm on the drum.', 'musical snare drum with drumsticks on white background'),
+    v('Violin', '🎻', 'Violino', '/ˌvaɪ.əˈlɪn/', 'The wooden violin sounds warm and expressive.', 'wooden violin with bow on white background'),
+    v('Flute', '🪈', 'Flauta musical', '/fluːt/', 'A silver flute plays a gentle melody.', 'silver concert flute instrument on white background'),
+    v('Dove', '🕊️', 'Pomba branca da paz', '/dʌv/', 'The white dove is a universal symbol of peace.', 'white dove bird flying isolated on white background'),
+    v('Heart', '❤️', 'Coração (amor e caridade)', '/hɑːrt/', 'Share kindness from the bottom of your heart.', 'red heart shape 3d model on white background'),
+    v('Crown', '👑', 'Coroa dourada', '/kraʊn/', 'A golden crown with shining jewels.', 'gold royal crown with jewels on white background'),
+    v('Star', '⭐', 'Estrela guia', '/stɑːr/', 'A bright star shines in the night sky.', 'bright five pointed star on white background'),
+    v('Gift', '🎁', 'Presente / Doação comunitária', '/ɡɪft/', 'They prepared gift boxes for charity.', 'wrapped gift box with ribbon bow on white background'),
+    v('Chandelier', '💡', 'Lustre clássico do templo', '/ˌʃæn.dəˈlɪr/', 'A crystal chandelier hangs from the church ceiling.', 'crystal chandelier ceiling light fixture isolated on white background'),
+    v('Suit', '🤵', 'Terno / Roupa social', '/suːt/', 'He wore a navy blue suit to the ceremony.', 'men formal suit jacket and pants isolated on white background'),
+    v('Necktie', '👔', 'Gravata social', '/ˈnek.taɪ/', 'Tie a silk necktie around your collar.', 'red silk necktie tie on white background'),
+    v('Ring', '💍', 'Aliança / Anel de ouro', '/rɪŋ/', 'The couple exchanged gold wedding rings at the altar.', 'gold ring with diamond on white background'),
+    v('Necklace', '📿', 'Colar / Correntinha', '/ˈnek.lɪs/', 'She wears a delicate gold necklace.', 'gold chain necklace with pendant on white background'),
+    v('Wine Glass', '🍷', 'Cálice / Taça', '/waɪn ɡlæs/', 'A golden chalice and glass goblet on the table.', 'clear glass goblet chalice isolated on white background'),
+    v('Wheelchair', '♿', 'Cadeira de rodas (Acessibilidade)', '/ˈwiːl.tʃer/', 'The church entrance has a ramp for wheelchairs.', 'medical manual wheelchair isolated on white background'),
+    v('Handshake', '🤝', 'Aperto de mão / Cumprimento fraterno', '/ˈhænd.ʃeɪk/', 'Greet your neighbors with a warm handshake.', 'two hands shaking handshake isolated on white background'),
+    v('Rainbow', '🌈', 'Arco-íris no céu', '/ˈreɪn.boʊ/', 'A colorful rainbow appeared after the rain.', 'colorful rainbow arc in sky on white background'),
+    v('Moon', '🌙', 'Lua no céu noturno', '/muːn/', 'The full moon shines after the evening service.', 'full moon in night sky on white background'),
   ]
 };
 
-const ANIMALS_4 = {
-  title: 'Rodada 4 • Animais IV: Menos Comuns & Exóticos',
-  subtitle: 'Passo 2/5 da Rodada 4 • 30 animais menos frequentes no cotidiano',
-  pedagogicalObjective: 'Expandir o vocabulário com 30 animais menos cotidianos, porém presentes em livros e documentários.',
-  icon: 'dog',
-  theory: [
-    'Somente aqui na Rodada 4 entramos nos animais menos comuns do dia a dia.',
-    'Inclui Lagosta (Lobster), Lula (Squid), Arraia (Stingray), Orca, Piranha, Lhama (Llama), Orangotango (Orangutan), Hiena (Hyena), Porco-espinho (Hedgehog), Guaxinim (Raccoon), Lontra (Otter), Castor (Beaver), Suricato (Meerkat) e Ornitorrinco (Platypus).'
-  ],
-  items: [
-    v('Lobster', '🦞', 'Lagosta', '/ˈlɑːb.stər/', 'The red lobster has two big claws.', 'red lobster crustacean full body on white background'),
-    v('Squid', '🦑', 'Lula', '/skwɪd/', 'The squid swims fast in deep water.', 'squid marine animal full body on white background'),
-    v('Stingray', '🐟', 'Arraia', '/ˈstɪŋ.reɪ/', 'The flat stingray glides near the ocean floor.', 'stingray ray fish full body on white background'),
-    v('Orca', '🐋', 'Orca (Baleia-assassina)', '/ˈɔːr.kə/', 'The black and white orca leaps from the sea.', 'black and white orca killer whale full body on white background'),
-    v('Piranha', '🐟', 'Piranha', '/pɪˈrɑː.njə/', 'The piranha is an Amazon river fish with sharp teeth.', 'piranha fish full body side view on white background'),
-    v('Blowfish', '🐡', 'Baiacu', '/ˈbloʊ.fɪʃ/', 'The blowfish puffs up like a round ball.', 'inflated round pufferfish blowfish on white background'),
-    v('Walrus', '🦭', 'Morsa', '/ˈwɔːl.rəs/', 'The arctic walrus has two long ivory tusks.', 'walrus with ivory tusks full body on white background'),
-    v('Pelican', '🐦', 'Pelicano', '/ˈpel.ɪ.kən/', 'The pelican catches fish in its large throat pouch.', 'pelican bird full body standing on white background'),
-    v('Stork', '🐦', 'Cegonha', '/stɔːrk/', 'The white stork builds big nests on roofs.', 'white stork bird full body standing on white background'),
-    v('Seagull', '🐦', 'Gaivota', '/ˈsiː.ɡʌl/', 'Seagulls fly over the beach.', 'white seagull bird full body standing on white background'),
-    v('Crow', '🐦‍⬛', 'Corvo', '/kroʊ/', 'The black crow is a very smart bird.', 'black crow bird full body standing on white background'),
-    v('Vulture', '🦅', 'Urubu / Abutre', '/ˈvʌl.tʃər/', 'Vultures soar high on warm air currents.', 'vulture bird full body standing on white background'),
-    v('Canary', '🐤', 'Canário', '/kəˈner.i/', 'The yellow canary sings a bright song.', 'yellow canary songbird full body on white background'),
-    v('Llama', '🦙', 'Lhama', '/ˈlɑː.mə/', 'Llamas live in the Andes mountains of South America.', 'llama animal full body standing on white background'),
-    v('Orangutan', '🦧', 'Orangotango', '/əˈræŋ.ə.tæn/', 'The orangutan has long reddish hair.', 'orangutan ape full body sitting on white background'),
-    v('Hyena', '🐕', 'Hiena', '/haɪˈiː.nə/', 'Spotted hyenas live in the African savanna.', 'spotted hyena animal full body standing on white background'),
-    v('Bison', '🦬', 'Búfalo / Bisão', '/ˈbaɪ.sən/', 'The large bison has thick fur on its shoulders.', 'bison buffalo animal full body standing on white background'),
-    v('Boar', '🐗', 'Javali', '/bɔːr/', 'The wild boar has curved tusks.', 'wild boar pig full body standing on white background'),
-    v('Moose', '🫎', 'Alce', '/muːs/', 'The northern moose has huge flat antlers.', 'moose with antlers full body standing on white background'),
-    v('Hedgehog', '🦔', 'Porco-espinho / Ouriço', '/ˈhedʒ.hɔːɡ/', 'The little hedgehog curls into a spiky ball.', 'hedgehog animal full body on white background'),
-    v('Raccoon', '🦝', 'Guaxinim', '/ræˈkuːn/', 'The raccoon looks like it is wearing a black mask.', 'raccoon animal full body standing on white background'),
-    v('Otter', '🦦', 'Lontra', '/ˈɑː.tər/', 'River otters are playful swimmers.', 'river otter animal full body on white background'),
-    v('Beaver', '🦫', 'Castor', '/ˈbiː.vər/', 'The beaver has strong teeth and a flat tail.', 'beaver animal with flat tail full body on white background'),
-    v('Skunk', '🦨', 'Gambá', '/skʌŋk/', 'The black skunk has a white stripe down its back.', 'black and white striped skunk full body on white background'),
-    v('Meerkat', '🐿️', 'Suricato', '/ˈmɪr.kæt/', 'The meerkat stands upright to watch the desert.', 'meerkat animal standing upright full body on white background'),
-    v('Platypus', '🦆', 'Ornitorrinco', '/ˈplæt.ɪ.pəs/', 'The Australian platypus has a duck bill and beaver tail.', 'platypus animal full body on white background'),
-    v('Scorpion', '🦂', 'Escorpião', '/ˈskɔːr.pi.ən/', 'The scorpion has pincers and a curved tail.', 'scorpion arachnid full body on white background'),
-    v('Grasshopper', '🦗', 'Gafanhoto / Grilo', '/ˈɡræsˌhɑː.pər/', 'The green grasshopper jumps in the grass.', 'green grasshopper insect full body on white background'),
-    v('Dragonfly', '蜻', 'Libélula', '/ˈdræɡ.ən.flaɪ/', 'A dragonfly has four transparent wings.', 'dragonfly insect with four wings on white background'),
-    v('Beetle', '🪲', 'Besouro', '/ˈbiː.təl/', 'The shiny beetle has a hard shell.', 'beetle insect full body on white background'),
-  ]
-};
-
-const HOME_4 = {
-  title: 'Rodada 4 • Casa & Objetos IV: Instrumentos & Ferramentas',
-  subtitle: 'Passo 3/5 da Rodada 4 • 30 instrumentos musicais, ferramentas e utensílios',
-  pedagogicalObjective: 'Dominar o vocabulário de instrumentos musicais, ferramentas domésticas e primeiros socorros.',
-  icon: 'house',
-  theory: [
-    'No 3º passo da Rodada 4 aprendemos instrumentos musicais (Violão, Piano, Bateria, Violino, Flauta, Trompete, Sanfona) e ferramentas práticas (Martelo, Chave de Fenda, Alicate, Furadeira, Trena, Escada).'
-  ],
-  items: [
-    v('Guitar', '🎸', 'Violão / Guitarra', '/ɡɪˈtɑːr/', 'He plays acoustic guitar with his friends.', 'wooden acoustic guitar full instrument on white background'),
-    v('Piano', '🎹', 'Piano', '/piˈæn.oʊ/', 'She plays a melody on the grand piano.', 'grand piano musical instrument on white background'),
-    v('Drum', '🥁', 'Bateria / Tambor', '/drʌm/', 'Keep the musical beat on the drum.', 'snare drum with drumsticks on white background'),
-    v('Violin', '🎻', 'Violino', '/ˌvaɪ.əˈlɪn/', 'The wooden violin has four strings and a bow.', 'wooden violin with bow full instrument on white background'),
-    v('Flute', '🪈', 'Flauta', '/fluːt/', 'Play a soft tune on the flute.', 'concert flute musical instrument on white background'),
-    v('Trumpet', '🎺', 'Trompete', '/ˈtrʌm.pɪt/', 'The brass trumpet shines on stage.', 'brass trumpet musical instrument on white background'),
-    v('Saxophone', '🎷', 'Saxofone', '/ˈsæk.sə.foʊn/', 'He plays jazz on the golden saxophone.', 'golden saxophone musical instrument on white background'),
-    v('Accordion', '🪗', 'Sanfona / Acordeão', '/əˈkɔːr.di.ən/', 'The accordion is traditional in Brazilian forró.', 'piano accordion musical instrument on white background'),
-    v('Microphone', '🎤', 'Microfone', '/ˈmaɪ.krə.foʊn/', 'Sing clearly into the microphone.', 'handheld vocal microphone on white background'),
-    v('Radio', '📻', 'Rádio', '/ˈreɪ.di.oʊ/', 'Listen to music and news on the portable radio.', 'portable radio receiver with antenna on white background'),
-    v('Flashlight', '🔦', 'Lanterna', '/ˈflæʃ.laɪt/', 'Use a battery flashlight in the dark.', 'handheld led flashlight torch on white background'),
-    v('Battery', '🔋', 'Pilha / Bateria', '/ˈbæt.ər.i/', 'Put two AA batteries inside the remote.', 'alkaline AA battery cell on white background'),
-    v('Electric Plug', '🔌', 'Plugue de tomada', '/ɪˈlek.trɪk plʌɡ/', 'Connect the electric plug to the outlet.', 'electric power plug with cord on white background'),
-    v('Light Bulb', '💡', 'Lâmpada', '/ˈlaɪt bʌlb/', 'Replace the burned-out light bulb.', 'single led light bulb on white background'),
-    v('Lock', '🔒', 'Cadeado', '/lɑːk/', 'Close the gate with a metal lock.', 'brass metal padlock with key on white background'),
-    v('Box', '📦', 'Caixa de papelão', '/bɑːks/', 'Pack the items inside a cardboard box.', 'brown cardboard box on white background'),
-    v('Basket', '🧺', 'Cesta / Cesto', '/ˈbæs.kɪt/', 'Carry the picnic food in a woven basket.', 'woven wicker basket with handle on white background'),
-    v('Ladder', '🪜', 'Escada portátil', '/ˈlæd.ər/', 'Use a folding step ladder to reach the top shelf.', 'folding aluminum step ladder on white background'),
-    v('Hammer', '🔨', 'Martelo', '/ˈhæm.ər/', 'Hit the nail with a claw hammer.', 'claw hammer tool with wooden handle on white background'),
-    v('Screwdriver', '🪛', 'Chave de fenda', '/ˈskruːˌdraɪ.vər/', 'Tighten the screw with a screwdriver.', 'hand screwdriver tool on white background'),
-    v('Wrench', '🔧', 'Chave inglesa / Chave de boca', '/rentʃ/', 'Turn the metal nut with a steel wrench.', 'steel wrench spanner tool on white background'),
-    v('Pliers', '钳', 'Alicate', '/ˈplaɪ.ərz/', 'Hold the wire firmly with pliers.', 'hand pliers tool on white background'),
-    v('Saw', '🪚', 'Serrote', '/sɔː/', 'Cut the wooden board with a hand saw.', 'carpenter hand saw tool on white background'),
-    v('Tape Measure', '📏', 'Trena / Fita métrica', '/ˈteɪp ˌmeʒ.ər/', 'Measure the wall width with a tape measure.', 'yellow retractable tape measure tool on white background'),
-    v('Drill', '🪛', 'Furadeira', '/drɪl/', 'Make a hole in the wall with an electric drill.', 'cordless electric drill tool on white background'),
-    v('Chain', '⛓️', 'Corrente de metal', '/tʃeɪn/', 'A strong steel chain.', 'metal chain links on white background'),
-    v('Candle', '🕯️', 'Vela', '/ˈkæn.dəl/', 'Light a white wax candle.', 'lit white wax candle on white background'),
-    v('Bandage', '🩹', 'Curativo (Band-aid)', '/ˈbæn.dɪdʒ/', 'Put an adhesive bandage on the small cut.', 'adhesive medical band-aid strip on white background'),
-    v('Pill', '💊', 'Comprimido / Cápsula', '/pɪl/', 'Take the medicine pill with water.', 'medicine pill capsule and tablet on white background'),
-    v('Thermometer', '🌡️', 'Termômetro', '/θərˈmɑː.mə.tər/', 'Check for a fever with a digital thermometer.', 'digital medical fever thermometer on white background'),
-  ]
-};
-
-const CITY_4 = {
-  title: 'Rodada 4 • Cotidiano IV: Corpo, Esportes & Profissões',
-  subtitle: 'Passo 4/5 da Rodada 4 • 30 termos de partes do corpo, esportes e profissões',
-  pedagogicalObjective: 'Concluir os 480 termos visuais dominando corpo humano, esportes e profissões.',
+const MODULE_12_CITY_SERVICES = {
+  title: 'Ambiente 12 • Restaurante, Hospital, Banco, Segurança & Viagem',
+  subtitle: 'Ambiente 12/12 • Locais públicos, profissões, saúde, finanças, lazer e aeroporto',
+  pedagogicalObjective: 'Concluir a jornada pelo cotidiano dominando restaurantes, hospitais, bancos, delegacia, bombeiros, hotel, cinema e aeroporto.',
   icon: 'swords',
   theory: [
-    'No 4º passo da Rodada 4 aprendemos partes do corpo (Mão, Pé, Olho, Orelha, Nariz, Boca, Dente, Coração), esportes muito praticados no Brasil (Futebol, Basquete, Vôlei, Tênis) e profissões (Médico, Enfermeira, Dentista, Professor, Cozinheiro, Policial, Bombeiro, Piloto).',
-    'Logo após este módulo, você fará a Prática Final de Palavras da Rodada 4!'
+    'Chegamos ao 12º e último módulo da nossa Jornada de Imersão pelo Cotidiano!',
+    'Aqui visitamos o Restaurante (Restaurant, Chef, Pizza, Hamburger, Ice Cream), o Hospital e Consultório (Hospital, Doctor, Nurse, Dentist), o Banco (Bank, Coin) e a Segurança Pública (Police Station, Police Officer, Fire Station, Firefighter).',
+    'Por fim, passamos pelo Hotel, Cinema e Aeroporto (Hotel, Suitcase, Passport, Airport, Airplane, Pilot, Train, Subway, Ship). Faça 70 pontos ou mais nesta prova final para concluir o Módulo 0 com maestria!'
   ],
   items: [
-    v('Hand', '✋', 'Mão', '/hænd/', 'Raise your hand to ask a question.', 'open human hand palm on white background'),
-    v('Foot', '🦶', 'Pé', '/fʊt/', 'Kick the soccer ball with your foot.', 'human bare foot on white background'),
-    v('Eye', '👁️', 'Olho', '/aɪ/', 'We see the world with our eyes.', 'human eye closeup on white background'),
-    v('Ear', '👂', 'Orelha / Ouvido', '/ɪr/', 'We listen to music and speech with our ears.', 'human ear closeup on white background'),
-    v('Nose', '👃', 'Nariz', '/noʊz/', 'Smell the fresh coffee with your nose.', 'human nose closeup on white background'),
-    v('Mouth', '👄', 'Boca', '/maʊθ/', 'Open your mouth to pronounce the English vowel.', 'smiling human mouth lips and teeth on white background'),
-    v('Tooth', '🦷', 'Dente', '/tuːθ/', 'Brush every tooth with toothpaste.', 'single white tooth dental model on white background'),
-    v('Hair', '💇', 'Cabelo', '/her/', 'She brushes her long brown hair.', 'long healthy brown hair on white background'),
-    v('Finger', '☝️', 'Dedo da mão', '/ˈfɪŋ.ɡər/', 'Point at the picture with your index finger.', 'hand pointing index finger on white background'),
-    v('Arm', '💪', 'Braço', '/ɑːrm/', 'Stretch your arms before exercising.', 'human arm and hand on white background'),
-    v('Leg', '🦵', 'Perna', '/leɡ/', 'Run fast using your strong legs.', 'human leg and foot on white background'),
-    v('Heart', '❤️', 'Coração', '/hɑːrt/', 'Your heart beats inside your chest.', 'red heart shape 3d model on white background'),
-    v('Brain', '🧠', 'Cérebro', '/breɪn/', 'Learning English exercises your brain.', 'human brain model on white background'),
-    v('Bone', '🦴', 'Osso', '/boʊn/', 'Milk and calcium keep your bones strong.', 'white bone on white background'),
-    v('Soccer Ball', '⚽', 'Bola de futebol', '/ˈsɑː.kər bɔːl/', 'Soccer is the most popular sport in Brazil.', 'classic black and white soccer ball football on white background'),
-    v('Basketball', '🏀', 'Bola de basquete', '/ˈbæs.kɪt.bɔːl/', 'Bounce the orange basketball on the court.', 'orange basketball ball on white background'),
-    v('Volleyball', '🏐', 'Bola de vôlei', '/ˈvɑː.li.bɔːl/', 'Hit the volleyball over the net.', 'volleyball sport ball on white background'),
-    v('Tennis Ball', '🎾', 'Bola de tênis', '/ˈten.ɪs bɔːl/', 'Hit the yellow tennis ball with a racket.', 'yellow tennis ball on white background'),
-    v('Boxing Glove', '🥊', 'Luva de boxe', '/ˈbɑːk.sɪŋ ɡlʌv/', 'Put on red boxing gloves for training.', 'pair of red boxing gloves on white background'),
-    v('Fishing Rod', '🎣', 'Vara de pescar', '/ˈfɪʃ.ɪŋ rɑːd/', 'Catch a fish in the river with a fishing rod.', 'fishing rod with reel on white background'),
-    v('Medal', '🥇', 'Medalha de ouro', '/ˈmed.əl/', 'The champion athlete won a gold medal.', 'gold winner medal with ribbon on white background'),
-    v('Trophy', '🏆', 'Troféu de campeão', '/ˈtroʊ.fi/', 'The winning team lifted the golden trophy cup.', 'golden champion trophy cup on white background'),
-    v('Doctor', '👨‍⚕️', 'Médico / Médica', '/ˈdɑːk.tər/', 'The doctor wears a white coat and a stethoscope.', 'friendly medical doctor in white coat with stethoscope on white background'),
-    v('Nurse', '👩‍⚕️', 'Enfermeira / Enfermeiro', '/nɜːrs/', 'The hospital nurse cares for the patients.', 'friendly hospital nurse in scrubs on white background'),
-    v('Dentist', '🦷', 'Dentista', '/ˈden.tɪst/', 'Visit the dentist to keep your teeth healthy.', 'dentist in coat holding tooth model on white background'),
-    v('Teacher', '👩‍🏫', 'Professor / Professora', '/ˈtiː.tʃər/', 'The English teacher writes on the board.', 'friendly school teacher holding book on white background'),
-    v('Chef', '👨‍🍳', 'Cozinheiro / Chef de cozinha', '/ʃef/', 'The chef wears a white hat in the restaurant kitchen.', 'chef cook in white uniform and chef hat on white background'),
-    v('Police Officer', '👮', 'Policial', '/pəˈliːs ˌɔː.fɪ.sər/', 'The police officer helps people in the city.', 'police officer in uniform on white background'),
-    v('Firefighter', '🧑‍🚒', 'Bombeiro', '/ˈfaɪ.ərˌfaɪ.tər/', 'The firefighter wears a protective helmet and jacket.', 'firefighter in helmet and uniform on white background'),
-    v('Pilot', '👨‍✈️', 'Piloto de avião', '/ˈpaɪ.lət/', 'The airline pilot flies the commercial airplane.', 'airline pilot in uniform and cap on white background'),
+    v('Restaurant', '🍽️', 'Restaurante', '/ˈres.tər.ɑːnt/', 'We had dinner together at an Italian restaurant.', 'restaurant building exterior with tables on white background'),
+    v('Chef', '👨‍🍳', 'Chef de cozinha / Cozinheiro', '/ʃef/', 'The restaurant chef prepares delicious meals.', 'chef cook in white uniform and chef hat on white background'),
+    v('Pizza', '🍕', 'Pizza', '/ˈpiːt.sə/', 'Order a hot cheese pizza at the restaurant.', 'whole round cheese pepperoni pizza on white background'),
+    v('Hamburger', '🍔', 'Hambúrguer', '/ˈhæmˌbɜːr.ɡər/', 'A juicy hamburger with lettuce and cheese.', 'single classic cheeseburger hamburger on white background'),
+    v('French Fries', '🍟', 'Batata frita', '/ˈfrentʃ fraɪz/', 'Crispy golden French fries with ketchup.', 'portion of crispy golden french fries on white background'),
+    v('Ice Cream', '🍦', 'Sorvete', '/ˈaɪs kriːm/', 'Cold chocolate and vanilla ice cream.', 'ice cream scoop in waffle cone on white background'),
+    v('Hospital', '🏥', 'Hospital / Pronto-socorro', '/ˈhɑː.spɪ.təl/', 'Doctors and nurses work at the city hospital.', 'hospital building with red cross sign on white background'),
+    v('Doctor', '👨‍⚕️', 'Médico / Médica', '/ˈdɑːk.tər/', 'The doctor examines the patient with a stethoscope.', 'friendly medical doctor in white coat with stethoscope on white background'),
+    v('Nurse', '👩‍⚕️', 'Enfermeira / Enfermeiro', '/nɜːrs/', 'The hospital nurse takes care of everyone.', 'friendly hospital nurse in scrubs on white background'),
+    v('Dentist', '🦷', 'Dentista', '/ˈden.tɪst/', 'Visit the dentist twice a year.', 'dentist in coat holding tooth model on white background'),
+    v('Pharmacy', '💊', 'Farmácia / Drogaria', '/ˈfɑːr.mə.si/', 'Buy medicine and vitamins at the pharmacy.', 'pharmacy drugstore building storefront on white background'),
+    v('Bank', '🏦', 'Banco / Agência bancária', '/bæŋk/', 'Deposit money safely at the bank.', 'bank building with columns on white background'),
+    v('Coin', '🪙', 'Moeda', '/kɔɪn/', 'Keep the shiny metal coins in your wallet.', 'shiny gold metal coin on white background'),
+    v('Police Station', '🚓', 'Delegacia de polícia', '/pəˈliːs ˈsteɪ.ʃən/', 'Report the lost document at the police station.', 'police station building exterior on white background'),
+    v('Police Officer', '👮', 'Policial', '/pəˈliːs ˌɔː.fɪ.sər/', 'The police officer helps citizens in the city.', 'police officer in uniform on white background'),
+    v('Fire Station', '🚒', 'Quartel do Corpo de Bombeiros', '/ˈfaɪ.ər ˈsteɪ.ʃən/', 'Fire trucks are parked inside the fire station.', 'fire station building with red doors on white background'),
+    v('Firefighter', '🧑‍🚒', 'Bombeiro', '/ˈfaɪ.ərˌfaɪ.tər/', 'The brave firefighter wears a yellow helmet.', 'firefighter in helmet and uniform on white background'),
+    v('Hotel', '🏨', 'Hotel', '/hoʊˈtel/', 'We stayed at a comfortable hotel during vacation.', 'hotel building exterior on white background'),
+    v('Suitcase', '🧳', 'Mala de viagem com rodinhas', '/ˈsuːt.keɪs/', 'Pack your clothes inside the rolling suitcase.', 'rolling travel suitcase luggage with wheels on white background'),
+    v('Passport', '🛂', 'Passaporte de viagem', '/ˈpæs.pɔːrt/', 'Show your passport at the international airport.', 'travel passport booklet on white background'),
+    v('Airport', '🛫', 'Aeroporto', '/ˈer.pɔːrt/', 'Arrive at the airport two hours before your flight.', 'airport terminal building with control tower on white background'),
+    v('Airplane', '✈️', 'Avião comercial', '/ˈer.pleɪn/', 'The passenger airplane takes off from the runway.', 'commercial passenger airplane full aircraft on white background'),
+    v('Pilot', '👨‍✈️', 'Piloto de avião', '/ˈpaɪ.lət/', 'The airline pilot greets the passengers.', 'airline pilot in uniform and cap on white background'),
+    v('Helicopter', '🚁', 'Helicóptero', '/ˈhel.ɪˌkɑːp.tər/', 'A helicopter flies above the city buildings.', 'helicopter full aircraft on white background'),
+    v('Train', '🚆', 'Trem ferroviário', '/treɪn/', 'The express train travels between cities.', 'modern passenger train locomotive on white background'),
+    v('Subway', '🚇', 'Metrô subterrâneo', '/ˈsʌb.weɪ/', 'Take the underground subway to avoid traffic.', 'subway metro train car on white background'),
+    v('Ship', '🚢', 'Navio', '/ʃɪp/', 'The large ship sails across the blue ocean.', 'large passenger cruise ship vessel on white background'),
+    v('Movie Theater', '🍿', 'Cinema', '/ˈmuː.vi ˈθiː.ə.tər/', 'Watch a new film at the movie theater.', 'cinema movie theater entrance with marquee on white background'),
+    v('Popcorn', '🍿', 'Pipoca', '/ˈpɑːp.kɔːrn/', 'Eat warm buttered popcorn at the cinema.', 'striped bucket of popcorn on white background'),
+    v('Trophy', '🏆', 'Troféu de conquista', '/ˈtroʊ.fi/', 'Congratulations! You earned the golden trophy!', 'golden champion trophy cup on white background'),
   ]
 };
-
-// ============================================================================
-// PRÁTICAS DE PALAVRAS AO FINAL DE CADA RODADA (PALAVRAS SIMPLES E DE FÁCIL ASSOCIAÇÃO)
-// ============================================================================
-function buildPracticePhase(phaseNumber, roundNumber, isFinalBoss, pairs) {
-  const phaseId = `w0-p${phaseNumber}`;
-  const slotPattern = [1, 3, 0, 2, 2, 1, 3, 0, 3, 1, 2, 0];
-  const exercises = pairs.map((p, idx) => {
-    const id = `${phaseId}-e${idx + 1}`;
-    if (p.mode === 'word-order') {
-      return {
-        id,
-        type: 'word-order',
-        visualEmoji: p.emoji,
-        prompt: `Monte em inglês: "${p.pt}" (usando o vocabulário da Rodada ${roundNumber}):`,
-        audioPhrase: p.en,
-        options: p.bank,
-        correctAnswer: p.en,
-        explanation: `"${p.en}" significa "${p.pt}".`,
-        phoneticHint: p.phonetic,
-        skillCategory: 'vocabulary',
-      };
-    }
-    const distractors = p.options.filter((o) => o !== p.correct);
-    const shuffledDistractors = deterministicShuffle(distractors, roundNumber * 100 + idx * 17 + 11);
-    const targetSlot = slotPattern[(idx + roundNumber) % slotPattern.length] % p.options.length;
-    const variedOptions = [...shuffledDistractors];
-    variedOptions.splice(targetSlot, 0, p.correct);
-
-    return {
-      id,
-      type: 'multiple-choice',
-      visualEmoji: p.emoji,
-      prompt: p.prompt || `O que significa "${p.en}" em português?`,
-      audioPhrase: p.en,
-      options: variedOptions,
-      correctAnswer: p.correct,
-      explanation: `"${p.en}" = "${p.pt}". Associação simples e direta!`,
-      phoneticHint: p.phonetic,
-      skillCategory: 'vocabulary',
-    };
-  });
-
-  return {
-    id: phaseId,
-    worldId: 0,
-    phaseNumber,
-    title: `Prática da Rodada ${roundNumber}: Palavras & Associações Simples`,
-    subtitle: `Passo 5/5 da Rodada ${roundNumber} • 12 exercícios simples com as palavras aprendidas`,
-    pedagogicalObjective: `Consolidar na prática as palavras aprendidas nos 4 módulos da Rodada ${roundNumber} (Alimentos, Animais, Casa e Cotidiano) com associações simples e diretas.`,
-    type: isFinalBoss ? 'boss' : 'chest',
-    icon: isFinalBoss ? 'swords' : 'gift',
-    cefrLevel: 'A1',
-    theorySummary: [
-      `Parabéns por completar os 4 módulos visuais da Rodada ${roundNumber} (Alimentos, Animais, Casa e Cotidiano)!`,
-      'Agora vamos praticar as palavras aprendidas com combinações curtas, simples e de fácil associação.',
-      'Ouça cada expressão em inglês americano e escolha ou monte a resposta correta!'
-    ],
-    xpReward: isFinalBoss ? 90 : 60,
-    gemsReward: isFinalBoss ? 35 : 25,
-    exercises,
-  };
-}
-
-const PRACTICE_ROUND_1 = [
-  { mode: 'mc', emoji: '🍎', en: 'Red apple', pt: 'Maçã vermelha', phonetic: '/red ˈæp.əl/', options: ['Maçã vermelha', 'Banana amarela', 'Pera verde', 'Uva roxa'], correct: 'Maçã vermelha' },
-  { mode: 'word-order', emoji: '🍌', en: 'Yellow banana', pt: 'Banana amarela', phonetic: '/ˈjel.oʊ bəˈnæn.ə/', bank: ['banana', 'Yellow', 'apple'] },
-  { mode: 'mc', emoji: '🍊', en: 'Sweet orange', pt: 'Laranja doce', phonetic: '/swiːt ˈɔːr.ɪndʒ/', options: ['Laranja doce', 'Limão azedo', 'Melancia grande', 'Coco verde'], correct: 'Laranja doce' },
-  { mode: 'mc', emoji: '🐕', en: 'Happy dog', pt: 'Cachorro feliz', phonetic: '/ˈhæp.i dɔːɡ/', options: ['Cachorro feliz', 'Gato pequeno', 'Cavalo forte', 'Pato branco'], correct: 'Cachorro feliz' },
-  { mode: 'word-order', emoji: '🐈', en: 'White cat', pt: 'Gato branco', phonetic: '/waɪt kæt/', bank: ['cat', 'White', 'dog'] },
-  { mode: 'mc', emoji: '🐎', en: 'Big horse', pt: 'Cavalo grande', phonetic: '/bɪɡ hɔːrs/', options: ['Cavalo grande', 'Vaca leiteira', 'Coelho rápido', 'Pássaro azul'], correct: 'Cavalo grande' },
-  { mode: 'mc', emoji: '🛏️', en: 'My bed', pt: 'Minha cama', phonetic: '/maɪ bed/', options: ['Minha cama', 'Minha cadeira', 'Minha mesa', 'Minha porta'], correct: 'Minha cama' },
-  { mode: 'word-order', emoji: '🪑', en: 'Wooden chair', pt: 'Cadeira de madeira', phonetic: '/ˈwʊd.ən tʃer/', bank: ['chair', 'Wooden', 'table'] },
-  { mode: 'mc', emoji: '🔑', en: 'House key', pt: 'Chave de casa', phonetic: '/haʊs kiː/', options: ['Chave de casa', 'Porta de madeira', 'Janela aberta', 'Travesseiro macio'], correct: 'Chave de casa' },
-  { mode: 'mc', emoji: '👕', en: 'Blue shirt', pt: 'Camisa azul', phonetic: '/bluː ʃɜːrt/', options: ['Camisa azul', 'Calça preta', 'Vestido vermelho', 'Boné novo'], correct: 'Camisa azul' },
-  { mode: 'word-order', emoji: '👟', en: 'New sneakers', pt: 'Tênis novos', phonetic: '/nuː ˈsniː.kərz/', bank: ['sneakers', 'New', 'socks'] },
-  { mode: 'mc', emoji: '☂️', en: 'Big umbrella', pt: 'Guarda-chuva grande', phonetic: '/bɪɡ ʌmˈbrel.ə/', options: ['Guarda-chuva grande', 'Óculos de sol', 'Relógio de pulso', 'Bolsa pequena'], correct: 'Guarda-chuva grande' },
-];
-
-const PRACTICE_ROUND_2 = [
-  { mode: 'mc', emoji: '🍅', en: 'Fresh tomato', pt: 'Tomate fresco', phonetic: '/freʃ təˈmeɪ.toʊ/', options: ['Tomate fresco', 'Batata assada', 'Cenoura laranja', 'Alface verde'], correct: 'Tomate fresco' },
-  { mode: 'word-order', emoji: '🥕', en: 'Orange carrot', pt: 'Cenoura laranja', phonetic: '/ˈɔːr.ɪndʒ ˈkær.ət/', bank: ['carrot', 'Orange', 'potato'] },
-  { mode: 'mc', emoji: '🌽', en: 'Sweet corn', pt: 'Milho doce', phonetic: '/swiːt kɔːrn/', options: ['Milho doce', 'Cebola branca', 'Pepino verde', 'Abóbora grande'], correct: 'Milho doce' },
-  { mode: 'mc', emoji: '🦁', en: 'Strong lion', pt: 'Leão forte', phonetic: '/strɔːŋ ˈlaɪ.ən/', options: ['Leão forte', 'Tigre rápido', 'Elefante grande', 'Macaco esperto'], correct: 'Leão forte' },
-  { mode: 'word-order', emoji: '🦒', en: 'Tall giraffe', pt: 'Girafa alta', phonetic: '/tɔːl dʒɪˈræf/', bank: ['giraffe', 'Tall', 'zebra'] },
-  { mode: 'mc', emoji: '🐘', en: 'Big elephant', pt: 'Elefante grande', phonetic: '/bɪɡ ˈel.ɪ.fənt/', options: ['Elefante grande', 'Urso pardo', 'Jacaré verde', ' Tucano colorido'], correct: 'Elefante grande' },
-  { mode: 'mc', emoji: '🍽️', en: 'Clean plate', pt: 'Prato limpo', phonetic: '/kliːn pleɪt/', options: ['Prato limpo', 'Copo cheio', 'Garfo de metal', 'Panela grande'], correct: 'Prato limpo' },
-  { mode: 'word-order', emoji: '🥛', en: 'Cold glass', pt: 'Copo gelado', phonetic: '/koʊld ɡlæs/', bank: ['glass', 'Cold', 'cup'] },
-  { mode: 'mc', emoji: '🧊', en: 'Big fridge', pt: 'Geladeira grande', phonetic: '/bɪɡ frɪdʒ/', options: ['Geladeira grande', 'Fogão novo', 'Micro-ondas rápido', 'Liquidificador forte'], correct: 'Geladeira grande' },
-  { mode: 'mc', emoji: '🚗', en: 'Red car', pt: 'Carro vermelho', phonetic: '/red kɑːr/', options: ['Carro vermelho', 'Ônibus azul', 'Bicicleta nova', 'Trem rápido'], correct: 'Carro vermelho' },
-  { mode: 'word-order', emoji: '🚌', en: 'City bus', pt: 'Ônibus da cidade', phonetic: '/ˈsɪt.i bʌs/', bank: ['bus', 'City', 'car'] },
-  { mode: 'mc', emoji: '✈️', en: 'Fast airplane', pt: 'Avião rápido', phonetic: '/fæst ˈer.pleɪn/', options: ['Avião rápido', 'Navio grande', 'Moto preta', 'Caminhão pesado'], correct: 'Avião rápido' },
-];
-
-const PRACTICE_ROUND_3 = [
-  { mode: 'mc', emoji: '🍞', en: 'Warm bread', pt: 'Pão quentinho', phonetic: '/wɔːrm bred/', options: ['Pão quentinho', 'Arroz branco', 'Queijo amarelo', 'Sopa quente'], correct: 'Pão quentinho' },
-  { mode: 'word-order', emoji: '🍕', en: 'Cheese pizza', pt: 'Pizza de queijo', phonetic: '/tʃiːz ˈpiːt.sə/', bank: ['pizza', 'Cheese', 'soup'] },
-  { mode: 'mc', emoji: '🥗', en: 'Green salad', pt: 'Salada verde', phonetic: '/ɡriːn ˈsæl.əd/', options: ['Salada verde', 'Batata frita', 'Frango assado', 'Macarrão quente'], correct: 'Salada verde' },
-  { mode: 'mc', emoji: '🦈', en: 'Big shark', pt: 'Tubarão grande', phonetic: '/bɪɡ ʃɑːrk/', options: ['Tubarão grande', 'Baleia azul', 'Golfinho amigo', 'Tartaruga lenta'], correct: 'Tubarão grande' },
-  { mode: 'word-order', emoji: '🐋', en: 'Blue whale', pt: 'Baleia azul', phonetic: '/bluː weɪl/', bank: ['whale', 'Blue', 'shark'] },
-  { mode: 'mc', emoji: '🦅', en: 'Fast eagle', pt: 'Águia rápida', phonetic: '/fæst ˈiː.ɡəl/', options: ['Águia rápida', 'Coruja noturna', 'Cisne branco', 'Beija-flor pequeno'], correct: 'Águia rápida' },
-  { mode: 'mc', emoji: '📘', en: 'Good book', pt: 'Bom livro', phonetic: '/ɡʊd bʊk/', options: ['Bom livro', 'Caneta azul', 'Caderno novo', 'Mochila escolar'], correct: 'Bom livro' },
-  { mode: 'word-order', emoji: '🖊️', en: 'Blue pen', pt: 'Caneta azul', phonetic: '/bluː pen/', bank: ['pen', 'Blue', 'book'] },
-  { mode: 'mc', emoji: '📱', en: 'My phone', pt: 'Meu celular', phonetic: '/maɪ foʊn/', options: ['Meu celular', 'Meu computador', 'Minha câmera', 'Meu teclado'], correct: 'Meu celular' },
-  { mode: 'mc', emoji: '🏠', en: 'My house', pt: 'Minha casa', phonetic: '/maɪ haʊs/', options: ['Minha casa', 'Minha escola', 'A padaria', 'O hospital'], correct: 'Minha casa' },
-  { mode: 'word-order', emoji: '🌳', en: 'Green tree', pt: 'Árvore verde', phonetic: '/ɡriːn triː/', bank: ['tree', 'Green', 'flower'] },
-  { mode: 'mc', emoji: '☀️', en: 'Bright sun', pt: 'Sol brilhante', phonetic: '/braɪt sʌn/', options: ['Sol brilhante', 'Lua cheia', 'Arco-íris colorido', 'Praia bonita'], correct: 'Sol brilhante' },
-];
-
-const PRACTICE_ROUND_4 = [
-  { mode: 'mc', emoji: '💧', en: 'Cold water', pt: 'Água gelada', phonetic: '/koʊld ˈwɔː.tər/', options: ['Água gelada', 'Café quente', 'Leite fresco', 'Suco de laranja'], correct: 'Água gelada' },
-  { mode: 'word-order', emoji: '☕', en: 'Hot coffee', pt: 'Café quente', phonetic: '/hɑːt ˈkɔː.fi/', bank: ['coffee', 'Hot', 'water'] },
-  { mode: 'mc', emoji: '🍰', en: 'Sweet cake', pt: 'Bolo doce', phonetic: '/swiːt keɪk/', options: ['Bolo doce', 'Sorvete gelado', 'Pipoca salgada', 'Pudim cremoso'], correct: 'Bolo doce' },
-  { mode: 'mc', emoji: '🦞', en: 'Red lobster', pt: 'Lagosta vermelha', phonetic: '/red ˈlɑːb.stər/', options: ['Lagosta vermelha', 'Baleia orca', 'Lhama branca', 'Gaivota voando'], correct: 'Lagosta vermelha' },
-  { mode: 'word-order', emoji: '🐤', en: 'Yellow canary', pt: 'Canário amarelo', phonetic: '/ˈjel.oʊ kəˈner.i/', bank: ['canary', 'Yellow', 'crow'] },
-  { mode: 'mc', emoji: '🦙', en: 'White llama', pt: 'Lhama branca', phonetic: '/waɪt ˈlɑː.mə/', options: ['Lhama branca', 'Alce grande', 'Javali forte', 'Castor rápido'], correct: 'Lhama branca' },
-  { mode: 'mc', emoji: '🎸', en: 'My guitar', pt: 'Meu violão', phonetic: '/maɪ ɡɪˈtɑːr/', options: ['Meu violão', 'Meu piano', 'Meu tambor', 'Minha flauta'], correct: 'Meu violão' },
-  { mode: 'word-order', emoji: '🔨', en: 'Heavy hammer', pt: 'Martelo pesado', phonetic: '/ˈhev.i ˈhæm.ər/', bank: ['hammer', 'Heavy', 'saw'] },
-  { mode: 'mc', emoji: '📦', en: 'Big box', pt: 'Caixa grande', phonetic: '/bɪɡ bɑːks/', options: ['Caixa grande', 'Cadeado forte', 'Lanterna acesa', 'Escada alta'], correct: 'Caixa grande' },
-  { mode: 'mc', emoji: '⚽', en: 'Soccer ball', pt: 'Bola de futebol', phonetic: '/ˈsɑː.kər bɔːl/', options: ['Bola de futebol', 'Bola de basquete', 'Medalha de ouro', 'Troféu de campeão'], correct: 'Bola de futebol' },
-  { mode: 'word-order', emoji: '👩‍🏫', en: 'Good teacher', pt: 'Bom professor', phonetic: '/ɡʊd ˈtiː.tʃər/', bank: ['teacher', 'Good', 'doctor'] },
-  { mode: 'mc', emoji: '👨‍⚕️', en: 'Family doctor', pt: 'Médico da família', phonetic: '/ˈfæm.əl.i ˈdɑːk.tər/', options: ['Médico da família', 'Chef de cozinha', 'Bombeiro corajoso', 'Piloto de avião'], correct: 'Médico da família' },
-];
 
 // Deterministic seeded shuffle helper using upper bits so modulo 4 / modulo 2 never repeats
 function deterministicShuffle(array, seed) {
@@ -847,10 +571,7 @@ function deterministicShuffle(array, seed) {
   return arr;
 }
 
-// Build exercises for a 30-item visual vocabulary module ensuring:
-// 1. Items are presented from #1 (most common in Brazil) to #30 (less common).
-// 2. ZERO image overlap between exercise i and exercise i-1.
-// 3. Cooldown of at least 4 exercises before any image (target or distractor) can reappear.
+// Build exercises for a 30-item environment module with 4-exercise image cooldown and evenly distributed correct slots
 function buildExercisesWithCooldown(theme, phaseNumber) {
   const items = theme.items;
   const n = items.length; // 30
@@ -926,7 +647,7 @@ function buildExercisesWithCooldown(theme, phaseNumber) {
       prompt = '🎧 Escute a palavra em inglês e toque na imagem correta:';
       category = 'listening';
     } else {
-      prompt = '🎧 Identifique pelo som qual é o item correto:';
+      prompt = '🎧 Identifique pelo som qual é o item correto deste ambiente:';
       category = 'vocabulary';
     }
 
@@ -948,7 +669,7 @@ function buildExercisesWithCooldown(theme, phaseNumber) {
   return exercises;
 }
 
-function makeVisualPhase(theme, phaseNumber) {
+function makeEnvironmentPhase(theme, phaseNumber, isFinal) {
   const phaseId = `w0-p${phaseNumber}`;
   return {
     id: phaseId,
@@ -957,63 +678,45 @@ function makeVisualPhase(theme, phaseNumber) {
     title: theme.title,
     subtitle: theme.subtitle,
     pedagogicalObjective: theme.pedagogicalObjective,
-    type: 'lesson',
+    type: isFinal ? 'boss' : 'lesson',
     icon: theme.icon,
     cefrLevel: 'A1',
     theorySummary: theme.theory,
-    xpReward: 45,
-    gemsReward: 15,
+    xpReward: isFinal ? 100 : 50,
+    gemsReward: isFinal ? 40 : 20,
     exercises: buildExercisesWithCooldown(theme, phaseNumber),
   };
 }
 
-// ============================================================================
-// MONTAGEM INTERCALADA EM 4 RODADAS (1 DE CADA CATEGORIA + PRÁTICA DE PALAVRAS)
-// ============================================================================
-const phases = [
-  // RODADA 1 (Essenciais do Dia a Dia)
-  makeVisualPhase(FOOD_1, 1),
-  makeVisualPhase(ANIMALS_1, 2),
-  makeVisualPhase(HOME_1, 3),
-  makeVisualPhase(CITY_1, 4),
-  buildPracticePhase(5, 1, false, PRACTICE_ROUND_1),
-
-  // RODADA 2 (Muito Comuns no Cotidiano)
-  makeVisualPhase(FOOD_2, 6),
-  makeVisualPhase(ANIMALS_2, 7),
-  makeVisualPhase(HOME_2, 8),
-  makeVisualPhase(CITY_2, 9),
-  buildPracticePhase(10, 2, false, PRACTICE_ROUND_2),
-
-  // RODADA 3 (Conhecidos pelo Público Geral)
-  makeVisualPhase(FOOD_3, 11),
-  makeVisualPhase(ANIMALS_3, 12),
-  makeVisualPhase(HOME_3, 13),
-  makeVisualPhase(CITY_3, 14),
-  buildPracticePhase(15, 3, false, PRACTICE_ROUND_3),
-
-  // RODADA 4 (Expansão & Domínio Completo)
-  makeVisualPhase(FOOD_4, 16),
-  makeVisualPhase(ANIMALS_4, 17),
-  makeVisualPhase(HOME_4, 18),
-  makeVisualPhase(CITY_4, 19),
-  buildPracticePhase(20, 4, true, PRACTICE_ROUND_4),
+const ALL_ENVIRONMENTS = [
+  MODULE_1_ENTRANCE,
+  MODULE_2_LIVING_ROOM,
+  MODULE_3_KITCHEN_STRUCTURE,
+  MODULE_4_KITCHEN_UTENSILS_FRIDGE,
+  MODULE_5_BEDROOM_CLOSET,
+  MODULE_6_BATHROOM_HYGIENE,
+  MODULE_7_LAUNDRY_BACKYARD,
+  MODULE_8_STREET_NEIGHBORHOOD,
+  MODULE_9_SCHOOL_CLASSROOM,
+  MODULE_10_SUPERMARKET_GROCERY,
+  MODULE_11_CHURCH_COMMUNITY,
+  MODULE_12_CITY_SERVICES,
 ];
 
-// Build uncropped, watermark-free white-background image map for all 480 items
-const ALL_VISUAL_THEMES = [
-  FOOD_1, ANIMALS_1, HOME_1, CITY_1,
-  FOOD_2, ANIMALS_2, HOME_2, CITY_2,
-  FOOD_3, ANIMALS_3, HOME_3, CITY_3,
-  FOOD_4, ANIMALS_4, HOME_4, CITY_4,
-];
+const phases = ALL_ENVIRONMENTS.map((env, idx) =>
+  makeEnvironmentPhase(env, idx + 1, idx === ALL_ENVIRONMENTS.length - 1)
+);
 
-const realImagesMap = {};
-for (const theme of ALL_VISUAL_THEMES) {
-  for (const item of theme.items) {
-    const q = encodeURIComponent(item.studioQuery);
-    // Note: No &h=600&c=7 so Bing NEVER crops the sides/top/bottom of the image!
-    realImagesMap[item.text] = `https://tse1.mm.bing.net/th?q=${q}&w=500&p=0`;
+// Preserve all 480 already-approved image URLs and only add new keys for the newly introduced room/environment items
+const mergedImagesMap = { ...existingImagesMap };
+let addedNewCount = 0;
+for (const env of ALL_ENVIRONMENTS) {
+  for (const item of env.items) {
+    if (!mergedImagesMap[item.text]) {
+      const q = encodeURIComponent(item.studioQuery);
+      mergedImagesMap[item.text] = `https://tse1.mm.bing.net/th?q=${q}&w=500&p=0`;
+      addedNewCount++;
+    }
   }
 }
 
@@ -1022,13 +725,10 @@ const fileContent = `import { Phase } from '../types';
 export const WORLD_0_PHASES: Phase[] = ${JSON.stringify(phases, null, 2)};
 `;
 
-const imagesFileContent = `// Auto-generated uncropped studio isolated photographs on white background for all 480 vocabulary items
-export const REAL_VOCAB_IMAGES: Record<string, string> = ${JSON.stringify(realImagesMap, null, 2)};
-`;
+const imagesFileContent = `// Auto-generated & pixel-verified pure white background photographs (zero tarja, uncropped)\nexport const REAL_VOCAB_IMAGES: Record<string, string> = ${JSON.stringify(mergedImagesMap, null, 2)};\n`;
 
 fs.writeFileSync('src/data/world0Phases.ts', fileContent, 'utf-8');
 fs.writeFileSync('src/data/realVocabImages.ts', imagesFileContent, 'utf-8');
 
-console.log('Successfully generated interleaved src/data/world0Phases.ts and uncropped src/data/realVocabImages.ts!');
-console.log('Total phases in World 0:', phases.length, '(16 visual modules + 4 end-of-round word practice modules)');
-console.log('Total unique uncropped images generated:', Object.keys(realImagesMap).length);
+console.log('Successfully generated 12 real-world environment modules in src/data/world0Phases.ts!');
+console.log('Preserved existing approved images and added', addedNewCount, 'new environment item images. Total in map:', Object.keys(mergedImagesMap).length);

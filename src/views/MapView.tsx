@@ -32,26 +32,67 @@ export const MapView: React.FC<MapViewProps> = ({
   onOpenAiStudio,
   onOpenShop,
 }) => {
-  // Check if a phase is unlocked (Versão de teste: todas as fases abertas para livre navegação e teste)
-  const isPhaseUnlocked = (_phase: Phase): boolean => {
-    return true;
+  const [unlockAllForTest, setUnlockAllForTest] = React.useState(true);
+
+  // Regra de progressão escolar: o aluno só avança para o próximo cômodo/ambiente se passar na prova com nota >= 70
+  // (com botão rápido no topo para alternar entre todas abertas para teste ou progressão bloqueada por prova)
+  const isPhaseUnlocked = (phase: Phase): boolean => {
+    if (unlockAllForTest) return true;
+    if ((phase.worldId === 0 || phase.worldId === 1) && phase.phaseNumber === 1) return true;
+    if (user.completedPhaseIds.includes(phase.id)) return true;
+
+    const currentWorld = WORLDS_DATA.find((w) => w.id === phase.worldId);
+    if (!currentWorld) return false;
+
+    const phaseIndex = currentWorld.phases.findIndex((p) => p.id === phase.id);
+    if (phaseIndex > 0) {
+      const prevPhase = currentWorld.phases[phaseIndex - 1];
+      return user.completedPhaseIds.includes(prevPhase.id);
+    }
+
+    if (phase.worldId > 0 && phaseIndex === 0) {
+      const prevWorld = WORLDS_DATA.find((w) => w.id === phase.worldId - 1);
+      if (prevWorld && prevWorld.phases.length > 0) {
+        const lastPhaseOfPrev = prevWorld.phases[prevWorld.phases.length - 1];
+        return user.completedPhaseIds.includes(lastPhaseOfPrev.id);
+      }
+    }
+
+    return false;
   };
 
   return (
     <div className="space-y-6 pb-16">
       {/* Clean & Compact Welcome Header */}
-      <div className="rounded-2xl bg-white border border-slate-200/90 px-4 py-3.5 shadow-2xs flex items-center justify-between gap-3">
+      <div className="rounded-2xl bg-white border border-slate-200/90 px-4 py-3.5 shadow-2xs flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-base sm:text-lg font-black text-slate-900 tracking-tight">
-            Olá, {user.name}! Escolha sua lição:
+            Olá, {user.name}! Explore cada ambiente:
           </h1>
           <p className="text-xs text-slate-500 font-medium">
-            Toque em uma fase desbloqueada para começar a praticar.
+            Nota mínima de <strong>70 pontos</strong> em cada prova para aprovar no cômodo/ambiente.
           </p>
         </div>
-        <span className="px-2.5 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200/80 rounded-xl text-xs font-black shrink-0">
-          Nível {user.cefrLevel}
-        </span>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              sfx.playTap();
+              setUnlockAllForTest((prev) => !prev);
+            }}
+            className={`px-2.5 py-1 rounded-xl text-[11px] font-black border transition-all cursor-pointer ${
+              unlockAllForTest
+                ? 'bg-amber-50 text-amber-800 border-amber-300'
+                : 'bg-emerald-50 text-emerald-800 border-emerald-300'
+            }`}
+            title="Alternar modo de teste (todas abertas vs bloqueio escolar >= 70 pts)"
+          >
+            {unlockAllForTest ? '🔓 Teste: Fases Abertas' : '🎓 Modo Prova (≥ 70 pts)'}
+          </button>
+          <span className="px-2.5 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200/80 rounded-xl text-xs font-black shrink-0">
+            Nível {user.cefrLevel}
+          </span>
+        </div>
       </div>
 
       {/* World Map Progression */}
@@ -101,21 +142,17 @@ export const MapView: React.FC<MapViewProps> = ({
                         ? '-translate-x-12 sm:-translate-x-16'
                         : 'translate-x-12 sm:translate-x-16';
 
-                    const isRoundStart = world.id === 0 && (phase.phaseNumber - 1) % 5 === 0;
-                    const roundNum = Math.floor((phase.phaseNumber - 1) / 5) + 1;
-                    const roundLabels: Record<number, string> = {
-                      1: 'Rodada 1/4 • Essenciais do Dia a Dia (Alimentos → Animais → Casa → Roupas → Prática)',
-                      2: 'Rodada 2/4 • Muito Comuns no Cotidiano (Feira → Zoológico → Cozinha → Transportes → Prática)',
-                      3: 'Rodada 3/4 • Conhecidos pelo Público Geral (Refeições → Marinhos/Aves → Escola → Cidade → Prática)',
-                      4: 'Rodada 4/4 • Expansão & Domínio (Doces/Bebidas → Exóticos → Ferramentas → Corpo/Natureza → Prática)',
+                    const sectionBanner: Record<number, string> = {
+                      1: '🏠 PARTE 1 • EXPLORANDO A RESIDÊNCIA COMPLETA (Cômodos 1 a 7: Da Calçada e Porta de Entrada até a Área de Serviço ao Fundo)',
+                      8: '🌆 PARTE 2 • EXPLORANDO O COTIDIANO AO REDOR (Ambientes 8 a 12: Rua, Escola, Supermercado, Igreja e Cidade)',
                     };
 
                     return (
                       <React.Fragment key={phase.id}>
-                        {isRoundStart && (
-                          <div className="w-full py-2 px-3.5 rounded-2xl bg-amber-50 border-2 border-amber-200/90 text-center shadow-2xs">
+                        {world.id === 0 && sectionBanner[phase.phaseNumber] && (
+                          <div className="w-full py-2.5 px-3.5 rounded-2xl bg-amber-50 border-2 border-amber-200/90 text-center shadow-2xs">
                             <span className="text-[11px] sm:text-xs font-black text-amber-900 tracking-tight block">
-                              🔄 {roundLabels[roundNum]}
+                              {sectionBanner[phase.phaseNumber]}
                             </span>
                           </div>
                         )}
@@ -126,12 +163,7 @@ export const MapView: React.FC<MapViewProps> = ({
                           <div className="relative group flex flex-col items-center">
                             {phase.type === 'boss' && (
                               <div className="mb-2 px-3 py-0.5 bg-gradient-to-r from-rose-600 to-amber-500 text-white text-[10px] font-black tracking-wider uppercase rounded-full shadow-md flex items-center gap-1">
-                                <span>{world.id === 0 ? `🎯 PRÁTICA FINAL • RODADA 4` : '👑 BOSS FINAL'}</span>
-                              </div>
-                            )}
-                            {phase.type === 'chest' && (
-                              <div className="mb-2 px-2.5 py-0.5 bg-amber-400 text-amber-950 text-[10px] font-black tracking-wider uppercase rounded-full shadow-xs flex items-center gap-1">
-                                <span>{world.id === 0 ? `🎯 PRÁTICA • RODADA ${phase.phaseNumber / 5}` : '🎁 BAÚ BÔNUS'}</span>
+                                <span>{world.id === 0 ? `🎓 PROVA FINAL DO MÓDULO 0` : '👑 BOSS FINAL'}</span>
                               </div>
                             )}
                           <button

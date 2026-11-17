@@ -11,12 +11,12 @@ import { WORLD_7_PHASES } from './world7Phases';
 export const WORLDS_DATA: World[] = [
   {
     id: 0,
-    title: 'Módulo 0: Vocabulário Visual & Fundamentos',
+    title: 'Módulo 0: Explorando Tudo ao Seu Redor (Casa & Cotidiano)',
     themeColor: 'amber',
     gradientFrom: 'from-amber-500',
     gradientTo: 'to-orange-500',
-    description: 'Aprenda vocabulário essencial associando imagens vivas, pronúncia nativa e tradução imediata.',
-    levelBadge: 'Starter • Imagens & Vocabulário',
+    description: 'Explore uma residência inteira cômodo por cômodo (da calçada à área de serviço) e os ambientes do dia a dia (rua, escola, supermercado, igreja e cidade). Nota mínima de 70 pontos por ambiente!',
+    levelBadge: 'Imersão Visual • Nota Mínima 70 pts',
     phases: WORLD_0_PHASES,
   },
   {

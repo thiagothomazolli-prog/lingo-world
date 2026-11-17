@@ -162,6 +162,15 @@ function randomizeExerciseQueue(exercises: Exercise[]): Exercise[] {
   });
 }
 
+interface WrongExamItem {
+  questionNumber: number;
+  word: string;
+  translationPt: string;
+  selectedWrong?: string;
+  emoji?: string;
+  phoneticHint?: string;
+}
+
 interface PhaseModalProps {
   phase: Phase;
   user: UserProfile;
@@ -191,13 +200,14 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [spokenResult, setSpokenResult] = useState('');
   const [mistakesCount, setMistakesCount] = useState(0);
+  const [wrongExamItems, setWrongExamItems] = useState<WrongExamItem[]>([]);
   const [hasPlayedAudioOnce, setHasPlayedAudioOnce] = useState(false);
   const [showWrittenWord, setShowWrittenWord] = useState(false);
   const lastAutoSpokenIndexRef = useRef<number>(-1);
 
   const currentExercise: Exercise | undefined = exerciseQueue[currentExerciseIndex];
-  const isReviewStage = currentExerciseIndex >= phase.exercises.length;
-  const progressPercent = Math.min(100, (masteredIds.length / Math.max(1, phase.exercises.length)) * 100);
+  const isReviewStage = false;
+  const progressPercent = Math.min(100, ((currentExerciseIndex + (hasAnswered ? 1 : 0)) / Math.max(1, exerciseQueue.length)) * 100);
   const exerciseVoiceGender: 'male' | 'female' = currentExercise
     ? getExerciseVoiceGender(currentExercise.id, currentExerciseIndex)
     : 'female';
@@ -395,21 +405,35 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
     if (!correct) {
       sfx.playIncorrect();
       setMistakesCount((prev) => prev + 1);
-      // Re-enfileira o exercício errado para o final do módulo (com cartões reembaralhados) até acertar 100%
-      setExerciseQueue((prev) => {
-        const { exercise: reshuffledEx } = randomizeSingleExercise(currentExercise);
-        return [...prev, reshuffledEx];
-      });
+
+      const targetVisual = currentExercise.visualOptions?.find(
+        (v) => v.text.trim().toLowerCase() === currentExercise.correctAnswer.trim().toLowerCase()
+      );
+      const wrongVisual = currentExercise.visualOptions?.find(
+        (v) => v.text.trim().toLowerCase() === selectedOption?.trim().toLowerCase()
+      );
+
+      setWrongExamItems((prev) => [
+        ...prev,
+        {
+          questionNumber: currentExerciseIndex + 1,
+          word: targetVisual?.label || currentExercise.correctAnswer,
+          translationPt: targetVisual?.translationPt || currentExercise.contextSentencePt || '',
+          selectedWrong: wrongVisual
+            ? `${wrongVisual.label || wrongVisual.text}${wrongVisual.translationPt ? ` (${wrongVisual.translationPt})` : ''}`
+            : selectedOption || selectedWords.join(' ') || fillBlankInput || 'Não respondido',
+          emoji: targetVisual?.emoji || currentExercise.visualEmoji,
+          phoneticHint: currentExercise.phoneticHint,
+        },
+      ]);
+
       if (hasVisualCards) {
-        const wrongVisual = currentExercise.visualOptions?.find(
-          (v) => v.text.trim().toLowerCase() === selectedOption?.trim().toLowerCase()
-        );
         if (wrongVisual) {
           setFeedbackMessage(
-            `Você selecionou ${wrongVisual.label || wrongVisual.text} (${wrongVisual.translationPt || ''}). Você poderá corrigir esta palavra no final do exercício!`
+            `Você selecionou ${wrongVisual.label || wrongVisual.text} (${wrongVisual.translationPt || ''}).`
           );
         } else {
-          setFeedbackMessage('Não foi dessa vez. Você revisará este item no final do exercício!');
+          setFeedbackMessage('Não foi dessa vez.');
         }
       } else {
         setFeedbackMessage(cleanExplanation);
@@ -424,6 +448,37 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
         } else if (currentExercise.skillCategory === 'grammar') {
           onRecordMissionActivity('grammar');
         }
+      }
+    }
+  };
+
+  const handleRestartExam = () => {
+    sfx.playTap();
+    stopSpeaking();
+    const freshQueue = randomizeExerciseQueue(phase.exercises);
+    setExerciseQueue(freshQueue);
+    setMasteredIds([]);
+    setMistakesCount(0);
+    setWrongExamItems([]);
+    setCurrentExerciseIndex(0);
+    setHasPlayedAudioOnce(false);
+    setShowWrittenWord(false);
+    setSelectedOption(null);
+    setSelectedWords([]);
+    setFillBlankInput('');
+    setHasAnswered(false);
+    setIsCorrect(false);
+    setFeedbackMessage('');
+    setSpokenResult('');
+    setStep('exercise');
+
+    const firstEx = freshQueue[0];
+    if (firstEx && user.autoSpeak !== false) {
+      const phrase = getSpokenPhraseForExercise(firstEx);
+      const gender = getExerciseVoiceGender(firstEx.id, 0);
+      if (phrase) {
+        lastAutoSpokenIndexRef.current = 0;
+        speakText(phrase, 'en-US', user.speechSpeed, gender);
       }
     }
   };
@@ -454,16 +509,23 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
         }
       }
     } else {
+      const totalQ = Math.max(1, exerciseQueue.length);
+      const correctQ = Math.max(0, totalQ - mistakesCount);
+      const examPoints = Math.round((correctQ / totalQ) * 100);
       setStep('complete');
-      sfx.playSuccessFanfare();
-      confetti({
-        particleCount: 90,
-        spread: 75,
-        origin: { y: 0.6 },
-      });
 
-      const stars = mistakesCount === 0 ? 3 : mistakesCount <= 2 ? 2 : 1;
-      onCompletePhase(phase.id, phase.xpReward, phase.gemsReward, stars);
+      if (examPoints >= 70) {
+        sfx.playSuccessFanfare();
+        confetti({
+          particleCount: 90,
+          spread: 75,
+          origin: { y: 0.6 },
+        });
+        const stars = examPoints >= 95 ? 3 : examPoints >= 80 ? 2 : 1;
+        onCompletePhase(phase.id, phase.xpReward, phase.gemsReward, stars);
+      } else {
+        sfx.playIncorrect();
+      }
     }
   };
 
@@ -1130,57 +1192,184 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
         </main>
       )}
 
-      {/* 🏆 Step 3: Completion Celebration */}
-      {step === 'complete' && (
-        <main className="flex-1 overflow-y-auto px-4 py-8 max-w-xl w-full mx-auto flex flex-col items-center justify-center text-center space-y-6">
-          <MascotLingo mood="cheering" size="lg" message="Incrível! Você conquistou esta fase!" />
+      {/* 🏆 Step 3: Boletim da Prova Escolar (Nota mínima 70 pontos + Revisão dos Erros) */}
+      {step === 'complete' &&
+        (() => {
+          const totalQ = Math.max(1, exerciseQueue.length);
+          const correctQ = Math.max(0, totalQ - mistakesCount);
+          const examPoints = Math.round((correctQ / totalQ) * 100);
+          const isApproved = examPoints >= 70;
+          const starsEarned = isApproved ? (examPoints >= 95 ? 3 : examPoints >= 80 ? 2 : 1) : 0;
 
-          <div className="space-y-1">
-            <h2 className="text-3xl font-black text-slate-900 tracking-tight">Fase Concluída!</h2>
-            <p className="text-sm font-semibold text-slate-500">
-              Você avançou mais um passo na sua fluência global.
-            </p>
-          </div>
+          return (
+            <main className="flex-1 overflow-y-auto px-4 py-6 max-w-xl w-full mx-auto flex flex-col items-center text-center space-y-5">
+              <MascotLingo
+                mood={isApproved ? 'cheering' : 'thinking'}
+                size="md"
+                message={
+                  isApproved
+                    ? `Parabéns! Você tirou ${examPoints} pontos e foi aprovado neste ambiente!`
+                    : `Sua nota foi ${examPoints} pontos. Revise os itens abaixo e refaça a prova para alcançar pelo menos 70 pontos!`
+                }
+              />
 
-          {/* Stars */}
-          <div className="flex items-center justify-center gap-3">
-            {[1, 2, 3].map((starIdx) => {
-              const stars = mistakesCount === 0 ? 3 : mistakesCount <= 2 ? 2 : 1;
-              const earned = starIdx <= stars;
-              return (
-                <Star
-                  key={starIdx}
-                  className={`w-12 h-12 ${
-                    earned ? 'text-amber-400 fill-amber-400 drop-shadow-md' : 'text-slate-200 fill-slate-100'
-                  }`}
-                />
-              );
-            })}
-          </div>
+              {/* Cartão Principal do Boletim */}
+              <div
+                className={`w-full p-5 rounded-3xl border-2 shadow-sm space-y-3 ${
+                  isApproved
+                    ? 'bg-emerald-50/90 border-emerald-300'
+                    : 'bg-rose-50/90 border-rose-300'
+                }`}
+              >
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-white border border-slate-200 shadow-2xs">
+                  {isApproved ? (
+                    <span className="text-emerald-700">🎓 APROVADO NA PROVA (MÍNIMO: 70 PTS)</span>
+                  ) : (
+                    <span className="text-rose-700">📝 REPROVADO • MÍNIMO EXIGIDO: 70 PONTOS</span>
+                  )}
+                </div>
 
-          {/* Rewards */}
-          <div className="w-full flex items-center justify-center gap-6 py-4 bg-slate-50 rounded-3xl border-2 border-slate-200 max-w-xs mx-auto">
-            <div className="flex flex-col items-center">
-              <span className="text-2xl font-black text-indigo-600">+{phase.xpReward}</span>
-              <span className="text-[11px] font-bold text-slate-400 uppercase">XP Ganho</span>
-            </div>
-            <div className="h-8 w-px bg-slate-200" />
-            <div className="flex flex-col items-center">
-              <span className="text-2xl font-black text-sky-500">+{phase.gemsReward}</span>
-              <span className="text-[11px] font-bold text-slate-400 uppercase">Gemas</span>
-            </div>
-          </div>
+                <div className="flex items-baseline justify-center gap-2">
+                  <span
+                    className={`text-5xl font-black tracking-tight ${
+                      isApproved ? 'text-emerald-700' : 'text-rose-700'
+                    }`}
+                  >
+                    {examPoints}
+                  </span>
+                  <span className="text-lg font-extrabold text-slate-500">/ 100 pontos</span>
+                </div>
 
-          <div className="w-full pt-4">
-            <button
-              onClick={onClose}
-              className="w-full py-4 bg-emerald-500 hover:bg-emerald-600 border-b-4 border-b-emerald-700 active:border-b-0 active:translate-y-1 text-white font-black text-base uppercase tracking-wider rounded-2xl shadow-lg transition-transform cursor-pointer"
-            >
-              Continuar Jornada
-            </button>
-          </div>
-        </main>
-      )}
+                <p className="text-xs sm:text-sm font-bold text-slate-700">
+                  Você acertou <span className="font-black text-slate-900">{correctQ}</span> de{' '}
+                  <span className="font-black text-slate-900">{totalQ}</span> questões ({mistakesCount}{' '}
+                  {mistakesCount === 1 ? 'erro' : 'erros'}).
+                </p>
+
+                {isApproved ? (
+                  <div className="flex items-center justify-center gap-6 pt-2">
+                    <div className="flex items-center gap-1.5">
+                      {[1, 2, 3].map((starIdx) => (
+                        <Star
+                          key={starIdx}
+                          className={`w-7 h-7 ${
+                            starIdx <= starsEarned
+                              ? 'text-amber-400 fill-amber-400 drop-shadow-xs'
+                              : 'text-slate-300 fill-slate-200'
+                          }`}
+                        />
+                      ))}
+                    </div>
+                    <div className="h-6 w-px bg-emerald-200" />
+                    <span className="text-sm font-black text-indigo-700">+{phase.xpReward} XP</span>
+                    <span className="text-sm font-black text-sky-600">+{phase.gemsReward} Gemas</span>
+                  </div>
+                ) : (
+                  <p className="text-xs font-semibold text-rose-800 bg-white/80 p-2.5 rounded-2xl border border-rose-200">
+                    Para liberar o próximo cômodo/ambiente, você precisa atingir pelo menos <strong>70 pontos</strong>. Veja abaixo os exercícios que você errou e refaça toda a prova!
+                  </p>
+                )}
+              </div>
+
+              {/* Lista Detalhada dos Exercícios que o Aluno Errou */}
+              {wrongExamItems.length > 0 && (
+                <div className="w-full text-left space-y-2.5">
+                  <div className="flex items-center justify-between px-1">
+                    <h3 className="text-xs sm:text-sm font-black uppercase tracking-wider text-slate-700">
+                      📋 Exercícios que você errou ({wrongExamItems.length}):
+                    </h3>
+                    <span className="text-[11px] font-semibold text-slate-500">
+                      Toque no 🔊 para ouvir
+                    </span>
+                  </div>
+
+                  <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
+                    {wrongExamItems.map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="p-3 rounded-2xl bg-white border-2 border-slate-200 flex items-center justify-between gap-3 shadow-2xs"
+                      >
+                        <div className="flex items-center gap-3 min-w-0">
+                          <div className="w-16 h-16 rounded-xl bg-white border border-slate-100 shrink-0 overflow-hidden flex items-center justify-center">
+                            <VocabIllustration word={item.word} emoji={item.emoji} />
+                          </div>
+                          <div className="min-w-0">
+                            <span className="text-[10px] font-black uppercase text-rose-600 block">
+                              Questão #{item.questionNumber}
+                            </span>
+                            <span className="text-base font-black text-slate-900 block truncate">
+                              {item.word}
+                            </span>
+                            {item.translationPt && (
+                              <span className="text-xs font-bold text-emerald-700 block">
+                                {item.translationPt}
+                              </span>
+                            )}
+                            {item.selectedWrong && (
+                              <span className="text-[11px] font-medium text-slate-400 block truncate">
+                                Você marcou: {item.selectedWrong}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          onClick={() => speakText(item.word, 'en-US', user.speechSpeed, 'female')}
+                          className="w-10 h-10 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 cursor-pointer active:scale-95"
+                          title="Ouvir pronúncia correta"
+                        >
+                          <Volume2 className="w-5 h-5" />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Botões de Ação */}
+              <div className="w-full space-y-2.5 pt-2">
+                {!isApproved ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={handleRestartExam}
+                      className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 border-b-4 border-b-indigo-800 active:border-b-0 active:translate-y-1 text-white font-black text-sm sm:text-base uppercase tracking-wider rounded-2xl shadow-lg transition-all cursor-pointer"
+                    >
+                      🔄 Refazer Toda a Prova Agora
+                    </button>
+                    <button
+                      type="button"
+                      onClick={onClose}
+                      className="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs uppercase tracking-wider rounded-2xl transition-colors cursor-pointer"
+                    >
+                      Voltar ao Mapa
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      type="button"
+                      onClick={onClose}
+                      className="w-full py-4 bg-emerald-500 hover:bg-emerald-600 border-b-4 border-b-emerald-700 active:border-b-0 active:translate-y-1 text-white font-black text-sm sm:text-base uppercase tracking-wider rounded-2xl shadow-lg transition-all cursor-pointer"
+                    >
+                      Continuar para o Próximo Ambiente
+                    </button>
+                    {wrongExamItems.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={handleRestartExam}
+                        className="w-full py-3 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-extrabold text-xs uppercase tracking-wider rounded-2xl border border-indigo-200 transition-colors cursor-pointer"
+                      >
+                        🔄 Refazer Prova para Buscar Nota 100
+                      </button>
+                    )}
+                  </>
+                )}
+              </div>
+            </main>
+          );
+        })()}
 
       {/* 🟩 Bottom Action Bar (compacta nos exercícios visuais para não criar tarja alta tampando o card) */}
       {step === 'exercise' && (
