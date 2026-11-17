@@ -852,81 +852,116 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
             {/* 1. Interactive Visual Option Cards (quando visualOptions estiver presente) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
-              <div className="grid grid-cols-2 gap-3.5 pt-1">
-                {currentExercise.visualOptions.map((opt, i) => {
-                  const isSelected = selectedOption?.trim().toLowerCase() === opt.text.trim().toLowerCase();
-                  // Mostra o nome APENAS após confirmar, e SOMENTE no card que o usuário selecionou (se acertou, o que acertou; se errou, apenas o que errou)
-                  const shouldRevealLabel = hasAnswered && isSelected;
-
-                  let cardStyle = 'bg-white border-2 border-slate-200 border-b-4 hover:border-slate-300 text-slate-800 shadow-xs hover:shadow-sm';
-
-                  if (isSelected && !hasAnswered) {
-                    cardStyle = 'bg-white border-2 border-sky-500 border-b-4 border-b-sky-600 text-sky-950 shadow-md ring-2 ring-sky-300/60 scale-[1.02]';
-                  }
-
-                  if (hasAnswered) {
-                    if (isSelected && isCorrect) {
-                      cardStyle = 'bg-white border-2 border-emerald-500 border-b-4 border-b-emerald-600 text-emerald-950 shadow-md ring-2 ring-emerald-300/70 scale-[1.03]';
-                    } else if (isSelected && !isCorrect) {
-                      cardStyle = 'bg-white border-2 border-rose-400 border-b-4 border-b-rose-600 text-rose-950 shadow-md ring-2 ring-rose-300/60';
-                    } else {
-                      cardStyle = 'bg-white border-2 border-slate-200 border-b-4 text-slate-400 opacity-50';
-                    }
-                  }
+              hasAnswered ? (
+                /* Ao apertar Verificar: exibe a imagem selecionada em destaque centralizado com o termo em inglês e o significado em português logo abaixo, sem ser tampada por nenhuma tarja */
+                (() => {
+                  const selectedVisual =
+                    currentExercise.visualOptions.find(
+                      (opt) => opt.text.trim().toLowerCase() === selectedOption?.trim().toLowerCase()
+                    ) || currentExercise.visualOptions[0];
 
                   return (
-                    <div
-                      key={i}
-                      role="button"
-                      tabIndex={hasAnswered ? -1 : 0}
-                      onClick={() => {
-                        if (hasAnswered) return;
-                        sfx.playTap();
-                        setSelectedOption(opt.text);
-                      }}
-                      onKeyDown={(e) => {
-                        if (!hasAnswered && (e.key === 'Enter' || e.key === ' ')) {
-                          e.preventDefault();
-                          sfx.playTap();
-                          setSelectedOption(opt.text);
-                        }
-                      }}
-                      className={`relative p-2.5 rounded-3xl flex flex-col items-center justify-center gap-1 transition-all active:translate-y-0.5 cursor-pointer min-h-[168px] sm:min-h-[192px] ${cardStyle}`}
-                    >
-                      {/* Status indicator on answer (apenas no card selecionado) */}
-                      {hasAnswered && isSelected && isCorrect && (
-                        <CheckCircle2 className="w-5 h-5 text-emerald-600 absolute top-2.5 left-2.5 z-10" />
-                      )}
-                      {hasAnswered && isSelected && !isCorrect && (
-                        <AlertCircle className="w-5 h-5 text-rose-600 absolute top-2.5 left-2.5 z-10" />
-                      )}
+                    <div className="pt-1 pb-2 flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-200">
+                      <div
+                        className={`relative w-full max-w-[300px] sm:max-w-[340px] mx-auto p-5 rounded-3xl bg-white border-2 border-b-4 shadow-lg flex flex-col items-center justify-center gap-2.5 ${
+                          isCorrect
+                            ? 'border-emerald-500 border-b-emerald-600 ring-4 ring-emerald-200/70'
+                            : 'border-rose-400 border-b-rose-600 ring-4 ring-rose-200/60'
+                        }`}
+                      >
+                        {/* Selo discreto no topo do card em destaque */}
+                        <div
+                          className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider ${
+                            isCorrect
+                              ? 'bg-emerald-100 text-emerald-800'
+                              : 'bg-rose-100 text-rose-800'
+                          }`}
+                        >
+                          {isCorrect ? (
+                            <>
+                              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                              <span>Resposta Correta</span>
+                            </>
+                          ) : (
+                            <>
+                              <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
+                              <span>Item Selecionado</span>
+                            </>
+                          )}
+                        </div>
 
-                      {/* Ilustração vetorial rica / Imagem realista representativa do item */}
-                      <div className="w-full flex items-center justify-center my-0.5 transition-transform">
-                        <VocabIllustration word={opt.text} emoji={opt.emoji} />
-                      </div>
+                        {/* Imagem selecionada em destaque amplo */}
+                        <div className="w-full flex items-center justify-center py-1">
+                          <VocabIllustration word={selectedVisual.text} emoji={selectedVisual.emoji} />
+                        </div>
 
-                      {/* Nome em inglês e significado em português (letra menor logo abaixo, sem "="), revelados apenas ao confirmar */}
-                      {shouldRevealLabel && (
-                        <div className="flex flex-col items-center justify-center text-center mt-1 animate-in fade-in zoom-in-95 duration-200">
-                          <span className={`text-base sm:text-lg font-black tracking-tight leading-tight ${
-                            isCorrect ? 'text-emerald-950' : 'text-rose-950'
-                          }`}>
-                            {opt.label || opt.text}
+                        {/* Nome em inglês e significado em português (letra menor logo abaixo, sem "="), 100% visíveis no centro da tela */}
+                        <div className="flex flex-col items-center justify-center text-center pt-1 border-t border-slate-100 w-full">
+                          <span
+                            className={`text-2xl sm:text-3xl font-black tracking-tight leading-tight ${
+                              isCorrect ? 'text-emerald-950' : 'text-rose-950'
+                            }`}
+                          >
+                            {selectedVisual.label || selectedVisual.text}
                           </span>
-                          {opt.translationPt && (
-                            <span className={`text-xs sm:text-sm font-semibold leading-tight mt-0.5 ${
-                              isCorrect ? 'text-emerald-700' : 'text-rose-700'
-                            }`}>
-                              {opt.translationPt}
+                          {selectedVisual.translationPt && (
+                            <span
+                              className={`text-base sm:text-lg font-bold leading-snug mt-1 ${
+                                isCorrect ? 'text-emerald-700' : 'text-rose-700'
+                              }`}
+                            >
+                              {selectedVisual.translationPt}
+                            </span>
+                          )}
+                          {isCorrect && currentExercise.phoneticHint && (
+                            <span className="mt-1.5 text-xs font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-0.5 rounded-lg border border-indigo-100">
+                              {currentExercise.phoneticHint}
                             </span>
                           )}
                         </div>
-                      )}
+                      </div>
                     </div>
                   );
-                })}
-              </div>
+                })()
+              ) : (
+                <div className="grid grid-cols-2 gap-3.5 pt-1">
+                  {currentExercise.visualOptions.map((opt, i) => {
+                    const isSelected = selectedOption?.trim().toLowerCase() === opt.text.trim().toLowerCase();
+
+                    let cardStyle =
+                      'bg-white border-2 border-slate-200 border-b-4 hover:border-slate-300 text-slate-800 shadow-xs hover:shadow-sm';
+
+                    if (isSelected) {
+                      cardStyle =
+                        'bg-white border-2 border-sky-500 border-b-4 border-b-sky-600 text-sky-950 shadow-md ring-2 ring-sky-300/60 scale-[1.02]';
+                    }
+
+                    return (
+                      <div
+                        key={i}
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => {
+                          sfx.playTap();
+                          setSelectedOption(opt.text);
+                        }}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            sfx.playTap();
+                            setSelectedOption(opt.text);
+                          }
+                        }}
+                        className={`relative p-2.5 rounded-3xl flex flex-col items-center justify-center gap-1 transition-all active:translate-y-0.5 cursor-pointer min-h-[168px] sm:min-h-[192px] ${cardStyle}`}
+                      >
+                        <div className="w-full flex items-center justify-center my-0.5 transition-transform">
+                          <VocabIllustration word={opt.text} emoji={opt.emoji} />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )
             ) : (currentExercise.type === 'multiple-choice' || currentExercise.type === 'listening' || currentExercise.type === 'translate' || currentExercise.type === 'image-choice') &&
               currentExercise.options && (
                 <div className="space-y-3 pt-2">
@@ -1147,24 +1182,24 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
         </main>
       )}
 
-      {/* 🟩 Bottom Feedback Bar estilo Duolingo */}
+      {/* 🟩 Bottom Action Bar (compacta nos exercícios visuais para não criar tarja alta tampando o card) */}
       {step === 'exercise' && (
         <footer
-          className={`shrink-0 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] border-t transition-colors ${
-            !hasAnswered
+          className={`shrink-0 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] border-t transition-colors ${
+            !hasAnswered || (currentExercise?.visualOptions && currentExercise.visualOptions.length > 0)
               ? 'bg-white border-slate-200'
               : isCorrect
               ? 'bg-emerald-100 border-emerald-300'
               : 'bg-rose-100 border-rose-300'
           }`}
         >
-          <div className="max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-            {hasAnswered ? (
+          <div className="max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+            {hasAnswered && (!currentExercise?.visualOptions || currentExercise.visualOptions.length === 0) ? (
               <div className="flex items-start gap-3 w-full sm:w-auto">
                 {isCorrect ? (
-                  <CheckCircle2 className="w-8 h-8 text-emerald-600 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-7 h-7 text-emerald-600 shrink-0 mt-0.5" />
                 ) : (
-                  <AlertCircle className="w-8 h-8 text-rose-600 shrink-0 mt-0.5" />
+                  <AlertCircle className="w-7 h-7 text-rose-600 shrink-0 mt-0.5" />
                 )}
                 <div className="text-left">
                   <div className={`font-black text-base ${isCorrect ? 'text-emerald-900' : 'text-rose-900'}`}>
@@ -1177,7 +1212,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               </div>
             ) : null}
 
-            <div className="w-full sm:w-auto">
+            <div className="w-full sm:w-auto ml-auto">
               {!hasAnswered ? (
                 <button
                   disabled={isCheckDisabled()}

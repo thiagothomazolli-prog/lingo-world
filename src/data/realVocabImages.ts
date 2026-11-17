@@ -1,6 +1,6 @@
 // Auto-generated & pixel-verified pure white background photographs (zero tarja, uncropped) for all 480 vocabulary items
 export const REAL_VOCAB_IMAGES: Record<string, string> = {
-  "Apple": "https://tse1.mm.bing.net/th?q=Apple%20product%20photo%20white%20background&w=500&p=0",
+  "Apple": "https://tse1.mm.bing.net/th?q=fresh%20red%20apple%20fruit%20with%20green%20leaf%20isolated%20on%20white%20background&w=500&p=0",
   "Banana": "https://tse1.mm.bing.net/th?q=ripe%20yellow%20banana%20bunch%20whole%20fruit%20on%20white%20background&w=500&p=0",
   "Orange": "https://tse1.mm.bing.net/th?q=Orange%20isolated%20on%20white%20background%20cutout&w=500&p=0",
   "Strawberry": "https://tse1.mm.bing.net/th?q=Strawberry%20isolated%20on%20white%20background%20cutout&w=500&p=0",
