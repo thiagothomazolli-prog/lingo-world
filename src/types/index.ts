@@ -50,6 +50,10 @@ export interface VisualOption {
   imageUrl?: string;
   label?: string;
   translationPt?: string;
+  simplePronunciation?: string;
+  phonetic?: string;
+  exampleEn?: string;
+  examplePt?: string;
 }
 
 export interface AssociativePair {

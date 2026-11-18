@@ -223,9 +223,9 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
 
   if (activeUrl && !imgError) {
     return (
-      <div className="relative w-full h-full overflow-hidden bg-slate-100 dark:bg-slate-800 flex items-center justify-center select-none">
+      <div className="relative w-full h-full overflow-hidden bg-white flex items-center justify-center select-none">
         {!imgLoaded && (
-          <div className="absolute inset-0 bg-slate-100 dark:bg-slate-800 animate-pulse flex items-center justify-center">
+          <div className="absolute inset-0 bg-white animate-pulse flex items-center justify-center">
             <span className="text-4xl opacity-30">{emoji || '🖼️'}</span>
           </div>
         )}

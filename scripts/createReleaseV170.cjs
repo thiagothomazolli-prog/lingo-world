@@ -5,8 +5,8 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const token = process.env.GITHUB_TOKEN;
 const repo = 'thiagothomazolli-prog/lingo-world';
-const tag = 'v1.19.0';
-const releaseName = 'Lingo World v1.19.0 - 5 Temas Progressivos por Frequência, Flashcards, 4 Tipos de Exercício, Imagens 100% no Card e Modo Escuro Automático';
+const tag = 'v1.20.0';
+const releaseName = 'Lingo World v1.20.0 - Metodologia Original da v1.18 + Módulos Progressivos por Frequência, Imagens 100% no Card e Modo Escuro Automático';
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -22,9 +22,9 @@ async function getLatestCompletedRun() {
       }
     });
     const data = await res.json();
-    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.19.0'));
+    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.20.0'));
     if (!latestRun) {
-      console.log('Waiting for v1.19.0 workflow run to appear...');
+      console.log('Waiting for v1.20.0 workflow run to appear...');
       await sleep(5000);
       continue;
     }
@@ -98,7 +98,7 @@ async function run() {
   const rootDir = path.resolve(__dirname, '..');
   const zipPath = path.join(rootDir, 'app-debug.zip');
   const extractDir = path.join(rootDir, 'extracted_apk');
-  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.19.0.apk');
+  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.20.0.apk');
 
   fs.writeFileSync(zipPath, buffer);
   console.log('Downloaded app-debug.zip, size:', buffer.length);
@@ -118,25 +118,22 @@ async function run() {
 
   fs.copyFileSync(path.join(extractDir, apkName), apkOutPath);
   const apkStats = fs.statSync(apkOutPath);
-  console.log(`Found APK: LingoWorld-v1.19.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`Found APK: LingoWorld-v1.20.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
 
   console.log('4. Creating GitHub Release', tag);
-  const body = `## 🚀 Lingo World v1.19.0 — 5 Temas Progressivos por Frequência de Uso, Flashcards Interativos, 4 Tipos de Exercício, Imagens 100% no Tamanho do Card e Modo Escuro Automático
+  const body = `## 🚀 Lingo World v1.20.0 — Metodologia Original da v1.18 + Módulos Progressivos por Frequência, Imagens 100% no Tamanho do Card e Modo Escuro Automático
 
 ### ✨ Principais Melhorias desta Versão:
-- **📚 5 Temas Completos Divididos em 4 Módulos por Frequência de Uso (12 Palavras Genéricas por Módulo):**
-  - **1. A Casa (\`home\`)**, **2. Comida (\`food\`)**, **3. Corpo Humano (\`body\`)**, **4. Transporte (\`transport\`)** e **5. Roupas (\`clothes\`)** (além de **6. Pronomes**).
-  - Cada tema possui 4 módulos progressivos: **Módulo 1 (Essenciais)**, **Módulo 2 (Comuns)**, **Módulo 3 (Intermediárias)** e **Módulo 4 (Menos Comuns)**.
-  - Cada palavra traz: **Palavra em inglês**, **Tradução em português**, **Pronúncia simplificada** (ex.: \`"dór"\`, \`"uín-dou"\`, \`"kít-chen"\`), **Frase curta de exemplo em inglês com tradução** e **Imagem fotográfica ilustrativa**.
-- **📱 4 Telas Principais + 4 Tipos de Exercício por Módulo:**
-  - **Tela 1:** Lista de Temas
-  - **Tela 2:** Lista de Módulos de Cada Tema (com prévia das palavras e pronúncia simplificada)
-  - **Tela 3:** Tela da Lição (Flashcard interativo com imagem, pronúncia simplificada, áudio e frase de exemplo traduzida)
-  - **Tela 4:** Tela de Exercício com **Associar palavra e imagem**, **Ouvir e escolher**, **Múltipla escolha** e **Completar a frase**.
+- **🎯 Metodologia 100% Fiel à v1.18.0 Restaurada:**
+  - **Mapa de Trilha Original (\`MapView.tsx\`):** Trilha de fases com botões circulares (\`1, 2, 3...\`), estrelas, modo de prova escolar (\`>= 70 pontos\`) e **1 Módulo Exclusivo de Pronomes a cada 3 Módulos de Vocabulário**.
+  - **Exercícios 100% na Metodologia Visual/Auditiva de 4 Cards de Imagem (\`PhaseModal.tsx\`):** O aluno ouve a pronúncia (com barra de áudio, gráfico de ondas estilo gravador Android, botão \`0.65x\` e botão *"Dúvida na pronúncia? Ver palavra em inglês"*), seleciona um dos 4 cards puramente visuais e, ao clicar em **Verificar**, vê o **card selecionado em destaque centralizado** sem nenhuma tarja cobrindo o significado.
+- **📚 Lições Objetivas e Progressivas por Frequência de Uso (Dentro da Metodologia v1.18):**
+  - 5 Temas (**A Casa, Comida, Corpo Humano, Transporte e Roupas**) divididos em 4 módulos progressivos por frequência (**Módulo 1: Essenciais**, **Módulo 2: Comuns**, **Módulo 3: Intermediárias** e **Módulo 4: Menos Comuns**), com 12 palavras genéricas por módulo.
+  - No botão *"Ver palavra em inglês"* e no **Card em Destaque** após clicar em *Verificar*, cada palavra exibe: **Palavra em inglês**, **Tradução em português**, **Pronúncia simplificada** (ex.: \`"dór"\`, \`"uín-dou"\`), **Frase curta de exemplo em inglês com tradução** (com botão de áudio) e **Imagem ilustrativa**.
 - **🖼️ Imagens 100% no Tamanho do Card e Cards no Maior Tamanho Possível:**
-  - As imagens agora preenchem **100% da área do card de ponta a ponta (\`w-full h-full object-cover\`, sem bordas ou sobras internas)**, e os cards ocupam a largura total da grade mobile com tamanho máximo.
-- **🌙 Modo Escuro Automático do Sistema (Dark Mode):**
-  - Se o celular estiver em **Modo Escuro**, o aplicativo detecta automaticamente (\`prefers-color-scheme: dark\` e \`Configuration.UI_MODE_NIGHT_YES\` no Android) e aplica o tema escuro em toda a interface!`;
+  - Nos 4 cards de cada exercício, a imagem preenche **100% da área do card (\`w-full h-full object-cover\`, \`p-0 overflow-hidden\`)** e os cards têm o maior tamanho possível na tela do celular.
+- **🌙 Modo Escuro Automático do Celular:**
+  - Se o celular estiver em **Modo Escuro**, o app inteiro acompanha automaticamente em Modo Escuro.`;
 
   const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases`, {
     method: 'POST',
@@ -162,9 +159,9 @@ async function run() {
   }
   console.log('Release created:', releaseData.id, releaseData.html_url);
 
-  console.log('5. Uploading LingoWorld-v1.19.0.apk to release...');
+  console.log('5. Uploading LingoWorld-v1.20.0.apk to release...');
   const apkBuffer = fs.readFileSync(apkOutPath);
-  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.19.0.apk`;
+  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.20.0.apk`;
 
   const uploadRes = await fetch(uploadUrl, {
     method: 'POST',
@@ -180,7 +177,7 @@ async function run() {
   const assetData = await uploadRes.json();
   console.log('Asset uploaded successfully!', assetData.browser_download_url);
   console.log('\n=======================================');
-  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.19.0.apk`);
+  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.20.0.apk`);
   console.log('=======================================\n');
 }
 
