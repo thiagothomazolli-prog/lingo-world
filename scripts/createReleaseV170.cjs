@@ -5,8 +5,8 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const token = process.env.GITHUB_TOKEN;
 const repo = 'thiagothomazolli-prog/lingo-world';
-const tag = 'v1.17.0';
-const releaseName = 'Lingo World v1.17.0 - Pronomes Associativos (Pessoais a Relativos), Explicação p/ 5 Anos e Voz Meiga da Professora';
+const tag = 'v1.18.0';
+const releaseName = 'Lingo World v1.18.0 - Imagens Contextuais Específicas, Módulos de Pronomes Separados (1 a cada 3) e Voz Humana Real da Professora';
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -22,9 +22,9 @@ async function getLatestCompletedRun() {
       }
     });
     const data = await res.json();
-    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.17.0'));
+    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.18.0'));
     if (!latestRun) {
-      console.log('Waiting for v1.17.0 workflow run to appear...');
+      console.log('Waiting for v1.18.0 workflow run to appear...');
       await sleep(5000);
       continue;
     }
@@ -98,7 +98,7 @@ async function run() {
   const rootDir = path.resolve(__dirname, '..');
   const zipPath = path.join(rootDir, 'app-debug.zip');
   const extractDir = path.join(rootDir, 'extracted_apk');
-  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.17.0.apk');
+  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.18.0.apk');
 
   fs.writeFileSync(zipPath, buffer);
   console.log('Downloaded app-debug.zip, size:', buffer.length);
@@ -118,26 +118,23 @@ async function run() {
 
   fs.copyFileSync(path.join(extractDir, apkName), apkOutPath);
   const apkStats = fs.statSync(apkOutPath);
-  console.log(`Found APK: LingoWorld-v1.17.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`Found APK: LingoWorld-v1.18.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
 
   console.log('4. Creating GitHub Release', tag);
-  const body = `## 🚀 Lingo World v1.17.0 — Pronomes Associativos (Pessoais a Relativos), Explicação p/ Criança de 5 Anos e Voz Meiga da Professora
+  const body = `## 🚀 Lingo World v1.18.0 — Imagens Contextuais Completas (Calçada, Telhado na Casa, etc.), Módulos de Pronomes Separados (1 a cada 3 de Vocabulário) e Voz Humana Real da Professora
 
 ### ✨ Principais Melhorias desta Versão:
-- **👩‍🏫 Cabeçalho Explicativo com Voz Meiga da Professora:**
-  - Cada exercício traz no topo uma explicação curta, carinhosa e fácil de entender até para uma criança de 5 anos.
-  - Botão **🔊 Ouvir Professora** (e reprodução automática nos exercícios de pronomes) com voz feminina meiga, calma e acolhedora em português brasileiro (\`pt-BR\`), explicando o conceito como uma mãe bondosa antes da prática.
-- **🤝 Exercícios Associativos de Pares para as 8 Famílias de Pronomes (Inseridos Entre os Exercícios):**
-  - O usuário toca no pronome em inglês na esquerda (ouvindo a pronúncia nativa americana) e conecta ao seu par correspondente em português na direita, recebendo um reforço carinhoso da professora a cada par conectado!
-  - Segue rigorosamente a sequência pedagógica solicitada:
-    1. **Pronomes Pessoais:** *I, You, He, She, It, We, They*
-    2. **Pronomes de Tratamento:** *Mr., Mrs., Miss, Sir, Ma'am*
-    3. **Pronomes Possessivos:** *My, Your, His, Her, Our, Their*
-    4. **Pronomes Demonstrativos:** *This, That, These, Those*
-    5. **Pronomes Reflexivos:** *Myself, Yourself, Himself, Herself*
-    6. **Pronomes Interrogativos:** *Who?, What?, Where?, When?*
-    7. **Pronomes Indefinidos:** *Someone, Something, Everyone, Nothing*
-    8. **Pronomes Relativos:** *Who, Which, That, Whose*`;
+- **🏠 Imagens Contextuais Completas e Específicas:**
+  - Atualizadas todas as imagens estruturais e de ambientes (*Calçada completa na rua, Telhado na casa focado no telhado, Muro de tijolos, Cerca na frente da casa, Capacho na porta, Maçaneta e Fechadura na porta, Parede pintada, Rack de TV na sala, Tomada e Interruptor na parede, Piso cerâmico no chão, Armários, Gaveta aberta, Pia, Torneira, Pedra/Bancada e Ilha na cozinha, Coifa e Depurador sobre o fogão, Faixa de pedestres na rua, Sala de aula, Interior da Igreja, Altar, Bancos da igreja*, etc.) para mostrarem o elemento completo em seu contexto real em vez de blocos soltos recortados.
+- **📚 Módulos de Pronomes Separados (1 Módulo de Pronomes a cada 3 de Vocabulário) e Explicação Apenas Onde Houver Pronomes:**
+  - Os 12 módulos de vocabulário agora são 100% focados no vocabulário visual (sem quadro de explicação da professora nos itens de vocabulário).
+  - A cada **3 módulos de vocabulário**, entra **1 Módulo Exclusivo de Pronomes** (Fases 4, 8, 12 e 16):
+    - **Fase 4 (após Vocabulário 1, 2 e 3):** *Lição de Pronomes I • Pessoais & De Tratamento*
+    - **Fase 8 (após Vocabulário 4, 5 e 6):** *Lição de Pronomes II • Possessivos & Demonstrativos*
+    - **Fase 12 (após Vocabulário 7, 8 e 9):** *Lição de Pronomes III • Reflexivos & Interrogativos*
+    - **Fase 16 (após Vocabulário 10, 11 e 12):** *Lição de Pronomes IV • Indefinidos & Relativos*
+- **👩‍🏫 Voz Humana Real e Meiga da Professora (Zero Voz do Google Maps):**
+  - Substituído o sintetizador do Google Translate/Maps por **8 gravações de voz humana neural real (Gemini 2.5 Human Voice — Aoede)** embutidas diretamente no APK (\`/audio/teacher/pronoun_1.wav\` a \`pronoun_8.wav\`), com entonação meiga, doce, calma e acolhedora de mãe bondosa explicando cada família de pronomes!`;
 
   const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases`, {
     method: 'POST',
@@ -163,9 +160,9 @@ async function run() {
   }
   console.log('Release created:', releaseData.id, releaseData.html_url);
 
-  console.log('5. Uploading LingoWorld-v1.17.0.apk to release...');
+  console.log('5. Uploading LingoWorld-v1.18.0.apk to release...');
   const apkBuffer = fs.readFileSync(apkOutPath);
-  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.17.0.apk`;
+  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.18.0.apk`;
 
   const uploadRes = await fetch(uploadUrl, {
     method: 'POST',
@@ -181,7 +178,7 @@ async function run() {
   const assetData = await uploadRes.json();
   console.log('Asset uploaded successfully!', assetData.browser_download_url);
   console.log('\n=======================================');
-  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.17.0.apk`);
+  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.18.0.apk`);
   console.log('=======================================\n');
 }
 

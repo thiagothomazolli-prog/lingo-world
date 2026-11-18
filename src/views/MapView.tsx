@@ -143,8 +143,10 @@ export const MapView: React.FC<MapViewProps> = ({
                         : 'translate-x-12 sm:translate-x-16';
 
                     const sectionBanner: Record<number, string> = {
-                      1: '🏠 PARTE 1 • EXPLORANDO A RESIDÊNCIA COMPLETA (Cômodos 1 a 7: Da Calçada e Porta de Entrada até a Área de Serviço ao Fundo)',
-                      8: '🌆 PARTE 2 • EXPLORANDO O COTIDIANO AO REDOR (Ambientes 8 a 12: Rua, Escola, Supermercado, Igreja e Cidade)',
+                      1: '🏠 BLOCO 1 • Entrada, Sala & Cozinha I + Lição de Pronomes I (Pessoais & Tratamento)',
+                      5: '🛌 BLOCO 2 • Cozinha II, Quarto & Banheiro + Lição de Pronomes II (Possessivos & Demonstrativos)',
+                      9: '🧹 BLOCO 3 • Área de Serviço, Rua & Escola + Lição de Pronomes III (Reflexivos & Interrogativos)',
+                      13: '🌆 BLOCO 4 • Supermercado, Igreja & Cidade + Lição de Pronomes IV (Indefinidos & Relativos)',
                     };
 
                     return (
@@ -163,7 +165,12 @@ export const MapView: React.FC<MapViewProps> = ({
                           <div className="relative group flex flex-col items-center">
                             {phase.type === 'boss' && (
                               <div className="mb-2 px-3 py-0.5 bg-gradient-to-r from-rose-600 to-amber-500 text-white text-[10px] font-black tracking-wider uppercase rounded-full shadow-md flex items-center gap-1">
-                                <span>{world.id === 0 ? `🎓 PROVA FINAL DO MÓDULO 0` : '👑 BOSS FINAL'}</span>
+                                <span>{world.id === 0 ? `👩‍🏫 LIÇÃO DE PRONOMES 4/4` : '👑 BOSS FINAL'}</span>
+                              </div>
+                            )}
+                            {phase.type === 'chest' && (
+                              <div className="mb-2 px-2.5 py-0.5 bg-amber-400 text-amber-950 text-[10px] font-black tracking-wider uppercase rounded-full shadow-xs flex items-center gap-1">
+                                <span>{world.id === 0 ? `👩‍🏫 LIÇÃO DE PRONOMES ${phase.phaseNumber / 4}/4` : '🎁 BAÚ BÔNUS'}</span>
                               </div>
                             )}
                           <button

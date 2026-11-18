@@ -5,16 +5,16 @@ export const WORLD_0_PHASES: Phase[] = [
     "id": "w0-p1",
     "worldId": 0,
     "phaseNumber": 1,
-    "title": "Ambiente 1 • Entrada da Casa, Calçada & Porta",
-    "subtitle": "Cômodo 1/12 • Da calçada até abrir a porta (objetos e materiais)",
-    "pedagogicalObjective": "Conhecer tudo o que vemos ao chegar em casa: calçada, portão, parede, tinta, porta de madeira, fechadura de metal, maçaneta, chave e fachada.",
+    "title": "Vocabulário 1 • Entrada da Casa, Calçada & Porta",
+    "subtitle": "Ambiente 1/12 • Da calçada completa até abrir a porta de entrada",
+    "pedagogicalObjective": "Conhecer tudo o que vemos ao chegar em casa: calçada completa, portão, muro, telhado na casa, parede, tinta, porta de madeira, fechadura de metal, maçaneta e chave.",
     "type": "lesson",
     "icon": "house",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Bem-vindo à Jornada de Imersão Residencial! Vamos explorar uma casa inteira passo a passo, começando pela calçada e pela porta de entrada.",
-      "Aqui você aprende não apenas os objetos (Porta, Parede, Fechadura, Maçaneta, Chave, Portão, Campainha), mas também os materiais de que são feitos: Madeira (Wood), Metal (Metal), Vidro (Glass) e Tinta na Parede (Wall Paint).",
-      "🎓 REGRA DA PROVA: Você precisa atingir 70 pontos ou mais (pelo menos 21 acertos em 30) para ser aprovado e liberar o próximo cômodo!"
+      "Exploramos nossa residência começando pela frente da casa: Calçada (Sidewalk), Portão (Gate), Muro (Brick Wall), Cerca (Fence), Jardim (Front Yard) e o Telhado na casa (Roof).",
+      "Na porta de entrada vemos a Porta (Door), a Madeira (Wood), a Maçaneta (Doorknob), a Fechadura (Door Lock), o Metal (Metal), a Chave (Key) e a Tinta na Parede (Wall Paint).",
+      "🎓 Atingindo 70 pontos ou mais você aprova neste ambiente! E a cada 3 módulos de vocabulário, você terá 1 módulo exclusivo de Pronomes!"
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -22,9 +22,6 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e1",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sidewalk",
         "visualEmoji": "🚶",
@@ -33,25 +30,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "House",
             "emoji": "🏠",
             "label": "House",
-            "translationPt": "Casa / Residência"
+            "translationPt": "Casa / Residência completa"
           },
           {
             "text": "Roof",
             "emoji": "🏠",
             "label": "Roof",
-            "translationPt": "Telhado"
+            "translationPt": "Telhado na casa (foco no telhado)"
           },
           {
             "text": "Hinge",
             "emoji": "🔩",
             "label": "Hinge",
-            "translationPt": "Dobradiça da porta"
+            "translationPt": "Dobradiça presa na porta"
           },
           {
             "text": "Sidewalk",
             "emoji": "🚶",
             "label": "Sidewalk",
-            "translationPt": "Calçada"
+            "translationPt": "Calçada (completa na rua)"
           }
         ],
         "options": [
@@ -68,9 +65,6 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e2",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Gate",
         "visualEmoji": "🚪",
@@ -85,19 +79,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Roof Tile",
             "emoji": "🧱",
             "label": "Roof Tile",
-            "translationPt": "Telha"
+            "translationPt": "Telhas no telhado"
           },
           {
             "text": "Gate",
             "emoji": "🚪",
             "label": "Gate",
-            "translationPt": "Portão da frente"
+            "translationPt": "Portão da frente da casa"
           },
           {
             "text": "Keychain",
             "emoji": "🔑",
             "label": "Keychain",
-            "translationPt": "Chaveiro"
+            "translationPt": "Chaveiro com chaves"
           }
         ],
         "options": [
@@ -114,9 +108,6 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p1-e3",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Brick Wall",
         "visualEmoji": "🧱",
@@ -125,25 +116,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Brick Wall",
             "emoji": "🧱",
             "label": "Brick Wall",
-            "translationPt": "Muro / Parede de tijolos"
+            "translationPt": "Muro de tijolos"
           },
           {
             "text": "Doormat",
             "emoji": "🟫",
             "label": "Doormat",
-            "translationPt": "Capacho / Tapete de entrada"
+            "translationPt": "Capacho / Tapete na porta"
           },
           {
             "text": "Garage",
             "emoji": "🚗",
             "label": "Garage",
-            "translationPt": "Garagem"
+            "translationPt": "Garagem da casa"
           },
           {
             "text": "Glass",
             "emoji": "🪟",
             "label": "Glass",
-            "translationPt": "Vidro (material da janela)"
+            "translationPt": "Vidro transparente (na janela)"
           }
         ],
         "options": [
@@ -158,59 +149,11 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p1-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p1-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p1-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p1-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p1-e5",
+        "id": "w0-p1-e4",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fence",
-        "visualEmoji": "栅",
+        "visualEmoji": "🏡",
         "visualOptions": [
           {
             "text": "Plant Pot",
@@ -226,9 +169,9 @@ export const WORLD_0_PHASES: Phase[] = [
           },
           {
             "text": "Fence",
-            "emoji": "栅",
+            "emoji": "🏡",
             "label": "Fence",
-            "translationPt": "Cerca / Grade"
+            "translationPt": "Cerca em frente à casa"
           },
           {
             "text": "Stairs",
@@ -249,11 +192,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e6",
+        "id": "w0-p1-e5",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Mailbox",
         "visualEmoji": "📫",
@@ -262,25 +202,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Porch Light",
             "emoji": "💡",
             "label": "Porch Light",
-            "translationPt": "Luminária externa / Arandela"
+            "translationPt": "Luminária externa na parede"
           },
           {
             "text": "Mailbox",
             "emoji": "📫",
             "label": "Mailbox",
-            "translationPt": "Caixa de correio"
+            "translationPt": "Caixa de correio na entrada"
           },
           {
             "text": "Metal",
             "emoji": "🔩",
             "label": "Metal",
-            "translationPt": "Metal / Aço (material da fechadura)"
+            "translationPt": "Metal / Aço (material)"
           },
           {
             "text": "Sidewalk",
             "emoji": "🚶",
             "label": "Sidewalk",
-            "translationPt": "Calçada"
+            "translationPt": "Calçada (completa na rua)"
           }
         ],
         "options": [
@@ -295,11 +235,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p1-e7",
+        "id": "w0-p1-e6",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Doorbell",
         "visualEmoji": "🔔",
@@ -308,13 +245,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Lock",
             "emoji": "🔒",
             "label": "Lock",
-            "translationPt": "Cadeado"
+            "translationPt": "Cadeado de metal"
           },
           {
             "text": "Gate",
             "emoji": "🚪",
             "label": "Gate",
-            "translationPt": "Portão da frente"
+            "translationPt": "Portão da frente da casa"
           },
           {
             "text": "Door",
@@ -326,7 +263,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Doorbell",
             "emoji": "🔔",
             "label": "Doorbell",
-            "translationPt": "Campainha"
+            "translationPt": "Campainha na parede"
           }
         ],
         "options": [
@@ -341,11 +278,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e8",
+        "id": "w0-p1-e7",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Intercom",
         "visualEmoji": "📞",
@@ -354,25 +288,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Intercom",
             "emoji": "📞",
             "label": "Intercom",
-            "translationPt": "Interfone"
+            "translationPt": "Interfone residencial"
           },
           {
             "text": "Doorknob",
             "emoji": "🚪",
             "label": "Doorknob",
-            "translationPt": "Maçaneta da porta"
+            "translationPt": "Maçaneta na porta"
           },
           {
             "text": "Brick Wall",
             "emoji": "🧱",
             "label": "Brick Wall",
-            "translationPt": "Muro / Parede de tijolos"
+            "translationPt": "Muro de tijolos"
           },
           {
             "text": "Door Lock",
             "emoji": "🔒",
             "label": "Door Lock",
-            "translationPt": "Fechadura da porta"
+            "translationPt": "Fechadura na porta"
           }
         ],
         "options": [
@@ -387,56 +321,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p1-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p1-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p1-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p1-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p1-e10",
+        "id": "w0-p1-e8",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Front Yard",
         "visualEmoji": "🏡",
@@ -445,7 +331,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Wall",
             "emoji": "🧱",
             "label": "Wall",
-            "translationPt": "Parede"
+            "translationPt": "Parede da casa"
           },
           {
             "text": "Wood",
@@ -457,13 +343,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Wall Paint",
             "emoji": "🎨",
             "label": "Wall Paint",
-            "translationPt": "Tinta de parede"
+            "translationPt": "Tinta sendo aplicada na parede"
           },
           {
             "text": "Front Yard",
             "emoji": "🏡",
             "label": "Front Yard",
-            "translationPt": "Jardim da frente / Quintal"
+            "translationPt": "Jardim da frente da casa"
           }
         ],
         "options": [
@@ -478,11 +364,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p1-e11",
+        "id": "w0-p1-e9",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Plant Pot",
         "visualEmoji": "🪴",
@@ -491,13 +374,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Mailbox",
             "emoji": "📫",
             "label": "Mailbox",
-            "translationPt": "Caixa de correio"
+            "translationPt": "Caixa de correio na entrada"
           },
           {
             "text": "Window",
             "emoji": "🪟",
             "label": "Window",
-            "translationPt": "Janela"
+            "translationPt": "Janela da casa"
           },
           {
             "text": "Plant Pot",
@@ -507,9 +390,9 @@ export const WORLD_0_PHASES: Phase[] = [
           },
           {
             "text": "Fence",
-            "emoji": "栅",
+            "emoji": "🏡",
             "label": "Fence",
-            "translationPt": "Cerca / Grade"
+            "translationPt": "Cerca em frente à casa"
           }
         ],
         "options": [
@@ -524,11 +407,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e12",
+        "id": "w0-p1-e10",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Doormat",
         "visualEmoji": "🟫",
@@ -537,19 +417,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Doormat",
             "emoji": "🟫",
             "label": "Doormat",
-            "translationPt": "Capacho / Tapete de entrada"
+            "translationPt": "Capacho / Tapete na porta"
           },
           {
             "text": "Doorbell",
             "emoji": "🔔",
             "label": "Doorbell",
-            "translationPt": "Campainha"
+            "translationPt": "Campainha na parede"
           },
           {
             "text": "Sidewalk",
             "emoji": "🚶",
             "label": "Sidewalk",
-            "translationPt": "Calçada"
+            "translationPt": "Calçada (completa na rua)"
           },
           {
             "text": "Paint Roller",
@@ -570,11 +450,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e13",
+        "id": "w0-p1-e11",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Stairs",
         "visualEmoji": "🪜",
@@ -583,7 +460,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Porch Light",
             "emoji": "💡",
             "label": "Porch Light",
-            "translationPt": "Luminária externa / Arandela"
+            "translationPt": "Luminária externa na parede"
           },
           {
             "text": "Stairs",
@@ -595,13 +472,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Intercom",
             "emoji": "📞",
             "label": "Intercom",
-            "translationPt": "Interfone"
+            "translationPt": "Interfone residencial"
           },
           {
             "text": "Lock",
             "emoji": "🔒",
             "label": "Lock",
-            "translationPt": "Cadeado"
+            "translationPt": "Cadeado de metal"
           }
         ],
         "options": [
@@ -616,56 +493,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p1-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p1-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p1-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p1-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p1-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p1-e15",
+        "id": "w0-p1-e12",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Door",
         "visualEmoji": "🚪",
@@ -674,7 +503,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Front Yard",
             "emoji": "🏡",
             "label": "Front Yard",
-            "translationPt": "Jardim da frente / Quintal"
+            "translationPt": "Jardim da frente da casa"
           },
           {
             "text": "Door",
@@ -686,13 +515,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Roof",
             "emoji": "🏠",
             "label": "Roof",
-            "translationPt": "Telhado"
+            "translationPt": "Telhado na casa (foco no telhado)"
           },
           {
             "text": "Brick Wall",
             "emoji": "🧱",
             "label": "Brick Wall",
-            "translationPt": "Muro / Parede de tijolos"
+            "translationPt": "Muro de tijolos"
           }
         ],
         "options": [
@@ -707,11 +536,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e16",
+        "id": "w0-p1-e13",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Wood",
         "visualEmoji": "🪵",
@@ -726,13 +552,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Hinge",
             "emoji": "🔩",
             "label": "Hinge",
-            "translationPt": "Dobradiça da porta"
+            "translationPt": "Dobradiça presa na porta"
           },
           {
             "text": "Keychain",
             "emoji": "🔑",
             "label": "Keychain",
-            "translationPt": "Chaveiro"
+            "translationPt": "Chaveiro com chaves"
           },
           {
             "text": "Wood",
@@ -753,11 +579,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e17",
+        "id": "w0-p1-e14",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Doorknob",
         "visualEmoji": "🚪",
@@ -766,25 +589,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Wall",
             "emoji": "🧱",
             "label": "Wall",
-            "translationPt": "Parede"
+            "translationPt": "Parede da casa"
           },
           {
             "text": "Doorbell",
             "emoji": "🔔",
             "label": "Doorbell",
-            "translationPt": "Campainha"
+            "translationPt": "Campainha na parede"
           },
           {
             "text": "Doorknob",
             "emoji": "🚪",
             "label": "Doorknob",
-            "translationPt": "Maçaneta da porta"
+            "translationPt": "Maçaneta na porta"
           },
           {
             "text": "Doormat",
             "emoji": "🟫",
             "label": "Doormat",
-            "translationPt": "Capacho / Tapete de entrada"
+            "translationPt": "Capacho / Tapete na porta"
           }
         ],
         "options": [
@@ -799,11 +622,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p1-e18",
+        "id": "w0-p1-e15",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Door Lock",
         "visualEmoji": "🔒",
@@ -812,19 +632,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Door Lock",
             "emoji": "🔒",
             "label": "Door Lock",
-            "translationPt": "Fechadura da porta"
+            "translationPt": "Fechadura na porta"
           },
           {
             "text": "Mailbox",
             "emoji": "📫",
             "label": "Mailbox",
-            "translationPt": "Caixa de correio"
+            "translationPt": "Caixa de correio na entrada"
           },
           {
             "text": "Gate",
             "emoji": "🚪",
             "label": "Gate",
-            "translationPt": "Portão da frente"
+            "translationPt": "Portão da frente da casa"
           },
           {
             "text": "Plant Pot",
@@ -845,56 +665,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p1-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p1-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p1-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p1-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p1-e20",
+        "id": "w0-p1-e16",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Metal",
         "visualEmoji": "🔩",
@@ -909,19 +681,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Front Yard",
             "emoji": "🏡",
             "label": "Front Yard",
-            "translationPt": "Jardim da frente / Quintal"
+            "translationPt": "Jardim da frente da casa"
           },
           {
             "text": "Metal",
             "emoji": "🔩",
             "label": "Metal",
-            "translationPt": "Metal / Aço (material da fechadura)"
+            "translationPt": "Metal / Aço (material)"
           },
           {
             "text": "Fence",
-            "emoji": "栅",
+            "emoji": "🏡",
             "label": "Fence",
-            "translationPt": "Cerca / Grade"
+            "translationPt": "Cerca em frente à casa"
           }
         ],
         "options": [
@@ -936,11 +708,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e21",
+        "id": "w0-p1-e17",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Key",
         "visualEmoji": "🔑",
@@ -949,7 +718,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Intercom",
             "emoji": "📞",
             "label": "Intercom",
-            "translationPt": "Interfone"
+            "translationPt": "Interfone residencial"
           },
           {
             "text": "Key",
@@ -961,13 +730,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Glass",
             "emoji": "🪟",
             "label": "Glass",
-            "translationPt": "Vidro (material da janela)"
+            "translationPt": "Vidro transparente (na janela)"
           },
           {
             "text": "Roof Tile",
             "emoji": "🧱",
             "label": "Roof Tile",
-            "translationPt": "Telha"
+            "translationPt": "Telhas no telhado"
           }
         ],
         "options": [
@@ -982,11 +751,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p1-e22",
+        "id": "w0-p1-e18",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Keychain",
         "visualEmoji": "🔑",
@@ -1001,19 +767,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Garage",
             "emoji": "🚗",
             "label": "Garage",
-            "translationPt": "Garagem"
+            "translationPt": "Garagem da casa"
           },
           {
             "text": "Doorknob",
             "emoji": "🚪",
             "label": "Doorknob",
-            "translationPt": "Maçaneta da porta"
+            "translationPt": "Maçaneta na porta"
           },
           {
             "text": "Keychain",
             "emoji": "🔑",
             "label": "Keychain",
-            "translationPt": "Chaveiro"
+            "translationPt": "Chaveiro com chaves"
           }
         ],
         "options": [
@@ -1028,11 +794,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e23",
+        "id": "w0-p1-e19",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lock",
         "visualEmoji": "🔒",
@@ -1041,19 +804,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Lock",
             "emoji": "🔒",
             "label": "Lock",
-            "translationPt": "Cadeado"
+            "translationPt": "Cadeado de metal"
           },
           {
             "text": "House",
             "emoji": "🏠",
             "label": "House",
-            "translationPt": "Casa / Residência"
+            "translationPt": "Casa / Residência completa"
           },
           {
             "text": "Door Lock",
             "emoji": "🔒",
             "label": "Door Lock",
-            "translationPt": "Fechadura da porta"
+            "translationPt": "Fechadura na porta"
           },
           {
             "text": "Wood",
@@ -1074,56 +837,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p1-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p1-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p1-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p1-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p1-e25",
+        "id": "w0-p1-e20",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Hinge",
         "visualEmoji": "🔩",
@@ -1132,25 +847,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Window",
             "emoji": "🪟",
             "label": "Window",
-            "translationPt": "Janela"
+            "translationPt": "Janela da casa"
           },
           {
             "text": "Metal",
             "emoji": "🔩",
             "label": "Metal",
-            "translationPt": "Metal / Aço (material da fechadura)"
+            "translationPt": "Metal / Aço (material)"
           },
           {
             "text": "Gate",
             "emoji": "🚪",
             "label": "Gate",
-            "translationPt": "Portão da frente"
+            "translationPt": "Portão da frente da casa"
           },
           {
             "text": "Hinge",
             "emoji": "🔩",
             "label": "Hinge",
-            "translationPt": "Dobradiça da porta"
+            "translationPt": "Dobradiça presa na porta"
           }
         ],
         "options": [
@@ -1165,11 +880,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p1-e26",
+        "id": "w0-p1-e21",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Wall",
         "visualEmoji": "🧱",
@@ -1184,13 +896,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Sidewalk",
             "emoji": "🚶",
             "label": "Sidewalk",
-            "translationPt": "Calçada"
+            "translationPt": "Calçada (completa na rua)"
           },
           {
             "text": "Wall",
             "emoji": "🧱",
             "label": "Wall",
-            "translationPt": "Parede"
+            "translationPt": "Parede da casa"
           },
           {
             "text": "Plant Pot",
@@ -1206,16 +918,13 @@ export const WORLD_0_PHASES: Phase[] = [
           "Plant Pot"
         ],
         "correctAnswer": "Wall",
-        "explanation": "Exemplo prático: \"The house wall is smooth and painted white.\"",
+        "explanation": "Exemplo prático: \"The house wall is smooth and painted.\"",
         "phoneticHint": "/wɔːl/",
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e27",
+        "id": "w0-p1-e22",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Wall Paint",
         "visualEmoji": "🎨",
@@ -1224,25 +933,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Wall Paint",
             "emoji": "🎨",
             "label": "Wall Paint",
-            "translationPt": "Tinta de parede"
+            "translationPt": "Tinta sendo aplicada na parede"
           },
           {
             "text": "Intercom",
             "emoji": "📞",
             "label": "Intercom",
-            "translationPt": "Interfone"
+            "translationPt": "Interfone residencial"
           },
           {
             "text": "Fence",
-            "emoji": "栅",
+            "emoji": "🏡",
             "label": "Fence",
-            "translationPt": "Cerca / Grade"
+            "translationPt": "Cerca em frente à casa"
           },
           {
             "text": "Front Yard",
             "emoji": "🏡",
             "label": "Front Yard",
-            "translationPt": "Jardim da frente / Quintal"
+            "translationPt": "Jardim da frente da casa"
           }
         ],
         "options": [
@@ -1257,11 +966,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e28",
+        "id": "w0-p1-e23",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Paint Roller",
         "visualEmoji": "🖌️",
@@ -1270,7 +976,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Roof Tile",
             "emoji": "🧱",
             "label": "Roof Tile",
-            "translationPt": "Telha"
+            "translationPt": "Telhas no telhado"
           },
           {
             "text": "Paint Roller",
@@ -1282,13 +988,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Porch Light",
             "emoji": "💡",
             "label": "Porch Light",
-            "translationPt": "Luminária externa / Arandela"
+            "translationPt": "Luminária externa na parede"
           },
           {
             "text": "Lock",
             "emoji": "🔒",
             "label": "Lock",
-            "translationPt": "Cadeado"
+            "translationPt": "Cadeado de metal"
           }
         ],
         "options": [
@@ -1303,56 +1009,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p1-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p1-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p1-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p1-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p1-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p1-e30",
+        "id": "w0-p1-e24",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Window",
         "visualEmoji": "🪟",
@@ -1361,13 +1019,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Hinge",
             "emoji": "🔩",
             "label": "Hinge",
-            "translationPt": "Dobradiça da porta"
+            "translationPt": "Dobradiça presa na porta"
           },
           {
             "text": "Window",
             "emoji": "🪟",
             "label": "Window",
-            "translationPt": "Janela"
+            "translationPt": "Janela da casa"
           },
           {
             "text": "Key",
@@ -1379,7 +1037,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Keychain",
             "emoji": "🔑",
             "label": "Keychain",
-            "translationPt": "Chaveiro"
+            "translationPt": "Chaveiro com chaves"
           }
         ],
         "options": [
@@ -1394,11 +1052,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e31",
+        "id": "w0-p1-e25",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Glass",
         "visualEmoji": "🪟",
@@ -1407,7 +1062,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "House",
             "emoji": "🏠",
             "label": "House",
-            "translationPt": "Casa / Residência"
+            "translationPt": "Casa / Residência completa"
           },
           {
             "text": "Wood",
@@ -1419,13 +1074,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Wall",
             "emoji": "🧱",
             "label": "Wall",
-            "translationPt": "Parede"
+            "translationPt": "Parede da casa"
           },
           {
             "text": "Glass",
             "emoji": "🪟",
             "label": "Glass",
-            "translationPt": "Vidro (material da janela)"
+            "translationPt": "Vidro transparente (na janela)"
           }
         ],
         "options": [
@@ -1440,11 +1095,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e32",
+        "id": "w0-p1-e26",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Roof",
         "visualEmoji": "🏠",
@@ -1453,25 +1105,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Doormat",
             "emoji": "🟫",
             "label": "Doormat",
-            "translationPt": "Capacho / Tapete de entrada"
+            "translationPt": "Capacho / Tapete na porta"
           },
           {
             "text": "Doorbell",
             "emoji": "🔔",
             "label": "Doorbell",
-            "translationPt": "Campainha"
+            "translationPt": "Campainha na parede"
           },
           {
             "text": "Roof",
             "emoji": "🏠",
             "label": "Roof",
-            "translationPt": "Telhado"
+            "translationPt": "Telhado na casa (foco no telhado)"
           },
           {
             "text": "Wall Paint",
             "emoji": "🎨",
             "label": "Wall Paint",
-            "translationPt": "Tinta de parede"
+            "translationPt": "Tinta sendo aplicada na parede"
           }
         ],
         "options": [
@@ -1486,11 +1138,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p1-e33",
+        "id": "w0-p1-e27",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Roof Tile",
         "visualEmoji": "🧱",
@@ -1499,13 +1148,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Roof Tile",
             "emoji": "🧱",
             "label": "Roof Tile",
-            "translationPt": "Telha"
+            "translationPt": "Telhas no telhado"
           },
           {
             "text": "Metal",
             "emoji": "🔩",
             "label": "Metal",
-            "translationPt": "Metal / Aço (material da fechadura)"
+            "translationPt": "Metal / Aço (material)"
           },
           {
             "text": "Paint Roller",
@@ -1517,7 +1166,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Mailbox",
             "emoji": "📫",
             "label": "Mailbox",
-            "translationPt": "Caixa de correio"
+            "translationPt": "Caixa de correio na entrada"
           }
         ],
         "options": [
@@ -1532,56 +1181,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p1-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p1-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p1-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p1-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p1-e35",
+        "id": "w0-p1-e28",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Porch Light",
         "visualEmoji": "💡",
@@ -1590,19 +1191,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Doorknob",
             "emoji": "🚪",
             "label": "Doorknob",
-            "translationPt": "Maçaneta da porta"
+            "translationPt": "Maçaneta na porta"
           },
           {
             "text": "Door Lock",
             "emoji": "🔒",
             "label": "Door Lock",
-            "translationPt": "Fechadura da porta"
+            "translationPt": "Fechadura na porta"
           },
           {
             "text": "Porch Light",
             "emoji": "💡",
             "label": "Porch Light",
-            "translationPt": "Luminária externa / Arandela"
+            "translationPt": "Luminária externa na parede"
           },
           {
             "text": "Door",
@@ -1623,11 +1224,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e36",
+        "id": "w0-p1-e29",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Garage",
         "visualEmoji": "🚗",
@@ -1636,25 +1234,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Window",
             "emoji": "🪟",
             "label": "Window",
-            "translationPt": "Janela"
+            "translationPt": "Janela da casa"
           },
           {
             "text": "Garage",
             "emoji": "🚗",
             "label": "Garage",
-            "translationPt": "Garagem"
+            "translationPt": "Garagem da casa"
           },
           {
             "text": "Glass",
             "emoji": "🪟",
             "label": "Glass",
-            "translationPt": "Vidro (material da janela)"
+            "translationPt": "Vidro transparente (na janela)"
           },
           {
             "text": "Brick Wall",
             "emoji": "🧱",
             "label": "Brick Wall",
-            "translationPt": "Muro / Parede de tijolos"
+            "translationPt": "Muro de tijolos"
           }
         ],
         "options": [
@@ -1669,11 +1267,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p1-e37",
+        "id": "w0-p1-e30",
         "type": "image-choice",
-        "conceptTitle": "Entrada da Casa, Calçada & Porta • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "House",
         "visualEmoji": "🏠",
@@ -1688,19 +1283,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Wall Paint",
             "emoji": "🎨",
             "label": "Wall Paint",
-            "translationPt": "Tinta de parede"
+            "translationPt": "Tinta sendo aplicada na parede"
           },
           {
             "text": "Roof",
             "emoji": "🏠",
             "label": "Roof",
-            "translationPt": "Telhado"
+            "translationPt": "Telhado na casa (foco no telhado)"
           },
           {
             "text": "House",
             "emoji": "🏠",
             "label": "House",
-            "translationPt": "Casa / Residência"
+            "translationPt": "Casa / Residência completa"
           }
         ],
         "options": [
@@ -1713,51 +1308,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "explanation": "Exemplo prático: \"Welcome to my comfortable house!\"",
         "phoneticHint": "/haʊs/",
         "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p1-pron-8",
-        "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
-        "pairs": [
-          {
-            "id": "w0-p1-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
-          },
-          {
-            "id": "w0-p1-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
-          },
-          {
-            "id": "w0-p1-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
-          },
-          {
-            "id": "w0-p1-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
-        "skillCategory": "grammar"
       }
     ]
   },
@@ -1765,16 +1315,16 @@ export const WORLD_0_PHASES: Phase[] = [
     "id": "w0-p2",
     "worldId": 0,
     "phaseNumber": 2,
-    "title": "Ambiente 2 • Sala de Estar, TV, Internet & Iluminação",
-    "subtitle": "Cômodo 2/12 • Sofá, almofadas, rack, modem, TV, videogame, tomada, interruptor e piso",
-    "pedagogicalObjective": "Identificar todos os móveis, aparelhos eletrônicos, tomadas, interruptores, iluminação e revestimentos da sala de estar.",
+    "title": "Vocabulário 2 • Sala de Estar, TV, Internet & Iluminação",
+    "subtitle": "Ambiente 2/12 • Sofá, almofadas, rack, modem, TV, videogame, tomada, interruptor e piso",
+    "pedagogicalObjective": "Identificar todos os móveis, aparelhos eletrônicos, tomadas, interruptores, iluminação e piso cerâmico da sala de estar.",
     "type": "lesson",
     "icon": "house",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Você abriu a porta e entrou na Sala de Estar! Olhe ao seu redor: temos o Sofá (Sofa), as Almofadas (Cushion), o Rack de TV (TV Stand), a Televisão (Television) e o Modem de Internet (Wi-Fi Router).",
+      "Entrando na Sala de Estar vemos o Sofá (Sofa), as Almofadas (Cushion), o Rack de TV (TV Stand), a Televisão (Television) e o Modem de Internet (Wi-Fi Router).",
       "Veja também os Retratos de Fotografia (Picture Frame), o Videogame (Video Game Console), o Controle (Game Controller), as Caixas de Som (Speaker), a Mesa de Centro (Coffee Table), o Tapete (Rug), a Cortina (Curtain) e o Notebook (Computer).",
-      "Nas paredes, teto e chão temos a Tomada (Power Outlet), o Interruptor (Light Switch), a Lâmpada no Teto (Light Bulb), o Ventilador (Fan), o Ar-Condicionado (Air Conditioner) e o Piso Cerâmico (Ceramic Tile)."
+      "Nas paredes, teto e chão temos a Tomada (Power Outlet), o Interruptor (Light Switch), a Lâmpada no Teto (Ceiling Lamp), o Ventilador (Fan), o Ar-Condicionado (Air Conditioner) e o Piso Cerâmico (Ceramic Tile)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -1782,9 +1332,6 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e1",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sofa",
         "visualEmoji": "🛋️",
@@ -1793,13 +1340,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Rug",
             "emoji": "🟥",
             "label": "Rug",
-            "translationPt": "Tapete da sala"
+            "translationPt": "Tapete na sala"
           },
           {
             "text": "Bookshelf",
             "emoji": "📚",
             "label": "Bookshelf",
-            "translationPt": "Estante de livros"
+            "translationPt": "Estante cheia de livros"
           },
           {
             "text": "Sofa",
@@ -1828,9 +1375,6 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e2",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Cushion",
         "visualEmoji": "🛋️",
@@ -1839,7 +1383,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Cushion",
             "emoji": "🛋️",
             "label": "Cushion",
-            "translationPt": "Almofada de sofá"
+            "translationPt": "Almofadas no sofá"
           },
           {
             "text": "Telephone",
@@ -1851,7 +1395,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Light Bulb",
             "emoji": "💡",
             "label": "Light Bulb",
-            "translationPt": "Lâmpada no teto"
+            "translationPt": "Lâmpada"
           },
           {
             "text": "Light Switch",
@@ -1874,9 +1418,6 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p2-e3",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Armchair",
         "visualEmoji": "🛋️",
@@ -1891,7 +1432,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Air Conditioner",
             "emoji": "❄️",
             "label": "Air Conditioner",
-            "translationPt": "Ar-condicionado"
+            "translationPt": "Ar-condicionado na parede"
           },
           {
             "text": "Armchair",
@@ -1903,7 +1444,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Game Controller",
             "emoji": "🎮",
             "label": "Game Controller",
-            "translationPt": "Controle de videogame / Joystick"
+            "translationPt": "Controle de videogame"
           }
         ],
         "options": [
@@ -1918,56 +1459,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p2-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p2-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p2-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p2-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p2-e5",
+        "id": "w0-p2-e4",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "TV Stand",
         "visualEmoji": "📺",
@@ -1976,13 +1469,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Vase",
             "emoji": "🏺",
             "label": "Vase",
-            "translationPt": "Vaso decorativo"
+            "translationPt": "Vaso com flores na mesa"
           },
           {
             "text": "TV Stand",
             "emoji": "📺",
             "label": "TV Stand",
-            "translationPt": "Rack de TV / Painel de sala"
+            "translationPt": "Rack de TV / Painel na sala"
           },
           {
             "text": "Speaker",
@@ -2009,11 +1502,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e6",
+        "id": "w0-p2-e5",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Television",
         "visualEmoji": "📺",
@@ -2022,19 +1512,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Curtain",
             "emoji": "🪟",
             "label": "Curtain",
-            "translationPt": "Cortina da janela"
+            "translationPt": "Cortina na janela da sala"
           },
           {
             "text": "Coffee Table",
             "emoji": "🪑",
             "label": "Coffee Table",
-            "translationPt": "Mesa de centro da sala"
+            "translationPt": "Mesa de centro na sala"
           },
           {
             "text": "Fan",
             "emoji": "🌀",
             "label": "Fan",
-            "translationPt": "Ventilador"
+            "translationPt": "Ventilador de mesa/coluna"
           },
           {
             "text": "Television",
@@ -2055,11 +1545,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p2-e7",
+        "id": "w0-p2-e6",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Remote Control",
         "visualEmoji": "📱",
@@ -2080,13 +1567,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Cushion",
             "emoji": "🛋️",
             "label": "Cushion",
-            "translationPt": "Almofada de sofá"
+            "translationPt": "Almofadas no sofá"
           },
           {
             "text": "Lamp",
             "emoji": "💡",
             "label": "Lamp",
-            "translationPt": "Abajur / Luminária de canto"
+            "translationPt": "Abajur / Luminária de mesa"
           }
         ],
         "options": [
@@ -2101,11 +1588,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e8",
+        "id": "w0-p2-e7",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Wi-Fi Router",
         "visualEmoji": "🛜",
@@ -2114,19 +1598,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Ceiling Fan",
             "emoji": "🌀",
             "label": "Ceiling Fan",
-            "translationPt": "Ventilador de teto"
+            "translationPt": "Ventilador de teto na sala"
           },
           {
             "text": "Ceramic Tile",
             "emoji": "⬜",
             "label": "Ceramic Tile",
-            "translationPt": "Piso cerâmico / Porcelanato"
+            "translationPt": "Piso cerâmico / Porcelanato no chão"
           },
           {
             "text": "Ceiling Lamp",
             "emoji": "💡",
             "label": "Ceiling Lamp",
-            "translationPt": "Lustre / Plafon de teto"
+            "translationPt": "Luminária / Lâmpada acesa no teto"
           },
           {
             "text": "Wi-Fi Router",
@@ -2147,56 +1631,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p2-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p2-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p2-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p2-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p2-e10",
+        "id": "w0-p2-e8",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Picture Frame",
         "visualEmoji": "🖼️",
@@ -2205,7 +1641,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Window Blind",
             "emoji": "🪟",
             "label": "Window Blind",
-            "translationPt": "Persiana"
+            "translationPt": "Persiana na janela"
           },
           {
             "text": "Armchair",
@@ -2217,13 +1653,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Picture Frame",
             "emoji": "🖼️",
             "label": "Picture Frame",
-            "translationPt": "Porta-retrato / Retrato de fotografia"
+            "translationPt": "Porta-retrato com fotografia"
           },
           {
             "text": "TV Stand",
             "emoji": "📺",
             "label": "TV Stand",
-            "translationPt": "Rack de TV / Painel de sala"
+            "translationPt": "Rack de TV / Painel na sala"
           }
         ],
         "options": [
@@ -2238,11 +1674,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p2-e11",
+        "id": "w0-p2-e9",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Video Game Console",
         "visualEmoji": "🎮",
@@ -2284,11 +1717,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e12",
+        "id": "w0-p2-e10",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Game Controller",
         "visualEmoji": "🎮",
@@ -2297,13 +1727,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Power Plug",
             "emoji": "🔌",
             "label": "Power Plug",
-            "translationPt": "Plugue / Cabo de energia"
+            "translationPt": "Plugue sendo conectado na tomada"
           },
           {
             "text": "Game Controller",
             "emoji": "🎮",
             "label": "Game Controller",
-            "translationPt": "Controle de videogame / Joystick"
+            "translationPt": "Controle de videogame"
           },
           {
             "text": "Power Outlet",
@@ -2315,7 +1745,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Vase",
             "emoji": "🏺",
             "label": "Vase",
-            "translationPt": "Vaso decorativo"
+            "translationPt": "Vaso com flores na mesa"
           }
         ],
         "options": [
@@ -2330,11 +1760,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e13",
+        "id": "w0-p2-e11",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Speaker",
         "visualEmoji": "🔊",
@@ -2343,7 +1770,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Lamp",
             "emoji": "💡",
             "label": "Lamp",
-            "translationPt": "Abajur / Luminária de canto"
+            "translationPt": "Abajur / Luminária de mesa"
           },
           {
             "text": "Speaker",
@@ -2361,7 +1788,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Light Bulb",
             "emoji": "💡",
             "label": "Light Bulb",
-            "translationPt": "Lâmpada no teto"
+            "translationPt": "Lâmpada"
           }
         ],
         "options": [
@@ -2371,61 +1798,13 @@ export const WORLD_0_PHASES: Phase[] = [
           "Light Bulb"
         ],
         "correctAnswer": "Speaker",
-        "explanation": "Exemplo prático: \"Play music through the Bluetooth speaker.\"",
+        "explanation": "Exemplo prático: \"Play music through the speaker.\"",
         "phoneticHint": "/ˈspiː.kər/",
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p2-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p2-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p2-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p2-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p2-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p2-e15",
+        "id": "w0-p2-e12",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Coffee Table",
         "visualEmoji": "🪑",
@@ -2434,7 +1813,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Picture Frame",
             "emoji": "🖼️",
             "label": "Picture Frame",
-            "translationPt": "Porta-retrato / Retrato de fotografia"
+            "translationPt": "Porta-retrato com fotografia"
           },
           {
             "text": "Remote Control",
@@ -2446,13 +1825,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Bookshelf",
             "emoji": "📚",
             "label": "Bookshelf",
-            "translationPt": "Estante de livros"
+            "translationPt": "Estante cheia de livros"
           },
           {
             "text": "Coffee Table",
             "emoji": "🪑",
             "label": "Coffee Table",
-            "translationPt": "Mesa de centro da sala"
+            "translationPt": "Mesa de centro na sala"
           }
         ],
         "options": [
@@ -2467,11 +1846,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e16",
+        "id": "w0-p2-e13",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Rug",
         "visualEmoji": "🟥",
@@ -2480,25 +1856,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Fan",
             "emoji": "🌀",
             "label": "Fan",
-            "translationPt": "Ventilador"
+            "translationPt": "Ventilador de mesa/coluna"
           },
           {
             "text": "Ceiling Lamp",
             "emoji": "💡",
             "label": "Ceiling Lamp",
-            "translationPt": "Lustre / Plafon de teto"
+            "translationPt": "Luminária / Lâmpada acesa no teto"
           },
           {
             "text": "Rug",
             "emoji": "🟥",
             "label": "Rug",
-            "translationPt": "Tapete da sala"
+            "translationPt": "Tapete na sala"
           },
           {
             "text": "Cushion",
             "emoji": "🛋️",
             "label": "Cushion",
-            "translationPt": "Almofada de sofá"
+            "translationPt": "Almofadas no sofá"
           }
         ],
         "options": [
@@ -2513,11 +1889,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e17",
+        "id": "w0-p2-e14",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Curtain",
         "visualEmoji": "🪟",
@@ -2526,7 +1899,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Curtain",
             "emoji": "🪟",
             "label": "Curtain",
-            "translationPt": "Cortina da janela"
+            "translationPt": "Cortina na janela da sala"
           },
           {
             "text": "Wi-Fi Router",
@@ -2544,7 +1917,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Air Conditioner",
             "emoji": "❄️",
             "label": "Air Conditioner",
-            "translationPt": "Ar-condicionado"
+            "translationPt": "Ar-condicionado na parede"
           }
         ],
         "options": [
@@ -2559,11 +1932,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p2-e18",
+        "id": "w0-p2-e15",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Window Blind",
         "visualEmoji": "🪟",
@@ -2572,7 +1942,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Game Controller",
             "emoji": "🎮",
             "label": "Game Controller",
-            "translationPt": "Controle de videogame / Joystick"
+            "translationPt": "Controle de videogame"
           },
           {
             "text": "Television",
@@ -2584,13 +1954,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Window Blind",
             "emoji": "🪟",
             "label": "Window Blind",
-            "translationPt": "Persiana"
+            "translationPt": "Persiana na janela"
           },
           {
             "text": "TV Stand",
             "emoji": "📺",
             "label": "TV Stand",
-            "translationPt": "Rack de TV / Painel de sala"
+            "translationPt": "Rack de TV / Painel na sala"
           }
         ],
         "options": [
@@ -2605,56 +1975,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p2-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p2-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p2-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p2-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p2-e20",
+        "id": "w0-p2-e16",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Computer",
         "visualEmoji": "💻",
@@ -2663,7 +1985,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Ceramic Tile",
             "emoji": "⬜",
             "label": "Ceramic Tile",
-            "translationPt": "Piso cerâmico / Porcelanato"
+            "translationPt": "Piso cerâmico / Porcelanato no chão"
           },
           {
             "text": "Computer",
@@ -2675,13 +1997,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Ceiling Fan",
             "emoji": "🌀",
             "label": "Ceiling Fan",
-            "translationPt": "Ventilador de teto"
+            "translationPt": "Ventilador de teto na sala"
           },
           {
             "text": "Coffee Table",
             "emoji": "🪑",
             "label": "Coffee Table",
-            "translationPt": "Mesa de centro da sala"
+            "translationPt": "Mesa de centro na sala"
           }
         ],
         "options": [
@@ -2696,11 +2018,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e21",
+        "id": "w0-p2-e17",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Power Outlet",
         "visualEmoji": "🔌",
@@ -2721,7 +2040,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Rug",
             "emoji": "🟥",
             "label": "Rug",
-            "translationPt": "Tapete da sala"
+            "translationPt": "Tapete na sala"
           },
           {
             "text": "Power Outlet",
@@ -2742,11 +2061,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p2-e22",
+        "id": "w0-p2-e18",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Power Plug",
         "visualEmoji": "🔌",
@@ -2755,7 +2071,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Power Plug",
             "emoji": "🔌",
             "label": "Power Plug",
-            "translationPt": "Plugue / Cabo de energia"
+            "translationPt": "Plugue sendo conectado na tomada"
           },
           {
             "text": "Sofa",
@@ -2773,7 +2089,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Curtain",
             "emoji": "🪟",
             "label": "Curtain",
-            "translationPt": "Cortina da janela"
+            "translationPt": "Cortina na janela da sala"
           }
         ],
         "options": [
@@ -2788,11 +2104,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e23",
+        "id": "w0-p2-e19",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Light Switch",
         "visualEmoji": "💡",
@@ -2801,13 +2114,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Window Blind",
             "emoji": "🪟",
             "label": "Window Blind",
-            "translationPt": "Persiana"
+            "translationPt": "Persiana na janela"
           },
           {
             "text": "Picture Frame",
             "emoji": "🖼️",
             "label": "Picture Frame",
-            "translationPt": "Porta-retrato / Retrato de fotografia"
+            "translationPt": "Porta-retrato com fotografia"
           },
           {
             "text": "Telephone",
@@ -2834,56 +2147,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p2-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p2-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p2-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p2-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p2-e25",
+        "id": "w0-p2-e20",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Light Bulb",
         "visualEmoji": "💡",
@@ -2892,7 +2157,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Game Controller",
             "emoji": "🎮",
             "label": "Game Controller",
-            "translationPt": "Controle de videogame / Joystick"
+            "translationPt": "Controle de videogame"
           },
           {
             "text": "Computer",
@@ -2904,7 +2169,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Light Bulb",
             "emoji": "💡",
             "label": "Light Bulb",
-            "translationPt": "Lâmpada no teto"
+            "translationPt": "Lâmpada"
           },
           {
             "text": "Armchair",
@@ -2925,11 +2190,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p2-e26",
+        "id": "w0-p2-e21",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Ceiling Lamp",
         "visualEmoji": "💡",
@@ -2938,13 +2200,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Ceiling Lamp",
             "emoji": "💡",
             "label": "Ceiling Lamp",
-            "translationPt": "Lustre / Plafon de teto"
+            "translationPt": "Luminária / Lâmpada acesa no teto"
           },
           {
             "text": "Air Conditioner",
             "emoji": "❄️",
             "label": "Air Conditioner",
-            "translationPt": "Ar-condicionado"
+            "translationPt": "Ar-condicionado na parede"
           },
           {
             "text": "Power Outlet",
@@ -2966,16 +2228,13 @@ export const WORLD_0_PHASES: Phase[] = [
           "Wi-Fi Router"
         ],
         "correctAnswer": "Ceiling Lamp",
-        "explanation": "Exemplo prático: \"A modern ceiling lamp hangs in the living room.\"",
+        "explanation": "Exemplo prático: \"A modern ceiling lamp illuminates the living room from above.\"",
         "phoneticHint": "/ˈsiː.lɪŋ læmp/",
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e27",
+        "id": "w0-p2-e22",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Lamp",
         "visualEmoji": "💡",
@@ -2984,25 +2243,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Power Plug",
             "emoji": "🔌",
             "label": "Power Plug",
-            "translationPt": "Plugue / Cabo de energia"
+            "translationPt": "Plugue sendo conectado na tomada"
           },
           {
             "text": "Lamp",
             "emoji": "💡",
             "label": "Lamp",
-            "translationPt": "Abajur / Luminária de canto"
+            "translationPt": "Abajur / Luminária de mesa"
           },
           {
             "text": "Cushion",
             "emoji": "🛋️",
             "label": "Cushion",
-            "translationPt": "Almofada de sofá"
+            "translationPt": "Almofadas no sofá"
           },
           {
             "text": "Coffee Table",
             "emoji": "🪑",
             "label": "Coffee Table",
-            "translationPt": "Mesa de centro da sala"
+            "translationPt": "Mesa de centro na sala"
           }
         ],
         "options": [
@@ -3017,11 +2276,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e28",
+        "id": "w0-p2-e23",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Fan",
         "visualEmoji": "🌀",
@@ -3036,7 +2292,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Fan",
             "emoji": "🌀",
             "label": "Fan",
-            "translationPt": "Ventilador"
+            "translationPt": "Ventilador de mesa/coluna"
           },
           {
             "text": "Light Switch",
@@ -3048,7 +2304,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Rug",
             "emoji": "🟥",
             "label": "Rug",
-            "translationPt": "Tapete da sala"
+            "translationPt": "Tapete na sala"
           }
         ],
         "options": [
@@ -3063,56 +2319,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p2-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p2-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p2-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p2-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p2-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p2-e30",
+        "id": "w0-p2-e24",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Ceiling Fan",
         "visualEmoji": "🌀",
@@ -3121,13 +2329,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Curtain",
             "emoji": "🪟",
             "label": "Curtain",
-            "translationPt": "Cortina da janela"
+            "translationPt": "Cortina na janela da sala"
           },
           {
             "text": "Light Bulb",
             "emoji": "💡",
             "label": "Light Bulb",
-            "translationPt": "Lâmpada no teto"
+            "translationPt": "Lâmpada"
           },
           {
             "text": "Computer",
@@ -3139,7 +2347,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Ceiling Fan",
             "emoji": "🌀",
             "label": "Ceiling Fan",
-            "translationPt": "Ventilador de teto"
+            "translationPt": "Ventilador de teto na sala"
           }
         ],
         "options": [
@@ -3154,11 +2362,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e31",
+        "id": "w0-p2-e25",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Air Conditioner",
         "visualEmoji": "❄️",
@@ -3167,7 +2372,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Window Blind",
             "emoji": "🪟",
             "label": "Window Blind",
-            "translationPt": "Persiana"
+            "translationPt": "Persiana na janela"
           },
           {
             "text": "Television",
@@ -3179,13 +2384,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Air Conditioner",
             "emoji": "❄️",
             "label": "Air Conditioner",
-            "translationPt": "Ar-condicionado"
+            "translationPt": "Ar-condicionado na parede"
           },
           {
             "text": "TV Stand",
             "emoji": "📺",
             "label": "TV Stand",
-            "translationPt": "Rack de TV / Painel de sala"
+            "translationPt": "Rack de TV / Painel na sala"
           }
         ],
         "options": [
@@ -3200,11 +2405,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e32",
+        "id": "w0-p2-e26",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Ceramic Tile",
         "visualEmoji": "⬜",
@@ -3213,7 +2415,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Ceramic Tile",
             "emoji": "⬜",
             "label": "Ceramic Tile",
-            "translationPt": "Piso cerâmico / Porcelanato"
+            "translationPt": "Piso cerâmico / Porcelanato no chão"
           },
           {
             "text": "Telephone",
@@ -3225,13 +2427,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Ceiling Lamp",
             "emoji": "💡",
             "label": "Ceiling Lamp",
-            "translationPt": "Lustre / Plafon de teto"
+            "translationPt": "Luminária / Lâmpada acesa no teto"
           },
           {
             "text": "Lamp",
             "emoji": "💡",
             "label": "Lamp",
-            "translationPt": "Abajur / Luminária de canto"
+            "translationPt": "Abajur / Luminária de mesa"
           }
         ],
         "options": [
@@ -3246,11 +2448,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p2-e33",
+        "id": "w0-p2-e27",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Bookshelf",
         "visualEmoji": "📚",
@@ -3271,7 +2470,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Bookshelf",
             "emoji": "📚",
             "label": "Bookshelf",
-            "translationPt": "Estante de livros"
+            "translationPt": "Estante cheia de livros"
           },
           {
             "text": "Sofa",
@@ -3292,56 +2491,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p2-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p2-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p2-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p2-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p2-e35",
+        "id": "w0-p2-e28",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Clock",
         "visualEmoji": "⏰",
@@ -3350,7 +2501,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Ceiling Fan",
             "emoji": "🌀",
             "label": "Ceiling Fan",
-            "translationPt": "Ventilador de teto"
+            "translationPt": "Ventilador de teto na sala"
           },
           {
             "text": "Clock",
@@ -3362,13 +2513,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Picture Frame",
             "emoji": "🖼️",
             "label": "Picture Frame",
-            "translationPt": "Porta-retrato / Retrato de fotografia"
+            "translationPt": "Porta-retrato com fotografia"
           },
           {
             "text": "Fan",
             "emoji": "🌀",
             "label": "Fan",
-            "translationPt": "Ventilador"
+            "translationPt": "Ventilador de mesa/coluna"
           }
         ],
         "options": [
@@ -3383,11 +2534,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p2-e36",
+        "id": "w0-p2-e29",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Vase",
         "visualEmoji": "🏺",
@@ -3402,7 +2550,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Power Plug",
             "emoji": "🔌",
             "label": "Power Plug",
-            "translationPt": "Plugue / Cabo de energia"
+            "translationPt": "Plugue sendo conectado na tomada"
           },
           {
             "text": "Power Outlet",
@@ -3414,7 +2562,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Vase",
             "emoji": "🏺",
             "label": "Vase",
-            "translationPt": "Vaso decorativo"
+            "translationPt": "Vaso com flores na mesa"
           }
         ],
         "options": [
@@ -3429,11 +2577,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p2-e37",
+        "id": "w0-p2-e30",
         "type": "image-choice",
-        "conceptTitle": "Sala de Estar, TV, Internet & Iluminação • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Telephone",
         "visualEmoji": "☎️",
@@ -3448,7 +2593,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Rug",
             "emoji": "🟥",
             "label": "Rug",
-            "translationPt": "Tapete da sala"
+            "translationPt": "Tapete na sala"
           },
           {
             "text": "Light Switch",
@@ -3460,7 +2605,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Ceramic Tile",
             "emoji": "⬜",
             "label": "Ceramic Tile",
-            "translationPt": "Piso cerâmico / Porcelanato"
+            "translationPt": "Piso cerâmico / Porcelanato no chão"
           }
         ],
         "options": [
@@ -3473,51 +2618,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "explanation": "Exemplo prático: \"The home telephone is next to the modem.\"",
         "phoneticHint": "/ˈtel.ə.foʊn/",
         "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p2-pron-8",
-        "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
-        "pairs": [
-          {
-            "id": "w0-p2-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
-          },
-          {
-            "id": "w0-p2-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
-          },
-          {
-            "id": "w0-p2-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
-          },
-          {
-            "id": "w0-p2-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
-        "skillCategory": "grammar"
       }
     ]
   },
@@ -3525,16 +2625,16 @@ export const WORLD_0_PHASES: Phase[] = [
     "id": "w0-p3",
     "worldId": 0,
     "phaseNumber": 3,
-    "title": "Ambiente 3 • Cozinha I: Armários, Pia, Ilha, Fogão & Eletros",
-    "subtitle": "Cômodo 3/12 • Armário, gavetas, pia, torneira, pedra, ilha, coifa, pendentes e eletroportáteis",
+    "title": "Vocabulário 3 • Cozinha I: Armários, Pia, Ilha, Fogão & Eletros",
+    "subtitle": "Ambiente 3/12 • Armário, gavetas, pia, torneira, pedra, ilha, coifa, pendentes e eletroportáteis",
     "pedagogicalObjective": "Dominar os móveis planejados, bancadas de pedra, ilha, pia, torneira, coifa, iluminação pendente e eletrodomésticos da cozinha.",
     "type": "lesson",
     "icon": "apple",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Agora entramos na Cozinha! Primeiro observamos toda a estrutura e os aparelhos: Armário (Kitchen Cabinet), Porta do Armário (Cabinet Door), Gavetas (Drawer), Geladeira (Fridge) e a Mesa com Cadeiras (Table & Chair).",
-      "Na área de preparo vemos a Pia (Kitchen Sink), a Torneira (Faucet), a Pedra do Armário / Bancada (Granite Countertop), a Ilha (Kitchen Island), o Fogão (Stove), a Coifa (Range Hood), o Depurador de Ar (Air Purifier) e os Pendentes de Luz (Pendant Light).",
-      "E nos eletros temos: Forno Micro-ondas (Microwave), Forno Elétrico (Electric Oven), Torradeira (Toaster), Cafeteira (Coffee Maker), Liquidificador (Blender), Batedeira (Stand Mixer) e Air Fryer!"
+      "Agora entramos na Cozinha! Observamos toda a estrutura: Armário (Kitchen Cabinet), Porta do Armário (Cabinet Door), Gavetas (Drawer), Geladeira (Fridge) e a Mesa com Cadeiras (Table & Chair).",
+      "Veja a Pia (Kitchen Sink), a Torneira (Faucet), a Pedra do Armário / Bancada (Countertop), a Ilha (Kitchen Island), o Fogão (Stove), a Coifa (Range Hood), o Depurador de Ar (Exhaust Hood) e os Pendentes de Luz (Pendant Light).",
+      "Logo após concluir este 3º módulo de vocabulário, você fará o seu 1º Módulo Exclusivo de Pronomes!"
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -3542,9 +2642,6 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e1",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Kitchen Cabinet",
         "visualEmoji": "🗄️",
@@ -3553,7 +2650,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Cabinet",
             "emoji": "🗄️",
             "label": "Kitchen Cabinet",
-            "translationPt": "Armário de cozinha"
+            "translationPt": "Armário de cozinha completo"
           },
           {
             "text": "Electric Oven",
@@ -3565,7 +2662,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Exhaust Hood",
             "emoji": "💨",
             "label": "Exhaust Hood",
-            "translationPt": "Depurador de ar"
+            "translationPt": "Depurador de ar sobre o fogão"
           },
           {
             "text": "Bar Stool",
@@ -3588,9 +2685,6 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e2",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Cabinet Door",
         "visualEmoji": "🚪",
@@ -3599,7 +2693,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Table",
             "emoji": "🪑",
             "label": "Table",
-            "translationPt": "Mesa de jantar da cozinha"
+            "translationPt": "Mesa de jantar com cadeiras"
           },
           {
             "text": "Trash Can",
@@ -3611,7 +2705,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Cabinet Door",
             "emoji": "🚪",
             "label": "Cabinet Door",
-            "translationPt": "Porta do armário"
+            "translationPt": "Porta do armário de cozinha"
           },
           {
             "text": "Toaster",
@@ -3634,9 +2728,6 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p3-e3",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Drawer",
         "visualEmoji": "🗄️",
@@ -3651,7 +2742,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Drawer",
             "emoji": "🗄️",
             "label": "Drawer",
-            "translationPt": "Gaveta do armário"
+            "translationPt": "Gaveta aberta do armário"
           },
           {
             "text": "Water Dispenser",
@@ -3678,56 +2769,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p3-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p3-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p3-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p3-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p3-e5",
+        "id": "w0-p3-e4",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fridge",
         "visualEmoji": "🧊",
@@ -3748,7 +2791,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Stand Mixer",
             "emoji": "🥣",
             "label": "Stand Mixer",
-            "translationPt": "Batedeira de bolo"
+            "translationPt": "Batedeira planetária"
           },
           {
             "text": "Fridge",
@@ -3769,11 +2812,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e6",
+        "id": "w0-p3-e5",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Freezer",
         "visualEmoji": "❄️",
@@ -3800,7 +2840,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Faucet",
             "emoji": "🚰",
             "label": "Faucet",
-            "translationPt": "Torneira da pia"
+            "translationPt": "Torneira da pia com água"
           }
         ],
         "options": [
@@ -3815,11 +2855,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p3-e7",
+        "id": "w0-p3-e6",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Table",
         "visualEmoji": "🪑",
@@ -3834,19 +2871,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Cabinet Door",
             "emoji": "🚪",
             "label": "Cabinet Door",
-            "translationPt": "Porta do armário"
+            "translationPt": "Porta do armário de cozinha"
           },
           {
             "text": "Range Hood",
             "emoji": "💨",
             "label": "Range Hood",
-            "translationPt": "Coifa de inox"
+            "translationPt": "Coifa instalada sobre o fogão"
           },
           {
             "text": "Table",
             "emoji": "🪑",
             "label": "Table",
-            "translationPt": "Mesa de jantar da cozinha"
+            "translationPt": "Mesa de jantar com cadeiras"
           }
         ],
         "options": [
@@ -3856,16 +2893,13 @@ export const WORLD_0_PHASES: Phase[] = [
           "Table"
         ],
         "correctAnswer": "Table",
-        "explanation": "Exemplo prático: \"The kitchen table has four chairs around it.\"",
+        "explanation": "Exemplo prático: \"The kitchen dining table has chairs around it.\"",
         "phoneticHint": "/ˈteɪ.bəl/",
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e8",
+        "id": "w0-p3-e7",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Chair",
         "visualEmoji": "🪑",
@@ -3874,13 +2908,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Island",
             "emoji": "🏝️",
             "label": "Kitchen Island",
-            "translationPt": "Ilha da cozinha"
+            "translationPt": "Ilha da cozinha completa"
           },
           {
             "text": "Kettle",
             "emoji": "🫖",
             "label": "Kettle",
-            "translationPt": "Chaleira elétrica / de fogão"
+            "translationPt": "Chaleira"
           },
           {
             "text": "Chair",
@@ -3892,7 +2926,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Cabinet",
             "emoji": "🗄️",
             "label": "Kitchen Cabinet",
-            "translationPt": "Armário de cozinha"
+            "translationPt": "Armário de cozinha completo"
           }
         ],
         "options": [
@@ -3907,56 +2941,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p3-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p3-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p3-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p3-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p3-e10",
+        "id": "w0-p3-e8",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Kitchen Sink",
         "visualEmoji": "🚰",
@@ -3965,7 +2951,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Sink",
             "emoji": "🚰",
             "label": "Kitchen Sink",
-            "translationPt": "Pia da cozinha (cuba de inox)"
+            "translationPt": "Pia da cozinha completa"
           },
           {
             "text": "Kitchen Scale",
@@ -3998,11 +2984,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p3-e11",
+        "id": "w0-p3-e9",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Faucet",
         "visualEmoji": "🚰",
@@ -4017,13 +3000,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Faucet",
             "emoji": "🚰",
             "label": "Faucet",
-            "translationPt": "Torneira da pia"
+            "translationPt": "Torneira da pia com água"
           },
           {
             "text": "Drawer",
             "emoji": "🗄️",
             "label": "Drawer",
-            "translationPt": "Gaveta do armário"
+            "translationPt": "Gaveta aberta do armário"
           },
           {
             "text": "Freezer",
@@ -4044,11 +3027,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e12",
+        "id": "w0-p3-e10",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Countertop",
         "visualEmoji": "🪨",
@@ -4057,7 +3037,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Stand Mixer",
             "emoji": "🥣",
             "label": "Stand Mixer",
-            "translationPt": "Batedeira de bolo"
+            "translationPt": "Batedeira planetária"
           },
           {
             "text": "Countertop",
@@ -4069,7 +3049,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Pendant Light",
             "emoji": "💡",
             "label": "Pendant Light",
-            "translationPt": "Luminária pendente (sobre a ilha/mesa)"
+            "translationPt": "Luminárias pendentes sobre a ilha/mesa"
           },
           {
             "text": "Sandwich Maker",
@@ -4090,11 +3070,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e13",
+        "id": "w0-p3-e11",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Kitchen Island",
         "visualEmoji": "🏝️",
@@ -4103,7 +3080,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Cabinet Door",
             "emoji": "🚪",
             "label": "Cabinet Door",
-            "translationPt": "Porta do armário"
+            "translationPt": "Porta do armário de cozinha"
           },
           {
             "text": "Chair",
@@ -4121,7 +3098,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Island",
             "emoji": "🏝️",
             "label": "Kitchen Island",
-            "translationPt": "Ilha da cozinha"
+            "translationPt": "Ilha da cozinha completa"
           }
         ],
         "options": [
@@ -4136,56 +3113,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p3-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p3-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p3-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p3-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p3-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p3-e15",
+        "id": "w0-p3-e12",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Bar Stool",
         "visualEmoji": "🪑",
@@ -4194,7 +3123,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Sink",
             "emoji": "🚰",
             "label": "Kitchen Sink",
-            "translationPt": "Pia da cozinha (cuba de inox)"
+            "translationPt": "Pia da cozinha completa"
           },
           {
             "text": "Blender",
@@ -4227,11 +3156,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e16",
+        "id": "w0-p3-e13",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Stove",
         "visualEmoji": "🔥",
@@ -4252,13 +3178,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Cabinet",
             "emoji": "🗄️",
             "label": "Kitchen Cabinet",
-            "translationPt": "Armário de cozinha"
+            "translationPt": "Armário de cozinha completo"
           },
           {
             "text": "Kettle",
             "emoji": "🫖",
             "label": "Kettle",
-            "translationPt": "Chaleira elétrica / de fogão"
+            "translationPt": "Chaleira"
           }
         ],
         "options": [
@@ -4273,11 +3199,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e17",
+        "id": "w0-p3-e14",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Range Hood",
         "visualEmoji": "💨",
@@ -4292,13 +3215,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Drawer",
             "emoji": "🗄️",
             "label": "Drawer",
-            "translationPt": "Gaveta do armário"
+            "translationPt": "Gaveta aberta do armário"
           },
           {
             "text": "Range Hood",
             "emoji": "💨",
             "label": "Range Hood",
-            "translationPt": "Coifa de inox"
+            "translationPt": "Coifa instalada sobre o fogão"
           },
           {
             "text": "Air Fryer",
@@ -4319,11 +3242,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p3-e18",
+        "id": "w0-p3-e15",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Exhaust Hood",
         "visualEmoji": "💨",
@@ -4338,7 +3258,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Exhaust Hood",
             "emoji": "💨",
             "label": "Exhaust Hood",
-            "translationPt": "Depurador de ar"
+            "translationPt": "Depurador de ar sobre o fogão"
           },
           {
             "text": "Toaster",
@@ -4350,7 +3270,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Table",
             "emoji": "🪑",
             "label": "Table",
-            "translationPt": "Mesa de jantar da cozinha"
+            "translationPt": "Mesa de jantar com cadeiras"
           }
         ],
         "options": [
@@ -4365,56 +3285,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p3-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p3-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p3-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p3-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p3-e20",
+        "id": "w0-p3-e16",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pendant Light",
         "visualEmoji": "💡",
@@ -4435,13 +3307,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Faucet",
             "emoji": "🚰",
             "label": "Faucet",
-            "translationPt": "Torneira da pia"
+            "translationPt": "Torneira da pia com água"
           },
           {
             "text": "Pendant Light",
             "emoji": "💡",
             "label": "Pendant Light",
-            "translationPt": "Luminária pendente (sobre a ilha/mesa)"
+            "translationPt": "Luminárias pendentes sobre a ilha/mesa"
           }
         ],
         "options": [
@@ -4456,11 +3328,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e21",
+        "id": "w0-p3-e17",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Microwave",
         "visualEmoji": "⏲️",
@@ -4502,11 +3371,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p3-e22",
+        "id": "w0-p3-e18",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Electric Oven",
         "visualEmoji": "♨️",
@@ -4521,7 +3387,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Range Hood",
             "emoji": "💨",
             "label": "Range Hood",
-            "translationPt": "Coifa de inox"
+            "translationPt": "Coifa instalada sobre o fogão"
           },
           {
             "text": "Bar Stool",
@@ -4548,11 +3414,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e23",
+        "id": "w0-p3-e19",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Toaster",
         "visualEmoji": "🍞",
@@ -4561,13 +3424,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Exhaust Hood",
             "emoji": "💨",
             "label": "Exhaust Hood",
-            "translationPt": "Depurador de ar"
+            "translationPt": "Depurador de ar sobre o fogão"
           },
           {
             "text": "Kitchen Island",
             "emoji": "🏝️",
             "label": "Kitchen Island",
-            "translationPt": "Ilha da cozinha"
+            "translationPt": "Ilha da cozinha completa"
           },
           {
             "text": "Toaster",
@@ -4579,7 +3442,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Sink",
             "emoji": "🚰",
             "label": "Kitchen Sink",
-            "translationPt": "Pia da cozinha (cuba de inox)"
+            "translationPt": "Pia da cozinha completa"
           }
         ],
         "options": [
@@ -4594,56 +3457,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p3-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p3-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p3-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p3-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p3-e25",
+        "id": "w0-p3-e20",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Coffee Maker",
         "visualEmoji": "☕",
@@ -4658,7 +3473,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Drawer",
             "emoji": "🗄️",
             "label": "Drawer",
-            "translationPt": "Gaveta do armário"
+            "translationPt": "Gaveta aberta do armário"
           },
           {
             "text": "Apron",
@@ -4670,7 +3485,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Pendant Light",
             "emoji": "💡",
             "label": "Pendant Light",
-            "translationPt": "Luminária pendente (sobre a ilha/mesa)"
+            "translationPt": "Luminárias pendentes sobre a ilha/mesa"
           }
         ],
         "options": [
@@ -4685,11 +3500,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p3-e26",
+        "id": "w0-p3-e21",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Blender",
         "visualEmoji": "🌪️",
@@ -4731,11 +3543,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e27",
+        "id": "w0-p3-e22",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Stand Mixer",
         "visualEmoji": "🥣",
@@ -4750,7 +3559,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Stand Mixer",
             "emoji": "🥣",
             "label": "Stand Mixer",
-            "translationPt": "Batedeira de bolo"
+            "translationPt": "Batedeira planetária"
           },
           {
             "text": "Fridge",
@@ -4777,11 +3586,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e28",
+        "id": "w0-p3-e23",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Air Fryer",
         "visualEmoji": "🍟",
@@ -4790,19 +3596,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Faucet",
             "emoji": "🚰",
             "label": "Faucet",
-            "translationPt": "Torneira da pia"
+            "translationPt": "Torneira da pia com água"
           },
           {
             "text": "Range Hood",
             "emoji": "💨",
             "label": "Range Hood",
-            "translationPt": "Coifa de inox"
+            "translationPt": "Coifa instalada sobre o fogão"
           },
           {
             "text": "Cabinet Door",
             "emoji": "🚪",
             "label": "Cabinet Door",
-            "translationPt": "Porta do armário"
+            "translationPt": "Porta do armário de cozinha"
           },
           {
             "text": "Air Fryer",
@@ -4823,56 +3629,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p3-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p3-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p3-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p3-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p3-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p3-e30",
+        "id": "w0-p3-e24",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Sandwich Maker",
         "visualEmoji": "🥪",
@@ -4881,13 +3639,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Sink",
             "emoji": "🚰",
             "label": "Kitchen Sink",
-            "translationPt": "Pia da cozinha (cuba de inox)"
+            "translationPt": "Pia da cozinha completa"
           },
           {
             "text": "Kitchen Cabinet",
             "emoji": "🗄️",
             "label": "Kitchen Cabinet",
-            "translationPt": "Armário de cozinha"
+            "translationPt": "Armário de cozinha completo"
           },
           {
             "text": "Sandwich Maker",
@@ -4899,7 +3657,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Island",
             "emoji": "🏝️",
             "label": "Kitchen Island",
-            "translationPt": "Ilha da cozinha"
+            "translationPt": "Ilha da cozinha completa"
           }
         ],
         "options": [
@@ -4914,11 +3672,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e31",
+        "id": "w0-p3-e25",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Water Dispenser",
         "visualEmoji": "🚰",
@@ -4933,7 +3688,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Table",
             "emoji": "🪑",
             "label": "Table",
-            "translationPt": "Mesa de jantar da cozinha"
+            "translationPt": "Mesa de jantar com cadeiras"
           },
           {
             "text": "Trash Can",
@@ -4960,11 +3715,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e32",
+        "id": "w0-p3-e26",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Kettle",
         "visualEmoji": "🫖",
@@ -4979,13 +3731,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Exhaust Hood",
             "emoji": "💨",
             "label": "Exhaust Hood",
-            "translationPt": "Depurador de ar"
+            "translationPt": "Depurador de ar sobre o fogão"
           },
           {
             "text": "Kettle",
             "emoji": "🫖",
             "label": "Kettle",
-            "translationPt": "Chaleira elétrica / de fogão"
+            "translationPt": "Chaleira"
           },
           {
             "text": "Electric Oven",
@@ -5006,11 +3758,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p3-e33",
+        "id": "w0-p3-e27",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Kitchen Scale",
         "visualEmoji": "⚖️",
@@ -5031,13 +3780,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Stand Mixer",
             "emoji": "🥣",
             "label": "Stand Mixer",
-            "translationPt": "Batedeira de bolo"
+            "translationPt": "Batedeira planetária"
           },
           {
             "text": "Pendant Light",
             "emoji": "💡",
             "label": "Pendant Light",
-            "translationPt": "Luminária pendente (sobre a ilha/mesa)"
+            "translationPt": "Luminárias pendentes sobre a ilha/mesa"
           }
         ],
         "options": [
@@ -5052,56 +3801,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p3-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p3-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p3-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p3-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p3-e35",
+        "id": "w0-p3-e28",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sponge",
         "visualEmoji": "🧽",
@@ -5143,11 +3844,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e36",
+        "id": "w0-p3-e29",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Apron",
         "visualEmoji": "🎽",
@@ -5189,11 +3887,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p3-e37",
+        "id": "w0-p3-e30",
         "type": "image-choice",
-        "conceptTitle": "Cozinha I: Armários, Pia, Ilha, Fogão & Eletros • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Trash Can",
         "visualEmoji": "🗑️",
@@ -5208,13 +3903,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Kitchen Cabinet",
             "emoji": "🗄️",
             "label": "Kitchen Cabinet",
-            "translationPt": "Armário de cozinha"
+            "translationPt": "Armário de cozinha completo"
           },
           {
             "text": "Kettle",
             "emoji": "🫖",
             "label": "Kettle",
-            "translationPt": "Chaleira elétrica / de fogão"
+            "translationPt": "Chaleira"
           },
           {
             "text": "Trash Can",
@@ -5233,51 +3928,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "explanation": "Exemplo prático: \"Step on the pedal to open the kitchen trash can.\"",
         "phoneticHint": "/ˈtræʃ kæn/",
         "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p3-pron-8",
-        "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
-        "pairs": [
-          {
-            "id": "w0-p3-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
-          },
-          {
-            "id": "w0-p3-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
-          },
-          {
-            "id": "w0-p3-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
-          },
-          {
-            "id": "w0-p3-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
-        "skillCategory": "grammar"
       }
     ]
   },
@@ -5285,26 +3935,268 @@ export const WORLD_0_PHASES: Phase[] = [
     "id": "w0-p4",
     "worldId": 0,
     "phaseNumber": 4,
-    "title": "Ambiente 4 • Cozinha II: Panelas, Talheres & Dentro da Geladeira",
-    "subtitle": "Cômodo 4/12 • Modelos de panelas, utensílios de gaveta, louças e alimentos na geladeira",
+    "title": "Lição de Pronomes I • Pessoais & De Tratamento",
+    "subtitle": "Módulo de Pronomes 1/4 (Após 3 de Vocabulário) • Pares Associativos + Voz da Professora",
+    "pedagogicalObjective": "Dominar os Pronomes Pessoais (I, You, He, She, It, We, They, Me, Him, Her, Us, Them) e os Pronomes de Tratamento (Mr., Mrs., Miss, Ms., Sir, Ma'am, Dr., Prof.) conectando cada par.",
+    "type": "chest",
+    "icon": "star",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Chegou a hora da nossa 1ª Lição Exclusiva de Pronomes (inserida a cada 3 módulos de vocabulário)!",
+      "1º Passo: Começamos pelos Pronomes Pessoais (I, You, He, She, It, We, They), que substituem o nome das pessoas e coisas.",
+      "2º Passo: Em seguida praticamos os Pronomes de Tratamento (Mr., Mrs., Miss, Ms., Sir, Ma'am, Dr., Prof.). Ouça a voz humana e meiga da professora no cabeçalho e conecte cada par!"
+    ],
+    "xpReward": 70,
+    "gemsReward": 30,
+    "exercises": [
+      {
+        "id": "w0-p4-pron-1",
+        "type": "pair-match",
+        "conceptTitle": "1º • Pronomes Pessoais (Quem fala e com quem falamos)",
+        "conceptHeader": "Quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino ou homem, digo \"He\" (Ele); e para uma menina ou mulher, digo \"She\" (Ela)!",
+        "teacherAudioPt": "/audio/teacher/pronoun_1.wav",
+        "prompt": "🤝 Conecte cada Pronome Pessoal em inglês ao seu par em português:",
+        "pairs": [
+          {
+            "id": "w0-p4-b1-p1",
+            "en": "I",
+            "emoji": "🙋",
+            "phonetic": "/aɪ/",
+            "pt": "Eu (falando de mim mesmo)",
+            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
+          },
+          {
+            "id": "w0-p4-b1-p2",
+            "en": "You",
+            "emoji": "👉",
+            "phonetic": "/juː/",
+            "pt": "Você (com quem estou falando)",
+            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
+          },
+          {
+            "id": "w0-p4-b1-p3",
+            "en": "He",
+            "emoji": "👦",
+            "phonetic": "/hiː/",
+            "pt": "Ele (para menino ou homem)",
+            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
+          },
+          {
+            "id": "w0-p4-b1-p4",
+            "en": "She",
+            "emoji": "👧",
+            "phonetic": "/ʃiː/",
+            "pt": "Ela (para menina ou mulher)",
+            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Pronomes Pessoais do Singular: I (Eu), You (Você), He (Ele), She (Ela).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p4-pron-2",
+        "type": "pair-match",
+        "conceptTitle": "1º • Pronomes Pessoais (Coisas, Bichinhos e Plural)",
+        "conceptHeader": "Para 1 objeto da casa ou 1 bichinho, usamos \"It\" (Ele/Ela). Quando estamos juntos (eu + você), dizemos \"We\" (Nós). Para várias pessoas com quem falamos, \"You\" (Vocês); e para eles ou elas, \"They\"!",
+        "teacherAudioPt": "/audio/teacher/pronoun_1.wav",
+        "prompt": "🤝 Ligue os Pronomes Pessoais de coisas/animais e do plural aos seus pares:",
+        "pairs": [
+          {
+            "id": "w0-p4-b2-p5",
+            "en": "It",
+            "emoji": "🐶",
+            "phonetic": "/ɪt/",
+            "pt": "Ele / Ela (para 1 objeto, casa ou animal)",
+            "tipPt": "Isso! A porta, o sofá ou o cachorrinho são \"It\"!"
+          },
+          {
+            "id": "w0-p4-b2-p6",
+            "en": "We",
+            "emoji": "👨‍👩‍👧",
+            "phonetic": "/wiː/",
+            "pt": "Nós (eu e você juntos)",
+            "tipPt": "Muito bem! \"We\" significa \"Nós\"!"
+          },
+          {
+            "id": "w0-p4-b2-p7",
+            "en": "You (plural)",
+            "emoji": "👫",
+            "phonetic": "/juː/",
+            "pt": "Vocês (várias pessoas com quem falo)",
+            "tipPt": "Ótimo! \"You\" serve para \"Você\" e também para \"Vocês\"!"
+          },
+          {
+            "id": "w0-p4-b2-p8",
+            "en": "They",
+            "emoji": "👥",
+            "phonetic": "/ðeɪ/",
+            "pt": "Eles / Elas (pessoas, animais ou objetos)",
+            "tipPt": "Perfeito! \"They\" é o plural para tudo!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "It (para 1 objeto/animal), We (Nós), You (Vocês), They (Eles/Elas).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p4-pron-3",
+        "type": "pair-match",
+        "conceptTitle": "1º • Pronomes Pessoais na Prática (Frases Curtas)",
+        "conceptHeader": "Vamos ver como os Pronomes Pessoais ficam lindos junto das palavras que aprendemos na casa? Toque no inglês para ouvir e conecte ao significado!",
+        "teacherAudioPt": "/audio/teacher/pronoun_1.wav",
+        "prompt": "🤝 Associe cada frase curta com Pronome Pessoal ao seu par:",
+        "pairs": [
+          {
+            "id": "w0-p4-b3-p9",
+            "en": "I am at home",
+            "emoji": "🏠",
+            "phonetic": "/aɪ æm æt hoʊm/",
+            "pt": "Eu estou em casa",
+            "tipPt": "Isso! \"I\" = \"Eu\"!"
+          },
+          {
+            "id": "w0-p4-b3-p10",
+            "en": "He is at the door",
+            "emoji": "🚪",
+            "phonetic": "/hiː ɪz æt ðə dɔːr/",
+            "pt": "Ele está na porta",
+            "tipPt": "Muito bem! \"He\" = \"Ele\"!"
+          },
+          {
+            "id": "w0-p4-b3-p11",
+            "en": "She is on the sofa",
+            "emoji": "🛋️",
+            "phonetic": "/ʃiː ɪz ɑːn ðə ˈsoʊ.fə/",
+            "pt": "Ela está no sofá",
+            "tipPt": "Perfeito! \"She\" = \"Ela\"!"
+          },
+          {
+            "id": "w0-p4-b3-p12",
+            "en": "It is a metal key",
+            "emoji": "🔑",
+            "phonetic": "/ɪt ɪz ə ˈmet.əl kiː/",
+            "pt": "Ela (a chave) é uma chave de metal",
+            "tipPt": "Lindo! Para objetos como a chave usamos \"It\"!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "I am at home (Eu estou em casa), He is at the door (Ele está na porta), She is in the living room (Ela está na sala), It is a wooden door (É uma porta de madeira).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p4-pron-4",
+        "type": "pair-match",
+        "conceptTitle": "2º • Pronomes de Tratamento (Educação e Respeito - Parte 1)",
+        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora casada), \"Miss\" (Senhorita / Professora) e \"Ms.\"!",
+        "teacherAudioPt": "/audio/teacher/pronoun_2.wav",
+        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu par em português:",
+        "pairs": [
+          {
+            "id": "w0-p4-b4-t1",
+            "en": "Mr.",
+            "emoji": "👨",
+            "phonetic": "/ˈmɪs.tər/",
+            "pt": "Senhor (usado antes do nome do homem)",
+            "tipPt": "Muito educado! \"Mr. Silva\" = \"Senhor Silva\"!"
+          },
+          {
+            "id": "w0-p4-b4-t2",
+            "en": "Mrs.",
+            "emoji": "👩",
+            "phonetic": "/ˈmɪs.ɪz/",
+            "pt": "Senhora (usado para mulher casada)",
+            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
+          },
+          {
+            "id": "w0-p4-b4-t3",
+            "en": "Miss",
+            "emoji": "👩‍🏫",
+            "phonetic": "/mɪs/",
+            "pt": "Senhorita (moça jovem ou professora)",
+            "tipPt": "Isso! Na escola as crianças chamam a professora de \"Miss\"!"
+          },
+          {
+            "id": "w0-p4-b4-t4",
+            "en": "Ms.",
+            "emoji": "👩‍💼",
+            "phonetic": "/mɪz/",
+            "pt": "Senhora / Senhorita (para qualquer mulher)",
+            "tipPt": "Excelente! \"Ms.\" é respeitoso para qualquer mulher!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Pronomes de Tratamento antes do nome: Mr. (Senhor), Mrs. (Senhora), Miss (Senhorita), Ms. (Senhora/Senhorita).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p4-pron-5",
+        "type": "pair-match",
+        "conceptTitle": "2º • Pronomes de Tratamento (Educação no Dia a Dia - Parte 2)",
+        "conceptHeader": "Quando falamos com respeito sem dizer o nome da pessoa, usamos \"Sir\" (Senhor) e \"Ma'am\" (Senhora). E para profissionais usamos \"Dr.\" (Doutor) e \"Prof.\" (Professor)!",
+        "teacherAudioPt": "/audio/teacher/pronoun_2.wav",
+        "prompt": "🤝 Ligue cada Pronome de Tratamento direto ao seu significado:",
+        "pairs": [
+          {
+            "id": "w0-p4-b5-t5",
+            "en": "Sir",
+            "emoji": "🎩",
+            "phonetic": "/sɜːr/",
+            "pt": "Senhor (tratamento direto: Yes, Sir!)",
+            "tipPt": "Lindo! \"Thank you, Sir!\" = \"Obrigado, Senhor!\""
+          },
+          {
+            "id": "w0-p4-b5-t6",
+            "en": "Ma'am",
+            "emoji": "🌸",
+            "phonetic": "/mæm/",
+            "pt": "Senhora (tratamento direto: Yes, Ma'am!)",
+            "tipPt": "Perfeito! \"Excuse me, Ma'am\" = \"Com licença, Senhora\"!"
+          },
+          {
+            "id": "w0-p4-b5-t7",
+            "en": "Dr. (Doctor)",
+            "emoji": "🩺",
+            "phonetic": "/ˈdɑːk.tər/",
+            "pt": "Doutor / Doutora (médico ou dentista)",
+            "tipPt": "Isso mesmo! \"Dr.\" usamos para médicos e doutores!"
+          },
+          {
+            "id": "w0-p4-b5-t8",
+            "en": "Prof. (Professor)",
+            "emoji": "🎓",
+            "phonetic": "/prəˈfes.ər/",
+            "pt": "Professor(a) / Mestre",
+            "tipPt": "Parabéns! Você concluiu Pessoais e Tratamento!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Sir (Senhor), Ma'am (Senhora), Dr. (Doutor/Doutora), Prof. (Professor/Mestre).",
+        "skillCategory": "grammar"
+      }
+    ]
+  },
+  {
+    "id": "w0-p5",
+    "worldId": 0,
+    "phaseNumber": 5,
+    "title": "Vocabulário 4 • Cozinha II: Panelas, Talheres & Dentro da Geladeira",
+    "subtitle": "Ambiente 4/12 • Modelos de panelas, utensílios de gaveta, louças e alimentos na geladeira",
     "pedagogicalObjective": "Conhecer cada modelo de panela (caçarola, frigideira, panela de pressão), os talheres e utensílios das gavetas e o que vemos ao abrir a geladeira.",
     "type": "lesson",
     "icon": "apple",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Continuando na Cozinha, agora abrimos os armários, as gavetas e a porta da geladeira!",
+      "Continuando na Cozinha, abrimos os armários, as gavetas e a porta da geladeira!",
       "Veja os vários modelos de panelas: Panela de cozinhar (Cooking Pot), Frigideira (Frying Pan), Panela de Pressão (Pressure Cooker) e Assadeira (Baking Tray).",
-      "Nas gavetas temos os talheres e utensílios (Fork, Knife, Spoon, Ladle, Spatula, Grater, Strainer, Cutting Board) e, dentro da geladeira, vemos Garrafa de Água (Bottle), Leite (Milk), Manteiga (Butter), Queijo (Cheese), Ovos (Egg), Suco (Juice) e frutas/verduras!"
+      "Nas gavetas temos os talheres e utensílios (Fork, Knife, Spoon, Soup Ladle, Spatula, Grater, Strainer, Cutting Board) e, dentro da geladeira, vemos Garrafa de Água (Bottle), Leite (Milk), Manteiga (Butter), Queijo (Cheese), Ovos (Egg), Suco (Juice) e frutas/verduras!"
     ],
     "xpReward": 50,
     "gemsReward": 20,
     "exercises": [
       {
-        "id": "w0-p4-e1",
+        "id": "w0-p5-e1",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cooking Pot",
         "visualEmoji": "🍲",
@@ -5316,16 +4208,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Presunto (na geladeira)"
           },
           {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo (na porta/prateleira da geladeira)"
-          },
-          {
             "text": "Cooking Pot",
             "emoji": "🍲",
             "label": "Cooking Pot",
             "translationPt": "Panela com tampa"
+          },
+          {
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo (na geladeira)"
           },
           {
             "text": "Bowl",
@@ -5336,8 +4228,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Ham",
-          "Egg",
           "Cooking Pot",
+          "Egg",
           "Bowl"
         ],
         "correctAnswer": "Cooking Pot",
@@ -5346,27 +4238,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e2",
+        "id": "w0-p5-e2",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Frying Pan",
         "visualEmoji": "🍳",
         "visualOptions": [
-          {
-            "text": "Napkin",
-            "emoji": "🧻",
-            "label": "Napkin",
-            "translationPt": "Guardanapo"
-          },
-          {
-            "text": "Frying Pan",
-            "emoji": "🍳",
-            "label": "Frying Pan",
-            "translationPt": "Frigideira antiaderente"
-          },
           {
             "text": "Bottle",
             "emoji": "🍾",
@@ -5374,17 +4251,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Garrafa de água (na geladeira)"
           },
           {
+            "text": "Napkin",
+            "emoji": "🧻",
+            "label": "Napkin",
+            "translationPt": "Guardanapo"
+          },
+          {
             "text": "Knife",
             "emoji": "🔪",
             "label": "Knife",
             "translationPt": "Faca de cozinha"
+          },
+          {
+            "text": "Frying Pan",
+            "emoji": "🍳",
+            "label": "Frying Pan",
+            "translationPt": "Frigideira antiaderente"
           }
         ],
         "options": [
-          "Napkin",
-          "Frying Pan",
           "Bottle",
-          "Knife"
+          "Napkin",
+          "Knife",
+          "Frying Pan"
         ],
         "correctAnswer": "Frying Pan",
         "explanation": "Exemplo prático: \"Fry eggs in a non-stick frying pan.\"",
@@ -5392,26 +4281,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-e3",
+        "id": "w0-p5-e3",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Pressure Cooker",
         "visualEmoji": "🍲",
         "visualOptions": [
           {
-            "text": "Grater",
-            "emoji": "🧀",
-            "label": "Grater",
-            "translationPt": "Ralador de queijo e legumes"
-          },
-          {
-            "text": "Jar",
-            "emoji": "🫙",
-            "label": "Jar",
-            "translationPt": "Pote de vidro com tampa"
+            "text": "Pressure Cooker",
+            "emoji": "🍲",
+            "label": "Pressure Cooker",
+            "translationPt": "Panela de pressão"
           },
           {
             "text": "Juice",
@@ -5420,17 +4300,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Jarra de suco (na geladeira)"
           },
           {
-            "text": "Pressure Cooker",
-            "emoji": "🍲",
-            "label": "Pressure Cooker",
-            "translationPt": "Panela de pressão"
+            "text": "Jar",
+            "emoji": "🫙",
+            "label": "Jar",
+            "translationPt": "Pote de vidro com tampa"
+          },
+          {
+            "text": "Grater",
+            "emoji": "🧀",
+            "label": "Grater",
+            "translationPt": "Ralador de queijo e legumes"
           }
         ],
         "options": [
-          "Grater",
-          "Jar",
+          "Pressure Cooker",
           "Juice",
-          "Pressure Cooker"
+          "Jar",
+          "Grater"
         ],
         "correctAnswer": "Pressure Cooker",
         "explanation": "Exemplo prático: \"Cook beans fast in the aluminum pressure cooker.\"",
@@ -5438,66 +4324,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p4-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p4-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p4-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p4-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p4-e5",
+        "id": "w0-p5-e4",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Baking Tray",
         "visualEmoji": "🥮",
         "visualOptions": [
-          {
-            "text": "Baking Tray",
-            "emoji": "🥮",
-            "label": "Baking Tray",
-            "translationPt": "Assadeira / Forma de forno"
-          },
           {
             "text": "Soup Ladle",
             "emoji": "🥄",
@@ -5515,13 +4347,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍳",
             "label": "Spatula",
             "translationPt": "Espátula / Escumadeira"
+          },
+          {
+            "text": "Baking Tray",
+            "emoji": "🥮",
+            "label": "Baking Tray",
+            "translationPt": "Assadeira / Forma de forno"
           }
         ],
         "options": [
-          "Baking Tray",
           "Soup Ladle",
           "Strainer",
-          "Spatula"
+          "Spatula",
+          "Baking Tray"
         ],
         "correctAnswer": "Baking Tray",
         "explanation": "Exemplo prático: \"Put the metal baking tray inside the oven.\"",
@@ -5529,11 +4367,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e6",
+        "id": "w0-p5-e5",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Fork",
         "visualEmoji": "🍴",
@@ -5551,23 +4386,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tábua de corte"
           },
           {
-            "text": "Cooking Pot",
-            "emoji": "🍲",
-            "label": "Cooking Pot",
-            "translationPt": "Panela com tampa"
-          },
-          {
             "text": "Fork",
             "emoji": "🍴",
             "label": "Fork",
             "translationPt": "Garfo"
+          },
+          {
+            "text": "Cooking Pot",
+            "emoji": "🍲",
+            "label": "Cooking Pot",
+            "translationPt": "Panela com tampa"
           }
         ],
         "options": [
           "Cup",
           "Cutting Board",
-          "Cooking Pot",
-          "Fork"
+          "Fork",
+          "Cooking Pot"
         ],
         "correctAnswer": "Fork",
         "explanation": "Exemplo prático: \"Take a clean fork from the kitchen drawer.\"",
@@ -5575,15 +4410,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-e7",
+        "id": "w0-p5-e6",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Knife",
         "visualEmoji": "🔪",
         "visualOptions": [
+          {
+            "text": "Knife",
+            "emoji": "🔪",
+            "label": "Knife",
+            "translationPt": "Faca de cozinha"
+          },
           {
             "text": "Frying Pan",
             "emoji": "🍳",
@@ -5597,12 +4435,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rolo de abrir massa"
           },
           {
-            "text": "Knife",
-            "emoji": "🔪",
-            "label": "Knife",
-            "translationPt": "Faca de cozinha"
-          },
-          {
             "text": "Lettuce",
             "emoji": "🥬",
             "label": "Lettuce",
@@ -5610,9 +4442,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Knife",
           "Frying Pan",
           "Rolling Pin",
-          "Knife",
           "Lettuce"
         ],
         "correctAnswer": "Knife",
@@ -5621,15 +4453,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e8",
+        "id": "w0-p5-e7",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Spoon",
         "visualEmoji": "🥄",
         "visualOptions": [
+          {
+            "text": "Yogurt",
+            "emoji": "🥣",
+            "label": "Yogurt",
+            "translationPt": "Iogurte (na geladeira)"
+          },
           {
             "text": "Spoon",
             "emoji": "🥄",
@@ -5643,12 +4478,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Queijo (na geladeira)"
           },
           {
-            "text": "Yogurt",
-            "emoji": "🥣",
-            "label": "Yogurt",
-            "translationPt": "Iogurte (na geladeira)"
-          },
-          {
             "text": "Butter",
             "emoji": "🧈",
             "label": "Butter",
@@ -5656,9 +4485,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Yogurt",
           "Spoon",
           "Cheese",
-          "Yogurt",
           "Butter"
         ],
         "correctAnswer": "Spoon",
@@ -5667,56 +4496,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p4-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p4-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p4-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p4-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p4-e10",
+        "id": "w0-p5-e8",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Soup Ladle",
         "visualEmoji": "🥄",
@@ -5758,11 +4539,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-e11",
+        "id": "w0-p5-e9",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Spatula",
         "visualEmoji": "🍳",
@@ -5772,12 +4550,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥛",
             "label": "Glass",
             "translationPt": "Copo de vidro"
-          },
-          {
-            "text": "Spatula",
-            "emoji": "🍳",
-            "label": "Spatula",
-            "translationPt": "Espátula / Escumadeira"
           },
           {
             "text": "Fork",
@@ -5790,13 +4562,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥛",
             "label": "Milk",
             "translationPt": "Leite (na geladeira)"
+          },
+          {
+            "text": "Spatula",
+            "emoji": "🍳",
+            "label": "Spatula",
+            "translationPt": "Espátula / Escumadeira"
           }
         ],
         "options": [
           "Glass",
-          "Spatula",
           "Fork",
-          "Milk"
+          "Milk",
+          "Spatula"
         ],
         "correctAnswer": "Spatula",
         "explanation": "Exemplo prático: \"Flip the pancake with a kitchen spatula.\"",
@@ -5804,11 +4582,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e12",
+        "id": "w0-p5-e10",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Grater",
         "visualEmoji": "🧀",
@@ -5826,23 +4601,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Panela de pressão"
           },
           {
-            "text": "Jar",
-            "emoji": "🫙",
-            "label": "Jar",
-            "translationPt": "Pote de vidro com tampa"
-          },
-          {
             "text": "Grater",
             "emoji": "🧀",
             "label": "Grater",
             "translationPt": "Ralador de queijo e legumes"
+          },
+          {
+            "text": "Jar",
+            "emoji": "🫙",
+            "label": "Jar",
+            "translationPt": "Pote de vidro com tampa"
           }
         ],
         "options": [
           "Plate",
           "Pressure Cooker",
-          "Jar",
-          "Grater"
+          "Grater",
+          "Jar"
         ],
         "correctAnswer": "Grater",
         "explanation": "Exemplo prático: \"Grate the cheese using a metal box grater.\"",
@@ -5850,15 +4625,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e13",
+        "id": "w0-p5-e11",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Strainer",
         "visualEmoji": "🥣",
         "visualOptions": [
+          {
+            "text": "Strainer",
+            "emoji": "🥣",
+            "label": "Strainer",
+            "translationPt": "Peneira / Escorredor de cozinha"
+          },
           {
             "text": "Spoon",
             "emoji": "🥄",
@@ -5872,12 +4650,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Alface (na gaveta da geladeira)"
           },
           {
-            "text": "Strainer",
-            "emoji": "🥣",
-            "label": "Strainer",
-            "translationPt": "Peneira / Escorredor de cozinha"
-          },
-          {
             "text": "Frying Pan",
             "emoji": "🍳",
             "label": "Frying Pan",
@@ -5885,9 +4657,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Strainer",
           "Spoon",
           "Lettuce",
-          "Strainer",
           "Frying Pan"
         ],
         "correctAnswer": "Strainer",
@@ -5896,65 +4668,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p4-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p4-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p4-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p4-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p4-e15",
+        "id": "w0-p5-e12",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Cutting Board",
         "visualEmoji": "🪵",
         "visualOptions": [
           {
-            "text": "Cutting Board",
-            "emoji": "🪵",
-            "label": "Cutting Board",
-            "translationPt": "Tábua de corte"
+            "text": "Bottle",
+            "emoji": "🍾",
+            "label": "Bottle",
+            "translationPt": "Garrafa de água (na geladeira)"
           },
           {
             "text": "Baking Tray",
@@ -5963,10 +4687,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Assadeira / Forma de forno"
           },
           {
-            "text": "Bottle",
-            "emoji": "🍾",
-            "label": "Bottle",
-            "translationPt": "Garrafa de água (na geladeira)"
+            "text": "Cutting Board",
+            "emoji": "🪵",
+            "label": "Cutting Board",
+            "translationPt": "Tábua de corte"
           },
           {
             "text": "Butter",
@@ -5976,9 +4700,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Cutting Board",
-          "Baking Tray",
           "Bottle",
+          "Baking Tray",
+          "Cutting Board",
           "Butter"
         ],
         "correctAnswer": "Cutting Board",
@@ -5987,26 +4711,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e16",
+        "id": "w0-p5-e13",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Rolling Pin",
         "visualEmoji": "🥖",
         "visualOptions": [
           {
-            "text": "Ham",
-            "emoji": "🥩",
-            "label": "Ham",
-            "translationPt": "Presunto (na geladeira)"
-          },
-          {
-            "text": "Napkin",
-            "emoji": "🧻",
-            "label": "Napkin",
-            "translationPt": "Guardanapo"
+            "text": "Knife",
+            "emoji": "🔪",
+            "label": "Knife",
+            "translationPt": "Faca de cozinha"
           },
           {
             "text": "Rolling Pin",
@@ -6015,17 +4730,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rolo de abrir massa"
           },
           {
-            "text": "Knife",
-            "emoji": "🔪",
-            "label": "Knife",
-            "translationPt": "Faca de cozinha"
+            "text": "Napkin",
+            "emoji": "🧻",
+            "label": "Napkin",
+            "translationPt": "Guardanapo"
+          },
+          {
+            "text": "Ham",
+            "emoji": "🥩",
+            "label": "Ham",
+            "translationPt": "Presunto (na geladeira)"
           }
         ],
         "options": [
-          "Ham",
-          "Napkin",
+          "Knife",
           "Rolling Pin",
-          "Knife"
+          "Napkin",
+          "Ham"
         ],
         "correctAnswer": "Rolling Pin",
         "explanation": "Exemplo prático: \"Roll the bread dough with a wooden rolling pin.\"",
@@ -6033,11 +4754,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e17",
+        "id": "w0-p5-e14",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Plate",
         "visualEmoji": "🍽️",
@@ -6049,10 +4767,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Maçã (na fruteira / geladeira)"
           },
           {
-            "text": "Plate",
-            "emoji": "🍽️",
-            "label": "Plate",
-            "translationPt": "Prato"
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo (na geladeira)"
           },
           {
             "text": "Fork",
@@ -6061,17 +4779,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Garfo"
           },
           {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo (na porta/prateleira da geladeira)"
+            "text": "Plate",
+            "emoji": "🍽️",
+            "label": "Plate",
+            "translationPt": "Prato"
           }
         ],
         "options": [
           "Apple",
-          "Plate",
+          "Egg",
           "Fork",
-          "Egg"
+          "Plate"
         ],
         "correctAnswer": "Plate",
         "explanation": "Exemplo prático: \"Set the white ceramic plates on the table.\"",
@@ -6079,15 +4797,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-e18",
+        "id": "w0-p5-e15",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Bowl",
         "visualEmoji": "🥣",
         "visualOptions": [
+          {
+            "text": "Bowl",
+            "emoji": "🥣",
+            "label": "Bowl",
+            "translationPt": "Tigela / Cumbuca"
+          },
           {
             "text": "Pressure Cooker",
             "emoji": "🍲",
@@ -6105,19 +4826,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥛",
             "label": "Milk",
             "translationPt": "Leite (na geladeira)"
-          },
-          {
-            "text": "Bowl",
-            "emoji": "🥣",
-            "label": "Bowl",
-            "translationPt": "Tigela / Cumbuca"
           }
         ],
         "options": [
+          "Bowl",
           "Pressure Cooker",
           "Juice",
-          "Milk",
-          "Bowl"
+          "Milk"
         ],
         "correctAnswer": "Bowl",
         "explanation": "Exemplo prático: \"Pour cereal and milk into the ceramic bowl.\"",
@@ -6125,66 +4840,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p4-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p4-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p4-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p4-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p4-e20",
+        "id": "w0-p5-e16",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Glass",
         "visualEmoji": "🥛",
         "visualOptions": [
-          {
-            "text": "Glass",
-            "emoji": "🥛",
-            "label": "Glass",
-            "translationPt": "Copo de vidro"
-          },
           {
             "text": "Cheese",
             "emoji": "🧀",
@@ -6202,13 +4863,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪵",
             "label": "Cutting Board",
             "translationPt": "Tábua de corte"
+          },
+          {
+            "text": "Glass",
+            "emoji": "🥛",
+            "label": "Glass",
+            "translationPt": "Copo de vidro"
           }
         ],
         "options": [
-          "Glass",
           "Cheese",
           "Cooking Pot",
-          "Cutting Board"
+          "Cutting Board",
+          "Glass"
         ],
         "correctAnswer": "Glass",
         "explanation": "Exemplo prático: \"Drink cold water from a clear glass.\"",
@@ -6216,21 +4883,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e21",
+        "id": "w0-p5-e17",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Cup",
         "visualEmoji": "☕",
         "visualOptions": [
-          {
-            "text": "Spoon",
-            "emoji": "🥄",
-            "label": "Spoon",
-            "translationPt": "Colher"
-          },
           {
             "text": "Rolling Pin",
             "emoji": "🥖",
@@ -6238,23 +4896,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rolo de abrir massa"
           },
           {
-            "text": "Yogurt",
-            "emoji": "🥣",
-            "label": "Yogurt",
-            "translationPt": "Iogurte (na geladeira)"
+            "text": "Spoon",
+            "emoji": "🥄",
+            "label": "Spoon",
+            "translationPt": "Colher"
           },
           {
             "text": "Cup",
             "emoji": "☕",
             "label": "Cup",
             "translationPt": "Xícara"
+          },
+          {
+            "text": "Yogurt",
+            "emoji": "🥣",
+            "label": "Yogurt",
+            "translationPt": "Iogurte (na geladeira)"
           }
         ],
         "options": [
-          "Spoon",
           "Rolling Pin",
-          "Yogurt",
-          "Cup"
+          "Spoon",
+          "Cup",
+          "Yogurt"
         ],
         "correctAnswer": "Cup",
         "explanation": "Exemplo prático: \"Serve hot coffee in a porcelain cup.\"",
@@ -6262,27 +4926,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-e22",
+        "id": "w0-p5-e18",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Jar",
         "visualEmoji": "🫙",
         "visualOptions": [
-          {
-            "text": "Strainer",
-            "emoji": "🥣",
-            "label": "Strainer",
-            "translationPt": "Peneira / Escorredor de cozinha"
-          },
-          {
-            "text": "Spatula",
-            "emoji": "🍳",
-            "label": "Spatula",
-            "translationPt": "Espátula / Escumadeira"
-          },
           {
             "text": "Jar",
             "emoji": "🫙",
@@ -6294,13 +4943,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥄",
             "label": "Soup Ladle",
             "translationPt": "Concha de feijão / sopa"
+          },
+          {
+            "text": "Strainer",
+            "emoji": "🥣",
+            "label": "Strainer",
+            "translationPt": "Peneira / Escorredor de cozinha"
+          },
+          {
+            "text": "Spatula",
+            "emoji": "🍳",
+            "label": "Spatula",
+            "translationPt": "Espátula / Escumadeira"
           }
         ],
         "options": [
-          "Strainer",
-          "Spatula",
           "Jar",
-          "Soup Ladle"
+          "Soup Ladle",
+          "Strainer",
+          "Spatula"
         ],
         "correctAnswer": "Jar",
         "explanation": "Exemplo prático: \"Store food inside a sealed glass jar.\"",
@@ -6308,26 +4969,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e23",
+        "id": "w0-p5-e19",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Salt Shaker",
         "visualEmoji": "🧂",
         "visualOptions": [
           {
-            "text": "Salt Shaker",
-            "emoji": "🧂",
-            "label": "Salt Shaker",
-            "translationPt": "Saleiro"
-          },
-          {
             "text": "Plate",
             "emoji": "🍽️",
             "label": "Plate",
             "translationPt": "Prato"
+          },
+          {
+            "text": "Salt Shaker",
+            "emoji": "🧂",
+            "label": "Salt Shaker",
+            "translationPt": "Saleiro"
           },
           {
             "text": "Grater",
@@ -6343,8 +5001,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Salt Shaker",
           "Plate",
+          "Salt Shaker",
           "Grater",
           "Bowl"
         ],
@@ -6354,56 +5012,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p4-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p4-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p4-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p4-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p4-e25",
+        "id": "w0-p5-e20",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Napkin",
         "visualEmoji": "🧻",
@@ -6445,11 +5055,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-e26",
+        "id": "w0-p5-e21",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Bottle",
         "visualEmoji": "🍾",
@@ -6459,12 +5066,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍲",
             "label": "Pressure Cooker",
             "translationPt": "Panela de pressão"
-          },
-          {
-            "text": "Bottle",
-            "emoji": "🍾",
-            "label": "Bottle",
-            "translationPt": "Garrafa de água (na geladeira)"
           },
           {
             "text": "Spoon",
@@ -6477,13 +5078,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "☕",
             "label": "Cup",
             "translationPt": "Xícara"
+          },
+          {
+            "text": "Bottle",
+            "emoji": "🍾",
+            "label": "Bottle",
+            "translationPt": "Garrafa de água (na geladeira)"
           }
         ],
         "options": [
           "Pressure Cooker",
-          "Bottle",
           "Spoon",
-          "Cup"
+          "Cup",
+          "Bottle"
         ],
         "correctAnswer": "Bottle",
         "explanation": "Exemplo prático: \"There is a cold water bottle inside the fridge.\"",
@@ -6491,21 +5098,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e27",
+        "id": "w0-p5-e22",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Milk",
         "visualEmoji": "🥛",
         "visualOptions": [
-          {
-            "text": "Frying Pan",
-            "emoji": "🍳",
-            "label": "Frying Pan",
-            "translationPt": "Frigideira antiaderente"
-          },
           {
             "text": "Fork",
             "emoji": "🍴",
@@ -6523,13 +5121,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥛",
             "label": "Milk",
             "translationPt": "Leite (na geladeira)"
+          },
+          {
+            "text": "Frying Pan",
+            "emoji": "🍳",
+            "label": "Frying Pan",
+            "translationPt": "Frigideira antiaderente"
           }
         ],
         "options": [
-          "Frying Pan",
           "Fork",
           "Cooking Pot",
-          "Milk"
+          "Milk",
+          "Frying Pan"
         ],
         "correctAnswer": "Milk",
         "explanation": "Exemplo prático: \"Keep the fresh milk inside the refrigerator.\"",
@@ -6537,15 +5141,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e28",
+        "id": "w0-p5-e23",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Butter",
         "visualEmoji": "🧈",
         "visualOptions": [
+          {
+            "text": "Butter",
+            "emoji": "🧈",
+            "label": "Butter",
+            "translationPt": "Manteiga (na geladeira)"
+          },
           {
             "text": "Rolling Pin",
             "emoji": "🥖",
@@ -6559,12 +5166,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Saleiro"
           },
           {
-            "text": "Butter",
-            "emoji": "🧈",
-            "label": "Butter",
-            "translationPt": "Manteiga (na geladeira)"
-          },
-          {
             "text": "Lettuce",
             "emoji": "🥬",
             "label": "Lettuce",
@@ -6572,9 +5173,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Butter",
           "Rolling Pin",
           "Salt Shaker",
-          "Butter",
           "Lettuce"
         ],
         "correctAnswer": "Butter",
@@ -6583,66 +5184,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p4-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p4-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p4-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p4-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p4-e30",
+        "id": "w0-p5-e24",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Cheese",
         "visualEmoji": "🧀",
         "visualOptions": [
-          {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo (na geladeira)"
-          },
           {
             "text": "Ham",
             "emoji": "🥩",
@@ -6656,6 +5203,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Assadeira / Forma de forno"
           },
           {
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo (na geladeira)"
+          },
+          {
             "text": "Bowl",
             "emoji": "🥣",
             "label": "Bowl",
@@ -6663,9 +5216,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Cheese",
           "Ham",
           "Baking Tray",
+          "Cheese",
           "Bowl"
         ],
         "correctAnswer": "Cheese",
@@ -6674,11 +5227,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e31",
+        "id": "w0-p5-e25",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Yogurt",
         "visualEmoji": "🥣",
@@ -6688,12 +5238,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧻",
             "label": "Napkin",
             "translationPt": "Guardanapo"
-          },
-          {
-            "text": "Cutting Board",
-            "emoji": "🪵",
-            "label": "Cutting Board",
-            "translationPt": "Tábua de corte"
           },
           {
             "text": "Yogurt",
@@ -6706,13 +5250,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍾",
             "label": "Bottle",
             "translationPt": "Garrafa de água (na geladeira)"
+          },
+          {
+            "text": "Cutting Board",
+            "emoji": "🪵",
+            "label": "Cutting Board",
+            "translationPt": "Tábua de corte"
           }
         ],
         "options": [
           "Napkin",
-          "Cutting Board",
           "Yogurt",
-          "Bottle"
+          "Bottle",
+          "Cutting Board"
         ],
         "correctAnswer": "Yogurt",
         "explanation": "Exemplo prático: \"Cold strawberry yogurt is in the refrigerator.\"",
@@ -6720,11 +5270,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e32",
+        "id": "w0-p5-e26",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Egg",
         "visualEmoji": "🥚",
@@ -6734,12 +5281,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧀",
             "label": "Grater",
             "translationPt": "Ralador de queijo e legumes"
-          },
-          {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo (na porta/prateleira da geladeira)"
           },
           {
             "text": "Jar",
@@ -6752,13 +5293,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥛",
             "label": "Glass",
             "translationPt": "Copo de vidro"
+          },
+          {
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo (na geladeira)"
           }
         ],
         "options": [
           "Grater",
-          "Egg",
           "Jar",
-          "Glass"
+          "Glass",
+          "Egg"
         ],
         "correctAnswer": "Egg",
         "explanation": "Exemplo prático: \"There are twelve eggs in the refrigerator.\"",
@@ -6766,20 +5313,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-e33",
+        "id": "w0-p5-e27",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Juice",
         "visualEmoji": "🧃",
         "visualOptions": [
           {
-            "text": "Strainer",
-            "emoji": "🥣",
-            "label": "Strainer",
-            "translationPt": "Peneira / Escorredor de cozinha"
+            "text": "Juice",
+            "emoji": "🧃",
+            "label": "Juice",
+            "translationPt": "Jarra de suco (na geladeira)"
           },
           {
             "text": "Soup Ladle",
@@ -6788,23 +5332,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Concha de feijão / sopa"
           },
           {
+            "text": "Strainer",
+            "emoji": "🥣",
+            "label": "Strainer",
+            "translationPt": "Peneira / Escorredor de cozinha"
+          },
+          {
             "text": "Spatula",
             "emoji": "🍳",
             "label": "Spatula",
             "translationPt": "Espátula / Escumadeira"
-          },
-          {
-            "text": "Juice",
-            "emoji": "🧃",
-            "label": "Juice",
-            "translationPt": "Jarra de suco (na geladeira)"
           }
         ],
         "options": [
-          "Strainer",
+          "Juice",
           "Soup Ladle",
-          "Spatula",
-          "Juice"
+          "Strainer",
+          "Spatula"
         ],
         "correctAnswer": "Juice",
         "explanation": "Exemplo prático: \"Cold orange juice is ready in the fridge.\"",
@@ -6812,66 +5356,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p4-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p4-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p4-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p4-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p4-e35",
+        "id": "w0-p5-e28",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ham",
         "visualEmoji": "🥩",
         "visualOptions": [
-          {
-            "text": "Ham",
-            "emoji": "🥩",
-            "label": "Ham",
-            "translationPt": "Presunto (na geladeira)"
-          },
           {
             "text": "Cup",
             "emoji": "☕",
@@ -6889,13 +5379,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧀",
             "label": "Cheese",
             "translationPt": "Queijo (na geladeira)"
+          },
+          {
+            "text": "Ham",
+            "emoji": "🥩",
+            "label": "Ham",
+            "translationPt": "Presunto (na geladeira)"
           }
         ],
         "options": [
-          "Ham",
           "Cup",
           "Salt Shaker",
-          "Cheese"
+          "Cheese",
+          "Ham"
         ],
         "correctAnswer": "Ham",
         "explanation": "Exemplo prático: \"Keep cheese and ham cold in the refrigerator.\"",
@@ -6903,11 +5399,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p4-e36",
+        "id": "w0-p5-e29",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Lettuce",
         "visualEmoji": "🥬",
@@ -6925,23 +5418,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Manteiga (na geladeira)"
           },
           {
-            "text": "Yogurt",
-            "emoji": "🥣",
-            "label": "Yogurt",
-            "translationPt": "Iogurte (na geladeira)"
-          },
-          {
             "text": "Lettuce",
             "emoji": "🥬",
             "label": "Lettuce",
             "translationPt": "Alface (na gaveta da geladeira)"
+          },
+          {
+            "text": "Yogurt",
+            "emoji": "🥣",
+            "label": "Yogurt",
+            "translationPt": "Iogurte (na geladeira)"
           }
         ],
         "options": [
           "Plate",
           "Butter",
-          "Yogurt",
-          "Lettuce"
+          "Lettuce",
+          "Yogurt"
         ],
         "correctAnswer": "Lettuce",
         "explanation": "Exemplo prático: \"Fresh green lettuce stays crisp in the fridge drawer.\"",
@@ -6949,15 +5442,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p4-e37",
+        "id": "w0-p5-e30",
         "type": "image-choice",
-        "conceptTitle": "Cozinha II: Panelas, Talheres & Dentro da Geladeira • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Apple",
         "visualEmoji": "🍎",
         "visualOptions": [
+          {
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã (na fruteira / geladeira)"
+          },
           {
             "text": "Milk",
             "emoji": "🥛",
@@ -6971,100 +5467,46 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Guardanapo"
           },
           {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã (na fruteira / geladeira)"
-          },
-          {
             "text": "Egg",
             "emoji": "🥚",
             "label": "Egg",
-            "translationPt": "Ovo (na porta/prateleira da geladeira)"
+            "translationPt": "Ovo (na geladeira)"
           }
         ],
         "options": [
+          "Apple",
           "Milk",
           "Napkin",
-          "Apple",
           "Egg"
         ],
         "correctAnswer": "Apple",
         "explanation": "Exemplo prático: \"I eat a cold red apple from the kitchen.\"",
         "phoneticHint": "/ˈæp.əl/",
         "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p4-pron-8",
-        "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
-        "pairs": [
-          {
-            "id": "w0-p4-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
-          },
-          {
-            "id": "w0-p4-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
-          },
-          {
-            "id": "w0-p4-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
-          },
-          {
-            "id": "w0-p4-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
-        "skillCategory": "grammar"
       }
     ]
   },
   {
-    "id": "w0-p5",
+    "id": "w0-p6",
     "worldId": 0,
-    "phaseNumber": 5,
-    "title": "Ambiente 5 • Quarto de Dormir, Cama, Guarda-Roupa & Vestuário",
-    "subtitle": "Cômodo 5/12 • Cama, colchão, travesseiro, cobertor, guarda-roupa, cabide, roupas e calçados",
+    "phaseNumber": 6,
+    "title": "Vocabulário 5 • Quarto de Dormir, Cama, Guarda-Roupa & Vestuário",
+    "subtitle": "Ambiente 5/12 • Cama, colchão, travesseiro, cobertor, guarda-roupa, cabide, roupas e calçados",
     "pedagogicalObjective": "Dominar cada item do quarto de dormir, roupas de cama, móveis do quarto e todas as peças de roupa e calçados do guarda-roupa.",
     "type": "lesson",
     "icon": "shirt",
     "cefrLevel": "A1",
     "theorySummary": [
       "Saindo da cozinha pelo corredor, entramos no Quarto de Dormir!",
-      "Olhe para a Cama (Bed), o Colchão (Mattress), o Travesseiro (Pillow), o Lençol (Bed Sheet), o Cobertor (Blanket), o Criado-mudo (Nightstand), o Guarda-roupa (Wardrobe), o Cabide (Clothes Hanger) e o Espelho (Mirror).",
+      "Olhe para a Cama (Bed), o Colchão (Mattress), o Travesseiro (Pillow), o Cobertor (Blanket), o Criado-mudo (Nightstand), o Guarda-roupa (Wardrobe), o Cabide (Clothes Hanger) e o Espelho (Mirror).",
       "Abrindo o guarda-roupa, vemos todas as nossas roupas, calçados e acessórios do dia a dia!"
     ],
     "xpReward": 50,
     "gemsReward": 20,
     "exercises": [
       {
-        "id": "w0-p5-e1",
+        "id": "w0-p6-e1",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bed",
         "visualEmoji": "🛏️",
@@ -7074,12 +5516,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👠",
             "label": "High Heels",
             "translationPt": "Sapato de salto alto"
-          },
-          {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
           },
           {
             "text": "Handbag",
@@ -7092,13 +5528,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🥾",
             "label": "Boots",
             "translationPt": "Botas"
+          },
+          {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
           }
         ],
         "options": [
           "High Heels",
-          "Bed",
           "Handbag",
-          "Boots"
+          "Boots",
+          "Bed"
         ],
         "correctAnswer": "Bed",
         "explanation": "Exemplo prático: \"I sleep in a comfortable wooden bed.\"",
@@ -7106,15 +5548,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e2",
+        "id": "w0-p6-e2",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Mattress",
         "visualEmoji": "🛏️",
         "visualOptions": [
+          {
+            "text": "Mattress",
+            "emoji": "🛏️",
+            "label": "Mattress",
+            "translationPt": "Colchão na cama"
+          },
           {
             "text": "Coat",
             "emoji": "🧥",
@@ -7132,19 +5577,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧥",
             "label": "Clothes Hanger",
             "translationPt": "Cabide de roupas"
-          },
-          {
-            "text": "Mattress",
-            "emoji": "🛏️",
-            "label": "Mattress",
-            "translationPt": "Colchão da cama"
           }
         ],
         "options": [
+          "Mattress",
           "Coat",
           "Belt",
-          "Clothes Hanger",
-          "Mattress"
+          "Clothes Hanger"
         ],
         "correctAnswer": "Mattress",
         "explanation": "Exemplo prático: \"A soft orthopedic mattress on the bed.\"",
@@ -7152,21 +5591,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-e3",
+        "id": "w0-p6-e3",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Pillow",
         "visualEmoji": "⬜",
         "visualOptions": [
-          {
-            "text": "Pillow",
-            "emoji": "⬜",
-            "label": "Pillow",
-            "translationPt": "Travesseiro"
-          },
           {
             "text": "Jacket",
             "emoji": "🧥",
@@ -7184,13 +5614,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👓",
             "label": "Glasses",
             "translationPt": "Óculos de grau"
+          },
+          {
+            "text": "Pillow",
+            "emoji": "⬜",
+            "label": "Pillow",
+            "translationPt": "Travesseiro"
           }
         ],
         "options": [
-          "Pillow",
           "Jacket",
           "Jeans",
-          "Glasses"
+          "Glasses",
+          "Pillow"
         ],
         "correctAnswer": "Pillow",
         "explanation": "Exemplo prático: \"Rest your head on a soft white pillow.\"",
@@ -7198,56 +5634,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p5-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p5-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p5-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p5-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p5-e5",
+        "id": "w0-p6-e4",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Blanket",
         "visualEmoji": "🛌",
@@ -7265,23 +5653,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Saia"
           },
           {
-            "text": "Shorts",
-            "emoji": "🩳",
-            "label": "Shorts",
-            "translationPt": "Shorts / Bermuda"
-          },
-          {
             "text": "Blanket",
             "emoji": "🛌",
             "label": "Blanket",
             "translationPt": "Cobertor / Edredom"
+          },
+          {
+            "text": "Shorts",
+            "emoji": "🩳",
+            "label": "Shorts",
+            "translationPt": "Shorts / Bermuda"
           }
         ],
         "options": [
           "Shirt",
           "Skirt",
-          "Shorts",
-          "Blanket"
+          "Blanket",
+          "Shorts"
         ],
         "correctAnswer": "Blanket",
         "explanation": "Exemplo prático: \"Pull up the warm blanket on cold nights.\"",
@@ -7289,15 +5677,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e6",
+        "id": "w0-p6-e5",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Nightstand",
         "visualEmoji": "🗄️",
         "visualOptions": [
+          {
+            "text": "Nightstand",
+            "emoji": "🗄️",
+            "label": "Nightstand",
+            "translationPt": "Criado-mudo ao lado da cama"
+          },
           {
             "text": "Socks",
             "emoji": "🧦",
@@ -7305,29 +5696,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Meias"
           },
           {
-            "text": "Sweater",
-            "emoji": "🧶",
-            "label": "Sweater",
-            "translationPt": "Suéter / Moletom"
-          },
-          {
-            "text": "Nightstand",
-            "emoji": "🗄️",
-            "label": "Nightstand",
-            "translationPt": "Criado-mudo / Mesa de cabeceira"
-          },
-          {
             "text": "Cap",
             "emoji": "🧢",
             "label": "Cap",
             "translationPt": "Boné"
+          },
+          {
+            "text": "Sweater",
+            "emoji": "🧶",
+            "label": "Sweater",
+            "translationPt": "Suéter / Moletom"
           }
         ],
         "options": [
-          "Socks",
-          "Sweater",
           "Nightstand",
-          "Cap"
+          "Socks",
+          "Cap",
+          "Sweater"
         ],
         "correctAnswer": "Nightstand",
         "explanation": "Exemplo prático: \"Keep your book and lamp on the wooden nightstand.\"",
@@ -7335,26 +5720,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-e7",
+        "id": "w0-p6-e6",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Wardrobe",
         "visualEmoji": "🚪",
         "visualOptions": [
           {
-            "text": "Wardrobe",
-            "emoji": "🚪",
-            "label": "Wardrobe",
-            "translationPt": "Guarda-roupa"
-          },
-          {
             "text": "Sandals",
             "emoji": "🩴",
             "label": "Sandals",
             "translationPt": "Chinelo / Sandália"
+          },
+          {
+            "text": "Wardrobe",
+            "emoji": "🚪",
+            "label": "Wardrobe",
+            "translationPt": "Guarda-roupa"
           },
           {
             "text": "Sneakers",
@@ -7370,8 +5752,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Wardrobe",
           "Sandals",
+          "Wardrobe",
           "Sneakers",
           "Shoes"
         ],
@@ -7381,11 +5763,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e8",
+        "id": "w0-p6-e7",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Clothes Hanger",
         "visualEmoji": "🧥",
@@ -7427,71 +5806,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p5-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p5-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p5-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p5-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p5-e10",
+        "id": "w0-p6-e8",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Mirror",
         "visualEmoji": "🪞",
         "visualOptions": [
           {
+            "text": "Watch",
+            "emoji": "⌚",
+            "label": "Watch",
+            "translationPt": "Relógio de pulso"
+          },
+          {
             "text": "Blanket",
             "emoji": "🛌",
             "label": "Blanket",
             "translationPt": "Cobertor / Edredom"
-          },
-          {
-            "text": "Mirror",
-            "emoji": "🪞",
-            "label": "Mirror",
-            "translationPt": "Espelho do quarto"
           },
           {
             "text": "Wallet",
@@ -7500,17 +5831,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carteira de bolso"
           },
           {
-            "text": "Watch",
-            "emoji": "⌚",
-            "label": "Watch",
-            "translationPt": "Relógio de pulso"
+            "text": "Mirror",
+            "emoji": "🪞",
+            "label": "Mirror",
+            "translationPt": "Espelho do quarto"
           }
         ],
         "options": [
+          "Watch",
           "Blanket",
-          "Mirror",
           "Wallet",
-          "Watch"
+          "Mirror"
         ],
         "correctAnswer": "Mirror",
         "explanation": "Exemplo prático: \"Look in the bedroom mirror before leaving home.\"",
@@ -7518,11 +5849,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-e11",
+        "id": "w0-p6-e9",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Shirt",
         "visualEmoji": "👕",
@@ -7537,26 +5865,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Nightstand",
             "emoji": "🗄️",
             "label": "Nightstand",
-            "translationPt": "Criado-mudo / Mesa de cabeceira"
-          },
-          {
-            "text": "Mattress",
-            "emoji": "🛏️",
-            "label": "Mattress",
-            "translationPt": "Colchão da cama"
+            "translationPt": "Criado-mudo ao lado da cama"
           },
           {
             "text": "Shirt",
             "emoji": "👕",
             "label": "Shirt",
             "translationPt": "Camisa / Camiseta"
+          },
+          {
+            "text": "Mattress",
+            "emoji": "🛏️",
+            "label": "Mattress",
+            "translationPt": "Colchão na cama"
           }
         ],
         "options": [
           "Dress",
           "Nightstand",
-          "Mattress",
-          "Shirt"
+          "Shirt",
+          "Mattress"
         ],
         "correctAnswer": "Shirt",
         "explanation": "Exemplo prático: \"Put on a clean cotton shirt.\"",
@@ -7564,20 +5892,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e12",
+        "id": "w0-p6-e10",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pants",
         "visualEmoji": "👖",
         "visualOptions": [
           {
-            "text": "Skirt",
-            "emoji": "👗",
-            "label": "Skirt",
-            "translationPt": "Saia"
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calça"
           },
           {
             "text": "Wardrobe",
@@ -7586,10 +5911,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Guarda-roupa"
           },
           {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calça"
+            "text": "Skirt",
+            "emoji": "👗",
+            "label": "Skirt",
+            "translationPt": "Saia"
           },
           {
             "text": "Sweater",
@@ -7599,9 +5924,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Skirt",
-          "Wardrobe",
           "Pants",
+          "Wardrobe",
+          "Skirt",
           "Sweater"
         ],
         "correctAnswer": "Pants",
@@ -7610,15 +5935,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e13",
+        "id": "w0-p6-e11",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Jeans",
         "visualEmoji": "👖",
         "visualOptions": [
+          {
+            "text": "Cap",
+            "emoji": "🧢",
+            "label": "Cap",
+            "translationPt": "Boné"
+          },
+          {
+            "text": "Coat",
+            "emoji": "🧥",
+            "label": "Coat",
+            "translationPt": "Casaco / Sobretudo"
+          },
           {
             "text": "Jeans",
             "emoji": "👖",
@@ -7630,25 +5964,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧥",
             "label": "Clothes Hanger",
             "translationPt": "Cabide de roupas"
-          },
-          {
-            "text": "Coat",
-            "emoji": "🧥",
-            "label": "Coat",
-            "translationPt": "Casaco / Sobretudo"
-          },
-          {
-            "text": "Cap",
-            "emoji": "🧢",
-            "label": "Cap",
-            "translationPt": "Boné"
           }
         ],
         "options": [
-          "Jeans",
-          "Clothes Hanger",
+          "Cap",
           "Coat",
-          "Cap"
+          "Jeans",
+          "Clothes Hanger"
         ],
         "correctAnswer": "Jeans",
         "explanation": "Exemplo prático: \"Blue denim jeans are durable and comfortable.\"",
@@ -7656,56 +5978,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p5-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p5-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p5-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p5-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p5-e15",
+        "id": "w0-p6-e12",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Shorts",
         "visualEmoji": "🩳",
@@ -7717,16 +5991,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cama"
           },
           {
-            "text": "Mirror",
-            "emoji": "🪞",
-            "label": "Mirror",
-            "translationPt": "Espelho do quarto"
-          },
-          {
             "text": "Shorts",
             "emoji": "🩳",
             "label": "Shorts",
             "translationPt": "Shorts / Bermuda"
+          },
+          {
+            "text": "Mirror",
+            "emoji": "🪞",
+            "label": "Mirror",
+            "translationPt": "Espelho do quarto"
           },
           {
             "text": "Blanket",
@@ -7737,8 +6011,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Bed",
-          "Mirror",
           "Shorts",
+          "Mirror",
           "Blanket"
         ],
         "correctAnswer": "Shorts",
@@ -7747,11 +6021,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e16",
+        "id": "w0-p6-e13",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Dress",
         "visualEmoji": "👗",
@@ -7763,29 +6034,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sapato de salto alto"
           },
           {
-            "text": "Dress",
-            "emoji": "👗",
-            "label": "Dress",
-            "translationPt": "Vestido"
-          },
-          {
             "text": "Nightstand",
             "emoji": "🗄️",
             "label": "Nightstand",
-            "translationPt": "Criado-mudo / Mesa de cabeceira"
+            "translationPt": "Criado-mudo ao lado da cama"
           },
           {
             "text": "Handbag",
             "emoji": "👜",
             "label": "Handbag",
             "translationPt": "Bolsa"
+          },
+          {
+            "text": "Dress",
+            "emoji": "👗",
+            "label": "Dress",
+            "translationPt": "Vestido"
           }
         ],
         "options": [
           "High Heels",
-          "Dress",
           "Nightstand",
-          "Handbag"
+          "Handbag",
+          "Dress"
         ],
         "correctAnswer": "Dress",
         "explanation": "Exemplo prático: \"The red dress hangs inside the closet.\"",
@@ -7793,15 +6064,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e17",
+        "id": "w0-p6-e14",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Skirt",
         "visualEmoji": "👗",
         "visualOptions": [
+          {
+            "text": "Skirt",
+            "emoji": "👗",
+            "label": "Skirt",
+            "translationPt": "Saia"
+          },
           {
             "text": "Pants",
             "emoji": "👖",
@@ -7819,19 +6093,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⌚",
             "label": "Watch",
             "translationPt": "Relógio de pulso"
-          },
-          {
-            "text": "Skirt",
-            "emoji": "👗",
-            "label": "Skirt",
-            "translationPt": "Saia"
           }
         ],
         "options": [
+          "Skirt",
           "Pants",
           "Wardrobe",
-          "Watch",
-          "Skirt"
+          "Watch"
         ],
         "correctAnswer": "Skirt",
         "explanation": "Exemplo prático: \"She wore a pleated skirt.\"",
@@ -7839,20 +6107,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-e18",
+        "id": "w0-p6-e15",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Jacket",
         "visualEmoji": "🧥",
         "visualOptions": [
           {
-            "text": "Jacket",
-            "emoji": "🧥",
-            "label": "Jacket",
-            "translationPt": "Jaqueta / Blusa de frio"
+            "text": "Jeans",
+            "emoji": "👖",
+            "label": "Jeans",
+            "translationPt": "Calça jeans"
           },
           {
             "text": "Pillow",
@@ -7861,23 +6126,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Travesseiro"
           },
           {
-            "text": "Jeans",
-            "emoji": "👖",
-            "label": "Jeans",
-            "translationPt": "Calça jeans"
-          },
-          {
             "text": "Mattress",
             "emoji": "🛏️",
             "label": "Mattress",
-            "translationPt": "Colchão da cama"
+            "translationPt": "Colchão na cama"
+          },
+          {
+            "text": "Jacket",
+            "emoji": "🧥",
+            "label": "Jacket",
+            "translationPt": "Jaqueta / Blusa de frio"
           }
         ],
         "options": [
-          "Jacket",
-          "Pillow",
           "Jeans",
-          "Mattress"
+          "Pillow",
+          "Mattress",
+          "Jacket"
         ],
         "correctAnswer": "Jacket",
         "explanation": "Exemplo prático: \"Take a warm jacket from the wardrobe.\"",
@@ -7885,56 +6150,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p5-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p5-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p5-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p5-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p5-e20",
+        "id": "w0-p6-e16",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Coat",
         "visualEmoji": "🧥",
@@ -7952,23 +6169,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camisa / Camiseta"
           },
           {
-            "text": "Shorts",
-            "emoji": "🩳",
-            "label": "Shorts",
-            "translationPt": "Shorts / Bermuda"
-          },
-          {
             "text": "Coat",
             "emoji": "🧥",
             "label": "Coat",
             "translationPt": "Casaco / Sobretudo"
+          },
+          {
+            "text": "Shorts",
+            "emoji": "🩳",
+            "label": "Shorts",
+            "translationPt": "Shorts / Bermuda"
           }
         ],
         "options": [
           "Sneakers",
           "Shirt",
-          "Shorts",
-          "Coat"
+          "Coat",
+          "Shorts"
         ],
         "correctAnswer": "Coat",
         "explanation": "Exemplo prático: \"A heavy coat for cold winter days.\"",
@@ -7976,15 +6193,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e21",
+        "id": "w0-p6-e17",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Sweater",
         "visualEmoji": "🧶",
         "visualOptions": [
+          {
+            "text": "Sweater",
+            "emoji": "🧶",
+            "label": "Sweater",
+            "translationPt": "Suéter / Moletom"
+          },
           {
             "text": "Shoes",
             "emoji": "👞",
@@ -7998,12 +6218,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Espelho do quarto"
           },
           {
-            "text": "Sweater",
-            "emoji": "🧶",
-            "label": "Sweater",
-            "translationPt": "Suéter / Moletom"
-          },
-          {
             "text": "Sandals",
             "emoji": "🩴",
             "label": "Sandals",
@@ -8011,9 +6225,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Sweater",
           "Shoes",
           "Mirror",
-          "Sweater",
           "Sandals"
         ],
         "correctAnswer": "Sweater",
@@ -8022,26 +6236,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-e22",
+        "id": "w0-p6-e18",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Pajamas",
         "visualEmoji": "🛌",
         "visualOptions": [
           {
-            "text": "Pajamas",
-            "emoji": "🛌",
-            "label": "Pajamas",
-            "translationPt": "Pijama de dormir"
-          },
-          {
             "text": "Boots",
             "emoji": "🥾",
             "label": "Boots",
             "translationPt": "Botas"
+          },
+          {
+            "text": "Pajamas",
+            "emoji": "🛌",
+            "label": "Pajamas",
+            "translationPt": "Pijama de dormir"
           },
           {
             "text": "Pants",
@@ -8057,8 +6268,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Pajamas",
           "Boots",
+          "Pajamas",
           "Pants",
           "Belt"
         ],
@@ -8068,20 +6279,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e23",
+        "id": "w0-p6-e19",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Socks",
         "visualEmoji": "🧦",
         "visualOptions": [
           {
-            "text": "Glasses",
-            "emoji": "👓",
-            "label": "Glasses",
-            "translationPt": "Óculos de grau"
+            "text": "Dress",
+            "emoji": "👗",
+            "label": "Dress",
+            "translationPt": "Vestido"
           },
           {
             "text": "Socks",
@@ -8090,23 +6298,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Meias"
           },
           {
-            "text": "Dress",
-            "emoji": "👗",
-            "label": "Dress",
-            "translationPt": "Vestido"
-          },
-          {
             "text": "Jacket",
             "emoji": "🧥",
             "label": "Jacket",
             "translationPt": "Jaqueta / Blusa de frio"
+          },
+          {
+            "text": "Glasses",
+            "emoji": "👓",
+            "label": "Glasses",
+            "translationPt": "Óculos de grau"
           }
         ],
         "options": [
-          "Glasses",
-          "Socks",
           "Dress",
-          "Jacket"
+          "Socks",
+          "Jacket",
+          "Glasses"
         ],
         "correctAnswer": "Socks",
         "explanation": "Exemplo prático: \"My cotton socks are in the top drawer.\"",
@@ -8114,72 +6322,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p5-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p5-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p5-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p5-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p5-e25",
+        "id": "w0-p6-e20",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Sneakers",
         "visualEmoji": "👟",
         "visualOptions": [
-          {
-            "text": "Wardrobe",
-            "emoji": "🚪",
-            "label": "Wardrobe",
-            "translationPt": "Guarda-roupa"
-          },
-          {
-            "text": "Sneakers",
-            "emoji": "👟",
-            "label": "Sneakers",
-            "translationPt": "Tênis"
-          },
           {
             "text": "Watch",
             "emoji": "⌚",
@@ -8187,17 +6335,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Relógio de pulso"
           },
           {
+            "text": "Wardrobe",
+            "emoji": "🚪",
+            "label": "Wardrobe",
+            "translationPt": "Guarda-roupa"
+          },
+          {
             "text": "Wallet",
             "emoji": "👛",
             "label": "Wallet",
             "translationPt": "Carteira de bolso"
+          },
+          {
+            "text": "Sneakers",
+            "emoji": "👟",
+            "label": "Sneakers",
+            "translationPt": "Tênis"
           }
         ],
         "options": [
-          "Wardrobe",
-          "Sneakers",
           "Watch",
-          "Wallet"
+          "Wardrobe",
+          "Wallet",
+          "Sneakers"
         ],
         "correctAnswer": "Sneakers",
         "explanation": "Exemplo prático: \"Put on your running sneakers.\"",
@@ -8205,11 +6365,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-e26",
+        "id": "w0-p6-e21",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Shoes",
         "visualEmoji": "👞",
@@ -8227,23 +6384,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Shorts / Bermuda"
           },
           {
-            "text": "Shirt",
-            "emoji": "👕",
-            "label": "Shirt",
-            "translationPt": "Camisa / Camiseta"
-          },
-          {
             "text": "Shoes",
             "emoji": "👞",
             "label": "Shoes",
             "translationPt": "Sapatos"
+          },
+          {
+            "text": "Shirt",
+            "emoji": "👕",
+            "label": "Shirt",
+            "translationPt": "Camisa / Camiseta"
           }
         ],
         "options": [
           "Skirt",
           "Shorts",
-          "Shirt",
-          "Shoes"
+          "Shoes",
+          "Shirt"
         ],
         "correctAnswer": "Shoes",
         "explanation": "Exemplo prático: \"Polish your brown leather shoes.\"",
@@ -8251,15 +6408,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e27",
+        "id": "w0-p6-e22",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sandals",
         "visualEmoji": "🩴",
         "visualOptions": [
+          {
+            "text": "Sandals",
+            "emoji": "🩴",
+            "label": "Sandals",
+            "translationPt": "Chinelo / Sandália"
+          },
           {
             "text": "Clothes Hanger",
             "emoji": "🧥",
@@ -8273,12 +6433,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Casaco / Sobretudo"
           },
           {
-            "text": "Sandals",
-            "emoji": "🩴",
-            "label": "Sandals",
-            "translationPt": "Chinelo / Sandália"
-          },
-          {
             "text": "Pajamas",
             "emoji": "🛌",
             "label": "Pajamas",
@@ -8286,9 +6440,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Sandals",
           "Clothes Hanger",
           "Coat",
-          "Sandals",
           "Pajamas"
         ],
         "correctAnswer": "Sandals",
@@ -8297,21 +6451,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e28",
+        "id": "w0-p6-e23",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Boots",
         "visualEmoji": "🥾",
         "visualOptions": [
-          {
-            "text": "Boots",
-            "emoji": "🥾",
-            "label": "Boots",
-            "translationPt": "Botas"
-          },
           {
             "text": "Sweater",
             "emoji": "🧶",
@@ -8319,23 +6464,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Suéter / Moletom"
           },
           {
-            "text": "Socks",
-            "emoji": "🧦",
-            "label": "Socks",
-            "translationPt": "Meias"
-          },
-          {
             "text": "Pillow",
             "emoji": "⬜",
             "label": "Pillow",
             "translationPt": "Travesseiro"
+          },
+          {
+            "text": "Boots",
+            "emoji": "🥾",
+            "label": "Boots",
+            "translationPt": "Botas"
+          },
+          {
+            "text": "Socks",
+            "emoji": "🧦",
+            "label": "Socks",
+            "translationPt": "Meias"
           }
         ],
         "options": [
-          "Boots",
           "Sweater",
-          "Socks",
-          "Pillow"
+          "Pillow",
+          "Boots",
+          "Socks"
         ],
         "correctAnswer": "Boots",
         "explanation": "Exemplo prático: \"Keep your leather boots at the bottom of the closet.\"",
@@ -8343,56 +6494,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p5-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p5-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p5-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p5-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p5-e30",
+        "id": "w0-p6-e24",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "High Heels",
         "visualEmoji": "👠",
@@ -8404,16 +6507,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bolsa"
           },
           {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama"
-          },
-          {
             "text": "High Heels",
             "emoji": "👠",
             "label": "High Heels",
             "translationPt": "Sapato de salto alto"
+          },
+          {
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama"
           },
           {
             "text": "Blanket",
@@ -8424,8 +6527,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Handbag",
-          "Bed",
           "High Heels",
+          "Bed",
           "Blanket"
         ],
         "correctAnswer": "High Heels",
@@ -8434,15 +6537,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e31",
+        "id": "w0-p6-e25",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Belt",
         "visualEmoji": "ベルト",
         "visualOptions": [
+          {
+            "text": "Nightstand",
+            "emoji": "🗄️",
+            "label": "Nightstand",
+            "translationPt": "Criado-mudo ao lado da cama"
+          },
           {
             "text": "Wallet",
             "emoji": "👛",
@@ -8450,29 +6556,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carteira de bolso"
           },
           {
-            "text": "Belt",
-            "emoji": "ベルト",
-            "label": "Belt",
-            "translationPt": "Cinto de couro"
-          },
-          {
-            "text": "Nightstand",
-            "emoji": "🗄️",
-            "label": "Nightstand",
-            "translationPt": "Criado-mudo / Mesa de cabeceira"
-          },
-          {
             "text": "Sneakers",
             "emoji": "👟",
             "label": "Sneakers",
             "translationPt": "Tênis"
+          },
+          {
+            "text": "Belt",
+            "emoji": "ベルト",
+            "label": "Belt",
+            "translationPt": "Cinto de couro"
           }
         ],
         "options": [
-          "Wallet",
-          "Belt",
           "Nightstand",
-          "Sneakers"
+          "Wallet",
+          "Sneakers",
+          "Belt"
         ],
         "correctAnswer": "Belt",
         "explanation": "Exemplo prático: \"Fasten your leather belt.\"",
@@ -8480,15 +6580,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e32",
+        "id": "w0-p6-e26",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Cap",
         "visualEmoji": "🧢",
         "visualOptions": [
+          {
+            "text": "Cap",
+            "emoji": "🧢",
+            "label": "Cap",
+            "translationPt": "Boné"
+          },
           {
             "text": "Jacket",
             "emoji": "🧥",
@@ -8506,19 +6609,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👗",
             "label": "Dress",
             "translationPt": "Vestido"
-          },
-          {
-            "text": "Cap",
-            "emoji": "🧢",
-            "label": "Cap",
-            "translationPt": "Boné"
           }
         ],
         "options": [
+          "Cap",
           "Jacket",
           "Jeans",
-          "Dress",
-          "Cap"
+          "Dress"
         ],
         "correctAnswer": "Cap",
         "explanation": "Exemplo prático: \"Wear a blue cap on sunny afternoons.\"",
@@ -8526,21 +6623,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-e33",
+        "id": "w0-p6-e27",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Glasses",
         "visualEmoji": "👓",
         "visualOptions": [
-          {
-            "text": "Glasses",
-            "emoji": "👓",
-            "label": "Glasses",
-            "translationPt": "Óculos de grau"
-          },
           {
             "text": "Socks",
             "emoji": "🧦",
@@ -8558,13 +6646,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👞",
             "label": "Shoes",
             "translationPt": "Sapatos"
+          },
+          {
+            "text": "Glasses",
+            "emoji": "👓",
+            "label": "Glasses",
+            "translationPt": "Óculos de grau"
           }
         ],
         "options": [
-          "Glasses",
           "Socks",
           "Sandals",
-          "Shoes"
+          "Shoes",
+          "Glasses"
         ],
         "correctAnswer": "Glasses",
         "explanation": "Exemplo prático: \"My reading glasses are on the nightstand.\"",
@@ -8572,56 +6666,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p5-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p5-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p5-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p5-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p5-e35",
+        "id": "w0-p6-e28",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Watch",
         "visualEmoji": "⌚",
@@ -8631,12 +6677,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👖",
             "label": "Pants",
             "translationPt": "Calça"
-          },
-          {
-            "text": "Mattress",
-            "emoji": "🛏️",
-            "label": "Mattress",
-            "translationPt": "Colchão da cama"
           },
           {
             "text": "Pajamas",
@@ -8649,13 +6689,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⌚",
             "label": "Watch",
             "translationPt": "Relógio de pulso"
+          },
+          {
+            "text": "Mattress",
+            "emoji": "🛏️",
+            "label": "Mattress",
+            "translationPt": "Colchão na cama"
           }
         ],
         "options": [
           "Pants",
-          "Mattress",
           "Pajamas",
-          "Watch"
+          "Watch",
+          "Mattress"
         ],
         "correctAnswer": "Watch",
         "explanation": "Exemplo prático: \"Put on your wristwatch in the morning.\"",
@@ -8663,15 +6709,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e36",
+        "id": "w0-p6-e29",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Wallet",
         "visualEmoji": "👛",
         "visualOptions": [
+          {
+            "text": "Wallet",
+            "emoji": "👛",
+            "label": "Wallet",
+            "translationPt": "Carteira de bolso"
+          },
           {
             "text": "Mirror",
             "emoji": "🪞",
@@ -8685,12 +6734,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Botas"
           },
           {
-            "text": "Wallet",
-            "emoji": "👛",
-            "label": "Wallet",
-            "translationPt": "Carteira de bolso"
-          },
-          {
             "text": "Belt",
             "emoji": "ベルト",
             "label": "Belt",
@@ -8698,9 +6741,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Wallet",
           "Mirror",
           "Boots",
-          "Wallet",
           "Belt"
         ],
         "correctAnswer": "Wallet",
@@ -8709,15 +6752,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p5-e37",
+        "id": "w0-p6-e30",
         "type": "image-choice",
-        "conceptTitle": "Quarto de Dormir, Cama, Guarda-Roupa & Vestuário • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Handbag",
         "visualEmoji": "👜",
         "visualOptions": [
+          {
+            "text": "High Heels",
+            "emoji": "👠",
+            "label": "High Heels",
+            "translationPt": "Sapato de salto alto"
+          },
           {
             "text": "Handbag",
             "emoji": "👜",
@@ -8725,88 +6771,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bolsa"
           },
           {
+            "text": "Nightstand",
+            "emoji": "🗄️",
+            "label": "Nightstand",
+            "translationPt": "Criado-mudo ao lado da cama"
+          },
+          {
             "text": "Cap",
             "emoji": "🧢",
             "label": "Cap",
             "translationPt": "Boné"
-          },
-          {
-            "text": "Nightstand",
-            "emoji": "🗄️",
-            "label": "Nightstand",
-            "translationPt": "Criado-mudo / Mesa de cabeceira"
-          },
-          {
-            "text": "High Heels",
-            "emoji": "👠",
-            "label": "High Heels",
-            "translationPt": "Sapato de salto alto"
           }
         ],
         "options": [
+          "High Heels",
           "Handbag",
-          "Cap",
           "Nightstand",
-          "High Heels"
+          "Cap"
         ],
         "correctAnswer": "Handbag",
         "explanation": "Exemplo prático: \"Her leather handbag is on the bedroom chair.\"",
         "phoneticHint": "/ˈhænd.bæɡ/",
         "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p5-pron-8",
-        "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
-        "pairs": [
-          {
-            "id": "w0-p5-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
-          },
-          {
-            "id": "w0-p5-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
-          },
-          {
-            "id": "w0-p5-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
-          },
-          {
-            "id": "w0-p5-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
-        "skillCategory": "grammar"
       }
     ]
   },
   {
-    "id": "w0-p6",
+    "id": "w0-p7",
     "worldId": 0,
-    "phaseNumber": 6,
-    "title": "Ambiente 6 • Banheiro, Chuveiro, Pia & Higiene Pessoal",
-    "subtitle": "Cômodo 6/12 • Vaso sanitário, chuveiro, pia, toalhas, itens de higiene e partes do corpo",
+    "phaseNumber": 7,
+    "title": "Vocabulário 6 • Banheiro, Chuveiro, Pia & Higiene Pessoal",
+    "subtitle": "Ambiente 6/12 • Vaso sanitário, chuveiro, pia, toalhas, itens de higiene e partes do corpo",
     "pedagogicalObjective": "Reconhecer todos os itens do banheiro, produtos de higiene diária e partes do corpo humano.",
     "type": "lesson",
     "icon": "house",
@@ -8814,21 +6809,24 @@ export const WORLD_0_PHASES: Phase[] = [
     "theorySummary": [
       "Agora entramos no Banheiro da casa!",
       "Veja o Vaso Sanitário (Toilet), o Papel Higiênico (Toilet Paper), a Pia do Banheiro (Bathroom Sink), o Chuveiro (Shower), a Banheira (Bathtub), a Toalha de Banho (Towel), o Sabonete (Soap) e o Shampoo.",
-      "Na bancada do banheiro usamos a Escova de Dentes (Toothbrush), a Pasta de Dente (Toothpaste), o Pente (Comb), a Escova de Cabelo (Hairbrush) e o Secador (Hair Dryer), cuidando de cada parte do corpo!"
+      "Logo após concluir este 6º módulo de vocabulário, você fará o seu 2º Módulo Exclusivo de Pronomes (Possessivos & Demonstrativos)!"
     ],
     "xpReward": 50,
     "gemsReward": 20,
     "exercises": [
       {
-        "id": "w0-p6-e1",
+        "id": "w0-p7-e1",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Toilet",
         "visualEmoji": "🚽",
         "visualOptions": [
+          {
+            "text": "Toilet",
+            "emoji": "🚽",
+            "label": "Toilet",
+            "translationPt": "Vaso sanitário"
+          },
           {
             "text": "Hairbrush",
             "emoji": "🪮",
@@ -8846,19 +6844,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "✋",
             "label": "Hand",
             "translationPt": "Mão"
-          },
-          {
-            "text": "Toilet",
-            "emoji": "🚽",
-            "label": "Toilet",
-            "translationPt": "Vaso sanitário"
           }
         ],
         "options": [
+          "Toilet",
           "Hairbrush",
           "Hair Dryer",
-          "Hand",
-          "Toilet"
+          "Hand"
         ],
         "correctAnswer": "Toilet",
         "explanation": "Exemplo prático: \"A clean white ceramic toilet in the bathroom.\"",
@@ -8866,21 +6858,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e2",
+        "id": "w0-p7-e2",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Toilet Paper",
         "visualEmoji": "🧻",
         "visualOptions": [
-          {
-            "text": "Toilet Paper",
-            "emoji": "🧻",
-            "label": "Toilet Paper",
-            "translationPt": "Papel higiênico"
-          },
           {
             "text": "Toothpaste",
             "emoji": "🪥",
@@ -8898,13 +6881,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪥",
             "label": "Toothbrush",
             "translationPt": "Escova de dentes"
+          },
+          {
+            "text": "Toilet Paper",
+            "emoji": "🧻",
+            "label": "Toilet Paper",
+            "translationPt": "Papel higiênico"
           }
         ],
         "options": [
-          "Toilet Paper",
           "Toothpaste",
           "Towel",
-          "Toothbrush"
+          "Toothbrush",
+          "Toilet Paper"
         ],
         "correctAnswer": "Toilet Paper",
         "explanation": "Exemplo prático: \"Put a new roll of toilet paper on the holder.\"",
@@ -8912,21 +6901,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e3",
+        "id": "w0-p7-e3",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Bathroom Sink",
         "visualEmoji": "🚰",
         "visualOptions": [
-          {
-            "text": "Arm",
-            "emoji": "💪",
-            "label": "Arm",
-            "translationPt": "Braço"
-          },
           {
             "text": "Dental Floss",
             "emoji": "🦷",
@@ -8934,23 +6914,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Fio dental"
           },
           {
-            "text": "Thermometer",
-            "emoji": "🌡️",
-            "label": "Thermometer",
-            "translationPt": "Termômetro digital"
+            "text": "Arm",
+            "emoji": "💪",
+            "label": "Arm",
+            "translationPt": "Braço"
           },
           {
             "text": "Bathroom Sink",
             "emoji": "🚰",
             "label": "Bathroom Sink",
-            "translationPt": "Pia / Lavatório do banheiro"
+            "translationPt": "Pia / Gabinete do banheiro"
+          },
+          {
+            "text": "Thermometer",
+            "emoji": "🌡️",
+            "label": "Thermometer",
+            "translationPt": "Termômetro digital"
           }
         ],
         "options": [
-          "Arm",
           "Dental Floss",
-          "Thermometer",
-          "Bathroom Sink"
+          "Arm",
+          "Bathroom Sink",
+          "Thermometer"
         ],
         "correctAnswer": "Bathroom Sink",
         "explanation": "Exemplo prático: \"Wash your hands and face in the bathroom sink.\"",
@@ -8958,77 +6944,29 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p6-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p6-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p6-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p6-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p6-e5",
+        "id": "w0-p7-e4",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Shower",
         "visualEmoji": "🚿",
         "visualOptions": [
           {
+            "text": "Shower",
+            "emoji": "🚿",
+            "label": "Shower",
+            "translationPt": "Chuveiro no box do banheiro"
+          },
+          {
             "text": "Shampoo",
             "emoji": "🧴",
             "label": "Shampoo",
-            "translationPt": "Shampoo / Condicionador"
+            "translationPt": "Frasco de shampoo"
           },
           {
             "text": "Pill",
             "emoji": "💊",
             "label": "Pill",
             "translationPt": "Comprimido / Remédio"
-          },
-          {
-            "text": "Shower",
-            "emoji": "🚿",
-            "label": "Shower",
-            "translationPt": "Chuveiro"
           },
           {
             "text": "Perfume",
@@ -9038,9 +6976,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Shower",
           "Shampoo",
           "Pill",
-          "Shower",
           "Perfume"
         ],
         "correctAnswer": "Shower",
@@ -9049,26 +6987,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e6",
+        "id": "w0-p7-e5",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Bathtub",
         "visualEmoji": "🛁",
         "visualOptions": [
           {
+            "text": "Comb",
+            "emoji": "🪮",
+            "label": "Comb",
+            "translationPt": "Pente de cabelo"
+          },
+          {
             "text": "Bathtub",
             "emoji": "🛁",
             "label": "Bathtub",
-            "translationPt": "Banheira"
-          },
-          {
-            "text": "Mouth",
-            "emoji": "👄",
-            "label": "Mouth",
-            "translationPt": "Boca"
+            "translationPt": "Banheira no banheiro"
           },
           {
             "text": "Foot",
@@ -9077,17 +7012,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pé"
           },
           {
-            "text": "Comb",
-            "emoji": "🪮",
-            "label": "Comb",
-            "translationPt": "Pente de cabelo"
+            "text": "Mouth",
+            "emoji": "👄",
+            "label": "Mouth",
+            "translationPt": "Boca"
           }
         ],
         "options": [
+          "Comb",
           "Bathtub",
-          "Mouth",
           "Foot",
-          "Comb"
+          "Mouth"
         ],
         "correctAnswer": "Bathtub",
         "explanation": "Exemplo prático: \"Fill the white bathtub with warm water.\"",
@@ -9095,11 +7030,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e7",
+        "id": "w0-p7-e6",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Towel",
         "visualEmoji": "🧺",
@@ -9141,11 +7073,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e8",
+        "id": "w0-p7-e7",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Soap",
         "visualEmoji": "🧼",
@@ -9155,12 +7084,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👂",
             "label": "Ear",
             "translationPt": "Orelha / Ouvido"
-          },
-          {
-            "text": "Soap",
-            "emoji": "🧼",
-            "label": "Soap",
-            "translationPt": "Sabonete em barra"
           },
           {
             "text": "Eye",
@@ -9173,13 +7096,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💇",
             "label": "Hair",
             "translationPt": "Cabelo"
+          },
+          {
+            "text": "Soap",
+            "emoji": "🧼",
+            "label": "Soap",
+            "translationPt": "Sabonete em barra"
           }
         ],
         "options": [
           "Ear",
-          "Soap",
           "Eye",
-          "Hair"
+          "Hair",
+          "Soap"
         ],
         "correctAnswer": "Soap",
         "explanation": "Exemplo prático: \"Wash your hands with fragrant soap.\"",
@@ -9187,66 +7116,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p6-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p6-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p6-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p6-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p6-e10",
+        "id": "w0-p7-e8",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Liquid Soap",
         "visualEmoji": "🧴",
         "visualOptions": [
-          {
-            "text": "Toilet Paper",
-            "emoji": "🧻",
-            "label": "Toilet Paper",
-            "translationPt": "Papel higiênico"
-          },
           {
             "text": "Nose",
             "emoji": "👃",
@@ -9254,23 +7129,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Nariz"
           },
           {
-            "text": "Tooth",
-            "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente"
+            "text": "Toilet Paper",
+            "emoji": "🧻",
+            "label": "Toilet Paper",
+            "translationPt": "Papel higiênico"
           },
           {
             "text": "Liquid Soap",
             "emoji": "🧴",
             "label": "Liquid Soap",
-            "translationPt": "Sabonete líquido"
+            "translationPt": "Sabonete líquido na pia"
+          },
+          {
+            "text": "Tooth",
+            "emoji": "🦷",
+            "label": "Tooth",
+            "translationPt": "Dente"
           }
         ],
         "options": [
-          "Toilet Paper",
           "Nose",
-          "Tooth",
-          "Liquid Soap"
+          "Toilet Paper",
+          "Liquid Soap",
+          "Tooth"
         ],
         "correctAnswer": "Liquid Soap",
         "explanation": "Exemplo prático: \"Press the pump dispenser for liquid hand soap.\"",
@@ -9278,20 +7159,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e11",
+        "id": "w0-p7-e9",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Shampoo",
         "visualEmoji": "🧴",
         "visualOptions": [
           {
+            "text": "Shampoo",
+            "emoji": "🧴",
+            "label": "Shampoo",
+            "translationPt": "Frasco de shampoo"
+          },
+          {
             "text": "Bathtub",
             "emoji": "🛁",
             "label": "Bathtub",
-            "translationPt": "Banheira"
+            "translationPt": "Banheira no banheiro"
           },
           {
             "text": "Bandage",
@@ -9300,22 +7184,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Curativo (Band-aid)"
           },
           {
-            "text": "Shampoo",
-            "emoji": "🧴",
-            "label": "Shampoo",
-            "translationPt": "Shampoo / Condicionador"
-          },
-          {
             "text": "Bathroom Sink",
             "emoji": "🚰",
             "label": "Bathroom Sink",
-            "translationPt": "Pia / Lavatório do banheiro"
+            "translationPt": "Pia / Gabinete do banheiro"
           }
         ],
         "options": [
+          "Shampoo",
           "Bathtub",
           "Bandage",
-          "Shampoo",
           "Bathroom Sink"
         ],
         "correctAnswer": "Shampoo",
@@ -9324,15 +7202,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e12",
+        "id": "w0-p7-e10",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Toothbrush",
         "visualEmoji": "🪥",
         "visualOptions": [
+          {
+            "text": "Pill",
+            "emoji": "💊",
+            "label": "Pill",
+            "translationPt": "Comprimido / Remédio"
+          },
+          {
+            "text": "Perfume",
+            "emoji": "🧴",
+            "label": "Perfume",
+            "translationPt": "Perfume / Colônia"
+          },
           {
             "text": "Toothbrush",
             "emoji": "🪥",
@@ -9343,26 +7230,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Shower",
             "emoji": "🚿",
             "label": "Shower",
-            "translationPt": "Chuveiro"
-          },
-          {
-            "text": "Perfume",
-            "emoji": "🧴",
-            "label": "Perfume",
-            "translationPt": "Perfume / Colônia"
-          },
-          {
-            "text": "Pill",
-            "emoji": "💊",
-            "label": "Pill",
-            "translationPt": "Comprimido / Remédio"
+            "translationPt": "Chuveiro no box do banheiro"
           }
         ],
         "options": [
-          "Toothbrush",
-          "Shower",
+          "Pill",
           "Perfume",
-          "Pill"
+          "Toothbrush",
+          "Shower"
         ],
         "correctAnswer": "Toothbrush",
         "explanation": "Exemplo prático: \"Brush your teeth with a soft toothbrush.\"",
@@ -9370,11 +7245,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e13",
+        "id": "w0-p7-e11",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Toothpaste",
         "visualEmoji": "🪥",
@@ -9386,16 +7258,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pé"
           },
           {
-            "text": "Leg",
-            "emoji": "🦵",
-            "label": "Leg",
-            "translationPt": "Perna"
-          },
-          {
             "text": "Toothpaste",
             "emoji": "🪥",
             "label": "Toothpaste",
             "translationPt": "Pasta de dente / Creme dental"
+          },
+          {
+            "text": "Leg",
+            "emoji": "🦵",
+            "label": "Leg",
+            "translationPt": "Perna"
           },
           {
             "text": "Soap",
@@ -9406,8 +7278,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Foot",
-          "Leg",
           "Toothpaste",
+          "Leg",
           "Soap"
         ],
         "correctAnswer": "Toothpaste",
@@ -9416,56 +7288,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p6-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p6-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p6-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p6-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p6-e15",
+        "id": "w0-p7-e12",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Dental Floss",
         "visualEmoji": "🦷",
@@ -9477,29 +7301,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Aparelho de barbear"
           },
           {
-            "text": "Dental Floss",
-            "emoji": "🦷",
-            "label": "Dental Floss",
-            "translationPt": "Fio dental"
-          },
-          {
             "text": "Liquid Soap",
             "emoji": "🧴",
             "label": "Liquid Soap",
-            "translationPt": "Sabonete líquido"
+            "translationPt": "Sabonete líquido na pia"
           },
           {
             "text": "Mouth",
             "emoji": "👄",
             "label": "Mouth",
             "translationPt": "Boca"
+          },
+          {
+            "text": "Dental Floss",
+            "emoji": "🦷",
+            "label": "Dental Floss",
+            "translationPt": "Fio dental"
           }
         ],
         "options": [
           "Razor",
-          "Dental Floss",
           "Liquid Soap",
-          "Mouth"
+          "Mouth",
+          "Dental Floss"
         ],
         "correctAnswer": "Dental Floss",
         "explanation": "Exemplo prático: \"Use dental floss between your teeth every night.\"",
@@ -9507,20 +7331,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e16",
+        "id": "w0-p7-e13",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Comb",
         "visualEmoji": "🪮",
         "visualOptions": [
           {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão"
+            "text": "Comb",
+            "emoji": "🪮",
+            "label": "Comb",
+            "translationPt": "Pente de cabelo"
           },
           {
             "text": "Nose",
@@ -9529,23 +7350,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Nariz"
           },
           {
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão"
+          },
+          {
             "text": "Hair",
             "emoji": "💇",
             "label": "Hair",
             "translationPt": "Cabelo"
-          },
-          {
-            "text": "Comb",
-            "emoji": "🪮",
-            "label": "Comb",
-            "translationPt": "Pente de cabelo"
           }
         ],
         "options": [
-          "Hand",
+          "Comb",
           "Nose",
-          "Hair",
-          "Comb"
+          "Hand",
+          "Hair"
         ],
         "correctAnswer": "Comb",
         "explanation": "Exemplo prático: \"Part your wet hair with a comb.\"",
@@ -9553,21 +7374,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e17",
+        "id": "w0-p7-e14",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Hairbrush",
         "visualEmoji": "🪮",
         "visualOptions": [
-          {
-            "text": "Hairbrush",
-            "emoji": "🪮",
-            "label": "Hairbrush",
-            "translationPt": "Escova de cabelo"
-          },
           {
             "text": "Arm",
             "emoji": "💪",
@@ -9585,13 +7397,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧻",
             "label": "Toilet Paper",
             "translationPt": "Papel higiênico"
+          },
+          {
+            "text": "Hairbrush",
+            "emoji": "🪮",
+            "label": "Hairbrush",
+            "translationPt": "Escova de cabelo"
           }
         ],
         "options": [
-          "Hairbrush",
           "Arm",
           "Toilet",
-          "Toilet Paper"
+          "Toilet Paper",
+          "Hairbrush"
         ],
         "correctAnswer": "Hairbrush",
         "explanation": "Exemplo prático: \"Brush your hair in front of the bathroom mirror.\"",
@@ -9599,20 +7417,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e18",
+        "id": "w0-p7-e15",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Hair Dryer",
         "visualEmoji": "💨",
         "visualOptions": [
           {
-            "text": "Toothpaste",
+            "text": "Toothbrush",
             "emoji": "🪥",
-            "label": "Toothpaste",
-            "translationPt": "Pasta de dente / Creme dental"
+            "label": "Toothbrush",
+            "translationPt": "Escova de dentes"
           },
           {
             "text": "Towel",
@@ -9621,23 +7436,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Toalha de banho"
           },
           {
-            "text": "Toothbrush",
-            "emoji": "🪥",
-            "label": "Toothbrush",
-            "translationPt": "Escova de dentes"
-          },
-          {
             "text": "Hair Dryer",
             "emoji": "💨",
             "label": "Hair Dryer",
             "translationPt": "Secador de cabelo"
+          },
+          {
+            "text": "Toothpaste",
+            "emoji": "🪥",
+            "label": "Toothpaste",
+            "translationPt": "Pasta de dente / Creme dental"
           }
         ],
         "options": [
-          "Toothpaste",
-          "Towel",
           "Toothbrush",
-          "Hair Dryer"
+          "Towel",
+          "Hair Dryer",
+          "Toothpaste"
         ],
         "correctAnswer": "Hair Dryer",
         "explanation": "Exemplo prático: \"Dry your hair quickly with an electric hair dryer.\"",
@@ -9645,72 +7460,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p6-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p6-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p6-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p6-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p6-e20",
+        "id": "w0-p7-e16",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Razor",
         "visualEmoji": "🪒",
         "visualOptions": [
-          {
-            "text": "Shampoo",
-            "emoji": "🧴",
-            "label": "Shampoo",
-            "translationPt": "Shampoo / Condicionador"
-          },
-          {
-            "text": "Shower",
-            "emoji": "🚿",
-            "label": "Shower",
-            "translationPt": "Chuveiro"
-          },
           {
             "text": "Razor",
             "emoji": "🪒",
@@ -9722,13 +7477,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧼",
             "label": "Soap",
             "translationPt": "Sabonete em barra"
+          },
+          {
+            "text": "Shower",
+            "emoji": "🚿",
+            "label": "Shower",
+            "translationPt": "Chuveiro no box do banheiro"
+          },
+          {
+            "text": "Shampoo",
+            "emoji": "🧴",
+            "label": "Shampoo",
+            "translationPt": "Frasco de shampoo"
           }
         ],
         "options": [
-          "Shampoo",
-          "Shower",
           "Razor",
-          "Soap"
+          "Soap",
+          "Shower",
+          "Shampoo"
         ],
         "correctAnswer": "Razor",
         "explanation": "Exemplo prático: \"Shave carefully with a safety razor.\"",
@@ -9736,26 +7503,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e21",
+        "id": "w0-p7-e17",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Perfume",
         "visualEmoji": "🧴",
         "visualOptions": [
           {
+            "text": "Liquid Soap",
+            "emoji": "🧴",
+            "label": "Liquid Soap",
+            "translationPt": "Sabonete líquido na pia"
+          },
+          {
             "text": "Perfume",
             "emoji": "🧴",
             "label": "Perfume",
             "translationPt": "Perfume / Colônia"
-          },
-          {
-            "text": "Liquid Soap",
-            "emoji": "🧴",
-            "label": "Liquid Soap",
-            "translationPt": "Sabonete líquido"
           },
           {
             "text": "Dental Floss",
@@ -9771,8 +7535,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Perfume",
           "Liquid Soap",
+          "Perfume",
           "Dental Floss",
           "Comb"
         ],
@@ -9782,20 +7546,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e22",
+        "id": "w0-p7-e18",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Bandage",
         "visualEmoji": "🩹",
         "visualOptions": [
           {
-            "text": "Eye",
-            "emoji": "👁️",
-            "label": "Eye",
-            "translationPt": "Olho"
+            "text": "Bathroom Sink",
+            "emoji": "🚰",
+            "label": "Bathroom Sink",
+            "translationPt": "Pia / Gabinete do banheiro"
           },
           {
             "text": "Bandage",
@@ -9804,10 +7565,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Curativo (Band-aid)"
           },
           {
-            "text": "Bathroom Sink",
-            "emoji": "🚰",
-            "label": "Bathroom Sink",
-            "translationPt": "Pia / Lavatório do banheiro"
+            "text": "Eye",
+            "emoji": "👁️",
+            "label": "Eye",
+            "translationPt": "Olho"
           },
           {
             "text": "Ear",
@@ -9817,9 +7578,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Eye",
-          "Bandage",
           "Bathroom Sink",
+          "Bandage",
+          "Eye",
           "Ear"
         ],
         "correctAnswer": "Bandage",
@@ -9828,11 +7589,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e23",
+        "id": "w0-p7-e19",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Thermometer",
         "visualEmoji": "🌡️",
@@ -9841,13 +7599,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Bathtub",
             "emoji": "🛁",
             "label": "Bathtub",
-            "translationPt": "Banheira"
-          },
-          {
-            "text": "Thermometer",
-            "emoji": "🌡️",
-            "label": "Thermometer",
-            "translationPt": "Termômetro digital"
+            "translationPt": "Banheira no banheiro"
           },
           {
             "text": "Hairbrush",
@@ -9860,13 +7612,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💨",
             "label": "Hair Dryer",
             "translationPt": "Secador de cabelo"
+          },
+          {
+            "text": "Thermometer",
+            "emoji": "🌡️",
+            "label": "Thermometer",
+            "translationPt": "Termômetro digital"
           }
         ],
         "options": [
           "Bathtub",
-          "Thermometer",
           "Hairbrush",
-          "Hair Dryer"
+          "Hair Dryer",
+          "Thermometer"
         ],
         "correctAnswer": "Thermometer",
         "explanation": "Exemplo prático: \"Measure your temperature with a digital thermometer.\"",
@@ -9874,56 +7632,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p6-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p6-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p6-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p6-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p6-e25",
+        "id": "w0-p7-e20",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Pill",
         "visualEmoji": "💊",
@@ -9941,23 +7651,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vaso sanitário"
           },
           {
-            "text": "Arm",
-            "emoji": "💪",
-            "label": "Arm",
-            "translationPt": "Braço"
-          },
-          {
             "text": "Pill",
             "emoji": "💊",
             "label": "Pill",
             "translationPt": "Comprimido / Remédio"
+          },
+          {
+            "text": "Arm",
+            "emoji": "💪",
+            "label": "Arm",
+            "translationPt": "Braço"
           }
         ],
         "options": [
           "Toilet Paper",
           "Toilet",
-          "Arm",
-          "Pill"
+          "Pill",
+          "Arm"
         ],
         "correctAnswer": "Pill",
         "explanation": "Exemplo prático: \"Take the medicine pill with a glass of water.\"",
@@ -9965,20 +7675,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e26",
+        "id": "w0-p7-e21",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Hand",
         "visualEmoji": "✋",
         "visualOptions": [
           {
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão"
+          },
+          {
             "text": "Shampoo",
             "emoji": "🧴",
             "label": "Shampoo",
-            "translationPt": "Shampoo / Condicionador"
+            "translationPt": "Frasco de shampoo"
           },
           {
             "text": "Soap",
@@ -9987,22 +7700,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sabonete em barra"
           },
           {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão"
-          },
-          {
             "text": "Shower",
             "emoji": "🚿",
             "label": "Shower",
-            "translationPt": "Chuveiro"
+            "translationPt": "Chuveiro no box do banheiro"
           }
         ],
         "options": [
+          "Hand",
           "Shampoo",
           "Soap",
-          "Hand",
           "Shower"
         ],
         "correctAnswer": "Hand",
@@ -10011,21 +7718,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e27",
+        "id": "w0-p7-e22",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tooth",
         "visualEmoji": "🦷",
         "visualOptions": [
-          {
-            "text": "Tooth",
-            "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente"
-          },
           {
             "text": "Foot",
             "emoji": "🦶",
@@ -10039,6 +7737,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pente de cabelo"
           },
           {
+            "text": "Tooth",
+            "emoji": "🦷",
+            "label": "Tooth",
+            "translationPt": "Dente"
+          },
+          {
             "text": "Bandage",
             "emoji": "🩹",
             "label": "Bandage",
@@ -10046,9 +7750,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Tooth",
           "Foot",
           "Comb",
+          "Tooth",
           "Bandage"
         ],
         "correctAnswer": "Tooth",
@@ -10057,32 +7761,29 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e28",
+        "id": "w0-p7-e23",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Mouth",
         "visualEmoji": "👄",
         "visualOptions": [
           {
-            "text": "Razor",
-            "emoji": "🪒",
-            "label": "Razor",
-            "translationPt": "Aparelho de barbear"
-          },
-          {
             "text": "Liquid Soap",
             "emoji": "🧴",
             "label": "Liquid Soap",
-            "translationPt": "Sabonete líquido"
+            "translationPt": "Sabonete líquido na pia"
           },
           {
             "text": "Mouth",
             "emoji": "👄",
             "label": "Mouth",
             "translationPt": "Boca"
+          },
+          {
+            "text": "Razor",
+            "emoji": "🪒",
+            "label": "Razor",
+            "translationPt": "Aparelho de barbear"
           },
           {
             "text": "Thermometer",
@@ -10092,9 +7793,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Razor",
           "Liquid Soap",
           "Mouth",
+          "Razor",
           "Thermometer"
         ],
         "correctAnswer": "Mouth",
@@ -10103,60 +7804,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p6-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p6-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p6-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p6-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p6-e30",
+        "id": "w0-p7-e24",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Eye",
         "visualEmoji": "👁️",
         "visualOptions": [
+          {
+            "text": "Bathroom Sink",
+            "emoji": "🚰",
+            "label": "Bathroom Sink",
+            "translationPt": "Pia / Gabinete do banheiro"
+          },
+          {
+            "text": "Hair Dryer",
+            "emoji": "💨",
+            "label": "Hair Dryer",
+            "translationPt": "Secador de cabelo"
+          },
           {
             "text": "Hairbrush",
             "emoji": "🪮",
@@ -10168,25 +7833,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👁️",
             "label": "Eye",
             "translationPt": "Olho"
-          },
-          {
-            "text": "Hair Dryer",
-            "emoji": "💨",
-            "label": "Hair Dryer",
-            "translationPt": "Secador de cabelo"
-          },
-          {
-            "text": "Bathroom Sink",
-            "emoji": "🚰",
-            "label": "Bathroom Sink",
-            "translationPt": "Pia / Lavatório do banheiro"
           }
         ],
         "options": [
-          "Hairbrush",
-          "Eye",
+          "Bathroom Sink",
           "Hair Dryer",
-          "Bathroom Sink"
+          "Hairbrush",
+          "Eye"
         ],
         "correctAnswer": "Eye",
         "explanation": "Exemplo prático: \"Close your eyes when washing your face with soap.\"",
@@ -10194,15 +7847,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e31",
+        "id": "w0-p7-e25",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ear",
         "visualEmoji": "👂",
         "visualOptions": [
+          {
+            "text": "Ear",
+            "emoji": "👂",
+            "label": "Ear",
+            "translationPt": "Orelha / Ouvido"
+          },
           {
             "text": "Toothbrush",
             "emoji": "🪥",
@@ -10220,19 +7876,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪥",
             "label": "Toothpaste",
             "translationPt": "Pasta de dente / Creme dental"
-          },
-          {
-            "text": "Ear",
-            "emoji": "👂",
-            "label": "Ear",
-            "translationPt": "Orelha / Ouvido"
           }
         ],
         "options": [
+          "Ear",
           "Toothbrush",
           "Towel",
-          "Toothpaste",
-          "Ear"
+          "Toothpaste"
         ],
         "correctAnswer": "Ear",
         "explanation": "Exemplo prático: \"Dry your ears gently with a towel.\"",
@@ -10240,20 +7890,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e32",
+        "id": "w0-p7-e26",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Nose",
         "visualEmoji": "👃",
         "visualOptions": [
           {
-            "text": "Nose",
-            "emoji": "👃",
-            "label": "Nose",
-            "translationPt": "Nariz"
+            "text": "Tooth",
+            "emoji": "🦷",
+            "label": "Tooth",
+            "translationPt": "Dente"
           },
           {
             "text": "Dental Floss",
@@ -10262,23 +7909,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Fio dental"
           },
           {
-            "text": "Tooth",
-            "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente"
-          },
-          {
             "text": "Hand",
             "emoji": "✋",
             "label": "Hand",
             "translationPt": "Mão"
+          },
+          {
+            "text": "Nose",
+            "emoji": "👃",
+            "label": "Nose",
+            "translationPt": "Nariz"
           }
         ],
         "options": [
-          "Nose",
-          "Dental Floss",
           "Tooth",
-          "Hand"
+          "Dental Floss",
+          "Hand",
+          "Nose"
         ],
         "correctAnswer": "Nose",
         "explanation": "Exemplo prático: \"Breathe fresh air through your nose.\"",
@@ -10286,11 +7933,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e33",
+        "id": "w0-p7-e27",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Hair",
         "visualEmoji": "💇",
@@ -10300,12 +7944,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧴",
             "label": "Perfume",
             "translationPt": "Perfume / Colônia"
-          },
-          {
-            "text": "Mouth",
-            "emoji": "👄",
-            "label": "Mouth",
-            "translationPt": "Boca"
           },
           {
             "text": "Pill",
@@ -10318,13 +7956,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "💇",
             "label": "Hair",
             "translationPt": "Cabelo"
+          },
+          {
+            "text": "Mouth",
+            "emoji": "👄",
+            "label": "Mouth",
+            "translationPt": "Boca"
           }
         ],
         "options": [
           "Perfume",
-          "Mouth",
           "Pill",
-          "Hair"
+          "Hair",
+          "Mouth"
         ],
         "correctAnswer": "Hair",
         "explanation": "Exemplo prático: \"Wash and brush your hair.\"",
@@ -10332,65 +7976,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p6-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p6-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p6-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p6-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p6-e35",
+        "id": "w0-p7-e28",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Foot",
         "visualEmoji": "🦶",
         "visualOptions": [
           {
-            "text": "Thermometer",
-            "emoji": "🌡️",
-            "label": "Thermometer",
-            "translationPt": "Termômetro digital"
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé"
           },
           {
             "text": "Eye",
@@ -10399,22 +7995,22 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Olho"
           },
           {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé"
+            "text": "Thermometer",
+            "emoji": "🌡️",
+            "label": "Thermometer",
+            "translationPt": "Termômetro digital"
           },
           {
             "text": "Bathtub",
             "emoji": "🛁",
             "label": "Bathtub",
-            "translationPt": "Banheira"
+            "translationPt": "Banheira no banheiro"
           }
         ],
         "options": [
-          "Thermometer",
-          "Eye",
           "Foot",
+          "Eye",
+          "Thermometer",
           "Bathtub"
         ],
         "correctAnswer": "Foot",
@@ -10423,26 +8019,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e36",
+        "id": "w0-p7-e29",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Arm",
         "visualEmoji": "💪",
         "visualOptions": [
           {
+            "text": "Bathroom Sink",
+            "emoji": "🚰",
+            "label": "Bathroom Sink",
+            "translationPt": "Pia / Gabinete do banheiro"
+          },
+          {
             "text": "Arm",
             "emoji": "💪",
             "label": "Arm",
             "translationPt": "Braço"
-          },
-          {
-            "text": "Bathroom Sink",
-            "emoji": "🚰",
-            "label": "Bathroom Sink",
-            "translationPt": "Pia / Lavatório do banheiro"
           },
           {
             "text": "Bandage",
@@ -10458,8 +8051,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Arm",
           "Bathroom Sink",
+          "Arm",
           "Bandage",
           "Ear"
         ],
@@ -10469,11 +8062,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e37",
+        "id": "w0-p7-e30",
         "type": "image-choice",
-        "conceptTitle": "Banheiro, Chuveiro, Pia & Higiene Pessoal • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Leg",
         "visualEmoji": "🦵",
@@ -10513,60 +8103,215 @@ export const WORLD_0_PHASES: Phase[] = [
         "explanation": "Exemplo prático: \"Dry your legs with the bath towel.\"",
         "phoneticHint": "/leɡ/",
         "skillCategory": "vocabulary"
-      },
+      }
+    ]
+  },
+  {
+    "id": "w0-p8",
+    "worldId": 0,
+    "phaseNumber": 8,
+    "title": "Lição de Pronomes II • Possessivos & Demonstrativos",
+    "subtitle": "Módulo de Pronomes 2/4 (Após 6 de Vocabulário) • Pares Associativos + Voz da Professora",
+    "pedagogicalObjective": "Dominar os Pronomes Possessivos (My, Your, His, Her, Its, Our, Their, Mine, Yours) e os Pronomes Demonstrativos (This, That, These, Those).",
+    "type": "chest",
+    "icon": "star",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Bem-vindo à 2ª Lição Exclusiva de Pronomes (após mais 3 módulos de vocabulário)!",
+      "3º Passo: Aprendemos os Pronomes Possessivos (My, Your, His, Her, Our, Their, Mine, Yours), que mostram de quem é cada objeto.",
+      "4º Passo: Aprendemos os Pronomes Demonstrativos (This, That, These, Those), que mostram se o objeto está pertinho da mão ou lá longe!"
+    ],
+    "xpReward": 70,
+    "gemsReward": 30,
+    "exercises": [
       {
-        "id": "w0-p6-pron-8",
+        "id": "w0-p8-pron-1",
         "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
+        "conceptTitle": "3º • Pronomes Possessivos (De quem é cada coisa? - Parte 1)",
+        "conceptHeader": "Mostram quem é o dono! Se é meu, digo \"My\" (Meu/Minha). Se é seu, digo \"Your\" (Seu/Sua). Se pertence a um menino, \"His\" (Dele); e se pertence a uma menina, \"Her\" (Dela)!",
+        "teacherAudioPt": "/audio/teacher/pronoun_3.wav",
+        "prompt": "🤝 Conecte cada Pronome Possessivo ao seu par em português:",
         "pairs": [
           {
-            "id": "w0-p6-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
+            "id": "w0-p8-b1-pos1",
+            "en": "My",
+            "emoji": "💖",
+            "phonetic": "/maɪ/",
+            "pt": "Meu / Minha (ex: My bed = Minha cama)",
+            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
           },
           {
-            "id": "w0-p6-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
+            "id": "w0-p8-b1-pos2",
+            "en": "Your",
+            "emoji": "🎁",
+            "phonetic": "/jʊr/",
+            "pt": "Seu / Sua (ex: Your shirt = Sua camisa)",
+            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
           },
           {
-            "id": "w0-p6-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
+            "id": "w0-p8-b1-pos3",
+            "en": "His",
+            "emoji": "👦",
+            "phonetic": "/hɪz/",
+            "pt": "Dele (pertence a um menino ou homem)",
+            "tipPt": "Perfeito! \"His shoes\" = \"Os sapatos dele\"!"
           },
           {
-            "id": "w0-p6-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
+            "id": "w0-p8-b1-pos4",
+            "en": "Her",
+            "emoji": "👧",
+            "phonetic": "/hɜːr/",
+            "pt": "Dela (pertence a uma menina ou mulher)",
+            "tipPt": "Lindo! \"Her dress\" = \"O vestido dela\"!"
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
+        "explanation": "My (Meu/Minha), Your (Seu/Sua), His (Dele), Her (Dela).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p8-pron-2",
+        "type": "pair-match",
+        "conceptTitle": "3º • Pronomes Possessivos (Nosso, Deles e É Meu! - Parte 2)",
+        "conceptHeader": "Quando algo é de toda a nossa família junta, dizemos \"Our\" (Nosso/Nossa)! Quando é de outras pessoas, \"Their\" (Deles/Delas). E no final da frase, para dizer \"É meu!\" ou \"É seu!\", usamos \"Mine\" e \"Yours\"!",
+        "teacherAudioPt": "/audio/teacher/pronoun_3.wav",
+        "prompt": "🤝 Ligue os Pronomes Possessivos de plural e fim de frase aos seus pares:",
+        "pairs": [
+          {
+            "id": "w0-p8-b2-pos5",
+            "en": "Our",
+            "emoji": "🏡",
+            "phonetic": "/aʊər/",
+            "pt": "Nosso / Nossa (ex: Our kitchen = Nossa cozinha)",
+            "tipPt": "Que orgulho! \"Our\" é \"Nosso\" ou \"Nossa\"!"
+          },
+          {
+            "id": "w0-p8-b2-pos6",
+            "en": "Their",
+            "emoji": "👨‍👩‍👧‍👦",
+            "phonetic": "/ðer/",
+            "pt": "Deles / Delas (pertence a eles ou elas)",
+            "tipPt": "Isso! \"Their house\" = \"A casa deles\"!"
+          },
+          {
+            "id": "w0-p8-b2-pos7",
+            "en": "Mine",
+            "emoji": "✨",
+            "phonetic": "/maɪn/",
+            "pt": "O meu / A minha (ex: This cup is mine!)",
+            "tipPt": "Perfeito! \"It is mine!\" = \"É meu!\""
+          },
+          {
+            "id": "w0-p8-b2-pos8",
+            "en": "Yours",
+            "emoji": "🌟",
+            "phonetic": "/jʊrz/",
+            "pt": "O seu / A sua (ex: This plate is yours!)",
+            "tipPt": "Maravilha! \"It is yours!\" = \"É seu!\""
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Our (Nosso/Nossa), Their (Deles/Delas), Mine (Meu/Minha no final), Yours (Seu/Sua no final).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p8-pron-3",
+        "type": "pair-match",
+        "conceptTitle": "4º • Pronomes Demonstrativos (Pertinho da Mão vs. Lá Longe)",
+        "conceptHeader": "Para 1 coisa bem pertinho da mão que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
+        "teacherAudioPt": "/audio/teacher/pronoun_4.wav",
+        "prompt": "🤝 Conecte cada Pronome Demonstrativo (perto vs. longe):",
+        "pairs": [
+          {
+            "id": "w0-p8-b3-dem1",
+            "en": "This",
+            "emoji": "🤏",
+            "phonetic": "/ðɪs/",
+            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
+            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da mão!"
+          },
+          {
+            "id": "w0-p8-b3-dem2",
+            "en": "That",
+            "emoji": "👉",
+            "phonetic": "/ðæt/",
+            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
+            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
+          },
+          {
+            "id": "w0-p8-b3-dem3",
+            "en": "These",
+            "emoji": "🤲",
+            "phonetic": "/ðiːz/",
+            "pt": "Estes / Estas (2 ou mais coisas PERTINHO)",
+            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
+          },
+          {
+            "id": "w0-p8-b3-dem4",
+            "en": "Those",
+            "emoji": "🔭",
+            "phonetic": "/ðoʊz/",
+            "pt": "Aqueles / Aquelas (2 ou mais coisas LONGE)",
+            "tipPt": "Lindo! \"Those\" é o plural para o que está lá longe!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "This (1 perto), That (1 longe), These (vários perto), Those (vários longe).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p8-pron-4",
+        "type": "pair-match",
+        "conceptTitle": "4º • Pronomes Demonstrativos na Prática (Com Objetos da Casa)",
+        "conceptHeader": "Agora vamos usar \"This, That, These, Those\" com os objetos que já conhecemos da casa! Lembre-se: This/These = aqui pertinho; That/Those = lá longe!",
+        "teacherAudioPt": "/audio/teacher/pronoun_4.wav",
+        "prompt": "🤝 Ligue cada expressão com Pronome Demonstrativo ao seu par:",
+        "pairs": [
+          {
+            "id": "w0-p8-b4-dem5",
+            "en": "This spoon",
+            "emoji": "🥄",
+            "phonetic": "/ðɪs spuːn/",
+            "pt": "Esta colher (aqui na minha mão)",
+            "tipPt": "Isso! 1 colher pertinho = \"This spoon\"!"
+          },
+          {
+            "id": "w0-p8-b4-dem6",
+            "en": "That fridge",
+            "emoji": "🧊",
+            "phonetic": "/ðæt frɪdʒ/",
+            "pt": "Aquela geladeira (ali longe)",
+            "tipPt": "Muito bem! 1 geladeira longe = \"That fridge\"!"
+          },
+          {
+            "id": "w0-p8-b4-dem7",
+            "en": "These pillows",
+            "emoji": "⬜",
+            "phonetic": "/ðiːz ˈpɪl.oʊz/",
+            "pt": "Estes travesseiros (aqui pertinho)",
+            "tipPt": "Perfeito! Vários pertinho = \"These pillows\"!"
+          },
+          {
+            "id": "w0-p8-b4-dem8",
+            "en": "Those shoes",
+            "emoji": "👞",
+            "phonetic": "/ðoʊz ʃuːz/",
+            "pt": "Aqueles sapatos (lá longe)",
+            "tipPt": "Parabéns! Vários lá longe = \"Those shoes\"!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "This spoon (Esta colher aqui), That fridge (Aquela geladeira lá), These pillows (Estes travesseiros aqui), Those shoes (Aqueles sapatos lá).",
         "skillCategory": "grammar"
       }
     ]
   },
   {
-    "id": "w0-p7",
+    "id": "w0-p9",
     "worldId": 0,
-    "phaseNumber": 7,
-    "title": "Ambiente 7 • Área de Serviço, Lavanderia, Quintal & Ferramentas",
-    "subtitle": "Cômodo 7/12 • Máquina de lavar, cesto, ferro, vassoura, balde, ferramentas e animais no quintal",
+    "phaseNumber": 9,
+    "title": "Vocabulário 7 • Área de Serviço, Lavanderia, Quintal & Ferramentas",
+    "subtitle": "Ambiente 7/12 • Máquina de lavar, cesto, ferro, vassoura, balde, ferramentas e animais no quintal",
     "pedagogicalObjective": "Explorar o fundo da residência: lavanderia, produtos e utensílios de limpeza, ferramentas de manutenção e os pets no quintal.",
     "type": "lesson",
     "icon": "house",
@@ -10580,20 +8325,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "gemsReward": 20,
     "exercises": [
       {
-        "id": "w0-p7-e1",
+        "id": "w0-p9-e1",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Washing Machine",
         "visualEmoji": "🫧",
         "visualOptions": [
           {
-            "text": "Washing Machine",
-            "emoji": "🫧",
-            "label": "Washing Machine",
-            "translationPt": "Máquina de lavar roupa"
+            "text": "Broom",
+            "emoji": "🧹",
+            "label": "Broom",
+            "translationPt": "Vassoura"
           },
           {
             "text": "Hammer",
@@ -10602,10 +8344,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Martelo"
           },
           {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura"
+            "text": "Washing Machine",
+            "emoji": "🫧",
+            "label": "Washing Machine",
+            "translationPt": "Máquina de lavar roupa"
           },
           {
             "text": "Bucket",
@@ -10615,9 +8357,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Washing Machine",
-          "Hammer",
           "Broom",
+          "Hammer",
+          "Washing Machine",
           "Bucket"
         ],
         "correctAnswer": "Washing Machine",
@@ -10626,26 +8368,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e2",
+        "id": "w0-p9-e2",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Laundry Basket",
         "visualEmoji": "🧺",
         "visualOptions": [
           {
+            "text": "Laundry Basket",
+            "emoji": "🧺",
+            "label": "Laundry Basket",
+            "translationPt": "Cesto de roupa na lavanderia"
+          },
+          {
             "text": "Box",
             "emoji": "📦",
             "label": "Box",
             "translationPt": "Caixa de papelão"
-          },
-          {
-            "text": "Tape Measure",
-            "emoji": "📏",
-            "label": "Tape Measure",
-            "translationPt": "Trena / Fita métrica"
           },
           {
             "text": "Battery",
@@ -10654,17 +8393,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pilha / Bateria"
           },
           {
-            "text": "Laundry Basket",
-            "emoji": "🧺",
-            "label": "Laundry Basket",
-            "translationPt": "Cesto de roupa"
+            "text": "Tape Measure",
+            "emoji": "📏",
+            "label": "Tape Measure",
+            "translationPt": "Trena / Fita métrica"
           }
         ],
         "options": [
+          "Laundry Basket",
           "Box",
-          "Tape Measure",
           "Battery",
-          "Laundry Basket"
+          "Tape Measure"
         ],
         "correctAnswer": "Laundry Basket",
         "explanation": "Exemplo prático: \"Put the clothes inside the plastic laundry basket.\"",
@@ -10672,11 +8411,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-e3",
+        "id": "w0-p9-e3",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Laundry Detergent",
         "visualEmoji": "🧴",
@@ -10685,19 +8421,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Garden Hose",
             "emoji": "🐍",
             "label": "Garden Hose",
-            "translationPt": "Mangueira de jardim / quintal"
-          },
-          {
-            "text": "Dustpan",
-            "emoji": "🧹",
-            "label": "Dustpan",
-            "translationPt": "Pá de lixo"
+            "translationPt": "Mangueira de jardim no quintal"
           },
           {
             "text": "Laundry Detergent",
             "emoji": "🧴",
             "label": "Laundry Detergent",
-            "translationPt": "Sabão líquido / em pó para roupas"
+            "translationPt": "Sabão líquido para lavar roupas"
+          },
+          {
+            "text": "Dustpan",
+            "emoji": "🧹",
+            "label": "Dustpan",
+            "translationPt": "Pá de lixo com vassoura"
           },
           {
             "text": "Drill",
@@ -10708,8 +8444,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Garden Hose",
-          "Dustpan",
           "Laundry Detergent",
+          "Dustpan",
           "Drill"
         ],
         "correctAnswer": "Laundry Detergent",
@@ -10718,65 +8454,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p7-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p7-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p7-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p7-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p7-e5",
+        "id": "w0-p9-e4",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Clothespin",
         "visualEmoji": "📎",
         "visualOptions": [
           {
+            "text": "Screwdriver",
+            "emoji": "🪛",
+            "label": "Screwdriver",
+            "translationPt": "Chave de fenda"
+          },
+          {
             "text": "Clothespin",
             "emoji": "📎",
             "label": "Clothespin",
-            "translationPt": "Pregador de roupa no varal"
+            "translationPt": "Pregadores de roupa no varal"
           },
           {
             "text": "Vacuum Cleaner",
@@ -10785,22 +8479,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Aspirador de pó"
           },
           {
-            "text": "Screwdriver",
-            "emoji": "🪛",
-            "label": "Screwdriver",
-            "translationPt": "Chave de fenda"
-          },
-          {
             "text": "Shovel",
-            "emoji": " лопата",
+            "emoji": "⛏️",
             "label": "Shovel",
             "translationPt": "Pá de jardim / obra"
           }
         ],
         "options": [
+          "Screwdriver",
           "Clothespin",
           "Vacuum Cleaner",
-          "Screwdriver",
           "Shovel"
         ],
         "correctAnswer": "Clothespin",
@@ -10809,11 +8497,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e6",
+        "id": "w0-p9-e5",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Clothes Iron",
         "visualEmoji": "💨",
@@ -10823,12 +8508,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🐈",
             "label": "Cat",
             "translationPt": "Gato (em casa)"
-          },
-          {
-            "text": "Clothes Iron",
-            "emoji": "💨",
-            "label": "Clothes Iron",
-            "translationPt": "Ferro de passar roupa"
           },
           {
             "text": "Flashlight",
@@ -10841,13 +8520,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪚",
             "label": "Saw",
             "translationPt": "Serrote de cortar madeira"
+          },
+          {
+            "text": "Clothes Iron",
+            "emoji": "💨",
+            "label": "Clothes Iron",
+            "translationPt": "Ferro de passar roupa"
           }
         ],
         "options": [
           "Cat",
-          "Clothes Iron",
           "Flashlight",
-          "Saw"
+          "Saw",
+          "Clothes Iron"
         ],
         "correctAnswer": "Clothes Iron",
         "explanation": "Exemplo prático: \"Iron the dress shirt with a steam clothes iron.\"",
@@ -10855,15 +8540,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-e7",
+        "id": "w0-p9-e6",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Ironing Board",
-        "visualEmoji": " ironing",
+        "visualEmoji": "🧺",
         "visualOptions": [
+          {
+            "text": "Rope",
+            "emoji": "🪢",
+            "label": "Rope",
+            "translationPt": "Corda"
+          },
           {
             "text": "Ladder",
             "emoji": "🪜",
@@ -10872,27 +8560,21 @@ export const WORLD_0_PHASES: Phase[] = [
           },
           {
             "text": "Ironing Board",
-            "emoji": " ironing",
+            "emoji": "🧺",
             "label": "Ironing Board",
             "translationPt": "Tábua de passar roupa"
-          },
-          {
-            "text": "Rope",
-            "emoji": "🪢",
-            "label": "Rope",
-            "translationPt": "Corda"
           },
           {
             "text": "Laundry Basket",
             "emoji": "🧺",
             "label": "Laundry Basket",
-            "translationPt": "Cesto de roupa"
+            "translationPt": "Cesto de roupa na lavanderia"
           }
         ],
         "options": [
+          "Rope",
           "Ladder",
           "Ironing Board",
-          "Rope",
           "Laundry Basket"
         ],
         "correctAnswer": "Ironing Board",
@@ -10901,20 +8583,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e8",
+        "id": "w0-p9-e7",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Broom",
         "visualEmoji": "🧹",
         "visualOptions": [
           {
-            "text": "Parrot",
-            "emoji": "🦜",
-            "label": "Parrot",
-            "translationPt": "Papagaio"
+            "text": "Broom",
+            "emoji": "🧹",
+            "label": "Broom",
+            "translationPt": "Vassoura"
           },
           {
             "text": "Pliers",
@@ -10926,20 +8605,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Laundry Detergent",
             "emoji": "🧴",
             "label": "Laundry Detergent",
-            "translationPt": "Sabão líquido / em pó para roupas"
+            "translationPt": "Sabão líquido para lavar roupas"
           },
           {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura"
+            "text": "Parrot",
+            "emoji": "🦜",
+            "label": "Parrot",
+            "translationPt": "Papagaio"
           }
         ],
         "options": [
-          "Parrot",
+          "Broom",
           "Pliers",
           "Laundry Detergent",
-          "Broom"
+          "Parrot"
         ],
         "correctAnswer": "Broom",
         "explanation": "Exemplo prático: \"Sweep the backyard floor with a broom.\"",
@@ -10947,56 +8626,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p7-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p7-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p7-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p7-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p7-e10",
+        "id": "w0-p9-e8",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Dustpan",
         "visualEmoji": "🧹",
@@ -11017,7 +8648,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Dustpan",
             "emoji": "🧹",
             "label": "Dustpan",
-            "translationPt": "Pá de lixo"
+            "translationPt": "Pá de lixo com vassoura"
           },
           {
             "text": "Watering Can",
@@ -11038,32 +8669,29 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-e11",
+        "id": "w0-p9-e9",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Mop",
         "visualEmoji": "🧹",
         "visualOptions": [
           {
+            "text": "Clothespin",
+            "emoji": "📎",
+            "label": "Clothespin",
+            "translationPt": "Pregadores de roupa no varal"
+          },
+          {
             "text": "Mop",
             "emoji": "🧹",
             "label": "Mop",
-            "translationPt": "Esfregão / Rodo com pano"
+            "translationPt": "Esfregão / Rodo de limpeza"
           },
           {
             "text": "Wrench",
             "emoji": "🔧",
             "label": "Wrench",
             "translationPt": "Chave inglesa / Chave de boca"
-          },
-          {
-            "text": "Clothespin",
-            "emoji": "📎",
-            "label": "Clothespin",
-            "translationPt": "Pregador de roupa no varal"
           },
           {
             "text": "Dog",
@@ -11073,9 +8701,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Clothespin",
           "Mop",
           "Wrench",
-          "Clothespin",
           "Dog"
         ],
         "correctAnswer": "Mop",
@@ -11084,18 +8712,21 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e12",
+        "id": "w0-p9-e10",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bucket",
         "visualEmoji": "🪣",
         "visualOptions": [
           {
+            "text": "Ironing Board",
+            "emoji": "🧺",
+            "label": "Ironing Board",
+            "translationPt": "Tábua de passar roupa"
+          },
+          {
             "text": "Shovel",
-            "emoji": " лопата",
+            "emoji": "⛏️",
             "label": "Shovel",
             "translationPt": "Pá de jardim / obra"
           },
@@ -11110,19 +8741,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪣",
             "label": "Bucket",
             "translationPt": "Balde de água"
-          },
-          {
-            "text": "Ironing Board",
-            "emoji": " ironing",
-            "label": "Ironing Board",
-            "translationPt": "Tábua de passar roupa"
           }
         ],
         "options": [
+          "Ironing Board",
           "Shovel",
           "Clothes Iron",
-          "Bucket",
-          "Ironing Board"
+          "Bucket"
         ],
         "correctAnswer": "Bucket",
         "explanation": "Exemplo prático: \"Fill the plastic bucket with water and soap.\"",
@@ -11130,21 +8755,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e13",
+        "id": "w0-p9-e11",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Vacuum Cleaner",
         "visualEmoji": "🧹",
         "visualOptions": [
-          {
-            "text": "Ladder",
-            "emoji": "🪜",
-            "label": "Ladder",
-            "translationPt": "Escada portátil de alumínio"
-          },
           {
             "text": "Vacuum Cleaner",
             "emoji": "🧹",
@@ -11155,19 +8771,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Laundry Detergent",
             "emoji": "🧴",
             "label": "Laundry Detergent",
-            "translationPt": "Sabão líquido / em pó para roupas"
+            "translationPt": "Sabão líquido para lavar roupas"
+          },
+          {
+            "text": "Ladder",
+            "emoji": "🪜",
+            "label": "Ladder",
+            "translationPt": "Escada portátil de alumínio"
           },
           {
             "text": "Laundry Basket",
             "emoji": "🧺",
             "label": "Laundry Basket",
-            "translationPt": "Cesto de roupa"
+            "translationPt": "Cesto de roupa na lavanderia"
           }
         ],
         "options": [
-          "Ladder",
           "Vacuum Cleaner",
           "Laundry Detergent",
+          "Ladder",
           "Laundry Basket"
         ],
         "correctAnswer": "Vacuum Cleaner",
@@ -11176,60 +8798,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p7-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p7-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p7-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p7-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p7-e15",
+        "id": "w0-p9-e12",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Garden Hose",
         "visualEmoji": "🐍",
         "visualOptions": [
+          {
+            "text": "Box",
+            "emoji": "📦",
+            "label": "Box",
+            "translationPt": "Caixa de papelão"
+          },
           {
             "text": "Battery",
             "emoji": "🔋",
@@ -11243,22 +8823,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vassoura"
           },
           {
-            "text": "Box",
-            "emoji": "📦",
-            "label": "Box",
-            "translationPt": "Caixa de papelão"
-          },
-          {
             "text": "Garden Hose",
             "emoji": "🐍",
             "label": "Garden Hose",
-            "translationPt": "Mangueira de jardim / quintal"
+            "translationPt": "Mangueira de jardim no quintal"
           }
         ],
         "options": [
+          "Box",
           "Battery",
           "Broom",
-          "Box",
           "Garden Hose"
         ],
         "correctAnswer": "Garden Hose",
@@ -11267,15 +8841,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e16",
+        "id": "w0-p9-e13",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Watering Can",
         "visualEmoji": "🚿",
         "visualOptions": [
+          {
+            "text": "Rope",
+            "emoji": "🪢",
+            "label": "Rope",
+            "translationPt": "Corda"
+          },
+          {
+            "text": "Hammer",
+            "emoji": "🔨",
+            "label": "Hammer",
+            "translationPt": "Martelo"
+          },
           {
             "text": "Watering Can",
             "emoji": "🚿",
@@ -11286,26 +8869,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Mop",
             "emoji": "🧹",
             "label": "Mop",
-            "translationPt": "Esfregão / Rodo com pano"
-          },
-          {
-            "text": "Hammer",
-            "emoji": "🔨",
-            "label": "Hammer",
-            "translationPt": "Martelo"
-          },
-          {
-            "text": "Rope",
-            "emoji": "🪢",
-            "label": "Rope",
-            "translationPt": "Corda"
+            "translationPt": "Esfregão / Rodo de limpeza"
           }
         ],
         "options": [
-          "Watering Can",
-          "Mop",
+          "Rope",
           "Hammer",
-          "Rope"
+          "Watering Can",
+          "Mop"
         ],
         "correctAnswer": "Watering Can",
         "explanation": "Exemplo prático: \"Water the flowers using a watering can.\"",
@@ -11313,20 +8884,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e17",
+        "id": "w0-p9-e14",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Wheelbarrow",
         "visualEmoji": "🛒",
         "visualOptions": [
           {
-            "text": "Dustpan",
-            "emoji": "🧹",
-            "label": "Dustpan",
-            "translationPt": "Pá de lixo"
+            "text": "Wheelbarrow",
+            "emoji": "🛒",
+            "label": "Wheelbarrow",
+            "translationPt": "Carrinho de mão"
           },
           {
             "text": "Drill",
@@ -11335,23 +8903,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Furadeira elétrica"
           },
           {
+            "text": "Dustpan",
+            "emoji": "🧹",
+            "label": "Dustpan",
+            "translationPt": "Pá de lixo com vassoura"
+          },
+          {
             "text": "Dog",
             "emoji": "🐕",
             "label": "Dog",
             "translationPt": "Cachorro (no quintal)"
-          },
-          {
-            "text": "Wheelbarrow",
-            "emoji": "🛒",
-            "label": "Wheelbarrow",
-            "translationPt": "Carrinho de mão"
           }
         ],
         "options": [
-          "Dustpan",
+          "Wheelbarrow",
           "Drill",
-          "Dog",
-          "Wheelbarrow"
+          "Dustpan",
+          "Dog"
         ],
         "correctAnswer": "Wheelbarrow",
         "explanation": "Exemplo prático: \"Carry soil and bricks in a wheelbarrow.\"",
@@ -11359,14 +8927,11 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-e18",
+        "id": "w0-p9-e15",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Shovel",
-        "visualEmoji": " лопата",
+        "visualEmoji": "⛏️",
         "visualOptions": [
           {
             "text": "Parrot",
@@ -11375,14 +8940,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Papagaio"
           },
           {
-            "text": "Pliers",
-            "emoji": "🔧",
-            "label": "Pliers",
-            "translationPt": "Alicate"
-          },
-          {
             "text": "Shovel",
-            "emoji": " лопата",
+            "emoji": "⛏️",
             "label": "Shovel",
             "translationPt": "Pá de jardim / obra"
           },
@@ -11391,13 +8950,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🫧",
             "label": "Washing Machine",
             "translationPt": "Máquina de lavar roupa"
+          },
+          {
+            "text": "Pliers",
+            "emoji": "🔧",
+            "label": "Pliers",
+            "translationPt": "Alicate"
           }
         ],
         "options": [
           "Parrot",
-          "Pliers",
           "Shovel",
-          "Washing Machine"
+          "Washing Machine",
+          "Pliers"
         ],
         "correctAnswer": "Shovel",
         "explanation": "Exemplo prático: \"Dig the garden soil with a metal shovel.\"",
@@ -11405,60 +8970,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p7-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p7-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p7-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p7-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p7-e20",
+        "id": "w0-p9-e16",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ladder",
         "visualEmoji": "🪜",
         "visualOptions": [
+          {
+            "text": "Flashlight",
+            "emoji": "🔦",
+            "label": "Flashlight",
+            "translationPt": "Lanterna"
+          },
           {
             "text": "Ladder",
             "emoji": "🪜",
@@ -11469,13 +8992,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Clothespin",
             "emoji": "📎",
             "label": "Clothespin",
-            "translationPt": "Pregador de roupa no varal"
-          },
-          {
-            "text": "Flashlight",
-            "emoji": "🔦",
-            "label": "Flashlight",
-            "translationPt": "Lanterna"
+            "translationPt": "Pregadores de roupa no varal"
           },
           {
             "text": "Clothes Iron",
@@ -11485,9 +9002,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Flashlight",
           "Ladder",
           "Clothespin",
-          "Flashlight",
           "Clothes Iron"
         ],
         "correctAnswer": "Ladder",
@@ -11496,26 +9013,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e21",
+        "id": "w0-p9-e17",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Hammer",
         "visualEmoji": "🔨",
         "visualOptions": [
           {
-            "text": "Ironing Board",
-            "emoji": " ironing",
-            "label": "Ironing Board",
-            "translationPt": "Tábua de passar roupa"
+            "text": "Cat",
+            "emoji": "🐈",
+            "label": "Cat",
+            "translationPt": "Gato (em casa)"
           },
           {
-            "text": "Hammer",
-            "emoji": "🔨",
-            "label": "Hammer",
-            "translationPt": "Martelo"
+            "text": "Ironing Board",
+            "emoji": "🧺",
+            "label": "Ironing Board",
+            "translationPt": "Tábua de passar roupa"
           },
           {
             "text": "Vacuum Cleaner",
@@ -11524,17 +9038,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Aspirador de pó"
           },
           {
-            "text": "Cat",
-            "emoji": "🐈",
-            "label": "Cat",
-            "translationPt": "Gato (em casa)"
+            "text": "Hammer",
+            "emoji": "🔨",
+            "label": "Hammer",
+            "translationPt": "Martelo"
           }
         ],
         "options": [
+          "Cat",
           "Ironing Board",
-          "Hammer",
           "Vacuum Cleaner",
-          "Cat"
+          "Hammer"
         ],
         "correctAnswer": "Hammer",
         "explanation": "Exemplo prático: \"Fix the nail on the wall with a hammer.\"",
@@ -11542,26 +9056,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-e22",
+        "id": "w0-p9-e18",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Screwdriver",
         "visualEmoji": "🪛",
         "visualOptions": [
           {
-            "text": "Garden Hose",
-            "emoji": "🐍",
-            "label": "Garden Hose",
-            "translationPt": "Mangueira de jardim / quintal"
-          },
-          {
-            "text": "Screwdriver",
-            "emoji": "🪛",
-            "label": "Screwdriver",
-            "translationPt": "Chave de fenda"
+            "text": "Mop",
+            "emoji": "🧹",
+            "label": "Mop",
+            "translationPt": "Esfregão / Rodo de limpeza"
           },
           {
             "text": "Bucket",
@@ -11570,17 +9075,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Balde de água"
           },
           {
-            "text": "Mop",
-            "emoji": "🧹",
-            "label": "Mop",
-            "translationPt": "Esfregão / Rodo com pano"
+            "text": "Screwdriver",
+            "emoji": "🪛",
+            "label": "Screwdriver",
+            "translationPt": "Chave de fenda"
+          },
+          {
+            "text": "Garden Hose",
+            "emoji": "🐍",
+            "label": "Garden Hose",
+            "translationPt": "Mangueira de jardim no quintal"
           }
         ],
         "options": [
-          "Garden Hose",
-          "Screwdriver",
+          "Mop",
           "Bucket",
-          "Mop"
+          "Screwdriver",
+          "Garden Hose"
         ],
         "correctAnswer": "Screwdriver",
         "explanation": "Exemplo prático: \"Tighten the door hinge screw with a screwdriver.\"",
@@ -11588,20 +9099,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e23",
+        "id": "w0-p9-e19",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Wrench",
         "visualEmoji": "🔧",
         "visualOptions": [
           {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura"
+            "text": "Wrench",
+            "emoji": "🔧",
+            "label": "Wrench",
+            "translationPt": "Chave inglesa / Chave de boca"
           },
           {
             "text": "Watering Can",
@@ -11610,23 +9118,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Regador de plantas"
           },
           {
+            "text": "Broom",
+            "emoji": "🧹",
+            "label": "Broom",
+            "translationPt": "Vassoura"
+          },
+          {
             "text": "Wheelbarrow",
             "emoji": "🛒",
             "label": "Wheelbarrow",
             "translationPt": "Carrinho de mão"
-          },
-          {
-            "text": "Wrench",
-            "emoji": "🔧",
-            "label": "Wrench",
-            "translationPt": "Chave inglesa / Chave de boca"
           }
         ],
         "options": [
-          "Broom",
+          "Wrench",
           "Watering Can",
-          "Wheelbarrow",
-          "Wrench"
+          "Broom",
+          "Wheelbarrow"
         ],
         "correctAnswer": "Wrench",
         "explanation": "Exemplo prático: \"Tighten the pipe nut with a steel wrench.\"",
@@ -11634,71 +9142,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p7-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p7-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p7-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p7-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p7-e25",
+        "id": "w0-p9-e20",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Pliers",
         "visualEmoji": "🔧",
         "visualOptions": [
           {
+            "text": "Dustpan",
+            "emoji": "🧹",
+            "label": "Dustpan",
+            "translationPt": "Pá de lixo com vassoura"
+          },
+          {
             "text": "Washing Machine",
             "emoji": "🫧",
             "label": "Washing Machine",
             "translationPt": "Máquina de lavar roupa"
-          },
-          {
-            "text": "Dog",
-            "emoji": "🐕",
-            "label": "Dog",
-            "translationPt": "Cachorro (no quintal)"
           },
           {
             "text": "Pliers",
@@ -11707,17 +9167,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Alicate"
           },
           {
-            "text": "Dustpan",
-            "emoji": "🧹",
-            "label": "Dustpan",
-            "translationPt": "Pá de lixo"
+            "text": "Dog",
+            "emoji": "🐕",
+            "label": "Dog",
+            "translationPt": "Cachorro (no quintal)"
           }
         ],
         "options": [
+          "Dustpan",
           "Washing Machine",
-          "Dog",
           "Pliers",
-          "Dustpan"
+          "Dog"
         ],
         "correctAnswer": "Pliers",
         "explanation": "Exemplo prático: \"Cut and hold the wire using pliers.\"",
@@ -11725,21 +9185,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-e26",
+        "id": "w0-p9-e21",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Saw",
         "visualEmoji": "🪚",
         "visualOptions": [
-          {
-            "text": "Saw",
-            "emoji": "🪚",
-            "label": "Saw",
-            "translationPt": "Serrote de cortar madeira"
-          },
           {
             "text": "Hammer",
             "emoji": "🔨",
@@ -11747,23 +9198,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Martelo"
           },
           {
+            "text": "Saw",
+            "emoji": "🪚",
+            "label": "Saw",
+            "translationPt": "Serrote de cortar madeira"
+          },
+          {
+            "text": "Shovel",
+            "emoji": "⛏️",
+            "label": "Shovel",
+            "translationPt": "Pá de jardim / obra"
+          },
+          {
             "text": "Parrot",
             "emoji": "🦜",
             "label": "Parrot",
             "translationPt": "Papagaio"
-          },
-          {
-            "text": "Shovel",
-            "emoji": " лопата",
-            "label": "Shovel",
-            "translationPt": "Pá de jardim / obra"
           }
         ],
         "options": [
-          "Saw",
           "Hammer",
-          "Parrot",
-          "Shovel"
+          "Saw",
+          "Shovel",
+          "Parrot"
         ],
         "correctAnswer": "Saw",
         "explanation": "Exemplo prático: \"Cut the wooden board with a sharp hand saw.\"",
@@ -11771,45 +9228,42 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e27",
+        "id": "w0-p9-e22",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Tape Measure",
         "visualEmoji": "📏",
         "visualOptions": [
           {
-            "text": "Ironing Board",
-            "emoji": " ironing",
-            "label": "Ironing Board",
-            "translationPt": "Tábua de passar roupa"
-          },
-          {
             "text": "Clothespin",
             "emoji": "📎",
             "label": "Clothespin",
-            "translationPt": "Pregador de roupa no varal"
+            "translationPt": "Pregadores de roupa no varal"
           },
           {
-            "text": "Tape Measure",
-            "emoji": "📏",
-            "label": "Tape Measure",
-            "translationPt": "Trena / Fita métrica"
+            "text": "Ironing Board",
+            "emoji": "🧺",
+            "label": "Ironing Board",
+            "translationPt": "Tábua de passar roupa"
           },
           {
             "text": "Screwdriver",
             "emoji": "🪛",
             "label": "Screwdriver",
             "translationPt": "Chave de fenda"
+          },
+          {
+            "text": "Tape Measure",
+            "emoji": "📏",
+            "label": "Tape Measure",
+            "translationPt": "Trena / Fita métrica"
           }
         ],
         "options": [
-          "Ironing Board",
           "Clothespin",
-          "Tape Measure",
-          "Screwdriver"
+          "Ironing Board",
+          "Screwdriver",
+          "Tape Measure"
         ],
         "correctAnswer": "Tape Measure",
         "explanation": "Exemplo prático: \"Measure the cabinet width with a tape measure.\"",
@@ -11817,21 +9271,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e28",
+        "id": "w0-p9-e23",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Drill",
         "visualEmoji": "🪛",
         "visualOptions": [
-          {
-            "text": "Laundry Detergent",
-            "emoji": "🧴",
-            "label": "Laundry Detergent",
-            "translationPt": "Sabão líquido / em pó para roupas"
-          },
           {
             "text": "Drill",
             "emoji": "🪛",
@@ -11839,10 +9284,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Furadeira elétrica"
           },
           {
+            "text": "Laundry Detergent",
+            "emoji": "🧴",
+            "label": "Laundry Detergent",
+            "translationPt": "Sabão líquido para lavar roupas"
+          },
+          {
             "text": "Laundry Basket",
             "emoji": "🧺",
             "label": "Laundry Basket",
-            "translationPt": "Cesto de roupa"
+            "translationPt": "Cesto de roupa na lavanderia"
           },
           {
             "text": "Wrench",
@@ -11852,8 +9303,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Laundry Detergent",
           "Drill",
+          "Laundry Detergent",
           "Laundry Basket",
           "Wrench"
         ],
@@ -11863,71 +9314,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p7-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p7-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p7-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p7-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p7-e30",
+        "id": "w0-p9-e24",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Flashlight",
         "visualEmoji": "🔦",
         "visualOptions": [
           {
-            "text": "Clothes Iron",
-            "emoji": "💨",
-            "label": "Clothes Iron",
-            "translationPt": "Ferro de passar roupa"
-          },
-          {
             "text": "Ladder",
             "emoji": "🪜",
             "label": "Ladder",
             "translationPt": "Escada portátil de alumínio"
+          },
+          {
+            "text": "Clothes Iron",
+            "emoji": "💨",
+            "label": "Clothes Iron",
+            "translationPt": "Ferro de passar roupa"
           },
           {
             "text": "Bucket",
@@ -11943,8 +9346,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Clothes Iron",
           "Ladder",
+          "Clothes Iron",
           "Bucket",
           "Flashlight"
         ],
@@ -11954,21 +9357,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e31",
+        "id": "w0-p9-e25",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Battery",
         "visualEmoji": "🔋",
         "visualOptions": [
-          {
-            "text": "Battery",
-            "emoji": "🔋",
-            "label": "Battery",
-            "translationPt": "Pilha / Bateria"
-          },
           {
             "text": "Watering Can",
             "emoji": "🚿",
@@ -11976,23 +9370,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Regador de plantas"
           },
           {
-            "text": "Saw",
-            "emoji": "🪚",
-            "label": "Saw",
-            "translationPt": "Serrote de cortar madeira"
-          },
-          {
             "text": "Wheelbarrow",
             "emoji": "🛒",
             "label": "Wheelbarrow",
             "translationPt": "Carrinho de mão"
+          },
+          {
+            "text": "Battery",
+            "emoji": "🔋",
+            "label": "Battery",
+            "translationPt": "Pilha / Bateria"
+          },
+          {
+            "text": "Saw",
+            "emoji": "🪚",
+            "label": "Saw",
+            "translationPt": "Serrote de cortar madeira"
           }
         ],
         "options": [
-          "Battery",
           "Watering Can",
-          "Saw",
-          "Wheelbarrow"
+          "Wheelbarrow",
+          "Battery",
+          "Saw"
         ],
         "correctAnswer": "Battery",
         "explanation": "Exemplo prático: \"Put two new AA batteries in the remote control.\"",
@@ -12000,26 +9400,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e32",
+        "id": "w0-p9-e26",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Rope",
         "visualEmoji": "🪢",
         "visualOptions": [
           {
-            "text": "Tape Measure",
-            "emoji": "📏",
-            "label": "Tape Measure",
-            "translationPt": "Trena / Fita métrica"
-          },
-          {
-            "text": "Garden Hose",
-            "emoji": "🐍",
-            "label": "Garden Hose",
-            "translationPt": "Mangueira de jardim / quintal"
+            "text": "Rope",
+            "emoji": "🪢",
+            "label": "Rope",
+            "translationPt": "Corda"
           },
           {
             "text": "Vacuum Cleaner",
@@ -12028,17 +9419,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Aspirador de pó"
           },
           {
-            "text": "Rope",
-            "emoji": "🪢",
-            "label": "Rope",
-            "translationPt": "Corda"
+            "text": "Garden Hose",
+            "emoji": "🐍",
+            "label": "Garden Hose",
+            "translationPt": "Mangueira de jardim no quintal"
+          },
+          {
+            "text": "Tape Measure",
+            "emoji": "📏",
+            "label": "Tape Measure",
+            "translationPt": "Trena / Fita métrica"
           }
         ],
         "options": [
-          "Tape Measure",
-          "Garden Hose",
+          "Rope",
           "Vacuum Cleaner",
-          "Rope"
+          "Garden Hose",
+          "Tape Measure"
         ],
         "correctAnswer": "Rope",
         "explanation": "Exemplo prático: \"A strong coiled rope in the tool shed.\"",
@@ -12046,21 +9443,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-e33",
+        "id": "w0-p9-e27",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Box",
         "visualEmoji": "📦",
         "visualOptions": [
-          {
-            "text": "Screwdriver",
-            "emoji": "🪛",
-            "label": "Screwdriver",
-            "translationPt": "Chave de fenda"
-          },
           {
             "text": "Pliers",
             "emoji": "🔧",
@@ -12074,16 +9462,22 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caixa de papelão"
           },
           {
+            "text": "Screwdriver",
+            "emoji": "🪛",
+            "label": "Screwdriver",
+            "translationPt": "Chave de fenda"
+          },
+          {
             "text": "Mop",
             "emoji": "🧹",
             "label": "Mop",
-            "translationPt": "Esfregão / Rodo com pano"
+            "translationPt": "Esfregão / Rodo de limpeza"
           }
         ],
         "options": [
-          "Screwdriver",
           "Pliers",
           "Box",
+          "Screwdriver",
           "Mop"
         ],
         "correctAnswer": "Box",
@@ -12092,71 +9486,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p7-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p7-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p7-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p7-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p7-e35",
+        "id": "w0-p9-e28",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Dog",
         "visualEmoji": "🐕",
         "visualOptions": [
           {
-            "text": "Dog",
-            "emoji": "🐕",
-            "label": "Dog",
-            "translationPt": "Cachorro (no quintal)"
-          },
-          {
             "text": "Drill",
             "emoji": "🪛",
             "label": "Drill",
             "translationPt": "Furadeira elétrica"
+          },
+          {
+            "text": "Dog",
+            "emoji": "🐕",
+            "label": "Dog",
+            "translationPt": "Cachorro (no quintal)"
           },
           {
             "text": "Flashlight",
@@ -12172,8 +9518,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Dog",
           "Drill",
+          "Dog",
           "Flashlight",
           "Wrench"
         ],
@@ -12183,27 +9529,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p7-e36",
+        "id": "w0-p9-e29",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Cat",
         "visualEmoji": "🐈",
         "visualOptions": [
-          {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura"
-          },
-          {
-            "text": "Cat",
-            "emoji": "🐈",
-            "label": "Cat",
-            "translationPt": "Gato (em casa)"
-          },
           {
             "text": "Battery",
             "emoji": "🔋",
@@ -12215,13 +9546,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🪚",
             "label": "Saw",
             "translationPt": "Serrote de cortar madeira"
+          },
+          {
+            "text": "Broom",
+            "emoji": "🧹",
+            "label": "Broom",
+            "translationPt": "Vassoura"
+          },
+          {
+            "text": "Cat",
+            "emoji": "🐈",
+            "label": "Cat",
+            "translationPt": "Gato (em casa)"
           }
         ],
         "options": [
-          "Broom",
-          "Cat",
           "Battery",
-          "Saw"
+          "Saw",
+          "Broom",
+          "Cat"
         ],
         "correctAnswer": "Cat",
         "explanation": "Exemplo prático: \"The cat naps near the laundry room.\"",
@@ -12229,11 +9572,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p7-e37",
+        "id": "w0-p9-e30",
         "type": "image-choice",
-        "conceptTitle": "Área de Serviço, Lavanderia, Quintal & Ferramentas • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Parrot",
         "visualEmoji": "🦜",
@@ -12245,6 +9585,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Corda"
           },
           {
+            "text": "Tape Measure",
+            "emoji": "📏",
+            "label": "Tape Measure",
+            "translationPt": "Trena / Fita métrica"
+          },
+          {
             "text": "Parrot",
             "emoji": "🦜",
             "label": "Parrot",
@@ -12255,111 +9601,57 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🔨",
             "label": "Hammer",
             "translationPt": "Martelo"
-          },
-          {
-            "text": "Tape Measure",
-            "emoji": "📏",
-            "label": "Tape Measure",
-            "translationPt": "Trena / Fita métrica"
           }
         ],
         "options": [
           "Rope",
+          "Tape Measure",
           "Parrot",
-          "Hammer",
-          "Tape Measure"
+          "Hammer"
         ],
         "correctAnswer": "Parrot",
         "explanation": "Exemplo prático: \"The green parrot chirps happily.\"",
         "phoneticHint": "/ˈpær.ət/",
         "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p7-pron-8",
-        "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
-        "pairs": [
-          {
-            "id": "w0-p7-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
-          },
-          {
-            "id": "w0-p7-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
-          },
-          {
-            "id": "w0-p7-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
-          },
-          {
-            "id": "w0-p7-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
-        "skillCategory": "grammar"
       }
     ]
   },
   {
-    "id": "w0-p8",
+    "id": "w0-p10",
     "worldId": 0,
-    "phaseNumber": 8,
-    "title": "Ambiente 8 • Na Rua, Calçada, Trânsito & Vizinhança",
-    "subtitle": "Ambiente 8/12 • Saindo de casa: rua, faixa, semáforo, poste, veículos, praça e clima",
+    "phaseNumber": 10,
+    "title": "Vocabulário 8 • Na Rua, Calçada, Trânsito & Vizinhança",
+    "subtitle": "Ambiente 8/12 • Saindo de casa: rua completa, faixa, semáforo, poste, veículos e praça",
     "pedagogicalObjective": "Reconhecer tudo o que vemos ao sair de casa para caminhar ou dirigir pela rua e vizinhança.",
     "type": "lesson",
     "icon": "car",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Terminamos de explorar toda a nossa casa da frente aos fundos! Agora abrimos o portão e saímos para a Rua (Street)!",
-      "Olhe para a Rua asfaltada (Street), a Faixa de Pedestres (Crosswalk), o Semáforo (Traffic Light), a Placa de Pare (Stop Sign), o Poste de Luz (Streetlight) e o Ponto de Ônibus (Bus Stop).",
-      "Veja os veículos passando (Car, Bus, Motorcycle, Bicycle, Truck, Taxi, Ambulance, Police Car, Fire Truck), a Praça (Park Bench, Tree, Flower) e o Clima (Sun, Rain, Cloud, Umbrella)!"
+      "Terminamos de explorar toda a nossa casa! Agora abrimos o portão e saímos para a Rua (Street)!",
+      "Olhe para a Rua completa (Street), a Faixa de Pedestres na via (Crosswalk), o Semáforo (Traffic Light), a Placa de Pare (Stop Sign), o Poste de Luz (Streetlight) e o Ponto de Ônibus (Bus Stop).",
+      "Veja também os veículos passando, a Praça com Banco (Park Bench), as Árvores (Tree) e o Clima!"
     ],
     "xpReward": 50,
     "gemsReward": 20,
     "exercises": [
       {
-        "id": "w0-p8-e1",
+        "id": "w0-p10-e1",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Street",
         "visualEmoji": "🛣️",
         "visualOptions": [
           {
+            "text": "Street",
+            "emoji": "🛣️",
+            "label": "Street",
+            "translationPt": "Rua asfaltada completa"
+          },
+          {
             "text": "Bus Stop",
             "emoji": "🚏",
             "label": "Bus Stop",
-            "translationPt": "Ponto de ônibus"
-          },
-          {
-            "text": "Helmet",
-            "emoji": "⛑️",
-            "label": "Helmet",
-            "translationPt": "Capacete de segurança"
+            "translationPt": "Ponto de ônibus na calçada"
           },
           {
             "text": "Bus",
@@ -12368,17 +9660,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ônibus urbano"
           },
           {
-            "text": "Street",
-            "emoji": "🛣️",
-            "label": "Street",
-            "translationPt": "Rua asfaltada"
+            "text": "Helmet",
+            "emoji": "⛑️",
+            "label": "Helmet",
+            "translationPt": "Capacete de segurança"
           }
         ],
         "options": [
+          "Street",
           "Bus Stop",
-          "Helmet",
           "Bus",
-          "Street"
+          "Helmet"
         ],
         "correctAnswer": "Street",
         "explanation": "Exemplo prático: \"Cars drive along the paved city street.\"",
@@ -12386,21 +9678,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e2",
+        "id": "w0-p10-e2",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Crosswalk",
         "visualEmoji": "🚸",
         "visualOptions": [
-          {
-            "text": "Taxi",
-            "emoji": "🚕",
-            "label": "Taxi",
-            "translationPt": "Táxi"
-          },
           {
             "text": "Tire",
             "emoji": "🛞",
@@ -12411,7 +9694,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Crosswalk",
             "emoji": "🚸",
             "label": "Crosswalk",
-            "translationPt": "Faixa de pedestres"
+            "translationPt": "Faixa de pedestres na rua"
+          },
+          {
+            "text": "Taxi",
+            "emoji": "🚕",
+            "label": "Taxi",
+            "translationPt": "Táxi"
           },
           {
             "text": "Truck",
@@ -12421,9 +9710,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Taxi",
           "Tire",
           "Crosswalk",
+          "Taxi",
           "Truck"
         ],
         "correctAnswer": "Crosswalk",
@@ -12432,21 +9721,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-e3",
+        "id": "w0-p10-e3",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Traffic Light",
         "visualEmoji": "🚦",
         "visualOptions": [
-          {
-            "text": "Traffic Light",
-            "emoji": "🚦",
-            "label": "Traffic Light",
-            "translationPt": "Semáforo / Sinal de trânsito"
-          },
           {
             "text": "Ambulance",
             "emoji": "🚑",
@@ -12454,10 +9734,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ambulância"
           },
           {
+            "text": "Traffic Light",
+            "emoji": "🚦",
+            "label": "Traffic Light",
+            "translationPt": "Semáforo / Sinal de trânsito"
+          },
+          {
             "text": "Tree",
             "emoji": "🌳",
             "label": "Tree",
-            "translationPt": "Árvore na calçada / praça"
+            "translationPt": "Árvore"
           },
           {
             "text": "Bicycle",
@@ -12467,8 +9753,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Traffic Light",
           "Ambulance",
+          "Traffic Light",
           "Tree",
           "Bicycle"
         ],
@@ -12478,60 +9764,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p8-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p8-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p8-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p8-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p8-e5",
+        "id": "w0-p10-e4",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Stop Sign",
         "visualEmoji": "🛑",
         "visualOptions": [
+          {
+            "text": "Steering Wheel",
+            "emoji": "🛞",
+            "label": "Steering Wheel",
+            "translationPt": "Volante de direção"
+          },
+          {
+            "text": "Sun",
+            "emoji": "☀️",
+            "label": "Sun",
+            "translationPt": "Sol"
+          },
           {
             "text": "Van",
             "emoji": "🚐",
@@ -12542,26 +9792,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Stop Sign",
             "emoji": "🛑",
             "label": "Stop Sign",
-            "translationPt": "Placa de PARE (sinalização)"
-          },
-          {
-            "text": "Sun",
-            "emoji": "☀️",
-            "label": "Sun",
-            "translationPt": "Sol no céu"
-          },
-          {
-            "text": "Steering Wheel",
-            "emoji": "🛞",
-            "label": "Steering Wheel",
-            "translationPt": "Volante de direção"
+            "translationPt": "Placa de PARE na rua"
           }
         ],
         "options": [
-          "Van",
-          "Stop Sign",
+          "Steering Wheel",
           "Sun",
-          "Steering Wheel"
+          "Van",
+          "Stop Sign"
         ],
         "correctAnswer": "Stop Sign",
         "explanation": "Exemplo prático: \"Every driver must stop at the red stop sign.\"",
@@ -12569,15 +9807,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e6",
+        "id": "w0-p10-e5",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Streetlight",
         "visualEmoji": "🏮",
         "visualOptions": [
+          {
+            "text": "Fire Truck",
+            "emoji": "🚒",
+            "label": "Fire Truck",
+            "translationPt": "Caminhão de bombeiros"
+          },
           {
             "text": "Fuel Pump",
             "emoji": "⛽",
@@ -12591,22 +9832,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Poste de iluminação pública"
           },
           {
-            "text": "Fire Truck",
-            "emoji": "🚒",
-            "label": "Fire Truck",
-            "translationPt": "Caminhão de bombeiros"
-          },
-          {
             "text": "Flower",
             "emoji": "🌻",
             "label": "Flower",
-            "translationPt": "Flor do jardim / canteiro"
+            "translationPt": "Flor"
           }
         ],
         "options": [
+          "Fire Truck",
           "Fuel Pump",
           "Streetlight",
-          "Fire Truck",
           "Flower"
         ],
         "correctAnswer": "Streetlight",
@@ -12615,15 +9850,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-e7",
+        "id": "w0-p10-e6",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Bus Stop",
         "visualEmoji": "🚏",
         "visualOptions": [
+          {
+            "text": "Bus Stop",
+            "emoji": "🚏",
+            "label": "Bus Stop",
+            "translationPt": "Ponto de ônibus na calçada"
+          },
           {
             "text": "Umbrella",
             "emoji": "☂️",
@@ -12634,26 +9872,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Crosswalk",
             "emoji": "🚸",
             "label": "Crosswalk",
-            "translationPt": "Faixa de pedestres"
+            "translationPt": "Faixa de pedestres na rua"
           },
           {
             "text": "Rain",
             "emoji": "🌧️",
             "label": "Rain",
             "translationPt": "Chuva"
-          },
-          {
-            "text": "Bus Stop",
-            "emoji": "🚏",
-            "label": "Bus Stop",
-            "translationPt": "Ponto de ônibus"
           }
         ],
         "options": [
+          "Bus Stop",
           "Umbrella",
           "Crosswalk",
-          "Rain",
-          "Bus Stop"
+          "Rain"
         ],
         "correctAnswer": "Bus Stop",
         "explanation": "Exemplo prático: \"Passengers wait for the bus at the bus stop shelter.\"",
@@ -12661,26 +9893,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e8",
+        "id": "w0-p10-e7",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Car",
         "visualEmoji": "🚗",
         "visualOptions": [
           {
+            "text": "Building",
+            "emoji": "🏢",
+            "label": "Building",
+            "translationPt": "Prédio / Edifício"
+          },
+          {
             "text": "Bridge",
             "emoji": "🌉",
             "label": "Bridge",
             "translationPt": "Ponte / Viaduto"
-          },
-          {
-            "text": "Bird",
-            "emoji": "🐦",
-            "label": "Bird",
-            "translationPt": "Pássaro"
           },
           {
             "text": "Car",
@@ -12689,17 +9918,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carro de passeio"
           },
           {
-            "text": "Building",
-            "emoji": "🏢",
-            "label": "Building",
-            "translationPt": "Prédio / Edifício"
+            "text": "Bird",
+            "emoji": "🐦",
+            "label": "Bird",
+            "translationPt": "Pássaro"
           }
         ],
         "options": [
+          "Building",
           "Bridge",
-          "Bird",
           "Car",
-          "Building"
+          "Bird"
         ],
         "correctAnswer": "Car",
         "explanation": "Exemplo prático: \"A red car is parked on the street.\"",
@@ -12707,71 +9936,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p8-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p8-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p8-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p8-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p8-e10",
+        "id": "w0-p10-e8",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Bus",
         "visualEmoji": "🚌",
         "visualOptions": [
           {
+            "text": "Stop Sign",
+            "emoji": "🛑",
+            "label": "Stop Sign",
+            "translationPt": "Placa de PARE na rua"
+          },
+          {
             "text": "Bus",
             "emoji": "🚌",
             "label": "Bus",
             "translationPt": "Ônibus urbano"
-          },
-          {
-            "text": "Stop Sign",
-            "emoji": "🛑",
-            "label": "Stop Sign",
-            "translationPt": "Placa de PARE (sinalização)"
           },
           {
             "text": "Traffic Light",
@@ -12783,12 +9964,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Street",
             "emoji": "🛣️",
             "label": "Street",
-            "translationPt": "Rua asfaltada"
+            "translationPt": "Rua asfaltada completa"
           }
         ],
         "options": [
-          "Bus",
           "Stop Sign",
+          "Bus",
           "Traffic Light",
           "Street"
         ],
@@ -12798,15 +9979,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-e11",
+        "id": "w0-p10-e9",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Motorcycle",
         "visualEmoji": "🏍️",
         "visualOptions": [
+          {
+            "text": "Streetlight",
+            "emoji": "🏮",
+            "label": "Streetlight",
+            "translationPt": "Poste de iluminação pública"
+          },
+          {
+            "text": "Park Bench",
+            "emoji": "🪑",
+            "label": "Park Bench",
+            "translationPt": "Banco na praça"
+          },
           {
             "text": "Police Car",
             "emoji": "🚓",
@@ -12814,29 +10004,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Viatura de polícia"
           },
           {
-            "text": "Park Bench",
-            "emoji": "🪑",
-            "label": "Park Bench",
-            "translationPt": "Banco da praça"
-          },
-          {
             "text": "Motorcycle",
             "emoji": "🏍️",
             "label": "Motorcycle",
             "translationPt": "Moto / Motocicleta"
-          },
-          {
-            "text": "Streetlight",
-            "emoji": "🏮",
-            "label": "Streetlight",
-            "translationPt": "Poste de iluminação pública"
           }
         ],
         "options": [
-          "Police Car",
+          "Streetlight",
           "Park Bench",
-          "Motorcycle",
-          "Streetlight"
+          "Police Car",
+          "Motorcycle"
         ],
         "correctAnswer": "Motorcycle",
         "explanation": "Exemplo prático: \"The delivery rider drives a motorcycle.\"",
@@ -12844,21 +10022,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e12",
+        "id": "w0-p10-e10",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bicycle",
         "visualEmoji": "🚲",
         "visualOptions": [
-          {
-            "text": "Pigeon",
-            "emoji": "🐦",
-            "label": "Pigeon",
-            "translationPt": "Pombo na praça"
-          },
           {
             "text": "Bicycle",
             "emoji": "🚲",
@@ -12869,7 +10038,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Sun",
             "emoji": "☀️",
             "label": "Sun",
-            "translationPt": "Sol no céu"
+            "translationPt": "Sol"
+          },
+          {
+            "text": "Pigeon",
+            "emoji": "🐦",
+            "label": "Pigeon",
+            "translationPt": "Pombo na praça"
           },
           {
             "text": "Steering Wheel",
@@ -12879,9 +10054,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Pigeon",
           "Bicycle",
           "Sun",
+          "Pigeon",
           "Steering Wheel"
         ],
         "correctAnswer": "Bicycle",
@@ -12890,11 +10065,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e13",
+        "id": "w0-p10-e11",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Truck",
         "visualEmoji": "🚚",
@@ -12936,60 +10108,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p8-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p8-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p8-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p8-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p8-e15",
+        "id": "w0-p10-e12",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Taxi",
         "visualEmoji": "🚕",
         "visualOptions": [
+          {
+            "text": "Bus Stop",
+            "emoji": "🚏",
+            "label": "Bus Stop",
+            "translationPt": "Ponto de ônibus na calçada"
+          },
+          {
+            "text": "Bridge",
+            "emoji": "🌉",
+            "label": "Bridge",
+            "translationPt": "Ponte / Viaduto"
+          },
           {
             "text": "Taxi",
             "emoji": "🚕",
@@ -13001,25 +10137,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚌",
             "label": "Bus",
             "translationPt": "Ônibus urbano"
-          },
-          {
-            "text": "Bus Stop",
-            "emoji": "🚏",
-            "label": "Bus Stop",
-            "translationPt": "Ponto de ônibus"
-          },
-          {
-            "text": "Bridge",
-            "emoji": "🌉",
-            "label": "Bridge",
-            "translationPt": "Ponte / Viaduto"
           }
         ],
         "options": [
-          "Taxi",
-          "Bus",
           "Bus Stop",
-          "Bridge"
+          "Bridge",
+          "Taxi",
+          "Bus"
         ],
         "correctAnswer": "Taxi",
         "explanation": "Exemplo prático: \"Wave to call a yellow taxi on the avenue.\"",
@@ -13027,15 +10151,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e16",
+        "id": "w0-p10-e13",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Van",
         "visualEmoji": "🚐",
         "visualOptions": [
+          {
+            "text": "Van",
+            "emoji": "🚐",
+            "label": "Van",
+            "translationPt": "Van / Perua escolar"
+          },
           {
             "text": "Building",
             "emoji": "🏢",
@@ -13053,19 +10180,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏍️",
             "label": "Motorcycle",
             "translationPt": "Moto / Motocicleta"
-          },
-          {
-            "text": "Van",
-            "emoji": "🚐",
-            "label": "Van",
-            "translationPt": "Van / Perua escolar"
           }
         ],
         "options": [
+          "Van",
           "Building",
           "Helmet",
-          "Motorcycle",
-          "Van"
+          "Motorcycle"
         ],
         "correctAnswer": "Van",
         "explanation": "Exemplo prático: \"The white van transports students to school.\"",
@@ -13073,11 +10194,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e17",
+        "id": "w0-p10-e14",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Ambulance",
         "visualEmoji": "🚑",
@@ -13089,28 +10207,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pneu / Roda do veículo"
           },
           {
-            "text": "Traffic Light",
-            "emoji": "🚦",
-            "label": "Traffic Light",
-            "translationPt": "Semáforo / Sinal de trânsito"
-          },
-          {
             "text": "Ambulance",
             "emoji": "🚑",
             "label": "Ambulance",
             "translationPt": "Ambulância"
           },
           {
+            "text": "Traffic Light",
+            "emoji": "🚦",
+            "label": "Traffic Light",
+            "translationPt": "Semáforo / Sinal de trânsito"
+          },
+          {
             "text": "Tree",
             "emoji": "🌳",
             "label": "Tree",
-            "translationPt": "Árvore na calçada / praça"
+            "translationPt": "Árvore"
           }
         ],
         "options": [
           "Tire",
-          "Traffic Light",
           "Ambulance",
+          "Traffic Light",
           "Tree"
         ],
         "correctAnswer": "Ambulance",
@@ -13119,15 +10237,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-e18",
+        "id": "w0-p10-e15",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Police Car",
         "visualEmoji": "🚓",
         "visualOptions": [
+          {
+            "text": "Truck",
+            "emoji": "🚚",
+            "label": "Truck",
+            "translationPt": "Caminhão"
+          },
           {
             "text": "Police Car",
             "emoji": "🚓",
@@ -13144,20 +10265,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Park Bench",
             "emoji": "🪑",
             "label": "Park Bench",
-            "translationPt": "Banco da praça"
-          },
-          {
-            "text": "Truck",
-            "emoji": "🚚",
-            "label": "Truck",
-            "translationPt": "Caminhão"
+            "translationPt": "Banco na praça"
           }
         ],
         "options": [
+          "Truck",
           "Police Car",
           "Pigeon",
-          "Park Bench",
-          "Truck"
+          "Park Bench"
         ],
         "correctAnswer": "Police Car",
         "explanation": "Exemplo prático: \"The police car patrols our neighborhood.\"",
@@ -13165,56 +10280,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p8-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p8-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p8-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p8-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p8-e20",
+        "id": "w0-p10-e16",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fire Truck",
         "visualEmoji": "🚒",
@@ -13223,32 +10290,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Flower",
             "emoji": "🌻",
             "label": "Flower",
-            "translationPt": "Flor do jardim / canteiro"
-          },
-          {
-            "text": "Fire Truck",
-            "emoji": "🚒",
-            "label": "Fire Truck",
-            "translationPt": "Caminhão de bombeiros"
+            "translationPt": "Flor"
           },
           {
             "text": "Crosswalk",
             "emoji": "🚸",
             "label": "Crosswalk",
-            "translationPt": "Faixa de pedestres"
+            "translationPt": "Faixa de pedestres na rua"
           },
           {
             "text": "Car",
             "emoji": "🚗",
             "label": "Car",
             "translationPt": "Carro de passeio"
+          },
+          {
+            "text": "Fire Truck",
+            "emoji": "🚒",
+            "label": "Fire Truck",
+            "translationPt": "Caminhão de bombeiros"
           }
         ],
         "options": [
           "Flower",
-          "Fire Truck",
           "Crosswalk",
-          "Car"
+          "Car",
+          "Fire Truck"
         ],
         "correctAnswer": "Fire Truck",
         "explanation": "Exemplo prático: \"The red fire truck speeds down the avenue.\"",
@@ -13256,15 +10323,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e21",
+        "id": "w0-p10-e17",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Helmet",
         "visualEmoji": "⛑️",
         "visualOptions": [
+          {
+            "text": "Van",
+            "emoji": "🚐",
+            "label": "Van",
+            "translationPt": "Van / Perua escolar"
+          },
           {
             "text": "Rain",
             "emoji": "🌧️",
@@ -13281,20 +10351,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Street",
             "emoji": "🛣️",
             "label": "Street",
-            "translationPt": "Rua asfaltada"
-          },
-          {
-            "text": "Van",
-            "emoji": "🚐",
-            "label": "Van",
-            "translationPt": "Van / Perua escolar"
+            "translationPt": "Rua asfaltada completa"
           }
         ],
         "options": [
+          "Van",
           "Rain",
           "Helmet",
-          "Street",
-          "Van"
+          "Street"
         ],
         "correctAnswer": "Helmet",
         "explanation": "Exemplo prático: \"Always wear a helmet on a motorcycle or bike.\"",
@@ -13302,26 +10366,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-e22",
+        "id": "w0-p10-e18",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Tire",
         "visualEmoji": "🛞",
         "visualOptions": [
           {
-            "text": "Umbrella",
-            "emoji": "☂️",
-            "label": "Umbrella",
-            "translationPt": "Guarda-chuva"
-          },
-          {
-            "text": "Bicycle",
-            "emoji": "🚲",
-            "label": "Bicycle",
-            "translationPt": "Bicicleta"
+            "text": "Tire",
+            "emoji": "🛞",
+            "label": "Tire",
+            "translationPt": "Pneu / Roda do veículo"
           },
           {
             "text": "Bird",
@@ -13330,17 +10385,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pássaro"
           },
           {
-            "text": "Tire",
-            "emoji": "🛞",
-            "label": "Tire",
-            "translationPt": "Pneu / Roda do veículo"
+            "text": "Bicycle",
+            "emoji": "🚲",
+            "label": "Bicycle",
+            "translationPt": "Bicicleta"
+          },
+          {
+            "text": "Umbrella",
+            "emoji": "☂️",
+            "label": "Umbrella",
+            "translationPt": "Guarda-chuva"
           }
         ],
         "options": [
-          "Umbrella",
-          "Bicycle",
+          "Tire",
           "Bird",
-          "Tire"
+          "Bicycle",
+          "Umbrella"
         ],
         "correctAnswer": "Tire",
         "explanation": "Exemplo prático: \"The car has four rubber tires.\"",
@@ -13348,11 +10409,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e23",
+        "id": "w0-p10-e19",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Steering Wheel",
         "visualEmoji": "🛞",
@@ -13379,7 +10437,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Stop Sign",
             "emoji": "🛑",
             "label": "Stop Sign",
-            "translationPt": "Placa de PARE (sinalização)"
+            "translationPt": "Placa de PARE na rua"
           }
         ],
         "options": [
@@ -13394,60 +10452,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p8-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p8-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p8-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p8-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p8-e25",
+        "id": "w0-p10-e20",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Fuel Pump",
         "visualEmoji": "⛽",
         "visualOptions": [
+          {
+            "text": "Motorcycle",
+            "emoji": "🏍️",
+            "label": "Motorcycle",
+            "translationPt": "Moto / Motocicleta"
+          },
           {
             "text": "Fuel Pump",
             "emoji": "⛽",
@@ -13461,12 +10477,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ambulância"
           },
           {
-            "text": "Motorcycle",
-            "emoji": "🏍️",
-            "label": "Motorcycle",
-            "translationPt": "Moto / Motocicleta"
-          },
-          {
             "text": "Police Car",
             "emoji": "🚓",
             "label": "Police Car",
@@ -13474,9 +10484,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Motorcycle",
           "Fuel Pump",
           "Ambulance",
-          "Motorcycle",
           "Police Car"
         ],
         "correctAnswer": "Fuel Pump",
@@ -13485,11 +10495,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-e26",
+        "id": "w0-p10-e21",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Park Bench",
         "visualEmoji": "🪑",
@@ -13504,26 +10511,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Street",
             "emoji": "🛣️",
             "label": "Street",
-            "translationPt": "Rua asfaltada"
-          },
-          {
-            "text": "Park Bench",
-            "emoji": "🪑",
-            "label": "Park Bench",
-            "translationPt": "Banco da praça"
+            "translationPt": "Rua asfaltada completa"
           },
           {
             "text": "Sun",
             "emoji": "☀️",
             "label": "Sun",
-            "translationPt": "Sol no céu"
+            "translationPt": "Sol"
+          },
+          {
+            "text": "Park Bench",
+            "emoji": "🪑",
+            "label": "Park Bench",
+            "translationPt": "Banco na praça"
           }
         ],
         "options": [
           "Pigeon",
           "Street",
-          "Park Bench",
-          "Sun"
+          "Sun",
+          "Park Bench"
         ],
         "correctAnswer": "Park Bench",
         "explanation": "Exemplo prático: \"Sit on the wooden park bench in the square.\"",
@@ -13531,26 +10538,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e27",
+        "id": "w0-p10-e22",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bridge",
         "visualEmoji": "🌉",
         "visualOptions": [
           {
-            "text": "Crosswalk",
-            "emoji": "🚸",
-            "label": "Crosswalk",
-            "translationPt": "Faixa de pedestres"
-          },
-          {
             "text": "Bridge",
             "emoji": "🌉",
             "label": "Bridge",
             "translationPt": "Ponte / Viaduto"
+          },
+          {
+            "text": "Fire Truck",
+            "emoji": "🚒",
+            "label": "Fire Truck",
+            "translationPt": "Caminhão de bombeiros"
           },
           {
             "text": "Car",
@@ -13559,17 +10563,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Carro de passeio"
           },
           {
-            "text": "Fire Truck",
-            "emoji": "🚒",
-            "label": "Fire Truck",
-            "translationPt": "Caminhão de bombeiros"
+            "text": "Crosswalk",
+            "emoji": "🚸",
+            "label": "Crosswalk",
+            "translationPt": "Faixa de pedestres na rua"
           }
         ],
         "options": [
-          "Crosswalk",
           "Bridge",
+          "Fire Truck",
           "Car",
-          "Fire Truck"
+          "Crosswalk"
         ],
         "correctAnswer": "Bridge",
         "explanation": "Exemplo prático: \"Cross the bridge over the city river.\"",
@@ -13577,15 +10581,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e28",
+        "id": "w0-p10-e23",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Building",
         "visualEmoji": "🏢",
         "visualOptions": [
+          {
+            "text": "Umbrella",
+            "emoji": "☂️",
+            "label": "Umbrella",
+            "translationPt": "Guarda-chuva"
+          },
           {
             "text": "Van",
             "emoji": "🚐",
@@ -13599,12 +10606,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chuva"
           },
           {
-            "text": "Umbrella",
-            "emoji": "☂️",
-            "label": "Umbrella",
-            "translationPt": "Guarda-chuva"
-          },
-          {
             "text": "Building",
             "emoji": "🏢",
             "label": "Building",
@@ -13612,9 +10613,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Umbrella",
           "Van",
           "Rain",
-          "Umbrella",
           "Building"
         ],
         "correctAnswer": "Building",
@@ -13623,77 +10624,29 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p8-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p8-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p8-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p8-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p8-e30",
+        "id": "w0-p10-e24",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Tree",
         "visualEmoji": "🌳",
         "visualOptions": [
           {
-            "text": "Tree",
-            "emoji": "🌳",
-            "label": "Tree",
-            "translationPt": "Árvore na calçada / praça"
-          },
-          {
             "text": "Bus Stop",
             "emoji": "🚏",
             "label": "Bus Stop",
-            "translationPt": "Ponto de ônibus"
+            "translationPt": "Ponto de ônibus na calçada"
           },
           {
             "text": "Bus",
             "emoji": "🚌",
             "label": "Bus",
             "translationPt": "Ônibus urbano"
+          },
+          {
+            "text": "Tree",
+            "emoji": "🌳",
+            "label": "Tree",
+            "translationPt": "Árvore"
           },
           {
             "text": "Helmet",
@@ -13703,9 +10656,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Tree",
           "Bus Stop",
           "Bus",
+          "Tree",
           "Helmet"
         ],
         "correctAnswer": "Tree",
@@ -13714,20 +10667,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e31",
+        "id": "w0-p10-e25",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Flower",
         "visualEmoji": "🌻",
         "visualOptions": [
           {
-            "text": "Truck",
-            "emoji": "🚚",
-            "label": "Truck",
-            "translationPt": "Caminhão"
+            "text": "Flower",
+            "emoji": "🌻",
+            "label": "Flower",
+            "translationPt": "Flor"
           },
           {
             "text": "Taxi",
@@ -13736,23 +10686,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Táxi"
           },
           {
+            "text": "Truck",
+            "emoji": "🚚",
+            "label": "Truck",
+            "translationPt": "Caminhão"
+          },
+          {
             "text": "Traffic Light",
             "emoji": "🚦",
             "label": "Traffic Light",
             "translationPt": "Semáforo / Sinal de trânsito"
-          },
-          {
-            "text": "Flower",
-            "emoji": "🌻",
-            "label": "Flower",
-            "translationPt": "Flor do jardim / canteiro"
           }
         ],
         "options": [
-          "Truck",
+          "Flower",
           "Taxi",
-          "Traffic Light",
-          "Flower"
+          "Truck",
+          "Traffic Light"
         ],
         "correctAnswer": "Flower",
         "explanation": "Exemplo prático: \"Colorful flowers bloom in the town square.\"",
@@ -13760,26 +10710,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e32",
+        "id": "w0-p10-e26",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Bird",
         "visualEmoji": "🐦",
         "visualOptions": [
           {
-            "text": "Ambulance",
-            "emoji": "🚑",
-            "label": "Ambulance",
-            "translationPt": "Ambulância"
-          },
-          {
-            "text": "Tire",
-            "emoji": "🛞",
-            "label": "Tire",
-            "translationPt": "Pneu / Roda do veículo"
+            "text": "Bicycle",
+            "emoji": "🚲",
+            "label": "Bicycle",
+            "translationPt": "Bicicleta"
           },
           {
             "text": "Bird",
@@ -13788,17 +10729,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pássaro"
           },
           {
-            "text": "Bicycle",
-            "emoji": "🚲",
-            "label": "Bicycle",
-            "translationPt": "Bicicleta"
+            "text": "Tire",
+            "emoji": "🛞",
+            "label": "Tire",
+            "translationPt": "Pneu / Roda do veículo"
+          },
+          {
+            "text": "Ambulance",
+            "emoji": "🚑",
+            "label": "Ambulance",
+            "translationPt": "Ambulância"
           }
         ],
         "options": [
-          "Ambulance",
-          "Tire",
+          "Bicycle",
           "Bird",
-          "Bicycle"
+          "Tire",
+          "Ambulance"
         ],
         "correctAnswer": "Bird",
         "explanation": "Exemplo prático: \"A bird sings on the tree branch.\"",
@@ -13806,27 +10753,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-e33",
+        "id": "w0-p10-e27",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Pigeon",
         "visualEmoji": "🐦",
         "visualOptions": [
-          {
-            "text": "Pigeon",
-            "emoji": "🐦",
-            "label": "Pigeon",
-            "translationPt": "Pombo na praça"
-          },
-          {
-            "text": "Stop Sign",
-            "emoji": "🛑",
-            "label": "Stop Sign",
-            "translationPt": "Placa de PARE (sinalização)"
-          },
           {
             "text": "Streetlight",
             "emoji": "🏮",
@@ -13834,17 +10766,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Poste de iluminação pública"
           },
           {
+            "text": "Pigeon",
+            "emoji": "🐦",
+            "label": "Pigeon",
+            "translationPt": "Pombo na praça"
+          },
+          {
             "text": "Steering Wheel",
             "emoji": "🛞",
             "label": "Steering Wheel",
             "translationPt": "Volante de direção"
+          },
+          {
+            "text": "Stop Sign",
+            "emoji": "🛑",
+            "label": "Stop Sign",
+            "translationPt": "Placa de PARE na rua"
           }
         ],
         "options": [
-          "Pigeon",
-          "Stop Sign",
           "Streetlight",
-          "Steering Wheel"
+          "Pigeon",
+          "Steering Wheel",
+          "Stop Sign"
         ],
         "correctAnswer": "Pigeon",
         "explanation": "Exemplo prático: \"Gray pigeons walk around the square.\"",
@@ -13852,56 +10796,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p8-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p8-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p8-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p8-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p8-e35",
+        "id": "w0-p10-e28",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sun",
         "visualEmoji": "☀️",
@@ -13913,12 +10809,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Viatura de polícia"
           },
           {
-            "text": "Sun",
-            "emoji": "☀️",
-            "label": "Sun",
-            "translationPt": "Sol no céu"
-          },
-          {
             "text": "Fuel Pump",
             "emoji": "⛽",
             "label": "Fuel Pump",
@@ -13928,14 +10818,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Park Bench",
             "emoji": "🪑",
             "label": "Park Bench",
-            "translationPt": "Banco da praça"
+            "translationPt": "Banco na praça"
+          },
+          {
+            "text": "Sun",
+            "emoji": "☀️",
+            "label": "Sun",
+            "translationPt": "Sol"
           }
         ],
         "options": [
           "Police Car",
-          "Sun",
           "Fuel Pump",
-          "Park Bench"
+          "Park Bench",
+          "Sun"
         ],
         "correctAnswer": "Sun",
         "explanation": "Exemplo prático: \"The bright sun warms the neighborhood.\"",
@@ -13943,11 +10839,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p8-e36",
+        "id": "w0-p10-e29",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Rain",
         "visualEmoji": "🌧️",
@@ -13959,28 +10852,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ponte / Viaduto"
           },
           {
-            "text": "Rain",
-            "emoji": "🌧️",
-            "label": "Rain",
-            "translationPt": "Chuva"
-          },
-          {
             "text": "Building",
             "emoji": "🏢",
             "label": "Building",
             "translationPt": "Prédio / Edifício"
           },
           {
+            "text": "Rain",
+            "emoji": "🌧️",
+            "label": "Rain",
+            "translationPt": "Chuva"
+          },
+          {
             "text": "Flower",
             "emoji": "🌻",
             "label": "Flower",
-            "translationPt": "Flor do jardim / canteiro"
+            "translationPt": "Flor"
           }
         ],
         "options": [
           "Bridge",
-          "Rain",
           "Building",
+          "Rain",
           "Flower"
         ],
         "correctAnswer": "Rain",
@@ -13989,15 +10882,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p8-e37",
+        "id": "w0-p10-e30",
         "type": "image-choice",
-        "conceptTitle": "Na Rua, Calçada, Trânsito & Vizinhança • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Umbrella",
         "visualEmoji": "☂️",
         "visualOptions": [
+          {
+            "text": "Umbrella",
+            "emoji": "☂️",
+            "label": "Umbrella",
+            "translationPt": "Guarda-chuva"
+          },
+          {
+            "text": "Motorcycle",
+            "emoji": "🏍️",
+            "label": "Motorcycle",
+            "translationPt": "Moto / Motocicleta"
+          },
           {
             "text": "Bird",
             "emoji": "🐦",
@@ -14008,112 +10910,58 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Tree",
             "emoji": "🌳",
             "label": "Tree",
-            "translationPt": "Árvore na calçada / praça"
-          },
-          {
-            "text": "Motorcycle",
-            "emoji": "🏍️",
-            "label": "Motorcycle",
-            "translationPt": "Moto / Motocicleta"
-          },
-          {
-            "text": "Umbrella",
-            "emoji": "☂️",
-            "label": "Umbrella",
-            "translationPt": "Guarda-chuva"
+            "translationPt": "Árvore"
           }
         ],
         "options": [
-          "Bird",
-          "Tree",
+          "Umbrella",
           "Motorcycle",
-          "Umbrella"
+          "Bird",
+          "Tree"
         ],
         "correctAnswer": "Umbrella",
         "explanation": "Exemplo prático: \"Open your umbrella when walking in the rain.\"",
         "phoneticHint": "/ʌmˈbrel.ə/",
         "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p8-pron-8",
-        "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
-        "pairs": [
-          {
-            "id": "w0-p8-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
-          },
-          {
-            "id": "w0-p8-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
-          },
-          {
-            "id": "w0-p8-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
-          },
-          {
-            "id": "w0-p8-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
-        "skillCategory": "grammar"
       }
     ]
   },
   {
-    "id": "w0-p9",
+    "id": "w0-p11",
     "worldId": 0,
-    "phaseNumber": 9,
-    "title": "Ambiente 9 • Na Escola, Sala de Aula & Material Escolar",
-    "subtitle": "Ambiente 9/12 • Sala de aula, quadro, carteira, professor, mochila, cadernos, papelaria e esportes",
-    "pedagogicalObjective": "Dominar todo o ambiente escolar: sala de aula, mobiliário, professor, materiais de estudo, laboratório e quadra.",
+    "phaseNumber": 11,
+    "title": "Vocabulário 9 • Na Escola, Sala de Aula & Material Escolar",
+    "subtitle": "Ambiente 9/12 • Sala de aula, quadro, carteira, professor, mochila, cadernos e esportes",
+    "pedagogicalObjective": "Dominar todo o ambiente escolar: sala de aula completa, mobiliário, professor, materiais de estudo, laboratório e quadra.",
     "type": "lesson",
     "icon": "book",
     "cefrLevel": "A1",
     "theorySummary": [
       "Caminhando pela rua, chegamos à Escola (School) e entramos na Sala de Aula (Classroom)!",
-      "Veja o Quadro Branco / Lousa (Whiteboard), a Carteira Escolar (Student Desk), o Professor (Teacher), a Mochila (Backpack), o Livro (Book) e o Caderno (Notebook).",
-      "Sobre a carteira estão a Caneta (Pen), o Lápis (Pencil), a Borracha (Eraser), o Apontador (Pencil Sharpener), a Régua (Ruler), a Tesoura (Scissors), a Cola (Glue), a Calculadora (Calculator) e o Globo Terrestre (Globe)!"
+      "Veja o Quadro Branco / Lousa na parede (Whiteboard), a Carteira Escolar (Student Desk), o Professor (Teacher), a Mochila (Backpack), o Livro (Book) e o Caderno (Notebook).",
+      "Logo após concluir este 9º módulo de vocabulário, você fará o seu 3º Módulo Exclusivo de Pronomes (Reflexivos & Interrogativos)!"
     ],
     "xpReward": 50,
     "gemsReward": 20,
     "exercises": [
       {
-        "id": "w0-p9-e1",
+        "id": "w0-p11-e1",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "School",
         "visualEmoji": "🏫",
         "visualOptions": [
           {
-            "text": "Eraser",
-            "emoji": "🧽",
-            "label": "Eraser",
-            "translationPt": "Borracha de apagar"
+            "text": "Envelope",
+            "emoji": "✉️",
+            "label": "Envelope",
+            "translationPt": "Envelope de papel"
+          },
+          {
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Prédio da escola"
           },
           {
             "text": "Headphones",
@@ -14122,23 +10970,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Fone de ouvido"
           },
           {
-            "text": "School",
-            "emoji": "🏫",
-            "label": "School",
-            "translationPt": "Escola / Colégio"
-          },
-          {
-            "text": "Envelope",
-            "emoji": "✉️",
-            "label": "Envelope",
-            "translationPt": "Envelope de papel"
+            "text": "Eraser",
+            "emoji": "🧽",
+            "label": "Eraser",
+            "translationPt": "Borracha de apagar"
           }
         ],
         "options": [
-          "Eraser",
-          "Headphones",
+          "Envelope",
           "School",
-          "Envelope"
+          "Headphones",
+          "Eraser"
         ],
         "correctAnswer": "School",
         "explanation": "Exemplo prático: \"Children arrive at the school in the morning.\"",
@@ -14146,26 +10988,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e2",
+        "id": "w0-p11-e2",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Classroom",
         "visualEmoji": "🏫",
         "visualOptions": [
           {
-            "text": "Classroom",
-            "emoji": "🏫",
-            "label": "Classroom",
-            "translationPt": "Sala de aula"
-          },
-          {
             "text": "Backpack",
             "emoji": "🎒",
             "label": "Backpack",
             "translationPt": "Mochila escolar"
+          },
+          {
+            "text": "Classroom",
+            "emoji": "🏫",
+            "label": "Classroom",
+            "translationPt": "Sala de aula completa"
           },
           {
             "text": "Keyboard",
@@ -14181,8 +11020,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Classroom",
           "Backpack",
+          "Classroom",
           "Keyboard",
           "Notebook"
         ],
@@ -14192,27 +11031,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-e3",
+        "id": "w0-p11-e3",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Whiteboard",
         "visualEmoji": "📋",
         "visualOptions": [
-          {
-            "text": "Glue",
-            "emoji": "🧴",
-            "label": "Glue",
-            "translationPt": "Cola branca / bastão"
-          },
-          {
-            "text": "Whiteboard",
-            "emoji": "📋",
-            "label": "Whiteboard",
-            "translationPt": "Quadro branco / Lousa escolar"
-          },
           {
             "text": "Globe",
             "emoji": "🌍",
@@ -14220,17 +11044,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Globo terrestre"
           },
           {
+            "text": "Glue",
+            "emoji": "🧴",
+            "label": "Glue",
+            "translationPt": "Cola escolar"
+          },
+          {
             "text": "Book",
             "emoji": "📘",
             "label": "Book",
             "translationPt": "Livro didático"
+          },
+          {
+            "text": "Whiteboard",
+            "emoji": "📋",
+            "label": "Whiteboard",
+            "translationPt": "Quadro branco / Lousa na parede"
           }
         ],
         "options": [
-          "Glue",
-          "Whiteboard",
           "Globe",
-          "Book"
+          "Glue",
+          "Book",
+          "Whiteboard"
         ],
         "correctAnswer": "Whiteboard",
         "explanation": "Exemplo prático: \"The teacher writes English words on the whiteboard.\"",
@@ -14238,60 +11074,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p9-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p9-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p9-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p9-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p9-e5",
+        "id": "w0-p11-e4",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Student Desk",
         "visualEmoji": "🪑",
         "visualOptions": [
+          {
+            "text": "Soccer Ball",
+            "emoji": "⚽",
+            "label": "Soccer Ball",
+            "translationPt": "Bola de futebol"
+          },
           {
             "text": "Pen",
             "emoji": "🖊️",
@@ -14309,19 +11103,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "✂️",
             "label": "Scissors",
             "translationPt": "Tesoura escolar"
-          },
-          {
-            "text": "Soccer Ball",
-            "emoji": "⚽",
-            "label": "Soccer Ball",
-            "translationPt": "Bola de futebol (na quadra)"
           }
         ],
         "options": [
+          "Soccer Ball",
           "Pen",
           "Student Desk",
-          "Scissors",
-          "Soccer Ball"
+          "Scissors"
         ],
         "correctAnswer": "Student Desk",
         "explanation": "Exemplo prático: \"Open your notebook on the student desk.\"",
@@ -14329,20 +11117,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e6",
+        "id": "w0-p11-e5",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Teacher",
         "visualEmoji": "👩‍🏫",
         "visualOptions": [
           {
-            "text": "Computer Mouse",
-            "emoji": "🖱️",
-            "label": "Computer Mouse",
-            "translationPt": "Mouse de computador"
+            "text": "Teacher",
+            "emoji": "👩‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor / Professora"
           },
           {
             "text": "Calculator",
@@ -14351,23 +11136,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Calculadora"
           },
           {
+            "text": "Computer Mouse",
+            "emoji": "🖱️",
+            "label": "Computer Mouse",
+            "translationPt": "Mouse de computador"
+          },
+          {
             "text": "School",
             "emoji": "🏫",
             "label": "School",
-            "translationPt": "Escola / Colégio"
-          },
-          {
-            "text": "Teacher",
-            "emoji": "👩‍🏫",
-            "label": "Teacher",
-            "translationPt": "Professor / Professora"
+            "translationPt": "Prédio da escola"
           }
         ],
         "options": [
-          "Computer Mouse",
+          "Teacher",
           "Calculator",
-          "School",
-          "Teacher"
+          "Computer Mouse",
+          "School"
         ],
         "correctAnswer": "Teacher",
         "explanation": "Exemplo prático: \"The teacher explains the lesson clearly.\"",
@@ -14375,11 +11160,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-e7",
+        "id": "w0-p11-e6",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Backpack",
         "visualEmoji": "🎒",
@@ -14394,7 +11176,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Classroom",
             "emoji": "🏫",
             "label": "Classroom",
-            "translationPt": "Sala de aula"
+            "translationPt": "Sala de aula completa"
           },
           {
             "text": "Backpack",
@@ -14421,26 +11203,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e8",
+        "id": "w0-p11-e7",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Book",
         "visualEmoji": "📘",
         "visualOptions": [
           {
-            "text": "Book",
-            "emoji": "📘",
-            "label": "Book",
-            "translationPt": "Livro didático"
-          },
-          {
             "text": "Pencil Sharpener",
             "emoji": "✏️",
             "label": "Pencil Sharpener",
             "translationPt": "Apontador de lápis"
+          },
+          {
+            "text": "Book",
+            "emoji": "📘",
+            "label": "Book",
+            "translationPt": "Livro didático"
           },
           {
             "text": "Basketball",
@@ -14456,8 +11235,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Book",
           "Pencil Sharpener",
+          "Book",
           "Basketball",
           "Paper"
         ],
@@ -14467,90 +11246,42 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p9-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p9-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p9-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p9-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p9-e10",
+        "id": "w0-p11-e8",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Notebook",
         "visualEmoji": "📓",
         "visualOptions": [
           {
-            "text": "Paintbrush",
-            "emoji": "🖌️",
-            "label": "Paintbrush",
-            "translationPt": "Pincel de pintura (aula de artes)"
-          },
-          {
             "text": "Whiteboard",
             "emoji": "📋",
             "label": "Whiteboard",
-            "translationPt": "Quadro branco / Lousa escolar"
+            "translationPt": "Quadro branco / Lousa na parede"
           },
           {
-            "text": "Notebook",
-            "emoji": "📓",
-            "label": "Notebook",
-            "translationPt": "Caderno espiral"
+            "text": "Paintbrush",
+            "emoji": "🖌️",
+            "label": "Paintbrush",
+            "translationPt": "Pincel de pintura"
           },
           {
             "text": "Student Desk",
             "emoji": "🪑",
             "label": "Student Desk",
             "translationPt": "Carteira escolar (mesa e cadeira)"
+          },
+          {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno espiral"
           }
         ],
         "options": [
-          "Paintbrush",
           "Whiteboard",
-          "Notebook",
-          "Student Desk"
+          "Paintbrush",
+          "Student Desk",
+          "Notebook"
         ],
         "correctAnswer": "Notebook",
         "explanation": "Exemplo prático: \"Write the vocabulary list in your spiral notebook.\"",
@@ -14558,26 +11289,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-e11",
+        "id": "w0-p11-e9",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Pen",
         "visualEmoji": "🖊️",
         "visualOptions": [
           {
-            "text": "Medal",
-            "emoji": "🥇",
-            "label": "Medal",
-            "translationPt": "Medalha escolar / esportiva"
-          },
-          {
             "text": "Pen",
             "emoji": "🖊️",
             "label": "Pen",
             "translationPt": "Caneta esferográfica"
+          },
+          {
+            "text": "Map",
+            "emoji": "🗺️",
+            "label": "Map",
+            "translationPt": "Mapa geográfico"
           },
           {
             "text": "Microscope",
@@ -14586,17 +11314,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Microscópio de ciências"
           },
           {
-            "text": "Map",
-            "emoji": "🗺️",
-            "label": "Map",
-            "translationPt": "Mapa geográfico"
+            "text": "Medal",
+            "emoji": "🥇",
+            "label": "Medal",
+            "translationPt": "Medalha"
           }
         ],
         "options": [
-          "Medal",
           "Pen",
+          "Map",
           "Microscope",
-          "Map"
+          "Medal"
         ],
         "correctAnswer": "Pen",
         "explanation": "Exemplo prático: \"Sign your name with a blue ballpoint pen.\"",
@@ -14604,26 +11332,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e12",
+        "id": "w0-p11-e10",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pencil",
         "visualEmoji": "✏️",
         "visualOptions": [
           {
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Prédio da escola"
+          },
+          {
             "text": "Phone",
             "emoji": "📱",
             "label": "Phone",
             "translationPt": "Celular / Smartphone"
-          },
-          {
-            "text": "School",
-            "emoji": "🏫",
-            "label": "School",
-            "translationPt": "Escola / Colégio"
           },
           {
             "text": "Teacher",
@@ -14639,8 +11364,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Phone",
           "School",
+          "Phone",
           "Teacher",
           "Pencil"
         ],
@@ -14650,32 +11375,29 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e13",
+        "id": "w0-p11-e11",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Eraser",
         "visualEmoji": "🧽",
         "visualOptions": [
           {
-            "text": "Eraser",
-            "emoji": "🧽",
-            "label": "Eraser",
-            "translationPt": "Borracha de apagar"
-          },
-          {
             "text": "Classroom",
             "emoji": "🏫",
             "label": "Classroom",
-            "translationPt": "Sala de aula"
+            "translationPt": "Sala de aula completa"
           },
           {
             "text": "Calculator",
             "emoji": "🧮",
             "label": "Calculator",
             "translationPt": "Calculadora"
+          },
+          {
+            "text": "Eraser",
+            "emoji": "🧽",
+            "label": "Eraser",
+            "translationPt": "Borracha de apagar"
           },
           {
             "text": "Library",
@@ -14685,9 +11407,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Eraser",
           "Classroom",
           "Calculator",
+          "Eraser",
           "Library"
         ],
         "correctAnswer": "Eraser",
@@ -14696,60 +11418,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p9-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p9-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p9-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p9-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p9-e15",
+        "id": "w0-p11-e12",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Pencil Sharpener",
         "visualEmoji": "✏️",
         "visualOptions": [
+          {
+            "text": "Pencil Sharpener",
+            "emoji": "✏️",
+            "label": "Pencil Sharpener",
+            "translationPt": "Apontador de lápis"
+          },
+          {
+            "text": "Backpack",
+            "emoji": "🎒",
+            "label": "Backpack",
+            "translationPt": "Mochila escolar"
+          },
           {
             "text": "Basketball",
             "emoji": "🏀",
@@ -14761,25 +11447,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📘",
             "label": "Book",
             "translationPt": "Livro didático"
-          },
-          {
-            "text": "Backpack",
-            "emoji": "🎒",
-            "label": "Backpack",
-            "translationPt": "Mochila escolar"
-          },
-          {
-            "text": "Pencil Sharpener",
-            "emoji": "✏️",
-            "label": "Pencil Sharpener",
-            "translationPt": "Apontador de lápis"
           }
         ],
         "options": [
-          "Basketball",
-          "Book",
+          "Pencil Sharpener",
           "Backpack",
-          "Pencil Sharpener"
+          "Basketball",
+          "Book"
         ],
         "correctAnswer": "Pencil Sharpener",
         "explanation": "Exemplo prático: \"Sharpen the pencil tip with a pencil sharpener.\"",
@@ -14787,21 +11461,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e16",
+        "id": "w0-p11-e13",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ruler",
         "visualEmoji": "📏",
         "visualOptions": [
-          {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fone de ouvido"
-          },
           {
             "text": "Keyboard",
             "emoji": "⌨️",
@@ -14815,6 +11480,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Régua escolar"
           },
           {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fone de ouvido"
+          },
+          {
             "text": "Notebook",
             "emoji": "📓",
             "label": "Notebook",
@@ -14822,9 +11493,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Headphones",
           "Keyboard",
           "Ruler",
+          "Headphones",
           "Notebook"
         ],
         "correctAnswer": "Ruler",
@@ -14833,15 +11504,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e17",
+        "id": "w0-p11-e14",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Scissors",
         "visualEmoji": "✂️",
         "visualOptions": [
+          {
+            "text": "Whiteboard",
+            "emoji": "📋",
+            "label": "Whiteboard",
+            "translationPt": "Quadro branco / Lousa na parede"
+          },
           {
             "text": "Scissors",
             "emoji": "✂️",
@@ -14849,29 +11523,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tesoura escolar"
           },
           {
-            "text": "Whiteboard",
-            "emoji": "📋",
-            "label": "Whiteboard",
-            "translationPt": "Quadro branco / Lousa escolar"
+            "text": "Teacher",
+            "emoji": "👩‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor / Professora"
           },
           {
             "text": "Pencil",
             "emoji": "✏️",
             "label": "Pencil",
             "translationPt": "Lápis de escrever"
-          },
-          {
-            "text": "Teacher",
-            "emoji": "👩‍🏫",
-            "label": "Teacher",
-            "translationPt": "Professor / Professora"
           }
         ],
         "options": [
-          "Scissors",
           "Whiteboard",
-          "Pencil",
-          "Teacher"
+          "Scissors",
+          "Teacher",
+          "Pencil"
         ],
         "correctAnswer": "Scissors",
         "explanation": "Exemplo prático: \"Cut the paper along the line with scissors.\"",
@@ -14879,27 +11547,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-e18",
+        "id": "w0-p11-e15",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Glue",
         "visualEmoji": "🧴",
         "visualOptions": [
-          {
-            "text": "Paintbrush",
-            "emoji": "🖌️",
-            "label": "Paintbrush",
-            "translationPt": "Pincel de pintura (aula de artes)"
-          },
-          {
-            "text": "Glue",
-            "emoji": "🧴",
-            "label": "Glue",
-            "translationPt": "Cola branca / bastão"
-          },
           {
             "text": "Phone",
             "emoji": "📱",
@@ -14907,17 +11560,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Celular / Smartphone"
           },
           {
+            "text": "Paintbrush",
+            "emoji": "🖌️",
+            "label": "Paintbrush",
+            "translationPt": "Pincel de pintura"
+          },
+          {
             "text": "Pen",
             "emoji": "🖊️",
             "label": "Pen",
             "translationPt": "Caneta esferográfica"
+          },
+          {
+            "text": "Glue",
+            "emoji": "🧴",
+            "label": "Glue",
+            "translationPt": "Cola escolar"
           }
         ],
         "options": [
-          "Paintbrush",
-          "Glue",
           "Phone",
-          "Pen"
+          "Paintbrush",
+          "Pen",
+          "Glue"
         ],
         "correctAnswer": "Glue",
         "explanation": "Exemplo prático: \"Use school glue to paste the picture.\"",
@@ -14925,56 +11590,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p9-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p9-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p9-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p9-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p9-e20",
+        "id": "w0-p11-e16",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Paper",
         "visualEmoji": "📄",
@@ -14986,28 +11603,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Mouse de computador"
           },
           {
-            "text": "Paper",
-            "emoji": "📄",
-            "label": "Paper",
-            "translationPt": "Folha de papel"
-          },
-          {
             "text": "Student Desk",
             "emoji": "🪑",
             "label": "Student Desk",
             "translationPt": "Carteira escolar (mesa e cadeira)"
           },
           {
+            "text": "Paper",
+            "emoji": "📄",
+            "label": "Paper",
+            "translationPt": "Folha de papel"
+          },
+          {
             "text": "Soccer Ball",
             "emoji": "⚽",
             "label": "Soccer Ball",
-            "translationPt": "Bola de futebol (na quadra)"
+            "translationPt": "Bola de futebol"
           }
         ],
         "options": [
           "Computer Mouse",
-          "Paper",
           "Student Desk",
+          "Paper",
           "Soccer Ball"
         ],
         "correctAnswer": "Paper",
@@ -15016,26 +11633,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e21",
+        "id": "w0-p11-e17",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Envelope",
         "visualEmoji": "✉️",
         "visualOptions": [
           {
+            "text": "Envelope",
+            "emoji": "✉️",
+            "label": "Envelope",
+            "translationPt": "Envelope de papel"
+          },
+          {
             "text": "Pencil Sharpener",
             "emoji": "✏️",
             "label": "Pencil Sharpener",
             "translationPt": "Apontador de lápis"
-          },
-          {
-            "text": "Ruler",
-            "emoji": "📏",
-            "label": "Ruler",
-            "translationPt": "Régua escolar"
           },
           {
             "text": "Microscope",
@@ -15044,17 +11658,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Microscópio de ciências"
           },
           {
-            "text": "Envelope",
-            "emoji": "✉️",
-            "label": "Envelope",
-            "translationPt": "Envelope de papel"
+            "text": "Ruler",
+            "emoji": "📏",
+            "label": "Ruler",
+            "translationPt": "Régua escolar"
           }
         ],
         "options": [
+          "Envelope",
           "Pencil Sharpener",
-          "Ruler",
           "Microscope",
-          "Envelope"
+          "Ruler"
         ],
         "correctAnswer": "Envelope",
         "explanation": "Exemplo prático: \"Put the school letter inside a paper envelope.\"",
@@ -15062,26 +11676,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-e22",
+        "id": "w0-p11-e18",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Calculator",
         "visualEmoji": "🧮",
         "visualOptions": [
           {
-            "text": "Scissors",
-            "emoji": "✂️",
-            "label": "Scissors",
-            "translationPt": "Tesoura escolar"
-          },
-          {
             "text": "Eraser",
             "emoji": "🧽",
             "label": "Eraser",
             "translationPt": "Borracha de apagar"
+          },
+          {
+            "text": "Scissors",
+            "emoji": "✂️",
+            "label": "Scissors",
+            "translationPt": "Tesoura escolar"
           },
           {
             "text": "Calculator",
@@ -15097,8 +11708,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Scissors",
           "Eraser",
+          "Scissors",
           "Calculator",
           "Pencil"
         ],
@@ -15108,15 +11719,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e23",
+        "id": "w0-p11-e19",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Globe",
         "visualEmoji": "🌍",
         "visualOptions": [
+          {
+            "text": "Medal",
+            "emoji": "🥇",
+            "label": "Medal",
+            "translationPt": "Medalha"
+          },
           {
             "text": "Globe",
             "emoji": "🌍",
@@ -15124,29 +11738,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Globo terrestre"
           },
           {
-            "text": "Medal",
-            "emoji": "🥇",
-            "label": "Medal",
-            "translationPt": "Medalha escolar / esportiva"
+            "text": "Glue",
+            "emoji": "🧴",
+            "label": "Glue",
+            "translationPt": "Cola escolar"
           },
           {
             "text": "Teacher",
             "emoji": "👩‍🏫",
             "label": "Teacher",
             "translationPt": "Professor / Professora"
-          },
-          {
-            "text": "Glue",
-            "emoji": "🧴",
-            "label": "Glue",
-            "translationPt": "Cola branca / bastão"
           }
         ],
         "options": [
-          "Globe",
           "Medal",
-          "Teacher",
-          "Glue"
+          "Globe",
+          "Glue",
+          "Teacher"
         ],
         "correctAnswer": "Globe",
         "explanation": "Exemplo prático: \"Find Brazil and the United States on the desk globe.\"",
@@ -15154,60 +11762,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p9-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p9-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p9-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p9-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p9-e25",
+        "id": "w0-p11-e20",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Map",
         "visualEmoji": "🗺️",
         "visualOptions": [
+          {
+            "text": "Whiteboard",
+            "emoji": "📋",
+            "label": "Whiteboard",
+            "translationPt": "Quadro branco / Lousa na parede"
+          },
           {
             "text": "Paper",
             "emoji": "📄",
@@ -15225,19 +11791,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🗺️",
             "label": "Map",
             "translationPt": "Mapa geográfico"
-          },
-          {
-            "text": "Whiteboard",
-            "emoji": "📋",
-            "label": "Whiteboard",
-            "translationPt": "Quadro branco / Lousa escolar"
           }
         ],
         "options": [
+          "Whiteboard",
           "Paper",
           "Notebook",
-          "Map",
-          "Whiteboard"
+          "Map"
         ],
         "correctAnswer": "Map",
         "explanation": "Exemplo prático: \"Look at the world map in geography class.\"",
@@ -15245,26 +11805,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-e26",
+        "id": "w0-p11-e21",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Microscope",
         "visualEmoji": "🔬",
         "visualOptions": [
           {
-            "text": "Student Desk",
-            "emoji": "🪑",
-            "label": "Student Desk",
-            "translationPt": "Carteira escolar (mesa e cadeira)"
-          },
-          {
             "text": "Microscope",
             "emoji": "🔬",
             "label": "Microscope",
             "translationPt": "Microscópio de ciências"
+          },
+          {
+            "text": "Student Desk",
+            "emoji": "🪑",
+            "label": "Student Desk",
+            "translationPt": "Carteira escolar (mesa e cadeira)"
           },
           {
             "text": "Envelope",
@@ -15276,12 +11833,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "School",
             "emoji": "🏫",
             "label": "School",
-            "translationPt": "Escola / Colégio"
+            "translationPt": "Prédio da escola"
           }
         ],
         "options": [
-          "Student Desk",
           "Microscope",
+          "Student Desk",
           "Envelope",
           "School"
         ],
@@ -15291,15 +11848,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e27",
+        "id": "w0-p11-e22",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Paintbrush",
         "visualEmoji": "🖌️",
         "visualOptions": [
+          {
+            "text": "Classroom",
+            "emoji": "🏫",
+            "label": "Classroom",
+            "translationPt": "Sala de aula completa"
+          },
           {
             "text": "Computer Mouse",
             "emoji": "🖱️",
@@ -15313,22 +11873,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Calculadora"
           },
           {
-            "text": "Classroom",
-            "emoji": "🏫",
-            "label": "Classroom",
-            "translationPt": "Sala de aula"
-          },
-          {
             "text": "Paintbrush",
             "emoji": "🖌️",
             "label": "Paintbrush",
-            "translationPt": "Pincel de pintura (aula de artes)"
+            "translationPt": "Pincel de pintura"
           }
         ],
         "options": [
+          "Classroom",
           "Computer Mouse",
           "Calculator",
-          "Classroom",
           "Paintbrush"
         ],
         "correctAnswer": "Paintbrush",
@@ -15337,21 +11891,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e28",
+        "id": "w0-p11-e23",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Phone",
         "visualEmoji": "📱",
         "visualOptions": [
-          {
-            "text": "Phone",
-            "emoji": "📱",
-            "label": "Phone",
-            "translationPt": "Celular / Smartphone"
-          },
           {
             "text": "Library",
             "emoji": "📚",
@@ -15359,23 +11904,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Biblioteca escolar"
           },
           {
-            "text": "Ruler",
-            "emoji": "📏",
-            "label": "Ruler",
-            "translationPt": "Régua escolar"
-          },
-          {
             "text": "Globe",
             "emoji": "🌍",
             "label": "Globe",
             "translationPt": "Globo terrestre"
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Celular / Smartphone"
+          },
+          {
+            "text": "Ruler",
+            "emoji": "📏",
+            "label": "Ruler",
+            "translationPt": "Régua escolar"
           }
         ],
         "options": [
-          "Phone",
           "Library",
-          "Ruler",
-          "Globe"
+          "Globe",
+          "Phone",
+          "Ruler"
         ],
         "correctAnswer": "Phone",
         "explanation": "Exemplo prático: \"Use the Lingo World app on your phone to study.\"",
@@ -15383,60 +11934,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p9-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p9-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p9-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p9-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p9-e30",
+        "id": "w0-p11-e24",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Headphones",
         "visualEmoji": "🎧",
         "visualOptions": [
+          {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fone de ouvido"
+          },
           {
             "text": "Eraser",
             "emoji": "🧽",
@@ -15454,19 +11963,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🗺️",
             "label": "Map",
             "translationPt": "Mapa geográfico"
-          },
-          {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fone de ouvido"
           }
         ],
         "options": [
+          "Headphones",
           "Eraser",
           "Backpack",
-          "Map",
-          "Headphones"
+          "Map"
         ],
         "correctAnswer": "Headphones",
         "explanation": "Exemplo prático: \"Listen to the English pronunciation with headphones.\"",
@@ -15474,21 +11977,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e31",
+        "id": "w0-p11-e25",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Keyboard",
         "visualEmoji": "⌨️",
         "visualOptions": [
-          {
-            "text": "Book",
-            "emoji": "📘",
-            "label": "Book",
-            "translationPt": "Livro didático"
-          },
           {
             "text": "Basketball",
             "emoji": "🏀",
@@ -15502,6 +11996,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Teclado de computador"
           },
           {
+            "text": "Book",
+            "emoji": "📘",
+            "label": "Book",
+            "translationPt": "Livro didático"
+          },
+          {
             "text": "Envelope",
             "emoji": "✉️",
             "label": "Envelope",
@@ -15509,9 +12009,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Book",
           "Basketball",
           "Keyboard",
+          "Book",
           "Envelope"
         ],
         "correctAnswer": "Keyboard",
@@ -15520,26 +12020,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e32",
+        "id": "w0-p11-e26",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Computer Mouse",
         "visualEmoji": "🖱️",
         "visualOptions": [
           {
-            "text": "Computer Mouse",
-            "emoji": "🖱️",
-            "label": "Computer Mouse",
-            "translationPt": "Mouse de computador"
-          },
-          {
             "text": "Pen",
             "emoji": "🖊️",
             "label": "Pen",
             "translationPt": "Caneta esferográfica"
+          },
+          {
+            "text": "Computer Mouse",
+            "emoji": "🖱️",
+            "label": "Computer Mouse",
+            "translationPt": "Mouse de computador"
           },
           {
             "text": "Scissors",
@@ -15551,12 +12048,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Glue",
             "emoji": "🧴",
             "label": "Glue",
-            "translationPt": "Cola branca / bastão"
+            "translationPt": "Cola escolar"
           }
         ],
         "options": [
-          "Computer Mouse",
           "Pen",
+          "Computer Mouse",
           "Scissors",
           "Glue"
         ],
@@ -15566,11 +12063,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-e33",
+        "id": "w0-p11-e27",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Library",
         "visualEmoji": "📚",
@@ -15582,10 +12076,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Apontador de lápis"
           },
           {
-            "text": "Library",
-            "emoji": "📚",
-            "label": "Library",
-            "translationPt": "Biblioteca escolar"
+            "text": "Paper",
+            "emoji": "📄",
+            "label": "Paper",
+            "translationPt": "Folha de papel"
           },
           {
             "text": "Pencil",
@@ -15594,17 +12088,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Lápis de escrever"
           },
           {
-            "text": "Paper",
-            "emoji": "📄",
-            "label": "Paper",
-            "translationPt": "Folha de papel"
+            "text": "Library",
+            "emoji": "📚",
+            "label": "Library",
+            "translationPt": "Biblioteca escolar"
           }
         ],
         "options": [
           "Pencil Sharpener",
-          "Library",
+          "Paper",
           "Pencil",
-          "Paper"
+          "Library"
         ],
         "correctAnswer": "Library",
         "explanation": "Exemplo prático: \"Students read quietly in the school library.\"",
@@ -15612,60 +12106,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p9-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p9-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p9-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p9-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p9-e35",
+        "id": "w0-p11-e28",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Soccer Ball",
         "visualEmoji": "⚽",
         "visualOptions": [
+          {
+            "text": "Map",
+            "emoji": "🗺️",
+            "label": "Map",
+            "translationPt": "Mapa geográfico"
+          },
           {
             "text": "Phone",
             "emoji": "📱",
@@ -15676,26 +12128,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Soccer Ball",
             "emoji": "⚽",
             "label": "Soccer Ball",
-            "translationPt": "Bola de futebol (na quadra)"
+            "translationPt": "Bola de futebol"
           },
           {
             "text": "Paintbrush",
             "emoji": "🖌️",
             "label": "Paintbrush",
-            "translationPt": "Pincel de pintura (aula de artes)"
-          },
-          {
-            "text": "Map",
-            "emoji": "🗺️",
-            "label": "Map",
-            "translationPt": "Mapa geográfico"
+            "translationPt": "Pincel de pintura"
           }
         ],
         "options": [
+          "Map",
           "Phone",
           "Soccer Ball",
-          "Paintbrush",
-          "Map"
+          "Paintbrush"
         ],
         "correctAnswer": "Soccer Ball",
         "explanation": "Exemplo prático: \"Play soccer in physical education class.\"",
@@ -15703,15 +12149,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e36",
+        "id": "w0-p11-e29",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Basketball",
         "visualEmoji": "🏀",
         "visualOptions": [
+          {
+            "text": "Basketball",
+            "emoji": "🏀",
+            "label": "Basketball",
+            "translationPt": "Bola de basquete"
+          },
           {
             "text": "Microscope",
             "emoji": "🔬",
@@ -15729,19 +12178,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "⌨️",
             "label": "Keyboard",
             "translationPt": "Teclado de computador"
-          },
-          {
-            "text": "Basketball",
-            "emoji": "🏀",
-            "label": "Basketball",
-            "translationPt": "Bola de basquete"
           }
         ],
         "options": [
+          "Basketball",
           "Microscope",
           "Globe",
-          "Keyboard",
-          "Basketball"
+          "Keyboard"
         ],
         "correctAnswer": "Basketball",
         "explanation": "Exemplo prático: \"Shoot the orange basketball into the hoop.\"",
@@ -15749,21 +12192,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p9-e37",
+        "id": "w0-p11-e30",
         "type": "image-choice",
-        "conceptTitle": "Na Escola, Sala de Aula & Material Escolar • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Medal",
         "visualEmoji": "🥇",
         "visualOptions": [
-          {
-            "text": "Headphones",
-            "emoji": "🎧",
-            "label": "Headphones",
-            "translationPt": "Fone de ouvido"
-          },
           {
             "text": "Notebook",
             "emoji": "📓",
@@ -15771,10 +12205,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Caderno espiral"
           },
           {
+            "text": "Headphones",
+            "emoji": "🎧",
+            "label": "Headphones",
+            "translationPt": "Fone de ouvido"
+          },
+          {
             "text": "Medal",
             "emoji": "🥇",
             "label": "Medal",
-            "translationPt": "Medalha escolar / esportiva"
+            "translationPt": "Medalha"
           },
           {
             "text": "Eraser",
@@ -15784,8 +12224,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Headphones",
           "Notebook",
+          "Headphones",
           "Medal",
           "Eraser"
         ],
@@ -15793,59 +12233,214 @@ export const WORLD_0_PHASES: Phase[] = [
         "explanation": "Exemplo prático: \"She won a gold medal in the school competition.\"",
         "phoneticHint": "/ˈmed.əl/",
         "skillCategory": "vocabulary"
-      },
+      }
+    ]
+  },
+  {
+    "id": "w0-p12",
+    "worldId": 0,
+    "phaseNumber": 12,
+    "title": "Lição de Pronomes III • Reflexivos & Interrogativos",
+    "subtitle": "Módulo de Pronomes 3/4 (Após 9 de Vocabulário) • Pares Associativos + Voz da Professora",
+    "pedagogicalObjective": "Dominar os Pronomes Reflexivos (Myself, Yourself, Himself, Herself, Itself, Ourselves, Themselves) e os Pronomes Interrogativos (Who, What, Where, When, Why, Whose, Which, How).",
+    "type": "chest",
+    "icon": "star",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Bem-vindo à 3ª Lição Exclusiva de Pronomes (após 9 módulos de vocabulário)!",
+      "5º Passo: Aprendemos os Pronomes Reflexivos (Myself, Yourself, Himself, Herself, Ourselves, Themselves), que funcionam como um espelho.",
+      "6º Passo: Aprendemos os Pronomes Interrogativos (Who, What, Where, When, Why, Whose, Which, How), usados para fazer perguntas!"
+    ],
+    "xpReward": 70,
+    "gemsReward": 30,
+    "exercises": [
       {
-        "id": "w0-p9-pron-8",
+        "id": "w0-p12-pron-1",
         "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
+        "conceptTitle": "5º • Pronomes Reflexivos (Como em um Espelho - Parte 1)",
+        "conceptHeader": "Funcionam igual a um espelho! Quando você olha para si mesmo ou faz algo sozinho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
+        "teacherAudioPt": "/audio/teacher/pronoun_5.wav",
+        "prompt": "🤝 Conecte cada Pronome Reflexivo ao seu par em português:",
         "pairs": [
           {
-            "id": "w0-p9-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
+            "id": "w0-p12-b1-ref1",
+            "en": "Myself",
+            "emoji": "🪞",
+            "phonetic": "/maɪˈself/",
+            "pt": "Eu mesmo(a) / A mim mesmo",
+            "tipPt": "Isso! \"I see myself in the mirror\" = \"Eu me vejo no espelho\"!"
           },
           {
-            "id": "w0-p9-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
+            "id": "w0-p12-b1-ref2",
+            "en": "Yourself",
+            "emoji": "🫵",
+            "phonetic": "/jʊrˈself/",
+            "pt": "Você mesmo(a) / A si mesmo",
+            "tipPt": "Muito bem! \"Yourself\" = \"Você mesmo\"!"
           },
           {
-            "id": "w0-p9-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
+            "id": "w0-p12-b1-ref3",
+            "en": "Himself",
+            "emoji": "👦",
+            "phonetic": "/hɪmˈself/",
+            "pt": "Ele mesmo (para menino ou homem)",
+            "tipPt": "Perfeito! \"Himself\" = \"Ele mesmo\"!"
           },
           {
-            "id": "w0-p9-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
+            "id": "w0-p12-b1-ref4",
+            "en": "Herself",
+            "emoji": "👧",
+            "phonetic": "/hɜːrˈself/",
+            "pt": "Ela mesma (para menina ou mulher)",
+            "tipPt": "Lindo! \"Herself\" = \"Ela mesma\"!"
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
+        "explanation": "Myself (Eu mesmo), Yourself (Você mesmo), Himself (Ele mesmo), Herself (Ela mesma).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p12-pron-2",
+        "type": "pair-match",
+        "conceptTitle": "5º • Pronomes Reflexivos (Coisas e Plural - Parte 2)",
+        "conceptHeader": "Para um aparelho ou animalzinho que faz algo sozinho, dizemos \"Itself\". E quando são várias pessoas, o final vira \"-selves\": \"Ourselves\" (Nós mesmos), \"Yourselves\" (Vocês mesmos) e \"Themselves\" (Eles mesmos)!",
+        "teacherAudioPt": "/audio/teacher/pronoun_5.wav",
+        "prompt": "🤝 Ligue os Pronomes Reflexivos de objetos e plural aos seus pares:",
+        "pairs": [
+          {
+            "id": "w0-p12-b2-ref5",
+            "en": "Itself",
+            "emoji": "🚪",
+            "phonetic": "/ɪtˈself/",
+            "pt": "Ele(a) mesmo(a) / Sozinho (para coisas/animais)",
+            "tipPt": "Isso! \"The door closed by itself\" = \"A porta fechou sozinha\"!"
+          },
+          {
+            "id": "w0-p12-b2-ref6",
+            "en": "Ourselves",
+            "emoji": "👨‍👩‍👧",
+            "phonetic": "/ɑːrˈselvz/",
+            "pt": "Nós mesmos(as)",
+            "tipPt": "Muito bem! \"Ourselves\" = \"Nós mesmos\"!"
+          },
+          {
+            "id": "w0-p12-b2-ref7",
+            "en": "Yourselves",
+            "emoji": "👫",
+            "phonetic": "/jʊrˈselvz/",
+            "pt": "Vocês mesmos(as) (no plural)",
+            "tipPt": "Perfeito! \"Yourselves\" = \"Vocês mesmos\"!"
+          },
+          {
+            "id": "w0-p12-b2-ref8",
+            "en": "Themselves",
+            "emoji": "👥",
+            "phonetic": "/ðəmˈselvz/",
+            "pt": "Eles mesmos / Elas mesmas",
+            "tipPt": "Excelente! Você dominou todos os Reflexivos!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Itself (Ele/Ela mesmo para coisas), Ourselves (Nós mesmos), Yourselves (Vocês mesmos), Themselves (Eles/Elas mesmas).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p12-pron-3",
+        "type": "pair-match",
+        "conceptTitle": "6º • Pronomes Interrogativos (Perguntas de Detetive - Parte 1)",
+        "conceptHeader": "São as palavrinhas para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (hora ou dia)!",
+        "teacherAudioPt": "/audio/teacher/pronoun_6.wav",
+        "prompt": "🤝 Conecte cada Pronome Interrogativo à sua pergunta:",
+        "pairs": [
+          {
+            "id": "w0-p12-b3-int1",
+            "en": "Who?",
+            "emoji": "🕵️",
+            "phonetic": "/huː/",
+            "pt": "Quem? (pergunta sobre pessoas)",
+            "tipPt": "Exato! \"Who is the teacher?\" = \"Quem é a professora?\""
+          },
+          {
+            "id": "w0-p12-b3-int2",
+            "en": "What?",
+            "emoji": "❓",
+            "phonetic": "/wɑːt/",
+            "pt": "O quê? / Qual? (pergunta sobre coisas)",
+            "tipPt": "Muito bem! \"What is in the backpack?\" = \"O que tem na mochila?\""
+          },
+          {
+            "id": "w0-p12-b3-int3",
+            "en": "Where?",
+            "emoji": "📍",
+            "phonetic": "/wer/",
+            "pt": "Onde? (pergunta sobre o lugar)",
+            "tipPt": "Perfeito! \"Where is the school?\" = \"Onde fica a escola?\""
+          },
+          {
+            "id": "w0-p12-b3-int4",
+            "en": "When?",
+            "emoji": "⏰",
+            "phonetic": "/wen/",
+            "pt": "Quando? (pergunta sobre tempo ou hora)",
+            "tipPt": "Lindo! \"When\" pergunta \"Quando?\""
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Who? (Quem?), What? (O quê?), Where? (Onde?), When? (Quando?).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p12-pron-4",
+        "type": "pair-match",
+        "conceptTitle": "6º • Pronomes Interrogativos (Por quê, De quem, Qual e Como - Parte 2)",
+        "conceptHeader": "Mais 4 palavrinhas curiosas: \"Why?\" pergunta Por quê (o motivo), \"Whose?\" pergunta De quem é (o dono), \"Which?\" pergunta Qual (escolhendo entre opções) e \"How?\" pergunta Como!",
+        "teacherAudioPt": "/audio/teacher/pronoun_6.wav",
+        "prompt": "🤝 Ligue os Pronomes Interrogativos Why, Whose, Which e How aos seus pares:",
+        "pairs": [
+          {
+            "id": "w0-p12-b4-int5",
+            "en": "Why?",
+            "emoji": "🤔",
+            "phonetic": "/waɪ/",
+            "pt": "Por quê? (pergunta o motivo)",
+            "tipPt": "Isso! \"Why?\" = \"Por quê?\""
+          },
+          {
+            "id": "w0-p12-b4-int6",
+            "en": "Whose?",
+            "emoji": "🔑",
+            "phonetic": "/huːz/",
+            "pt": "De quem? (ex: Whose notebook is this?)",
+            "tipPt": "Brilhante! \"Whose\" pergunta quem é o dono!"
+          },
+          {
+            "id": "w0-p12-b4-int7",
+            "en": "Which?",
+            "emoji": "⚖️",
+            "phonetic": "/wɪtʃ/",
+            "pt": "Qual? (escolhendo entre opções)",
+            "tipPt": "Muito bem! \"Which pen do you want?\" = \"Qual caneta você quer?\""
+          },
+          {
+            "id": "w0-p12-b4-int8",
+            "en": "How?",
+            "emoji": "🛠️",
+            "phonetic": "/haʊ/",
+            "pt": "Como? (ex: How are you? = Como vai você?)",
+            "tipPt": "Parabéns! Você aprendeu todos os Interrogativos!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Why? (Por quê?), Whose? (De quem?), Which? (Qual dentre opções?), How? (Como?).",
         "skillCategory": "grammar"
       }
     ]
   },
   {
-    "id": "w0-p10",
+    "id": "w0-p13",
     "worldId": 0,
-    "phaseNumber": 10,
-    "title": "Ambiente 10 • No Supermercado, Hortifrúti, Padaria & Caixa",
+    "phaseNumber": 13,
+    "title": "Vocabulário 10 • No Supermercado, Hortifrúti, Padaria & Caixa",
     "subtitle": "Ambiente 10/12 • Carrinho, cesta, corredores, frutas, verduras, açougue, padaria e pagamento",
     "pedagogicalObjective": "Fazer compras completas no supermercado identificando equipamentos, alimentos básicos, hortifrúti, padaria e formas de pagamento.",
     "type": "lesson",
@@ -15853,27 +12448,30 @@ export const WORLD_0_PHASES: Phase[] = [
     "cefrLevel": "A1",
     "theorySummary": [
       "Saindo da escola, vamos ao Supermercado (Supermarket) fazer as compras da casa!",
-      "Pegue o Carrinho de Compras (Shopping Cart) ou a Cesta (Basket) e passe pela Padaria (Bakery: Bread, Cheese Bread, Cake), pela Mercearia (Rice, Beans, Pasta, Coffee, Sugar, Olive Oil) e pelo Açougue (Steak, Roast Chicken, Fish Fillet).",
+      "Pegue o Carrinho de Compras (Shopping Cart) ou a Cesta (Basket) e passe pela Padaria (Bakery: Bread, Cheese Bread, Cake), pela Mercearia (Rice, Beans, Pasta, Coffee, Olive Oil) e pelo Açougue (Steak, Roast Chicken, Fish Fillet).",
       "No setor de Hortifrúti escolhemos as frutas e verduras mais frescas e, ao final, passamos no Caixa com Cartão de Crédito (Credit Card) ou Dinheiro (Money)!"
     ],
     "xpReward": 50,
     "gemsReward": 20,
     "exercises": [
       {
-        "id": "w0-p10-e1",
+        "id": "w0-p13-e1",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Supermarket",
         "visualEmoji": "🛒",
         "visualOptions": [
           {
-            "text": "Supermarket",
-            "emoji": "🛒",
-            "label": "Supermarket",
-            "translationPt": "Supermercado"
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
+          },
+          {
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
           },
           {
             "text": "Beans",
@@ -15882,23 +12480,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Feijão"
           },
           {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana (Hortifrúti)"
-          },
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
+            "text": "Supermarket",
+            "emoji": "🛒",
+            "label": "Supermarket",
+            "translationPt": "Corredor de supermercado completo"
           }
         ],
         "options": [
-          "Supermarket",
-          "Beans",
+          "Bread",
           "Banana",
-          "Bread"
+          "Beans",
+          "Supermarket"
         ],
         "correctAnswer": "Supermarket",
         "explanation": "Exemplo prático: \"We buy food for the week at the supermarket.\"",
@@ -15906,11 +12498,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e2",
+        "id": "w0-p13-e2",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Shopping Cart",
         "visualEmoji": "🛒",
@@ -15922,16 +12511,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Arroz"
           },
           {
-            "text": "Shopping Cart",
-            "emoji": "🛒",
-            "label": "Shopping Cart",
-            "translationPt": "Carrinho de supermercado"
-          },
-          {
             "text": "Broccoli",
             "emoji": "🥦",
             "label": "Broccoli",
             "translationPt": "Brócolis"
+          },
+          {
+            "text": "Shopping Cart",
+            "emoji": "🛒",
+            "label": "Shopping Cart",
+            "translationPt": "Carrinho de supermercado"
           },
           {
             "text": "Tomato",
@@ -15942,8 +12531,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Rice",
-          "Shopping Cart",
           "Broccoli",
+          "Shopping Cart",
           "Tomato"
         ],
         "correctAnswer": "Shopping Cart",
@@ -15952,21 +12541,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-e3",
+        "id": "w0-p13-e3",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Basket",
         "visualEmoji": "🧺",
         "visualOptions": [
-          {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva"
-          },
           {
             "text": "Basket",
             "emoji": "🧺",
@@ -15984,13 +12564,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍉",
             "label": "Watermelon",
             "translationPt": "Melancia"
+          },
+          {
+            "text": "Grape",
+            "emoji": "🍇",
+            "label": "Grape",
+            "translationPt": "Uva"
           }
         ],
         "options": [
-          "Grape",
           "Basket",
           "Garlic",
-          "Watermelon"
+          "Watermelon",
+          "Grape"
         ],
         "correctAnswer": "Basket",
         "explanation": "Exemplo prático: \"Carry a few items in a hand basket.\"",
@@ -15998,66 +12584,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p10-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p10-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p10-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p10-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p10-e5",
+        "id": "w0-p13-e4",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Bakery",
         "visualEmoji": "🥖",
         "visualOptions": [
-          {
-            "text": "Strawberry",
-            "emoji": "🍓",
-            "label": "Strawberry",
-            "translationPt": "Morango"
-          },
           {
             "text": "Pasta",
             "emoji": "🍝",
@@ -16065,23 +12597,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Macarrão"
           },
           {
-            "text": "Steak",
-            "emoji": "🥩",
-            "label": "Steak",
-            "translationPt": "Carne bovina / Bife (Açougue)"
+            "text": "Strawberry",
+            "emoji": "🍓",
+            "label": "Strawberry",
+            "translationPt": "Morango"
           },
           {
             "text": "Bakery",
             "emoji": "🥖",
             "label": "Bakery",
-            "translationPt": "Padaria"
+            "translationPt": "Balcão de padaria cheio de pães"
+          },
+          {
+            "text": "Steak",
+            "emoji": "🥩",
+            "label": "Steak",
+            "translationPt": "Carne bovina / Bife"
           }
         ],
         "options": [
-          "Strawberry",
           "Pasta",
-          "Steak",
-          "Bakery"
+          "Strawberry",
+          "Bakery",
+          "Steak"
         ],
         "correctAnswer": "Bakery",
         "explanation": "Exemplo prático: \"Fresh warm bread is baked at the bakery.\"",
@@ -16089,11 +12627,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e6",
+        "id": "w0-p13-e5",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Bread",
         "visualEmoji": "🍞",
@@ -16102,19 +12637,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Fish Fillet",
             "emoji": "🐟",
             "label": "Fish Fillet",
-            "translationPt": "Filé de peixe (Peixaria)"
-          },
-          {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura"
+            "translationPt": "Filé de peixe"
           },
           {
             "text": "Bread",
             "emoji": "🍞",
             "label": "Bread",
             "translationPt": "Pão"
+          },
+          {
+            "text": "Carrot",
+            "emoji": "🥕",
+            "label": "Carrot",
+            "translationPt": "Cenoura"
           },
           {
             "text": "Coffee",
@@ -16125,8 +12660,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Fish Fillet",
-          "Carrot",
           "Bread",
+          "Carrot",
           "Coffee"
         ],
         "correctAnswer": "Bread",
@@ -16135,26 +12670,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-e7",
+        "id": "w0-p13-e6",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Cheese Bread",
         "visualEmoji": "🧀",
         "visualOptions": [
           {
-            "text": "Cheese Bread",
-            "emoji": "🧀",
-            "label": "Cheese Bread",
-            "translationPt": "Pão de queijo"
-          },
-          {
-            "text": "Roast Chicken",
-            "emoji": "🍗",
-            "label": "Roast Chicken",
-            "translationPt": "Frango"
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja"
           },
           {
             "text": "Onion",
@@ -16163,17 +12689,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cebola"
           },
           {
-            "text": "Orange",
-            "emoji": "🍊",
-            "label": "Orange",
-            "translationPt": "Laranja"
+            "text": "Roast Chicken",
+            "emoji": "🍗",
+            "label": "Roast Chicken",
+            "translationPt": "Frango"
+          },
+          {
+            "text": "Cheese Bread",
+            "emoji": "🧀",
+            "label": "Cheese Bread",
+            "translationPt": "Pão de queijo"
           }
         ],
         "options": [
-          "Cheese Bread",
-          "Roast Chicken",
+          "Orange",
           "Onion",
-          "Orange"
+          "Roast Chicken",
+          "Cheese Bread"
         ],
         "correctAnswer": "Cheese Bread",
         "explanation": "Exemplo prático: \"Warm Brazilian cheese bread from the bakery.\"",
@@ -16181,15 +12713,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e8",
+        "id": "w0-p13-e7",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Cake",
         "visualEmoji": "🍰",
         "visualOptions": [
+          {
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo confeitado"
+          },
           {
             "text": "Olive Oil",
             "emoji": "🫒",
@@ -16203,22 +12738,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cesta de compras"
           },
           {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo confeitado"
-          },
-          {
             "text": "Credit Card",
             "emoji": "💳",
             "label": "Credit Card",
-            "translationPt": "Cartão de crédito / débito (no caixa)"
+            "translationPt": "Cartão de crédito / débito"
           }
         ],
         "options": [
+          "Cake",
           "Olive Oil",
           "Basket",
-          "Cake",
           "Credit Card"
         ],
         "correctAnswer": "Cake",
@@ -16227,60 +12756,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p10-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p10-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p10-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p10-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p10-e10",
+        "id": "w0-p13-e8",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Rice",
         "visualEmoji": "🍚",
         "visualOptions": [
+          {
+            "text": "Bakery",
+            "emoji": "🥖",
+            "label": "Bakery",
+            "translationPt": "Balcão de padaria cheio de pães"
+          },
+          {
+            "text": "Supermarket",
+            "emoji": "🛒",
+            "label": "Supermarket",
+            "translationPt": "Corredor de supermercado completo"
+          },
           {
             "text": "Shopping Cart",
             "emoji": "🛒",
@@ -16292,25 +12785,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍚",
             "label": "Rice",
             "translationPt": "Arroz"
-          },
-          {
-            "text": "Bakery",
-            "emoji": "🥖",
-            "label": "Bakery",
-            "translationPt": "Padaria"
-          },
-          {
-            "text": "Supermarket",
-            "emoji": "🛒",
-            "label": "Supermarket",
-            "translationPt": "Supermercado"
           }
         ],
         "options": [
-          "Shopping Cart",
-          "Rice",
           "Bakery",
-          "Supermarket"
+          "Supermarket",
+          "Shopping Cart",
+          "Rice"
         ],
         "correctAnswer": "Rice",
         "explanation": "Exemplo prático: \"Put a bag of white rice in the shopping cart.\"",
@@ -16318,27 +12799,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-e11",
+        "id": "w0-p13-e9",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Beans",
         "visualEmoji": "🫘",
         "visualOptions": [
-          {
-            "text": "Money",
-            "emoji": "💵",
-            "label": "Money",
-            "translationPt": "Dinheiro em espécie"
-          },
-          {
-            "text": "Papaya",
-            "emoji": "🧡",
-            "label": "Papaya",
-            "translationPt": "Mamão"
-          },
           {
             "text": "Pineapple",
             "emoji": "🍍",
@@ -16346,17 +12812,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Abacaxi"
           },
           {
+            "text": "Money",
+            "emoji": "💵",
+            "label": "Money",
+            "translationPt": "Dinheiro em cédulas"
+          },
+          {
             "text": "Beans",
             "emoji": "🫘",
             "label": "Beans",
             "translationPt": "Feijão"
+          },
+          {
+            "text": "Papaya",
+            "emoji": "🧡",
+            "label": "Papaya",
+            "translationPt": "Mamão"
           }
         ],
         "options": [
-          "Money",
-          "Papaya",
           "Pineapple",
-          "Beans"
+          "Money",
+          "Beans",
+          "Papaya"
         ],
         "correctAnswer": "Beans",
         "explanation": "Exemplo prático: \"Rice and beans are essentials on the grocery list.\"",
@@ -16364,11 +12842,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e12",
+        "id": "w0-p13-e10",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pasta",
         "visualEmoji": "🍝",
@@ -16410,15 +12885,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e13",
+        "id": "w0-p13-e11",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Steak",
         "visualEmoji": "🥩",
         "visualOptions": [
+          {
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo confeitado"
+          },
+          {
+            "text": "Steak",
+            "emoji": "🥩",
+            "label": "Steak",
+            "translationPt": "Carne bovina / Bife"
+          },
           {
             "text": "Orange",
             "emoji": "🍊",
@@ -16430,25 +12914,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧅",
             "label": "Onion",
             "translationPt": "Cebola"
-          },
-          {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo confeitado"
-          },
-          {
-            "text": "Steak",
-            "emoji": "🥩",
-            "label": "Steak",
-            "translationPt": "Carne bovina / Bife (Açougue)"
           }
         ],
         "options": [
-          "Orange",
-          "Onion",
           "Cake",
-          "Steak"
+          "Steak",
+          "Orange",
+          "Onion"
         ],
         "correctAnswer": "Steak",
         "explanation": "Exemplo prático: \"Choose fresh beef steak at the butcher counter.\"",
@@ -16456,66 +12928,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p10-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p10-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p10-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p10-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p10-e15",
+        "id": "w0-p13-e12",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Roast Chicken",
         "visualEmoji": "🍗",
         "visualOptions": [
-          {
-            "text": "Basket",
-            "emoji": "🧺",
-            "label": "Basket",
-            "translationPt": "Cesta de compras"
-          },
           {
             "text": "Bread",
             "emoji": "🍞",
@@ -16529,16 +12947,22 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Frango"
           },
           {
+            "text": "Basket",
+            "emoji": "🧺",
+            "label": "Basket",
+            "translationPt": "Cesta de compras"
+          },
+          {
             "text": "Bakery",
             "emoji": "🥖",
             "label": "Bakery",
-            "translationPt": "Padaria"
+            "translationPt": "Balcão de padaria cheio de pães"
           }
         ],
         "options": [
-          "Basket",
           "Bread",
           "Roast Chicken",
+          "Basket",
           "Bakery"
         ],
         "correctAnswer": "Roast Chicken",
@@ -16547,20 +12971,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e16",
+        "id": "w0-p13-e13",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fish Fillet",
         "visualEmoji": "🐟",
         "visualOptions": [
           {
-            "text": "Fish Fillet",
-            "emoji": "🐟",
-            "label": "Fish Fillet",
-            "translationPt": "Filé de peixe (Peixaria)"
+            "text": "Broccoli",
+            "emoji": "🥦",
+            "label": "Broccoli",
+            "translationPt": "Brócolis"
           },
           {
             "text": "Rice",
@@ -16569,23 +12990,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Arroz"
           },
           {
-            "text": "Broccoli",
-            "emoji": "🥦",
-            "label": "Broccoli",
-            "translationPt": "Brócolis"
-          },
-          {
             "text": "Beans",
             "emoji": "🫘",
             "label": "Beans",
             "translationPt": "Feijão"
+          },
+          {
+            "text": "Fish Fillet",
+            "emoji": "🐟",
+            "label": "Fish Fillet",
+            "translationPt": "Filé de peixe"
           }
         ],
         "options": [
-          "Fish Fillet",
-          "Rice",
           "Broccoli",
-          "Beans"
+          "Rice",
+          "Beans",
+          "Fish Fillet"
         ],
         "correctAnswer": "Fish Fillet",
         "explanation": "Exemplo prático: \"Fresh fish fillet from the seafood counter.\"",
@@ -16593,27 +13014,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e17",
+        "id": "w0-p13-e14",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Banana",
         "visualEmoji": "🍌",
         "visualOptions": [
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate"
-          },
-          {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana (Hortifrúti)"
-          },
           {
             "text": "Watermelon",
             "emoji": "🍉",
@@ -16625,13 +13031,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🫒",
             "label": "Olive Oil",
             "translationPt": "Azeite de oliva"
+          },
+          {
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
+          },
+          {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate"
           }
         ],
         "options": [
-          "Tomato",
-          "Banana",
           "Watermelon",
-          "Olive Oil"
+          "Olive Oil",
+          "Banana",
+          "Tomato"
         ],
         "correctAnswer": "Banana",
         "explanation": "Exemplo prático: \"Pick a bunch of ripe yellow bananas.\"",
@@ -16639,26 +13057,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-e18",
+        "id": "w0-p13-e15",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Orange",
         "visualEmoji": "🍊",
         "visualOptions": [
           {
-            "text": "Papaya",
-            "emoji": "🧡",
-            "label": "Papaya",
-            "translationPt": "Mamão"
-          },
-          {
             "text": "Orange",
             "emoji": "🍊",
             "label": "Orange",
             "translationPt": "Laranja"
+          },
+          {
+            "text": "Papaya",
+            "emoji": "🧡",
+            "label": "Papaya",
+            "translationPt": "Mamão"
           },
           {
             "text": "Pineapple",
@@ -16674,8 +13089,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Papaya",
           "Orange",
+          "Papaya",
           "Pineapple",
           "Pasta"
         ],
@@ -16685,66 +13100,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p10-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p10-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p10-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p10-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p10-e20",
+        "id": "w0-p13-e16",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Strawberry",
         "visualEmoji": "🍓",
         "visualOptions": [
-          {
-            "text": "Cheese Bread",
-            "emoji": "🧀",
-            "label": "Cheese Bread",
-            "translationPt": "Pão de queijo"
-          },
           {
             "text": "Cake",
             "emoji": "🍰",
@@ -16762,13 +13123,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍓",
             "label": "Strawberry",
             "translationPt": "Morango"
+          },
+          {
+            "text": "Cheese Bread",
+            "emoji": "🧀",
+            "label": "Cheese Bread",
+            "translationPt": "Pão de queijo"
           }
         ],
         "options": [
-          "Cheese Bread",
           "Cake",
           "Carrot",
-          "Strawberry"
+          "Strawberry",
+          "Cheese Bread"
         ],
         "correctAnswer": "Strawberry",
         "explanation": "Exemplo prático: \"A box of red strawberries from the market.\"",
@@ -16776,26 +13143,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e21",
+        "id": "w0-p13-e17",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Grape",
         "visualEmoji": "🍇",
         "visualOptions": [
           {
-            "text": "Fish Fillet",
-            "emoji": "🐟",
-            "label": "Fish Fillet",
-            "translationPt": "Filé de peixe (Peixaria)"
-          },
-          {
-            "text": "Roast Chicken",
-            "emoji": "🍗",
-            "label": "Roast Chicken",
-            "translationPt": "Frango"
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café"
           },
           {
             "text": "Grape",
@@ -16804,17 +13162,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Uva"
           },
           {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café"
+            "text": "Fish Fillet",
+            "emoji": "🐟",
+            "label": "Fish Fillet",
+            "translationPt": "Filé de peixe"
+          },
+          {
+            "text": "Roast Chicken",
+            "emoji": "🍗",
+            "label": "Roast Chicken",
+            "translationPt": "Frango"
           }
         ],
         "options": [
-          "Fish Fillet",
-          "Roast Chicken",
+          "Coffee",
           "Grape",
-          "Coffee"
+          "Fish Fillet",
+          "Roast Chicken"
         ],
         "correctAnswer": "Grape",
         "explanation": "Exemplo prático: \"Sweet purple grapes in the produce section.\"",
@@ -16822,45 +13186,42 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-e22",
+        "id": "w0-p13-e18",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Watermelon",
         "visualEmoji": "🍉",
         "visualOptions": [
           {
-            "text": "Watermelon",
-            "emoji": "🍉",
-            "label": "Watermelon",
-            "translationPt": "Melancia"
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
           },
           {
             "text": "Credit Card",
             "emoji": "💳",
             "label": "Credit Card",
-            "translationPt": "Cartão de crédito / débito (no caixa)"
-          },
-          {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana (Hortifrúti)"
+            "translationPt": "Cartão de crédito / débito"
           },
           {
             "text": "Supermarket",
             "emoji": "🛒",
             "label": "Supermarket",
-            "translationPt": "Supermercado"
+            "translationPt": "Corredor de supermercado completo"
+          },
+          {
+            "text": "Watermelon",
+            "emoji": "🍉",
+            "label": "Watermelon",
+            "translationPt": "Melancia"
           }
         ],
         "options": [
-          "Watermelon",
-          "Credit Card",
           "Banana",
-          "Supermarket"
+          "Credit Card",
+          "Supermarket",
+          "Watermelon"
         ],
         "correctAnswer": "Watermelon",
         "explanation": "Exemplo prático: \"A large green watermelon with red flesh.\"",
@@ -16868,27 +13229,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e23",
+        "id": "w0-p13-e19",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pineapple",
         "visualEmoji": "🍍",
         "visualOptions": [
-          {
-            "text": "Shopping Cart",
-            "emoji": "🛒",
-            "label": "Shopping Cart",
-            "translationPt": "Carrinho de supermercado"
-          },
-          {
-            "text": "Money",
-            "emoji": "💵",
-            "label": "Money",
-            "translationPt": "Dinheiro em espécie"
-          },
           {
             "text": "Pineapple",
             "emoji": "🍍",
@@ -16899,14 +13245,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Steak",
             "emoji": "🥩",
             "label": "Steak",
-            "translationPt": "Carne bovina / Bife (Açougue)"
+            "translationPt": "Carne bovina / Bife"
+          },
+          {
+            "text": "Money",
+            "emoji": "💵",
+            "label": "Money",
+            "translationPt": "Dinheiro em cédulas"
+          },
+          {
+            "text": "Shopping Cart",
+            "emoji": "🛒",
+            "label": "Shopping Cart",
+            "translationPt": "Carrinho de supermercado"
           }
         ],
         "options": [
-          "Shopping Cart",
-          "Money",
           "Pineapple",
-          "Steak"
+          "Steak",
+          "Money",
+          "Shopping Cart"
         ],
         "correctAnswer": "Pineapple",
         "explanation": "Exemplo prático: \"Smell the ripe pineapple to see if it is sweet.\"",
@@ -16914,71 +13272,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p10-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p10-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p10-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p10-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p10-e25",
+        "id": "w0-p13-e20",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Papaya",
         "visualEmoji": "🧡",
         "visualOptions": [
           {
-            "text": "Bakery",
-            "emoji": "🥖",
-            "label": "Bakery",
-            "translationPt": "Padaria"
-          },
-          {
-            "text": "Papaya",
-            "emoji": "🧡",
-            "label": "Papaya",
-            "translationPt": "Mamão"
+            "text": "Basket",
+            "emoji": "🧺",
+            "label": "Basket",
+            "translationPt": "Cesta de compras"
           },
           {
             "text": "Garlic",
@@ -16987,17 +13291,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Alho"
           },
           {
-            "text": "Basket",
-            "emoji": "🧺",
-            "label": "Basket",
-            "translationPt": "Cesta de compras"
+            "text": "Bakery",
+            "emoji": "🥖",
+            "label": "Bakery",
+            "translationPt": "Balcão de padaria cheio de pães"
+          },
+          {
+            "text": "Papaya",
+            "emoji": "🧡",
+            "label": "Papaya",
+            "translationPt": "Mamão"
           }
         ],
         "options": [
-          "Bakery",
-          "Papaya",
+          "Basket",
           "Garlic",
-          "Basket"
+          "Bakery",
+          "Papaya"
         ],
         "correctAnswer": "Papaya",
         "explanation": "Exemplo prático: \"Ripe papaya for tomorrow morning breakfast.\"",
@@ -17005,21 +13315,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-e26",
+        "id": "w0-p13-e21",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Tomato",
         "visualEmoji": "🍅",
         "visualOptions": [
-          {
-            "text": "Pasta",
-            "emoji": "🍝",
-            "label": "Pasta",
-            "translationPt": "Macarrão"
-          },
           {
             "text": "Grape",
             "emoji": "🍇",
@@ -17037,13 +13338,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍅",
             "label": "Tomato",
             "translationPt": "Tomate"
+          },
+          {
+            "text": "Pasta",
+            "emoji": "🍝",
+            "label": "Pasta",
+            "translationPt": "Macarrão"
           }
         ],
         "options": [
-          "Pasta",
           "Grape",
           "Strawberry",
-          "Tomato"
+          "Tomato",
+          "Pasta"
         ],
         "correctAnswer": "Tomato",
         "explanation": "Exemplo prático: \"Red tomatoes for the salad and sauce.\"",
@@ -17051,11 +13358,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e27",
+        "id": "w0-p13-e22",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Potato",
         "visualEmoji": "🥔",
@@ -17067,29 +13371,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Batata"
           },
           {
+            "text": "Cheese Bread",
+            "emoji": "🧀",
+            "label": "Cheese Bread",
+            "translationPt": "Pão de queijo"
+          },
+          {
             "text": "Fish Fillet",
             "emoji": "🐟",
             "label": "Fish Fillet",
-            "translationPt": "Filé de peixe (Peixaria)"
+            "translationPt": "Filé de peixe"
           },
           {
             "text": "Cake",
             "emoji": "🍰",
             "label": "Cake",
             "translationPt": "Bolo confeitado"
-          },
-          {
-            "text": "Cheese Bread",
-            "emoji": "🧀",
-            "label": "Cheese Bread",
-            "translationPt": "Pão de queijo"
           }
         ],
         "options": [
           "Potato",
+          "Cheese Bread",
           "Fish Fillet",
-          "Cake",
-          "Cheese Bread"
+          "Cake"
         ],
         "correctAnswer": "Potato",
         "explanation": "Exemplo prático: \"Wash and peel the yellow potatoes.\"",
@@ -17097,21 +13401,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e28",
+        "id": "w0-p13-e23",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Carrot",
         "visualEmoji": "🥕",
         "visualOptions": [
-          {
-            "text": "Rice",
-            "emoji": "🍚",
-            "label": "Rice",
-            "translationPt": "Arroz"
-          },
           {
             "text": "Orange",
             "emoji": "🍊",
@@ -17119,23 +13414,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Laranja"
           },
           {
-            "text": "Roast Chicken",
-            "emoji": "🍗",
-            "label": "Roast Chicken",
-            "translationPt": "Frango"
-          },
-          {
             "text": "Carrot",
             "emoji": "🥕",
             "label": "Carrot",
             "translationPt": "Cenoura"
+          },
+          {
+            "text": "Rice",
+            "emoji": "🍚",
+            "label": "Rice",
+            "translationPt": "Arroz"
+          },
+          {
+            "text": "Roast Chicken",
+            "emoji": "🍗",
+            "label": "Roast Chicken",
+            "translationPt": "Frango"
           }
         ],
         "options": [
-          "Rice",
           "Orange",
-          "Roast Chicken",
-          "Carrot"
+          "Carrot",
+          "Rice",
+          "Roast Chicken"
         ],
         "correctAnswer": "Carrot",
         "explanation": "Exemplo prático: \"Crunchy orange carrots from the market.\"",
@@ -17143,71 +13444,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p10-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p10-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p10-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p10-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p10-e30",
+        "id": "w0-p13-e24",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Onion",
         "visualEmoji": "🧅",
         "visualOptions": [
           {
-            "text": "Beans",
-            "emoji": "🫘",
-            "label": "Beans",
-            "translationPt": "Feijão"
-          },
-          {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana (Hortifrúti)"
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
           },
           {
             "text": "Onion",
@@ -17216,17 +13463,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cebola"
           },
           {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana"
+          },
+          {
+            "text": "Beans",
+            "emoji": "🫘",
+            "label": "Beans",
+            "translationPt": "Feijão"
           }
         ],
         "options": [
-          "Beans",
-          "Banana",
+          "Bread",
           "Onion",
-          "Bread"
+          "Banana",
+          "Beans"
         ],
         "correctAnswer": "Onion",
         "explanation": "Exemplo prático: \"Yellow onions and garlic for seasoning.\"",
@@ -17234,26 +13487,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e31",
+        "id": "w0-p13-e25",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Garlic",
         "visualEmoji": "🧄",
         "visualOptions": [
           {
-            "text": "Garlic",
-            "emoji": "🧄",
-            "label": "Garlic",
-            "translationPt": "Alho"
+            "text": "Watermelon",
+            "emoji": "🍉",
+            "label": "Watermelon",
+            "translationPt": "Melancia"
           },
           {
             "text": "Credit Card",
             "emoji": "💳",
             "label": "Credit Card",
-            "translationPt": "Cartão de crédito / débito (no caixa)"
+            "translationPt": "Cartão de crédito / débito"
           },
           {
             "text": "Tomato",
@@ -17262,17 +13512,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tomate"
           },
           {
-            "text": "Watermelon",
-            "emoji": "🍉",
-            "label": "Watermelon",
-            "translationPt": "Melancia"
+            "text": "Garlic",
+            "emoji": "🧄",
+            "label": "Garlic",
+            "translationPt": "Alho"
           }
         ],
         "options": [
-          "Garlic",
+          "Watermelon",
           "Credit Card",
           "Tomato",
-          "Watermelon"
+          "Garlic"
         ],
         "correctAnswer": "Garlic",
         "explanation": "Exemplo prático: \"A whole bulb of white garlic.\"",
@@ -17280,32 +13530,29 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e32",
+        "id": "w0-p13-e26",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Broccoli",
         "visualEmoji": "🥦",
         "visualOptions": [
           {
+            "text": "Grape",
+            "emoji": "🍇",
+            "label": "Grape",
+            "translationPt": "Uva"
+          },
+          {
             "text": "Supermarket",
             "emoji": "🛒",
             "label": "Supermarket",
-            "translationPt": "Supermercado"
+            "translationPt": "Corredor de supermercado completo"
           },
           {
             "text": "Broccoli",
             "emoji": "🥦",
             "label": "Broccoli",
             "translationPt": "Brócolis"
-          },
-          {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva"
           },
           {
             "text": "Potato",
@@ -17315,9 +13562,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Grape",
           "Supermarket",
           "Broccoli",
-          "Grape",
           "Potato"
         ],
         "correctAnswer": "Broccoli",
@@ -17326,21 +13573,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-e33",
+        "id": "w0-p13-e27",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Coffee",
         "visualEmoji": "☕",
         "visualOptions": [
-          {
-            "text": "Steak",
-            "emoji": "🥩",
-            "label": "Steak",
-            "translationPt": "Carne bovina / Bife (Açougue)"
-          },
           {
             "text": "Coffee",
             "emoji": "☕",
@@ -17354,6 +13592,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Abacaxi"
           },
           {
+            "text": "Steak",
+            "emoji": "🥩",
+            "label": "Steak",
+            "translationPt": "Carne bovina / Bife"
+          },
+          {
             "text": "Shopping Cart",
             "emoji": "🛒",
             "label": "Shopping Cart",
@@ -17361,9 +13605,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Steak",
           "Coffee",
           "Pineapple",
+          "Steak",
           "Shopping Cart"
         ],
         "correctAnswer": "Coffee",
@@ -17372,72 +13616,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p10-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p10-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p10-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p10-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p10-e35",
+        "id": "w0-p13-e28",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Olive Oil",
         "visualEmoji": "🫒",
         "visualOptions": [
-          {
-            "text": "Papaya",
-            "emoji": "🧡",
-            "label": "Papaya",
-            "translationPt": "Mamão"
-          },
-          {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura"
-          },
           {
             "text": "Onion",
             "emoji": "🧅",
@@ -17445,17 +13629,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cebola"
           },
           {
+            "text": "Papaya",
+            "emoji": "🧡",
+            "label": "Papaya",
+            "translationPt": "Mamão"
+          },
+          {
             "text": "Olive Oil",
             "emoji": "🫒",
             "label": "Olive Oil",
             "translationPt": "Azeite de oliva"
+          },
+          {
+            "text": "Carrot",
+            "emoji": "🥕",
+            "label": "Carrot",
+            "translationPt": "Cenoura"
           }
         ],
         "options": [
-          "Papaya",
-          "Carrot",
           "Onion",
-          "Olive Oil"
+          "Papaya",
+          "Olive Oil",
+          "Carrot"
         ],
         "correctAnswer": "Olive Oil",
         "explanation": "Exemplo prático: \"A glass bottle of extra virgin olive oil.\"",
@@ -17463,21 +13659,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e36",
+        "id": "w0-p13-e29",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Credit Card",
         "visualEmoji": "💳",
         "visualOptions": [
-          {
-            "text": "Garlic",
-            "emoji": "🧄",
-            "label": "Garlic",
-            "translationPt": "Alho"
-          },
           {
             "text": "Basket",
             "emoji": "🧺",
@@ -17488,20 +13675,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Credit Card",
             "emoji": "💳",
             "label": "Credit Card",
-            "translationPt": "Cartão de crédito / débito (no caixa)"
+            "translationPt": "Cartão de crédito / débito"
           },
           {
             "text": "Bakery",
             "emoji": "🥖",
             "label": "Bakery",
-            "translationPt": "Padaria"
+            "translationPt": "Balcão de padaria cheio de pães"
+          },
+          {
+            "text": "Garlic",
+            "emoji": "🧄",
+            "label": "Garlic",
+            "translationPt": "Alho"
           }
         ],
         "options": [
-          "Garlic",
           "Basket",
           "Credit Card",
-          "Bakery"
+          "Bakery",
+          "Garlic"
         ],
         "correctAnswer": "Credit Card",
         "explanation": "Exemplo prático: \"Pay for the groceries with a credit card.\"",
@@ -17509,26 +13702,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p10-e37",
+        "id": "w0-p13-e30",
         "type": "image-choice",
-        "conceptTitle": "No Supermercado, Hortifrúti, Padaria & Caixa • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Money",
         "visualEmoji": "💵",
         "visualOptions": [
           {
-            "text": "Money",
-            "emoji": "💵",
-            "label": "Money",
-            "translationPt": "Dinheiro em espécie"
-          },
-          {
             "text": "Potato",
             "emoji": "🥔",
             "label": "Potato",
             "translationPt": "Batata"
+          },
+          {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão"
           },
           {
             "text": "Broccoli",
@@ -17537,75 +13727,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Brócolis"
           },
           {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão"
+            "text": "Money",
+            "emoji": "💵",
+            "label": "Money",
+            "translationPt": "Dinheiro em cédulas"
           }
         ],
         "options": [
-          "Money",
           "Potato",
+          "Bread",
           "Broccoli",
-          "Bread"
+          "Money"
         ],
         "correctAnswer": "Money",
         "explanation": "Exemplo prático: \"Count your change in paper money and coins.\"",
         "phoneticHint": "/ˈmʌn.i/",
         "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p10-pron-8",
-        "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
-        "pairs": [
-          {
-            "id": "w0-p10-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
-          },
-          {
-            "id": "w0-p10-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
-          },
-          {
-            "id": "w0-p10-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
-          },
-          {
-            "id": "w0-p10-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
-        "skillCategory": "grammar"
       }
     ]
   },
   {
-    "id": "w0-p11",
+    "id": "w0-p14",
     "worldId": 0,
-    "phaseNumber": 11,
-    "title": "Ambiente 11 • Na Igreja, Música, Comunidade & Celebração",
+    "phaseNumber": 14,
+    "title": "Vocabulário 11 • Na Igreja, Música, Comunidade & Celebração",
     "subtitle": "Ambiente 11/12 • Igreja, sino, cruz, vitral, bancos, altar, Bíblia, vela, instrumentos e trajes",
     "pedagogicalObjective": "Reconhecer todos os elementos arquitetônicos, objetos litúrgicos, instrumentos musicais e vestimentas encontrados na igreja e em celebrações comunitárias.",
     "type": "lesson",
@@ -17613,51 +13758,48 @@ export const WORLD_0_PHASES: Phase[] = [
     "cefrLevel": "A1",
     "theorySummary": [
       "Continuando nosso passeio pelos locais do cotidiano, visitamos a Igreja (Church)!",
-      "Olhe para a arquitetura e o interior do templo: a Igreja (Church), o Sino da Torre (Church Bell), a Cruz (Cross), o Vitral Colorido (Stained Glass), os Bancos da Igreja (Church Pew), o Altar (Altar), o Púlpito (Pulpit), a Bíblia (Bible) e a Vela (Candle).",
-      "Na parte musical e comunitária vemos o Microfone (Microphone), o Violão (Guitar), o Piano / Teclado (Piano), o Violino (Violin), a Flauta (Flute), o Terno (Suit), a Gravata (Necktie) e a Aliança (Ring)!"
+      "Olhe para a arquitetura e o interior do templo: a Igreja (Church), o Sino da Torre (Church Bell), a Cruz (Cross), o Vitral Colorido na parede (Stained Glass), os Bancos da Igreja (Church Pew), o Altar (Altar), o Púlpito (Pulpit), a Bíblia (Bible) e a Vela (Candle).",
+      "Na parte musical e comunitária vemos o Microfone, o Violão, o Piano, o Violino, a Flauta, o Terno, a Gravata e a Aliança!"
     ],
     "xpReward": 50,
     "gemsReward": 20,
     "exercises": [
       {
-        "id": "w0-p11-e1",
+        "id": "w0-p14-e1",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Church",
         "visualEmoji": "⛪",
         "visualOptions": [
           {
+            "text": "Heart",
+            "emoji": "❤️",
+            "label": "Heart",
+            "translationPt": "Coração"
+          },
+          {
             "text": "Bible",
             "emoji": "📖",
             "label": "Bible",
-            "translationPt": "Bíblia Sagrada"
+            "translationPt": "Bíblia Sagrada aberta"
           },
           {
             "text": "Church",
             "emoji": "⛪",
             "label": "Church",
-            "translationPt": "Igreja / Templo"
-          },
-          {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração (amor e caridade)"
+            "translationPt": "Igreja completa (fachada e torre)"
           },
           {
             "text": "Handshake",
             "emoji": "🤝",
             "label": "Handshake",
-            "translationPt": "Aperto de mão / Cumprimento fraterno"
+            "translationPt": "Aperto de mão / Cumprimento"
           }
         ],
         "options": [
+          "Heart",
           "Bible",
           "Church",
-          "Heart",
           "Handshake"
         ],
         "correctAnswer": "Church",
@@ -17666,32 +13808,29 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e2",
+        "id": "w0-p14-e2",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Church Bell",
         "visualEmoji": "🔔",
         "visualOptions": [
           {
-            "text": "Ring",
-            "emoji": "💍",
-            "label": "Ring",
-            "translationPt": "Aliança / Anel de ouro"
-          },
-          {
             "text": "Church Bell",
             "emoji": "🔔",
             "label": "Church Bell",
-            "translationPt": "Sino da igreja"
+            "translationPt": "Sino no campanário da igreja"
           },
           {
             "text": "Necklace",
             "emoji": "📿",
             "label": "Necklace",
             "translationPt": "Colar / Correntinha"
+          },
+          {
+            "text": "Ring",
+            "emoji": "💍",
+            "label": "Ring",
+            "translationPt": "Aliança / Anel de ouro"
           },
           {
             "text": "Necktie",
@@ -17701,9 +13840,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Ring",
           "Church Bell",
           "Necklace",
+          "Ring",
           "Necktie"
         ],
         "correctAnswer": "Church Bell",
@@ -17712,20 +13851,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e3",
+        "id": "w0-p14-e3",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Cross",
         "visualEmoji": "✝️",
         "visualOptions": [
           {
-            "text": "Gift",
-            "emoji": "🎁",
-            "label": "Gift",
-            "translationPt": "Presente / Doação comunitária"
+            "text": "Drum",
+            "emoji": "🥁",
+            "label": "Drum",
+            "translationPt": "Bateria / Tambor"
           },
           {
             "text": "Guitar",
@@ -17734,23 +13870,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Violão acústico"
           },
           {
-            "text": "Drum",
-            "emoji": "🥁",
-            "label": "Drum",
-            "translationPt": "Bateria / Tambor"
-          },
-          {
             "text": "Cross",
             "emoji": "✝️",
             "label": "Cross",
             "translationPt": "Cruz"
+          },
+          {
+            "text": "Gift",
+            "emoji": "🎁",
+            "label": "Gift",
+            "translationPt": "Presente / Doação"
           }
         ],
         "options": [
-          "Gift",
-          "Guitar",
           "Drum",
-          "Cross"
+          "Guitar",
+          "Cross",
+          "Gift"
         ],
         "correctAnswer": "Cross",
         "explanation": "Exemplo prático: \"A wooden cross stands above the church altar.\"",
@@ -17758,66 +13894,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p11-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p11-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p11-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p11-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p11-e5",
+        "id": "w0-p14-e4",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Stained Glass",
         "visualEmoji": "🪟",
         "visualOptions": [
-          {
-            "text": "Star",
-            "emoji": "⭐",
-            "label": "Star",
-            "translationPt": "Estrela guia"
-          },
           {
             "text": "Suit",
             "emoji": "🤵",
@@ -17828,7 +13910,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Stained Glass",
             "emoji": "🪟",
             "label": "Stained Glass",
-            "translationPt": "Vitral colorido da igreja"
+            "translationPt": "Vitral colorido na parede da igreja"
+          },
+          {
+            "text": "Star",
+            "emoji": "⭐",
+            "label": "Star",
+            "translationPt": "Estrela"
           },
           {
             "text": "Violin",
@@ -17838,9 +13926,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Star",
           "Suit",
           "Stained Glass",
+          "Star",
           "Violin"
         ],
         "correctAnswer": "Stained Glass",
@@ -17849,20 +13937,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e6",
+        "id": "w0-p14-e5",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Church Pew",
         "visualEmoji": "🪑",
         "visualOptions": [
           {
-            "text": "Church Pew",
-            "emoji": "🪑",
-            "label": "Church Pew",
-            "translationPt": "Banco de madeira da igreja"
+            "text": "Church",
+            "emoji": "⛪",
+            "label": "Church",
+            "translationPt": "Igreja completa (fachada e torre)"
+          },
+          {
+            "text": "Candle",
+            "emoji": "🕯️",
+            "label": "Candle",
+            "translationPt": "Vela acesa"
           },
           {
             "text": "Flute",
@@ -17871,23 +13962,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Flauta musical"
           },
           {
-            "text": "Church",
-            "emoji": "⛪",
-            "label": "Church",
-            "translationPt": "Igreja / Templo"
-          },
-          {
-            "text": "Candle",
-            "emoji": "🕯️",
-            "label": "Candle",
-            "translationPt": "Vela acesa"
+            "text": "Church Pew",
+            "emoji": "🪑",
+            "label": "Church Pew",
+            "translationPt": "Bancos de madeira na igreja"
           }
         ],
         "options": [
-          "Church Pew",
-          "Flute",
           "Church",
-          "Candle"
+          "Candle",
+          "Flute",
+          "Church Pew"
         ],
         "correctAnswer": "Church Pew",
         "explanation": "Exemplo prático: \"The congregation sits on the long wooden church pews.\"",
@@ -17895,20 +13980,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e7",
+        "id": "w0-p14-e6",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Altar",
         "visualEmoji": "🕯️",
         "visualOptions": [
           {
-            "text": "Rainbow",
-            "emoji": "🌈",
-            "label": "Rainbow",
-            "translationPt": "Arco-íris no céu"
+            "text": "Altar",
+            "emoji": "🕯️",
+            "label": "Altar",
+            "translationPt": "Altar completo na igreja"
+          },
+          {
+            "text": "Church Bell",
+            "emoji": "🔔",
+            "label": "Church Bell",
+            "translationPt": "Sino no campanário da igreja"
           },
           {
             "text": "Crown",
@@ -17917,23 +14005,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Coroa dourada"
           },
           {
-            "text": "Altar",
-            "emoji": "🕯️",
-            "label": "Altar",
-            "translationPt": "Altar da igreja"
-          },
-          {
-            "text": "Church Bell",
-            "emoji": "🔔",
-            "label": "Church Bell",
-            "translationPt": "Sino da igreja"
+            "text": "Rainbow",
+            "emoji": "🌈",
+            "label": "Rainbow",
+            "translationPt": "Arco-íris no céu"
           }
         ],
         "options": [
-          "Rainbow",
-          "Crown",
           "Altar",
-          "Church Bell"
+          "Church Bell",
+          "Crown",
+          "Rainbow"
         ],
         "correctAnswer": "Altar",
         "explanation": "Exemplo prático: \"White flowers and candles decorate the church altar.\"",
@@ -17941,27 +14023,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e8",
+        "id": "w0-p14-e7",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Pulpit",
         "visualEmoji": "📖",
         "visualOptions": [
-          {
-            "text": "Chandelier",
-            "emoji": "💡",
-            "label": "Chandelier",
-            "translationPt": "Lustre clássico do templo"
-          },
-          {
-            "text": "Pulpit",
-            "emoji": "📖",
-            "label": "Pulpit",
-            "translationPt": "Púlpito / Tribuna de leitura"
-          },
           {
             "text": "Cross",
             "emoji": "✝️",
@@ -17969,17 +14036,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cruz"
           },
           {
+            "text": "Chandelier",
+            "emoji": "💡",
+            "label": "Chandelier",
+            "translationPt": "Lustre aceso no teto da igreja"
+          },
+          {
             "text": "Piano",
             "emoji": "🎹",
             "label": "Piano",
             "translationPt": "Piano / Teclado musical"
+          },
+          {
+            "text": "Pulpit",
+            "emoji": "📖",
+            "label": "Pulpit",
+            "translationPt": "Púlpito / Tribuna no altar"
           }
         ],
         "options": [
-          "Chandelier",
-          "Pulpit",
           "Cross",
-          "Piano"
+          "Chandelier",
+          "Piano",
+          "Pulpit"
         ],
         "correctAnswer": "Pulpit",
         "explanation": "Exemplo prático: \"The speaker reads from the Bible at the wooden pulpit.\"",
@@ -17987,90 +14066,42 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p11-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p11-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p11-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p11-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p11-e10",
+        "id": "w0-p14-e8",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Bible",
         "visualEmoji": "📖",
         "visualOptions": [
           {
-            "text": "Wine Glass",
-            "emoji": "🍷",
-            "label": "Wine Glass",
-            "translationPt": "Cálice / Taça"
-          },
-          {
             "text": "Stained Glass",
             "emoji": "🪟",
             "label": "Stained Glass",
-            "translationPt": "Vitral colorido da igreja"
+            "translationPt": "Vitral colorido na parede da igreja"
           },
           {
             "text": "Wheelchair",
             "emoji": "♿",
             "label": "Wheelchair",
-            "translationPt": "Cadeira de rodas (Acessibilidade)"
+            "translationPt": "Cadeira de rodas"
           },
           {
             "text": "Bible",
             "emoji": "📖",
             "label": "Bible",
-            "translationPt": "Bíblia Sagrada"
+            "translationPt": "Bíblia Sagrada aberta"
+          },
+          {
+            "text": "Wine Glass",
+            "emoji": "🍷",
+            "label": "Wine Glass",
+            "translationPt": "Cálice / Taça"
           }
         ],
         "options": [
-          "Wine Glass",
           "Stained Glass",
           "Wheelchair",
-          "Bible"
+          "Bible",
+          "Wine Glass"
         ],
         "correctAnswer": "Bible",
         "explanation": "Exemplo prático: \"Read a chapter from the Holy Bible.\"",
@@ -18078,11 +14109,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e11",
+        "id": "w0-p14-e9",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Candle",
         "visualEmoji": "🕯️",
@@ -18094,28 +14122,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vela acesa"
           },
           {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua no céu noturno"
-          },
-          {
             "text": "Dove",
             "emoji": "🕊️",
             "label": "Dove",
             "translationPt": "Pomba branca da paz"
           },
           {
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua no céu"
+          },
+          {
             "text": "Church Pew",
             "emoji": "🪑",
             "label": "Church Pew",
-            "translationPt": "Banco de madeira da igreja"
+            "translationPt": "Bancos de madeira na igreja"
           }
         ],
         "options": [
           "Candle",
-          "Moon",
           "Dove",
+          "Moon",
           "Church Pew"
         ],
         "correctAnswer": "Candle",
@@ -18124,45 +14152,42 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e12",
+        "id": "w0-p14-e10",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Microphone",
         "visualEmoji": "🎤",
         "visualOptions": [
           {
-            "text": "Star",
-            "emoji": "⭐",
-            "label": "Star",
-            "translationPt": "Estrela guia"
-          },
-          {
             "text": "Altar",
             "emoji": "🕯️",
             "label": "Altar",
-            "translationPt": "Altar da igreja"
+            "translationPt": "Altar completo na igreja"
+          },
+          {
+            "text": "Microphone",
+            "emoji": "🎤",
+            "label": "Microphone",
+            "translationPt": "Microfone no pedestal"
+          },
+          {
+            "text": "Star",
+            "emoji": "⭐",
+            "label": "Star",
+            "translationPt": "Estrela"
           },
           {
             "text": "Violin",
             "emoji": "🎻",
             "label": "Violin",
             "translationPt": "Violino"
-          },
-          {
-            "text": "Microphone",
-            "emoji": "🎤",
-            "label": "Microphone",
-            "translationPt": "Microfone do altar / coral"
           }
         ],
         "options": [
-          "Star",
           "Altar",
-          "Violin",
-          "Microphone"
+          "Microphone",
+          "Star",
+          "Violin"
         ],
         "correctAnswer": "Microphone",
         "explanation": "Exemplo prático: \"Speak clearly into the stand microphone.\"",
@@ -18170,15 +14195,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e13",
+        "id": "w0-p14-e11",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Guitar",
         "visualEmoji": "🎸",
         "visualOptions": [
+          {
+            "text": "Pulpit",
+            "emoji": "📖",
+            "label": "Pulpit",
+            "translationPt": "Púlpito / Tribuna no altar"
+          },
+          {
+            "text": "Guitar",
+            "emoji": "🎸",
+            "label": "Guitar",
+            "translationPt": "Violão acústico"
+          },
           {
             "text": "Flute",
             "emoji": "🪈",
@@ -18189,26 +14223,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Church",
             "emoji": "⛪",
             "label": "Church",
-            "translationPt": "Igreja / Templo"
-          },
-          {
-            "text": "Guitar",
-            "emoji": "🎸",
-            "label": "Guitar",
-            "translationPt": "Violão acústico"
-          },
-          {
-            "text": "Pulpit",
-            "emoji": "📖",
-            "label": "Pulpit",
-            "translationPt": "Púlpito / Tribuna de leitura"
+            "translationPt": "Igreja completa (fachada e torre)"
           }
         ],
         "options": [
-          "Flute",
-          "Church",
+          "Pulpit",
           "Guitar",
-          "Pulpit"
+          "Flute",
+          "Church"
         ],
         "correctAnswer": "Guitar",
         "explanation": "Exemplo prático: \"He plays the acoustic guitar in the church choir.\"",
@@ -18216,72 +14238,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p11-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p11-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p11-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p11-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p11-e15",
+        "id": "w0-p14-e12",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Piano",
         "visualEmoji": "🎹",
         "visualOptions": [
-          {
-            "text": "Piano",
-            "emoji": "🎹",
-            "label": "Piano",
-            "translationPt": "Piano / Teclado musical"
-          },
-          {
-            "text": "Bible",
-            "emoji": "📖",
-            "label": "Bible",
-            "translationPt": "Bíblia Sagrada"
-          },
           {
             "text": "Rainbow",
             "emoji": "🌈",
@@ -18289,17 +14251,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Arco-íris no céu"
           },
           {
+            "text": "Bible",
+            "emoji": "📖",
+            "label": "Bible",
+            "translationPt": "Bíblia Sagrada aberta"
+          },
+          {
             "text": "Ring",
             "emoji": "💍",
             "label": "Ring",
             "translationPt": "Aliança / Anel de ouro"
+          },
+          {
+            "text": "Piano",
+            "emoji": "🎹",
+            "label": "Piano",
+            "translationPt": "Piano / Teclado musical"
           }
         ],
         "options": [
-          "Piano",
-          "Bible",
           "Rainbow",
-          "Ring"
+          "Bible",
+          "Ring",
+          "Piano"
         ],
         "correctAnswer": "Piano",
         "explanation": "Exemplo prático: \"She plays beautiful melodies on the piano.\"",
@@ -18307,11 +14281,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e16",
+        "id": "w0-p14-e13",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Drum",
         "visualEmoji": "🥁",
@@ -18323,16 +14294,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Colar / Correntinha"
           },
           {
+            "text": "Heart",
+            "emoji": "❤️",
+            "label": "Heart",
+            "translationPt": "Coração"
+          },
+          {
             "text": "Drum",
             "emoji": "🥁",
             "label": "Drum",
             "translationPt": "Bateria / Tambor"
-          },
-          {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração (amor e caridade)"
           },
           {
             "text": "Necktie",
@@ -18343,8 +14314,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Necklace",
-          "Drum",
           "Heart",
+          "Drum",
           "Necktie"
         ],
         "correctAnswer": "Drum",
@@ -18353,26 +14324,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e17",
+        "id": "w0-p14-e14",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Violin",
         "visualEmoji": "🎻",
         "visualOptions": [
           {
-            "text": "Altar",
-            "emoji": "🕯️",
-            "label": "Altar",
-            "translationPt": "Altar da igreja"
-          },
-          {
             "text": "Violin",
             "emoji": "🎻",
             "label": "Violin",
             "translationPt": "Violino"
+          },
+          {
+            "text": "Microphone",
+            "emoji": "🎤",
+            "label": "Microphone",
+            "translationPt": "Microfone no pedestal"
           },
           {
             "text": "Wine Glass",
@@ -18381,17 +14349,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cálice / Taça"
           },
           {
-            "text": "Microphone",
-            "emoji": "🎤",
-            "label": "Microphone",
-            "translationPt": "Microfone do altar / coral"
+            "text": "Altar",
+            "emoji": "🕯️",
+            "label": "Altar",
+            "translationPt": "Altar completo na igreja"
           }
         ],
         "options": [
-          "Altar",
           "Violin",
+          "Microphone",
           "Wine Glass",
-          "Microphone"
+          "Altar"
         ],
         "correctAnswer": "Violin",
         "explanation": "Exemplo prático: \"The wooden violin sounds warm and expressive.\"",
@@ -18399,15 +14367,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e18",
+        "id": "w0-p14-e15",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Flute",
         "visualEmoji": "🪈",
         "visualOptions": [
+          {
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua no céu"
+          },
           {
             "text": "Guitar",
             "emoji": "🎸",
@@ -18415,29 +14386,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Violão acústico"
           },
           {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua no céu noturno"
+            "text": "Flute",
+            "emoji": "🪈",
+            "label": "Flute",
+            "translationPt": "Flauta musical"
           },
           {
             "text": "Pulpit",
             "emoji": "📖",
             "label": "Pulpit",
-            "translationPt": "Púlpito / Tribuna de leitura"
-          },
-          {
-            "text": "Flute",
-            "emoji": "🪈",
-            "label": "Flute",
-            "translationPt": "Flauta musical"
+            "translationPt": "Púlpito / Tribuna no altar"
           }
         ],
         "options": [
-          "Guitar",
           "Moon",
-          "Pulpit",
-          "Flute"
+          "Guitar",
+          "Flute",
+          "Pulpit"
         ],
         "correctAnswer": "Flute",
         "explanation": "Exemplo prático: \"A silver flute plays a gentle melody.\"",
@@ -18445,71 +14410,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p11-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p11-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p11-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p11-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p11-e20",
+        "id": "w0-p14-e16",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Dove",
         "visualEmoji": "🕊️",
         "visualOptions": [
           {
-            "text": "Church Bell",
-            "emoji": "🔔",
-            "label": "Church Bell",
-            "translationPt": "Sino da igreja"
-          },
-          {
-            "text": "Cross",
-            "emoji": "✝️",
-            "label": "Cross",
-            "translationPt": "Cruz"
+            "text": "Church Pew",
+            "emoji": "🪑",
+            "label": "Church Pew",
+            "translationPt": "Bancos de madeira na igreja"
           },
           {
             "text": "Dove",
@@ -18518,17 +14429,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pomba branca da paz"
           },
           {
-            "text": "Church Pew",
-            "emoji": "🪑",
-            "label": "Church Pew",
-            "translationPt": "Banco de madeira da igreja"
+            "text": "Church Bell",
+            "emoji": "🔔",
+            "label": "Church Bell",
+            "translationPt": "Sino no campanário da igreja"
+          },
+          {
+            "text": "Cross",
+            "emoji": "✝️",
+            "label": "Cross",
+            "translationPt": "Cruz"
           }
         ],
         "options": [
-          "Church Bell",
-          "Cross",
+          "Church Pew",
           "Dove",
-          "Church Pew"
+          "Church Bell",
+          "Cross"
         ],
         "correctAnswer": "Dove",
         "explanation": "Exemplo prático: \"The white dove is a universal symbol of peace.\"",
@@ -18536,45 +14453,42 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e21",
+        "id": "w0-p14-e17",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Heart",
         "visualEmoji": "❤️",
         "visualOptions": [
           {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração (amor e caridade)"
+            "text": "Stained Glass",
+            "emoji": "🪟",
+            "label": "Stained Glass",
+            "translationPt": "Vitral colorido na parede da igreja"
           },
           {
             "text": "Chandelier",
             "emoji": "💡",
             "label": "Chandelier",
-            "translationPt": "Lustre clássico do templo"
-          },
-          {
-            "text": "Stained Glass",
-            "emoji": "🪟",
-            "label": "Stained Glass",
-            "translationPt": "Vitral colorido da igreja"
+            "translationPt": "Lustre aceso no teto da igreja"
           },
           {
             "text": "Candle",
             "emoji": "🕯️",
             "label": "Candle",
             "translationPt": "Vela acesa"
+          },
+          {
+            "text": "Heart",
+            "emoji": "❤️",
+            "label": "Heart",
+            "translationPt": "Coração"
           }
         ],
         "options": [
-          "Heart",
-          "Chandelier",
           "Stained Glass",
-          "Candle"
+          "Chandelier",
+          "Candle",
+          "Heart"
         ],
         "correctAnswer": "Heart",
         "explanation": "Exemplo prático: \"Share kindness from the bottom of your heart.\"",
@@ -18582,15 +14496,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e22",
+        "id": "w0-p14-e18",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Crown",
         "visualEmoji": "👑",
         "visualOptions": [
+          {
+            "text": "Crown",
+            "emoji": "👑",
+            "label": "Crown",
+            "translationPt": "Coroa dourada"
+          },
           {
             "text": "Suit",
             "emoji": "🤵",
@@ -18604,22 +14521,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Piano / Teclado musical"
           },
           {
-            "text": "Crown",
-            "emoji": "👑",
-            "label": "Crown",
-            "translationPt": "Coroa dourada"
-          },
-          {
             "text": "Microphone",
             "emoji": "🎤",
             "label": "Microphone",
-            "translationPt": "Microfone do altar / coral"
+            "translationPt": "Microfone no pedestal"
           }
         ],
         "options": [
+          "Crown",
           "Suit",
           "Piano",
-          "Crown",
           "Microphone"
         ],
         "correctAnswer": "Crown",
@@ -18628,27 +14539,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e23",
+        "id": "w0-p14-e19",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Star",
         "visualEmoji": "⭐",
         "visualOptions": [
-          {
-            "text": "Handshake",
-            "emoji": "🤝",
-            "label": "Handshake",
-            "translationPt": "Aperto de mão / Cumprimento fraterno"
-          },
-          {
-            "text": "Star",
-            "emoji": "⭐",
-            "label": "Star",
-            "translationPt": "Estrela guia"
-          },
           {
             "text": "Drum",
             "emoji": "🥁",
@@ -18659,14 +14555,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Wheelchair",
             "emoji": "♿",
             "label": "Wheelchair",
-            "translationPt": "Cadeira de rodas (Acessibilidade)"
+            "translationPt": "Cadeira de rodas"
+          },
+          {
+            "text": "Handshake",
+            "emoji": "🤝",
+            "label": "Handshake",
+            "translationPt": "Aperto de mão / Cumprimento"
+          },
+          {
+            "text": "Star",
+            "emoji": "⭐",
+            "label": "Star",
+            "translationPt": "Estrela"
           }
         ],
         "options": [
-          "Handshake",
-          "Star",
           "Drum",
-          "Wheelchair"
+          "Wheelchair",
+          "Handshake",
+          "Star"
         ],
         "correctAnswer": "Star",
         "explanation": "Exemplo prático: \"A bright star shines in the night sky.\"",
@@ -18674,66 +14582,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p11-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p11-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p11-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p11-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p11-e25",
+        "id": "w0-p14-e20",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Gift",
         "visualEmoji": "🎁",
         "visualOptions": [
-          {
-            "text": "Guitar",
-            "emoji": "🎸",
-            "label": "Guitar",
-            "translationPt": "Violão acústico"
-          },
           {
             "text": "Dove",
             "emoji": "🕊️",
@@ -18741,23 +14595,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pomba branca da paz"
           },
           {
-            "text": "Altar",
-            "emoji": "🕯️",
-            "label": "Altar",
-            "translationPt": "Altar da igreja"
+            "text": "Guitar",
+            "emoji": "🎸",
+            "label": "Guitar",
+            "translationPt": "Violão acústico"
           },
           {
             "text": "Gift",
             "emoji": "🎁",
             "label": "Gift",
-            "translationPt": "Presente / Doação comunitária"
+            "translationPt": "Presente / Doação"
+          },
+          {
+            "text": "Altar",
+            "emoji": "🕯️",
+            "label": "Altar",
+            "translationPt": "Altar completo na igreja"
           }
         ],
         "options": [
-          "Guitar",
           "Dove",
-          "Altar",
-          "Gift"
+          "Guitar",
+          "Gift",
+          "Altar"
         ],
         "correctAnswer": "Gift",
         "explanation": "Exemplo prático: \"They prepared gift boxes for charity.\"",
@@ -18765,11 +14625,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e26",
+        "id": "w0-p14-e21",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Chandelier",
         "visualEmoji": "💡",
@@ -18778,32 +14635,32 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Chandelier",
             "emoji": "💡",
             "label": "Chandelier",
-            "translationPt": "Lustre clássico do templo"
-          },
-          {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua no céu noturno"
+            "translationPt": "Lustre aceso no teto da igreja"
           },
           {
             "text": "Stained Glass",
             "emoji": "🪟",
             "label": "Stained Glass",
-            "translationPt": "Vitral colorido da igreja"
+            "translationPt": "Vitral colorido na parede da igreja"
           },
           {
             "text": "Pulpit",
             "emoji": "📖",
             "label": "Pulpit",
-            "translationPt": "Púlpito / Tribuna de leitura"
+            "translationPt": "Púlpito / Tribuna no altar"
+          },
+          {
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua no céu"
           }
         ],
         "options": [
           "Chandelier",
-          "Moon",
           "Stained Glass",
-          "Pulpit"
+          "Pulpit",
+          "Moon"
         ],
         "correctAnswer": "Chandelier",
         "explanation": "Exemplo prático: \"A crystal chandelier hangs from the church ceiling.\"",
@@ -18811,27 +14668,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e27",
+        "id": "w0-p14-e22",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Suit",
         "visualEmoji": "🤵",
         "visualOptions": [
-          {
-            "text": "Crown",
-            "emoji": "👑",
-            "label": "Crown",
-            "translationPt": "Coroa dourada"
-          },
-          {
-            "text": "Church",
-            "emoji": "⛪",
-            "label": "Church",
-            "translationPt": "Igreja / Templo"
-          },
           {
             "text": "Flute",
             "emoji": "🪈",
@@ -18843,13 +14685,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🤵",
             "label": "Suit",
             "translationPt": "Terno / Roupa social"
+          },
+          {
+            "text": "Crown",
+            "emoji": "👑",
+            "label": "Crown",
+            "translationPt": "Coroa dourada"
+          },
+          {
+            "text": "Church",
+            "emoji": "⛪",
+            "label": "Church",
+            "translationPt": "Igreja completa (fachada e torre)"
           }
         ],
         "options": [
-          "Crown",
-          "Church",
           "Flute",
-          "Suit"
+          "Suit",
+          "Crown",
+          "Church"
         ],
         "correctAnswer": "Suit",
         "explanation": "Exemplo prático: \"He wore a navy blue suit to the ceremony.\"",
@@ -18857,11 +14711,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e28",
+        "id": "w0-p14-e23",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Necktie",
         "visualEmoji": "👔",
@@ -18873,28 +14724,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cruz"
           },
           {
-            "text": "Rainbow",
-            "emoji": "🌈",
-            "label": "Rainbow",
-            "translationPt": "Arco-íris no céu"
-          },
-          {
             "text": "Necktie",
             "emoji": "👔",
             "label": "Necktie",
             "translationPt": "Gravata social"
           },
           {
+            "text": "Rainbow",
+            "emoji": "🌈",
+            "label": "Rainbow",
+            "translationPt": "Arco-íris no céu"
+          },
+          {
             "text": "Church Bell",
             "emoji": "🔔",
             "label": "Church Bell",
-            "translationPt": "Sino da igreja"
+            "translationPt": "Sino no campanário da igreja"
           }
         ],
         "options": [
           "Cross",
-          "Rainbow",
           "Necktie",
+          "Rainbow",
           "Church Bell"
         ],
         "correctAnswer": "Necktie",
@@ -18903,90 +14754,42 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p11-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p11-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p11-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p11-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p11-e30",
+        "id": "w0-p14-e24",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Ring",
         "visualEmoji": "💍",
         "visualOptions": [
           {
-            "text": "Ring",
-            "emoji": "💍",
-            "label": "Ring",
-            "translationPt": "Aliança / Anel de ouro"
+            "text": "Gift",
+            "emoji": "🎁",
+            "label": "Gift",
+            "translationPt": "Presente / Doação"
           },
           {
             "text": "Heart",
             "emoji": "❤️",
             "label": "Heart",
-            "translationPt": "Coração (amor e caridade)"
+            "translationPt": "Coração"
           },
           {
             "text": "Handshake",
             "emoji": "🤝",
             "label": "Handshake",
-            "translationPt": "Aperto de mão / Cumprimento fraterno"
+            "translationPt": "Aperto de mão / Cumprimento"
           },
           {
-            "text": "Gift",
-            "emoji": "🎁",
-            "label": "Gift",
-            "translationPt": "Presente / Doação comunitária"
+            "text": "Ring",
+            "emoji": "💍",
+            "label": "Ring",
+            "translationPt": "Aliança / Anel de ouro"
           }
         ],
         "options": [
-          "Ring",
+          "Gift",
           "Heart",
           "Handshake",
-          "Gift"
+          "Ring"
         ],
         "correctAnswer": "Ring",
         "explanation": "Exemplo prático: \"The couple exchanged gold wedding rings at the altar.\"",
@@ -18994,11 +14797,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e31",
+        "id": "w0-p14-e25",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Necklace",
         "visualEmoji": "📿",
@@ -19010,6 +14810,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vela acesa"
           },
           {
+            "text": "Bible",
+            "emoji": "📖",
+            "label": "Bible",
+            "translationPt": "Bíblia Sagrada aberta"
+          },
+          {
             "text": "Necklace",
             "emoji": "📿",
             "label": "Necklace",
@@ -19019,20 +14825,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Church Pew",
             "emoji": "🪑",
             "label": "Church Pew",
-            "translationPt": "Banco de madeira da igreja"
-          },
-          {
-            "text": "Bible",
-            "emoji": "📖",
-            "label": "Bible",
-            "translationPt": "Bíblia Sagrada"
+            "translationPt": "Bancos de madeira na igreja"
           }
         ],
         "options": [
           "Candle",
+          "Bible",
           "Necklace",
-          "Church Pew",
-          "Bible"
+          "Church Pew"
         ],
         "correctAnswer": "Necklace",
         "explanation": "Exemplo prático: \"She wears a delicate gold necklace.\"",
@@ -19040,21 +14840,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e32",
+        "id": "w0-p14-e26",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Wine Glass",
         "visualEmoji": "🍷",
         "visualOptions": [
-          {
-            "text": "Crown",
-            "emoji": "👑",
-            "label": "Crown",
-            "translationPt": "Coroa dourada"
-          },
           {
             "text": "Wine Glass",
             "emoji": "🍷",
@@ -19062,23 +14853,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cálice / Taça"
           },
           {
-            "text": "Dove",
-            "emoji": "🕊️",
-            "label": "Dove",
-            "translationPt": "Pomba branca da paz"
+            "text": "Crown",
+            "emoji": "👑",
+            "label": "Crown",
+            "translationPt": "Coroa dourada"
           },
           {
             "text": "Drum",
             "emoji": "🥁",
             "label": "Drum",
             "translationPt": "Bateria / Tambor"
+          },
+          {
+            "text": "Dove",
+            "emoji": "🕊️",
+            "label": "Dove",
+            "translationPt": "Pomba branca da paz"
           }
         ],
         "options": [
-          "Crown",
           "Wine Glass",
-          "Dove",
-          "Drum"
+          "Crown",
+          "Drum",
+          "Dove"
         ],
         "correctAnswer": "Wine Glass",
         "explanation": "Exemplo prático: \"A golden chalice and glass goblet on the table.\"",
@@ -19086,20 +14883,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e33",
+        "id": "w0-p14-e27",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Wheelchair",
         "visualEmoji": "♿",
         "visualOptions": [
           {
-            "text": "Star",
-            "emoji": "⭐",
-            "label": "Star",
-            "translationPt": "Estrela guia"
+            "text": "Violin",
+            "emoji": "🎻",
+            "label": "Violin",
+            "translationPt": "Violino"
           },
           {
             "text": "Suit",
@@ -19108,23 +14902,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Terno / Roupa social"
           },
           {
-            "text": "Violin",
-            "emoji": "🎻",
-            "label": "Violin",
-            "translationPt": "Violino"
-          },
-          {
             "text": "Wheelchair",
             "emoji": "♿",
             "label": "Wheelchair",
-            "translationPt": "Cadeira de rodas (Acessibilidade)"
+            "translationPt": "Cadeira de rodas"
+          },
+          {
+            "text": "Star",
+            "emoji": "⭐",
+            "label": "Star",
+            "translationPt": "Estrela"
           }
         ],
         "options": [
-          "Star",
-          "Suit",
           "Violin",
-          "Wheelchair"
+          "Suit",
+          "Wheelchair",
+          "Star"
         ],
         "correctAnswer": "Wheelchair",
         "explanation": "Exemplo prático: \"The church entrance has a ramp for wheelchairs.\"",
@@ -19132,56 +14926,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p11-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p11-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p11-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p11-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p11-e35",
+        "id": "w0-p14-e28",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Handshake",
         "visualEmoji": "🤝",
@@ -19190,7 +14936,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Microphone",
             "emoji": "🎤",
             "label": "Microphone",
-            "translationPt": "Microfone do altar / coral"
+            "translationPt": "Microfone no pedestal"
+          },
+          {
+            "text": "Handshake",
+            "emoji": "🤝",
+            "label": "Handshake",
+            "translationPt": "Aperto de mão / Cumprimento"
           },
           {
             "text": "Piano",
@@ -19199,22 +14951,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Piano / Teclado musical"
           },
           {
-            "text": "Handshake",
-            "emoji": "🤝",
-            "label": "Handshake",
-            "translationPt": "Aperto de mão / Cumprimento fraterno"
-          },
-          {
             "text": "Chandelier",
             "emoji": "💡",
             "label": "Chandelier",
-            "translationPt": "Lustre clássico do templo"
+            "translationPt": "Lustre aceso no teto da igreja"
           }
         ],
         "options": [
           "Microphone",
-          "Piano",
           "Handshake",
+          "Piano",
           "Chandelier"
         ],
         "correctAnswer": "Handshake",
@@ -19223,20 +14969,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e36",
+        "id": "w0-p14-e29",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Rainbow",
         "visualEmoji": "🌈",
         "visualOptions": [
           {
-            "text": "Rainbow",
-            "emoji": "🌈",
-            "label": "Rainbow",
-            "translationPt": "Arco-íris no céu"
+            "text": "Gift",
+            "emoji": "🎁",
+            "label": "Gift",
+            "translationPt": "Presente / Doação"
+          },
+          {
+            "text": "Necktie",
+            "emoji": "👔",
+            "label": "Necktie",
+            "translationPt": "Gravata social"
           },
           {
             "text": "Ring",
@@ -19245,23 +14994,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Aliança / Anel de ouro"
           },
           {
-            "text": "Gift",
-            "emoji": "🎁",
-            "label": "Gift",
-            "translationPt": "Presente / Doação comunitária"
-          },
-          {
-            "text": "Necktie",
-            "emoji": "👔",
-            "label": "Necktie",
-            "translationPt": "Gravata social"
+            "text": "Rainbow",
+            "emoji": "🌈",
+            "label": "Rainbow",
+            "translationPt": "Arco-íris no céu"
           }
         ],
         "options": [
-          "Rainbow",
-          "Ring",
           "Gift",
-          "Necktie"
+          "Necktie",
+          "Ring",
+          "Rainbow"
         ],
         "correctAnswer": "Rainbow",
         "explanation": "Exemplo prático: \"A colorful rainbow appeared after the rain.\"",
@@ -19269,15 +15012,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e37",
+        "id": "w0-p14-e30",
         "type": "image-choice",
-        "conceptTitle": "Na Igreja, Música, Comunidade & Celebração • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Moon",
         "visualEmoji": "🌙",
         "visualOptions": [
+          {
+            "text": "Moon",
+            "emoji": "🌙",
+            "label": "Moon",
+            "translationPt": "Lua no céu"
+          },
+          {
+            "text": "Heart",
+            "emoji": "❤️",
+            "label": "Heart",
+            "translationPt": "Coração"
+          },
           {
             "text": "Wine Glass",
             "emoji": "🍷",
@@ -19289,117 +15041,57 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "📿",
             "label": "Necklace",
             "translationPt": "Colar / Correntinha"
-          },
-          {
-            "text": "Moon",
-            "emoji": "🌙",
-            "label": "Moon",
-            "translationPt": "Lua no céu noturno"
-          },
-          {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração (amor e caridade)"
           }
         ],
         "options": [
-          "Wine Glass",
-          "Necklace",
           "Moon",
-          "Heart"
+          "Heart",
+          "Wine Glass",
+          "Necklace"
         ],
         "correctAnswer": "Moon",
         "explanation": "Exemplo prático: \"The full moon shines after the evening service.\"",
         "phoneticHint": "/muːn/",
         "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p11-pron-8",
-        "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
-        "pairs": [
-          {
-            "id": "w0-p11-p8-rel1",
-            "en": "Who",
-            "emoji": "👩‍⚕️",
-            "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte usada para PESSOAS)",
-            "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
-          },
-          {
-            "id": "w0-p11-p8-rel2",
-            "en": "Which",
-            "emoji": "🔑",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
-            "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
-          },
-          {
-            "id": "w0-p11-p8-rel3",
-            "en": "That",
-            "emoji": "🌉",
-            "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
-          },
-          {
-            "id": "w0-p11-p8-rel4",
-            "en": "Whose",
-            "emoji": "🏠",
-            "phonetic": "/huːz/",
-            "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
-        "skillCategory": "grammar"
       }
     ]
   },
   {
-    "id": "w0-p12",
+    "id": "w0-p15",
     "worldId": 0,
-    "phaseNumber": 12,
-    "title": "Ambiente 12 • Restaurante, Hospital, Banco, Segurança & Viagem",
+    "phaseNumber": 15,
+    "title": "Vocabulário 12 • Restaurante, Hospital, Banco, Segurança & Viagem",
     "subtitle": "Ambiente 12/12 • Locais públicos, profissões, saúde, finanças, lazer e aeroporto",
-    "pedagogicalObjective": "Concluir a jornada pelo cotidiano dominando restaurantes, hospitais, bancos, delegacia, bombeiros, hotel, cinema e aeroporto.",
-    "type": "boss",
-    "icon": "swords",
+    "pedagogicalObjective": "Dominar restaurantes, hospitais, farmácias, bancos, delegacia, bombeiros, hotel, cinema e aeroporto.",
+    "type": "lesson",
+    "icon": "car",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Chegamos ao 12º e último módulo da nossa Jornada de Imersão pelo Cotidiano!",
-      "Aqui visitamos o Restaurante (Restaurant, Chef, Pizza, Hamburger, Ice Cream), o Hospital e Consultório (Hospital, Doctor, Nurse, Dentist), o Banco (Bank, Coin) e a Segurança Pública (Police Station, Police Officer, Fire Station, Firefighter).",
-      "Por fim, passamos pelo Hotel, Cinema e Aeroporto (Hotel, Suitcase, Passport, Airport, Airplane, Pilot, Train, Subway, Ship). Faça 70 pontos ou mais nesta prova final para concluir o Módulo 0 com maestria!"
+      "Chegamos ao 12º módulo de vocabulário da nossa Jornada pelo Cotidiano!",
+      "Aqui visitamos o Restaurante (Restaurant, Chef, Pizza, Hamburger, Ice Cream), o Hospital (Hospital, Doctor, Nurse, Dentist), a Farmácia (Pharmacy), o Banco (Bank, Coin) e a Segurança Pública (Police Station, Police Officer, Fire Station, Firefighter).",
+      "Logo após concluir este 12º módulo de vocabulário, você fará o 4º e último Módulo Exclusivo de Pronomes (Indefinidos & Relativos)!"
     ],
-    "xpReward": 100,
-    "gemsReward": 40,
+    "xpReward": 50,
+    "gemsReward": 20,
     "exercises": [
       {
-        "id": "w0-p12-e1",
+        "id": "w0-p15-e1",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 1 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Restaurant",
         "visualEmoji": "🍽️",
         "visualOptions": [
           {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital / Pronto-socorro"
-          },
-          {
             "text": "Restaurant",
             "emoji": "🍽️",
             "label": "Restaurant",
-            "translationPt": "Restaurante"
+            "translationPt": "Restaurante completo"
+          },
+          {
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Prédio do hospital"
           },
           {
             "text": "Helicopter",
@@ -19415,8 +15107,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Hospital",
           "Restaurant",
+          "Hospital",
           "Helicopter",
           "Hotel"
         ],
@@ -19426,11 +15118,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e2",
+        "id": "w0-p15-e2",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 2 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Chef",
         "visualEmoji": "👨‍🍳",
@@ -19442,12 +15131,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Enfermeira / Enfermeiro"
           },
           {
-            "text": "Trophy",
-            "emoji": "🏆",
-            "label": "Trophy",
-            "translationPt": "Troféu de conquista"
-          },
-          {
             "text": "Train",
             "emoji": "🚆",
             "label": "Train",
@@ -19458,13 +15141,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "👨‍🍳",
             "label": "Chef",
             "translationPt": "Chef de cozinha / Cozinheiro"
+          },
+          {
+            "text": "Trophy",
+            "emoji": "🏆",
+            "label": "Trophy",
+            "translationPt": "Troféu de conquista"
           }
         ],
         "options": [
           "Nurse",
-          "Trophy",
           "Train",
-          "Chef"
+          "Chef",
+          "Trophy"
         ],
         "correctAnswer": "Chef",
         "explanation": "Exemplo prático: \"The restaurant chef prepares delicious meals.\"",
@@ -19472,26 +15161,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-e3",
+        "id": "w0-p15-e3",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 3 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Pizza",
         "visualEmoji": "🍕",
         "visualOptions": [
           {
-            "text": "Dentist",
-            "emoji": "🦷",
-            "label": "Dentist",
-            "translationPt": "Dentista"
-          },
-          {
-            "text": "Airport",
-            "emoji": "🛫",
-            "label": "Airport",
-            "translationPt": "Aeroporto"
+            "text": "Doctor",
+            "emoji": "👨‍⚕️",
+            "label": "Doctor",
+            "translationPt": "Médico / Médica"
           },
           {
             "text": "Pizza",
@@ -19500,17 +15180,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pizza"
           },
           {
-            "text": "Doctor",
-            "emoji": "👨‍⚕️",
-            "label": "Doctor",
-            "translationPt": "Médico / Médica"
+            "text": "Airport",
+            "emoji": "🛫",
+            "label": "Airport",
+            "translationPt": "Aeroporto com avião"
+          },
+          {
+            "text": "Dentist",
+            "emoji": "🦷",
+            "label": "Dentist",
+            "translationPt": "Dentista"
           }
         ],
         "options": [
-          "Dentist",
-          "Airport",
+          "Doctor",
           "Pizza",
-          "Doctor"
+          "Airport",
+          "Dentist"
         ],
         "correctAnswer": "Pizza",
         "explanation": "Exemplo prático: \"Order a hot cheese pizza at the restaurant.\"",
@@ -19518,65 +15204,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Personal Pronouns)",
-        "conceptHeader": "Brincadeira de apontar com carinho: quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, digo \"He\" (Ele); para uma menina, digo \"She\" (Ela); e para um objeto ou bichinho, digo \"It\"!",
-        "teacherAudioPt": "Oi, meu amor! Vamos aprender os Pronomes Pessoais bem devagarinho? Quando falo de mim mesmo, eu digo I, que significa Eu. Quando falo com você, digo You, que é Você. Para um menino ou homem, usamos He, Ele. E para uma menina ou mulher, usamos She, Ela. Agora toque em cada par certinho!",
-        "prompt": "🤝 Associe cada Pronome Pessoal em inglês ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p12-p1-p1",
-            "en": "I",
-            "emoji": "🙋",
-            "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" significa \"Eu\"!"
-          },
-          {
-            "id": "w0-p12-p1-p2",
-            "en": "You",
-            "emoji": "👉",
-            "phonetic": "/juː/",
-            "pt": "Você / Vocês (com quem falo)",
-            "tipPt": "Isso mesmo! \"You\" significa \"Você\"!"
-          },
-          {
-            "id": "w0-p12-p1-p3",
-            "en": "He",
-            "emoji": "👦",
-            "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" usamos para \"Ele\" (papai, irmão, amigo)."
-          },
-          {
-            "id": "w0-p12-p1-p4",
-            "en": "She",
-            "emoji": "👧",
-            "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" usamos para \"Ela\" (mamãe, irmã, professora)."
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Pessoais substituem o nome de quem faz a ação: I (Eu), You (Você), He (Ele), She (Ela).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p12-e5",
+        "id": "w0-p15-e4",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 4 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Hamburger",
         "visualEmoji": "🍔",
         "visualOptions": [
           {
-            "text": "Hamburger",
-            "emoji": "🍔",
-            "label": "Hamburger",
-            "translationPt": "Hambúrguer"
+            "text": "Ship",
+            "emoji": "🚢",
+            "label": "Ship",
+            "translationPt": "Navio"
           },
           {
             "text": "Subway",
@@ -19585,23 +15223,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Metrô subterrâneo"
           },
           {
-            "text": "Ship",
-            "emoji": "🚢",
-            "label": "Ship",
-            "translationPt": "Navio"
-          },
-          {
             "text": "Suitcase",
             "emoji": "🧳",
             "label": "Suitcase",
             "translationPt": "Mala de viagem com rodinhas"
+          },
+          {
+            "text": "Hamburger",
+            "emoji": "🍔",
+            "label": "Hamburger",
+            "translationPt": "Hambúrguer"
           }
         ],
         "options": [
-          "Hamburger",
-          "Subway",
           "Ship",
-          "Suitcase"
+          "Subway",
+          "Suitcase",
+          "Hamburger"
         ],
         "correctAnswer": "Hamburger",
         "explanation": "Exemplo prático: \"A juicy hamburger with lettuce and cheese.\"",
@@ -19609,20 +15247,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e6",
+        "id": "w0-p15-e5",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 5 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "French Fries",
         "visualEmoji": "🍟",
         "visualOptions": [
           {
-            "text": "Fire Station",
-            "emoji": "🚒",
-            "label": "Fire Station",
-            "translationPt": "Quartel do Corpo de Bombeiros"
+            "text": "French Fries",
+            "emoji": "🍟",
+            "label": "French Fries",
+            "translationPt": "Batata frita"
           },
           {
             "text": "Firefighter",
@@ -19631,23 +15266,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bombeiro"
           },
           {
-            "text": "French Fries",
-            "emoji": "🍟",
-            "label": "French Fries",
-            "translationPt": "Batata frita"
-          },
-          {
             "text": "Coin",
             "emoji": "🪙",
             "label": "Coin",
             "translationPt": "Moeda"
+          },
+          {
+            "text": "Fire Station",
+            "emoji": "🚒",
+            "label": "Fire Station",
+            "translationPt": "Quartel do Corpo de Bombeiros"
           }
         ],
         "options": [
-          "Fire Station",
-          "Firefighter",
           "French Fries",
-          "Coin"
+          "Firefighter",
+          "Coin",
+          "Fire Station"
         ],
         "correctAnswer": "French Fries",
         "explanation": "Exemplo prático: \"Crispy golden French fries with ketchup.\"",
@@ -19655,11 +15290,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-e7",
+        "id": "w0-p15-e6",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 6 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Ice Cream",
         "visualEmoji": "🍦",
@@ -19671,12 +15303,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chef de cozinha / Cozinheiro"
           },
           {
-            "text": "Ice Cream",
-            "emoji": "🍦",
-            "label": "Ice Cream",
-            "translationPt": "Sorvete"
-          },
-          {
             "text": "Pharmacy",
             "emoji": "💊",
             "label": "Pharmacy",
@@ -19686,14 +15312,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Restaurant",
             "emoji": "🍽️",
             "label": "Restaurant",
-            "translationPt": "Restaurante"
+            "translationPt": "Restaurante completo"
+          },
+          {
+            "text": "Ice Cream",
+            "emoji": "🍦",
+            "label": "Ice Cream",
+            "translationPt": "Sorvete"
           }
         ],
         "options": [
           "Chef",
-          "Ice Cream",
           "Pharmacy",
-          "Restaurant"
+          "Restaurant",
+          "Ice Cream"
         ],
         "correctAnswer": "Ice Cream",
         "explanation": "Exemplo prático: \"Cold chocolate and vanilla ice cream.\"",
@@ -19701,21 +15333,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e8",
+        "id": "w0-p15-e7",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 7 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Hospital",
         "visualEmoji": "🏥",
         "visualOptions": [
-          {
-            "text": "Pizza",
-            "emoji": "🍕",
-            "label": "Pizza",
-            "translationPt": "Pizza"
-          },
           {
             "text": "Bank",
             "emoji": "🏦",
@@ -19723,23 +15346,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Banco / Agência bancária"
           },
           {
-            "text": "Police Station",
-            "emoji": "🚓",
-            "label": "Police Station",
-            "translationPt": "Delegacia de polícia"
+            "text": "Pizza",
+            "emoji": "🍕",
+            "label": "Pizza",
+            "translationPt": "Pizza"
           },
           {
             "text": "Hospital",
             "emoji": "🏥",
             "label": "Hospital",
-            "translationPt": "Hospital / Pronto-socorro"
+            "translationPt": "Prédio do hospital"
+          },
+          {
+            "text": "Police Station",
+            "emoji": "🚓",
+            "label": "Police Station",
+            "translationPt": "Delegacia de polícia"
           }
         ],
         "options": [
-          "Pizza",
           "Bank",
-          "Police Station",
-          "Hospital"
+          "Pizza",
+          "Hospital",
+          "Police Station"
         ],
         "correctAnswer": "Hospital",
         "explanation": "Exemplo prático: \"Doctors and nurses work at the city hospital.\"",
@@ -19747,56 +15376,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Forms of Address)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora), \"Miss\" (Senhorita / Professora) e \"Sir / Ma'am\"!",
-        "teacherAudioPt": "Que bonito ser educado, meu bem! Os Pronomes de Tratamento são usados para demonstrar respeito e carinho pelas pessoas. Para um homem, dizemos Mister, Senhor. Para uma mulher casada, dizemos Missus, Senhora. Para uma jovem ou professora, dizemos Miss, Senhorita. E para dizer Senhor com respeito, usamos Sir. Vamos ligar os pares!",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu significado respeitoso:",
-        "pairs": [
-          {
-            "id": "w0-p12-p2-t1",
-            "en": "Mr.",
-            "emoji": "👨",
-            "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (antes do nome de um homem)",
-            "tipPt": "Muito educado! \"Mr.\" significa \"Senhor\"!"
-          },
-          {
-            "id": "w0-p12-p2-t2",
-            "en": "Mrs.",
-            "emoji": "👩",
-            "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (antes do nome de mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
-          },
-          {
-            "id": "w0-p12-p2-t3",
-            "en": "Miss",
-            "emoji": "👩‍🏫",
-            "phonetic": "/mɪs/",
-            "pt": "Senhorita (jovem ou professora)",
-            "tipPt": "Isso! As crianças chamam a professora de \"Miss\"!"
-          },
-          {
-            "id": "w0-p12-p2-t4",
-            "en": "Sir",
-            "emoji": "🎩",
-            "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto de respeito)",
-            "tipPt": "Lindo! \"Yes, Sir!\" significa \"Sim, Senhor!\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes de Tratamento mostram respeito e educação ao chamar alguém: Mr., Mrs., Miss e Sir.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p12-e10",
+        "id": "w0-p15-e8",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 8 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Doctor",
         "visualEmoji": "👨‍⚕️",
@@ -19808,10 +15389,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Médico / Médica"
           },
           {
-            "text": "Airplane",
-            "emoji": "✈️",
-            "label": "Airplane",
-            "translationPt": "Avião comercial"
+            "text": "Hamburger",
+            "emoji": "🍔",
+            "label": "Hamburger",
+            "translationPt": "Hambúrguer"
           },
           {
             "text": "Police Officer",
@@ -19820,17 +15401,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Policial"
           },
           {
-            "text": "Hamburger",
-            "emoji": "🍔",
-            "label": "Hamburger",
-            "translationPt": "Hambúrguer"
+            "text": "Airplane",
+            "emoji": "✈️",
+            "label": "Airplane",
+            "translationPt": "Avião comercial"
           }
         ],
         "options": [
           "Doctor",
-          "Airplane",
+          "Hamburger",
           "Police Officer",
-          "Hamburger"
+          "Airplane"
         ],
         "correctAnswer": "Doctor",
         "explanation": "Exemplo prático: \"The doctor examines the patient with a stethoscope.\"",
@@ -19838,21 +15419,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-e11",
+        "id": "w0-p15-e9",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 9 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Nurse",
         "visualEmoji": "👩‍⚕️",
         "visualOptions": [
-          {
-            "text": "Movie Theater",
-            "emoji": "🍿",
-            "label": "Movie Theater",
-            "translationPt": "Cinema"
-          },
           {
             "text": "French Fries",
             "emoji": "🍟",
@@ -19860,23 +15432,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Batata frita"
           },
           {
-            "text": "Passport",
-            "emoji": "🛂",
-            "label": "Passport",
-            "translationPt": "Passaporte de viagem"
-          },
-          {
             "text": "Nurse",
             "emoji": "👩‍⚕️",
             "label": "Nurse",
             "translationPt": "Enfermeira / Enfermeiro"
+          },
+          {
+            "text": "Movie Theater",
+            "emoji": "🍿",
+            "label": "Movie Theater",
+            "translationPt": "Sala de cinema"
+          },
+          {
+            "text": "Passport",
+            "emoji": "🛂",
+            "label": "Passport",
+            "translationPt": "Passaporte de viagem"
           }
         ],
         "options": [
-          "Movie Theater",
           "French Fries",
-          "Passport",
-          "Nurse"
+          "Nurse",
+          "Movie Theater",
+          "Passport"
         ],
         "correctAnswer": "Nurse",
         "explanation": "Exemplo prático: \"The hospital nurse takes care of everyone.\"",
@@ -19884,21 +15462,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e12",
+        "id": "w0-p15-e10",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 10 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Dentist",
         "visualEmoji": "🦷",
         "visualOptions": [
-          {
-            "text": "Ice Cream",
-            "emoji": "🍦",
-            "label": "Ice Cream",
-            "translationPt": "Sorvete"
-          },
           {
             "text": "Pilot",
             "emoji": "👨‍✈️",
@@ -19916,13 +15485,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍿",
             "label": "Popcorn",
             "translationPt": "Pipoca"
+          },
+          {
+            "text": "Ice Cream",
+            "emoji": "🍦",
+            "label": "Ice Cream",
+            "translationPt": "Sorvete"
           }
         ],
         "options": [
-          "Ice Cream",
           "Pilot",
           "Dentist",
-          "Popcorn"
+          "Popcorn",
+          "Ice Cream"
         ],
         "correctAnswer": "Dentist",
         "explanation": "Exemplo prático: \"Visit the dentist twice a year.\"",
@@ -19930,26 +15505,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e13",
+        "id": "w0-p15-e11",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 11 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Pharmacy",
         "visualEmoji": "💊",
         "visualOptions": [
           {
-            "text": "Pharmacy",
-            "emoji": "💊",
-            "label": "Pharmacy",
-            "translationPt": "Farmácia / Drogaria"
-          },
-          {
             "text": "Fire Station",
             "emoji": "🚒",
             "label": "Fire Station",
             "translationPt": "Quartel do Corpo de Bombeiros"
+          },
+          {
+            "text": "Firefighter",
+            "emoji": "🧑‍🚒",
+            "label": "Firefighter",
+            "translationPt": "Bombeiro"
           },
           {
             "text": "Chef",
@@ -19958,17 +15530,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chef de cozinha / Cozinheiro"
           },
           {
-            "text": "Firefighter",
-            "emoji": "🧑‍🚒",
-            "label": "Firefighter",
-            "translationPt": "Bombeiro"
+            "text": "Pharmacy",
+            "emoji": "💊",
+            "label": "Pharmacy",
+            "translationPt": "Farmácia / Drogaria"
           }
         ],
         "options": [
-          "Pharmacy",
           "Fire Station",
+          "Firefighter",
           "Chef",
-          "Firefighter"
+          "Pharmacy"
         ],
         "correctAnswer": "Pharmacy",
         "explanation": "Exemplo prático: \"Buy medicine and vitamins at the pharmacy.\"",
@@ -19976,77 +15548,29 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Possessive Pronouns)",
-        "conceptHeader": "Mostram de quem é cada coisinha! Se a chave é minha, digo \"My\" (Meu/Minha). Se é sua, digo \"Your\" (Seu/Sua). Se é de um menino, \"His\" (Dele); se é de uma menina, \"Her\" (Dela); e se é da nossa família, \"Our\" (Nosso/Nossa)!",
-        "teacherAudioPt": "Vem cá, meu anjo, olha que fácil: quando você abraça algo que pertence a você, diga My, que é Meu ou Minha. Quando pertence a quem está com você, diga Your, Seu ou Sua. Quando é de um menino, diga His, Dele. E quando é de toda a nossa família junta, diga Our, Nosso ou Nossa! Encontre os pares!",
-        "prompt": "🤝 Selecione o par de cada Pronome Possessivo (de quem pertence):",
-        "pairs": [
-          {
-            "id": "w0-p12-p3-pos1",
-            "en": "My",
-            "emoji": "💖",
-            "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My house = Minha casa)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
-          },
-          {
-            "id": "w0-p12-p3-pos2",
-            "en": "Your",
-            "emoji": "🎁",
-            "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your key = Sua chave)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
-          },
-          {
-            "id": "w0-p12-p3-pos3",
-            "en": "His",
-            "emoji": "👦",
-            "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His car\" é \"O carro dele\"!"
-          },
-          {
-            "id": "w0-p12-p3-pos4",
-            "en": "Our",
-            "emoji": "🏡",
-            "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (pertence a nós juntos)",
-            "tipPt": "Que orgulho! \"Our family\" é \"Nossa família\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Possessivos indicam posse: My (Meu/Minha), Your (Seu/Sua), His (Dele), Our (Nosso/Nossa).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p12-e15",
+        "id": "w0-p15-e12",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 12 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Bank",
         "visualEmoji": "🏦",
         "visualOptions": [
           {
+            "text": "Subway",
+            "emoji": "🚇",
+            "label": "Subway",
+            "translationPt": "Metrô subterrâneo"
+          },
+          {
             "text": "Restaurant",
             "emoji": "🍽️",
             "label": "Restaurant",
-            "translationPt": "Restaurante"
+            "translationPt": "Restaurante completo"
           },
           {
             "text": "Bank",
             "emoji": "🏦",
             "label": "Bank",
             "translationPt": "Banco / Agência bancária"
-          },
-          {
-            "text": "Subway",
-            "emoji": "🚇",
-            "label": "Subway",
-            "translationPt": "Metrô subterrâneo"
           },
           {
             "text": "Suitcase",
@@ -20056,9 +15580,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Subway",
           "Restaurant",
           "Bank",
-          "Subway",
           "Suitcase"
         ],
         "correctAnswer": "Bank",
@@ -20067,21 +15591,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e16",
+        "id": "w0-p15-e13",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 13 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Coin",
         "visualEmoji": "🪙",
         "visualOptions": [
-          {
-            "text": "Hamburger",
-            "emoji": "🍔",
-            "label": "Hamburger",
-            "translationPt": "Hambúrguer"
-          },
           {
             "text": "Coin",
             "emoji": "🪙",
@@ -20089,23 +15604,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Moeda"
           },
           {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital / Pronto-socorro"
-          },
-          {
             "text": "Nurse",
             "emoji": "👩‍⚕️",
             "label": "Nurse",
             "translationPt": "Enfermeira / Enfermeiro"
+          },
+          {
+            "text": "Hamburger",
+            "emoji": "🍔",
+            "label": "Hamburger",
+            "translationPt": "Hambúrguer"
+          },
+          {
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Prédio do hospital"
           }
         ],
         "options": [
-          "Hamburger",
           "Coin",
-          "Hospital",
-          "Nurse"
+          "Nurse",
+          "Hamburger",
+          "Hospital"
         ],
         "correctAnswer": "Coin",
         "explanation": "Exemplo prático: \"Keep the shiny metal coins in your wallet.\"",
@@ -20113,21 +15634,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e17",
+        "id": "w0-p15-e14",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 14 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Police Station",
         "visualEmoji": "🚓",
         "visualOptions": [
-          {
-            "text": "Airport",
-            "emoji": "🛫",
-            "label": "Airport",
-            "translationPt": "Aeroporto"
-          },
           {
             "text": "Doctor",
             "emoji": "👨‍⚕️",
@@ -20135,23 +15647,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Médico / Médica"
           },
           {
-            "text": "Dentist",
-            "emoji": "🦷",
-            "label": "Dentist",
-            "translationPt": "Dentista"
+            "text": "Airport",
+            "emoji": "🛫",
+            "label": "Airport",
+            "translationPt": "Aeroporto com avião"
           },
           {
             "text": "Police Station",
             "emoji": "🚓",
             "label": "Police Station",
             "translationPt": "Delegacia de polícia"
+          },
+          {
+            "text": "Dentist",
+            "emoji": "🦷",
+            "label": "Dentist",
+            "translationPt": "Dentista"
           }
         ],
         "options": [
-          "Airport",
           "Doctor",
-          "Dentist",
-          "Police Station"
+          "Airport",
+          "Police Station",
+          "Dentist"
         ],
         "correctAnswer": "Police Station",
         "explanation": "Exemplo prático: \"Report the lost document at the police station.\"",
@@ -20159,21 +15677,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-e18",
+        "id": "w0-p15-e15",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 15 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Police Officer",
         "visualEmoji": "👮",
         "visualOptions": [
-          {
-            "text": "Passport",
-            "emoji": "🛂",
-            "label": "Passport",
-            "translationPt": "Passaporte de viagem"
-          },
           {
             "text": "Pharmacy",
             "emoji": "💊",
@@ -20187,6 +15696,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Policial"
           },
           {
+            "text": "Passport",
+            "emoji": "🛂",
+            "label": "Passport",
+            "translationPt": "Passaporte de viagem"
+          },
+          {
             "text": "Pizza",
             "emoji": "🍕",
             "label": "Pizza",
@@ -20194,9 +15709,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Passport",
           "Pharmacy",
           "Police Officer",
+          "Passport",
           "Pizza"
         ],
         "correctAnswer": "Police Officer",
@@ -20205,71 +15720,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-pron-4",
-        "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Demonstrative Pronouns)",
-        "conceptHeader": "Está pertinho da mão ou lá longe? Para 1 coisa bem pertinho que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, dizemos \"That\" (Aquele/Aquela). Para várias coisas pertinho, \"These\"; e várias lá longe, \"Those\"!",
-        "teacherAudioPt": "Preste atenção nessa brincadeira gostosa, meu bem: se tem uma coisa só bem pertinho da sua mão, diga This, Este ou Esta. Se estiver lá longe, aponte com o dedinho e diga That, Aquele ou Aquela. Agora, se forem várias coisas pertinho da mão, diga These, Estes ou Estas. E se forem várias coisas lá longe, diga Those, Aqueles ou Aquelas!",
-        "prompt": "🤝 Ligue cada Pronome Demonstrativo (pertinho da mão vs. lá longe):",
-        "pairs": [
-          {
-            "id": "w0-p12-p4-dem1",
-            "en": "This",
-            "emoji": "🤏",
-            "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa PERTINHO)",
-            "tipPt": "Exato! \"This\" é para 1 coisa bem pertinho da sua mão!"
-          },
-          {
-            "id": "w0-p12-p4-dem2",
-            "en": "That",
-            "emoji": "👉",
-            "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LONGE)",
-            "tipPt": "Muito bem! \"That\" é para 1 coisa lá longe!"
-          },
-          {
-            "id": "w0-p12-p4-dem3",
-            "en": "These",
-            "emoji": "🤲",
-            "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (várias coisas PERTINHO)",
-            "tipPt": "Perfeito! \"These\" é o plural pertinho de nós!"
-          },
-          {
-            "id": "w0-p12-p4-dem4",
-            "en": "Those",
-            "emoji": "🔭",
-            "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (várias coisas LONGE)",
-            "tipPt": "Parabéns! \"Those\" é o plural para o que está lá longe!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This/These usamos para o que está perto de nós; That/Those usamos para o que está longe.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p12-e20",
+        "id": "w0-p15-e16",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 16 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Fire Station",
         "visualEmoji": "🚒",
         "visualOptions": [
           {
-            "text": "Fire Station",
-            "emoji": "🚒",
-            "label": "Fire Station",
-            "translationPt": "Quartel do Corpo de Bombeiros"
-          },
-          {
-            "text": "Ship",
-            "emoji": "🚢",
-            "label": "Ship",
-            "translationPt": "Navio"
+            "text": "Pilot",
+            "emoji": "👨‍✈️",
+            "label": "Pilot",
+            "translationPt": "Piloto de avião"
           },
           {
             "text": "French Fries",
@@ -20278,17 +15739,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Batata frita"
           },
           {
-            "text": "Pilot",
-            "emoji": "👨‍✈️",
-            "label": "Pilot",
-            "translationPt": "Piloto de avião"
+            "text": "Ship",
+            "emoji": "🚢",
+            "label": "Ship",
+            "translationPt": "Navio"
+          },
+          {
+            "text": "Fire Station",
+            "emoji": "🚒",
+            "label": "Fire Station",
+            "translationPt": "Quartel do Corpo de Bombeiros"
           }
         ],
         "options": [
-          "Fire Station",
-          "Ship",
+          "Pilot",
           "French Fries",
-          "Pilot"
+          "Ship",
+          "Fire Station"
         ],
         "correctAnswer": "Fire Station",
         "explanation": "Exemplo prático: \"Fire trucks are parked inside the fire station.\"",
@@ -20296,20 +15763,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e21",
+        "id": "w0-p15-e17",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 17 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Firefighter",
         "visualEmoji": "🧑‍🚒",
         "visualOptions": [
           {
-            "text": "Coin",
-            "emoji": "🪙",
-            "label": "Coin",
-            "translationPt": "Moeda"
+            "text": "Firefighter",
+            "emoji": "🧑‍🚒",
+            "label": "Firefighter",
+            "translationPt": "Bombeiro"
           },
           {
             "text": "Popcorn",
@@ -20318,10 +15782,10 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pipoca"
           },
           {
-            "text": "Firefighter",
-            "emoji": "🧑‍🚒",
-            "label": "Firefighter",
-            "translationPt": "Bombeiro"
+            "text": "Coin",
+            "emoji": "🪙",
+            "label": "Coin",
+            "translationPt": "Moeda"
           },
           {
             "text": "Ice Cream",
@@ -20331,9 +15795,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Coin",
-          "Popcorn",
           "Firefighter",
+          "Popcorn",
+          "Coin",
           "Ice Cream"
         ],
         "correctAnswer": "Firefighter",
@@ -20342,15 +15806,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-e22",
+        "id": "w0-p15-e18",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 18 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Hotel",
         "visualEmoji": "🏨",
         "visualOptions": [
+          {
+            "text": "Police Station",
+            "emoji": "🚓",
+            "label": "Police Station",
+            "translationPt": "Delegacia de polícia"
+          },
+          {
+            "text": "Movie Theater",
+            "emoji": "🍿",
+            "label": "Movie Theater",
+            "translationPt": "Sala de cinema"
+          },
           {
             "text": "Bank",
             "emoji": "🏦",
@@ -20362,25 +15835,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏨",
             "label": "Hotel",
             "translationPt": "Hotel"
-          },
-          {
-            "text": "Police Station",
-            "emoji": "🚓",
-            "label": "Police Station",
-            "translationPt": "Delegacia de polícia"
-          },
-          {
-            "text": "Movie Theater",
-            "emoji": "🍿",
-            "label": "Movie Theater",
-            "translationPt": "Cinema"
           }
         ],
         "options": [
-          "Bank",
-          "Hotel",
           "Police Station",
-          "Movie Theater"
+          "Movie Theater",
+          "Bank",
+          "Hotel"
         ],
         "correctAnswer": "Hotel",
         "explanation": "Exemplo prático: \"We stayed at a comfortable hotel during vacation.\"",
@@ -20388,21 +15849,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e23",
+        "id": "w0-p15-e19",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 19 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Suitcase",
         "visualEmoji": "🧳",
         "visualOptions": [
-          {
-            "text": "Train",
-            "emoji": "🚆",
-            "label": "Train",
-            "translationPt": "Trem ferroviário"
-          },
           {
             "text": "Trophy",
             "emoji": "🏆",
@@ -20420,13 +15872,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🧳",
             "label": "Suitcase",
             "translationPt": "Mala de viagem com rodinhas"
+          },
+          {
+            "text": "Train",
+            "emoji": "🚆",
+            "label": "Train",
+            "translationPt": "Trem ferroviário"
           }
         ],
         "options": [
-          "Train",
           "Trophy",
           "Helicopter",
-          "Suitcase"
+          "Suitcase",
+          "Train"
         ],
         "correctAnswer": "Suitcase",
         "explanation": "Exemplo prático: \"Pack your clothes inside the rolling suitcase.\"",
@@ -20434,56 +15892,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-pron-5",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Reflexive Pronouns)",
-        "conceptHeader": "Funcionam como um espelho! Quando você faz algo sozinho ou olha para si mesmo no espelho, usamos \"-self\": \"Myself\" (Eu mesmo), \"Yourself\" (Você mesmo), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma)!",
-        "teacherAudioPt": "Olha que lindo, meu amor: os Pronomes Reflexivos são como um espelho, quando a pessoa faz a ação para ela mesma! Myself significa eu mesmo ou a mim mesmo. Yourself significa você mesmo. Himself é ele mesmo, e Herself é ela mesma. Vamos conectar cada par com calma!",
-        "prompt": "🤝 Associe cada Pronome Reflexivo (como em um espelho) ao seu par:",
-        "pairs": [
-          {
-            "id": "w0-p12-p5-ref1",
-            "en": "Myself",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo",
-            "tipPt": "Isso! \"By myself\" = \"Por mim mesmo / Sozinho\"!"
-          },
-          {
-            "id": "w0-p12-p5-ref2",
-            "en": "Yourself",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"Yourself\" refere-se a \"Você mesmo\"!"
-          },
-          {
-            "id": "w0-p12-p5-ref3",
-            "en": "Himself",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (para menino ou homem)",
-            "tipPt": "Perfeito! \"Himself\" significa \"Ele mesmo\"!"
-          },
-          {
-            "id": "w0-p12-p5-ref4",
-            "en": "Herself",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (para menina ou mulher)",
-            "tipPt": "Lindo! \"Herself\" significa \"Ela mesma\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Reflexivos indicam que a pessoa faz a ação para si mesma: Myself, Yourself, Himself, Herself.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p12-e25",
+        "id": "w0-p15-e20",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 20 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Passport",
         "visualEmoji": "🛂",
@@ -20495,16 +15905,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Passaporte de viagem"
           },
           {
-            "text": "Doctor",
-            "emoji": "👨‍⚕️",
-            "label": "Doctor",
-            "translationPt": "Médico / Médica"
-          },
-          {
             "text": "Police Officer",
             "emoji": "👮",
             "label": "Police Officer",
             "translationPt": "Policial"
+          },
+          {
+            "text": "Doctor",
+            "emoji": "👨‍⚕️",
+            "label": "Doctor",
+            "translationPt": "Médico / Médica"
           },
           {
             "text": "Dentist",
@@ -20515,8 +15925,8 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Passport",
-          "Doctor",
           "Police Officer",
+          "Doctor",
           "Dentist"
         ],
         "correctAnswer": "Passport",
@@ -20525,26 +15935,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-e26",
+        "id": "w0-p15-e21",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 21 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Airport",
         "visualEmoji": "🛫",
         "visualOptions": [
           {
-            "text": "Subway",
-            "emoji": "🚇",
-            "label": "Subway",
-            "translationPt": "Metrô subterrâneo"
-          },
-          {
             "text": "Pizza",
             "emoji": "🍕",
             "label": "Pizza",
             "translationPt": "Pizza"
+          },
+          {
+            "text": "Airport",
+            "emoji": "🛫",
+            "label": "Airport",
+            "translationPt": "Aeroporto com avião"
           },
           {
             "text": "Ship",
@@ -20553,17 +15960,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Navio"
           },
           {
-            "text": "Airport",
-            "emoji": "🛫",
-            "label": "Airport",
-            "translationPt": "Aeroporto"
+            "text": "Subway",
+            "emoji": "🚇",
+            "label": "Subway",
+            "translationPt": "Metrô subterrâneo"
           }
         ],
         "options": [
-          "Subway",
           "Pizza",
+          "Airport",
           "Ship",
-          "Airport"
+          "Subway"
         ],
         "correctAnswer": "Airport",
         "explanation": "Exemplo prático: \"Arrive at the airport two hours before your flight.\"",
@@ -20571,15 +15978,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e27",
+        "id": "w0-p15-e22",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 22 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Airplane",
         "visualEmoji": "✈️",
         "visualOptions": [
+          {
+            "text": "Ice Cream",
+            "emoji": "🍦",
+            "label": "Ice Cream",
+            "translationPt": "Sorvete"
+          },
+          {
+            "text": "Airplane",
+            "emoji": "✈️",
+            "label": "Airplane",
+            "translationPt": "Avião comercial"
+          },
           {
             "text": "Hotel",
             "emoji": "🏨",
@@ -20591,25 +16007,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍟",
             "label": "French Fries",
             "translationPt": "Batata frita"
-          },
-          {
-            "text": "Airplane",
-            "emoji": "✈️",
-            "label": "Airplane",
-            "translationPt": "Avião comercial"
-          },
-          {
-            "text": "Ice Cream",
-            "emoji": "🍦",
-            "label": "Ice Cream",
-            "translationPt": "Sorvete"
           }
         ],
         "options": [
-          "Hotel",
-          "French Fries",
+          "Ice Cream",
           "Airplane",
-          "Ice Cream"
+          "Hotel",
+          "French Fries"
         ],
         "correctAnswer": "Airplane",
         "explanation": "Exemplo prático: \"The passenger airplane takes off from the runway.\"",
@@ -20617,20 +16021,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e28",
+        "id": "w0-p15-e23",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 23 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Pilot",
         "visualEmoji": "👨‍✈️",
         "visualOptions": [
           {
-            "text": "Pilot",
-            "emoji": "👨‍✈️",
-            "label": "Pilot",
-            "translationPt": "Piloto de avião"
+            "text": "Restaurant",
+            "emoji": "🍽️",
+            "label": "Restaurant",
+            "translationPt": "Restaurante completo"
           },
           {
             "text": "Firefighter",
@@ -20639,23 +16040,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Bombeiro"
           },
           {
-            "text": "Restaurant",
-            "emoji": "🍽️",
-            "label": "Restaurant",
-            "translationPt": "Restaurante"
-          },
-          {
             "text": "Fire Station",
             "emoji": "🚒",
             "label": "Fire Station",
             "translationPt": "Quartel do Corpo de Bombeiros"
+          },
+          {
+            "text": "Pilot",
+            "emoji": "👨‍✈️",
+            "label": "Pilot",
+            "translationPt": "Piloto de avião"
           }
         ],
         "options": [
-          "Pilot",
-          "Firefighter",
           "Restaurant",
-          "Fire Station"
+          "Firefighter",
+          "Fire Station",
+          "Pilot"
         ],
         "correctAnswer": "Pilot",
         "explanation": "Exemplo prático: \"The airline pilot greets the passengers.\"",
@@ -20663,56 +16064,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-pron-6",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Interrogative Pronouns)",
-        "conceptHeader": "São as palavrinhas de detetive para fazer perguntas! \"Who?\" pergunta Quem (pessoa), \"What?\" pergunta O quê (coisa), \"Where?\" pergunta Onde (lugar) e \"When?\" pergunta Quando (tempo/hora)!",
-        "teacherAudioPt": "Criança inteligente adora perguntar para aprender, não é, meu bem? Para perguntar sobre uma pessoa, dizemos Who, Quem. Para perguntar sobre uma coisa, dizemos What, O quê. Para saber o lugar, dizemos Where, Onde. E para saber a hora ou o dia, dizemos When, Quando! Ligue os pares!",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo à pergunta correta:",
-        "pairs": [
-          {
-            "id": "w0-p12-p6-int1",
-            "en": "Who?",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre pessoas)",
-            "tipPt": "Exato! \"Who is there?\" = \"Quem está aí?\""
-          },
-          {
-            "id": "w0-p12-p6-int2",
-            "en": "What?",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre coisas)",
-            "tipPt": "Muito bem! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p12-p6-int3",
-            "en": "Where?",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre o lugar)",
-            "tipPt": "Perfeito! \"Where is the key?\" = \"Onde está a chave?\""
-          },
-          {
-            "id": "w0-p12-p6-int4",
-            "en": "When?",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre tempo/dia)",
-            "tipPt": "Maravilha! \"When\" pergunta \"Quando?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Usamos os Pronomes Interrogativos para perguntar: Who (Quem), What (O quê), Where (Onde) e When (Quando).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p12-e30",
+        "id": "w0-p15-e24",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 24 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Helicopter",
         "visualEmoji": "🚁",
@@ -20722,6 +16075,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🍔",
             "label": "Hamburger",
             "translationPt": "Hambúrguer"
+          },
+          {
+            "text": "Hospital",
+            "emoji": "🏥",
+            "label": "Hospital",
+            "translationPt": "Prédio do hospital"
           },
           {
             "text": "Helicopter",
@@ -20734,19 +16093,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏦",
             "label": "Bank",
             "translationPt": "Banco / Agência bancária"
-          },
-          {
-            "text": "Hospital",
-            "emoji": "🏥",
-            "label": "Hospital",
-            "translationPt": "Hospital / Pronto-socorro"
           }
         ],
         "options": [
           "Hamburger",
+          "Hospital",
           "Helicopter",
-          "Bank",
-          "Hospital"
+          "Bank"
         ],
         "correctAnswer": "Helicopter",
         "explanation": "Exemplo prático: \"A helicopter flies above the city buildings.\"",
@@ -20754,21 +16107,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e31",
+        "id": "w0-p15-e25",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 25 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Train",
         "visualEmoji": "🚆",
         "visualOptions": [
-          {
-            "text": "Trophy",
-            "emoji": "🏆",
-            "label": "Trophy",
-            "translationPt": "Troféu de conquista"
-          },
           {
             "text": "Train",
             "emoji": "🚆",
@@ -20782,6 +16126,12 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chef de cozinha / Cozinheiro"
           },
           {
+            "text": "Trophy",
+            "emoji": "🏆",
+            "label": "Trophy",
+            "translationPt": "Troféu de conquista"
+          },
+          {
             "text": "Nurse",
             "emoji": "👩‍⚕️",
             "label": "Nurse",
@@ -20789,9 +16139,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Trophy",
           "Train",
           "Chef",
+          "Trophy",
           "Nurse"
         ],
         "correctAnswer": "Train",
@@ -20800,21 +16150,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e32",
+        "id": "w0-p15-e26",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 26 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Subway",
         "visualEmoji": "🚇",
         "visualOptions": [
-          {
-            "text": "Airport",
-            "emoji": "🛫",
-            "label": "Airport",
-            "translationPt": "Aeroporto"
-          },
           {
             "text": "Hotel",
             "emoji": "🏨",
@@ -20832,13 +16173,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚇",
             "label": "Subway",
             "translationPt": "Metrô subterrâneo"
+          },
+          {
+            "text": "Airport",
+            "emoji": "🛫",
+            "label": "Airport",
+            "translationPt": "Aeroporto com avião"
           }
         ],
         "options": [
-          "Airport",
           "Hotel",
           "Airplane",
-          "Subway"
+          "Subway",
+          "Airport"
         ],
         "correctAnswer": "Subway",
         "explanation": "Exemplo prático: \"Take the underground subway to avoid traffic.\"",
@@ -20846,26 +16193,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-e33",
+        "id": "w0-p15-e27",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 27 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Ship",
         "visualEmoji": "🚢",
         "visualOptions": [
           {
-            "text": "Pharmacy",
-            "emoji": "💊",
-            "label": "Pharmacy",
-            "translationPt": "Farmácia / Drogaria"
-          },
-          {
-            "text": "Police Station",
-            "emoji": "🚓",
-            "label": "Police Station",
-            "translationPt": "Delegacia de polícia"
+            "text": "Suitcase",
+            "emoji": "🧳",
+            "label": "Suitcase",
+            "translationPt": "Mala de viagem com rodinhas"
           },
           {
             "text": "Ship",
@@ -20874,17 +16212,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Navio"
           },
           {
-            "text": "Suitcase",
-            "emoji": "🧳",
-            "label": "Suitcase",
-            "translationPt": "Mala de viagem com rodinhas"
+            "text": "Police Station",
+            "emoji": "🚓",
+            "label": "Police Station",
+            "translationPt": "Delegacia de polícia"
+          },
+          {
+            "text": "Pharmacy",
+            "emoji": "💊",
+            "label": "Pharmacy",
+            "translationPt": "Farmácia / Drogaria"
           }
         ],
         "options": [
-          "Pharmacy",
-          "Police Station",
+          "Suitcase",
           "Ship",
-          "Suitcase"
+          "Police Station",
+          "Pharmacy"
         ],
         "correctAnswer": "Ship",
         "explanation": "Exemplo prático: \"The large ship sails across the blue ocean.\"",
@@ -20892,65 +16236,17 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-pron-7",
-        "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Indefinite Pronouns)",
-        "conceptHeader": "Usamos quando não dizemos o nome exato de quem ou do que é: \"Someone\" é Alguém (1 pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Nothing\" é Nadinha (Nada)!",
-        "teacherAudioPt": "Agora vem cá ouvir com carinho os Pronomes Indefinidos: sabe quando a campainha toca e dizemos que tem Alguém na porta? Em inglês dizemos Someone! Quando tem alguma coisa na mesa, dizemos Something. Quando falamos de todo mundo junto, é Everyone. E quando não tem nadinha, é Nothing! Conecte os pares!",
-        "prompt": "🤝 Associe cada Pronome Indefinido ao seu significado:",
-        "pairs": [
-          {
-            "id": "w0-p12-p7-ind1",
-            "en": "Someone",
-            "emoji": "🔔",
-            "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa)",
-            "tipPt": "Isso! \"Someone\" significa \"Alguém\"!"
-          },
-          {
-            "id": "w0-p12-p7-ind2",
-            "en": "Something",
-            "emoji": "🎁",
-            "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa",
-            "tipPt": "Muito bem! \"Something\" é \"Alguma coisa\"!"
-          },
-          {
-            "id": "w0-p12-p7-ind3",
-            "en": "Everyone",
-            "emoji": "👨‍👩‍👧‍👦",
-            "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone\" significa \"Todo mundo\"!"
-          },
-          {
-            "id": "w0-p12-p7-ind4",
-            "en": "Nothing",
-            "emoji": "🫙",
-            "phonetic": "/ˈnʌθ.ɪŋ/",
-            "pt": "Nada (nenhuma coisa)",
-            "tipPt": "Lindo! \"Nothing\" significa \"Nada\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Indefinidos referem-se a pessoas ou coisas de modo geral: Someone, Something, Everyone, Nothing.",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p12-e35",
+        "id": "w0-p15-e28",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 28 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Movie Theater",
         "visualEmoji": "🍿",
         "visualOptions": [
           {
-            "text": "Movie Theater",
-            "emoji": "🍿",
-            "label": "Movie Theater",
-            "translationPt": "Cinema"
+            "text": "Police Officer",
+            "emoji": "👮",
+            "label": "Police Officer",
+            "translationPt": "Policial"
           },
           {
             "text": "Passport",
@@ -20959,23 +16255,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Passaporte de viagem"
           },
           {
-            "text": "Police Officer",
-            "emoji": "👮",
-            "label": "Police Officer",
-            "translationPt": "Policial"
-          },
-          {
             "text": "Coin",
             "emoji": "🪙",
             "label": "Coin",
             "translationPt": "Moeda"
+          },
+          {
+            "text": "Movie Theater",
+            "emoji": "🍿",
+            "label": "Movie Theater",
+            "translationPt": "Sala de cinema"
           }
         ],
         "options": [
-          "Movie Theater",
-          "Passport",
           "Police Officer",
-          "Coin"
+          "Passport",
+          "Coin",
+          "Movie Theater"
         ],
         "correctAnswer": "Movie Theater",
         "explanation": "Exemplo prático: \"Watch a new film at the movie theater.\"",
@@ -20983,15 +16279,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p12-e36",
+        "id": "w0-p15-e29",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 29 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Popcorn",
         "visualEmoji": "🍿",
         "visualOptions": [
+          {
+            "text": "Popcorn",
+            "emoji": "🍿",
+            "label": "Popcorn",
+            "translationPt": "Pipoca"
+          },
           {
             "text": "Train",
             "emoji": "🚆",
@@ -21005,12 +16304,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Helicóptero"
           },
           {
-            "text": "Popcorn",
-            "emoji": "🍿",
-            "label": "Popcorn",
-            "translationPt": "Pipoca"
-          },
-          {
             "text": "Pilot",
             "emoji": "👨‍✈️",
             "label": "Pilot",
@@ -21018,9 +16311,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Popcorn",
           "Train",
           "Helicopter",
-          "Popcorn",
           "Pilot"
         ],
         "correctAnswer": "Popcorn",
@@ -21029,26 +16322,23 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p12-e37",
+        "id": "w0-p15-e30",
         "type": "image-choice",
-        "conceptTitle": "Restaurante, Hospital, Banco, Segurança & Viagem • Item 30 de 30",
-        "conceptHeader": "Olhe com carinho ao seu redor neste ambiente! Primeiro escute a pronúncia em inglês americano e depois toque na figura que representa o que você ouviu.",
-        "teacherAudioPt": "Escute com calma a palavrinha em inglês, meu bem! Imagine esse item aí pertinho de você neste ambiente e escolha a figura certinha. Se precisar, toque na tartaruguinha para ouvir bem devagarinho!",
         "prompt": "🎧 Identifique pelo som qual é o item correto deste ambiente:",
         "audioPhrase": "Trophy",
         "visualEmoji": "🏆",
         "visualOptions": [
           {
+            "text": "Hamburger",
+            "emoji": "🍔",
+            "label": "Hamburger",
+            "translationPt": "Hambúrguer"
+          },
+          {
             "text": "Nurse",
             "emoji": "👩‍⚕️",
             "label": "Nurse",
             "translationPt": "Enfermeira / Enfermeiro"
-          },
-          {
-            "text": "Trophy",
-            "emoji": "🏆",
-            "label": "Trophy",
-            "translationPt": "Troféu de conquista"
           },
           {
             "text": "Airplane",
@@ -21057,66 +16347,221 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Avião comercial"
           },
           {
-            "text": "Hamburger",
-            "emoji": "🍔",
-            "label": "Hamburger",
-            "translationPt": "Hambúrguer"
+            "text": "Trophy",
+            "emoji": "🏆",
+            "label": "Trophy",
+            "translationPt": "Troféu de conquista"
           }
         ],
         "options": [
+          "Hamburger",
           "Nurse",
-          "Trophy",
           "Airplane",
-          "Hamburger"
+          "Trophy"
         ],
         "correctAnswer": "Trophy",
         "explanation": "Exemplo prático: \"Congratulations! You earned the golden trophy!\"",
         "phoneticHint": "/ˈtroʊ.fi/",
         "skillCategory": "vocabulary"
-      },
+      }
+    ]
+  },
+  {
+    "id": "w0-p16",
+    "worldId": 0,
+    "phaseNumber": 16,
+    "title": "Lição de Pronomes IV • Indefinidos & Relativos",
+    "subtitle": "Módulo de Pronomes 4/4 (Após 12 de Vocabulário) • Pares Associativos + Voz da Professora",
+    "pedagogicalObjective": "Concluir o domínio dos pronomes com os Pronomes Indefinidos (Someone, Something, Everyone, Everything, Nobody, Nothing, Anyone, Anything) e os Pronomes Relativos (Who, Which, That, Whose, Where, When).",
+    "type": "boss",
+    "icon": "swords",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Chegamos à 4ª e última Lição Exclusiva de Pronomes (fechando com chave de ouro o Módulo 0)!",
+      "7º Passo: Aprendemos os Pronomes Indefinidos (Someone, Something, Everyone, Everything, Nobody, Nothing, Anyone, Anything).",
+      "8º Passo: Aprendemos os Pronomes Relativos (Who, Which, That, Whose, Where, When), que funcionam como pontezinhas conectando as frases!"
+    ],
+    "xpReward": 100,
+    "gemsReward": 40,
+    "exercises": [
       {
-        "id": "w0-p12-pron-8",
+        "id": "w0-p16-pron-1",
         "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (Relative Pronouns)",
-        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar pessoas; \"Which\" significa \"que/o qual\" para ligar coisas ou animais; \"That\" é a pontezinha curinga para tudo; e \"Whose\" indica \"de quem / cujo\"!",
-        "teacherAudioPt": "Chegamos à oitava família, meu amor: os Pronomes Relativos! Imagine que eles são pontezinhas de carinho que ligam duas partes da frase. Quando falamos de uma pessoa, usamos a ponte Who, que significa que ou quem. Para objetos ou animais, usamos a ponte Which. A palavrinha That serve tanto para pessoas quanto para objetos! E Whose mostra de quem é. Vamos ligar cada par!",
-        "prompt": "🤝 Ligue cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
+        "conceptTitle": "7º • Pronomes Indefinidos (Alguém, Algo, Todo Mundo e Tudo - Parte 1)",
+        "conceptHeader": "Quando sabemos que tem uma pessoa, mas não sabemos o nome dela, dizemos \"Someone\" (Alguém). Para uma coisa, dizemos \"Something\" (Alguma coisa). Para todas as pessoas juntas, \"Everyone\" (Todo mundo); e para todas as coisas, \"Everything\" (Tudo)!",
+        "teacherAudioPt": "/audio/teacher/pronoun_7.wav",
+        "prompt": "🤝 Conecte cada Pronome Indefinido ao seu par em português:",
         "pairs": [
           {
-            "id": "w0-p12-p8-rel1",
-            "en": "Who",
+            "id": "w0-p16-b1-ind1",
+            "en": "Someone",
+            "emoji": "🔔",
+            "phonetic": "/ˈsʌm.wʌn/",
+            "pt": "Alguém (uma pessoa)",
+            "tipPt": "Isso! \"Someone is at the door\" = \"Alguém está na porta\"!"
+          },
+          {
+            "id": "w0-p16-b1-ind2",
+            "en": "Something",
+            "emoji": "🎁",
+            "phonetic": "/ˈsʌm.θɪŋ/",
+            "pt": "Algo / Alguma coisa",
+            "tipPt": "Muito bem! \"Something\" = \"Alguma coisa\"!"
+          },
+          {
+            "id": "w0-p16-b1-ind3",
+            "en": "Everyone",
+            "emoji": "👨‍👩‍👧‍👦",
+            "phonetic": "/ˈev.ri.wʌn/",
+            "pt": "Todo mundo / Todas as pessoas",
+            "tipPt": "Perfeito! \"Everyone\" = \"Todo mundo\"!"
+          },
+          {
+            "id": "w0-p16-b1-ind4",
+            "en": "Everything",
+            "emoji": "🌟",
+            "phonetic": "/ˈev.ri.θɪŋ/",
+            "pt": "Tudo / Todas as coisas",
+            "tipPt": "Lindo! \"Everything\" = \"Tudo\"!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Someone (Alguém), Something (Alguma coisa), Everyone (Todo mundo), Everything (Tudo).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p16-pron-2",
+        "type": "pair-match",
+        "conceptTitle": "7º • Pronomes Indefinidos (Ninguém, Nada e Qualquer Um - Parte 2)",
+        "conceptHeader": "Quando não tem nenhuma pessoa, dizemos \"Nobody\" (Ninguém). Quando não tem nenhuma coisa, dizemos \"Nothing\" (Nada). E em perguntas ou para dizer qualquer um, usamos \"Anyone\" e \"Anything\"!",
+        "teacherAudioPt": "/audio/teacher/pronoun_7.wav",
+        "prompt": "🤝 Ligue os Pronomes Indefinidos Nobody, Nothing, Anyone e Anything:",
+        "pairs": [
+          {
+            "id": "w0-p16-b2-ind5",
+            "en": "Nobody",
+            "emoji": "🚫",
+            "phonetic": "/ˈnoʊ.bɑː.di/",
+            "pt": "Ninguém (nenhuma pessoa)",
+            "tipPt": "Exato! \"Nobody\" = \"Ninguém\"!"
+          },
+          {
+            "id": "w0-p16-b2-ind6",
+            "en": "Nothing",
+            "emoji": "🫙",
+            "phonetic": "/ˈnʌθ.ɪŋ/",
+            "pt": "Nada (nenhuma coisa)",
+            "tipPt": "Isso! \"Nothing in the box\" = \"Nada na caixa\"!"
+          },
+          {
+            "id": "w0-p16-b2-ind7",
+            "en": "Anyone",
+            "emoji": "🙋‍♂️",
+            "phonetic": "/ˈen.i.wʌn/",
+            "pt": "Alguém (em perguntas) / Qualquer pessoa",
+            "tipPt": "Muito bem! \"Is anyone home?\" = \"Tem alguém em casa?\""
+          },
+          {
+            "id": "w0-p16-b2-ind8",
+            "en": "Anything",
+            "emoji": "✨",
+            "phonetic": "/ˈen.i.θɪŋ/",
+            "pt": "Alguma coisa (em perguntas) / Qualquer coisa",
+            "tipPt": "Perfeito! Você dominou os Indefinidos!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Nobody (Ninguém), Nothing (Nada), Anyone (Alguém em perguntas / Qualquer pessoa), Anything (Algo em perguntas / Qualquer coisa).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p16-pron-3",
+        "type": "pair-match",
+        "conceptTitle": "8º • Pronomes Relativos (As Pontezinhas das Frases - Parte 1)",
+        "conceptHeader": "São pontezinhas que juntam duas ideias na mesma frase! \"Who\" significa \"que/quem\" para ligar PESSOAS; \"Which\" significa \"que/o qual\" para ligar COISAS ou ANIMAIS; \"That\" é a ponte curinga para pessoas e coisas; e \"Whose\" indica \"cujo / de quem\"!",
+        "teacherAudioPt": "/audio/teacher/pronoun_8.wav",
+        "prompt": "🤝 Conecte cada Pronome Relativo (a pontezinha da frase) ao seu uso:",
+        "pairs": [
+          {
+            "id": "w0-p16-b3-rel1",
+            "en": "Who (relativo)",
             "emoji": "👩‍⚕️",
             "phonetic": "/huː/",
             "pt": "Que / Quem (ponte usada para PESSOAS)",
             "tipPt": "Perfeito! \"The doctor who helps\" = \"O médico que ajuda\"!"
           },
           {
-            "id": "w0-p12-p8-rel2",
-            "en": "Which",
+            "id": "w0-p16-b3-rel2",
+            "en": "Which (relativo)",
             "emoji": "🔑",
             "phonetic": "/wɪtʃ/",
             "pt": "Que / O qual (ponte para COISAS ou ANIMAIS)",
             "tipPt": "Isso! \"The key which opens\" = \"A chave que abre\"!"
           },
           {
-            "id": "w0-p12-p8-rel3",
-            "en": "That",
+            "id": "w0-p16-b3-rel3",
+            "en": "That (relativo)",
             "emoji": "🌉",
             "phonetic": "/ðæt/",
             "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
             "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
           },
           {
-            "id": "w0-p12-p8-rel4",
-            "en": "Whose",
+            "id": "w0-p16-b3-rel4",
+            "en": "Whose (relativo)",
             "emoji": "🏠",
             "phonetic": "/huːz/",
             "pt": "Cujo(a) / De quem (ponte que indica POSSE)",
-            "tipPt": "Parabéns, meu bem! Você aprendeu todas as 8 famílias de pronomes!"
+            "tipPt": "Lindo! \"The boy whose dog is here\" = \"O menino cujo cachorro está aqui\"!"
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Os Pronomes Relativos conectam ideias na frase: Who (pessoas), Which (coisas/animais), That (curinga) e Whose (posse).",
+        "explanation": "Who (ponte para pessoas), Which (ponte para coisas/animais), That (ponte curinga), Whose (ponte de posse).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p16-pron-4",
+        "type": "pair-match",
+        "conceptTitle": "8º • Pronomes Relativos na Prática (Frases do Cotidiano)",
+        "conceptHeader": "Vamos ligar frases reais do nosso dia a dia usando as pontezinhas dos Pronomes Relativos \"Who, Which, That, Where\"!",
+        "teacherAudioPt": "/audio/teacher/pronoun_8.wav",
+        "prompt": "🤝 Associe cada frase com Pronome Relativo ao seu significado em português:",
+        "pairs": [
+          {
+            "id": "w0-p16-b4-rel5",
+            "en": "The teacher who teaches",
+            "emoji": "👩‍🏫",
+            "phonetic": "/ðə ˈtiː.tʃər huː ˈtiː.tʃɪz/",
+            "pt": "A professora que ensina (pessoa = who)",
+            "tipPt": "Isso! Pessoa usa a pontezinha \"who\"!"
+          },
+          {
+            "id": "w0-p16-b4-rel6",
+            "en": "The key which opens",
+            "emoji": "🔑",
+            "phonetic": "/ðə kiː wɪtʃ ˈoʊ.pənz/",
+            "pt": "A chave que abre (objeto = which)",
+            "tipPt": "Muito bem! Objeto usa a pontezinha \"which\"!"
+          },
+          {
+            "id": "w0-p16-b4-rel7",
+            "en": "The house where I live",
+            "emoji": "🏠",
+            "phonetic": "/ðə haʊs wer aɪ lɪv/",
+            "pt": "A casa onde eu moro (lugar = where)",
+            "tipPt": "Perfeito! Lugar usa a pontezinha \"where\"!"
+          },
+          {
+            "id": "w0-p16-b4-rel8",
+            "en": "The car that is red",
+            "emoji": "🚗",
+            "phonetic": "/ðə kɑːr ðæt ɪz red/",
+            "pt": "O carro que é vermelho (curinga = that)",
+            "tipPt": "Parabéns, meu amor! Você dominou todas as 8 famílias de pronomes!"
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "The teacher who teaches (A professora que ensina), The cake which I made (O bolo que eu fiz), The house where I live (A casa onde eu moro), The car that is red (O carro que é vermelho).",
         "skillCategory": "grammar"
       }
     ]

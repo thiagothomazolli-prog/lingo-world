@@ -244,8 +244,7 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
               setImgError(true);
             }
           }}
-          style={{ clipPath: 'inset(1.5% 1.5% 6.5% 1.5%)' }}
-          className={`max-w-full max-h-full w-auto h-auto object-contain mix-blend-multiply transition-opacity duration-150 ${
+          className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg transition-opacity duration-150 ${
             imgLoaded ? 'opacity-100' : 'opacity-0'
           }`}
         />
