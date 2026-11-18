@@ -82,10 +82,24 @@ export interface Exercise {
   skillCategory: keyof CompetencyScores;
 }
 
+export interface LessonVocabItem {
+  word: string;
+  pt: string;
+  simplePronunciation: string;
+  phonetic: string;
+  exampleEn: string;
+  examplePt: string;
+  emoji: string;
+}
+
 export interface Phase {
   id: string;
   worldId: number;
   phaseNumber: number;
+  themeId?: string;
+  themeTitle?: string;
+  frequencyLevel?: string;
+  vocabItems?: LessonVocabItem[];
   title: string;
   subtitle: string;
   pedagogicalObjective: string;

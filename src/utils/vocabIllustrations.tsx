@@ -223,10 +223,10 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
 
   if (activeUrl && !imgError) {
     return (
-      <div className="relative w-full h-36 sm:h-44 rounded-xl bg-white flex items-center justify-center select-none p-2">
+      <div className="relative w-full h-full overflow-hidden bg-slate-100 dark:bg-slate-800 flex items-center justify-center select-none">
         {!imgLoaded && (
-          <div className="absolute inset-0 bg-white animate-pulse flex items-center justify-center rounded-xl">
-            <span className="text-3xl opacity-25">{emoji || '🖼️'}</span>
+          <div className="absolute inset-0 bg-slate-100 dark:bg-slate-800 animate-pulse flex items-center justify-center">
+            <span className="text-4xl opacity-30">{emoji || '🖼️'}</span>
           </div>
         )}
         <img
@@ -244,7 +244,7 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
               setImgError(true);
             }
           }}
-          className={`max-w-full max-h-full w-auto h-auto object-contain rounded-lg transition-opacity duration-150 ${
+          className={`w-full h-full object-cover transition-opacity duration-150 ${
             imgLoaded ? 'opacity-100' : 'opacity-0'
           }`}
         />
@@ -253,7 +253,7 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
   }
 
   return (
-    <div className="relative w-full h-36 sm:h-44 rounded-xl bg-white flex items-center justify-center select-none p-2">
+    <div className="relative w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center select-none">
       <span className="text-5xl sm:text-6xl filter drop-shadow-sm leading-none">
         {emoji || '✨'}
       </span>

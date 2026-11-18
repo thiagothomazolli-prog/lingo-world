@@ -201,6 +201,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
   const [spokenResult, setSpokenResult] = useState('');
   const [mistakesCount, setMistakesCount] = useState(0);
   const [wrongExamItems, setWrongExamItems] = useState<WrongExamItem[]>([]);
+  const [flashcardIndex, setFlashcardIndex] = useState(0);
   const [hasPlayedAudioOnce, setHasPlayedAudioOnce] = useState(false);
   const [showWrittenWord, setShowWrittenWord] = useState(false);
   const [selectedLeftPairId, setSelectedLeftPairId] = useState<string | null>(null);
@@ -697,37 +698,159 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
         </div>
       </header>
 
-      {/* 📖 Step 1: Theory & Quick Intro */}
+      {/* 📖 Step 1 / Tela 3: Tela da Lição (Flashcard Interativo das Palavras do Módulo) */}
       {step === 'theory' && (
-        <main className="flex-1 overflow-y-auto px-4 py-6 max-w-xl w-full mx-auto flex flex-col justify-between">
-          <div className="space-y-6">
-            <div className={`flex items-center gap-4 p-4 rounded-3xl border-2 ${
-              phase.type === 'boss'
-                ? 'bg-rose-50 border-rose-200 shadow-sm'
-                : phase.type === 'chest'
-                ? 'bg-amber-50 border-amber-200 shadow-sm'
-                : 'bg-indigo-50/90 border-indigo-100'
-            }`}>
-              <MascotLingo mood={phase.type === 'boss' ? 'cheering' : 'explaining'} size="sm" />
-              <div>
-                <span className={`text-[11px] font-black uppercase tracking-wider block ${
-                  phase.type === 'boss' ? 'text-rose-600' : phase.type === 'chest' ? 'text-amber-700' : 'text-indigo-600'
-                }`}>
-                  {phase.type === 'boss' ? '👑 Batalha do Guardião (Boss Final)' : phase.type === 'chest' ? '🎁 Baú da Sabedoria' : 'Objetivo Pedagógico'}
-                </span>
-                <p className="text-sm font-bold text-slate-900 mt-0.5">{phase.pedagogicalObjective}</p>
-              </div>
-            </div>
+        <main className="flex-1 overflow-y-auto px-3 py-4 max-w-xl w-full mx-auto flex flex-col justify-between gap-4">
+          {phase.vocabItems && phase.vocabItems.length > 0 ? (
+            (() => {
+              const items = phase.vocabItems!;
+              const safeIdx = Math.min(flashcardIndex, items.length - 1);
+              const card = items[safeIdx];
 
-            <div className="space-y-3">
-              <div className="flex items-center gap-2 text-slate-800 font-black text-sm">
-                <Lightbulb className="w-4 h-4 text-amber-500" />
-                <span>Dicas Práticas para Esta Lição:</span>
+              return (
+                <div className="space-y-3.5">
+                  {/* Barra de topo do Flashcard */}
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-800 dark:text-indigo-200 text-xs font-black">
+                      📖 Flashcard {safeIdx + 1} de {items.length}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={handleStartExercise}
+                      className="px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-black text-xs uppercase tracking-wider shadow-xs cursor-pointer active:scale-95 transition-transform"
+                    >
+                      Ir para Exercícios →
+                    </button>
+                  </div>
+
+                  {/* Card Grande de Flashcard com Imagem do Tamanho Total do Topo do Card */}
+                  <div className="w-full rounded-3xl overflow-hidden bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 shadow-lg">
+                    {/* Imagem preenchendo 100% da largura do card sem bordas sobrando */}
+                    <div className="relative w-full aspect-square max-h-[260px] sm:max-h-[300px] overflow-hidden bg-slate-100 dark:bg-slate-900">
+                      <VocabIllustration word={card.word} emoji={card.emoji} />
+                      <div className="absolute top-3 right-3 flex items-center gap-1.5">
+                        <button
+                          type="button"
+                          onClick={() => speakText(card.word, 'en-US', user.speechSpeed)}
+                          className="px-3 py-2 rounded-2xl bg-indigo-600/95 hover:bg-indigo-700 text-white font-black text-xs shadow-md flex items-center gap-1.5 cursor-pointer active:scale-95"
+                        >
+                          <Volume2 className="w-4 h-4" />
+                          <span>Ouvir</span>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => speakText(card.word, 'en-US', 0.65)}
+                          className="px-2.5 py-2 rounded-2xl bg-white/95 dark:bg-slate-800/95 text-amber-800 dark:text-amber-300 font-black text-xs shadow-md cursor-pointer active:scale-95"
+                          title="Ouvir devagar"
+                        >
+                          🐢 0.65x
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Dados completos da palavra: Inglês, Pronúncia Simplificada, Tradução e Frase de Exemplo */}
+                    <div className="p-4 sm:p-5 space-y-3 text-center">
+                      <div className="space-y-1">
+                        <div className="flex items-center justify-center gap-2 flex-wrap">
+                          <span className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
+                            {card.word}
+                          </span>
+                          <span className="px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 text-xs sm:text-sm font-black">
+                            🔊 Pronúncia: "{card.simplePronunciation}"
+                          </span>
+                        </div>
+                        <p className="text-lg sm:text-xl font-extrabold text-emerald-700 dark:text-emerald-400">
+                          {card.pt}
+                        </p>
+                      </div>
+
+                      {/* Frase curta de exemplo com tradução e áudio */}
+                      <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-700 flex items-center justify-between gap-3 text-left">
+                        <div className="min-w-0">
+                          <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 block">
+                            Frase de Exemplo:
+                          </span>
+                          <p className="text-sm sm:text-base font-black text-slate-900 dark:text-white leading-snug">
+                            "{card.exampleEn}"
+                          </p>
+                          <p className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 mt-0.5">
+                            "{card.examplePt}"
+                          </p>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => speakText(card.exampleEn, 'en-US', user.speechSpeed)}
+                          className="w-10 h-10 rounded-xl bg-indigo-100 hover:bg-indigo-200 dark:bg-indigo-950 dark:hover:bg-indigo-900 text-indigo-700 dark:text-indigo-300 flex items-center justify-center shrink-0 cursor-pointer active:scale-95"
+                          title="Ouvir frase de exemplo"
+                        >
+                          <Volume2 className="w-5 h-5" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Navegação entre os 12 Flashcards */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <button
+                      type="button"
+                      disabled={safeIdx === 0}
+                      onClick={() => {
+                        sfx.playTap();
+                        const prevIdx = Math.max(0, safeIdx - 1);
+                        setFlashcardIndex(prevIdx);
+                        if (user.autoSpeak !== false) {
+                          speakText(items[prevIdx].word, 'en-US', user.speechSpeed);
+                        }
+                      }}
+                      className="py-3 px-4 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 disabled:opacity-40 text-slate-800 dark:text-slate-100 font-black text-xs sm:text-sm uppercase tracking-wider cursor-pointer"
+                    >
+                      ← Palavra Anterior
+                    </button>
+
+                    {safeIdx < items.length - 1 ? (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          sfx.playTap();
+                          const nextIdx = safeIdx + 1;
+                          setFlashcardIndex(nextIdx);
+                          if (user.autoSpeak !== false) {
+                            speakText(items[nextIdx].word, 'en-US', user.speechSpeed);
+                          }
+                        }}
+                        className="py-3 px-4 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-sm cursor-pointer"
+                      >
+                        Próxima Palavra →
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={handleStartExercise}
+                        className="py-3 px-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-sm cursor-pointer"
+                      >
+                        Praticar Agora →
+                      </button>
+                    )}
+                  </div>
+                </div>
+              );
+            })()
+          ) : (
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 p-4 rounded-3xl border-2 bg-indigo-50/90 dark:bg-indigo-950/60 border-indigo-100 dark:border-indigo-800">
+                <MascotLingo mood="explaining" size="sm" />
+                <div>
+                  <span className="text-[11px] font-black uppercase tracking-wider block text-indigo-600 dark:text-indigo-300">
+                    Objetivo Pedagógico
+                  </span>
+                  <p className="text-sm font-bold text-slate-900 dark:text-white mt-0.5">{phase.pedagogicalObjective}</p>
+                </div>
               </div>
+
               <div className="space-y-2.5">
                 {phase.theorySummary.map((tip, idx) => (
-                  <div key={idx} className="flex items-start gap-3 bg-slate-50 border border-slate-200/80 p-3.5 rounded-2xl text-xs sm:text-sm font-semibold text-slate-700">
-                    <span className="w-5 h-5 rounded-full bg-indigo-100 text-indigo-800 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
+                  <div key={idx} className="flex items-start gap-3 bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 p-3.5 rounded-2xl text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200">
+                    <span className="w-5 h-5 rounded-full bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
                       {idx + 1}
                     </span>
                     <span>{tip}</span>
@@ -735,28 +858,14 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                 ))}
               </div>
             </div>
+          )}
 
-            <div className="flex items-center justify-between p-4 bg-emerald-50 rounded-2xl border border-emerald-200 text-xs font-bold text-emerald-900">
-              <span>Recompensas ao Concluir:</span>
-              <div className="flex items-center gap-3">
-                <span className="text-indigo-600 font-black">⚡ +{phase.xpReward} XP</span>
-                <span className="text-sky-600 font-black">💎 +{phase.gemsReward} Gemas</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="pt-6">
+          <div className="pt-2">
             <button
               onClick={handleStartExercise}
-              className={`w-full py-4 text-white font-black text-base uppercase tracking-wider rounded-2xl shadow-lg transition-transform flex items-center justify-center gap-2 cursor-pointer ${
-                phase.type === 'boss'
-                  ? 'bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-700 hover:to-amber-700 border-b-4 border-b-rose-900 active:border-b-0 active:translate-y-1'
-                  : phase.type === 'chest'
-                  ? 'bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-amber-950 border-b-4 border-b-amber-700 active:border-b-0 active:translate-y-1'
-                  : 'bg-emerald-500 hover:bg-emerald-600 border-b-4 border-b-emerald-700 active:border-b-0 active:translate-y-1'
-              }`}
+              className="w-full py-4 bg-emerald-500 hover:bg-emerald-600 border-b-4 border-b-emerald-700 active:border-b-0 active:translate-y-1 text-white font-black text-sm sm:text-base uppercase tracking-wider rounded-2xl shadow-lg transition-transform flex items-center justify-center gap-2 cursor-pointer"
             >
-              <span>{phase.type === 'boss' ? `Enfrentar o Guardião (${phase.exercises.length} desafios)` : phase.type === 'chest' ? `Abrir Baú (${phase.exercises.length} tarefas)` : `Começar Lição (${phase.exercises.length} tarefas)`}</span>
+              <span>Começar Exercícios ({phase.exercises.length} questões)</span>
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
@@ -823,7 +932,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
             {currentExercise.visualEmoji && (!currentExercise.visualOptions || currentExercise.visualOptions.length === 0) && (
               <div className="flex items-center justify-center py-1">
                 {getRealVocabPhotoUrl(getSpokenPhraseForExercise(currentExercise)) ? (
-                  <div className="w-48 sm:w-56 rounded-2xl bg-white border-2 border-indigo-100 shadow-xs p-1.5 flex items-center justify-center">
+                  <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-3xl overflow-hidden bg-white dark:bg-slate-800 border-2 border-indigo-200 dark:border-slate-700 shadow-sm p-0">
                     <VocabIllustration
                       word={getSpokenPhraseForExercise(currentExercise)}
                       emoji={currentExercise.visualEmoji}
@@ -1077,10 +1186,10 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               </div>
             )}
 
-            {/* 1. Interactive Visual Option Cards (quando visualOptions estiver presente) */}
+            {/* 1. Interactive Visual Option Cards (Imagem exatamente do tamanho do card e card do maior tamanho possível) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
               hasAnswered ? (
-                /* Ao apertar Verificar: exibe a imagem selecionada em destaque centralizado com o termo em inglês e o significado em português logo abaixo, sem ser tampada por nenhuma tarja */
+                /* Ao apertar Verificar: exibe a imagem selecionada em destaque centralizado preenchendo o topo do card */
                 (() => {
                   const selectedVisual =
                     currentExercise.visualOptions.find(
@@ -1090,60 +1199,58 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                   return (
                     <div className="pt-1 pb-2 flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-200">
                       <div
-                        className={`relative w-full max-w-[300px] sm:max-w-[340px] mx-auto p-5 rounded-3xl bg-white border-2 border-b-4 shadow-lg flex flex-col items-center justify-center gap-2.5 ${
+                        className={`relative w-full max-w-[340px] sm:max-w-[380px] mx-auto p-0 overflow-hidden rounded-3xl bg-white dark:bg-slate-800 border-3 border-b-6 shadow-xl flex flex-col items-center justify-center ${
                           isCorrect
                             ? 'border-emerald-500 border-b-emerald-600 ring-4 ring-emerald-200/70'
-                            : 'border-rose-400 border-b-rose-600 ring-4 ring-rose-200/60'
+                            : 'border-rose-500 border-b-rose-600 ring-4 ring-rose-200/60'
                         }`}
                       >
-                        {/* Selo discreto no topo do card em destaque */}
-                        <div
-                          className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider ${
-                            isCorrect
-                              ? 'bg-emerald-100 text-emerald-800'
-                              : 'bg-rose-100 text-rose-800'
-                          }`}
-                        >
-                          {isCorrect ? (
-                            <>
-                              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                              <span>Resposta Correta</span>
-                            </>
-                          ) : (
-                            <>
-                              <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
-                              <span>Item Selecionado</span>
-                            </>
-                          )}
-                        </div>
-
-                        {/* Imagem selecionada em destaque amplo */}
-                        <div className="w-full flex items-center justify-center py-1">
+                        {/* Imagem ocupando 100% do topo do card de ponta a ponta */}
+                        <div className="relative w-full aspect-square max-h-[245px] sm:max-h-[280px] overflow-hidden bg-slate-100 dark:bg-slate-900">
                           <VocabIllustration word={selectedVisual.text} emoji={selectedVisual.emoji} />
+                          <div
+                            className={`absolute top-3 left-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-md ${
+                              isCorrect
+                                ? 'bg-emerald-500 text-white'
+                                : 'bg-rose-500 text-white'
+                            }`}
+                          >
+                            {isCorrect ? (
+                              <>
+                                <CheckCircle2 className="w-4 h-4 shrink-0" />
+                                <span>Resposta Correta</span>
+                              </>
+                            ) : (
+                              <>
+                                <AlertCircle className="w-4 h-4 shrink-0" />
+                                <span>Item Selecionado</span>
+                              </>
+                            )}
+                          </div>
                         </div>
 
-                        {/* Nome em inglês e significado em português (letra menor logo abaixo, sem "="), 100% visíveis no centro da tela */}
-                        <div className="flex flex-col items-center justify-center text-center pt-1 border-t border-slate-100 w-full">
+                        {/* Nome em inglês, pronúncia simplificada e significado em português logo abaixo */}
+                        <div className="flex flex-col items-center justify-center text-center p-4 w-full">
                           <span
                             className={`text-2xl sm:text-3xl font-black tracking-tight leading-tight ${
-                              isCorrect ? 'text-emerald-950' : 'text-rose-950'
+                              isCorrect ? 'text-emerald-950 dark:text-emerald-200' : 'text-rose-950 dark:text-rose-200'
                             }`}
                           >
                             {selectedVisual.label || selectedVisual.text}
                           </span>
                           {selectedVisual.translationPt && (
                             <span
-                              className={`text-base sm:text-lg font-bold leading-snug mt-1 ${
-                                isCorrect ? 'text-emerald-700' : 'text-rose-700'
+                              className={`text-lg sm:text-xl font-extrabold leading-snug mt-1 ${
+                                isCorrect ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-700 dark:text-rose-400'
                               }`}
                             >
                               {selectedVisual.translationPt}
                             </span>
                           )}
-                          {isCorrect && currentExercise.phoneticHint && (
-                            <span className="mt-1.5 text-xs font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-0.5 rounded-lg border border-indigo-100">
-                              {currentExercise.phoneticHint}
-                            </span>
+                          {isCorrect && currentExercise.explanation && (
+                            <p className="mt-2 text-xs font-semibold text-slate-600 dark:text-slate-300">
+                              {currentExercise.explanation}
+                            </p>
                           )}
                         </div>
                       </div>
@@ -1151,16 +1258,16 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                   );
                 })()
               ) : (
-                <div className="grid grid-cols-2 gap-3.5 pt-1">
+                <div className="grid grid-cols-2 gap-2.5 pt-0.5">
                   {currentExercise.visualOptions.map((opt, i) => {
                     const isSelected = selectedOption?.trim().toLowerCase() === opt.text.trim().toLowerCase();
 
                     let cardStyle =
-                      'bg-white border-2 border-slate-200 border-b-4 hover:border-slate-300 text-slate-800 shadow-xs hover:shadow-sm';
+                      'bg-white dark:bg-slate-800 border-3 border-slate-200 dark:border-slate-700 border-b-6 hover:border-slate-300 shadow-sm';
 
                     if (isSelected) {
                       cardStyle =
-                        'bg-white border-2 border-sky-500 border-b-4 border-b-sky-600 text-sky-950 shadow-md ring-2 ring-sky-300/60 scale-[1.02]';
+                        'bg-white dark:bg-slate-800 border-3 border-sky-500 border-b-6 border-b-sky-600 shadow-lg ring-4 ring-sky-400/70 scale-[1.01]';
                     }
 
                     return (
@@ -1179,11 +1286,14 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                             setSelectedOption(opt.text);
                           }
                         }}
-                        className={`relative p-2.5 rounded-3xl flex flex-col items-center justify-center gap-1 transition-all active:translate-y-0.5 cursor-pointer min-h-[168px] sm:min-h-[192px] ${cardStyle}`}
+                        className={`relative p-0 overflow-hidden rounded-3xl aspect-square w-full min-h-[175px] sm:min-h-[245px] transition-all active:translate-y-0.5 cursor-pointer ${cardStyle}`}
                       >
-                        <div className="w-full flex items-center justify-center my-0.5 transition-transform">
-                          <VocabIllustration word={opt.text} emoji={opt.emoji} />
-                        </div>
+                        <VocabIllustration word={opt.text} emoji={opt.emoji} />
+                        {isSelected && (
+                          <div className="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-sky-500 text-white flex items-center justify-center shadow-md">
+                            <CheckCircle2 className="w-5 h-5" />
+                          </div>
+                        )}
                       </div>
                     );
                   })}

@@ -5,8 +5,8 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const token = process.env.GITHUB_TOKEN;
 const repo = 'thiagothomazolli-prog/lingo-world';
-const tag = 'v1.18.0';
-const releaseName = 'Lingo World v1.18.0 - Imagens Contextuais Específicas, Módulos de Pronomes Separados (1 a cada 3) e Voz Humana Real da Professora';
+const tag = 'v1.19.0';
+const releaseName = 'Lingo World v1.19.0 - 5 Temas Progressivos por Frequência, Flashcards, 4 Tipos de Exercício, Imagens 100% no Card e Modo Escuro Automático';
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -22,9 +22,9 @@ async function getLatestCompletedRun() {
       }
     });
     const data = await res.json();
-    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.18.0'));
+    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.19.0'));
     if (!latestRun) {
-      console.log('Waiting for v1.18.0 workflow run to appear...');
+      console.log('Waiting for v1.19.0 workflow run to appear...');
       await sleep(5000);
       continue;
     }
@@ -98,7 +98,7 @@ async function run() {
   const rootDir = path.resolve(__dirname, '..');
   const zipPath = path.join(rootDir, 'app-debug.zip');
   const extractDir = path.join(rootDir, 'extracted_apk');
-  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.18.0.apk');
+  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.19.0.apk');
 
   fs.writeFileSync(zipPath, buffer);
   console.log('Downloaded app-debug.zip, size:', buffer.length);
@@ -118,23 +118,25 @@ async function run() {
 
   fs.copyFileSync(path.join(extractDir, apkName), apkOutPath);
   const apkStats = fs.statSync(apkOutPath);
-  console.log(`Found APK: LingoWorld-v1.18.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`Found APK: LingoWorld-v1.19.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
 
   console.log('4. Creating GitHub Release', tag);
-  const body = `## 🚀 Lingo World v1.18.0 — Imagens Contextuais Completas (Calçada, Telhado na Casa, etc.), Módulos de Pronomes Separados (1 a cada 3 de Vocabulário) e Voz Humana Real da Professora
+  const body = `## 🚀 Lingo World v1.19.0 — 5 Temas Progressivos por Frequência de Uso, Flashcards Interativos, 4 Tipos de Exercício, Imagens 100% no Tamanho do Card e Modo Escuro Automático
 
 ### ✨ Principais Melhorias desta Versão:
-- **🏠 Imagens Contextuais Completas e Específicas:**
-  - Atualizadas todas as imagens estruturais e de ambientes (*Calçada completa na rua, Telhado na casa focado no telhado, Muro de tijolos, Cerca na frente da casa, Capacho na porta, Maçaneta e Fechadura na porta, Parede pintada, Rack de TV na sala, Tomada e Interruptor na parede, Piso cerâmico no chão, Armários, Gaveta aberta, Pia, Torneira, Pedra/Bancada e Ilha na cozinha, Coifa e Depurador sobre o fogão, Faixa de pedestres na rua, Sala de aula, Interior da Igreja, Altar, Bancos da igreja*, etc.) para mostrarem o elemento completo em seu contexto real em vez de blocos soltos recortados.
-- **📚 Módulos de Pronomes Separados (1 Módulo de Pronomes a cada 3 de Vocabulário) e Explicação Apenas Onde Houver Pronomes:**
-  - Os 12 módulos de vocabulário agora são 100% focados no vocabulário visual (sem quadro de explicação da professora nos itens de vocabulário).
-  - A cada **3 módulos de vocabulário**, entra **1 Módulo Exclusivo de Pronomes** (Fases 4, 8, 12 e 16):
-    - **Fase 4 (após Vocabulário 1, 2 e 3):** *Lição de Pronomes I • Pessoais & De Tratamento*
-    - **Fase 8 (após Vocabulário 4, 5 e 6):** *Lição de Pronomes II • Possessivos & Demonstrativos*
-    - **Fase 12 (após Vocabulário 7, 8 e 9):** *Lição de Pronomes III • Reflexivos & Interrogativos*
-    - **Fase 16 (após Vocabulário 10, 11 e 12):** *Lição de Pronomes IV • Indefinidos & Relativos*
-- **👩‍🏫 Voz Humana Real e Meiga da Professora (Zero Voz do Google Maps):**
-  - Substituído o sintetizador do Google Translate/Maps por **8 gravações de voz humana neural real (Gemini 2.5 Human Voice — Aoede)** embutidas diretamente no APK (\`/audio/teacher/pronoun_1.wav\` a \`pronoun_8.wav\`), com entonação meiga, doce, calma e acolhedora de mãe bondosa explicando cada família de pronomes!`;
+- **📚 5 Temas Completos Divididos em 4 Módulos por Frequência de Uso (12 Palavras Genéricas por Módulo):**
+  - **1. A Casa (\`home\`)**, **2. Comida (\`food\`)**, **3. Corpo Humano (\`body\`)**, **4. Transporte (\`transport\`)** e **5. Roupas (\`clothes\`)** (além de **6. Pronomes**).
+  - Cada tema possui 4 módulos progressivos: **Módulo 1 (Essenciais)**, **Módulo 2 (Comuns)**, **Módulo 3 (Intermediárias)** e **Módulo 4 (Menos Comuns)**.
+  - Cada palavra traz: **Palavra em inglês**, **Tradução em português**, **Pronúncia simplificada** (ex.: \`"dór"\`, \`"uín-dou"\`, \`"kít-chen"\`), **Frase curta de exemplo em inglês com tradução** e **Imagem fotográfica ilustrativa**.
+- **📱 4 Telas Principais + 4 Tipos de Exercício por Módulo:**
+  - **Tela 1:** Lista de Temas
+  - **Tela 2:** Lista de Módulos de Cada Tema (com prévia das palavras e pronúncia simplificada)
+  - **Tela 3:** Tela da Lição (Flashcard interativo com imagem, pronúncia simplificada, áudio e frase de exemplo traduzida)
+  - **Tela 4:** Tela de Exercício com **Associar palavra e imagem**, **Ouvir e escolher**, **Múltipla escolha** e **Completar a frase**.
+- **🖼️ Imagens 100% no Tamanho do Card e Cards no Maior Tamanho Possível:**
+  - As imagens agora preenchem **100% da área do card de ponta a ponta (\`w-full h-full object-cover\`, sem bordas ou sobras internas)**, e os cards ocupam a largura total da grade mobile com tamanho máximo.
+- **🌙 Modo Escuro Automático do Sistema (Dark Mode):**
+  - Se o celular estiver em **Modo Escuro**, o aplicativo detecta automaticamente (\`prefers-color-scheme: dark\` e \`Configuration.UI_MODE_NIGHT_YES\` no Android) e aplica o tema escuro em toda a interface!`;
 
   const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases`, {
     method: 'POST',
@@ -160,9 +162,9 @@ async function run() {
   }
   console.log('Release created:', releaseData.id, releaseData.html_url);
 
-  console.log('5. Uploading LingoWorld-v1.18.0.apk to release...');
+  console.log('5. Uploading LingoWorld-v1.19.0.apk to release...');
   const apkBuffer = fs.readFileSync(apkOutPath);
-  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.18.0.apk`;
+  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.19.0.apk`;
 
   const uploadRes = await fetch(uploadUrl, {
     method: 'POST',
@@ -178,7 +180,7 @@ async function run() {
   const assetData = await uploadRes.json();
   console.log('Asset uploaded successfully!', assetData.browser_download_url);
   console.log('\n=======================================');
-  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.18.0.apk`);
+  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.19.0.apk`);
   console.log('=======================================\n');
 }
 

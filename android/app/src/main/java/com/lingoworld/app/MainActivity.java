@@ -1,5 +1,6 @@
 package com.lingoworld.app;
 
+import android.content.res.Configuration;
 import android.media.AudioAttributes;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -57,7 +58,38 @@ public class MainActivity extends BridgeActivity implements TextToSpeech.OnInitL
             WebSettings settings = webView.getSettings();
             settings.setMediaPlaybackRequiresUserGesture(false);
             webView.addJavascriptInterface(new AndroidTTSBridge(), "AndroidTTS");
+            syncWebNightMode();
         }
+    }
+
+    private boolean isSystemNightMode() {
+        int nightModeFlags = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        return nightModeFlags == Configuration.UI_MODE_NIGHT_YES;
+    }
+
+    private void syncWebNightMode() {
+        runOnUiThread(() -> {
+            try {
+                if (getBridge() != null && getBridge().getWebView() != null) {
+                    boolean isNight = isSystemNightMode();
+                    String js = "document.documentElement.classList.toggle('dark', " + isNight + "); window.dispatchEvent(new CustomEvent('lingo-theme-change', { detail: { dark: " + isNight + " } }));";
+                    getBridge().getWebView().evaluateJavascript(js, null);
+                }
+            } catch (Exception ignored) {
+            }
+        });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        syncWebNightMode();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        syncWebNightMode();
     }
 
     private void notifyWebSpeakingState(final boolean speaking) {
@@ -277,6 +309,11 @@ public class MainActivity extends BridgeActivity implements TextToSpeech.OnInitL
         @JavascriptInterface
         public boolean isReady() {
             return ttsReady;
+        }
+
+        @JavascriptInterface
+        public boolean isNightMode() {
+            return isSystemNightMode();
         }
     }
 

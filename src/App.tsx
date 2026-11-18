@@ -146,6 +146,51 @@ export default function App() {
     verifyAndMaintainStreak(user);
   }, []);
 
+  // Automatically sync Dark Mode with Phone/System settings (prefers-color-scheme: dark & Android UI_MODE_NIGHT)
+  useEffect(() => {
+    const applySystemTheme = () => {
+      let isDark = false;
+      try {
+        const androidBridge = (window as any).AndroidTTS;
+        if (androidBridge && typeof androidBridge.isNightMode === 'function') {
+          isDark = Boolean(androidBridge.isNightMode());
+        } else if (window.matchMedia) {
+          isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+      } catch {
+        if (window.matchMedia) {
+          isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+      }
+      document.documentElement.classList.toggle('dark', isDark);
+    };
+
+    applySystemTheme();
+
+    const mql = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    const handleMediaChange = () => applySystemTheme();
+    const handleCustomTheme = (e: Event) => {
+      const customEvent = e as CustomEvent<{ dark?: boolean }>;
+      if (customEvent.detail && typeof customEvent.detail.dark === 'boolean') {
+        document.documentElement.classList.toggle('dark', customEvent.detail.dark);
+      } else {
+        applySystemTheme();
+      }
+    };
+
+    if (mql && mql.addEventListener) {
+      mql.addEventListener('change', handleMediaChange);
+    }
+    window.addEventListener('lingo-theme-change', handleCustomTheme);
+
+    return () => {
+      if (mql && mql.removeEventListener) {
+        mql.removeEventListener('change', handleMediaChange);
+      }
+      window.removeEventListener('lingo-theme-change', handleCustomTheme);
+    };
+  }, []);
+
   // Auto persist profile on state change
   useEffect(() => {
     saveUserProfile(user);
@@ -346,7 +391,7 @@ export default function App() {
   }, [streakAwardNotification]);
 
   return (
-    <div className="min-h-screen bg-slate-100/60 font-sans text-slate-800 flex flex-col selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-slate-100/60 dark:bg-slate-950 font-sans text-slate-800 dark:text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white transition-colors duration-200">
       {/* Top Header */}
       <Header
         user={user}
