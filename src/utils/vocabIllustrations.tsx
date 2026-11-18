@@ -60,7 +60,6 @@ export function getRealVocabPhotoUrl(word: string): string | undefined {
   const directMatch = NORMALIZED_PHOTO_MAP[norm(primary)] || NORMALIZED_PHOTO_MAP[norm(trimmed)];
   if (directMatch) return directMatch;
 
-  // Support 2-word associative practice phrases (e.g. "Red apple" -> "Apple", "White teeth" -> "Tooth")
   const tokens = primary
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, '')
@@ -104,11 +103,6 @@ export function preloadVocabImages(words: string[]): void {
   });
 }
 
-/**
- * Inspects the bottom 11% of an image on an offscreen canvas.
- * If a stock watermark banner ("tarja na parte de baixo") spans across the bottom corners,
- * paints only that bottom banner pure white while keeping 100% of the item uncropped.
- */
 function stripBottomBannerIfPresent(img: HTMLImageElement): string | null {
   try {
     const w = img.naturalWidth;
@@ -157,7 +151,6 @@ function stripBottomBannerIfPresent(img: HTMLImageElement): string | null {
       if (rowFillRatio > 0.55 || edgesHaveBar) {
         bannerTopRow = r;
       } else if (bannerTopRow !== -1 && rowFillRatio < 0.15) {
-        // Reached the clean white gap above the bottom watermark bar
         break;
       }
     }
@@ -176,14 +169,12 @@ function stripBottomBannerIfPresent(img: HTMLImageElement): string | null {
 
 export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoji }) => {
   const primaryUrl = getRealVocabPhotoUrl(word);
-  // Note: No &h=500&c=7 so backup images are never square-cropped either
   const backupUrl = word
     ? `https://tse2.mm.bing.net/th?q=${encodeURIComponent('single whole ' + word + ' on white background')}&w=500&p=0`
     : undefined;
 
   const [useBackup, setUseBackup] = useState(false);
   const [imgError, setImgError] = useState(false);
-  const [imgLoaded, setImgLoaded] = useState(false);
   const [cleanedSrc, setCleanedSrc] = useState<string | null>(null);
 
   const activeUrl = useBackup ? backupUrl : primaryUrl || backupUrl;
@@ -191,7 +182,6 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
   useEffect(() => {
     setUseBackup(false);
     setImgError(false);
-    setImgLoaded(false);
     setCleanedSrc(null);
   }, [primaryUrl, word]);
 
@@ -223,37 +213,28 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
 
   if (activeUrl && !imgError) {
     return (
-      <div className="relative w-full h-full overflow-hidden bg-white flex items-center justify-center select-none">
-        {!imgLoaded && (
-          <div className="absolute inset-0 bg-white animate-pulse flex items-center justify-center">
-            <span className="text-4xl opacity-30">{emoji || '🖼️'}</span>
-          </div>
-        )}
+      <div className="relative w-full h-full min-h-[120px] overflow-hidden bg-white flex items-center justify-center select-none">
         <img
           src={cleanedSrc || activeUrl}
-          alt=""
+          alt={word}
           loading="eager"
           decoding="async"
           referrerPolicy="no-referrer"
-          onLoad={() => setImgLoaded(true)}
           onError={() => {
             if (!useBackup && backupUrl && activeUrl !== backupUrl) {
               setUseBackup(true);
-              setImgLoaded(false);
             } else {
               setImgError(true);
             }
           }}
-          className={`w-full h-full object-cover transition-opacity duration-150 ${
-            imgLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
+          className="block w-full h-full object-cover"
         />
       </div>
     );
   }
 
   return (
-    <div className="relative w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center select-none">
+    <div className="relative w-full h-full min-h-[120px] bg-white flex items-center justify-center select-none">
       <span className="text-5xl sm:text-6xl filter drop-shadow-sm leading-none">
         {emoji || '✨'}
       </span>

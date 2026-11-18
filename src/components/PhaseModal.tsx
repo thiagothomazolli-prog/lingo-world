@@ -539,8 +539,8 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
         setWrongPairFlash({ left: nextLeft, right: nextRight });
         setPairMatchTip(
           leftObj
-            ? `💡 Dica carinhosa da Professora: "${leftObj.en}" significa "${leftObj.pt}". Tente conectar com o par certinho!`
-            : 'Tente novamente com calma!'
+            ? `💡 Dica Didática da Professora: "${leftObj.en}" corresponde a "${leftObj.pt}". Conecte os dois itens para avançar.`
+            : 'Observe a explicação acima e tente conectar o par correspondente.'
         );
 
         if (!pairExerciseHadMistake) {
@@ -766,8 +766,8 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
       {/* 🎯 Step 2: Interactive Duolingo-style Exercise */}
       {step === 'exercise' && currentExercise && (
-        <main className="flex-1 overflow-y-auto px-4 py-6 max-w-xl w-full mx-auto flex flex-col justify-between">
-          <div className="space-y-5">
+        <main className="flex-1 overflow-y-auto px-3.5 sm:px-4 py-2.5 sm:py-4 max-w-xl w-full mx-auto flex flex-col justify-between">
+          <div className="space-y-2.5 sm:space-y-4">
             {/* Exercise Skill Badge */}
             <div className="flex items-center justify-between">
               <span className={`text-xs font-black uppercase tracking-wider ${isReviewStage ? 'text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full' : 'text-slate-400'}`}>
@@ -780,18 +780,18 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               </span>
             </div>
 
-            {/* Cabeçalho Explicativo da Professora Meiga (conceito resumido e fácil para uma criança de 5 anos) */}
+            {/* Cabeçalho Explicativo Didático da Professora (somente nos exercícios de Pronomes) */}
             {currentExercise.conceptHeader && (
-              <div className="p-3.5 rounded-2xl bg-gradient-to-r from-amber-50 via-rose-50/70 to-indigo-50 border-2 border-amber-200/90 shadow-xs space-y-2">
+              <div className="p-3.5 rounded-2xl bg-gradient-to-r from-indigo-50 via-sky-50/80 to-slate-50 dark:from-slate-900 dark:via-indigo-950/60 dark:to-slate-900 border-2 border-indigo-200/90 dark:border-indigo-800 shadow-xs space-y-2">
                 <div className="flex items-center justify-between gap-2">
                   <div className="flex items-center gap-2 min-w-0">
                     <span className="text-xl shrink-0">👩‍🏫</span>
                     <div className="min-w-0">
-                      <span className="text-[10px] font-black uppercase tracking-wider text-amber-800 block">
-                        Explicação Carinhosa da Professora
+                      <span className="text-[10px] font-black uppercase tracking-wider text-indigo-700 dark:text-indigo-300 block">
+                        Explicação Didática da Professora
                       </span>
                       {currentExercise.conceptTitle && (
-                        <span className="text-xs sm:text-sm font-black text-indigo-950 block truncate">
+                        <span className="text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100 block truncate">
                           {currentExercise.conceptTitle}
                         </span>
                       )}
@@ -802,29 +802,31 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                     onClick={() =>
                       speakTeacherExplanationPt(currentExercise.teacherAudioPt || currentExercise.conceptHeader || '')
                     }
-                    className="px-3 py-1.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white font-black text-xs shadow-2xs flex items-center gap-1.5 shrink-0 cursor-pointer active:scale-95 transition-transform"
-                    title="Ouvir a explicação com a voz meiga da professora"
+                    className="px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-black text-xs shadow-2xs flex items-center gap-1.5 shrink-0 cursor-pointer active:scale-95 transition-transform"
+                    title="Ouvir a explicação didática da professora"
                   >
                     <Volume2 className="w-4 h-4" />
                     <span>Ouvir Professora</span>
                   </button>
                 </div>
-                <p className="text-xs sm:text-sm font-semibold text-slate-700 leading-relaxed">
+                <p className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 leading-relaxed">
                   {currentExercise.conceptHeader}
                 </p>
               </div>
             )}
 
-            {/* Exercise Prompt */}
-            <h2 className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight leading-snug">
-              {currentExercise.prompt.replace(/\*\*+/g, '')}
-            </h2>
+            {/* Exercise Prompt (oculto após confirmar resposta nos cards visuais para o card da resposta aparecer 100% completo na tela) */}
+            {!(hasAnswered && currentExercise.visualOptions && currentExercise.visualOptions.length > 0) && (
+              <h2 className="text-base sm:text-xl font-black text-slate-800 dark:text-slate-100 tracking-tight leading-snug">
+                {currentExercise.prompt.replace(/\*\*+/g, '')}
+              </h2>
+            )}
 
             {/* Visual Associative Learning Card (quando NÃO for exercício de cartões visuais) */}
             {currentExercise.visualEmoji && (!currentExercise.visualOptions || currentExercise.visualOptions.length === 0) && (
               <div className="flex items-center justify-center py-1">
                 {getRealVocabPhotoUrl(getSpokenPhraseForExercise(currentExercise)) ? (
-                  <div className="w-48 sm:w-56 rounded-2xl bg-white border-2 border-indigo-100 shadow-xs p-1.5 flex items-center justify-center">
+                  <div className="w-48 sm:w-56 h-40 sm:h-48 rounded-2xl bg-white border-2 border-indigo-100 shadow-xs overflow-hidden flex items-center justify-center">
                     <VocabIllustration
                       word={getSpokenPhraseForExercise(currentExercise)}
                       emoji={currentExercise.visualEmoji}
@@ -840,8 +842,8 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
             {/* Audio Speaker Bar (Alto-falante + Gráfico estilo Gravador de Áudio do Android + Botão de velocidade 0.65x) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
-              <div className="space-y-2.5">
-                <div className="p-3 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl flex items-center justify-between gap-3 shadow-xs">
+              <div className="space-y-2">
+                <div className="p-2.5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 dark:from-slate-900 dark:via-indigo-950/60 dark:to-slate-900 border-2 border-indigo-200 dark:border-indigo-800 rounded-2xl flex items-center justify-between gap-2.5 shadow-xs">
                   <button
                     type="button"
                     onClick={() => {
@@ -853,7 +855,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         exerciseVoiceGender
                       );
                     }}
-                    className={`w-11 h-11 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
+                    className={`w-10 h-10 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
                       isSpeaking ? 'ring-3 ring-indigo-300' : ''
                     }`}
                     title="Ouvir novamente"
@@ -874,58 +876,60 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         exerciseVoiceGender
                       );
                     }}
-                    className="py-2.5 px-3 bg-white hover:bg-amber-50 text-amber-800 border-2 border-amber-200 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
+                    className="py-2 px-2.5 bg-white dark:bg-slate-800 hover:bg-amber-50 text-amber-800 dark:text-amber-300 border-2 border-amber-200 dark:border-amber-700 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
                     title="Ouvir mais lento (0.65x)"
                   >
                     <span>🐢 0.65x</span>
                   </button>
                 </div>
 
-                {/* Botão para ver a palavra em inglês em caso de dúvida da pronúncia (habilitado somente após a 1ª execução do áudio) */}
-                {!showWrittenWord ? (
-                  <button
-                    type="button"
-                    disabled={!hasPlayedAudioOnce}
-                    onClick={() => {
-                      if (!hasPlayedAudioOnce) return;
-                      sfx.playTap();
-                      setShowWrittenWord(true);
-                    }}
-                    className={`w-full py-2.5 px-3.5 rounded-xl border-2 text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 transition-all ${
-                      hasPlayedAudioOnce
-                        ? 'bg-white hover:bg-indigo-50/80 text-indigo-700 border-indigo-200 shadow-2xs active:scale-[0.99] cursor-pointer'
-                        : 'bg-slate-100 text-slate-400 border-slate-200/80 opacity-75 cursor-not-allowed'
-                    }`}
-                  >
-                    {hasPlayedAudioOnce ? (
-                      <>
-                        <Eye className="w-4 h-4 text-indigo-600 shrink-0" />
-                        <span>Dúvida na pronúncia? Ver palavra em inglês</span>
-                      </>
-                    ) : (
-                      <>
-                        <Lock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-                        <span>Ouça o áudio primeiro para ver a palavra em inglês</span>
-                      </>
-                    )}
-                  </button>
-                ) : (
-                  <div className="py-2.5 px-4 rounded-xl bg-indigo-50/90 border-2 border-indigo-200 flex items-center justify-between gap-2 animate-in fade-in duration-150">
-                    <div className="flex items-center gap-2">
-                      <Eye className="w-4 h-4 text-indigo-600 shrink-0" />
-                      <span className="text-xs font-bold text-indigo-700">Palavra em inglês:</span>
-                    </div>
-                    <div className="flex items-center gap-2 flex-wrap justify-end">
-                      <span className="text-base sm:text-lg font-black text-indigo-950 tracking-tight">
-                        {currentExercise.correctAnswer}
-                      </span>
-                      {currentExercise.phoneticHint && (
-                        <span className="text-xs font-semibold text-indigo-600 bg-white px-2 py-0.5 rounded-md border border-indigo-100">
-                          {currentExercise.phoneticHint}
-                        </span>
+                {/* Botão para ver a palavra em inglês antes de confirmar (após confirmar, o card completo já exibe a resposta) */}
+                {!hasAnswered && (
+                  !showWrittenWord ? (
+                    <button
+                      type="button"
+                      disabled={!hasPlayedAudioOnce}
+                      onClick={() => {
+                        if (!hasPlayedAudioOnce) return;
+                        sfx.playTap();
+                        setShowWrittenWord(true);
+                      }}
+                      className={`w-full py-2 px-3 rounded-xl border-2 text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 transition-all ${
+                        hasPlayedAudioOnce
+                          ? 'bg-white dark:bg-slate-900 hover:bg-indigo-50/80 text-indigo-700 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800 shadow-2xs active:scale-[0.99] cursor-pointer'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-400 border-slate-200/80 dark:border-slate-700 opacity-75 cursor-not-allowed'
+                      }`}
+                    >
+                      {hasPlayedAudioOnce ? (
+                        <>
+                          <Eye className="w-4 h-4 text-indigo-600 shrink-0" />
+                          <span>Dúvida na pronúncia? Ver palavra em inglês</span>
+                        </>
+                      ) : (
+                        <>
+                          <Lock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                          <span>Ouça o áudio primeiro para ver a palavra em inglês</span>
+                        </>
                       )}
+                    </button>
+                  ) : (
+                    <div className="py-2 px-3.5 rounded-xl bg-indigo-50/90 dark:bg-indigo-950/70 border-2 border-indigo-200 dark:border-indigo-800 flex items-center justify-between gap-2 animate-in fade-in duration-150">
+                      <div className="flex items-center gap-2">
+                        <Eye className="w-4 h-4 text-indigo-600 shrink-0" />
+                        <span className="text-xs font-bold text-indigo-700 dark:text-indigo-300">Palavra em inglês:</span>
+                      </div>
+                      <div className="flex items-center gap-2 flex-wrap justify-end">
+                        <span className="text-base sm:text-lg font-black text-indigo-950 dark:text-indigo-100 tracking-tight">
+                          {currentExercise.correctAnswer}
+                        </span>
+                        {currentExercise.phoneticHint && (
+                          <span className="text-xs font-semibold text-indigo-600 dark:text-indigo-300 bg-white dark:bg-slate-900 px-2 py-0.5 rounded-md border border-indigo-100 dark:border-indigo-800">
+                            {currentExercise.phoneticHint}
+                          </span>
+                        )}
+                      </div>
                     </div>
-                  </div>
+                  )
                 )}
               </div>
             ) : currentExercise.type === 'listening' ? (
@@ -1081,82 +1085,92 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
             {/* 1. Interactive Visual Option Cards (quando visualOptions estiver presente) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
               hasAnswered ? (
-                /* Ao apertar Verificar: exibe a imagem selecionada em destaque centralizado com o termo em inglês, pronúncia simplificada, tradução e frase de exemplo logo abaixo, sem ser tampada por nenhuma tarja */
+                /* Ao confirmar a resposta: o card da resposta aparece 100% por completo na tela, indicando a resposta, a imagem, a pronúncia simplificada, a tradução e a frase de exemplo */
                 (() => {
                   const selectedVisual =
                     currentExercise.visualOptions.find(
                       (opt) => opt.text.trim().toLowerCase() === selectedOption?.trim().toLowerCase()
                     ) || currentExercise.visualOptions[0];
-                  const targetVisual = currentExercise.visualOptions.find(
-                    (opt) => opt.text.trim().toLowerCase() === currentExercise.correctAnswer.trim().toLowerCase()
-                  );
-                  const exampleEn = selectedVisual.exampleEn || (isCorrect ? currentExercise.contextSentence : undefined);
-                  const examplePt = selectedVisual.examplePt || (isCorrect ? currentExercise.contextSentencePt : undefined);
+                  const targetVisual =
+                    currentExercise.visualOptions.find(
+                      (opt) => opt.text.trim().toLowerCase() === currentExercise.correctAnswer.trim().toLowerCase()
+                    ) || selectedVisual;
+
+                  // O card da resposta exibido por completo é sempre o da resposta correta (indicando também o que foi marcado se errou)
+                  const answerVisual = targetVisual;
+                  const exampleEn = answerVisual.exampleEn || currentExercise.contextSentence;
+                  const examplePt = answerVisual.examplePt || currentExercise.contextSentencePt;
 
                   return (
-                    <div className="pt-1 pb-2 flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-200">
+                    <div className="pt-0.5 pb-1 flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-200">
                       <div
-                        className={`relative w-full max-w-[350px] sm:max-w-[390px] mx-auto overflow-hidden rounded-3xl bg-white dark:bg-slate-900 border-3 border-b-6 shadow-xl flex flex-col items-center justify-center ${
+                        className={`relative w-full max-w-[360px] sm:max-w-[400px] mx-auto overflow-hidden rounded-3xl bg-white dark:bg-slate-900 border-3 border-b-6 shadow-xl flex flex-col items-center justify-center ${
                           isCorrect
                             ? 'border-emerald-500 border-b-emerald-600 ring-4 ring-emerald-200/70'
-                            : 'border-rose-400 border-b-rose-600 ring-4 ring-rose-200/60'
+                            : 'border-rose-500 border-b-rose-600 ring-4 ring-rose-200/60'
                         }`}
                       >
-                        {/* Imagem selecionada ocupando 100% da largura do topo do card em destaque */}
-                        <div className="relative w-full aspect-square overflow-hidden bg-white dark:bg-slate-800">
-                          <VocabIllustration word={selectedVisual.text} emoji={selectedVisual.emoji} />
-                          {/* Selo discreto no canto superior sobre a imagem */}
-                          <div
-                            className={`absolute top-3 left-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-md ${
-                              isCorrect
-                                ? 'bg-emerald-500 text-white'
-                                : 'bg-rose-500 text-white'
-                            }`}
-                          >
-                            {isCorrect ? (
-                              <>
-                                <CheckCircle2 className="w-4 h-4 shrink-0" />
-                                <span>Resposta Correta</span>
-                              </>
-                            ) : (
-                              <>
-                                <AlertCircle className="w-4 h-4 shrink-0" />
-                                <span>Item Selecionado</span>
-                              </>
-                            )}
-                          </div>
+                        {/* Faixa superior indicando claramente se acertou ou qual é a resposta correta */}
+                        <div
+                          className={`w-full px-3.5 py-2 flex items-center justify-center gap-2 text-xs sm:text-sm font-black uppercase tracking-wider text-center ${
+                            isCorrect
+                              ? 'bg-emerald-500 text-white'
+                              : 'bg-rose-500 text-white'
+                          }`}
+                        >
+                          {isCorrect ? (
+                            <>
+                              <CheckCircle2 className="w-4 h-4 shrink-0" />
+                              <span>Resposta Correta!</span>
+                            </>
+                          ) : (
+                            <>
+                              <AlertCircle className="w-4 h-4 shrink-0" />
+                              <span>
+                                Você marcou {selectedVisual.label || selectedVisual.text} • Resposta Correta:
+                              </span>
+                            </>
+                          )}
                         </div>
 
-                        {/* Nome em inglês, pronúncia simplificada, significado em português e frase curta de exemplo */}
-                        <div className="flex flex-col items-center justify-center text-center p-4 border-t border-slate-100 dark:border-slate-800 w-full space-y-1.5">
-                          <span
-                            className={`text-2xl sm:text-3xl font-black tracking-tight leading-tight ${
-                              isCorrect ? 'text-emerald-950 dark:text-emerald-300' : 'text-rose-950 dark:text-rose-300'
-                            }`}
-                          >
-                            {selectedVisual.label || selectedVisual.text}
-                          </span>
-                          {selectedVisual.translationPt && (
+                        {/* Imagem da resposta com altura fixa explícita para aparecer sempre 100% visível e completa */}
+                        <div className="relative w-full h-[175px] sm:h-[220px] overflow-hidden bg-white">
+                          <VocabIllustration word={answerVisual.text} emoji={answerVisual.emoji} />
+                        </div>
+
+                        {/* Nome em inglês, tradução em português, pronúncia simplificada e frase de exemplo */}
+                        <div className="flex flex-col items-center justify-center text-center px-3.5 py-3 border-t border-slate-100 dark:border-slate-800 w-full space-y-1">
+                          <div className="flex items-baseline justify-center gap-2 flex-wrap">
                             <span
-                              className={`text-base sm:text-lg font-extrabold leading-snug ${
-                                isCorrect ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-700 dark:text-rose-400'
+                              className={`text-2xl sm:text-3xl font-black tracking-tight leading-tight ${
+                                isCorrect ? 'text-emerald-950 dark:text-emerald-300' : 'text-slate-900 dark:text-slate-100'
                               }`}
                             >
-                              {selectedVisual.translationPt}
+                              {answerVisual.label || answerVisual.text}
                             </span>
-                          )}
-                          {(selectedVisual.simplePronunciation || currentExercise.phoneticHint) && (
-                            <span className="mt-1 text-xs font-black text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/70 px-3 py-1 rounded-xl border border-indigo-200 dark:border-indigo-800">
-                              {selectedVisual.simplePronunciation
-                                ? `🔊 Pronúncia: "${selectedVisual.simplePronunciation}" ${selectedVisual.phonetic || ''}`
+                            {answerVisual.translationPt && (
+                              <span
+                                className={`text-base sm:text-lg font-extrabold leading-snug ${
+                                  isCorrect ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-700 dark:text-rose-400'
+                                }`}
+                              >
+                                — {answerVisual.translationPt}
+                              </span>
+                            )}
+                          </div>
+
+                          {(answerVisual.simplePronunciation || currentExercise.phoneticHint) && (
+                            <span className="text-xs font-black text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/70 px-3 py-0.5 rounded-xl border border-indigo-200 dark:border-indigo-800">
+                              {answerVisual.simplePronunciation
+                                ? `🔊 Pronúncia: "${answerVisual.simplePronunciation}" ${answerVisual.phonetic || ''}`
                                 : currentExercise.phoneticHint}
                             </span>
                           )}
 
                           {/* Frase curta de exemplo em inglês com tradução */}
                           {exampleEn && (
-                            <div className="w-full mt-2 p-2.5 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700 flex items-center justify-between gap-2 text-left">
-                              <div className="space-y-0.5">
+                            <div className="w-full mt-1 p-2 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700 flex items-center justify-between gap-2 text-left">
+                              <div className="space-y-0.5 min-w-0">
                                 <p className="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100 leading-snug">
                                   "{exampleEn}"
                                 </p>
@@ -1176,30 +1190,22 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                               </button>
                             </div>
                           )}
-
-                          {/* Se errou, indica também qual era a palavra pedida no áudio */}
-                          {!isCorrect && targetVisual && (
-                            <div className="w-full mt-1.5 px-3 py-2 rounded-xl bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 text-xs font-bold text-amber-900 dark:text-amber-200">
-                              🎧 A palavra falada foi: <strong>{targetVisual.text}</strong>
-                              {targetVisual.simplePronunciation ? ` ("${targetVisual.simplePronunciation}")` : ''} = <strong>{targetVisual.translationPt}</strong>
-                            </div>
-                          )}
                         </div>
                       </div>
                     </div>
                   );
                 })()
               ) : (
-                <div className="grid grid-cols-2 gap-3 sm:gap-4 pt-1">
+                <div className="grid grid-cols-2 gap-2.5 sm:gap-3.5 pt-0.5">
                   {currentExercise.visualOptions.map((opt, i) => {
                     const isSelected = selectedOption?.trim().toLowerCase() === opt.text.trim().toLowerCase();
 
                     let cardStyle =
-                      'bg-white dark:bg-slate-800 border-3 border-slate-200 dark:border-slate-700 border-b-6 hover:border-slate-300 text-slate-800 shadow-sm hover:shadow-md';
+                      'bg-white border-3 border-slate-200 dark:border-slate-700 border-b-6 hover:border-slate-300 text-slate-800 shadow-sm hover:shadow-md';
 
                     if (isSelected) {
                       cardStyle =
-                        'bg-white dark:bg-slate-800 border-3 border-sky-500 border-b-6 border-b-sky-600 text-sky-950 shadow-lg ring-4 ring-sky-300/70 scale-[1.02]';
+                        'bg-white border-3 border-sky-500 border-b-6 border-b-sky-600 text-sky-950 shadow-lg ring-4 ring-sky-300/70 scale-[1.02]';
                     }
 
                     return (
@@ -1218,11 +1224,9 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                             setSelectedOption(opt.text);
                           }
                         }}
-                        className={`relative p-0 overflow-hidden rounded-3xl aspect-square w-full min-h-[175px] sm:min-h-[245px] flex items-center justify-center transition-all active:translate-y-0.5 cursor-pointer ${cardStyle}`}
+                        className={`relative block p-0 overflow-hidden rounded-3xl w-full h-[148px] sm:h-[205px] transition-all active:translate-y-0.5 cursor-pointer ${cardStyle}`}
                       >
-                        <div className="w-full h-full flex items-center justify-center overflow-hidden">
-                          <VocabIllustration word={opt.text} emoji={opt.emoji} />
-                        </div>
+                        <VocabIllustration word={opt.text} emoji={opt.emoji} />
                       </div>
                     );
                   })}

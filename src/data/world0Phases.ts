@@ -6,18 +6,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 1,
     "themeId": "home",
-    "themeTitle": "A Casa",
-    "frequencyLevel": "Módulo 1 • Essenciais",
+    "themeTitle": "Tema 1: A Casa",
+    "frequencyLevel": "Módulo 1 • Essenciais e Mais Comuns",
     "title": "A Casa • Módulo 1: Palavras Essenciais",
-    "subtitle": "Tema 1 (Nível 1/4) • As 12 palavras mais usadas no dia a dia em casa",
-    "pedagogicalObjective": "Aprender as 12 palavras mais essenciais e frequentes sobre a casa: Door, Window, Room, Floor, Kitchen, Bedroom, House, Key, Table, Chair, Light e Water.",
+    "subtitle": "Tema: A Casa (1/4) • 8 palavras essenciais e mais comuns do dia a dia",
+    "pedagogicalObjective": "Aprender as 8 palavras mais essenciais sobre a casa: Door, Window, Room, Floor, Kitchen, Bedroom, Table e Chair.",
     "type": "lesson",
     "icon": "house",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Começamos pelas 12 palavras mais essenciais da Casa (Módulo 1): Door (\"dór\" = Porta), Window (\"uín-dou\" = Janela), Room (\"rúm\" = Quarto/Cômodo), Floor (\"flór\" = Chão), Kitchen (\"kít-chen\" = Cozinha) e Bedroom (\"béd-rum\" = Quarto de dormir).",
-      "Também aprendemos House (\"ráus\" = Casa), Key (\"kí\" = Chave), Table (\"têi-bol\" = Mesa), Chair (\"tchér\" = Cadeira), Light (\"láit\" = Luz) e Water (\"uó-ter\" = Água).",
-      "🎓 Metodologia v1.18: ouça o som, associe à imagem em tamanho total do card e veja a pronúncia simplificada e a frase de exemplo ao verificar!"
+      "Tema: A Casa — Módulo 1 (Palavras essenciais e mais comuns): aprenda primeiro os termos mais frequentes do cotidiano residencial.",
+      "Palavras deste módulo (8): Door (\"dór\" = Porta), Window (\"uín-dou\" = Janela), Room (\"rúm\" = Quarto/Cômodo), Floor (\"flór\" = Chão), Kitchen (\"kít-chen\" = Cozinha), Bedroom (\"béd-rum\" = Quarto de dormir), Table (\"têi-bol\" = Mesa) e Chair (\"tchér\" = Cadeira)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -30,6 +29,26 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚪",
         "visualOptions": [
           {
+            "text": "Room",
+            "emoji": "🏠",
+            "label": "Room",
+            "translationPt": "Quarto / Cômodo",
+            "simplePronunciation": "rúm",
+            "phonetic": "/ruːm/",
+            "exampleEn": "This room is very bright.",
+            "examplePt": "Este cômodo é muito iluminado."
+          },
+          {
+            "text": "Floor",
+            "emoji": "🟫",
+            "label": "Floor",
+            "translationPt": "Chão / Piso",
+            "simplePronunciation": "flór",
+            "phonetic": "/flɔːr/",
+            "exampleEn": "The floor is clean.",
+            "examplePt": "O chão está limpo."
+          },
+          {
             "text": "Bedroom",
             "emoji": "🛏️",
             "label": "Bedroom",
@@ -38,26 +57,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈbed.ruːm/",
             "exampleEn": "I sleep in my bedroom.",
             "examplePt": "Eu durmo no meu quarto."
-          },
-          {
-            "text": "Light",
-            "emoji": "💡",
-            "label": "Light",
-            "translationPt": "Luz",
-            "simplePronunciation": "láit",
-            "phonetic": "/laɪt/",
-            "exampleEn": "Turn on the light.",
-            "examplePt": "Acenda a luz."
-          },
-          {
-            "text": "House",
-            "emoji": "🏡",
-            "label": "House",
-            "translationPt": "Casa",
-            "simplePronunciation": "ráus",
-            "phonetic": "/haʊs/",
-            "exampleEn": "Welcome to my house.",
-            "examplePt": "Bem-vindo à minha casa."
           },
           {
             "text": "Door",
@@ -71,9 +70,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Room",
+          "Floor",
           "Bedroom",
-          "Light",
-          "House",
           "Door"
         ],
         "correctAnswer": "Door",
@@ -101,14 +100,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "A comida está na mesa."
           },
           {
-            "text": "Key",
-            "emoji": "🔑",
-            "label": "Key",
-            "translationPt": "Chave",
-            "simplePronunciation": "kí",
-            "phonetic": "/kiː/",
-            "exampleEn": "Where is the house key?",
-            "examplePt": "Onde está a chave de casa?"
+            "text": "Chair",
+            "emoji": "🪑",
+            "label": "Chair",
+            "translationPt": "Cadeira",
+            "simplePronunciation": "tchér",
+            "phonetic": "/tʃer/",
+            "exampleEn": "Sit on this chair.",
+            "examplePt": "Sente-se nesta cadeira."
           },
           {
             "text": "Window",
@@ -127,13 +126,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cozinha",
             "simplePronunciation": "kít-chen",
             "phonetic": "/ˈkɪtʃ.ən/",
-            "exampleEn": "Mom is in the kitchen.",
-            "examplePt": "A mamãe está na cozinha."
+            "exampleEn": "We cook in the kitchen.",
+            "examplePt": "Nós cozinhamos na cozinha."
           }
         ],
         "options": [
           "Table",
-          "Key",
+          "Chair",
           "Window",
           "Kitchen"
         ],
@@ -158,18 +157,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Quarto / Cômodo",
             "simplePronunciation": "rúm",
             "phonetic": "/ruːm/",
-            "exampleEn": "This room is very clean.",
-            "examplePt": "Este cômodo está muito limpo."
+            "exampleEn": "This room is very bright.",
+            "examplePt": "Este cômodo é muito iluminado."
           },
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água",
-            "simplePronunciation": "uó-ter",
-            "phonetic": "/ˈwɔː.tər/",
-            "exampleEn": "I drink cold water.",
-            "examplePt": "Eu bebo água gelada."
+            "text": "Table",
+            "emoji": "🪑",
+            "label": "Table",
+            "translationPt": "Mesa",
+            "simplePronunciation": "têi-bol",
+            "phonetic": "/ˈteɪ.bəl/",
+            "exampleEn": "The food is on the table.",
+            "examplePt": "A comida está na mesa."
           },
           {
             "text": "Window",
@@ -194,14 +193,14 @@ export const WORLD_0_PHASES: Phase[] = [
         ],
         "options": [
           "Room",
-          "Water",
+          "Table",
           "Window",
           "Door"
         ],
         "correctAnswer": "Room",
-        "contextSentence": "This room is very clean.",
-        "contextSentencePt": "Este cômodo está muito limpo.",
-        "explanation": "Exemplo: \"This room is very clean.\" — Este cômodo está muito limpo.",
+        "contextSentence": "This room is very bright.",
+        "contextSentencePt": "Este cômodo é muito iluminado.",
+        "explanation": "Exemplo: \"This room is very bright.\" — Este cômodo é muito iluminado.",
         "phoneticHint": "\"rúm\" • /ruːm/",
         "skillCategory": "vocabulary"
       },
@@ -213,24 +212,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🟫",
         "visualOptions": [
           {
-            "text": "House",
-            "emoji": "🏡",
-            "label": "House",
-            "translationPt": "Casa",
-            "simplePronunciation": "ráus",
-            "phonetic": "/haʊs/",
-            "exampleEn": "Welcome to my house.",
-            "examplePt": "Bem-vindo à minha casa."
+            "text": "Window",
+            "emoji": "🪟",
+            "label": "Window",
+            "translationPt": "Janela",
+            "simplePronunciation": "uín-dou",
+            "phonetic": "/ˈwɪn.doʊ/",
+            "exampleEn": "Open the window, please.",
+            "examplePt": "Abra a janela, por favor."
           },
           {
-            "text": "Light",
-            "emoji": "💡",
-            "label": "Light",
-            "translationPt": "Luz",
-            "simplePronunciation": "láit",
-            "phonetic": "/laɪt/",
-            "exampleEn": "Turn on the light.",
-            "examplePt": "Acenda a luz."
+            "text": "Kitchen",
+            "emoji": "🍳",
+            "label": "Kitchen",
+            "translationPt": "Cozinha",
+            "simplePronunciation": "kít-chen",
+            "phonetic": "/ˈkɪtʃ.ən/",
+            "exampleEn": "We cook in the kitchen.",
+            "examplePt": "Nós cozinhamos na cozinha."
           },
           {
             "text": "Floor",
@@ -243,21 +242,21 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O chão está limpo."
           },
           {
-            "text": "Chair",
-            "emoji": "🪑",
-            "label": "Chair",
-            "translationPt": "Cadeira",
-            "simplePronunciation": "tchér",
-            "phonetic": "/tʃer/",
-            "exampleEn": "Sit on this chair.",
-            "examplePt": "Sente-se nesta cadeira."
+            "text": "Door",
+            "emoji": "🚪",
+            "label": "Door",
+            "translationPt": "Porta",
+            "simplePronunciation": "dór",
+            "phonetic": "/dɔːr/",
+            "exampleEn": "Please close the door.",
+            "examplePt": "Por favor, feche a porta."
           }
         ],
         "options": [
-          "House",
-          "Light",
+          "Window",
+          "Kitchen",
           "Floor",
-          "Chair"
+          "Door"
         ],
         "correctAnswer": "Floor",
         "contextSentence": "The floor is clean.",
@@ -280,8 +279,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Quarto / Cômodo",
             "simplePronunciation": "rúm",
             "phonetic": "/ruːm/",
-            "exampleEn": "This room is very clean.",
-            "examplePt": "Este cômodo está muito limpo."
+            "exampleEn": "This room is very bright.",
+            "examplePt": "Este cômodo é muito iluminado."
           },
           {
             "text": "Kitchen",
@@ -290,8 +289,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cozinha",
             "simplePronunciation": "kít-chen",
             "phonetic": "/ˈkɪtʃ.ən/",
-            "exampleEn": "Mom is in the kitchen.",
-            "examplePt": "A mamãe está na cozinha."
+            "exampleEn": "We cook in the kitchen.",
+            "examplePt": "Nós cozinhamos na cozinha."
+          },
+          {
+            "text": "Table",
+            "emoji": "🪑",
+            "label": "Table",
+            "translationPt": "Mesa",
+            "simplePronunciation": "têi-bol",
+            "phonetic": "/ˈteɪ.bəl/",
+            "exampleEn": "The food is on the table.",
+            "examplePt": "A comida está na mesa."
           },
           {
             "text": "Chair",
@@ -302,28 +311,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/tʃer/",
             "exampleEn": "Sit on this chair.",
             "examplePt": "Sente-se nesta cadeira."
-          },
-          {
-            "text": "Floor",
-            "emoji": "🟫",
-            "label": "Floor",
-            "translationPt": "Chão / Piso",
-            "simplePronunciation": "flór",
-            "phonetic": "/flɔːr/",
-            "exampleEn": "The floor is clean.",
-            "examplePt": "O chão está limpo."
           }
         ],
         "options": [
           "Room",
           "Kitchen",
-          "Chair",
-          "Floor"
+          "Table",
+          "Chair"
         ],
         "correctAnswer": "Kitchen",
-        "contextSentence": "Mom is in the kitchen.",
-        "contextSentencePt": "A mamãe está na cozinha.",
-        "explanation": "Exemplo: \"Mom is in the kitchen.\" — A mamãe está na cozinha.",
+        "contextSentence": "We cook in the kitchen.",
+        "contextSentencePt": "Nós cozinhamos na cozinha.",
+        "explanation": "Exemplo: \"We cook in the kitchen.\" — Nós cozinhamos na cozinha.",
         "phoneticHint": "\"kít-chen\" • /ˈkɪtʃ.ən/",
         "skillCategory": "listening"
       },
@@ -334,6 +333,16 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Bedroom",
         "visualEmoji": "🛏️",
         "visualOptions": [
+          {
+            "text": "Floor",
+            "emoji": "🟫",
+            "label": "Floor",
+            "translationPt": "Chão / Piso",
+            "simplePronunciation": "flór",
+            "phonetic": "/flɔːr/",
+            "exampleEn": "The floor is clean.",
+            "examplePt": "O chão está limpo."
+          },
           {
             "text": "Door",
             "emoji": "🚪",
@@ -355,16 +364,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Abra a janela, por favor."
           },
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água",
-            "simplePronunciation": "uó-ter",
-            "phonetic": "/ˈwɔː.tər/",
-            "exampleEn": "I drink cold water.",
-            "examplePt": "Eu bebo água gelada."
-          },
-          {
             "text": "Bedroom",
             "emoji": "🛏️",
             "label": "Bedroom",
@@ -376,9 +375,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Floor",
           "Door",
           "Window",
-          "Water",
           "Bedroom"
         ],
         "correctAnswer": "Bedroom",
@@ -392,151 +391,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p1-e7",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "House",
-        "visualEmoji": "🏡",
-        "visualOptions": [
-          {
-            "text": "House",
-            "emoji": "🏡",
-            "label": "House",
-            "translationPt": "Casa",
-            "simplePronunciation": "ráus",
-            "phonetic": "/haʊs/",
-            "exampleEn": "Welcome to my house.",
-            "examplePt": "Bem-vindo à minha casa."
-          },
-          {
-            "text": "Key",
-            "emoji": "🔑",
-            "label": "Key",
-            "translationPt": "Chave",
-            "simplePronunciation": "kí",
-            "phonetic": "/kiː/",
-            "exampleEn": "Where is the house key?",
-            "examplePt": "Onde está a chave de casa?"
-          },
-          {
-            "text": "Kitchen",
-            "emoji": "🍳",
-            "label": "Kitchen",
-            "translationPt": "Cozinha",
-            "simplePronunciation": "kít-chen",
-            "phonetic": "/ˈkɪtʃ.ən/",
-            "exampleEn": "Mom is in the kitchen.",
-            "examplePt": "A mamãe está na cozinha."
-          },
-          {
-            "text": "Bedroom",
-            "emoji": "🛏️",
-            "label": "Bedroom",
-            "translationPt": "Quarto de dormir",
-            "simplePronunciation": "béd-rum",
-            "phonetic": "/ˈbed.ruːm/",
-            "exampleEn": "I sleep in my bedroom.",
-            "examplePt": "Eu durmo no meu quarto."
-          }
-        ],
-        "options": [
-          "House",
-          "Key",
-          "Kitchen",
-          "Bedroom"
-        ],
-        "correctAnswer": "House",
-        "contextSentence": "Welcome to my house.",
-        "contextSentencePt": "Bem-vindo à minha casa.",
-        "explanation": "Exemplo: \"Welcome to my house.\" — Bem-vindo à minha casa.",
-        "phoneticHint": "\"ráus\" • /haʊs/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p1-e8",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Key",
-        "visualEmoji": "🔑",
-        "visualOptions": [
-          {
-            "text": "Floor",
-            "emoji": "🟫",
-            "label": "Floor",
-            "translationPt": "Chão / Piso",
-            "simplePronunciation": "flór",
-            "phonetic": "/flɔːr/",
-            "exampleEn": "The floor is clean.",
-            "examplePt": "O chão está limpo."
-          },
-          {
-            "text": "Room",
-            "emoji": "🏠",
-            "label": "Room",
-            "translationPt": "Quarto / Cômodo",
-            "simplePronunciation": "rúm",
-            "phonetic": "/ruːm/",
-            "exampleEn": "This room is very clean.",
-            "examplePt": "Este cômodo está muito limpo."
-          },
-          {
-            "text": "Light",
-            "emoji": "💡",
-            "label": "Light",
-            "translationPt": "Luz",
-            "simplePronunciation": "láit",
-            "phonetic": "/laɪt/",
-            "exampleEn": "Turn on the light.",
-            "examplePt": "Acenda a luz."
-          },
-          {
-            "text": "Key",
-            "emoji": "🔑",
-            "label": "Key",
-            "translationPt": "Chave",
-            "simplePronunciation": "kí",
-            "phonetic": "/kiː/",
-            "exampleEn": "Where is the house key?",
-            "examplePt": "Onde está a chave de casa?"
-          }
-        ],
-        "options": [
-          "Floor",
-          "Room",
-          "Light",
-          "Key"
-        ],
-        "correctAnswer": "Key",
-        "contextSentence": "Where is the house key?",
-        "contextSentencePt": "Onde está a chave de casa?",
-        "explanation": "Exemplo: \"Where is the house key?\" — Onde está a chave de casa?",
-        "phoneticHint": "\"kí\" • /kiː/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p1-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Table",
         "visualEmoji": "🪑",
         "visualOptions": [
-          {
-            "text": "Door",
-            "emoji": "🚪",
-            "label": "Door",
-            "translationPt": "Porta",
-            "simplePronunciation": "dór",
-            "phonetic": "/dɔːr/",
-            "exampleEn": "Please close the door.",
-            "examplePt": "Por favor, feche a porta."
-          },
-          {
-            "text": "Window",
-            "emoji": "🪟",
-            "label": "Window",
-            "translationPt": "Janela",
-            "simplePronunciation": "uín-dou",
-            "phonetic": "/ˈwɪn.doʊ/",
-            "exampleEn": "Open the window, please.",
-            "examplePt": "Abra a janela, por favor."
-          },
           {
             "text": "Table",
             "emoji": "🪑",
@@ -548,21 +405,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "A comida está na mesa."
           },
           {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água",
-            "simplePronunciation": "uó-ter",
-            "phonetic": "/ˈwɔː.tər/",
-            "exampleEn": "I drink cold water.",
-            "examplePt": "Eu bebo água gelada."
+            "text": "Kitchen",
+            "emoji": "🍳",
+            "label": "Kitchen",
+            "translationPt": "Cozinha",
+            "simplePronunciation": "kít-chen",
+            "phonetic": "/ˈkɪtʃ.ən/",
+            "exampleEn": "We cook in the kitchen.",
+            "examplePt": "Nós cozinhamos na cozinha."
+          },
+          {
+            "text": "Bedroom",
+            "emoji": "🛏️",
+            "label": "Bedroom",
+            "translationPt": "Quarto de dormir",
+            "simplePronunciation": "béd-rum",
+            "phonetic": "/ˈbed.ruːm/",
+            "exampleEn": "I sleep in my bedroom.",
+            "examplePt": "Eu durmo no meu quarto."
+          },
+          {
+            "text": "Room",
+            "emoji": "🏠",
+            "label": "Room",
+            "translationPt": "Quarto / Cômodo",
+            "simplePronunciation": "rúm",
+            "phonetic": "/ruːm/",
+            "exampleEn": "This room is very bright.",
+            "examplePt": "Este cômodo é muito iluminado."
           }
         ],
         "options": [
-          "Door",
-          "Window",
           "Table",
-          "Water"
+          "Kitchen",
+          "Bedroom",
+          "Room"
         ],
         "correctAnswer": "Table",
         "contextSentence": "The food is on the table.",
@@ -572,12 +449,22 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p1-e10",
+        "id": "w0-p1-e8",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Chair",
         "visualEmoji": "🪑",
         "visualOptions": [
+          {
+            "text": "Window",
+            "emoji": "🪟",
+            "label": "Window",
+            "translationPt": "Janela",
+            "simplePronunciation": "uín-dou",
+            "phonetic": "/ˈwɪn.doʊ/",
+            "exampleEn": "Open the window, please.",
+            "examplePt": "Abra a janela, por favor."
+          },
           {
             "text": "Chair",
             "emoji": "🪑",
@@ -589,77 +476,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Sente-se nesta cadeira."
           },
           {
-            "text": "Kitchen",
-            "emoji": "🍳",
-            "label": "Kitchen",
-            "translationPt": "Cozinha",
-            "simplePronunciation": "kít-chen",
-            "phonetic": "/ˈkɪtʃ.ən/",
-            "exampleEn": "Mom is in the kitchen.",
-            "examplePt": "A mamãe está na cozinha."
-          },
-          {
-            "text": "House",
-            "emoji": "🏡",
-            "label": "House",
-            "translationPt": "Casa",
-            "simplePronunciation": "ráus",
-            "phonetic": "/haʊs/",
-            "exampleEn": "Welcome to my house.",
-            "examplePt": "Bem-vindo à minha casa."
-          },
-          {
-            "text": "Bedroom",
-            "emoji": "🛏️",
-            "label": "Bedroom",
-            "translationPt": "Quarto de dormir",
-            "simplePronunciation": "béd-rum",
-            "phonetic": "/ˈbed.ruːm/",
-            "exampleEn": "I sleep in my bedroom.",
-            "examplePt": "Eu durmo no meu quarto."
-          }
-        ],
-        "options": [
-          "Chair",
-          "Kitchen",
-          "House",
-          "Bedroom"
-        ],
-        "correctAnswer": "Chair",
-        "contextSentence": "Sit on this chair.",
-        "contextSentencePt": "Sente-se nesta cadeira.",
-        "explanation": "Exemplo: \"Sit on this chair.\" — Sente-se nesta cadeira.",
-        "phoneticHint": "\"tchér\" • /tʃer/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p1-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Light",
-        "visualEmoji": "💡",
-        "visualOptions": [
-          {
-            "text": "Room",
-            "emoji": "🏠",
-            "label": "Room",
-            "translationPt": "Quarto / Cômodo",
-            "simplePronunciation": "rúm",
-            "phonetic": "/ruːm/",
-            "exampleEn": "This room is very clean.",
-            "examplePt": "Este cômodo está muito limpo."
-          },
-          {
-            "text": "Light",
-            "emoji": "💡",
-            "label": "Light",
-            "translationPt": "Luz",
-            "simplePronunciation": "láit",
-            "phonetic": "/laɪt/",
-            "exampleEn": "Turn on the light.",
-            "examplePt": "Acenda a luz."
-          },
-          {
             "text": "Floor",
             "emoji": "🟫",
             "label": "Floor",
@@ -668,67 +484,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/flɔːr/",
             "exampleEn": "The floor is clean.",
             "examplePt": "O chão está limpo."
-          },
-          {
-            "text": "Key",
-            "emoji": "🔑",
-            "label": "Key",
-            "translationPt": "Chave",
-            "simplePronunciation": "kí",
-            "phonetic": "/kiː/",
-            "exampleEn": "Where is the house key?",
-            "examplePt": "Onde está a chave de casa?"
-          }
-        ],
-        "options": [
-          "Room",
-          "Light",
-          "Floor",
-          "Key"
-        ],
-        "correctAnswer": "Light",
-        "contextSentence": "Turn on the light.",
-        "contextSentencePt": "Acenda a luz.",
-        "explanation": "Exemplo: \"Turn on the light.\" — Acenda a luz.",
-        "phoneticHint": "\"láit\" • /laɪt/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p1-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Water",
-        "visualEmoji": "💧",
-        "visualOptions": [
-          {
-            "text": "Table",
-            "emoji": "🪑",
-            "label": "Table",
-            "translationPt": "Mesa",
-            "simplePronunciation": "têi-bol",
-            "phonetic": "/ˈteɪ.bəl/",
-            "exampleEn": "The food is on the table.",
-            "examplePt": "A comida está na mesa."
-          },
-          {
-            "text": "Water",
-            "emoji": "💧",
-            "label": "Water",
-            "translationPt": "Água",
-            "simplePronunciation": "uó-ter",
-            "phonetic": "/ˈwɔː.tər/",
-            "exampleEn": "I drink cold water.",
-            "examplePt": "Eu bebo água gelada."
-          },
-          {
-            "text": "Window",
-            "emoji": "🪟",
-            "label": "Window",
-            "translationPt": "Janela",
-            "simplePronunciation": "uín-dou",
-            "phonetic": "/ˈwɪn.doʊ/",
-            "exampleEn": "Open the window, please.",
-            "examplePt": "Abra a janela, por favor."
           },
           {
             "text": "Door",
@@ -742,17 +497,17 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Table",
-          "Water",
           "Window",
+          "Chair",
+          "Floor",
           "Door"
         ],
-        "correctAnswer": "Water",
-        "contextSentence": "I drink cold water.",
-        "contextSentencePt": "Eu bebo água gelada.",
-        "explanation": "Exemplo: \"I drink cold water.\" — Eu bebo água gelada.",
-        "phoneticHint": "\"uó-ter\" • /ˈwɔː.tər/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Chair",
+        "contextSentence": "Sit on this chair.",
+        "contextSentencePt": "Sente-se nesta cadeira.",
+        "explanation": "Exemplo: \"Sit on this chair.\" — Sente-se nesta cadeira.",
+        "phoneticHint": "\"tchér\" • /tʃer/",
+        "skillCategory": "listening"
       }
     ]
   },
@@ -761,17 +516,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 2,
     "themeId": "home",
-    "themeTitle": "A Casa",
-    "frequencyLevel": "Módulo 2 • Comuns",
+    "themeTitle": "Tema 1: A Casa",
+    "frequencyLevel": "Módulo 2 • Palavras Comuns",
     "title": "A Casa • Módulo 2: Palavras Comuns",
-    "subtitle": "Tema 1 (Nível 2/4) • 12 palavras comuns da estrutura e móveis da casa",
-    "pedagogicalObjective": "Dominar partes comuns da casa: Roof, Wall, Bathroom, Living room, Bed, Sofa, Fridge, Stove, Sink, Mirror, Lamp e Shower.",
+    "subtitle": "Tema: A Casa (2/4) • 8 palavras comuns da estrutura e móveis",
+    "pedagogicalObjective": "Dominar 8 palavras comuns da casa: Roof, Wall, Bathroom, Living room, Bed, Sofa, Fridge e Stove.",
     "type": "lesson",
     "icon": "house",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 2 da Casa avançamos para as palavras comuns: Roof (\"rúf\" = Telhado), Wall (\"uól\" = Parede/Muro), Bathroom (\"béth-rum\" = Banheiro), Living room (\"lí-ving rúm\" = Sala de estar) e Bed (\"béd\" = Cama).",
-      "Também praticamos Sofa (\"sôu-fa\" = Sofá), Fridge (\"frídj\" = Geladeira), Stove (\"stôuv\" = Fogão), Sink (\"sínk\" = Pia), Mirror (\"mí-ror\" = Espelho), Lamp (\"lémp\" = Abajur/Luminária) e Shower (\"xáu-er\" = Chuveiro)."
+      "Tema: A Casa — Módulo 2 (Palavras comuns): amplie sua base com os cômodos e itens domésticos comuns.",
+      "Palavras deste módulo (8): Roof (\"rúf\" = Telhado), Wall (\"uól\" = Parede), Bathroom (\"béth-rum\" = Banheiro), Living room (\"lí-ving rúm\" = Sala de estar), Bed (\"béd\" = Cama), Sofa (\"sôu-fa\" = Sofá), Fridge (\"frídj\" = Geladeira) e Stove (\"stôuv\" = Fogão)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -784,24 +539,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏠",
         "visualOptions": [
           {
-            "text": "Lamp",
-            "emoji": "💡",
-            "label": "Lamp",
-            "translationPt": "Abajur / Luminária",
-            "simplePronunciation": "lémp",
-            "phonetic": "/læmp/",
-            "exampleEn": "Turn on the bedside lamp.",
-            "examplePt": "Ligue o abajur."
+            "text": "Living room",
+            "emoji": "🛋️",
+            "label": "Living room",
+            "translationPt": "Sala de estar",
+            "simplePronunciation": "lí-ving rúm",
+            "phonetic": "/ˈlɪv.ɪŋ ruːm/",
+            "exampleEn": "We relax in the living room.",
+            "examplePt": "Nós descansamos na sala de estar."
           },
           {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama",
-            "simplePronunciation": "béd",
-            "phonetic": "/bed/",
-            "exampleEn": "My bed is very comfortable.",
-            "examplePt": "Minha cama é muito confortável."
+            "text": "Bathroom",
+            "emoji": "🚿",
+            "label": "Bathroom",
+            "translationPt": "Banheiro",
+            "simplePronunciation": "béth-rum",
+            "phonetic": "/ˈbæθ.ruːm/",
+            "exampleEn": "Wash your hands in the bathroom.",
+            "examplePt": "Lave as mãos no banheiro."
           },
           {
             "text": "Roof",
@@ -814,21 +569,21 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O telhado protege a casa."
           },
           {
-            "text": "Living room",
-            "emoji": "🛋️",
-            "label": "Living room",
-            "translationPt": "Sala de estar",
-            "simplePronunciation": "lí-ving rúm",
-            "phonetic": "/ˈlɪv.ɪŋ ruːm/",
-            "exampleEn": "We watch TV in the living room.",
-            "examplePt": "Nós assistimos TV na sala de estar."
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama",
+            "simplePronunciation": "béd",
+            "phonetic": "/bed/",
+            "exampleEn": "My bed is very comfortable.",
+            "examplePt": "Minha cama é muito confortável."
           }
         ],
         "options": [
-          "Lamp",
-          "Bed",
+          "Living room",
+          "Bathroom",
           "Roof",
-          "Living room"
+          "Bed"
         ],
         "correctAnswer": "Roof",
         "contextSentence": "The roof protects the house.",
@@ -848,7 +603,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Wall",
             "emoji": "🧱",
             "label": "Wall",
-            "translationPt": "Parede / Muro",
+            "translationPt": "Parede",
             "simplePronunciation": "uól",
             "phonetic": "/wɔːl/",
             "exampleEn": "The wall is painted white.",
@@ -906,24 +661,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚿",
         "visualOptions": [
           {
-            "text": "Mirror",
-            "emoji": "🪞",
-            "label": "Mirror",
-            "translationPt": "Espelho",
-            "simplePronunciation": "mí-ror",
-            "phonetic": "/ˈmɪr.ər/",
-            "exampleEn": "Look in the mirror.",
-            "examplePt": "Olhe no espelho."
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama",
+            "simplePronunciation": "béd",
+            "phonetic": "/bed/",
+            "exampleEn": "My bed is very comfortable.",
+            "examplePt": "Minha cama é muito confortável."
           },
           {
-            "text": "Shower",
-            "emoji": "🚿",
-            "label": "Shower",
-            "translationPt": "Chuveiro",
-            "simplePronunciation": "xáu-er",
-            "phonetic": "/ˈʃaʊ.ər/",
-            "exampleEn": "I take a warm shower.",
-            "examplePt": "Eu tomo um banho morno de chuveiro."
+            "text": "Roof",
+            "emoji": "🏠",
+            "label": "Roof",
+            "translationPt": "Telhado",
+            "simplePronunciation": "rúf",
+            "phonetic": "/ruːf/",
+            "exampleEn": "The roof protects the house.",
+            "examplePt": "O telhado protege a casa."
           },
           {
             "text": "Bathroom",
@@ -936,21 +691,21 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Lave as mãos no banheiro."
           },
           {
-            "text": "Sink",
-            "emoji": "🚰",
-            "label": "Sink",
-            "translationPt": "Pia",
-            "simplePronunciation": "sínk",
-            "phonetic": "/sɪŋk/",
-            "exampleEn": "Put the cup in the sink.",
-            "examplePt": "Coloque a xícara na pia."
+            "text": "Wall",
+            "emoji": "🧱",
+            "label": "Wall",
+            "translationPt": "Parede",
+            "simplePronunciation": "uól",
+            "phonetic": "/wɔːl/",
+            "exampleEn": "The wall is painted white.",
+            "examplePt": "A parede está pintada de branco."
           }
         ],
         "options": [
-          "Mirror",
-          "Shower",
+          "Bed",
+          "Roof",
           "Bathroom",
-          "Sink"
+          "Wall"
         ],
         "correctAnswer": "Bathroom",
         "contextSentence": "Wash your hands in the bathroom.",
@@ -967,14 +722,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛋️",
         "visualOptions": [
           {
-            "text": "Bathroom",
-            "emoji": "🚿",
-            "label": "Bathroom",
-            "translationPt": "Banheiro",
-            "simplePronunciation": "béth-rum",
-            "phonetic": "/ˈbæθ.ruːm/",
-            "exampleEn": "Wash your hands in the bathroom.",
-            "examplePt": "Lave as mãos no banheiro."
+            "text": "Stove",
+            "emoji": "🔥",
+            "label": "Stove",
+            "translationPt": "Fogão",
+            "simplePronunciation": "stôuv",
+            "phonetic": "/stoʊv/",
+            "exampleEn": "She cooks dinner on the stove.",
+            "examplePt": "Ela faz o jantar no fogão."
           },
           {
             "text": "Living room",
@@ -983,40 +738,40 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sala de estar",
             "simplePronunciation": "lí-ving rúm",
             "phonetic": "/ˈlɪv.ɪŋ ruːm/",
-            "exampleEn": "We watch TV in the living room.",
-            "examplePt": "Nós assistimos TV na sala de estar."
+            "exampleEn": "We relax in the living room.",
+            "examplePt": "Nós descansamos na sala de estar."
           },
           {
-            "text": "Roof",
-            "emoji": "🏠",
-            "label": "Roof",
-            "translationPt": "Telhado",
-            "simplePronunciation": "rúf",
-            "phonetic": "/ruːf/",
-            "exampleEn": "The roof protects the house.",
-            "examplePt": "O telhado protege a casa."
+            "text": "Fridge",
+            "emoji": "🧊",
+            "label": "Fridge",
+            "translationPt": "Geladeira",
+            "simplePronunciation": "frídj",
+            "phonetic": "/frɪdʒ/",
+            "exampleEn": "The milk is in the fridge.",
+            "examplePt": "O leite está na geladeira."
           },
           {
-            "text": "Wall",
-            "emoji": "🧱",
-            "label": "Wall",
-            "translationPt": "Parede / Muro",
-            "simplePronunciation": "uól",
-            "phonetic": "/wɔːl/",
-            "exampleEn": "The wall is painted white.",
-            "examplePt": "A parede está pintada de branco."
+            "text": "Sofa",
+            "emoji": "🛋️",
+            "label": "Sofa",
+            "translationPt": "Sofá",
+            "simplePronunciation": "sôu-fa",
+            "phonetic": "/ˈsoʊ.fə/",
+            "exampleEn": "Sit on the living room sofa.",
+            "examplePt": "Sente-se no sofá da sala."
           }
         ],
         "options": [
-          "Bathroom",
+          "Stove",
           "Living room",
-          "Roof",
-          "Wall"
+          "Fridge",
+          "Sofa"
         ],
         "correctAnswer": "Living room",
-        "contextSentence": "We watch TV in the living room.",
-        "contextSentencePt": "Nós assistimos TV na sala de estar.",
-        "explanation": "Exemplo: \"We watch TV in the living room.\" — Nós assistimos TV na sala de estar.",
+        "contextSentence": "We relax in the living room.",
+        "contextSentencePt": "Nós descansamos na sala de estar.",
+        "explanation": "Exemplo: \"We relax in the living room.\" — Nós descansamos na sala de estar.",
         "phoneticHint": "\"lí-ving rúm\" • /ˈlɪv.ɪŋ ruːm/",
         "skillCategory": "vocabulary"
       },
@@ -1028,34 +783,34 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛏️",
         "visualOptions": [
           {
-            "text": "Stove",
-            "emoji": "🔥",
-            "label": "Stove",
-            "translationPt": "Fogão",
-            "simplePronunciation": "stôuv",
-            "phonetic": "/stoʊv/",
-            "exampleEn": "She cooks dinner on the stove.",
-            "examplePt": "Ela faz o jantar no fogão."
+            "text": "Roof",
+            "emoji": "🏠",
+            "label": "Roof",
+            "translationPt": "Telhado",
+            "simplePronunciation": "rúf",
+            "phonetic": "/ruːf/",
+            "exampleEn": "The roof protects the house.",
+            "examplePt": "O telhado protege a casa."
           },
           {
-            "text": "Sofa",
-            "emoji": "🛋️",
-            "label": "Sofa",
-            "translationPt": "Sofá",
-            "simplePronunciation": "sôu-fa",
-            "phonetic": "/ˈsoʊ.fə/",
-            "exampleEn": "Sit on the living room sofa.",
-            "examplePt": "Sente-se no sofá da sala."
+            "text": "Bathroom",
+            "emoji": "🚿",
+            "label": "Bathroom",
+            "translationPt": "Banheiro",
+            "simplePronunciation": "béth-rum",
+            "phonetic": "/ˈbæθ.ruːm/",
+            "exampleEn": "Wash your hands in the bathroom.",
+            "examplePt": "Lave as mãos no banheiro."
           },
           {
-            "text": "Fridge",
-            "emoji": "🧊",
-            "label": "Fridge",
-            "translationPt": "Geladeira",
-            "simplePronunciation": "frídj",
-            "phonetic": "/frɪdʒ/",
-            "exampleEn": "The milk is in the fridge.",
-            "examplePt": "O leite está na geladeira."
+            "text": "Wall",
+            "emoji": "🧱",
+            "label": "Wall",
+            "translationPt": "Parede",
+            "simplePronunciation": "uól",
+            "phonetic": "/wɔːl/",
+            "exampleEn": "The wall is painted white.",
+            "examplePt": "A parede está pintada de branco."
           },
           {
             "text": "Bed",
@@ -1069,9 +824,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Stove",
-          "Sofa",
-          "Fridge",
+          "Roof",
+          "Bathroom",
+          "Wall",
           "Bed"
         ],
         "correctAnswer": "Bed",
@@ -1099,56 +854,15 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Sente-se no sofá da sala."
           },
           {
-            "text": "Shower",
-            "emoji": "🚿",
-            "label": "Shower",
-            "translationPt": "Chuveiro",
-            "simplePronunciation": "xáu-er",
-            "phonetic": "/ˈʃaʊ.ər/",
-            "exampleEn": "I take a warm shower.",
-            "examplePt": "Eu tomo um banho morno de chuveiro."
+            "text": "Fridge",
+            "emoji": "🧊",
+            "label": "Fridge",
+            "translationPt": "Geladeira",
+            "simplePronunciation": "frídj",
+            "phonetic": "/frɪdʒ/",
+            "exampleEn": "The milk is in the fridge.",
+            "examplePt": "O leite está na geladeira."
           },
-          {
-            "text": "Sink",
-            "emoji": "🚰",
-            "label": "Sink",
-            "translationPt": "Pia",
-            "simplePronunciation": "sínk",
-            "phonetic": "/sɪŋk/",
-            "exampleEn": "Put the cup in the sink.",
-            "examplePt": "Coloque a xícara na pia."
-          },
-          {
-            "text": "Lamp",
-            "emoji": "💡",
-            "label": "Lamp",
-            "translationPt": "Abajur / Luminária",
-            "simplePronunciation": "lémp",
-            "phonetic": "/læmp/",
-            "exampleEn": "Turn on the bedside lamp.",
-            "examplePt": "Ligue o abajur."
-          }
-        ],
-        "options": [
-          "Sofa",
-          "Shower",
-          "Sink",
-          "Lamp"
-        ],
-        "correctAnswer": "Sofa",
-        "contextSentence": "Sit on the living room sofa.",
-        "contextSentencePt": "Sente-se no sofá da sala.",
-        "explanation": "Exemplo: \"Sit on the living room sofa.\" — Sente-se no sofá da sala.",
-        "phoneticHint": "\"sôu-fa\" • /ˈsoʊ.fə/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p2-e7",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Fridge",
-        "visualEmoji": "🧊",
-        "visualOptions": [
           {
             "text": "Roof",
             "emoji": "🏠",
@@ -1166,18 +880,39 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sala de estar",
             "simplePronunciation": "lí-ving rúm",
             "phonetic": "/ˈlɪv.ɪŋ ruːm/",
-            "exampleEn": "We watch TV in the living room.",
-            "examplePt": "Nós assistimos TV na sala de estar."
-          },
+            "exampleEn": "We relax in the living room.",
+            "examplePt": "Nós descansamos na sala de estar."
+          }
+        ],
+        "options": [
+          "Sofa",
+          "Fridge",
+          "Roof",
+          "Living room"
+        ],
+        "correctAnswer": "Sofa",
+        "contextSentence": "Sit on the living room sofa.",
+        "contextSentencePt": "Sente-se no sofá da sala.",
+        "explanation": "Exemplo: \"Sit on the living room sofa.\" — Sente-se no sofá da sala.",
+        "phoneticHint": "\"sôu-fa\" • /ˈsoʊ.fə/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p2-e7",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Fridge",
+        "visualEmoji": "🧊",
+        "visualOptions": [
           {
-            "text": "Bathroom",
-            "emoji": "🚿",
-            "label": "Bathroom",
-            "translationPt": "Banheiro",
-            "simplePronunciation": "béth-rum",
-            "phonetic": "/ˈbæθ.ruːm/",
-            "exampleEn": "Wash your hands in the bathroom.",
-            "examplePt": "Lave as mãos no banheiro."
+            "text": "Bed",
+            "emoji": "🛏️",
+            "label": "Bed",
+            "translationPt": "Cama",
+            "simplePronunciation": "béd",
+            "phonetic": "/bed/",
+            "exampleEn": "My bed is very comfortable.",
+            "examplePt": "Minha cama é muito confortável."
           },
           {
             "text": "Fridge",
@@ -1188,13 +923,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/frɪdʒ/",
             "exampleEn": "The milk is in the fridge.",
             "examplePt": "O leite está na geladeira."
+          },
+          {
+            "text": "Wall",
+            "emoji": "🧱",
+            "label": "Wall",
+            "translationPt": "Parede",
+            "simplePronunciation": "uól",
+            "phonetic": "/wɔːl/",
+            "exampleEn": "The wall is painted white.",
+            "examplePt": "A parede está pintada de branco."
+          },
+          {
+            "text": "Bathroom",
+            "emoji": "🚿",
+            "label": "Bathroom",
+            "translationPt": "Banheiro",
+            "simplePronunciation": "béth-rum",
+            "phonetic": "/ˈbæθ.ruːm/",
+            "exampleEn": "Wash your hands in the bathroom.",
+            "examplePt": "Lave as mãos no banheiro."
           }
         ],
         "options": [
-          "Roof",
-          "Living room",
-          "Bathroom",
-          "Fridge"
+          "Bed",
+          "Fridge",
+          "Wall",
+          "Bathroom"
         ],
         "correctAnswer": "Fridge",
         "contextSentence": "The milk is in the fridge.",
@@ -1210,148 +965,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Stove",
         "visualEmoji": "🔥",
         "visualOptions": [
-          {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama",
-            "simplePronunciation": "béd",
-            "phonetic": "/bed/",
-            "exampleEn": "My bed is very comfortable.",
-            "examplePt": "Minha cama é muito confortável."
-          },
-          {
-            "text": "Wall",
-            "emoji": "🧱",
-            "label": "Wall",
-            "translationPt": "Parede / Muro",
-            "simplePronunciation": "uól",
-            "phonetic": "/wɔːl/",
-            "exampleEn": "The wall is painted white.",
-            "examplePt": "A parede está pintada de branco."
-          },
-          {
-            "text": "Stove",
-            "emoji": "🔥",
-            "label": "Stove",
-            "translationPt": "Fogão",
-            "simplePronunciation": "stôuv",
-            "phonetic": "/stoʊv/",
-            "exampleEn": "She cooks dinner on the stove.",
-            "examplePt": "Ela faz o jantar no fogão."
-          },
-          {
-            "text": "Mirror",
-            "emoji": "🪞",
-            "label": "Mirror",
-            "translationPt": "Espelho",
-            "simplePronunciation": "mí-ror",
-            "phonetic": "/ˈmɪr.ər/",
-            "exampleEn": "Look in the mirror.",
-            "examplePt": "Olhe no espelho."
-          }
-        ],
-        "options": [
-          "Bed",
-          "Wall",
-          "Stove",
-          "Mirror"
-        ],
-        "correctAnswer": "Stove",
-        "contextSentence": "She cooks dinner on the stove.",
-        "contextSentencePt": "Ela faz o jantar no fogão.",
-        "explanation": "Exemplo: \"She cooks dinner on the stove.\" — Ela faz o jantar no fogão.",
-        "phoneticHint": "\"stôuv\" • /stoʊv/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p2-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Sink",
-        "visualEmoji": "🚰",
-        "visualOptions": [
-          {
-            "text": "Sink",
-            "emoji": "🚰",
-            "label": "Sink",
-            "translationPt": "Pia",
-            "simplePronunciation": "sínk",
-            "phonetic": "/sɪŋk/",
-            "exampleEn": "Put the cup in the sink.",
-            "examplePt": "Coloque a xícara na pia."
-          },
-          {
-            "text": "Mirror",
-            "emoji": "🪞",
-            "label": "Mirror",
-            "translationPt": "Espelho",
-            "simplePronunciation": "mí-ror",
-            "phonetic": "/ˈmɪr.ər/",
-            "exampleEn": "Look in the mirror.",
-            "examplePt": "Olhe no espelho."
-          },
-          {
-            "text": "Wall",
-            "emoji": "🧱",
-            "label": "Wall",
-            "translationPt": "Parede / Muro",
-            "simplePronunciation": "uól",
-            "phonetic": "/wɔːl/",
-            "exampleEn": "The wall is painted white.",
-            "examplePt": "A parede está pintada de branco."
-          },
-          {
-            "text": "Bathroom",
-            "emoji": "🚿",
-            "label": "Bathroom",
-            "translationPt": "Banheiro",
-            "simplePronunciation": "béth-rum",
-            "phonetic": "/ˈbæθ.ruːm/",
-            "exampleEn": "Wash your hands in the bathroom.",
-            "examplePt": "Lave as mãos no banheiro."
-          }
-        ],
-        "options": [
-          "Sink",
-          "Mirror",
-          "Wall",
-          "Bathroom"
-        ],
-        "correctAnswer": "Sink",
-        "contextSentence": "Put the cup in the sink.",
-        "contextSentencePt": "Coloque a xícara na pia.",
-        "explanation": "Exemplo: \"Put the cup in the sink.\" — Coloque a xícara na pia.",
-        "phoneticHint": "\"sínk\" • /sɪŋk/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p2-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Mirror",
-        "visualEmoji": "🪞",
-        "visualOptions": [
-          {
-            "text": "Roof",
-            "emoji": "🏠",
-            "label": "Roof",
-            "translationPt": "Telhado",
-            "simplePronunciation": "rúf",
-            "phonetic": "/ruːf/",
-            "exampleEn": "The roof protects the house.",
-            "examplePt": "O telhado protege a casa."
-          },
-          {
-            "text": "Mirror",
-            "emoji": "🪞",
-            "label": "Mirror",
-            "translationPt": "Espelho",
-            "simplePronunciation": "mí-ror",
-            "phonetic": "/ˈmɪr.ər/",
-            "exampleEn": "Look in the mirror.",
-            "examplePt": "Olhe no espelho."
-          },
           {
             "text": "Sofa",
             "emoji": "🛋️",
@@ -1369,59 +982,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sala de estar",
             "simplePronunciation": "lí-ving rúm",
             "phonetic": "/ˈlɪv.ɪŋ ruːm/",
-            "exampleEn": "We watch TV in the living room.",
-            "examplePt": "Nós assistimos TV na sala de estar."
-          }
-        ],
-        "options": [
-          "Roof",
-          "Mirror",
-          "Sofa",
-          "Living room"
-        ],
-        "correctAnswer": "Mirror",
-        "contextSentence": "Look in the mirror.",
-        "contextSentencePt": "Olhe no espelho.",
-        "explanation": "Exemplo: \"Look in the mirror.\" — Olhe no espelho.",
-        "phoneticHint": "\"mí-ror\" • /ˈmɪr.ər/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p2-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Lamp",
-        "visualEmoji": "💡",
-        "visualOptions": [
-          {
-            "text": "Bed",
-            "emoji": "🛏️",
-            "label": "Bed",
-            "translationPt": "Cama",
-            "simplePronunciation": "béd",
-            "phonetic": "/bed/",
-            "exampleEn": "My bed is very comfortable.",
-            "examplePt": "Minha cama é muito confortável."
+            "exampleEn": "We relax in the living room.",
+            "examplePt": "Nós descansamos na sala de estar."
           },
           {
-            "text": "Lamp",
-            "emoji": "💡",
-            "label": "Lamp",
-            "translationPt": "Abajur / Luminária",
-            "simplePronunciation": "lémp",
-            "phonetic": "/læmp/",
-            "exampleEn": "Turn on the bedside lamp.",
-            "examplePt": "Ligue o abajur."
-          },
-          {
-            "text": "Fridge",
-            "emoji": "🧊",
-            "label": "Fridge",
-            "translationPt": "Geladeira",
-            "simplePronunciation": "frídj",
-            "phonetic": "/frɪdʒ/",
-            "exampleEn": "The milk is in the fridge.",
-            "examplePt": "O leite está na geladeira."
+            "text": "Roof",
+            "emoji": "🏠",
+            "label": "Roof",
+            "translationPt": "Telhado",
+            "simplePronunciation": "rúf",
+            "phonetic": "/ruːf/",
+            "exampleEn": "The roof protects the house.",
+            "examplePt": "O telhado protege a casa."
           },
           {
             "text": "Stove",
@@ -1435,78 +1007,17 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Bed",
-          "Lamp",
-          "Fridge",
+          "Sofa",
+          "Living room",
+          "Roof",
           "Stove"
         ],
-        "correctAnswer": "Lamp",
-        "contextSentence": "Turn on the bedside lamp.",
-        "contextSentencePt": "Ligue o abajur.",
-        "explanation": "Exemplo: \"Turn on the bedside lamp.\" — Ligue o abajur.",
-        "phoneticHint": "\"lémp\" • /læmp/",
+        "correctAnswer": "Stove",
+        "contextSentence": "She cooks dinner on the stove.",
+        "contextSentencePt": "Ela faz o jantar no fogão.",
+        "explanation": "Exemplo: \"She cooks dinner on the stove.\" — Ela faz o jantar no fogão.",
+        "phoneticHint": "\"stôuv\" • /stoʊv/",
         "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p2-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Shower",
-        "visualEmoji": "🚿",
-        "visualOptions": [
-          {
-            "text": "Sink",
-            "emoji": "🚰",
-            "label": "Sink",
-            "translationPt": "Pia",
-            "simplePronunciation": "sínk",
-            "phonetic": "/sɪŋk/",
-            "exampleEn": "Put the cup in the sink.",
-            "examplePt": "Coloque a xícara na pia."
-          },
-          {
-            "text": "Wall",
-            "emoji": "🧱",
-            "label": "Wall",
-            "translationPt": "Parede / Muro",
-            "simplePronunciation": "uól",
-            "phonetic": "/wɔːl/",
-            "exampleEn": "The wall is painted white.",
-            "examplePt": "A parede está pintada de branco."
-          },
-          {
-            "text": "Bathroom",
-            "emoji": "🚿",
-            "label": "Bathroom",
-            "translationPt": "Banheiro",
-            "simplePronunciation": "béth-rum",
-            "phonetic": "/ˈbæθ.ruːm/",
-            "exampleEn": "Wash your hands in the bathroom.",
-            "examplePt": "Lave as mãos no banheiro."
-          },
-          {
-            "text": "Shower",
-            "emoji": "🚿",
-            "label": "Shower",
-            "translationPt": "Chuveiro",
-            "simplePronunciation": "xáu-er",
-            "phonetic": "/ˈʃaʊ.ər/",
-            "exampleEn": "I take a warm shower.",
-            "examplePt": "Eu tomo um banho morno de chuveiro."
-          }
-        ],
-        "options": [
-          "Sink",
-          "Wall",
-          "Bathroom",
-          "Shower"
-        ],
-        "correctAnswer": "Shower",
-        "contextSentence": "I take a warm shower.",
-        "contextSentencePt": "Eu tomo um banho morno de chuveiro.",
-        "explanation": "Exemplo: \"I take a warm shower.\" — Eu tomo um banho morno de chuveiro.",
-        "phoneticHint": "\"xáu-er\" • /ˈʃaʊ.ər/",
-        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -1515,18 +1026,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 3,
     "themeId": "home",
-    "themeTitle": "A Casa",
-    "frequencyLevel": "Módulo 3 • Intermediárias",
+    "themeTitle": "Tema 1: A Casa",
+    "frequencyLevel": "Módulo 3 • Palavras Intermediárias",
     "title": "A Casa • Módulo 3: Palavras Intermediárias",
-    "subtitle": "Tema 1 (Nível 3/4) • 12 palavras intermediárias de áreas e objetos domésticos",
-    "pedagogicalObjective": "Expandir o vocabulário da casa: Ceiling, Stairs, Garage, Balcony, Curtain, Rug, Pillow, Blanket, Towel, Shelf, Drawer e Gate.",
+    "subtitle": "Tema: A Casa (3/4) • 8 palavras intermediárias da residência",
+    "pedagogicalObjective": "Expandir o vocabulário residencial com 8 palavras intermediárias: Ceiling, Stairs, Garage, Balcony, Curtain, Rug, Pillow e Shelf.",
     "type": "lesson",
     "icon": "house",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 3 da Casa aprendemos palavras intermediárias: Ceiling (\"sí-ling\" = Teto), Stairs (\"stérz\" = Escada), Garage (\"ga-rádj\" = Garagem), Balcony (\"bél-co-ni\" = Varanda) e Curtain (\"câr-ten\" = Cortina).",
-      "Também vemos Rug (\"râg\" = Tapete), Pillow (\"pí-lou\" = Travesseiro), Blanket (\"blén-ket\" = Cobertor), Towel (\"táu-el\" = Toalha), Shelf (\"xélf\" = Prateleira), Drawer (\"dró-er\" = Gaveta) e Gate (\"guêit\" = Portão).",
-      "Logo após concluir este 3º módulo de vocabulário, você fará o seu 1º Módulo Exclusivo de Pronomes!"
+      "Tema: A Casa — Módulo 3 (Palavras intermediárias): partes e objetos complementares da residência.",
+      "Palavras deste módulo (8): Ceiling (\"sí-ling\" = Teto), Stairs (\"stérz\" = Escada), Garage (\"ga-rádj\" = Garagem), Balcony (\"bél-co-ni\" = Varanda), Curtain (\"câr-ten\" = Cortina), Rug (\"râg\" = Tapete), Pillow (\"pí-lou\" = Travesseiro) e Shelf (\"xélf\" = Prateleira)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -1545,28 +1055,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Teto",
             "simplePronunciation": "sí-ling",
             "phonetic": "/ˈsiː.lɪŋ/",
-            "exampleEn": "The lamp hangs from the ceiling.",
-            "examplePt": "A luminária fica presa no teto."
-          },
-          {
-            "text": "Blanket",
-            "emoji": "🛌",
-            "label": "Blanket",
-            "translationPt": "Cobertor",
-            "simplePronunciation": "blén-ket",
-            "phonetic": "/ˈblæŋ.kɪt/",
-            "exampleEn": "Take a warm blanket tonight.",
-            "examplePt": "Pegue um cobertor quentinho hoje à noite."
-          },
-          {
-            "text": "Balcony",
-            "emoji": "🌤️",
-            "label": "Balcony",
-            "translationPt": "Varanda / Sacada",
-            "simplePronunciation": "bél-co-ni",
-            "phonetic": "/ˈbæl.kə.ni/",
-            "exampleEn": "The apartment has a sunny balcony.",
-            "examplePt": "O apartamento tem uma varanda ensolarada."
+            "exampleEn": "The light is on the ceiling.",
+            "examplePt": "A luminária fica no teto."
           },
           {
             "text": "Rug",
@@ -1577,57 +1067,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/rʌɡ/",
             "exampleEn": "There is a soft rug on the floor.",
             "examplePt": "Há um tapete macio no chão."
-          }
-        ],
-        "options": [
-          "Ceiling",
-          "Blanket",
-          "Balcony",
-          "Rug"
-        ],
-        "correctAnswer": "Ceiling",
-        "contextSentence": "The lamp hangs from the ceiling.",
-        "contextSentencePt": "A luminária fica presa no teto.",
-        "explanation": "Exemplo: \"The lamp hangs from the ceiling.\" — A luminária fica presa no teto.",
-        "phoneticHint": "\"sí-ling\" • /ˈsiː.lɪŋ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p3-e2",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Stairs",
-        "visualEmoji": "🪜",
-        "visualOptions": [
-          {
-            "text": "Towel",
-            "emoji": "🧺",
-            "label": "Towel",
-            "translationPt": "Toalha",
-            "simplePronunciation": "táu-el",
-            "phonetic": "/ˈtaʊ.əl/",
-            "exampleEn": "Dry your hands with a towel.",
-            "examplePt": "Seque suas mãos com uma toalha."
           },
           {
-            "text": "Shelf",
-            "emoji": "📚",
-            "label": "Shelf",
-            "translationPt": "Prateleira / Estante",
-            "simplePronunciation": "xélf",
-            "phonetic": "/ʃelf/",
-            "exampleEn": "Put the book on the shelf.",
-            "examplePt": "Coloque o livro na prateleira."
-          },
-          {
-            "text": "Stairs",
-            "emoji": "🪜",
-            "label": "Stairs",
-            "translationPt": "Escada",
-            "simplePronunciation": "stérz",
-            "phonetic": "/sterz/",
-            "exampleEn": "Walk up the stairs carefully.",
-            "examplePt": "Suba a escada com cuidado."
+            "text": "Balcony",
+            "emoji": "🌤️",
+            "label": "Balcony",
+            "translationPt": "Varanda / Sacada",
+            "simplePronunciation": "bél-co-ni",
+            "phonetic": "/ˈbæl.kə.ni/",
+            "exampleEn": "The apartment has a balcony.",
+            "examplePt": "O apartamento tem uma varanda."
           },
           {
             "text": "Curtain",
@@ -1641,10 +1090,71 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Towel",
-          "Shelf",
-          "Stairs",
+          "Ceiling",
+          "Rug",
+          "Balcony",
           "Curtain"
+        ],
+        "correctAnswer": "Ceiling",
+        "contextSentence": "The light is on the ceiling.",
+        "contextSentencePt": "A luminária fica no teto.",
+        "explanation": "Exemplo: \"The light is on the ceiling.\" — A luminária fica no teto.",
+        "phoneticHint": "\"sí-ling\" • /ˈsiː.lɪŋ/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p3-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Stairs",
+        "visualEmoji": "🪜",
+        "visualOptions": [
+          {
+            "text": "Ceiling",
+            "emoji": "🏠",
+            "label": "Ceiling",
+            "translationPt": "Teto",
+            "simplePronunciation": "sí-ling",
+            "phonetic": "/ˈsiː.lɪŋ/",
+            "exampleEn": "The light is on the ceiling.",
+            "examplePt": "A luminária fica no teto."
+          },
+          {
+            "text": "Pillow",
+            "emoji": "⬜",
+            "label": "Pillow",
+            "translationPt": "Travesseiro",
+            "simplePronunciation": "pí-lou",
+            "phonetic": "/ˈpɪl.oʊ/",
+            "exampleEn": "This pillow is very soft.",
+            "examplePt": "Este travesseiro é muito macio."
+          },
+          {
+            "text": "Stairs",
+            "emoji": "🪜",
+            "label": "Stairs",
+            "translationPt": "Escada",
+            "simplePronunciation": "stérz",
+            "phonetic": "/sterz/",
+            "exampleEn": "Walk up the stairs carefully.",
+            "examplePt": "Suba a escada com cuidado."
+          },
+          {
+            "text": "Shelf",
+            "emoji": "📚",
+            "label": "Shelf",
+            "translationPt": "Prateleira",
+            "simplePronunciation": "xélf",
+            "phonetic": "/ʃelf/",
+            "exampleEn": "Put the book on the shelf.",
+            "examplePt": "Coloque o livro na prateleira."
+          }
+        ],
+        "options": [
+          "Ceiling",
+          "Pillow",
+          "Stairs",
+          "Shelf"
         ],
         "correctAnswer": "Stairs",
         "contextSentence": "Walk up the stairs carefully.",
@@ -1661,14 +1171,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚗",
         "visualOptions": [
           {
-            "text": "Drawer",
-            "emoji": "🗄️",
-            "label": "Drawer",
-            "translationPt": "Gaveta",
-            "simplePronunciation": "dró-er",
-            "phonetic": "/drɔːr/",
-            "exampleEn": "Open the top drawer.",
-            "examplePt": "Abra a gaveta de cima."
+            "text": "Balcony",
+            "emoji": "🌤️",
+            "label": "Balcony",
+            "translationPt": "Varanda / Sacada",
+            "simplePronunciation": "bél-co-ni",
+            "phonetic": "/ˈbæl.kə.ni/",
+            "exampleEn": "The apartment has a balcony.",
+            "examplePt": "O apartamento tem uma varanda."
           },
           {
             "text": "Garage",
@@ -1681,31 +1191,31 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O carro está na garagem."
           },
           {
-            "text": "Pillow",
-            "emoji": "⬜",
-            "label": "Pillow",
-            "translationPt": "Travesseiro",
-            "simplePronunciation": "pí-lou",
-            "phonetic": "/ˈpɪl.oʊ/",
-            "exampleEn": "This pillow is very soft.",
-            "examplePt": "Este travesseiro é muito macio."
+            "text": "Rug",
+            "emoji": "🟥",
+            "label": "Rug",
+            "translationPt": "Tapete",
+            "simplePronunciation": "râg",
+            "phonetic": "/rʌɡ/",
+            "exampleEn": "There is a soft rug on the floor.",
+            "examplePt": "Há um tapete macio no chão."
           },
           {
-            "text": "Gate",
-            "emoji": "🚪",
-            "label": "Gate",
-            "translationPt": "Portão",
-            "simplePronunciation": "guêit",
-            "phonetic": "/ɡeɪt/",
-            "exampleEn": "Lock the front gate.",
-            "examplePt": "Tranque o portão da frente."
+            "text": "Stairs",
+            "emoji": "🪜",
+            "label": "Stairs",
+            "translationPt": "Escada",
+            "simplePronunciation": "stérz",
+            "phonetic": "/sterz/",
+            "exampleEn": "Walk up the stairs carefully.",
+            "examplePt": "Suba a escada com cuidado."
           }
         ],
         "options": [
-          "Drawer",
+          "Balcony",
           "Garage",
-          "Pillow",
-          "Gate"
+          "Rug",
+          "Stairs"
         ],
         "correctAnswer": "Garage",
         "contextSentence": "The car is in the garage.",
@@ -1728,28 +1238,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Teto",
             "simplePronunciation": "sí-ling",
             "phonetic": "/ˈsiː.lɪŋ/",
-            "exampleEn": "The lamp hangs from the ceiling.",
-            "examplePt": "A luminária fica presa no teto."
+            "exampleEn": "The light is on the ceiling.",
+            "examplePt": "A luminária fica no teto."
           },
           {
-            "text": "Stairs",
-            "emoji": "🪜",
-            "label": "Stairs",
-            "translationPt": "Escada",
-            "simplePronunciation": "stérz",
-            "phonetic": "/sterz/",
-            "exampleEn": "Walk up the stairs carefully.",
-            "examplePt": "Suba a escada com cuidado."
+            "text": "Shelf",
+            "emoji": "📚",
+            "label": "Shelf",
+            "translationPt": "Prateleira",
+            "simplePronunciation": "xélf",
+            "phonetic": "/ʃelf/",
+            "exampleEn": "Put the book on the shelf.",
+            "examplePt": "Coloque o livro na prateleira."
           },
           {
-            "text": "Garage",
-            "emoji": "🚗",
-            "label": "Garage",
-            "translationPt": "Garagem",
-            "simplePronunciation": "ga-rádj",
-            "phonetic": "/ɡəˈrɑːʒ/",
-            "exampleEn": "The car is in the garage.",
-            "examplePt": "O carro está na garagem."
+            "text": "Pillow",
+            "emoji": "⬜",
+            "label": "Pillow",
+            "translationPt": "Travesseiro",
+            "simplePronunciation": "pí-lou",
+            "phonetic": "/ˈpɪl.oʊ/",
+            "exampleEn": "This pillow is very soft.",
+            "examplePt": "Este travesseiro é muito macio."
           },
           {
             "text": "Balcony",
@@ -1758,20 +1268,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Varanda / Sacada",
             "simplePronunciation": "bél-co-ni",
             "phonetic": "/ˈbæl.kə.ni/",
-            "exampleEn": "The apartment has a sunny balcony.",
-            "examplePt": "O apartamento tem uma varanda ensolarada."
+            "exampleEn": "The apartment has a balcony.",
+            "examplePt": "O apartamento tem uma varanda."
           }
         ],
         "options": [
           "Ceiling",
-          "Stairs",
-          "Garage",
+          "Shelf",
+          "Pillow",
           "Balcony"
         ],
         "correctAnswer": "Balcony",
-        "contextSentence": "The apartment has a sunny balcony.",
-        "contextSentencePt": "O apartamento tem uma varanda ensolarada.",
-        "explanation": "Exemplo: \"The apartment has a sunny balcony.\" — O apartamento tem uma varanda ensolarada.",
+        "contextSentence": "The apartment has a balcony.",
+        "contextSentencePt": "O apartamento tem uma varanda.",
+        "explanation": "Exemplo: \"The apartment has a balcony.\" — O apartamento tem uma varanda.",
         "phoneticHint": "\"bél-co-ni\" • /ˈbæl.kə.ni/",
         "skillCategory": "vocabulary"
       },
@@ -1793,41 +1303,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Feche a cortina da janela."
           },
           {
-            "text": "Blanket",
-            "emoji": "🛌",
-            "label": "Blanket",
-            "translationPt": "Cobertor",
-            "simplePronunciation": "blén-ket",
-            "phonetic": "/ˈblæŋ.kɪt/",
-            "exampleEn": "Take a warm blanket tonight.",
-            "examplePt": "Pegue um cobertor quentinho hoje à noite."
+            "text": "Ceiling",
+            "emoji": "🏠",
+            "label": "Ceiling",
+            "translationPt": "Teto",
+            "simplePronunciation": "sí-ling",
+            "phonetic": "/ˈsiː.lɪŋ/",
+            "exampleEn": "The light is on the ceiling.",
+            "examplePt": "A luminária fica no teto."
           },
           {
-            "text": "Towel",
-            "emoji": "🧺",
-            "label": "Towel",
-            "translationPt": "Toalha",
-            "simplePronunciation": "táu-el",
-            "phonetic": "/ˈtaʊ.əl/",
-            "exampleEn": "Dry your hands with a towel.",
-            "examplePt": "Seque suas mãos com uma toalha."
+            "text": "Stairs",
+            "emoji": "🪜",
+            "label": "Stairs",
+            "translationPt": "Escada",
+            "simplePronunciation": "stérz",
+            "phonetic": "/sterz/",
+            "exampleEn": "Walk up the stairs carefully.",
+            "examplePt": "Suba a escada com cuidado."
           },
           {
-            "text": "Shelf",
-            "emoji": "📚",
-            "label": "Shelf",
-            "translationPt": "Prateleira / Estante",
-            "simplePronunciation": "xélf",
-            "phonetic": "/ʃelf/",
-            "exampleEn": "Put the book on the shelf.",
-            "examplePt": "Coloque o livro na prateleira."
+            "text": "Garage",
+            "emoji": "🚗",
+            "label": "Garage",
+            "translationPt": "Garagem",
+            "simplePronunciation": "ga-rádj",
+            "phonetic": "/ɡəˈrɑːʒ/",
+            "exampleEn": "The car is in the garage.",
+            "examplePt": "O carro está na garagem."
           }
         ],
         "options": [
           "Curtain",
-          "Blanket",
-          "Towel",
-          "Shelf"
+          "Ceiling",
+          "Stairs",
+          "Garage"
         ],
         "correctAnswer": "Curtain",
         "contextSentence": "Close the window curtain.",
@@ -1854,26 +1364,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Suba a escada com cuidado."
           },
           {
-            "text": "Curtain",
-            "emoji": "🪟",
-            "label": "Curtain",
-            "translationPt": "Cortina",
-            "simplePronunciation": "câr-ten",
-            "phonetic": "/ˈkɜːr.tən/",
-            "exampleEn": "Close the window curtain.",
-            "examplePt": "Feche a cortina da janela."
-          },
-          {
-            "text": "Ceiling",
-            "emoji": "🏠",
-            "label": "Ceiling",
-            "translationPt": "Teto",
-            "simplePronunciation": "sí-ling",
-            "phonetic": "/ˈsiː.lɪŋ/",
-            "exampleEn": "The lamp hangs from the ceiling.",
-            "examplePt": "A luminária fica presa no teto."
-          },
-          {
             "text": "Rug",
             "emoji": "🟥",
             "label": "Rug",
@@ -1882,13 +1372,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/rʌɡ/",
             "exampleEn": "There is a soft rug on the floor.",
             "examplePt": "Há um tapete macio no chão."
+          },
+          {
+            "text": "Garage",
+            "emoji": "🚗",
+            "label": "Garage",
+            "translationPt": "Garagem",
+            "simplePronunciation": "ga-rádj",
+            "phonetic": "/ɡəˈrɑːʒ/",
+            "exampleEn": "The car is in the garage.",
+            "examplePt": "O carro está na garagem."
+          },
+          {
+            "text": "Curtain",
+            "emoji": "🪟",
+            "label": "Curtain",
+            "translationPt": "Cortina",
+            "simplePronunciation": "câr-ten",
+            "phonetic": "/ˈkɜːr.tən/",
+            "exampleEn": "Close the window curtain.",
+            "examplePt": "Feche a cortina da janela."
           }
         ],
         "options": [
           "Stairs",
-          "Curtain",
-          "Ceiling",
-          "Rug"
+          "Rug",
+          "Garage",
+          "Curtain"
         ],
         "correctAnswer": "Rug",
         "contextSentence": "There is a soft rug on the floor.",
@@ -1905,77 +1415,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⬜",
         "visualOptions": [
           {
-            "text": "Garage",
-            "emoji": "🚗",
-            "label": "Garage",
-            "translationPt": "Garagem",
-            "simplePronunciation": "ga-rádj",
-            "phonetic": "/ɡəˈrɑːʒ/",
-            "exampleEn": "The car is in the garage.",
-            "examplePt": "O carro está na garagem."
-          },
-          {
-            "text": "Gate",
-            "emoji": "🚪",
-            "label": "Gate",
-            "translationPt": "Portão",
-            "simplePronunciation": "guêit",
-            "phonetic": "/ɡeɪt/",
-            "exampleEn": "Lock the front gate.",
-            "examplePt": "Tranque o portão da frente."
-          },
-          {
-            "text": "Pillow",
-            "emoji": "⬜",
-            "label": "Pillow",
-            "translationPt": "Travesseiro",
-            "simplePronunciation": "pí-lou",
-            "phonetic": "/ˈpɪl.oʊ/",
-            "exampleEn": "This pillow is very soft.",
-            "examplePt": "Este travesseiro é muito macio."
-          },
-          {
-            "text": "Balcony",
-            "emoji": "🌤️",
-            "label": "Balcony",
-            "translationPt": "Varanda / Sacada",
-            "simplePronunciation": "bél-co-ni",
-            "phonetic": "/ˈbæl.kə.ni/",
-            "exampleEn": "The apartment has a sunny balcony.",
-            "examplePt": "O apartamento tem uma varanda ensolarada."
-          }
-        ],
-        "options": [
-          "Garage",
-          "Gate",
-          "Pillow",
-          "Balcony"
-        ],
-        "correctAnswer": "Pillow",
-        "contextSentence": "This pillow is very soft.",
-        "contextSentencePt": "Este travesseiro é muito macio.",
-        "explanation": "Exemplo: \"This pillow is very soft.\" — Este travesseiro é muito macio.",
-        "phoneticHint": "\"pí-lou\" • /ˈpɪl.oʊ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p3-e8",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Blanket",
-        "visualEmoji": "🛌",
-        "visualOptions": [
-          {
-            "text": "Blanket",
-            "emoji": "🛌",
-            "label": "Blanket",
-            "translationPt": "Cobertor",
-            "simplePronunciation": "blén-ket",
-            "phonetic": "/ˈblæŋ.kɪt/",
-            "exampleEn": "Take a warm blanket tonight.",
-            "examplePt": "Pegue um cobertor quentinho hoje à noite."
-          },
-          {
             "text": "Rug",
             "emoji": "🟥",
             "label": "Rug",
@@ -1984,67 +1423,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/rʌɡ/",
             "exampleEn": "There is a soft rug on the floor.",
             "examplePt": "Há um tapete macio no chão."
-          },
-          {
-            "text": "Pillow",
-            "emoji": "⬜",
-            "label": "Pillow",
-            "translationPt": "Travesseiro",
-            "simplePronunciation": "pí-lou",
-            "phonetic": "/ˈpɪl.oʊ/",
-            "exampleEn": "This pillow is very soft.",
-            "examplePt": "Este travesseiro é muito macio."
-          },
-          {
-            "text": "Drawer",
-            "emoji": "🗄️",
-            "label": "Drawer",
-            "translationPt": "Gaveta",
-            "simplePronunciation": "dró-er",
-            "phonetic": "/drɔːr/",
-            "exampleEn": "Open the top drawer.",
-            "examplePt": "Abra a gaveta de cima."
-          }
-        ],
-        "options": [
-          "Blanket",
-          "Rug",
-          "Pillow",
-          "Drawer"
-        ],
-        "correctAnswer": "Blanket",
-        "contextSentence": "Take a warm blanket tonight.",
-        "contextSentencePt": "Pegue um cobertor quentinho hoje à noite.",
-        "explanation": "Exemplo: \"Take a warm blanket tonight.\" — Pegue um cobertor quentinho hoje à noite.",
-        "phoneticHint": "\"blén-ket\" • /ˈblæŋ.kɪt/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p3-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Towel",
-        "visualEmoji": "🧺",
-        "visualOptions": [
-          {
-            "text": "Ceiling",
-            "emoji": "🏠",
-            "label": "Ceiling",
-            "translationPt": "Teto",
-            "simplePronunciation": "sí-ling",
-            "phonetic": "/ˈsiː.lɪŋ/",
-            "exampleEn": "The lamp hangs from the ceiling.",
-            "examplePt": "A luminária fica presa no teto."
-          },
-          {
-            "text": "Towel",
-            "emoji": "🧺",
-            "label": "Towel",
-            "translationPt": "Toalha",
-            "simplePronunciation": "táu-el",
-            "phonetic": "/ˈtaʊ.əl/",
-            "exampleEn": "Dry your hands with a towel.",
-            "examplePt": "Seque suas mãos com uma toalha."
           },
           {
             "text": "Curtain",
@@ -2057,33 +1435,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Feche a cortina da janela."
           },
           {
-            "text": "Stairs",
-            "emoji": "🪜",
-            "label": "Stairs",
-            "translationPt": "Escada",
-            "simplePronunciation": "stérz",
-            "phonetic": "/sterz/",
-            "exampleEn": "Walk up the stairs carefully.",
-            "examplePt": "Suba a escada com cuidado."
+            "text": "Balcony",
+            "emoji": "🌤️",
+            "label": "Balcony",
+            "translationPt": "Varanda / Sacada",
+            "simplePronunciation": "bél-co-ni",
+            "phonetic": "/ˈbæl.kə.ni/",
+            "exampleEn": "The apartment has a balcony.",
+            "examplePt": "O apartamento tem uma varanda."
+          },
+          {
+            "text": "Pillow",
+            "emoji": "⬜",
+            "label": "Pillow",
+            "translationPt": "Travesseiro",
+            "simplePronunciation": "pí-lou",
+            "phonetic": "/ˈpɪl.oʊ/",
+            "exampleEn": "This pillow is very soft.",
+            "examplePt": "Este travesseiro é muito macio."
           }
         ],
         "options": [
-          "Ceiling",
-          "Towel",
+          "Rug",
           "Curtain",
-          "Stairs"
+          "Balcony",
+          "Pillow"
         ],
-        "correctAnswer": "Towel",
-        "contextSentence": "Dry your hands with a towel.",
-        "contextSentencePt": "Seque suas mãos com uma toalha.",
-        "explanation": "Exemplo: \"Dry your hands with a towel.\" — Seque suas mãos com uma toalha.",
-        "phoneticHint": "\"táu-el\" • /ˈtaʊ.əl/",
+        "correctAnswer": "Pillow",
+        "contextSentence": "This pillow is very soft.",
+        "contextSentencePt": "Este travesseiro é muito macio.",
+        "explanation": "Exemplo: \"This pillow is very soft.\" — Este travesseiro é muito macio.",
+        "phoneticHint": "\"pí-lou\" • /ˈpɪl.oʊ/",
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p3-e10",
+        "id": "w0-p3-e8",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Shelf",
         "visualEmoji": "📚",
         "visualOptions": [
@@ -2098,170 +1486,48 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O carro está na garagem."
           },
           {
-            "text": "Shelf",
-            "emoji": "📚",
-            "label": "Shelf",
-            "translationPt": "Prateleira / Estante",
-            "simplePronunciation": "xélf",
-            "phonetic": "/ʃelf/",
-            "exampleEn": "Put the book on the shelf.",
-            "examplePt": "Coloque o livro na prateleira."
-          },
-          {
-            "text": "Pillow",
-            "emoji": "⬜",
-            "label": "Pillow",
-            "translationPt": "Travesseiro",
-            "simplePronunciation": "pí-lou",
-            "phonetic": "/ˈpɪl.oʊ/",
-            "exampleEn": "This pillow is very soft.",
-            "examplePt": "Este travesseiro é muito macio."
-          },
-          {
-            "text": "Gate",
-            "emoji": "🚪",
-            "label": "Gate",
-            "translationPt": "Portão",
-            "simplePronunciation": "guêit",
-            "phonetic": "/ɡeɪt/",
-            "exampleEn": "Lock the front gate.",
-            "examplePt": "Tranque o portão da frente."
-          }
-        ],
-        "options": [
-          "Garage",
-          "Shelf",
-          "Pillow",
-          "Gate"
-        ],
-        "correctAnswer": "Shelf",
-        "contextSentence": "Put the book on the shelf.",
-        "contextSentencePt": "Coloque o livro na prateleira.",
-        "explanation": "Exemplo: \"Put the book on the shelf.\" — Coloque o livro na prateleira.",
-        "phoneticHint": "\"xélf\" • /ʃelf/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p3-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Drawer",
-        "visualEmoji": "🗄️",
-        "visualOptions": [
-          {
-            "text": "Blanket",
-            "emoji": "🛌",
-            "label": "Blanket",
-            "translationPt": "Cobertor",
-            "simplePronunciation": "blén-ket",
-            "phonetic": "/ˈblæŋ.kɪt/",
-            "exampleEn": "Take a warm blanket tonight.",
-            "examplePt": "Pegue um cobertor quentinho hoje à noite."
-          },
-          {
-            "text": "Balcony",
-            "emoji": "🌤️",
-            "label": "Balcony",
-            "translationPt": "Varanda / Sacada",
-            "simplePronunciation": "bél-co-ni",
-            "phonetic": "/ˈbæl.kə.ni/",
-            "exampleEn": "The apartment has a sunny balcony.",
-            "examplePt": "O apartamento tem uma varanda ensolarada."
-          },
-          {
-            "text": "Rug",
-            "emoji": "🟥",
-            "label": "Rug",
-            "translationPt": "Tapete",
-            "simplePronunciation": "râg",
-            "phonetic": "/rʌɡ/",
-            "exampleEn": "There is a soft rug on the floor.",
-            "examplePt": "Há um tapete macio no chão."
-          },
-          {
-            "text": "Drawer",
-            "emoji": "🗄️",
-            "label": "Drawer",
-            "translationPt": "Gaveta",
-            "simplePronunciation": "dró-er",
-            "phonetic": "/drɔːr/",
-            "exampleEn": "Open the top drawer.",
-            "examplePt": "Abra a gaveta de cima."
-          }
-        ],
-        "options": [
-          "Blanket",
-          "Balcony",
-          "Rug",
-          "Drawer"
-        ],
-        "correctAnswer": "Drawer",
-        "contextSentence": "Open the top drawer.",
-        "contextSentencePt": "Abra a gaveta de cima.",
-        "explanation": "Exemplo: \"Open the top drawer.\" — Abra a gaveta de cima.",
-        "phoneticHint": "\"dró-er\" • /drɔːr/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p3-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Gate",
-        "visualEmoji": "🚪",
-        "visualOptions": [
-          {
-            "text": "Towel",
-            "emoji": "🧺",
-            "label": "Towel",
-            "translationPt": "Toalha",
-            "simplePronunciation": "táu-el",
-            "phonetic": "/ˈtaʊ.əl/",
-            "exampleEn": "Dry your hands with a towel.",
-            "examplePt": "Seque suas mãos com uma toalha."
-          },
-          {
             "text": "Ceiling",
             "emoji": "🏠",
             "label": "Ceiling",
             "translationPt": "Teto",
             "simplePronunciation": "sí-ling",
             "phonetic": "/ˈsiː.lɪŋ/",
-            "exampleEn": "The lamp hangs from the ceiling.",
-            "examplePt": "A luminária fica presa no teto."
+            "exampleEn": "The light is on the ceiling.",
+            "examplePt": "A luminária fica no teto."
           },
           {
-            "text": "Gate",
-            "emoji": "🚪",
-            "label": "Gate",
-            "translationPt": "Portão",
-            "simplePronunciation": "guêit",
-            "phonetic": "/ɡeɪt/",
-            "exampleEn": "Lock the front gate.",
-            "examplePt": "Tranque o portão da frente."
+            "text": "Shelf",
+            "emoji": "📚",
+            "label": "Shelf",
+            "translationPt": "Prateleira",
+            "simplePronunciation": "xélf",
+            "phonetic": "/ʃelf/",
+            "exampleEn": "Put the book on the shelf.",
+            "examplePt": "Coloque o livro na prateleira."
           },
           {
-            "text": "Curtain",
-            "emoji": "🪟",
-            "label": "Curtain",
-            "translationPt": "Cortina",
-            "simplePronunciation": "câr-ten",
-            "phonetic": "/ˈkɜːr.tən/",
-            "exampleEn": "Close the window curtain.",
-            "examplePt": "Feche a cortina da janela."
+            "text": "Stairs",
+            "emoji": "🪜",
+            "label": "Stairs",
+            "translationPt": "Escada",
+            "simplePronunciation": "stérz",
+            "phonetic": "/sterz/",
+            "exampleEn": "Walk up the stairs carefully.",
+            "examplePt": "Suba a escada com cuidado."
           }
         ],
         "options": [
-          "Towel",
+          "Garage",
           "Ceiling",
-          "Gate",
-          "Curtain"
+          "Shelf",
+          "Stairs"
         ],
-        "correctAnswer": "Gate",
-        "contextSentence": "Lock the front gate.",
-        "contextSentencePt": "Tranque o portão da frente.",
-        "explanation": "Exemplo: \"Lock the front gate.\" — Tranque o portão da frente.",
-        "phoneticHint": "\"guêit\" • /ɡeɪt/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Shelf",
+        "contextSentence": "Put the book on the shelf.",
+        "contextSentencePt": "Coloque o livro na prateleira.",
+        "explanation": "Exemplo: \"Put the book on the shelf.\" — Coloque o livro na prateleira.",
+        "phoneticHint": "\"xélf\" • /ʃelf/",
+        "skillCategory": "listening"
       }
     ]
   },
@@ -2269,16 +1535,19 @@ export const WORLD_0_PHASES: Phase[] = [
     "id": "w0-p4",
     "worldId": 0,
     "phaseNumber": 4,
+    "themeId": "pronouns",
+    "themeTitle": "Lição de Pronomes",
+    "frequencyLevel": "1 a cada 3 Módulos de Vocabulário",
     "title": "Lição de Pronomes I • Pessoais & De Tratamento",
-    "subtitle": "Módulo de Pronomes 1/6 (Após 3 de Vocabulário) • Pares Associativos + Voz da Professora",
-    "pedagogicalObjective": "Dominar os Pronomes Pessoais (I, You, He, She, It, We, You, They) e os Pronomes de Tratamento (Mr., Mrs., Miss, Ms., Sir, Ma'am) com a voz humana e meiga da professora.",
+    "subtitle": "Módulo de Pronomes 1/8 (Após 3 de Vocabulário) • Explicação Didática + Pares Associativos",
+    "pedagogicalObjective": "Dominar os Pronomes Pessoais (I, You, He, She, It, We, You, They) e os Pronomes de Tratamento (Mr., Mrs., Miss, Ms., Sir, Ma'am) com explicação didática e clara da professora.",
     "type": "chest",
     "icon": "star",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Bem-vindo à 1ª Lição Exclusiva de Pronomes (separada das lições de vocabulário, a cada 3 módulos)!",
-      "1º Passo: Começamos pelos Pronomes Pessoais (I, You, He, She, It, We, You, They) — as palavrinhas que mostram quem está falando ou de quem falamos.",
-      "2º Passo: Aprendemos os Pronomes de Tratamento (Mr., Mrs., Miss, Ms., Sir, Ma'am, Dr.) — as palavrinhas mágicas de respeito e educação."
+      "Lição Exclusiva de Pronomes (intercalada a cada 3 módulos de vocabulário).",
+      "1ª Parte — Pronomes Pessoais (Subject Pronouns): indicam quem realiza a ação na frase, substituindo o nome (I, You, He, She, It, We, You, They).",
+      "2ª Parte — Pronomes de Tratamento: usados para demonstrar respeito, cortesia ou formalidade (Mr., Mrs., Miss, Ms., Sir, Ma'am, Dr., Prof.)."
     ],
     "xpReward": 70,
     "gemsReward": 30,
@@ -2286,42 +1555,42 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-pron-1",
         "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Quem sou eu e quem é você?)",
-        "conceptHeader": "São palavrinhas mágicas que usamos no lugar do nome! Quando aponto para mim mesmo, digo \"I\" (Eu). Quando aponto para você, digo \"You\" (Você). Para um menino, \"He\" (Ele); e para uma menina, \"She\" (Ela)!",
+        "conceptTitle": "1º • Pronomes Pessoais do Singular (I, You, He, She)",
+        "conceptHeader": "Os Pronomes Pessoais indicam quem realiza a ação na frase, substituindo o nome da pessoa. No singular usamos: \"I\" (Eu), \"You\" (Você), \"He\" (Ele — para homem ou menino) e \"She\" (Ela — para mulher ou menina).",
         "teacherAudioPt": "/audio/teacher/pronoun_1.wav",
-        "prompt": "🤝 Conecte cada Pronome Pessoal em inglês ao seu par em português:",
+        "prompt": "🤝 Conecte cada Pronome Pessoal em inglês ao seu significado em português:",
         "pairs": [
           {
             "id": "w0-p4-b1-p1",
             "en": "I (\"ái\")",
             "emoji": "🙋",
             "phonetic": "/aɪ/",
-            "pt": "Eu (falando de mim mesmo)",
-            "tipPt": "Muito bem, meu bem! \"I\" (\"ái\") significa \"Eu\"!"
+            "pt": "Eu (1ª pessoa do singular)",
+            "tipPt": "Correto! \"I\" (\"ái\") significa \"Eu\" e sempre é escrito com letra maiúscula em inglês."
           },
           {
             "id": "w0-p4-b1-p2",
             "en": "You (\"iú\")",
             "emoji": "👉",
             "phonetic": "/juː/",
-            "pt": "Você (com quem estou falando)",
-            "tipPt": "Isso mesmo! \"You\" (\"iú\") significa \"Você\"!"
+            "pt": "Você (2ª pessoa do singular)",
+            "tipPt": "Exato! \"You\" (\"iú\") significa \"Você\"."
           },
           {
             "id": "w0-p4-b1-p3",
             "en": "He (\"rí\")",
-            "emoji": "👦",
+            "emoji": "👨",
             "phonetic": "/hiː/",
-            "pt": "Ele (para menino ou homem)",
-            "tipPt": "Perfeito! \"He\" (\"rí\") usamos para \"Ele\" (papai, irmão, amigo)."
+            "pt": "Ele (usado para pessoas do sexo masculino)",
+            "tipPt": "Perfeito! \"He\" (\"rí\") é usado para \"Ele\"."
           },
           {
             "id": "w0-p4-b1-p4",
             "en": "She (\"xí\")",
-            "emoji": "👧",
+            "emoji": "👩",
             "phonetic": "/ʃiː/",
-            "pt": "Ela (para menina ou mulher)",
-            "tipPt": "Lindo! \"She\" (\"xí\") usamos para \"Ela\" (mamãe, irmã, professora)."
+            "pt": "Ela (usado para pessoas do sexo feminino)",
+            "tipPt": "Muito bem! \"She\" (\"xí\") é usado para \"Ela\"."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
@@ -2331,136 +1600,136 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p4-pron-2",
         "type": "pair-match",
-        "conceptTitle": "1º • Pronomes Pessoais (Coisas, Bichinhos e Plural)",
-        "conceptHeader": "Para 1 objeto da casa ou 1 bichinho, usamos \"It\" (Ele/Ela). Quando estamos juntos (eu + você), dizemos \"We\" (Nós). Para várias pessoas com quem falamos, \"You\" (Vocês); e para eles ou elas, \"They\"!",
+        "conceptTitle": "1º • Pronomes Pessoais: Neutro e Plural (It, We, You, They)",
+        "conceptHeader": "Para nos referirmos a um único objeto, lugar ou animal, usamos o pronome neutro \"It\" (Ele/Ela). No plural usamos: \"We\" (Nós), \"You\" (Vocês) e \"They\" (Eles/Elas — válido para pessoas, animais e objetos).",
         "teacherAudioPt": "/audio/teacher/pronoun_1.wav",
-        "prompt": "🤝 Ligue os Pronomes Pessoais de coisas/animais e do plural aos seus pares:",
+        "prompt": "🤝 Associe os Pronomes Pessoais \"It, We, You, They\" aos seus pares:",
         "pairs": [
           {
             "id": "w0-p4-b2-p5",
             "en": "It (\"ít\")",
-            "emoji": "🐶",
+            "emoji": "🏠",
             "phonetic": "/ɪt/",
-            "pt": "Ele / Ela (para 1 objeto, casa ou animal)",
-            "tipPt": "Isso! A porta, o sofá ou o cachorrinho são \"It\"!"
+            "pt": "Ele / Ela (neutro: para 1 objeto, lugar ou animal)",
+            "tipPt": "Correto! \"It\" substitui o nome de um objeto, animal ou lugar no singular."
           },
           {
             "id": "w0-p4-b2-p6",
             "en": "We (\"uí\")",
-            "emoji": "👨‍👩‍👧",
+            "emoji": "👥",
             "phonetic": "/wiː/",
-            "pt": "Nós (eu e você juntos)",
-            "tipPt": "Muito bem! \"We\" (\"uí\") significa \"Nós\"!"
+            "pt": "Nós (1ª pessoa do plural: eu + outra pessoa)",
+            "tipPt": "Muito bem! \"We\" (\"uí\") significa \"Nós\"."
           },
           {
             "id": "w0-p4-b2-p7",
             "en": "You (\"iú\" - plural)",
             "emoji": "👫",
             "phonetic": "/juː/",
-            "pt": "Vocês (várias pessoas com quem falo)",
-            "tipPt": "Ótimo! \"You\" serve para \"Você\" e também para \"Vocês\"!"
+            "pt": "Vocês (2ª pessoa do plural)",
+            "tipPt": "Exato! \"You\" tem a mesma forma para \"Você\" (singular) e \"Vocês\" (plural)."
           },
           {
             "id": "w0-p4-b2-p8",
             "en": "They (\"dêi\")",
-            "emoji": "👥",
+            "emoji": "👨‍👩‍👧‍👦",
             "phonetic": "/ðeɪ/",
-            "pt": "Eles / Elas (pessoas, animais ou objetos)",
-            "tipPt": "Perfeito! \"They\" (\"dêi\") é o plural para tudo!"
+            "pt": "Eles / Elas (plural para pessoas, animais ou coisas)",
+            "tipPt": "Perfeito! \"They\" (\"dêi\") é o plural de He, She e também de It."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "It (para 1 objeto/animal), We (Nós), You (Vocês), They (Eles/Elas).",
+        "explanation": "It (neutro singular para objeto/lugar/animal), We (Nós), You (Vocês), They (Eles/Elas).",
         "skillCategory": "grammar"
       },
       {
         "id": "w0-p4-pron-3",
         "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Educação e Respeito - Parte 1)",
-        "conceptHeader": "São as palavrinhas mágicas da boa educação! Quando falamos com respeito com um adulto, usamos \"Mr.\" (Senhor), \"Mrs.\" (Senhora casada), \"Miss\" (Senhorita / Professora) e \"Ms.\"!",
+        "conceptTitle": "2º • Pronomes de Tratamento com Sobrenome (Mr., Mrs., Miss, Ms.)",
+        "conceptHeader": "Os Pronomes de Tratamento demonstram respeito e cortesia. Antes do nome ou sobrenome usamos: \"Mr.\" (Senhor), \"Mrs.\" (Senhora — mulher casada), \"Miss\" (Senhorita — mulher solteira) e \"Ms.\" (Senhora ou Senhorita — neutro para qualquer mulher).",
         "teacherAudioPt": "/audio/teacher/pronoun_2.wav",
-        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu par em português:",
+        "prompt": "🤝 Conecte cada Pronome de Tratamento ao seu uso correto:",
         "pairs": [
           {
             "id": "w0-p4-b3-t1",
             "en": "Mr. (\"mís-ter\")",
             "emoji": "👨",
             "phonetic": "/ˈmɪs.tər/",
-            "pt": "Senhor (usado antes do nome do homem)",
-            "tipPt": "Muito educado! \"Mr. Silva\" = \"Senhor Silva\"!"
+            "pt": "Senhor (usado antes do nome ou sobrenome)",
+            "tipPt": "Correto! Exemplo: \"Mr. Smith\" (Senhor Smith)."
           },
           {
             "id": "w0-p4-b3-t2",
             "en": "Mrs. (\"mí-siz\")",
             "emoji": "👩",
             "phonetic": "/ˈmɪs.ɪz/",
-            "pt": "Senhora (usado para mulher casada)",
-            "tipPt": "Perfeito! \"Mrs.\" significa \"Senhora\"!"
+            "pt": "Senhora (usado antes do sobrenome de mulher casada)",
+            "tipPt": "Exato! \"Mrs.\" refere-se a uma mulher casada."
           },
           {
             "id": "w0-p4-b3-t3",
             "en": "Miss (\"mís\")",
             "emoji": "👩‍🏫",
             "phonetic": "/mɪs/",
-            "pt": "Senhorita (moça jovem ou professora)",
-            "tipPt": "Isso! Na escola as crianças chamam a professora de \"Miss\"!"
+            "pt": "Senhorita (mulher solteira ou tratamento escolar)",
+            "tipPt": "Perfeito! \"Miss\" é usado para mulheres solteiras ou professoras."
           },
           {
             "id": "w0-p4-b3-t4",
             "en": "Ms. (\"míz\")",
             "emoji": "👩‍💼",
             "phonetic": "/mɪz/",
-            "pt": "Senhora / Senhorita (para qualquer mulher)",
-            "tipPt": "Excelente! \"Ms.\" é respeitoso para qualquer mulher!"
+            "pt": "Senhora / Senhorita (formal para qualquer mulher)",
+            "tipPt": "Excelente! \"Ms.\" é muito usado no ambiente profissional pois independe do estado civil."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Pronomes de Tratamento antes do nome: Mr. (Senhor), Mrs. (Senhora), Miss (Senhorita), Ms. (Senhora/Senhorita).",
+        "explanation": "Mr. (Senhor), Mrs. (Senhora - casada), Miss (Senhorita - solteira), Ms. (Senhora/Senhorita - uso profissional geral).",
         "skillCategory": "grammar"
       },
       {
         "id": "w0-p4-pron-4",
         "type": "pair-match",
-        "conceptTitle": "2º • Pronomes de Tratamento (Educação no Dia a Dia - Parte 2)",
-        "conceptHeader": "Quando falamos com respeito sem dizer o nome da pessoa, usamos \"Sir\" (Senhor) e \"Ma'am\" (Senhora). E para profissionais usamos \"Dr.\" (Doutor) e \"Prof.\" (Professor)!",
+        "conceptTitle": "2º • Pronomes de Tratamento Direto e Títulos (Sir, Ma'am, Dr., Prof.)",
+        "conceptHeader": "Quando falamos diretamente com alguém de forma respeitosa sem citar o nome da pessoa, usamos \"Sir\" (Senhor) e \"Ma'am\" (Senhora). Para títulos profissionais ou acadêmicos antes do nome, usamos \"Dr.\" (Doutor/Médico) e \"Prof.\" (Professor universitário).",
         "teacherAudioPt": "/audio/teacher/pronoun_2.wav",
-        "prompt": "🤝 Ligue cada Pronome de Tratamento direto ao seu significado:",
+        "prompt": "🤝 Ligue cada Pronome de Tratamento direto ou título ao seu significado:",
         "pairs": [
           {
             "id": "w0-p4-b4-t5",
             "en": "Sir (\"sâr\")",
             "emoji": "🎩",
             "phonetic": "/sɜːr/",
-            "pt": "Senhor (tratamento direto: Yes, Sir!)",
-            "tipPt": "Lindo! \"Thank you, Sir!\" = \"Obrigado, Senhor!\""
+            "pt": "Senhor (tratamento direto sem dizer o nome)",
+            "tipPt": "Correto! Exemplo: \"Excuse me, Sir\" (Com licença, Senhor)."
           },
           {
             "id": "w0-p4-b4-t6",
             "en": "Ma'am (\"mém\")",
             "emoji": "🌸",
             "phonetic": "/mæm/",
-            "pt": "Senhora (tratamento direto: Yes, Ma'am!)",
-            "tipPt": "Perfeito! \"Excuse me, Ma'am\" = \"Com licença, Senhora\"!"
+            "pt": "Senhora (tratamento direto sem dizer o nome)",
+            "tipPt": "Muito bem! Exemplo: \"Thank you, Ma'am\" (Obrigado, Senhora)."
           },
           {
             "id": "w0-p4-b4-t7",
             "en": "Dr. (\"dók-tor\")",
             "emoji": "🩺",
             "phonetic": "/ˈdɑːk.tər/",
-            "pt": "Doutor / Doutora (médico ou dentista)",
-            "tipPt": "Isso mesmo! \"Dr.\" usamos para médicos e doutores!"
+            "pt": "Doutor(a) / Médico(a)",
+            "tipPt": "Exato! Usado antes do nome de médicos ou doutores."
           },
           {
             "id": "w0-p4-b4-t8",
             "en": "Prof. (\"pro-fé-sor\")",
             "emoji": "🎓",
             "phonetic": "/prəˈfes.ər/",
-            "pt": "Professor(a) / Mestre",
-            "tipPt": "Parabéns! Você concluiu Pessoais e Tratamento!"
+            "pt": "Professor(a) (título acadêmico)",
+            "tipPt": "Excelente! Você concluiu o estudo de Pronomes Pessoais e de Tratamento."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Sir (Senhor), Ma'am (Senhora), Dr. (Doutor/Doutora), Prof. (Professor/Mestre).",
+        "explanation": "Sir (Senhor - sem nome), Ma'am (Senhora - sem nome), Dr. (Doutor/Doutora), Prof. (Professor/Professora).",
         "skillCategory": "grammar"
       }
     ]
@@ -2470,17 +1739,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 5,
     "themeId": "home",
-    "themeTitle": "A Casa",
-    "frequencyLevel": "Módulo 4 • Menos Comuns",
-    "title": "A Casa • Módulo 4: Menos Comuns & Específicas",
-    "subtitle": "Tema 1 (Nível 4/4) • 12 palavras menos comuns e detalhes da casa",
-    "pedagogicalObjective": "Conhecer termos mais específicos da casa: Attic, Basement, Chimney, Doorknob, Gutter, Fence, Mailbox, Doorbell, Faucet, Closet, Broom e Bucket.",
+    "themeTitle": "Tema 1: A Casa",
+    "frequencyLevel": "Módulo 4 • Menos Comuns ou Específicas",
+    "title": "A Casa • Módulo 4: Menos Comuns",
+    "subtitle": "Tema: A Casa (4/4) • 8 palavras menos comuns ou específicas da casa",
+    "pedagogicalObjective": "Conhecer 8 termos mais específicos da casa: Attic, Basement, Chimney, Doorknob, Gutter, Fence, Faucet e Closet.",
     "type": "lesson",
     "icon": "house",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 4 da Casa aprendemos palavras menos comuns ou específicas: Attic (\"é-tik\" = Sótão), Basement (\"bêis-ment\" = Porão), Chimney (\"tchím-ni\" = Chaminé), Doorknob (\"dór-nób\" = Maçaneta) e Gutter (\"gâ-ter\" = Calha).",
-      "E completamos o tema A Casa com Fence (\"féns\" = Cerca), Mailbox (\"mêil-bóks\" = Caixa de correio), Doorbell (\"dór-bél\" = Campainha), Faucet (\"fó-set\" = Torneira), Closet (\"cló-zet\" = Armário), Broom (\"brúm\" = Vassoura) e Bucket (\"bâ-ket\" = Balde)."
+      "Tema: A Casa — Módulo 4 (Palavras menos comuns ou específicas): detalhes estruturais e específicos da residência.",
+      "Palavras deste módulo (8): Attic (\"é-tik\" = Sótão), Basement (\"bêis-ment\" = Porão), Chimney (\"tchím-ni\" = Chaminé), Doorknob (\"dór-nób\" = Maçaneta), Gutter (\"gâ-ter\" = Calha), Fence (\"féns\" = Cerca), Faucet (\"fó-set\" = Torneira) e Closet (\"cló-zet\" = Armário/Closet)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -2493,14 +1762,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏠",
         "visualOptions": [
           {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura",
-            "simplePronunciation": "brúm",
-            "phonetic": "/bruːm/",
-            "exampleEn": "Sweep the kitchen with a broom.",
-            "examplePt": "Varra a cozinha com uma vassoura."
+            "text": "Fence",
+            "emoji": "🏡",
+            "label": "Fence",
+            "translationPt": "Cerca",
+            "simplePronunciation": "féns",
+            "phonetic": "/fens/",
+            "exampleEn": "A fence surrounds the yard.",
+            "examplePt": "Uma cerca contorna o quintal."
           },
           {
             "text": "Attic",
@@ -2509,59 +1778,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sótão",
             "simplePronunciation": "é-tik",
             "phonetic": "/ˈæt.ɪk/",
-            "exampleEn": "Old boxes are stored in the attic.",
-            "examplePt": "Caixas antigas ficam guardadas no sótão."
-          },
-          {
-            "text": "Bucket",
-            "emoji": "🪣",
-            "label": "Bucket",
-            "translationPt": "Balde",
-            "simplePronunciation": "bâ-ket",
-            "phonetic": "/ˈbʌk.ɪt/",
-            "exampleEn": "Fill the bucket with water.",
-            "examplePt": "Encha o balde com água."
-          },
-          {
-            "text": "Fence",
-            "emoji": "🏡",
-            "label": "Fence",
-            "translationPt": "Cerca",
-            "simplePronunciation": "féns",
-            "phonetic": "/fens/",
-            "exampleEn": "A wooden fence surrounds the yard.",
-            "examplePt": "Uma cerca de madeira rodeia o quintal."
-          }
-        ],
-        "options": [
-          "Broom",
-          "Attic",
-          "Bucket",
-          "Fence"
-        ],
-        "correctAnswer": "Attic",
-        "contextSentence": "Old boxes are stored in the attic.",
-        "contextSentencePt": "Caixas antigas ficam guardadas no sótão.",
-        "explanation": "Exemplo: \"Old boxes are stored in the attic.\" — Caixas antigas ficam guardadas no sótão.",
-        "phoneticHint": "\"é-tik\" • /ˈæt.ɪk/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p5-e2",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Basement",
-        "visualEmoji": "🪜",
-        "visualOptions": [
-          {
-            "text": "Mailbox",
-            "emoji": "📫",
-            "label": "Mailbox",
-            "translationPt": "Caixa de correio",
-            "simplePronunciation": "mêil-bóks",
-            "phonetic": "/ˈmeɪl.bɑːks/",
-            "exampleEn": "Check the mailbox for letters.",
-            "examplePt": "Olhe a caixa de correio para ver se há cartas."
+            "exampleEn": "Old boxes are in the attic.",
+            "examplePt": "As caixas antigas estão no sótão."
           },
           {
             "text": "Faucet",
@@ -2574,36 +1792,87 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Feche a torneira de água."
           },
           {
+            "text": "Chimney",
+            "emoji": "🧱",
+            "label": "Chimney",
+            "translationPt": "Chaminé",
+            "simplePronunciation": "tchím-ni",
+            "phonetic": "/ˈtʃɪm.ni/",
+            "exampleEn": "Smoke comes out of the chimney.",
+            "examplePt": "A fumaça sai pela chaminé."
+          }
+        ],
+        "options": [
+          "Fence",
+          "Attic",
+          "Faucet",
+          "Chimney"
+        ],
+        "correctAnswer": "Attic",
+        "contextSentence": "Old boxes are in the attic.",
+        "contextSentencePt": "As caixas antigas estão no sótão.",
+        "explanation": "Exemplo: \"Old boxes are in the attic.\" — As caixas antigas estão no sótão.",
+        "phoneticHint": "\"é-tik\" • /ˈæt.ɪk/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p5-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Basement",
+        "visualEmoji": "🪜",
+        "visualOptions": [
+          {
+            "text": "Doorknob",
+            "emoji": "🚪",
+            "label": "Doorknob",
+            "translationPt": "Maçaneta",
+            "simplePronunciation": "dór-nób",
+            "phonetic": "/ˈdɔːr.nɑːb/",
+            "exampleEn": "Turn the doorknob to open it.",
+            "examplePt": "Gire a maçaneta para abrir."
+          },
+          {
             "text": "Closet",
             "emoji": "🚪",
             "label": "Closet",
-            "translationPt": "Armário / Guarda-roupa",
+            "translationPt": "Armário / Closet",
             "simplePronunciation": "cló-zet",
             "phonetic": "/ˈklɑː.zɪt/",
             "exampleEn": "Hang your coat in the closet.",
             "examplePt": "Pendure seu casaco no armário."
           },
           {
+            "text": "Gutter",
+            "emoji": "🌧️",
+            "label": "Gutter",
+            "translationPt": "Calha",
+            "simplePronunciation": "gâ-ter",
+            "phonetic": "/ˈɡʌt.ər/",
+            "exampleEn": "Rain flows through the gutter.",
+            "examplePt": "A chuva escorre pela calha."
+          },
+          {
             "text": "Basement",
             "emoji": "🪜",
             "label": "Basement",
-            "translationPt": "Porão / Subsolo",
+            "translationPt": "Porão",
             "simplePronunciation": "bêis-ment",
             "phonetic": "/ˈbeɪs.mənt/",
-            "exampleEn": "The laundry room is in the basement.",
-            "examplePt": "A lavanderia fica no porão."
+            "exampleEn": "The basement is downstairs.",
+            "examplePt": "O porão fica no andar de baixo."
           }
         ],
         "options": [
-          "Mailbox",
-          "Faucet",
+          "Doorknob",
           "Closet",
+          "Gutter",
           "Basement"
         ],
         "correctAnswer": "Basement",
-        "contextSentence": "The laundry room is in the basement.",
-        "contextSentencePt": "A lavanderia fica no porão.",
-        "explanation": "Exemplo: \"The laundry room is in the basement.\" — A lavanderia fica no porão.",
+        "contextSentence": "The basement is downstairs.",
+        "contextSentencePt": "O porão fica no andar de baixo.",
+        "explanation": "Exemplo: \"The basement is downstairs.\" — O porão fica no andar de baixo.",
         "phoneticHint": "\"bêis-ment\" • /ˈbeɪs.mənt/",
         "skillCategory": "listening"
       },
@@ -2621,50 +1890,50 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Chaminé",
             "simplePronunciation": "tchím-ni",
             "phonetic": "/ˈtʃɪm.ni/",
-            "exampleEn": "Smoke comes out of the brick chimney.",
+            "exampleEn": "Smoke comes out of the chimney.",
             "examplePt": "A fumaça sai pela chaminé."
           },
           {
-            "text": "Doorknob",
-            "emoji": "🚪",
-            "label": "Doorknob",
-            "translationPt": "Maçaneta",
-            "simplePronunciation": "dór-nób",
-            "phonetic": "/ˈdɔːr.nɑːb/",
-            "exampleEn": "Turn the doorknob to open it.",
-            "examplePt": "Gire a maçaneta para abrir."
+            "text": "Fence",
+            "emoji": "🏡",
+            "label": "Fence",
+            "translationPt": "Cerca",
+            "simplePronunciation": "féns",
+            "phonetic": "/fens/",
+            "exampleEn": "A fence surrounds the yard.",
+            "examplePt": "Uma cerca contorna o quintal."
           },
           {
-            "text": "Gutter",
-            "emoji": "🌧️",
-            "label": "Gutter",
-            "translationPt": "Calha de chuva",
-            "simplePronunciation": "gâ-ter",
-            "phonetic": "/ˈɡʌt.ər/",
-            "exampleEn": "Rainwater flows through the roof gutter.",
-            "examplePt": "A água da chuva corre pela calha do telhado."
+            "text": "Attic",
+            "emoji": "🏠",
+            "label": "Attic",
+            "translationPt": "Sótão",
+            "simplePronunciation": "é-tik",
+            "phonetic": "/ˈæt.ɪk/",
+            "exampleEn": "Old boxes are in the attic.",
+            "examplePt": "As caixas antigas estão no sótão."
           },
           {
-            "text": "Doorbell",
-            "emoji": "🔔",
-            "label": "Doorbell",
-            "translationPt": "Campainha",
-            "simplePronunciation": "dór-bél",
-            "phonetic": "/ˈdɔːr.bel/",
-            "exampleEn": "Somebody rang the doorbell.",
-            "examplePt": "Alguém tocou a campainha."
+            "text": "Faucet",
+            "emoji": "🚰",
+            "label": "Faucet",
+            "translationPt": "Torneira",
+            "simplePronunciation": "fó-set",
+            "phonetic": "/ˈfɔː.sɪt/",
+            "exampleEn": "Turn off the water faucet.",
+            "examplePt": "Feche a torneira de água."
           }
         ],
         "options": [
           "Chimney",
-          "Doorknob",
-          "Gutter",
-          "Doorbell"
+          "Fence",
+          "Attic",
+          "Faucet"
         ],
         "correctAnswer": "Chimney",
-        "contextSentence": "Smoke comes out of the brick chimney.",
+        "contextSentence": "Smoke comes out of the chimney.",
         "contextSentencePt": "A fumaça sai pela chaminé.",
-        "explanation": "Exemplo: \"Smoke comes out of the brick chimney.\" — A fumaça sai pela chaminé.",
+        "explanation": "Exemplo: \"Smoke comes out of the chimney.\" — A fumaça sai pela chaminé.",
         "phoneticHint": "\"tchím-ni\" • /ˈtʃɪm.ni/",
         "skillCategory": "vocabulary"
       },
@@ -2676,34 +1945,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚪",
         "visualOptions": [
           {
-            "text": "Attic",
-            "emoji": "🏠",
-            "label": "Attic",
-            "translationPt": "Sótão",
-            "simplePronunciation": "é-tik",
-            "phonetic": "/ˈæt.ɪk/",
-            "exampleEn": "Old boxes are stored in the attic.",
-            "examplePt": "Caixas antigas ficam guardadas no sótão."
-          },
-          {
-            "text": "Bucket",
-            "emoji": "🪣",
-            "label": "Bucket",
-            "translationPt": "Balde",
-            "simplePronunciation": "bâ-ket",
-            "phonetic": "/ˈbʌk.ɪt/",
-            "exampleEn": "Fill the bucket with water.",
-            "examplePt": "Encha o balde com água."
-          },
-          {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura",
-            "simplePronunciation": "brúm",
-            "phonetic": "/bruːm/",
-            "exampleEn": "Sweep the kitchen with a broom.",
-            "examplePt": "Varra a cozinha com uma vassoura."
+            "text": "Basement",
+            "emoji": "🪜",
+            "label": "Basement",
+            "translationPt": "Porão",
+            "simplePronunciation": "bêis-ment",
+            "phonetic": "/ˈbeɪs.mənt/",
+            "exampleEn": "The basement is downstairs.",
+            "examplePt": "O porão fica no andar de baixo."
           },
           {
             "text": "Doorknob",
@@ -2714,13 +1963,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈdɔːr.nɑːb/",
             "exampleEn": "Turn the doorknob to open it.",
             "examplePt": "Gire a maçaneta para abrir."
+          },
+          {
+            "text": "Attic",
+            "emoji": "🏠",
+            "label": "Attic",
+            "translationPt": "Sótão",
+            "simplePronunciation": "é-tik",
+            "phonetic": "/ˈæt.ɪk/",
+            "exampleEn": "Old boxes are in the attic.",
+            "examplePt": "As caixas antigas estão no sótão."
+          },
+          {
+            "text": "Gutter",
+            "emoji": "🌧️",
+            "label": "Gutter",
+            "translationPt": "Calha",
+            "simplePronunciation": "gâ-ter",
+            "phonetic": "/ˈɡʌt.ər/",
+            "exampleEn": "Rain flows through the gutter.",
+            "examplePt": "A chuva escorre pela calha."
           }
         ],
         "options": [
+          "Basement",
+          "Doorknob",
           "Attic",
-          "Bucket",
-          "Broom",
-          "Doorknob"
+          "Gutter"
         ],
         "correctAnswer": "Doorknob",
         "contextSentence": "Turn the doorknob to open it.",
@@ -2737,16 +2006,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🌧️",
         "visualOptions": [
           {
-            "text": "Closet",
-            "emoji": "🚪",
-            "label": "Closet",
-            "translationPt": "Armário / Guarda-roupa",
-            "simplePronunciation": "cló-zet",
-            "phonetic": "/ˈklɑː.zɪt/",
-            "exampleEn": "Hang your coat in the closet.",
-            "examplePt": "Pendure seu casaco no armário."
-          },
-          {
             "text": "Faucet",
             "emoji": "🚰",
             "label": "Faucet",
@@ -2757,36 +2016,46 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Feche a torneira de água."
           },
           {
+            "text": "Closet",
+            "emoji": "🚪",
+            "label": "Closet",
+            "translationPt": "Armário / Closet",
+            "simplePronunciation": "cló-zet",
+            "phonetic": "/ˈklɑː.zɪt/",
+            "exampleEn": "Hang your coat in the closet.",
+            "examplePt": "Pendure seu casaco no armário."
+          },
+          {
+            "text": "Chimney",
+            "emoji": "🧱",
+            "label": "Chimney",
+            "translationPt": "Chaminé",
+            "simplePronunciation": "tchím-ni",
+            "phonetic": "/ˈtʃɪm.ni/",
+            "exampleEn": "Smoke comes out of the chimney.",
+            "examplePt": "A fumaça sai pela chaminé."
+          },
+          {
             "text": "Gutter",
             "emoji": "🌧️",
             "label": "Gutter",
-            "translationPt": "Calha de chuva",
+            "translationPt": "Calha",
             "simplePronunciation": "gâ-ter",
             "phonetic": "/ˈɡʌt.ər/",
-            "exampleEn": "Rainwater flows through the roof gutter.",
-            "examplePt": "A água da chuva corre pela calha do telhado."
-          },
-          {
-            "text": "Basement",
-            "emoji": "🪜",
-            "label": "Basement",
-            "translationPt": "Porão / Subsolo",
-            "simplePronunciation": "bêis-ment",
-            "phonetic": "/ˈbeɪs.mənt/",
-            "exampleEn": "The laundry room is in the basement.",
-            "examplePt": "A lavanderia fica no porão."
+            "exampleEn": "Rain flows through the gutter.",
+            "examplePt": "A chuva escorre pela calha."
           }
         ],
         "options": [
-          "Closet",
           "Faucet",
-          "Gutter",
-          "Basement"
+          "Closet",
+          "Chimney",
+          "Gutter"
         ],
         "correctAnswer": "Gutter",
-        "contextSentence": "Rainwater flows through the roof gutter.",
-        "contextSentencePt": "A água da chuva corre pela calha do telhado.",
-        "explanation": "Exemplo: \"Rainwater flows through the roof gutter.\" — A água da chuva corre pela calha do telhado.",
+        "contextSentence": "Rain flows through the gutter.",
+        "contextSentencePt": "A chuva escorre pela calha.",
+        "explanation": "Exemplo: \"Rain flows through the gutter.\" — A chuva escorre pela calha.",
         "phoneticHint": "\"gâ-ter\" • /ˈɡʌt.ər/",
         "skillCategory": "listening"
       },
@@ -2798,95 +2067,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🏡",
         "visualOptions": [
           {
-            "text": "Fence",
-            "emoji": "🏡",
-            "label": "Fence",
-            "translationPt": "Cerca",
-            "simplePronunciation": "féns",
-            "phonetic": "/fens/",
-            "exampleEn": "A wooden fence surrounds the yard.",
-            "examplePt": "Uma cerca de madeira rodeia o quintal."
-          },
-          {
-            "text": "Gutter",
-            "emoji": "🌧️",
-            "label": "Gutter",
-            "translationPt": "Calha de chuva",
-            "simplePronunciation": "gâ-ter",
-            "phonetic": "/ˈɡʌt.ər/",
-            "exampleEn": "Rainwater flows through the roof gutter.",
-            "examplePt": "A água da chuva corre pela calha do telhado."
-          },
-          {
-            "text": "Chimney",
-            "emoji": "🧱",
-            "label": "Chimney",
-            "translationPt": "Chaminé",
-            "simplePronunciation": "tchím-ni",
-            "phonetic": "/ˈtʃɪm.ni/",
-            "exampleEn": "Smoke comes out of the brick chimney.",
-            "examplePt": "A fumaça sai pela chaminé."
-          },
-          {
-            "text": "Mailbox",
-            "emoji": "📫",
-            "label": "Mailbox",
-            "translationPt": "Caixa de correio",
-            "simplePronunciation": "mêil-bóks",
-            "phonetic": "/ˈmeɪl.bɑːks/",
-            "exampleEn": "Check the mailbox for letters.",
-            "examplePt": "Olhe a caixa de correio para ver se há cartas."
-          }
-        ],
-        "options": [
-          "Fence",
-          "Gutter",
-          "Chimney",
-          "Mailbox"
-        ],
-        "correctAnswer": "Fence",
-        "contextSentence": "A wooden fence surrounds the yard.",
-        "contextSentencePt": "Uma cerca de madeira rodeia o quintal.",
-        "explanation": "Exemplo: \"A wooden fence surrounds the yard.\" — Uma cerca de madeira rodeia o quintal.",
-        "phoneticHint": "\"féns\" • /fens/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p5-e7",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Mailbox",
-        "visualEmoji": "📫",
-        "visualOptions": [
-          {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura",
-            "simplePronunciation": "brúm",
-            "phonetic": "/bruːm/",
-            "exampleEn": "Sweep the kitchen with a broom.",
-            "examplePt": "Varra a cozinha com uma vassoura."
-          },
-          {
-            "text": "Mailbox",
-            "emoji": "📫",
-            "label": "Mailbox",
-            "translationPt": "Caixa de correio",
-            "simplePronunciation": "mêil-bóks",
-            "phonetic": "/ˈmeɪl.bɑːks/",
-            "exampleEn": "Check the mailbox for letters.",
-            "examplePt": "Olhe a caixa de correio para ver se há cartas."
-          },
-          {
             "text": "Attic",
             "emoji": "🏠",
             "label": "Attic",
             "translationPt": "Sótão",
             "simplePronunciation": "é-tik",
             "phonetic": "/ˈæt.ɪk/",
-            "exampleEn": "Old boxes are stored in the attic.",
-            "examplePt": "Caixas antigas ficam guardadas no sótão."
+            "exampleEn": "Old boxes are in the attic.",
+            "examplePt": "As caixas antigas estão no sótão."
           },
           {
             "text": "Doorknob",
@@ -2897,47 +2085,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈdɔːr.nɑːb/",
             "exampleEn": "Turn the doorknob to open it.",
             "examplePt": "Gire a maçaneta para abrir."
-          }
-        ],
-        "options": [
-          "Broom",
-          "Mailbox",
-          "Attic",
-          "Doorknob"
-        ],
-        "correctAnswer": "Mailbox",
-        "contextSentence": "Check the mailbox for letters.",
-        "contextSentencePt": "Olhe a caixa de correio para ver se há cartas.",
-        "explanation": "Exemplo: \"Check the mailbox for letters.\" — Olhe a caixa de correio para ver se há cartas.",
-        "phoneticHint": "\"mêil-bóks\" • /ˈmeɪl.bɑːks/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p5-e8",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Doorbell",
-        "visualEmoji": "🔔",
-        "visualOptions": [
-          {
-            "text": "Chimney",
-            "emoji": "🧱",
-            "label": "Chimney",
-            "translationPt": "Chaminé",
-            "simplePronunciation": "tchím-ni",
-            "phonetic": "/ˈtʃɪm.ni/",
-            "exampleEn": "Smoke comes out of the brick chimney.",
-            "examplePt": "A fumaça sai pela chaminé."
-          },
-          {
-            "text": "Doorbell",
-            "emoji": "🔔",
-            "label": "Doorbell",
-            "translationPt": "Campainha",
-            "simplePronunciation": "dór-bél",
-            "phonetic": "/ˈdɔːr.bel/",
-            "exampleEn": "Somebody rang the doorbell.",
-            "examplePt": "Alguém tocou a campainha."
           },
           {
             "text": "Fence",
@@ -2946,70 +2093,40 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cerca",
             "simplePronunciation": "féns",
             "phonetic": "/fens/",
-            "exampleEn": "A wooden fence surrounds the yard.",
-            "examplePt": "Uma cerca de madeira rodeia o quintal."
+            "exampleEn": "A fence surrounds the yard.",
+            "examplePt": "Uma cerca contorna o quintal."
           },
           {
             "text": "Basement",
             "emoji": "🪜",
             "label": "Basement",
-            "translationPt": "Porão / Subsolo",
+            "translationPt": "Porão",
             "simplePronunciation": "bêis-ment",
             "phonetic": "/ˈbeɪs.mənt/",
-            "exampleEn": "The laundry room is in the basement.",
-            "examplePt": "A lavanderia fica no porão."
+            "exampleEn": "The basement is downstairs.",
+            "examplePt": "O porão fica no andar de baixo."
           }
         ],
         "options": [
-          "Chimney",
-          "Doorbell",
+          "Attic",
+          "Doorknob",
           "Fence",
           "Basement"
         ],
-        "correctAnswer": "Doorbell",
-        "contextSentence": "Somebody rang the doorbell.",
-        "contextSentencePt": "Alguém tocou a campainha.",
-        "explanation": "Exemplo: \"Somebody rang the doorbell.\" — Alguém tocou a campainha.",
-        "phoneticHint": "\"dór-bél\" • /ˈdɔːr.bel/",
-        "skillCategory": "listening"
+        "correctAnswer": "Fence",
+        "contextSentence": "A fence surrounds the yard.",
+        "contextSentencePt": "Uma cerca contorna o quintal.",
+        "explanation": "Exemplo: \"A fence surrounds the yard.\" — Uma cerca contorna o quintal.",
+        "phoneticHint": "\"féns\" • /fens/",
+        "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e9",
+        "id": "w0-p5-e7",
         "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Faucet",
         "visualEmoji": "🚰",
         "visualOptions": [
-          {
-            "text": "Mailbox",
-            "emoji": "📫",
-            "label": "Mailbox",
-            "translationPt": "Caixa de correio",
-            "simplePronunciation": "mêil-bóks",
-            "phonetic": "/ˈmeɪl.bɑːks/",
-            "exampleEn": "Check the mailbox for letters.",
-            "examplePt": "Olhe a caixa de correio para ver se há cartas."
-          },
-          {
-            "text": "Gutter",
-            "emoji": "🌧️",
-            "label": "Gutter",
-            "translationPt": "Calha de chuva",
-            "simplePronunciation": "gâ-ter",
-            "phonetic": "/ˈɡʌt.ər/",
-            "exampleEn": "Rainwater flows through the roof gutter.",
-            "examplePt": "A água da chuva corre pela calha do telhado."
-          },
-          {
-            "text": "Doorbell",
-            "emoji": "🔔",
-            "label": "Doorbell",
-            "translationPt": "Campainha",
-            "simplePronunciation": "dór-bél",
-            "phonetic": "/ˈdɔːr.bel/",
-            "exampleEn": "Somebody rang the doorbell.",
-            "examplePt": "Alguém tocou a campainha."
-          },
           {
             "text": "Faucet",
             "emoji": "🚰",
@@ -3019,13 +2136,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈfɔː.sɪt/",
             "exampleEn": "Turn off the water faucet.",
             "examplePt": "Feche a torneira de água."
+          },
+          {
+            "text": "Chimney",
+            "emoji": "🧱",
+            "label": "Chimney",
+            "translationPt": "Chaminé",
+            "simplePronunciation": "tchím-ni",
+            "phonetic": "/ˈtʃɪm.ni/",
+            "exampleEn": "Smoke comes out of the chimney.",
+            "examplePt": "A fumaça sai pela chaminé."
+          },
+          {
+            "text": "Fence",
+            "emoji": "🏡",
+            "label": "Fence",
+            "translationPt": "Cerca",
+            "simplePronunciation": "féns",
+            "phonetic": "/fens/",
+            "exampleEn": "A fence surrounds the yard.",
+            "examplePt": "Uma cerca contorna o quintal."
+          },
+          {
+            "text": "Basement",
+            "emoji": "🪜",
+            "label": "Basement",
+            "translationPt": "Porão",
+            "simplePronunciation": "bêis-ment",
+            "phonetic": "/ˈbeɪs.mənt/",
+            "exampleEn": "The basement is downstairs.",
+            "examplePt": "O porão fica no andar de baixo."
           }
         ],
         "options": [
-          "Mailbox",
-          "Gutter",
-          "Doorbell",
-          "Faucet"
+          "Faucet",
+          "Chimney",
+          "Fence",
+          "Basement"
         ],
         "correctAnswer": "Faucet",
         "contextSentence": "Turn off the water faucet.",
@@ -3035,21 +2182,21 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p5-e10",
+        "id": "w0-p5-e8",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Closet",
         "visualEmoji": "🚪",
         "visualOptions": [
           {
-            "text": "Doorbell",
-            "emoji": "🔔",
-            "label": "Doorbell",
-            "translationPt": "Campainha",
-            "simplePronunciation": "dór-bél",
-            "phonetic": "/ˈdɔːr.bel/",
-            "exampleEn": "Somebody rang the doorbell.",
-            "examplePt": "Alguém tocou a campainha."
+            "text": "Attic",
+            "emoji": "🏠",
+            "label": "Attic",
+            "translationPt": "Sótão",
+            "simplePronunciation": "é-tik",
+            "phonetic": "/ˈæt.ɪk/",
+            "exampleEn": "Old boxes are in the attic.",
+            "examplePt": "As caixas antigas estão no sótão."
           },
           {
             "text": "Doorknob",
@@ -3065,157 +2212,35 @@ export const WORLD_0_PHASES: Phase[] = [
             "text": "Closet",
             "emoji": "🚪",
             "label": "Closet",
-            "translationPt": "Armário / Guarda-roupa",
+            "translationPt": "Armário / Closet",
             "simplePronunciation": "cló-zet",
             "phonetic": "/ˈklɑː.zɪt/",
             "exampleEn": "Hang your coat in the closet.",
             "examplePt": "Pendure seu casaco no armário."
           },
           {
-            "text": "Attic",
-            "emoji": "🏠",
-            "label": "Attic",
-            "translationPt": "Sótão",
-            "simplePronunciation": "é-tik",
-            "phonetic": "/ˈæt.ɪk/",
-            "exampleEn": "Old boxes are stored in the attic.",
-            "examplePt": "Caixas antigas ficam guardadas no sótão."
+            "text": "Gutter",
+            "emoji": "🌧️",
+            "label": "Gutter",
+            "translationPt": "Calha",
+            "simplePronunciation": "gâ-ter",
+            "phonetic": "/ˈɡʌt.ər/",
+            "exampleEn": "Rain flows through the gutter.",
+            "examplePt": "A chuva escorre pela calha."
           }
         ],
         "options": [
-          "Doorbell",
+          "Attic",
           "Doorknob",
           "Closet",
-          "Attic"
+          "Gutter"
         ],
         "correctAnswer": "Closet",
         "contextSentence": "Hang your coat in the closet.",
         "contextSentencePt": "Pendure seu casaco no armário.",
         "explanation": "Exemplo: \"Hang your coat in the closet.\" — Pendure seu casaco no armário.",
         "phoneticHint": "\"cló-zet\" • /ˈklɑː.zɪt/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p5-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Broom",
-        "visualEmoji": "🧹",
-        "visualOptions": [
-          {
-            "text": "Broom",
-            "emoji": "🧹",
-            "label": "Broom",
-            "translationPt": "Vassoura",
-            "simplePronunciation": "brúm",
-            "phonetic": "/bruːm/",
-            "exampleEn": "Sweep the kitchen with a broom.",
-            "examplePt": "Varra a cozinha com uma vassoura."
-          },
-          {
-            "text": "Fence",
-            "emoji": "🏡",
-            "label": "Fence",
-            "translationPt": "Cerca",
-            "simplePronunciation": "féns",
-            "phonetic": "/fens/",
-            "exampleEn": "A wooden fence surrounds the yard.",
-            "examplePt": "Uma cerca de madeira rodeia o quintal."
-          },
-          {
-            "text": "Chimney",
-            "emoji": "🧱",
-            "label": "Chimney",
-            "translationPt": "Chaminé",
-            "simplePronunciation": "tchím-ni",
-            "phonetic": "/ˈtʃɪm.ni/",
-            "exampleEn": "Smoke comes out of the brick chimney.",
-            "examplePt": "A fumaça sai pela chaminé."
-          },
-          {
-            "text": "Basement",
-            "emoji": "🪜",
-            "label": "Basement",
-            "translationPt": "Porão / Subsolo",
-            "simplePronunciation": "bêis-ment",
-            "phonetic": "/ˈbeɪs.mənt/",
-            "exampleEn": "The laundry room is in the basement.",
-            "examplePt": "A lavanderia fica no porão."
-          }
-        ],
-        "options": [
-          "Broom",
-          "Fence",
-          "Chimney",
-          "Basement"
-        ],
-        "correctAnswer": "Broom",
-        "contextSentence": "Sweep the kitchen with a broom.",
-        "contextSentencePt": "Varra a cozinha com uma vassoura.",
-        "explanation": "Exemplo: \"Sweep the kitchen with a broom.\" — Varra a cozinha com uma vassoura.",
-        "phoneticHint": "\"brúm\" • /bruːm/",
         "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p5-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Bucket",
-        "visualEmoji": "🪣",
-        "visualOptions": [
-          {
-            "text": "Mailbox",
-            "emoji": "📫",
-            "label": "Mailbox",
-            "translationPt": "Caixa de correio",
-            "simplePronunciation": "mêil-bóks",
-            "phonetic": "/ˈmeɪl.bɑːks/",
-            "exampleEn": "Check the mailbox for letters.",
-            "examplePt": "Olhe a caixa de correio para ver se há cartas."
-          },
-          {
-            "text": "Faucet",
-            "emoji": "🚰",
-            "label": "Faucet",
-            "translationPt": "Torneira",
-            "simplePronunciation": "fó-set",
-            "phonetic": "/ˈfɔː.sɪt/",
-            "exampleEn": "Turn off the water faucet.",
-            "examplePt": "Feche a torneira de água."
-          },
-          {
-            "text": "Bucket",
-            "emoji": "🪣",
-            "label": "Bucket",
-            "translationPt": "Balde",
-            "simplePronunciation": "bâ-ket",
-            "phonetic": "/ˈbʌk.ɪt/",
-            "exampleEn": "Fill the bucket with water.",
-            "examplePt": "Encha o balde com água."
-          },
-          {
-            "text": "Gutter",
-            "emoji": "🌧️",
-            "label": "Gutter",
-            "translationPt": "Calha de chuva",
-            "simplePronunciation": "gâ-ter",
-            "phonetic": "/ˈɡʌt.ər/",
-            "exampleEn": "Rainwater flows through the roof gutter.",
-            "examplePt": "A água da chuva corre pela calha do telhado."
-          }
-        ],
-        "options": [
-          "Mailbox",
-          "Faucet",
-          "Bucket",
-          "Gutter"
-        ],
-        "correctAnswer": "Bucket",
-        "contextSentence": "Fill the bucket with water.",
-        "contextSentencePt": "Encha o balde com água.",
-        "explanation": "Exemplo: \"Fill the bucket with water.\" — Encha o balde com água.",
-        "phoneticHint": "\"bâ-ket\" • /ˈbʌk.ɪt/",
-        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -3224,17 +2249,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 6,
     "themeId": "food",
-    "themeTitle": "Comida",
-    "frequencyLevel": "Módulo 1 • Essenciais",
+    "themeTitle": "Tema 2: Comida",
+    "frequencyLevel": "Módulo 1 • Essenciais e Mais Comuns",
     "title": "Comida • Módulo 1: Palavras Essenciais",
-    "subtitle": "Tema 2 (Nível 1/4) • Os 12 alimentos e bebidas mais básicos do dia a dia",
-    "pedagogicalObjective": "Dominar os alimentos e bebidas indispensáveis: Bread, Rice, Beans, Meat, Chicken, Egg, Milk, Coffee, Juice, Apple, Banana e Cheese.",
+    "subtitle": "Tema: Comida (1/4) • 8 alimentos e bebidas essenciais do dia a dia",
+    "pedagogicalObjective": "Dominar os 8 alimentos e bebidas mais essenciais: Water, Bread, Rice, Beans, Meat, Chicken, Egg e Milk.",
     "type": "lesson",
     "icon": "apple",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Iniciamos o Tema 2 (Comida • Módulo 1: Essenciais): Bread (\"bréd\" = Pão), Rice (\"ráis\" = Arroz), Beans (\"bínz\" = Feijão), Meat (\"mít\" = Carne), Chicken (\"tchí-ken\" = Frango) e Egg (\"ég\" = Ovo).",
-      "E completamos os essenciais com Milk (\"mílk\" = Leite), Coffee (\"có-fi\" = Café), Juice (\"djús\" = Suco), Apple (\"é-pol\" = Maçã), Banana (\"ba-né-na\" = Banana) e Cheese (\"tchíz\" = Queijo)."
+      "Tema: Comida — Módulo 1 (Palavras essenciais e mais comuns): os alimentos mais presentes nas refeições diárias.",
+      "Palavras deste módulo (8): Water (\"uó-ter\" = Água), Bread (\"bréd\" = Pão), Rice (\"ráis\" = Arroz), Beans (\"bínz\" = Feijão), Meat (\"mít\" = Carne), Chicken (\"tchí-ken\" = Frango), Egg (\"ég\" = Ovo) e Milk (\"mílk\" = Leite)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -3243,8 +2268,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p6-e1",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Bread",
-        "visualEmoji": "🍞",
+        "audioPhrase": "Water",
+        "visualEmoji": "💧",
         "visualOptions": [
           {
             "text": "Egg",
@@ -3253,18 +2278,79 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ovo",
             "simplePronunciation": "ég",
             "phonetic": "/eɡ/",
-            "exampleEn": "I like fried eggs in the morning.",
-            "examplePt": "Eu gosto de ovos fritos de manhã."
+            "exampleEn": "I like eggs in the morning.",
+            "examplePt": "Eu gosto de ovos de manhã."
           },
           {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana",
-            "simplePronunciation": "ba-né-na",
-            "phonetic": "/bəˈnæn.ə/",
-            "exampleEn": "Peel the yellow banana.",
-            "examplePt": "Descasque a banana amarela."
+            "text": "Beans",
+            "emoji": "🫘",
+            "label": "Beans",
+            "translationPt": "Feijão",
+            "simplePronunciation": "bínz",
+            "phonetic": "/biːnz/",
+            "exampleEn": "Rice and beans taste great.",
+            "examplePt": "Arroz e feijão são deliciosos."
+          },
+          {
+            "text": "Rice",
+            "emoji": "🍚",
+            "label": "Rice",
+            "translationPt": "Arroz",
+            "simplePronunciation": "ráis",
+            "phonetic": "/raɪs/",
+            "exampleEn": "We eat white rice every day.",
+            "examplePt": "Nós comemos arroz branco todos os dias."
+          },
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água",
+            "simplePronunciation": "uó-ter",
+            "phonetic": "/ˈwɔː.tər/",
+            "exampleEn": "I drink cold water.",
+            "examplePt": "Eu bebo água gelada."
+          }
+        ],
+        "options": [
+          "Egg",
+          "Beans",
+          "Rice",
+          "Water"
+        ],
+        "correctAnswer": "Water",
+        "contextSentence": "I drink cold water.",
+        "contextSentencePt": "Eu bebo água gelada.",
+        "explanation": "Exemplo: \"I drink cold water.\" — Eu bebo água gelada.",
+        "phoneticHint": "\"uó-ter\" • /ˈwɔː.tər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p6-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Bread",
+        "visualEmoji": "🍞",
+        "visualOptions": [
+          {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão",
+            "simplePronunciation": "bréd",
+            "phonetic": "/bred/",
+            "exampleEn": "I eat warm bread for breakfast.",
+            "examplePt": "Eu como pão quentinho no café da manhã."
+          },
+          {
+            "text": "Milk",
+            "emoji": "🥛",
+            "label": "Milk",
+            "translationPt": "Leite",
+            "simplePronunciation": "mílk",
+            "phonetic": "/mɪlk/",
+            "exampleEn": "Drink a glass of milk.",
+            "examplePt": "Beba um copo de leite."
           },
           {
             "text": "Chicken",
@@ -3277,6 +2363,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Comemos frango assado no almoço."
           },
           {
+            "text": "Meat",
+            "emoji": "🥩",
+            "label": "Meat",
+            "translationPt": "Carne",
+            "simplePronunciation": "mít",
+            "phonetic": "/miːt/",
+            "exampleEn": "He cooked the meat on the grill.",
+            "examplePt": "Ele assou a carne na grelha."
+          }
+        ],
+        "options": [
+          "Bread",
+          "Milk",
+          "Chicken",
+          "Meat"
+        ],
+        "correctAnswer": "Bread",
+        "contextSentence": "I eat warm bread for breakfast.",
+        "contextSentencePt": "Eu como pão quentinho no café da manhã.",
+        "explanation": "Exemplo: \"I eat warm bread for breakfast.\" — Eu como pão quentinho no café da manhã.",
+        "phoneticHint": "\"bréd\" • /bred/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p6-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Rice",
+        "visualEmoji": "🍚",
+        "visualOptions": [
+          {
             "text": "Bread",
             "emoji": "🍞",
             "label": "Bread",
@@ -3285,28 +2402,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/bred/",
             "exampleEn": "I eat warm bread for breakfast.",
             "examplePt": "Eu como pão quentinho no café da manhã."
-          }
-        ],
-        "options": [
-          "Egg",
-          "Banana",
-          "Chicken",
-          "Bread"
-        ],
-        "correctAnswer": "Bread",
-        "contextSentence": "I eat warm bread for breakfast.",
-        "contextSentencePt": "Eu como pão quentinho no café da manhã.",
-        "explanation": "Exemplo: \"I eat warm bread for breakfast.\" — Eu como pão quentinho no café da manhã.",
-        "phoneticHint": "\"bréd\" • /bred/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p6-e2",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Rice",
-        "visualEmoji": "🍚",
-        "visualOptions": [
+          },
           {
             "text": "Rice",
             "emoji": "🍚",
@@ -3318,85 +2414,75 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Nós comemos arroz branco todos os dias."
           },
           {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite",
-            "simplePronunciation": "mílk",
-            "phonetic": "/mɪlk/",
-            "exampleEn": "Drink a glass of warm milk.",
-            "examplePt": "Beba um copo de leite morno."
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água",
+            "simplePronunciation": "uó-ter",
+            "phonetic": "/ˈwɔː.tər/",
+            "exampleEn": "I drink cold water.",
+            "examplePt": "Eu bebo água gelada."
           },
           {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café",
-            "simplePronunciation": "có-fi",
-            "phonetic": "/ˈkɔː.fi/",
-            "exampleEn": "She loves hot coffee.",
-            "examplePt": "Ela adora café quente."
-          },
-          {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo",
-            "simplePronunciation": "tchíz",
-            "phonetic": "/tʃiːz/",
-            "exampleEn": "Put cheese on the bread.",
-            "examplePt": "Coloque queijo no pão."
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo",
+            "simplePronunciation": "ég",
+            "phonetic": "/eɡ/",
+            "exampleEn": "I like eggs in the morning.",
+            "examplePt": "Eu gosto de ovos de manhã."
           }
         ],
         "options": [
+          "Bread",
           "Rice",
-          "Milk",
-          "Coffee",
-          "Cheese"
+          "Water",
+          "Egg"
         ],
         "correctAnswer": "Rice",
         "contextSentence": "We eat white rice every day.",
         "contextSentencePt": "Nós comemos arroz branco todos os dias.",
         "explanation": "Exemplo: \"We eat white rice every day.\" — Nós comemos arroz branco todos os dias.",
         "phoneticHint": "\"ráis\" • /raɪs/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e3",
+        "id": "w0-p6-e4",
         "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Beans",
         "visualEmoji": "🫘",
         "visualOptions": [
           {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã",
-            "simplePronunciation": "é-pol",
-            "phonetic": "/ˈæp.əl/",
-            "exampleEn": "This red apple is sweet.",
-            "examplePt": "Esta maçã vermelha é doce."
+            "text": "Meat",
+            "emoji": "🥩",
+            "label": "Meat",
+            "translationPt": "Carne",
+            "simplePronunciation": "mít",
+            "phonetic": "/miːt/",
+            "exampleEn": "He cooked the meat on the grill.",
+            "examplePt": "Ele assou a carne na grelha."
           },
           {
-            "text": "Juice",
-            "emoji": "🧃",
-            "label": "Juice",
-            "translationPt": "Suco",
-            "simplePronunciation": "djús",
-            "phonetic": "/dʒuːs/",
-            "exampleEn": "Fresh orange juice is delicious.",
-            "examplePt": "Suco de laranja fresco é delicioso."
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água",
+            "simplePronunciation": "uó-ter",
+            "phonetic": "/ˈwɔː.tər/",
+            "exampleEn": "I drink cold water.",
+            "examplePt": "Eu bebo água gelada."
           },
           {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão",
-            "simplePronunciation": "bréd",
-            "phonetic": "/bred/",
-            "exampleEn": "I eat warm bread for breakfast.",
-            "examplePt": "Eu como pão quentinho no café da manhã."
+            "text": "Milk",
+            "emoji": "🥛",
+            "label": "Milk",
+            "translationPt": "Leite",
+            "simplePronunciation": "mílk",
+            "phonetic": "/mɪlk/",
+            "exampleEn": "Drink a glass of milk.",
+            "examplePt": "Beba um copo de leite."
           },
           {
             "text": "Beans",
@@ -3410,9 +2496,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Apple",
-          "Juice",
-          "Bread",
+          "Meat",
+          "Water",
+          "Milk",
           "Beans"
         ],
         "correctAnswer": "Beans",
@@ -3423,31 +2509,31 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e4",
+        "id": "w0-p6-e5",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Meat",
         "visualEmoji": "🥩",
         "visualOptions": [
           {
-            "text": "Beans",
-            "emoji": "🫘",
-            "label": "Beans",
-            "translationPt": "Feijão",
-            "simplePronunciation": "bínz",
-            "phonetic": "/biːnz/",
-            "exampleEn": "Rice and beans taste great.",
-            "examplePt": "Arroz e feijão são deliciosos."
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo",
+            "simplePronunciation": "ég",
+            "phonetic": "/eɡ/",
+            "exampleEn": "I like eggs in the morning.",
+            "examplePt": "Eu gosto de ovos de manhã."
           },
           {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite",
-            "simplePronunciation": "mílk",
-            "phonetic": "/mɪlk/",
-            "exampleEn": "Drink a glass of warm milk.",
-            "examplePt": "Beba um copo de leite morno."
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão",
+            "simplePronunciation": "bréd",
+            "phonetic": "/bred/",
+            "exampleEn": "I eat warm bread for breakfast.",
+            "examplePt": "Eu como pão quentinho no café da manhã."
           },
           {
             "text": "Meat",
@@ -3471,8 +2557,8 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Beans",
-          "Milk",
+          "Egg",
+          "Bread",
           "Meat",
           "Rice"
         ],
@@ -3481,12 +2567,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "contextSentencePt": "Ele assou a carne na grelha.",
         "explanation": "Exemplo: \"He cooked the meat on the grill.\" — Ele assou a carne na grelha.",
         "phoneticHint": "\"mít\" • /miːt/",
-        "skillCategory": "vocabulary"
+        "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e5",
+        "id": "w0-p6-e6",
         "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Chicken",
         "visualEmoji": "🍗",
         "visualOptions": [
@@ -3501,136 +2587,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Comemos frango assado no almoço."
           },
           {
-            "text": "Banana",
-            "emoji": "🍌",
-            "label": "Banana",
-            "translationPt": "Banana",
-            "simplePronunciation": "ba-né-na",
-            "phonetic": "/bəˈnæn.ə/",
-            "exampleEn": "Peel the yellow banana.",
-            "examplePt": "Descasque a banana amarela."
-          },
-          {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café",
-            "simplePronunciation": "có-fi",
-            "phonetic": "/ˈkɔː.fi/",
-            "exampleEn": "She loves hot coffee.",
-            "examplePt": "Ela adora café quente."
-          },
-          {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo",
-            "simplePronunciation": "tchíz",
-            "phonetic": "/tʃiːz/",
-            "exampleEn": "Put cheese on the bread.",
-            "examplePt": "Coloque queijo no pão."
-          }
-        ],
-        "options": [
-          "Chicken",
-          "Banana",
-          "Coffee",
-          "Cheese"
-        ],
-        "correctAnswer": "Chicken",
-        "contextSentence": "We had roast chicken for lunch.",
-        "contextSentencePt": "Comemos frango assado no almoço.",
-        "explanation": "Exemplo: \"We had roast chicken for lunch.\" — Comemos frango assado no almoço.",
-        "phoneticHint": "\"tchí-ken\" • /ˈtʃɪk.ɪn/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p6-e6",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Egg",
-        "visualEmoji": "🥚",
-        "visualOptions": [
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão",
-            "simplePronunciation": "bréd",
-            "phonetic": "/bred/",
-            "exampleEn": "I eat warm bread for breakfast.",
-            "examplePt": "Eu como pão quentinho no café da manhã."
-          },
-          {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo",
-            "simplePronunciation": "ég",
-            "phonetic": "/eɡ/",
-            "exampleEn": "I like fried eggs in the morning.",
-            "examplePt": "Eu gosto de ovos fritos de manhã."
-          },
-          {
-            "text": "Juice",
-            "emoji": "🧃",
-            "label": "Juice",
-            "translationPt": "Suco",
-            "simplePronunciation": "djús",
-            "phonetic": "/dʒuːs/",
-            "exampleEn": "Fresh orange juice is delicious.",
-            "examplePt": "Suco de laranja fresco é delicioso."
-          },
-          {
-            "text": "Apple",
-            "emoji": "🍎",
-            "label": "Apple",
-            "translationPt": "Maçã",
-            "simplePronunciation": "é-pol",
-            "phonetic": "/ˈæp.əl/",
-            "exampleEn": "This red apple is sweet.",
-            "examplePt": "Esta maçã vermelha é doce."
-          }
-        ],
-        "options": [
-          "Bread",
-          "Egg",
-          "Juice",
-          "Apple"
-        ],
-        "correctAnswer": "Egg",
-        "contextSentence": "I like fried eggs in the morning.",
-        "contextSentencePt": "Eu gosto de ovos fritos de manhã.",
-        "explanation": "Exemplo: \"I like fried eggs in the morning.\" — Eu gosto de ovos fritos de manhã.",
-        "phoneticHint": "\"ég\" • /eɡ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p6-e7",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Milk",
-        "visualEmoji": "🥛",
-        "visualOptions": [
-          {
-            "text": "Rice",
-            "emoji": "🍚",
-            "label": "Rice",
-            "translationPt": "Arroz",
-            "simplePronunciation": "ráis",
-            "phonetic": "/raɪs/",
-            "exampleEn": "We eat white rice every day.",
-            "examplePt": "Nós comemos arroz branco todos os dias."
-          },
-          {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite",
-            "simplePronunciation": "mílk",
-            "phonetic": "/mɪlk/",
-            "exampleEn": "Drink a glass of warm milk.",
-            "examplePt": "Beba um copo de leite morno."
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água",
+            "simplePronunciation": "uó-ter",
+            "phonetic": "/ˈwɔː.tər/",
+            "exampleEn": "I drink cold water.",
+            "examplePt": "Eu bebo água gelada."
           },
           {
             "text": "Beans",
@@ -3643,6 +2607,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Arroz e feijão são deliciosos."
           },
           {
+            "text": "Milk",
+            "emoji": "🥛",
+            "label": "Milk",
+            "translationPt": "Leite",
+            "simplePronunciation": "mílk",
+            "phonetic": "/mɪlk/",
+            "exampleEn": "Drink a glass of milk.",
+            "examplePt": "Beba um copo de leite."
+          }
+        ],
+        "options": [
+          "Chicken",
+          "Water",
+          "Beans",
+          "Milk"
+        ],
+        "correctAnswer": "Chicken",
+        "contextSentence": "We had roast chicken for lunch.",
+        "contextSentencePt": "Comemos frango assado no almoço.",
+        "explanation": "Exemplo: \"We had roast chicken for lunch.\" — Comemos frango assado no almoço.",
+        "phoneticHint": "\"tchí-ken\" • /ˈtʃɪk.ɪn/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p6-e7",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Egg",
+        "visualEmoji": "🥚",
+        "visualOptions": [
+          {
             "text": "Meat",
             "emoji": "🥩",
             "label": "Meat",
@@ -3651,27 +2646,57 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/miːt/",
             "exampleEn": "He cooked the meat on the grill.",
             "examplePt": "Ele assou a carne na grelha."
+          },
+          {
+            "text": "Rice",
+            "emoji": "🍚",
+            "label": "Rice",
+            "translationPt": "Arroz",
+            "simplePronunciation": "ráis",
+            "phonetic": "/raɪs/",
+            "exampleEn": "We eat white rice every day.",
+            "examplePt": "Nós comemos arroz branco todos os dias."
+          },
+          {
+            "text": "Egg",
+            "emoji": "🥚",
+            "label": "Egg",
+            "translationPt": "Ovo",
+            "simplePronunciation": "ég",
+            "phonetic": "/eɡ/",
+            "exampleEn": "I like eggs in the morning.",
+            "examplePt": "Eu gosto de ovos de manhã."
+          },
+          {
+            "text": "Bread",
+            "emoji": "🍞",
+            "label": "Bread",
+            "translationPt": "Pão",
+            "simplePronunciation": "bréd",
+            "phonetic": "/bred/",
+            "exampleEn": "I eat warm bread for breakfast.",
+            "examplePt": "Eu como pão quentinho no café da manhã."
           }
         ],
         "options": [
+          "Meat",
           "Rice",
-          "Milk",
-          "Beans",
-          "Meat"
+          "Egg",
+          "Bread"
         ],
-        "correctAnswer": "Milk",
-        "contextSentence": "Drink a glass of warm milk.",
-        "contextSentencePt": "Beba um copo de leite morno.",
-        "explanation": "Exemplo: \"Drink a glass of warm milk.\" — Beba um copo de leite morno.",
-        "phoneticHint": "\"mílk\" • /mɪlk/",
+        "correctAnswer": "Egg",
+        "contextSentence": "I like eggs in the morning.",
+        "contextSentencePt": "Eu gosto de ovos de manhã.",
+        "explanation": "Exemplo: \"I like eggs in the morning.\" — Eu gosto de ovos de manhã.",
+        "phoneticHint": "\"ég\" • /eɡ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p6-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Coffee",
-        "visualEmoji": "☕",
+        "audioPhrase": "Milk",
+        "visualEmoji": "🥛",
         "visualOptions": [
           {
             "text": "Chicken",
@@ -3684,14 +2709,87 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Comemos frango assado no almoço."
           },
           {
-            "text": "Cheese",
-            "emoji": "🧀",
-            "label": "Cheese",
-            "translationPt": "Queijo",
-            "simplePronunciation": "tchíz",
-            "phonetic": "/tʃiːz/",
-            "exampleEn": "Put cheese on the bread.",
-            "examplePt": "Coloque queijo no pão."
+            "text": "Milk",
+            "emoji": "🥛",
+            "label": "Milk",
+            "translationPt": "Leite",
+            "simplePronunciation": "mílk",
+            "phonetic": "/mɪlk/",
+            "exampleEn": "Drink a glass of milk.",
+            "examplePt": "Beba um copo de leite."
+          },
+          {
+            "text": "Water",
+            "emoji": "💧",
+            "label": "Water",
+            "translationPt": "Água",
+            "simplePronunciation": "uó-ter",
+            "phonetic": "/ˈwɔː.tər/",
+            "exampleEn": "I drink cold water.",
+            "examplePt": "Eu bebo água gelada."
+          },
+          {
+            "text": "Beans",
+            "emoji": "🫘",
+            "label": "Beans",
+            "translationPt": "Feijão",
+            "simplePronunciation": "bínz",
+            "phonetic": "/biːnz/",
+            "exampleEn": "Rice and beans taste great.",
+            "examplePt": "Arroz e feijão são deliciosos."
+          }
+        ],
+        "options": [
+          "Chicken",
+          "Milk",
+          "Water",
+          "Beans"
+        ],
+        "correctAnswer": "Milk",
+        "contextSentence": "Drink a glass of milk.",
+        "contextSentencePt": "Beba um copo de leite.",
+        "explanation": "Exemplo: \"Drink a glass of milk.\" — Beba um copo de leite.",
+        "phoneticHint": "\"mílk\" • /mɪlk/",
+        "skillCategory": "listening"
+      }
+    ]
+  },
+  {
+    "id": "w0-p7",
+    "worldId": 0,
+    "phaseNumber": 7,
+    "themeId": "food",
+    "themeTitle": "Tema 2: Comida",
+    "frequencyLevel": "Módulo 2 • Palavras Comuns",
+    "title": "Comida • Módulo 2: Palavras Comuns",
+    "subtitle": "Tema: Comida (2/4) • 8 alimentos e bebidas comuns",
+    "pedagogicalObjective": "Aprender 8 alimentos muito comuns: Coffee, Juice, Apple, Banana, Cheese, Fish, Soup e Salad.",
+    "type": "lesson",
+    "icon": "apple",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Tema: Comida — Módulo 2 (Palavras comuns): bebidas, frutas e pratos frequentes.",
+      "Palavras deste módulo (8): Coffee (\"có-fi\" = Café), Juice (\"djús\" = Suco), Apple (\"é-pol\" = Maçã), Banana (\"ba-né-na\" = Banana), Cheese (\"tchíz\" = Queijo), Fish (\"fíx\" = Peixe), Soup (\"súp\" = Sopa) e Salad (\"sé-lad\" = Salada)."
+    ],
+    "xpReward": 50,
+    "gemsReward": 20,
+    "exercises": [
+      {
+        "id": "w0-p7-e1",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Coffee",
+        "visualEmoji": "☕",
+        "visualOptions": [
+          {
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café",
+            "simplePronunciation": "có-fi",
+            "phonetic": "/ˈkɔː.fi/",
+            "exampleEn": "She loves hot coffee.",
+            "examplePt": "Ela adora café quente."
           },
           {
             "text": "Banana",
@@ -3704,55 +2802,55 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Descasque a banana amarela."
           },
           {
-            "text": "Coffee",
-            "emoji": "☕",
-            "label": "Coffee",
-            "translationPt": "Café",
-            "simplePronunciation": "có-fi",
-            "phonetic": "/ˈkɔː.fi/",
-            "exampleEn": "She loves hot coffee.",
-            "examplePt": "Ela adora café quente."
+            "text": "Fish",
+            "emoji": "🐟",
+            "label": "Fish",
+            "translationPt": "Peixe",
+            "simplePronunciation": "fíx",
+            "phonetic": "/fɪʃ/",
+            "exampleEn": "Grilled fish is very healthy.",
+            "examplePt": "Peixe grelhado é muito saudável."
+          },
+          {
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo",
+            "simplePronunciation": "tchíz",
+            "phonetic": "/tʃiːz/",
+            "exampleEn": "Put cheese on the bread.",
+            "examplePt": "Coloque queijo no pão."
           }
         ],
         "options": [
-          "Chicken",
-          "Cheese",
+          "Coffee",
           "Banana",
-          "Coffee"
+          "Fish",
+          "Cheese"
         ],
         "correctAnswer": "Coffee",
         "contextSentence": "She loves hot coffee.",
         "contextSentencePt": "Ela adora café quente.",
         "explanation": "Exemplo: \"She loves hot coffee.\" — Ela adora café quente.",
         "phoneticHint": "\"có-fi\" • /ˈkɔː.fi/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e9",
+        "id": "w0-p7-e2",
         "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Juice",
         "visualEmoji": "🧃",
         "visualOptions": [
           {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo",
-            "simplePronunciation": "ég",
-            "phonetic": "/eɡ/",
-            "exampleEn": "I like fried eggs in the morning.",
-            "examplePt": "Eu gosto de ovos fritos de manhã."
-          },
-          {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite",
-            "simplePronunciation": "mílk",
-            "phonetic": "/mɪlk/",
-            "exampleEn": "Drink a glass of warm milk.",
-            "examplePt": "Beba um copo de leite morno."
+            "text": "Salad",
+            "emoji": "🥗",
+            "label": "Salad",
+            "translationPt": "Salada",
+            "simplePronunciation": "sé-lad",
+            "phonetic": "/ˈsæl.əd/",
+            "exampleEn": "I made a fresh salad.",
+            "examplePt": "Eu fiz uma salada fresca."
           },
           {
             "text": "Juice",
@@ -3765,36 +2863,76 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Suco de laranja fresco é delicioso."
           },
           {
-            "text": "Meat",
-            "emoji": "🥩",
-            "label": "Meat",
-            "translationPt": "Carne",
-            "simplePronunciation": "mít",
-            "phonetic": "/miːt/",
-            "exampleEn": "He cooked the meat on the grill.",
-            "examplePt": "Ele assou a carne na grelha."
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café",
+            "simplePronunciation": "có-fi",
+            "phonetic": "/ˈkɔː.fi/",
+            "exampleEn": "She loves hot coffee.",
+            "examplePt": "Ela adora café quente."
+          },
+          {
+            "text": "Soup",
+            "emoji": "🍲",
+            "label": "Soup",
+            "translationPt": "Sopa",
+            "simplePronunciation": "súp",
+            "phonetic": "/suːp/",
+            "exampleEn": "Hot soup is great at night.",
+            "examplePt": "Sopa quente é ótima à noite."
           }
         ],
         "options": [
-          "Egg",
-          "Milk",
+          "Salad",
           "Juice",
-          "Meat"
+          "Coffee",
+          "Soup"
         ],
         "correctAnswer": "Juice",
         "contextSentence": "Fresh orange juice is delicious.",
         "contextSentencePt": "Suco de laranja fresco é delicioso.",
         "explanation": "Exemplo: \"Fresh orange juice is delicious.\" — Suco de laranja fresco é delicioso.",
         "phoneticHint": "\"djús\" • /dʒuːs/",
-        "skillCategory": "vocabulary"
+        "skillCategory": "listening"
       },
       {
-        "id": "w0-p6-e10",
+        "id": "w0-p7-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Apple",
         "visualEmoji": "🍎",
         "visualOptions": [
+          {
+            "text": "Juice",
+            "emoji": "🧃",
+            "label": "Juice",
+            "translationPt": "Suco",
+            "simplePronunciation": "djús",
+            "phonetic": "/dʒuːs/",
+            "exampleEn": "Fresh orange juice is delicious.",
+            "examplePt": "Suco de laranja fresco é delicioso."
+          },
+          {
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana",
+            "simplePronunciation": "ba-né-na",
+            "phonetic": "/bəˈnæn.ə/",
+            "exampleEn": "Peel the yellow banana.",
+            "examplePt": "Descasque a banana amarela."
+          },
+          {
+            "text": "Fish",
+            "emoji": "🐟",
+            "label": "Fish",
+            "translationPt": "Peixe",
+            "simplePronunciation": "fíx",
+            "phonetic": "/fɪʃ/",
+            "exampleEn": "Grilled fish is very healthy.",
+            "examplePt": "Peixe grelhado é muito saudável."
+          },
           {
             "text": "Apple",
             "emoji": "🍎",
@@ -3804,43 +2942,13 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈæp.əl/",
             "exampleEn": "This red apple is sweet.",
             "examplePt": "Esta maçã vermelha é doce."
-          },
-          {
-            "text": "Bread",
-            "emoji": "🍞",
-            "label": "Bread",
-            "translationPt": "Pão",
-            "simplePronunciation": "bréd",
-            "phonetic": "/bred/",
-            "exampleEn": "I eat warm bread for breakfast.",
-            "examplePt": "Eu como pão quentinho no café da manhã."
-          },
-          {
-            "text": "Beans",
-            "emoji": "🫘",
-            "label": "Beans",
-            "translationPt": "Feijão",
-            "simplePronunciation": "bínz",
-            "phonetic": "/biːnz/",
-            "exampleEn": "Rice and beans taste great.",
-            "examplePt": "Arroz e feijão são deliciosos."
-          },
-          {
-            "text": "Rice",
-            "emoji": "🍚",
-            "label": "Rice",
-            "translationPt": "Arroz",
-            "simplePronunciation": "ráis",
-            "phonetic": "/raɪs/",
-            "exampleEn": "We eat white rice every day.",
-            "examplePt": "Nós comemos arroz branco todos os dias."
           }
         ],
         "options": [
-          "Apple",
-          "Bread",
-          "Beans",
-          "Rice"
+          "Juice",
+          "Banana",
+          "Fish",
+          "Apple"
         ],
         "correctAnswer": "Apple",
         "contextSentence": "This red apple is sweet.",
@@ -3850,21 +2958,21 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e11",
+        "id": "w0-p7-e4",
         "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Banana",
         "visualEmoji": "🍌",
         "visualOptions": [
           {
-            "text": "Meat",
-            "emoji": "🥩",
-            "label": "Meat",
-            "translationPt": "Carne",
-            "simplePronunciation": "mít",
-            "phonetic": "/miːt/",
-            "exampleEn": "He cooked the meat on the grill.",
-            "examplePt": "Ele assou a carne na grelha."
+            "text": "Soup",
+            "emoji": "🍲",
+            "label": "Soup",
+            "translationPt": "Sopa",
+            "simplePronunciation": "súp",
+            "phonetic": "/suːp/",
+            "exampleEn": "Hot soup is great at night.",
+            "examplePt": "Sopa quente é ótima à noite."
           },
           {
             "text": "Coffee",
@@ -3887,46 +2995,36 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Descasque a banana amarela."
           },
           {
-            "text": "Chicken",
-            "emoji": "🍗",
-            "label": "Chicken",
-            "translationPt": "Frango",
-            "simplePronunciation": "tchí-ken",
-            "phonetic": "/ˈtʃɪk.ɪn/",
-            "exampleEn": "We had roast chicken for lunch.",
-            "examplePt": "Comemos frango assado no almoço."
+            "text": "Salad",
+            "emoji": "🥗",
+            "label": "Salad",
+            "translationPt": "Salada",
+            "simplePronunciation": "sé-lad",
+            "phonetic": "/ˈsæl.əd/",
+            "exampleEn": "I made a fresh salad.",
+            "examplePt": "Eu fiz uma salada fresca."
           }
         ],
         "options": [
-          "Meat",
+          "Soup",
           "Coffee",
           "Banana",
-          "Chicken"
+          "Salad"
         ],
         "correctAnswer": "Banana",
         "contextSentence": "Peel the yellow banana.",
         "contextSentencePt": "Descasque a banana amarela.",
         "explanation": "Exemplo: \"Peel the yellow banana.\" — Descasque a banana amarela.",
         "phoneticHint": "\"ba-né-na\" • /bəˈnæn.ə/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p6-e12",
+        "id": "w0-p7-e5",
         "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Cheese",
         "visualEmoji": "🧀",
         "visualOptions": [
-          {
-            "text": "Egg",
-            "emoji": "🥚",
-            "label": "Egg",
-            "translationPt": "Ovo",
-            "simplePronunciation": "ég",
-            "phonetic": "/eɡ/",
-            "exampleEn": "I like fried eggs in the morning.",
-            "examplePt": "Eu gosto de ovos fritos de manhã."
-          },
           {
             "text": "Cheese",
             "emoji": "🧀",
@@ -3948,393 +3046,65 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Suco de laranja fresco é delicioso."
           },
           {
-            "text": "Milk",
-            "emoji": "🥛",
-            "label": "Milk",
-            "translationPt": "Leite",
-            "simplePronunciation": "mílk",
-            "phonetic": "/mɪlk/",
-            "exampleEn": "Drink a glass of warm milk.",
-            "examplePt": "Beba um copo de leite morno."
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã",
+            "simplePronunciation": "é-pol",
+            "phonetic": "/ˈæp.əl/",
+            "exampleEn": "This red apple is sweet.",
+            "examplePt": "Esta maçã vermelha é doce."
+          },
+          {
+            "text": "Fish",
+            "emoji": "🐟",
+            "label": "Fish",
+            "translationPt": "Peixe",
+            "simplePronunciation": "fíx",
+            "phonetic": "/fɪʃ/",
+            "exampleEn": "Grilled fish is very healthy.",
+            "examplePt": "Peixe grelhado é muito saudável."
           }
         ],
         "options": [
-          "Egg",
           "Cheese",
           "Juice",
-          "Milk"
+          "Apple",
+          "Fish"
         ],
         "correctAnswer": "Cheese",
         "contextSentence": "Put cheese on the bread.",
         "contextSentencePt": "Coloque queijo no pão.",
         "explanation": "Exemplo: \"Put cheese on the bread.\" — Coloque queijo no pão.",
         "phoneticHint": "\"tchíz\" • /tʃiːz/",
-        "skillCategory": "vocabulary"
-      }
-    ]
-  },
-  {
-    "id": "w0-p7",
-    "worldId": 0,
-    "phaseNumber": 7,
-    "themeId": "food",
-    "themeTitle": "Comida",
-    "frequencyLevel": "Módulo 2 • Comuns",
-    "title": "Comida • Módulo 2: Palavras Comuns",
-    "subtitle": "Tema 2 (Nível 2/4) • 12 comidas muito comuns nas refeições",
-    "pedagogicalObjective": "Aprender pratos e alimentos muito frequentes: Butter, Fish, Soup, Salad, Pasta, Pizza, Cake, Orange, Tomato, Potato, Sugar e Salt.",
-    "type": "lesson",
-    "icon": "apple",
-    "cefrLevel": "A1",
-    "theorySummary": [
-      "No Módulo 2 de Comida aprendemos alimentos comuns: Butter (\"bâ-ter\" = Manteiga), Fish (\"fíx\" = Peixe), Soup (\"súp\" = Sopa), Salad (\"sé-lad\" = Salada), Pasta (\"pás-ta\" = Macarrão) e Pizza (\"pít-sa\" = Pizza).",
-      "Também vemos Cake (\"kêik\" = Bolo), Orange (\"ó-rendj\" = Laranja), Tomato (\"to-mêi-tou\" = Tomate), Potato (\"po-têi-tou\" = Batata), Sugar (\"xú-gar\" = Açúcar) e Salt (\"sólt\" = Sal).",
-      "Logo após este módulo, você fará o seu 2º Módulo Exclusivo de Pronomes (Possessivos & Demonstrativos)!"
-    ],
-    "xpReward": 50,
-    "gemsReward": 20,
-    "exercises": [
-      {
-        "id": "w0-p7-e1",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Butter",
-        "visualEmoji": "🧈",
-        "visualOptions": [
-          {
-            "text": "Butter",
-            "emoji": "🧈",
-            "label": "Butter",
-            "translationPt": "Manteiga",
-            "simplePronunciation": "bâ-ter",
-            "phonetic": "/ˈbʌt.ər/",
-            "exampleEn": "Spread butter on the toast.",
-            "examplePt": "Passe manteiga na torrada."
-          },
-          {
-            "text": "Orange",
-            "emoji": "🍊",
-            "label": "Orange",
-            "translationPt": "Laranja",
-            "simplePronunciation": "ó-rendj",
-            "phonetic": "/ˈɔːr.ɪndʒ/",
-            "exampleEn": "This orange is very juicy.",
-            "examplePt": "Esta laranja tem muito suco."
-          },
-          {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo",
-            "simplePronunciation": "kêik",
-            "phonetic": "/keɪk/",
-            "exampleEn": "She baked a chocolate cake.",
-            "examplePt": "Ela assou um bolo de chocolate."
-          },
-          {
-            "text": "Salad",
-            "emoji": "🥗",
-            "label": "Salad",
-            "translationPt": "Salada",
-            "simplePronunciation": "sé-lad",
-            "phonetic": "/ˈsæl.əd/",
-            "exampleEn": "I made a fresh green salad.",
-            "examplePt": "Eu fiz uma salada verde fresca."
-          }
-        ],
-        "options": [
-          "Butter",
-          "Orange",
-          "Cake",
-          "Salad"
-        ],
-        "correctAnswer": "Butter",
-        "contextSentence": "Spread butter on the toast.",
-        "contextSentencePt": "Passe manteiga na torrada.",
-        "explanation": "Exemplo: \"Spread butter on the toast.\" — Passe manteiga na torrada.",
-        "phoneticHint": "\"bâ-ter\" • /ˈbʌt.ər/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p7-e2",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Fish",
-        "visualEmoji": "🐟",
-        "visualOptions": [
-          {
-            "text": "Salt",
-            "emoji": "🧂",
-            "label": "Salt",
-            "translationPt": "Sal",
-            "simplePronunciation": "sólt",
-            "phonetic": "/sɔːlt/",
-            "exampleEn": "Add a little salt to the food.",
-            "examplePt": "Coloque um pouco de sal na comida."
-          },
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate",
-            "simplePronunciation": "to-mêi-tou",
-            "phonetic": "/təˈmeɪ.toʊ/",
-            "exampleEn": "Slice the red tomato.",
-            "examplePt": "Corte o tomate vermelho em fatias."
-          },
-          {
-            "text": "Sugar",
-            "emoji": "🥄",
-            "label": "Sugar",
-            "translationPt": "Açúcar",
-            "simplePronunciation": "xú-gar",
-            "phonetic": "/ˈʃʊɡ.ər/",
-            "exampleEn": "Do you want sugar in your coffee?",
-            "examplePt": "Você quer açúcar no seu café?"
-          },
-          {
-            "text": "Fish",
-            "emoji": "🐟",
-            "label": "Fish",
-            "translationPt": "Peixe",
-            "simplePronunciation": "fíx",
-            "phonetic": "/fɪʃ/",
-            "exampleEn": "Grilled fish is very healthy.",
-            "examplePt": "Peixe grelhado é muito saudável."
-          }
-        ],
-        "options": [
-          "Salt",
-          "Tomato",
-          "Sugar",
-          "Fish"
-        ],
-        "correctAnswer": "Fish",
-        "contextSentence": "Grilled fish is very healthy.",
-        "contextSentencePt": "Peixe grelhado é muito saudável.",
-        "explanation": "Exemplo: \"Grilled fish is very healthy.\" — Peixe grelhado é muito saudável.",
-        "phoneticHint": "\"fíx\" • /fɪʃ/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p7-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Soup",
-        "visualEmoji": "🍲",
-        "visualOptions": [
-          {
-            "text": "Butter",
-            "emoji": "🧈",
-            "label": "Butter",
-            "translationPt": "Manteiga",
-            "simplePronunciation": "bâ-ter",
-            "phonetic": "/ˈbʌt.ər/",
-            "exampleEn": "Spread butter on the toast.",
-            "examplePt": "Passe manteiga na torrada."
-          },
-          {
-            "text": "Fish",
-            "emoji": "🐟",
-            "label": "Fish",
-            "translationPt": "Peixe",
-            "simplePronunciation": "fíx",
-            "phonetic": "/fɪʃ/",
-            "exampleEn": "Grilled fish is very healthy.",
-            "examplePt": "Peixe grelhado é muito saudável."
-          },
-          {
-            "text": "Soup",
-            "emoji": "🍲",
-            "label": "Soup",
-            "translationPt": "Sopa",
-            "simplePronunciation": "súp",
-            "phonetic": "/suːp/",
-            "exampleEn": "Hot soup is great on cold nights.",
-            "examplePt": "Sopa quente é ótima em noites frias."
-          },
-          {
-            "text": "Pasta",
-            "emoji": "🍝",
-            "label": "Pasta",
-            "translationPt": "Macarrão",
-            "simplePronunciation": "pás-ta",
-            "phonetic": "/ˈpɑː.stə/",
-            "exampleEn": "We love pasta with tomato sauce.",
-            "examplePt": "Adoramos macarrão com molho de tomate."
-          }
-        ],
-        "options": [
-          "Butter",
-          "Fish",
-          "Soup",
-          "Pasta"
-        ],
-        "correctAnswer": "Soup",
-        "contextSentence": "Hot soup is great on cold nights.",
-        "contextSentencePt": "Sopa quente é ótima em noites frias.",
-        "explanation": "Exemplo: \"Hot soup is great on cold nights.\" — Sopa quente é ótima em noites frias.",
-        "phoneticHint": "\"súp\" • /suːp/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p7-e4",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Salad",
-        "visualEmoji": "🥗",
-        "visualOptions": [
-          {
-            "text": "Salad",
-            "emoji": "🥗",
-            "label": "Salad",
-            "translationPt": "Salada",
-            "simplePronunciation": "sé-lad",
-            "phonetic": "/ˈsæl.əd/",
-            "exampleEn": "I made a fresh green salad.",
-            "examplePt": "Eu fiz uma salada verde fresca."
-          },
-          {
-            "text": "Potato",
-            "emoji": "🥔",
-            "label": "Potato",
-            "translationPt": "Batata",
-            "simplePronunciation": "po-têi-tou",
-            "phonetic": "/pəˈteɪ.toʊ/",
-            "exampleEn": "Baked potatoes are delicious.",
-            "examplePt": "Batatas assadas são deliciosas."
-          },
-          {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo",
-            "simplePronunciation": "kêik",
-            "phonetic": "/keɪk/",
-            "exampleEn": "She baked a chocolate cake.",
-            "examplePt": "Ela assou um bolo de chocolate."
-          },
-          {
-            "text": "Orange",
-            "emoji": "🍊",
-            "label": "Orange",
-            "translationPt": "Laranja",
-            "simplePronunciation": "ó-rendj",
-            "phonetic": "/ˈɔːr.ɪndʒ/",
-            "exampleEn": "This orange is very juicy.",
-            "examplePt": "Esta laranja tem muito suco."
-          }
-        ],
-        "options": [
-          "Salad",
-          "Potato",
-          "Cake",
-          "Orange"
-        ],
-        "correctAnswer": "Salad",
-        "contextSentence": "I made a fresh green salad.",
-        "contextSentencePt": "Eu fiz uma salada verde fresca.",
-        "explanation": "Exemplo: \"I made a fresh green salad.\" — Eu fiz uma salada verde fresca.",
-        "phoneticHint": "\"sé-lad\" • /ˈsæl.əd/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p7-e5",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Pasta",
-        "visualEmoji": "🍝",
-        "visualOptions": [
-          {
-            "text": "Salt",
-            "emoji": "🧂",
-            "label": "Salt",
-            "translationPt": "Sal",
-            "simplePronunciation": "sólt",
-            "phonetic": "/sɔːlt/",
-            "exampleEn": "Add a little salt to the food.",
-            "examplePt": "Coloque um pouco de sal na comida."
-          },
-          {
-            "text": "Pasta",
-            "emoji": "🍝",
-            "label": "Pasta",
-            "translationPt": "Macarrão",
-            "simplePronunciation": "pás-ta",
-            "phonetic": "/ˈpɑː.stə/",
-            "exampleEn": "We love pasta with tomato sauce.",
-            "examplePt": "Adoramos macarrão com molho de tomate."
-          },
-          {
-            "text": "Sugar",
-            "emoji": "🥄",
-            "label": "Sugar",
-            "translationPt": "Açúcar",
-            "simplePronunciation": "xú-gar",
-            "phonetic": "/ˈʃʊɡ.ər/",
-            "exampleEn": "Do you want sugar in your coffee?",
-            "examplePt": "Você quer açúcar no seu café?"
-          },
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate",
-            "simplePronunciation": "to-mêi-tou",
-            "phonetic": "/təˈmeɪ.toʊ/",
-            "exampleEn": "Slice the red tomato.",
-            "examplePt": "Corte o tomate vermelho em fatias."
-          }
-        ],
-        "options": [
-          "Salt",
-          "Pasta",
-          "Sugar",
-          "Tomato"
-        ],
-        "correctAnswer": "Pasta",
-        "contextSentence": "We love pasta with tomato sauce.",
-        "contextSentencePt": "Adoramos macarrão com molho de tomate.",
-        "explanation": "Exemplo: \"We love pasta with tomato sauce.\" — Adoramos macarrão com molho de tomate.",
-        "phoneticHint": "\"pás-ta\" • /ˈpɑː.stə/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p7-e6",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Pizza",
-        "visualEmoji": "🍕",
+        "audioPhrase": "Fish",
+        "visualEmoji": "🐟",
         "visualOptions": [
           {
-            "text": "Butter",
-            "emoji": "🧈",
-            "label": "Butter",
-            "translationPt": "Manteiga",
-            "simplePronunciation": "bâ-ter",
-            "phonetic": "/ˈbʌt.ər/",
-            "exampleEn": "Spread butter on the toast.",
-            "examplePt": "Passe manteiga na torrada."
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana",
+            "simplePronunciation": "ba-né-na",
+            "phonetic": "/bəˈnæn.ə/",
+            "exampleEn": "Peel the yellow banana.",
+            "examplePt": "Descasque a banana amarela."
           },
           {
-            "text": "Pizza",
-            "emoji": "🍕",
-            "label": "Pizza",
-            "translationPt": "Pizza",
-            "simplePronunciation": "pít-sa",
-            "phonetic": "/ˈpiːt.sə/",
-            "exampleEn": "Let us share a cheese pizza.",
-            "examplePt": "Vamos dividir uma pizza de queijo."
-          },
-          {
-            "text": "Soup",
-            "emoji": "🍲",
-            "label": "Soup",
-            "translationPt": "Sopa",
-            "simplePronunciation": "súp",
-            "phonetic": "/suːp/",
-            "exampleEn": "Hot soup is great on cold nights.",
-            "examplePt": "Sopa quente é ótima em noites frias."
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café",
+            "simplePronunciation": "có-fi",
+            "phonetic": "/ˈkɔː.fi/",
+            "exampleEn": "She loves hot coffee.",
+            "examplePt": "Ela adora café quente."
           },
           {
             "text": "Fish",
@@ -4345,37 +3115,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/fɪʃ/",
             "exampleEn": "Grilled fish is very healthy.",
             "examplePt": "Peixe grelhado é muito saudável."
+          },
+          {
+            "text": "Salad",
+            "emoji": "🥗",
+            "label": "Salad",
+            "translationPt": "Salada",
+            "simplePronunciation": "sé-lad",
+            "phonetic": "/ˈsæl.əd/",
+            "exampleEn": "I made a fresh salad.",
+            "examplePt": "Eu fiz uma salada fresca."
           }
         ],
         "options": [
-          "Butter",
-          "Pizza",
-          "Soup",
-          "Fish"
+          "Banana",
+          "Coffee",
+          "Fish",
+          "Salad"
         ],
-        "correctAnswer": "Pizza",
-        "contextSentence": "Let us share a cheese pizza.",
-        "contextSentencePt": "Vamos dividir uma pizza de queijo.",
-        "explanation": "Exemplo: \"Let us share a cheese pizza.\" — Vamos dividir uma pizza de queijo.",
-        "phoneticHint": "\"pít-sa\" • /ˈpiːt.sə/",
+        "correctAnswer": "Fish",
+        "contextSentence": "Grilled fish is very healthy.",
+        "contextSentencePt": "Peixe grelhado é muito saudável.",
+        "explanation": "Exemplo: \"Grilled fish is very healthy.\" — Peixe grelhado é muito saudável.",
+        "phoneticHint": "\"fíx\" • /fɪʃ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e7",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Cake",
-        "visualEmoji": "🍰",
+        "audioPhrase": "Soup",
+        "visualEmoji": "🍲",
         "visualOptions": [
           {
-            "text": "Salad",
-            "emoji": "🥗",
-            "label": "Salad",
-            "translationPt": "Salada",
-            "simplePronunciation": "sé-lad",
-            "phonetic": "/ˈsæl.əd/",
-            "exampleEn": "I made a fresh green salad.",
-            "examplePt": "Eu fiz uma salada verde fresca."
+            "text": "Juice",
+            "emoji": "🧃",
+            "label": "Juice",
+            "translationPt": "Suco",
+            "simplePronunciation": "djús",
+            "phonetic": "/dʒuːs/",
+            "exampleEn": "Fresh orange juice is delicious.",
+            "examplePt": "Suco de laranja fresco é delicioso."
           },
           {
             "text": "Soup",
@@ -4384,172 +3164,70 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sopa",
             "simplePronunciation": "súp",
             "phonetic": "/suːp/",
-            "exampleEn": "Hot soup is great on cold nights.",
-            "examplePt": "Sopa quente é ótima em noites frias."
+            "exampleEn": "Hot soup is great at night.",
+            "examplePt": "Sopa quente é ótima à noite."
           },
           {
-            "text": "Pizza",
-            "emoji": "🍕",
-            "label": "Pizza",
-            "translationPt": "Pizza",
-            "simplePronunciation": "pít-sa",
-            "phonetic": "/ˈpiːt.sə/",
-            "exampleEn": "Let us share a cheese pizza.",
-            "examplePt": "Vamos dividir uma pizza de queijo."
+            "text": "Apple",
+            "emoji": "🍎",
+            "label": "Apple",
+            "translationPt": "Maçã",
+            "simplePronunciation": "é-pol",
+            "phonetic": "/ˈæp.əl/",
+            "exampleEn": "This red apple is sweet.",
+            "examplePt": "Esta maçã vermelha é doce."
           },
           {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo",
-            "simplePronunciation": "kêik",
-            "phonetic": "/keɪk/",
-            "exampleEn": "She baked a chocolate cake.",
-            "examplePt": "Ela assou um bolo de chocolate."
+            "text": "Cheese",
+            "emoji": "🧀",
+            "label": "Cheese",
+            "translationPt": "Queijo",
+            "simplePronunciation": "tchíz",
+            "phonetic": "/tʃiːz/",
+            "exampleEn": "Put cheese on the bread.",
+            "examplePt": "Coloque queijo no pão."
           }
         ],
         "options": [
-          "Salad",
+          "Juice",
           "Soup",
-          "Pizza",
-          "Cake"
+          "Apple",
+          "Cheese"
         ],
-        "correctAnswer": "Cake",
-        "contextSentence": "She baked a chocolate cake.",
-        "contextSentencePt": "Ela assou um bolo de chocolate.",
-        "explanation": "Exemplo: \"She baked a chocolate cake.\" — Ela assou um bolo de chocolate.",
-        "phoneticHint": "\"kêik\" • /keɪk/",
+        "correctAnswer": "Soup",
+        "contextSentence": "Hot soup is great at night.",
+        "contextSentencePt": "Sopa quente é ótima à noite.",
+        "explanation": "Exemplo: \"Hot soup is great at night.\" — Sopa quente é ótima à noite.",
+        "phoneticHint": "\"súp\" • /suːp/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p7-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Orange",
-        "visualEmoji": "🍊",
+        "audioPhrase": "Salad",
+        "visualEmoji": "🥗",
         "visualOptions": [
           {
-            "text": "Salt",
-            "emoji": "🧂",
-            "label": "Salt",
-            "translationPt": "Sal",
-            "simplePronunciation": "sólt",
-            "phonetic": "/sɔːlt/",
-            "exampleEn": "Add a little salt to the food.",
-            "examplePt": "Coloque um pouco de sal na comida."
+            "text": "Coffee",
+            "emoji": "☕",
+            "label": "Coffee",
+            "translationPt": "Café",
+            "simplePronunciation": "có-fi",
+            "phonetic": "/ˈkɔː.fi/",
+            "exampleEn": "She loves hot coffee.",
+            "examplePt": "Ela adora café quente."
           },
           {
-            "text": "Pasta",
-            "emoji": "🍝",
-            "label": "Pasta",
-            "translationPt": "Macarrão",
-            "simplePronunciation": "pás-ta",
-            "phonetic": "/ˈpɑː.stə/",
-            "exampleEn": "We love pasta with tomato sauce.",
-            "examplePt": "Adoramos macarrão com molho de tomate."
+            "text": "Banana",
+            "emoji": "🍌",
+            "label": "Banana",
+            "translationPt": "Banana",
+            "simplePronunciation": "ba-né-na",
+            "phonetic": "/bəˈnæn.ə/",
+            "exampleEn": "Peel the yellow banana.",
+            "examplePt": "Descasque a banana amarela."
           },
-          {
-            "text": "Orange",
-            "emoji": "🍊",
-            "label": "Orange",
-            "translationPt": "Laranja",
-            "simplePronunciation": "ó-rendj",
-            "phonetic": "/ˈɔːr.ɪndʒ/",
-            "exampleEn": "This orange is very juicy.",
-            "examplePt": "Esta laranja tem muito suco."
-          },
-          {
-            "text": "Sugar",
-            "emoji": "🥄",
-            "label": "Sugar",
-            "translationPt": "Açúcar",
-            "simplePronunciation": "xú-gar",
-            "phonetic": "/ˈʃʊɡ.ər/",
-            "exampleEn": "Do you want sugar in your coffee?",
-            "examplePt": "Você quer açúcar no seu café?"
-          }
-        ],
-        "options": [
-          "Salt",
-          "Pasta",
-          "Orange",
-          "Sugar"
-        ],
-        "correctAnswer": "Orange",
-        "contextSentence": "This orange is very juicy.",
-        "contextSentencePt": "Esta laranja tem muito suco.",
-        "explanation": "Exemplo: \"This orange is very juicy.\" — Esta laranja tem muito suco.",
-        "phoneticHint": "\"ó-rendj\" • /ˈɔːr.ɪndʒ/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p7-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Tomato",
-        "visualEmoji": "🍅",
-        "visualOptions": [
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate",
-            "simplePronunciation": "to-mêi-tou",
-            "phonetic": "/təˈmeɪ.toʊ/",
-            "exampleEn": "Slice the red tomato.",
-            "examplePt": "Corte o tomate vermelho em fatias."
-          },
-          {
-            "text": "Potato",
-            "emoji": "🥔",
-            "label": "Potato",
-            "translationPt": "Batata",
-            "simplePronunciation": "po-têi-tou",
-            "phonetic": "/pəˈteɪ.toʊ/",
-            "exampleEn": "Baked potatoes are delicious.",
-            "examplePt": "Batatas assadas são deliciosas."
-          },
-          {
-            "text": "Butter",
-            "emoji": "🧈",
-            "label": "Butter",
-            "translationPt": "Manteiga",
-            "simplePronunciation": "bâ-ter",
-            "phonetic": "/ˈbʌt.ər/",
-            "exampleEn": "Spread butter on the toast.",
-            "examplePt": "Passe manteiga na torrada."
-          },
-          {
-            "text": "Pizza",
-            "emoji": "🍕",
-            "label": "Pizza",
-            "translationPt": "Pizza",
-            "simplePronunciation": "pít-sa",
-            "phonetic": "/ˈpiːt.sə/",
-            "exampleEn": "Let us share a cheese pizza.",
-            "examplePt": "Vamos dividir uma pizza de queijo."
-          }
-        ],
-        "options": [
-          "Tomato",
-          "Potato",
-          "Butter",
-          "Pizza"
-        ],
-        "correctAnswer": "Tomato",
-        "contextSentence": "Slice the red tomato.",
-        "contextSentencePt": "Corte o tomate vermelho em fatias.",
-        "explanation": "Exemplo: \"Slice the red tomato.\" — Corte o tomate vermelho em fatias.",
-        "phoneticHint": "\"to-mêi-tou\" • /təˈmeɪ.toʊ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p7-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Potato",
-        "visualEmoji": "🥔",
-        "visualOptions": [
           {
             "text": "Fish",
             "emoji": "🐟",
@@ -4567,164 +3245,22 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Salada",
             "simplePronunciation": "sé-lad",
             "phonetic": "/ˈsæl.əd/",
-            "exampleEn": "I made a fresh green salad.",
-            "examplePt": "Eu fiz uma salada verde fresca."
-          },
-          {
-            "text": "Potato",
-            "emoji": "🥔",
-            "label": "Potato",
-            "translationPt": "Batata",
-            "simplePronunciation": "po-têi-tou",
-            "phonetic": "/pəˈteɪ.toʊ/",
-            "exampleEn": "Baked potatoes are delicious.",
-            "examplePt": "Batatas assadas são deliciosas."
-          },
-          {
-            "text": "Soup",
-            "emoji": "🍲",
-            "label": "Soup",
-            "translationPt": "Sopa",
-            "simplePronunciation": "súp",
-            "phonetic": "/suːp/",
-            "exampleEn": "Hot soup is great on cold nights.",
-            "examplePt": "Sopa quente é ótima em noites frias."
+            "exampleEn": "I made a fresh salad.",
+            "examplePt": "Eu fiz uma salada fresca."
           }
         ],
         "options": [
+          "Coffee",
+          "Banana",
           "Fish",
-          "Salad",
-          "Potato",
-          "Soup"
+          "Salad"
         ],
-        "correctAnswer": "Potato",
-        "contextSentence": "Baked potatoes are delicious.",
-        "contextSentencePt": "Batatas assadas são deliciosas.",
-        "explanation": "Exemplo: \"Baked potatoes are delicious.\" — Batatas assadas são deliciosas.",
-        "phoneticHint": "\"po-têi-tou\" • /pəˈteɪ.toʊ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p7-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Sugar",
-        "visualEmoji": "🥄",
-        "visualOptions": [
-          {
-            "text": "Pasta",
-            "emoji": "🍝",
-            "label": "Pasta",
-            "translationPt": "Macarrão",
-            "simplePronunciation": "pás-ta",
-            "phonetic": "/ˈpɑː.stə/",
-            "exampleEn": "We love pasta with tomato sauce.",
-            "examplePt": "Adoramos macarrão com molho de tomate."
-          },
-          {
-            "text": "Sugar",
-            "emoji": "🥄",
-            "label": "Sugar",
-            "translationPt": "Açúcar",
-            "simplePronunciation": "xú-gar",
-            "phonetic": "/ˈʃʊɡ.ər/",
-            "exampleEn": "Do you want sugar in your coffee?",
-            "examplePt": "Você quer açúcar no seu café?"
-          },
-          {
-            "text": "Cake",
-            "emoji": "🍰",
-            "label": "Cake",
-            "translationPt": "Bolo",
-            "simplePronunciation": "kêik",
-            "phonetic": "/keɪk/",
-            "exampleEn": "She baked a chocolate cake.",
-            "examplePt": "Ela assou um bolo de chocolate."
-          },
-          {
-            "text": "Orange",
-            "emoji": "🍊",
-            "label": "Orange",
-            "translationPt": "Laranja",
-            "simplePronunciation": "ó-rendj",
-            "phonetic": "/ˈɔːr.ɪndʒ/",
-            "exampleEn": "This orange is very juicy.",
-            "examplePt": "Esta laranja tem muito suco."
-          }
-        ],
-        "options": [
-          "Pasta",
-          "Sugar",
-          "Cake",
-          "Orange"
-        ],
-        "correctAnswer": "Sugar",
-        "contextSentence": "Do you want sugar in your coffee?",
-        "contextSentencePt": "Você quer açúcar no seu café?",
-        "explanation": "Exemplo: \"Do you want sugar in your coffee?\" — Você quer açúcar no seu café?",
-        "phoneticHint": "\"xú-gar\" • /ˈʃʊɡ.ər/",
+        "correctAnswer": "Salad",
+        "contextSentence": "I made a fresh salad.",
+        "contextSentencePt": "Eu fiz uma salada fresca.",
+        "explanation": "Exemplo: \"I made a fresh salad.\" — Eu fiz uma salada fresca.",
+        "phoneticHint": "\"sé-lad\" • /ˈsæl.əd/",
         "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p7-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Salt",
-        "visualEmoji": "🧂",
-        "visualOptions": [
-          {
-            "text": "Tomato",
-            "emoji": "🍅",
-            "label": "Tomato",
-            "translationPt": "Tomate",
-            "simplePronunciation": "to-mêi-tou",
-            "phonetic": "/təˈmeɪ.toʊ/",
-            "exampleEn": "Slice the red tomato.",
-            "examplePt": "Corte o tomate vermelho em fatias."
-          },
-          {
-            "text": "Pizza",
-            "emoji": "🍕",
-            "label": "Pizza",
-            "translationPt": "Pizza",
-            "simplePronunciation": "pít-sa",
-            "phonetic": "/ˈpiːt.sə/",
-            "exampleEn": "Let us share a cheese pizza.",
-            "examplePt": "Vamos dividir uma pizza de queijo."
-          },
-          {
-            "text": "Butter",
-            "emoji": "🧈",
-            "label": "Butter",
-            "translationPt": "Manteiga",
-            "simplePronunciation": "bâ-ter",
-            "phonetic": "/ˈbʌt.ər/",
-            "exampleEn": "Spread butter on the toast.",
-            "examplePt": "Passe manteiga na torrada."
-          },
-          {
-            "text": "Salt",
-            "emoji": "🧂",
-            "label": "Salt",
-            "translationPt": "Sal",
-            "simplePronunciation": "sólt",
-            "phonetic": "/sɔːlt/",
-            "exampleEn": "Add a little salt to the food.",
-            "examplePt": "Coloque um pouco de sal na comida."
-          }
-        ],
-        "options": [
-          "Tomato",
-          "Pizza",
-          "Butter",
-          "Salt"
-        ],
-        "correctAnswer": "Salt",
-        "contextSentence": "Add a little salt to the food.",
-        "contextSentencePt": "Coloque um pouco de sal na comida.",
-        "explanation": "Exemplo: \"Add a little salt to the food.\" — Coloque um pouco de sal na comida.",
-        "phoneticHint": "\"sólt\" • /sɔːlt/",
-        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -4732,16 +3268,19 @@ export const WORLD_0_PHASES: Phase[] = [
     "id": "w0-p8",
     "worldId": 0,
     "phaseNumber": 8,
+    "themeId": "pronouns",
+    "themeTitle": "Lição de Pronomes",
+    "frequencyLevel": "1 a cada 3 Módulos de Vocabulário",
     "title": "Lição de Pronomes II • Possessivos & Demonstrativos",
-    "subtitle": "Módulo de Pronomes 2/6 (Após 6 de Vocabulário) • Pares Associativos + Voz da Professora",
+    "subtitle": "Módulo de Pronomes 2/8 (Após 6 de Vocabulário) • Explicação Didática + Pares Associativos",
     "pedagogicalObjective": "Dominar os Pronomes Possessivos (My, Your, His, Her, Our, Their, Mine, Yours) e os Pronomes Demonstrativos (This, That, These, Those).",
     "type": "chest",
     "icon": "star",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Bem-vindo à 2ª Lição Exclusiva de Pronomes (após mais 3 módulos de vocabulário)!",
-      "3º Passo: Aprendemos os Pronomes Possessivos (My, Your, His, Her, Our, Their, Mine, Yours), que mostram de quem é cada objeto.",
-      "4º Passo: Aprendemos os Pronomes Demonstrativos (This, That, These, Those), que mostram se o objeto está pertinho da mão ou lá longe!"
+      "2ª Lição Exclusiva de Pronomes (após 6 módulos de vocabulário).",
+      "3ª Parte — Pronomes Possessivos: indicam a quem pertence um objeto, pessoa ou lugar (My, Your, His, Her, Our, Their, Mine, Yours).",
+      "4ª Parte — Pronomes Demonstrativos: indicam se algo está perto ou longe de quem fala, no singular ou no plural (This, That, These, Those)."
     ],
     "xpReward": 70,
     "gemsReward": 30,
@@ -4749,42 +3288,42 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-pron-1",
         "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (De quem é cada coisa? - Parte 1)",
-        "conceptHeader": "Mostram quem é o dono! Se é meu, digo \"My\" (Meu/Minha). Se é seu, digo \"Your\" (Seu/Sua). Se pertence a um menino, \"His\" (Dele); e se pertence a uma menina, \"Her\" (Dela)!",
+        "conceptTitle": "3º • Pronomes Possessivos Antes do Substantivo (My, Your, His, Her)",
+        "conceptHeader": "Os Pronomes Possessivos Adjetivos vêm sempre antes do substantivo para indicar posse: \"My\" (Meu/Minha), \"Your\" (Seu/Sua), \"His\" (Dele — quando o dono é masculino) e \"Her\" (Dela — quando a dona é feminina).",
         "teacherAudioPt": "/audio/teacher/pronoun_3.wav",
-        "prompt": "🤝 Conecte cada Pronome Possessivo ao seu par em português:",
+        "prompt": "🤝 Conecte cada Pronome Possessivo ao seu equivalente em português:",
         "pairs": [
           {
             "id": "w0-p8-b1-pos1",
             "en": "My (\"mái\")",
-            "emoji": "💖",
+            "emoji": "🔑",
             "phonetic": "/maɪ/",
-            "pt": "Meu / Minha (ex: My bed = Minha cama)",
-            "tipPt": "Isso mesmo! \"My\" mostra que pertence a você!"
+            "pt": "Meu / Minha / Meus / Minhas (ex: My house)",
+            "tipPt": "Correto! \"My\" serve tanto para singular quanto para plural em português."
           },
           {
             "id": "w0-p8-b1-pos2",
             "en": "Your (\"iór\")",
-            "emoji": "🎁",
+            "emoji": "📘",
             "phonetic": "/jʊr/",
-            "pt": "Seu / Sua (ex: Your shirt = Sua camisa)",
-            "tipPt": "Muito bem! \"Your\" significa \"Seu\" ou \"Sua\"!"
+            "pt": "Seu / Sua / Seus / Suas (ex: Your book)",
+            "tipPt": "Exato! \"Your\" indica que algo pertence a você ou a vocês."
           },
           {
             "id": "w0-p8-b1-pos3",
             "en": "His (\"ríz\")",
-            "emoji": "👦",
+            "emoji": "👨",
             "phonetic": "/hɪz/",
-            "pt": "Dele (pertence a um menino ou homem)",
-            "tipPt": "Perfeito! \"His shoes\" = \"Os sapatos dele\"!"
+            "pt": "Dele (ex: His car = O carro dele)",
+            "tipPt": "Perfeito! \"His\" é usado quando o possuidor é um homem ou menino."
           },
           {
             "id": "w0-p8-b1-pos4",
             "en": "Her (\"râr\")",
-            "emoji": "👧",
+            "emoji": "👩",
             "phonetic": "/hɜːr/",
-            "pt": "Dela (pertence a uma menina ou mulher)",
-            "tipPt": "Lindo! \"Her dress\" = \"O vestido dela\"!"
+            "pt": "Dela (ex: Her dress = O vestido dela)",
+            "tipPt": "Muito bem! \"Her\" é usado quando a possuidora é uma mulher ou menina."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
@@ -4794,87 +3333,87 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p8-pron-2",
         "type": "pair-match",
-        "conceptTitle": "3º • Pronomes Possessivos (Nosso, Deles e É Meu! - Parte 2)",
-        "conceptHeader": "Quando algo é de toda a nossa família junta, dizemos \"Our\" (Nosso/Nossa)! Quando é de outras pessoas, \"Their\" (Deles/Delas). E no final da frase, para dizer \"É meu!\" ou \"É seu!\", usamos \"Mine\" e \"Yours\"!",
+        "conceptTitle": "3º • Pronomes Possessivos: Plural e Fim de Frase (Our, Their, Mine, Yours)",
+        "conceptHeader": "Para posse coletiva antes do substantivo usamos \"Our\" (Nosso/Nossa) e \"Their\" (Deles/Delas). Já quando o pronome vem no final da frase, sem repetir o substantivo, usamos as formas substantivas \"Mine\" (o meu/a minha) e \"Yours\" (o seu/a sua).",
         "teacherAudioPt": "/audio/teacher/pronoun_3.wav",
-        "prompt": "🤝 Ligue os Pronomes Possessivos de plural e fim de frase aos seus pares:",
+        "prompt": "🤝 Associe os Pronomes Possessivos \"Our, Their, Mine, Yours\" aos seus pares:",
         "pairs": [
           {
             "id": "w0-p8-b2-pos5",
             "en": "Our (\"áu-er\")",
             "emoji": "🏡",
             "phonetic": "/aʊər/",
-            "pt": "Nosso / Nossa (ex: Our kitchen = Nossa cozinha)",
-            "tipPt": "Que orgulho! \"Our\" é \"Nosso\" ou \"Nossa\"!"
+            "pt": "Nosso / Nossa (usado antes do substantivo)",
+            "tipPt": "Correto! Exemplo: \"Our kitchen\" (Nossa cozinha)."
           },
           {
             "id": "w0-p8-b2-pos6",
             "en": "Their (\"dér\")",
             "emoji": "👨‍👩‍👧‍👦",
             "phonetic": "/ðer/",
-            "pt": "Deles / Delas (pertence a eles ou elas)",
-            "tipPt": "Isso! \"Their house\" = \"A casa deles\"!"
+            "pt": "Deles / Delas (usado antes do substantivo)",
+            "tipPt": "Exato! Exemplo: \"Their house\" (A casa deles)."
           },
           {
             "id": "w0-p8-b2-pos7",
             "en": "Mine (\"máin\")",
             "emoji": "✨",
             "phonetic": "/maɪn/",
-            "pt": "O meu / A minha (ex: This cup is mine!)",
-            "tipPt": "Perfeito! \"It is mine!\" = \"É meu!\""
+            "pt": "O meu / A minha (usado sozinho no final da frase)",
+            "tipPt": "Perfeito! Exemplo: \"This key is mine\" (Esta chave é minha)."
           },
           {
             "id": "w0-p8-b2-pos8",
             "en": "Yours (\"iórz\")",
             "emoji": "🌟",
             "phonetic": "/jʊrz/",
-            "pt": "O seu / A sua (ex: This plate is yours!)",
-            "tipPt": "Maravilha! \"It is yours!\" = \"É seu!\""
+            "pt": "O seu / A sua (usado sozinho no final da frase)",
+            "tipPt": "Excelente! Exemplo: \"The book is yours\" (O livro é seu)."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Our (Nosso/Nossa), Their (Deles/Delas), Mine (Meu/Minha no final), Yours (Seu/Sua no final).",
+        "explanation": "Our (Nosso/Nossa), Their (Deles/Delas), Mine (O meu/A minha - final de frase), Yours (O seu/A sua - final de frase).",
         "skillCategory": "grammar"
       },
       {
         "id": "w0-p8-pron-3",
         "type": "pair-match",
-        "conceptTitle": "4º • Pronomes Demonstrativos (Pertinho da Mão vs. Lá Longe)",
-        "conceptHeader": "Para 1 coisa bem pertinho da mão que podemos tocar, dizemos \"This\" (Este/Esta). Para 1 coisa lá longe que apontamos com o dedinho, \"That\" (Aquele/Aquela). Para várias coisas perto, \"These\"; e várias lá longe, \"Those\"!",
+        "conceptTitle": "4º • Pronomes Demonstrativos: Perto vs. Longe (This, That, These, Those)",
+        "conceptHeader": "Os Pronomes Demonstrativos variam conforme a distância e a quantidade. Para o que está PERTO de quem fala: \"This\" (Este/Esta/Isto — singular) e \"These\" (Estes/Estas — plural). Para o que está LONGE: \"That\" (Aquele/Aquela/Aquilo — singular) e \"Those\" (Aqueles/Aquelas — plural).",
         "teacherAudioPt": "/audio/teacher/pronoun_4.wav",
-        "prompt": "🤝 Conecte cada Pronome Demonstrativo à distância e quantidade corretas:",
+        "prompt": "🤝 Conecte cada Pronome Demonstrativo à distância e número correspondentes:",
         "pairs": [
           {
             "id": "w0-p8-b3-dem1",
             "en": "This (\"dís\")",
             "emoji": "👇",
             "phonetic": "/ðɪs/",
-            "pt": "Este / Esta / Isto (1 coisa AQUI PERTINHO)",
-            "tipPt": "Muito bem! Se está na sua mão, é \"This\"!"
+            "pt": "Este / Esta / Isto (SINGULAR e PERTO)",
+            "tipPt": "Correto! Usamos \"This\" para um único item próximo de nós."
           },
           {
             "id": "w0-p8-b3-dem2",
             "en": "That (\"dét\")",
             "emoji": "👉",
             "phonetic": "/ðæt/",
-            "pt": "Aquele / Aquela / Aquilo (1 coisa LÁ LONGE)",
-            "tipPt": "Isso! Se precisa apontar lá longe, é \"That\"!"
+            "pt": "Aquele / Aquela / Aquilo (SINGULAR e LONGE)",
+            "tipPt": "Exato! Usamos \"That\" para um único item distante de nós."
           },
           {
             "id": "w0-p8-b3-dem3",
             "en": "These (\"díz\")",
             "emoji": "🤲",
             "phonetic": "/ðiːz/",
-            "pt": "Estes / Estas (VÁRIAS coisas AQUI PERTO)",
-            "tipPt": "Excelente! \"These\" é o plural pertinho da mão!"
+            "pt": "Estes / Estas (PLURAL e PERTO)",
+            "tipPt": "Perfeito! \"These\" é o plural de \"This\" (vários itens próximos)."
           },
           {
             "id": "w0-p8-b3-dem4",
             "en": "Those (\"dôuz\")",
             "emoji": "🔭",
             "phonetic": "/ðoʊz/",
-            "pt": "Aqueles / Aquelas (VÁRIAS coisas LÁ LONGE)",
-            "tipPt": "Perfeito! \"Those\" são vários itens lá longe!"
+            "pt": "Aqueles / Aquelas (PLURAL e LONGE)",
+            "tipPt": "Muito bem! \"Those\" é o plural de \"That\" (vários itens distantes)."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
@@ -4888,17 +3427,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 9,
     "themeId": "food",
-    "themeTitle": "Comida",
-    "frequencyLevel": "Módulo 3 • Intermediárias",
+    "themeTitle": "Tema 2: Comida",
+    "frequencyLevel": "Módulo 3 • Palavras Intermediárias",
     "title": "Comida • Módulo 3: Palavras Intermediárias",
-    "subtitle": "Tema 2 (Nível 3/4) • 12 frutas, verduras e lanches do cotidiano",
-    "pedagogicalObjective": "Ampliar o vocabulário alimentar: Oil, Onion, Garlic, Carrot, Lettuce, Lemon, Strawberry, Grape, Watermelon, Sandwich, Ice cream e Yogurt.",
+    "subtitle": "Tema: Comida (3/4) • 8 pratos, frutas e legumes intermediários",
+    "pedagogicalObjective": "Ampliar o vocabulário alimentar com 8 palavras intermediárias: Pasta, Cake, Orange, Tomato, Potato, Onion, Carrot e Sandwich.",
     "type": "lesson",
     "icon": "apple",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 3 de Comida praticamos palavras intermediárias: Oil (\"ói-ol\" = Óleo/Azeite), Onion (\"â-nion\" = Cebola), Garlic (\"gár-lik\" = Alho), Carrot (\"ké-rot\" = Cenoura), Lettuce (\"lé-tis\" = Alface) e Lemon (\"lé-mon\" = Limão).",
-      "Também aprendemos Strawberry (\"stró-bé-ri\" = Morango), Grape (\"grêip\" = Uva), Watermelon (\"uó-ter-mé-lon\" = Melancia), Sandwich (\"sénd-uitch\" = Sanduíche), Ice cream (\"áis crím\" = Sorvete) e Yogurt (\"iôu-gârt\" = Iogurte)."
+      "Tema: Comida — Módulo 3 (Palavras intermediárias): massas, vegetais e lanches do cotidiano.",
+      "Palavras deste módulo (8): Pasta (\"pás-ta\" = Macarrão), Cake (\"kêik\" = Bolo), Orange (\"ó-rendj\" = Laranja), Tomato (\"to-mêi-tou\" = Tomate), Potato (\"po-têi-tou\" = Batata), Onion (\"â-nion\" = Cebola), Carrot (\"ké-rot\" = Cenoura) e Sandwich (\"sénd-uitch\" = Sanduíche)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -4907,69 +3446,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p9-e1",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Oil",
-        "visualEmoji": "🫒",
-        "visualOptions": [
-          {
-            "text": "Lemon",
-            "emoji": "🍋",
-            "label": "Lemon",
-            "translationPt": "Limão",
-            "simplePronunciation": "lé-mon",
-            "phonetic": "/ˈlem.ən/",
-            "exampleEn": "Lemon tastes sour and fresh.",
-            "examplePt": "O limão tem gosto azedo e refrescante."
-          },
-          {
-            "text": "Lettuce",
-            "emoji": "🥬",
-            "label": "Lettuce",
-            "translationPt": "Alface",
-            "simplePronunciation": "lé-tis",
-            "phonetic": "/ˈlet.ɪs/",
-            "exampleEn": "Wash the green lettuce leaves.",
-            "examplePt": "Lave as folhas verdes de alface."
-          },
-          {
-            "text": "Oil",
-            "emoji": "🫒",
-            "label": "Oil",
-            "translationPt": "Óleo / Azeite",
-            "simplePronunciation": "ói-ol",
-            "phonetic": "/ɔɪl/",
-            "exampleEn": "Cook the vegetables with olive oil.",
-            "examplePt": "Prepare os legumes com azeite."
-          },
-          {
-            "text": "Ice cream",
-            "emoji": "🍦",
-            "label": "Ice cream",
-            "translationPt": "Sorvete",
-            "simplePronunciation": "áis crím",
-            "phonetic": "/ˈaɪs kriːm/",
-            "exampleEn": "Kids love chocolate ice cream.",
-            "examplePt": "As crianças adoram sorvete de chocolate."
-          }
-        ],
-        "options": [
-          "Lemon",
-          "Lettuce",
-          "Oil",
-          "Ice cream"
-        ],
-        "correctAnswer": "Oil",
-        "contextSentence": "Cook the vegetables with olive oil.",
-        "contextSentencePt": "Prepare os legumes com azeite.",
-        "explanation": "Exemplo: \"Cook the vegetables with olive oil.\" — Prepare os legumes com azeite.",
-        "phoneticHint": "\"ói-ol\" • /ɔɪl/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p9-e2",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Onion",
-        "visualEmoji": "🧅",
+        "audioPhrase": "Pasta",
+        "visualEmoji": "🍝",
         "visualOptions": [
           {
             "text": "Onion",
@@ -4982,126 +3460,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Pique a cebola para o molho."
           },
           {
-            "text": "Sandwich",
-            "emoji": "🥪",
-            "label": "Sandwich",
-            "translationPt": "Sanduíche",
-            "simplePronunciation": "sénd-uitch",
-            "phonetic": "/ˈsæn.wɪtʃ/",
-            "exampleEn": "I packed a cheese sandwich.",
-            "examplePt": "Eu preparei um sanduíche de queijo."
-          },
-          {
-            "text": "Strawberry",
-            "emoji": "🍓",
-            "label": "Strawberry",
-            "translationPt": "Morango",
-            "simplePronunciation": "stró-bé-ri",
-            "phonetic": "/ˈstrɔː.ber.i/",
-            "exampleEn": "Red strawberries are my favorite fruit.",
-            "examplePt": "Morangos vermelhos são minha fruta favorita."
-          },
-          {
-            "text": "Yogurt",
-            "emoji": "🥣",
-            "label": "Yogurt",
-            "translationPt": "Iogurte",
-            "simplePronunciation": "iôu-gârt",
-            "phonetic": "/ˈjoʊ.ɡərt/",
-            "exampleEn": "I eat yogurt with fruit.",
-            "examplePt": "Eu como iogurte com frutas."
-          }
-        ],
-        "options": [
-          "Onion",
-          "Sandwich",
-          "Strawberry",
-          "Yogurt"
-        ],
-        "correctAnswer": "Onion",
-        "contextSentence": "Chop the onion for the sauce.",
-        "contextSentencePt": "Pique a cebola para o molho.",
-        "explanation": "Exemplo: \"Chop the onion for the sauce.\" — Pique a cebola para o molho.",
-        "phoneticHint": "\"â-nion\" • /ˈʌn.jən/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p9-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Garlic",
-        "visualEmoji": "🧄",
-        "visualOptions": [
-          {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva",
-            "simplePronunciation": "grêip",
-            "phonetic": "/ɡreɪp/",
-            "exampleEn": "Wash the bunch of grapes.",
-            "examplePt": "Lave o cacho de uvas."
-          },
-          {
-            "text": "Garlic",
-            "emoji": "🧄",
-            "label": "Garlic",
-            "translationPt": "Alho",
-            "simplePronunciation": "gár-lik",
-            "phonetic": "/ˈɡɑːr.lɪk/",
-            "exampleEn": "Garlic gives great flavor to food.",
-            "examplePt": "O alho dá um ótimo sabor à comida."
-          },
-          {
-            "text": "Watermelon",
-            "emoji": "🍉",
-            "label": "Watermelon",
-            "translationPt": "Melancia",
-            "simplePronunciation": "uó-ter-mé-lon",
-            "phonetic": "/ˈwɔː.tərˌmel.ən/",
-            "exampleEn": "Cold watermelon is great in summer.",
-            "examplePt": "Melancia gelada é ótima no verão."
-          },
-          {
-            "text": "Oil",
-            "emoji": "🫒",
-            "label": "Oil",
-            "translationPt": "Óleo / Azeite",
-            "simplePronunciation": "ói-ol",
-            "phonetic": "/ɔɪl/",
-            "exampleEn": "Cook the vegetables with olive oil.",
-            "examplePt": "Prepare os legumes com azeite."
-          }
-        ],
-        "options": [
-          "Grape",
-          "Garlic",
-          "Watermelon",
-          "Oil"
-        ],
-        "correctAnswer": "Garlic",
-        "contextSentence": "Garlic gives great flavor to food.",
-        "contextSentencePt": "O alho dá um ótimo sabor à comida.",
-        "explanation": "Exemplo: \"Garlic gives great flavor to food.\" — O alho dá um ótimo sabor à comida.",
-        "phoneticHint": "\"gár-lik\" • /ˈɡɑːr.lɪk/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p9-e4",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Carrot",
-        "visualEmoji": "🥕",
-        "visualOptions": [
-          {
-            "text": "Strawberry",
-            "emoji": "🍓",
-            "label": "Strawberry",
-            "translationPt": "Morango",
-            "simplePronunciation": "stró-bé-ri",
-            "phonetic": "/ˈstrɔː.ber.i/",
-            "exampleEn": "Red strawberries are my favorite fruit.",
-            "examplePt": "Morangos vermelhos são minha fruta favorita."
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja",
+            "simplePronunciation": "ó-rendj",
+            "phonetic": "/ˈɔːr.ɪndʒ/",
+            "exampleEn": "This orange is very juicy.",
+            "examplePt": "Esta laranja tem muito suco."
           },
           {
             "text": "Carrot",
@@ -5114,14 +3480,309 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Cenouras são crocantes e doces."
           },
           {
-            "text": "Garlic",
-            "emoji": "🧄",
-            "label": "Garlic",
-            "translationPt": "Alho",
-            "simplePronunciation": "gár-lik",
-            "phonetic": "/ˈɡɑːr.lɪk/",
-            "exampleEn": "Garlic gives great flavor to food.",
-            "examplePt": "O alho dá um ótimo sabor à comida."
+            "text": "Pasta",
+            "emoji": "🍝",
+            "label": "Pasta",
+            "translationPt": "Macarrão",
+            "simplePronunciation": "pás-ta",
+            "phonetic": "/ˈpɑː.stə/",
+            "exampleEn": "We love pasta for lunch.",
+            "examplePt": "Adoramos macarrão no almoço."
+          }
+        ],
+        "options": [
+          "Onion",
+          "Orange",
+          "Carrot",
+          "Pasta"
+        ],
+        "correctAnswer": "Pasta",
+        "contextSentence": "We love pasta for lunch.",
+        "contextSentencePt": "Adoramos macarrão no almoço.",
+        "explanation": "Exemplo: \"We love pasta for lunch.\" — Adoramos macarrão no almoço.",
+        "phoneticHint": "\"pás-ta\" • /ˈpɑː.stə/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p9-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Cake",
+        "visualEmoji": "🍰",
+        "visualOptions": [
+          {
+            "text": "Potato",
+            "emoji": "🥔",
+            "label": "Potato",
+            "translationPt": "Batata",
+            "simplePronunciation": "po-têi-tou",
+            "phonetic": "/pəˈteɪ.toʊ/",
+            "exampleEn": "Baked potatoes are delicious.",
+            "examplePt": "Batatas assadas são deliciosas."
+          },
+          {
+            "text": "Sandwich",
+            "emoji": "🥪",
+            "label": "Sandwich",
+            "translationPt": "Sanduíche",
+            "simplePronunciation": "sénd-uitch",
+            "phonetic": "/ˈsæn.wɪtʃ/",
+            "exampleEn": "I packed a cheese sandwich.",
+            "examplePt": "Eu preparei um sanduíche de queijo."
+          },
+          {
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo",
+            "simplePronunciation": "kêik",
+            "phonetic": "/keɪk/",
+            "exampleEn": "She baked a chocolate cake.",
+            "examplePt": "Ela assou um bolo de chocolate."
+          },
+          {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate",
+            "simplePronunciation": "to-mêi-tou",
+            "phonetic": "/təˈmeɪ.toʊ/",
+            "exampleEn": "Slice the red tomato.",
+            "examplePt": "Corte o tomate em fatias."
+          }
+        ],
+        "options": [
+          "Potato",
+          "Sandwich",
+          "Cake",
+          "Tomato"
+        ],
+        "correctAnswer": "Cake",
+        "contextSentence": "She baked a chocolate cake.",
+        "contextSentencePt": "Ela assou um bolo de chocolate.",
+        "explanation": "Exemplo: \"She baked a chocolate cake.\" — Ela assou um bolo de chocolate.",
+        "phoneticHint": "\"kêik\" • /keɪk/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p9-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Orange",
+        "visualEmoji": "🍊",
+        "visualOptions": [
+          {
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja",
+            "simplePronunciation": "ó-rendj",
+            "phonetic": "/ˈɔːr.ɪndʒ/",
+            "exampleEn": "This orange is very juicy.",
+            "examplePt": "Esta laranja tem muito suco."
+          },
+          {
+            "text": "Pasta",
+            "emoji": "🍝",
+            "label": "Pasta",
+            "translationPt": "Macarrão",
+            "simplePronunciation": "pás-ta",
+            "phonetic": "/ˈpɑː.stə/",
+            "exampleEn": "We love pasta for lunch.",
+            "examplePt": "Adoramos macarrão no almoço."
+          },
+          {
+            "text": "Onion",
+            "emoji": "🧅",
+            "label": "Onion",
+            "translationPt": "Cebola",
+            "simplePronunciation": "â-nion",
+            "phonetic": "/ˈʌn.jən/",
+            "exampleEn": "Chop the onion for the sauce.",
+            "examplePt": "Pique a cebola para o molho."
+          },
+          {
+            "text": "Carrot",
+            "emoji": "🥕",
+            "label": "Carrot",
+            "translationPt": "Cenoura",
+            "simplePronunciation": "ké-rot",
+            "phonetic": "/ˈkær.ət/",
+            "exampleEn": "Carrots are crunchy and sweet.",
+            "examplePt": "Cenouras são crocantes e doces."
+          }
+        ],
+        "options": [
+          "Orange",
+          "Pasta",
+          "Onion",
+          "Carrot"
+        ],
+        "correctAnswer": "Orange",
+        "contextSentence": "This orange is very juicy.",
+        "contextSentencePt": "Esta laranja tem muito suco.",
+        "explanation": "Exemplo: \"This orange is very juicy.\" — Esta laranja tem muito suco.",
+        "phoneticHint": "\"ó-rendj\" • /ˈɔːr.ɪndʒ/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p9-e4",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Tomato",
+        "visualEmoji": "🍅",
+        "visualOptions": [
+          {
+            "text": "Pasta",
+            "emoji": "🍝",
+            "label": "Pasta",
+            "translationPt": "Macarrão",
+            "simplePronunciation": "pás-ta",
+            "phonetic": "/ˈpɑː.stə/",
+            "exampleEn": "We love pasta for lunch.",
+            "examplePt": "Adoramos macarrão no almoço."
+          },
+          {
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo",
+            "simplePronunciation": "kêik",
+            "phonetic": "/keɪk/",
+            "exampleEn": "She baked a chocolate cake.",
+            "examplePt": "Ela assou um bolo de chocolate."
+          },
+          {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate",
+            "simplePronunciation": "to-mêi-tou",
+            "phonetic": "/təˈmeɪ.toʊ/",
+            "exampleEn": "Slice the red tomato.",
+            "examplePt": "Corte o tomate em fatias."
+          },
+          {
+            "text": "Sandwich",
+            "emoji": "🥪",
+            "label": "Sandwich",
+            "translationPt": "Sanduíche",
+            "simplePronunciation": "sénd-uitch",
+            "phonetic": "/ˈsæn.wɪtʃ/",
+            "exampleEn": "I packed a cheese sandwich.",
+            "examplePt": "Eu preparei um sanduíche de queijo."
+          }
+        ],
+        "options": [
+          "Pasta",
+          "Cake",
+          "Tomato",
+          "Sandwich"
+        ],
+        "correctAnswer": "Tomato",
+        "contextSentence": "Slice the red tomato.",
+        "contextSentencePt": "Corte o tomate em fatias.",
+        "explanation": "Exemplo: \"Slice the red tomato.\" — Corte o tomate em fatias.",
+        "phoneticHint": "\"to-mêi-tou\" • /təˈmeɪ.toʊ/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p9-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Potato",
+        "visualEmoji": "🥔",
+        "visualOptions": [
+          {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate",
+            "simplePronunciation": "to-mêi-tou",
+            "phonetic": "/təˈmeɪ.toʊ/",
+            "exampleEn": "Slice the red tomato.",
+            "examplePt": "Corte o tomate em fatias."
+          },
+          {
+            "text": "Potato",
+            "emoji": "🥔",
+            "label": "Potato",
+            "translationPt": "Batata",
+            "simplePronunciation": "po-têi-tou",
+            "phonetic": "/pəˈteɪ.toʊ/",
+            "exampleEn": "Baked potatoes are delicious.",
+            "examplePt": "Batatas assadas são deliciosas."
+          },
+          {
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo",
+            "simplePronunciation": "kêik",
+            "phonetic": "/keɪk/",
+            "exampleEn": "She baked a chocolate cake.",
+            "examplePt": "Ela assou um bolo de chocolate."
+          },
+          {
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja",
+            "simplePronunciation": "ó-rendj",
+            "phonetic": "/ˈɔːr.ɪndʒ/",
+            "exampleEn": "This orange is very juicy.",
+            "examplePt": "Esta laranja tem muito suco."
+          }
+        ],
+        "options": [
+          "Tomato",
+          "Potato",
+          "Cake",
+          "Orange"
+        ],
+        "correctAnswer": "Potato",
+        "contextSentence": "Baked potatoes are delicious.",
+        "contextSentencePt": "Batatas assadas são deliciosas.",
+        "explanation": "Exemplo: \"Baked potatoes are delicious.\" — Batatas assadas são deliciosas.",
+        "phoneticHint": "\"po-têi-tou\" • /pəˈteɪ.toʊ/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p9-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Onion",
+        "visualEmoji": "🧅",
+        "visualOptions": [
+          {
+            "text": "Potato",
+            "emoji": "🥔",
+            "label": "Potato",
+            "translationPt": "Batata",
+            "simplePronunciation": "po-têi-tou",
+            "phonetic": "/pəˈteɪ.toʊ/",
+            "exampleEn": "Baked potatoes are delicious.",
+            "examplePt": "Batatas assadas são deliciosas."
+          },
+          {
+            "text": "Cake",
+            "emoji": "🍰",
+            "label": "Cake",
+            "translationPt": "Bolo",
+            "simplePronunciation": "kêik",
+            "phonetic": "/keɪk/",
+            "exampleEn": "She baked a chocolate cake.",
+            "examplePt": "Ela assou um bolo de chocolate."
+          },
+          {
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja",
+            "simplePronunciation": "ó-rendj",
+            "phonetic": "/ˈɔːr.ɪndʒ/",
+            "exampleEn": "This orange is very juicy.",
+            "examplePt": "Esta laranja tem muito suco."
           },
           {
             "text": "Onion",
@@ -5135,10 +3796,71 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Strawberry",
-          "Carrot",
-          "Garlic",
+          "Potato",
+          "Cake",
+          "Orange",
           "Onion"
+        ],
+        "correctAnswer": "Onion",
+        "contextSentence": "Chop the onion for the sauce.",
+        "contextSentencePt": "Pique a cebola para o molho.",
+        "explanation": "Exemplo: \"Chop the onion for the sauce.\" — Pique a cebola para o molho.",
+        "phoneticHint": "\"â-nion\" • /ˈʌn.jən/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p9-e7",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Carrot",
+        "visualEmoji": "🥕",
+        "visualOptions": [
+          {
+            "text": "Carrot",
+            "emoji": "🥕",
+            "label": "Carrot",
+            "translationPt": "Cenoura",
+            "simplePronunciation": "ké-rot",
+            "phonetic": "/ˈkær.ət/",
+            "exampleEn": "Carrots are crunchy and sweet.",
+            "examplePt": "Cenouras são crocantes e doces."
+          },
+          {
+            "text": "Sandwich",
+            "emoji": "🥪",
+            "label": "Sandwich",
+            "translationPt": "Sanduíche",
+            "simplePronunciation": "sénd-uitch",
+            "phonetic": "/ˈsæn.wɪtʃ/",
+            "exampleEn": "I packed a cheese sandwich.",
+            "examplePt": "Eu preparei um sanduíche de queijo."
+          },
+          {
+            "text": "Onion",
+            "emoji": "🧅",
+            "label": "Onion",
+            "translationPt": "Cebola",
+            "simplePronunciation": "â-nion",
+            "phonetic": "/ˈʌn.jən/",
+            "exampleEn": "Chop the onion for the sauce.",
+            "examplePt": "Pique a cebola para o molho."
+          },
+          {
+            "text": "Pasta",
+            "emoji": "🍝",
+            "label": "Pasta",
+            "translationPt": "Macarrão",
+            "simplePronunciation": "pás-ta",
+            "phonetic": "/ˈpɑː.stə/",
+            "exampleEn": "We love pasta for lunch.",
+            "examplePt": "Adoramos macarrão no almoço."
+          }
+        ],
+        "options": [
+          "Carrot",
+          "Sandwich",
+          "Onion",
+          "Pasta"
         ],
         "correctAnswer": "Carrot",
         "contextSentence": "Carrots are crunchy and sweet.",
@@ -5148,346 +3870,21 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p9-e5",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Lettuce",
-        "visualEmoji": "🥬",
-        "visualOptions": [
-          {
-            "text": "Yogurt",
-            "emoji": "🥣",
-            "label": "Yogurt",
-            "translationPt": "Iogurte",
-            "simplePronunciation": "iôu-gârt",
-            "phonetic": "/ˈjoʊ.ɡərt/",
-            "exampleEn": "I eat yogurt with fruit.",
-            "examplePt": "Eu como iogurte com frutas."
-          },
-          {
-            "text": "Ice cream",
-            "emoji": "🍦",
-            "label": "Ice cream",
-            "translationPt": "Sorvete",
-            "simplePronunciation": "áis crím",
-            "phonetic": "/ˈaɪs kriːm/",
-            "exampleEn": "Kids love chocolate ice cream.",
-            "examplePt": "As crianças adoram sorvete de chocolate."
-          },
-          {
-            "text": "Sandwich",
-            "emoji": "🥪",
-            "label": "Sandwich",
-            "translationPt": "Sanduíche",
-            "simplePronunciation": "sénd-uitch",
-            "phonetic": "/ˈsæn.wɪtʃ/",
-            "exampleEn": "I packed a cheese sandwich.",
-            "examplePt": "Eu preparei um sanduíche de queijo."
-          },
-          {
-            "text": "Lettuce",
-            "emoji": "🥬",
-            "label": "Lettuce",
-            "translationPt": "Alface",
-            "simplePronunciation": "lé-tis",
-            "phonetic": "/ˈlet.ɪs/",
-            "exampleEn": "Wash the green lettuce leaves.",
-            "examplePt": "Lave as folhas verdes de alface."
-          }
-        ],
-        "options": [
-          "Yogurt",
-          "Ice cream",
-          "Sandwich",
-          "Lettuce"
-        ],
-        "correctAnswer": "Lettuce",
-        "contextSentence": "Wash the green lettuce leaves.",
-        "contextSentencePt": "Lave as folhas verdes de alface.",
-        "explanation": "Exemplo: \"Wash the green lettuce leaves.\" — Lave as folhas verdes de alface.",
-        "phoneticHint": "\"lé-tis\" • /ˈlet.ɪs/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p9-e6",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Lemon",
-        "visualEmoji": "🍋",
-        "visualOptions": [
-          {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura",
-            "simplePronunciation": "ké-rot",
-            "phonetic": "/ˈkær.ət/",
-            "exampleEn": "Carrots are crunchy and sweet.",
-            "examplePt": "Cenouras são crocantes e doces."
-          },
-          {
-            "text": "Onion",
-            "emoji": "🧅",
-            "label": "Onion",
-            "translationPt": "Cebola",
-            "simplePronunciation": "â-nion",
-            "phonetic": "/ˈʌn.jən/",
-            "exampleEn": "Chop the onion for the sauce.",
-            "examplePt": "Pique a cebola para o molho."
-          },
-          {
-            "text": "Lemon",
-            "emoji": "🍋",
-            "label": "Lemon",
-            "translationPt": "Limão",
-            "simplePronunciation": "lé-mon",
-            "phonetic": "/ˈlem.ən/",
-            "exampleEn": "Lemon tastes sour and fresh.",
-            "examplePt": "O limão tem gosto azedo e refrescante."
-          },
-          {
-            "text": "Oil",
-            "emoji": "🫒",
-            "label": "Oil",
-            "translationPt": "Óleo / Azeite",
-            "simplePronunciation": "ói-ol",
-            "phonetic": "/ɔɪl/",
-            "exampleEn": "Cook the vegetables with olive oil.",
-            "examplePt": "Prepare os legumes com azeite."
-          }
-        ],
-        "options": [
-          "Carrot",
-          "Onion",
-          "Lemon",
-          "Oil"
-        ],
-        "correctAnswer": "Lemon",
-        "contextSentence": "Lemon tastes sour and fresh.",
-        "contextSentencePt": "O limão tem gosto azedo e refrescante.",
-        "explanation": "Exemplo: \"Lemon tastes sour and fresh.\" — O limão tem gosto azedo e refrescante.",
-        "phoneticHint": "\"lé-mon\" • /ˈlem.ən/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p9-e7",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Strawberry",
-        "visualEmoji": "🍓",
-        "visualOptions": [
-          {
-            "text": "Strawberry",
-            "emoji": "🍓",
-            "label": "Strawberry",
-            "translationPt": "Morango",
-            "simplePronunciation": "stró-bé-ri",
-            "phonetic": "/ˈstrɔː.ber.i/",
-            "exampleEn": "Red strawberries are my favorite fruit.",
-            "examplePt": "Morangos vermelhos são minha fruta favorita."
-          },
-          {
-            "text": "Lemon",
-            "emoji": "🍋",
-            "label": "Lemon",
-            "translationPt": "Limão",
-            "simplePronunciation": "lé-mon",
-            "phonetic": "/ˈlem.ən/",
-            "exampleEn": "Lemon tastes sour and fresh.",
-            "examplePt": "O limão tem gosto azedo e refrescante."
-          },
-          {
-            "text": "Lettuce",
-            "emoji": "🥬",
-            "label": "Lettuce",
-            "translationPt": "Alface",
-            "simplePronunciation": "lé-tis",
-            "phonetic": "/ˈlet.ɪs/",
-            "exampleEn": "Wash the green lettuce leaves.",
-            "examplePt": "Lave as folhas verdes de alface."
-          },
-          {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura",
-            "simplePronunciation": "ké-rot",
-            "phonetic": "/ˈkær.ət/",
-            "exampleEn": "Carrots are crunchy and sweet.",
-            "examplePt": "Cenouras são crocantes e doces."
-          }
-        ],
-        "options": [
-          "Strawberry",
-          "Lemon",
-          "Lettuce",
-          "Carrot"
-        ],
-        "correctAnswer": "Strawberry",
-        "contextSentence": "Red strawberries are my favorite fruit.",
-        "contextSentencePt": "Morangos vermelhos são minha fruta favorita.",
-        "explanation": "Exemplo: \"Red strawberries are my favorite fruit.\" — Morangos vermelhos são minha fruta favorita.",
-        "phoneticHint": "\"stró-bé-ri\" • /ˈstrɔː.ber.i/",
-        "skillCategory": "vocabulary"
-      },
-      {
         "id": "w0-p9-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Grape",
-        "visualEmoji": "🍇",
-        "visualOptions": [
-          {
-            "text": "Yogurt",
-            "emoji": "🥣",
-            "label": "Yogurt",
-            "translationPt": "Iogurte",
-            "simplePronunciation": "iôu-gârt",
-            "phonetic": "/ˈjoʊ.ɡərt/",
-            "exampleEn": "I eat yogurt with fruit.",
-            "examplePt": "Eu como iogurte com frutas."
-          },
-          {
-            "text": "Garlic",
-            "emoji": "🧄",
-            "label": "Garlic",
-            "translationPt": "Alho",
-            "simplePronunciation": "gár-lik",
-            "phonetic": "/ˈɡɑːr.lɪk/",
-            "exampleEn": "Garlic gives great flavor to food.",
-            "examplePt": "O alho dá um ótimo sabor à comida."
-          },
-          {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva",
-            "simplePronunciation": "grêip",
-            "phonetic": "/ɡreɪp/",
-            "exampleEn": "Wash the bunch of grapes.",
-            "examplePt": "Lave o cacho de uvas."
-          },
-          {
-            "text": "Ice cream",
-            "emoji": "🍦",
-            "label": "Ice cream",
-            "translationPt": "Sorvete",
-            "simplePronunciation": "áis crím",
-            "phonetic": "/ˈaɪs kriːm/",
-            "exampleEn": "Kids love chocolate ice cream.",
-            "examplePt": "As crianças adoram sorvete de chocolate."
-          }
-        ],
-        "options": [
-          "Yogurt",
-          "Garlic",
-          "Grape",
-          "Ice cream"
-        ],
-        "correctAnswer": "Grape",
-        "contextSentence": "Wash the bunch of grapes.",
-        "contextSentencePt": "Lave o cacho de uvas.",
-        "explanation": "Exemplo: \"Wash the bunch of grapes.\" — Lave o cacho de uvas.",
-        "phoneticHint": "\"grêip\" • /ɡreɪp/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p9-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Watermelon",
-        "visualEmoji": "🍉",
-        "visualOptions": [
-          {
-            "text": "Oil",
-            "emoji": "🫒",
-            "label": "Oil",
-            "translationPt": "Óleo / Azeite",
-            "simplePronunciation": "ói-ol",
-            "phonetic": "/ɔɪl/",
-            "exampleEn": "Cook the vegetables with olive oil.",
-            "examplePt": "Prepare os legumes com azeite."
-          },
-          {
-            "text": "Watermelon",
-            "emoji": "🍉",
-            "label": "Watermelon",
-            "translationPt": "Melancia",
-            "simplePronunciation": "uó-ter-mé-lon",
-            "phonetic": "/ˈwɔː.tərˌmel.ən/",
-            "exampleEn": "Cold watermelon is great in summer.",
-            "examplePt": "Melancia gelada é ótima no verão."
-          },
-          {
-            "text": "Garlic",
-            "emoji": "🧄",
-            "label": "Garlic",
-            "translationPt": "Alho",
-            "simplePronunciation": "gár-lik",
-            "phonetic": "/ˈɡɑːr.lɪk/",
-            "exampleEn": "Garlic gives great flavor to food.",
-            "examplePt": "O alho dá um ótimo sabor à comida."
-          },
-          {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva",
-            "simplePronunciation": "grêip",
-            "phonetic": "/ɡreɪp/",
-            "exampleEn": "Wash the bunch of grapes.",
-            "examplePt": "Lave o cacho de uvas."
-          }
-        ],
-        "options": [
-          "Oil",
-          "Watermelon",
-          "Garlic",
-          "Grape"
-        ],
-        "correctAnswer": "Watermelon",
-        "contextSentence": "Cold watermelon is great in summer.",
-        "contextSentencePt": "Melancia gelada é ótima no verão.",
-        "explanation": "Exemplo: \"Cold watermelon is great in summer.\" — Melancia gelada é ótima no verão.",
-        "phoneticHint": "\"uó-ter-mé-lon\" • /ˈwɔː.tərˌmel.ən/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p9-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Sandwich",
         "visualEmoji": "🥪",
         "visualOptions": [
           {
-            "text": "Strawberry",
-            "emoji": "🍓",
-            "label": "Strawberry",
-            "translationPt": "Morango",
-            "simplePronunciation": "stró-bé-ri",
-            "phonetic": "/ˈstrɔː.ber.i/",
-            "exampleEn": "Red strawberries are my favorite fruit.",
-            "examplePt": "Morangos vermelhos são minha fruta favorita."
-          },
-          {
-            "text": "Lettuce",
-            "emoji": "🥬",
-            "label": "Lettuce",
-            "translationPt": "Alface",
-            "simplePronunciation": "lé-tis",
-            "phonetic": "/ˈlet.ɪs/",
-            "exampleEn": "Wash the green lettuce leaves.",
-            "examplePt": "Lave as folhas verdes de alface."
-          },
-          {
-            "text": "Onion",
-            "emoji": "🧅",
-            "label": "Onion",
-            "translationPt": "Cebola",
-            "simplePronunciation": "â-nion",
-            "phonetic": "/ˈʌn.jən/",
-            "exampleEn": "Chop the onion for the sauce.",
-            "examplePt": "Pique a cebola para o molho."
+            "text": "Orange",
+            "emoji": "🍊",
+            "label": "Orange",
+            "translationPt": "Laranja",
+            "simplePronunciation": "ó-rendj",
+            "phonetic": "/ˈɔːr.ɪndʒ/",
+            "exampleEn": "This orange is very juicy.",
+            "examplePt": "Esta laranja tem muito suco."
           },
           {
             "text": "Sandwich",
@@ -5498,142 +3895,40 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈsæn.wɪtʃ/",
             "exampleEn": "I packed a cheese sandwich.",
             "examplePt": "Eu preparei um sanduíche de queijo."
+          },
+          {
+            "text": "Tomato",
+            "emoji": "🍅",
+            "label": "Tomato",
+            "translationPt": "Tomate",
+            "simplePronunciation": "to-mêi-tou",
+            "phonetic": "/təˈmeɪ.toʊ/",
+            "exampleEn": "Slice the red tomato.",
+            "examplePt": "Corte o tomate em fatias."
+          },
+          {
+            "text": "Potato",
+            "emoji": "🥔",
+            "label": "Potato",
+            "translationPt": "Batata",
+            "simplePronunciation": "po-têi-tou",
+            "phonetic": "/pəˈteɪ.toʊ/",
+            "exampleEn": "Baked potatoes are delicious.",
+            "examplePt": "Batatas assadas são deliciosas."
           }
         ],
         "options": [
-          "Strawberry",
-          "Lettuce",
-          "Onion",
-          "Sandwich"
+          "Orange",
+          "Sandwich",
+          "Tomato",
+          "Potato"
         ],
         "correctAnswer": "Sandwich",
         "contextSentence": "I packed a cheese sandwich.",
         "contextSentencePt": "Eu preparei um sanduíche de queijo.",
         "explanation": "Exemplo: \"I packed a cheese sandwich.\" — Eu preparei um sanduíche de queijo.",
         "phoneticHint": "\"sénd-uitch\" • /ˈsæn.wɪtʃ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p9-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Ice cream",
-        "visualEmoji": "🍦",
-        "visualOptions": [
-          {
-            "text": "Ice cream",
-            "emoji": "🍦",
-            "label": "Ice cream",
-            "translationPt": "Sorvete",
-            "simplePronunciation": "áis crím",
-            "phonetic": "/ˈaɪs kriːm/",
-            "exampleEn": "Kids love chocolate ice cream.",
-            "examplePt": "As crianças adoram sorvete de chocolate."
-          },
-          {
-            "text": "Lemon",
-            "emoji": "🍋",
-            "label": "Lemon",
-            "translationPt": "Limão",
-            "simplePronunciation": "lé-mon",
-            "phonetic": "/ˈlem.ən/",
-            "exampleEn": "Lemon tastes sour and fresh.",
-            "examplePt": "O limão tem gosto azedo e refrescante."
-          },
-          {
-            "text": "Carrot",
-            "emoji": "🥕",
-            "label": "Carrot",
-            "translationPt": "Cenoura",
-            "simplePronunciation": "ké-rot",
-            "phonetic": "/ˈkær.ət/",
-            "exampleEn": "Carrots are crunchy and sweet.",
-            "examplePt": "Cenouras são crocantes e doces."
-          },
-          {
-            "text": "Watermelon",
-            "emoji": "🍉",
-            "label": "Watermelon",
-            "translationPt": "Melancia",
-            "simplePronunciation": "uó-ter-mé-lon",
-            "phonetic": "/ˈwɔː.tərˌmel.ən/",
-            "exampleEn": "Cold watermelon is great in summer.",
-            "examplePt": "Melancia gelada é ótima no verão."
-          }
-        ],
-        "options": [
-          "Ice cream",
-          "Lemon",
-          "Carrot",
-          "Watermelon"
-        ],
-        "correctAnswer": "Ice cream",
-        "contextSentence": "Kids love chocolate ice cream.",
-        "contextSentencePt": "As crianças adoram sorvete de chocolate.",
-        "explanation": "Exemplo: \"Kids love chocolate ice cream.\" — As crianças adoram sorvete de chocolate.",
-        "phoneticHint": "\"áis crím\" • /ˈaɪs kriːm/",
         "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p9-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Yogurt",
-        "visualEmoji": "🥣",
-        "visualOptions": [
-          {
-            "text": "Garlic",
-            "emoji": "🧄",
-            "label": "Garlic",
-            "translationPt": "Alho",
-            "simplePronunciation": "gár-lik",
-            "phonetic": "/ˈɡɑːr.lɪk/",
-            "exampleEn": "Garlic gives great flavor to food.",
-            "examplePt": "O alho dá um ótimo sabor à comida."
-          },
-          {
-            "text": "Oil",
-            "emoji": "🫒",
-            "label": "Oil",
-            "translationPt": "Óleo / Azeite",
-            "simplePronunciation": "ói-ol",
-            "phonetic": "/ɔɪl/",
-            "exampleEn": "Cook the vegetables with olive oil.",
-            "examplePt": "Prepare os legumes com azeite."
-          },
-          {
-            "text": "Grape",
-            "emoji": "🍇",
-            "label": "Grape",
-            "translationPt": "Uva",
-            "simplePronunciation": "grêip",
-            "phonetic": "/ɡreɪp/",
-            "exampleEn": "Wash the bunch of grapes.",
-            "examplePt": "Lave o cacho de uvas."
-          },
-          {
-            "text": "Yogurt",
-            "emoji": "🥣",
-            "label": "Yogurt",
-            "translationPt": "Iogurte",
-            "simplePronunciation": "iôu-gârt",
-            "phonetic": "/ˈjoʊ.ɡərt/",
-            "exampleEn": "I eat yogurt with fruit.",
-            "examplePt": "Eu como iogurte com frutas."
-          }
-        ],
-        "options": [
-          "Garlic",
-          "Oil",
-          "Grape",
-          "Yogurt"
-        ],
-        "correctAnswer": "Yogurt",
-        "contextSentence": "I eat yogurt with fruit.",
-        "contextSentencePt": "Eu como iogurte com frutas.",
-        "explanation": "Exemplo: \"I eat yogurt with fruit.\" — Eu como iogurte com frutas.",
-        "phoneticHint": "\"iôu-gârt\" • /ˈjoʊ.ɡərt/",
-        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -5642,17 +3937,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 10,
     "themeId": "food",
-    "themeTitle": "Comida",
-    "frequencyLevel": "Módulo 4 • Menos Comuns",
-    "title": "Comida • Módulo 4: Menos Comuns & Específicas",
-    "subtitle": "Tema 2 (Nível 4/4) • 12 ingredientes, frutas tropicais e vegetais específicos",
-    "pedagogicalObjective": "Conhecer alimentos e ingredientes específicos: Pineapple, Mango, Avocado, Corn, Broccoli, Cucumber, Mushroom, Pepper, Honey, Jam, Flour e Peanut.",
+    "themeTitle": "Tema 2: Comida",
+    "frequencyLevel": "Módulo 4 • Menos Comuns ou Específicas",
+    "title": "Comida • Módulo 4: Menos Comuns",
+    "subtitle": "Tema: Comida (4/4) • 8 ingredientes e alimentos específicos",
+    "pedagogicalObjective": "Conhecer 8 alimentos e ingredientes específicos: Garlic, Pineapple, Avocado, Broccoli, Mushroom, Pepper, Honey e Flour.",
     "type": "lesson",
     "icon": "apple",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 4 de Comida aprendemos itens menos comuns ou mais específicos: Pineapple (\"pái-né-pol\" = Abacaxi), Mango (\"mén-gou\" = Manga), Avocado (\"a-vo-cá-dou\" = Abacate), Corn (\"córn\" = Milho), Broccoli (\"bró-co-li\" = Brócolis) e Cucumber (\"kiú-câm-ber\" = Pepino).",
-      "E completamos o Tema 2 com Mushroom (\"mâx-rum\" = Cogumelo), Pepper (\"pé-per\" = Pimentão/Pimenta), Honey (\"râ-ni\" = Mel), Jam (\"djém\" = Geleia), Flour (\"fláu-er\" = Farinha) e Peanut (\"pí-nât\" = Amendoim)."
+      "Tema: Comida — Módulo 4 (Palavras menos comuns ou específicas): ingredientes culinários e vegetais específicos.",
+      "Palavras deste módulo (8): Garlic (\"gár-lik\" = Alho), Pineapple (\"pái-né-pol\" = Abacaxi), Avocado (\"a-vo-cá-dou\" = Abacate), Broccoli (\"bró-co-li\" = Brócolis), Mushroom (\"mâx-rum\" = Cogumelo), Pepper (\"pé-per\" = Pimentão/Pimenta), Honey (\"râ-ni\" = Mel) e Flour (\"fláu-er\" = Farinha)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -5661,6 +3956,67 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p10-e1",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Garlic",
+        "visualEmoji": "🧄",
+        "visualOptions": [
+          {
+            "text": "Broccoli",
+            "emoji": "🥦",
+            "label": "Broccoli",
+            "translationPt": "Brócolis",
+            "simplePronunciation": "bró-co-li",
+            "phonetic": "/ˈbrɑː.kəl.i/",
+            "exampleEn": "Broccoli is very nutritious.",
+            "examplePt": "O brócolis é muito nutritivo."
+          },
+          {
+            "text": "Flour",
+            "emoji": "🥣",
+            "label": "Flour",
+            "translationPt": "Farinha",
+            "simplePronunciation": "fláu-er",
+            "phonetic": "/ˈflaʊ.ər/",
+            "exampleEn": "Mix flour and eggs for the cake.",
+            "examplePt": "Misture farinha e ovos para o bolo."
+          },
+          {
+            "text": "Garlic",
+            "emoji": "🧄",
+            "label": "Garlic",
+            "translationPt": "Alho",
+            "simplePronunciation": "gár-lik",
+            "phonetic": "/ˈɡɑːr.lɪk/",
+            "exampleEn": "Garlic gives flavor to food.",
+            "examplePt": "O alho dá sabor à comida."
+          },
+          {
+            "text": "Honey",
+            "emoji": "🍯",
+            "label": "Honey",
+            "translationPt": "Mel",
+            "simplePronunciation": "râ-ni",
+            "phonetic": "/ˈhʌn.i/",
+            "exampleEn": "Bees make golden honey.",
+            "examplePt": "As abelhas produzem mel."
+          }
+        ],
+        "options": [
+          "Broccoli",
+          "Flour",
+          "Garlic",
+          "Honey"
+        ],
+        "correctAnswer": "Garlic",
+        "contextSentence": "Garlic gives flavor to food.",
+        "contextSentencePt": "O alho dá sabor à comida.",
+        "explanation": "Exemplo: \"Garlic gives flavor to food.\" — O alho dá sabor à comida.",
+        "phoneticHint": "\"gár-lik\" • /ˈɡɑːr.lɪk/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p10-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Pineapple",
         "visualEmoji": "🍍",
         "visualOptions": [
@@ -5675,75 +4031,24 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O abacaxi é uma fruta tropical."
           },
           {
-            "text": "Broccoli",
-            "emoji": "🥦",
-            "label": "Broccoli",
-            "translationPt": "Brócolis",
-            "simplePronunciation": "bró-co-li",
-            "phonetic": "/ˈbrɑː.kəl.i/",
-            "exampleEn": "Steamed broccoli is very nutritious.",
-            "examplePt": "Brócolis no vapor é muito nutritivo."
+            "text": "Garlic",
+            "emoji": "🧄",
+            "label": "Garlic",
+            "translationPt": "Alho",
+            "simplePronunciation": "gár-lik",
+            "phonetic": "/ˈɡɑːr.lɪk/",
+            "exampleEn": "Garlic gives flavor to food.",
+            "examplePt": "O alho dá sabor à comida."
           },
           {
-            "text": "Flour",
-            "emoji": "🥣",
-            "label": "Flour",
-            "translationPt": "Farinha",
-            "simplePronunciation": "fláu-er",
-            "phonetic": "/ˈflaʊ.ər/",
-            "exampleEn": "Mix wheat flour and eggs for the cake.",
-            "examplePt": "Misture farinha de trigo e ovos para o bolo."
-          },
-          {
-            "text": "Honey",
-            "emoji": "🍯",
-            "label": "Honey",
-            "translationPt": "Mel",
-            "simplePronunciation": "râ-ni",
-            "phonetic": "/ˈhʌn.i/",
-            "exampleEn": "Bees make golden honey.",
-            "examplePt": "As abelhas produzem mel dourado."
-          }
-        ],
-        "options": [
-          "Pineapple",
-          "Broccoli",
-          "Flour",
-          "Honey"
-        ],
-        "correctAnswer": "Pineapple",
-        "contextSentence": "Pineapple is a tropical fruit.",
-        "contextSentencePt": "O abacaxi é uma fruta tropical.",
-        "explanation": "Exemplo: \"Pineapple is a tropical fruit.\" — O abacaxi é uma fruta tropical.",
-        "phoneticHint": "\"pái-né-pol\" • /ˈpaɪnˌæp.əl/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p10-e2",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Mango",
-        "visualEmoji": "🥭",
-        "visualOptions": [
-          {
-            "text": "Peanut",
-            "emoji": "🥜",
-            "label": "Peanut",
-            "translationPt": "Amendoim",
-            "simplePronunciation": "pí-nât",
-            "phonetic": "/ˈpiː.nʌt/",
-            "exampleEn": "Roasted peanuts are a crunchy snack.",
-            "examplePt": "Amendoins torrados são um lanche crocante."
-          },
-          {
-            "text": "Mango",
-            "emoji": "🥭",
-            "label": "Mango",
-            "translationPt": "Manga",
-            "simplePronunciation": "mén-gou",
-            "phonetic": "/ˈmæŋ.ɡoʊ/",
-            "exampleEn": "This ripe mango is very sweet.",
-            "examplePt": "Esta manga madura está muito doce."
+            "text": "Mushroom",
+            "emoji": "🍄",
+            "label": "Mushroom",
+            "translationPt": "Cogumelo",
+            "simplePronunciation": "mâx-rum",
+            "phonetic": "/ˈmʌʃ.ruːm/",
+            "exampleEn": "Add mushrooms to the sauce.",
+            "examplePt": "Adicione cogumelos ao molho."
           },
           {
             "text": "Pepper",
@@ -5753,30 +4058,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "pé-per",
             "phonetic": "/ˈpep.ər/",
             "exampleEn": "Red pepper adds color to the dish.",
-            "examplePt": "O pimentão vermelho dá cor ao prato."
-          },
-          {
-            "text": "Cucumber",
-            "emoji": "🥒",
-            "label": "Cucumber",
-            "translationPt": "Pepino",
-            "simplePronunciation": "kiú-câm-ber",
-            "phonetic": "/ˈkjuː.kʌm.bər/",
-            "exampleEn": "Put cucumber slices in the salad.",
-            "examplePt": "Coloque rodelas de pepino na salada."
+            "examplePt": "O pimentão dá cor ao prato."
           }
         ],
         "options": [
-          "Peanut",
-          "Mango",
-          "Pepper",
-          "Cucumber"
+          "Pineapple",
+          "Garlic",
+          "Mushroom",
+          "Pepper"
         ],
-        "correctAnswer": "Mango",
-        "contextSentence": "This ripe mango is very sweet.",
-        "contextSentencePt": "Esta manga madura está muito doce.",
-        "explanation": "Exemplo: \"This ripe mango is very sweet.\" — Esta manga madura está muito doce.",
-        "phoneticHint": "\"mén-gou\" • /ˈmæŋ.ɡoʊ/",
+        "correctAnswer": "Pineapple",
+        "contextSentence": "Pineapple is a tropical fruit.",
+        "contextSentencePt": "O abacaxi é uma fruta tropical.",
+        "explanation": "Exemplo: \"Pineapple is a tropical fruit.\" — O abacaxi é uma fruta tropical.",
+        "phoneticHint": "\"pái-né-pol\" • /ˈpaɪnˌæp.əl/",
         "skillCategory": "listening"
       },
       {
@@ -5787,14 +4082,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥑",
         "visualOptions": [
           {
-            "text": "Jam",
-            "emoji": "🍓",
-            "label": "Jam",
-            "translationPt": "Geleia",
-            "simplePronunciation": "djém",
-            "phonetic": "/dʒæm/",
-            "exampleEn": "Spread strawberry jam on the bread.",
-            "examplePt": "Passe geleia de morango no pão."
+            "text": "Pineapple",
+            "emoji": "🍍",
+            "label": "Pineapple",
+            "translationPt": "Abacaxi",
+            "simplePronunciation": "pái-né-pol",
+            "phonetic": "/ˈpaɪnˌæp.əl/",
+            "exampleEn": "Pineapple is a tropical fruit.",
+            "examplePt": "O abacaxi é uma fruta tropical."
+          },
+          {
+            "text": "Garlic",
+            "emoji": "🧄",
+            "label": "Garlic",
+            "translationPt": "Alho",
+            "simplePronunciation": "gár-lik",
+            "phonetic": "/ˈɡɑːr.lɪk/",
+            "exampleEn": "Garlic gives flavor to food.",
+            "examplePt": "O alho dá sabor à comida."
           },
           {
             "text": "Avocado",
@@ -5807,31 +4112,21 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O abacate é rico e cremoso."
           },
           {
-            "text": "Corn",
-            "emoji": "🌽",
-            "label": "Corn",
-            "translationPt": "Milho",
-            "simplePronunciation": "córn",
-            "phonetic": "/kɔːrn/",
-            "exampleEn": "Cooked yellow corn is delicious.",
-            "examplePt": "Milho amarelo cozido é delicioso."
-          },
-          {
-            "text": "Pineapple",
-            "emoji": "🍍",
-            "label": "Pineapple",
-            "translationPt": "Abacaxi",
-            "simplePronunciation": "pái-né-pol",
-            "phonetic": "/ˈpaɪnˌæp.əl/",
-            "exampleEn": "Pineapple is a tropical fruit.",
-            "examplePt": "O abacaxi é uma fruta tropical."
+            "text": "Honey",
+            "emoji": "🍯",
+            "label": "Honey",
+            "translationPt": "Mel",
+            "simplePronunciation": "râ-ni",
+            "phonetic": "/ˈhʌn.i/",
+            "exampleEn": "Bees make golden honey.",
+            "examplePt": "As abelhas produzem mel."
           }
         ],
         "options": [
-          "Jam",
+          "Pineapple",
+          "Garlic",
           "Avocado",
-          "Corn",
-          "Pineapple"
+          "Honey"
         ],
         "correctAnswer": "Avocado",
         "contextSentence": "Avocado is rich and creamy.",
@@ -5844,140 +4139,140 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p10-e4",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Corn",
-        "visualEmoji": "🌽",
+        "audioPhrase": "Broccoli",
+        "visualEmoji": "🥦",
         "visualOptions": [
           {
-            "text": "Honey",
-            "emoji": "🍯",
-            "label": "Honey",
-            "translationPt": "Mel",
-            "simplePronunciation": "râ-ni",
-            "phonetic": "/ˈhʌn.i/",
-            "exampleEn": "Bees make golden honey.",
-            "examplePt": "As abelhas produzem mel dourado."
+            "text": "Pineapple",
+            "emoji": "🍍",
+            "label": "Pineapple",
+            "translationPt": "Abacaxi",
+            "simplePronunciation": "pái-né-pol",
+            "phonetic": "/ˈpaɪnˌæp.əl/",
+            "exampleEn": "Pineapple is a tropical fruit.",
+            "examplePt": "O abacaxi é uma fruta tropical."
           },
           {
-            "text": "Flour",
-            "emoji": "🥣",
-            "label": "Flour",
-            "translationPt": "Farinha",
-            "simplePronunciation": "fláu-er",
-            "phonetic": "/ˈflaʊ.ər/",
-            "exampleEn": "Mix wheat flour and eggs for the cake.",
-            "examplePt": "Misture farinha de trigo e ovos para o bolo."
+            "text": "Broccoli",
+            "emoji": "🥦",
+            "label": "Broccoli",
+            "translationPt": "Brócolis",
+            "simplePronunciation": "bró-co-li",
+            "phonetic": "/ˈbrɑː.kəl.i/",
+            "exampleEn": "Broccoli is very nutritious.",
+            "examplePt": "O brócolis é muito nutritivo."
           },
           {
-            "text": "Mushroom",
-            "emoji": "🍄",
-            "label": "Mushroom",
-            "translationPt": "Cogumelo",
-            "simplePronunciation": "mâx-rum",
-            "phonetic": "/ˈmʌʃ.ruːm/",
-            "exampleEn": "Add mushrooms to the pasta sauce.",
-            "examplePt": "Adicione cogumelos ao molho de macarrão."
+            "text": "Pepper",
+            "emoji": "🫑",
+            "label": "Pepper",
+            "translationPt": "Pimentão / Pimenta",
+            "simplePronunciation": "pé-per",
+            "phonetic": "/ˈpep.ər/",
+            "exampleEn": "Red pepper adds color to the dish.",
+            "examplePt": "O pimentão dá cor ao prato."
           },
           {
-            "text": "Corn",
-            "emoji": "🌽",
-            "label": "Corn",
-            "translationPt": "Milho",
-            "simplePronunciation": "córn",
-            "phonetic": "/kɔːrn/",
-            "exampleEn": "Cooked yellow corn is delicious.",
-            "examplePt": "Milho amarelo cozido é delicioso."
+            "text": "Avocado",
+            "emoji": "🥑",
+            "label": "Avocado",
+            "translationPt": "Abacate",
+            "simplePronunciation": "a-vo-cá-dou",
+            "phonetic": "/ˌæv.əˈkɑː.doʊ/",
+            "exampleEn": "Avocado is rich and creamy.",
+            "examplePt": "O abacate é rico e cremoso."
           }
         ],
         "options": [
-          "Honey",
-          "Flour",
-          "Mushroom",
-          "Corn"
+          "Pineapple",
+          "Broccoli",
+          "Pepper",
+          "Avocado"
         ],
-        "correctAnswer": "Corn",
-        "contextSentence": "Cooked yellow corn is delicious.",
-        "contextSentencePt": "Milho amarelo cozido é delicioso.",
-        "explanation": "Exemplo: \"Cooked yellow corn is delicious.\" — Milho amarelo cozido é delicioso.",
-        "phoneticHint": "\"córn\" • /kɔːrn/",
+        "correctAnswer": "Broccoli",
+        "contextSentence": "Broccoli is very nutritious.",
+        "contextSentencePt": "O brócolis é muito nutritivo.",
+        "explanation": "Exemplo: \"Broccoli is very nutritious.\" — O brócolis é muito nutritivo.",
+        "phoneticHint": "\"bró-co-li\" • /ˈbrɑː.kəl.i/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e5",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Broccoli",
-        "visualEmoji": "🥦",
+        "audioPhrase": "Mushroom",
+        "visualEmoji": "🍄",
         "visualOptions": [
           {
-            "text": "Mango",
-            "emoji": "🥭",
-            "label": "Mango",
-            "translationPt": "Manga",
-            "simplePronunciation": "mén-gou",
-            "phonetic": "/ˈmæŋ.ɡoʊ/",
-            "exampleEn": "This ripe mango is very sweet.",
-            "examplePt": "Esta manga madura está muito doce."
+            "text": "Flour",
+            "emoji": "🥣",
+            "label": "Flour",
+            "translationPt": "Farinha",
+            "simplePronunciation": "fláu-er",
+            "phonetic": "/ˈflaʊ.ər/",
+            "exampleEn": "Mix flour and eggs for the cake.",
+            "examplePt": "Misture farinha e ovos para o bolo."
           },
           {
-            "text": "Pepper",
-            "emoji": "🫑",
-            "label": "Pepper",
-            "translationPt": "Pimentão / Pimenta",
-            "simplePronunciation": "pé-per",
-            "phonetic": "/ˈpep.ər/",
-            "exampleEn": "Red pepper adds color to the dish.",
-            "examplePt": "O pimentão vermelho dá cor ao prato."
+            "text": "Garlic",
+            "emoji": "🧄",
+            "label": "Garlic",
+            "translationPt": "Alho",
+            "simplePronunciation": "gár-lik",
+            "phonetic": "/ˈɡɑːr.lɪk/",
+            "exampleEn": "Garlic gives flavor to food.",
+            "examplePt": "O alho dá sabor à comida."
           },
           {
-            "text": "Broccoli",
-            "emoji": "🥦",
-            "label": "Broccoli",
-            "translationPt": "Brócolis",
-            "simplePronunciation": "bró-co-li",
-            "phonetic": "/ˈbrɑː.kəl.i/",
-            "exampleEn": "Steamed broccoli is very nutritious.",
-            "examplePt": "Brócolis no vapor é muito nutritivo."
+            "text": "Honey",
+            "emoji": "🍯",
+            "label": "Honey",
+            "translationPt": "Mel",
+            "simplePronunciation": "râ-ni",
+            "phonetic": "/ˈhʌn.i/",
+            "exampleEn": "Bees make golden honey.",
+            "examplePt": "As abelhas produzem mel."
           },
           {
-            "text": "Peanut",
-            "emoji": "🥜",
-            "label": "Peanut",
-            "translationPt": "Amendoim",
-            "simplePronunciation": "pí-nât",
-            "phonetic": "/ˈpiː.nʌt/",
-            "exampleEn": "Roasted peanuts are a crunchy snack.",
-            "examplePt": "Amendoins torrados são um lanche crocante."
+            "text": "Mushroom",
+            "emoji": "🍄",
+            "label": "Mushroom",
+            "translationPt": "Cogumelo",
+            "simplePronunciation": "mâx-rum",
+            "phonetic": "/ˈmʌʃ.ruːm/",
+            "exampleEn": "Add mushrooms to the sauce.",
+            "examplePt": "Adicione cogumelos ao molho."
           }
         ],
         "options": [
-          "Mango",
-          "Pepper",
-          "Broccoli",
-          "Peanut"
+          "Flour",
+          "Garlic",
+          "Honey",
+          "Mushroom"
         ],
-        "correctAnswer": "Broccoli",
-        "contextSentence": "Steamed broccoli is very nutritious.",
-        "contextSentencePt": "Brócolis no vapor é muito nutritivo.",
-        "explanation": "Exemplo: \"Steamed broccoli is very nutritious.\" — Brócolis no vapor é muito nutritivo.",
-        "phoneticHint": "\"bró-co-li\" • /ˈbrɑː.kəl.i/",
+        "correctAnswer": "Mushroom",
+        "contextSentence": "Add mushrooms to the sauce.",
+        "contextSentencePt": "Adicione cogumelos ao molho.",
+        "explanation": "Exemplo: \"Add mushrooms to the sauce.\" — Adicione cogumelos ao molho.",
+        "phoneticHint": "\"mâx-rum\" • /ˈmʌʃ.ruːm/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p10-e6",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Cucumber",
-        "visualEmoji": "🥒",
+        "audioPhrase": "Pepper",
+        "visualEmoji": "🫑",
         "visualOptions": [
           {
-            "text": "Cucumber",
-            "emoji": "🥒",
-            "label": "Cucumber",
-            "translationPt": "Pepino",
-            "simplePronunciation": "kiú-câm-ber",
-            "phonetic": "/ˈkjuː.kʌm.bər/",
-            "exampleEn": "Put cucumber slices in the salad.",
-            "examplePt": "Coloque rodelas de pepino na salada."
+            "text": "Pepper",
+            "emoji": "🫑",
+            "label": "Pepper",
+            "translationPt": "Pimentão / Pimenta",
+            "simplePronunciation": "pé-per",
+            "phonetic": "/ˈpep.ər/",
+            "exampleEn": "Red pepper adds color to the dish.",
+            "examplePt": "O pimentão dá cor ao prato."
           },
           {
             "text": "Avocado",
@@ -5990,16 +4285,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O abacate é rico e cremoso."
           },
           {
-            "text": "Jam",
-            "emoji": "🍓",
-            "label": "Jam",
-            "translationPt": "Geleia",
-            "simplePronunciation": "djém",
-            "phonetic": "/dʒæm/",
-            "exampleEn": "Spread strawberry jam on the bread.",
-            "examplePt": "Passe geleia de morango no pão."
-          },
-          {
             "text": "Pineapple",
             "emoji": "🍍",
             "label": "Pineapple",
@@ -6008,38 +4293,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈpaɪnˌæp.əl/",
             "exampleEn": "Pineapple is a tropical fruit.",
             "examplePt": "O abacaxi é uma fruta tropical."
+          },
+          {
+            "text": "Broccoli",
+            "emoji": "🥦",
+            "label": "Broccoli",
+            "translationPt": "Brócolis",
+            "simplePronunciation": "bró-co-li",
+            "phonetic": "/ˈbrɑː.kəl.i/",
+            "exampleEn": "Broccoli is very nutritious.",
+            "examplePt": "O brócolis é muito nutritivo."
           }
         ],
         "options": [
-          "Cucumber",
+          "Pepper",
           "Avocado",
-          "Jam",
-          "Pineapple"
+          "Pineapple",
+          "Broccoli"
         ],
-        "correctAnswer": "Cucumber",
-        "contextSentence": "Put cucumber slices in the salad.",
-        "contextSentencePt": "Coloque rodelas de pepino na salada.",
-        "explanation": "Exemplo: \"Put cucumber slices in the salad.\" — Coloque rodelas de pepino na salada.",
-        "phoneticHint": "\"kiú-câm-ber\" • /ˈkjuː.kʌm.bər/",
+        "correctAnswer": "Pepper",
+        "contextSentence": "Red pepper adds color to the dish.",
+        "contextSentencePt": "O pimentão dá cor ao prato.",
+        "explanation": "Exemplo: \"Red pepper adds color to the dish.\" — O pimentão dá cor ao prato.",
+        "phoneticHint": "\"pé-per\" • /ˈpep.ər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p10-e7",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Mushroom",
-        "visualEmoji": "🍄",
+        "audioPhrase": "Honey",
+        "visualEmoji": "🍯",
         "visualOptions": [
-          {
-            "text": "Corn",
-            "emoji": "🌽",
-            "label": "Corn",
-            "translationPt": "Milho",
-            "simplePronunciation": "córn",
-            "phonetic": "/kɔːrn/",
-            "exampleEn": "Cooked yellow corn is delicious.",
-            "examplePt": "Milho amarelo cozido é delicioso."
-          },
           {
             "text": "Broccoli",
             "emoji": "🥦",
@@ -6047,140 +4332,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Brócolis",
             "simplePronunciation": "bró-co-li",
             "phonetic": "/ˈbrɑː.kəl.i/",
-            "exampleEn": "Steamed broccoli is very nutritious.",
-            "examplePt": "Brócolis no vapor é muito nutritivo."
-          },
-          {
-            "text": "Mushroom",
-            "emoji": "🍄",
-            "label": "Mushroom",
-            "translationPt": "Cogumelo",
-            "simplePronunciation": "mâx-rum",
-            "phonetic": "/ˈmʌʃ.ruːm/",
-            "exampleEn": "Add mushrooms to the pasta sauce.",
-            "examplePt": "Adicione cogumelos ao molho de macarrão."
-          },
-          {
-            "text": "Cucumber",
-            "emoji": "🥒",
-            "label": "Cucumber",
-            "translationPt": "Pepino",
-            "simplePronunciation": "kiú-câm-ber",
-            "phonetic": "/ˈkjuː.kʌm.bər/",
-            "exampleEn": "Put cucumber slices in the salad.",
-            "examplePt": "Coloque rodelas de pepino na salada."
-          }
-        ],
-        "options": [
-          "Corn",
-          "Broccoli",
-          "Mushroom",
-          "Cucumber"
-        ],
-        "correctAnswer": "Mushroom",
-        "contextSentence": "Add mushrooms to the pasta sauce.",
-        "contextSentencePt": "Adicione cogumelos ao molho de macarrão.",
-        "explanation": "Exemplo: \"Add mushrooms to the pasta sauce.\" — Adicione cogumelos ao molho de macarrão.",
-        "phoneticHint": "\"mâx-rum\" • /ˈmʌʃ.ruːm/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p10-e8",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Pepper",
-        "visualEmoji": "🫑",
-        "visualOptions": [
-          {
-            "text": "Peanut",
-            "emoji": "🥜",
-            "label": "Peanut",
-            "translationPt": "Amendoim",
-            "simplePronunciation": "pí-nât",
-            "phonetic": "/ˈpiː.nʌt/",
-            "exampleEn": "Roasted peanuts are a crunchy snack.",
-            "examplePt": "Amendoins torrados são um lanche crocante."
-          },
-          {
-            "text": "Pepper",
-            "emoji": "🫑",
-            "label": "Pepper",
-            "translationPt": "Pimentão / Pimenta",
-            "simplePronunciation": "pé-per",
-            "phonetic": "/ˈpep.ər/",
-            "exampleEn": "Red pepper adds color to the dish.",
-            "examplePt": "O pimentão vermelho dá cor ao prato."
-          },
-          {
-            "text": "Mango",
-            "emoji": "🥭",
-            "label": "Mango",
-            "translationPt": "Manga",
-            "simplePronunciation": "mén-gou",
-            "phonetic": "/ˈmæŋ.ɡoʊ/",
-            "exampleEn": "This ripe mango is very sweet.",
-            "examplePt": "Esta manga madura está muito doce."
-          },
-          {
-            "text": "Flour",
-            "emoji": "🥣",
-            "label": "Flour",
-            "translationPt": "Farinha",
-            "simplePronunciation": "fláu-er",
-            "phonetic": "/ˈflaʊ.ər/",
-            "exampleEn": "Mix wheat flour and eggs for the cake.",
-            "examplePt": "Misture farinha de trigo e ovos para o bolo."
-          }
-        ],
-        "options": [
-          "Peanut",
-          "Pepper",
-          "Mango",
-          "Flour"
-        ],
-        "correctAnswer": "Pepper",
-        "contextSentence": "Red pepper adds color to the dish.",
-        "contextSentencePt": "O pimentão vermelho dá cor ao prato.",
-        "explanation": "Exemplo: \"Red pepper adds color to the dish.\" — O pimentão vermelho dá cor ao prato.",
-        "phoneticHint": "\"pé-per\" • /ˈpep.ər/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p10-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Honey",
-        "visualEmoji": "🍯",
-        "visualOptions": [
-          {
-            "text": "Mushroom",
-            "emoji": "🍄",
-            "label": "Mushroom",
-            "translationPt": "Cogumelo",
-            "simplePronunciation": "mâx-rum",
-            "phonetic": "/ˈmʌʃ.ruːm/",
-            "exampleEn": "Add mushrooms to the pasta sauce.",
-            "examplePt": "Adicione cogumelos ao molho de macarrão."
-          },
-          {
-            "text": "Mango",
-            "emoji": "🥭",
-            "label": "Mango",
-            "translationPt": "Manga",
-            "simplePronunciation": "mén-gou",
-            "phonetic": "/ˈmæŋ.ɡoʊ/",
-            "exampleEn": "This ripe mango is very sweet.",
-            "examplePt": "Esta manga madura está muito doce."
-          },
-          {
-            "text": "Avocado",
-            "emoji": "🥑",
-            "label": "Avocado",
-            "translationPt": "Abacate",
-            "simplePronunciation": "a-vo-cá-dou",
-            "phonetic": "/ˌæv.əˈkɑː.doʊ/",
-            "exampleEn": "Avocado is rich and creamy.",
-            "examplePt": "O abacate é rico e cremoso."
+            "exampleEn": "Broccoli is very nutritious.",
+            "examplePt": "O brócolis é muito nutritivo."
           },
           {
             "text": "Honey",
@@ -6190,49 +4343,49 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "râ-ni",
             "phonetic": "/ˈhʌn.i/",
             "exampleEn": "Bees make golden honey.",
-            "examplePt": "As abelhas produzem mel dourado."
+            "examplePt": "As abelhas produzem mel."
+          },
+          {
+            "text": "Mushroom",
+            "emoji": "🍄",
+            "label": "Mushroom",
+            "translationPt": "Cogumelo",
+            "simplePronunciation": "mâx-rum",
+            "phonetic": "/ˈmʌʃ.ruːm/",
+            "exampleEn": "Add mushrooms to the sauce.",
+            "examplePt": "Adicione cogumelos ao molho."
+          },
+          {
+            "text": "Flour",
+            "emoji": "🥣",
+            "label": "Flour",
+            "translationPt": "Farinha",
+            "simplePronunciation": "fláu-er",
+            "phonetic": "/ˈflaʊ.ər/",
+            "exampleEn": "Mix flour and eggs for the cake.",
+            "examplePt": "Misture farinha e ovos para o bolo."
           }
         ],
         "options": [
+          "Broccoli",
+          "Honey",
           "Mushroom",
-          "Mango",
-          "Avocado",
-          "Honey"
+          "Flour"
         ],
         "correctAnswer": "Honey",
         "contextSentence": "Bees make golden honey.",
-        "contextSentencePt": "As abelhas produzem mel dourado.",
-        "explanation": "Exemplo: \"Bees make golden honey.\" — As abelhas produzem mel dourado.",
+        "contextSentencePt": "As abelhas produzem mel.",
+        "explanation": "Exemplo: \"Bees make golden honey.\" — As abelhas produzem mel.",
         "phoneticHint": "\"râ-ni\" • /ˈhʌn.i/",
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p10-e10",
+        "id": "w0-p10-e8",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Jam",
-        "visualEmoji": "🍓",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Flour",
+        "visualEmoji": "🥣",
         "visualOptions": [
-          {
-            "text": "Jam",
-            "emoji": "🍓",
-            "label": "Jam",
-            "translationPt": "Geleia",
-            "simplePronunciation": "djém",
-            "phonetic": "/dʒæm/",
-            "exampleEn": "Spread strawberry jam on the bread.",
-            "examplePt": "Passe geleia de morango no pão."
-          },
-          {
-            "text": "Corn",
-            "emoji": "🌽",
-            "label": "Corn",
-            "translationPt": "Milho",
-            "simplePronunciation": "córn",
-            "phonetic": "/kɔːrn/",
-            "exampleEn": "Cooked yellow corn is delicious.",
-            "examplePt": "Milho amarelo cozido é delicioso."
-          },
           {
             "text": "Pineapple",
             "emoji": "🍍",
@@ -6244,98 +4397,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O abacaxi é uma fruta tropical."
           },
           {
-            "text": "Broccoli",
-            "emoji": "🥦",
-            "label": "Broccoli",
-            "translationPt": "Brócolis",
-            "simplePronunciation": "bró-co-li",
-            "phonetic": "/ˈbrɑː.kəl.i/",
-            "exampleEn": "Steamed broccoli is very nutritious.",
-            "examplePt": "Brócolis no vapor é muito nutritivo."
-          }
-        ],
-        "options": [
-          "Jam",
-          "Corn",
-          "Pineapple",
-          "Broccoli"
-        ],
-        "correctAnswer": "Jam",
-        "contextSentence": "Spread strawberry jam on the bread.",
-        "contextSentencePt": "Passe geleia de morango no pão.",
-        "explanation": "Exemplo: \"Spread strawberry jam on the bread.\" — Passe geleia de morango no pão.",
-        "phoneticHint": "\"djém\" • /dʒæm/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p10-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Flour",
-        "visualEmoji": "🥣",
-        "visualOptions": [
-          {
-            "text": "Pepper",
-            "emoji": "🫑",
-            "label": "Pepper",
-            "translationPt": "Pimentão / Pimenta",
-            "simplePronunciation": "pé-per",
-            "phonetic": "/ˈpep.ər/",
-            "exampleEn": "Red pepper adds color to the dish.",
-            "examplePt": "O pimentão vermelho dá cor ao prato."
-          },
-          {
-            "text": "Mushroom",
-            "emoji": "🍄",
-            "label": "Mushroom",
-            "translationPt": "Cogumelo",
-            "simplePronunciation": "mâx-rum",
-            "phonetic": "/ˈmʌʃ.ruːm/",
-            "exampleEn": "Add mushrooms to the pasta sauce.",
-            "examplePt": "Adicione cogumelos ao molho de macarrão."
-          },
-          {
-            "text": "Cucumber",
-            "emoji": "🥒",
-            "label": "Cucumber",
-            "translationPt": "Pepino",
-            "simplePronunciation": "kiú-câm-ber",
-            "phonetic": "/ˈkjuː.kʌm.bər/",
-            "exampleEn": "Put cucumber slices in the salad.",
-            "examplePt": "Coloque rodelas de pepino na salada."
-          },
-          {
-            "text": "Flour",
-            "emoji": "🥣",
-            "label": "Flour",
-            "translationPt": "Farinha",
-            "simplePronunciation": "fláu-er",
-            "phonetic": "/ˈflaʊ.ər/",
-            "exampleEn": "Mix wheat flour and eggs for the cake.",
-            "examplePt": "Misture farinha de trigo e ovos para o bolo."
-          }
-        ],
-        "options": [
-          "Pepper",
-          "Mushroom",
-          "Cucumber",
-          "Flour"
-        ],
-        "correctAnswer": "Flour",
-        "contextSentence": "Mix wheat flour and eggs for the cake.",
-        "contextSentencePt": "Misture farinha de trigo e ovos para o bolo.",
-        "explanation": "Exemplo: \"Mix wheat flour and eggs for the cake.\" — Misture farinha de trigo e ovos para o bolo.",
-        "phoneticHint": "\"fláu-er\" • /ˈflaʊ.ər/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p10-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Peanut",
-        "visualEmoji": "🥜",
-        "visualOptions": [
-          {
             "text": "Avocado",
             "emoji": "🥑",
             "label": "Avocado",
@@ -6346,48 +4407,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O abacate é rico e cremoso."
           },
           {
-            "text": "Mango",
-            "emoji": "🥭",
-            "label": "Mango",
-            "translationPt": "Manga",
-            "simplePronunciation": "mén-gou",
-            "phonetic": "/ˈmæŋ.ɡoʊ/",
-            "exampleEn": "This ripe mango is very sweet.",
-            "examplePt": "Esta manga madura está muito doce."
+            "text": "Pepper",
+            "emoji": "🫑",
+            "label": "Pepper",
+            "translationPt": "Pimentão / Pimenta",
+            "simplePronunciation": "pé-per",
+            "phonetic": "/ˈpep.ər/",
+            "exampleEn": "Red pepper adds color to the dish.",
+            "examplePt": "O pimentão dá cor ao prato."
           },
           {
-            "text": "Peanut",
-            "emoji": "🥜",
-            "label": "Peanut",
-            "translationPt": "Amendoim",
-            "simplePronunciation": "pí-nât",
-            "phonetic": "/ˈpiː.nʌt/",
-            "exampleEn": "Roasted peanuts are a crunchy snack.",
-            "examplePt": "Amendoins torrados são um lanche crocante."
-          },
-          {
-            "text": "Honey",
-            "emoji": "🍯",
-            "label": "Honey",
-            "translationPt": "Mel",
-            "simplePronunciation": "râ-ni",
-            "phonetic": "/ˈhʌn.i/",
-            "exampleEn": "Bees make golden honey.",
-            "examplePt": "As abelhas produzem mel dourado."
+            "text": "Flour",
+            "emoji": "🥣",
+            "label": "Flour",
+            "translationPt": "Farinha",
+            "simplePronunciation": "fláu-er",
+            "phonetic": "/ˈflaʊ.ər/",
+            "exampleEn": "Mix flour and eggs for the cake.",
+            "examplePt": "Misture farinha e ovos para o bolo."
           }
         ],
         "options": [
+          "Pineapple",
           "Avocado",
-          "Mango",
-          "Peanut",
-          "Honey"
+          "Pepper",
+          "Flour"
         ],
-        "correctAnswer": "Peanut",
-        "contextSentence": "Roasted peanuts are a crunchy snack.",
-        "contextSentencePt": "Amendoins torrados são um lanche crocante.",
-        "explanation": "Exemplo: \"Roasted peanuts are a crunchy snack.\" — Amendoins torrados são um lanche crocante.",
-        "phoneticHint": "\"pí-nât\" • /ˈpiː.nʌt/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Flour",
+        "contextSentence": "Mix flour and eggs for the cake.",
+        "contextSentencePt": "Misture farinha e ovos para o bolo.",
+        "explanation": "Exemplo: \"Mix flour and eggs for the cake.\" — Misture farinha e ovos para o bolo.",
+        "phoneticHint": "\"fláu-er\" • /ˈflaʊ.ər/",
+        "skillCategory": "listening"
       }
     ]
   },
@@ -6396,18 +4447,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 11,
     "themeId": "body",
-    "themeTitle": "Corpo Humano",
-    "frequencyLevel": "Módulo 1 • Essenciais",
+    "themeTitle": "Tema 3: Corpo Humano",
+    "frequencyLevel": "Módulo 1 • Essenciais e Mais Comuns",
     "title": "Corpo Humano • Módulo 1: Palavras Essenciais",
-    "subtitle": "Tema 3 (Nível 1/4) • As 12 partes principais do corpo mais usadas no dia a dia",
-    "pedagogicalObjective": "Reconhecer e pronunciar as 12 partes essenciais do corpo humano: Head, Hand, Foot, Eye, Ear, Nose, Mouth, Hair, Face, Arm, Leg e Body.",
+    "subtitle": "Tema: Corpo Humano (1/4) • 8 partes essenciais do corpo",
+    "pedagogicalObjective": "Reconhecer as 8 partes mais essenciais do corpo humano: Head, Hand, Foot, Eye, Ear, Nose, Mouth e Arm.",
     "type": "lesson",
     "icon": "star",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Iniciamos o Tema 3 (Corpo Humano • Módulo 1: Essenciais): Head (\"réd\" = Cabeça), Hand (\"rénd\" = Mão), Foot (\"fút\" = Pé), Eye (\"ái\" = Olho), Ear (\"ír\" = Orelha/Ouvido) e Nose (\"nôuz\" = Nariz).",
-      "Também aprendemos Mouth (\"máuth\" = Boca), Hair (\"rér\" = Cabelo), Face (\"fêis\" = Rosto), Arm (\"árm\" = Braço), Leg (\"lég\" = Perna) e Body (\"bó-di\" = Corpo).",
-      "Logo após concluir este módulo, você fará o seu 3º Módulo Exclusivo de Pronomes (Reflexivos & Interrogativos)!"
+      "Tema: Corpo Humano — Módulo 1 (Palavras essenciais e mais comuns): as partes fundamentais do corpo.",
+      "Palavras deste módulo (8): Head (\"réd\" = Cabeça), Hand (\"rénd\" = Mão), Foot (\"fút\" = Pé), Eye (\"ái\" = Olho), Ear (\"ír\" = Orelha/Ouvido), Nose (\"nôuz\" = Nariz), Mouth (\"máuth\" = Boca) e Arm (\"árm\" = Braço)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -6420,16 +4470,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧑",
         "visualOptions": [
           {
-            "text": "Ear",
-            "emoji": "👂",
-            "label": "Ear",
-            "translationPt": "Orelha / Ouvido",
-            "simplePronunciation": "ír",
-            "phonetic": "/ɪr/",
-            "exampleEn": "We listen with our ears.",
-            "examplePt": "Nós ouvimos com nossos ouvidos."
-          },
-          {
             "text": "Head",
             "emoji": "🧑",
             "label": "Head",
@@ -6440,14 +4480,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Balance a cabeça para dizer sim."
           },
           {
-            "text": "Hair",
-            "emoji": "💇",
-            "label": "Hair",
-            "translationPt": "Cabelo",
-            "simplePronunciation": "rér",
-            "phonetic": "/her/",
-            "exampleEn": "She brushes her long hair.",
-            "examplePt": "Ela escova seu cabelo comprido."
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé",
+            "simplePronunciation": "fút",
+            "phonetic": "/fʊt/",
+            "exampleEn": "Put your shoe on your foot.",
+            "examplePt": "Coloque o sapato no pé."
           },
           {
             "text": "Eye",
@@ -6458,13 +4498,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/aɪ/",
             "exampleEn": "She has brown eyes.",
             "examplePt": "Ela tem olhos castanhos."
+          },
+          {
+            "text": "Ear",
+            "emoji": "👂",
+            "label": "Ear",
+            "translationPt": "Orelha / Ouvido",
+            "simplePronunciation": "ír",
+            "phonetic": "/ɪr/",
+            "exampleEn": "We listen with our ears.",
+            "examplePt": "Nós ouvimos com os ouvidos."
           }
         ],
         "options": [
-          "Ear",
           "Head",
-          "Hair",
-          "Eye"
+          "Foot",
+          "Eye",
+          "Ear"
         ],
         "correctAnswer": "Head",
         "contextSentence": "Nod your head to say yes.",
@@ -6480,77 +4530,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "audioPhrase": "Hand",
         "visualEmoji": "✋",
         "visualOptions": [
-          {
-            "text": "Leg",
-            "emoji": "🦵",
-            "label": "Leg",
-            "translationPt": "Perna",
-            "simplePronunciation": "lég",
-            "phonetic": "/leɡ/",
-            "exampleEn": "He has strong legs for running.",
-            "examplePt": "Ele tem pernas fortes para correr."
-          },
-          {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão",
-            "simplePronunciation": "rénd",
-            "phonetic": "/hænd/",
-            "exampleEn": "Raise your hand to speak.",
-            "examplePt": "Levante a mão para falar."
-          },
-          {
-            "text": "Body",
-            "emoji": "🧍",
-            "label": "Body",
-            "translationPt": "Corpo",
-            "simplePronunciation": "bó-di",
-            "phonetic": "/ˈbɑː.di/",
-            "exampleEn": "Exercise is good for your body.",
-            "examplePt": "Exercício faz bem para o seu corpo."
-          },
-          {
-            "text": "Nose",
-            "emoji": "👃",
-            "label": "Nose",
-            "translationPt": "Nariz",
-            "simplePronunciation": "nôuz",
-            "phonetic": "/noʊz/",
-            "exampleEn": "Breathe through your nose.",
-            "examplePt": "Respire pelo nariz."
-          }
-        ],
-        "options": [
-          "Leg",
-          "Hand",
-          "Body",
-          "Nose"
-        ],
-        "correctAnswer": "Hand",
-        "contextSentence": "Raise your hand to speak.",
-        "contextSentencePt": "Levante a mão para falar.",
-        "explanation": "Exemplo: \"Raise your hand to speak.\" — Levante a mão para falar.",
-        "phoneticHint": "\"rénd\" • /hænd/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p11-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Foot",
-        "visualEmoji": "🦶",
-        "visualOptions": [
-          {
-            "text": "Face",
-            "emoji": "😊",
-            "label": "Face",
-            "translationPt": "Rosto",
-            "simplePronunciation": "fêis",
-            "phonetic": "/feɪs/",
-            "exampleEn": "Wash your face in the morning.",
-            "examplePt": "Lave o rosto de manhã."
-          },
           {
             "text": "Arm",
             "emoji": "💪",
@@ -6572,35 +4551,45 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Abra a boca para falar."
           },
           {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé",
-            "simplePronunciation": "fút",
-            "phonetic": "/fʊt/",
-            "exampleEn": "Put your shoe on your foot.",
-            "examplePt": "Coloque o sapato no pé."
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão",
+            "simplePronunciation": "rénd",
+            "phonetic": "/hænd/",
+            "exampleEn": "Raise your hand to speak.",
+            "examplePt": "Levante a mão para falar."
+          },
+          {
+            "text": "Nose",
+            "emoji": "👃",
+            "label": "Nose",
+            "translationPt": "Nariz",
+            "simplePronunciation": "nôuz",
+            "phonetic": "/noʊz/",
+            "exampleEn": "Breathe through your nose.",
+            "examplePt": "Respire pelo nariz."
           }
         ],
         "options": [
-          "Face",
           "Arm",
           "Mouth",
-          "Foot"
+          "Hand",
+          "Nose"
         ],
-        "correctAnswer": "Foot",
-        "contextSentence": "Put your shoe on your foot.",
-        "contextSentencePt": "Coloque o sapato no pé.",
-        "explanation": "Exemplo: \"Put your shoe on your foot.\" — Coloque o sapato no pé.",
-        "phoneticHint": "\"fút\" • /fʊt/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Hand",
+        "contextSentence": "Raise your hand to speak.",
+        "contextSentencePt": "Levante a mão para falar.",
+        "explanation": "Exemplo: \"Raise your hand to speak.\" — Levante a mão para falar.",
+        "phoneticHint": "\"rénd\" • /hænd/",
+        "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e4",
+        "id": "w0-p11-e3",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Eye",
-        "visualEmoji": "👁️",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Foot",
+        "visualEmoji": "🦶",
         "visualOptions": [
           {
             "text": "Hand",
@@ -6623,14 +4612,55 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Coloque o sapato no pé."
           },
           {
-            "text": "Eye",
-            "emoji": "👁️",
-            "label": "Eye",
-            "translationPt": "Olho",
-            "simplePronunciation": "ái",
-            "phonetic": "/aɪ/",
-            "exampleEn": "She has brown eyes.",
-            "examplePt": "Ela tem olhos castanhos."
+            "text": "Head",
+            "emoji": "🧑",
+            "label": "Head",
+            "translationPt": "Cabeça",
+            "simplePronunciation": "réd",
+            "phonetic": "/hed/",
+            "exampleEn": "Nod your head to say yes.",
+            "examplePt": "Balance a cabeça para dizer sim."
+          },
+          {
+            "text": "Arm",
+            "emoji": "💪",
+            "label": "Arm",
+            "translationPt": "Braço",
+            "simplePronunciation": "árm",
+            "phonetic": "/ɑːrm/",
+            "exampleEn": "Stretch your arms high.",
+            "examplePt": "Estique seus braços para o alto."
+          }
+        ],
+        "options": [
+          "Hand",
+          "Foot",
+          "Head",
+          "Arm"
+        ],
+        "correctAnswer": "Foot",
+        "contextSentence": "Put your shoe on your foot.",
+        "contextSentencePt": "Coloque o sapato no pé.",
+        "explanation": "Exemplo: \"Put your shoe on your foot.\" — Coloque o sapato no pé.",
+        "phoneticHint": "\"fút\" • /fʊt/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p11-e4",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Eye",
+        "visualEmoji": "👁️",
+        "visualOptions": [
+          {
+            "text": "Nose",
+            "emoji": "👃",
+            "label": "Nose",
+            "translationPt": "Nariz",
+            "simplePronunciation": "nôuz",
+            "phonetic": "/noʊz/",
+            "exampleEn": "Breathe through your nose.",
+            "examplePt": "Respire pelo nariz."
           },
           {
             "text": "Head",
@@ -6641,13 +4671,33 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/hed/",
             "exampleEn": "Nod your head to say yes.",
             "examplePt": "Balance a cabeça para dizer sim."
+          },
+          {
+            "text": "Mouth",
+            "emoji": "👄",
+            "label": "Mouth",
+            "translationPt": "Boca",
+            "simplePronunciation": "máuth",
+            "phonetic": "/maʊθ/",
+            "exampleEn": "Open your mouth to speak.",
+            "examplePt": "Abra a boca para falar."
+          },
+          {
+            "text": "Eye",
+            "emoji": "👁️",
+            "label": "Eye",
+            "translationPt": "Olho",
+            "simplePronunciation": "ái",
+            "phonetic": "/aɪ/",
+            "exampleEn": "She has brown eyes.",
+            "examplePt": "Ela tem olhos castanhos."
           }
         ],
         "options": [
-          "Hand",
-          "Foot",
-          "Eye",
-          "Head"
+          "Nose",
+          "Head",
+          "Mouth",
+          "Eye"
         ],
         "correctAnswer": "Eye",
         "contextSentence": "She has brown eyes.",
@@ -6671,59 +4721,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "ír",
             "phonetic": "/ɪr/",
             "exampleEn": "We listen with our ears.",
-            "examplePt": "Nós ouvimos com nossos ouvidos."
+            "examplePt": "Nós ouvimos com os ouvidos."
           },
-          {
-            "text": "Hair",
-            "emoji": "💇",
-            "label": "Hair",
-            "translationPt": "Cabelo",
-            "simplePronunciation": "rér",
-            "phonetic": "/her/",
-            "exampleEn": "She brushes her long hair.",
-            "examplePt": "Ela escova seu cabelo comprido."
-          },
-          {
-            "text": "Body",
-            "emoji": "🧍",
-            "label": "Body",
-            "translationPt": "Corpo",
-            "simplePronunciation": "bó-di",
-            "phonetic": "/ˈbɑː.di/",
-            "exampleEn": "Exercise is good for your body.",
-            "examplePt": "Exercício faz bem para o seu corpo."
-          },
-          {
-            "text": "Leg",
-            "emoji": "🦵",
-            "label": "Leg",
-            "translationPt": "Perna",
-            "simplePronunciation": "lég",
-            "phonetic": "/leɡ/",
-            "exampleEn": "He has strong legs for running.",
-            "examplePt": "Ele tem pernas fortes para correr."
-          }
-        ],
-        "options": [
-          "Ear",
-          "Hair",
-          "Body",
-          "Leg"
-        ],
-        "correctAnswer": "Ear",
-        "contextSentence": "We listen with our ears.",
-        "contextSentencePt": "Nós ouvimos com nossos ouvidos.",
-        "explanation": "Exemplo: \"We listen with our ears.\" — Nós ouvimos com nossos ouvidos.",
-        "phoneticHint": "\"ír\" • /ɪr/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p11-e6",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Nose",
-        "visualEmoji": "👃",
-        "visualOptions": [
           {
             "text": "Foot",
             "emoji": "🦶",
@@ -6735,14 +4734,55 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Coloque o sapato no pé."
           },
           {
-            "text": "Mouth",
-            "emoji": "👄",
-            "label": "Mouth",
-            "translationPt": "Boca",
-            "simplePronunciation": "máuth",
-            "phonetic": "/maʊθ/",
-            "exampleEn": "Open your mouth to speak.",
-            "examplePt": "Abra a boca para falar."
+            "text": "Hand",
+            "emoji": "✋",
+            "label": "Hand",
+            "translationPt": "Mão",
+            "simplePronunciation": "rénd",
+            "phonetic": "/hænd/",
+            "exampleEn": "Raise your hand to speak.",
+            "examplePt": "Levante a mão para falar."
+          },
+          {
+            "text": "Arm",
+            "emoji": "💪",
+            "label": "Arm",
+            "translationPt": "Braço",
+            "simplePronunciation": "árm",
+            "phonetic": "/ɑːrm/",
+            "exampleEn": "Stretch your arms high.",
+            "examplePt": "Estique seus braços para o alto."
+          }
+        ],
+        "options": [
+          "Ear",
+          "Foot",
+          "Hand",
+          "Arm"
+        ],
+        "correctAnswer": "Ear",
+        "contextSentence": "We listen with our ears.",
+        "contextSentencePt": "Nós ouvimos com os ouvidos.",
+        "explanation": "Exemplo: \"We listen with our ears.\" — Nós ouvimos com os ouvidos.",
+        "phoneticHint": "\"ír\" • /ɪr/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p11-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Nose",
+        "visualEmoji": "👃",
+        "visualOptions": [
+          {
+            "text": "Eye",
+            "emoji": "👁️",
+            "label": "Eye",
+            "translationPt": "Olho",
+            "simplePronunciation": "ái",
+            "phonetic": "/aɪ/",
+            "exampleEn": "She has brown eyes.",
+            "examplePt": "Ela tem olhos castanhos."
           },
           {
             "text": "Nose",
@@ -6755,21 +4795,31 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Respire pelo nariz."
           },
           {
-            "text": "Face",
-            "emoji": "😊",
-            "label": "Face",
-            "translationPt": "Rosto",
-            "simplePronunciation": "fêis",
-            "phonetic": "/feɪs/",
-            "exampleEn": "Wash your face in the morning.",
-            "examplePt": "Lave o rosto de manhã."
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé",
+            "simplePronunciation": "fút",
+            "phonetic": "/fʊt/",
+            "exampleEn": "Put your shoe on your foot.",
+            "examplePt": "Coloque o sapato no pé."
+          },
+          {
+            "text": "Ear",
+            "emoji": "👂",
+            "label": "Ear",
+            "translationPt": "Orelha / Ouvido",
+            "simplePronunciation": "ír",
+            "phonetic": "/ɪr/",
+            "exampleEn": "We listen with our ears.",
+            "examplePt": "Nós ouvimos com os ouvidos."
           }
         ],
         "options": [
-          "Foot",
-          "Mouth",
+          "Eye",
           "Nose",
-          "Face"
+          "Foot",
+          "Ear"
         ],
         "correctAnswer": "Nose",
         "contextSentence": "Breathe through your nose.",
@@ -6796,16 +4846,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Levante a mão para falar."
           },
           {
-            "text": "Mouth",
-            "emoji": "👄",
-            "label": "Mouth",
-            "translationPt": "Boca",
-            "simplePronunciation": "máuth",
-            "phonetic": "/maʊθ/",
-            "exampleEn": "Open your mouth to speak.",
-            "examplePt": "Abra a boca para falar."
-          },
-          {
             "text": "Head",
             "emoji": "🧑",
             "label": "Head",
@@ -6824,13 +4864,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/aɪ/",
             "exampleEn": "She has brown eyes.",
             "examplePt": "Ela tem olhos castanhos."
+          },
+          {
+            "text": "Mouth",
+            "emoji": "👄",
+            "label": "Mouth",
+            "translationPt": "Boca",
+            "simplePronunciation": "máuth",
+            "phonetic": "/maʊθ/",
+            "exampleEn": "Open your mouth to speak.",
+            "examplePt": "Abra a boca para falar."
           }
         ],
         "options": [
           "Hand",
-          "Mouth",
           "Head",
-          "Eye"
+          "Eye",
+          "Mouth"
         ],
         "correctAnswer": "Mouth",
         "contextSentence": "Open your mouth to speak.",
@@ -6843,9 +4893,39 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p11-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Hair",
-        "visualEmoji": "💇",
+        "audioPhrase": "Arm",
+        "visualEmoji": "💪",
         "visualOptions": [
+          {
+            "text": "Nose",
+            "emoji": "👃",
+            "label": "Nose",
+            "translationPt": "Nariz",
+            "simplePronunciation": "nôuz",
+            "phonetic": "/noʊz/",
+            "exampleEn": "Breathe through your nose.",
+            "examplePt": "Respire pelo nariz."
+          },
+          {
+            "text": "Foot",
+            "emoji": "🦶",
+            "label": "Foot",
+            "translationPt": "Pé",
+            "simplePronunciation": "fút",
+            "phonetic": "/fʊt/",
+            "exampleEn": "Put your shoe on your foot.",
+            "examplePt": "Coloque o sapato no pé."
+          },
+          {
+            "text": "Arm",
+            "emoji": "💪",
+            "label": "Arm",
+            "translationPt": "Braço",
+            "simplePronunciation": "árm",
+            "phonetic": "/ɑːrm/",
+            "exampleEn": "Stretch your arms high.",
+            "examplePt": "Estique seus braços para o alto."
+          },
           {
             "text": "Ear",
             "emoji": "👂",
@@ -6854,7 +4934,218 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "ír",
             "phonetic": "/ɪr/",
             "exampleEn": "We listen with our ears.",
-            "examplePt": "Nós ouvimos com nossos ouvidos."
+            "examplePt": "Nós ouvimos com os ouvidos."
+          }
+        ],
+        "options": [
+          "Nose",
+          "Foot",
+          "Arm",
+          "Ear"
+        ],
+        "correctAnswer": "Arm",
+        "contextSentence": "Stretch your arms high.",
+        "contextSentencePt": "Estique seus braços para o alto.",
+        "explanation": "Exemplo: \"Stretch your arms high.\" — Estique seus braços para o alto.",
+        "phoneticHint": "\"árm\" • /ɑːrm/",
+        "skillCategory": "listening"
+      }
+    ]
+  },
+  {
+    "id": "w0-p12",
+    "worldId": 0,
+    "phaseNumber": 12,
+    "themeId": "pronouns",
+    "themeTitle": "Lição de Pronomes",
+    "frequencyLevel": "1 a cada 3 Módulos de Vocabulário",
+    "title": "Lição de Pronomes III • Reflexivos & Interrogativos",
+    "subtitle": "Módulo de Pronomes 3/8 (Após 9 de Vocabulário) • Explicação Didática + Pares Associativos",
+    "pedagogicalObjective": "Dominar os Pronomes Reflexivos (Myself, Yourself, Himself, Herself, Ourselves) e os Pronomes Interrogativos (Who, What, Where, When, Why, Whose, Which, How).",
+    "type": "chest",
+    "icon": "star",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "3ª Lição Exclusiva de Pronomes (após 9 módulos de vocabulário).",
+      "5ª Parte — Pronomes Reflexivos: usados quando o sujeito faz e recebe a ação, ou para enfatizar que realizou a ação sozinho.",
+      "6ª Parte — Pronomes Interrogativos (Question Words): usados para formular perguntas diretas sobre pessoas, coisas, lugares, tempo, motivo, posse e modo."
+    ],
+    "xpReward": 70,
+    "gemsReward": 30,
+    "exercises": [
+      {
+        "id": "w0-p12-pron-1",
+        "type": "pair-match",
+        "conceptTitle": "5º • Pronomes Reflexivos (Myself, Yourself, Himself, Herself)",
+        "conceptHeader": "Os Pronomes Reflexivos indicam que a ação recai sobre quem a pratica, ou destacam que alguém fez algo por conta própria: \"Myself\" (Eu mesmo / me), \"Yourself\" (Você mesmo / se), \"Himself\" (Ele mesmo) e \"Herself\" (Ela mesma).",
+        "teacherAudioPt": "/audio/teacher/pronoun_5.wav",
+        "prompt": "🤝 Conecte cada Pronome Reflexivo ao seu significado em português:",
+        "pairs": [
+          {
+            "id": "w0-p12-b1-ref1",
+            "en": "Myself (\"mai-sélf\")",
+            "emoji": "🪞",
+            "phonetic": "/maɪˈself/",
+            "pt": "Eu mesmo(a) / a mim mesmo(a)",
+            "tipPt": "Correto! Exemplo: \"I see myself in the mirror\" (Eu me vejo no espelho)."
+          },
+          {
+            "id": "w0-p12-b1-ref2",
+            "en": "Yourself (\"iór-sélf\")",
+            "emoji": "🫵",
+            "phonetic": "/jʊrˈself/",
+            "pt": "Você mesmo(a) / a si mesmo(a)",
+            "tipPt": "Exato! Exemplo: \"Take care of yourself\" (Cuide de si mesmo)."
+          },
+          {
+            "id": "w0-p12-b1-ref3",
+            "en": "Himself (\"rim-sélf\")",
+            "emoji": "👨",
+            "phonetic": "/hɪmˈself/",
+            "pt": "Ele mesmo (masculino singular)",
+            "tipPt": "Perfeito! Exemplo: \"He cooked dinner himself\" (Ele mesmo preparou o jantar)."
+          },
+          {
+            "id": "w0-p12-b1-ref4",
+            "en": "Herself (\"râr-sélf\")",
+            "emoji": "👩",
+            "phonetic": "/hɜːrˈself/",
+            "pt": "Ela mesma (feminino singular)",
+            "tipPt": "Muito bem! Exemplo: \"She fixed it herself\" (Ela mesma consertou isso)."
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Myself (Eu mesmo), Yourself (Você mesmo), Himself (Ele mesmo), Herself (Ela mesma).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p12-pron-2",
+        "type": "pair-match",
+        "conceptTitle": "6º • Pronomes Interrogativos I (Who, What, Where, When)",
+        "conceptHeader": "Os Pronomes Interrogativos iniciam perguntas específicas: \"Who\" pergunta sobre pessoas (Quem?), \"What\" pergunta sobre coisas, ações ou informações (O quê? / Qual?), \"Where\" pergunta sobre lugares (Onde?) e \"When\" pergunta sobre tempo (Quando?).",
+        "teacherAudioPt": "/audio/teacher/pronoun_6.wav",
+        "prompt": "🤝 Conecte cada Pronome Interrogativo à sua função na pergunta:",
+        "pairs": [
+          {
+            "id": "w0-p12-b2-int1",
+            "en": "Who? (\"rú\")",
+            "emoji": "🧑",
+            "phonetic": "/huː/",
+            "pt": "Quem? (usado para perguntar sobre PESSOAS)",
+            "tipPt": "Correto! Exemplo: \"Who is the teacher?\" (Quem é o professor?)."
+          },
+          {
+            "id": "w0-p12-b2-int2",
+            "en": "What? (\"uót\")",
+            "emoji": "❓",
+            "phonetic": "/wɑːt/",
+            "pt": "O quê? / Qual? (para COISAS ou informações)",
+            "tipPt": "Exato! Exemplo: \"What is your name?\" (Qual é o seu nome?)."
+          },
+          {
+            "id": "w0-p12-b2-int3",
+            "en": "Where? (\"uér\")",
+            "emoji": "📍",
+            "phonetic": "/wer/",
+            "pt": "Onde? (usado para perguntar sobre LUGARES)",
+            "tipPt": "Perfeito! Exemplo: \"Where is the station?\" (Onde fica a estação?)."
+          },
+          {
+            "id": "w0-p12-b2-int4",
+            "en": "When? (\"uén\")",
+            "emoji": "⏰",
+            "phonetic": "/wen/",
+            "pt": "Quando? (usado para perguntar sobre TEMPO/HORA)",
+            "tipPt": "Muito bem! Exemplo: \"When is the meeting?\" (Quando é a reunião?)."
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Who? (Quem?), What? (O quê? / Qual?), Where? (Onde?), When? (Quando?).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p12-pron-3",
+        "type": "pair-match",
+        "conceptTitle": "6º • Pronomes Interrogativos II (Why, Whose, Which, How)",
+        "conceptHeader": "Completando as palavras interrogativas: \"Why\" pergunta a razão ou motivo (Por quê?), \"Whose\" pergunta a quem pertence algo (De quem?), \"Which\" é usado para escolher entre opções definidas (Qual?) e \"How\" pergunta o modo ou estado (Como?).",
+        "teacherAudioPt": "/audio/teacher/pronoun_6.wav",
+        "prompt": "🤝 Associe os Pronomes Interrogativos \"Why, Whose, Which, How\" aos seus pares:",
+        "pairs": [
+          {
+            "id": "w0-p12-b3-int5",
+            "en": "Why? (\"uái\")",
+            "emoji": "🤔",
+            "phonetic": "/waɪ/",
+            "pt": "Por quê? (pergunta a RAZÃO ou MOTIVO)",
+            "tipPt": "Correto! E para responder \"Porque\", usamos \"Because\"."
+          },
+          {
+            "id": "w0-p12-b3-int6",
+            "en": "Whose? (\"rúz\")",
+            "emoji": "👜",
+            "phonetic": "/huːz/",
+            "pt": "De quem? (pergunta sobre POSSE / DONO)",
+            "tipPt": "Exato! Exemplo: \"Whose bag is this?\" (De quem é esta bolsa?)."
+          },
+          {
+            "id": "w0-p12-b3-int7",
+            "en": "Which? (\"uítch\")",
+            "emoji": "⚖️",
+            "phonetic": "/wɪtʃ/",
+            "pt": "Qual? (usado para ESCOLHER entre opções dadas)",
+            "tipPt": "Perfeito! Exemplo: \"Which shirt do you prefer?\" (Qual camisa você prefere?)."
+          },
+          {
+            "id": "w0-p12-b3-int8",
+            "en": "How? (\"ráu\")",
+            "emoji": "🛠️",
+            "phonetic": "/haʊ/",
+            "pt": "Como? (pergunta o MODO, meio ou estado)",
+            "tipPt": "Excelente! Exemplo: \"How are you today?\" (Como você está hoje?)."
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Why? (Por quê?), Whose? (De quem?), Which? (Qual - entre opções?), How? (Como?).",
+        "skillCategory": "grammar"
+      }
+    ]
+  },
+  {
+    "id": "w0-p13",
+    "worldId": 0,
+    "phaseNumber": 13,
+    "themeId": "body",
+    "themeTitle": "Tema 3: Corpo Humano",
+    "frequencyLevel": "Módulo 2 • Palavras Comuns",
+    "title": "Corpo Humano • Módulo 2: Palavras Comuns",
+    "subtitle": "Tema: Corpo Humano (2/4) • 8 partes comuns do corpo",
+    "pedagogicalObjective": "Identificar 8 partes comuns do corpo: Leg, Hair, Face, Tooth, Finger, Back, Heart e Neck.",
+    "type": "lesson",
+    "icon": "star",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Tema: Corpo Humano — Módulo 2 (Palavras comuns): partes do corpo muito frequentes no cotidiano.",
+      "Palavras deste módulo (8): Leg (\"lég\" = Perna), Hair (\"rér\" = Cabelo), Face (\"fêis\" = Rosto), Tooth (\"túth\" = Dente), Finger (\"fín-guer\" = Dedo da mão), Back (\"bék\" = Costas), Heart (\"rárt\" = Coração) e Neck (\"nék\" = Pescoço)."
+    ],
+    "xpReward": 50,
+    "gemsReward": 20,
+    "exercises": [
+      {
+        "id": "w0-p13-e1",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Leg",
+        "visualEmoji": "🦵",
+        "visualOptions": [
+          {
+            "text": "Heart",
+            "emoji": "❤️",
+            "label": "Heart",
+            "translationPt": "Coração",
+            "simplePronunciation": "rárt",
+            "phonetic": "/hɑːrt/",
+            "exampleEn": "Your heart beats fast when you run.",
+            "examplePt": "Seu coração bate rápido ao correr."
           },
           {
             "text": "Leg",
@@ -6867,14 +5158,75 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Ele tem pernas fortes para correr."
           },
           {
-            "text": "Body",
+            "text": "Face",
+            "emoji": "😊",
+            "label": "Face",
+            "translationPt": "Rosto",
+            "simplePronunciation": "fêis",
+            "phonetic": "/feɪs/",
+            "exampleEn": "Wash your face in the morning.",
+            "examplePt": "Lave o rosto de manhã."
+          },
+          {
+            "text": "Back",
             "emoji": "🧍",
-            "label": "Body",
-            "translationPt": "Corpo",
-            "simplePronunciation": "bó-di",
-            "phonetic": "/ˈbɑː.di/",
-            "exampleEn": "Exercise is good for your body.",
-            "examplePt": "Exercício faz bem para o seu corpo."
+            "label": "Back",
+            "translationPt": "Costas",
+            "simplePronunciation": "bék",
+            "phonetic": "/bæk/",
+            "exampleEn": "Keep your back straight.",
+            "examplePt": "Mantenha as costas retas."
+          }
+        ],
+        "options": [
+          "Heart",
+          "Leg",
+          "Face",
+          "Back"
+        ],
+        "correctAnswer": "Leg",
+        "contextSentence": "He has strong legs for running.",
+        "contextSentencePt": "Ele tem pernas fortes para correr.",
+        "explanation": "Exemplo: \"He has strong legs for running.\" — Ele tem pernas fortes para correr.",
+        "phoneticHint": "\"lég\" • /leɡ/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p13-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Hair",
+        "visualEmoji": "💇",
+        "visualOptions": [
+          {
+            "text": "Finger",
+            "emoji": "☝️",
+            "label": "Finger",
+            "translationPt": "Dedo da mão",
+            "simplePronunciation": "fín-guer",
+            "phonetic": "/ˈfɪŋ.ɡər/",
+            "exampleEn": "We have five fingers on each hand.",
+            "examplePt": "Temos cinco dedos em cada mão."
+          },
+          {
+            "text": "Neck",
+            "emoji": "🧣",
+            "label": "Neck",
+            "translationPt": "Pescoço",
+            "simplePronunciation": "nék",
+            "phonetic": "/nek/",
+            "exampleEn": "Wrap a scarf around your neck.",
+            "examplePt": "Coloque um cachecol no pescoço."
+          },
+          {
+            "text": "Tooth",
+            "emoji": "🦷",
+            "label": "Tooth",
+            "translationPt": "Dente",
+            "simplePronunciation": "túth",
+            "phonetic": "/tuːθ/",
+            "exampleEn": "Brush every tooth after meals.",
+            "examplePt": "Escove os dentes após as refeições."
           },
           {
             "text": "Hair",
@@ -6884,24 +5236,24 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "rér",
             "phonetic": "/her/",
             "exampleEn": "She brushes her long hair.",
-            "examplePt": "Ela escova seu cabelo comprido."
+            "examplePt": "Ela escova o cabelo comprido."
           }
         ],
         "options": [
-          "Ear",
-          "Leg",
-          "Body",
+          "Finger",
+          "Neck",
+          "Tooth",
           "Hair"
         ],
         "correctAnswer": "Hair",
         "contextSentence": "She brushes her long hair.",
-        "contextSentencePt": "Ela escova seu cabelo comprido.",
-        "explanation": "Exemplo: \"She brushes her long hair.\" — Ela escova seu cabelo comprido.",
+        "contextSentencePt": "Ela escova o cabelo comprido.",
+        "explanation": "Exemplo: \"She brushes her long hair.\" — Ela escova o cabelo comprido.",
         "phoneticHint": "\"rér\" • /her/",
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e9",
+        "id": "w0-p13-e3",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Face",
@@ -6918,41 +5270,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Lave o rosto de manhã."
           },
           {
-            "text": "Arm",
-            "emoji": "💪",
-            "label": "Arm",
-            "translationPt": "Braço",
-            "simplePronunciation": "árm",
-            "phonetic": "/ɑːrm/",
-            "exampleEn": "Stretch your arms high.",
-            "examplePt": "Estique seus braços para o alto."
+            "text": "Heart",
+            "emoji": "❤️",
+            "label": "Heart",
+            "translationPt": "Coração",
+            "simplePronunciation": "rárt",
+            "phonetic": "/hɑːrt/",
+            "exampleEn": "Your heart beats fast when you run.",
+            "examplePt": "Seu coração bate rápido ao correr."
           },
           {
-            "text": "Nose",
-            "emoji": "👃",
-            "label": "Nose",
-            "translationPt": "Nariz",
-            "simplePronunciation": "nôuz",
-            "phonetic": "/noʊz/",
-            "exampleEn": "Breathe through your nose.",
-            "examplePt": "Respire pelo nariz."
+            "text": "Back",
+            "emoji": "🧍",
+            "label": "Back",
+            "translationPt": "Costas",
+            "simplePronunciation": "bék",
+            "phonetic": "/bæk/",
+            "exampleEn": "Keep your back straight.",
+            "examplePt": "Mantenha as costas retas."
           },
           {
-            "text": "Mouth",
-            "emoji": "👄",
-            "label": "Mouth",
-            "translationPt": "Boca",
-            "simplePronunciation": "máuth",
-            "phonetic": "/maʊθ/",
-            "exampleEn": "Open your mouth to speak.",
-            "examplePt": "Abra a boca para falar."
+            "text": "Leg",
+            "emoji": "🦵",
+            "label": "Leg",
+            "translationPt": "Perna",
+            "simplePronunciation": "lég",
+            "phonetic": "/leɡ/",
+            "exampleEn": "He has strong legs for running.",
+            "examplePt": "Ele tem pernas fortes para correr."
           }
         ],
         "options": [
           "Face",
-          "Arm",
-          "Nose",
-          "Mouth"
+          "Heart",
+          "Back",
+          "Leg"
         ],
         "correctAnswer": "Face",
         "contextSentence": "Wash your face in the morning.",
@@ -6962,93 +5314,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p11-e10",
+        "id": "w0-p13-e4",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Arm",
-        "visualEmoji": "💪",
+        "audioPhrase": "Tooth",
+        "visualEmoji": "🦷",
         "visualOptions": [
-          {
-            "text": "Eye",
-            "emoji": "👁️",
-            "label": "Eye",
-            "translationPt": "Olho",
-            "simplePronunciation": "ái",
-            "phonetic": "/aɪ/",
-            "exampleEn": "She has brown eyes.",
-            "examplePt": "Ela tem olhos castanhos."
-          },
-          {
-            "text": "Head",
-            "emoji": "🧑",
-            "label": "Head",
-            "translationPt": "Cabeça",
-            "simplePronunciation": "réd",
-            "phonetic": "/hed/",
-            "exampleEn": "Nod your head to say yes.",
-            "examplePt": "Balance a cabeça para dizer sim."
-          },
-          {
-            "text": "Hand",
-            "emoji": "✋",
-            "label": "Hand",
-            "translationPt": "Mão",
-            "simplePronunciation": "rénd",
-            "phonetic": "/hænd/",
-            "exampleEn": "Raise your hand to speak.",
-            "examplePt": "Levante a mão para falar."
-          },
-          {
-            "text": "Arm",
-            "emoji": "💪",
-            "label": "Arm",
-            "translationPt": "Braço",
-            "simplePronunciation": "árm",
-            "phonetic": "/ɑːrm/",
-            "exampleEn": "Stretch your arms high.",
-            "examplePt": "Estique seus braços para o alto."
-          }
-        ],
-        "options": [
-          "Eye",
-          "Head",
-          "Hand",
-          "Arm"
-        ],
-        "correctAnswer": "Arm",
-        "contextSentence": "Stretch your arms high.",
-        "contextSentencePt": "Estique seus braços para o alto.",
-        "explanation": "Exemplo: \"Stretch your arms high.\" — Estique seus braços para o alto.",
-        "phoneticHint": "\"árm\" • /ɑːrm/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p11-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Leg",
-        "visualEmoji": "🦵",
-        "visualOptions": [
-          {
-            "text": "Hair",
-            "emoji": "💇",
-            "label": "Hair",
-            "translationPt": "Cabelo",
-            "simplePronunciation": "rér",
-            "phonetic": "/her/",
-            "exampleEn": "She brushes her long hair.",
-            "examplePt": "Ela escova seu cabelo comprido."
-          },
-          {
-            "text": "Ear",
-            "emoji": "👂",
-            "label": "Ear",
-            "translationPt": "Orelha / Ouvido",
-            "simplePronunciation": "ír",
-            "phonetic": "/ɪr/",
-            "exampleEn": "We listen with our ears.",
-            "examplePt": "Nós ouvimos com nossos ouvidos."
-          },
           {
             "text": "Leg",
             "emoji": "🦵",
@@ -7060,45 +5331,126 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Ele tem pernas fortes para correr."
           },
           {
-            "text": "Foot",
-            "emoji": "🦶",
-            "label": "Foot",
-            "translationPt": "Pé",
-            "simplePronunciation": "fút",
-            "phonetic": "/fʊt/",
-            "exampleEn": "Put your shoe on your foot.",
-            "examplePt": "Coloque o sapato no pé."
+            "text": "Tooth",
+            "emoji": "🦷",
+            "label": "Tooth",
+            "translationPt": "Dente",
+            "simplePronunciation": "túth",
+            "phonetic": "/tuːθ/",
+            "exampleEn": "Brush every tooth after meals.",
+            "examplePt": "Escove os dentes após as refeições."
+          },
+          {
+            "text": "Neck",
+            "emoji": "🧣",
+            "label": "Neck",
+            "translationPt": "Pescoço",
+            "simplePronunciation": "nék",
+            "phonetic": "/nek/",
+            "exampleEn": "Wrap a scarf around your neck.",
+            "examplePt": "Coloque um cachecol no pescoço."
+          },
+          {
+            "text": "Hair",
+            "emoji": "💇",
+            "label": "Hair",
+            "translationPt": "Cabelo",
+            "simplePronunciation": "rér",
+            "phonetic": "/her/",
+            "exampleEn": "She brushes her long hair.",
+            "examplePt": "Ela escova o cabelo comprido."
           }
         ],
         "options": [
-          "Hair",
-          "Ear",
           "Leg",
-          "Foot"
+          "Tooth",
+          "Neck",
+          "Hair"
         ],
-        "correctAnswer": "Leg",
-        "contextSentence": "He has strong legs for running.",
-        "contextSentencePt": "Ele tem pernas fortes para correr.",
-        "explanation": "Exemplo: \"He has strong legs for running.\" — Ele tem pernas fortes para correr.",
-        "phoneticHint": "\"lég\" • /leɡ/",
+        "correctAnswer": "Tooth",
+        "contextSentence": "Brush every tooth after meals.",
+        "contextSentencePt": "Escove os dentes após as refeições.",
+        "explanation": "Exemplo: \"Brush every tooth after meals.\" — Escove os dentes após as refeições.",
+        "phoneticHint": "\"túth\" • /tuːθ/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p13-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Finger",
+        "visualEmoji": "☝️",
+        "visualOptions": [
+          {
+            "text": "Face",
+            "emoji": "😊",
+            "label": "Face",
+            "translationPt": "Rosto",
+            "simplePronunciation": "fêis",
+            "phonetic": "/feɪs/",
+            "exampleEn": "Wash your face in the morning.",
+            "examplePt": "Lave o rosto de manhã."
+          },
+          {
+            "text": "Tooth",
+            "emoji": "🦷",
+            "label": "Tooth",
+            "translationPt": "Dente",
+            "simplePronunciation": "túth",
+            "phonetic": "/tuːθ/",
+            "exampleEn": "Brush every tooth after meals.",
+            "examplePt": "Escove os dentes após as refeições."
+          },
+          {
+            "text": "Hair",
+            "emoji": "💇",
+            "label": "Hair",
+            "translationPt": "Cabelo",
+            "simplePronunciation": "rér",
+            "phonetic": "/her/",
+            "exampleEn": "She brushes her long hair.",
+            "examplePt": "Ela escova o cabelo comprido."
+          },
+          {
+            "text": "Finger",
+            "emoji": "☝️",
+            "label": "Finger",
+            "translationPt": "Dedo da mão",
+            "simplePronunciation": "fín-guer",
+            "phonetic": "/ˈfɪŋ.ɡər/",
+            "exampleEn": "We have five fingers on each hand.",
+            "examplePt": "Temos cinco dedos em cada mão."
+          }
+        ],
+        "options": [
+          "Face",
+          "Tooth",
+          "Hair",
+          "Finger"
+        ],
+        "correctAnswer": "Finger",
+        "contextSentence": "We have five fingers on each hand.",
+        "contextSentencePt": "Temos cinco dedos em cada mão.",
+        "explanation": "Exemplo: \"We have five fingers on each hand.\" — Temos cinco dedos em cada mão.",
+        "phoneticHint": "\"fín-guer\" • /ˈfɪŋ.ɡər/",
         "skillCategory": "listening"
       },
       {
-        "id": "w0-p11-e12",
+        "id": "w0-p13-e6",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Body",
+        "audioPhrase": "Back",
         "visualEmoji": "🧍",
         "visualOptions": [
           {
-            "text": "Body",
-            "emoji": "🧍",
-            "label": "Body",
-            "translationPt": "Corpo",
-            "simplePronunciation": "bó-di",
-            "phonetic": "/ˈbɑː.di/",
-            "exampleEn": "Exercise is good for your body.",
-            "examplePt": "Exercício faz bem para o seu corpo."
+            "text": "Leg",
+            "emoji": "🦵",
+            "label": "Leg",
+            "translationPt": "Perna",
+            "simplePronunciation": "lég",
+            "phonetic": "/leɡ/",
+            "exampleEn": "He has strong legs for running.",
+            "examplePt": "Ele tem pernas fortes para correr."
           },
           {
             "text": "Face",
@@ -7111,303 +5463,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Lave o rosto de manhã."
           },
           {
-            "text": "Mouth",
-            "emoji": "👄",
-            "label": "Mouth",
-            "translationPt": "Boca",
-            "simplePronunciation": "máuth",
-            "phonetic": "/maʊθ/",
-            "exampleEn": "Open your mouth to speak.",
-            "examplePt": "Abra a boca para falar."
-          },
-          {
-            "text": "Nose",
-            "emoji": "👃",
-            "label": "Nose",
-            "translationPt": "Nariz",
-            "simplePronunciation": "nôuz",
-            "phonetic": "/noʊz/",
-            "exampleEn": "Breathe through your nose.",
-            "examplePt": "Respire pelo nariz."
-          }
-        ],
-        "options": [
-          "Body",
-          "Face",
-          "Mouth",
-          "Nose"
-        ],
-        "correctAnswer": "Body",
-        "contextSentence": "Exercise is good for your body.",
-        "contextSentencePt": "Exercício faz bem para o seu corpo.",
-        "explanation": "Exemplo: \"Exercise is good for your body.\" — Exercício faz bem para o seu corpo.",
-        "phoneticHint": "\"bó-di\" • /ˈbɑː.di/",
-        "skillCategory": "vocabulary"
-      }
-    ]
-  },
-  {
-    "id": "w0-p12",
-    "worldId": 0,
-    "phaseNumber": 12,
-    "title": "Lição de Pronomes III • Reflexivos & Interrogativos",
-    "subtitle": "Módulo de Pronomes 3/6 (Após 9 de Vocabulário) • Pares Associativos + Voz da Professora",
-    "pedagogicalObjective": "Dominar os Pronomes Reflexivos (Myself, Yourself, Himself, Herself, Ourselves, Themselves) e os Pronomes Interrogativos (Who, What, Where, When, Why, Whose, Which, How).",
-    "type": "chest",
-    "icon": "star",
-    "cefrLevel": "A1",
-    "theorySummary": [
-      "Bem-vindo à 3ª Lição Exclusiva de Pronomes (após 9 módulos de vocabulário)!",
-      "5º Passo: Aprendemos os Pronomes Reflexivos (Myself, Yourself, Himself, Herself, Ourselves, Themselves), que funcionam como um espelho.",
-      "6º Passo: Aprendemos os Pronomes Interrogativos (Who, What, Where, When, Why, Whose, Which, How), as palavrinhas dos detetives curiosos para fazer perguntas!"
-    ],
-    "xpReward": 70,
-    "gemsReward": 30,
-    "exercises": [
-      {
-        "id": "w0-p12-pron-1",
-        "type": "pair-match",
-        "conceptTitle": "5º • Pronomes Reflexivos (Como se Olhar no Espelho)",
-        "conceptHeader": "Funcionam igualzinho a um espelho! Quando eu faço uma ação em mim mesmo, digo \"Myself\" (Eu mesmo). Para você mesmo, \"Yourself\". Para um menino sozinho, \"Himself\"; e para uma menina sozinha, \"Herself\"!",
-        "teacherAudioPt": "/audio/teacher/pronoun_5.wav",
-        "prompt": "🤝 Conecte cada Pronome Reflexivo ao seu par em português:",
-        "pairs": [
-          {
-            "id": "w0-p12-b1-ref1",
-            "en": "Myself (\"mai-sélf\")",
-            "emoji": "🪞",
-            "phonetic": "/maɪˈself/",
-            "pt": "Eu mesmo(a) / A mim mesmo (no espelho)",
-            "tipPt": "Lindo! \"I see myself in the mirror\" = \"Eu me vejo no espelho\"!"
-          },
-          {
-            "id": "w0-p12-b1-ref2",
-            "en": "Yourself (\"iór-sélf\")",
-            "emoji": "🫵",
-            "phonetic": "/jʊrˈself/",
-            "pt": "Você mesmo(a) / A si mesmo",
-            "tipPt": "Muito bem! \"By yourself\" = \"Por você mesmo\"!"
-          },
-          {
-            "id": "w0-p12-b1-ref3",
-            "en": "Himself (\"rim-sélf\")",
-            "emoji": "👦",
-            "phonetic": "/hɪmˈself/",
-            "pt": "Ele mesmo (menino ou homem sozinho)",
-            "tipPt": "Perfeito! \"He did it himself\" = \"Ele mesmo fez isso\"!"
-          },
-          {
-            "id": "w0-p12-b1-ref4",
-            "en": "Herself (\"râr-sélf\")",
-            "emoji": "👧",
-            "phonetic": "/hɜːrˈself/",
-            "pt": "Ela mesma (menina ou mulher sozinha)",
-            "tipPt": "Excelente! \"She dressed herself\" = \"Ela se vestiu sozinha\"!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Myself (Eu mesmo), Yourself (Você mesmo), Himself (Ele mesmo), Herself (Ela mesma).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p12-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Perguntas de Detetive - Parte 1)",
-        "conceptHeader": "São as palavrinhas dos detetives curiosos para fazer perguntas! Para saber QUEM é a pessoa, perguntamos \"Who?\". Para saber O QUÊ é uma coisa, \"What?\". Para saber ONDE fica um lugar, \"Where?\"; e QUANDO, \"When?\"!",
-        "teacherAudioPt": "/audio/teacher/pronoun_6.wav",
-        "prompt": "🤝 Conecte cada Pronome Interrogativo ao tipo de pergunta que ele faz:",
-        "pairs": [
-          {
-            "id": "w0-p12-b2-int1",
-            "en": "Who? (\"rú\")",
-            "emoji": "🕵️",
-            "phonetic": "/huː/",
-            "pt": "Quem? (pergunta sobre PESSOAS)",
-            "tipPt": "Muito bem! \"Who is your teacher?\" = \"Quem é sua professora?\""
-          },
-          {
-            "id": "w0-p12-b2-int2",
-            "en": "What? (\"uót\")",
-            "emoji": "❓",
-            "phonetic": "/wɑːt/",
-            "pt": "O quê? / Qual? (pergunta sobre COISAS)",
-            "tipPt": "Isso! \"What is this?\" = \"O que é isto?\""
-          },
-          {
-            "id": "w0-p12-b2-int3",
-            "en": "Where? (\"uér\")",
-            "emoji": "📍",
-            "phonetic": "/wer/",
-            "pt": "Onde? (pergunta sobre LUGAR)",
-            "tipPt": "Perfeito! \"Where is the school?\" = \"Onde fica a escola?\""
-          },
-          {
-            "id": "w0-p12-b2-int4",
-            "en": "When? (\"uén\")",
-            "emoji": "⏰",
-            "phonetic": "/wen/",
-            "pt": "Quando? (pergunta sobre TEMPO ou HORA)",
-            "tipPt": "Excelente! \"When is lunch?\" = \"Quando é o almoço?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Who? (Quem?), What? (O quê? / Qual?), Where? (Onde?), When? (Quando?).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p12-pron-3",
-        "type": "pair-match",
-        "conceptTitle": "6º • Pronomes Interrogativos (Por quê, De quem e Como? - Parte 2)",
-        "conceptHeader": "Continuando nossas perguntas de detetive: para saber o MOTIVO, perguntamos \"Why?\" (Por quê?). Para saber DE QUEM é um objeto, \"Whose?\". Para ESCOLHER entre opções, \"Which?\"; e para saber COMO, \"How?\"!",
-        "teacherAudioPt": "/audio/teacher/pronoun_6.wav",
-        "prompt": "🤝 Ligue os Pronomes Interrogativos \"Why, Whose, Which, How\" aos seus pares:",
-        "pairs": [
-          {
-            "id": "w0-p12-b3-int5",
-            "en": "Why? (\"uái\")",
-            "emoji": "🤔",
-            "phonetic": "/waɪ/",
-            "pt": "Por quê? (pergunta o MOTIVO)",
-            "tipPt": "Isso! \"Why are you happy?\" = \"Por que você está feliz?\""
-          },
-          {
-            "id": "w0-p12-b3-int6",
-            "en": "Whose? (\"rúz\")",
-            "emoji": "🎒",
-            "phonetic": "/huːz/",
-            "pt": "De quem? (pergunta quem é o DONO)",
-            "tipPt": "Muito bem! \"Whose backpack is this?\" = \"De quem é esta mochila?\""
-          },
-          {
-            "id": "w0-p12-b3-int7",
-            "en": "Which? (\"uítch\")",
-            "emoji": "⚖️",
-            "phonetic": "/wɪtʃ/",
-            "pt": "Qual? (para ESCOLHER entre opções)",
-            "tipPt": "Perfeito! \"Which color do you prefer?\" = \"Qual cor você prefere?\""
-          },
-          {
-            "id": "w0-p12-b3-int8",
-            "en": "How? (\"ráu\")",
-            "emoji": "🛠️",
-            "phonetic": "/haʊ/",
-            "pt": "Como? (pergunta o MODO ou estado)",
-            "tipPt": "Parabéns! \"How are you?\" = \"Como vai você?\""
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Why? (Por quê?), Whose? (De quem?), Which? (Qual dentre opções?), How? (Como?).",
-        "skillCategory": "grammar"
-      }
-    ]
-  },
-  {
-    "id": "w0-p13",
-    "worldId": 0,
-    "phaseNumber": 13,
-    "themeId": "body",
-    "themeTitle": "Corpo Humano",
-    "frequencyLevel": "Módulo 2 • Comuns",
-    "title": "Corpo Humano • Módulo 2: Palavras Comuns",
-    "subtitle": "Tema 3 (Nível 2/4) • 12 partes comuns em conversas e saúde",
-    "pedagogicalObjective": "Identificar partes comuns do corpo: Tooth, Finger, Back, Heart, Neck, Shoulder, Knee, Stomach, Skin, Voice, Blood e Bone.",
-    "type": "lesson",
-    "icon": "star",
-    "cefrLevel": "A1",
-    "theorySummary": [
-      "No Módulo 2 do Corpo Humano vemos palavras comuns: Tooth (\"túth\" = Dente), Finger (\"fín-guer\" = Dedo da mão), Back (\"bék\" = Costas), Heart (\"rárt\" = Coração), Neck (\"nék\" = Pescoço) e Shoulder (\"xôul-der\" = Ombro).",
-      "E completamos com Knee (\"ní\" = Joelho), Stomach (\"stâ-mak\" = Estômago/Barriga), Skin (\"skín\" = Pele), Voice (\"vóis\" = Voz), Blood (\"blâd\" = Sangue) e Bone (\"bôun\" = Osso)."
-    ],
-    "xpReward": 50,
-    "gemsReward": 20,
-    "exercises": [
-      {
-        "id": "w0-p13-e1",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Tooth",
-        "visualEmoji": "🦷",
-        "visualOptions": [
-          {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração",
-            "simplePronunciation": "rárt",
-            "phonetic": "/hɑːrt/",
-            "exampleEn": "Your heart beats fast when you run.",
-            "examplePt": "Seu coração bate rápido quando você corre."
-          },
-          {
-            "text": "Bone",
-            "emoji": "🦴",
-            "label": "Bone",
-            "translationPt": "Osso",
-            "simplePronunciation": "bôun",
-            "phonetic": "/boʊn/",
-            "exampleEn": "Calcium keeps our bones strong.",
-            "examplePt": "O cálcio mantém nossos ossos fortes."
-          },
-          {
-            "text": "Blood",
-            "emoji": "🩸",
-            "label": "Blood",
-            "translationPt": "Sangue",
-            "simplePronunciation": "blâd",
-            "phonetic": "/blʌd/",
-            "exampleEn": "The heart pumps blood through the body.",
-            "examplePt": "O coração bombeia sangue pelo corpo."
-          },
-          {
-            "text": "Tooth",
-            "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente",
-            "simplePronunciation": "túth",
-            "phonetic": "/tuːθ/",
-            "exampleEn": "Brush every tooth after meals.",
-            "examplePt": "Escove cada dente após as refeições."
-          }
-        ],
-        "options": [
-          "Heart",
-          "Bone",
-          "Blood",
-          "Tooth"
-        ],
-        "correctAnswer": "Tooth",
-        "contextSentence": "Brush every tooth after meals.",
-        "contextSentencePt": "Escove cada dente após as refeições.",
-        "explanation": "Exemplo: \"Brush every tooth after meals.\" — Escove cada dente após as refeições.",
-        "phoneticHint": "\"túth\" • /tuːθ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p13-e2",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Finger",
-        "visualEmoji": "☝️",
-        "visualOptions": [
-          {
-            "text": "Voice",
-            "emoji": "🗣️",
-            "label": "Voice",
-            "translationPt": "Voz",
-            "simplePronunciation": "vóis",
-            "phonetic": "/vɔɪs/",
-            "exampleEn": "The teacher has a sweet voice.",
-            "examplePt": "A professora tem uma voz meiga."
-          },
-          {
-            "text": "Knee",
-            "emoji": "🦵",
-            "label": "Knee",
-            "translationPt": "Joelho",
-            "simplePronunciation": "ní",
-            "phonetic": "/niː/",
-            "exampleEn": "Bend your knees slowly.",
-            "examplePt": "Dobre seus joelhos devagar."
+            "text": "Back",
+            "emoji": "🧍",
+            "label": "Back",
+            "translationPt": "Costas",
+            "simplePronunciation": "bék",
+            "phonetic": "/bæk/",
+            "exampleEn": "Keep your back straight.",
+            "examplePt": "Mantenha as costas retas."
           },
           {
             "text": "Finger",
@@ -7418,120 +5481,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈfɪŋ.ɡər/",
             "exampleEn": "We have five fingers on each hand.",
             "examplePt": "Temos cinco dedos em cada mão."
-          },
-          {
-            "text": "Neck",
-            "emoji": "🧣",
-            "label": "Neck",
-            "translationPt": "Pescoço",
-            "simplePronunciation": "nék",
-            "phonetic": "/nek/",
-            "exampleEn": "Wrap a warm scarf around your neck.",
-            "examplePt": "Enrole um cachecol quentinho no pescoço."
           }
         ],
         "options": [
-          "Voice",
-          "Knee",
-          "Finger",
-          "Neck"
-        ],
-        "correctAnswer": "Finger",
-        "contextSentence": "We have five fingers on each hand.",
-        "contextSentencePt": "Temos cinco dedos em cada mão.",
-        "explanation": "Exemplo: \"We have five fingers on each hand.\" — Temos cinco dedos em cada mão.",
-        "phoneticHint": "\"fín-guer\" • /ˈfɪŋ.ɡər/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p13-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Back",
-        "visualEmoji": "🧍",
-        "visualOptions": [
-          {
-            "text": "Back",
-            "emoji": "🧍",
-            "label": "Back",
-            "translationPt": "Costas",
-            "simplePronunciation": "bék",
-            "phonetic": "/bæk/",
-            "exampleEn": "Keep your back straight when sitting.",
-            "examplePt": "Mantenha as costas retas ao sentar."
-          },
-          {
-            "text": "Stomach",
-            "emoji": "🤰",
-            "label": "Stomach",
-            "translationPt": "Estômago / Barriga",
-            "simplePronunciation": "stâ-mak",
-            "phonetic": "/ˈstʌm.ək/",
-            "exampleEn": "My stomach is full after dinner.",
-            "examplePt": "Meu estômago está cheio após o jantar."
-          },
-          {
-            "text": "Skin",
-            "emoji": "✋",
-            "label": "Skin",
-            "translationPt": "Pele",
-            "simplePronunciation": "skín",
-            "phonetic": "/skɪn/",
-            "exampleEn": "Drink water for healthy skin.",
-            "examplePt": "Beba água para ter uma pele saudável."
-          },
-          {
-            "text": "Shoulder",
-            "emoji": "🤷",
-            "label": "Shoulder",
-            "translationPt": "Ombro",
-            "simplePronunciation": "xôul-der",
-            "phonetic": "/ˈʃoʊl.dər/",
-            "exampleEn": "Carry the bag on your shoulder.",
-            "examplePt": "Carregue a bolsa no ombro."
-          }
-        ],
-        "options": [
+          "Leg",
+          "Face",
           "Back",
-          "Stomach",
-          "Skin",
-          "Shoulder"
+          "Finger"
         ],
         "correctAnswer": "Back",
-        "contextSentence": "Keep your back straight when sitting.",
-        "contextSentencePt": "Mantenha as costas retas ao sentar.",
-        "explanation": "Exemplo: \"Keep your back straight when sitting.\" — Mantenha as costas retas ao sentar.",
+        "contextSentence": "Keep your back straight.",
+        "contextSentencePt": "Mantenha as costas retas.",
+        "explanation": "Exemplo: \"Keep your back straight.\" — Mantenha as costas retas.",
         "phoneticHint": "\"bék\" • /bæk/",
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p13-e4",
+        "id": "w0-p13-e7",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Heart",
         "visualEmoji": "❤️",
         "visualOptions": [
           {
-            "text": "Bone",
-            "emoji": "🦴",
-            "label": "Bone",
-            "translationPt": "Osso",
-            "simplePronunciation": "bôun",
-            "phonetic": "/boʊn/",
-            "exampleEn": "Calcium keeps our bones strong.",
-            "examplePt": "O cálcio mantém nossos ossos fortes."
-          },
-          {
-            "text": "Blood",
-            "emoji": "🩸",
-            "label": "Blood",
-            "translationPt": "Sangue",
-            "simplePronunciation": "blâd",
-            "phonetic": "/blʌd/",
-            "exampleEn": "The heart pumps blood through the body.",
-            "examplePt": "O coração bombeia sangue pelo corpo."
-          },
-          {
             "text": "Heart",
             "emoji": "❤️",
             "label": "Heart",
@@ -7539,39 +5511,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "rárt",
             "phonetic": "/hɑːrt/",
             "exampleEn": "Your heart beats fast when you run.",
-            "examplePt": "Seu coração bate rápido quando você corre."
+            "examplePt": "Seu coração bate rápido ao correr."
           },
           {
-            "text": "Tooth",
-            "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente",
-            "simplePronunciation": "túth",
-            "phonetic": "/tuːθ/",
-            "exampleEn": "Brush every tooth after meals.",
-            "examplePt": "Escove cada dente após as refeições."
-          }
-        ],
-        "options": [
-          "Bone",
-          "Blood",
-          "Heart",
-          "Tooth"
-        ],
-        "correctAnswer": "Heart",
-        "contextSentence": "Your heart beats fast when you run.",
-        "contextSentencePt": "Seu coração bate rápido quando você corre.",
-        "explanation": "Exemplo: \"Your heart beats fast when you run.\" — Seu coração bate rápido quando você corre.",
-        "phoneticHint": "\"rárt\" • /hɑːrt/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p13-e5",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Neck",
-        "visualEmoji": "🧣",
-        "visualOptions": [
+            "text": "Back",
+            "emoji": "🧍",
+            "label": "Back",
+            "translationPt": "Costas",
+            "simplePronunciation": "bék",
+            "phonetic": "/bæk/",
+            "exampleEn": "Keep your back straight.",
+            "examplePt": "Mantenha as costas retas."
+          },
+          {
+            "text": "Hair",
+            "emoji": "💇",
+            "label": "Hair",
+            "translationPt": "Cabelo",
+            "simplePronunciation": "rér",
+            "phonetic": "/her/",
+            "exampleEn": "She brushes her long hair.",
+            "examplePt": "Ela escova o cabelo comprido."
+          },
           {
             "text": "Finger",
             "emoji": "☝️",
@@ -7581,6 +5542,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈfɪŋ.ɡər/",
             "exampleEn": "We have five fingers on each hand.",
             "examplePt": "Temos cinco dedos em cada mão."
+          }
+        ],
+        "options": [
+          "Heart",
+          "Back",
+          "Hair",
+          "Finger"
+        ],
+        "correctAnswer": "Heart",
+        "contextSentence": "Your heart beats fast when you run.",
+        "contextSentencePt": "Seu coração bate rápido ao correr.",
+        "explanation": "Exemplo: \"Your heart beats fast when you run.\" — Seu coração bate rápido ao correr.",
+        "phoneticHint": "\"rárt\" • /hɑːrt/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p13-e8",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Neck",
+        "visualEmoji": "🧣",
+        "visualOptions": [
+          {
+            "text": "Tooth",
+            "emoji": "🦷",
+            "label": "Tooth",
+            "translationPt": "Dente",
+            "simplePronunciation": "túth",
+            "phonetic": "/tuːθ/",
+            "exampleEn": "Brush every tooth after meals.",
+            "examplePt": "Escove os dentes após as refeições."
+          },
+          {
+            "text": "Leg",
+            "emoji": "🦵",
+            "label": "Leg",
+            "translationPt": "Perna",
+            "simplePronunciation": "lég",
+            "phonetic": "/leɡ/",
+            "exampleEn": "He has strong legs for running.",
+            "examplePt": "Ele tem pernas fortes para correr."
           },
           {
             "text": "Neck",
@@ -7589,50 +5591,72 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pescoço",
             "simplePronunciation": "nék",
             "phonetic": "/nek/",
-            "exampleEn": "Wrap a warm scarf around your neck.",
-            "examplePt": "Enrole um cachecol quentinho no pescoço."
+            "exampleEn": "Wrap a scarf around your neck.",
+            "examplePt": "Coloque um cachecol no pescoço."
           },
           {
-            "text": "Back",
-            "emoji": "🧍",
-            "label": "Back",
-            "translationPt": "Costas",
-            "simplePronunciation": "bék",
-            "phonetic": "/bæk/",
-            "exampleEn": "Keep your back straight when sitting.",
-            "examplePt": "Mantenha as costas retas ao sentar."
-          },
-          {
-            "text": "Voice",
-            "emoji": "🗣️",
-            "label": "Voice",
-            "translationPt": "Voz",
-            "simplePronunciation": "vóis",
-            "phonetic": "/vɔɪs/",
-            "exampleEn": "The teacher has a sweet voice.",
-            "examplePt": "A professora tem uma voz meiga."
+            "text": "Face",
+            "emoji": "😊",
+            "label": "Face",
+            "translationPt": "Rosto",
+            "simplePronunciation": "fêis",
+            "phonetic": "/feɪs/",
+            "exampleEn": "Wash your face in the morning.",
+            "examplePt": "Lave o rosto de manhã."
           }
         ],
         "options": [
-          "Finger",
+          "Tooth",
+          "Leg",
           "Neck",
-          "Back",
-          "Voice"
+          "Face"
         ],
         "correctAnswer": "Neck",
-        "contextSentence": "Wrap a warm scarf around your neck.",
-        "contextSentencePt": "Enrole um cachecol quentinho no pescoço.",
-        "explanation": "Exemplo: \"Wrap a warm scarf around your neck.\" — Enrole um cachecol quentinho no pescoço.",
+        "contextSentence": "Wrap a scarf around your neck.",
+        "contextSentencePt": "Coloque um cachecol no pescoço.",
+        "explanation": "Exemplo: \"Wrap a scarf around your neck.\" — Coloque um cachecol no pescoço.",
         "phoneticHint": "\"nék\" • /nek/",
         "skillCategory": "listening"
-      },
+      }
+    ]
+  },
+  {
+    "id": "w0-p14",
+    "worldId": 0,
+    "phaseNumber": 14,
+    "themeId": "body",
+    "themeTitle": "Tema 3: Corpo Humano",
+    "frequencyLevel": "Módulo 3 • Palavras Intermediárias",
+    "title": "Corpo Humano • Módulo 3: Palavras Intermediárias",
+    "subtitle": "Tema: Corpo Humano (3/4) • 8 articulações e órgãos intermediários",
+    "pedagogicalObjective": "Aprender 8 partes intermediárias do corpo: Shoulder, Knee, Stomach, Skin, Tongue, Brain, Elbow e Wrist.",
+    "type": "lesson",
+    "icon": "star",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Tema: Corpo Humano — Módulo 3 (Palavras intermediárias): articulações e órgãos importantes.",
+      "Palavras deste módulo (8): Shoulder (\"xôul-der\" = Ombro), Knee (\"ní\" = Joelho), Stomach (\"stâ-mak\" = Estômago/Barriga), Skin (\"skín\" = Pele), Tongue (\"tâng\" = Língua), Brain (\"brêin\" = Cérebro), Elbow (\"él-bou\" = Cotovelo) e Wrist (\"ríst\" = Pulso)."
+    ],
+    "xpReward": 50,
+    "gemsReward": 20,
+    "exercises": [
       {
-        "id": "w0-p13-e6",
+        "id": "w0-p14-e1",
         "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Shoulder",
         "visualEmoji": "🤷",
         "visualOptions": [
+          {
+            "text": "Elbow",
+            "emoji": "💪",
+            "label": "Elbow",
+            "translationPt": "Cotovelo",
+            "simplePronunciation": "él-bou",
+            "phonetic": "/ˈel.boʊ/",
+            "exampleEn": "Rest your elbow on the armrest.",
+            "examplePt": "Apoie o cotovelo no braço da cadeira."
+          },
           {
             "text": "Stomach",
             "emoji": "🤰",
@@ -7644,24 +5668,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Meu estômago está cheio após o jantar."
           },
           {
-            "text": "Skin",
-            "emoji": "✋",
-            "label": "Skin",
-            "translationPt": "Pele",
-            "simplePronunciation": "skín",
-            "phonetic": "/skɪn/",
-            "exampleEn": "Drink water for healthy skin.",
-            "examplePt": "Beba água para ter uma pele saudável."
-          },
-          {
-            "text": "Finger",
-            "emoji": "☝️",
-            "label": "Finger",
-            "translationPt": "Dedo da mão",
-            "simplePronunciation": "fín-guer",
-            "phonetic": "/ˈfɪŋ.ɡər/",
-            "exampleEn": "We have five fingers on each hand.",
-            "examplePt": "Temos cinco dedos em cada mão."
+            "text": "Brain",
+            "emoji": "🧠",
+            "label": "Brain",
+            "translationPt": "Cérebro",
+            "simplePronunciation": "brêin",
+            "phonetic": "/breɪn/",
+            "exampleEn": "Reading exercises the brain.",
+            "examplePt": "A leitura exercita o cérebro."
           },
           {
             "text": "Shoulder",
@@ -7675,9 +5689,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
+          "Elbow",
           "Stomach",
-          "Skin",
-          "Finger",
+          "Brain",
           "Shoulder"
         ],
         "correctAnswer": "Shoulder",
@@ -7688,9 +5702,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p13-e7",
+        "id": "w0-p14-e2",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Knee",
         "visualEmoji": "🦵",
         "visualOptions": [
@@ -7702,139 +5716,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "ní",
             "phonetic": "/niː/",
             "exampleEn": "Bend your knees slowly.",
-            "examplePt": "Dobre seus joelhos devagar."
-          },
-          {
-            "text": "Tooth",
-            "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente",
-            "simplePronunciation": "túth",
-            "phonetic": "/tuːθ/",
-            "exampleEn": "Brush every tooth after meals.",
-            "examplePt": "Escove cada dente após as refeições."
-          },
-          {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração",
-            "simplePronunciation": "rárt",
-            "phonetic": "/hɑːrt/",
-            "exampleEn": "Your heart beats fast when you run.",
-            "examplePt": "Seu coração bate rápido quando você corre."
-          },
-          {
-            "text": "Blood",
-            "emoji": "🩸",
-            "label": "Blood",
-            "translationPt": "Sangue",
-            "simplePronunciation": "blâd",
-            "phonetic": "/blʌd/",
-            "exampleEn": "The heart pumps blood through the body.",
-            "examplePt": "O coração bombeia sangue pelo corpo."
-          }
-        ],
-        "options": [
-          "Knee",
-          "Tooth",
-          "Heart",
-          "Blood"
-        ],
-        "correctAnswer": "Knee",
-        "contextSentence": "Bend your knees slowly.",
-        "contextSentencePt": "Dobre seus joelhos devagar.",
-        "explanation": "Exemplo: \"Bend your knees slowly.\" — Dobre seus joelhos devagar.",
-        "phoneticHint": "\"ní\" • /niː/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p13-e8",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Stomach",
-        "visualEmoji": "🤰",
-        "visualOptions": [
-          {
-            "text": "Neck",
-            "emoji": "🧣",
-            "label": "Neck",
-            "translationPt": "Pescoço",
-            "simplePronunciation": "nék",
-            "phonetic": "/nek/",
-            "exampleEn": "Wrap a warm scarf around your neck.",
-            "examplePt": "Enrole um cachecol quentinho no pescoço."
-          },
-          {
-            "text": "Back",
-            "emoji": "🧍",
-            "label": "Back",
-            "translationPt": "Costas",
-            "simplePronunciation": "bék",
-            "phonetic": "/bæk/",
-            "exampleEn": "Keep your back straight when sitting.",
-            "examplePt": "Mantenha as costas retas ao sentar."
-          },
-          {
-            "text": "Bone",
-            "emoji": "🦴",
-            "label": "Bone",
-            "translationPt": "Osso",
-            "simplePronunciation": "bôun",
-            "phonetic": "/boʊn/",
-            "exampleEn": "Calcium keeps our bones strong.",
-            "examplePt": "O cálcio mantém nossos ossos fortes."
-          },
-          {
-            "text": "Stomach",
-            "emoji": "🤰",
-            "label": "Stomach",
-            "translationPt": "Estômago / Barriga",
-            "simplePronunciation": "stâ-mak",
-            "phonetic": "/ˈstʌm.ək/",
-            "exampleEn": "My stomach is full after dinner.",
-            "examplePt": "Meu estômago está cheio após o jantar."
-          }
-        ],
-        "options": [
-          "Neck",
-          "Back",
-          "Bone",
-          "Stomach"
-        ],
-        "correctAnswer": "Stomach",
-        "contextSentence": "My stomach is full after dinner.",
-        "contextSentencePt": "Meu estômago está cheio após o jantar.",
-        "explanation": "Exemplo: \"My stomach is full after dinner.\" — Meu estômago está cheio após o jantar.",
-        "phoneticHint": "\"stâ-mak\" • /ˈstʌm.ək/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p13-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Skin",
-        "visualEmoji": "✋",
-        "visualOptions": [
-          {
-            "text": "Shoulder",
-            "emoji": "🤷",
-            "label": "Shoulder",
-            "translationPt": "Ombro",
-            "simplePronunciation": "xôul-der",
-            "phonetic": "/ˈʃoʊl.dər/",
-            "exampleEn": "Carry the bag on your shoulder.",
-            "examplePt": "Carregue a bolsa no ombro."
-          },
-          {
-            "text": "Knee",
-            "emoji": "🦵",
-            "label": "Knee",
-            "translationPt": "Joelho",
-            "simplePronunciation": "ní",
-            "phonetic": "/niː/",
-            "exampleEn": "Bend your knees slowly.",
-            "examplePt": "Dobre seus joelhos devagar."
+            "examplePt": "Dobre os joelhos devagar."
           },
           {
             "text": "Skin",
@@ -7844,263 +5726,17 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "skín",
             "phonetic": "/skɪn/",
             "exampleEn": "Drink water for healthy skin.",
-            "examplePt": "Beba água para ter uma pele saudável."
+            "examplePt": "Beba água para uma pele saudável."
           },
           {
-            "text": "Tooth",
-            "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente",
-            "simplePronunciation": "túth",
-            "phonetic": "/tuːθ/",
-            "exampleEn": "Brush every tooth after meals.",
-            "examplePt": "Escove cada dente após as refeições."
-          }
-        ],
-        "options": [
-          "Shoulder",
-          "Knee",
-          "Skin",
-          "Tooth"
-        ],
-        "correctAnswer": "Skin",
-        "contextSentence": "Drink water for healthy skin.",
-        "contextSentencePt": "Beba água para ter uma pele saudável.",
-        "explanation": "Exemplo: \"Drink water for healthy skin.\" — Beba água para ter uma pele saudável.",
-        "phoneticHint": "\"skín\" • /skɪn/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p13-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Voice",
-        "visualEmoji": "🗣️",
-        "visualOptions": [
-          {
-            "text": "Voice",
-            "emoji": "🗣️",
-            "label": "Voice",
-            "translationPt": "Voz",
-            "simplePronunciation": "vóis",
-            "phonetic": "/vɔɪs/",
-            "exampleEn": "The teacher has a sweet voice.",
-            "examplePt": "A professora tem uma voz meiga."
-          },
-          {
-            "text": "Skin",
-            "emoji": "✋",
-            "label": "Skin",
-            "translationPt": "Pele",
-            "simplePronunciation": "skín",
-            "phonetic": "/skɪn/",
-            "exampleEn": "Drink water for healthy skin.",
-            "examplePt": "Beba água para ter uma pele saudável."
-          },
-          {
-            "text": "Shoulder",
-            "emoji": "🤷",
-            "label": "Shoulder",
-            "translationPt": "Ombro",
-            "simplePronunciation": "xôul-der",
-            "phonetic": "/ˈʃoʊl.dər/",
-            "exampleEn": "Carry the bag on your shoulder.",
-            "examplePt": "Carregue a bolsa no ombro."
-          },
-          {
-            "text": "Stomach",
-            "emoji": "🤰",
-            "label": "Stomach",
-            "translationPt": "Estômago / Barriga",
-            "simplePronunciation": "stâ-mak",
-            "phonetic": "/ˈstʌm.ək/",
-            "exampleEn": "My stomach is full after dinner.",
-            "examplePt": "Meu estômago está cheio após o jantar."
-          }
-        ],
-        "options": [
-          "Voice",
-          "Skin",
-          "Shoulder",
-          "Stomach"
-        ],
-        "correctAnswer": "Voice",
-        "contextSentence": "The teacher has a sweet voice.",
-        "contextSentencePt": "A professora tem uma voz meiga.",
-        "explanation": "Exemplo: \"The teacher has a sweet voice.\" — A professora tem uma voz meiga.",
-        "phoneticHint": "\"vóis\" • /vɔɪs/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p13-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Blood",
-        "visualEmoji": "🩸",
-        "visualOptions": [
-          {
-            "text": "Finger",
-            "emoji": "☝️",
-            "label": "Finger",
-            "translationPt": "Dedo da mão",
-            "simplePronunciation": "fín-guer",
-            "phonetic": "/ˈfɪŋ.ɡər/",
-            "exampleEn": "We have five fingers on each hand.",
-            "examplePt": "Temos cinco dedos em cada mão."
-          },
-          {
-            "text": "Blood",
-            "emoji": "🩸",
-            "label": "Blood",
-            "translationPt": "Sangue",
-            "simplePronunciation": "blâd",
-            "phonetic": "/blʌd/",
-            "exampleEn": "The heart pumps blood through the body.",
-            "examplePt": "O coração bombeia sangue pelo corpo."
-          },
-          {
-            "text": "Neck",
-            "emoji": "🧣",
-            "label": "Neck",
-            "translationPt": "Pescoço",
-            "simplePronunciation": "nék",
-            "phonetic": "/nek/",
-            "exampleEn": "Wrap a warm scarf around your neck.",
-            "examplePt": "Enrole um cachecol quentinho no pescoço."
-          },
-          {
-            "text": "Heart",
-            "emoji": "❤️",
-            "label": "Heart",
-            "translationPt": "Coração",
-            "simplePronunciation": "rárt",
-            "phonetic": "/hɑːrt/",
-            "exampleEn": "Your heart beats fast when you run.",
-            "examplePt": "Seu coração bate rápido quando você corre."
-          }
-        ],
-        "options": [
-          "Finger",
-          "Blood",
-          "Neck",
-          "Heart"
-        ],
-        "correctAnswer": "Blood",
-        "contextSentence": "The heart pumps blood through the body.",
-        "contextSentencePt": "O coração bombeia sangue pelo corpo.",
-        "explanation": "Exemplo: \"The heart pumps blood through the body.\" — O coração bombeia sangue pelo corpo.",
-        "phoneticHint": "\"blâd\" • /blʌd/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p13-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Bone",
-        "visualEmoji": "🦴",
-        "visualOptions": [
-          {
-            "text": "Tooth",
-            "emoji": "🦷",
-            "label": "Tooth",
-            "translationPt": "Dente",
-            "simplePronunciation": "túth",
-            "phonetic": "/tuːθ/",
-            "exampleEn": "Brush every tooth after meals.",
-            "examplePt": "Escove cada dente após as refeições."
-          },
-          {
-            "text": "Bone",
-            "emoji": "🦴",
-            "label": "Bone",
-            "translationPt": "Osso",
-            "simplePronunciation": "bôun",
-            "phonetic": "/boʊn/",
-            "exampleEn": "Calcium keeps our bones strong.",
-            "examplePt": "O cálcio mantém nossos ossos fortes."
-          },
-          {
-            "text": "Back",
-            "emoji": "🧍",
-            "label": "Back",
-            "translationPt": "Costas",
-            "simplePronunciation": "bék",
-            "phonetic": "/bæk/",
-            "exampleEn": "Keep your back straight when sitting.",
-            "examplePt": "Mantenha as costas retas ao sentar."
-          },
-          {
-            "text": "Knee",
-            "emoji": "🦵",
-            "label": "Knee",
-            "translationPt": "Joelho",
-            "simplePronunciation": "ní",
-            "phonetic": "/niː/",
-            "exampleEn": "Bend your knees slowly.",
-            "examplePt": "Dobre seus joelhos devagar."
-          }
-        ],
-        "options": [
-          "Tooth",
-          "Bone",
-          "Back",
-          "Knee"
-        ],
-        "correctAnswer": "Bone",
-        "contextSentence": "Calcium keeps our bones strong.",
-        "contextSentencePt": "O cálcio mantém nossos ossos fortes.",
-        "explanation": "Exemplo: \"Calcium keeps our bones strong.\" — O cálcio mantém nossos ossos fortes.",
-        "phoneticHint": "\"bôun\" • /boʊn/",
-        "skillCategory": "vocabulary"
-      }
-    ]
-  },
-  {
-    "id": "w0-p14",
-    "worldId": 0,
-    "phaseNumber": 14,
-    "themeId": "body",
-    "themeTitle": "Corpo Humano",
-    "frequencyLevel": "Módulo 3 • Intermediárias",
-    "title": "Corpo Humano • Módulo 3: Palavras Intermediárias",
-    "subtitle": "Tema 3 (Nível 3/4) • 12 articulações, órgãos e detalhes intermediários do corpo",
-    "pedagogicalObjective": "Aprender articulações e partes intermediárias: Tongue, Lip, Brain, Chest, Elbow, Wrist, Ankle, Toe, Beard, Nail, Muscle e Tear.",
-    "type": "lesson",
-    "icon": "star",
-    "cefrLevel": "A1",
-    "theorySummary": [
-      "No Módulo 3 do Corpo Humano praticamos palavras intermediárias: Tongue (\"tâng\" = Língua), Lip (\"líp\" = Lábio), Brain (\"brêin\" = Cérebro), Chest (\"tchést\" = Peito), Elbow (\"él-bou\" = Cotovelo) e Wrist (\"ríst\" = Pulso).",
-      "Também aprendemos Ankle (\"én-kol\" = Tornozelo), Toe (\"tôu\" = Dedo do pé), Beard (\"bírd\" = Barba), Nail (\"nêil\" = Unha), Muscle (\"mâ-sol\" = Músculo) e Tear (\"tír\" = Lágrima)."
-    ],
-    "xpReward": 50,
-    "gemsReward": 20,
-    "exercises": [
-      {
-        "id": "w0-p14-e1",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Tongue",
-        "visualEmoji": "👅",
-        "visualOptions": [
-          {
-            "text": "Elbow",
-            "emoji": "💪",
-            "label": "Elbow",
-            "translationPt": "Cotovelo",
-            "simplePronunciation": "él-bou",
-            "phonetic": "/ˈel.boʊ/",
-            "exampleEn": "Do not put your elbows on the table.",
-            "examplePt": "Não coloque os cotovelos na mesa."
-          },
-          {
-            "text": "Chest",
-            "emoji": "🧍",
-            "label": "Chest",
-            "translationPt": "Peito / Tórax",
-            "simplePronunciation": "tchést",
-            "phonetic": "/tʃest/",
-            "exampleEn": "Take a deep breath into your chest.",
-            "examplePt": "Respire fundo enchendo o peito."
+            "text": "Wrist",
+            "emoji": "⌚",
+            "label": "Wrist",
+            "translationPt": "Pulso / Punho",
+            "simplePronunciation": "ríst",
+            "phonetic": "/rɪst/",
+            "exampleEn": "She wears a watch on her wrist.",
+            "examplePt": "Ela usa um relógio no pulso."
           },
           {
             "text": "Tongue",
@@ -8110,120 +5746,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "tâng",
             "phonetic": "/tʌŋ/",
             "exampleEn": "We taste food with our tongue.",
-            "examplePt": "Sentimos o gosto da comida com a língua."
-          },
-          {
-            "text": "Beard",
-            "emoji": "🧔",
-            "label": "Beard",
-            "translationPt": "Barba",
-            "simplePronunciation": "bírd",
-            "phonetic": "/bɪrd/",
-            "exampleEn": "My father has a short beard.",
-            "examplePt": "Meu pai tem uma barba curta."
+            "examplePt": "Sentimos o gosto com a língua."
           }
         ],
         "options": [
-          "Elbow",
-          "Chest",
-          "Tongue",
-          "Beard"
+          "Knee",
+          "Skin",
+          "Wrist",
+          "Tongue"
         ],
-        "correctAnswer": "Tongue",
-        "contextSentence": "We taste food with our tongue.",
-        "contextSentencePt": "Sentimos o gosto da comida com a língua.",
-        "explanation": "Exemplo: \"We taste food with our tongue.\" — Sentimos o gosto da comida com a língua.",
-        "phoneticHint": "\"tâng\" • /tʌŋ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p14-e2",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Lip",
-        "visualEmoji": "👄",
-        "visualOptions": [
-          {
-            "text": "Lip",
-            "emoji": "👄",
-            "label": "Lip",
-            "translationPt": "Lábio",
-            "simplePronunciation": "líp",
-            "phonetic": "/lɪp/",
-            "exampleEn": "Use balm on dry lips.",
-            "examplePt": "Use protetor labial nos lábios secos."
-          },
-          {
-            "text": "Tear",
-            "emoji": "😢",
-            "label": "Tear",
-            "translationPt": "Lágrima",
-            "simplePronunciation": "tír",
-            "phonetic": "/tɪr/",
-            "exampleEn": "A tear rolled down her face.",
-            "examplePt": "Uma lágrima rolou pelo rosto dela."
-          },
-          {
-            "text": "Nail",
-            "emoji": "💅",
-            "label": "Nail",
-            "translationPt": "Unha",
-            "simplePronunciation": "nêil",
-            "phonetic": "/neɪl/",
-            "exampleEn": "Keep your fingernails clean and short.",
-            "examplePt": "Mantenha as unhas limpas e curtas."
-          },
-          {
-            "text": "Toe",
-            "emoji": "🦶",
-            "label": "Toe",
-            "translationPt": "Dedo do pé",
-            "simplePronunciation": "tôu",
-            "phonetic": "/toʊ/",
-            "exampleEn": "Wiggle your toes in the sand.",
-            "examplePt": "Mexa os dedos do pé na areia."
-          }
-        ],
-        "options": [
-          "Lip",
-          "Tear",
-          "Nail",
-          "Toe"
-        ],
-        "correctAnswer": "Lip",
-        "contextSentence": "Use balm on dry lips.",
-        "contextSentencePt": "Use protetor labial nos lábios secos.",
-        "explanation": "Exemplo: \"Use balm on dry lips.\" — Use protetor labial nos lábios secos.",
-        "phoneticHint": "\"líp\" • /lɪp/",
+        "correctAnswer": "Knee",
+        "contextSentence": "Bend your knees slowly.",
+        "contextSentencePt": "Dobre os joelhos devagar.",
+        "explanation": "Exemplo: \"Bend your knees slowly.\" — Dobre os joelhos devagar.",
+        "phoneticHint": "\"ní\" • /niː/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p14-e3",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Brain",
-        "visualEmoji": "🧠",
+        "audioPhrase": "Stomach",
+        "visualEmoji": "🤰",
         "visualOptions": [
-          {
-            "text": "Muscle",
-            "emoji": "💪",
-            "label": "Muscle",
-            "translationPt": "Músculo",
-            "simplePronunciation": "mâ-sol",
-            "phonetic": "/ˈmʌs.əl/",
-            "exampleEn": "Swimming builds strong muscles.",
-            "examplePt": "Nadar desenvolve músculos fortes."
-          },
-          {
-            "text": "Ankle",
-            "emoji": "🦶",
-            "label": "Ankle",
-            "translationPt": "Tornozelo",
-            "simplePronunciation": "én-kol",
-            "phonetic": "/ˈæŋ.kəl/",
-            "exampleEn": "Warm up your ankles before running.",
-            "examplePt": "Aqueça os tornozelos antes de correr."
-          },
           {
             "text": "Brain",
             "emoji": "🧠",
@@ -8231,9 +5776,121 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cérebro",
             "simplePronunciation": "brêin",
             "phonetic": "/breɪn/",
-            "exampleEn": "Studying languages exercises the brain.",
-            "examplePt": "Estudar idiomas exercita o cérebro."
+            "exampleEn": "Reading exercises the brain.",
+            "examplePt": "A leitura exercita o cérebro."
           },
+          {
+            "text": "Stomach",
+            "emoji": "🤰",
+            "label": "Stomach",
+            "translationPt": "Estômago / Barriga",
+            "simplePronunciation": "stâ-mak",
+            "phonetic": "/ˈstʌm.ək/",
+            "exampleEn": "My stomach is full after dinner.",
+            "examplePt": "Meu estômago está cheio após o jantar."
+          },
+          {
+            "text": "Shoulder",
+            "emoji": "🤷",
+            "label": "Shoulder",
+            "translationPt": "Ombro",
+            "simplePronunciation": "xôul-der",
+            "phonetic": "/ˈʃoʊl.dər/",
+            "exampleEn": "Carry the bag on your shoulder.",
+            "examplePt": "Carregue a bolsa no ombro."
+          },
+          {
+            "text": "Elbow",
+            "emoji": "💪",
+            "label": "Elbow",
+            "translationPt": "Cotovelo",
+            "simplePronunciation": "él-bou",
+            "phonetic": "/ˈel.boʊ/",
+            "exampleEn": "Rest your elbow on the armrest.",
+            "examplePt": "Apoie o cotovelo no braço da cadeira."
+          }
+        ],
+        "options": [
+          "Brain",
+          "Stomach",
+          "Shoulder",
+          "Elbow"
+        ],
+        "correctAnswer": "Stomach",
+        "contextSentence": "My stomach is full after dinner.",
+        "contextSentencePt": "Meu estômago está cheio após o jantar.",
+        "explanation": "Exemplo: \"My stomach is full after dinner.\" — Meu estômago está cheio após o jantar.",
+        "phoneticHint": "\"stâ-mak\" • /ˈstʌm.ək/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p14-e4",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Skin",
+        "visualEmoji": "✋",
+        "visualOptions": [
+          {
+            "text": "Stomach",
+            "emoji": "🤰",
+            "label": "Stomach",
+            "translationPt": "Estômago / Barriga",
+            "simplePronunciation": "stâ-mak",
+            "phonetic": "/ˈstʌm.ək/",
+            "exampleEn": "My stomach is full after dinner.",
+            "examplePt": "Meu estômago está cheio após o jantar."
+          },
+          {
+            "text": "Shoulder",
+            "emoji": "🤷",
+            "label": "Shoulder",
+            "translationPt": "Ombro",
+            "simplePronunciation": "xôul-der",
+            "phonetic": "/ˈʃoʊl.dər/",
+            "exampleEn": "Carry the bag on your shoulder.",
+            "examplePt": "Carregue a bolsa no ombro."
+          },
+          {
+            "text": "Knee",
+            "emoji": "🦵",
+            "label": "Knee",
+            "translationPt": "Joelho",
+            "simplePronunciation": "ní",
+            "phonetic": "/niː/",
+            "exampleEn": "Bend your knees slowly.",
+            "examplePt": "Dobre os joelhos devagar."
+          },
+          {
+            "text": "Skin",
+            "emoji": "✋",
+            "label": "Skin",
+            "translationPt": "Pele",
+            "simplePronunciation": "skín",
+            "phonetic": "/skɪn/",
+            "exampleEn": "Drink water for healthy skin.",
+            "examplePt": "Beba água para uma pele saudável."
+          }
+        ],
+        "options": [
+          "Stomach",
+          "Shoulder",
+          "Knee",
+          "Skin"
+        ],
+        "correctAnswer": "Skin",
+        "contextSentence": "Drink water for healthy skin.",
+        "contextSentencePt": "Beba água para uma pele saudável.",
+        "explanation": "Exemplo: \"Drink water for healthy skin.\" — Beba água para uma pele saudável.",
+        "phoneticHint": "\"skín\" • /skɪn/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p14-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Tongue",
+        "visualEmoji": "👅",
+        "visualOptions": [
           {
             "text": "Wrist",
             "emoji": "⌚",
@@ -8243,57 +5900,16 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/rɪst/",
             "exampleEn": "She wears a watch on her wrist.",
             "examplePt": "Ela usa um relógio no pulso."
-          }
-        ],
-        "options": [
-          "Muscle",
-          "Ankle",
-          "Brain",
-          "Wrist"
-        ],
-        "correctAnswer": "Brain",
-        "contextSentence": "Studying languages exercises the brain.",
-        "contextSentencePt": "Estudar idiomas exercita o cérebro.",
-        "explanation": "Exemplo: \"Studying languages exercises the brain.\" — Estudar idiomas exercita o cérebro.",
-        "phoneticHint": "\"brêin\" • /breɪn/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p14-e4",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Chest",
-        "visualEmoji": "🧍",
-        "visualOptions": [
-          {
-            "text": "Lip",
-            "emoji": "👄",
-            "label": "Lip",
-            "translationPt": "Lábio",
-            "simplePronunciation": "líp",
-            "phonetic": "/lɪp/",
-            "exampleEn": "Use balm on dry lips.",
-            "examplePt": "Use protetor labial nos lábios secos."
           },
           {
-            "text": "Chest",
-            "emoji": "🧍",
-            "label": "Chest",
-            "translationPt": "Peito / Tórax",
-            "simplePronunciation": "tchést",
-            "phonetic": "/tʃest/",
-            "exampleEn": "Take a deep breath into your chest.",
-            "examplePt": "Respire fundo enchendo o peito."
-          },
-          {
-            "text": "Brain",
-            "emoji": "🧠",
-            "label": "Brain",
-            "translationPt": "Cérebro",
-            "simplePronunciation": "brêin",
-            "phonetic": "/breɪn/",
-            "exampleEn": "Studying languages exercises the brain.",
-            "examplePt": "Estudar idiomas exercita o cérebro."
+            "text": "Knee",
+            "emoji": "🦵",
+            "label": "Knee",
+            "translationPt": "Joelho",
+            "simplePronunciation": "ní",
+            "phonetic": "/niː/",
+            "exampleEn": "Bend your knees slowly.",
+            "examplePt": "Dobre os joelhos devagar."
           },
           {
             "text": "Tongue",
@@ -8303,58 +5919,119 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "tâng",
             "phonetic": "/tʌŋ/",
             "exampleEn": "We taste food with our tongue.",
-            "examplePt": "Sentimos o gosto da comida com a língua."
+            "examplePt": "Sentimos o gosto com a língua."
+          },
+          {
+            "text": "Skin",
+            "emoji": "✋",
+            "label": "Skin",
+            "translationPt": "Pele",
+            "simplePronunciation": "skín",
+            "phonetic": "/skɪn/",
+            "exampleEn": "Drink water for healthy skin.",
+            "examplePt": "Beba água para uma pele saudável."
           }
         ],
         "options": [
-          "Lip",
-          "Chest",
+          "Wrist",
+          "Knee",
+          "Tongue",
+          "Skin"
+        ],
+        "correctAnswer": "Tongue",
+        "contextSentence": "We taste food with our tongue.",
+        "contextSentencePt": "Sentimos o gosto com a língua.",
+        "explanation": "Exemplo: \"We taste food with our tongue.\" — Sentimos o gosto com a língua.",
+        "phoneticHint": "\"tâng\" • /tʌŋ/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p14-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Brain",
+        "visualEmoji": "🧠",
+        "visualOptions": [
+          {
+            "text": "Brain",
+            "emoji": "🧠",
+            "label": "Brain",
+            "translationPt": "Cérebro",
+            "simplePronunciation": "brêin",
+            "phonetic": "/breɪn/",
+            "exampleEn": "Reading exercises the brain.",
+            "examplePt": "A leitura exercita o cérebro."
+          },
+          {
+            "text": "Shoulder",
+            "emoji": "🤷",
+            "label": "Shoulder",
+            "translationPt": "Ombro",
+            "simplePronunciation": "xôul-der",
+            "phonetic": "/ˈʃoʊl.dər/",
+            "exampleEn": "Carry the bag on your shoulder.",
+            "examplePt": "Carregue a bolsa no ombro."
+          },
+          {
+            "text": "Stomach",
+            "emoji": "🤰",
+            "label": "Stomach",
+            "translationPt": "Estômago / Barriga",
+            "simplePronunciation": "stâ-mak",
+            "phonetic": "/ˈstʌm.ək/",
+            "exampleEn": "My stomach is full after dinner.",
+            "examplePt": "Meu estômago está cheio após o jantar."
+          },
+          {
+            "text": "Tongue",
+            "emoji": "👅",
+            "label": "Tongue",
+            "translationPt": "Língua",
+            "simplePronunciation": "tâng",
+            "phonetic": "/tʌŋ/",
+            "exampleEn": "We taste food with our tongue.",
+            "examplePt": "Sentimos o gosto com a língua."
+          }
+        ],
+        "options": [
           "Brain",
+          "Shoulder",
+          "Stomach",
           "Tongue"
         ],
-        "correctAnswer": "Chest",
-        "contextSentence": "Take a deep breath into your chest.",
-        "contextSentencePt": "Respire fundo enchendo o peito.",
-        "explanation": "Exemplo: \"Take a deep breath into your chest.\" — Respire fundo enchendo o peito.",
-        "phoneticHint": "\"tchést\" • /tʃest/",
+        "correctAnswer": "Brain",
+        "contextSentence": "Reading exercises the brain.",
+        "contextSentencePt": "A leitura exercita o cérebro.",
+        "explanation": "Exemplo: \"Reading exercises the brain.\" — A leitura exercita o cérebro.",
+        "phoneticHint": "\"brêin\" • /breɪn/",
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p14-e5",
+        "id": "w0-p14-e7",
         "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Elbow",
         "visualEmoji": "💪",
         "visualOptions": [
           {
-            "text": "Tear",
-            "emoji": "😢",
-            "label": "Tear",
-            "translationPt": "Lágrima",
-            "simplePronunciation": "tír",
-            "phonetic": "/tɪr/",
-            "exampleEn": "A tear rolled down her face.",
-            "examplePt": "Uma lágrima rolou pelo rosto dela."
+            "text": "Knee",
+            "emoji": "🦵",
+            "label": "Knee",
+            "translationPt": "Joelho",
+            "simplePronunciation": "ní",
+            "phonetic": "/niː/",
+            "exampleEn": "Bend your knees slowly.",
+            "examplePt": "Dobre os joelhos devagar."
           },
           {
-            "text": "Nail",
-            "emoji": "💅",
-            "label": "Nail",
-            "translationPt": "Unha",
-            "simplePronunciation": "nêil",
-            "phonetic": "/neɪl/",
-            "exampleEn": "Keep your fingernails clean and short.",
-            "examplePt": "Mantenha as unhas limpas e curtas."
-          },
-          {
-            "text": "Toe",
-            "emoji": "🦶",
-            "label": "Toe",
-            "translationPt": "Dedo do pé",
-            "simplePronunciation": "tôu",
-            "phonetic": "/toʊ/",
-            "exampleEn": "Wiggle your toes in the sand.",
-            "examplePt": "Mexa os dedos do pé na areia."
+            "text": "Brain",
+            "emoji": "🧠",
+            "label": "Brain",
+            "translationPt": "Cérebro",
+            "simplePronunciation": "brêin",
+            "phonetic": "/breɪn/",
+            "exampleEn": "Reading exercises the brain.",
+            "examplePt": "A leitura exercita o cérebro."
           },
           {
             "text": "Elbow",
@@ -8363,30 +6040,50 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cotovelo",
             "simplePronunciation": "él-bou",
             "phonetic": "/ˈel.boʊ/",
-            "exampleEn": "Do not put your elbows on the table.",
-            "examplePt": "Não coloque os cotovelos na mesa."
+            "exampleEn": "Rest your elbow on the armrest.",
+            "examplePt": "Apoie o cotovelo no braço da cadeira."
+          },
+          {
+            "text": "Skin",
+            "emoji": "✋",
+            "label": "Skin",
+            "translationPt": "Pele",
+            "simplePronunciation": "skín",
+            "phonetic": "/skɪn/",
+            "exampleEn": "Drink water for healthy skin.",
+            "examplePt": "Beba água para uma pele saudável."
           }
         ],
         "options": [
-          "Tear",
-          "Nail",
-          "Toe",
-          "Elbow"
+          "Knee",
+          "Brain",
+          "Elbow",
+          "Skin"
         ],
         "correctAnswer": "Elbow",
-        "contextSentence": "Do not put your elbows on the table.",
-        "contextSentencePt": "Não coloque os cotovelos na mesa.",
-        "explanation": "Exemplo: \"Do not put your elbows on the table.\" — Não coloque os cotovelos na mesa.",
+        "contextSentence": "Rest your elbow on the armrest.",
+        "contextSentencePt": "Apoie o cotovelo no braço da cadeira.",
+        "explanation": "Exemplo: \"Rest your elbow on the armrest.\" — Apoie o cotovelo no braço da cadeira.",
         "phoneticHint": "\"él-bou\" • /ˈel.boʊ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p14-e6",
+        "id": "w0-p14-e8",
         "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Wrist",
         "visualEmoji": "⌚",
         "visualOptions": [
+          {
+            "text": "Stomach",
+            "emoji": "🤰",
+            "label": "Stomach",
+            "translationPt": "Estômago / Barriga",
+            "simplePronunciation": "stâ-mak",
+            "phonetic": "/ˈstʌm.ək/",
+            "exampleEn": "My stomach is full after dinner.",
+            "examplePt": "Meu estômago está cheio após o jantar."
+          },
           {
             "text": "Wrist",
             "emoji": "⌚",
@@ -8398,86 +6095,68 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Ela usa um relógio no pulso."
           },
           {
-            "text": "Chest",
-            "emoji": "🧍",
-            "label": "Chest",
-            "translationPt": "Peito / Tórax",
-            "simplePronunciation": "tchést",
-            "phonetic": "/tʃest/",
-            "exampleEn": "Take a deep breath into your chest.",
-            "examplePt": "Respire fundo enchendo o peito."
+            "text": "Shoulder",
+            "emoji": "🤷",
+            "label": "Shoulder",
+            "translationPt": "Ombro",
+            "simplePronunciation": "xôul-der",
+            "phonetic": "/ˈʃoʊl.dər/",
+            "exampleEn": "Carry the bag on your shoulder.",
+            "examplePt": "Carregue a bolsa no ombro."
           },
           {
-            "text": "Muscle",
-            "emoji": "💪",
-            "label": "Muscle",
-            "translationPt": "Músculo",
-            "simplePronunciation": "mâ-sol",
-            "phonetic": "/ˈmʌs.əl/",
-            "exampleEn": "Swimming builds strong muscles.",
-            "examplePt": "Nadar desenvolve músculos fortes."
-          },
-          {
-            "text": "Lip",
-            "emoji": "👄",
-            "label": "Lip",
-            "translationPt": "Lábio",
-            "simplePronunciation": "líp",
-            "phonetic": "/lɪp/",
-            "exampleEn": "Use balm on dry lips.",
-            "examplePt": "Use protetor labial nos lábios secos."
+            "text": "Tongue",
+            "emoji": "👅",
+            "label": "Tongue",
+            "translationPt": "Língua",
+            "simplePronunciation": "tâng",
+            "phonetic": "/tʌŋ/",
+            "exampleEn": "We taste food with our tongue.",
+            "examplePt": "Sentimos o gosto com a língua."
           }
         ],
         "options": [
+          "Stomach",
           "Wrist",
-          "Chest",
-          "Muscle",
-          "Lip"
+          "Shoulder",
+          "Tongue"
         ],
         "correctAnswer": "Wrist",
         "contextSentence": "She wears a watch on her wrist.",
         "contextSentencePt": "Ela usa um relógio no pulso.",
         "explanation": "Exemplo: \"She wears a watch on her wrist.\" — Ela usa um relógio no pulso.",
         "phoneticHint": "\"ríst\" • /rɪst/",
-        "skillCategory": "vocabulary"
-      },
+        "skillCategory": "listening"
+      }
+    ]
+  },
+  {
+    "id": "w0-p15",
+    "worldId": 0,
+    "phaseNumber": 15,
+    "themeId": "body",
+    "themeTitle": "Tema 3: Corpo Humano",
+    "frequencyLevel": "Módulo 4 • Menos Comuns ou Específicas",
+    "title": "Corpo Humano • Módulo 4: Menos Comuns",
+    "subtitle": "Tema: Corpo Humano (4/4) • 8 partes específicas do rosto e corpo",
+    "pedagogicalObjective": "Dominar 8 detalhes específicos do corpo: Ankle, Eyebrow, Eyelash, Chin, Cheek, Forehead, Throat e Lung.",
+    "type": "lesson",
+    "icon": "star",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Tema: Corpo Humano — Módulo 4 (Palavras menos comuns ou específicas): detalhes do rosto e sistema respiratório.",
+      "Palavras deste módulo (8): Ankle (\"én-kol\" = Tornozelo), Eyebrow (\"ái-brau\" = Sobrancelha), Eyelash (\"ái-léx\" = Cílio), Chin (\"tchín\" = Queixo), Cheek (\"tchík\" = Bochecha), Forehead (\"fór-réd\" = Testa), Throat (\"thrôut\" = Garganta) e Lung (\"lâng\" = Pulmão)."
+    ],
+    "xpReward": 50,
+    "gemsReward": 20,
+    "exercises": [
       {
-        "id": "w0-p14-e7",
+        "id": "w0-p15-e1",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Ankle",
         "visualEmoji": "🦶",
         "visualOptions": [
-          {
-            "text": "Elbow",
-            "emoji": "💪",
-            "label": "Elbow",
-            "translationPt": "Cotovelo",
-            "simplePronunciation": "él-bou",
-            "phonetic": "/ˈel.boʊ/",
-            "exampleEn": "Do not put your elbows on the table.",
-            "examplePt": "Não coloque os cotovelos na mesa."
-          },
-          {
-            "text": "Brain",
-            "emoji": "🧠",
-            "label": "Brain",
-            "translationPt": "Cérebro",
-            "simplePronunciation": "brêin",
-            "phonetic": "/breɪn/",
-            "exampleEn": "Studying languages exercises the brain.",
-            "examplePt": "Estudar idiomas exercita o cérebro."
-          },
-          {
-            "text": "Beard",
-            "emoji": "🧔",
-            "label": "Beard",
-            "translationPt": "Barba",
-            "simplePronunciation": "bírd",
-            "phonetic": "/bɪrd/",
-            "exampleEn": "My father has a short beard.",
-            "examplePt": "Meu pai tem uma barba curta."
-          },
           {
             "text": "Ankle",
             "emoji": "🦶",
@@ -8487,13 +6166,43 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈæŋ.kəl/",
             "exampleEn": "Warm up your ankles before running.",
             "examplePt": "Aqueça os tornozelos antes de correr."
+          },
+          {
+            "text": "Eyelash",
+            "emoji": "👁️",
+            "label": "Eyelash",
+            "translationPt": "Cílio",
+            "simplePronunciation": "ái-léx",
+            "phonetic": "/ˈaɪ.læʃ/",
+            "exampleEn": "Eyelashes protect our eyes.",
+            "examplePt": "Os cílios protegem nossos olhos."
+          },
+          {
+            "text": "Forehead",
+            "emoji": "🧑",
+            "label": "Forehead",
+            "translationPt": "Testa",
+            "simplePronunciation": "fór-réd",
+            "phonetic": "/ˈfɔːr.hed/",
+            "exampleEn": "She touched his forehead.",
+            "examplePt": "Ela tocou a testa dele."
+          },
+          {
+            "text": "Lung",
+            "emoji": "🫁",
+            "label": "Lung",
+            "translationPt": "Pulmão",
+            "simplePronunciation": "lâng",
+            "phonetic": "/lʌŋ/",
+            "exampleEn": "Fresh air fills our lungs.",
+            "examplePt": "O ar puro enche nossos pulmões."
           }
         ],
         "options": [
-          "Elbow",
-          "Brain",
-          "Beard",
-          "Ankle"
+          "Ankle",
+          "Eyelash",
+          "Forehead",
+          "Lung"
         ],
         "correctAnswer": "Ankle",
         "contextSentence": "Warm up your ankles before running.",
@@ -8503,340 +6212,22 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p14-e8",
+        "id": "w0-p15-e2",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Toe",
-        "visualEmoji": "🦶",
-        "visualOptions": [
-          {
-            "text": "Tongue",
-            "emoji": "👅",
-            "label": "Tongue",
-            "translationPt": "Língua",
-            "simplePronunciation": "tâng",
-            "phonetic": "/tʌŋ/",
-            "exampleEn": "We taste food with our tongue.",
-            "examplePt": "Sentimos o gosto da comida com a língua."
-          },
-          {
-            "text": "Wrist",
-            "emoji": "⌚",
-            "label": "Wrist",
-            "translationPt": "Pulso / Punho",
-            "simplePronunciation": "ríst",
-            "phonetic": "/rɪst/",
-            "exampleEn": "She wears a watch on her wrist.",
-            "examplePt": "Ela usa um relógio no pulso."
-          },
-          {
-            "text": "Toe",
-            "emoji": "🦶",
-            "label": "Toe",
-            "translationPt": "Dedo do pé",
-            "simplePronunciation": "tôu",
-            "phonetic": "/toʊ/",
-            "exampleEn": "Wiggle your toes in the sand.",
-            "examplePt": "Mexa os dedos do pé na areia."
-          },
-          {
-            "text": "Ankle",
-            "emoji": "🦶",
-            "label": "Ankle",
-            "translationPt": "Tornozelo",
-            "simplePronunciation": "én-kol",
-            "phonetic": "/ˈæŋ.kəl/",
-            "exampleEn": "Warm up your ankles before running.",
-            "examplePt": "Aqueça os tornozelos antes de correr."
-          }
-        ],
-        "options": [
-          "Tongue",
-          "Wrist",
-          "Toe",
-          "Ankle"
-        ],
-        "correctAnswer": "Toe",
-        "contextSentence": "Wiggle your toes in the sand.",
-        "contextSentencePt": "Mexa os dedos do pé na areia.",
-        "explanation": "Exemplo: \"Wiggle your toes in the sand.\" — Mexa os dedos do pé na areia.",
-        "phoneticHint": "\"tôu\" • /toʊ/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p14-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Beard",
-        "visualEmoji": "🧔",
-        "visualOptions": [
-          {
-            "text": "Beard",
-            "emoji": "🧔",
-            "label": "Beard",
-            "translationPt": "Barba",
-            "simplePronunciation": "bírd",
-            "phonetic": "/bɪrd/",
-            "exampleEn": "My father has a short beard.",
-            "examplePt": "Meu pai tem uma barba curta."
-          },
-          {
-            "text": "Lip",
-            "emoji": "👄",
-            "label": "Lip",
-            "translationPt": "Lábio",
-            "simplePronunciation": "líp",
-            "phonetic": "/lɪp/",
-            "exampleEn": "Use balm on dry lips.",
-            "examplePt": "Use protetor labial nos lábios secos."
-          },
-          {
-            "text": "Tear",
-            "emoji": "😢",
-            "label": "Tear",
-            "translationPt": "Lágrima",
-            "simplePronunciation": "tír",
-            "phonetic": "/tɪr/",
-            "exampleEn": "A tear rolled down her face.",
-            "examplePt": "Uma lágrima rolou pelo rosto dela."
-          },
-          {
-            "text": "Chest",
-            "emoji": "🧍",
-            "label": "Chest",
-            "translationPt": "Peito / Tórax",
-            "simplePronunciation": "tchést",
-            "phonetic": "/tʃest/",
-            "exampleEn": "Take a deep breath into your chest.",
-            "examplePt": "Respire fundo enchendo o peito."
-          }
-        ],
-        "options": [
-          "Beard",
-          "Lip",
-          "Tear",
-          "Chest"
-        ],
-        "correctAnswer": "Beard",
-        "contextSentence": "My father has a short beard.",
-        "contextSentencePt": "Meu pai tem uma barba curta.",
-        "explanation": "Exemplo: \"My father has a short beard.\" — Meu pai tem uma barba curta.",
-        "phoneticHint": "\"bírd\" • /bɪrd/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p14-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Nail",
-        "visualEmoji": "💅",
-        "visualOptions": [
-          {
-            "text": "Muscle",
-            "emoji": "💪",
-            "label": "Muscle",
-            "translationPt": "Músculo",
-            "simplePronunciation": "mâ-sol",
-            "phonetic": "/ˈmʌs.əl/",
-            "exampleEn": "Swimming builds strong muscles.",
-            "examplePt": "Nadar desenvolve músculos fortes."
-          },
-          {
-            "text": "Nail",
-            "emoji": "💅",
-            "label": "Nail",
-            "translationPt": "Unha",
-            "simplePronunciation": "nêil",
-            "phonetic": "/neɪl/",
-            "exampleEn": "Keep your fingernails clean and short.",
-            "examplePt": "Mantenha as unhas limpas e curtas."
-          },
-          {
-            "text": "Wrist",
-            "emoji": "⌚",
-            "label": "Wrist",
-            "translationPt": "Pulso / Punho",
-            "simplePronunciation": "ríst",
-            "phonetic": "/rɪst/",
-            "exampleEn": "She wears a watch on her wrist.",
-            "examplePt": "Ela usa um relógio no pulso."
-          },
-          {
-            "text": "Ankle",
-            "emoji": "🦶",
-            "label": "Ankle",
-            "translationPt": "Tornozelo",
-            "simplePronunciation": "én-kol",
-            "phonetic": "/ˈæŋ.kəl/",
-            "exampleEn": "Warm up your ankles before running.",
-            "examplePt": "Aqueça os tornozelos antes de correr."
-          }
-        ],
-        "options": [
-          "Muscle",
-          "Nail",
-          "Wrist",
-          "Ankle"
-        ],
-        "correctAnswer": "Nail",
-        "contextSentence": "Keep your fingernails clean and short.",
-        "contextSentencePt": "Mantenha as unhas limpas e curtas.",
-        "explanation": "Exemplo: \"Keep your fingernails clean and short.\" — Mantenha as unhas limpas e curtas.",
-        "phoneticHint": "\"nêil\" • /neɪl/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p14-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Muscle",
-        "visualEmoji": "💪",
-        "visualOptions": [
-          {
-            "text": "Tongue",
-            "emoji": "👅",
-            "label": "Tongue",
-            "translationPt": "Língua",
-            "simplePronunciation": "tâng",
-            "phonetic": "/tʌŋ/",
-            "exampleEn": "We taste food with our tongue.",
-            "examplePt": "Sentimos o gosto da comida com a língua."
-          },
-          {
-            "text": "Muscle",
-            "emoji": "💪",
-            "label": "Muscle",
-            "translationPt": "Músculo",
-            "simplePronunciation": "mâ-sol",
-            "phonetic": "/ˈmʌs.əl/",
-            "exampleEn": "Swimming builds strong muscles.",
-            "examplePt": "Nadar desenvolve músculos fortes."
-          },
-          {
-            "text": "Toe",
-            "emoji": "🦶",
-            "label": "Toe",
-            "translationPt": "Dedo do pé",
-            "simplePronunciation": "tôu",
-            "phonetic": "/toʊ/",
-            "exampleEn": "Wiggle your toes in the sand.",
-            "examplePt": "Mexa os dedos do pé na areia."
-          },
-          {
-            "text": "Elbow",
-            "emoji": "💪",
-            "label": "Elbow",
-            "translationPt": "Cotovelo",
-            "simplePronunciation": "él-bou",
-            "phonetic": "/ˈel.boʊ/",
-            "exampleEn": "Do not put your elbows on the table.",
-            "examplePt": "Não coloque os cotovelos na mesa."
-          }
-        ],
-        "options": [
-          "Tongue",
-          "Muscle",
-          "Toe",
-          "Elbow"
-        ],
-        "correctAnswer": "Muscle",
-        "contextSentence": "Swimming builds strong muscles.",
-        "contextSentencePt": "Nadar desenvolve músculos fortes.",
-        "explanation": "Exemplo: \"Swimming builds strong muscles.\" — Nadar desenvolve músculos fortes.",
-        "phoneticHint": "\"mâ-sol\" • /ˈmʌs.əl/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p14-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Tear",
-        "visualEmoji": "😢",
-        "visualOptions": [
-          {
-            "text": "Lip",
-            "emoji": "👄",
-            "label": "Lip",
-            "translationPt": "Lábio",
-            "simplePronunciation": "líp",
-            "phonetic": "/lɪp/",
-            "exampleEn": "Use balm on dry lips.",
-            "examplePt": "Use protetor labial nos lábios secos."
-          },
-          {
-            "text": "Brain",
-            "emoji": "🧠",
-            "label": "Brain",
-            "translationPt": "Cérebro",
-            "simplePronunciation": "brêin",
-            "phonetic": "/breɪn/",
-            "exampleEn": "Studying languages exercises the brain.",
-            "examplePt": "Estudar idiomas exercita o cérebro."
-          },
-          {
-            "text": "Beard",
-            "emoji": "🧔",
-            "label": "Beard",
-            "translationPt": "Barba",
-            "simplePronunciation": "bírd",
-            "phonetic": "/bɪrd/",
-            "exampleEn": "My father has a short beard.",
-            "examplePt": "Meu pai tem uma barba curta."
-          },
-          {
-            "text": "Tear",
-            "emoji": "😢",
-            "label": "Tear",
-            "translationPt": "Lágrima",
-            "simplePronunciation": "tír",
-            "phonetic": "/tɪr/",
-            "exampleEn": "A tear rolled down her face.",
-            "examplePt": "Uma lágrima rolou pelo rosto dela."
-          }
-        ],
-        "options": [
-          "Lip",
-          "Brain",
-          "Beard",
-          "Tear"
-        ],
-        "correctAnswer": "Tear",
-        "contextSentence": "A tear rolled down her face.",
-        "contextSentencePt": "Uma lágrima rolou pelo rosto dela.",
-        "explanation": "Exemplo: \"A tear rolled down her face.\" — Uma lágrima rolou pelo rosto dela.",
-        "phoneticHint": "\"tír\" • /tɪr/",
-        "skillCategory": "vocabulary"
-      }
-    ]
-  },
-  {
-    "id": "w0-p15",
-    "worldId": 0,
-    "phaseNumber": 15,
-    "themeId": "body",
-    "themeTitle": "Corpo Humano",
-    "frequencyLevel": "Módulo 4 • Menos Comuns",
-    "title": "Corpo Humano • Módulo 4: Menos Comuns & Específicas",
-    "subtitle": "Tema 3 (Nível 4/4) • 12 partes específicas do rosto e anatomia",
-    "pedagogicalObjective": "Dominar detalhes específicos do rosto e do corpo: Eyebrow, Eyelash, Chin, Cheek, Forehead, Throat, Lung, Thumb, Heel, Waist, Hip e Rib.",
-    "type": "lesson",
-    "icon": "star",
-    "cefrLevel": "A1",
-    "theorySummary": [
-      "No Módulo 4 do Corpo Humano estudamos partes específicas: Eyebrow (\"ái-brau\" = Sobrancelha), Eyelash (\"ái-léx\" = Cílio), Chin (\"tchín\" = Queixo), Cheek (\"tchík\" = Bochecha), Forehead (\"fór-réd\" = Testa) e Throat (\"thrôut\" = Garganta).",
-      "E completamos com Lung (\"lâng\" = Pulmão), Thumb (\"thâm\" = Polegar), Heel (\"ríl\" = Calcanhar), Waist (\"uêist\" = Cintura), Hip (\"ríp\" = Quadril) e Rib (\"ríb\" = Costela).",
-      "Logo após concluir este módulo, você fará o seu 4º Módulo Exclusivo de Pronomes (Indefinidos & Relativos)!"
-    ],
-    "xpReward": 50,
-    "gemsReward": 20,
-    "exercises": [
-      {
-        "id": "w0-p15-e1",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Eyebrow",
         "visualEmoji": "🤨",
         "visualOptions": [
+          {
+            "text": "Cheek",
+            "emoji": "😊",
+            "label": "Cheek",
+            "translationPt": "Bochecha",
+            "simplePronunciation": "tchík",
+            "phonetic": "/tʃiːk/",
+            "exampleEn": "She kissed her baby on the cheek.",
+            "examplePt": "Ela beijou o bebê na bochecha."
+          },
           {
             "text": "Eyebrow",
             "emoji": "🤨",
@@ -8844,60 +6235,70 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sobrancelha",
             "simplePronunciation": "ái-brau",
             "phonetic": "/ˈaɪ.braʊ/",
-            "exampleEn": "He raised one eyebrow in surprise.",
-            "examplePt": "Ele levantou uma sobrancelha surpreso."
+            "exampleEn": "He raised one eyebrow.",
+            "examplePt": "Ele levantou uma sobrancelha."
           },
           {
-            "text": "Heel",
-            "emoji": "🦶",
-            "label": "Heel",
-            "translationPt": "Calcanhar",
-            "simplePronunciation": "ríl",
-            "phonetic": "/hiːl/",
-            "exampleEn": "These shoes cushion your heel.",
-            "examplePt": "Estes sapatos amortecem o seu calcanhar."
+            "text": "Throat",
+            "emoji": "🍵",
+            "label": "Throat",
+            "translationPt": "Garganta",
+            "simplePronunciation": "thrôut",
+            "phonetic": "/θroʊt/",
+            "exampleEn": "Warm tea soothes the throat.",
+            "examplePt": "Chá morno alivia a garganta."
           },
           {
-            "text": "Rib",
-            "emoji": "🦴",
-            "label": "Rib",
-            "translationPt": "Costela",
-            "simplePronunciation": "ríb",
-            "phonetic": "/rɪb/",
-            "exampleEn": "The ribs protect the heart and lungs.",
-            "examplePt": "As costelas protegem o coração e os pulmões."
-          },
-          {
-            "text": "Hip",
-            "emoji": "🧍",
-            "label": "Hip",
-            "translationPt": "Quadril",
-            "simplePronunciation": "ríp",
-            "phonetic": "/hɪp/",
-            "exampleEn": "Put your hands on your hips.",
-            "examplePt": "Coloque as mãos no quadril."
+            "text": "Chin",
+            "emoji": "🧑",
+            "label": "Chin",
+            "translationPt": "Queixo",
+            "simplePronunciation": "tchín",
+            "phonetic": "/tʃɪn/",
+            "exampleEn": "He rested his chin on his hand.",
+            "examplePt": "Ele apoiou o queixo na mão."
           }
         ],
         "options": [
+          "Cheek",
           "Eyebrow",
-          "Heel",
-          "Rib",
-          "Hip"
+          "Throat",
+          "Chin"
         ],
         "correctAnswer": "Eyebrow",
-        "contextSentence": "He raised one eyebrow in surprise.",
-        "contextSentencePt": "Ele levantou uma sobrancelha surpreso.",
-        "explanation": "Exemplo: \"He raised one eyebrow in surprise.\" — Ele levantou uma sobrancelha surpreso.",
+        "contextSentence": "He raised one eyebrow.",
+        "contextSentencePt": "Ele levantou uma sobrancelha.",
+        "explanation": "Exemplo: \"He raised one eyebrow.\" — Ele levantou uma sobrancelha.",
         "phoneticHint": "\"ái-brau\" • /ˈaɪ.braʊ/",
-        "skillCategory": "vocabulary"
+        "skillCategory": "listening"
       },
       {
-        "id": "w0-p15-e2",
+        "id": "w0-p15-e3",
         "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Eyelash",
         "visualEmoji": "👁️",
         "visualOptions": [
+          {
+            "text": "Ankle",
+            "emoji": "🦶",
+            "label": "Ankle",
+            "translationPt": "Tornozelo",
+            "simplePronunciation": "én-kol",
+            "phonetic": "/ˈæŋ.kəl/",
+            "exampleEn": "Warm up your ankles before running.",
+            "examplePt": "Aqueça os tornozelos antes de correr."
+          },
+          {
+            "text": "Forehead",
+            "emoji": "🧑",
+            "label": "Forehead",
+            "translationPt": "Testa",
+            "simplePronunciation": "fór-réd",
+            "phonetic": "/ˈfɔːr.hed/",
+            "exampleEn": "She touched his forehead.",
+            "examplePt": "Ela tocou a testa dele."
+          },
           {
             "text": "Lung",
             "emoji": "🫁",
@@ -8909,65 +6310,55 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "O ar puro enche nossos pulmões."
           },
           {
-            "text": "Throat",
-            "emoji": "🍵",
-            "label": "Throat",
-            "translationPt": "Garganta",
-            "simplePronunciation": "thrôut",
-            "phonetic": "/θroʊt/",
-            "exampleEn": "Warm tea soothes a sore throat.",
-            "examplePt": "Chá morno alivia a dor de garganta."
-          },
-          {
             "text": "Eyelash",
             "emoji": "👁️",
             "label": "Eyelash",
             "translationPt": "Cílio",
             "simplePronunciation": "ái-léx",
             "phonetic": "/ˈaɪ.læʃ/",
-            "exampleEn": "Eyelashes protect our eyes from dust.",
-            "examplePt": "Os cílios protegem nossos olhos da poeira."
-          },
-          {
-            "text": "Thumb",
-            "emoji": "👍",
-            "label": "Thumb",
-            "translationPt": "Polegar (dedão)",
-            "simplePronunciation": "thâm",
-            "phonetic": "/θʌm/",
-            "exampleEn": "Give a thumbs up if you agree.",
-            "examplePt": "Faça sinal de positivo com o polegar se concordar."
+            "exampleEn": "Eyelashes protect our eyes.",
+            "examplePt": "Os cílios protegem nossos olhos."
           }
         ],
         "options": [
+          "Ankle",
+          "Forehead",
           "Lung",
-          "Throat",
-          "Eyelash",
-          "Thumb"
+          "Eyelash"
         ],
         "correctAnswer": "Eyelash",
-        "contextSentence": "Eyelashes protect our eyes from dust.",
-        "contextSentencePt": "Os cílios protegem nossos olhos da poeira.",
-        "explanation": "Exemplo: \"Eyelashes protect our eyes from dust.\" — Os cílios protegem nossos olhos da poeira.",
+        "contextSentence": "Eyelashes protect our eyes.",
+        "contextSentencePt": "Os cílios protegem nossos olhos.",
+        "explanation": "Exemplo: \"Eyelashes protect our eyes.\" — Os cílios protegem nossos olhos.",
         "phoneticHint": "\"ái-léx\" • /ˈaɪ.læʃ/",
-        "skillCategory": "listening"
+        "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p15-e3",
+        "id": "w0-p15-e4",
         "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Chin",
         "visualEmoji": "🧑",
         "visualOptions": [
           {
-            "text": "Waist",
-            "emoji": "👖",
-            "label": "Waist",
-            "translationPt": "Cintura",
-            "simplePronunciation": "uêist",
-            "phonetic": "/weɪst/",
-            "exampleEn": "Fasten the belt around your waist.",
-            "examplePt": "Aperte o cinto ao redor da cintura."
+            "text": "Throat",
+            "emoji": "🍵",
+            "label": "Throat",
+            "translationPt": "Garganta",
+            "simplePronunciation": "thrôut",
+            "phonetic": "/θroʊt/",
+            "exampleEn": "Warm tea soothes the throat.",
+            "examplePt": "Chá morno alivia a garganta."
+          },
+          {
+            "text": "Ankle",
+            "emoji": "🦶",
+            "label": "Ankle",
+            "translationPt": "Tornozelo",
+            "simplePronunciation": "én-kol",
+            "phonetic": "/ˈæŋ.kəl/",
+            "exampleEn": "Warm up your ankles before running.",
+            "examplePt": "Aqueça os tornozelos antes de correr."
           },
           {
             "text": "Chin",
@@ -8980,30 +6371,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Ele apoiou o queixo na mão."
           },
           {
-            "text": "Eyelash",
-            "emoji": "👁️",
-            "label": "Eyelash",
-            "translationPt": "Cílio",
-            "simplePronunciation": "ái-léx",
-            "phonetic": "/ˈaɪ.læʃ/",
-            "exampleEn": "Eyelashes protect our eyes from dust.",
-            "examplePt": "Os cílios protegem nossos olhos da poeira."
-          },
-          {
             "text": "Eyebrow",
             "emoji": "🤨",
             "label": "Eyebrow",
             "translationPt": "Sobrancelha",
             "simplePronunciation": "ái-brau",
             "phonetic": "/ˈaɪ.braʊ/",
-            "exampleEn": "He raised one eyebrow in surprise.",
-            "examplePt": "Ele levantou uma sobrancelha surpreso."
+            "exampleEn": "He raised one eyebrow.",
+            "examplePt": "Ele levantou uma sobrancelha."
           }
         ],
         "options": [
-          "Waist",
+          "Throat",
+          "Ankle",
           "Chin",
-          "Eyelash",
           "Eyebrow"
         ],
         "correctAnswer": "Chin",
@@ -9014,42 +6395,12 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p15-e4",
+        "id": "w0-p15-e5",
         "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Cheek",
         "visualEmoji": "😊",
         "visualOptions": [
-          {
-            "text": "Rib",
-            "emoji": "🦴",
-            "label": "Rib",
-            "translationPt": "Costela",
-            "simplePronunciation": "ríb",
-            "phonetic": "/rɪb/",
-            "exampleEn": "The ribs protect the heart and lungs.",
-            "examplePt": "As costelas protegem o coração e os pulmões."
-          },
-          {
-            "text": "Hip",
-            "emoji": "🧍",
-            "label": "Hip",
-            "translationPt": "Quadril",
-            "simplePronunciation": "ríp",
-            "phonetic": "/hɪp/",
-            "exampleEn": "Put your hands on your hips.",
-            "examplePt": "Coloque as mãos no quadril."
-          },
-          {
-            "text": "Heel",
-            "emoji": "🦶",
-            "label": "Heel",
-            "translationPt": "Calcanhar",
-            "simplePronunciation": "ríl",
-            "phonetic": "/hiːl/",
-            "exampleEn": "These shoes cushion your heel.",
-            "examplePt": "Estes sapatos amortecem o seu calcanhar."
-          },
           {
             "text": "Cheek",
             "emoji": "😊",
@@ -9059,88 +6410,57 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/tʃiːk/",
             "exampleEn": "She kissed her baby on the cheek.",
             "examplePt": "Ela beijou o bebê na bochecha."
+          },
+          {
+            "text": "Eyebrow",
+            "emoji": "🤨",
+            "label": "Eyebrow",
+            "translationPt": "Sobrancelha",
+            "simplePronunciation": "ái-brau",
+            "phonetic": "/ˈaɪ.braʊ/",
+            "exampleEn": "He raised one eyebrow.",
+            "examplePt": "Ele levantou uma sobrancelha."
+          },
+          {
+            "text": "Eyelash",
+            "emoji": "👁️",
+            "label": "Eyelash",
+            "translationPt": "Cílio",
+            "simplePronunciation": "ái-léx",
+            "phonetic": "/ˈaɪ.læʃ/",
+            "exampleEn": "Eyelashes protect our eyes.",
+            "examplePt": "Os cílios protegem nossos olhos."
+          },
+          {
+            "text": "Chin",
+            "emoji": "🧑",
+            "label": "Chin",
+            "translationPt": "Queixo",
+            "simplePronunciation": "tchín",
+            "phonetic": "/tʃɪn/",
+            "exampleEn": "He rested his chin on his hand.",
+            "examplePt": "Ele apoiou o queixo na mão."
           }
         ],
         "options": [
-          "Rib",
-          "Hip",
-          "Heel",
-          "Cheek"
+          "Cheek",
+          "Eyebrow",
+          "Eyelash",
+          "Chin"
         ],
         "correctAnswer": "Cheek",
         "contextSentence": "She kissed her baby on the cheek.",
         "contextSentencePt": "Ela beijou o bebê na bochecha.",
         "explanation": "Exemplo: \"She kissed her baby on the cheek.\" — Ela beijou o bebê na bochecha.",
         "phoneticHint": "\"tchík\" • /tʃiːk/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p15-e5",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Forehead",
-        "visualEmoji": "🧑",
-        "visualOptions": [
-          {
-            "text": "Forehead",
-            "emoji": "🧑",
-            "label": "Forehead",
-            "translationPt": "Testa",
-            "simplePronunciation": "fór-réd",
-            "phonetic": "/ˈfɔːr.hed/",
-            "exampleEn": "She felt his forehead for a fever.",
-            "examplePt": "Ela tocou a testa dele para ver se tinha febre."
-          },
-          {
-            "text": "Cheek",
-            "emoji": "😊",
-            "label": "Cheek",
-            "translationPt": "Bochecha",
-            "simplePronunciation": "tchík",
-            "phonetic": "/tʃiːk/",
-            "exampleEn": "She kissed her baby on the cheek.",
-            "examplePt": "Ela beijou o bebê na bochecha."
-          },
-          {
-            "text": "Waist",
-            "emoji": "👖",
-            "label": "Waist",
-            "translationPt": "Cintura",
-            "simplePronunciation": "uêist",
-            "phonetic": "/weɪst/",
-            "exampleEn": "Fasten the belt around your waist.",
-            "examplePt": "Aperte o cinto ao redor da cintura."
-          },
-          {
-            "text": "Chin",
-            "emoji": "🧑",
-            "label": "Chin",
-            "translationPt": "Queixo",
-            "simplePronunciation": "tchín",
-            "phonetic": "/tʃɪn/",
-            "exampleEn": "He rested his chin on his hand.",
-            "examplePt": "Ele apoiou o queixo na mão."
-          }
-        ],
-        "options": [
-          "Forehead",
-          "Cheek",
-          "Waist",
-          "Chin"
-        ],
-        "correctAnswer": "Forehead",
-        "contextSentence": "She felt his forehead for a fever.",
-        "contextSentencePt": "Ela tocou a testa dele para ver se tinha febre.",
-        "explanation": "Exemplo: \"She felt his forehead for a fever.\" — Ela tocou a testa dele para ver se tinha febre.",
-        "phoneticHint": "\"fór-réd\" • /ˈfɔːr.hed/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p15-e6",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Throat",
-        "visualEmoji": "🍵",
+        "audioPhrase": "Forehead",
+        "visualEmoji": "🧑",
         "visualOptions": [
           {
             "text": "Lung",
@@ -9169,39 +6489,39 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Testa",
             "simplePronunciation": "fór-réd",
             "phonetic": "/ˈfɔːr.hed/",
-            "exampleEn": "She felt his forehead for a fever.",
-            "examplePt": "Ela tocou a testa dele para ver se tinha febre."
+            "exampleEn": "She touched his forehead.",
+            "examplePt": "Ela tocou a testa dele."
           },
           {
-            "text": "Throat",
-            "emoji": "🍵",
-            "label": "Throat",
-            "translationPt": "Garganta",
-            "simplePronunciation": "thrôut",
-            "phonetic": "/θroʊt/",
-            "exampleEn": "Warm tea soothes a sore throat.",
-            "examplePt": "Chá morno alivia a dor de garganta."
+            "text": "Cheek",
+            "emoji": "😊",
+            "label": "Cheek",
+            "translationPt": "Bochecha",
+            "simplePronunciation": "tchík",
+            "phonetic": "/tʃiːk/",
+            "exampleEn": "She kissed her baby on the cheek.",
+            "examplePt": "Ela beijou o bebê na bochecha."
           }
         ],
         "options": [
           "Lung",
           "Chin",
           "Forehead",
-          "Throat"
+          "Cheek"
         ],
-        "correctAnswer": "Throat",
-        "contextSentence": "Warm tea soothes a sore throat.",
-        "contextSentencePt": "Chá morno alivia a dor de garganta.",
-        "explanation": "Exemplo: \"Warm tea soothes a sore throat.\" — Chá morno alivia a dor de garganta.",
-        "phoneticHint": "\"thrôut\" • /θroʊt/",
+        "correctAnswer": "Forehead",
+        "contextSentence": "She touched his forehead.",
+        "contextSentencePt": "Ela tocou a testa dele.",
+        "explanation": "Exemplo: \"She touched his forehead.\" — Ela tocou a testa dele.",
+        "phoneticHint": "\"fór-réd\" • /ˈfɔːr.hed/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e7",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Lung",
-        "visualEmoji": "🫁",
+        "audioPhrase": "Throat",
+        "visualEmoji": "🍵",
         "visualOptions": [
           {
             "text": "Eyebrow",
@@ -9210,8 +6530,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Sobrancelha",
             "simplePronunciation": "ái-brau",
             "phonetic": "/ˈaɪ.braʊ/",
-            "exampleEn": "He raised one eyebrow in surprise.",
-            "examplePt": "Ele levantou uma sobrancelha surpreso."
+            "exampleEn": "He raised one eyebrow.",
+            "examplePt": "Ele levantou uma sobrancelha."
+          },
+          {
+            "text": "Throat",
+            "emoji": "🍵",
+            "label": "Throat",
+            "translationPt": "Garganta",
+            "simplePronunciation": "thrôut",
+            "phonetic": "/θroʊt/",
+            "exampleEn": "Warm tea soothes the throat.",
+            "examplePt": "Chá morno alivia a garganta."
           },
           {
             "text": "Eyelash",
@@ -9220,70 +6550,40 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cílio",
             "simplePronunciation": "ái-léx",
             "phonetic": "/ˈaɪ.læʃ/",
-            "exampleEn": "Eyelashes protect our eyes from dust.",
-            "examplePt": "Os cílios protegem nossos olhos da poeira."
+            "exampleEn": "Eyelashes protect our eyes.",
+            "examplePt": "Os cílios protegem nossos olhos."
           },
           {
-            "text": "Lung",
-            "emoji": "🫁",
-            "label": "Lung",
-            "translationPt": "Pulmão",
-            "simplePronunciation": "lâng",
-            "phonetic": "/lʌŋ/",
-            "exampleEn": "Fresh air fills our lungs.",
-            "examplePt": "O ar puro enche nossos pulmões."
-          },
-          {
-            "text": "Hip",
-            "emoji": "🧍",
-            "label": "Hip",
-            "translationPt": "Quadril",
-            "simplePronunciation": "ríp",
-            "phonetic": "/hɪp/",
-            "exampleEn": "Put your hands on your hips.",
-            "examplePt": "Coloque as mãos no quadril."
+            "text": "Ankle",
+            "emoji": "🦶",
+            "label": "Ankle",
+            "translationPt": "Tornozelo",
+            "simplePronunciation": "én-kol",
+            "phonetic": "/ˈæŋ.kəl/",
+            "exampleEn": "Warm up your ankles before running.",
+            "examplePt": "Aqueça os tornozelos antes de correr."
           }
         ],
         "options": [
           "Eyebrow",
+          "Throat",
           "Eyelash",
-          "Lung",
-          "Hip"
+          "Ankle"
         ],
-        "correctAnswer": "Lung",
-        "contextSentence": "Fresh air fills our lungs.",
-        "contextSentencePt": "O ar puro enche nossos pulmões.",
-        "explanation": "Exemplo: \"Fresh air fills our lungs.\" — O ar puro enche nossos pulmões.",
-        "phoneticHint": "\"lâng\" • /lʌŋ/",
+        "correctAnswer": "Throat",
+        "contextSentence": "Warm tea soothes the throat.",
+        "contextSentencePt": "Chá morno alivia a garganta.",
+        "explanation": "Exemplo: \"Warm tea soothes the throat.\" — Chá morno alivia a garganta.",
+        "phoneticHint": "\"thrôut\" • /θroʊt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p15-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Thumb",
-        "visualEmoji": "👍",
+        "audioPhrase": "Lung",
+        "visualEmoji": "🫁",
         "visualOptions": [
-          {
-            "text": "Thumb",
-            "emoji": "👍",
-            "label": "Thumb",
-            "translationPt": "Polegar (dedão)",
-            "simplePronunciation": "thâm",
-            "phonetic": "/θʌm/",
-            "exampleEn": "Give a thumbs up if you agree.",
-            "examplePt": "Faça sinal de positivo com o polegar se concordar."
-          },
-          {
-            "text": "Forehead",
-            "emoji": "🧑",
-            "label": "Forehead",
-            "translationPt": "Testa",
-            "simplePronunciation": "fór-réd",
-            "phonetic": "/ˈfɔːr.hed/",
-            "exampleEn": "She felt his forehead for a fever.",
-            "examplePt": "Ela tocou a testa dele para ver se tinha febre."
-          },
           {
             "text": "Cheek",
             "emoji": "😊",
@@ -9293,169 +6593,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/tʃiːk/",
             "exampleEn": "She kissed her baby on the cheek.",
             "examplePt": "Ela beijou o bebê na bochecha."
-          },
-          {
-            "text": "Throat",
-            "emoji": "🍵",
-            "label": "Throat",
-            "translationPt": "Garganta",
-            "simplePronunciation": "thrôut",
-            "phonetic": "/θroʊt/",
-            "exampleEn": "Warm tea soothes a sore throat.",
-            "examplePt": "Chá morno alivia a dor de garganta."
-          }
-        ],
-        "options": [
-          "Thumb",
-          "Forehead",
-          "Cheek",
-          "Throat"
-        ],
-        "correctAnswer": "Thumb",
-        "contextSentence": "Give a thumbs up if you agree.",
-        "contextSentencePt": "Faça sinal de positivo com o polegar se concordar.",
-        "explanation": "Exemplo: \"Give a thumbs up if you agree.\" — Faça sinal de positivo com o polegar se concordar.",
-        "phoneticHint": "\"thâm\" • /θʌm/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p15-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Heel",
-        "visualEmoji": "🦶",
-        "visualOptions": [
-          {
-            "text": "Waist",
-            "emoji": "👖",
-            "label": "Waist",
-            "translationPt": "Cintura",
-            "simplePronunciation": "uêist",
-            "phonetic": "/weɪst/",
-            "exampleEn": "Fasten the belt around your waist.",
-            "examplePt": "Aperte o cinto ao redor da cintura."
-          },
-          {
-            "text": "Heel",
-            "emoji": "🦶",
-            "label": "Heel",
-            "translationPt": "Calcanhar",
-            "simplePronunciation": "ríl",
-            "phonetic": "/hiːl/",
-            "exampleEn": "These shoes cushion your heel.",
-            "examplePt": "Estes sapatos amortecem o seu calcanhar."
-          },
-          {
-            "text": "Thumb",
-            "emoji": "👍",
-            "label": "Thumb",
-            "translationPt": "Polegar (dedão)",
-            "simplePronunciation": "thâm",
-            "phonetic": "/θʌm/",
-            "exampleEn": "Give a thumbs up if you agree.",
-            "examplePt": "Faça sinal de positivo com o polegar se concordar."
-          },
-          {
-            "text": "Throat",
-            "emoji": "🍵",
-            "label": "Throat",
-            "translationPt": "Garganta",
-            "simplePronunciation": "thrôut",
-            "phonetic": "/θroʊt/",
-            "exampleEn": "Warm tea soothes a sore throat.",
-            "examplePt": "Chá morno alivia a dor de garganta."
-          }
-        ],
-        "options": [
-          "Waist",
-          "Heel",
-          "Thumb",
-          "Throat"
-        ],
-        "correctAnswer": "Heel",
-        "contextSentence": "These shoes cushion your heel.",
-        "contextSentencePt": "Estes sapatos amortecem o seu calcanhar.",
-        "explanation": "Exemplo: \"These shoes cushion your heel.\" — Estes sapatos amortecem o seu calcanhar.",
-        "phoneticHint": "\"ríl\" • /hiːl/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p15-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Waist",
-        "visualEmoji": "👖",
-        "visualOptions": [
-          {
-            "text": "Eyebrow",
-            "emoji": "🤨",
-            "label": "Eyebrow",
-            "translationPt": "Sobrancelha",
-            "simplePronunciation": "ái-brau",
-            "phonetic": "/ˈaɪ.braʊ/",
-            "exampleEn": "He raised one eyebrow in surprise.",
-            "examplePt": "Ele levantou uma sobrancelha surpreso."
-          },
-          {
-            "text": "Waist",
-            "emoji": "👖",
-            "label": "Waist",
-            "translationPt": "Cintura",
-            "simplePronunciation": "uêist",
-            "phonetic": "/weɪst/",
-            "exampleEn": "Fasten the belt around your waist.",
-            "examplePt": "Aperte o cinto ao redor da cintura."
-          },
-          {
-            "text": "Eyelash",
-            "emoji": "👁️",
-            "label": "Eyelash",
-            "translationPt": "Cílio",
-            "simplePronunciation": "ái-léx",
-            "phonetic": "/ˈaɪ.læʃ/",
-            "exampleEn": "Eyelashes protect our eyes from dust.",
-            "examplePt": "Os cílios protegem nossos olhos da poeira."
-          },
-          {
-            "text": "Lung",
-            "emoji": "🫁",
-            "label": "Lung",
-            "translationPt": "Pulmão",
-            "simplePronunciation": "lâng",
-            "phonetic": "/lʌŋ/",
-            "exampleEn": "Fresh air fills our lungs.",
-            "examplePt": "O ar puro enche nossos pulmões."
-          }
-        ],
-        "options": [
-          "Eyebrow",
-          "Waist",
-          "Eyelash",
-          "Lung"
-        ],
-        "correctAnswer": "Waist",
-        "contextSentence": "Fasten the belt around your waist.",
-        "contextSentencePt": "Aperte o cinto ao redor da cintura.",
-        "explanation": "Exemplo: \"Fasten the belt around your waist.\" — Aperte o cinto ao redor da cintura.",
-        "phoneticHint": "\"uêist\" • /weɪst/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p15-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Hip",
-        "visualEmoji": "🧍",
-        "visualOptions": [
-          {
-            "text": "Forehead",
-            "emoji": "🧑",
-            "label": "Forehead",
-            "translationPt": "Testa",
-            "simplePronunciation": "fór-réd",
-            "phonetic": "/ˈfɔːr.hed/",
-            "exampleEn": "She felt his forehead for a fever.",
-            "examplePt": "Ela tocou a testa dele para ver se tinha febre."
           },
           {
             "text": "Chin",
@@ -9468,99 +6605,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Ele apoiou o queixo na mão."
           },
           {
-            "text": "Cheek",
-            "emoji": "😊",
-            "label": "Cheek",
-            "translationPt": "Bochecha",
-            "simplePronunciation": "tchík",
-            "phonetic": "/tʃiːk/",
-            "exampleEn": "She kissed her baby on the cheek.",
-            "examplePt": "Ela beijou o bebê na bochecha."
+            "text": "Forehead",
+            "emoji": "🧑",
+            "label": "Forehead",
+            "translationPt": "Testa",
+            "simplePronunciation": "fór-réd",
+            "phonetic": "/ˈfɔːr.hed/",
+            "exampleEn": "She touched his forehead.",
+            "examplePt": "Ela tocou a testa dele."
           },
           {
-            "text": "Hip",
-            "emoji": "🧍",
-            "label": "Hip",
-            "translationPt": "Quadril",
-            "simplePronunciation": "ríp",
-            "phonetic": "/hɪp/",
-            "exampleEn": "Put your hands on your hips.",
-            "examplePt": "Coloque as mãos no quadril."
+            "text": "Lung",
+            "emoji": "🫁",
+            "label": "Lung",
+            "translationPt": "Pulmão",
+            "simplePronunciation": "lâng",
+            "phonetic": "/lʌŋ/",
+            "exampleEn": "Fresh air fills our lungs.",
+            "examplePt": "O ar puro enche nossos pulmões."
           }
         ],
         "options": [
-          "Forehead",
-          "Chin",
           "Cheek",
-          "Hip"
+          "Chin",
+          "Forehead",
+          "Lung"
         ],
-        "correctAnswer": "Hip",
-        "contextSentence": "Put your hands on your hips.",
-        "contextSentencePt": "Coloque as mãos no quadril.",
-        "explanation": "Exemplo: \"Put your hands on your hips.\" — Coloque as mãos no quadril.",
-        "phoneticHint": "\"ríp\" • /hɪp/",
+        "correctAnswer": "Lung",
+        "contextSentence": "Fresh air fills our lungs.",
+        "contextSentencePt": "O ar puro enche nossos pulmões.",
+        "explanation": "Exemplo: \"Fresh air fills our lungs.\" — O ar puro enche nossos pulmões.",
+        "phoneticHint": "\"lâng\" • /lʌŋ/",
         "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p15-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Rib",
-        "visualEmoji": "🦴",
-        "visualOptions": [
-          {
-            "text": "Throat",
-            "emoji": "🍵",
-            "label": "Throat",
-            "translationPt": "Garganta",
-            "simplePronunciation": "thrôut",
-            "phonetic": "/θroʊt/",
-            "exampleEn": "Warm tea soothes a sore throat.",
-            "examplePt": "Chá morno alivia a dor de garganta."
-          },
-          {
-            "text": "Thumb",
-            "emoji": "👍",
-            "label": "Thumb",
-            "translationPt": "Polegar (dedão)",
-            "simplePronunciation": "thâm",
-            "phonetic": "/θʌm/",
-            "exampleEn": "Give a thumbs up if you agree.",
-            "examplePt": "Faça sinal de positivo com o polegar se concordar."
-          },
-          {
-            "text": "Rib",
-            "emoji": "🦴",
-            "label": "Rib",
-            "translationPt": "Costela",
-            "simplePronunciation": "ríb",
-            "phonetic": "/rɪb/",
-            "exampleEn": "The ribs protect the heart and lungs.",
-            "examplePt": "As costelas protegem o coração e os pulmões."
-          },
-          {
-            "text": "Heel",
-            "emoji": "🦶",
-            "label": "Heel",
-            "translationPt": "Calcanhar",
-            "simplePronunciation": "ríl",
-            "phonetic": "/hiːl/",
-            "exampleEn": "These shoes cushion your heel.",
-            "examplePt": "Estes sapatos amortecem o seu calcanhar."
-          }
-        ],
-        "options": [
-          "Throat",
-          "Thumb",
-          "Rib",
-          "Heel"
-        ],
-        "correctAnswer": "Rib",
-        "contextSentence": "The ribs protect the heart and lungs.",
-        "contextSentencePt": "As costelas protegem o coração e os pulmões.",
-        "explanation": "Exemplo: \"The ribs protect the heart and lungs.\" — As costelas protegem o coração e os pulmões.",
-        "phoneticHint": "\"ríb\" • /rɪb/",
-        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -9568,16 +6644,19 @@ export const WORLD_0_PHASES: Phase[] = [
     "id": "w0-p16",
     "worldId": 0,
     "phaseNumber": 16,
+    "themeId": "pronouns",
+    "themeTitle": "Lição de Pronomes",
+    "frequencyLevel": "1 a cada 3 Módulos de Vocabulário",
     "title": "Lição de Pronomes IV • Indefinidos & Relativos",
-    "subtitle": "Módulo de Pronomes 4/6 (Após 12 de Vocabulário) • Pares Associativos + Voz da Professora",
-    "pedagogicalObjective": "Dominar os Pronomes Indefinidos (Someone, Something, Everyone, Everything, Nobody, Nothing) e os Pronomes Relativos (Who, Which, That, Whose, Where).",
+    "subtitle": "Módulo de Pronomes 4/8 (Após 12 de Vocabulário) • Explicação Didática + Pares Associativos",
+    "pedagogicalObjective": "Dominar os Pronomes Indefinidos (Someone, Something, Everyone, Everything, Nobody, Nothing) e os Pronomes Relativos (Who, Which, That, Where).",
     "type": "chest",
     "icon": "star",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Bem-vindo à 4ª Lição Exclusiva de Pronomes (após 12 módulos de vocabulário)!",
-      "7º Passo: Aprendemos os Pronomes Indefinidos (Someone, Something, Everyone, Everything, Nobody, Nothing, Anyone, Anything).",
-      "8º Passo: Aprendemos os Pronomes Relativos (Who, Which, That, Whose, Where) — as pontezinhas que juntam duas ideias!"
+      "4ª Lição Exclusiva de Pronomes (após 12 módulos de vocabulário).",
+      "7ª Parte — Pronomes Indefinidos: referem-se a pessoas ou coisas de modo geral, sem identificar especificamente quem ou o quê.",
+      "8ª Parte — Pronomes Relativos: conectam duas orações, referindo-se a uma pessoa, coisa ou lugar citado anteriormente."
     ],
     "xpReward": 70,
     "gemsReward": 30,
@@ -9585,34 +6664,34 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p16-pron-1",
         "type": "pair-match",
-        "conceptTitle": "7º • Pronomes Indefinidos (Alguém, Algo, Todo Mundo e Tudo)",
-        "conceptHeader": "Usamos quando falamos de alguém ou de alguma coisa sem dizer o nome exato! \"Someone\" é Alguém (uma pessoa), \"Something\" é Alguma coisa, \"Everyone\" é Todo mundo, e \"Everything\" é Tudo!",
+        "conceptTitle": "7º • Pronomes Indefinidos Afirmativos (Someone, Something, Everyone, Everything)",
+        "conceptHeader": "Os Pronomes Indefinidos referem-se a pessoas (terminados em \"-one\" ou \"-body\") ou a coisas (terminados em \"-thing\") de maneira geral: \"Someone\" (Alguém), \"Something\" (Algo/Alguma coisa), \"Everyone\" (Todos/Todo mundo) e \"Everything\" (Tudo).",
         "teacherAudioPt": "/audio/teacher/pronoun_7.wav",
-        "prompt": "🤝 Conecte cada Pronome Indefinido ao seu par em português:",
+        "prompt": "🤝 Conecte cada Pronome Indefinido ao seu significado em português:",
         "pairs": [
           {
             "id": "w0-p16-b1-ind1",
             "en": "Someone (\"sâm-uân\")",
             "emoji": "🧑",
             "phonetic": "/ˈsʌm.wʌn/",
-            "pt": "Alguém (uma pessoa na porta)",
-            "tipPt": "Isso! \"Someone is at the door\" = \"Alguém está na porta\"!"
+            "pt": "Alguém (uma pessoa não especificada)",
+            "tipPt": "Correto! Exemplo: \"Someone is at the door\" (Alguém está na porta)."
           },
           {
             "id": "w0-p16-b1-ind2",
             "en": "Something (\"sâm-thing\")",
-            "emoji": "🎁",
+            "emoji": "📦",
             "phonetic": "/ˈsʌm.θɪŋ/",
-            "pt": "Algo / Alguma coisa (um objeto ou surpresa)",
-            "tipPt": "Muito bem! \"I have something for you\" = \"Tenho algo para você\"!"
+            "pt": "Algo / Alguma coisa (um objeto ou ideia)",
+            "tipPt": "Exato! Exemplo: \"I need something to drink\" (Preciso de algo para beber)."
           },
           {
             "id": "w0-p16-b1-ind3",
             "en": "Everyone (\"é-vri-uân\")",
             "emoji": "👨‍👩‍👧‍👦",
             "phonetic": "/ˈev.ri.wʌn/",
-            "pt": "Todo mundo / Todas as pessoas",
-            "tipPt": "Perfeito! \"Everyone is happy\" = \"Todo mundo está feliz\"!"
+            "pt": "Todos / Todo mundo (todas as pessoas)",
+            "tipPt": "Perfeito! Exemplo: \"Everyone is ready\" (Todos estão prontos)."
           },
           {
             "id": "w0-p16-b1-ind4",
@@ -9620,56 +6699,56 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🌟",
             "phonetic": "/ˈev.ri.θɪŋ/",
             "pt": "Tudo / Todas as coisas",
-            "tipPt": "Lindo! \"Everything is clean\" = \"Tudo está limpo\"!"
+            "tipPt": "Muito bem! Exemplo: \"Everything is clean\" (Tudo está limpo)."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Someone (Alguém), Something (Algo), Everyone (Todo mundo), Everything (Tudo).",
+        "explanation": "Someone (Alguém - pessoa), Something (Algo - coisa), Everyone (Todos - pessoas), Everything (Tudo - coisas).",
         "skillCategory": "grammar"
       },
       {
         "id": "w0-p16-pron-2",
         "type": "pair-match",
-        "conceptTitle": "8º • Pronomes Relativos (As Pontezinhas que Ligam a Frase)",
-        "conceptHeader": "Eles são como pequenas pontes que juntam duas ideias! Se a ponte fala de uma PESSOA, usamos \"Who\" (que/quem). Se a ponte fala de uma COISA ou animal, usamos \"Which\" (que). E \"That\" serve para os dois!",
+        "conceptTitle": "8º • Pronomes Relativos (Who, Which, That, Where)",
+        "conceptHeader": "Os Pronomes Relativos conectam duas partes de uma frase para explicar melhor um termo anterior: usamos \"Who\" (que/quem) para PESSOAS, \"Which\" (que/o qual) para COISAS ou animais, \"That\" (que) tanto para pessoas quanto para coisas, e \"Where\" (onde) para LUGARES.",
         "teacherAudioPt": "/audio/teacher/pronoun_8.wav",
-        "prompt": "🤝 Conecte cada Pronome Relativo (pontezinha) à sua função correta:",
+        "prompt": "🤝 Associe cada Pronome Relativo à sua regra de uso correta:",
         "pairs": [
           {
             "id": "w0-p16-b2-rel1",
             "en": "Who (\"rú\" - relativo)",
-            "emoji": "🧑‍🏫",
+            "emoji": "👩‍🏫",
             "phonetic": "/huː/",
-            "pt": "Que / Quem (ponte que fala de PESSOAS)",
-            "tipPt": "Isso! \"The girl who sings\" = \"A menina que canta\"!"
+            "pt": "Que / Quem (retoma PESSOAS na frase)",
+            "tipPt": "Correto! Exemplo: \"The teacher who helped me\" (A professora que me ajudou)."
           },
           {
             "id": "w0-p16-b2-rel2",
             "en": "Which (\"uítch\" - relativo)",
-            "emoji": "📦",
+            "emoji": "📘",
             "phonetic": "/wɪtʃ/",
-            "pt": "Que / O qual (ponte que fala de COISAS)",
-            "tipPt": "Perfeito! \"The book which I read\" = \"O livro que eu li\"!"
+            "pt": "Que / O qual (retoma COISAS ou animais)",
+            "tipPt": "Exato! Exemplo: \"The book which I read\" (O livro que eu li)."
           },
           {
             "id": "w0-p16-b2-rel3",
             "en": "That (\"dét\" - relativo)",
-            "emoji": "🌉",
+            "emoji": "🔗",
             "phonetic": "/ðæt/",
-            "pt": "Que (ponte curinga para PESSOAS ou COISAS)",
-            "tipPt": "Muito bem! \"That\" conecta tanto pessoas quanto objetos!"
+            "pt": "Que (curinga: retoma PESSOAS ou COISAS)",
+            "tipPt": "Perfeito! \"That\" pode substituir tanto \"Who\" quanto \"Which\" em frases restritivas."
           },
           {
             "id": "w0-p16-b2-rel4",
             "en": "Where (\"uér\" - relativo)",
             "emoji": "🏠",
             "phonetic": "/wer/",
-            "pt": "Onde (ponte que fala de LUGAR)",
-            "tipPt": "Lindo! \"The house where I live\" = \"A casa onde eu moro\"!"
+            "pt": "Onde / Em que (retoma LUGARES na frase)",
+            "tipPt": "Excelente! Exemplo: \"The house where I live\" (A casa onde eu moro)."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Who (ponte para pessoas), Which (ponte para coisas/animais), That (ponte curinga), Whose (ponte de posse: cujo).",
+        "explanation": "Who (relativo para pessoas), Which (relativo para coisas/animais), That (relativo para pessoas ou coisas), Where (relativo para lugares).",
         "skillCategory": "grammar"
       }
     ]
@@ -9679,17 +6758,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 17,
     "themeId": "transport",
-    "themeTitle": "Transporte",
-    "frequencyLevel": "Módulo 1 • Essenciais",
+    "themeTitle": "Tema 4: Transporte",
+    "frequencyLevel": "Módulo 1 • Essenciais e Mais Comuns",
     "title": "Transporte • Módulo 1: Palavras Essenciais",
-    "subtitle": "Tema 4 (Nível 1/4) • Os 12 veículos e termos de deslocamento mais usados",
-    "pedagogicalObjective": "Conhecer os meios de transporte essenciais: Car, Bus, Street, Bicycle, Train, Airplane, Taxi, Truck, Motorcycle, Boat, Ticket e Station.",
+    "subtitle": "Tema: Transporte (1/4) • 8 veículos e vias essenciais",
+    "pedagogicalObjective": "Conhecer os 8 termos mais essenciais de transporte: Car, Bus, Street, Bicycle, Train, Airplane, Taxi e Boat.",
     "type": "lesson",
     "icon": "car",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Iniciamos o Tema 4 (Transporte • Módulo 1: Essenciais): Car (\"cár\" = Carro), Bus (\"bâs\" = Ônibus), Street (\"strít\" = Rua), Bicycle (\"bái-si-kol\" = Bicicleta), Train (\"trêin\" = Trem) e Airplane (\"ér-plêin\" = Avião).",
-      "Também aprendemos Taxi (\"ték-si\" = Táxi), Truck (\"trâk\" = Caminhão), Motorcycle (\"môu-tor-sái-kol\" = Moto), Boat (\"bôut\" = Barco), Ticket (\"tí-ket\" = Passagem/Bilhete) e Station (\"stêi-xon\" = Estação)."
+      "Tema: Transporte — Módulo 1 (Palavras essenciais e mais comuns): veículos e vias mais usados.",
+      "Palavras deste módulo (8): Car (\"cár\" = Carro), Bus (\"bâs\" = Ônibus), Street (\"strít\" = Rua), Bicycle (\"bái-si-kol\" = Bicicleta), Train (\"trêin\" = Trem), Airplane (\"ér-plêin\" = Avião), Taxi (\"ték-si\" = Táxi) e Boat (\"bôut\" = Barco)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -9702,24 +6781,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚗",
         "visualOptions": [
           {
-            "text": "Station",
-            "emoji": "🚉",
-            "label": "Station",
-            "translationPt": "Estação",
-            "simplePronunciation": "stêi-xon",
-            "phonetic": "/ˈsteɪ.ʃən/",
-            "exampleEn": "Meet me at the train station.",
-            "examplePt": "Encontre-me na estação de trem."
-          },
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro",
-            "simplePronunciation": "cár",
-            "phonetic": "/kɑːr/",
-            "exampleEn": "We travel by car on weekends.",
-            "examplePt": "Nós viajamos de carro nos fins de semana."
+            "text": "Street",
+            "emoji": "🛣️",
+            "label": "Street",
+            "translationPt": "Rua",
+            "simplePronunciation": "strít",
+            "phonetic": "/striːt/",
+            "exampleEn": "Look before crossing the street.",
+            "examplePt": "Olhe antes de atravessar a rua."
           },
           {
             "text": "Bicycle",
@@ -9738,15 +6807,25 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Barco",
             "simplePronunciation": "bôut",
             "phonetic": "/boʊt/",
-            "exampleEn": "A small boat crosses the lake.",
-            "examplePt": "Um pequeno barco atravessa o lago."
+            "exampleEn": "A boat crosses the lake.",
+            "examplePt": "Um barco atravessa o lago."
+          },
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro",
+            "simplePronunciation": "cár",
+            "phonetic": "/kɑːr/",
+            "exampleEn": "We travel by car on weekends.",
+            "examplePt": "Nós viajamos de carro nos fins de semana."
           }
         ],
         "options": [
-          "Station",
-          "Car",
+          "Street",
           "Bicycle",
-          "Boat"
+          "Boat",
+          "Car"
         ],
         "correctAnswer": "Car",
         "contextSentence": "We travel by car on weekends.",
@@ -9769,8 +6848,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Táxi",
             "simplePronunciation": "ték-si",
             "phonetic": "/ˈtæk.si/",
-            "exampleEn": "Let us take a taxi to the hotel.",
-            "examplePt": "Vamos pegar um táxi até o hotel."
+            "exampleEn": "Let us take a taxi.",
+            "examplePt": "Vamos pegar um táxi."
           },
           {
             "text": "Train",
@@ -9779,18 +6858,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Trem",
             "simplePronunciation": "trêin",
             "phonetic": "/treɪn/",
-            "exampleEn": "The train arrives at eight o'clock.",
-            "examplePt": "O trem chega às oito horas."
-          },
-          {
-            "text": "Truck",
-            "emoji": "🚚",
-            "label": "Truck",
-            "translationPt": "Caminhão",
-            "simplePronunciation": "trâk",
-            "phonetic": "/trʌk/",
-            "exampleEn": "The truck carries heavy boxes.",
-            "examplePt": "O caminhão transporta caixas pesadas."
+            "exampleEn": "The train arrives at eight.",
+            "examplePt": "O trem chega às oito."
           },
           {
             "text": "Bus",
@@ -9799,20 +6868,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ônibus",
             "simplePronunciation": "bâs",
             "phonetic": "/bʌs/",
-            "exampleEn": "Take the bus to school.",
-            "examplePt": "Pegue o ônibus para a escola."
+            "exampleEn": "Take the bus to work.",
+            "examplePt": "Pegue o ônibus para o trabalho."
+          },
+          {
+            "text": "Airplane",
+            "emoji": "✈️",
+            "label": "Airplane",
+            "translationPt": "Avião",
+            "simplePronunciation": "ér-plêin",
+            "phonetic": "/ˈer.pleɪn/",
+            "exampleEn": "The airplane flies high.",
+            "examplePt": "O avião voa alto."
           }
         ],
         "options": [
           "Taxi",
           "Train",
-          "Truck",
-          "Bus"
+          "Bus",
+          "Airplane"
         ],
         "correctAnswer": "Bus",
-        "contextSentence": "Take the bus to school.",
-        "contextSentencePt": "Pegue o ônibus para a escola.",
-        "explanation": "Exemplo: \"Take the bus to school.\" — Pegue o ônibus para a escola.",
+        "contextSentence": "Take the bus to work.",
+        "contextSentencePt": "Pegue o ônibus para o trabalho.",
+        "explanation": "Exemplo: \"Take the bus to work.\" — Pegue o ônibus para o trabalho.",
         "phoneticHint": "\"bâs\" • /bʌs/",
         "skillCategory": "listening"
       },
@@ -9830,8 +6909,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Rua",
             "simplePronunciation": "strít",
             "phonetic": "/striːt/",
-            "exampleEn": "Look both ways before crossing the street.",
-            "examplePt": "Olhe para os dois lados antes de atravessar a rua."
+            "exampleEn": "Look before crossing the street.",
+            "examplePt": "Olhe antes de atravessar a rua."
+          },
+          {
+            "text": "Bus",
+            "emoji": "🚌",
+            "label": "Bus",
+            "translationPt": "Ônibus",
+            "simplePronunciation": "bâs",
+            "phonetic": "/bʌs/",
+            "exampleEn": "Take the bus to work.",
+            "examplePt": "Pegue o ônibus para o trabalho."
           },
           {
             "text": "Airplane",
@@ -9840,40 +6929,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Avião",
             "simplePronunciation": "ér-plêin",
             "phonetic": "/ˈer.pleɪn/",
-            "exampleEn": "The airplane flies above the clouds.",
-            "examplePt": "O avião voa acima das nuvens."
+            "exampleEn": "The airplane flies high.",
+            "examplePt": "O avião voa alto."
           },
           {
-            "text": "Motorcycle",
-            "emoji": "🏍️",
-            "label": "Motorcycle",
-            "translationPt": "Moto",
-            "simplePronunciation": "môu-tor-sái-kol",
-            "phonetic": "/ˈmoʊ.tərˌsaɪ.kəl/",
-            "exampleEn": "Wear a helmet on a motorcycle.",
-            "examplePt": "Use capacete na moto."
-          },
-          {
-            "text": "Ticket",
-            "emoji": "🎫",
-            "label": "Ticket",
-            "translationPt": "Passagem / Bilhete",
-            "simplePronunciation": "tí-ket",
-            "phonetic": "/ˈtɪk.ɪt/",
-            "exampleEn": "Buy your bus ticket here.",
-            "examplePt": "Compre sua passagem de ônibus aqui."
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro",
+            "simplePronunciation": "cár",
+            "phonetic": "/kɑːr/",
+            "exampleEn": "We travel by car on weekends.",
+            "examplePt": "Nós viajamos de carro nos fins de semana."
           }
         ],
         "options": [
           "Street",
+          "Bus",
           "Airplane",
-          "Motorcycle",
-          "Ticket"
+          "Car"
         ],
         "correctAnswer": "Street",
-        "contextSentence": "Look both ways before crossing the street.",
-        "contextSentencePt": "Olhe para os dois lados antes de atravessar a rua.",
-        "explanation": "Exemplo: \"Look both ways before crossing the street.\" — Olhe para os dois lados antes de atravessar a rua.",
+        "contextSentence": "Look before crossing the street.",
+        "contextSentencePt": "Olhe antes de atravessar a rua.",
+        "explanation": "Exemplo: \"Look before crossing the street.\" — Olhe antes de atravessar a rua.",
         "phoneticHint": "\"strít\" • /striːt/",
         "skillCategory": "vocabulary"
       },
@@ -9885,34 +6964,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚲",
         "visualOptions": [
           {
-            "text": "Boat",
-            "emoji": "⛵",
-            "label": "Boat",
-            "translationPt": "Barco",
-            "simplePronunciation": "bôut",
-            "phonetic": "/boʊt/",
-            "exampleEn": "A small boat crosses the lake.",
-            "examplePt": "Um pequeno barco atravessa o lago."
+            "text": "Taxi",
+            "emoji": "🚕",
+            "label": "Taxi",
+            "translationPt": "Táxi",
+            "simplePronunciation": "ték-si",
+            "phonetic": "/ˈtæk.si/",
+            "exampleEn": "Let us take a taxi.",
+            "examplePt": "Vamos pegar um táxi."
           },
           {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro",
-            "simplePronunciation": "cár",
-            "phonetic": "/kɑːr/",
-            "exampleEn": "We travel by car on weekends.",
-            "examplePt": "Nós viajamos de carro nos fins de semana."
-          },
-          {
-            "text": "Station",
-            "emoji": "🚉",
-            "label": "Station",
-            "translationPt": "Estação",
-            "simplePronunciation": "stêi-xon",
-            "phonetic": "/ˈsteɪ.ʃən/",
-            "exampleEn": "Meet me at the train station.",
-            "examplePt": "Encontre-me na estação de trem."
+            "text": "Street",
+            "emoji": "🛣️",
+            "label": "Street",
+            "translationPt": "Rua",
+            "simplePronunciation": "strít",
+            "phonetic": "/striːt/",
+            "exampleEn": "Look before crossing the street.",
+            "examplePt": "Olhe antes de atravessar a rua."
           },
           {
             "text": "Bicycle",
@@ -9923,13 +6992,23 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈbaɪ.sɪ.kəl/",
             "exampleEn": "She rides her bicycle in the park.",
             "examplePt": "Ela anda de bicicleta no parque."
+          },
+          {
+            "text": "Train",
+            "emoji": "🚆",
+            "label": "Train",
+            "translationPt": "Trem",
+            "simplePronunciation": "trêin",
+            "phonetic": "/treɪn/",
+            "exampleEn": "The train arrives at eight.",
+            "examplePt": "O trem chega às oito."
           }
         ],
         "options": [
-          "Boat",
-          "Car",
-          "Station",
-          "Bicycle"
+          "Taxi",
+          "Street",
+          "Bicycle",
+          "Train"
         ],
         "correctAnswer": "Bicycle",
         "contextSentence": "She rides her bicycle in the park.",
@@ -9946,6 +7025,26 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚆",
         "visualOptions": [
           {
+            "text": "Boat",
+            "emoji": "⛵",
+            "label": "Boat",
+            "translationPt": "Barco",
+            "simplePronunciation": "bôut",
+            "phonetic": "/boʊt/",
+            "exampleEn": "A boat crosses the lake.",
+            "examplePt": "Um barco atravessa o lago."
+          },
+          {
+            "text": "Train",
+            "emoji": "🚆",
+            "label": "Train",
+            "translationPt": "Trem",
+            "simplePronunciation": "trêin",
+            "phonetic": "/treɪn/",
+            "exampleEn": "The train arrives at eight.",
+            "examplePt": "O trem chega às oito."
+          },
+          {
             "text": "Car",
             "emoji": "🚗",
             "label": "Car",
@@ -9956,46 +7055,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Nós viajamos de carro nos fins de semana."
           },
           {
-            "text": "Street",
-            "emoji": "🛣️",
-            "label": "Street",
-            "translationPt": "Rua",
-            "simplePronunciation": "strít",
-            "phonetic": "/striːt/",
-            "exampleEn": "Look both ways before crossing the street.",
-            "examplePt": "Olhe para os dois lados antes de atravessar a rua."
-          },
-          {
-            "text": "Train",
-            "emoji": "🚆",
-            "label": "Train",
-            "translationPt": "Trem",
-            "simplePronunciation": "trêin",
-            "phonetic": "/treɪn/",
-            "exampleEn": "The train arrives at eight o'clock.",
-            "examplePt": "O trem chega às oito horas."
-          },
-          {
             "text": "Bus",
             "emoji": "🚌",
             "label": "Bus",
             "translationPt": "Ônibus",
             "simplePronunciation": "bâs",
             "phonetic": "/bʌs/",
-            "exampleEn": "Take the bus to school.",
-            "examplePt": "Pegue o ônibus para a escola."
+            "exampleEn": "Take the bus to work.",
+            "examplePt": "Pegue o ônibus para o trabalho."
           }
         ],
         "options": [
-          "Car",
-          "Street",
+          "Boat",
           "Train",
+          "Car",
           "Bus"
         ],
         "correctAnswer": "Train",
-        "contextSentence": "The train arrives at eight o'clock.",
-        "contextSentencePt": "O trem chega às oito horas.",
-        "explanation": "Exemplo: \"The train arrives at eight o'clock.\" — O trem chega às oito horas.",
+        "contextSentence": "The train arrives at eight.",
+        "contextSentencePt": "O trem chega às oito.",
+        "explanation": "Exemplo: \"The train arrives at eight.\" — O trem chega às oito.",
         "phoneticHint": "\"trêin\" • /treɪn/",
         "skillCategory": "listening"
       },
@@ -10007,56 +7086,56 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "✈️",
         "visualOptions": [
           {
-            "text": "Airplane",
-            "emoji": "✈️",
-            "label": "Airplane",
-            "translationPt": "Avião",
-            "simplePronunciation": "ér-plêin",
-            "phonetic": "/ˈer.pleɪn/",
-            "exampleEn": "The airplane flies above the clouds.",
-            "examplePt": "O avião voa acima das nuvens."
-          },
-          {
-            "text": "Train",
-            "emoji": "🚆",
-            "label": "Train",
-            "translationPt": "Trem",
-            "simplePronunciation": "trêin",
-            "phonetic": "/treɪn/",
-            "exampleEn": "The train arrives at eight o'clock.",
-            "examplePt": "O trem chega às oito horas."
-          },
-          {
-            "text": "Motorcycle",
-            "emoji": "🏍️",
-            "label": "Motorcycle",
-            "translationPt": "Moto",
-            "simplePronunciation": "môu-tor-sái-kol",
-            "phonetic": "/ˈmoʊ.tərˌsaɪ.kəl/",
-            "exampleEn": "Wear a helmet on a motorcycle.",
-            "examplePt": "Use capacete na moto."
-          },
-          {
             "text": "Street",
             "emoji": "🛣️",
             "label": "Street",
             "translationPt": "Rua",
             "simplePronunciation": "strít",
             "phonetic": "/striːt/",
-            "exampleEn": "Look both ways before crossing the street.",
-            "examplePt": "Olhe para os dois lados antes de atravessar a rua."
+            "exampleEn": "Look before crossing the street.",
+            "examplePt": "Olhe antes de atravessar a rua."
+          },
+          {
+            "text": "Car",
+            "emoji": "🚗",
+            "label": "Car",
+            "translationPt": "Carro",
+            "simplePronunciation": "cár",
+            "phonetic": "/kɑːr/",
+            "exampleEn": "We travel by car on weekends.",
+            "examplePt": "Nós viajamos de carro nos fins de semana."
+          },
+          {
+            "text": "Bicycle",
+            "emoji": "🚲",
+            "label": "Bicycle",
+            "translationPt": "Bicicleta",
+            "simplePronunciation": "bái-si-kol",
+            "phonetic": "/ˈbaɪ.sɪ.kəl/",
+            "exampleEn": "She rides her bicycle in the park.",
+            "examplePt": "Ela anda de bicicleta no parque."
+          },
+          {
+            "text": "Airplane",
+            "emoji": "✈️",
+            "label": "Airplane",
+            "translationPt": "Avião",
+            "simplePronunciation": "ér-plêin",
+            "phonetic": "/ˈer.pleɪn/",
+            "exampleEn": "The airplane flies high.",
+            "examplePt": "O avião voa alto."
           }
         ],
         "options": [
-          "Airplane",
-          "Train",
-          "Motorcycle",
-          "Street"
+          "Street",
+          "Car",
+          "Bicycle",
+          "Airplane"
         ],
         "correctAnswer": "Airplane",
-        "contextSentence": "The airplane flies above the clouds.",
-        "contextSentencePt": "O avião voa acima das nuvens.",
-        "explanation": "Exemplo: \"The airplane flies above the clouds.\" — O avião voa acima das nuvens.",
+        "contextSentence": "The airplane flies high.",
+        "contextSentencePt": "O avião voa alto.",
+        "explanation": "Exemplo: \"The airplane flies high.\" — O avião voa alto.",
         "phoneticHint": "\"ér-plêin\" • /ˈer.pleɪn/",
         "skillCategory": "vocabulary"
       },
@@ -10068,34 +7147,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚕",
         "visualOptions": [
           {
-            "text": "Boat",
-            "emoji": "⛵",
-            "label": "Boat",
-            "translationPt": "Barco",
-            "simplePronunciation": "bôut",
-            "phonetic": "/boʊt/",
-            "exampleEn": "A small boat crosses the lake.",
-            "examplePt": "Um pequeno barco atravessa o lago."
-          },
-          {
             "text": "Taxi",
             "emoji": "🚕",
             "label": "Taxi",
             "translationPt": "Táxi",
             "simplePronunciation": "ték-si",
             "phonetic": "/ˈtæk.si/",
-            "exampleEn": "Let us take a taxi to the hotel.",
-            "examplePt": "Vamos pegar um táxi até o hotel."
+            "exampleEn": "Let us take a taxi.",
+            "examplePt": "Vamos pegar um táxi."
           },
           {
-            "text": "Ticket",
-            "emoji": "🎫",
-            "label": "Ticket",
-            "translationPt": "Passagem / Bilhete",
-            "simplePronunciation": "tí-ket",
-            "phonetic": "/ˈtɪk.ɪt/",
-            "exampleEn": "Buy your bus ticket here.",
-            "examplePt": "Compre sua passagem de ônibus aqui."
+            "text": "Boat",
+            "emoji": "⛵",
+            "label": "Boat",
+            "translationPt": "Barco",
+            "simplePronunciation": "bôut",
+            "phonetic": "/boʊt/",
+            "exampleEn": "A boat crosses the lake.",
+            "examplePt": "Um barco atravessa o lago."
           },
           {
             "text": "Bicycle",
@@ -10106,18 +7175,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈbaɪ.sɪ.kəl/",
             "exampleEn": "She rides her bicycle in the park.",
             "examplePt": "Ela anda de bicicleta no parque."
+          },
+          {
+            "text": "Bus",
+            "emoji": "🚌",
+            "label": "Bus",
+            "translationPt": "Ônibus",
+            "simplePronunciation": "bâs",
+            "phonetic": "/bʌs/",
+            "exampleEn": "Take the bus to work.",
+            "examplePt": "Pegue o ônibus para o trabalho."
           }
         ],
         "options": [
-          "Boat",
           "Taxi",
-          "Ticket",
-          "Bicycle"
+          "Boat",
+          "Bicycle",
+          "Bus"
         ],
         "correctAnswer": "Taxi",
-        "contextSentence": "Let us take a taxi to the hotel.",
-        "contextSentencePt": "Vamos pegar um táxi até o hotel.",
-        "explanation": "Exemplo: \"Let us take a taxi to the hotel.\" — Vamos pegar um táxi até o hotel.",
+        "contextSentence": "Let us take a taxi.",
+        "contextSentencePt": "Vamos pegar um táxi.",
+        "explanation": "Exemplo: \"Let us take a taxi.\" — Vamos pegar um táxi.",
         "phoneticHint": "\"ték-si\" • /ˈtæk.si/",
         "skillCategory": "vocabulary"
       },
@@ -10125,80 +7204,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p17-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Truck",
-        "visualEmoji": "🚚",
+        "audioPhrase": "Boat",
+        "visualEmoji": "⛵",
         "visualOptions": [
-          {
-            "text": "Car",
-            "emoji": "🚗",
-            "label": "Car",
-            "translationPt": "Carro",
-            "simplePronunciation": "cár",
-            "phonetic": "/kɑːr/",
-            "exampleEn": "We travel by car on weekends.",
-            "examplePt": "Nós viajamos de carro nos fins de semana."
-          },
-          {
-            "text": "Truck",
-            "emoji": "🚚",
-            "label": "Truck",
-            "translationPt": "Caminhão",
-            "simplePronunciation": "trâk",
-            "phonetic": "/trʌk/",
-            "exampleEn": "The truck carries heavy boxes.",
-            "examplePt": "O caminhão transporta caixas pesadas."
-          },
-          {
-            "text": "Station",
-            "emoji": "🚉",
-            "label": "Station",
-            "translationPt": "Estação",
-            "simplePronunciation": "stêi-xon",
-            "phonetic": "/ˈsteɪ.ʃən/",
-            "exampleEn": "Meet me at the train station.",
-            "examplePt": "Encontre-me na estação de trem."
-          },
-          {
-            "text": "Bus",
-            "emoji": "🚌",
-            "label": "Bus",
-            "translationPt": "Ônibus",
-            "simplePronunciation": "bâs",
-            "phonetic": "/bʌs/",
-            "exampleEn": "Take the bus to school.",
-            "examplePt": "Pegue o ônibus para a escola."
-          }
-        ],
-        "options": [
-          "Car",
-          "Truck",
-          "Station",
-          "Bus"
-        ],
-        "correctAnswer": "Truck",
-        "contextSentence": "The truck carries heavy boxes.",
-        "contextSentencePt": "O caminhão transporta caixas pesadas.",
-        "explanation": "Exemplo: \"The truck carries heavy boxes.\" — O caminhão transporta caixas pesadas.",
-        "phoneticHint": "\"trâk\" • /trʌk/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p17-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Motorcycle",
-        "visualEmoji": "🏍️",
-        "visualOptions": [
-          {
-            "text": "Airplane",
-            "emoji": "✈️",
-            "label": "Airplane",
-            "translationPt": "Avião",
-            "simplePronunciation": "ér-plêin",
-            "phonetic": "/ˈer.pleɪn/",
-            "exampleEn": "The airplane flies above the clouds.",
-            "examplePt": "O avião voa acima das nuvens."
-          },
           {
             "text": "Train",
             "emoji": "🚆",
@@ -10206,69 +7214,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Trem",
             "simplePronunciation": "trêin",
             "phonetic": "/treɪn/",
-            "exampleEn": "The train arrives at eight o'clock.",
-            "examplePt": "O trem chega às oito horas."
-          },
-          {
-            "text": "Street",
-            "emoji": "🛣️",
-            "label": "Street",
-            "translationPt": "Rua",
-            "simplePronunciation": "strít",
-            "phonetic": "/striːt/",
-            "exampleEn": "Look both ways before crossing the street.",
-            "examplePt": "Olhe para os dois lados antes de atravessar a rua."
-          },
-          {
-            "text": "Motorcycle",
-            "emoji": "🏍️",
-            "label": "Motorcycle",
-            "translationPt": "Moto",
-            "simplePronunciation": "môu-tor-sái-kol",
-            "phonetic": "/ˈmoʊ.tərˌsaɪ.kəl/",
-            "exampleEn": "Wear a helmet on a motorcycle.",
-            "examplePt": "Use capacete na moto."
-          }
-        ],
-        "options": [
-          "Airplane",
-          "Train",
-          "Street",
-          "Motorcycle"
-        ],
-        "correctAnswer": "Motorcycle",
-        "contextSentence": "Wear a helmet on a motorcycle.",
-        "contextSentencePt": "Use capacete na moto.",
-        "explanation": "Exemplo: \"Wear a helmet on a motorcycle.\" — Use capacete na moto.",
-        "phoneticHint": "\"môu-tor-sái-kol\" • /ˈmoʊ.tərˌsaɪ.kəl/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p17-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Boat",
-        "visualEmoji": "⛵",
-        "visualOptions": [
-          {
-            "text": "Motorcycle",
-            "emoji": "🏍️",
-            "label": "Motorcycle",
-            "translationPt": "Moto",
-            "simplePronunciation": "môu-tor-sái-kol",
-            "phonetic": "/ˈmoʊ.tərˌsaɪ.kəl/",
-            "exampleEn": "Wear a helmet on a motorcycle.",
-            "examplePt": "Use capacete na moto."
-          },
-          {
-            "text": "Truck",
-            "emoji": "🚚",
-            "label": "Truck",
-            "translationPt": "Caminhão",
-            "simplePronunciation": "trâk",
-            "phonetic": "/trʌk/",
-            "exampleEn": "The truck carries heavy boxes.",
-            "examplePt": "O caminhão transporta caixas pesadas."
+            "exampleEn": "The train arrives at eight.",
+            "examplePt": "O trem chega às oito."
           },
           {
             "text": "Boat",
@@ -10277,69 +7224,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Barco",
             "simplePronunciation": "bôut",
             "phonetic": "/boʊt/",
-            "exampleEn": "A small boat crosses the lake.",
-            "examplePt": "Um pequeno barco atravessa o lago."
-          },
-          {
-            "text": "Taxi",
-            "emoji": "🚕",
-            "label": "Taxi",
-            "translationPt": "Táxi",
-            "simplePronunciation": "ték-si",
-            "phonetic": "/ˈtæk.si/",
-            "exampleEn": "Let us take a taxi to the hotel.",
-            "examplePt": "Vamos pegar um táxi até o hotel."
-          }
-        ],
-        "options": [
-          "Motorcycle",
-          "Truck",
-          "Boat",
-          "Taxi"
-        ],
-        "correctAnswer": "Boat",
-        "contextSentence": "A small boat crosses the lake.",
-        "contextSentencePt": "Um pequeno barco atravessa o lago.",
-        "explanation": "Exemplo: \"A small boat crosses the lake.\" — Um pequeno barco atravessa o lago.",
-        "phoneticHint": "\"bôut\" • /boʊt/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p17-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Ticket",
-        "visualEmoji": "🎫",
-        "visualOptions": [
-          {
-            "text": "Ticket",
-            "emoji": "🎫",
-            "label": "Ticket",
-            "translationPt": "Passagem / Bilhete",
-            "simplePronunciation": "tí-ket",
-            "phonetic": "/ˈtɪk.ɪt/",
-            "exampleEn": "Buy your bus ticket here.",
-            "examplePt": "Compre sua passagem de ônibus aqui."
-          },
-          {
-            "text": "Bicycle",
-            "emoji": "🚲",
-            "label": "Bicycle",
-            "translationPt": "Bicicleta",
-            "simplePronunciation": "bái-si-kol",
-            "phonetic": "/ˈbaɪ.sɪ.kəl/",
-            "exampleEn": "She rides her bicycle in the park.",
-            "examplePt": "Ela anda de bicicleta no parque."
-          },
-          {
-            "text": "Bus",
-            "emoji": "🚌",
-            "label": "Bus",
-            "translationPt": "Ônibus",
-            "simplePronunciation": "bâs",
-            "phonetic": "/bʌs/",
-            "exampleEn": "Take the bus to school.",
-            "examplePt": "Pegue o ônibus para a escola."
+            "exampleEn": "A boat crosses the lake.",
+            "examplePt": "Um barco atravessa o lago."
           },
           {
             "text": "Car",
@@ -10350,37 +7236,6 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/kɑːr/",
             "exampleEn": "We travel by car on weekends.",
             "examplePt": "Nós viajamos de carro nos fins de semana."
-          }
-        ],
-        "options": [
-          "Ticket",
-          "Bicycle",
-          "Bus",
-          "Car"
-        ],
-        "correctAnswer": "Ticket",
-        "contextSentence": "Buy your bus ticket here.",
-        "contextSentencePt": "Compre sua passagem de ônibus aqui.",
-        "explanation": "Exemplo: \"Buy your bus ticket here.\" — Compre sua passagem de ônibus aqui.",
-        "phoneticHint": "\"tí-ket\" • /ˈtɪk.ɪt/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p17-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Station",
-        "visualEmoji": "🚉",
-        "visualOptions": [
-          {
-            "text": "Street",
-            "emoji": "🛣️",
-            "label": "Street",
-            "translationPt": "Rua",
-            "simplePronunciation": "strít",
-            "phonetic": "/striːt/",
-            "exampleEn": "Look both ways before crossing the street.",
-            "examplePt": "Olhe para os dois lados antes de atravessar a rua."
           },
           {
             "text": "Airplane",
@@ -10389,42 +7244,22 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Avião",
             "simplePronunciation": "ér-plêin",
             "phonetic": "/ˈer.pleɪn/",
-            "exampleEn": "The airplane flies above the clouds.",
-            "examplePt": "O avião voa acima das nuvens."
-          },
-          {
-            "text": "Station",
-            "emoji": "🚉",
-            "label": "Station",
-            "translationPt": "Estação",
-            "simplePronunciation": "stêi-xon",
-            "phonetic": "/ˈsteɪ.ʃən/",
-            "exampleEn": "Meet me at the train station.",
-            "examplePt": "Encontre-me na estação de trem."
-          },
-          {
-            "text": "Train",
-            "emoji": "🚆",
-            "label": "Train",
-            "translationPt": "Trem",
-            "simplePronunciation": "trêin",
-            "phonetic": "/treɪn/",
-            "exampleEn": "The train arrives at eight o'clock.",
-            "examplePt": "O trem chega às oito horas."
+            "exampleEn": "The airplane flies high.",
+            "examplePt": "O avião voa alto."
           }
         ],
         "options": [
-          "Street",
-          "Airplane",
-          "Station",
-          "Train"
+          "Train",
+          "Boat",
+          "Car",
+          "Airplane"
         ],
-        "correctAnswer": "Station",
-        "contextSentence": "Meet me at the train station.",
-        "contextSentencePt": "Encontre-me na estação de trem.",
-        "explanation": "Exemplo: \"Meet me at the train station.\" — Encontre-me na estação de trem.",
-        "phoneticHint": "\"stêi-xon\" • /ˈsteɪ.ʃən/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Boat",
+        "contextSentence": "A boat crosses the lake.",
+        "contextSentencePt": "Um barco atravessa o lago.",
+        "explanation": "Exemplo: \"A boat crosses the lake.\" — Um barco atravessa o lago.",
+        "phoneticHint": "\"bôut\" • /boʊt/",
+        "skillCategory": "listening"
       }
     ]
   },
@@ -10433,17 +7268,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 18,
     "themeId": "transport",
-    "themeTitle": "Transporte",
-    "frequencyLevel": "Módulo 2 • Comuns",
+    "themeTitle": "Tema 4: Transporte",
+    "frequencyLevel": "Módulo 2 • Palavras Comuns",
     "title": "Transporte • Módulo 2: Palavras Comuns",
-    "subtitle": "Tema 4 (Nível 2/4) • 12 termos comuns de viagem, trânsito e direção",
-    "pedagogicalObjective": "Aprender palavras comuns de transporte: Subway, Ship, Road, Bridge, Airport, Driver, Passenger, Wheel, Tire, Map, Stop e Traffic.",
+    "subtitle": "Tema: Transporte (2/4) • 8 palavras comuns de trânsito e viagens",
+    "pedagogicalObjective": "Aprender 8 termos comuns de transporte: Truck, Motorcycle, Subway, Ship, Road, Bridge, Airport e Ticket.",
     "type": "lesson",
     "icon": "car",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 2 de Transporte praticamos palavras comuns: Subway (\"sâb-uêi\" = Metrô), Ship (\"xíp\" = Navio), Road (\"rôud\" = Estrada), Bridge (\"brídj\" = Ponte), Airport (\"ér-pórt\" = Aeroporto) e Driver (\"drái-ver\" = Motorista).",
-      "Também vemos Passenger (\"pé-sen-djer\" = Passageiro), Wheel (\"uíl\" = Roda/Volante), Tire (\"tái-er\" = Pneu), Map (\"mép\" = Mapa), Stop (\"stóp\" = Parada/Ponto) e Traffic (\"tré-fik\" = Trânsito)."
+      "Tema: Transporte — Módulo 2 (Palavras comuns): meios de transporte e infraestrutura de viagem.",
+      "Palavras deste módulo (8): Truck (\"trâk\" = Caminhão), Motorcycle (\"môu-tor-sái-kol\" = Moto), Subway (\"sâb-uêi\" = Metrô), Ship (\"xíp\" = Navio), Road (\"rôud\" = Estrada), Bridge (\"brídj\" = Ponte), Airport (\"ér-pórt\" = Aeroporto) e Ticket (\"tí-ket\" = Passagem/Bilhete)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -10452,18 +7287,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p18-e1",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Subway",
-        "visualEmoji": "🚇",
+        "audioPhrase": "Truck",
+        "visualEmoji": "🚚",
         "visualOptions": [
           {
-            "text": "Stop",
-            "emoji": "🚏",
-            "label": "Stop",
-            "translationPt": "Ponto de ônibus / Parada",
-            "simplePronunciation": "stóp",
-            "phonetic": "/stɑːp/",
-            "exampleEn": "Wait for me at the bus stop.",
-            "examplePt": "Espere por mim no ponto de ônibus."
+            "text": "Road",
+            "emoji": "🛣️",
+            "label": "Road",
+            "translationPt": "Estrada / Rodovia",
+            "simplePronunciation": "rôud",
+            "phonetic": "/roʊd/",
+            "exampleEn": "Follow this road to the beach.",
+            "examplePt": "Siga esta estrada até a praia."
           },
           {
             "text": "Bridge",
@@ -10472,18 +7307,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Ponte",
             "simplePronunciation": "brídj",
             "phonetic": "/brɪdʒ/",
-            "exampleEn": "Drive across the river bridge.",
-            "examplePt": "Dirija sobre a ponte do rio."
+            "exampleEn": "Drive across the bridge.",
+            "examplePt": "Dirija sobre a ponte."
           },
           {
-            "text": "Passenger",
-            "emoji": "🧳",
-            "label": "Passenger",
-            "translationPt": "Passageiro",
-            "simplePronunciation": "pé-sen-djer",
-            "phonetic": "/ˈpæs.ən.dʒər/",
-            "exampleEn": "All passengers must wear seatbelts.",
-            "examplePt": "Todos os passageiros devem usar cinto."
+            "text": "Truck",
+            "emoji": "🚚",
+            "label": "Truck",
+            "translationPt": "Caminhão",
+            "simplePronunciation": "trâk",
+            "phonetic": "/trʌk/",
+            "exampleEn": "The truck carries heavy boxes.",
+            "examplePt": "O caminhão transporta caixas pesadas."
           },
           {
             "text": "Subway",
@@ -10492,30 +7327,50 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Metrô",
             "simplePronunciation": "sâb-uêi",
             "phonetic": "/ˈsʌb.weɪ/",
-            "exampleEn": "The subway is fast and avoids traffic.",
-            "examplePt": "O metrô é rápido e evita o trânsito."
+            "exampleEn": "The subway is fast.",
+            "examplePt": "O metrô é rápido."
           }
         ],
         "options": [
-          "Stop",
+          "Road",
           "Bridge",
-          "Passenger",
+          "Truck",
           "Subway"
         ],
-        "correctAnswer": "Subway",
-        "contextSentence": "The subway is fast and avoids traffic.",
-        "contextSentencePt": "O metrô é rápido e evita o trânsito.",
-        "explanation": "Exemplo: \"The subway is fast and avoids traffic.\" — O metrô é rápido e evita o trânsito.",
-        "phoneticHint": "\"sâb-uêi\" • /ˈsʌb.weɪ/",
+        "correctAnswer": "Truck",
+        "contextSentence": "The truck carries heavy boxes.",
+        "contextSentencePt": "O caminhão transporta caixas pesadas.",
+        "explanation": "Exemplo: \"The truck carries heavy boxes.\" — O caminhão transporta caixas pesadas.",
+        "phoneticHint": "\"trâk\" • /trʌk/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p18-e2",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Ship",
-        "visualEmoji": "🚢",
+        "audioPhrase": "Motorcycle",
+        "visualEmoji": "🏍️",
         "visualOptions": [
+          {
+            "text": "Motorcycle",
+            "emoji": "🏍️",
+            "label": "Motorcycle",
+            "translationPt": "Moto",
+            "simplePronunciation": "môu-tor-sái-kol",
+            "phonetic": "/ˈmoʊ.tərˌsaɪ.kəl/",
+            "exampleEn": "Wear a helmet on a motorcycle.",
+            "examplePt": "Use capacete na moto."
+          },
+          {
+            "text": "Ticket",
+            "emoji": "🎫",
+            "label": "Ticket",
+            "translationPt": "Passagem / Bilhete",
+            "simplePronunciation": "tí-ket",
+            "phonetic": "/ˈtɪk.ɪt/",
+            "exampleEn": "Buy your ticket here.",
+            "examplePt": "Compre sua passagem aqui."
+          },
           {
             "text": "Ship",
             "emoji": "🚢",
@@ -10523,79 +7378,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Navio",
             "simplePronunciation": "xíp",
             "phonetic": "/ʃɪp/",
-            "exampleEn": "A large ship sails across the ocean.",
+            "exampleEn": "A large ship sails the ocean.",
             "examplePt": "Um grande navio navega pelo oceano."
-          },
-          {
-            "text": "Tire",
-            "emoji": "🛞",
-            "label": "Tire",
-            "translationPt": "Pneu",
-            "simplePronunciation": "tái-er",
-            "phonetic": "/ˈtaɪ.ər/",
-            "exampleEn": "Check the air in the car tire.",
-            "examplePt": "Verifique o ar do pneu do carro."
-          },
-          {
-            "text": "Traffic",
-            "emoji": "🚦",
-            "label": "Traffic",
-            "translationPt": "Trânsito / Tráfego",
-            "simplePronunciation": "tré-fik",
-            "phonetic": "/ˈtræf.ɪk/",
-            "exampleEn": "There is heavy traffic this morning.",
-            "examplePt": "Há trânsito intenso nesta manhã."
-          },
-          {
-            "text": "Map",
-            "emoji": "🗺️",
-            "label": "Map",
-            "translationPt": "Mapa",
-            "simplePronunciation": "mép",
-            "phonetic": "/mæp/",
-            "exampleEn": "Check the city map on your phone.",
-            "examplePt": "Olhe o mapa da cidade no celular."
-          }
-        ],
-        "options": [
-          "Ship",
-          "Tire",
-          "Traffic",
-          "Map"
-        ],
-        "correctAnswer": "Ship",
-        "contextSentence": "A large ship sails across the ocean.",
-        "contextSentencePt": "Um grande navio navega pelo oceano.",
-        "explanation": "Exemplo: \"A large ship sails across the ocean.\" — Um grande navio navega pelo oceano.",
-        "phoneticHint": "\"xíp\" • /ʃɪp/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p18-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Road",
-        "visualEmoji": "🛣️",
-        "visualOptions": [
-          {
-            "text": "Driver",
-            "emoji": "🧑‍✈️",
-            "label": "Driver",
-            "translationPt": "Motorista",
-            "simplePronunciation": "drái-ver",
-            "phonetic": "/ˈdraɪ.vər/",
-            "exampleEn": "The bus driver is very polite.",
-            "examplePt": "O motorista do ônibus é muito educado."
-          },
-          {
-            "text": "Wheel",
-            "emoji": "🛞",
-            "label": "Wheel",
-            "translationPt": "Roda / Volante",
-            "simplePronunciation": "uíl",
-            "phonetic": "/wiːl/",
-            "exampleEn": "Keep both hands on the wheel.",
-            "examplePt": "Mantenha as duas mãos no volante."
           },
           {
             "text": "Airport",
@@ -10606,6 +7390,179 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈer.pɔːrt/",
             "exampleEn": "We arrived early at the airport.",
             "examplePt": "Chegamos cedo ao aeroporto."
+          }
+        ],
+        "options": [
+          "Motorcycle",
+          "Ticket",
+          "Ship",
+          "Airport"
+        ],
+        "correctAnswer": "Motorcycle",
+        "contextSentence": "Wear a helmet on a motorcycle.",
+        "contextSentencePt": "Use capacete na moto.",
+        "explanation": "Exemplo: \"Wear a helmet on a motorcycle.\" — Use capacete na moto.",
+        "phoneticHint": "\"môu-tor-sái-kol\" • /ˈmoʊ.tərˌsaɪ.kəl/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p18-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Subway",
+        "visualEmoji": "🚇",
+        "visualOptions": [
+          {
+            "text": "Truck",
+            "emoji": "🚚",
+            "label": "Truck",
+            "translationPt": "Caminhão",
+            "simplePronunciation": "trâk",
+            "phonetic": "/trʌk/",
+            "exampleEn": "The truck carries heavy boxes.",
+            "examplePt": "O caminhão transporta caixas pesadas."
+          },
+          {
+            "text": "Road",
+            "emoji": "🛣️",
+            "label": "Road",
+            "translationPt": "Estrada / Rodovia",
+            "simplePronunciation": "rôud",
+            "phonetic": "/roʊd/",
+            "exampleEn": "Follow this road to the beach.",
+            "examplePt": "Siga esta estrada até a praia."
+          },
+          {
+            "text": "Subway",
+            "emoji": "🚇",
+            "label": "Subway",
+            "translationPt": "Metrô",
+            "simplePronunciation": "sâb-uêi",
+            "phonetic": "/ˈsʌb.weɪ/",
+            "exampleEn": "The subway is fast.",
+            "examplePt": "O metrô é rápido."
+          },
+          {
+            "text": "Bridge",
+            "emoji": "🌉",
+            "label": "Bridge",
+            "translationPt": "Ponte",
+            "simplePronunciation": "brídj",
+            "phonetic": "/brɪdʒ/",
+            "exampleEn": "Drive across the bridge.",
+            "examplePt": "Dirija sobre a ponte."
+          }
+        ],
+        "options": [
+          "Truck",
+          "Road",
+          "Subway",
+          "Bridge"
+        ],
+        "correctAnswer": "Subway",
+        "contextSentence": "The subway is fast.",
+        "contextSentencePt": "O metrô é rápido.",
+        "explanation": "Exemplo: \"The subway is fast.\" — O metrô é rápido.",
+        "phoneticHint": "\"sâb-uêi\" • /ˈsʌb.weɪ/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p18-e4",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Ship",
+        "visualEmoji": "🚢",
+        "visualOptions": [
+          {
+            "text": "Ticket",
+            "emoji": "🎫",
+            "label": "Ticket",
+            "translationPt": "Passagem / Bilhete",
+            "simplePronunciation": "tí-ket",
+            "phonetic": "/ˈtɪk.ɪt/",
+            "exampleEn": "Buy your ticket here.",
+            "examplePt": "Compre sua passagem aqui."
+          },
+          {
+            "text": "Ship",
+            "emoji": "🚢",
+            "label": "Ship",
+            "translationPt": "Navio",
+            "simplePronunciation": "xíp",
+            "phonetic": "/ʃɪp/",
+            "exampleEn": "A large ship sails the ocean.",
+            "examplePt": "Um grande navio navega pelo oceano."
+          },
+          {
+            "text": "Motorcycle",
+            "emoji": "🏍️",
+            "label": "Motorcycle",
+            "translationPt": "Moto",
+            "simplePronunciation": "môu-tor-sái-kol",
+            "phonetic": "/ˈmoʊ.tərˌsaɪ.kəl/",
+            "exampleEn": "Wear a helmet on a motorcycle.",
+            "examplePt": "Use capacete na moto."
+          },
+          {
+            "text": "Airport",
+            "emoji": "🛫",
+            "label": "Airport",
+            "translationPt": "Aeroporto",
+            "simplePronunciation": "ér-pórt",
+            "phonetic": "/ˈer.pɔːrt/",
+            "exampleEn": "We arrived early at the airport.",
+            "examplePt": "Chegamos cedo ao aeroporto."
+          }
+        ],
+        "options": [
+          "Ticket",
+          "Ship",
+          "Motorcycle",
+          "Airport"
+        ],
+        "correctAnswer": "Ship",
+        "contextSentence": "A large ship sails the ocean.",
+        "contextSentencePt": "Um grande navio navega pelo oceano.",
+        "explanation": "Exemplo: \"A large ship sails the ocean.\" — Um grande navio navega pelo oceano.",
+        "phoneticHint": "\"xíp\" • /ʃɪp/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p18-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Road",
+        "visualEmoji": "🛣️",
+        "visualOptions": [
+          {
+            "text": "Motorcycle",
+            "emoji": "🏍️",
+            "label": "Motorcycle",
+            "translationPt": "Moto",
+            "simplePronunciation": "môu-tor-sái-kol",
+            "phonetic": "/ˈmoʊ.tərˌsaɪ.kəl/",
+            "exampleEn": "Wear a helmet on a motorcycle.",
+            "examplePt": "Use capacete na moto."
+          },
+          {
+            "text": "Subway",
+            "emoji": "🚇",
+            "label": "Subway",
+            "translationPt": "Metrô",
+            "simplePronunciation": "sâb-uêi",
+            "phonetic": "/ˈsʌb.weɪ/",
+            "exampleEn": "The subway is fast.",
+            "examplePt": "O metrô é rápido."
+          },
+          {
+            "text": "Ship",
+            "emoji": "🚢",
+            "label": "Ship",
+            "translationPt": "Navio",
+            "simplePronunciation": "xíp",
+            "phonetic": "/ʃɪp/",
+            "exampleEn": "A large ship sails the ocean.",
+            "examplePt": "Um grande navio navega pelo oceano."
           },
           {
             "text": "Road",
@@ -10619,9 +7576,9 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Driver",
-          "Wheel",
-          "Airport",
+          "Motorcycle",
+          "Subway",
+          "Ship",
           "Road"
         ],
         "correctAnswer": "Road",
@@ -10629,156 +7586,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "contextSentencePt": "Siga esta estrada até a praia.",
         "explanation": "Exemplo: \"Follow this road to the beach.\" — Siga esta estrada até a praia.",
         "phoneticHint": "\"rôud\" • /roʊd/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p18-e4",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Bridge",
-        "visualEmoji": "🌉",
-        "visualOptions": [
-          {
-            "text": "Passenger",
-            "emoji": "🧳",
-            "label": "Passenger",
-            "translationPt": "Passageiro",
-            "simplePronunciation": "pé-sen-djer",
-            "phonetic": "/ˈpæs.ən.dʒər/",
-            "exampleEn": "All passengers must wear seatbelts.",
-            "examplePt": "Todos os passageiros devem usar cinto."
-          },
-          {
-            "text": "Subway",
-            "emoji": "🚇",
-            "label": "Subway",
-            "translationPt": "Metrô",
-            "simplePronunciation": "sâb-uêi",
-            "phonetic": "/ˈsʌb.weɪ/",
-            "exampleEn": "The subway is fast and avoids traffic.",
-            "examplePt": "O metrô é rápido e evita o trânsito."
-          },
-          {
-            "text": "Bridge",
-            "emoji": "🌉",
-            "label": "Bridge",
-            "translationPt": "Ponte",
-            "simplePronunciation": "brídj",
-            "phonetic": "/brɪdʒ/",
-            "exampleEn": "Drive across the river bridge.",
-            "examplePt": "Dirija sobre a ponte do rio."
-          },
-          {
-            "text": "Stop",
-            "emoji": "🚏",
-            "label": "Stop",
-            "translationPt": "Ponto de ônibus / Parada",
-            "simplePronunciation": "stóp",
-            "phonetic": "/stɑːp/",
-            "exampleEn": "Wait for me at the bus stop.",
-            "examplePt": "Espere por mim no ponto de ônibus."
-          }
-        ],
-        "options": [
-          "Passenger",
-          "Subway",
-          "Bridge",
-          "Stop"
-        ],
-        "correctAnswer": "Bridge",
-        "contextSentence": "Drive across the river bridge.",
-        "contextSentencePt": "Dirija sobre a ponte do rio.",
-        "explanation": "Exemplo: \"Drive across the river bridge.\" — Dirija sobre a ponte do rio.",
-        "phoneticHint": "\"brídj\" • /brɪdʒ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p18-e5",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Airport",
-        "visualEmoji": "🛫",
-        "visualOptions": [
-          {
-            "text": "Airport",
-            "emoji": "🛫",
-            "label": "Airport",
-            "translationPt": "Aeroporto",
-            "simplePronunciation": "ér-pórt",
-            "phonetic": "/ˈer.pɔːrt/",
-            "exampleEn": "We arrived early at the airport.",
-            "examplePt": "Chegamos cedo ao aeroporto."
-          },
-          {
-            "text": "Tire",
-            "emoji": "🛞",
-            "label": "Tire",
-            "translationPt": "Pneu",
-            "simplePronunciation": "tái-er",
-            "phonetic": "/ˈtaɪ.ər/",
-            "exampleEn": "Check the air in the car tire.",
-            "examplePt": "Verifique o ar do pneu do carro."
-          },
-          {
-            "text": "Ship",
-            "emoji": "🚢",
-            "label": "Ship",
-            "translationPt": "Navio",
-            "simplePronunciation": "xíp",
-            "phonetic": "/ʃɪp/",
-            "exampleEn": "A large ship sails across the ocean.",
-            "examplePt": "Um grande navio navega pelo oceano."
-          },
-          {
-            "text": "Map",
-            "emoji": "🗺️",
-            "label": "Map",
-            "translationPt": "Mapa",
-            "simplePronunciation": "mép",
-            "phonetic": "/mæp/",
-            "exampleEn": "Check the city map on your phone.",
-            "examplePt": "Olhe o mapa da cidade no celular."
-          }
-        ],
-        "options": [
-          "Airport",
-          "Tire",
-          "Ship",
-          "Map"
-        ],
-        "correctAnswer": "Airport",
-        "contextSentence": "We arrived early at the airport.",
-        "contextSentencePt": "Chegamos cedo ao aeroporto.",
-        "explanation": "Exemplo: \"We arrived early at the airport.\" — Chegamos cedo ao aeroporto.",
-        "phoneticHint": "\"ér-pórt\" • /ˈer.pɔːrt/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p18-e6",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Driver",
-        "visualEmoji": "🧑‍✈️",
+        "audioPhrase": "Bridge",
+        "visualEmoji": "🌉",
         "visualOptions": [
           {
-            "text": "Ship",
-            "emoji": "🚢",
-            "label": "Ship",
-            "translationPt": "Navio",
-            "simplePronunciation": "xíp",
-            "phonetic": "/ʃɪp/",
-            "exampleEn": "A large ship sails across the ocean.",
-            "examplePt": "Um grande navio navega pelo oceano."
-          },
-          {
-            "text": "Driver",
-            "emoji": "🧑‍✈️",
-            "label": "Driver",
-            "translationPt": "Motorista",
-            "simplePronunciation": "drái-ver",
-            "phonetic": "/ˈdraɪ.vər/",
-            "exampleEn": "The bus driver is very polite.",
-            "examplePt": "O motorista do ônibus é muito educado."
+            "text": "Bridge",
+            "emoji": "🌉",
+            "label": "Bridge",
+            "translationPt": "Ponte",
+            "simplePronunciation": "brídj",
+            "phonetic": "/brɪdʒ/",
+            "exampleEn": "Drive across the bridge.",
+            "examplePt": "Dirija sobre a ponte."
           },
           {
             "text": "Subway",
@@ -10787,8 +7612,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Metrô",
             "simplePronunciation": "sâb-uêi",
             "phonetic": "/ˈsʌb.weɪ/",
-            "exampleEn": "The subway is fast and avoids traffic.",
-            "examplePt": "O metrô é rápido e evita o trânsito."
+            "exampleEn": "The subway is fast.",
+            "examplePt": "O metrô é rápido."
           },
           {
             "text": "Road",
@@ -10799,108 +7624,47 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/roʊd/",
             "exampleEn": "Follow this road to the beach.",
             "examplePt": "Siga esta estrada até a praia."
+          },
+          {
+            "text": "Truck",
+            "emoji": "🚚",
+            "label": "Truck",
+            "translationPt": "Caminhão",
+            "simplePronunciation": "trâk",
+            "phonetic": "/trʌk/",
+            "exampleEn": "The truck carries heavy boxes.",
+            "examplePt": "O caminhão transporta caixas pesadas."
           }
         ],
         "options": [
-          "Ship",
-          "Driver",
+          "Bridge",
           "Subway",
-          "Road"
+          "Road",
+          "Truck"
         ],
-        "correctAnswer": "Driver",
-        "contextSentence": "The bus driver is very polite.",
-        "contextSentencePt": "O motorista do ônibus é muito educado.",
-        "explanation": "Exemplo: \"The bus driver is very polite.\" — O motorista do ônibus é muito educado.",
-        "phoneticHint": "\"drái-ver\" • /ˈdraɪ.vər/",
+        "correctAnswer": "Bridge",
+        "contextSentence": "Drive across the bridge.",
+        "contextSentencePt": "Dirija sobre a ponte.",
+        "explanation": "Exemplo: \"Drive across the bridge.\" — Dirija sobre a ponte.",
+        "phoneticHint": "\"brídj\" • /brɪdʒ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p18-e7",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Passenger",
-        "visualEmoji": "🧳",
+        "audioPhrase": "Airport",
+        "visualEmoji": "🛫",
         "visualOptions": [
           {
-            "text": "Stop",
-            "emoji": "🚏",
-            "label": "Stop",
-            "translationPt": "Ponto de ônibus / Parada",
-            "simplePronunciation": "stóp",
-            "phonetic": "/stɑːp/",
-            "exampleEn": "Wait for me at the bus stop.",
-            "examplePt": "Espere por mim no ponto de ônibus."
-          },
-          {
-            "text": "Passenger",
-            "emoji": "🧳",
-            "label": "Passenger",
-            "translationPt": "Passageiro",
-            "simplePronunciation": "pé-sen-djer",
-            "phonetic": "/ˈpæs.ən.dʒər/",
-            "exampleEn": "All passengers must wear seatbelts.",
-            "examplePt": "Todos os passageiros devem usar cinto."
-          },
-          {
-            "text": "Bridge",
-            "emoji": "🌉",
-            "label": "Bridge",
-            "translationPt": "Ponte",
-            "simplePronunciation": "brídj",
-            "phonetic": "/brɪdʒ/",
-            "exampleEn": "Drive across the river bridge.",
-            "examplePt": "Dirija sobre a ponte do rio."
-          },
-          {
-            "text": "Traffic",
-            "emoji": "🚦",
-            "label": "Traffic",
-            "translationPt": "Trânsito / Tráfego",
-            "simplePronunciation": "tré-fik",
-            "phonetic": "/ˈtræf.ɪk/",
-            "exampleEn": "There is heavy traffic this morning.",
-            "examplePt": "Há trânsito intenso nesta manhã."
-          }
-        ],
-        "options": [
-          "Stop",
-          "Passenger",
-          "Bridge",
-          "Traffic"
-        ],
-        "correctAnswer": "Passenger",
-        "contextSentence": "All passengers must wear seatbelts.",
-        "contextSentencePt": "Todos os passageiros devem usar cinto.",
-        "explanation": "Exemplo: \"All passengers must wear seatbelts.\" — Todos os passageiros devem usar cinto.",
-        "phoneticHint": "\"pé-sen-djer\" • /ˈpæs.ən.dʒər/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p18-e8",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Wheel",
-        "visualEmoji": "🛞",
-        "visualOptions": [
-          {
-            "text": "Road",
-            "emoji": "🛣️",
-            "label": "Road",
-            "translationPt": "Estrada / Rodovia",
-            "simplePronunciation": "rôud",
-            "phonetic": "/roʊd/",
-            "exampleEn": "Follow this road to the beach.",
-            "examplePt": "Siga esta estrada até a praia."
-          },
-          {
-            "text": "Driver",
-            "emoji": "🧑‍✈️",
-            "label": "Driver",
-            "translationPt": "Motorista",
-            "simplePronunciation": "drái-ver",
-            "phonetic": "/ˈdraɪ.vər/",
-            "exampleEn": "The bus driver is very polite.",
-            "examplePt": "O motorista do ônibus é muito educado."
+            "text": "Motorcycle",
+            "emoji": "🏍️",
+            "label": "Motorcycle",
+            "translationPt": "Moto",
+            "simplePronunciation": "môu-tor-sái-kol",
+            "phonetic": "/ˈmoʊ.tərˌsaɪ.kəl/",
+            "exampleEn": "Wear a helmet on a motorcycle.",
+            "examplePt": "Use capacete na moto."
           },
           {
             "text": "Airport",
@@ -10913,106 +7677,14 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Chegamos cedo ao aeroporto."
           },
           {
-            "text": "Wheel",
-            "emoji": "🛞",
-            "label": "Wheel",
-            "translationPt": "Roda / Volante",
-            "simplePronunciation": "uíl",
-            "phonetic": "/wiːl/",
-            "exampleEn": "Keep both hands on the wheel.",
-            "examplePt": "Mantenha as duas mãos no volante."
-          }
-        ],
-        "options": [
-          "Road",
-          "Driver",
-          "Airport",
-          "Wheel"
-        ],
-        "correctAnswer": "Wheel",
-        "contextSentence": "Keep both hands on the wheel.",
-        "contextSentencePt": "Mantenha as duas mãos no volante.",
-        "explanation": "Exemplo: \"Keep both hands on the wheel.\" — Mantenha as duas mãos no volante.",
-        "phoneticHint": "\"uíl\" • /wiːl/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p18-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Tire",
-        "visualEmoji": "🛞",
-        "visualOptions": [
-          {
-            "text": "Driver",
-            "emoji": "🧑‍✈️",
-            "label": "Driver",
-            "translationPt": "Motorista",
-            "simplePronunciation": "drái-ver",
-            "phonetic": "/ˈdraɪ.vər/",
-            "exampleEn": "The bus driver is very polite.",
-            "examplePt": "O motorista do ônibus é muito educado."
-          },
-          {
-            "text": "Map",
-            "emoji": "🗺️",
-            "label": "Map",
-            "translationPt": "Mapa",
-            "simplePronunciation": "mép",
-            "phonetic": "/mæp/",
-            "exampleEn": "Check the city map on your phone.",
-            "examplePt": "Olhe o mapa da cidade no celular."
-          },
-          {
-            "text": "Tire",
-            "emoji": "🛞",
-            "label": "Tire",
-            "translationPt": "Pneu",
-            "simplePronunciation": "tái-er",
-            "phonetic": "/ˈtaɪ.ər/",
-            "exampleEn": "Check the air in the car tire.",
-            "examplePt": "Verifique o ar do pneu do carro."
-          },
-          {
-            "text": "Wheel",
-            "emoji": "🛞",
-            "label": "Wheel",
-            "translationPt": "Roda / Volante",
-            "simplePronunciation": "uíl",
-            "phonetic": "/wiːl/",
-            "exampleEn": "Keep both hands on the wheel.",
-            "examplePt": "Mantenha as duas mãos no volante."
-          }
-        ],
-        "options": [
-          "Driver",
-          "Map",
-          "Tire",
-          "Wheel"
-        ],
-        "correctAnswer": "Tire",
-        "contextSentence": "Check the air in the car tire.",
-        "contextSentencePt": "Verifique o ar do pneu do carro.",
-        "explanation": "Exemplo: \"Check the air in the car tire.\" — Verifique o ar do pneu do carro.",
-        "phoneticHint": "\"tái-er\" • /ˈtaɪ.ər/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p18-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Map",
-        "visualEmoji": "🗺️",
-        "visualOptions": [
-          {
-            "text": "Map",
-            "emoji": "🗺️",
-            "label": "Map",
-            "translationPt": "Mapa",
-            "simplePronunciation": "mép",
-            "phonetic": "/mæp/",
-            "exampleEn": "Check the city map on your phone.",
-            "examplePt": "Olhe o mapa da cidade no celular."
+            "text": "Bridge",
+            "emoji": "🌉",
+            "label": "Bridge",
+            "translationPt": "Ponte",
+            "simplePronunciation": "brídj",
+            "phonetic": "/brɪdʒ/",
+            "exampleEn": "Drive across the bridge.",
+            "examplePt": "Dirija sobre a ponte."
           },
           {
             "text": "Ship",
@@ -11021,80 +7693,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Navio",
             "simplePronunciation": "xíp",
             "phonetic": "/ʃɪp/",
-            "exampleEn": "A large ship sails across the ocean.",
+            "exampleEn": "A large ship sails the ocean.",
             "examplePt": "Um grande navio navega pelo oceano."
-          },
-          {
-            "text": "Passenger",
-            "emoji": "🧳",
-            "label": "Passenger",
-            "translationPt": "Passageiro",
-            "simplePronunciation": "pé-sen-djer",
-            "phonetic": "/ˈpæs.ən.dʒər/",
-            "exampleEn": "All passengers must wear seatbelts.",
-            "examplePt": "Todos os passageiros devem usar cinto."
-          },
-          {
-            "text": "Subway",
-            "emoji": "🚇",
-            "label": "Subway",
-            "translationPt": "Metrô",
-            "simplePronunciation": "sâb-uêi",
-            "phonetic": "/ˈsʌb.weɪ/",
-            "exampleEn": "The subway is fast and avoids traffic.",
-            "examplePt": "O metrô é rápido e evita o trânsito."
           }
         ],
         "options": [
-          "Map",
-          "Ship",
-          "Passenger",
-          "Subway"
+          "Motorcycle",
+          "Airport",
+          "Bridge",
+          "Ship"
         ],
-        "correctAnswer": "Map",
-        "contextSentence": "Check the city map on your phone.",
-        "contextSentencePt": "Olhe o mapa da cidade no celular.",
-        "explanation": "Exemplo: \"Check the city map on your phone.\" — Olhe o mapa da cidade no celular.",
-        "phoneticHint": "\"mép\" • /mæp/",
+        "correctAnswer": "Airport",
+        "contextSentence": "We arrived early at the airport.",
+        "contextSentencePt": "Chegamos cedo ao aeroporto.",
+        "explanation": "Exemplo: \"We arrived early at the airport.\" — Chegamos cedo ao aeroporto.",
+        "phoneticHint": "\"ér-pórt\" • /ˈer.pɔːrt/",
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p18-e11",
+        "id": "w0-p18-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Stop",
-        "visualEmoji": "🚏",
+        "audioPhrase": "Ticket",
+        "visualEmoji": "🎫",
         "visualOptions": [
-          {
-            "text": "Bridge",
-            "emoji": "🌉",
-            "label": "Bridge",
-            "translationPt": "Ponte",
-            "simplePronunciation": "brídj",
-            "phonetic": "/brɪdʒ/",
-            "exampleEn": "Drive across the river bridge.",
-            "examplePt": "Dirija sobre a ponte do rio."
-          },
-          {
-            "text": "Airport",
-            "emoji": "🛫",
-            "label": "Airport",
-            "translationPt": "Aeroporto",
-            "simplePronunciation": "ér-pórt",
-            "phonetic": "/ˈer.pɔːrt/",
-            "exampleEn": "We arrived early at the airport.",
-            "examplePt": "Chegamos cedo ao aeroporto."
-          },
-          {
-            "text": "Stop",
-            "emoji": "🚏",
-            "label": "Stop",
-            "translationPt": "Ponto de ônibus / Parada",
-            "simplePronunciation": "stóp",
-            "phonetic": "/stɑːp/",
-            "exampleEn": "Wait for me at the bus stop.",
-            "examplePt": "Espere por mim no ponto de ônibus."
-          },
           {
             "text": "Road",
             "emoji": "🛣️",
@@ -11104,81 +7726,50 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/roʊd/",
             "exampleEn": "Follow this road to the beach.",
             "examplePt": "Siga esta estrada até a praia."
+          },
+          {
+            "text": "Subway",
+            "emoji": "🚇",
+            "label": "Subway",
+            "translationPt": "Metrô",
+            "simplePronunciation": "sâb-uêi",
+            "phonetic": "/ˈsʌb.weɪ/",
+            "exampleEn": "The subway is fast.",
+            "examplePt": "O metrô é rápido."
+          },
+          {
+            "text": "Truck",
+            "emoji": "🚚",
+            "label": "Truck",
+            "translationPt": "Caminhão",
+            "simplePronunciation": "trâk",
+            "phonetic": "/trʌk/",
+            "exampleEn": "The truck carries heavy boxes.",
+            "examplePt": "O caminhão transporta caixas pesadas."
+          },
+          {
+            "text": "Ticket",
+            "emoji": "🎫",
+            "label": "Ticket",
+            "translationPt": "Passagem / Bilhete",
+            "simplePronunciation": "tí-ket",
+            "phonetic": "/ˈtɪk.ɪt/",
+            "exampleEn": "Buy your ticket here.",
+            "examplePt": "Compre sua passagem aqui."
           }
         ],
         "options": [
-          "Bridge",
-          "Airport",
-          "Stop",
-          "Road"
+          "Road",
+          "Subway",
+          "Truck",
+          "Ticket"
         ],
-        "correctAnswer": "Stop",
-        "contextSentence": "Wait for me at the bus stop.",
-        "contextSentencePt": "Espere por mim no ponto de ônibus.",
-        "explanation": "Exemplo: \"Wait for me at the bus stop.\" — Espere por mim no ponto de ônibus.",
-        "phoneticHint": "\"stóp\" • /stɑːp/",
+        "correctAnswer": "Ticket",
+        "contextSentence": "Buy your ticket here.",
+        "contextSentencePt": "Compre sua passagem aqui.",
+        "explanation": "Exemplo: \"Buy your ticket here.\" — Compre sua passagem aqui.",
+        "phoneticHint": "\"tí-ket\" • /ˈtɪk.ɪt/",
         "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p18-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Traffic",
-        "visualEmoji": "🚦",
-        "visualOptions": [
-          {
-            "text": "Driver",
-            "emoji": "🧑‍✈️",
-            "label": "Driver",
-            "translationPt": "Motorista",
-            "simplePronunciation": "drái-ver",
-            "phonetic": "/ˈdraɪ.vər/",
-            "exampleEn": "The bus driver is very polite.",
-            "examplePt": "O motorista do ônibus é muito educado."
-          },
-          {
-            "text": "Traffic",
-            "emoji": "🚦",
-            "label": "Traffic",
-            "translationPt": "Trânsito / Tráfego",
-            "simplePronunciation": "tré-fik",
-            "phonetic": "/ˈtræf.ɪk/",
-            "exampleEn": "There is heavy traffic this morning.",
-            "examplePt": "Há trânsito intenso nesta manhã."
-          },
-          {
-            "text": "Tire",
-            "emoji": "🛞",
-            "label": "Tire",
-            "translationPt": "Pneu",
-            "simplePronunciation": "tái-er",
-            "phonetic": "/ˈtaɪ.ər/",
-            "exampleEn": "Check the air in the car tire.",
-            "examplePt": "Verifique o ar do pneu do carro."
-          },
-          {
-            "text": "Wheel",
-            "emoji": "🛞",
-            "label": "Wheel",
-            "translationPt": "Roda / Volante",
-            "simplePronunciation": "uíl",
-            "phonetic": "/wiːl/",
-            "exampleEn": "Keep both hands on the wheel.",
-            "examplePt": "Mantenha as duas mãos no volante."
-          }
-        ],
-        "options": [
-          "Driver",
-          "Traffic",
-          "Tire",
-          "Wheel"
-        ],
-        "correctAnswer": "Traffic",
-        "contextSentence": "There is heavy traffic this morning.",
-        "contextSentencePt": "Há trânsito intenso nesta manhã.",
-        "explanation": "Exemplo: \"There is heavy traffic this morning.\" — Há trânsito intenso nesta manhã.",
-        "phoneticHint": "\"tré-fik\" • /ˈtræf.ɪk/",
-        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -11187,18 +7778,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 19,
     "themeId": "transport",
-    "themeTitle": "Transporte",
-    "frequencyLevel": "Módulo 3 • Intermediárias",
+    "themeTitle": "Tema 4: Transporte",
+    "frequencyLevel": "Módulo 3 • Palavras Intermediárias",
     "title": "Transporte • Módulo 3: Palavras Intermediárias",
-    "subtitle": "Tema 4 (Nível 3/4) • 12 palavras intermediárias da via pública e segurança",
-    "pedagogicalObjective": "Dominar elementos intermediários: Helicopter, Van, Ambulance, Seat, Helmet, Sidewalk, Crosswalk, Corner, Fuel, Engine, Sign e Park.",
+    "subtitle": "Tema: Transporte (3/4) • 8 palavras intermediárias da via urbana",
+    "pedagogicalObjective": "Dominar 8 termos intermediários de transporte: Helicopter, Van, Ambulance, Seat, Helmet, Sidewalk, Crosswalk e Engine.",
     "type": "lesson",
     "icon": "car",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 3 de Transporte estudamos: Helicopter (\"ré-li-cóp-ter\" = Helicóptero), Van (\"vén\" = Van), Ambulance (\"ém-biu-lans\" = Ambulância), Seat (\"sít\" = Assento), Helmet (\"rél-met\" = Capacete) e Sidewalk (\"sáid-uók\" = Calçada).",
-      "E completamos com Crosswalk (\"crós-uók\" = Faixa de pedestres), Corner (\"cór-ner\" = Esquina), Fuel (\"fiú-el\" = Combustível), Engine (\"én-djin\" = Motor), Sign (\"sáin\" = Placa) e Park (\"párk\" = Estacionar/Parque).",
-      "Logo após este módulo, você fará mais uma Lição Exclusiva de Pronomes!"
+      "Tema: Transporte — Módulo 3 (Palavras intermediárias): segurança, veículos e elementos da via.",
+      "Palavras deste módulo (8): Helicopter (\"ré-li-cóp-ter\" = Helicóptero), Van (\"vén\" = Van), Ambulance (\"ém-biu-lans\" = Ambulância), Seat (\"sít\" = Assento), Helmet (\"rél-met\" = Capacete), Sidewalk (\"sáid-uók\" = Calçada), Crosswalk (\"crós-uók\" = Faixa de pedestres) e Engine (\"én-djin\" = Motor)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -11217,8 +7807,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Helicóptero",
             "simplePronunciation": "ré-li-cóp-ter",
             "phonetic": "/ˈhel.ɪˌkɑːp.tər/",
-            "exampleEn": "The helicopter landed on the roof.",
-            "examplePt": "O helicóptero pousou no topo do prédio."
+            "exampleEn": "The helicopter flies over the city.",
+            "examplePt": "O helicóptero sobrevoa a cidade."
           },
           {
             "text": "Engine",
@@ -11241,26 +7831,26 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Use sempre um capacete de segurança."
           },
           {
-            "text": "Fuel",
-            "emoji": "⛽",
-            "label": "Fuel",
-            "translationPt": "Combustível / Gasolina",
-            "simplePronunciation": "fiú-el",
-            "phonetic": "/ˈfjuː.əl/",
-            "exampleEn": "Stop to put fuel in the car.",
-            "examplePt": "Pare para colocar combustível no carro."
+            "text": "Crosswalk",
+            "emoji": "🚸",
+            "label": "Crosswalk",
+            "translationPt": "Faixa de pedestres",
+            "simplePronunciation": "crós-uók",
+            "phonetic": "/ˈkrɔːs.wɔːk/",
+            "exampleEn": "Cross at the crosswalk.",
+            "examplePt": "Atravesse na faixa de pedestres."
           }
         ],
         "options": [
           "Helicopter",
           "Engine",
           "Helmet",
-          "Fuel"
+          "Crosswalk"
         ],
         "correctAnswer": "Helicopter",
-        "contextSentence": "The helicopter landed on the roof.",
-        "contextSentencePt": "O helicóptero pousou no topo do prédio.",
-        "explanation": "Exemplo: \"The helicopter landed on the roof.\" — O helicóptero pousou no topo do prédio.",
+        "contextSentence": "The helicopter flies over the city.",
+        "contextSentencePt": "O helicóptero sobrevoa a cidade.",
+        "explanation": "Exemplo: \"The helicopter flies over the city.\" — O helicóptero sobrevoa a cidade.",
         "phoneticHint": "\"ré-li-cóp-ter\" • /ˈhel.ɪˌkɑːp.tər/",
         "skillCategory": "vocabulary"
       },
@@ -11272,24 +7862,34 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚐",
         "visualOptions": [
           {
-            "text": "Crosswalk",
-            "emoji": "🚸",
-            "label": "Crosswalk",
-            "translationPt": "Faixa de pedestres",
-            "simplePronunciation": "crós-uók",
-            "phonetic": "/ˈkrɔːs.wɔːk/",
-            "exampleEn": "Cross the avenue at the crosswalk.",
-            "examplePt": "Atravesse a avenida na faixa de pedestres."
+            "text": "Helicopter",
+            "emoji": "🚁",
+            "label": "Helicopter",
+            "translationPt": "Helicóptero",
+            "simplePronunciation": "ré-li-cóp-ter",
+            "phonetic": "/ˈhel.ɪˌkɑːp.tər/",
+            "exampleEn": "The helicopter flies over the city.",
+            "examplePt": "O helicóptero sobrevoa a cidade."
           },
           {
-            "text": "Corner",
-            "emoji": "🏙️",
-            "label": "Corner",
-            "translationPt": "Esquina",
-            "simplePronunciation": "cór-ner",
-            "phonetic": "/ˈkɔːr.nər/",
-            "exampleEn": "The bakery is on the street corner.",
-            "examplePt": "A padaria fica na esquina da rua."
+            "text": "Seat",
+            "emoji": "💺",
+            "label": "Seat",
+            "translationPt": "Assento / Banco",
+            "simplePronunciation": "sít",
+            "phonetic": "/siːt/",
+            "exampleEn": "Take a seat on the train.",
+            "examplePt": "Sente-se no banco do trem."
+          },
+          {
+            "text": "Van",
+            "emoji": "🚐",
+            "label": "Van",
+            "translationPt": "Van",
+            "simplePronunciation": "vén",
+            "phonetic": "/væn/",
+            "exampleEn": "The van carries eight people.",
+            "examplePt": "A van transporta oito pessoas."
           },
           {
             "text": "Sidewalk",
@@ -11298,30 +7898,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Calçada",
             "simplePronunciation": "sáid-uók",
             "phonetic": "/ˈsaɪd.wɔːk/",
-            "exampleEn": "Pedestrians walk on the sidewalk.",
-            "examplePt": "Os pedestres caminham na calçada."
-          },
-          {
-            "text": "Van",
-            "emoji": "🚐",
-            "label": "Van",
-            "translationPt": "Van / Perua",
-            "simplePronunciation": "vén",
-            "phonetic": "/væn/",
-            "exampleEn": "The school van picks up the kids.",
-            "examplePt": "A van escolar busca as crianças."
+            "exampleEn": "Walk on the sidewalk.",
+            "examplePt": "Caminhe na calçada."
           }
         ],
         "options": [
-          "Crosswalk",
-          "Corner",
-          "Sidewalk",
-          "Van"
+          "Helicopter",
+          "Seat",
+          "Van",
+          "Sidewalk"
         ],
         "correctAnswer": "Van",
-        "contextSentence": "The school van picks up the kids.",
-        "contextSentencePt": "A van escolar busca as crianças.",
-        "explanation": "Exemplo: \"The school van picks up the kids.\" — A van escolar busca as crianças.",
+        "contextSentence": "The van carries eight people.",
+        "contextSentencePt": "A van transporta oito pessoas.",
+        "explanation": "Exemplo: \"The van carries eight people.\" — A van transporta oito pessoas.",
         "phoneticHint": "\"vén\" • /væn/",
         "skillCategory": "listening"
       },
@@ -11333,24 +7923,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚑",
         "visualOptions": [
           {
-            "text": "Van",
-            "emoji": "🚐",
-            "label": "Van",
-            "translationPt": "Van / Perua",
-            "simplePronunciation": "vén",
-            "phonetic": "/væn/",
-            "exampleEn": "The school van picks up the kids.",
-            "examplePt": "A van escolar busca as crianças."
-          },
-          {
-            "text": "Helicopter",
-            "emoji": "🚁",
-            "label": "Helicopter",
-            "translationPt": "Helicóptero",
-            "simplePronunciation": "ré-li-cóp-ter",
-            "phonetic": "/ˈhel.ɪˌkɑːp.tər/",
-            "exampleEn": "The helicopter landed on the roof.",
-            "examplePt": "O helicóptero pousou no topo do prédio."
+            "text": "Engine",
+            "emoji": "⚙️",
+            "label": "Engine",
+            "translationPt": "Motor",
+            "simplePronunciation": "én-djin",
+            "phonetic": "/ˈen.dʒɪn/",
+            "exampleEn": "Start the car engine.",
+            "examplePt": "Ligue o motor do carro."
           },
           {
             "text": "Ambulance",
@@ -11363,21 +7943,31 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Dê passagem para a ambulância."
           },
           {
-            "text": "Seat",
-            "emoji": "💺",
-            "label": "Seat",
-            "translationPt": "Assento / Banco",
-            "simplePronunciation": "sít",
-            "phonetic": "/siːt/",
-            "exampleEn": "Please take a seat on the train.",
-            "examplePt": "Por favor, sente-se no banco do trem."
+            "text": "Helmet",
+            "emoji": "⛑️",
+            "label": "Helmet",
+            "translationPt": "Capacete",
+            "simplePronunciation": "rél-met",
+            "phonetic": "/ˈhel.mət/",
+            "exampleEn": "Always wear a safety helmet.",
+            "examplePt": "Use sempre um capacete de segurança."
+          },
+          {
+            "text": "Crosswalk",
+            "emoji": "🚸",
+            "label": "Crosswalk",
+            "translationPt": "Faixa de pedestres",
+            "simplePronunciation": "crós-uók",
+            "phonetic": "/ˈkrɔːs.wɔːk/",
+            "exampleEn": "Cross at the crosswalk.",
+            "examplePt": "Atravesse na faixa de pedestres."
           }
         ],
         "options": [
-          "Van",
-          "Helicopter",
+          "Engine",
           "Ambulance",
-          "Seat"
+          "Helmet",
+          "Crosswalk"
         ],
         "correctAnswer": "Ambulance",
         "contextSentence": "Make way for the ambulance.",
@@ -11394,56 +7984,56 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "💺",
         "visualOptions": [
           {
+            "text": "Sidewalk",
+            "emoji": "🚶",
+            "label": "Sidewalk",
+            "translationPt": "Calçada",
+            "simplePronunciation": "sáid-uók",
+            "phonetic": "/ˈsaɪd.wɔːk/",
+            "exampleEn": "Walk on the sidewalk.",
+            "examplePt": "Caminhe na calçada."
+          },
+          {
+            "text": "Van",
+            "emoji": "🚐",
+            "label": "Van",
+            "translationPt": "Van",
+            "simplePronunciation": "vén",
+            "phonetic": "/væn/",
+            "exampleEn": "The van carries eight people.",
+            "examplePt": "A van transporta oito pessoas."
+          },
+          {
+            "text": "Helicopter",
+            "emoji": "🚁",
+            "label": "Helicopter",
+            "translationPt": "Helicóptero",
+            "simplePronunciation": "ré-li-cóp-ter",
+            "phonetic": "/ˈhel.ɪˌkɑːp.tər/",
+            "exampleEn": "The helicopter flies over the city.",
+            "examplePt": "O helicóptero sobrevoa a cidade."
+          },
+          {
             "text": "Seat",
             "emoji": "💺",
             "label": "Seat",
             "translationPt": "Assento / Banco",
             "simplePronunciation": "sít",
             "phonetic": "/siːt/",
-            "exampleEn": "Please take a seat on the train.",
-            "examplePt": "Por favor, sente-se no banco do trem."
-          },
-          {
-            "text": "Park",
-            "emoji": "🅿️",
-            "label": "Park",
-            "translationPt": "Estacionamento / Parque",
-            "simplePronunciation": "párk",
-            "phonetic": "/pɑːrk/",
-            "exampleEn": "Where can I park the car?",
-            "examplePt": "Onde posso estacionar o carro?"
-          },
-          {
-            "text": "Sign",
-            "emoji": "🛑",
-            "label": "Sign",
-            "translationPt": "Placa de trânsito",
-            "simplePronunciation": "sáin",
-            "phonetic": "/saɪn/",
-            "exampleEn": "Read the road sign ahead.",
-            "examplePt": "Leia a placa de trânsito à frente."
-          },
-          {
-            "text": "Engine",
-            "emoji": "⚙️",
-            "label": "Engine",
-            "translationPt": "Motor",
-            "simplePronunciation": "én-djin",
-            "phonetic": "/ˈen.dʒɪn/",
-            "exampleEn": "Start the car engine.",
-            "examplePt": "Ligue o motor do carro."
+            "exampleEn": "Take a seat on the train.",
+            "examplePt": "Sente-se no banco do trem."
           }
         ],
         "options": [
-          "Seat",
-          "Park",
-          "Sign",
-          "Engine"
+          "Sidewalk",
+          "Van",
+          "Helicopter",
+          "Seat"
         ],
         "correctAnswer": "Seat",
-        "contextSentence": "Please take a seat on the train.",
-        "contextSentencePt": "Por favor, sente-se no banco do trem.",
-        "explanation": "Exemplo: \"Please take a seat on the train.\" — Por favor, sente-se no banco do trem.",
+        "contextSentence": "Take a seat on the train.",
+        "contextSentencePt": "Sente-se no banco do trem.",
+        "explanation": "Exemplo: \"Take a seat on the train.\" — Sente-se no banco do trem.",
         "phoneticHint": "\"sít\" • /siːt/",
         "skillCategory": "vocabulary"
       },
@@ -11455,16 +8045,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⛑️",
         "visualOptions": [
           {
-            "text": "Ambulance",
-            "emoji": "🚑",
-            "label": "Ambulance",
-            "translationPt": "Ambulância",
-            "simplePronunciation": "ém-biu-lans",
-            "phonetic": "/ˈæm.bjə.ləns/",
-            "exampleEn": "Make way for the ambulance.",
-            "examplePt": "Dê passagem para a ambulância."
-          },
-          {
             "text": "Helmet",
             "emoji": "⛑️",
             "label": "Helmet",
@@ -11475,31 +8055,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Use sempre um capacete de segurança."
           },
           {
+            "text": "Ambulance",
+            "emoji": "🚑",
+            "label": "Ambulance",
+            "translationPt": "Ambulância",
+            "simplePronunciation": "ém-biu-lans",
+            "phonetic": "/ˈæm.bjə.ləns/",
+            "exampleEn": "Make way for the ambulance.",
+            "examplePt": "Dê passagem para a ambulância."
+          },
+          {
+            "text": "Engine",
+            "emoji": "⚙️",
+            "label": "Engine",
+            "translationPt": "Motor",
+            "simplePronunciation": "én-djin",
+            "phonetic": "/ˈen.dʒɪn/",
+            "exampleEn": "Start the car engine.",
+            "examplePt": "Ligue o motor do carro."
+          },
+          {
             "text": "Crosswalk",
             "emoji": "🚸",
             "label": "Crosswalk",
             "translationPt": "Faixa de pedestres",
             "simplePronunciation": "crós-uók",
             "phonetic": "/ˈkrɔːs.wɔːk/",
-            "exampleEn": "Cross the avenue at the crosswalk.",
-            "examplePt": "Atravesse a avenida na faixa de pedestres."
-          },
-          {
-            "text": "Fuel",
-            "emoji": "⛽",
-            "label": "Fuel",
-            "translationPt": "Combustível / Gasolina",
-            "simplePronunciation": "fiú-el",
-            "phonetic": "/ˈfjuː.əl/",
-            "exampleEn": "Stop to put fuel in the car.",
-            "examplePt": "Pare para colocar combustível no carro."
+            "exampleEn": "Cross at the crosswalk.",
+            "examplePt": "Atravesse na faixa de pedestres."
           }
         ],
         "options": [
-          "Ambulance",
           "Helmet",
-          "Crosswalk",
-          "Fuel"
+          "Ambulance",
+          "Engine",
+          "Crosswalk"
         ],
         "correctAnswer": "Helmet",
         "contextSentence": "Always wear a safety helmet.",
@@ -11516,14 +8106,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚶",
         "visualOptions": [
           {
-            "text": "Corner",
-            "emoji": "🏙️",
-            "label": "Corner",
-            "translationPt": "Esquina",
-            "simplePronunciation": "cór-ner",
-            "phonetic": "/ˈkɔːr.nər/",
-            "exampleEn": "The bakery is on the street corner.",
-            "examplePt": "A padaria fica na esquina da rua."
+            "text": "Van",
+            "emoji": "🚐",
+            "label": "Van",
+            "translationPt": "Van",
+            "simplePronunciation": "vén",
+            "phonetic": "/væn/",
+            "exampleEn": "The van carries eight people.",
+            "examplePt": "A van transporta oito pessoas."
           },
           {
             "text": "Sidewalk",
@@ -11532,8 +8122,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Calçada",
             "simplePronunciation": "sáid-uók",
             "phonetic": "/ˈsaɪd.wɔːk/",
-            "exampleEn": "Pedestrians walk on the sidewalk.",
-            "examplePt": "Os pedestres caminham na calçada."
+            "exampleEn": "Walk on the sidewalk.",
+            "examplePt": "Caminhe na calçada."
+          },
+          {
+            "text": "Helicopter",
+            "emoji": "🚁",
+            "label": "Helicopter",
+            "translationPt": "Helicóptero",
+            "simplePronunciation": "ré-li-cóp-ter",
+            "phonetic": "/ˈhel.ɪˌkɑːp.tər/",
+            "exampleEn": "The helicopter flies over the city.",
+            "examplePt": "O helicóptero sobrevoa a cidade."
           },
           {
             "text": "Seat",
@@ -11542,30 +8142,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Assento / Banco",
             "simplePronunciation": "sít",
             "phonetic": "/siːt/",
-            "exampleEn": "Please take a seat on the train.",
-            "examplePt": "Por favor, sente-se no banco do trem."
-          },
-          {
-            "text": "Van",
-            "emoji": "🚐",
-            "label": "Van",
-            "translationPt": "Van / Perua",
-            "simplePronunciation": "vén",
-            "phonetic": "/væn/",
-            "exampleEn": "The school van picks up the kids.",
-            "examplePt": "A van escolar busca as crianças."
+            "exampleEn": "Take a seat on the train.",
+            "examplePt": "Sente-se no banco do trem."
           }
         ],
         "options": [
-          "Corner",
+          "Van",
           "Sidewalk",
-          "Seat",
-          "Van"
+          "Helicopter",
+          "Seat"
         ],
         "correctAnswer": "Sidewalk",
-        "contextSentence": "Pedestrians walk on the sidewalk.",
-        "contextSentencePt": "Os pedestres caminham na calçada.",
-        "explanation": "Exemplo: \"Pedestrians walk on the sidewalk.\" — Os pedestres caminham na calçada.",
+        "contextSentence": "Walk on the sidewalk.",
+        "contextSentencePt": "Caminhe na calçada.",
+        "explanation": "Exemplo: \"Walk on the sidewalk.\" — Caminhe na calçada.",
         "phoneticHint": "\"sáid-uók\" • /ˈsaɪd.wɔːk/",
         "skillCategory": "vocabulary"
       },
@@ -11577,34 +8167,34 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚸",
         "visualOptions": [
           {
-            "text": "Park",
-            "emoji": "🅿️",
-            "label": "Park",
-            "translationPt": "Estacionamento / Parque",
-            "simplePronunciation": "párk",
-            "phonetic": "/pɑːrk/",
-            "exampleEn": "Where can I park the car?",
-            "examplePt": "Onde posso estacionar o carro?"
+            "text": "Van",
+            "emoji": "🚐",
+            "label": "Van",
+            "translationPt": "Van",
+            "simplePronunciation": "vén",
+            "phonetic": "/væn/",
+            "exampleEn": "The van carries eight people.",
+            "examplePt": "A van transporta oito pessoas."
           },
           {
-            "text": "Helicopter",
-            "emoji": "🚁",
-            "label": "Helicopter",
-            "translationPt": "Helicóptero",
-            "simplePronunciation": "ré-li-cóp-ter",
-            "phonetic": "/ˈhel.ɪˌkɑːp.tər/",
-            "exampleEn": "The helicopter landed on the roof.",
-            "examplePt": "O helicóptero pousou no topo do prédio."
+            "text": "Ambulance",
+            "emoji": "🚑",
+            "label": "Ambulance",
+            "translationPt": "Ambulância",
+            "simplePronunciation": "ém-biu-lans",
+            "phonetic": "/ˈæm.bjə.ləns/",
+            "exampleEn": "Make way for the ambulance.",
+            "examplePt": "Dê passagem para a ambulância."
           },
           {
-            "text": "Sign",
-            "emoji": "🛑",
-            "label": "Sign",
-            "translationPt": "Placa de trânsito",
-            "simplePronunciation": "sáin",
-            "phonetic": "/saɪn/",
-            "exampleEn": "Read the road sign ahead.",
-            "examplePt": "Leia a placa de trânsito à frente."
+            "text": "Helmet",
+            "emoji": "⛑️",
+            "label": "Helmet",
+            "translationPt": "Capacete",
+            "simplePronunciation": "rél-met",
+            "phonetic": "/ˈhel.mət/",
+            "exampleEn": "Always wear a safety helmet.",
+            "examplePt": "Use sempre um capacete de segurança."
           },
           {
             "text": "Crosswalk",
@@ -11613,20 +8203,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Faixa de pedestres",
             "simplePronunciation": "crós-uók",
             "phonetic": "/ˈkrɔːs.wɔːk/",
-            "exampleEn": "Cross the avenue at the crosswalk.",
-            "examplePt": "Atravesse a avenida na faixa de pedestres."
+            "exampleEn": "Cross at the crosswalk.",
+            "examplePt": "Atravesse na faixa de pedestres."
           }
         ],
         "options": [
-          "Park",
-          "Helicopter",
-          "Sign",
+          "Van",
+          "Ambulance",
+          "Helmet",
           "Crosswalk"
         ],
         "correctAnswer": "Crosswalk",
-        "contextSentence": "Cross the avenue at the crosswalk.",
-        "contextSentencePt": "Atravesse a avenida na faixa de pedestres.",
-        "explanation": "Exemplo: \"Cross the avenue at the crosswalk.\" — Atravesse a avenida na faixa de pedestres.",
+        "contextSentence": "Cross at the crosswalk.",
+        "contextSentencePt": "Atravesse na faixa de pedestres.",
+        "explanation": "Exemplo: \"Cross at the crosswalk.\" — Atravesse na faixa de pedestres.",
         "phoneticHint": "\"crós-uók\" • /ˈkrɔːs.wɔːk/",
         "skillCategory": "vocabulary"
       },
@@ -11634,90 +8224,9 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p19-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Corner",
-        "visualEmoji": "🏙️",
+        "audioPhrase": "Engine",
+        "visualEmoji": "⚙️",
         "visualOptions": [
-          {
-            "text": "Sidewalk",
-            "emoji": "🚶",
-            "label": "Sidewalk",
-            "translationPt": "Calçada",
-            "simplePronunciation": "sáid-uók",
-            "phonetic": "/ˈsaɪd.wɔːk/",
-            "exampleEn": "Pedestrians walk on the sidewalk.",
-            "examplePt": "Os pedestres caminham na calçada."
-          },
-          {
-            "text": "Helmet",
-            "emoji": "⛑️",
-            "label": "Helmet",
-            "translationPt": "Capacete",
-            "simplePronunciation": "rél-met",
-            "phonetic": "/ˈhel.mət/",
-            "exampleEn": "Always wear a safety helmet.",
-            "examplePt": "Use sempre um capacete de segurança."
-          },
-          {
-            "text": "Corner",
-            "emoji": "🏙️",
-            "label": "Corner",
-            "translationPt": "Esquina",
-            "simplePronunciation": "cór-ner",
-            "phonetic": "/ˈkɔːr.nər/",
-            "exampleEn": "The bakery is on the street corner.",
-            "examplePt": "A padaria fica na esquina da rua."
-          },
-          {
-            "text": "Ambulance",
-            "emoji": "🚑",
-            "label": "Ambulance",
-            "translationPt": "Ambulância",
-            "simplePronunciation": "ém-biu-lans",
-            "phonetic": "/ˈæm.bjə.ləns/",
-            "exampleEn": "Make way for the ambulance.",
-            "examplePt": "Dê passagem para a ambulância."
-          }
-        ],
-        "options": [
-          "Sidewalk",
-          "Helmet",
-          "Corner",
-          "Ambulance"
-        ],
-        "correctAnswer": "Corner",
-        "contextSentence": "The bakery is on the street corner.",
-        "contextSentencePt": "A padaria fica na esquina da rua.",
-        "explanation": "Exemplo: \"The bakery is on the street corner.\" — A padaria fica na esquina da rua.",
-        "phoneticHint": "\"cór-ner\" • /ˈkɔːr.nər/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p19-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Fuel",
-        "visualEmoji": "⛽",
-        "visualOptions": [
-          {
-            "text": "Fuel",
-            "emoji": "⛽",
-            "label": "Fuel",
-            "translationPt": "Combustível / Gasolina",
-            "simplePronunciation": "fiú-el",
-            "phonetic": "/ˈfjuː.əl/",
-            "exampleEn": "Stop to put fuel in the car.",
-            "examplePt": "Pare para colocar combustível no carro."
-          },
-          {
-            "text": "Helmet",
-            "emoji": "⛑️",
-            "label": "Helmet",
-            "translationPt": "Capacete",
-            "simplePronunciation": "rél-met",
-            "phonetic": "/ˈhel.mət/",
-            "exampleEn": "Always wear a safety helmet.",
-            "examplePt": "Use sempre um capacete de segurança."
-          },
           {
             "text": "Helicopter",
             "emoji": "🚁",
@@ -11725,59 +8234,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Helicóptero",
             "simplePronunciation": "ré-li-cóp-ter",
             "phonetic": "/ˈhel.ɪˌkɑːp.tər/",
-            "exampleEn": "The helicopter landed on the roof.",
-            "examplePt": "O helicóptero pousou no topo do prédio."
+            "exampleEn": "The helicopter flies over the city.",
+            "examplePt": "O helicóptero sobrevoa a cidade."
           },
           {
-            "text": "Ambulance",
-            "emoji": "🚑",
-            "label": "Ambulance",
-            "translationPt": "Ambulância",
-            "simplePronunciation": "ém-biu-lans",
-            "phonetic": "/ˈæm.bjə.ləns/",
-            "exampleEn": "Make way for the ambulance.",
-            "examplePt": "Dê passagem para a ambulância."
-          }
-        ],
-        "options": [
-          "Fuel",
-          "Helmet",
-          "Helicopter",
-          "Ambulance"
-        ],
-        "correctAnswer": "Fuel",
-        "contextSentence": "Stop to put fuel in the car.",
-        "contextSentencePt": "Pare para colocar combustível no carro.",
-        "explanation": "Exemplo: \"Stop to put fuel in the car.\" — Pare para colocar combustível no carro.",
-        "phoneticHint": "\"fiú-el\" • /ˈfjuː.əl/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p19-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Engine",
-        "visualEmoji": "⚙️",
-        "visualOptions": [
-          {
-            "text": "Seat",
-            "emoji": "💺",
-            "label": "Seat",
-            "translationPt": "Assento / Banco",
-            "simplePronunciation": "sít",
-            "phonetic": "/siːt/",
-            "exampleEn": "Please take a seat on the train.",
-            "examplePt": "Por favor, sente-se no banco do trem."
-          },
-          {
-            "text": "Crosswalk",
-            "emoji": "🚸",
-            "label": "Crosswalk",
-            "translationPt": "Faixa de pedestres",
-            "simplePronunciation": "crós-uók",
-            "phonetic": "/ˈkrɔːs.wɔːk/",
-            "exampleEn": "Cross the avenue at the crosswalk.",
-            "examplePt": "Atravesse a avenida na faixa de pedestres."
+            "text": "Sidewalk",
+            "emoji": "🚶",
+            "label": "Sidewalk",
+            "translationPt": "Calçada",
+            "simplePronunciation": "sáid-uók",
+            "phonetic": "/ˈsaɪd.wɔːk/",
+            "exampleEn": "Walk on the sidewalk.",
+            "examplePt": "Caminhe na calçada."
           },
           {
             "text": "Engine",
@@ -11790,150 +8258,28 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Ligue o motor do carro."
           },
           {
-            "text": "Van",
-            "emoji": "🚐",
-            "label": "Van",
-            "translationPt": "Van / Perua",
-            "simplePronunciation": "vén",
-            "phonetic": "/væn/",
-            "exampleEn": "The school van picks up the kids.",
-            "examplePt": "A van escolar busca as crianças."
+            "text": "Seat",
+            "emoji": "💺",
+            "label": "Seat",
+            "translationPt": "Assento / Banco",
+            "simplePronunciation": "sít",
+            "phonetic": "/siːt/",
+            "exampleEn": "Take a seat on the train.",
+            "examplePt": "Sente-se no banco do trem."
           }
         ],
         "options": [
-          "Seat",
-          "Crosswalk",
+          "Helicopter",
+          "Sidewalk",
           "Engine",
-          "Van"
+          "Seat"
         ],
         "correctAnswer": "Engine",
         "contextSentence": "Start the car engine.",
         "contextSentencePt": "Ligue o motor do carro.",
         "explanation": "Exemplo: \"Start the car engine.\" — Ligue o motor do carro.",
         "phoneticHint": "\"én-djin\" • /ˈen.dʒɪn/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p19-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Sign",
-        "visualEmoji": "🛑",
-        "visualOptions": [
-          {
-            "text": "Corner",
-            "emoji": "🏙️",
-            "label": "Corner",
-            "translationPt": "Esquina",
-            "simplePronunciation": "cór-ner",
-            "phonetic": "/ˈkɔːr.nər/",
-            "exampleEn": "The bakery is on the street corner.",
-            "examplePt": "A padaria fica na esquina da rua."
-          },
-          {
-            "text": "Sign",
-            "emoji": "🛑",
-            "label": "Sign",
-            "translationPt": "Placa de trânsito",
-            "simplePronunciation": "sáin",
-            "phonetic": "/saɪn/",
-            "exampleEn": "Read the road sign ahead.",
-            "examplePt": "Leia a placa de trânsito à frente."
-          },
-          {
-            "text": "Fuel",
-            "emoji": "⛽",
-            "label": "Fuel",
-            "translationPt": "Combustível / Gasolina",
-            "simplePronunciation": "fiú-el",
-            "phonetic": "/ˈfjuː.əl/",
-            "exampleEn": "Stop to put fuel in the car.",
-            "examplePt": "Pare para colocar combustível no carro."
-          },
-          {
-            "text": "Sidewalk",
-            "emoji": "🚶",
-            "label": "Sidewalk",
-            "translationPt": "Calçada",
-            "simplePronunciation": "sáid-uók",
-            "phonetic": "/ˈsaɪd.wɔːk/",
-            "exampleEn": "Pedestrians walk on the sidewalk.",
-            "examplePt": "Os pedestres caminham na calçada."
-          }
-        ],
-        "options": [
-          "Corner",
-          "Sign",
-          "Fuel",
-          "Sidewalk"
-        ],
-        "correctAnswer": "Sign",
-        "contextSentence": "Read the road sign ahead.",
-        "contextSentencePt": "Leia a placa de trânsito à frente.",
-        "explanation": "Exemplo: \"Read the road sign ahead.\" — Leia a placa de trânsito à frente.",
-        "phoneticHint": "\"sáin\" • /saɪn/",
         "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p19-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Park",
-        "visualEmoji": "🅿️",
-        "visualOptions": [
-          {
-            "text": "Helmet",
-            "emoji": "⛑️",
-            "label": "Helmet",
-            "translationPt": "Capacete",
-            "simplePronunciation": "rél-met",
-            "phonetic": "/ˈhel.mət/",
-            "exampleEn": "Always wear a safety helmet.",
-            "examplePt": "Use sempre um capacete de segurança."
-          },
-          {
-            "text": "Helicopter",
-            "emoji": "🚁",
-            "label": "Helicopter",
-            "translationPt": "Helicóptero",
-            "simplePronunciation": "ré-li-cóp-ter",
-            "phonetic": "/ˈhel.ɪˌkɑːp.tər/",
-            "exampleEn": "The helicopter landed on the roof.",
-            "examplePt": "O helicóptero pousou no topo do prédio."
-          },
-          {
-            "text": "Ambulance",
-            "emoji": "🚑",
-            "label": "Ambulance",
-            "translationPt": "Ambulância",
-            "simplePronunciation": "ém-biu-lans",
-            "phonetic": "/ˈæm.bjə.ləns/",
-            "exampleEn": "Make way for the ambulance.",
-            "examplePt": "Dê passagem para a ambulância."
-          },
-          {
-            "text": "Park",
-            "emoji": "🅿️",
-            "label": "Park",
-            "translationPt": "Estacionamento / Parque",
-            "simplePronunciation": "párk",
-            "phonetic": "/pɑːrk/",
-            "exampleEn": "Where can I park the car?",
-            "examplePt": "Onde posso estacionar o carro?"
-          }
-        ],
-        "options": [
-          "Helmet",
-          "Helicopter",
-          "Ambulance",
-          "Park"
-        ],
-        "correctAnswer": "Park",
-        "contextSentence": "Where can I park the car?",
-        "contextSentencePt": "Onde posso estacionar o carro?",
-        "explanation": "Exemplo: \"Where can I park the car?\" — Onde posso estacionar o carro?",
-        "phoneticHint": "\"párk\" • /pɑːrk/",
-        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -11941,15 +8287,18 @@ export const WORLD_0_PHASES: Phase[] = [
     "id": "w0-p20",
     "worldId": 0,
     "phaseNumber": 20,
-    "title": "Lição de Pronomes V • Prática Geral I (Pessoais a Demonstrativos)",
-    "subtitle": "Módulo de Pronomes 5/6 (Após 15 de Vocabulário) • Frases do Dia a Dia + Voz da Professora",
-    "pedagogicalObjective": "Praticar frases reais do cotidiano combinando Pronomes Pessoais, de Tratamento, Possessivos e Demonstrativos com o vocabulário aprendido.",
+    "themeId": "pronouns",
+    "themeTitle": "Lição de Pronomes",
+    "frequencyLevel": "1 a cada 3 Módulos de Vocabulário",
+    "title": "Lição de Pronomes V • Aplicando Pessoais & Tratamento",
+    "subtitle": "Módulo de Pronomes 5/8 (Após 15 de Vocabulário) • Frases Práticas + Voz da Professora",
+    "pedagogicalObjective": "Praticar frases completas do cotidiano aplicando os Pronomes Pessoais e de Tratamento junto ao vocabulário estudado.",
     "type": "chest",
     "icon": "star",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Bem-vindo à 5ª Lição Exclusiva de Pronomes (após 15 módulos de vocabulário)!",
-      "Agora vamos associar frases curtas e práticas do dia a dia usando os Pronomes Pessoais, Possessivos e Demonstrativos."
+      "5ª Lição Exclusiva de Pronomes (após 15 módulos de vocabulário).",
+      "Aplicação prática dos Pronomes Pessoais (I, He, She, It, We, They) e de Tratamento (Mr., Mrs., Sir, Ma'am) em frases reais do dia a dia."
     ],
     "xpReward": 70,
     "gemsReward": 30,
@@ -11957,10 +8306,10 @@ export const WORLD_0_PHASES: Phase[] = [
       {
         "id": "w0-p20-pron-1",
         "type": "pair-match",
-        "conceptTitle": "Prática • Pronomes Pessoais em Frases Curtas",
-        "conceptHeader": "Vamos ver como os Pronomes Pessoais ficam lindos junto das palavras que aprendemos? Toque no inglês para ouvir e conecte ao significado!",
+        "conceptTitle": "Aplicação • Pronomes Pessoais em Frases Completas",
+        "conceptHeader": "Observe como os Pronomes Pessoais iniciam as frases no dia a dia: \"I\" (Eu), \"He\" (Ele), \"She\" (Ela) e \"It\" (usado para objetos como a chave ou a porta). Toque na frase em inglês para ouvir a pronúncia e conecte à tradução.",
         "teacherAudioPt": "/audio/teacher/pronoun_1.wav",
-        "prompt": "🤝 Associe cada frase curta com Pronome Pessoal ao seu par:",
+        "prompt": "🤝 Associe cada frase com Pronome Pessoal à sua tradução:",
         "pairs": [
           {
             "id": "w0-p20-b1-p9",
@@ -11968,7 +8317,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🏠",
             "phonetic": "/aɪ æm æt hoʊm/",
             "pt": "Eu estou em casa",
-            "tipPt": "Isso! \"I\" = \"Eu\"!"
+            "tipPt": "Correto! \"I\" = \"Eu\"."
           },
           {
             "id": "w0-p20-b1-p10",
@@ -11976,7 +8325,7 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🚪",
             "phonetic": "/hiː ɪz æt ðə dɔːr/",
             "pt": "Ele está na porta",
-            "tipPt": "Muito bem! \"He\" = \"Ele\"!"
+            "tipPt": "Muito bem! \"He\" = \"Ele\"."
           },
           {
             "id": "w0-p20-b1-p11",
@@ -11984,64 +8333,64 @@ export const WORLD_0_PHASES: Phase[] = [
             "emoji": "🛋️",
             "phonetic": "/ʃiː ɪz ɑːn ðə ˈsoʊ.fə/",
             "pt": "Ela está no sofá",
-            "tipPt": "Perfeito! \"She\" = \"Ela\"!"
+            "tipPt": "Perfeito! \"She\" = \"Ela\"."
           },
           {
             "id": "w0-p20-b1-p12",
             "en": "It is a house key",
             "emoji": "🔑",
             "phonetic": "/ɪt ɪz ə haʊs kiː/",
-            "pt": "É uma chave de casa",
-            "tipPt": "Lindo! Para objetos como a chave usamos \"It\"!"
+            "pt": "É uma chave de casa (objeto = It)",
+            "tipPt": "Exato! Objetos no singular usam o pronome \"It\"."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "I am at home (Eu estou em casa), He is at the door (Ele está na porta), She is on the sofa (Ela está no sofá), It is a metal key (É uma chave de metal).",
+        "explanation": "I am at home (Eu estou em casa), He is at the door (Ele está na porta), She is on the sofa (Ela está no sofá), It is a house key (É uma chave de casa).",
         "skillCategory": "grammar"
       },
       {
         "id": "w0-p20-pron-2",
         "type": "pair-match",
-        "conceptTitle": "Prática • Pronomes Possessivos e Demonstrativos em Frases",
-        "conceptHeader": "Vamos combinar os Possessivos (My, Your, Our) e Demonstrativos (This, That, These, Those) com as palavras do nosso dia a dia!",
-        "teacherAudioPt": "/audio/teacher/pronoun_4.wav",
-        "prompt": "🤝 Conecte cada frase com Possessivo ou Demonstrativo à sua tradução:",
+        "conceptTitle": "Aplicação • Pronomes de Tratamento em Contexto",
+        "conceptHeader": "Em situações formais ou profissionais, combinamos cumprimentos com os Pronomes de Tratamento: \"Mr.\" antes de sobrenome masculino, \"Mrs.\" antes de sobrenome feminino, e \"Sir\" ou \"Ma'am\" no atendimento direto.",
+        "teacherAudioPt": "/audio/teacher/pronoun_2.wav",
+        "prompt": "🤝 Conecte cada frase formal em inglês ao seu significado em português:",
         "pairs": [
           {
-            "id": "w0-p20-b2-pd1",
-            "en": "This is my car",
-            "emoji": "🚗",
-            "phonetic": "/ðɪs ɪz maɪ kɑːr/",
-            "pt": "Este aqui é o meu carro",
-            "tipPt": "Excelente! \"This\" (este perto) + \"my\" (meu)!"
+            "id": "w0-p20-b2-pt1",
+            "en": "Good morning, Mr. Silva",
+            "emoji": "👨",
+            "phonetic": "/ɡʊd ˈmɔːr.nɪŋ ˈmɪs.tər ˈsɪl.və/",
+            "pt": "Bom dia, Senhor Silva",
+            "tipPt": "Correto! \"Mr.\" precede o nome ou sobrenome masculino."
           },
           {
-            "id": "w0-p20-b2-pd2",
-            "en": "That is your bus",
-            "emoji": "🚌",
-            "phonetic": "/ðæt ɪz jʊr bʌs/",
-            "pt": "Aquele lá longe é o seu ônibus",
-            "tipPt": "Perfeito! \"That\" (aquele longe) + \"your\" (seu)!"
+            "id": "w0-p20-b2-pt2",
+            "en": "Hello, Mrs. Costa",
+            "emoji": "👩",
+            "phonetic": "/həˈloʊ ˈmɪs.ɪz ˈkɑː.stə/",
+            "pt": "Olá, Senhora Costa",
+            "tipPt": "Exato! \"Mrs.\" precede o sobrenome de mulher casada."
           },
           {
-            "id": "w0-p20-b2-pd3",
-            "en": "These shoes are mine",
-            "emoji": "👟",
-            "phonetic": "/ðiːz ʃuːz ɑːr maɪn/",
-            "pt": "Estes sapatos aqui são meus",
-            "tipPt": "Muito bem! \"These\" (estes perto) + \"mine\" (meus)!"
+            "id": "w0-p20-b2-pt3",
+            "en": "Excuse me, Sir",
+            "emoji": "🎩",
+            "phonetic": "/ɪkˈskjuːz miː sɜːr/",
+            "pt": "Com licença, Senhor (sem citar o nome)",
+            "tipPt": "Perfeito! \"Sir\" é usado diretamente sem o nome."
           },
           {
-            "id": "w0-p20-b2-pd4",
-            "en": "Those are our bags",
-            "emoji": "👜",
-            "phonetic": "/ðoʊz ɑːr aʊər bæɡz/",
-            "pt": "Aquelas lá são as nossas bolsas",
-            "tipPt": "Lindo! \"Those\" (aquelas longe) + \"our\" (nossas)!"
+            "id": "w0-p20-b2-pt4",
+            "en": "Thank you, Ma'am",
+            "emoji": "🌸",
+            "phonetic": "/θæŋk juː mæm/",
+            "pt": "Obrigado(a), Senhora (sem citar o nome)",
+            "tipPt": "Excelente! \"Ma'am\" é o tratamento direto feminino."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "This is my car (Este é meu carro), That is your bus (Aquele é seu ônibus), These shoes are mine (Estes sapatos são meus), Those are our bags (Aquelas são nossas bolsas).",
+        "explanation": "Good morning, Mr. Silva (Bom dia, Sr. Silva), Hello, Mrs. Costa (Olá, Sra. Costa), Excuse me, Sir (Com licença, Senhor), Thank you, Ma'am (Obrigado, Senhora).",
         "skillCategory": "grammar"
       }
     ]
@@ -12051,17 +8400,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 21,
     "themeId": "transport",
-    "themeTitle": "Transporte",
-    "frequencyLevel": "Módulo 4 • Menos Comuns",
-    "title": "Transporte • Módulo 4: Menos Comuns & Específicas",
-    "subtitle": "Tema 4 (Nível 4/4) • 12 veículos e componentes específicos de transporte",
-    "pedagogicalObjective": "Conhecer meios de transporte e peças específicas: Scooter, Tractor, Ferry, Tram, Runway, Harbor, Anchor, Pedal, Brake, Horn, Bumper e Tunnel.",
+    "themeTitle": "Tema 4: Transporte",
+    "frequencyLevel": "Módulo 4 • Menos Comuns ou Específicas",
+    "title": "Transporte • Módulo 4: Menos Comuns",
+    "subtitle": "Tema: Transporte (4/4) • 8 veículos e peças específicas",
+    "pedagogicalObjective": "Conhecer 8 termos específicos de transporte: Scooter, Tractor, Ferry, Runway, Harbor, Anchor, Pedal e Brake.",
     "type": "lesson",
     "icon": "car",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 4 de Transporte aprendemos termos menos comuns: Scooter (\"scú-ter\" = Patinete/Scooter), Tractor (\"trék-tor\" = Trator), Ferry (\"fé-ri\" = Balsa), Tram (\"trém\" = Bonde), Runway (\"rân-uêi\" = Pista de pouso) e Harbor (\"rár-bor\" = Porto).",
-      "E completamos o Tema 4 com Anchor (\"én-cor\" = Âncora), Pedal (\"pé-dal\" = Pedal), Brake (\"brêik\" = Freio), Horn (\"rórn\" = Buzina), Bumper (\"bâm-per\" = Para-choque) e Tunnel (\"tâ-nel\" = Túnel)."
+      "Tema: Transporte — Módulo 4 (Palavras menos comuns ou específicas): embarcações, pistas e componentes mecânicos.",
+      "Palavras deste módulo (8): Scooter (\"scú-ter\" = Patinete/Scooter), Tractor (\"trék-tor\" = Trator), Ferry (\"fé-ri\" = Balsa), Runway (\"rân-uêi\" = Pista de pouso), Harbor (\"rár-bor\" = Porto), Anchor (\"én-cor\" = Âncora), Pedal (\"pé-dal\" = Pedal) e Brake (\"brêik\" = Freio)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -12074,24 +8423,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🛴",
         "visualOptions": [
           {
-            "text": "Brake",
-            "emoji": "🛑",
-            "label": "Brake",
-            "translationPt": "Freio",
-            "simplePronunciation": "brêik",
-            "phonetic": "/breɪk/",
-            "exampleEn": "Step on the brake to stop the car.",
-            "examplePt": "Pise no freio para parar o carro."
-          },
-          {
-            "text": "Horn",
-            "emoji": "📯",
-            "label": "Horn",
-            "translationPt": "Buzina",
-            "simplePronunciation": "rórn",
-            "phonetic": "/hɔːrn/",
-            "exampleEn": "Do not honk the car horn at night.",
-            "examplePt": "Não toque a buzina do carro à noite."
+            "text": "Runway",
+            "emoji": "🛫",
+            "label": "Runway",
+            "translationPt": "Pista de pouso",
+            "simplePronunciation": "rân-uêi",
+            "phonetic": "/ˈrʌn.weɪ/",
+            "exampleEn": "The plane is on the runway.",
+            "examplePt": "O avião está na pista de pouso."
           },
           {
             "text": "Scooter",
@@ -12104,20 +8443,30 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Ele anda de patinete elétrico."
           },
           {
+            "text": "Brake",
+            "emoji": "🛑",
+            "label": "Brake",
+            "translationPt": "Freio",
+            "simplePronunciation": "brêik",
+            "phonetic": "/breɪk/",
+            "exampleEn": "Step on the brake to stop.",
+            "examplePt": "Pise no freio para parar."
+          },
+          {
             "text": "Harbor",
             "emoji": "⚓",
             "label": "Harbor",
             "translationPt": "Porto",
             "simplePronunciation": "rár-bor",
             "phonetic": "/ˈhɑːr.bər/",
-            "exampleEn": "Many boats are anchored in the harbor.",
-            "examplePt": "Muitos barcos estão ancorados no porto."
+            "exampleEn": "Boats are in the harbor.",
+            "examplePt": "Os barcos estão no porto."
           }
         ],
         "options": [
-          "Brake",
-          "Horn",
+          "Runway",
           "Scooter",
+          "Brake",
           "Harbor"
         ],
         "correctAnswer": "Scooter",
@@ -12135,56 +8484,56 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🚜",
         "visualOptions": [
           {
+            "text": "Ferry",
+            "emoji": "⛴️",
+            "label": "Ferry",
+            "translationPt": "Balsa",
+            "simplePronunciation": "fé-ri",
+            "phonetic": "/ˈfer.i/",
+            "exampleEn": "We crossed the bay on a ferry.",
+            "examplePt": "Atravessamos a baía em uma balsa."
+          },
+          {
+            "text": "Scooter",
+            "emoji": "🛴",
+            "label": "Scooter",
+            "translationPt": "Patinete / Scooter",
+            "simplePronunciation": "scú-ter",
+            "phonetic": "/ˈskuː.tər/",
+            "exampleEn": "He rides an electric scooter.",
+            "examplePt": "Ele anda de patinete elétrico."
+          },
+          {
+            "text": "Pedal",
+            "emoji": "🚲",
+            "label": "Pedal",
+            "translationPt": "Pedal",
+            "simplePronunciation": "pé-dal",
+            "phonetic": "/ˈped.əl/",
+            "exampleEn": "Push the bicycle pedal.",
+            "examplePt": "Empurre o pedal da bicicleta."
+          },
+          {
             "text": "Tractor",
             "emoji": "🚜",
             "label": "Tractor",
             "translationPt": "Trator",
             "simplePronunciation": "trék-tor",
             "phonetic": "/ˈtræk.tər/",
-            "exampleEn": "The farmer drives a green tractor.",
-            "examplePt": "O fazendeiro dirige um trator verde."
-          },
-          {
-            "text": "Tunnel",
-            "emoji": "🚇",
-            "label": "Tunnel",
-            "translationPt": "Túnel",
-            "simplePronunciation": "tâ-nel",
-            "phonetic": "/ˈtʌn.əl/",
-            "exampleEn": "Turn on the headlights inside the tunnel.",
-            "examplePt": "Acenda os faróis dentro do túnel."
-          },
-          {
-            "text": "Bumper",
-            "emoji": "🚗",
-            "label": "Bumper",
-            "translationPt": "Para-choque",
-            "simplePronunciation": "bâm-per",
-            "phonetic": "/ˈbʌm.pər/",
-            "exampleEn": "The front bumper protects the car.",
-            "examplePt": "O para-choque dianteiro protege o carro."
-          },
-          {
-            "text": "Runway",
-            "emoji": "🛫",
-            "label": "Runway",
-            "translationPt": "Pista de pouso",
-            "simplePronunciation": "rân-uêi",
-            "phonetic": "/ˈrʌn.weɪ/",
-            "exampleEn": "The plane accelerated on the runway.",
-            "examplePt": "O avião acelerou na pista de pouso."
+            "exampleEn": "The farmer drives a tractor.",
+            "examplePt": "O fazendeiro dirige um trator."
           }
         ],
         "options": [
-          "Tractor",
-          "Tunnel",
-          "Bumper",
-          "Runway"
+          "Ferry",
+          "Scooter",
+          "Pedal",
+          "Tractor"
         ],
         "correctAnswer": "Tractor",
-        "contextSentence": "The farmer drives a green tractor.",
-        "contextSentencePt": "O fazendeiro dirige um trator verde.",
-        "explanation": "Exemplo: \"The farmer drives a green tractor.\" — O fazendeiro dirige um trator verde.",
+        "contextSentence": "The farmer drives a tractor.",
+        "contextSentencePt": "O fazendeiro dirige um trator.",
+        "explanation": "Exemplo: \"The farmer drives a tractor.\" — O fazendeiro dirige um trator.",
         "phoneticHint": "\"trék-tor\" • /ˈtræk.tər/",
         "skillCategory": "listening"
       },
@@ -12196,16 +8545,6 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "⛴️",
         "visualOptions": [
           {
-            "text": "Tractor",
-            "emoji": "🚜",
-            "label": "Tractor",
-            "translationPt": "Trator",
-            "simplePronunciation": "trék-tor",
-            "phonetic": "/ˈtræk.tər/",
-            "exampleEn": "The farmer drives a green tractor.",
-            "examplePt": "O fazendeiro dirige um trator verde."
-          },
-          {
             "text": "Ferry",
             "emoji": "⛴️",
             "label": "Ferry",
@@ -12216,31 +8555,41 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Atravessamos a baía em uma balsa."
           },
           {
+            "text": "Harbor",
+            "emoji": "⚓",
+            "label": "Harbor",
+            "translationPt": "Porto",
+            "simplePronunciation": "rár-bor",
+            "phonetic": "/ˈhɑːr.bər/",
+            "exampleEn": "Boats are in the harbor.",
+            "examplePt": "Os barcos estão no porto."
+          },
+          {
             "text": "Anchor",
             "emoji": "⚓",
             "label": "Anchor",
             "translationPt": "Âncora",
             "simplePronunciation": "én-cor",
             "phonetic": "/ˈæŋ.kər/",
-            "exampleEn": "The ship dropped its heavy anchor.",
-            "examplePt": "O navio lançou sua âncora pesada."
+            "exampleEn": "The ship dropped its anchor.",
+            "examplePt": "O navio lançou a âncora."
           },
           {
-            "text": "Tram",
-            "emoji": "🚋",
-            "label": "Tram",
-            "translationPt": "Bonde / VLT",
-            "simplePronunciation": "trém",
-            "phonetic": "/træm/",
-            "exampleEn": "The electric tram runs on rails.",
-            "examplePt": "O bonde elétrico anda sobre trilhos."
+            "text": "Brake",
+            "emoji": "🛑",
+            "label": "Brake",
+            "translationPt": "Freio",
+            "simplePronunciation": "brêik",
+            "phonetic": "/breɪk/",
+            "exampleEn": "Step on the brake to stop.",
+            "examplePt": "Pise no freio para parar."
           }
         ],
         "options": [
-          "Tractor",
           "Ferry",
+          "Harbor",
           "Anchor",
-          "Tram"
+          "Brake"
         ],
         "correctAnswer": "Ferry",
         "contextSentence": "We crossed the bay on a ferry.",
@@ -12253,9 +8602,29 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p21-e4",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Tram",
-        "visualEmoji": "🚋",
+        "audioPhrase": "Runway",
+        "visualEmoji": "🛫",
         "visualOptions": [
+          {
+            "text": "Tractor",
+            "emoji": "🚜",
+            "label": "Tractor",
+            "translationPt": "Trator",
+            "simplePronunciation": "trék-tor",
+            "phonetic": "/ˈtræk.tər/",
+            "exampleEn": "The farmer drives a tractor.",
+            "examplePt": "O fazendeiro dirige um trator."
+          },
+          {
+            "text": "Runway",
+            "emoji": "🛫",
+            "label": "Runway",
+            "translationPt": "Pista de pouso",
+            "simplePronunciation": "rân-uêi",
+            "phonetic": "/ˈrʌn.weɪ/",
+            "exampleEn": "The plane is on the runway.",
+            "examplePt": "O avião está na pista de pouso."
+          },
           {
             "text": "Scooter",
             "emoji": "🛴",
@@ -12267,117 +8636,127 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Ele anda de patinete elétrico."
           },
           {
-            "text": "Tram",
-            "emoji": "🚋",
-            "label": "Tram",
-            "translationPt": "Bonde / VLT",
-            "simplePronunciation": "trém",
-            "phonetic": "/træm/",
-            "exampleEn": "The electric tram runs on rails.",
-            "examplePt": "O bonde elétrico anda sobre trilhos."
-          },
-          {
             "text": "Pedal",
             "emoji": "🚲",
             "label": "Pedal",
             "translationPt": "Pedal",
             "simplePronunciation": "pé-dal",
             "phonetic": "/ˈped.əl/",
-            "exampleEn": "Push the bicycle pedal with your foot.",
-            "examplePt": "Empurre o pedal da bicicleta com o pé."
-          },
-          {
-            "text": "Horn",
-            "emoji": "📯",
-            "label": "Horn",
-            "translationPt": "Buzina",
-            "simplePronunciation": "rórn",
-            "phonetic": "/hɔːrn/",
-            "exampleEn": "Do not honk the car horn at night.",
-            "examplePt": "Não toque a buzina do carro à noite."
+            "exampleEn": "Push the bicycle pedal.",
+            "examplePt": "Empurre o pedal da bicicleta."
           }
         ],
         "options": [
+          "Tractor",
+          "Runway",
           "Scooter",
-          "Tram",
-          "Pedal",
-          "Horn"
+          "Pedal"
         ],
-        "correctAnswer": "Tram",
-        "contextSentence": "The electric tram runs on rails.",
-        "contextSentencePt": "O bonde elétrico anda sobre trilhos.",
-        "explanation": "Exemplo: \"The electric tram runs on rails.\" — O bonde elétrico anda sobre trilhos.",
-        "phoneticHint": "\"trém\" • /træm/",
+        "correctAnswer": "Runway",
+        "contextSentence": "The plane is on the runway.",
+        "contextSentencePt": "O avião está na pista de pouso.",
+        "explanation": "Exemplo: \"The plane is on the runway.\" — O avião está na pista de pouso.",
+        "phoneticHint": "\"rân-uêi\" • /ˈrʌn.weɪ/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p21-e5",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Runway",
-        "visualEmoji": "🛫",
+        "audioPhrase": "Harbor",
+        "visualEmoji": "⚓",
         "visualOptions": [
           {
-            "text": "Tunnel",
-            "emoji": "🚇",
-            "label": "Tunnel",
-            "translationPt": "Túnel",
-            "simplePronunciation": "tâ-nel",
-            "phonetic": "/ˈtʌn.əl/",
-            "exampleEn": "Turn on the headlights inside the tunnel.",
-            "examplePt": "Acenda os faróis dentro do túnel."
+            "text": "Ferry",
+            "emoji": "⛴️",
+            "label": "Ferry",
+            "translationPt": "Balsa",
+            "simplePronunciation": "fé-ri",
+            "phonetic": "/ˈfer.i/",
+            "exampleEn": "We crossed the bay on a ferry.",
+            "examplePt": "Atravessamos a baía em uma balsa."
           },
           {
-            "text": "Brake",
-            "emoji": "🛑",
-            "label": "Brake",
-            "translationPt": "Freio",
-            "simplePronunciation": "brêik",
-            "phonetic": "/breɪk/",
-            "exampleEn": "Step on the brake to stop the car.",
-            "examplePt": "Pise no freio para parar o carro."
+            "text": "Anchor",
+            "emoji": "⚓",
+            "label": "Anchor",
+            "translationPt": "Âncora",
+            "simplePronunciation": "én-cor",
+            "phonetic": "/ˈæŋ.kər/",
+            "exampleEn": "The ship dropped its anchor.",
+            "examplePt": "O navio lançou a âncora."
           },
           {
-            "text": "Bumper",
-            "emoji": "🚗",
-            "label": "Bumper",
-            "translationPt": "Para-choque",
-            "simplePronunciation": "bâm-per",
-            "phonetic": "/ˈbʌm.pər/",
-            "exampleEn": "The front bumper protects the car.",
-            "examplePt": "O para-choque dianteiro protege o carro."
+            "text": "Tractor",
+            "emoji": "🚜",
+            "label": "Tractor",
+            "translationPt": "Trator",
+            "simplePronunciation": "trék-tor",
+            "phonetic": "/ˈtræk.tər/",
+            "exampleEn": "The farmer drives a tractor.",
+            "examplePt": "O fazendeiro dirige um trator."
           },
           {
-            "text": "Runway",
-            "emoji": "🛫",
-            "label": "Runway",
-            "translationPt": "Pista de pouso",
-            "simplePronunciation": "rân-uêi",
-            "phonetic": "/ˈrʌn.weɪ/",
-            "exampleEn": "The plane accelerated on the runway.",
-            "examplePt": "O avião acelerou na pista de pouso."
+            "text": "Harbor",
+            "emoji": "⚓",
+            "label": "Harbor",
+            "translationPt": "Porto",
+            "simplePronunciation": "rár-bor",
+            "phonetic": "/ˈhɑːr.bər/",
+            "exampleEn": "Boats are in the harbor.",
+            "examplePt": "Os barcos estão no porto."
           }
         ],
         "options": [
-          "Tunnel",
-          "Brake",
-          "Bumper",
-          "Runway"
+          "Ferry",
+          "Anchor",
+          "Tractor",
+          "Harbor"
         ],
-        "correctAnswer": "Runway",
-        "contextSentence": "The plane accelerated on the runway.",
-        "contextSentencePt": "O avião acelerou na pista de pouso.",
-        "explanation": "Exemplo: \"The plane accelerated on the runway.\" — O avião acelerou na pista de pouso.",
-        "phoneticHint": "\"rân-uêi\" • /ˈrʌn.weɪ/",
+        "correctAnswer": "Harbor",
+        "contextSentence": "Boats are in the harbor.",
+        "contextSentencePt": "Os barcos estão no porto.",
+        "explanation": "Exemplo: \"Boats are in the harbor.\" — Os barcos estão no porto.",
+        "phoneticHint": "\"rár-bor\" • /ˈhɑːr.bər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p21-e6",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Harbor",
+        "audioPhrase": "Anchor",
         "visualEmoji": "⚓",
         "visualOptions": [
+          {
+            "text": "Brake",
+            "emoji": "🛑",
+            "label": "Brake",
+            "translationPt": "Freio",
+            "simplePronunciation": "brêik",
+            "phonetic": "/breɪk/",
+            "exampleEn": "Step on the brake to stop.",
+            "examplePt": "Pise no freio para parar."
+          },
+          {
+            "text": "Runway",
+            "emoji": "🛫",
+            "label": "Runway",
+            "translationPt": "Pista de pouso",
+            "simplePronunciation": "rân-uêi",
+            "phonetic": "/ˈrʌn.weɪ/",
+            "exampleEn": "The plane is on the runway.",
+            "examplePt": "O avião está na pista de pouso."
+          },
+          {
+            "text": "Anchor",
+            "emoji": "⚓",
+            "label": "Anchor",
+            "translationPt": "Âncora",
+            "simplePronunciation": "én-cor",
+            "phonetic": "/ˈæŋ.kər/",
+            "exampleEn": "The ship dropped its anchor.",
+            "examplePt": "O navio lançou a âncora."
+          },
           {
             "text": "Scooter",
             "emoji": "🛴",
@@ -12387,77 +8766,37 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ˈskuː.tər/",
             "exampleEn": "He rides an electric scooter.",
             "examplePt": "Ele anda de patinete elétrico."
-          },
-          {
-            "text": "Ferry",
-            "emoji": "⛴️",
-            "label": "Ferry",
-            "translationPt": "Balsa",
-            "simplePronunciation": "fé-ri",
-            "phonetic": "/ˈfer.i/",
-            "exampleEn": "We crossed the bay on a ferry.",
-            "examplePt": "Atravessamos a baía em uma balsa."
-          },
-          {
-            "text": "Harbor",
-            "emoji": "⚓",
-            "label": "Harbor",
-            "translationPt": "Porto",
-            "simplePronunciation": "rár-bor",
-            "phonetic": "/ˈhɑːr.bər/",
-            "exampleEn": "Many boats are anchored in the harbor.",
-            "examplePt": "Muitos barcos estão ancorados no porto."
-          },
-          {
-            "text": "Runway",
-            "emoji": "🛫",
-            "label": "Runway",
-            "translationPt": "Pista de pouso",
-            "simplePronunciation": "rân-uêi",
-            "phonetic": "/ˈrʌn.weɪ/",
-            "exampleEn": "The plane accelerated on the runway.",
-            "examplePt": "O avião acelerou na pista de pouso."
           }
         ],
         "options": [
-          "Scooter",
-          "Ferry",
-          "Harbor",
-          "Runway"
+          "Brake",
+          "Runway",
+          "Anchor",
+          "Scooter"
         ],
-        "correctAnswer": "Harbor",
-        "contextSentence": "Many boats are anchored in the harbor.",
-        "contextSentencePt": "Muitos barcos estão ancorados no porto.",
-        "explanation": "Exemplo: \"Many boats are anchored in the harbor.\" — Muitos barcos estão ancorados no porto.",
-        "phoneticHint": "\"rár-bor\" • /ˈhɑːr.bər/",
+        "correctAnswer": "Anchor",
+        "contextSentence": "The ship dropped its anchor.",
+        "contextSentencePt": "O navio lançou a âncora.",
+        "explanation": "Exemplo: \"The ship dropped its anchor.\" — O navio lançou a âncora.",
+        "phoneticHint": "\"én-cor\" • /ˈæŋ.kər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p21-e7",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Anchor",
-        "visualEmoji": "⚓",
+        "audioPhrase": "Pedal",
+        "visualEmoji": "🚲",
         "visualOptions": [
           {
-            "text": "Anchor",
-            "emoji": "⚓",
-            "label": "Anchor",
-            "translationPt": "Âncora",
-            "simplePronunciation": "én-cor",
-            "phonetic": "/ˈæŋ.kər/",
-            "exampleEn": "The ship dropped its heavy anchor.",
-            "examplePt": "O navio lançou sua âncora pesada."
-          },
-          {
-            "text": "Horn",
-            "emoji": "📯",
-            "label": "Horn",
-            "translationPt": "Buzina",
-            "simplePronunciation": "rórn",
-            "phonetic": "/hɔːrn/",
-            "exampleEn": "Do not honk the car horn at night.",
-            "examplePt": "Não toque a buzina do carro à noite."
+            "text": "Pedal",
+            "emoji": "🚲",
+            "label": "Pedal",
+            "translationPt": "Pedal",
+            "simplePronunciation": "pé-dal",
+            "phonetic": "/ˈped.əl/",
+            "exampleEn": "Push the bicycle pedal.",
+            "examplePt": "Empurre o pedal da bicicleta."
           },
           {
             "text": "Tractor",
@@ -12466,284 +8805,60 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Trator",
             "simplePronunciation": "trék-tor",
             "phonetic": "/ˈtræk.tər/",
-            "exampleEn": "The farmer drives a green tractor.",
-            "examplePt": "O fazendeiro dirige um trator verde."
+            "exampleEn": "The farmer drives a tractor.",
+            "examplePt": "O fazendeiro dirige um trator."
           },
           {
-            "text": "Tram",
-            "emoji": "🚋",
-            "label": "Tram",
-            "translationPt": "Bonde / VLT",
-            "simplePronunciation": "trém",
-            "phonetic": "/træm/",
-            "exampleEn": "The electric tram runs on rails.",
-            "examplePt": "O bonde elétrico anda sobre trilhos."
+            "text": "Harbor",
+            "emoji": "⚓",
+            "label": "Harbor",
+            "translationPt": "Porto",
+            "simplePronunciation": "rár-bor",
+            "phonetic": "/ˈhɑːr.bər/",
+            "exampleEn": "Boats are in the harbor.",
+            "examplePt": "Os barcos estão no porto."
+          },
+          {
+            "text": "Ferry",
+            "emoji": "⛴️",
+            "label": "Ferry",
+            "translationPt": "Balsa",
+            "simplePronunciation": "fé-ri",
+            "phonetic": "/ˈfer.i/",
+            "exampleEn": "We crossed the bay on a ferry.",
+            "examplePt": "Atravessamos a baía em uma balsa."
           }
         ],
         "options": [
-          "Anchor",
-          "Horn",
+          "Pedal",
           "Tractor",
-          "Tram"
+          "Harbor",
+          "Ferry"
         ],
-        "correctAnswer": "Anchor",
-        "contextSentence": "The ship dropped its heavy anchor.",
-        "contextSentencePt": "O navio lançou sua âncora pesada.",
-        "explanation": "Exemplo: \"The ship dropped its heavy anchor.\" — O navio lançou sua âncora pesada.",
-        "phoneticHint": "\"én-cor\" • /ˈæŋ.kər/",
+        "correctAnswer": "Pedal",
+        "contextSentence": "Push the bicycle pedal.",
+        "contextSentencePt": "Empurre o pedal da bicicleta.",
+        "explanation": "Exemplo: \"Push the bicycle pedal.\" — Empurre o pedal da bicicleta.",
+        "phoneticHint": "\"pé-dal\" • /ˈped.əl/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p21-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Pedal",
-        "visualEmoji": "🚲",
-        "visualOptions": [
-          {
-            "text": "Anchor",
-            "emoji": "⚓",
-            "label": "Anchor",
-            "translationPt": "Âncora",
-            "simplePronunciation": "én-cor",
-            "phonetic": "/ˈæŋ.kər/",
-            "exampleEn": "The ship dropped its heavy anchor.",
-            "examplePt": "O navio lançou sua âncora pesada."
-          },
-          {
-            "text": "Ferry",
-            "emoji": "⛴️",
-            "label": "Ferry",
-            "translationPt": "Balsa",
-            "simplePronunciation": "fé-ri",
-            "phonetic": "/ˈfer.i/",
-            "exampleEn": "We crossed the bay on a ferry.",
-            "examplePt": "Atravessamos a baía em uma balsa."
-          },
-          {
-            "text": "Pedal",
-            "emoji": "🚲",
-            "label": "Pedal",
-            "translationPt": "Pedal",
-            "simplePronunciation": "pé-dal",
-            "phonetic": "/ˈped.əl/",
-            "exampleEn": "Push the bicycle pedal with your foot.",
-            "examplePt": "Empurre o pedal da bicicleta com o pé."
-          },
-          {
-            "text": "Harbor",
-            "emoji": "⚓",
-            "label": "Harbor",
-            "translationPt": "Porto",
-            "simplePronunciation": "rár-bor",
-            "phonetic": "/ˈhɑːr.bər/",
-            "exampleEn": "Many boats are anchored in the harbor.",
-            "examplePt": "Muitos barcos estão ancorados no porto."
-          }
-        ],
-        "options": [
-          "Anchor",
-          "Ferry",
-          "Pedal",
-          "Harbor"
-        ],
-        "correctAnswer": "Pedal",
-        "contextSentence": "Push the bicycle pedal with your foot.",
-        "contextSentencePt": "Empurre o pedal da bicicleta com o pé.",
-        "explanation": "Exemplo: \"Push the bicycle pedal with your foot.\" — Empurre o pedal da bicicleta com o pé.",
-        "phoneticHint": "\"pé-dal\" • /ˈped.əl/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p21-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Brake",
         "visualEmoji": "🛑",
         "visualOptions": [
           {
-            "text": "Scooter",
-            "emoji": "🛴",
-            "label": "Scooter",
-            "translationPt": "Patinete / Scooter",
-            "simplePronunciation": "scú-ter",
-            "phonetic": "/ˈskuː.tər/",
-            "exampleEn": "He rides an electric scooter.",
-            "examplePt": "Ele anda de patinete elétrico."
-          },
-          {
-            "text": "Brake",
-            "emoji": "🛑",
-            "label": "Brake",
-            "translationPt": "Freio",
-            "simplePronunciation": "brêik",
-            "phonetic": "/breɪk/",
-            "exampleEn": "Step on the brake to stop the car.",
-            "examplePt": "Pise no freio para parar o carro."
-          },
-          {
-            "text": "Tunnel",
-            "emoji": "🚇",
-            "label": "Tunnel",
-            "translationPt": "Túnel",
-            "simplePronunciation": "tâ-nel",
-            "phonetic": "/ˈtʌn.əl/",
-            "exampleEn": "Turn on the headlights inside the tunnel.",
-            "examplePt": "Acenda os faróis dentro do túnel."
-          },
-          {
-            "text": "Runway",
-            "emoji": "🛫",
-            "label": "Runway",
-            "translationPt": "Pista de pouso",
-            "simplePronunciation": "rân-uêi",
-            "phonetic": "/ˈrʌn.weɪ/",
-            "exampleEn": "The plane accelerated on the runway.",
-            "examplePt": "O avião acelerou na pista de pouso."
-          }
-        ],
-        "options": [
-          "Scooter",
-          "Brake",
-          "Tunnel",
-          "Runway"
-        ],
-        "correctAnswer": "Brake",
-        "contextSentence": "Step on the brake to stop the car.",
-        "contextSentencePt": "Pise no freio para parar o carro.",
-        "explanation": "Exemplo: \"Step on the brake to stop the car.\" — Pise no freio para parar o carro.",
-        "phoneticHint": "\"brêik\" • /breɪk/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p21-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Horn",
-        "visualEmoji": "📯",
-        "visualOptions": [
-          {
             "text": "Anchor",
             "emoji": "⚓",
             "label": "Anchor",
             "translationPt": "Âncora",
             "simplePronunciation": "én-cor",
             "phonetic": "/ˈæŋ.kər/",
-            "exampleEn": "The ship dropped its heavy anchor.",
-            "examplePt": "O navio lançou sua âncora pesada."
+            "exampleEn": "The ship dropped its anchor.",
+            "examplePt": "O navio lançou a âncora."
           },
-          {
-            "text": "Tractor",
-            "emoji": "🚜",
-            "label": "Tractor",
-            "translationPt": "Trator",
-            "simplePronunciation": "trék-tor",
-            "phonetic": "/ˈtræk.tər/",
-            "exampleEn": "The farmer drives a green tractor.",
-            "examplePt": "O fazendeiro dirige um trator verde."
-          },
-          {
-            "text": "Pedal",
-            "emoji": "🚲",
-            "label": "Pedal",
-            "translationPt": "Pedal",
-            "simplePronunciation": "pé-dal",
-            "phonetic": "/ˈped.əl/",
-            "exampleEn": "Push the bicycle pedal with your foot.",
-            "examplePt": "Empurre o pedal da bicicleta com o pé."
-          },
-          {
-            "text": "Horn",
-            "emoji": "📯",
-            "label": "Horn",
-            "translationPt": "Buzina",
-            "simplePronunciation": "rórn",
-            "phonetic": "/hɔːrn/",
-            "exampleEn": "Do not honk the car horn at night.",
-            "examplePt": "Não toque a buzina do carro à noite."
-          }
-        ],
-        "options": [
-          "Anchor",
-          "Tractor",
-          "Pedal",
-          "Horn"
-        ],
-        "correctAnswer": "Horn",
-        "contextSentence": "Do not honk the car horn at night.",
-        "contextSentencePt": "Não toque a buzina do carro à noite.",
-        "explanation": "Exemplo: \"Do not honk the car horn at night.\" — Não toque a buzina do carro à noite.",
-        "phoneticHint": "\"rórn\" • /hɔːrn/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p21-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Bumper",
-        "visualEmoji": "🚗",
-        "visualOptions": [
-          {
-            "text": "Bumper",
-            "emoji": "🚗",
-            "label": "Bumper",
-            "translationPt": "Para-choque",
-            "simplePronunciation": "bâm-per",
-            "phonetic": "/ˈbʌm.pər/",
-            "exampleEn": "The front bumper protects the car.",
-            "examplePt": "O para-choque dianteiro protege o carro."
-          },
-          {
-            "text": "Harbor",
-            "emoji": "⚓",
-            "label": "Harbor",
-            "translationPt": "Porto",
-            "simplePronunciation": "rár-bor",
-            "phonetic": "/ˈhɑːr.bər/",
-            "exampleEn": "Many boats are anchored in the harbor.",
-            "examplePt": "Muitos barcos estão ancorados no porto."
-          },
-          {
-            "text": "Tram",
-            "emoji": "🚋",
-            "label": "Tram",
-            "translationPt": "Bonde / VLT",
-            "simplePronunciation": "trém",
-            "phonetic": "/træm/",
-            "exampleEn": "The electric tram runs on rails.",
-            "examplePt": "O bonde elétrico anda sobre trilhos."
-          },
-          {
-            "text": "Ferry",
-            "emoji": "⛴️",
-            "label": "Ferry",
-            "translationPt": "Balsa",
-            "simplePronunciation": "fé-ri",
-            "phonetic": "/ˈfer.i/",
-            "exampleEn": "We crossed the bay on a ferry.",
-            "examplePt": "Atravessamos a baía em uma balsa."
-          }
-        ],
-        "options": [
-          "Bumper",
-          "Harbor",
-          "Tram",
-          "Ferry"
-        ],
-        "correctAnswer": "Bumper",
-        "contextSentence": "The front bumper protects the car.",
-        "contextSentencePt": "O para-choque dianteiro protege o carro.",
-        "explanation": "Exemplo: \"The front bumper protects the car.\" — O para-choque dianteiro protege o carro.",
-        "phoneticHint": "\"bâm-per\" • /ˈbʌm.pər/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p21-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Tunnel",
-        "visualEmoji": "🚇",
-        "visualOptions": [
           {
             "text": "Scooter",
             "emoji": "🛴",
@@ -12755,48 +8870,38 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Ele anda de patinete elétrico."
           },
           {
-            "text": "Runway",
-            "emoji": "🛫",
-            "label": "Runway",
-            "translationPt": "Pista de pouso",
-            "simplePronunciation": "rân-uêi",
-            "phonetic": "/ˈrʌn.weɪ/",
-            "exampleEn": "The plane accelerated on the runway.",
-            "examplePt": "O avião acelerou na pista de pouso."
-          },
-          {
             "text": "Brake",
             "emoji": "🛑",
             "label": "Brake",
             "translationPt": "Freio",
             "simplePronunciation": "brêik",
             "phonetic": "/breɪk/",
-            "exampleEn": "Step on the brake to stop the car.",
-            "examplePt": "Pise no freio para parar o carro."
+            "exampleEn": "Step on the brake to stop.",
+            "examplePt": "Pise no freio para parar."
           },
           {
-            "text": "Tunnel",
-            "emoji": "🚇",
-            "label": "Tunnel",
-            "translationPt": "Túnel",
-            "simplePronunciation": "tâ-nel",
-            "phonetic": "/ˈtʌn.əl/",
-            "exampleEn": "Turn on the headlights inside the tunnel.",
-            "examplePt": "Acenda os faróis dentro do túnel."
+            "text": "Runway",
+            "emoji": "🛫",
+            "label": "Runway",
+            "translationPt": "Pista de pouso",
+            "simplePronunciation": "rân-uêi",
+            "phonetic": "/ˈrʌn.weɪ/",
+            "exampleEn": "The plane is on the runway.",
+            "examplePt": "O avião está na pista de pouso."
           }
         ],
         "options": [
+          "Anchor",
           "Scooter",
-          "Runway",
           "Brake",
-          "Tunnel"
+          "Runway"
         ],
-        "correctAnswer": "Tunnel",
-        "contextSentence": "Turn on the headlights inside the tunnel.",
-        "contextSentencePt": "Acenda os faróis dentro do túnel.",
-        "explanation": "Exemplo: \"Turn on the headlights inside the tunnel.\" — Acenda os faróis dentro do túnel.",
-        "phoneticHint": "\"tâ-nel\" • /ˈtʌn.əl/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Brake",
+        "contextSentence": "Step on the brake to stop.",
+        "contextSentencePt": "Pise no freio para parar.",
+        "explanation": "Exemplo: \"Step on the brake to stop.\" — Pise no freio para parar.",
+        "phoneticHint": "\"brêik\" • /breɪk/",
+        "skillCategory": "listening"
       }
     ]
   },
@@ -12805,17 +8910,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 22,
     "themeId": "clothes",
-    "themeTitle": "Roupas",
-    "frequencyLevel": "Módulo 1 • Essenciais",
+    "themeTitle": "Tema 5: Roupas",
+    "frequencyLevel": "Módulo 1 • Essenciais e Mais Comuns",
     "title": "Roupas • Módulo 1: Palavras Essenciais",
-    "subtitle": "Tema 5 (Nível 1/4) • As 12 peças de roupa mais básicas do dia a dia",
-    "pedagogicalObjective": "Dominar as 12 peças de vestuário essenciais: Shirt, Pants, Shoes, Dress, Shorts, Skirt, Jacket, Socks, Coat, Hat, Jeans e Bag.",
+    "subtitle": "Tema: Roupas (1/4) • 8 peças de vestuário essenciais",
+    "pedagogicalObjective": "Dominar as 8 peças de roupa mais essenciais: Shirt, Pants, Shoes, Dress, Shorts, Skirt, Jacket e Socks.",
     "type": "lesson",
     "icon": "shirt",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Iniciamos o Tema 5 (Roupas • Módulo 1: Essenciais): Shirt (\"xârt\" = Camisa), Pants (\"pénts\" = Calça), Shoes (\"xúz\" = Sapatos), Dress (\"drés\" = Vestido), Shorts (\"xórts\" = Shorts/Bermuda) e Skirt (\"skârt\" = Saia).",
-      "Também aprendemos Jacket (\"djé-ket\" = Jaqueta), Socks (\"sóks\" = Meias), Coat (\"côut\" = Casaco), Hat (\"rét\" = Chapéu), Jeans (\"djínz\" = Calça jeans) e Bag (\"bég\" = Bolsa/Sacola)."
+      "Tema: Roupas — Módulo 1 (Palavras essenciais e mais comuns): as peças básicas do vestuário diário.",
+      "Palavras deste módulo (8): Shirt (\"xârt\" = Camisa), Pants (\"pénts\" = Calça), Shoes (\"xúz\" = Sapatos), Dress (\"drés\" = Vestido), Shorts (\"xórts\" = Shorts/Bermuda), Skirt (\"skârt\" = Saia), Jacket (\"djé-ket\" = Jaqueta) e Socks (\"sóks\" = Meias)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -12828,56 +8933,56 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👔",
         "visualOptions": [
           {
+            "text": "Skirt",
+            "emoji": "👗",
+            "label": "Skirt",
+            "translationPt": "Saia",
+            "simplePronunciation": "skârt",
+            "phonetic": "/skɜːrt/",
+            "exampleEn": "Her blue skirt is pretty.",
+            "examplePt": "A saia azul dela é bonita."
+          },
+          {
+            "text": "Shorts",
+            "emoji": "🩳",
+            "label": "Shorts",
+            "translationPt": "Shorts / Bermuda",
+            "simplePronunciation": "xórts",
+            "phonetic": "/ʃɔːrts/",
+            "exampleEn": "I wear shorts on hot days.",
+            "examplePt": "Eu uso bermuda em dias quentes."
+          },
+          {
+            "text": "Shoes",
+            "emoji": "👞",
+            "label": "Shoes",
+            "translationPt": "Sapatos",
+            "simplePronunciation": "xúz",
+            "phonetic": "/ʃuːz/",
+            "exampleEn": "Take off your shoes at the door.",
+            "examplePt": "Tire os sapatos na porta."
+          },
+          {
             "text": "Shirt",
             "emoji": "👔",
             "label": "Shirt",
             "translationPt": "Camisa",
             "simplePronunciation": "xârt",
             "phonetic": "/ʃɜːrt/",
-            "exampleEn": "He wears a clean white shirt.",
-            "examplePt": "Ele veste uma camisa branca limpa."
-          },
-          {
-            "text": "Coat",
-            "emoji": "🧥",
-            "label": "Coat",
-            "translationPt": "Casaco",
-            "simplePronunciation": "côut",
-            "phonetic": "/koʊt/",
-            "exampleEn": "You need a warm coat in winter.",
-            "examplePt": "Você precisa de um casaco quente no inverno."
-          },
-          {
-            "text": "Bag",
-            "emoji": "👜",
-            "label": "Bag",
-            "translationPt": "Bolsa / Sacola",
-            "simplePronunciation": "bég",
-            "phonetic": "/bæɡ/",
-            "exampleEn": "She carries her books in a bag.",
-            "examplePt": "Ela carrega seus livros em uma bolsa."
-          },
-          {
-            "text": "Hat",
-            "emoji": "👒",
-            "label": "Hat",
-            "translationPt": "Chapéu",
-            "simplePronunciation": "rét",
-            "phonetic": "/hæt/",
-            "exampleEn": "Wear a hat to protect from the sun.",
-            "examplePt": "Use um chapéu para se proteger do sol."
+            "exampleEn": "He wears a clean shirt.",
+            "examplePt": "Ele veste uma camisa limpa."
           }
         ],
         "options": [
-          "Shirt",
-          "Coat",
-          "Bag",
-          "Hat"
+          "Skirt",
+          "Shorts",
+          "Shoes",
+          "Shirt"
         ],
         "correctAnswer": "Shirt",
-        "contextSentence": "He wears a clean white shirt.",
-        "contextSentencePt": "Ele veste uma camisa branca limpa.",
-        "explanation": "Exemplo: \"He wears a clean white shirt.\" — Ele veste uma camisa branca limpa.",
+        "contextSentence": "He wears a clean shirt.",
+        "contextSentencePt": "Ele veste uma camisa limpa.",
+        "explanation": "Exemplo: \"He wears a clean shirt.\" — Ele veste uma camisa limpa.",
         "phoneticHint": "\"xârt\" • /ʃɜːrt/",
         "skillCategory": "vocabulary"
       },
@@ -12889,85 +8994,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👖",
         "visualOptions": [
           {
-            "text": "Skirt",
-            "emoji": "👗",
-            "label": "Skirt",
-            "translationPt": "Saia",
-            "simplePronunciation": "skârt",
-            "phonetic": "/skɜːrt/",
-            "exampleEn": "Her blue skirt is very pretty.",
-            "examplePt": "A saia azul dela é muito bonita."
-          },
-          {
             "text": "Pants",
             "emoji": "👖",
             "label": "Pants",
             "translationPt": "Calça",
             "simplePronunciation": "pénts",
             "phonetic": "/pænts/",
-            "exampleEn": "These pants are very comfortable.",
-            "examplePt": "Esta calça é muito confortável."
-          },
-          {
-            "text": "Socks",
-            "emoji": "🧦",
-            "label": "Socks",
-            "translationPt": "Meias",
-            "simplePronunciation": "sóks",
-            "phonetic": "/sɑːks/",
-            "exampleEn": "Put on clean cotton socks.",
-            "examplePt": "Coloque meias de algodão limpas."
-          },
-          {
-            "text": "Shorts",
-            "emoji": "🩳",
-            "label": "Shorts",
-            "translationPt": "Shorts / Bermuda",
-            "simplePronunciation": "xórts",
-            "phonetic": "/ʃɔːrts/",
-            "exampleEn": "I wear shorts on hot days.",
-            "examplePt": "Eu uso bermuda em dias quentes."
-          }
-        ],
-        "options": [
-          "Skirt",
-          "Pants",
-          "Socks",
-          "Shorts"
-        ],
-        "correctAnswer": "Pants",
-        "contextSentence": "These pants are very comfortable.",
-        "contextSentencePt": "Esta calça é muito confortável.",
-        "explanation": "Exemplo: \"These pants are very comfortable.\" — Esta calça é muito confortável.",
-        "phoneticHint": "\"pénts\" • /pænts/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p22-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Shoes",
-        "visualEmoji": "👞",
-        "visualOptions": [
-          {
-            "text": "Jeans",
-            "emoji": "👖",
-            "label": "Jeans",
-            "translationPt": "Calça jeans",
-            "simplePronunciation": "djínz",
-            "phonetic": "/dʒiːnz/",
-            "exampleEn": "Blue jeans go well with everything.",
-            "examplePt": "Calça jeans azul combina com tudo."
-          },
-          {
-            "text": "Shoes",
-            "emoji": "👞",
-            "label": "Shoes",
-            "translationPt": "Sapatos",
-            "simplePronunciation": "xúz",
-            "phonetic": "/ʃuːz/",
-            "exampleEn": "Take off your shoes at the door.",
-            "examplePt": "Tire os sapatos na porta."
+            "exampleEn": "These pants are comfortable.",
+            "examplePt": "Esta calça é confortável."
           },
           {
             "text": "Jacket",
@@ -12986,15 +9020,86 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vestido",
             "simplePronunciation": "drés",
             "phonetic": "/dres/",
-            "exampleEn": "She bought a beautiful red dress.",
-            "examplePt": "Ela comprou um lindo vestido vermelho."
+            "exampleEn": "She bought a red dress.",
+            "examplePt": "Ela comprou um vestido vermelho."
+          },
+          {
+            "text": "Socks",
+            "emoji": "🧦",
+            "label": "Socks",
+            "translationPt": "Meias",
+            "simplePronunciation": "sóks",
+            "phonetic": "/sɑːks/",
+            "exampleEn": "Put on clean socks.",
+            "examplePt": "Coloque meias limpas."
           }
         ],
         "options": [
-          "Jeans",
-          "Shoes",
+          "Pants",
           "Jacket",
-          "Dress"
+          "Dress",
+          "Socks"
+        ],
+        "correctAnswer": "Pants",
+        "contextSentence": "These pants are comfortable.",
+        "contextSentencePt": "Esta calça é confortável.",
+        "explanation": "Exemplo: \"These pants are comfortable.\" — Esta calça é confortável.",
+        "phoneticHint": "\"pénts\" • /pænts/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p22-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Shoes",
+        "visualEmoji": "👞",
+        "visualOptions": [
+          {
+            "text": "Shorts",
+            "emoji": "🩳",
+            "label": "Shorts",
+            "translationPt": "Shorts / Bermuda",
+            "simplePronunciation": "xórts",
+            "phonetic": "/ʃɔːrts/",
+            "exampleEn": "I wear shorts on hot days.",
+            "examplePt": "Eu uso bermuda em dias quentes."
+          },
+          {
+            "text": "Shoes",
+            "emoji": "👞",
+            "label": "Shoes",
+            "translationPt": "Sapatos",
+            "simplePronunciation": "xúz",
+            "phonetic": "/ʃuːz/",
+            "exampleEn": "Take off your shoes at the door.",
+            "examplePt": "Tire os sapatos na porta."
+          },
+          {
+            "text": "Shirt",
+            "emoji": "👔",
+            "label": "Shirt",
+            "translationPt": "Camisa",
+            "simplePronunciation": "xârt",
+            "phonetic": "/ʃɜːrt/",
+            "exampleEn": "He wears a clean shirt.",
+            "examplePt": "Ele veste uma camisa limpa."
+          },
+          {
+            "text": "Skirt",
+            "emoji": "👗",
+            "label": "Skirt",
+            "translationPt": "Saia",
+            "simplePronunciation": "skârt",
+            "phonetic": "/skɜːrt/",
+            "exampleEn": "Her blue skirt is pretty.",
+            "examplePt": "A saia azul dela é bonita."
+          }
+        ],
+        "options": [
+          "Shorts",
+          "Shoes",
+          "Shirt",
+          "Skirt"
         ],
         "correctAnswer": "Shoes",
         "contextSentence": "Take off your shoes at the door.",
@@ -13011,34 +9116,34 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "👗",
         "visualOptions": [
           {
-            "text": "Shirt",
-            "emoji": "👔",
-            "label": "Shirt",
-            "translationPt": "Camisa",
-            "simplePronunciation": "xârt",
-            "phonetic": "/ʃɜːrt/",
-            "exampleEn": "He wears a clean white shirt.",
-            "examplePt": "Ele veste uma camisa branca limpa."
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calça",
+            "simplePronunciation": "pénts",
+            "phonetic": "/pænts/",
+            "exampleEn": "These pants are comfortable.",
+            "examplePt": "Esta calça é confortável."
           },
           {
-            "text": "Hat",
-            "emoji": "👒",
-            "label": "Hat",
-            "translationPt": "Chapéu",
-            "simplePronunciation": "rét",
-            "phonetic": "/hæt/",
-            "exampleEn": "Wear a hat to protect from the sun.",
-            "examplePt": "Use um chapéu para se proteger do sol."
+            "text": "Socks",
+            "emoji": "🧦",
+            "label": "Socks",
+            "translationPt": "Meias",
+            "simplePronunciation": "sóks",
+            "phonetic": "/sɑːks/",
+            "exampleEn": "Put on clean socks.",
+            "examplePt": "Coloque meias limpas."
           },
           {
-            "text": "Bag",
-            "emoji": "👜",
-            "label": "Bag",
-            "translationPt": "Bolsa / Sacola",
-            "simplePronunciation": "bég",
-            "phonetic": "/bæɡ/",
-            "exampleEn": "She carries her books in a bag.",
-            "examplePt": "Ela carrega seus livros em uma bolsa."
+            "text": "Jacket",
+            "emoji": "🧥",
+            "label": "Jacket",
+            "translationPt": "Jaqueta",
+            "simplePronunciation": "djé-ket",
+            "phonetic": "/ˈdʒæk.ɪt/",
+            "exampleEn": "Put on a jacket before going out.",
+            "examplePt": "Vista uma jaqueta antes de sair."
           },
           {
             "text": "Dress",
@@ -13047,20 +9152,20 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vestido",
             "simplePronunciation": "drés",
             "phonetic": "/dres/",
-            "exampleEn": "She bought a beautiful red dress.",
-            "examplePt": "Ela comprou um lindo vestido vermelho."
+            "exampleEn": "She bought a red dress.",
+            "examplePt": "Ela comprou um vestido vermelho."
           }
         ],
         "options": [
-          "Shirt",
-          "Hat",
-          "Bag",
+          "Pants",
+          "Socks",
+          "Jacket",
           "Dress"
         ],
         "correctAnswer": "Dress",
-        "contextSentence": "She bought a beautiful red dress.",
-        "contextSentencePt": "Ela comprou um lindo vestido vermelho.",
-        "explanation": "Exemplo: \"She bought a beautiful red dress.\" — Ela comprou um lindo vestido vermelho.",
+        "contextSentence": "She bought a red dress.",
+        "contextSentencePt": "Ela comprou um vestido vermelho.",
+        "explanation": "Exemplo: \"She bought a red dress.\" — Ela comprou um vestido vermelho.",
         "phoneticHint": "\"drés\" • /dres/",
         "skillCategory": "vocabulary"
       },
@@ -13072,24 +9177,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🩳",
         "visualOptions": [
           {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calça",
-            "simplePronunciation": "pénts",
-            "phonetic": "/pænts/",
-            "exampleEn": "These pants are very comfortable.",
-            "examplePt": "Esta calça é muito confortável."
+            "text": "Shirt",
+            "emoji": "👔",
+            "label": "Shirt",
+            "translationPt": "Camisa",
+            "simplePronunciation": "xârt",
+            "phonetic": "/ʃɜːrt/",
+            "exampleEn": "He wears a clean shirt.",
+            "examplePt": "Ele veste uma camisa limpa."
           },
           {
-            "text": "Coat",
-            "emoji": "🧥",
-            "label": "Coat",
-            "translationPt": "Casaco",
-            "simplePronunciation": "côut",
-            "phonetic": "/koʊt/",
-            "exampleEn": "You need a warm coat in winter.",
-            "examplePt": "Você precisa de um casaco quente no inverno."
+            "text": "Shoes",
+            "emoji": "👞",
+            "label": "Shoes",
+            "translationPt": "Sapatos",
+            "simplePronunciation": "xúz",
+            "phonetic": "/ʃuːz/",
+            "exampleEn": "Take off your shoes at the door.",
+            "examplePt": "Tire os sapatos na porta."
           },
           {
             "text": "Shorts",
@@ -13102,21 +9207,21 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Eu uso bermuda em dias quentes."
           },
           {
-            "text": "Socks",
-            "emoji": "🧦",
-            "label": "Socks",
-            "translationPt": "Meias",
-            "simplePronunciation": "sóks",
-            "phonetic": "/sɑːks/",
-            "exampleEn": "Put on clean cotton socks.",
-            "examplePt": "Coloque meias de algodão limpas."
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calça",
+            "simplePronunciation": "pénts",
+            "phonetic": "/pænts/",
+            "exampleEn": "These pants are comfortable.",
+            "examplePt": "Esta calça é confortável."
           }
         ],
         "options": [
-          "Pants",
-          "Coat",
+          "Shirt",
+          "Shoes",
           "Shorts",
-          "Socks"
+          "Pants"
         ],
         "correctAnswer": "Shorts",
         "contextSentence": "I wear shorts on hot days.",
@@ -13139,8 +9244,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Saia",
             "simplePronunciation": "skârt",
             "phonetic": "/skɜːrt/",
-            "exampleEn": "Her blue skirt is very pretty.",
-            "examplePt": "A saia azul dela é muito bonita."
+            "exampleEn": "Her blue skirt is pretty.",
+            "examplePt": "A saia azul dela é bonita."
           },
           {
             "text": "Shirt",
@@ -13149,8 +9254,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camisa",
             "simplePronunciation": "xârt",
             "phonetic": "/ʃɜːrt/",
-            "exampleEn": "He wears a clean white shirt.",
-            "examplePt": "Ele veste uma camisa branca limpa."
+            "exampleEn": "He wears a clean shirt.",
+            "examplePt": "Ele veste uma camisa limpa."
+          },
+          {
+            "text": "Dress",
+            "emoji": "👗",
+            "label": "Dress",
+            "translationPt": "Vestido",
+            "simplePronunciation": "drés",
+            "phonetic": "/dres/",
+            "exampleEn": "She bought a red dress.",
+            "examplePt": "Ela comprou um vestido vermelho."
           },
           {
             "text": "Shoes",
@@ -13161,28 +9276,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "phonetic": "/ʃuːz/",
             "exampleEn": "Take off your shoes at the door.",
             "examplePt": "Tire os sapatos na porta."
-          },
-          {
-            "text": "Shorts",
-            "emoji": "🩳",
-            "label": "Shorts",
-            "translationPt": "Shorts / Bermuda",
-            "simplePronunciation": "xórts",
-            "phonetic": "/ʃɔːrts/",
-            "exampleEn": "I wear shorts on hot days.",
-            "examplePt": "Eu uso bermuda em dias quentes."
           }
         ],
         "options": [
           "Skirt",
           "Shirt",
-          "Shoes",
-          "Shorts"
+          "Dress",
+          "Shoes"
         ],
         "correctAnswer": "Skirt",
-        "contextSentence": "Her blue skirt is very pretty.",
-        "contextSentencePt": "A saia azul dela é muito bonita.",
-        "explanation": "Exemplo: \"Her blue skirt is very pretty.\" — A saia azul dela é muito bonita.",
+        "contextSentence": "Her blue skirt is pretty.",
+        "contextSentencePt": "A saia azul dela é bonita.",
+        "explanation": "Exemplo: \"Her blue skirt is pretty.\" — A saia azul dela é bonita.",
         "phoneticHint": "\"skârt\" • /skɜːrt/",
         "skillCategory": "vocabulary"
       },
@@ -13194,24 +9299,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧥",
         "visualOptions": [
           {
-            "text": "Jeans",
-            "emoji": "👖",
-            "label": "Jeans",
-            "translationPt": "Calça jeans",
-            "simplePronunciation": "djínz",
-            "phonetic": "/dʒiːnz/",
-            "exampleEn": "Blue jeans go well with everything.",
-            "examplePt": "Calça jeans azul combina com tudo."
+            "text": "Shorts",
+            "emoji": "🩳",
+            "label": "Shorts",
+            "translationPt": "Shorts / Bermuda",
+            "simplePronunciation": "xórts",
+            "phonetic": "/ʃɔːrts/",
+            "exampleEn": "I wear shorts on hot days.",
+            "examplePt": "Eu uso bermuda em dias quentes."
           },
           {
-            "text": "Hat",
-            "emoji": "👒",
-            "label": "Hat",
-            "translationPt": "Chapéu",
-            "simplePronunciation": "rét",
-            "phonetic": "/hæt/",
-            "exampleEn": "Wear a hat to protect from the sun.",
-            "examplePt": "Use um chapéu para se proteger do sol."
+            "text": "Socks",
+            "emoji": "🧦",
+            "label": "Socks",
+            "translationPt": "Meias",
+            "simplePronunciation": "sóks",
+            "phonetic": "/sɑːks/",
+            "exampleEn": "Put on clean socks.",
+            "examplePt": "Coloque meias limpas."
           },
           {
             "text": "Jacket",
@@ -13224,21 +9329,21 @@ export const WORLD_0_PHASES: Phase[] = [
             "examplePt": "Vista uma jaqueta antes de sair."
           },
           {
-            "text": "Dress",
+            "text": "Skirt",
             "emoji": "👗",
-            "label": "Dress",
-            "translationPt": "Vestido",
-            "simplePronunciation": "drés",
-            "phonetic": "/dres/",
-            "exampleEn": "She bought a beautiful red dress.",
-            "examplePt": "Ela comprou um lindo vestido vermelho."
+            "label": "Skirt",
+            "translationPt": "Saia",
+            "simplePronunciation": "skârt",
+            "phonetic": "/skɜːrt/",
+            "exampleEn": "Her blue skirt is pretty.",
+            "examplePt": "A saia azul dela é bonita."
           }
         ],
         "options": [
-          "Jeans",
-          "Hat",
+          "Shorts",
+          "Socks",
           "Jacket",
-          "Dress"
+          "Skirt"
         ],
         "correctAnswer": "Jacket",
         "contextSentence": "Put on a jacket before going out.",
@@ -13255,14 +9360,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧦",
         "visualOptions": [
           {
-            "text": "Shoes",
-            "emoji": "👞",
-            "label": "Shoes",
-            "translationPt": "Sapatos",
-            "simplePronunciation": "xúz",
-            "phonetic": "/ʃuːz/",
-            "exampleEn": "Take off your shoes at the door.",
-            "examplePt": "Tire os sapatos na porta."
+            "text": "Pants",
+            "emoji": "👖",
+            "label": "Pants",
+            "translationPt": "Calça",
+            "simplePronunciation": "pénts",
+            "phonetic": "/pænts/",
+            "exampleEn": "These pants are comfortable.",
+            "examplePt": "Esta calça é confortável."
           },
           {
             "text": "Socks",
@@ -13271,69 +9376,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Meias",
             "simplePronunciation": "sóks",
             "phonetic": "/sɑːks/",
-            "exampleEn": "Put on clean cotton socks.",
-            "examplePt": "Coloque meias de algodão limpas."
-          },
-          {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calça",
-            "simplePronunciation": "pénts",
-            "phonetic": "/pænts/",
-            "exampleEn": "These pants are very comfortable.",
-            "examplePt": "Esta calça é muito confortável."
-          },
-          {
-            "text": "Skirt",
-            "emoji": "👗",
-            "label": "Skirt",
-            "translationPt": "Saia",
-            "simplePronunciation": "skârt",
-            "phonetic": "/skɜːrt/",
-            "exampleEn": "Her blue skirt is very pretty.",
-            "examplePt": "A saia azul dela é muito bonita."
-          }
-        ],
-        "options": [
-          "Shoes",
-          "Socks",
-          "Pants",
-          "Skirt"
-        ],
-        "correctAnswer": "Socks",
-        "contextSentence": "Put on clean cotton socks.",
-        "contextSentencePt": "Coloque meias de algodão limpas.",
-        "explanation": "Exemplo: \"Put on clean cotton socks.\" — Coloque meias de algodão limpas.",
-        "phoneticHint": "\"sóks\" • /sɑːks/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p22-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Coat",
-        "visualEmoji": "🧥",
-        "visualOptions": [
-          {
-            "text": "Shorts",
-            "emoji": "🩳",
-            "label": "Shorts",
-            "translationPt": "Shorts / Bermuda",
-            "simplePronunciation": "xórts",
-            "phonetic": "/ʃɔːrts/",
-            "exampleEn": "I wear shorts on hot days.",
-            "examplePt": "Eu uso bermuda em dias quentes."
-          },
-          {
-            "text": "Bag",
-            "emoji": "👜",
-            "label": "Bag",
-            "translationPt": "Bolsa / Sacola",
-            "simplePronunciation": "bég",
-            "phonetic": "/bæɡ/",
-            "exampleEn": "She carries her books in a bag.",
-            "examplePt": "Ela carrega seus livros em uma bolsa."
+            "exampleEn": "Put on clean socks.",
+            "examplePt": "Coloque meias limpas."
           },
           {
             "text": "Shirt",
@@ -13342,110 +9386,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Camisa",
             "simplePronunciation": "xârt",
             "phonetic": "/ʃɜːrt/",
-            "exampleEn": "He wears a clean white shirt.",
-            "examplePt": "Ele veste uma camisa branca limpa."
-          },
-          {
-            "text": "Coat",
-            "emoji": "🧥",
-            "label": "Coat",
-            "translationPt": "Casaco",
-            "simplePronunciation": "côut",
-            "phonetic": "/koʊt/",
-            "exampleEn": "You need a warm coat in winter.",
-            "examplePt": "Você precisa de um casaco quente no inverno."
-          }
-        ],
-        "options": [
-          "Shorts",
-          "Bag",
-          "Shirt",
-          "Coat"
-        ],
-        "correctAnswer": "Coat",
-        "contextSentence": "You need a warm coat in winter.",
-        "contextSentencePt": "Você precisa de um casaco quente no inverno.",
-        "explanation": "Exemplo: \"You need a warm coat in winter.\" — Você precisa de um casaco quente no inverno.",
-        "phoneticHint": "\"côut\" • /koʊt/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p22-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Hat",
-        "visualEmoji": "👒",
-        "visualOptions": [
-          {
-            "text": "Hat",
-            "emoji": "👒",
-            "label": "Hat",
-            "translationPt": "Chapéu",
-            "simplePronunciation": "rét",
-            "phonetic": "/hæt/",
-            "exampleEn": "Wear a hat to protect from the sun.",
-            "examplePt": "Use um chapéu para se proteger do sol."
-          },
-          {
-            "text": "Shoes",
-            "emoji": "👞",
-            "label": "Shoes",
-            "translationPt": "Sapatos",
-            "simplePronunciation": "xúz",
-            "phonetic": "/ʃuːz/",
-            "exampleEn": "Take off your shoes at the door.",
-            "examplePt": "Tire os sapatos na porta."
-          },
-          {
-            "text": "Skirt",
-            "emoji": "👗",
-            "label": "Skirt",
-            "translationPt": "Saia",
-            "simplePronunciation": "skârt",
-            "phonetic": "/skɜːrt/",
-            "exampleEn": "Her blue skirt is very pretty.",
-            "examplePt": "A saia azul dela é muito bonita."
-          },
-          {
-            "text": "Jacket",
-            "emoji": "🧥",
-            "label": "Jacket",
-            "translationPt": "Jaqueta",
-            "simplePronunciation": "djé-ket",
-            "phonetic": "/ˈdʒæk.ɪt/",
-            "exampleEn": "Put on a jacket before going out.",
-            "examplePt": "Vista uma jaqueta antes de sair."
-          }
-        ],
-        "options": [
-          "Hat",
-          "Shoes",
-          "Skirt",
-          "Jacket"
-        ],
-        "correctAnswer": "Hat",
-        "contextSentence": "Wear a hat to protect from the sun.",
-        "contextSentencePt": "Use um chapéu para se proteger do sol.",
-        "explanation": "Exemplo: \"Wear a hat to protect from the sun.\" — Use um chapéu para se proteger do sol.",
-        "phoneticHint": "\"rét\" • /hæt/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p22-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Jeans",
-        "visualEmoji": "👖",
-        "visualOptions": [
-          {
-            "text": "Socks",
-            "emoji": "🧦",
-            "label": "Socks",
-            "translationPt": "Meias",
-            "simplePronunciation": "sóks",
-            "phonetic": "/sɑːks/",
-            "exampleEn": "Put on clean cotton socks.",
-            "examplePt": "Coloque meias de algodão limpas."
+            "exampleEn": "He wears a clean shirt.",
+            "examplePt": "Ele veste uma camisa limpa."
           },
           {
             "text": "Dress",
@@ -13454,103 +9396,22 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Vestido",
             "simplePronunciation": "drés",
             "phonetic": "/dres/",
-            "exampleEn": "She bought a beautiful red dress.",
-            "examplePt": "Ela comprou um lindo vestido vermelho."
-          },
-          {
-            "text": "Pants",
-            "emoji": "👖",
-            "label": "Pants",
-            "translationPt": "Calça",
-            "simplePronunciation": "pénts",
-            "phonetic": "/pænts/",
-            "exampleEn": "These pants are very comfortable.",
-            "examplePt": "Esta calça é muito confortável."
-          },
-          {
-            "text": "Jeans",
-            "emoji": "👖",
-            "label": "Jeans",
-            "translationPt": "Calça jeans",
-            "simplePronunciation": "djínz",
-            "phonetic": "/dʒiːnz/",
-            "exampleEn": "Blue jeans go well with everything.",
-            "examplePt": "Calça jeans azul combina com tudo."
+            "exampleEn": "She bought a red dress.",
+            "examplePt": "Ela comprou um vestido vermelho."
           }
         ],
         "options": [
-          "Socks",
-          "Dress",
           "Pants",
-          "Jeans"
-        ],
-        "correctAnswer": "Jeans",
-        "contextSentence": "Blue jeans go well with everything.",
-        "contextSentencePt": "Calça jeans azul combina com tudo.",
-        "explanation": "Exemplo: \"Blue jeans go well with everything.\" — Calça jeans azul combina com tudo.",
-        "phoneticHint": "\"djínz\" • /dʒiːnz/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p22-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Bag",
-        "visualEmoji": "👜",
-        "visualOptions": [
-          {
-            "text": "Shirt",
-            "emoji": "👔",
-            "label": "Shirt",
-            "translationPt": "Camisa",
-            "simplePronunciation": "xârt",
-            "phonetic": "/ʃɜːrt/",
-            "exampleEn": "He wears a clean white shirt.",
-            "examplePt": "Ele veste uma camisa branca limpa."
-          },
-          {
-            "text": "Shorts",
-            "emoji": "🩳",
-            "label": "Shorts",
-            "translationPt": "Shorts / Bermuda",
-            "simplePronunciation": "xórts",
-            "phonetic": "/ʃɔːrts/",
-            "exampleEn": "I wear shorts on hot days.",
-            "examplePt": "Eu uso bermuda em dias quentes."
-          },
-          {
-            "text": "Bag",
-            "emoji": "👜",
-            "label": "Bag",
-            "translationPt": "Bolsa / Sacola",
-            "simplePronunciation": "bég",
-            "phonetic": "/bæɡ/",
-            "exampleEn": "She carries her books in a bag.",
-            "examplePt": "Ela carrega seus livros em uma bolsa."
-          },
-          {
-            "text": "Coat",
-            "emoji": "🧥",
-            "label": "Coat",
-            "translationPt": "Casaco",
-            "simplePronunciation": "côut",
-            "phonetic": "/koʊt/",
-            "exampleEn": "You need a warm coat in winter.",
-            "examplePt": "Você precisa de um casaco quente no inverno."
-          }
-        ],
-        "options": [
+          "Socks",
           "Shirt",
-          "Shorts",
-          "Bag",
-          "Coat"
+          "Dress"
         ],
-        "correctAnswer": "Bag",
-        "contextSentence": "She carries her books in a bag.",
-        "contextSentencePt": "Ela carrega seus livros em uma bolsa.",
-        "explanation": "Exemplo: \"She carries her books in a bag.\" — Ela carrega seus livros em uma bolsa.",
-        "phoneticHint": "\"bég\" • /bæɡ/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Socks",
+        "contextSentence": "Put on clean socks.",
+        "contextSentencePt": "Coloque meias limpas.",
+        "explanation": "Exemplo: \"Put on clean socks.\" — Coloque meias limpas.",
+        "phoneticHint": "\"sóks\" • /sɑːks/",
+        "skillCategory": "listening"
       }
     ]
   },
@@ -13559,18 +9420,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 23,
     "themeId": "clothes",
-    "themeTitle": "Roupas",
-    "frequencyLevel": "Módulo 2 • Comuns",
+    "themeTitle": "Tema 5: Roupas",
+    "frequencyLevel": "Módulo 2 • Palavras Comuns",
     "title": "Roupas • Módulo 2: Palavras Comuns",
-    "subtitle": "Tema 5 (Nível 2/4) • 12 calçados, roupas casuais e acessórios comuns",
-    "pedagogicalObjective": "Reconhecer roupas casuais e acessórios comuns: T-shirt, Sweater, Boots, Sandals, Sneakers, Glasses, Watch, Belt, Cap, Pajamas, Suit e Pocket.",
+    "subtitle": "Tema: Roupas (2/4) • 8 roupas e calçados comuns",
+    "pedagogicalObjective": "Reconhecer 8 peças comuns do vestuário: Coat, Hat, Jeans, Bag, T-shirt, Sweater, Boots e Sneakers.",
     "type": "lesson",
     "icon": "shirt",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 2 de Roupas praticamos palavras comuns: T-shirt (\"tí-xârt\" = Camiseta), Sweater (\"sué-ter\" = Suéter), Boots (\"búts\" = Botas), Sandals (\"sén-dals\" = Sandália), Sneakers (\"sní-kers\" = Tênis) e Glasses (\"glé-ses\" = Óculos).",
-      "Também vemos Watch (\"uótch\" = Relógio de pulso), Belt (\"bélt\" = Cinto), Cap (\"kép\" = Boné), Pajamas (\"pa-djá-mas\" = Pijama), Suit (\"sút\" = Terno) e Pocket (\"pó-ket\" = Bolso).",
-      "Logo após este módulo, você fará mais uma Lição Exclusiva de Pronomes!"
+      "Tema: Roupas — Módulo 2 (Palavras comuns): agasalhos, calçados e peças casuais.",
+      "Palavras deste módulo (8): Coat (\"côut\" = Casaco), Hat (\"rét\" = Chapéu), Jeans (\"djínz\" = Calça jeans), Bag (\"bég\" = Bolsa), T-shirt (\"tí-xârt\" = Camiseta), Sweater (\"sué-ter\" = Suéter), Boots (\"búts\" = Botas) e Sneakers (\"sní-kers\" = Tênis)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -13579,79 +9439,18 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p23-e1",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "T-shirt",
-        "visualEmoji": "👕",
+        "audioPhrase": "Coat",
+        "visualEmoji": "🧥",
         "visualOptions": [
           {
-            "text": "Sandals",
-            "emoji": "🩴",
-            "label": "Sandals",
-            "translationPt": "Sandália / Chinelo",
-            "simplePronunciation": "sén-dals",
-            "phonetic": "/ˈsæn.dəlz/",
-            "exampleEn": "Sandals are great for the beach.",
-            "examplePt": "Sandálias são ótimas para a praia."
-          },
-          {
-            "text": "T-shirt",
-            "emoji": "👕",
-            "label": "T-shirt",
-            "translationPt": "Camiseta",
-            "simplePronunciation": "tí-xârt",
-            "phonetic": "/ˈtiː.ʃɜːrt/",
-            "exampleEn": "I wear a cotton T-shirt at home.",
-            "examplePt": "Eu uso uma camiseta de algodão em casa."
-          },
-          {
-            "text": "Cap",
-            "emoji": "🧢",
-            "label": "Cap",
-            "translationPt": "Boné",
-            "simplePronunciation": "kép",
-            "phonetic": "/kæp/",
-            "exampleEn": "He wears a blue cap outdoors.",
-            "examplePt": "Ele usa um boné azul ao ar livre."
-          },
-          {
-            "text": "Belt",
-            "emoji": "👖",
-            "label": "Belt",
-            "translationPt": "Cinto",
-            "simplePronunciation": "bélt",
-            "phonetic": "/belt/",
-            "exampleEn": "This brown leather belt fits well.",
-            "examplePt": "Este cinto de couro marrom serve bem."
-          }
-        ],
-        "options": [
-          "Sandals",
-          "T-shirt",
-          "Cap",
-          "Belt"
-        ],
-        "correctAnswer": "T-shirt",
-        "contextSentence": "I wear a cotton T-shirt at home.",
-        "contextSentencePt": "Eu uso uma camiseta de algodão em casa.",
-        "explanation": "Exemplo: \"I wear a cotton T-shirt at home.\" — Eu uso uma camiseta de algodão em casa.",
-        "phoneticHint": "\"tí-xârt\" • /ˈtiː.ʃɜːrt/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p23-e2",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Sweater",
-        "visualEmoji": "🧶",
-        "visualOptions": [
-          {
-            "text": "Suit",
-            "emoji": "🤵",
-            "label": "Suit",
-            "translationPt": "Terno",
-            "simplePronunciation": "sút",
-            "phonetic": "/suːt/",
-            "exampleEn": "He wore a dark suit to the wedding.",
-            "examplePt": "Ele usou um terno escuro no casamento."
+            "text": "Coat",
+            "emoji": "🧥",
+            "label": "Coat",
+            "translationPt": "Casaco",
+            "simplePronunciation": "côut",
+            "phonetic": "/koʊt/",
+            "exampleEn": "You need a warm coat in winter.",
+            "examplePt": "Você precisa de um casaco no inverno."
           },
           {
             "text": "Sweater",
@@ -13660,18 +9459,69 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Suéter / Blusa de lã",
             "simplePronunciation": "sué-ter",
             "phonetic": "/ˈswet.ər/",
-            "exampleEn": "This wool sweater is very warm.",
-            "examplePt": "Este suéter de lã é muito quentinho."
+            "exampleEn": "This wool sweater is warm.",
+            "examplePt": "Este suéter de lã é quentinho."
           },
           {
-            "text": "Pajamas",
-            "emoji": "🛌",
-            "label": "Pajamas",
-            "translationPt": "Pijama",
-            "simplePronunciation": "pa-djá-mas",
-            "phonetic": "/pəˈdʒæm.əz/",
-            "exampleEn": "Put on your pajamas before bed.",
-            "examplePt": "Vista seu pijama antes de dormir."
+            "text": "Boots",
+            "emoji": "🥾",
+            "label": "Boots",
+            "translationPt": "Botas",
+            "simplePronunciation": "búts",
+            "phonetic": "/buːts/",
+            "exampleEn": "Wear boots when it rains.",
+            "examplePt": "Use botas quando chover."
+          },
+          {
+            "text": "Bag",
+            "emoji": "👜",
+            "label": "Bag",
+            "translationPt": "Bolsa",
+            "simplePronunciation": "bég",
+            "phonetic": "/bæɡ/",
+            "exampleEn": "She carries her bag.",
+            "examplePt": "Ela carrega a bolsa dela."
+          }
+        ],
+        "options": [
+          "Coat",
+          "Sweater",
+          "Boots",
+          "Bag"
+        ],
+        "correctAnswer": "Coat",
+        "contextSentence": "You need a warm coat in winter.",
+        "contextSentencePt": "Você precisa de um casaco no inverno.",
+        "explanation": "Exemplo: \"You need a warm coat in winter.\" — Você precisa de um casaco no inverno.",
+        "phoneticHint": "\"côut\" • /koʊt/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p23-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Hat",
+        "visualEmoji": "👒",
+        "visualOptions": [
+          {
+            "text": "Coat",
+            "emoji": "🧥",
+            "label": "Coat",
+            "translationPt": "Casaco",
+            "simplePronunciation": "côut",
+            "phonetic": "/koʊt/",
+            "exampleEn": "You need a warm coat in winter.",
+            "examplePt": "Você precisa de um casaco no inverno."
+          },
+          {
+            "text": "Hat",
+            "emoji": "👒",
+            "label": "Hat",
+            "translationPt": "Chapéu",
+            "simplePronunciation": "rét",
+            "phonetic": "/hæt/",
+            "exampleEn": "Wear a hat in the sun.",
+            "examplePt": "Use um chapéu no sol."
           },
           {
             "text": "Sneakers",
@@ -13680,59 +9530,130 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Tênis",
             "simplePronunciation": "sní-kers",
             "phonetic": "/ˈsniː.kərz/",
-            "exampleEn": "Put on your sneakers for the walk.",
-            "examplePt": "Calce seus tênis para a caminhada."
+            "exampleEn": "Put on your sneakers to walk.",
+            "examplePt": "Calce seus tênis para caminhar."
+          },
+          {
+            "text": "T-shirt",
+            "emoji": "👕",
+            "label": "T-shirt",
+            "translationPt": "Camiseta",
+            "simplePronunciation": "tí-xârt",
+            "phonetic": "/ˈtiː.ʃɜːrt/",
+            "exampleEn": "I wear a cotton T-shirt.",
+            "examplePt": "Eu uso uma camiseta de algodão."
           }
         ],
         "options": [
-          "Suit",
-          "Sweater",
-          "Pajamas",
-          "Sneakers"
+          "Coat",
+          "Hat",
+          "Sneakers",
+          "T-shirt"
         ],
-        "correctAnswer": "Sweater",
-        "contextSentence": "This wool sweater is very warm.",
-        "contextSentencePt": "Este suéter de lã é muito quentinho.",
-        "explanation": "Exemplo: \"This wool sweater is very warm.\" — Este suéter de lã é muito quentinho.",
-        "phoneticHint": "\"sué-ter\" • /ˈswet.ər/",
+        "correctAnswer": "Hat",
+        "contextSentence": "Wear a hat in the sun.",
+        "contextSentencePt": "Use um chapéu no sol.",
+        "explanation": "Exemplo: \"Wear a hat in the sun.\" — Use um chapéu no sol.",
+        "phoneticHint": "\"rét\" • /hæt/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p23-e3",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Boots",
-        "visualEmoji": "🥾",
+        "audioPhrase": "Jeans",
+        "visualEmoji": "👖",
         "visualOptions": [
           {
-            "text": "Watch",
-            "emoji": "⌚",
-            "label": "Watch",
-            "translationPt": "Relógio de pulso",
-            "simplePronunciation": "uótch",
-            "phonetic": "/wɑːtʃ/",
-            "exampleEn": "What time is it on your watch?",
-            "examplePt": "Que horas são no seu relógio de pulso?"
+            "text": "T-shirt",
+            "emoji": "👕",
+            "label": "T-shirt",
+            "translationPt": "Camiseta",
+            "simplePronunciation": "tí-xârt",
+            "phonetic": "/ˈtiː.ʃɜːrt/",
+            "exampleEn": "I wear a cotton T-shirt.",
+            "examplePt": "Eu uso uma camiseta de algodão."
           },
           {
-            "text": "Pocket",
+            "text": "Bag",
+            "emoji": "👜",
+            "label": "Bag",
+            "translationPt": "Bolsa",
+            "simplePronunciation": "bég",
+            "phonetic": "/bæɡ/",
+            "exampleEn": "She carries her bag.",
+            "examplePt": "Ela carrega a bolsa dela."
+          },
+          {
+            "text": "Hat",
+            "emoji": "👒",
+            "label": "Hat",
+            "translationPt": "Chapéu",
+            "simplePronunciation": "rét",
+            "phonetic": "/hæt/",
+            "exampleEn": "Wear a hat in the sun.",
+            "examplePt": "Use um chapéu no sol."
+          },
+          {
+            "text": "Jeans",
             "emoji": "👖",
-            "label": "Pocket",
-            "translationPt": "Bolso",
-            "simplePronunciation": "pó-ket",
-            "phonetic": "/ˈpɑː.kɪt/",
-            "exampleEn": "My keys are in my pants pocket.",
-            "examplePt": "Minhas chaves estão no bolso da calça."
+            "label": "Jeans",
+            "translationPt": "Calça jeans",
+            "simplePronunciation": "djínz",
+            "phonetic": "/dʒiːnz/",
+            "exampleEn": "Blue jeans go with everything.",
+            "examplePt": "Calça jeans combina com tudo."
+          }
+        ],
+        "options": [
+          "T-shirt",
+          "Bag",
+          "Hat",
+          "Jeans"
+        ],
+        "correctAnswer": "Jeans",
+        "contextSentence": "Blue jeans go with everything.",
+        "contextSentencePt": "Calça jeans combina com tudo.",
+        "explanation": "Exemplo: \"Blue jeans go with everything.\" — Calça jeans combina com tudo.",
+        "phoneticHint": "\"djínz\" • /dʒiːnz/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p23-e4",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Bag",
+        "visualEmoji": "👜",
+        "visualOptions": [
+          {
+            "text": "Sweater",
+            "emoji": "🧶",
+            "label": "Sweater",
+            "translationPt": "Suéter / Blusa de lã",
+            "simplePronunciation": "sué-ter",
+            "phonetic": "/ˈswet.ər/",
+            "exampleEn": "This wool sweater is warm.",
+            "examplePt": "Este suéter de lã é quentinho."
           },
           {
-            "text": "Glasses",
-            "emoji": "👓",
-            "label": "Glasses",
-            "translationPt": "Óculos",
-            "simplePronunciation": "glé-ses",
-            "phonetic": "/ˈɡlæs.ɪz/",
-            "exampleEn": "I need my glasses to read.",
-            "examplePt": "Preciso dos meus óculos para ler."
+            "text": "Sneakers",
+            "emoji": "👟",
+            "label": "Sneakers",
+            "translationPt": "Tênis",
+            "simplePronunciation": "sní-kers",
+            "phonetic": "/ˈsniː.kərz/",
+            "exampleEn": "Put on your sneakers to walk.",
+            "examplePt": "Calce seus tênis para caminhar."
+          },
+          {
+            "text": "Bag",
+            "emoji": "👜",
+            "label": "Bag",
+            "translationPt": "Bolsa",
+            "simplePronunciation": "bég",
+            "phonetic": "/bæɡ/",
+            "exampleEn": "She carries her bag.",
+            "examplePt": "Ela carrega a bolsa dela."
           },
           {
             "text": "Boots",
@@ -13746,10 +9667,193 @@ export const WORLD_0_PHASES: Phase[] = [
           }
         ],
         "options": [
-          "Watch",
-          "Pocket",
-          "Glasses",
+          "Sweater",
+          "Sneakers",
+          "Bag",
           "Boots"
+        ],
+        "correctAnswer": "Bag",
+        "contextSentence": "She carries her bag.",
+        "contextSentencePt": "Ela carrega a bolsa dela.",
+        "explanation": "Exemplo: \"She carries her bag.\" — Ela carrega a bolsa dela.",
+        "phoneticHint": "\"bég\" • /bæɡ/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p23-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "T-shirt",
+        "visualEmoji": "👕",
+        "visualOptions": [
+          {
+            "text": "T-shirt",
+            "emoji": "👕",
+            "label": "T-shirt",
+            "translationPt": "Camiseta",
+            "simplePronunciation": "tí-xârt",
+            "phonetic": "/ˈtiː.ʃɜːrt/",
+            "exampleEn": "I wear a cotton T-shirt.",
+            "examplePt": "Eu uso uma camiseta de algodão."
+          },
+          {
+            "text": "Coat",
+            "emoji": "🧥",
+            "label": "Coat",
+            "translationPt": "Casaco",
+            "simplePronunciation": "côut",
+            "phonetic": "/koʊt/",
+            "exampleEn": "You need a warm coat in winter.",
+            "examplePt": "Você precisa de um casaco no inverno."
+          },
+          {
+            "text": "Jeans",
+            "emoji": "👖",
+            "label": "Jeans",
+            "translationPt": "Calça jeans",
+            "simplePronunciation": "djínz",
+            "phonetic": "/dʒiːnz/",
+            "exampleEn": "Blue jeans go with everything.",
+            "examplePt": "Calça jeans combina com tudo."
+          },
+          {
+            "text": "Hat",
+            "emoji": "👒",
+            "label": "Hat",
+            "translationPt": "Chapéu",
+            "simplePronunciation": "rét",
+            "phonetic": "/hæt/",
+            "exampleEn": "Wear a hat in the sun.",
+            "examplePt": "Use um chapéu no sol."
+          }
+        ],
+        "options": [
+          "T-shirt",
+          "Coat",
+          "Jeans",
+          "Hat"
+        ],
+        "correctAnswer": "T-shirt",
+        "contextSentence": "I wear a cotton T-shirt.",
+        "contextSentencePt": "Eu uso uma camiseta de algodão.",
+        "explanation": "Exemplo: \"I wear a cotton T-shirt.\" — Eu uso uma camiseta de algodão.",
+        "phoneticHint": "\"tí-xârt\" • /ˈtiː.ʃɜːrt/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p23-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Sweater",
+        "visualEmoji": "🧶",
+        "visualOptions": [
+          {
+            "text": "Coat",
+            "emoji": "🧥",
+            "label": "Coat",
+            "translationPt": "Casaco",
+            "simplePronunciation": "côut",
+            "phonetic": "/koʊt/",
+            "exampleEn": "You need a warm coat in winter.",
+            "examplePt": "Você precisa de um casaco no inverno."
+          },
+          {
+            "text": "Jeans",
+            "emoji": "👖",
+            "label": "Jeans",
+            "translationPt": "Calça jeans",
+            "simplePronunciation": "djínz",
+            "phonetic": "/dʒiːnz/",
+            "exampleEn": "Blue jeans go with everything.",
+            "examplePt": "Calça jeans combina com tudo."
+          },
+          {
+            "text": "Sweater",
+            "emoji": "🧶",
+            "label": "Sweater",
+            "translationPt": "Suéter / Blusa de lã",
+            "simplePronunciation": "sué-ter",
+            "phonetic": "/ˈswet.ər/",
+            "exampleEn": "This wool sweater is warm.",
+            "examplePt": "Este suéter de lã é quentinho."
+          },
+          {
+            "text": "Sneakers",
+            "emoji": "👟",
+            "label": "Sneakers",
+            "translationPt": "Tênis",
+            "simplePronunciation": "sní-kers",
+            "phonetic": "/ˈsniː.kərz/",
+            "exampleEn": "Put on your sneakers to walk.",
+            "examplePt": "Calce seus tênis para caminhar."
+          }
+        ],
+        "options": [
+          "Coat",
+          "Jeans",
+          "Sweater",
+          "Sneakers"
+        ],
+        "correctAnswer": "Sweater",
+        "contextSentence": "This wool sweater is warm.",
+        "contextSentencePt": "Este suéter de lã é quentinho.",
+        "explanation": "Exemplo: \"This wool sweater is warm.\" — Este suéter de lã é quentinho.",
+        "phoneticHint": "\"sué-ter\" • /ˈswet.ər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p23-e7",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Boots",
+        "visualEmoji": "🥾",
+        "visualOptions": [
+          {
+            "text": "Hat",
+            "emoji": "👒",
+            "label": "Hat",
+            "translationPt": "Chapéu",
+            "simplePronunciation": "rét",
+            "phonetic": "/hæt/",
+            "exampleEn": "Wear a hat in the sun.",
+            "examplePt": "Use um chapéu no sol."
+          },
+          {
+            "text": "Boots",
+            "emoji": "🥾",
+            "label": "Boots",
+            "translationPt": "Botas",
+            "simplePronunciation": "búts",
+            "phonetic": "/buːts/",
+            "exampleEn": "Wear boots when it rains.",
+            "examplePt": "Use botas quando chover."
+          },
+          {
+            "text": "Bag",
+            "emoji": "👜",
+            "label": "Bag",
+            "translationPt": "Bolsa",
+            "simplePronunciation": "bég",
+            "phonetic": "/bæɡ/",
+            "exampleEn": "She carries her bag.",
+            "examplePt": "Ela carrega a bolsa dela."
+          },
+          {
+            "text": "T-shirt",
+            "emoji": "👕",
+            "label": "T-shirt",
+            "translationPt": "Camiseta",
+            "simplePronunciation": "tí-xârt",
+            "phonetic": "/ˈtiː.ʃɜːrt/",
+            "exampleEn": "I wear a cotton T-shirt.",
+            "examplePt": "Eu uso uma camiseta de algodão."
+          }
+        ],
+        "options": [
+          "Hat",
+          "Boots",
+          "Bag",
+          "T-shirt"
         ],
         "correctAnswer": "Boots",
         "contextSentence": "Wear boots when it rains.",
@@ -13759,92 +9863,21 @@ export const WORLD_0_PHASES: Phase[] = [
         "skillCategory": "vocabulary"
       },
       {
-        "id": "w0-p23-e4",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Sandals",
-        "visualEmoji": "🩴",
-        "visualOptions": [
-          {
-            "text": "T-shirt",
-            "emoji": "👕",
-            "label": "T-shirt",
-            "translationPt": "Camiseta",
-            "simplePronunciation": "tí-xârt",
-            "phonetic": "/ˈtiː.ʃɜːrt/",
-            "exampleEn": "I wear a cotton T-shirt at home.",
-            "examplePt": "Eu uso uma camiseta de algodão em casa."
-          },
-          {
-            "text": "Belt",
-            "emoji": "👖",
-            "label": "Belt",
-            "translationPt": "Cinto",
-            "simplePronunciation": "bélt",
-            "phonetic": "/belt/",
-            "exampleEn": "This brown leather belt fits well.",
-            "examplePt": "Este cinto de couro marrom serve bem."
-          },
-          {
-            "text": "Sandals",
-            "emoji": "🩴",
-            "label": "Sandals",
-            "translationPt": "Sandália / Chinelo",
-            "simplePronunciation": "sén-dals",
-            "phonetic": "/ˈsæn.dəlz/",
-            "exampleEn": "Sandals are great for the beach.",
-            "examplePt": "Sandálias são ótimas para a praia."
-          },
-          {
-            "text": "Cap",
-            "emoji": "🧢",
-            "label": "Cap",
-            "translationPt": "Boné",
-            "simplePronunciation": "kép",
-            "phonetic": "/kæp/",
-            "exampleEn": "He wears a blue cap outdoors.",
-            "examplePt": "Ele usa um boné azul ao ar livre."
-          }
-        ],
-        "options": [
-          "T-shirt",
-          "Belt",
-          "Sandals",
-          "Cap"
-        ],
-        "correctAnswer": "Sandals",
-        "contextSentence": "Sandals are great for the beach.",
-        "contextSentencePt": "Sandálias são ótimas para a praia.",
-        "explanation": "Exemplo: \"Sandals are great for the beach.\" — Sandálias são ótimas para a praia.",
-        "phoneticHint": "\"sén-dals\" • /ˈsæn.dəlz/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p23-e5",
+        "id": "w0-p23-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
         "audioPhrase": "Sneakers",
         "visualEmoji": "👟",
         "visualOptions": [
           {
-            "text": "Sneakers",
-            "emoji": "👟",
-            "label": "Sneakers",
-            "translationPt": "Tênis",
-            "simplePronunciation": "sní-kers",
-            "phonetic": "/ˈsniː.kərz/",
-            "exampleEn": "Put on your sneakers for the walk.",
-            "examplePt": "Calce seus tênis para a caminhada."
-          },
-          {
-            "text": "Suit",
-            "emoji": "🤵",
-            "label": "Suit",
-            "translationPt": "Terno",
-            "simplePronunciation": "sút",
-            "phonetic": "/suːt/",
-            "exampleEn": "He wore a dark suit to the wedding.",
-            "examplePt": "Ele usou um terno escuro no casamento."
+            "text": "Coat",
+            "emoji": "🧥",
+            "label": "Coat",
+            "translationPt": "Casaco",
+            "simplePronunciation": "côut",
+            "phonetic": "/koʊt/",
+            "exampleEn": "You need a warm coat in winter.",
+            "examplePt": "Você precisa de um casaco no inverno."
           },
           {
             "text": "Sweater",
@@ -13853,459 +9886,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Suéter / Blusa de lã",
             "simplePronunciation": "sué-ter",
             "phonetic": "/ˈswet.ər/",
-            "exampleEn": "This wool sweater is very warm.",
-            "examplePt": "Este suéter de lã é muito quentinho."
+            "exampleEn": "This wool sweater is warm.",
+            "examplePt": "Este suéter de lã é quentinho."
           },
           {
-            "text": "Pajamas",
-            "emoji": "🛌",
-            "label": "Pajamas",
-            "translationPt": "Pijama",
-            "simplePronunciation": "pa-djá-mas",
-            "phonetic": "/pəˈdʒæm.əz/",
-            "exampleEn": "Put on your pajamas before bed.",
-            "examplePt": "Vista seu pijama antes de dormir."
+            "text": "Jeans",
+            "emoji": "👖",
+            "label": "Jeans",
+            "translationPt": "Calça jeans",
+            "simplePronunciation": "djínz",
+            "phonetic": "/dʒiːnz/",
+            "exampleEn": "Blue jeans go with everything.",
+            "examplePt": "Calça jeans combina com tudo."
+          },
+          {
+            "text": "Sneakers",
+            "emoji": "👟",
+            "label": "Sneakers",
+            "translationPt": "Tênis",
+            "simplePronunciation": "sní-kers",
+            "phonetic": "/ˈsniː.kərz/",
+            "exampleEn": "Put on your sneakers to walk.",
+            "examplePt": "Calce seus tênis para caminhar."
           }
         ],
         "options": [
-          "Sneakers",
-          "Suit",
+          "Coat",
           "Sweater",
-          "Pajamas"
+          "Jeans",
+          "Sneakers"
         ],
         "correctAnswer": "Sneakers",
-        "contextSentence": "Put on your sneakers for the walk.",
-        "contextSentencePt": "Calce seus tênis para a caminhada.",
-        "explanation": "Exemplo: \"Put on your sneakers for the walk.\" — Calce seus tênis para a caminhada.",
+        "contextSentence": "Put on your sneakers to walk.",
+        "contextSentencePt": "Calce seus tênis para caminhar.",
+        "explanation": "Exemplo: \"Put on your sneakers to walk.\" — Calce seus tênis para caminhar.",
         "phoneticHint": "\"sní-kers\" • /ˈsniː.kərz/",
         "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p23-e6",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Glasses",
-        "visualEmoji": "👓",
-        "visualOptions": [
-          {
-            "text": "Sweater",
-            "emoji": "🧶",
-            "label": "Sweater",
-            "translationPt": "Suéter / Blusa de lã",
-            "simplePronunciation": "sué-ter",
-            "phonetic": "/ˈswet.ər/",
-            "exampleEn": "This wool sweater is very warm.",
-            "examplePt": "Este suéter de lã é muito quentinho."
-          },
-          {
-            "text": "Boots",
-            "emoji": "🥾",
-            "label": "Boots",
-            "translationPt": "Botas",
-            "simplePronunciation": "búts",
-            "phonetic": "/buːts/",
-            "exampleEn": "Wear boots when it rains.",
-            "examplePt": "Use botas quando chover."
-          },
-          {
-            "text": "Glasses",
-            "emoji": "👓",
-            "label": "Glasses",
-            "translationPt": "Óculos",
-            "simplePronunciation": "glé-ses",
-            "phonetic": "/ˈɡlæs.ɪz/",
-            "exampleEn": "I need my glasses to read.",
-            "examplePt": "Preciso dos meus óculos para ler."
-          },
-          {
-            "text": "Sandals",
-            "emoji": "🩴",
-            "label": "Sandals",
-            "translationPt": "Sandália / Chinelo",
-            "simplePronunciation": "sén-dals",
-            "phonetic": "/ˈsæn.dəlz/",
-            "exampleEn": "Sandals are great for the beach.",
-            "examplePt": "Sandálias são ótimas para a praia."
-          }
-        ],
-        "options": [
-          "Sweater",
-          "Boots",
-          "Glasses",
-          "Sandals"
-        ],
-        "correctAnswer": "Glasses",
-        "contextSentence": "I need my glasses to read.",
-        "contextSentencePt": "Preciso dos meus óculos para ler.",
-        "explanation": "Exemplo: \"I need my glasses to read.\" — Preciso dos meus óculos para ler.",
-        "phoneticHint": "\"glé-ses\" • /ˈɡlæs.ɪz/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p23-e7",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Watch",
-        "visualEmoji": "⌚",
-        "visualOptions": [
-          {
-            "text": "Boots",
-            "emoji": "🥾",
-            "label": "Boots",
-            "translationPt": "Botas",
-            "simplePronunciation": "búts",
-            "phonetic": "/buːts/",
-            "exampleEn": "Wear boots when it rains.",
-            "examplePt": "Use botas quando chover."
-          },
-          {
-            "text": "Watch",
-            "emoji": "⌚",
-            "label": "Watch",
-            "translationPt": "Relógio de pulso",
-            "simplePronunciation": "uótch",
-            "phonetic": "/wɑːtʃ/",
-            "exampleEn": "What time is it on your watch?",
-            "examplePt": "Que horas são no seu relógio de pulso?"
-          },
-          {
-            "text": "Sneakers",
-            "emoji": "👟",
-            "label": "Sneakers",
-            "translationPt": "Tênis",
-            "simplePronunciation": "sní-kers",
-            "phonetic": "/ˈsniː.kərz/",
-            "exampleEn": "Put on your sneakers for the walk.",
-            "examplePt": "Calce seus tênis para a caminhada."
-          },
-          {
-            "text": "Pocket",
-            "emoji": "👖",
-            "label": "Pocket",
-            "translationPt": "Bolso",
-            "simplePronunciation": "pó-ket",
-            "phonetic": "/ˈpɑː.kɪt/",
-            "exampleEn": "My keys are in my pants pocket.",
-            "examplePt": "Minhas chaves estão no bolso da calça."
-          }
-        ],
-        "options": [
-          "Boots",
-          "Watch",
-          "Sneakers",
-          "Pocket"
-        ],
-        "correctAnswer": "Watch",
-        "contextSentence": "What time is it on your watch?",
-        "contextSentencePt": "Que horas são no seu relógio de pulso?",
-        "explanation": "Exemplo: \"What time is it on your watch?\" — Que horas são no seu relógio de pulso?",
-        "phoneticHint": "\"uótch\" • /wɑːtʃ/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p23-e8",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Belt",
-        "visualEmoji": "👖",
-        "visualOptions": [
-          {
-            "text": "Glasses",
-            "emoji": "👓",
-            "label": "Glasses",
-            "translationPt": "Óculos",
-            "simplePronunciation": "glé-ses",
-            "phonetic": "/ˈɡlæs.ɪz/",
-            "exampleEn": "I need my glasses to read.",
-            "examplePt": "Preciso dos meus óculos para ler."
-          },
-          {
-            "text": "Watch",
-            "emoji": "⌚",
-            "label": "Watch",
-            "translationPt": "Relógio de pulso",
-            "simplePronunciation": "uótch",
-            "phonetic": "/wɑːtʃ/",
-            "exampleEn": "What time is it on your watch?",
-            "examplePt": "Que horas são no seu relógio de pulso?"
-          },
-          {
-            "text": "T-shirt",
-            "emoji": "👕",
-            "label": "T-shirt",
-            "translationPt": "Camiseta",
-            "simplePronunciation": "tí-xârt",
-            "phonetic": "/ˈtiː.ʃɜːrt/",
-            "exampleEn": "I wear a cotton T-shirt at home.",
-            "examplePt": "Eu uso uma camiseta de algodão em casa."
-          },
-          {
-            "text": "Belt",
-            "emoji": "👖",
-            "label": "Belt",
-            "translationPt": "Cinto",
-            "simplePronunciation": "bélt",
-            "phonetic": "/belt/",
-            "exampleEn": "This brown leather belt fits well.",
-            "examplePt": "Este cinto de couro marrom serve bem."
-          }
-        ],
-        "options": [
-          "Glasses",
-          "Watch",
-          "T-shirt",
-          "Belt"
-        ],
-        "correctAnswer": "Belt",
-        "contextSentence": "This brown leather belt fits well.",
-        "contextSentencePt": "Este cinto de couro marrom serve bem.",
-        "explanation": "Exemplo: \"This brown leather belt fits well.\" — Este cinto de couro marrom serve bem.",
-        "phoneticHint": "\"bélt\" • /belt/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p23-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Cap",
-        "visualEmoji": "🧢",
-        "visualOptions": [
-          {
-            "text": "Cap",
-            "emoji": "🧢",
-            "label": "Cap",
-            "translationPt": "Boné",
-            "simplePronunciation": "kép",
-            "phonetic": "/kæp/",
-            "exampleEn": "He wears a blue cap outdoors.",
-            "examplePt": "Ele usa um boné azul ao ar livre."
-          },
-          {
-            "text": "T-shirt",
-            "emoji": "👕",
-            "label": "T-shirt",
-            "translationPt": "Camiseta",
-            "simplePronunciation": "tí-xârt",
-            "phonetic": "/ˈtiː.ʃɜːrt/",
-            "exampleEn": "I wear a cotton T-shirt at home.",
-            "examplePt": "Eu uso uma camiseta de algodão em casa."
-          },
-          {
-            "text": "Glasses",
-            "emoji": "👓",
-            "label": "Glasses",
-            "translationPt": "Óculos",
-            "simplePronunciation": "glé-ses",
-            "phonetic": "/ˈɡlæs.ɪz/",
-            "exampleEn": "I need my glasses to read.",
-            "examplePt": "Preciso dos meus óculos para ler."
-          },
-          {
-            "text": "Watch",
-            "emoji": "⌚",
-            "label": "Watch",
-            "translationPt": "Relógio de pulso",
-            "simplePronunciation": "uótch",
-            "phonetic": "/wɑːtʃ/",
-            "exampleEn": "What time is it on your watch?",
-            "examplePt": "Que horas são no seu relógio de pulso?"
-          }
-        ],
-        "options": [
-          "Cap",
-          "T-shirt",
-          "Glasses",
-          "Watch"
-        ],
-        "correctAnswer": "Cap",
-        "contextSentence": "He wears a blue cap outdoors.",
-        "contextSentencePt": "Ele usa um boné azul ao ar livre.",
-        "explanation": "Exemplo: \"He wears a blue cap outdoors.\" — Ele usa um boné azul ao ar livre.",
-        "phoneticHint": "\"kép\" • /kæp/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p23-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Pajamas",
-        "visualEmoji": "🛌",
-        "visualOptions": [
-          {
-            "text": "Sweater",
-            "emoji": "🧶",
-            "label": "Sweater",
-            "translationPt": "Suéter / Blusa de lã",
-            "simplePronunciation": "sué-ter",
-            "phonetic": "/ˈswet.ər/",
-            "exampleEn": "This wool sweater is very warm.",
-            "examplePt": "Este suéter de lã é muito quentinho."
-          },
-          {
-            "text": "Sneakers",
-            "emoji": "👟",
-            "label": "Sneakers",
-            "translationPt": "Tênis",
-            "simplePronunciation": "sní-kers",
-            "phonetic": "/ˈsniː.kərz/",
-            "exampleEn": "Put on your sneakers for the walk.",
-            "examplePt": "Calce seus tênis para a caminhada."
-          },
-          {
-            "text": "Sandals",
-            "emoji": "🩴",
-            "label": "Sandals",
-            "translationPt": "Sandália / Chinelo",
-            "simplePronunciation": "sén-dals",
-            "phonetic": "/ˈsæn.dəlz/",
-            "exampleEn": "Sandals are great for the beach.",
-            "examplePt": "Sandálias são ótimas para a praia."
-          },
-          {
-            "text": "Pajamas",
-            "emoji": "🛌",
-            "label": "Pajamas",
-            "translationPt": "Pijama",
-            "simplePronunciation": "pa-djá-mas",
-            "phonetic": "/pəˈdʒæm.əz/",
-            "exampleEn": "Put on your pajamas before bed.",
-            "examplePt": "Vista seu pijama antes de dormir."
-          }
-        ],
-        "options": [
-          "Sweater",
-          "Sneakers",
-          "Sandals",
-          "Pajamas"
-        ],
-        "correctAnswer": "Pajamas",
-        "contextSentence": "Put on your pajamas before bed.",
-        "contextSentencePt": "Vista seu pijama antes de dormir.",
-        "explanation": "Exemplo: \"Put on your pajamas before bed.\" — Vista seu pijama antes de dormir.",
-        "phoneticHint": "\"pa-djá-mas\" • /pəˈdʒæm.əz/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p23-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Suit",
-        "visualEmoji": "🤵",
-        "visualOptions": [
-          {
-            "text": "Cap",
-            "emoji": "🧢",
-            "label": "Cap",
-            "translationPt": "Boné",
-            "simplePronunciation": "kép",
-            "phonetic": "/kæp/",
-            "exampleEn": "He wears a blue cap outdoors.",
-            "examplePt": "Ele usa um boné azul ao ar livre."
-          },
-          {
-            "text": "Pocket",
-            "emoji": "👖",
-            "label": "Pocket",
-            "translationPt": "Bolso",
-            "simplePronunciation": "pó-ket",
-            "phonetic": "/ˈpɑː.kɪt/",
-            "exampleEn": "My keys are in my pants pocket.",
-            "examplePt": "Minhas chaves estão no bolso da calça."
-          },
-          {
-            "text": "Suit",
-            "emoji": "🤵",
-            "label": "Suit",
-            "translationPt": "Terno",
-            "simplePronunciation": "sút",
-            "phonetic": "/suːt/",
-            "exampleEn": "He wore a dark suit to the wedding.",
-            "examplePt": "Ele usou um terno escuro no casamento."
-          },
-          {
-            "text": "Pajamas",
-            "emoji": "🛌",
-            "label": "Pajamas",
-            "translationPt": "Pijama",
-            "simplePronunciation": "pa-djá-mas",
-            "phonetic": "/pəˈdʒæm.əz/",
-            "exampleEn": "Put on your pajamas before bed.",
-            "examplePt": "Vista seu pijama antes de dormir."
-          }
-        ],
-        "options": [
-          "Cap",
-          "Pocket",
-          "Suit",
-          "Pajamas"
-        ],
-        "correctAnswer": "Suit",
-        "contextSentence": "He wore a dark suit to the wedding.",
-        "contextSentencePt": "Ele usou um terno escuro no casamento.",
-        "explanation": "Exemplo: \"He wore a dark suit to the wedding.\" — Ele usou um terno escuro no casamento.",
-        "phoneticHint": "\"sút\" • /suːt/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p23-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Pocket",
-        "visualEmoji": "👖",
-        "visualOptions": [
-          {
-            "text": "Pocket",
-            "emoji": "👖",
-            "label": "Pocket",
-            "translationPt": "Bolso",
-            "simplePronunciation": "pó-ket",
-            "phonetic": "/ˈpɑː.kɪt/",
-            "exampleEn": "My keys are in my pants pocket.",
-            "examplePt": "Minhas chaves estão no bolso da calça."
-          },
-          {
-            "text": "Belt",
-            "emoji": "👖",
-            "label": "Belt",
-            "translationPt": "Cinto",
-            "simplePronunciation": "bélt",
-            "phonetic": "/belt/",
-            "exampleEn": "This brown leather belt fits well.",
-            "examplePt": "Este cinto de couro marrom serve bem."
-          },
-          {
-            "text": "Glasses",
-            "emoji": "👓",
-            "label": "Glasses",
-            "translationPt": "Óculos",
-            "simplePronunciation": "glé-ses",
-            "phonetic": "/ˈɡlæs.ɪz/",
-            "exampleEn": "I need my glasses to read.",
-            "examplePt": "Preciso dos meus óculos para ler."
-          },
-          {
-            "text": "Boots",
-            "emoji": "🥾",
-            "label": "Boots",
-            "translationPt": "Botas",
-            "simplePronunciation": "búts",
-            "phonetic": "/buːts/",
-            "exampleEn": "Wear boots when it rains.",
-            "examplePt": "Use botas quando chover."
-          }
-        ],
-        "options": [
-          "Pocket",
-          "Belt",
-          "Glasses",
-          "Boots"
-        ],
-        "correctAnswer": "Pocket",
-        "contextSentence": "My keys are in my pants pocket.",
-        "contextSentencePt": "Minhas chaves estão no bolso da calça.",
-        "explanation": "Exemplo: \"My keys are in my pants pocket.\" — Minhas chaves estão no bolso da calça.",
-        "phoneticHint": "\"pó-ket\" • /ˈpɑː.kɪt/",
-        "skillCategory": "vocabulary"
       }
     ]
   },
@@ -14313,107 +9929,65 @@ export const WORLD_0_PHASES: Phase[] = [
     "id": "w0-p24",
     "worldId": 0,
     "phaseNumber": 24,
-    "title": "Lição de Pronomes VI • Prática Geral II (Reflexivos a Relativos)",
-    "subtitle": "Módulo de Pronomes 6/6 (Após 18 de Vocabulário) • Frases do Dia a Dia + Voz da Professora",
-    "pedagogicalObjective": "Consolidar todas as famílias de pronomes com frases práticas de Reflexivos, Interrogativos, Indefinidos e Relativos.",
-    "type": "boss",
+    "themeId": "pronouns",
+    "themeTitle": "Lição de Pronomes",
+    "frequencyLevel": "1 a cada 3 Módulos de Vocabulário",
+    "title": "Lição de Pronomes VI • Aplicando Possessivos & Demonstrativos",
+    "subtitle": "Módulo de Pronomes 6/8 (Após 18 de Vocabulário) • Frases Práticas + Voz da Professora",
+    "pedagogicalObjective": "Praticar frases combinando Pronomes Possessivos (My, Your, Our, Mine) e Demonstrativos (This, That, These, Those).",
+    "type": "chest",
     "icon": "star",
     "cefrLevel": "A1",
     "theorySummary": [
-      "Bem-vindo à 6ª Lição Exclusiva de Pronomes (após 18 módulos de vocabulário)!",
-      "Aqui você consolida as perguntas com Interrogativos e as frases com Indefinidos e Relativos."
+      "6ª Lição Exclusiva de Pronomes (após 18 módulos de vocabulário).",
+      "Combinação prática de Demonstrativos (This, That, These, Those) com Possessivos (My, Your, Our, Mine) em frases de conversação."
     ],
-    "xpReward": 100,
-    "gemsReward": 40,
+    "xpReward": 70,
+    "gemsReward": 30,
     "exercises": [
       {
         "id": "w0-p24-pron-1",
         "type": "pair-match",
-        "conceptTitle": "Prática • Perguntas do Dia a Dia com Interrogativos",
-        "conceptHeader": "Vamos ligar perguntas reais usando Who (Quem), Where (Onde), What (Qual/O quê) e Whose (De quem)!",
-        "teacherAudioPt": "/audio/teacher/pronoun_6.wav",
-        "prompt": "🤝 Associe cada pergunta em inglês ao seu significado em português:",
+        "conceptTitle": "Aplicação • Demonstrativos e Possessivos em Frases",
+        "conceptHeader": "Veja como combinamos Demonstrativos e Possessivos na mesma frase para apontar e indicar posse ao mesmo tempo: \"This is my...\" (Este é o meu...), \"That is your...\" (Aquele é o seu...), \"These... are mine\" e \"Those are our...\".",
+        "teacherAudioPt": "/audio/teacher/pronoun_4.wav",
+        "prompt": "🤝 Conecte cada frase em inglês à sua tradução exata:",
         "pairs": [
           {
-            "id": "w0-p24-b1-pi1",
-            "en": "Who is at the door?",
-            "emoji": "🚪",
-            "phonetic": "/huː ɪz æt ðə dɔːr/",
-            "pt": "Quem está na porta?",
-            "tipPt": "Isso! \"Who\" pergunta sobre pessoas!"
-          },
-          {
-            "id": "w0-p24-b1-pi2",
-            "en": "Where is my shirt?",
-            "emoji": "👔",
-            "phonetic": "/wer ɪz maɪ ʃɜːrt/",
-            "pt": "Onde está a minha camisa?",
-            "tipPt": "Muito bem! \"Where\" pergunta o lugar!"
-          },
-          {
-            "id": "w0-p24-b1-pi3",
-            "en": "Whose coat is this?",
-            "emoji": "🧥",
-            "phonetic": "/huːz koʊt ɪz ðɪs/",
-            "pt": "De quem é este casaco?",
-            "tipPt": "Perfeito! \"Whose\" pergunta de quem é!"
-          },
-          {
-            "id": "w0-p24-b1-pi4",
-            "en": "What is in the box?",
-            "emoji": "🎁",
-            "phonetic": "/wɑːt ɪz ɪn ðə bɑːks/",
-            "pt": "O que tem dentro da caixa?",
-            "tipPt": "Lindo! \"What\" pergunta sobre coisas!"
-          }
-        ],
-        "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "Who is at the door? (Quem está na porta?), Where is my shirt? (Onde está minha camisa?), Whose coat is this? (De quem é este casaco?), How are you? (Como vai você?).",
-        "skillCategory": "grammar"
-      },
-      {
-        "id": "w0-p24-pron-2",
-        "type": "pair-match",
-        "conceptTitle": "Prática • Frases do Cotidiano com Relativos e Indefinidos",
-        "conceptHeader": "Vamos ligar frases reais usando as pontezinhas dos Pronomes Relativos \"Who, Which, That, Where\"!",
-        "teacherAudioPt": "/audio/teacher/pronoun_8.wav",
-        "prompt": "🤝 Associe cada frase com Pronome Relativo ao seu significado em português:",
-        "pairs": [
-          {
-            "id": "w0-p24-b2-rel5",
-            "en": "The teacher who teaches",
-            "emoji": "👩‍🏫",
-            "phonetic": "/ðə ˈtiː.tʃər huː ˈtiː.tʃɪz/",
-            "pt": "A professora que ensina (pessoa = who)",
-            "tipPt": "Isso! Pessoa usa a pontezinha \"who\"!"
-          },
-          {
-            "id": "w0-p24-b2-rel6",
-            "en": "The key which opens",
-            "emoji": "🔑",
-            "phonetic": "/ðə kiː wɪtʃ ˈoʊ.pənz/",
-            "pt": "A chave que abre (objeto = which)",
-            "tipPt": "Muito bem! Objeto usa a pontezinha \"which\"!"
-          },
-          {
-            "id": "w0-p24-b2-rel7",
-            "en": "The house where I live",
-            "emoji": "🏠",
-            "phonetic": "/ðə haʊs wer aɪ lɪv/",
-            "pt": "A casa onde eu moro (lugar = where)",
-            "tipPt": "Perfeito! Lugar usa a pontezinha \"where\"!"
-          },
-          {
-            "id": "w0-p24-b2-rel8",
-            "en": "The car that is red",
+            "id": "w0-p24-b1-pd1",
+            "en": "This is my car",
             "emoji": "🚗",
-            "phonetic": "/ðə kɑːr ðæt ɪz red/",
-            "pt": "O carro que é vermelho (curinga = that)",
-            "tipPt": "Parabéns! Você dominou todas as famílias de pronomes!"
+            "phonetic": "/ðɪs ɪz maɪ kɑːr/",
+            "pt": "Este aqui é o meu carro (1 perto)",
+            "tipPt": "Correto! \"This\" (este perto) + \"my\" (meu)."
+          },
+          {
+            "id": "w0-p24-b1-pd2",
+            "en": "That is your bus",
+            "emoji": "🚌",
+            "phonetic": "/ðæt ɪz jʊr bʌs/",
+            "pt": "Aquele lá é o seu ônibus (1 longe)",
+            "tipPt": "Perfeito! \"That\" (aquele longe) + \"your\" (seu)."
+          },
+          {
+            "id": "w0-p24-b1-pd3",
+            "en": "These shoes are mine",
+            "emoji": "👟",
+            "phonetic": "/ðiːz ʃuːz ɑːr maɪn/",
+            "pt": "Estes sapatos aqui são meus (vários perto)",
+            "tipPt": "Muito bem! \"These\" (estes perto) + \"mine\" (meus, no final)."
+          },
+          {
+            "id": "w0-p24-b1-pd4",
+            "en": "Those are our bags",
+            "emoji": "👜",
+            "phonetic": "/ðoʊz ɑːr aʊər bæɡz/",
+            "pt": "Aquelas lá são as nossas bolsas (várias longe)",
+            "tipPt": "Excelente! \"Those\" (aquelas longe) + \"our\" (nossas)."
           }
         ],
         "correctAnswer": "ALL_PAIRS_MATCHED",
-        "explanation": "The teacher who teaches (A professora que ensina), The key which opens (A chave que abre), The house where I live (A casa onde eu moro), The car that is red (O carro que é vermelho).",
+        "explanation": "This is my car (Este é meu carro), That is your bus (Aquele é seu ônibus), These shoes are mine (Estes sapatos são meus), Those are our bags (Aquelas são nossas bolsas).",
         "skillCategory": "grammar"
       }
     ]
@@ -14423,17 +9997,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 25,
     "themeId": "clothes",
-    "themeTitle": "Roupas",
-    "frequencyLevel": "Módulo 3 • Intermediárias",
+    "themeTitle": "Tema 5: Roupas",
+    "frequencyLevel": "Módulo 3 • Palavras Intermediárias",
     "title": "Roupas • Módulo 3: Palavras Intermediárias",
-    "subtitle": "Tema 5 (Nível 3/4) • 12 acessórios pessoais e partes das roupas",
-    "pedagogicalObjective": "Aprender acessórios e partes das roupas: Uniform, Tie, Scarf, Gloves, Ring, Necklace, Wallet, Umbrella, Button, Zipper, Sleeve e Collar.",
+    "subtitle": "Tema: Roupas (3/4) • 8 acessórios pessoais intermediários",
+    "pedagogicalObjective": "Aprender 8 acessórios intermediários: Glasses, Watch, Belt, Cap, Tie, Scarf, Gloves e Umbrella.",
     "type": "lesson",
     "icon": "shirt",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 3 de Roupas aprendemos palavras intermediárias: Uniform (\"iú-ni-fórm\" = Uniforme), Tie (\"tái\" = Gravata), Scarf (\"scárf\" = Cachecol), Gloves (\"glâvz\" = Luvas), Ring (\"ríng\" = Anel) e Necklace (\"nék-les\" = Colar).",
-      "E completamos com Wallet (\"uó-let\" = Carteira), Umbrella (\"âm-bré-la\" = Guarda-chuva), Button (\"bâ-ton\" = Botão), Zipper (\"zí-per\" = Zíper), Sleeve (\"slív\" = Manga) e Collar (\"có-lar\" = Gola/Colarinho)."
+      "Tema: Roupas — Módulo 3 (Palavras intermediárias): acessórios de uso pessoal e proteção.",
+      "Palavras deste módulo (8): Glasses (\"glé-ses\" = Óculos), Watch (\"uótch\" = Relógio de pulso), Belt (\"bélt\" = Cinto), Cap (\"kép\" = Boné), Tie (\"tái\" = Gravata), Scarf (\"scárf\" = Cachecol), Gloves (\"glâvz\" = Luvas) e Umbrella (\"âm-bré-la\" = Guarda-chuva)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -14442,28 +10016,28 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p25-e1",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Uniform",
-        "visualEmoji": "🎽",
+        "audioPhrase": "Glasses",
+        "visualEmoji": "👓",
         "visualOptions": [
           {
-            "text": "Ring",
-            "emoji": "💍",
-            "label": "Ring",
-            "translationPt": "Anel / Aliança",
-            "simplePronunciation": "ríng",
-            "phonetic": "/rɪŋ/",
-            "exampleEn": "She wears a gold ring on her finger.",
-            "examplePt": "Ela usa um anel de ouro no dedo."
+            "text": "Cap",
+            "emoji": "🧢",
+            "label": "Cap",
+            "translationPt": "Boné",
+            "simplePronunciation": "kép",
+            "phonetic": "/kæp/",
+            "exampleEn": "He wears a cap outdoors.",
+            "examplePt": "Ele usa um boné ao ar livre."
           },
           {
-            "text": "Button",
-            "emoji": "🔘",
-            "label": "Button",
-            "translationPt": "Botão de roupa",
-            "simplePronunciation": "bâ-ton",
-            "phonetic": "/ˈbʌt.ən/",
-            "exampleEn": "Fasten the top button of your shirt.",
-            "examplePt": "Abotoe o botão de cima da sua camisa."
+            "text": "Belt",
+            "emoji": "👖",
+            "label": "Belt",
+            "translationPt": "Cinto",
+            "simplePronunciation": "bélt",
+            "phonetic": "/belt/",
+            "exampleEn": "This leather belt fits well.",
+            "examplePt": "Este cinto de couro serve bem."
           },
           {
             "text": "Umbrella",
@@ -14472,100 +10046,39 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Guarda-chuva",
             "simplePronunciation": "âm-bré-la",
             "phonetic": "/ʌmˈbrel.ə/",
-            "exampleEn": "Take an umbrella in case it rains.",
-            "examplePt": "Leve um guarda-chuva caso chova."
+            "exampleEn": "Take an umbrella in the rain.",
+            "examplePt": "Leve um guarda-chuva na chuva."
           },
           {
-            "text": "Uniform",
-            "emoji": "🎽",
-            "label": "Uniform",
-            "translationPt": "Uniforme",
-            "simplePronunciation": "iú-ni-fórm",
-            "phonetic": "/ˈjuː.nə.fɔːrm/",
-            "exampleEn": "Students wear a school uniform.",
-            "examplePt": "Os alunos usam uniforme escolar."
+            "text": "Glasses",
+            "emoji": "👓",
+            "label": "Glasses",
+            "translationPt": "Óculos",
+            "simplePronunciation": "glé-ses",
+            "phonetic": "/ˈɡlæs.ɪz/",
+            "exampleEn": "I need my glasses to read.",
+            "examplePt": "Preciso dos meus óculos para ler."
           }
         ],
         "options": [
-          "Ring",
-          "Button",
+          "Cap",
+          "Belt",
           "Umbrella",
-          "Uniform"
+          "Glasses"
         ],
-        "correctAnswer": "Uniform",
-        "contextSentence": "Students wear a school uniform.",
-        "contextSentencePt": "Os alunos usam uniforme escolar.",
-        "explanation": "Exemplo: \"Students wear a school uniform.\" — Os alunos usam uniforme escolar.",
-        "phoneticHint": "\"iú-ni-fórm\" • /ˈjuː.nə.fɔːrm/",
+        "correctAnswer": "Glasses",
+        "contextSentence": "I need my glasses to read.",
+        "contextSentencePt": "Preciso dos meus óculos para ler.",
+        "explanation": "Exemplo: \"I need my glasses to read.\" — Preciso dos meus óculos para ler.",
+        "phoneticHint": "\"glé-ses\" • /ˈɡlæs.ɪz/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p25-e2",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Tie",
-        "visualEmoji": "👔",
-        "visualOptions": [
-          {
-            "text": "Collar",
-            "emoji": "👔",
-            "label": "Collar",
-            "translationPt": "Gola / Colarinho",
-            "simplePronunciation": "có-lar",
-            "phonetic": "/ˈkɑː.lər/",
-            "exampleEn": "Straighten your shirt collar.",
-            "examplePt": "Arrume a gola da sua camisa."
-          },
-          {
-            "text": "Sleeve",
-            "emoji": "👕",
-            "label": "Sleeve",
-            "translationPt": "Manga da camisa",
-            "simplePronunciation": "slív",
-            "phonetic": "/sliːv/",
-            "exampleEn": "Roll up your shirt sleeves.",
-            "examplePt": "Dobre as mangas da sua camisa."
-          },
-          {
-            "text": "Tie",
-            "emoji": "👔",
-            "label": "Tie",
-            "translationPt": "Gravata",
-            "simplePronunciation": "tái",
-            "phonetic": "/taɪ/",
-            "exampleEn": "He wears a red tie to work.",
-            "examplePt": "Ele usa uma gravata vermelha para trabalhar."
-          },
-          {
-            "text": "Necklace",
-            "emoji": "📿",
-            "label": "Necklace",
-            "translationPt": "Colar",
-            "simplePronunciation": "nék-les",
-            "phonetic": "/ˈnek.lɪs/",
-            "exampleEn": "That silver necklace is lovely.",
-            "examplePt": "Aquele colar de prata é lindo."
-          }
-        ],
-        "options": [
-          "Collar",
-          "Sleeve",
-          "Tie",
-          "Necklace"
-        ],
-        "correctAnswer": "Tie",
-        "contextSentence": "He wears a red tie to work.",
-        "contextSentencePt": "Ele usa uma gravata vermelha para trabalhar.",
-        "explanation": "Exemplo: \"He wears a red tie to work.\" — Ele usa uma gravata vermelha para trabalhar.",
-        "phoneticHint": "\"tái\" • /taɪ/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p25-e3",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Scarf",
-        "visualEmoji": "🧣",
+        "audioPhrase": "Watch",
+        "visualEmoji": "⌚",
         "visualOptions": [
           {
             "text": "Scarf",
@@ -14574,28 +10087,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cachecol",
             "simplePronunciation": "scárf",
             "phonetic": "/skɑːrf/",
-            "exampleEn": "Wrap a soft scarf around your neck.",
-            "examplePt": "Enrole um cachecol macio no pescoço."
-          },
-          {
-            "text": "Wallet",
-            "emoji": "👛",
-            "label": "Wallet",
-            "translationPt": "Carteira",
-            "simplePronunciation": "uó-let",
-            "phonetic": "/ˈwɑː.lɪt/",
-            "exampleEn": "Keep your money inside the wallet.",
-            "examplePt": "Guarde seu dinheiro dentro da carteira."
-          },
-          {
-            "text": "Zipper",
-            "emoji": "🧥",
-            "label": "Zipper",
-            "translationPt": "Zíper",
-            "simplePronunciation": "zí-per",
-            "phonetic": "/ˈzɪp.ər/",
-            "exampleEn": "Close the jacket zipper.",
-            "examplePt": "Feche o zíper da jaqueta."
+            "exampleEn": "Wrap a scarf around your neck.",
+            "examplePt": "Enrole um cachecol no pescoço."
           },
           {
             "text": "Gloves",
@@ -14605,38 +10098,322 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "glâvz",
             "phonetic": "/ɡlʌvz/",
             "exampleEn": "Gloves keep your hands warm.",
-            "examplePt": "As luvas mantêm suas mãos aquecidas."
+            "examplePt": "As luvas mantêm as mãos quentes."
+          },
+          {
+            "text": "Watch",
+            "emoji": "⌚",
+            "label": "Watch",
+            "translationPt": "Relógio de pulso",
+            "simplePronunciation": "uótch",
+            "phonetic": "/wɑːtʃ/",
+            "exampleEn": "Check the time on your watch.",
+            "examplePt": "Veja a hora no seu relógio de pulso."
+          },
+          {
+            "text": "Tie",
+            "emoji": "👔",
+            "label": "Tie",
+            "translationPt": "Gravata",
+            "simplePronunciation": "tái",
+            "phonetic": "/taɪ/",
+            "exampleEn": "He wears a tie to work.",
+            "examplePt": "Ele usa gravata no trabalho."
           }
         ],
         "options": [
           "Scarf",
-          "Wallet",
-          "Zipper",
-          "Gloves"
+          "Gloves",
+          "Watch",
+          "Tie"
         ],
-        "correctAnswer": "Scarf",
-        "contextSentence": "Wrap a soft scarf around your neck.",
-        "contextSentencePt": "Enrole um cachecol macio no pescoço.",
-        "explanation": "Exemplo: \"Wrap a soft scarf around your neck.\" — Enrole um cachecol macio no pescoço.",
-        "phoneticHint": "\"scárf\" • /skɑːrf/",
+        "correctAnswer": "Watch",
+        "contextSentence": "Check the time on your watch.",
+        "contextSentencePt": "Veja a hora no seu relógio de pulso.",
+        "explanation": "Exemplo: \"Check the time on your watch.\" — Veja a hora no seu relógio de pulso.",
+        "phoneticHint": "\"uótch\" • /wɑːtʃ/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p25-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Belt",
+        "visualEmoji": "👖",
+        "visualOptions": [
+          {
+            "text": "Belt",
+            "emoji": "👖",
+            "label": "Belt",
+            "translationPt": "Cinto",
+            "simplePronunciation": "bélt",
+            "phonetic": "/belt/",
+            "exampleEn": "This leather belt fits well.",
+            "examplePt": "Este cinto de couro serve bem."
+          },
+          {
+            "text": "Gloves",
+            "emoji": "🧤",
+            "label": "Gloves",
+            "translationPt": "Luvas",
+            "simplePronunciation": "glâvz",
+            "phonetic": "/ɡlʌvz/",
+            "exampleEn": "Gloves keep your hands warm.",
+            "examplePt": "As luvas mantêm as mãos quentes."
+          },
+          {
+            "text": "Watch",
+            "emoji": "⌚",
+            "label": "Watch",
+            "translationPt": "Relógio de pulso",
+            "simplePronunciation": "uótch",
+            "phonetic": "/wɑːtʃ/",
+            "exampleEn": "Check the time on your watch.",
+            "examplePt": "Veja a hora no seu relógio de pulso."
+          },
+          {
+            "text": "Glasses",
+            "emoji": "👓",
+            "label": "Glasses",
+            "translationPt": "Óculos",
+            "simplePronunciation": "glé-ses",
+            "phonetic": "/ˈɡlæs.ɪz/",
+            "exampleEn": "I need my glasses to read.",
+            "examplePt": "Preciso dos meus óculos para ler."
+          }
+        ],
+        "options": [
+          "Belt",
+          "Gloves",
+          "Watch",
+          "Glasses"
+        ],
+        "correctAnswer": "Belt",
+        "contextSentence": "This leather belt fits well.",
+        "contextSentencePt": "Este cinto de couro serve bem.",
+        "explanation": "Exemplo: \"This leather belt fits well.\" — Este cinto de couro serve bem.",
+        "phoneticHint": "\"bélt\" • /belt/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p25-e4",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Cap",
+        "visualEmoji": "🧢",
+        "visualOptions": [
+          {
+            "text": "Glasses",
+            "emoji": "👓",
+            "label": "Glasses",
+            "translationPt": "Óculos",
+            "simplePronunciation": "glé-ses",
+            "phonetic": "/ˈɡlæs.ɪz/",
+            "exampleEn": "I need my glasses to read.",
+            "examplePt": "Preciso dos meus óculos para ler."
+          },
+          {
+            "text": "Watch",
+            "emoji": "⌚",
+            "label": "Watch",
+            "translationPt": "Relógio de pulso",
+            "simplePronunciation": "uótch",
+            "phonetic": "/wɑːtʃ/",
+            "exampleEn": "Check the time on your watch.",
+            "examplePt": "Veja a hora no seu relógio de pulso."
+          },
+          {
+            "text": "Cap",
+            "emoji": "🧢",
+            "label": "Cap",
+            "translationPt": "Boné",
+            "simplePronunciation": "kép",
+            "phonetic": "/kæp/",
+            "exampleEn": "He wears a cap outdoors.",
+            "examplePt": "Ele usa um boné ao ar livre."
+          },
+          {
+            "text": "Scarf",
+            "emoji": "🧣",
+            "label": "Scarf",
+            "translationPt": "Cachecol",
+            "simplePronunciation": "scárf",
+            "phonetic": "/skɑːrf/",
+            "exampleEn": "Wrap a scarf around your neck.",
+            "examplePt": "Enrole um cachecol no pescoço."
+          }
+        ],
+        "options": [
+          "Glasses",
+          "Watch",
+          "Cap",
+          "Scarf"
+        ],
+        "correctAnswer": "Cap",
+        "contextSentence": "He wears a cap outdoors.",
+        "contextSentencePt": "Ele usa um boné ao ar livre.",
+        "explanation": "Exemplo: \"He wears a cap outdoors.\" — Ele usa um boné ao ar livre.",
+        "phoneticHint": "\"kép\" • /kæp/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p25-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Tie",
+        "visualEmoji": "👔",
+        "visualOptions": [
+          {
+            "text": "Umbrella",
+            "emoji": "☂️",
+            "label": "Umbrella",
+            "translationPt": "Guarda-chuva",
+            "simplePronunciation": "âm-bré-la",
+            "phonetic": "/ʌmˈbrel.ə/",
+            "exampleEn": "Take an umbrella in the rain.",
+            "examplePt": "Leve um guarda-chuva na chuva."
+          },
+          {
+            "text": "Tie",
+            "emoji": "👔",
+            "label": "Tie",
+            "translationPt": "Gravata",
+            "simplePronunciation": "tái",
+            "phonetic": "/taɪ/",
+            "exampleEn": "He wears a tie to work.",
+            "examplePt": "Ele usa gravata no trabalho."
+          },
+          {
+            "text": "Gloves",
+            "emoji": "🧤",
+            "label": "Gloves",
+            "translationPt": "Luvas",
+            "simplePronunciation": "glâvz",
+            "phonetic": "/ɡlʌvz/",
+            "exampleEn": "Gloves keep your hands warm.",
+            "examplePt": "As luvas mantêm as mãos quentes."
+          },
+          {
+            "text": "Belt",
+            "emoji": "👖",
+            "label": "Belt",
+            "translationPt": "Cinto",
+            "simplePronunciation": "bélt",
+            "phonetic": "/belt/",
+            "exampleEn": "This leather belt fits well.",
+            "examplePt": "Este cinto de couro serve bem."
+          }
+        ],
+        "options": [
+          "Umbrella",
+          "Tie",
+          "Gloves",
+          "Belt"
+        ],
+        "correctAnswer": "Tie",
+        "contextSentence": "He wears a tie to work.",
+        "contextSentencePt": "Ele usa gravata no trabalho.",
+        "explanation": "Exemplo: \"He wears a tie to work.\" — Ele usa gravata no trabalho.",
+        "phoneticHint": "\"tái\" • /taɪ/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p25-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Scarf",
+        "visualEmoji": "🧣",
+        "visualOptions": [
+          {
+            "text": "Cap",
+            "emoji": "🧢",
+            "label": "Cap",
+            "translationPt": "Boné",
+            "simplePronunciation": "kép",
+            "phonetic": "/kæp/",
+            "exampleEn": "He wears a cap outdoors.",
+            "examplePt": "Ele usa um boné ao ar livre."
+          },
+          {
+            "text": "Glasses",
+            "emoji": "👓",
+            "label": "Glasses",
+            "translationPt": "Óculos",
+            "simplePronunciation": "glé-ses",
+            "phonetic": "/ˈɡlæs.ɪz/",
+            "exampleEn": "I need my glasses to read.",
+            "examplePt": "Preciso dos meus óculos para ler."
+          },
+          {
+            "text": "Watch",
+            "emoji": "⌚",
+            "label": "Watch",
+            "translationPt": "Relógio de pulso",
+            "simplePronunciation": "uótch",
+            "phonetic": "/wɑːtʃ/",
+            "exampleEn": "Check the time on your watch.",
+            "examplePt": "Veja a hora no seu relógio de pulso."
+          },
+          {
+            "text": "Scarf",
+            "emoji": "🧣",
+            "label": "Scarf",
+            "translationPt": "Cachecol",
+            "simplePronunciation": "scárf",
+            "phonetic": "/skɑːrf/",
+            "exampleEn": "Wrap a scarf around your neck.",
+            "examplePt": "Enrole um cachecol no pescoço."
+          }
+        ],
+        "options": [
+          "Cap",
+          "Glasses",
+          "Watch",
+          "Scarf"
+        ],
+        "correctAnswer": "Scarf",
+        "contextSentence": "Wrap a scarf around your neck.",
+        "contextSentencePt": "Enrole um cachecol no pescoço.",
+        "explanation": "Exemplo: \"Wrap a scarf around your neck.\" — Enrole um cachecol no pescoço.",
+        "phoneticHint": "\"scárf\" • /skɑːrf/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p25-e7",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
         "audioPhrase": "Gloves",
         "visualEmoji": "🧤",
         "visualOptions": [
           {
-            "text": "Button",
-            "emoji": "🔘",
-            "label": "Button",
-            "translationPt": "Botão de roupa",
-            "simplePronunciation": "bâ-ton",
-            "phonetic": "/ˈbʌt.ən/",
-            "exampleEn": "Fasten the top button of your shirt.",
-            "examplePt": "Abotoe o botão de cima da sua camisa."
+            "text": "Gloves",
+            "emoji": "🧤",
+            "label": "Gloves",
+            "translationPt": "Luvas",
+            "simplePronunciation": "glâvz",
+            "phonetic": "/ɡlʌvz/",
+            "exampleEn": "Gloves keep your hands warm.",
+            "examplePt": "As luvas mantêm as mãos quentes."
+          },
+          {
+            "text": "Tie",
+            "emoji": "👔",
+            "label": "Tie",
+            "translationPt": "Gravata",
+            "simplePronunciation": "tái",
+            "phonetic": "/taɪ/",
+            "exampleEn": "He wears a tie to work.",
+            "examplePt": "Ele usa gravata no trabalho."
+          },
+          {
+            "text": "Belt",
+            "emoji": "👖",
+            "label": "Belt",
+            "translationPt": "Cinto",
+            "simplePronunciation": "bélt",
+            "phonetic": "/belt/",
+            "exampleEn": "This leather belt fits well.",
+            "examplePt": "Este cinto de couro serve bem."
           },
           {
             "text": "Umbrella",
@@ -14645,224 +10422,21 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Guarda-chuva",
             "simplePronunciation": "âm-bré-la",
             "phonetic": "/ʌmˈbrel.ə/",
-            "exampleEn": "Take an umbrella in case it rains.",
-            "examplePt": "Leve um guarda-chuva caso chova."
-          },
-          {
-            "text": "Gloves",
-            "emoji": "🧤",
-            "label": "Gloves",
-            "translationPt": "Luvas",
-            "simplePronunciation": "glâvz",
-            "phonetic": "/ɡlʌvz/",
-            "exampleEn": "Gloves keep your hands warm.",
-            "examplePt": "As luvas mantêm suas mãos aquecidas."
-          },
-          {
-            "text": "Uniform",
-            "emoji": "🎽",
-            "label": "Uniform",
-            "translationPt": "Uniforme",
-            "simplePronunciation": "iú-ni-fórm",
-            "phonetic": "/ˈjuː.nə.fɔːrm/",
-            "exampleEn": "Students wear a school uniform.",
-            "examplePt": "Os alunos usam uniforme escolar."
+            "exampleEn": "Take an umbrella in the rain.",
+            "examplePt": "Leve um guarda-chuva na chuva."
           }
         ],
         "options": [
-          "Button",
-          "Umbrella",
           "Gloves",
-          "Uniform"
+          "Tie",
+          "Belt",
+          "Umbrella"
         ],
         "correctAnswer": "Gloves",
         "contextSentence": "Gloves keep your hands warm.",
-        "contextSentencePt": "As luvas mantêm suas mãos aquecidas.",
-        "explanation": "Exemplo: \"Gloves keep your hands warm.\" — As luvas mantêm suas mãos aquecidas.",
+        "contextSentencePt": "As luvas mantêm as mãos quentes.",
+        "explanation": "Exemplo: \"Gloves keep your hands warm.\" — As luvas mantêm as mãos quentes.",
         "phoneticHint": "\"glâvz\" • /ɡlʌvz/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p25-e5",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Ring",
-        "visualEmoji": "💍",
-        "visualOptions": [
-          {
-            "text": "Collar",
-            "emoji": "👔",
-            "label": "Collar",
-            "translationPt": "Gola / Colarinho",
-            "simplePronunciation": "có-lar",
-            "phonetic": "/ˈkɑː.lər/",
-            "exampleEn": "Straighten your shirt collar.",
-            "examplePt": "Arrume a gola da sua camisa."
-          },
-          {
-            "text": "Ring",
-            "emoji": "💍",
-            "label": "Ring",
-            "translationPt": "Anel / Aliança",
-            "simplePronunciation": "ríng",
-            "phonetic": "/rɪŋ/",
-            "exampleEn": "She wears a gold ring on her finger.",
-            "examplePt": "Ela usa um anel de ouro no dedo."
-          },
-          {
-            "text": "Sleeve",
-            "emoji": "👕",
-            "label": "Sleeve",
-            "translationPt": "Manga da camisa",
-            "simplePronunciation": "slív",
-            "phonetic": "/sliːv/",
-            "exampleEn": "Roll up your shirt sleeves.",
-            "examplePt": "Dobre as mangas da sua camisa."
-          },
-          {
-            "text": "Tie",
-            "emoji": "👔",
-            "label": "Tie",
-            "translationPt": "Gravata",
-            "simplePronunciation": "tái",
-            "phonetic": "/taɪ/",
-            "exampleEn": "He wears a red tie to work.",
-            "examplePt": "Ele usa uma gravata vermelha para trabalhar."
-          }
-        ],
-        "options": [
-          "Collar",
-          "Ring",
-          "Sleeve",
-          "Tie"
-        ],
-        "correctAnswer": "Ring",
-        "contextSentence": "She wears a gold ring on her finger.",
-        "contextSentencePt": "Ela usa um anel de ouro no dedo.",
-        "explanation": "Exemplo: \"She wears a gold ring on her finger.\" — Ela usa um anel de ouro no dedo.",
-        "phoneticHint": "\"ríng\" • /rɪŋ/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p25-e6",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Necklace",
-        "visualEmoji": "📿",
-        "visualOptions": [
-          {
-            "text": "Scarf",
-            "emoji": "🧣",
-            "label": "Scarf",
-            "translationPt": "Cachecol",
-            "simplePronunciation": "scárf",
-            "phonetic": "/skɑːrf/",
-            "exampleEn": "Wrap a soft scarf around your neck.",
-            "examplePt": "Enrole um cachecol macio no pescoço."
-          },
-          {
-            "text": "Uniform",
-            "emoji": "🎽",
-            "label": "Uniform",
-            "translationPt": "Uniforme",
-            "simplePronunciation": "iú-ni-fórm",
-            "phonetic": "/ˈjuː.nə.fɔːrm/",
-            "exampleEn": "Students wear a school uniform.",
-            "examplePt": "Os alunos usam uniforme escolar."
-          },
-          {
-            "text": "Ring",
-            "emoji": "💍",
-            "label": "Ring",
-            "translationPt": "Anel / Aliança",
-            "simplePronunciation": "ríng",
-            "phonetic": "/rɪŋ/",
-            "exampleEn": "She wears a gold ring on her finger.",
-            "examplePt": "Ela usa um anel de ouro no dedo."
-          },
-          {
-            "text": "Necklace",
-            "emoji": "📿",
-            "label": "Necklace",
-            "translationPt": "Colar",
-            "simplePronunciation": "nék-les",
-            "phonetic": "/ˈnek.lɪs/",
-            "exampleEn": "That silver necklace is lovely.",
-            "examplePt": "Aquele colar de prata é lindo."
-          }
-        ],
-        "options": [
-          "Scarf",
-          "Uniform",
-          "Ring",
-          "Necklace"
-        ],
-        "correctAnswer": "Necklace",
-        "contextSentence": "That silver necklace is lovely.",
-        "contextSentencePt": "Aquele colar de prata é lindo.",
-        "explanation": "Exemplo: \"That silver necklace is lovely.\" — Aquele colar de prata é lindo.",
-        "phoneticHint": "\"nék-les\" • /ˈnek.lɪs/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p25-e7",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Wallet",
-        "visualEmoji": "👛",
-        "visualOptions": [
-          {
-            "text": "Wallet",
-            "emoji": "👛",
-            "label": "Wallet",
-            "translationPt": "Carteira",
-            "simplePronunciation": "uó-let",
-            "phonetic": "/ˈwɑː.lɪt/",
-            "exampleEn": "Keep your money inside the wallet.",
-            "examplePt": "Guarde seu dinheiro dentro da carteira."
-          },
-          {
-            "text": "Scarf",
-            "emoji": "🧣",
-            "label": "Scarf",
-            "translationPt": "Cachecol",
-            "simplePronunciation": "scárf",
-            "phonetic": "/skɑːrf/",
-            "exampleEn": "Wrap a soft scarf around your neck.",
-            "examplePt": "Enrole um cachecol macio no pescoço."
-          },
-          {
-            "text": "Gloves",
-            "emoji": "🧤",
-            "label": "Gloves",
-            "translationPt": "Luvas",
-            "simplePronunciation": "glâvz",
-            "phonetic": "/ɡlʌvz/",
-            "exampleEn": "Gloves keep your hands warm.",
-            "examplePt": "As luvas mantêm suas mãos aquecidas."
-          },
-          {
-            "text": "Zipper",
-            "emoji": "🧥",
-            "label": "Zipper",
-            "translationPt": "Zíper",
-            "simplePronunciation": "zí-per",
-            "phonetic": "/ˈzɪp.ər/",
-            "exampleEn": "Close the jacket zipper.",
-            "examplePt": "Feche o zíper da jaqueta."
-          }
-        ],
-        "options": [
-          "Wallet",
-          "Scarf",
-          "Gloves",
-          "Zipper"
-        ],
-        "correctAnswer": "Wallet",
-        "contextSentence": "Keep your money inside the wallet.",
-        "contextSentencePt": "Guarde seu dinheiro dentro da carteira.",
-        "explanation": "Exemplo: \"Keep your money inside the wallet.\" — Guarde seu dinheiro dentro da carteira.",
-        "phoneticHint": "\"uó-let\" • /ˈwɑː.lɪt/",
         "skillCategory": "vocabulary"
       },
       {
@@ -14873,278 +10447,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "☂️",
         "visualOptions": [
           {
-            "text": "Collar",
-            "emoji": "👔",
-            "label": "Collar",
-            "translationPt": "Gola / Colarinho",
-            "simplePronunciation": "có-lar",
-            "phonetic": "/ˈkɑː.lər/",
-            "exampleEn": "Straighten your shirt collar.",
-            "examplePt": "Arrume a gola da sua camisa."
-          },
-          {
-            "text": "Tie",
-            "emoji": "👔",
-            "label": "Tie",
-            "translationPt": "Gravata",
-            "simplePronunciation": "tái",
-            "phonetic": "/taɪ/",
-            "exampleEn": "He wears a red tie to work.",
-            "examplePt": "Ele usa uma gravata vermelha para trabalhar."
-          },
-          {
-            "text": "Sleeve",
-            "emoji": "👕",
-            "label": "Sleeve",
-            "translationPt": "Manga da camisa",
-            "simplePronunciation": "slív",
-            "phonetic": "/sliːv/",
-            "exampleEn": "Roll up your shirt sleeves.",
-            "examplePt": "Dobre as mangas da sua camisa."
-          },
-          {
-            "text": "Umbrella",
-            "emoji": "☂️",
-            "label": "Umbrella",
-            "translationPt": "Guarda-chuva",
-            "simplePronunciation": "âm-bré-la",
-            "phonetic": "/ʌmˈbrel.ə/",
-            "exampleEn": "Take an umbrella in case it rains.",
-            "examplePt": "Leve um guarda-chuva caso chova."
-          }
-        ],
-        "options": [
-          "Collar",
-          "Tie",
-          "Sleeve",
-          "Umbrella"
-        ],
-        "correctAnswer": "Umbrella",
-        "contextSentence": "Take an umbrella in case it rains.",
-        "contextSentencePt": "Leve um guarda-chuva caso chova.",
-        "explanation": "Exemplo: \"Take an umbrella in case it rains.\" — Leve um guarda-chuva caso chova.",
-        "phoneticHint": "\"âm-bré-la\" • /ʌmˈbrel.ə/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p25-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Button",
-        "visualEmoji": "🔘",
-        "visualOptions": [
-          {
-            "text": "Necklace",
-            "emoji": "📿",
-            "label": "Necklace",
-            "translationPt": "Colar",
-            "simplePronunciation": "nék-les",
-            "phonetic": "/ˈnek.lɪs/",
-            "exampleEn": "That silver necklace is lovely.",
-            "examplePt": "Aquele colar de prata é lindo."
-          },
-          {
-            "text": "Uniform",
-            "emoji": "🎽",
-            "label": "Uniform",
-            "translationPt": "Uniforme",
-            "simplePronunciation": "iú-ni-fórm",
-            "phonetic": "/ˈjuː.nə.fɔːrm/",
-            "exampleEn": "Students wear a school uniform.",
-            "examplePt": "Os alunos usam uniforme escolar."
-          },
-          {
-            "text": "Button",
-            "emoji": "🔘",
-            "label": "Button",
-            "translationPt": "Botão de roupa",
-            "simplePronunciation": "bâ-ton",
-            "phonetic": "/ˈbʌt.ən/",
-            "exampleEn": "Fasten the top button of your shirt.",
-            "examplePt": "Abotoe o botão de cima da sua camisa."
-          },
-          {
-            "text": "Ring",
-            "emoji": "💍",
-            "label": "Ring",
-            "translationPt": "Anel / Aliança",
-            "simplePronunciation": "ríng",
-            "phonetic": "/rɪŋ/",
-            "exampleEn": "She wears a gold ring on her finger.",
-            "examplePt": "Ela usa um anel de ouro no dedo."
-          }
-        ],
-        "options": [
-          "Necklace",
-          "Uniform",
-          "Button",
-          "Ring"
-        ],
-        "correctAnswer": "Button",
-        "contextSentence": "Fasten the top button of your shirt.",
-        "contextSentencePt": "Abotoe o botão de cima da sua camisa.",
-        "explanation": "Exemplo: \"Fasten the top button of your shirt.\" — Abotoe o botão de cima da sua camisa.",
-        "phoneticHint": "\"bâ-ton\" • /ˈbʌt.ən/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p25-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Zipper",
-        "visualEmoji": "🧥",
-        "visualOptions": [
-          {
-            "text": "Zipper",
-            "emoji": "🧥",
-            "label": "Zipper",
-            "translationPt": "Zíper",
-            "simplePronunciation": "zí-per",
-            "phonetic": "/ˈzɪp.ər/",
-            "exampleEn": "Close the jacket zipper.",
-            "examplePt": "Feche o zíper da jaqueta."
-          },
-          {
-            "text": "Wallet",
-            "emoji": "👛",
-            "label": "Wallet",
-            "translationPt": "Carteira",
-            "simplePronunciation": "uó-let",
-            "phonetic": "/ˈwɑː.lɪt/",
-            "exampleEn": "Keep your money inside the wallet.",
-            "examplePt": "Guarde seu dinheiro dentro da carteira."
-          },
-          {
-            "text": "Gloves",
-            "emoji": "🧤",
-            "label": "Gloves",
-            "translationPt": "Luvas",
-            "simplePronunciation": "glâvz",
-            "phonetic": "/ɡlʌvz/",
-            "exampleEn": "Gloves keep your hands warm.",
-            "examplePt": "As luvas mantêm suas mãos aquecidas."
-          },
-          {
             "text": "Scarf",
             "emoji": "🧣",
             "label": "Scarf",
             "translationPt": "Cachecol",
             "simplePronunciation": "scárf",
             "phonetic": "/skɑːrf/",
-            "exampleEn": "Wrap a soft scarf around your neck.",
-            "examplePt": "Enrole um cachecol macio no pescoço."
-          }
-        ],
-        "options": [
-          "Zipper",
-          "Wallet",
-          "Gloves",
-          "Scarf"
-        ],
-        "correctAnswer": "Zipper",
-        "contextSentence": "Close the jacket zipper.",
-        "contextSentencePt": "Feche o zíper da jaqueta.",
-        "explanation": "Exemplo: \"Close the jacket zipper.\" — Feche o zíper da jaqueta.",
-        "phoneticHint": "\"zí-per\" • /ˈzɪp.ər/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p25-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Sleeve",
-        "visualEmoji": "👕",
-        "visualOptions": [
-          {
-            "text": "Tie",
-            "emoji": "👔",
-            "label": "Tie",
-            "translationPt": "Gravata",
-            "simplePronunciation": "tái",
-            "phonetic": "/taɪ/",
-            "exampleEn": "He wears a red tie to work.",
-            "examplePt": "Ele usa uma gravata vermelha para trabalhar."
-          },
-          {
-            "text": "Sleeve",
-            "emoji": "👕",
-            "label": "Sleeve",
-            "translationPt": "Manga da camisa",
-            "simplePronunciation": "slív",
-            "phonetic": "/sliːv/",
-            "exampleEn": "Roll up your shirt sleeves.",
-            "examplePt": "Dobre as mangas da sua camisa."
-          },
-          {
-            "text": "Zipper",
-            "emoji": "🧥",
-            "label": "Zipper",
-            "translationPt": "Zíper",
-            "simplePronunciation": "zí-per",
-            "phonetic": "/ˈzɪp.ər/",
-            "exampleEn": "Close the jacket zipper.",
-            "examplePt": "Feche o zíper da jaqueta."
-          },
-          {
-            "text": "Wallet",
-            "emoji": "👛",
-            "label": "Wallet",
-            "translationPt": "Carteira",
-            "simplePronunciation": "uó-let",
-            "phonetic": "/ˈwɑː.lɪt/",
-            "exampleEn": "Keep your money inside the wallet.",
-            "examplePt": "Guarde seu dinheiro dentro da carteira."
-          }
-        ],
-        "options": [
-          "Tie",
-          "Sleeve",
-          "Zipper",
-          "Wallet"
-        ],
-        "correctAnswer": "Sleeve",
-        "contextSentence": "Roll up your shirt sleeves.",
-        "contextSentencePt": "Dobre as mangas da sua camisa.",
-        "explanation": "Exemplo: \"Roll up your shirt sleeves.\" — Dobre as mangas da sua camisa.",
-        "phoneticHint": "\"slív\" • /sliːv/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p25-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Collar",
-        "visualEmoji": "👔",
-        "visualOptions": [
-          {
-            "text": "Necklace",
-            "emoji": "📿",
-            "label": "Necklace",
-            "translationPt": "Colar",
-            "simplePronunciation": "nék-les",
-            "phonetic": "/ˈnek.lɪs/",
-            "exampleEn": "That silver necklace is lovely.",
-            "examplePt": "Aquele colar de prata é lindo."
-          },
-          {
-            "text": "Collar",
-            "emoji": "👔",
-            "label": "Collar",
-            "translationPt": "Gola / Colarinho",
-            "simplePronunciation": "có-lar",
-            "phonetic": "/ˈkɑː.lər/",
-            "exampleEn": "Straighten your shirt collar.",
-            "examplePt": "Arrume a gola da sua camisa."
-          },
-          {
-            "text": "Button",
-            "emoji": "🔘",
-            "label": "Button",
-            "translationPt": "Botão de roupa",
-            "simplePronunciation": "bâ-ton",
-            "phonetic": "/ˈbʌt.ən/",
-            "exampleEn": "Fasten the top button of your shirt.",
-            "examplePt": "Abotoe o botão de cima da sua camisa."
+            "exampleEn": "Wrap a scarf around your neck.",
+            "examplePt": "Enrole um cachecol no pescoço."
           },
           {
             "text": "Umbrella",
@@ -15153,22 +10463,42 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Guarda-chuva",
             "simplePronunciation": "âm-bré-la",
             "phonetic": "/ʌmˈbrel.ə/",
-            "exampleEn": "Take an umbrella in case it rains.",
-            "examplePt": "Leve um guarda-chuva caso chova."
+            "exampleEn": "Take an umbrella in the rain.",
+            "examplePt": "Leve um guarda-chuva na chuva."
+          },
+          {
+            "text": "Cap",
+            "emoji": "🧢",
+            "label": "Cap",
+            "translationPt": "Boné",
+            "simplePronunciation": "kép",
+            "phonetic": "/kæp/",
+            "exampleEn": "He wears a cap outdoors.",
+            "examplePt": "Ele usa um boné ao ar livre."
+          },
+          {
+            "text": "Watch",
+            "emoji": "⌚",
+            "label": "Watch",
+            "translationPt": "Relógio de pulso",
+            "simplePronunciation": "uótch",
+            "phonetic": "/wɑːtʃ/",
+            "exampleEn": "Check the time on your watch.",
+            "examplePt": "Veja a hora no seu relógio de pulso."
           }
         ],
         "options": [
-          "Necklace",
-          "Collar",
-          "Button",
-          "Umbrella"
+          "Scarf",
+          "Umbrella",
+          "Cap",
+          "Watch"
         ],
-        "correctAnswer": "Collar",
-        "contextSentence": "Straighten your shirt collar.",
-        "contextSentencePt": "Arrume a gola da sua camisa.",
-        "explanation": "Exemplo: \"Straighten your shirt collar.\" — Arrume a gola da sua camisa.",
-        "phoneticHint": "\"có-lar\" • /ˈkɑː.lər/",
-        "skillCategory": "vocabulary"
+        "correctAnswer": "Umbrella",
+        "contextSentence": "Take an umbrella in the rain.",
+        "contextSentencePt": "Leve um guarda-chuva na chuva.",
+        "explanation": "Exemplo: \"Take an umbrella in the rain.\" — Leve um guarda-chuva na chuva.",
+        "phoneticHint": "\"âm-bré-la\" • /ʌmˈbrel.ə/",
+        "skillCategory": "listening"
       }
     ]
   },
@@ -15177,17 +10507,17 @@ export const WORLD_0_PHASES: Phase[] = [
     "worldId": 0,
     "phaseNumber": 26,
     "themeId": "clothes",
-    "themeTitle": "Roupas",
-    "frequencyLevel": "Módulo 4 • Menos Comuns",
-    "title": "Roupas • Módulo 4: Menos Comuns & Específicas",
-    "subtitle": "Tema 5 (Nível 4/4) • 12 peças específicas, tecidos e detalhes do vestuário",
-    "pedagogicalObjective": "Conhecer termos específicos de vestuário: Apron, Vest, Raincoat, Slippers, Bracelet, Earrings, Sunglasses, Hood, Heel, Buckle, Fabric e Hanger.",
+    "themeTitle": "Tema 5: Roupas",
+    "frequencyLevel": "Módulo 4 • Menos Comuns ou Específicas",
+    "title": "Roupas • Módulo 4: Menos Comuns",
+    "subtitle": "Tema: Roupas (4/4) • 8 peças específicas e detalhes das roupas",
+    "pedagogicalObjective": "Conhecer 8 termos específicos de vestuário: Apron, Vest, Raincoat, Slippers, Zipper, Sleeve, Collar e Hanger.",
     "type": "lesson",
     "icon": "shirt",
     "cefrLevel": "A1",
     "theorySummary": [
-      "No Módulo 4 de Roupas aprendemos palavras menos comuns: Apron (\"êi-pron\" = Avental), Vest (\"vést\" = Colete), Raincoat (\"rêin-côut\" = Capa de chuva), Slippers (\"slí-pers\" = Pantufas), Bracelet (\"brêis-let\" = Pulseira) e Earrings (\"ír-rings\" = Brincos).",
-      "E concluímos o Tema 5 com Sunglasses (\"sân-glé-ses\" = Óculos de sol), Hood (\"rúd\" = Capuz), Heel (\"ríl\" = Salto do sapato), Buckle (\"bâ-kol\" = Fivela), Fabric (\"fé-brik\" = Tecido) e Hanger (\"rén-guer\" = Cabide)."
+      "Tema: Roupas — Módulo 4 (Palavras menos comuns ou específicas): partes das roupas e peças específicas.",
+      "Palavras deste módulo (8): Apron (\"êi-pron\" = Avental), Vest (\"vést\" = Colete), Raincoat (\"rêin-côut\" = Capa de chuva), Slippers (\"slí-pers\" = Pantufas), Zipper (\"zí-per\" = Zíper), Sleeve (\"slív\" = Manga), Collar (\"có-lar\" = Gola) e Hanger (\"rén-guer\" = Cabide)."
     ],
     "xpReward": 50,
     "gemsReward": 20,
@@ -15200,24 +10530,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🎽",
         "visualOptions": [
           {
+            "text": "Collar",
+            "emoji": "👔",
+            "label": "Collar",
+            "translationPt": "Gola / Colarinho",
+            "simplePronunciation": "có-lar",
+            "phonetic": "/ˈkɑː.lər/",
+            "exampleEn": "Straighten your shirt collar.",
+            "examplePt": "Arrume a gola da camisa."
+          },
+          {
             "text": "Hanger",
             "emoji": "🧥",
             "label": "Hanger",
             "translationPt": "Cabide",
             "simplePronunciation": "rén-guer",
             "phonetic": "/ˈhæŋ.ər/",
-            "exampleEn": "Put the dress on a wooden hanger.",
-            "examplePt": "Coloque o vestido em um cabide de madeira."
-          },
-          {
-            "text": "Hood",
-            "emoji": "🧥",
-            "label": "Hood",
-            "translationPt": "Capuz",
-            "simplePronunciation": "rúd",
-            "phonetic": "/hʊd/",
-            "exampleEn": "Pull up your jacket hood in the wind.",
-            "examplePt": "Coloque o capuz da blusa no vento."
+            "exampleEn": "Put the shirt on a hanger.",
+            "examplePt": "Coloque a camisa em um cabide."
           },
           {
             "text": "Apron",
@@ -15227,29 +10557,29 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "êi-pron",
             "phonetic": "/ˈeɪ.prən/",
             "exampleEn": "Wear an apron while cooking.",
-            "examplePt": "Use um avental enquanto cozinha."
+            "examplePt": "Use um avental ao cozinhar."
           },
           {
-            "text": "Heel",
-            "emoji": "👠",
-            "label": "Heel",
-            "translationPt": "Salto do sapato",
-            "simplePronunciation": "ríl",
-            "phonetic": "/hiːl/",
-            "exampleEn": "She wore shoes with a high heel.",
-            "examplePt": "Ela usou sapatos de salto alto."
+            "text": "Raincoat",
+            "emoji": "🧥",
+            "label": "Raincoat",
+            "translationPt": "Capa de chuva",
+            "simplePronunciation": "rêin-côut",
+            "phonetic": "/ˈreɪn.koʊt/",
+            "exampleEn": "A raincoat keeps you dry.",
+            "examplePt": "A capa de chuva mantém você seco."
           }
         ],
         "options": [
+          "Collar",
           "Hanger",
-          "Hood",
           "Apron",
-          "Heel"
+          "Raincoat"
         ],
         "correctAnswer": "Apron",
         "contextSentence": "Wear an apron while cooking.",
-        "contextSentencePt": "Use um avental enquanto cozinha.",
-        "explanation": "Exemplo: \"Wear an apron while cooking.\" — Use um avental enquanto cozinha.",
+        "contextSentencePt": "Use um avental ao cozinhar.",
+        "explanation": "Exemplo: \"Wear an apron while cooking.\" — Use um avental ao cozinhar.",
         "phoneticHint": "\"êi-pron\" • /ˈeɪ.prən/",
         "skillCategory": "vocabulary"
       },
@@ -15267,50 +10597,50 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Colete",
             "simplePronunciation": "vést",
             "phonetic": "/vest/",
-            "exampleEn": "He wore a warm vest over his shirt.",
-            "examplePt": "Ele usou um colete quentinho sobre a camisa."
+            "exampleEn": "He wore a vest over his shirt.",
+            "examplePt": "Ele usou um colete sobre a camisa."
           },
           {
-            "text": "Buckle",
-            "emoji": "👖",
-            "label": "Buckle",
-            "translationPt": "Fivela",
-            "simplePronunciation": "bâ-kol",
-            "phonetic": "/ˈbʌk.əl/",
-            "exampleEn": "Fasten the metal belt buckle.",
-            "examplePt": "Feche a fivela de metal do cinto."
+            "text": "Zipper",
+            "emoji": "🧥",
+            "label": "Zipper",
+            "translationPt": "Zíper",
+            "simplePronunciation": "zí-per",
+            "phonetic": "/ˈzɪp.ər/",
+            "exampleEn": "Close the jacket zipper.",
+            "examplePt": "Feche o zíper da jaqueta."
           },
           {
-            "text": "Bracelet",
-            "emoji": "📿",
-            "label": "Bracelet",
-            "translationPt": "Pulseira",
-            "simplePronunciation": "brêis-let",
-            "phonetic": "/ˈbreɪ.slət/",
-            "exampleEn": "She has a silver bracelet on her wrist.",
-            "examplePt": "Ela tem uma pulseira de prata no pulso."
+            "text": "Sleeve",
+            "emoji": "👕",
+            "label": "Sleeve",
+            "translationPt": "Manga",
+            "simplePronunciation": "slív",
+            "phonetic": "/sliːv/",
+            "exampleEn": "Roll up your shirt sleeves.",
+            "examplePt": "Dobre as mangas da camisa."
           },
           {
-            "text": "Earrings",
-            "emoji": "💎",
-            "label": "Earrings",
-            "translationPt": "Brincos",
-            "simplePronunciation": "ír-rings",
-            "phonetic": "/ˈɪr.rɪŋz/",
-            "exampleEn": "Those gold earrings shine brightly.",
-            "examplePt": "Aqueles brincos de ouro brilham muito."
+            "text": "Slippers",
+            "emoji": "🥿",
+            "label": "Slippers",
+            "translationPt": "Pantufas",
+            "simplePronunciation": "slí-pers",
+            "phonetic": "/ˈslɪp.ərz/",
+            "exampleEn": "Wear soft slippers at home.",
+            "examplePt": "Use pantufas macias em casa."
           }
         ],
         "options": [
           "Vest",
-          "Buckle",
-          "Bracelet",
-          "Earrings"
+          "Zipper",
+          "Sleeve",
+          "Slippers"
         ],
         "correctAnswer": "Vest",
-        "contextSentence": "He wore a warm vest over his shirt.",
-        "contextSentencePt": "Ele usou um colete quentinho sobre a camisa.",
-        "explanation": "Exemplo: \"He wore a warm vest over his shirt.\" — Ele usou um colete quentinho sobre a camisa.",
+        "contextSentence": "He wore a vest over his shirt.",
+        "contextSentencePt": "Ele usou um colete sobre a camisa.",
+        "explanation": "Exemplo: \"He wore a vest over his shirt.\" — Ele usou um colete sobre a camisa.",
         "phoneticHint": "\"vést\" • /vest/",
         "skillCategory": "listening"
       },
@@ -15322,24 +10652,24 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🧥",
         "visualOptions": [
           {
-            "text": "Vest",
-            "emoji": "🦺",
-            "label": "Vest",
-            "translationPt": "Colete",
-            "simplePronunciation": "vést",
-            "phonetic": "/vest/",
-            "exampleEn": "He wore a warm vest over his shirt.",
-            "examplePt": "Ele usou um colete quentinho sobre a camisa."
+            "text": "Collar",
+            "emoji": "👔",
+            "label": "Collar",
+            "translationPt": "Gola / Colarinho",
+            "simplePronunciation": "có-lar",
+            "phonetic": "/ˈkɑː.lər/",
+            "exampleEn": "Straighten your shirt collar.",
+            "examplePt": "Arrume a gola da camisa."
           },
           {
-            "text": "Fabric",
-            "emoji": "🧵",
-            "label": "Fabric",
-            "translationPt": "Tecido / Pano",
-            "simplePronunciation": "fé-brik",
-            "phonetic": "/ˈfæb.rɪk/",
-            "exampleEn": "Cotton is a soft and breathable fabric.",
-            "examplePt": "O algodão é um tecido macio e fresco."
+            "text": "Hanger",
+            "emoji": "🧥",
+            "label": "Hanger",
+            "translationPt": "Cabide",
+            "simplePronunciation": "rén-guer",
+            "phonetic": "/ˈhæŋ.ər/",
+            "exampleEn": "Put the shirt on a hanger.",
+            "examplePt": "Coloque a camisa em um cabide."
           },
           {
             "text": "Raincoat",
@@ -15348,8 +10678,8 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Capa de chuva",
             "simplePronunciation": "rêin-côut",
             "phonetic": "/ˈreɪn.koʊt/",
-            "exampleEn": "A yellow raincoat keeps you dry.",
-            "examplePt": "Uma capa de chuva amarela mantém você seco."
+            "exampleEn": "A raincoat keeps you dry.",
+            "examplePt": "A capa de chuva mantém você seco."
           },
           {
             "text": "Apron",
@@ -15359,19 +10689,19 @@ export const WORLD_0_PHASES: Phase[] = [
             "simplePronunciation": "êi-pron",
             "phonetic": "/ˈeɪ.prən/",
             "exampleEn": "Wear an apron while cooking.",
-            "examplePt": "Use um avental enquanto cozinha."
+            "examplePt": "Use um avental ao cozinhar."
           }
         ],
         "options": [
-          "Vest",
-          "Fabric",
+          "Collar",
+          "Hanger",
           "Raincoat",
           "Apron"
         ],
         "correctAnswer": "Raincoat",
-        "contextSentence": "A yellow raincoat keeps you dry.",
-        "contextSentencePt": "Uma capa de chuva amarela mantém você seco.",
-        "explanation": "Exemplo: \"A yellow raincoat keeps you dry.\" — Uma capa de chuva amarela mantém você seco.",
+        "contextSentence": "A raincoat keeps you dry.",
+        "contextSentencePt": "A capa de chuva mantém você seco.",
+        "explanation": "Exemplo: \"A raincoat keeps you dry.\" — A capa de chuva mantém você seco.",
         "phoneticHint": "\"rêin-côut\" • /ˈreɪn.koʊt/",
         "skillCategory": "vocabulary"
       },
@@ -15383,14 +10713,14 @@ export const WORLD_0_PHASES: Phase[] = [
         "visualEmoji": "🥿",
         "visualOptions": [
           {
-            "text": "Hood",
-            "emoji": "🧥",
-            "label": "Hood",
-            "translationPt": "Capuz",
-            "simplePronunciation": "rúd",
-            "phonetic": "/hʊd/",
-            "exampleEn": "Pull up your jacket hood in the wind.",
-            "examplePt": "Coloque o capuz da blusa no vento."
+            "text": "Sleeve",
+            "emoji": "👕",
+            "label": "Sleeve",
+            "translationPt": "Manga",
+            "simplePronunciation": "slív",
+            "phonetic": "/sliːv/",
+            "exampleEn": "Roll up your shirt sleeves.",
+            "examplePt": "Dobre as mangas da camisa."
           },
           {
             "text": "Slippers",
@@ -15399,40 +10729,40 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Pantufas",
             "simplePronunciation": "slí-pers",
             "phonetic": "/ˈslɪp.ərz/",
-            "exampleEn": "Wear soft slippers inside the bedroom.",
-            "examplePt": "Use pantufas macias dentro do quarto."
+            "exampleEn": "Wear soft slippers at home.",
+            "examplePt": "Use pantufas macias em casa."
           },
           {
-            "text": "Heel",
-            "emoji": "👠",
-            "label": "Heel",
-            "translationPt": "Salto do sapato",
-            "simplePronunciation": "ríl",
-            "phonetic": "/hiːl/",
-            "exampleEn": "She wore shoes with a high heel.",
-            "examplePt": "Ela usou sapatos de salto alto."
+            "text": "Zipper",
+            "emoji": "🧥",
+            "label": "Zipper",
+            "translationPt": "Zíper",
+            "simplePronunciation": "zí-per",
+            "phonetic": "/ˈzɪp.ər/",
+            "exampleEn": "Close the jacket zipper.",
+            "examplePt": "Feche o zíper da jaqueta."
           },
           {
-            "text": "Sunglasses",
-            "emoji": "🕶️",
-            "label": "Sunglasses",
-            "translationPt": "Óculos de sol",
-            "simplePronunciation": "sân-glé-ses",
-            "phonetic": "/ˈsʌnˌɡlæs.ɪz/",
-            "exampleEn": "Wear sunglasses on sunny days.",
-            "examplePt": "Use óculos de sol em dias ensolarados."
+            "text": "Vest",
+            "emoji": "🦺",
+            "label": "Vest",
+            "translationPt": "Colete",
+            "simplePronunciation": "vést",
+            "phonetic": "/vest/",
+            "exampleEn": "He wore a vest over his shirt.",
+            "examplePt": "Ele usou um colete sobre a camisa."
           }
         ],
         "options": [
-          "Hood",
+          "Sleeve",
           "Slippers",
-          "Heel",
-          "Sunglasses"
+          "Zipper",
+          "Vest"
         ],
         "correctAnswer": "Slippers",
-        "contextSentence": "Wear soft slippers inside the bedroom.",
-        "contextSentencePt": "Use pantufas macias dentro do quarto.",
-        "explanation": "Exemplo: \"Wear soft slippers inside the bedroom.\" — Use pantufas macias dentro do quarto.",
+        "contextSentence": "Wear soft slippers at home.",
+        "contextSentencePt": "Use pantufas macias em casa.",
+        "explanation": "Exemplo: \"Wear soft slippers at home.\" — Use pantufas macias em casa.",
         "phoneticHint": "\"slí-pers\" • /ˈslɪp.ərz/",
         "skillCategory": "vocabulary"
       },
@@ -15440,8 +10770,8 @@ export const WORLD_0_PHASES: Phase[] = [
         "id": "w0-p26-e5",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Bracelet",
-        "visualEmoji": "📿",
+        "audioPhrase": "Zipper",
+        "visualEmoji": "🧥",
         "visualOptions": [
           {
             "text": "Raincoat",
@@ -15450,69 +10780,69 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Capa de chuva",
             "simplePronunciation": "rêin-côut",
             "phonetic": "/ˈreɪn.koʊt/",
-            "exampleEn": "A yellow raincoat keeps you dry.",
-            "examplePt": "Uma capa de chuva amarela mantém você seco."
+            "exampleEn": "A raincoat keeps you dry.",
+            "examplePt": "A capa de chuva mantém você seco."
           },
           {
-            "text": "Fabric",
-            "emoji": "🧵",
-            "label": "Fabric",
-            "translationPt": "Tecido / Pano",
-            "simplePronunciation": "fé-brik",
-            "phonetic": "/ˈfæb.rɪk/",
-            "exampleEn": "Cotton is a soft and breathable fabric.",
-            "examplePt": "O algodão é um tecido macio e fresco."
+            "text": "Collar",
+            "emoji": "👔",
+            "label": "Collar",
+            "translationPt": "Gola / Colarinho",
+            "simplePronunciation": "có-lar",
+            "phonetic": "/ˈkɑː.lər/",
+            "exampleEn": "Straighten your shirt collar.",
+            "examplePt": "Arrume a gola da camisa."
           },
           {
-            "text": "Slippers",
-            "emoji": "🥿",
-            "label": "Slippers",
-            "translationPt": "Pantufas",
-            "simplePronunciation": "slí-pers",
-            "phonetic": "/ˈslɪp.ərz/",
-            "exampleEn": "Wear soft slippers inside the bedroom.",
-            "examplePt": "Use pantufas macias dentro do quarto."
+            "text": "Apron",
+            "emoji": "🎽",
+            "label": "Apron",
+            "translationPt": "Avental",
+            "simplePronunciation": "êi-pron",
+            "phonetic": "/ˈeɪ.prən/",
+            "exampleEn": "Wear an apron while cooking.",
+            "examplePt": "Use um avental ao cozinhar."
           },
           {
-            "text": "Bracelet",
-            "emoji": "📿",
-            "label": "Bracelet",
-            "translationPt": "Pulseira",
-            "simplePronunciation": "brêis-let",
-            "phonetic": "/ˈbreɪ.slət/",
-            "exampleEn": "She has a silver bracelet on her wrist.",
-            "examplePt": "Ela tem uma pulseira de prata no pulso."
+            "text": "Zipper",
+            "emoji": "🧥",
+            "label": "Zipper",
+            "translationPt": "Zíper",
+            "simplePronunciation": "zí-per",
+            "phonetic": "/ˈzɪp.ər/",
+            "exampleEn": "Close the jacket zipper.",
+            "examplePt": "Feche o zíper da jaqueta."
           }
         ],
         "options": [
           "Raincoat",
-          "Fabric",
-          "Slippers",
-          "Bracelet"
+          "Collar",
+          "Apron",
+          "Zipper"
         ],
-        "correctAnswer": "Bracelet",
-        "contextSentence": "She has a silver bracelet on her wrist.",
-        "contextSentencePt": "Ela tem uma pulseira de prata no pulso.",
-        "explanation": "Exemplo: \"She has a silver bracelet on her wrist.\" — Ela tem uma pulseira de prata no pulso.",
-        "phoneticHint": "\"brêis-let\" • /ˈbreɪ.slət/",
+        "correctAnswer": "Zipper",
+        "contextSentence": "Close the jacket zipper.",
+        "contextSentencePt": "Feche o zíper da jaqueta.",
+        "explanation": "Exemplo: \"Close the jacket zipper.\" — Feche o zíper da jaqueta.",
+        "phoneticHint": "\"zí-per\" • /ˈzɪp.ər/",
         "skillCategory": "listening"
       },
       {
         "id": "w0-p26-e6",
         "type": "image-choice",
         "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Earrings",
-        "visualEmoji": "💎",
+        "audioPhrase": "Sleeve",
+        "visualEmoji": "👕",
         "visualOptions": [
           {
-            "text": "Earrings",
-            "emoji": "💎",
-            "label": "Earrings",
-            "translationPt": "Brincos",
-            "simplePronunciation": "ír-rings",
-            "phonetic": "/ˈɪr.rɪŋz/",
-            "exampleEn": "Those gold earrings shine brightly.",
-            "examplePt": "Aqueles brincos de ouro brilham muito."
+            "text": "Sleeve",
+            "emoji": "👕",
+            "label": "Sleeve",
+            "translationPt": "Manga",
+            "simplePronunciation": "slív",
+            "phonetic": "/sliːv/",
+            "exampleEn": "Roll up your shirt sleeves.",
+            "examplePt": "Dobre as mangas da camisa."
           },
           {
             "text": "Hanger",
@@ -15521,18 +10851,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cabide",
             "simplePronunciation": "rén-guer",
             "phonetic": "/ˈhæŋ.ər/",
-            "exampleEn": "Put the dress on a wooden hanger.",
-            "examplePt": "Coloque o vestido em um cabide de madeira."
+            "exampleEn": "Put the shirt on a hanger.",
+            "examplePt": "Coloque a camisa em um cabide."
           },
           {
-            "text": "Apron",
-            "emoji": "🎽",
-            "label": "Apron",
-            "translationPt": "Avental",
-            "simplePronunciation": "êi-pron",
-            "phonetic": "/ˈeɪ.prən/",
-            "exampleEn": "Wear an apron while cooking.",
-            "examplePt": "Use um avental enquanto cozinha."
+            "text": "Slippers",
+            "emoji": "🥿",
+            "label": "Slippers",
+            "translationPt": "Pantufas",
+            "simplePronunciation": "slí-pers",
+            "phonetic": "/ˈslɪp.ərz/",
+            "exampleEn": "Wear soft slippers at home.",
+            "examplePt": "Use pantufas macias em casa."
           },
           {
             "text": "Vest",
@@ -15541,354 +10871,100 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Colete",
             "simplePronunciation": "vést",
             "phonetic": "/vest/",
-            "exampleEn": "He wore a warm vest over his shirt.",
-            "examplePt": "Ele usou um colete quentinho sobre a camisa."
+            "exampleEn": "He wore a vest over his shirt.",
+            "examplePt": "Ele usou um colete sobre a camisa."
           }
         ],
         "options": [
-          "Earrings",
+          "Sleeve",
           "Hanger",
-          "Apron",
+          "Slippers",
           "Vest"
         ],
-        "correctAnswer": "Earrings",
-        "contextSentence": "Those gold earrings shine brightly.",
-        "contextSentencePt": "Aqueles brincos de ouro brilham muito.",
-        "explanation": "Exemplo: \"Those gold earrings shine brightly.\" — Aqueles brincos de ouro brilham muito.",
-        "phoneticHint": "\"ír-rings\" • /ˈɪr.rɪŋz/",
+        "correctAnswer": "Sleeve",
+        "contextSentence": "Roll up your shirt sleeves.",
+        "contextSentencePt": "Dobre as mangas da camisa.",
+        "explanation": "Exemplo: \"Roll up your shirt sleeves.\" — Dobre as mangas da camisa.",
+        "phoneticHint": "\"slív\" • /sliːv/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p26-e7",
         "type": "image-choice",
         "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Sunglasses",
-        "visualEmoji": "🕶️",
+        "audioPhrase": "Collar",
+        "visualEmoji": "👔",
         "visualOptions": [
           {
-            "text": "Bracelet",
-            "emoji": "📿",
-            "label": "Bracelet",
-            "translationPt": "Pulseira",
-            "simplePronunciation": "brêis-let",
-            "phonetic": "/ˈbreɪ.slət/",
-            "exampleEn": "She has a silver bracelet on her wrist.",
-            "examplePt": "Ela tem uma pulseira de prata no pulso."
+            "text": "Zipper",
+            "emoji": "🧥",
+            "label": "Zipper",
+            "translationPt": "Zíper",
+            "simplePronunciation": "zí-per",
+            "phonetic": "/ˈzɪp.ər/",
+            "exampleEn": "Close the jacket zipper.",
+            "examplePt": "Feche o zíper da jaqueta."
           },
           {
-            "text": "Earrings",
-            "emoji": "💎",
-            "label": "Earrings",
-            "translationPt": "Brincos",
-            "simplePronunciation": "ír-rings",
-            "phonetic": "/ˈɪr.rɪŋz/",
-            "exampleEn": "Those gold earrings shine brightly.",
-            "examplePt": "Aqueles brincos de ouro brilham muito."
+            "text": "Collar",
+            "emoji": "👔",
+            "label": "Collar",
+            "translationPt": "Gola / Colarinho",
+            "simplePronunciation": "có-lar",
+            "phonetic": "/ˈkɑː.lər/",
+            "exampleEn": "Straighten your shirt collar.",
+            "examplePt": "Arrume a gola da camisa."
           },
           {
-            "text": "Buckle",
-            "emoji": "👖",
-            "label": "Buckle",
-            "translationPt": "Fivela",
-            "simplePronunciation": "bâ-kol",
-            "phonetic": "/ˈbʌk.əl/",
-            "exampleEn": "Fasten the metal belt buckle.",
-            "examplePt": "Feche a fivela de metal do cinto."
+            "text": "Raincoat",
+            "emoji": "🧥",
+            "label": "Raincoat",
+            "translationPt": "Capa de chuva",
+            "simplePronunciation": "rêin-côut",
+            "phonetic": "/ˈreɪn.koʊt/",
+            "exampleEn": "A raincoat keeps you dry.",
+            "examplePt": "A capa de chuva mantém você seco."
           },
           {
-            "text": "Sunglasses",
-            "emoji": "🕶️",
-            "label": "Sunglasses",
-            "translationPt": "Óculos de sol",
-            "simplePronunciation": "sân-glé-ses",
-            "phonetic": "/ˈsʌnˌɡlæs.ɪz/",
-            "exampleEn": "Wear sunglasses on sunny days.",
-            "examplePt": "Use óculos de sol em dias ensolarados."
+            "text": "Apron",
+            "emoji": "🎽",
+            "label": "Apron",
+            "translationPt": "Avental",
+            "simplePronunciation": "êi-pron",
+            "phonetic": "/ˈeɪ.prən/",
+            "exampleEn": "Wear an apron while cooking.",
+            "examplePt": "Use um avental ao cozinhar."
           }
         ],
         "options": [
-          "Bracelet",
-          "Earrings",
-          "Buckle",
-          "Sunglasses"
+          "Zipper",
+          "Collar",
+          "Raincoat",
+          "Apron"
         ],
-        "correctAnswer": "Sunglasses",
-        "contextSentence": "Wear sunglasses on sunny days.",
-        "contextSentencePt": "Use óculos de sol em dias ensolarados.",
-        "explanation": "Exemplo: \"Wear sunglasses on sunny days.\" — Use óculos de sol em dias ensolarados.",
-        "phoneticHint": "\"sân-glé-ses\" • /ˈsʌnˌɡlæs.ɪz/",
+        "correctAnswer": "Collar",
+        "contextSentence": "Straighten your shirt collar.",
+        "contextSentencePt": "Arrume a gola da camisa.",
+        "explanation": "Exemplo: \"Straighten your shirt collar.\" — Arrume a gola da camisa.",
+        "phoneticHint": "\"có-lar\" • /ˈkɑː.lər/",
         "skillCategory": "vocabulary"
       },
       {
         "id": "w0-p26-e8",
         "type": "image-choice",
         "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Hood",
-        "visualEmoji": "🧥",
-        "visualOptions": [
-          {
-            "text": "Slippers",
-            "emoji": "🥿",
-            "label": "Slippers",
-            "translationPt": "Pantufas",
-            "simplePronunciation": "slí-pers",
-            "phonetic": "/ˈslɪp.ərz/",
-            "exampleEn": "Wear soft slippers inside the bedroom.",
-            "examplePt": "Use pantufas macias dentro do quarto."
-          },
-          {
-            "text": "Raincoat",
-            "emoji": "🧥",
-            "label": "Raincoat",
-            "translationPt": "Capa de chuva",
-            "simplePronunciation": "rêin-côut",
-            "phonetic": "/ˈreɪn.koʊt/",
-            "exampleEn": "A yellow raincoat keeps you dry.",
-            "examplePt": "Uma capa de chuva amarela mantém você seco."
-          },
-          {
-            "text": "Hood",
-            "emoji": "🧥",
-            "label": "Hood",
-            "translationPt": "Capuz",
-            "simplePronunciation": "rúd",
-            "phonetic": "/hʊd/",
-            "exampleEn": "Pull up your jacket hood in the wind.",
-            "examplePt": "Coloque o capuz da blusa no vento."
-          },
-          {
-            "text": "Fabric",
-            "emoji": "🧵",
-            "label": "Fabric",
-            "translationPt": "Tecido / Pano",
-            "simplePronunciation": "fé-brik",
-            "phonetic": "/ˈfæb.rɪk/",
-            "exampleEn": "Cotton is a soft and breathable fabric.",
-            "examplePt": "O algodão é um tecido macio e fresco."
-          }
-        ],
-        "options": [
-          "Slippers",
-          "Raincoat",
-          "Hood",
-          "Fabric"
-        ],
-        "correctAnswer": "Hood",
-        "contextSentence": "Pull up your jacket hood in the wind.",
-        "contextSentencePt": "Coloque o capuz da blusa no vento.",
-        "explanation": "Exemplo: \"Pull up your jacket hood in the wind.\" — Coloque o capuz da blusa no vento.",
-        "phoneticHint": "\"rúd\" • /hʊd/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p26-e9",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
-        "audioPhrase": "Heel",
-        "visualEmoji": "👠",
-        "visualOptions": [
-          {
-            "text": "Heel",
-            "emoji": "👠",
-            "label": "Heel",
-            "translationPt": "Salto do sapato",
-            "simplePronunciation": "ríl",
-            "phonetic": "/hiːl/",
-            "exampleEn": "She wore shoes with a high heel.",
-            "examplePt": "Ela usou sapatos de salto alto."
-          },
-          {
-            "text": "Apron",
-            "emoji": "🎽",
-            "label": "Apron",
-            "translationPt": "Avental",
-            "simplePronunciation": "êi-pron",
-            "phonetic": "/ˈeɪ.prən/",
-            "exampleEn": "Wear an apron while cooking.",
-            "examplePt": "Use um avental enquanto cozinha."
-          },
-          {
-            "text": "Hanger",
-            "emoji": "🧥",
-            "label": "Hanger",
-            "translationPt": "Cabide",
-            "simplePronunciation": "rén-guer",
-            "phonetic": "/ˈhæŋ.ər/",
-            "exampleEn": "Put the dress on a wooden hanger.",
-            "examplePt": "Coloque o vestido em um cabide de madeira."
-          },
-          {
-            "text": "Vest",
-            "emoji": "🦺",
-            "label": "Vest",
-            "translationPt": "Colete",
-            "simplePronunciation": "vést",
-            "phonetic": "/vest/",
-            "exampleEn": "He wore a warm vest over his shirt.",
-            "examplePt": "Ele usou um colete quentinho sobre a camisa."
-          }
-        ],
-        "options": [
-          "Heel",
-          "Apron",
-          "Hanger",
-          "Vest"
-        ],
-        "correctAnswer": "Heel",
-        "contextSentence": "She wore shoes with a high heel.",
-        "contextSentencePt": "Ela usou sapatos de salto alto.",
-        "explanation": "Exemplo: \"She wore shoes with a high heel.\" — Ela usou sapatos de salto alto.",
-        "phoneticHint": "\"ríl\" • /hiːl/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p26-e10",
-        "type": "image-choice",
-        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
-        "audioPhrase": "Buckle",
-        "visualEmoji": "👖",
-        "visualOptions": [
-          {
-            "text": "Sunglasses",
-            "emoji": "🕶️",
-            "label": "Sunglasses",
-            "translationPt": "Óculos de sol",
-            "simplePronunciation": "sân-glé-ses",
-            "phonetic": "/ˈsʌnˌɡlæs.ɪz/",
-            "exampleEn": "Wear sunglasses on sunny days.",
-            "examplePt": "Use óculos de sol em dias ensolarados."
-          },
-          {
-            "text": "Buckle",
-            "emoji": "👖",
-            "label": "Buckle",
-            "translationPt": "Fivela",
-            "simplePronunciation": "bâ-kol",
-            "phonetic": "/ˈbʌk.əl/",
-            "exampleEn": "Fasten the metal belt buckle.",
-            "examplePt": "Feche a fivela de metal do cinto."
-          },
-          {
-            "text": "Earrings",
-            "emoji": "💎",
-            "label": "Earrings",
-            "translationPt": "Brincos",
-            "simplePronunciation": "ír-rings",
-            "phonetic": "/ˈɪr.rɪŋz/",
-            "exampleEn": "Those gold earrings shine brightly.",
-            "examplePt": "Aqueles brincos de ouro brilham muito."
-          },
-          {
-            "text": "Bracelet",
-            "emoji": "📿",
-            "label": "Bracelet",
-            "translationPt": "Pulseira",
-            "simplePronunciation": "brêis-let",
-            "phonetic": "/ˈbreɪ.slət/",
-            "exampleEn": "She has a silver bracelet on her wrist.",
-            "examplePt": "Ela tem uma pulseira de prata no pulso."
-          }
-        ],
-        "options": [
-          "Sunglasses",
-          "Buckle",
-          "Earrings",
-          "Bracelet"
-        ],
-        "correctAnswer": "Buckle",
-        "contextSentence": "Fasten the metal belt buckle.",
-        "contextSentencePt": "Feche a fivela de metal do cinto.",
-        "explanation": "Exemplo: \"Fasten the metal belt buckle.\" — Feche a fivela de metal do cinto.",
-        "phoneticHint": "\"bâ-kol\" • /ˈbʌk.əl/",
-        "skillCategory": "vocabulary"
-      },
-      {
-        "id": "w0-p26-e11",
-        "type": "image-choice",
-        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
-        "audioPhrase": "Fabric",
-        "visualEmoji": "🧵",
-        "visualOptions": [
-          {
-            "text": "Raincoat",
-            "emoji": "🧥",
-            "label": "Raincoat",
-            "translationPt": "Capa de chuva",
-            "simplePronunciation": "rêin-côut",
-            "phonetic": "/ˈreɪn.koʊt/",
-            "exampleEn": "A yellow raincoat keeps you dry.",
-            "examplePt": "Uma capa de chuva amarela mantém você seco."
-          },
-          {
-            "text": "Fabric",
-            "emoji": "🧵",
-            "label": "Fabric",
-            "translationPt": "Tecido / Pano",
-            "simplePronunciation": "fé-brik",
-            "phonetic": "/ˈfæb.rɪk/",
-            "exampleEn": "Cotton is a soft and breathable fabric.",
-            "examplePt": "O algodão é um tecido macio e fresco."
-          },
-          {
-            "text": "Slippers",
-            "emoji": "🥿",
-            "label": "Slippers",
-            "translationPt": "Pantufas",
-            "simplePronunciation": "slí-pers",
-            "phonetic": "/ˈslɪp.ərz/",
-            "exampleEn": "Wear soft slippers inside the bedroom.",
-            "examplePt": "Use pantufas macias dentro do quarto."
-          },
-          {
-            "text": "Hood",
-            "emoji": "🧥",
-            "label": "Hood",
-            "translationPt": "Capuz",
-            "simplePronunciation": "rúd",
-            "phonetic": "/hʊd/",
-            "exampleEn": "Pull up your jacket hood in the wind.",
-            "examplePt": "Coloque o capuz da blusa no vento."
-          }
-        ],
-        "options": [
-          "Raincoat",
-          "Fabric",
-          "Slippers",
-          "Hood"
-        ],
-        "correctAnswer": "Fabric",
-        "contextSentence": "Cotton is a soft and breathable fabric.",
-        "contextSentencePt": "O algodão é um tecido macio e fresco.",
-        "explanation": "Exemplo: \"Cotton is a soft and breathable fabric.\" — O algodão é um tecido macio e fresco.",
-        "phoneticHint": "\"fé-brik\" • /ˈfæb.rɪk/",
-        "skillCategory": "listening"
-      },
-      {
-        "id": "w0-p26-e12",
-        "type": "image-choice",
-        "prompt": "🎧 Identifique pelo som qual é o item correto:",
         "audioPhrase": "Hanger",
         "visualEmoji": "🧥",
         "visualOptions": [
           {
-            "text": "Heel",
-            "emoji": "👠",
-            "label": "Heel",
-            "translationPt": "Salto do sapato",
-            "simplePronunciation": "ríl",
-            "phonetic": "/hiːl/",
-            "exampleEn": "She wore shoes with a high heel.",
-            "examplePt": "Ela usou sapatos de salto alto."
-          },
-          {
-            "text": "Apron",
-            "emoji": "🎽",
-            "label": "Apron",
-            "translationPt": "Avental",
-            "simplePronunciation": "êi-pron",
-            "phonetic": "/ˈeɪ.prən/",
-            "exampleEn": "Wear an apron while cooking.",
-            "examplePt": "Use um avental enquanto cozinha."
+            "text": "Slippers",
+            "emoji": "🥿",
+            "label": "Slippers",
+            "translationPt": "Pantufas",
+            "simplePronunciation": "slí-pers",
+            "phonetic": "/ˈslɪp.ərz/",
+            "exampleEn": "Wear soft slippers at home.",
+            "examplePt": "Use pantufas macias em casa."
           },
           {
             "text": "Vest",
@@ -15897,8 +10973,18 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Colete",
             "simplePronunciation": "vést",
             "phonetic": "/vest/",
-            "exampleEn": "He wore a warm vest over his shirt.",
-            "examplePt": "Ele usou um colete quentinho sobre a camisa."
+            "exampleEn": "He wore a vest over his shirt.",
+            "examplePt": "Ele usou um colete sobre a camisa."
+          },
+          {
+            "text": "Sleeve",
+            "emoji": "👕",
+            "label": "Sleeve",
+            "translationPt": "Manga",
+            "simplePronunciation": "slív",
+            "phonetic": "/sliːv/",
+            "exampleEn": "Roll up your shirt sleeves.",
+            "examplePt": "Dobre as mangas da camisa."
           },
           {
             "text": "Hanger",
@@ -15907,22 +10993,2241 @@ export const WORLD_0_PHASES: Phase[] = [
             "translationPt": "Cabide",
             "simplePronunciation": "rén-guer",
             "phonetic": "/ˈhæŋ.ər/",
-            "exampleEn": "Put the dress on a wooden hanger.",
-            "examplePt": "Coloque o vestido em um cabide de madeira."
+            "exampleEn": "Put the shirt on a hanger.",
+            "examplePt": "Coloque a camisa em um cabide."
           }
         ],
         "options": [
-          "Heel",
-          "Apron",
+          "Slippers",
           "Vest",
+          "Sleeve",
           "Hanger"
         ],
         "correctAnswer": "Hanger",
-        "contextSentence": "Put the dress on a wooden hanger.",
-        "contextSentencePt": "Coloque o vestido em um cabide de madeira.",
-        "explanation": "Exemplo: \"Put the dress on a wooden hanger.\" — Coloque o vestido em um cabide de madeira.",
+        "contextSentence": "Put the shirt on a hanger.",
+        "contextSentencePt": "Coloque a camisa em um cabide.",
+        "explanation": "Exemplo: \"Put the shirt on a hanger.\" — Coloque a camisa em um cabide.",
         "phoneticHint": "\"rén-guer\" • /ˈhæŋ.ər/",
+        "skillCategory": "listening"
+      }
+    ]
+  },
+  {
+    "id": "w0-p27",
+    "worldId": 0,
+    "phaseNumber": 27,
+    "themeId": "work",
+    "themeTitle": "Tema 6: Trabalho",
+    "frequencyLevel": "Módulo 1 • Essenciais e Mais Comuns",
+    "title": "Trabalho • Módulo 1: Palavras Essenciais",
+    "subtitle": "Tema: Trabalho (1/4) • 8 palavras essenciais de trabalho e estudo",
+    "pedagogicalObjective": "Dominar 8 termos essenciais de trabalho e rotina profissional: Office, School, Teacher, Doctor, Computer, Book, Pen e Phone.",
+    "type": "lesson",
+    "icon": "book",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Tema: Trabalho — Módulo 1 (Palavras essenciais e mais comuns): profissões, locais e ferramentas essenciais.",
+      "Palavras deste módulo (8): Office (\"ó-fis\" = Escritório), School (\"scúl\" = Escola), Teacher (\"tí-tcher\" = Professor), Doctor (\"dók-tor\" = Médico), Computer (\"com-piú-ter\" = Computador), Book (\"búk\" = Livro), Pen (\"pén\" = Caneta) e Phone (\"fôun\" = Telefone/Celular)."
+    ],
+    "xpReward": 50,
+    "gemsReward": 20,
+    "exercises": [
+      {
+        "id": "w0-p27-e1",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Office",
+        "visualEmoji": "🏢",
+        "visualOptions": [
+          {
+            "text": "Office",
+            "emoji": "🏢",
+            "label": "Office",
+            "translationPt": "Escritório",
+            "simplePronunciation": "ó-fis",
+            "phonetic": "/ˈɑː.fɪs/",
+            "exampleEn": "She works in an office.",
+            "examplePt": "Ela trabalha em um escritório."
+          },
+          {
+            "text": "Pen",
+            "emoji": "🖊️",
+            "label": "Pen",
+            "translationPt": "Caneta",
+            "simplePronunciation": "pén",
+            "phonetic": "/pen/",
+            "exampleEn": "Sign the document with a pen.",
+            "examplePt": "Assine o documento com uma caneta."
+          },
+          {
+            "text": "Book",
+            "emoji": "📘",
+            "label": "Book",
+            "translationPt": "Livro",
+            "simplePronunciation": "búk",
+            "phonetic": "/bʊk/",
+            "exampleEn": "Read this book carefully.",
+            "examplePt": "Leia este livro com atenção."
+          },
+          {
+            "text": "Computer",
+            "emoji": "💻",
+            "label": "Computer",
+            "translationPt": "Computador",
+            "simplePronunciation": "com-piú-ter",
+            "phonetic": "/kəmˈpjuː.tər/",
+            "exampleEn": "Use the computer for work.",
+            "examplePt": "Use o computador para trabalhar."
+          }
+        ],
+        "options": [
+          "Office",
+          "Pen",
+          "Book",
+          "Computer"
+        ],
+        "correctAnswer": "Office",
+        "contextSentence": "She works in an office.",
+        "contextSentencePt": "Ela trabalha em um escritório.",
+        "explanation": "Exemplo: \"She works in an office.\" — Ela trabalha em um escritório.",
+        "phoneticHint": "\"ó-fis\" • /ˈɑː.fɪs/",
         "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p27-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "School",
+        "visualEmoji": "🏫",
+        "visualOptions": [
+          {
+            "text": "Teacher",
+            "emoji": "👩‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor(a)",
+            "simplePronunciation": "tí-tcher",
+            "phonetic": "/ˈtiː.tʃər/",
+            "exampleEn": "The teacher explains the lesson.",
+            "examplePt": "A professora explica a lição."
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Telefone / Celular",
+            "simplePronunciation": "fôun",
+            "phonetic": "/foʊn/",
+            "exampleEn": "Answer the office phone.",
+            "examplePt": "Atenda o telefone."
+          },
+          {
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola",
+            "simplePronunciation": "scúl",
+            "phonetic": "/skuːl/",
+            "exampleEn": "The school opens at seven.",
+            "examplePt": "A escola abre às sete."
+          },
+          {
+            "text": "Office",
+            "emoji": "🏢",
+            "label": "Office",
+            "translationPt": "Escritório",
+            "simplePronunciation": "ó-fis",
+            "phonetic": "/ˈɑː.fɪs/",
+            "exampleEn": "She works in an office.",
+            "examplePt": "Ela trabalha em um escritório."
+          }
+        ],
+        "options": [
+          "Teacher",
+          "Phone",
+          "School",
+          "Office"
+        ],
+        "correctAnswer": "School",
+        "contextSentence": "The school opens at seven.",
+        "contextSentencePt": "A escola abre às sete.",
+        "explanation": "Exemplo: \"The school opens at seven.\" — A escola abre às sete.",
+        "phoneticHint": "\"scúl\" • /skuːl/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p27-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Teacher",
+        "visualEmoji": "👩‍🏫",
+        "visualOptions": [
+          {
+            "text": "Book",
+            "emoji": "📘",
+            "label": "Book",
+            "translationPt": "Livro",
+            "simplePronunciation": "búk",
+            "phonetic": "/bʊk/",
+            "exampleEn": "Read this book carefully.",
+            "examplePt": "Leia este livro com atenção."
+          },
+          {
+            "text": "Teacher",
+            "emoji": "👩‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor(a)",
+            "simplePronunciation": "tí-tcher",
+            "phonetic": "/ˈtiː.tʃər/",
+            "exampleEn": "The teacher explains the lesson.",
+            "examplePt": "A professora explica a lição."
+          },
+          {
+            "text": "Pen",
+            "emoji": "🖊️",
+            "label": "Pen",
+            "translationPt": "Caneta",
+            "simplePronunciation": "pén",
+            "phonetic": "/pen/",
+            "exampleEn": "Sign the document with a pen.",
+            "examplePt": "Assine o documento com uma caneta."
+          },
+          {
+            "text": "Computer",
+            "emoji": "💻",
+            "label": "Computer",
+            "translationPt": "Computador",
+            "simplePronunciation": "com-piú-ter",
+            "phonetic": "/kəmˈpjuː.tər/",
+            "exampleEn": "Use the computer for work.",
+            "examplePt": "Use o computador para trabalhar."
+          }
+        ],
+        "options": [
+          "Book",
+          "Teacher",
+          "Pen",
+          "Computer"
+        ],
+        "correctAnswer": "Teacher",
+        "contextSentence": "The teacher explains the lesson.",
+        "contextSentencePt": "A professora explica a lição.",
+        "explanation": "Exemplo: \"The teacher explains the lesson.\" — A professora explica a lição.",
+        "phoneticHint": "\"tí-tcher\" • /ˈtiː.tʃər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p27-e4",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Doctor",
+        "visualEmoji": "🩺",
+        "visualOptions": [
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Telefone / Celular",
+            "simplePronunciation": "fôun",
+            "phonetic": "/foʊn/",
+            "exampleEn": "Answer the office phone.",
+            "examplePt": "Atenda o telefone."
+          },
+          {
+            "text": "Office",
+            "emoji": "🏢",
+            "label": "Office",
+            "translationPt": "Escritório",
+            "simplePronunciation": "ó-fis",
+            "phonetic": "/ˈɑː.fɪs/",
+            "exampleEn": "She works in an office.",
+            "examplePt": "Ela trabalha em um escritório."
+          },
+          {
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola",
+            "simplePronunciation": "scúl",
+            "phonetic": "/skuːl/",
+            "exampleEn": "The school opens at seven.",
+            "examplePt": "A escola abre às sete."
+          },
+          {
+            "text": "Doctor",
+            "emoji": "🩺",
+            "label": "Doctor",
+            "translationPt": "Médico(a)",
+            "simplePronunciation": "dók-tor",
+            "phonetic": "/ˈdɑːk.tər/",
+            "exampleEn": "The doctor works at the hospital.",
+            "examplePt": "O médico trabalha no hospital."
+          }
+        ],
+        "options": [
+          "Phone",
+          "Office",
+          "School",
+          "Doctor"
+        ],
+        "correctAnswer": "Doctor",
+        "contextSentence": "The doctor works at the hospital.",
+        "contextSentencePt": "O médico trabalha no hospital.",
+        "explanation": "Exemplo: \"The doctor works at the hospital.\" — O médico trabalha no hospital.",
+        "phoneticHint": "\"dók-tor\" • /ˈdɑːk.tər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p27-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Computer",
+        "visualEmoji": "💻",
+        "visualOptions": [
+          {
+            "text": "Computer",
+            "emoji": "💻",
+            "label": "Computer",
+            "translationPt": "Computador",
+            "simplePronunciation": "com-piú-ter",
+            "phonetic": "/kəmˈpjuː.tər/",
+            "exampleEn": "Use the computer for work.",
+            "examplePt": "Use o computador para trabalhar."
+          },
+          {
+            "text": "Teacher",
+            "emoji": "👩‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor(a)",
+            "simplePronunciation": "tí-tcher",
+            "phonetic": "/ˈtiː.tʃər/",
+            "exampleEn": "The teacher explains the lesson.",
+            "examplePt": "A professora explica a lição."
+          },
+          {
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola",
+            "simplePronunciation": "scúl",
+            "phonetic": "/skuːl/",
+            "exampleEn": "The school opens at seven.",
+            "examplePt": "A escola abre às sete."
+          },
+          {
+            "text": "Doctor",
+            "emoji": "🩺",
+            "label": "Doctor",
+            "translationPt": "Médico(a)",
+            "simplePronunciation": "dók-tor",
+            "phonetic": "/ˈdɑːk.tər/",
+            "exampleEn": "The doctor works at the hospital.",
+            "examplePt": "O médico trabalha no hospital."
+          }
+        ],
+        "options": [
+          "Computer",
+          "Teacher",
+          "School",
+          "Doctor"
+        ],
+        "correctAnswer": "Computer",
+        "contextSentence": "Use the computer for work.",
+        "contextSentencePt": "Use o computador para trabalhar.",
+        "explanation": "Exemplo: \"Use the computer for work.\" — Use o computador para trabalhar.",
+        "phoneticHint": "\"com-piú-ter\" • /kəmˈpjuː.tər/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p27-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Book",
+        "visualEmoji": "📘",
+        "visualOptions": [
+          {
+            "text": "Computer",
+            "emoji": "💻",
+            "label": "Computer",
+            "translationPt": "Computador",
+            "simplePronunciation": "com-piú-ter",
+            "phonetic": "/kəmˈpjuː.tər/",
+            "exampleEn": "Use the computer for work.",
+            "examplePt": "Use o computador para trabalhar."
+          },
+          {
+            "text": "Book",
+            "emoji": "📘",
+            "label": "Book",
+            "translationPt": "Livro",
+            "simplePronunciation": "búk",
+            "phonetic": "/bʊk/",
+            "exampleEn": "Read this book carefully.",
+            "examplePt": "Leia este livro com atenção."
+          },
+          {
+            "text": "Office",
+            "emoji": "🏢",
+            "label": "Office",
+            "translationPt": "Escritório",
+            "simplePronunciation": "ó-fis",
+            "phonetic": "/ˈɑː.fɪs/",
+            "exampleEn": "She works in an office.",
+            "examplePt": "Ela trabalha em um escritório."
+          },
+          {
+            "text": "Doctor",
+            "emoji": "🩺",
+            "label": "Doctor",
+            "translationPt": "Médico(a)",
+            "simplePronunciation": "dók-tor",
+            "phonetic": "/ˈdɑːk.tər/",
+            "exampleEn": "The doctor works at the hospital.",
+            "examplePt": "O médico trabalha no hospital."
+          }
+        ],
+        "options": [
+          "Computer",
+          "Book",
+          "Office",
+          "Doctor"
+        ],
+        "correctAnswer": "Book",
+        "contextSentence": "Read this book carefully.",
+        "contextSentencePt": "Leia este livro com atenção.",
+        "explanation": "Exemplo: \"Read this book carefully.\" — Leia este livro com atenção.",
+        "phoneticHint": "\"búk\" • /bʊk/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p27-e7",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Pen",
+        "visualEmoji": "🖊️",
+        "visualOptions": [
+          {
+            "text": "School",
+            "emoji": "🏫",
+            "label": "School",
+            "translationPt": "Escola",
+            "simplePronunciation": "scúl",
+            "phonetic": "/skuːl/",
+            "exampleEn": "The school opens at seven.",
+            "examplePt": "A escola abre às sete."
+          },
+          {
+            "text": "Book",
+            "emoji": "📘",
+            "label": "Book",
+            "translationPt": "Livro",
+            "simplePronunciation": "búk",
+            "phonetic": "/bʊk/",
+            "exampleEn": "Read this book carefully.",
+            "examplePt": "Leia este livro com atenção."
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Telefone / Celular",
+            "simplePronunciation": "fôun",
+            "phonetic": "/foʊn/",
+            "exampleEn": "Answer the office phone.",
+            "examplePt": "Atenda o telefone."
+          },
+          {
+            "text": "Pen",
+            "emoji": "🖊️",
+            "label": "Pen",
+            "translationPt": "Caneta",
+            "simplePronunciation": "pén",
+            "phonetic": "/pen/",
+            "exampleEn": "Sign the document with a pen.",
+            "examplePt": "Assine o documento com uma caneta."
+          }
+        ],
+        "options": [
+          "School",
+          "Book",
+          "Phone",
+          "Pen"
+        ],
+        "correctAnswer": "Pen",
+        "contextSentence": "Sign the document with a pen.",
+        "contextSentencePt": "Assine o documento com uma caneta.",
+        "explanation": "Exemplo: \"Sign the document with a pen.\" — Assine o documento com uma caneta.",
+        "phoneticHint": "\"pén\" • /pen/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p27-e8",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Phone",
+        "visualEmoji": "📱",
+        "visualOptions": [
+          {
+            "text": "Doctor",
+            "emoji": "🩺",
+            "label": "Doctor",
+            "translationPt": "Médico(a)",
+            "simplePronunciation": "dók-tor",
+            "phonetic": "/ˈdɑːk.tər/",
+            "exampleEn": "The doctor works at the hospital.",
+            "examplePt": "O médico trabalha no hospital."
+          },
+          {
+            "text": "Teacher",
+            "emoji": "👩‍🏫",
+            "label": "Teacher",
+            "translationPt": "Professor(a)",
+            "simplePronunciation": "tí-tcher",
+            "phonetic": "/ˈtiː.tʃər/",
+            "exampleEn": "The teacher explains the lesson.",
+            "examplePt": "A professora explica a lição."
+          },
+          {
+            "text": "Phone",
+            "emoji": "📱",
+            "label": "Phone",
+            "translationPt": "Telefone / Celular",
+            "simplePronunciation": "fôun",
+            "phonetic": "/foʊn/",
+            "exampleEn": "Answer the office phone.",
+            "examplePt": "Atenda o telefone."
+          },
+          {
+            "text": "Office",
+            "emoji": "🏢",
+            "label": "Office",
+            "translationPt": "Escritório",
+            "simplePronunciation": "ó-fis",
+            "phonetic": "/ˈɑː.fɪs/",
+            "exampleEn": "She works in an office.",
+            "examplePt": "Ela trabalha em um escritório."
+          }
+        ],
+        "options": [
+          "Doctor",
+          "Teacher",
+          "Phone",
+          "Office"
+        ],
+        "correctAnswer": "Phone",
+        "contextSentence": "Answer the office phone.",
+        "contextSentencePt": "Atenda o telefone.",
+        "explanation": "Exemplo: \"Answer the office phone.\" — Atenda o telefone.",
+        "phoneticHint": "\"fôun\" • /foʊn/",
+        "skillCategory": "listening"
+      }
+    ]
+  },
+  {
+    "id": "w0-p28",
+    "worldId": 0,
+    "phaseNumber": 28,
+    "themeId": "pronouns",
+    "themeTitle": "Lição de Pronomes",
+    "frequencyLevel": "1 a cada 3 Módulos de Vocabulário",
+    "title": "Lição de Pronomes VII • Aplicando Reflexivos & Interrogativos",
+    "subtitle": "Módulo de Pronomes 7/8 (Após 21 de Vocabulário) • Perguntas e Frases + Voz da Professora",
+    "pedagogicalObjective": "Praticar perguntas completas com Who, Where, Whose, What e frases com Pronomes Reflexivos.",
+    "type": "chest",
+    "icon": "star",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "7ª Lição Exclusiva de Pronomes (após 21 módulos de vocabulário).",
+      "Prática de perguntas essenciais com Pronomes Interrogativos (Who, Where, Whose, What) no cotidiano."
+    ],
+    "xpReward": 70,
+    "gemsReward": 30,
+    "exercises": [
+      {
+        "id": "w0-p28-pron-1",
+        "type": "pair-match",
+        "conceptTitle": "Aplicação • Perguntas Essenciais com Interrogativos",
+        "conceptHeader": "No inglês cotidiano, os Pronomes Interrogativos vêm no início da pergunta: \"Who\" para saber quem é a pessoa, \"Where\" para saber a localização, \"Whose\" para saber de quem é o objeto e \"What\" para saber o que é algo.",
+        "teacherAudioPt": "/audio/teacher/pronoun_6.wav",
+        "prompt": "🤝 Associe cada pergunta em inglês ao seu significado em português:",
+        "pairs": [
+          {
+            "id": "w0-p28-b1-pi1",
+            "en": "Who is at the door?",
+            "emoji": "🚪",
+            "phonetic": "/huː ɪz æt ðə dɔːr/",
+            "pt": "Quem está na porta?",
+            "tipPt": "Correto! \"Who\" pergunta sobre pessoas."
+          },
+          {
+            "id": "w0-p28-b1-pi2",
+            "en": "Where is my shirt?",
+            "emoji": "👔",
+            "phonetic": "/wer ɪz maɪ ʃɜːrt/",
+            "pt": "Onde está a minha camisa?",
+            "tipPt": "Muito bem! \"Where\" pergunta sobre lugar ou localização."
+          },
+          {
+            "id": "w0-p28-b1-pi3",
+            "en": "Whose coat is this?",
+            "emoji": "🧥",
+            "phonetic": "/huːz koʊt ɪz ðɪs/",
+            "pt": "De quem é este casaco?",
+            "tipPt": "Perfeito! \"Whose\" pergunta a quem pertence o item."
+          },
+          {
+            "id": "w0-p28-b1-pi4",
+            "en": "What is on the table?",
+            "emoji": "🪑",
+            "phonetic": "/wɑːt ɪz ɑːn ðə ˈteɪ.bəl/",
+            "pt": "O que está sobre a mesa?",
+            "tipPt": "Excelente! \"What\" pergunta sobre objetos ou coisas."
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Who is at the door? (Quem está na porta?), Where is my shirt? (Onde está minha camisa?), Whose coat is this? (De quem é este casaco?), What is on the table? (O que está na mesa?).",
+        "skillCategory": "grammar"
+      }
+    ]
+  },
+  {
+    "id": "w0-p29",
+    "worldId": 0,
+    "phaseNumber": 29,
+    "themeId": "work",
+    "themeTitle": "Tema 6: Trabalho",
+    "frequencyLevel": "Módulo 2 • Palavras Comuns",
+    "title": "Trabalho • Módulo 2: Palavras Comuns",
+    "subtitle": "Tema: Trabalho (2/4) • 8 objetos e funções comuns no trabalho",
+    "pedagogicalObjective": "Aprender 8 termos comuns do ambiente profissional: Desk, Paper, Clock, Notebook, Pencil, Nurse, Chef e Police.",
+    "type": "lesson",
+    "icon": "book",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Tema: Trabalho — Módulo 2 (Palavras comuns): materiais e profissões frequentes.",
+      "Palavras deste módulo (8): Desk (\"désk\" = Mesa de trabalho), Paper (\"pêi-per\" = Papel), Clock (\"clók\" = Relógio de parede), Notebook (\"nôut-búk\" = Caderno), Pencil (\"pên-sol\" = Lápis), Nurse (\"nârs\" = Enfermeira), Chef (\"xéf\" = Cozinheiro/Chef) e Police (\"po-lís\" = Polícia)."
+    ],
+    "xpReward": 50,
+    "gemsReward": 20,
+    "exercises": [
+      {
+        "id": "w0-p29-e1",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Desk",
+        "visualEmoji": "🪑",
+        "visualOptions": [
+          {
+            "text": "Clock",
+            "emoji": "🕒",
+            "label": "Clock",
+            "translationPt": "Relógio de parede",
+            "simplePronunciation": "clók",
+            "phonetic": "/klɑːk/",
+            "exampleEn": "Look at the wall clock.",
+            "examplePt": "Olhe para o relógio de parede."
+          },
+          {
+            "text": "Desk",
+            "emoji": "🪑",
+            "label": "Desk",
+            "translationPt": "Mesa de trabalho / Escrivaninha",
+            "simplePronunciation": "désk",
+            "phonetic": "/desk/",
+            "exampleEn": "Put the laptop on the desk.",
+            "examplePt": "Coloque o notebook na escrivaninha."
+          },
+          {
+            "text": "Pencil",
+            "emoji": "✏️",
+            "label": "Pencil",
+            "translationPt": "Lápis",
+            "simplePronunciation": "pên-sol",
+            "phonetic": "/ˈpen.səl/",
+            "exampleEn": "Draw with a wooden pencil.",
+            "examplePt": "Desenhe com um lápis."
+          },
+          {
+            "text": "Chef",
+            "emoji": "👨‍🍳",
+            "label": "Chef",
+            "translationPt": "Cozinheiro / Chef",
+            "simplePronunciation": "xéf",
+            "phonetic": "/ʃef/",
+            "exampleEn": "The chef prepares the meal.",
+            "examplePt": "O chef prepara a refeição."
+          }
+        ],
+        "options": [
+          "Clock",
+          "Desk",
+          "Pencil",
+          "Chef"
+        ],
+        "correctAnswer": "Desk",
+        "contextSentence": "Put the laptop on the desk.",
+        "contextSentencePt": "Coloque o notebook na escrivaninha.",
+        "explanation": "Exemplo: \"Put the laptop on the desk.\" — Coloque o notebook na escrivaninha.",
+        "phoneticHint": "\"désk\" • /desk/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p29-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Paper",
+        "visualEmoji": "📄",
+        "visualOptions": [
+          {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno",
+            "simplePronunciation": "nôut-búk",
+            "phonetic": "/ˈnoʊt.bʊk/",
+            "exampleEn": "Take notes in your notebook.",
+            "examplePt": "Anote no seu caderno."
+          },
+          {
+            "text": "Nurse",
+            "emoji": "🧑‍⚕️",
+            "label": "Nurse",
+            "translationPt": "Enfermeiro(a)",
+            "simplePronunciation": "nârs",
+            "phonetic": "/nɜːrs/",
+            "exampleEn": "The nurse helps the patients.",
+            "examplePt": "A enfermeira ajuda os pacientes."
+          },
+          {
+            "text": "Police",
+            "emoji": "👮",
+            "label": "Police",
+            "translationPt": "Policial / Polícia",
+            "simplePronunciation": "po-lís",
+            "phonetic": "/pəˈliːs/",
+            "exampleEn": "The police officer helps the city.",
+            "examplePt": "O policial ajuda a cidade."
+          },
+          {
+            "text": "Paper",
+            "emoji": "📄",
+            "label": "Paper",
+            "translationPt": "Papel",
+            "simplePronunciation": "pêi-per",
+            "phonetic": "/ˈpeɪ.pər/",
+            "exampleEn": "Write on a sheet of paper.",
+            "examplePt": "Escreva em uma folha de papel."
+          }
+        ],
+        "options": [
+          "Notebook",
+          "Nurse",
+          "Police",
+          "Paper"
+        ],
+        "correctAnswer": "Paper",
+        "contextSentence": "Write on a sheet of paper.",
+        "contextSentencePt": "Escreva em uma folha de papel.",
+        "explanation": "Exemplo: \"Write on a sheet of paper.\" — Escreva em uma folha de papel.",
+        "phoneticHint": "\"pêi-per\" • /ˈpeɪ.pər/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p29-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Clock",
+        "visualEmoji": "🕒",
+        "visualOptions": [
+          {
+            "text": "Clock",
+            "emoji": "🕒",
+            "label": "Clock",
+            "translationPt": "Relógio de parede",
+            "simplePronunciation": "clók",
+            "phonetic": "/klɑːk/",
+            "exampleEn": "Look at the wall clock.",
+            "examplePt": "Olhe para o relógio de parede."
+          },
+          {
+            "text": "Pencil",
+            "emoji": "✏️",
+            "label": "Pencil",
+            "translationPt": "Lápis",
+            "simplePronunciation": "pên-sol",
+            "phonetic": "/ˈpen.səl/",
+            "exampleEn": "Draw with a wooden pencil.",
+            "examplePt": "Desenhe com um lápis."
+          },
+          {
+            "text": "Desk",
+            "emoji": "🪑",
+            "label": "Desk",
+            "translationPt": "Mesa de trabalho / Escrivaninha",
+            "simplePronunciation": "désk",
+            "phonetic": "/desk/",
+            "exampleEn": "Put the laptop on the desk.",
+            "examplePt": "Coloque o notebook na escrivaninha."
+          },
+          {
+            "text": "Chef",
+            "emoji": "👨‍🍳",
+            "label": "Chef",
+            "translationPt": "Cozinheiro / Chef",
+            "simplePronunciation": "xéf",
+            "phonetic": "/ʃef/",
+            "exampleEn": "The chef prepares the meal.",
+            "examplePt": "O chef prepara a refeição."
+          }
+        ],
+        "options": [
+          "Clock",
+          "Pencil",
+          "Desk",
+          "Chef"
+        ],
+        "correctAnswer": "Clock",
+        "contextSentence": "Look at the wall clock.",
+        "contextSentencePt": "Olhe para o relógio de parede.",
+        "explanation": "Exemplo: \"Look at the wall clock.\" — Olhe para o relógio de parede.",
+        "phoneticHint": "\"clók\" • /klɑːk/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p29-e4",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Notebook",
+        "visualEmoji": "📓",
+        "visualOptions": [
+          {
+            "text": "Paper",
+            "emoji": "📄",
+            "label": "Paper",
+            "translationPt": "Papel",
+            "simplePronunciation": "pêi-per",
+            "phonetic": "/ˈpeɪ.pər/",
+            "exampleEn": "Write on a sheet of paper.",
+            "examplePt": "Escreva em uma folha de papel."
+          },
+          {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno",
+            "simplePronunciation": "nôut-búk",
+            "phonetic": "/ˈnoʊt.bʊk/",
+            "exampleEn": "Take notes in your notebook.",
+            "examplePt": "Anote no seu caderno."
+          },
+          {
+            "text": "Nurse",
+            "emoji": "🧑‍⚕️",
+            "label": "Nurse",
+            "translationPt": "Enfermeiro(a)",
+            "simplePronunciation": "nârs",
+            "phonetic": "/nɜːrs/",
+            "exampleEn": "The nurse helps the patients.",
+            "examplePt": "A enfermeira ajuda os pacientes."
+          },
+          {
+            "text": "Police",
+            "emoji": "👮",
+            "label": "Police",
+            "translationPt": "Policial / Polícia",
+            "simplePronunciation": "po-lís",
+            "phonetic": "/pəˈliːs/",
+            "exampleEn": "The police officer helps the city.",
+            "examplePt": "O policial ajuda a cidade."
+          }
+        ],
+        "options": [
+          "Paper",
+          "Notebook",
+          "Nurse",
+          "Police"
+        ],
+        "correctAnswer": "Notebook",
+        "contextSentence": "Take notes in your notebook.",
+        "contextSentencePt": "Anote no seu caderno.",
+        "explanation": "Exemplo: \"Take notes in your notebook.\" — Anote no seu caderno.",
+        "phoneticHint": "\"nôut-búk\" • /ˈnoʊt.bʊk/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p29-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Pencil",
+        "visualEmoji": "✏️",
+        "visualOptions": [
+          {
+            "text": "Clock",
+            "emoji": "🕒",
+            "label": "Clock",
+            "translationPt": "Relógio de parede",
+            "simplePronunciation": "clók",
+            "phonetic": "/klɑːk/",
+            "exampleEn": "Look at the wall clock.",
+            "examplePt": "Olhe para o relógio de parede."
+          },
+          {
+            "text": "Chef",
+            "emoji": "👨‍🍳",
+            "label": "Chef",
+            "translationPt": "Cozinheiro / Chef",
+            "simplePronunciation": "xéf",
+            "phonetic": "/ʃef/",
+            "exampleEn": "The chef prepares the meal.",
+            "examplePt": "O chef prepara a refeição."
+          },
+          {
+            "text": "Desk",
+            "emoji": "🪑",
+            "label": "Desk",
+            "translationPt": "Mesa de trabalho / Escrivaninha",
+            "simplePronunciation": "désk",
+            "phonetic": "/desk/",
+            "exampleEn": "Put the laptop on the desk.",
+            "examplePt": "Coloque o notebook na escrivaninha."
+          },
+          {
+            "text": "Pencil",
+            "emoji": "✏️",
+            "label": "Pencil",
+            "translationPt": "Lápis",
+            "simplePronunciation": "pên-sol",
+            "phonetic": "/ˈpen.səl/",
+            "exampleEn": "Draw with a wooden pencil.",
+            "examplePt": "Desenhe com um lápis."
+          }
+        ],
+        "options": [
+          "Clock",
+          "Chef",
+          "Desk",
+          "Pencil"
+        ],
+        "correctAnswer": "Pencil",
+        "contextSentence": "Draw with a wooden pencil.",
+        "contextSentencePt": "Desenhe com um lápis.",
+        "explanation": "Exemplo: \"Draw with a wooden pencil.\" — Desenhe com um lápis.",
+        "phoneticHint": "\"pên-sol\" • /ˈpen.səl/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p29-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Nurse",
+        "visualEmoji": "🧑‍⚕️",
+        "visualOptions": [
+          {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno",
+            "simplePronunciation": "nôut-búk",
+            "phonetic": "/ˈnoʊt.bʊk/",
+            "exampleEn": "Take notes in your notebook.",
+            "examplePt": "Anote no seu caderno."
+          },
+          {
+            "text": "Police",
+            "emoji": "👮",
+            "label": "Police",
+            "translationPt": "Policial / Polícia",
+            "simplePronunciation": "po-lís",
+            "phonetic": "/pəˈliːs/",
+            "exampleEn": "The police officer helps the city.",
+            "examplePt": "O policial ajuda a cidade."
+          },
+          {
+            "text": "Nurse",
+            "emoji": "🧑‍⚕️",
+            "label": "Nurse",
+            "translationPt": "Enfermeiro(a)",
+            "simplePronunciation": "nârs",
+            "phonetic": "/nɜːrs/",
+            "exampleEn": "The nurse helps the patients.",
+            "examplePt": "A enfermeira ajuda os pacientes."
+          },
+          {
+            "text": "Paper",
+            "emoji": "📄",
+            "label": "Paper",
+            "translationPt": "Papel",
+            "simplePronunciation": "pêi-per",
+            "phonetic": "/ˈpeɪ.pər/",
+            "exampleEn": "Write on a sheet of paper.",
+            "examplePt": "Escreva em uma folha de papel."
+          }
+        ],
+        "options": [
+          "Notebook",
+          "Police",
+          "Nurse",
+          "Paper"
+        ],
+        "correctAnswer": "Nurse",
+        "contextSentence": "The nurse helps the patients.",
+        "contextSentencePt": "A enfermeira ajuda os pacientes.",
+        "explanation": "Exemplo: \"The nurse helps the patients.\" — A enfermeira ajuda os pacientes.",
+        "phoneticHint": "\"nârs\" • /nɜːrs/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p29-e7",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Chef",
+        "visualEmoji": "👨‍🍳",
+        "visualOptions": [
+          {
+            "text": "Chef",
+            "emoji": "👨‍🍳",
+            "label": "Chef",
+            "translationPt": "Cozinheiro / Chef",
+            "simplePronunciation": "xéf",
+            "phonetic": "/ʃef/",
+            "exampleEn": "The chef prepares the meal.",
+            "examplePt": "O chef prepara a refeição."
+          },
+          {
+            "text": "Pencil",
+            "emoji": "✏️",
+            "label": "Pencil",
+            "translationPt": "Lápis",
+            "simplePronunciation": "pên-sol",
+            "phonetic": "/ˈpen.səl/",
+            "exampleEn": "Draw with a wooden pencil.",
+            "examplePt": "Desenhe com um lápis."
+          },
+          {
+            "text": "Desk",
+            "emoji": "🪑",
+            "label": "Desk",
+            "translationPt": "Mesa de trabalho / Escrivaninha",
+            "simplePronunciation": "désk",
+            "phonetic": "/desk/",
+            "exampleEn": "Put the laptop on the desk.",
+            "examplePt": "Coloque o notebook na escrivaninha."
+          },
+          {
+            "text": "Clock",
+            "emoji": "🕒",
+            "label": "Clock",
+            "translationPt": "Relógio de parede",
+            "simplePronunciation": "clók",
+            "phonetic": "/klɑːk/",
+            "exampleEn": "Look at the wall clock.",
+            "examplePt": "Olhe para o relógio de parede."
+          }
+        ],
+        "options": [
+          "Chef",
+          "Pencil",
+          "Desk",
+          "Clock"
+        ],
+        "correctAnswer": "Chef",
+        "contextSentence": "The chef prepares the meal.",
+        "contextSentencePt": "O chef prepara a refeição.",
+        "explanation": "Exemplo: \"The chef prepares the meal.\" — O chef prepara a refeição.",
+        "phoneticHint": "\"xéf\" • /ʃef/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p29-e8",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Police",
+        "visualEmoji": "👮",
+        "visualOptions": [
+          {
+            "text": "Paper",
+            "emoji": "📄",
+            "label": "Paper",
+            "translationPt": "Papel",
+            "simplePronunciation": "pêi-per",
+            "phonetic": "/ˈpeɪ.pər/",
+            "exampleEn": "Write on a sheet of paper.",
+            "examplePt": "Escreva em uma folha de papel."
+          },
+          {
+            "text": "Nurse",
+            "emoji": "🧑‍⚕️",
+            "label": "Nurse",
+            "translationPt": "Enfermeiro(a)",
+            "simplePronunciation": "nârs",
+            "phonetic": "/nɜːrs/",
+            "exampleEn": "The nurse helps the patients.",
+            "examplePt": "A enfermeira ajuda os pacientes."
+          },
+          {
+            "text": "Police",
+            "emoji": "👮",
+            "label": "Police",
+            "translationPt": "Policial / Polícia",
+            "simplePronunciation": "po-lís",
+            "phonetic": "/pəˈliːs/",
+            "exampleEn": "The police officer helps the city.",
+            "examplePt": "O policial ajuda a cidade."
+          },
+          {
+            "text": "Notebook",
+            "emoji": "📓",
+            "label": "Notebook",
+            "translationPt": "Caderno",
+            "simplePronunciation": "nôut-búk",
+            "phonetic": "/ˈnoʊt.bʊk/",
+            "exampleEn": "Take notes in your notebook.",
+            "examplePt": "Anote no seu caderno."
+          }
+        ],
+        "options": [
+          "Paper",
+          "Nurse",
+          "Police",
+          "Notebook"
+        ],
+        "correctAnswer": "Police",
+        "contextSentence": "The police officer helps the city.",
+        "contextSentencePt": "O policial ajuda a cidade.",
+        "explanation": "Exemplo: \"The police officer helps the city.\" — O policial ajuda a cidade.",
+        "phoneticHint": "\"po-lís\" • /pəˈliːs/",
+        "skillCategory": "listening"
+      }
+    ]
+  },
+  {
+    "id": "w0-p30",
+    "worldId": 0,
+    "phaseNumber": 30,
+    "themeId": "work",
+    "themeTitle": "Tema 6: Trabalho",
+    "frequencyLevel": "Módulo 3 • Palavras Intermediárias",
+    "title": "Trabalho • Módulo 3: Palavras Intermediárias",
+    "subtitle": "Tema: Trabalho (3/4) • 8 equipamentos e ferramentas intermediárias",
+    "pedagogicalObjective": "Dominar 8 ferramentas intermediárias de trabalho: Keyboard, Screen, Printer, Scissors, Ruler, Eraser, Envelope e Calculator.",
+    "type": "lesson",
+    "icon": "book",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Tema: Trabalho — Módulo 3 (Palavras intermediárias): periféricos e utensílios de escritório.",
+      "Palavras deste módulo (8): Keyboard (\"kí-bórd\" = Teclado), Screen (\"scrín\" = Tela/Monitor), Printer (\"prín-ter\" = Impressora), Scissors (\"sí-zors\" = Tesoura), Ruler (\"rú-ler\" = Régua), Eraser (\"i-rêi-ser\" = Borracha), Envelope (\"ên-ve-lôup\" = Envelope) e Calculator (\"kél-kiu-lêi-tor\" = Calculadora)."
+    ],
+    "xpReward": 50,
+    "gemsReward": 20,
+    "exercises": [
+      {
+        "id": "w0-p30-e1",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Keyboard",
+        "visualEmoji": "⌨️",
+        "visualOptions": [
+          {
+            "text": "Eraser",
+            "emoji": "🧽",
+            "label": "Eraser",
+            "translationPt": "Borracha",
+            "simplePronunciation": "i-rêi-ser",
+            "phonetic": "/ɪˈreɪ.sər/",
+            "exampleEn": "Use an eraser to fix it.",
+            "examplePt": "Use uma borracha para corrigir."
+          },
+          {
+            "text": "Ruler",
+            "emoji": "📏",
+            "label": "Ruler",
+            "translationPt": "Régua",
+            "simplePronunciation": "rú-ler",
+            "phonetic": "/ˈruː.lər/",
+            "exampleEn": "Measure the line with a ruler.",
+            "examplePt": "Meça a linha com uma régua."
+          },
+          {
+            "text": "Envelope",
+            "emoji": "✉️",
+            "label": "Envelope",
+            "translationPt": "Envelope",
+            "simplePronunciation": "ên-ve-lôup",
+            "phonetic": "/ˈen.və.loʊp/",
+            "exampleEn": "Put the letter in the envelope.",
+            "examplePt": "Coloque a carta no envelope."
+          },
+          {
+            "text": "Keyboard",
+            "emoji": "⌨️",
+            "label": "Keyboard",
+            "translationPt": "Teclado",
+            "simplePronunciation": "kí-bórd",
+            "phonetic": "/ˈkiː.bɔːrd/",
+            "exampleEn": "Type on the computer keyboard.",
+            "examplePt": "Digite no teclado do computador."
+          }
+        ],
+        "options": [
+          "Eraser",
+          "Ruler",
+          "Envelope",
+          "Keyboard"
+        ],
+        "correctAnswer": "Keyboard",
+        "contextSentence": "Type on the computer keyboard.",
+        "contextSentencePt": "Digite no teclado do computador.",
+        "explanation": "Exemplo: \"Type on the computer keyboard.\" — Digite no teclado do computador.",
+        "phoneticHint": "\"kí-bórd\" • /ˈkiː.bɔːrd/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p30-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Screen",
+        "visualEmoji": "🖥️",
+        "visualOptions": [
+          {
+            "text": "Screen",
+            "emoji": "🖥️",
+            "label": "Screen",
+            "translationPt": "Tela / Monitor",
+            "simplePronunciation": "scrín",
+            "phonetic": "/skriːn/",
+            "exampleEn": "Look at the computer screen.",
+            "examplePt": "Olhe para a tela do computador."
+          },
+          {
+            "text": "Calculator",
+            "emoji": "🧮",
+            "label": "Calculator",
+            "translationPt": "Calculadora",
+            "simplePronunciation": "kél-kiu-lêi-tor",
+            "phonetic": "/ˈkæl.kjə.leɪ.tər/",
+            "exampleEn": "Check the numbers on the calculator.",
+            "examplePt": "Confira os números na calculadora."
+          },
+          {
+            "text": "Keyboard",
+            "emoji": "⌨️",
+            "label": "Keyboard",
+            "translationPt": "Teclado",
+            "simplePronunciation": "kí-bórd",
+            "phonetic": "/ˈkiː.bɔːrd/",
+            "exampleEn": "Type on the computer keyboard.",
+            "examplePt": "Digite no teclado do computador."
+          },
+          {
+            "text": "Scissors",
+            "emoji": "✂️",
+            "label": "Scissors",
+            "translationPt": "Tesoura",
+            "simplePronunciation": "sí-zors",
+            "phonetic": "/ˈsɪz.ərz/",
+            "exampleEn": "Cut the paper with scissors.",
+            "examplePt": "Corte o papel com a tesoura."
+          }
+        ],
+        "options": [
+          "Screen",
+          "Calculator",
+          "Keyboard",
+          "Scissors"
+        ],
+        "correctAnswer": "Screen",
+        "contextSentence": "Look at the computer screen.",
+        "contextSentencePt": "Olhe para a tela do computador.",
+        "explanation": "Exemplo: \"Look at the computer screen.\" — Olhe para a tela do computador.",
+        "phoneticHint": "\"scrín\" • /skriːn/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p30-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Printer",
+        "visualEmoji": "🖨️",
+        "visualOptions": [
+          {
+            "text": "Ruler",
+            "emoji": "📏",
+            "label": "Ruler",
+            "translationPt": "Régua",
+            "simplePronunciation": "rú-ler",
+            "phonetic": "/ˈruː.lər/",
+            "exampleEn": "Measure the line with a ruler.",
+            "examplePt": "Meça a linha com uma régua."
+          },
+          {
+            "text": "Printer",
+            "emoji": "🖨️",
+            "label": "Printer",
+            "translationPt": "Impressora",
+            "simplePronunciation": "prín-ter",
+            "phonetic": "/ˈprɪn.tər/",
+            "exampleEn": "Print the page on the printer.",
+            "examplePt": "Imprima a página na impressora."
+          },
+          {
+            "text": "Eraser",
+            "emoji": "🧽",
+            "label": "Eraser",
+            "translationPt": "Borracha",
+            "simplePronunciation": "i-rêi-ser",
+            "phonetic": "/ɪˈreɪ.sər/",
+            "exampleEn": "Use an eraser to fix it.",
+            "examplePt": "Use uma borracha para corrigir."
+          },
+          {
+            "text": "Envelope",
+            "emoji": "✉️",
+            "label": "Envelope",
+            "translationPt": "Envelope",
+            "simplePronunciation": "ên-ve-lôup",
+            "phonetic": "/ˈen.və.loʊp/",
+            "exampleEn": "Put the letter in the envelope.",
+            "examplePt": "Coloque a carta no envelope."
+          }
+        ],
+        "options": [
+          "Ruler",
+          "Printer",
+          "Eraser",
+          "Envelope"
+        ],
+        "correctAnswer": "Printer",
+        "contextSentence": "Print the page on the printer.",
+        "contextSentencePt": "Imprima a página na impressora.",
+        "explanation": "Exemplo: \"Print the page on the printer.\" — Imprima a página na impressora.",
+        "phoneticHint": "\"prín-ter\" • /ˈprɪn.tər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p30-e4",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Scissors",
+        "visualEmoji": "✂️",
+        "visualOptions": [
+          {
+            "text": "Screen",
+            "emoji": "🖥️",
+            "label": "Screen",
+            "translationPt": "Tela / Monitor",
+            "simplePronunciation": "scrín",
+            "phonetic": "/skriːn/",
+            "exampleEn": "Look at the computer screen.",
+            "examplePt": "Olhe para a tela do computador."
+          },
+          {
+            "text": "Calculator",
+            "emoji": "🧮",
+            "label": "Calculator",
+            "translationPt": "Calculadora",
+            "simplePronunciation": "kél-kiu-lêi-tor",
+            "phonetic": "/ˈkæl.kjə.leɪ.tər/",
+            "exampleEn": "Check the numbers on the calculator.",
+            "examplePt": "Confira os números na calculadora."
+          },
+          {
+            "text": "Keyboard",
+            "emoji": "⌨️",
+            "label": "Keyboard",
+            "translationPt": "Teclado",
+            "simplePronunciation": "kí-bórd",
+            "phonetic": "/ˈkiː.bɔːrd/",
+            "exampleEn": "Type on the computer keyboard.",
+            "examplePt": "Digite no teclado do computador."
+          },
+          {
+            "text": "Scissors",
+            "emoji": "✂️",
+            "label": "Scissors",
+            "translationPt": "Tesoura",
+            "simplePronunciation": "sí-zors",
+            "phonetic": "/ˈsɪz.ərz/",
+            "exampleEn": "Cut the paper with scissors.",
+            "examplePt": "Corte o papel com a tesoura."
+          }
+        ],
+        "options": [
+          "Screen",
+          "Calculator",
+          "Keyboard",
+          "Scissors"
+        ],
+        "correctAnswer": "Scissors",
+        "contextSentence": "Cut the paper with scissors.",
+        "contextSentencePt": "Corte o papel com a tesoura.",
+        "explanation": "Exemplo: \"Cut the paper with scissors.\" — Corte o papel com a tesoura.",
+        "phoneticHint": "\"sí-zors\" • /ˈsɪz.ərz/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p30-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Ruler",
+        "visualEmoji": "📏",
+        "visualOptions": [
+          {
+            "text": "Printer",
+            "emoji": "🖨️",
+            "label": "Printer",
+            "translationPt": "Impressora",
+            "simplePronunciation": "prín-ter",
+            "phonetic": "/ˈprɪn.tər/",
+            "exampleEn": "Print the page on the printer.",
+            "examplePt": "Imprima a página na impressora."
+          },
+          {
+            "text": "Scissors",
+            "emoji": "✂️",
+            "label": "Scissors",
+            "translationPt": "Tesoura",
+            "simplePronunciation": "sí-zors",
+            "phonetic": "/ˈsɪz.ərz/",
+            "exampleEn": "Cut the paper with scissors.",
+            "examplePt": "Corte o papel com a tesoura."
+          },
+          {
+            "text": "Ruler",
+            "emoji": "📏",
+            "label": "Ruler",
+            "translationPt": "Régua",
+            "simplePronunciation": "rú-ler",
+            "phonetic": "/ˈruː.lər/",
+            "exampleEn": "Measure the line with a ruler.",
+            "examplePt": "Meça a linha com uma régua."
+          },
+          {
+            "text": "Screen",
+            "emoji": "🖥️",
+            "label": "Screen",
+            "translationPt": "Tela / Monitor",
+            "simplePronunciation": "scrín",
+            "phonetic": "/skriːn/",
+            "exampleEn": "Look at the computer screen.",
+            "examplePt": "Olhe para a tela do computador."
+          }
+        ],
+        "options": [
+          "Printer",
+          "Scissors",
+          "Ruler",
+          "Screen"
+        ],
+        "correctAnswer": "Ruler",
+        "contextSentence": "Measure the line with a ruler.",
+        "contextSentencePt": "Meça a linha com uma régua.",
+        "explanation": "Exemplo: \"Measure the line with a ruler.\" — Meça a linha com uma régua.",
+        "phoneticHint": "\"rú-ler\" • /ˈruː.lər/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p30-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Eraser",
+        "visualEmoji": "🧽",
+        "visualOptions": [
+          {
+            "text": "Eraser",
+            "emoji": "🧽",
+            "label": "Eraser",
+            "translationPt": "Borracha",
+            "simplePronunciation": "i-rêi-ser",
+            "phonetic": "/ɪˈreɪ.sər/",
+            "exampleEn": "Use an eraser to fix it.",
+            "examplePt": "Use uma borracha para corrigir."
+          },
+          {
+            "text": "Ruler",
+            "emoji": "📏",
+            "label": "Ruler",
+            "translationPt": "Régua",
+            "simplePronunciation": "rú-ler",
+            "phonetic": "/ˈruː.lər/",
+            "exampleEn": "Measure the line with a ruler.",
+            "examplePt": "Meça a linha com uma régua."
+          },
+          {
+            "text": "Calculator",
+            "emoji": "🧮",
+            "label": "Calculator",
+            "translationPt": "Calculadora",
+            "simplePronunciation": "kél-kiu-lêi-tor",
+            "phonetic": "/ˈkæl.kjə.leɪ.tər/",
+            "exampleEn": "Check the numbers on the calculator.",
+            "examplePt": "Confira os números na calculadora."
+          },
+          {
+            "text": "Printer",
+            "emoji": "🖨️",
+            "label": "Printer",
+            "translationPt": "Impressora",
+            "simplePronunciation": "prín-ter",
+            "phonetic": "/ˈprɪn.tər/",
+            "exampleEn": "Print the page on the printer.",
+            "examplePt": "Imprima a página na impressora."
+          }
+        ],
+        "options": [
+          "Eraser",
+          "Ruler",
+          "Calculator",
+          "Printer"
+        ],
+        "correctAnswer": "Eraser",
+        "contextSentence": "Use an eraser to fix it.",
+        "contextSentencePt": "Use uma borracha para corrigir.",
+        "explanation": "Exemplo: \"Use an eraser to fix it.\" — Use uma borracha para corrigir.",
+        "phoneticHint": "\"i-rêi-ser\" • /ɪˈreɪ.sər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p30-e7",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Envelope",
+        "visualEmoji": "✉️",
+        "visualOptions": [
+          {
+            "text": "Keyboard",
+            "emoji": "⌨️",
+            "label": "Keyboard",
+            "translationPt": "Teclado",
+            "simplePronunciation": "kí-bórd",
+            "phonetic": "/ˈkiː.bɔːrd/",
+            "exampleEn": "Type on the computer keyboard.",
+            "examplePt": "Digite no teclado do computador."
+          },
+          {
+            "text": "Scissors",
+            "emoji": "✂️",
+            "label": "Scissors",
+            "translationPt": "Tesoura",
+            "simplePronunciation": "sí-zors",
+            "phonetic": "/ˈsɪz.ərz/",
+            "exampleEn": "Cut the paper with scissors.",
+            "examplePt": "Corte o papel com a tesoura."
+          },
+          {
+            "text": "Envelope",
+            "emoji": "✉️",
+            "label": "Envelope",
+            "translationPt": "Envelope",
+            "simplePronunciation": "ên-ve-lôup",
+            "phonetic": "/ˈen.və.loʊp/",
+            "exampleEn": "Put the letter in the envelope.",
+            "examplePt": "Coloque a carta no envelope."
+          },
+          {
+            "text": "Screen",
+            "emoji": "🖥️",
+            "label": "Screen",
+            "translationPt": "Tela / Monitor",
+            "simplePronunciation": "scrín",
+            "phonetic": "/skriːn/",
+            "exampleEn": "Look at the computer screen.",
+            "examplePt": "Olhe para a tela do computador."
+          }
+        ],
+        "options": [
+          "Keyboard",
+          "Scissors",
+          "Envelope",
+          "Screen"
+        ],
+        "correctAnswer": "Envelope",
+        "contextSentence": "Put the letter in the envelope.",
+        "contextSentencePt": "Coloque a carta no envelope.",
+        "explanation": "Exemplo: \"Put the letter in the envelope.\" — Coloque a carta no envelope.",
+        "phoneticHint": "\"ên-ve-lôup\" • /ˈen.və.loʊp/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p30-e8",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Calculator",
+        "visualEmoji": "🧮",
+        "visualOptions": [
+          {
+            "text": "Ruler",
+            "emoji": "📏",
+            "label": "Ruler",
+            "translationPt": "Régua",
+            "simplePronunciation": "rú-ler",
+            "phonetic": "/ˈruː.lər/",
+            "exampleEn": "Measure the line with a ruler.",
+            "examplePt": "Meça a linha com uma régua."
+          },
+          {
+            "text": "Calculator",
+            "emoji": "🧮",
+            "label": "Calculator",
+            "translationPt": "Calculadora",
+            "simplePronunciation": "kél-kiu-lêi-tor",
+            "phonetic": "/ˈkæl.kjə.leɪ.tər/",
+            "exampleEn": "Check the numbers on the calculator.",
+            "examplePt": "Confira os números na calculadora."
+          },
+          {
+            "text": "Printer",
+            "emoji": "🖨️",
+            "label": "Printer",
+            "translationPt": "Impressora",
+            "simplePronunciation": "prín-ter",
+            "phonetic": "/ˈprɪn.tər/",
+            "exampleEn": "Print the page on the printer.",
+            "examplePt": "Imprima a página na impressora."
+          },
+          {
+            "text": "Eraser",
+            "emoji": "🧽",
+            "label": "Eraser",
+            "translationPt": "Borracha",
+            "simplePronunciation": "i-rêi-ser",
+            "phonetic": "/ɪˈreɪ.sər/",
+            "exampleEn": "Use an eraser to fix it.",
+            "examplePt": "Use uma borracha para corrigir."
+          }
+        ],
+        "options": [
+          "Ruler",
+          "Calculator",
+          "Printer",
+          "Eraser"
+        ],
+        "correctAnswer": "Calculator",
+        "contextSentence": "Check the numbers on the calculator.",
+        "contextSentencePt": "Confira os números na calculadora.",
+        "explanation": "Exemplo: \"Check the numbers on the calculator.\" — Confira os números na calculadora.",
+        "phoneticHint": "\"kél-kiu-lêi-tor\" • /ˈkæl.kjə.leɪ.tər/",
+        "skillCategory": "listening"
+      }
+    ]
+  },
+  {
+    "id": "w0-p31",
+    "worldId": 0,
+    "phaseNumber": 31,
+    "themeId": "work",
+    "themeTitle": "Tema 6: Trabalho",
+    "frequencyLevel": "Módulo 4 • Menos Comuns ou Específicas",
+    "title": "Trabalho • Módulo 4: Menos Comuns",
+    "subtitle": "Tema: Trabalho (4/4) • 8 ferramentas e instrumentos específicos",
+    "pedagogicalObjective": "Conhecer 8 instrumentos específicos de trabalho e ciência: Folder, Stapler, Calendar, Microscope, Globe, Paintbrush, Hammer e Wrench.",
+    "type": "lesson",
+    "icon": "book",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "Tema: Trabalho — Módulo 4 (Palavras menos comuns ou específicas): ferramentas técnicas e materiais específicos.",
+      "Palavras deste módulo (8): Folder (\"fôul-der\" = Pasta de arquivo), Stapler (\"stêi-pler\" = Grampeador), Calendar (\"ké-len-dar\" = Calendário), Microscope (\"mái-cro-scôup\" = Microscópio), Globe (\"glôub\" = Globo terrestre), Paintbrush (\"pêint-brâx\" = Pincel), Hammer (\"ré-mer\" = Martelo) e Wrench (\"rêntch\" = Chave inglesa)."
+    ],
+    "xpReward": 50,
+    "gemsReward": 20,
+    "exercises": [
+      {
+        "id": "w0-p31-e1",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Folder",
+        "visualEmoji": "📁",
+        "visualOptions": [
+          {
+            "text": "Folder",
+            "emoji": "📁",
+            "label": "Folder",
+            "translationPt": "Pasta de documentos",
+            "simplePronunciation": "fôul-der",
+            "phonetic": "/ˈfoʊl.dər/",
+            "exampleEn": "Keep the files inside the folder.",
+            "examplePt": "Guarde os documentos na pasta."
+          },
+          {
+            "text": "Hammer",
+            "emoji": "🔨",
+            "label": "Hammer",
+            "translationPt": "Martelo",
+            "simplePronunciation": "ré-mer",
+            "phonetic": "/ˈhæm.ər/",
+            "exampleEn": "Hit the nail with a hammer.",
+            "examplePt": "Bata o prego com o martelo."
+          },
+          {
+            "text": "Calendar",
+            "emoji": "📅",
+            "label": "Calendar",
+            "translationPt": "Calendário",
+            "simplePronunciation": "ké-len-dar",
+            "phonetic": "/ˈkæl.ən.dər/",
+            "exampleEn": "Check the date on the calendar.",
+            "examplePt": "Veja a data no calendário."
+          },
+          {
+            "text": "Paintbrush",
+            "emoji": "🖌️",
+            "label": "Paintbrush",
+            "translationPt": "Pincel",
+            "simplePronunciation": "pêint-brâx",
+            "phonetic": "/ˈpeɪnt.brʌʃ/",
+            "exampleEn": "Paint with a clean paintbrush.",
+            "examplePt": "Pinte com um pincel limpo."
+          }
+        ],
+        "options": [
+          "Folder",
+          "Hammer",
+          "Calendar",
+          "Paintbrush"
+        ],
+        "correctAnswer": "Folder",
+        "contextSentence": "Keep the files inside the folder.",
+        "contextSentencePt": "Guarde os documentos na pasta.",
+        "explanation": "Exemplo: \"Keep the files inside the folder.\" — Guarde os documentos na pasta.",
+        "phoneticHint": "\"fôul-der\" • /ˈfoʊl.dər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p31-e2",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Stapler",
+        "visualEmoji": "📎",
+        "visualOptions": [
+          {
+            "text": "Globe",
+            "emoji": "🌍",
+            "label": "Globe",
+            "translationPt": "Globo terrestre",
+            "simplePronunciation": "glôub",
+            "phonetic": "/ɡloʊb/",
+            "exampleEn": "Find the country on the globe.",
+            "examplePt": "Encontre o país no globo terrestre."
+          },
+          {
+            "text": "Stapler",
+            "emoji": "📎",
+            "label": "Stapler",
+            "translationPt": "Grampeador",
+            "simplePronunciation": "stêi-pler",
+            "phonetic": "/ˈsteɪ.plər/",
+            "exampleEn": "Use the stapler on the papers.",
+            "examplePt": "Use o grampeador nos papéis."
+          },
+          {
+            "text": "Microscope",
+            "emoji": "🔬",
+            "label": "Microscope",
+            "translationPt": "Microscópio",
+            "simplePronunciation": "mái-cro-scôup",
+            "phonetic": "/ˈmaɪ.krə.skoʊp/",
+            "exampleEn": "Look through the microscope.",
+            "examplePt": "Olhe pelo microscópio."
+          },
+          {
+            "text": "Wrench",
+            "emoji": "🔧",
+            "label": "Wrench",
+            "translationPt": "Chave inglesa",
+            "simplePronunciation": "rêntch",
+            "phonetic": "/rentʃ/",
+            "exampleEn": "Tighten the bolt with a wrench.",
+            "examplePt": "Aperte o parafuso com a chave inglesa."
+          }
+        ],
+        "options": [
+          "Globe",
+          "Stapler",
+          "Microscope",
+          "Wrench"
+        ],
+        "correctAnswer": "Stapler",
+        "contextSentence": "Use the stapler on the papers.",
+        "contextSentencePt": "Use o grampeador nos papéis.",
+        "explanation": "Exemplo: \"Use the stapler on the papers.\" — Use o grampeador nos papéis.",
+        "phoneticHint": "\"stêi-pler\" • /ˈsteɪ.plər/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p31-e3",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Calendar",
+        "visualEmoji": "📅",
+        "visualOptions": [
+          {
+            "text": "Paintbrush",
+            "emoji": "🖌️",
+            "label": "Paintbrush",
+            "translationPt": "Pincel",
+            "simplePronunciation": "pêint-brâx",
+            "phonetic": "/ˈpeɪnt.brʌʃ/",
+            "exampleEn": "Paint with a clean paintbrush.",
+            "examplePt": "Pinte com um pincel limpo."
+          },
+          {
+            "text": "Folder",
+            "emoji": "📁",
+            "label": "Folder",
+            "translationPt": "Pasta de documentos",
+            "simplePronunciation": "fôul-der",
+            "phonetic": "/ˈfoʊl.dər/",
+            "exampleEn": "Keep the files inside the folder.",
+            "examplePt": "Guarde os documentos na pasta."
+          },
+          {
+            "text": "Hammer",
+            "emoji": "🔨",
+            "label": "Hammer",
+            "translationPt": "Martelo",
+            "simplePronunciation": "ré-mer",
+            "phonetic": "/ˈhæm.ər/",
+            "exampleEn": "Hit the nail with a hammer.",
+            "examplePt": "Bata o prego com o martelo."
+          },
+          {
+            "text": "Calendar",
+            "emoji": "📅",
+            "label": "Calendar",
+            "translationPt": "Calendário",
+            "simplePronunciation": "ké-len-dar",
+            "phonetic": "/ˈkæl.ən.dər/",
+            "exampleEn": "Check the date on the calendar.",
+            "examplePt": "Veja a data no calendário."
+          }
+        ],
+        "options": [
+          "Paintbrush",
+          "Folder",
+          "Hammer",
+          "Calendar"
+        ],
+        "correctAnswer": "Calendar",
+        "contextSentence": "Check the date on the calendar.",
+        "contextSentencePt": "Veja a data no calendário.",
+        "explanation": "Exemplo: \"Check the date on the calendar.\" — Veja a data no calendário.",
+        "phoneticHint": "\"ké-len-dar\" • /ˈkæl.ən.dər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p31-e4",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Microscope",
+        "visualEmoji": "🔬",
+        "visualOptions": [
+          {
+            "text": "Stapler",
+            "emoji": "📎",
+            "label": "Stapler",
+            "translationPt": "Grampeador",
+            "simplePronunciation": "stêi-pler",
+            "phonetic": "/ˈsteɪ.plər/",
+            "exampleEn": "Use the stapler on the papers.",
+            "examplePt": "Use o grampeador nos papéis."
+          },
+          {
+            "text": "Globe",
+            "emoji": "🌍",
+            "label": "Globe",
+            "translationPt": "Globo terrestre",
+            "simplePronunciation": "glôub",
+            "phonetic": "/ɡloʊb/",
+            "exampleEn": "Find the country on the globe.",
+            "examplePt": "Encontre o país no globo terrestre."
+          },
+          {
+            "text": "Microscope",
+            "emoji": "🔬",
+            "label": "Microscope",
+            "translationPt": "Microscópio",
+            "simplePronunciation": "mái-cro-scôup",
+            "phonetic": "/ˈmaɪ.krə.skoʊp/",
+            "exampleEn": "Look through the microscope.",
+            "examplePt": "Olhe pelo microscópio."
+          },
+          {
+            "text": "Wrench",
+            "emoji": "🔧",
+            "label": "Wrench",
+            "translationPt": "Chave inglesa",
+            "simplePronunciation": "rêntch",
+            "phonetic": "/rentʃ/",
+            "exampleEn": "Tighten the bolt with a wrench.",
+            "examplePt": "Aperte o parafuso com a chave inglesa."
+          }
+        ],
+        "options": [
+          "Stapler",
+          "Globe",
+          "Microscope",
+          "Wrench"
+        ],
+        "correctAnswer": "Microscope",
+        "contextSentence": "Look through the microscope.",
+        "contextSentencePt": "Olhe pelo microscópio.",
+        "explanation": "Exemplo: \"Look through the microscope.\" — Olhe pelo microscópio.",
+        "phoneticHint": "\"mái-cro-scôup\" • /ˈmaɪ.krə.skoʊp/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p31-e5",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Globe",
+        "visualEmoji": "🌍",
+        "visualOptions": [
+          {
+            "text": "Globe",
+            "emoji": "🌍",
+            "label": "Globe",
+            "translationPt": "Globo terrestre",
+            "simplePronunciation": "glôub",
+            "phonetic": "/ɡloʊb/",
+            "exampleEn": "Find the country on the globe.",
+            "examplePt": "Encontre o país no globo terrestre."
+          },
+          {
+            "text": "Hammer",
+            "emoji": "🔨",
+            "label": "Hammer",
+            "translationPt": "Martelo",
+            "simplePronunciation": "ré-mer",
+            "phonetic": "/ˈhæm.ər/",
+            "exampleEn": "Hit the nail with a hammer.",
+            "examplePt": "Bata o prego com o martelo."
+          },
+          {
+            "text": "Folder",
+            "emoji": "📁",
+            "label": "Folder",
+            "translationPt": "Pasta de documentos",
+            "simplePronunciation": "fôul-der",
+            "phonetic": "/ˈfoʊl.dər/",
+            "exampleEn": "Keep the files inside the folder.",
+            "examplePt": "Guarde os documentos na pasta."
+          },
+          {
+            "text": "Calendar",
+            "emoji": "📅",
+            "label": "Calendar",
+            "translationPt": "Calendário",
+            "simplePronunciation": "ké-len-dar",
+            "phonetic": "/ˈkæl.ən.dər/",
+            "exampleEn": "Check the date on the calendar.",
+            "examplePt": "Veja a data no calendário."
+          }
+        ],
+        "options": [
+          "Globe",
+          "Hammer",
+          "Folder",
+          "Calendar"
+        ],
+        "correctAnswer": "Globe",
+        "contextSentence": "Find the country on the globe.",
+        "contextSentencePt": "Encontre o país no globo terrestre.",
+        "explanation": "Exemplo: \"Find the country on the globe.\" — Encontre o país no globo terrestre.",
+        "phoneticHint": "\"glôub\" • /ɡloʊb/",
+        "skillCategory": "listening"
+      },
+      {
+        "id": "w0-p31-e6",
+        "type": "image-choice",
+        "prompt": "🎧 Identifique pelo som qual é o item correto:",
+        "audioPhrase": "Paintbrush",
+        "visualEmoji": "🖌️",
+        "visualOptions": [
+          {
+            "text": "Wrench",
+            "emoji": "🔧",
+            "label": "Wrench",
+            "translationPt": "Chave inglesa",
+            "simplePronunciation": "rêntch",
+            "phonetic": "/rentʃ/",
+            "exampleEn": "Tighten the bolt with a wrench.",
+            "examplePt": "Aperte o parafuso com a chave inglesa."
+          },
+          {
+            "text": "Stapler",
+            "emoji": "📎",
+            "label": "Stapler",
+            "translationPt": "Grampeador",
+            "simplePronunciation": "stêi-pler",
+            "phonetic": "/ˈsteɪ.plər/",
+            "exampleEn": "Use the stapler on the papers.",
+            "examplePt": "Use o grampeador nos papéis."
+          },
+          {
+            "text": "Paintbrush",
+            "emoji": "🖌️",
+            "label": "Paintbrush",
+            "translationPt": "Pincel",
+            "simplePronunciation": "pêint-brâx",
+            "phonetic": "/ˈpeɪnt.brʌʃ/",
+            "exampleEn": "Paint with a clean paintbrush.",
+            "examplePt": "Pinte com um pincel limpo."
+          },
+          {
+            "text": "Microscope",
+            "emoji": "🔬",
+            "label": "Microscope",
+            "translationPt": "Microscópio",
+            "simplePronunciation": "mái-cro-scôup",
+            "phonetic": "/ˈmaɪ.krə.skoʊp/",
+            "exampleEn": "Look through the microscope.",
+            "examplePt": "Olhe pelo microscópio."
+          }
+        ],
+        "options": [
+          "Wrench",
+          "Stapler",
+          "Paintbrush",
+          "Microscope"
+        ],
+        "correctAnswer": "Paintbrush",
+        "contextSentence": "Paint with a clean paintbrush.",
+        "contextSentencePt": "Pinte com um pincel limpo.",
+        "explanation": "Exemplo: \"Paint with a clean paintbrush.\" — Pinte com um pincel limpo.",
+        "phoneticHint": "\"pêint-brâx\" • /ˈpeɪnt.brʌʃ/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p31-e7",
+        "type": "image-choice",
+        "prompt": "🎧 Ouça a pronúncia e selecione a imagem correspondente:",
+        "audioPhrase": "Hammer",
+        "visualEmoji": "🔨",
+        "visualOptions": [
+          {
+            "text": "Folder",
+            "emoji": "📁",
+            "label": "Folder",
+            "translationPt": "Pasta de documentos",
+            "simplePronunciation": "fôul-der",
+            "phonetic": "/ˈfoʊl.dər/",
+            "exampleEn": "Keep the files inside the folder.",
+            "examplePt": "Guarde os documentos na pasta."
+          },
+          {
+            "text": "Hammer",
+            "emoji": "🔨",
+            "label": "Hammer",
+            "translationPt": "Martelo",
+            "simplePronunciation": "ré-mer",
+            "phonetic": "/ˈhæm.ər/",
+            "exampleEn": "Hit the nail with a hammer.",
+            "examplePt": "Bata o prego com o martelo."
+          },
+          {
+            "text": "Globe",
+            "emoji": "🌍",
+            "label": "Globe",
+            "translationPt": "Globo terrestre",
+            "simplePronunciation": "glôub",
+            "phonetic": "/ɡloʊb/",
+            "exampleEn": "Find the country on the globe.",
+            "examplePt": "Encontre o país no globo terrestre."
+          },
+          {
+            "text": "Calendar",
+            "emoji": "📅",
+            "label": "Calendar",
+            "translationPt": "Calendário",
+            "simplePronunciation": "ké-len-dar",
+            "phonetic": "/ˈkæl.ən.dər/",
+            "exampleEn": "Check the date on the calendar.",
+            "examplePt": "Veja a data no calendário."
+          }
+        ],
+        "options": [
+          "Folder",
+          "Hammer",
+          "Globe",
+          "Calendar"
+        ],
+        "correctAnswer": "Hammer",
+        "contextSentence": "Hit the nail with a hammer.",
+        "contextSentencePt": "Bata o prego com o martelo.",
+        "explanation": "Exemplo: \"Hit the nail with a hammer.\" — Bata o prego com o martelo.",
+        "phoneticHint": "\"ré-mer\" • /ˈhæm.ər/",
+        "skillCategory": "vocabulary"
+      },
+      {
+        "id": "w0-p31-e8",
+        "type": "image-choice",
+        "prompt": "🎧 Escute a palavra em inglês e toque na imagem correta:",
+        "audioPhrase": "Wrench",
+        "visualEmoji": "🔧",
+        "visualOptions": [
+          {
+            "text": "Microscope",
+            "emoji": "🔬",
+            "label": "Microscope",
+            "translationPt": "Microscópio",
+            "simplePronunciation": "mái-cro-scôup",
+            "phonetic": "/ˈmaɪ.krə.skoʊp/",
+            "exampleEn": "Look through the microscope.",
+            "examplePt": "Olhe pelo microscópio."
+          },
+          {
+            "text": "Paintbrush",
+            "emoji": "🖌️",
+            "label": "Paintbrush",
+            "translationPt": "Pincel",
+            "simplePronunciation": "pêint-brâx",
+            "phonetic": "/ˈpeɪnt.brʌʃ/",
+            "exampleEn": "Paint with a clean paintbrush.",
+            "examplePt": "Pinte com um pincel limpo."
+          },
+          {
+            "text": "Stapler",
+            "emoji": "📎",
+            "label": "Stapler",
+            "translationPt": "Grampeador",
+            "simplePronunciation": "stêi-pler",
+            "phonetic": "/ˈsteɪ.plər/",
+            "exampleEn": "Use the stapler on the papers.",
+            "examplePt": "Use o grampeador nos papéis."
+          },
+          {
+            "text": "Wrench",
+            "emoji": "🔧",
+            "label": "Wrench",
+            "translationPt": "Chave inglesa",
+            "simplePronunciation": "rêntch",
+            "phonetic": "/rentʃ/",
+            "exampleEn": "Tighten the bolt with a wrench.",
+            "examplePt": "Aperte o parafuso com a chave inglesa."
+          }
+        ],
+        "options": [
+          "Microscope",
+          "Paintbrush",
+          "Stapler",
+          "Wrench"
+        ],
+        "correctAnswer": "Wrench",
+        "contextSentence": "Tighten the bolt with a wrench.",
+        "contextSentencePt": "Aperte o parafuso com a chave inglesa.",
+        "explanation": "Exemplo: \"Tighten the bolt with a wrench.\" — Aperte o parafuso com a chave inglesa.",
+        "phoneticHint": "\"rêntch\" • /rentʃ/",
+        "skillCategory": "listening"
+      }
+    ]
+  },
+  {
+    "id": "w0-p32",
+    "worldId": 0,
+    "phaseNumber": 32,
+    "themeId": "pronouns",
+    "themeTitle": "Lição de Pronomes",
+    "frequencyLevel": "1 a cada 3 Módulos de Vocabulário",
+    "title": "Lição de Pronomes VIII • Aplicando Indefinidos & Relativos",
+    "subtitle": "Módulo de Pronomes 8/8 (Após 24 de Vocabulário) • Revisão Final de Pronomes",
+    "pedagogicalObjective": "Consolidar o uso de Pronomes Indefinidos (Nobody, Nothing, Anyone, Anything) e Pronomes Relativos (Who, Which, Where, That) em frases completas.",
+    "type": "boss",
+    "icon": "star",
+    "cefrLevel": "A1",
+    "theorySummary": [
+      "8ª Lição Exclusiva de Pronomes (após 24 módulos de vocabulário).",
+      "Revisão final conectando frases com Pronomes Indefinidos negativos/interrogativos e Pronomes Relativos."
+    ],
+    "xpReward": 100,
+    "gemsReward": 40,
+    "exercises": [
+      {
+        "id": "w0-p32-pron-1",
+        "type": "pair-match",
+        "conceptTitle": "7º • Pronomes Indefinidos Negativos e em Perguntas (Nobody, Nothing, Anyone, Anything)",
+        "conceptHeader": "Para expressar ausência total sem usar a palavra \"not\", empregamos \"Nobody\" (Ninguém) e \"Nothing\" (Nada). Já em frases interrogativas (perguntas), usamos \"Anyone\" (Alguém) para pessoas e \"Anything\" (Alguma coisa) para objetos.",
+        "teacherAudioPt": "/audio/teacher/pronoun_7.wav",
+        "prompt": "🤝 Conecte cada Pronome Indefinido ao seu uso e significado:",
+        "pairs": [
+          {
+            "id": "w0-p32-b1-ind5",
+            "en": "Nobody (\"nôu-bó-di\")",
+            "emoji": "🚫",
+            "phonetic": "/ˈnoʊ.bɑː.di/",
+            "pt": "Ninguém (ausência de pessoas)",
+            "tipPt": "Correto! Exemplo: \"Nobody is in the office\" (Ninguém está no escritório)."
+          },
+          {
+            "id": "w0-p32-b1-ind6",
+            "en": "Nothing (\"nâ-thing\")",
+            "emoji": "⭕",
+            "phonetic": "/ˈnʌθ.ɪŋ/",
+            "pt": "Nada (ausência de coisas)",
+            "tipPt": "Exato! Exemplo: \"There is nothing in the box\" (Não há nada na caixa)."
+          },
+          {
+            "id": "w0-p32-b1-ind7",
+            "en": "Anyone? (\"é-ni-uân\")",
+            "emoji": "🙋",
+            "phonetic": "/ˈen.i.wʌn/",
+            "pt": "Alguém? (usado em perguntas para pessoas)",
+            "tipPt": "Perfeito! Exemplo: \"Is anyone at home?\" (Tem alguém em casa?)."
+          },
+          {
+            "id": "w0-p32-b1-ind8",
+            "en": "Anything? (\"é-ni-thing\")",
+            "emoji": "🥤",
+            "phonetic": "/ˈen.i.θɪŋ/",
+            "pt": "Alguma coisa? (usado em perguntas para coisas)",
+            "tipPt": "Muito bem! Exemplo: \"Do you need anything?\" (Você precisa de alguma coisa?)."
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "Nobody (Ninguém), Nothing (Nada), Anyone (Alguém em perguntas), Anything (Alguma coisa em perguntas).",
+        "skillCategory": "grammar"
+      },
+      {
+        "id": "w0-p32-pron-2",
+        "type": "pair-match",
+        "conceptTitle": "8º • Aplicação de Pronomes Relativos em Frases (Who, Which, Where, That)",
+        "conceptHeader": "Revise na prática como os Pronomes Relativos conectam as ideias na frase: \"who\" após pessoas (the teacher who...), \"which\" após objetos (the key which...), \"where\" após lugares (the house where...) e \"that\" como forma geral.",
+        "teacherAudioPt": "/audio/teacher/pronoun_8.wav",
+        "prompt": "🤝 Associe cada frase com Pronome Relativo ao seu significado em português:",
+        "pairs": [
+          {
+            "id": "w0-p32-b2-rel5",
+            "en": "The teacher who teaches",
+            "emoji": "👩‍🏫",
+            "phonetic": "/ðə ˈtiː.tʃər huː ˈtiː.tʃɪz/",
+            "pt": "A professora que ensina (pessoa = who)",
+            "tipPt": "Correto! Para pessoas usamos o relativo \"who\"."
+          },
+          {
+            "id": "w0-p32-b2-rel6",
+            "en": "The key which opens",
+            "emoji": "🔑",
+            "phonetic": "/ðə kiː wɪtʃ ˈoʊ.pənz/",
+            "pt": "A chave que abre (objeto = which)",
+            "tipPt": "Muito bem! Para objetos usamos o relativo \"which\"."
+          },
+          {
+            "id": "w0-p32-b2-rel7",
+            "en": "The house where I live",
+            "emoji": "🏠",
+            "phonetic": "/ðə haʊs wer aɪ lɪv/",
+            "pt": "A casa onde eu moro (lugar = where)",
+            "tipPt": "Perfeito! Para lugares usamos o relativo \"where\"."
+          },
+          {
+            "id": "w0-p32-b2-rel8",
+            "en": "The car that is red",
+            "emoji": "🚗",
+            "phonetic": "/ðə kɑːr ðæt ɪz red/",
+            "pt": "O carro que é vermelho (geral = that)",
+            "tipPt": "Excelente! Você concluiu todos os 8 módulos de Pronomes."
+          }
+        ],
+        "correctAnswer": "ALL_PAIRS_MATCHED",
+        "explanation": "The teacher who teaches (A professora que ensina), The key which opens (A chave que abre), The house where I live (A casa onde eu moro), The car that is red (O carro que é vermelho).",
+        "skillCategory": "grammar"
       }
     ]
   }

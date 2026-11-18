@@ -18,6 +18,39 @@ interface MapViewProps {
   onOpenShop?: () => void;
 }
 
+const THEME_BANNERS: Record<string, { icon: string; title: string; subtitle: string }> = {
+  home: {
+    icon: '🏠',
+    title: 'TEMA 1 • A Casa',
+    subtitle: '4 Módulos por Frequência (1: Essenciais • 2: Comuns • 3: Intermediárias • 4: Menos Comuns • 8 palavras por módulo)',
+  },
+  food: {
+    icon: '🍎',
+    title: 'TEMA 2 • Comida',
+    subtitle: '4 Módulos por Frequência (1: Essenciais • 2: Comuns • 3: Intermediárias • 4: Menos Comuns • 8 palavras por módulo)',
+  },
+  body: {
+    icon: '🫀',
+    title: 'TEMA 3 • Corpo Humano',
+    subtitle: '4 Módulos por Frequência (1: Essenciais • 2: Comuns • 3: Intermediárias • 4: Menos Comuns • 8 palavras por módulo)',
+  },
+  transport: {
+    icon: '🚗',
+    title: 'TEMA 4 • Transporte',
+    subtitle: '4 Módulos por Frequência (1: Essenciais • 2: Comuns • 3: Intermediárias • 4: Menos Comuns • 8 palavras por módulo)',
+  },
+  clothes: {
+    icon: '👕',
+    title: 'TEMA 5 • Roupas',
+    subtitle: '4 Módulos por Frequência (1: Essenciais • 2: Comuns • 3: Intermediárias • 4: Menos Comuns • 8 palavras por módulo)',
+  },
+  work: {
+    icon: '💼',
+    title: 'TEMA 6 • Trabalho',
+    subtitle: '4 Módulos por Frequência (1: Essenciais • 2: Comuns • 3: Intermediárias • 4: Menos Comuns • 8 palavras por módulo)',
+  },
+};
+
 export const MapView: React.FC<MapViewProps> = ({
   user,
   onSelectPhase,
@@ -25,7 +58,6 @@ export const MapView: React.FC<MapViewProps> = ({
   const [unlockAllForTest, setUnlockAllForTest] = React.useState(true);
 
   // Regra de progressão escolar: o aluno só avança para o próximo módulo se passar na prova com nota >= 70
-  // (com botão rápido no topo para alternar entre todas abertas para teste ou progressão bloqueada por prova)
   const isPhaseUnlocked = (phase: Phase): boolean => {
     if (unlockAllForTest) return true;
     if ((phase.worldId === 0 || phase.worldId === 1) && phase.phaseNumber === 1) return true;
@@ -57,10 +89,10 @@ export const MapView: React.FC<MapViewProps> = ({
       <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 px-4 py-3.5 shadow-2xs flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-base sm:text-lg font-black text-slate-900 dark:text-slate-100 tracking-tight">
-            Olá, {user.name}! Explore cada módulo progressivo:
+            Olá, {user.name}! Explore os Temas e Módulos Progressivos:
           </h1>
           <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-            Nota mínima de <strong>70 pontos</strong> em cada prova para aprovar no módulo.
+            Cada tema tem <strong>4 módulos por frequência</strong> (8 palavras genéricas por módulo) • Nota mínima: <strong>70 pontos</strong>.
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -100,12 +132,12 @@ export const MapView: React.FC<MapViewProps> = ({
                       {world.levelBadge}
                     </span>
                     <span className="text-xs font-semibold text-white/80">
-                      {world.id === 0 ? 'Módulo Preparatório Visual' : `Mundo ${world.id} de 7`}
+                      {world.id === 0 ? '6 Temas × 4 Módulos por Frequência (8 palavras/módulo)' : `Mundo ${world.id} de 7`}
                     </span>
                   </div>
                   {world.id === 0 && (
                     <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-300 text-amber-950 font-black text-xs rounded-full shadow-xs mt-2">
-                      <span>⭐ Ponto de Partida: Vocabulário Progressivo por Frequência + Pronomes (1 a cada 3)</span>
+                      <span>⭐ Módulos 1 a 4 por Frequência de Uso + 1 Módulo de Pronomes a cada 3</span>
                     </div>
                   )}
                   <h2 className="text-xl sm:text-2xl font-black tracking-tight mt-1">{world.title}</h2>
@@ -132,21 +164,22 @@ export const MapView: React.FC<MapViewProps> = ({
                         ? '-translate-x-12 sm:-translate-x-16'
                         : 'translate-x-12 sm:translate-x-16';
 
-                    const sectionBanner: Record<number, string> = {
-                      1: '🏠 BLOCO 1 • Tema A Casa (Módulos 1, 2 e 3: Essenciais a Intermediárias) + Lição de Pronomes I',
-                      5: '🍎 BLOCO 2 • Tema A Casa (Módulo 4) & Comida (Módulos 1 e 2) + Lição de Pronomes II',
-                      9: '🫀 BLOCO 3 • Tema Comida (Módulos 3 e 4) & Corpo Humano (Módulo 1) + Lição de Pronomes III',
-                      13: '🩺 BLOCO 4 • Tema Corpo Humano (Módulos 2, 3 e 4) + Lição de Pronomes IV',
-                      17: '🚗 BLOCO 5 • Tema Transporte (Módulos 1, 2 e 3) + Lição de Pronomes V',
-                      21: '👕 BLOCO 6 • Tema Transporte (Módulo 4) & Roupas (Módulos 1 a 4) + Lição de Pronomes VI',
-                    };
+                    const isFirstModuleOfTheme =
+                      world.id === 0 &&
+                      phase.themeId &&
+                      phase.themeId !== 'pronouns' &&
+                      phase.frequencyLevel?.startsWith('Módulo 1');
+                    const themeBanner = isFirstModuleOfTheme && phase.themeId ? THEME_BANNERS[phase.themeId] : null;
 
                     return (
                       <React.Fragment key={phase.id}>
-                        {world.id === 0 && sectionBanner[phase.phaseNumber] && (
-                          <div className="w-full py-2.5 px-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/60 border-2 border-amber-200/90 dark:border-amber-800 text-center shadow-2xs">
-                            <span className="text-[11px] sm:text-xs font-black text-amber-900 dark:text-amber-200 tracking-tight block">
-                              {sectionBanner[phase.phaseNumber]}
+                        {themeBanner && (
+                          <div className="w-full py-3 px-4 rounded-2xl bg-amber-50 dark:bg-amber-950/70 border-2 border-amber-300 dark:border-amber-700 text-center shadow-xs">
+                            <span className="text-xs sm:text-sm font-black text-amber-950 dark:text-amber-200 tracking-tight block">
+                              {themeBanner.icon} {themeBanner.title}
+                            </span>
+                            <span className="text-[11px] font-semibold text-amber-800 dark:text-amber-300/90 block mt-0.5">
+                              {themeBanner.subtitle}
                             </span>
                           </div>
                         )}
@@ -157,12 +190,12 @@ export const MapView: React.FC<MapViewProps> = ({
                           <div className="relative group flex flex-col items-center">
                             {phase.type === 'boss' && (
                               <div className="mb-2 px-3 py-0.5 bg-gradient-to-r from-rose-600 to-amber-500 text-white text-[10px] font-black tracking-wider uppercase rounded-full shadow-md flex items-center gap-1">
-                                <span>{world.id === 0 ? `👩‍🏫 LIÇÃO DE PRONOMES ${phase.phaseNumber / 4}/6` : '👑 BOSS FINAL'}</span>
+                                <span>{world.id === 0 ? `👩‍🏫 LIÇÃO DE PRONOMES ${phase.phaseNumber / 4}/8` : '👑 BOSS FINAL'}</span>
                               </div>
                             )}
                             {phase.type === 'chest' && (
                               <div className="mb-2 px-2.5 py-0.5 bg-amber-400 text-amber-950 text-[10px] font-black tracking-wider uppercase rounded-full shadow-xs flex items-center gap-1">
-                                <span>{world.id === 0 ? `👩‍🏫 LIÇÃO DE PRONOMES ${phase.phaseNumber / 4}/6` : '🎁 BAÚ BÔNUS'}</span>
+                                <span>{world.id === 0 ? `👩‍🏫 LIÇÃO DE PRONOMES ${phase.phaseNumber / 4}/8` : '🎁 BAÚ BÔNUS'}</span>
                               </div>
                             )}
                             <button
@@ -214,7 +247,12 @@ export const MapView: React.FC<MapViewProps> = ({
                           </div>
 
                           {/* Phase Title Pill */}
-                          <div className="mt-4 text-center max-w-[220px]">
+                          <div className="mt-4 text-center max-w-[235px]">
+                            {phase.frequencyLevel && (
+                              <span className="inline-block px-2 py-0.5 mb-1 rounded-md bg-indigo-50 dark:bg-indigo-950/70 border border-indigo-200/80 dark:border-indigo-800 text-[10px] font-black text-indigo-700 dark:text-indigo-300">
+                                {phase.frequencyLevel}
+                              </span>
+                            )}
                             <span className="text-xs font-black text-slate-800 dark:text-slate-100 line-clamp-1 block">
                               {phase.title}
                             </span>
