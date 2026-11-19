@@ -766,19 +766,21 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
       {/* 🎯 Step 2: Interactive Duolingo-style Exercise */}
       {step === 'exercise' && currentExercise && (
-        <main className="flex-1 overflow-y-auto px-3.5 sm:px-4 py-2.5 sm:py-4 max-w-xl w-full mx-auto flex flex-col justify-between">
-          <div className="space-y-2.5 sm:space-y-4">
-            {/* Exercise Skill Badge */}
-            <div className="flex items-center justify-between">
-              <span className={`text-xs font-black uppercase tracking-wider ${isReviewStage ? 'text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full' : 'text-slate-400'}`}>
-                {isReviewStage
-                  ? `🔄 Correção de Erros • Dominados ${masteredIds.length}/${phase.exercises.length}`
-                  : `Item ${currentExerciseIndex + 1} de ${phase.exercises.length}`}
-              </span>
-              <span className="px-2.5 py-0.5 bg-indigo-100 text-indigo-800 text-[11px] font-black rounded-full uppercase">
-                {currentExercise.skillCategory}
-              </span>
-            </div>
+        <main className="flex-1 overflow-y-auto px-2.5 sm:px-4 py-2 sm:py-3 max-w-xl w-full mx-auto flex flex-col justify-between">
+          <div className="space-y-2 sm:space-y-3">
+            {/* Exercise Skill Badge (oculto após confirmar resposta nos cards visuais para dar máximo destaque à imagem da resposta) */}
+            {!(hasAnswered && currentExercise.visualOptions && currentExercise.visualOptions.length > 0) && (
+              <div className="flex items-center justify-between px-0.5">
+                <span className={`text-[11px] font-black uppercase tracking-wider ${isReviewStage ? 'text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full' : 'text-slate-400'}`}>
+                  {isReviewStage
+                    ? `🔄 Correção de Erros • Dominados ${masteredIds.length}/${phase.exercises.length}`
+                    : `Item ${currentExerciseIndex + 1} de ${phase.exercises.length}`}
+                </span>
+                <span className="px-2 py-0.5 bg-indigo-100 text-indigo-800 text-[10px] font-black rounded-full uppercase">
+                  {currentExercise.skillCategory}
+                </span>
+              </div>
+            )}
 
             {/* Cabeçalho Explicativo Didático da Professora (somente nos exercícios de Pronomes) */}
             {currentExercise.conceptHeader && (
@@ -817,7 +819,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
 
             {/* Exercise Prompt (oculto após confirmar resposta nos cards visuais para o card da resposta aparecer 100% completo na tela) */}
             {!(hasAnswered && currentExercise.visualOptions && currentExercise.visualOptions.length > 0) && (
-              <h2 className="text-base sm:text-xl font-black text-slate-800 dark:text-slate-100 tracking-tight leading-snug">
+              <h2 className="text-sm sm:text-lg font-black text-slate-800 dark:text-slate-100 tracking-tight leading-tight px-0.5">
                 {currentExercise.prompt.replace(/\*\*+/g, '')}
               </h2>
             )}
@@ -826,7 +828,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
             {currentExercise.visualEmoji && (!currentExercise.visualOptions || currentExercise.visualOptions.length === 0) && (
               <div className="flex items-center justify-center py-1">
                 {getRealVocabPhotoUrl(getSpokenPhraseForExercise(currentExercise)) ? (
-                  <div className="w-48 sm:w-56 h-40 sm:h-48 rounded-2xl bg-white border-2 border-indigo-100 shadow-xs overflow-hidden flex items-center justify-center">
+                  <div className="w-56 sm:w-64 h-48 sm:h-56 rounded-2xl bg-white border-2 border-indigo-100 shadow-xs overflow-hidden flex items-center justify-center">
                     <VocabIllustration
                       word={getSpokenPhraseForExercise(currentExercise)}
                       emoji={currentExercise.visualEmoji}
@@ -840,52 +842,51 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
               </div>
             )}
 
-            {/* Audio Speaker Bar (Alto-falante + Gráfico estilo Gravador de Áudio do Android + Botão de velocidade 0.65x) */}
+            {/* Audio Speaker Bar (exibido antes de confirmar nos cards visuais; após confirmar, o botão de áudio fica integrado ao próprio Card da Resposta para dar tamanho máximo à imagem!) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
-              <div className="space-y-2">
-                <div className="p-2.5 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 dark:from-slate-900 dark:via-indigo-950/60 dark:to-slate-900 border-2 border-indigo-200 dark:border-indigo-800 rounded-2xl flex items-center justify-between gap-2.5 shadow-xs">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setHasPlayedAudioOnce(true);
-                      speakText(
-                        getSpokenPhraseForExercise(currentExercise),
-                        'en-US',
-                        user.speechSpeed,
-                        exerciseVoiceGender
-                      );
-                    }}
-                    className={`w-10 h-10 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
-                      isSpeaking ? 'ring-3 ring-indigo-300' : ''
-                    }`}
-                    title="Ouvir novamente"
-                  >
-                    <Volume2 className="w-5 h-5" />
-                  </button>
+              !hasAnswered ? (
+                <div className="space-y-1.5">
+                  <div className="p-2 bg-gradient-to-r from-indigo-50 via-sky-50 to-indigo-50 dark:from-slate-900 dark:via-indigo-950/60 dark:to-slate-900 border-2 border-indigo-200 dark:border-indigo-800 rounded-2xl flex items-center justify-between gap-2 shadow-xs">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setHasPlayedAudioOnce(true);
+                        speakText(
+                          getSpokenPhraseForExercise(currentExercise),
+                          'en-US',
+                          user.speechSpeed,
+                          exerciseVoiceGender
+                        );
+                      }}
+                      className={`w-9 h-9 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all active:scale-95 flex items-center justify-center shrink-0 cursor-pointer ${
+                        isSpeaking ? 'ring-3 ring-indigo-300' : ''
+                      }`}
+                      title="Ouvir novamente"
+                    >
+                      <Volume2 className="w-5 h-5" />
+                    </button>
 
-                  <AndroidRecorderWaveform isSpeaking={isSpeaking} />
+                    <AndroidRecorderWaveform isSpeaking={isSpeaking} />
 
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setHasPlayedAudioOnce(true);
-                      speakText(
-                        getSpokenPhraseForExercise(currentExercise),
-                        'en-US',
-                        0.65,
-                        exerciseVoiceGender
-                      );
-                    }}
-                    className="py-2 px-2.5 bg-white dark:bg-slate-800 hover:bg-amber-50 text-amber-800 dark:text-amber-300 border-2 border-amber-200 dark:border-amber-700 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
-                    title="Ouvir mais lento (0.65x)"
-                  >
-                    <span>🐢 0.65x</span>
-                  </button>
-                </div>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setHasPlayedAudioOnce(true);
+                        speakText(
+                          getSpokenPhraseForExercise(currentExercise),
+                          'en-US',
+                          0.65,
+                          exerciseVoiceGender
+                        );
+                      }}
+                      className="py-1.5 px-2.5 bg-white dark:bg-slate-800 hover:bg-amber-50 text-amber-800 dark:text-amber-300 border-2 border-amber-200 dark:border-amber-700 font-bold text-xs rounded-xl shadow-2xs transition-transform active:scale-95 flex items-center gap-1 cursor-pointer shrink-0"
+                      title="Ouvir mais lento (0.65x)"
+                    >
+                      <span>🐢 0.65x</span>
+                    </button>
+                  </div>
 
-                {/* Botão para ver a palavra em inglês antes de confirmar (após confirmar, o card completo já exibe a resposta) */}
-                {!hasAnswered && (
-                  !showWrittenWord ? (
+                  {!showWrittenWord ? (
                     <button
                       type="button"
                       disabled={!hasPlayedAudioOnce}
@@ -894,7 +895,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         sfx.playTap();
                         setShowWrittenWord(true);
                       }}
-                      className={`w-full py-2 px-3 rounded-xl border-2 text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 transition-all ${
+                      className={`w-full py-1.5 px-3 rounded-xl border-2 text-xs font-extrabold flex items-center justify-center gap-1.5 transition-all ${
                         hasPlayedAudioOnce
                           ? 'bg-white dark:bg-slate-900 hover:bg-indigo-50/80 text-indigo-700 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800 shadow-2xs active:scale-[0.99] cursor-pointer'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-400 border-slate-200/80 dark:border-slate-700 opacity-75 cursor-not-allowed'
@@ -902,7 +903,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                     >
                       {hasPlayedAudioOnce ? (
                         <>
-                          <Eye className="w-4 h-4 text-indigo-600 shrink-0" />
+                          <Eye className="w-3.5 h-3.5 text-indigo-600 shrink-0" />
                           <span>Dúvida na pronúncia? Ver palavra em inglês</span>
                         </>
                       ) : (
@@ -913,13 +914,13 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                       )}
                     </button>
                   ) : (
-                    <div className="py-2 px-3.5 rounded-xl bg-indigo-50/90 dark:bg-indigo-950/70 border-2 border-indigo-200 dark:border-indigo-800 flex items-center justify-between gap-2 animate-in fade-in duration-150">
-                      <div className="flex items-center gap-2">
-                        <Eye className="w-4 h-4 text-indigo-600 shrink-0" />
-                        <span className="text-xs font-bold text-indigo-700 dark:text-indigo-300">Palavra em inglês:</span>
+                    <div className="py-1.5 px-3 rounded-xl bg-indigo-50/90 dark:bg-indigo-950/70 border-2 border-indigo-200 dark:border-indigo-800 flex items-center justify-between gap-2 animate-in fade-in duration-150">
+                      <div className="flex items-center gap-1.5">
+                        <Eye className="w-3.5 h-3.5 text-indigo-600 shrink-0" />
+                        <span className="text-xs font-bold text-indigo-700 dark:text-indigo-300">Palavra:</span>
                       </div>
                       <div className="flex items-center gap-2 flex-wrap justify-end">
-                        <span className="text-base sm:text-lg font-black text-indigo-950 dark:text-indigo-100 tracking-tight">
+                        <span className="text-base font-black text-indigo-950 dark:text-indigo-100 tracking-tight">
                           {currentExercise.correctAnswer}
                         </span>
                         {currentExercise.phoneticHint && (
@@ -929,9 +930,9 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         )}
                       </div>
                     </div>
-                  )
-                )}
-              </div>
+                  )}
+                </div>
+              ) : null
             ) : currentExercise.type === 'listening' ? (
               <div className="space-y-2.5">
                 {!hasAnswered ? (
@@ -1085,7 +1086,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
             {/* 1. Interactive Visual Option Cards (quando visualOptions estiver presente) */}
             {currentExercise.visualOptions && currentExercise.visualOptions.length > 0 ? (
               hasAnswered ? (
-                /* Ao confirmar a resposta: o card da resposta aparece 100% por completo na tela, indicando a resposta, a imagem, a pronúncia simplificada, a tradução e a frase de exemplo */
+                /* Ao confirmar a resposta: o card da resposta aparece 100% por completo na tela, com a IMAGEM EM MÁXIMO DESTAQUE, pronúncia simplificada, tradução e frase de exemplo */
                 (() => {
                   const selectedVisual =
                     currentExercise.visualOptions.find(
@@ -1104,7 +1105,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                   return (
                     <div className="pt-0.5 pb-1 flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-200">
                       <div
-                        className={`relative w-full max-w-[360px] sm:max-w-[400px] mx-auto overflow-hidden rounded-3xl bg-white dark:bg-slate-900 border-3 border-b-6 shadow-xl flex flex-col items-center justify-center ${
+                        className={`relative w-full max-w-[430px] mx-auto overflow-hidden rounded-3xl bg-white dark:bg-slate-900 border-3 border-b-6 shadow-xl flex flex-col items-center justify-center ${
                           isCorrect
                             ? 'border-emerald-500 border-b-emerald-600 ring-4 ring-emerald-200/70'
                             : 'border-rose-500 border-b-rose-600 ring-4 ring-rose-200/60'
@@ -1133,14 +1134,24 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                           )}
                         </div>
 
-                        {/* Imagem da resposta com altura fixa explícita para aparecer sempre 100% visível e completa */}
-                        <div className="relative w-full h-[175px] sm:h-[220px] overflow-hidden bg-white">
+                        {/* IMAGEM DA RESPOSTA EM MÁXIMO DESTAQUE (285px no celular / 345px em telas maiores) */}
+                        <div className="relative w-full h-[285px] sm:h-[345px] overflow-hidden bg-white">
                           <VocabIllustration word={answerVisual.text} emoji={answerVisual.emoji} />
                         </div>
 
                         {/* Nome em inglês, tradução em português, pronúncia simplificada e frase de exemplo */}
-                        <div className="flex flex-col items-center justify-center text-center px-3.5 py-3 border-t border-slate-100 dark:border-slate-800 w-full space-y-1">
-                          <div className="flex items-baseline justify-center gap-2 flex-wrap">
+                        <div className="flex flex-col items-center justify-center text-center px-3.5 py-2.5 border-t border-slate-100 dark:border-slate-800 w-full space-y-1.5">
+                          <div className="w-full flex items-center justify-center gap-2 flex-wrap">
+                            <button
+                              type="button"
+                              onClick={() =>
+                                speakText(answerVisual.text, 'en-US', user.speechSpeed, exerciseVoiceGender)
+                              }
+                              className="p-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs shrink-0 cursor-pointer active:scale-95"
+                              title="Ouvir palavra em inglês"
+                            >
+                              <Volume2 className="w-4 h-4" />
+                            </button>
                             <span
                               className={`text-2xl sm:text-3xl font-black tracking-tight leading-tight ${
                                 isCorrect ? 'text-emerald-950 dark:text-emerald-300' : 'text-slate-900 dark:text-slate-100'
@@ -1157,25 +1168,24 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                                 — {answerVisual.translationPt}
                               </span>
                             )}
+                            {(answerVisual.simplePronunciation || currentExercise.phoneticHint) && (
+                              <span className="text-xs font-black text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/70 px-2.5 py-0.5 rounded-xl border border-indigo-200 dark:border-indigo-800">
+                                {answerVisual.simplePronunciation
+                                  ? `"${answerVisual.simplePronunciation}" ${answerVisual.phonetic || ''}`
+                                  : currentExercise.phoneticHint}
+                              </span>
+                            )}
                           </div>
-
-                          {(answerVisual.simplePronunciation || currentExercise.phoneticHint) && (
-                            <span className="text-xs font-black text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/70 px-3 py-0.5 rounded-xl border border-indigo-200 dark:border-indigo-800">
-                              {answerVisual.simplePronunciation
-                                ? `🔊 Pronúncia: "${answerVisual.simplePronunciation}" ${answerVisual.phonetic || ''}`
-                                : currentExercise.phoneticHint}
-                            </span>
-                          )}
 
                           {/* Frase curta de exemplo em inglês com tradução */}
                           {exampleEn && (
-                            <div className="w-full mt-1 p-2 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700 flex items-center justify-between gap-2 text-left">
-                              <div className="space-y-0.5 min-w-0">
-                                <p className="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100 leading-snug">
+                            <div className="w-full px-3 py-1.5 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700 flex items-center justify-between gap-2 text-left">
+                              <div className="min-w-0">
+                                <p className="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100 leading-snug truncate">
                                   "{exampleEn}"
                                 </p>
                                 {examplePt && (
-                                  <p className="text-[11px] sm:text-xs font-semibold text-slate-500 dark:text-slate-400 leading-snug">
+                                  <p className="text-[11px] sm:text-xs font-semibold text-slate-500 dark:text-slate-400 leading-snug truncate">
                                     "{examplePt}"
                                   </p>
                                 )}
@@ -1183,7 +1193,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                               <button
                                 type="button"
                                 onClick={() => speakText(exampleEn, 'en-US', user.speechSpeed, exerciseVoiceGender)}
-                                className="p-2 rounded-xl bg-indigo-100 dark:bg-indigo-900/60 hover:bg-indigo-200 text-indigo-700 dark:text-indigo-300 shrink-0 cursor-pointer active:scale-95"
+                                className="p-1.5 rounded-xl bg-indigo-100 dark:bg-indigo-900/60 hover:bg-indigo-200 text-indigo-700 dark:text-indigo-300 shrink-0 cursor-pointer active:scale-95"
                                 title="Ouvir frase de exemplo"
                               >
                                 <Volume2 className="w-4 h-4" />
@@ -1196,7 +1206,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                   );
                 })()
               ) : (
-                <div className="grid grid-cols-2 gap-2.5 sm:gap-3.5 pt-0.5">
+                <div className="grid grid-cols-2 gap-2 sm:gap-3.5 pt-0.5">
                   {currentExercise.visualOptions.map((opt, i) => {
                     const isSelected = selectedOption?.trim().toLowerCase() === opt.text.trim().toLowerCase();
 
@@ -1224,7 +1234,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                             setSelectedOption(opt.text);
                           }
                         }}
-                        className={`relative block p-0 overflow-hidden rounded-3xl w-full h-[148px] sm:h-[205px] transition-all active:translate-y-0.5 cursor-pointer ${cardStyle}`}
+                        className={`relative block p-0 overflow-hidden rounded-3xl w-full h-[205px] sm:h-[260px] transition-all active:translate-y-0.5 cursor-pointer ${cardStyle}`}
                       >
                         <VocabIllustration word={opt.text} emoji={opt.emoji} />
                       </div>
@@ -1616,7 +1626,7 @@ export const PhaseModal: React.FC<PhaseModalProps> = ({
                         className="p-3 rounded-2xl bg-white border-2 border-slate-200 flex items-center justify-between gap-3 shadow-2xs"
                       >
                         <div className="flex items-center gap-3 min-w-0">
-                          <div className="w-16 h-16 rounded-xl bg-white border border-slate-100 shrink-0 overflow-hidden flex items-center justify-center">
+                          <div className="w-24 h-24 rounded-xl bg-white border border-slate-100 shrink-0 overflow-hidden flex items-center justify-center">
                             <VocabIllustration word={item.word} emoji={item.emoji} />
                           </div>
                           <div className="min-w-0">

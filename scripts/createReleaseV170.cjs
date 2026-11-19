@@ -5,8 +5,8 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const token = process.env.GITHUB_TOKEN;
 const repo = 'thiagothomazolli-prog/lingo-world';
-const tag = 'v1.21.0';
-const releaseName = 'Lingo World v1.21.0 - 6 Temas x 4 Módulos por Frequência (8 Palavras Genéricas), Imagens Sempre Visíveis, Card da Resposta Completo e Professora Didática';
+const tag = 'v1.22.0';
+const releaseName = 'Lingo World v1.22.0 - Imagens em Tamanho Máximo e Total Destaque nos Cards (Auto-Zoom, 600x600 Smart Crop e Cards Gigantes)';
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -22,9 +22,9 @@ async function getLatestCompletedRun() {
       }
     });
     const data = await res.json();
-    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.21.0'));
+    const latestRun = data.workflow_runs && data.workflow_runs.find(r => r.head_commit?.message?.startsWith('v1.22.0'));
     if (!latestRun) {
-      console.log('Waiting for v1.21.0 workflow run to appear...');
+      console.log('Waiting for v1.22.0 workflow run to appear...');
       await sleep(5000);
       continue;
     }
@@ -98,7 +98,7 @@ async function run() {
   const rootDir = path.resolve(__dirname, '..');
   const zipPath = path.join(rootDir, 'app-debug.zip');
   const extractDir = path.join(rootDir, 'extracted_apk');
-  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.21.0.apk');
+  const apkOutPath = path.join(rootDir, 'LingoWorld-v1.22.0.apk');
 
   fs.writeFileSync(zipPath, buffer);
   console.log('Downloaded app-debug.zip, size:', buffer.length);
@@ -118,25 +118,19 @@ async function run() {
 
   fs.copyFileSync(path.join(extractDir, apkName), apkOutPath);
   const apkStats = fs.statSync(apkOutPath);
-  console.log(`Found APK: LingoWorld-v1.21.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`Found APK: LingoWorld-v1.22.0.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
 
   console.log('4. Creating GitHub Release', tag);
-  const body = `## 🚀 Lingo World v1.21.0 — 6 Temas × 4 Módulos por Frequência (8 Palavras Genéricas), Imagens dos Cards Sempre Visíveis, Card da Resposta 100% Completo e Professora Didática
+  const body = `## 🚀 Lingo World v1.22.0 — Imagens no Maior Tamanho Possível e em Total Destaque nos Cards
 
 ### ✨ Principais Melhorias desta Versão:
-- **📚 6 Temas Divididos em 4 Módulos por Frequência de Uso (8 Palavras Genéricas por Módulo):**
-  - Mantendo o formato da trilha atual (\`v1.18\`), cada tema (**1. A Casa, 2. Comida, 3. Corpo Humano, 4. Transporte, 5. Roupas e 6. Trabalho**) está organizado em 4 módulos progressivos:
-    - **Módulo 1:** Palavras essenciais e mais comuns
-    - **Módulo 2:** Palavras comuns
-    - **Módulo 3:** Palavras intermediárias
-    - **Módulo 4:** Palavras menos comuns ou específicas
-  - **8 palavras genéricas por módulo** (entre 6 e 10 palavras, para não sobrecarregar o aluno), usando termos genéricos (ex.: \`Wall\`, \`Door\`, \`Roof\`).
-- **🖼️ Imagens dos Cards Sempre Visíveis:**
-  - Corrigida a altura determinística dos 4 cards da grade (\`h-[148px] sm:h-[205px] block\`) e removido o \`opacity-0\` das imagens em \`VocabIllustration.tsx\`, garantindo que as 4 imagens fiquem **sempre 100% visíveis na tela** ocupando o card inteiro.
-- **✅ Card da Resposta Aparece por Completo ao Confirmar:**
-  - Ao tocar em **Verificar**, o título da pergunta e o botão de dúvida recolhem-se para que o **Card da Resposta apareça 100% por completo na tela (sem cortes)**, indicando claramente a resposta correta, a foto completa, a palavra em inglês, a tradução em português, a pronúncia simplificada e a frase curta de exemplo.
-- **👩‍🏫 Explicação dos Pronomes Didática, Clara e Menos Infantil (Texto + Voz Humana Regravada):**
-  - Reescritas todas as explicações de pronomes e regravados os 8 áudios de voz humana da professora (\`pronoun_1.wav\` a \`pronoun_8.wav\`) com linguagem **didática, clara, objetiva e sem termos infantilizados**.`;
+- **🔍 Auto-Zoom + Recorte Inteligente 600×600 das Imagens nos Cards (\`VocabIllustration.tsx\`):**
+  - Todas as URLs de fotos agora usam recorte inteligente 600×600 centrado no objeto (\`&w=600&h=600&c=7&rs=1&p=0\`).
+  - Adicionado detector automático em Canvas (\`autoZoomAndCleanImage\`) + zoom de destaque (\`scale-[1.12] object-cover\`) que remove automaticamente as sobras de bordas brancas das fotos de estúdio para que o objeto ocupe **95% a 100% do card**.
+- **🖼️ Cards da Grade 2×2 Muito Maiores (\`h-[205px] sm:h-[260px]\`):**
+  - Compactado o cabeçalho superior do exercício para liberar espaço vertical na tela do celular e ampliada a altura de cada um dos 4 cards da grade de \`148px\` para **\`205px\` no celular e \`260px\` em telas maiores** (quase o dobro de área visual para cada imagem).
+- **🌟 Imagem Gigante em Destaque no Card da Resposta (\`h-[285px] sm:h-[345px]\`):**
+  - Ao confirmar a resposta em **Verificar**, a barra superior se recolhe e a imagem dentro do Card da Resposta passa de \`175px\` para **\`285px\` no celular e \`345px\` em telas maiores**, mantendo o card 100% completo na tela com botão de áudio integrado, pronúncia simplificada, tradução e frase de exemplo.`;
 
   const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases`, {
     method: 'POST',
@@ -162,9 +156,9 @@ async function run() {
   }
   console.log('Release created:', releaseData.id, releaseData.html_url);
 
-  console.log('5. Uploading LingoWorld-v1.21.0.apk to release...');
+  console.log('5. Uploading LingoWorld-v1.22.0.apk to release...');
   const apkBuffer = fs.readFileSync(apkOutPath);
-  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.21.0.apk`;
+  const uploadUrl = `https://uploads.github.com/repos/${repo}/releases/${releaseData.id}/assets?name=LingoWorld-v1.22.0.apk`;
 
   const uploadRes = await fetch(uploadUrl, {
     method: 'POST',
@@ -180,7 +174,7 @@ async function run() {
   const assetData = await uploadRes.json();
   console.log('Asset uploaded successfully!', assetData.browser_download_url);
   console.log('\n=======================================');
-  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.21.0.apk`);
+  console.log('DOWNLOAD LINK:', `https://github.com/${repo}/releases/download/${tag}/LingoWorld-v1.22.0.apk`);
   console.log('=======================================\n');
 }
 

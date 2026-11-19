@@ -11,10 +11,20 @@ function norm(word: string): string {
   return word.toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
+// Upgrade thumbnail URLs to 600x600 smart object-centered saliency crop (&w=600&h=600&c=7&rs=1&p=0)
+// so subjects fill the card instead of having wide empty margins
+function upgradeToLargeCropUrl(url: string): string {
+  if (!url) return url;
+  if (url.includes('&w=500&p=0') && !url.includes('&c=7')) {
+    return url.replace('&w=500&p=0', '&w=600&h=600&c=7&rs=1&p=0');
+  }
+  return url;
+}
+
 // Build a normalized lookup table once so any casing/spacing matches its photo
 const NORMALIZED_PHOTO_MAP: Record<string, string> = {};
 for (const [k, url] of Object.entries(REAL_VOCAB_IMAGES)) {
-  NORMALIZED_PHOTO_MAP[norm(k)] = url;
+  NORMALIZED_PHOTO_MAP[norm(k)] = upgradeToLargeCropUrl(url);
 }
 
 const PLURAL_ALIASES: Record<string, string> = {
@@ -53,9 +63,9 @@ const PLURAL_ALIASES: Record<string, string> = {
 export function getRealVocabPhotoUrl(word: string): string | undefined {
   if (!word) return undefined;
   const trimmed = word.trim();
-  if (REAL_VOCAB_IMAGES[trimmed]) return REAL_VOCAB_IMAGES[trimmed];
+  if (REAL_VOCAB_IMAGES[trimmed]) return upgradeToLargeCropUrl(REAL_VOCAB_IMAGES[trimmed]);
   const primary = trimmed.split(/\s*\/\s*/)[0].trim();
-  if (REAL_VOCAB_IMAGES[primary]) return REAL_VOCAB_IMAGES[primary];
+  if (REAL_VOCAB_IMAGES[primary]) return upgradeToLargeCropUrl(REAL_VOCAB_IMAGES[primary]);
 
   const directMatch = NORMALIZED_PHOTO_MAP[norm(primary)] || NORMALIZED_PHOTO_MAP[norm(trimmed)];
   if (directMatch) return directMatch;
@@ -103,7 +113,12 @@ export function preloadVocabImages(words: string[]): void {
   });
 }
 
-function stripBottomBannerIfPresent(img: HTMLImageElement): string | null {
+/**
+ * 1. Strips any bottom stock watermark banner if present.
+ * 2. Detects the tight bounding box of the non-white object and crops out excess white margins
+ *    so the subject fills 95%+ of the card in maximum spotlight.
+ */
+function autoZoomAndCleanImage(img: HTMLImageElement): string | null {
   try {
     const w = img.naturalWidth;
     const h = img.naturalHeight;
@@ -116,10 +131,11 @@ function stripBottomBannerIfPresent(img: HTMLImageElement): string | null {
     if (!ctx) return null;
 
     ctx.drawImage(img, 0, 0);
+
+    // Step 1: Check bottom 12% for stock watermark bar
     const scanHeight = Math.max(8, Math.floor(h * 0.12));
     const startY = h - scanHeight;
-    const imageData = ctx.getImageData(0, startY, w, scanHeight);
-    const data = imageData.data;
+    const bottomData = ctx.getImageData(0, startY, w, scanHeight).data;
 
     let bannerTopRow = -1;
     for (let r = scanHeight - 1; r >= 0; r--) {
@@ -131,10 +147,10 @@ function stripBottomBannerIfPresent(img: HTMLImageElement): string | null {
 
       for (let x = 0; x < w; x += 2) {
         const idx = (r * w + x) * 4;
-        const red = data[idx];
-        const green = data[idx + 1];
-        const blue = data[idx + 2];
-        const alpha = data[idx + 3];
+        const red = bottomData[idx];
+        const green = bottomData[idx + 1];
+        const blue = bottomData[idx + 2];
+        const alpha = bottomData[idx + 3];
 
         const isWhite = alpha < 20 || (red > 235 && green > 235 && blue > 235);
         if (!isWhite) {
@@ -155,10 +171,65 @@ function stripBottomBannerIfPresent(img: HTMLImageElement): string | null {
       }
     }
 
+    let modified = false;
     if (bannerTopRow !== -1) {
       const clearY = Math.max(Math.floor(h * 0.88), startY + bannerTopRow - 2);
       ctx.fillStyle = '#ffffff';
       ctx.fillRect(0, clearY, w, h - clearY);
+      modified = true;
+    }
+
+    // Step 2: Detect bounding box of non-white object pixels to trim excess white margins
+    const fullData = ctx.getImageData(0, 0, w, h).data;
+    let minX = w;
+    let minY = h;
+    let maxX = 0;
+    let maxY = 0;
+
+    for (let y = 0; y < h; y += 2) {
+      for (let x = 0; x < w; x += 2) {
+        const idx = (y * w + x) * 4;
+        const r = fullData[idx];
+        const g = fullData[idx + 1];
+        const b = fullData[idx + 2];
+        const a = fullData[idx + 3];
+
+        if (a > 25 && (r < 242 || g < 242 || b < 242)) {
+          if (x < minX) minX = x;
+          if (x > maxX) maxX = x;
+          if (y < minY) minY = y;
+          if (y > maxY) maxY = y;
+        }
+      }
+    }
+
+    const boxW = maxX - minX;
+    const boxH = maxY - minY;
+
+    if (boxW > w * 0.18 && boxH > h * 0.18 && (boxW < w * 0.90 || boxH < h * 0.90)) {
+      const padX = Math.round(boxW * 0.03);
+      const padY = Math.round(boxH * 0.03);
+      const sx = Math.max(0, minX - padX);
+      const sy = Math.max(0, minY - padY);
+      const sw = Math.min(w - sx, boxW + padX * 2);
+      const sh = Math.min(h - sy, boxH + padY * 2);
+
+      const outCanvas = document.createElement('canvas');
+      const side = Math.max(sw, sh);
+      outCanvas.width = side;
+      outCanvas.height = side;
+      const outCtx = outCanvas.getContext('2d');
+      if (outCtx) {
+        outCtx.fillStyle = '#ffffff';
+        outCtx.fillRect(0, 0, side, side);
+        const dx = Math.round((side - sw) / 2);
+        const dy = Math.round((side - sh) / 2);
+        outCtx.drawImage(canvas, sx, sy, sw, sh, dx, dy, sw, sh);
+        return outCanvas.toDataURL('image/jpeg', 0.94);
+      }
+    }
+
+    if (modified) {
       return canvas.toDataURL('image/jpeg', 0.94);
     }
   } catch {
@@ -170,7 +241,7 @@ function stripBottomBannerIfPresent(img: HTMLImageElement): string | null {
 export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoji }) => {
   const primaryUrl = getRealVocabPhotoUrl(word);
   const backupUrl = word
-    ? `https://tse2.mm.bing.net/th?q=${encodeURIComponent('single whole ' + word + ' on white background')}&w=500&p=0`
+    ? `https://tse2.mm.bing.net/th?q=${encodeURIComponent('single whole ' + word + ' on white background')}&w=600&h=600&c=7&rs=1&p=0`
     : undefined;
 
   const [useBackup, setUseBackup] = useState(false);
@@ -198,10 +269,10 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
     (probe as any).referrerPolicy = 'no-referrer';
     probe.onload = () => {
       if (cancelled) return;
-      const stripped = stripBottomBannerIfPresent(probe);
-      if (stripped) {
-        cleanedImageCache.set(activeUrl, stripped);
-        setCleanedSrc(stripped);
+      const processed = autoZoomAndCleanImage(probe);
+      if (processed) {
+        cleanedImageCache.set(activeUrl, processed);
+        setCleanedSrc(processed);
       }
     };
     probe.src = activeUrl;
@@ -213,7 +284,7 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
 
   if (activeUrl && !imgError) {
     return (
-      <div className="relative w-full h-full min-h-[120px] overflow-hidden bg-white flex items-center justify-center select-none">
+      <div className="relative w-full h-full min-h-[140px] overflow-hidden bg-white flex items-center justify-center select-none">
         <img
           src={cleanedSrc || activeUrl}
           alt={word}
@@ -227,15 +298,15 @@ export const VocabIllustration: React.FC<VocabIllustrationProps> = ({ word, emoj
               setImgError(true);
             }
           }}
-          className="block w-full h-full object-cover"
+          className={`block w-full h-full object-cover ${cleanedSrc ? 'scale-100' : 'scale-[1.12]'}`}
         />
       </div>
     );
   }
 
   return (
-    <div className="relative w-full h-full min-h-[120px] bg-white flex items-center justify-center select-none">
-      <span className="text-5xl sm:text-6xl filter drop-shadow-sm leading-none">
+    <div className="relative w-full h-full min-h-[140px] bg-white flex items-center justify-center select-none">
+      <span className="text-6xl sm:text-7xl filter drop-shadow-sm leading-none">
         {emoji || '✨'}
       </span>
     </div>
